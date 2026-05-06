@@ -17,13 +17,13 @@
     dcterms:description "Knowledge graph of negative sampling methods for knowledge graph embeddings extracted from scientific articles." ;
     dcterms:creator "Ilyes Tebourski" , "Pierre-Henri Paris" , "Nicoleta Preda" , "Fatiha Sais" ;
     dcterms:issued "2026-05-06"^^xsd:date ;
-    dcterms:bibliographicCitation "Tebourski, I., Paris, P.-H., Preda, N., & Sais, F. (2026). NS4KGE Knowledge Graph (v1.0.0-paper). GitHub. https://github.com/IlyesTebourski/ns4kge-kg"@en ;
+    dcterms:bibliographicCitation "Tebourski, I., Paris, P.-H., Preda, N., & Sais, F. (2026). NS4KGE Knowledge Graph (v1.0.0-paper). Zenodo. https://doi.org/10.5281/zenodo.20058972"@en ;
     dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
     dcterms:conformsTo <https://w3id.org/ns4kge/ontology> ;
     dcterms:hasVersion "v1.0.0-paper" ;
-    dcterms:identifier <https://w3id.org/ns4kge/kg/1.0.0> ;
+    dcterms:identifier "10.5281/zenodo.20058972" , <https://w3id.org/ns4kge/kg/1.0.0> ;
     dcat:landingPage <https://github.com/IlyesTebourski/ns4kge-kg> ;
-    rdfs:seeAlso <https://github.com/IlyesTebourski/ns4kge-kg> , <https://doi.org/10.5281/zenodo.20058306> .
+    rdfs:seeAlso <https://github.com/IlyesTebourski/ns4kge-kg> , <https://doi.org/10.5281/zenodo.20058972> , <https://doi.org/10.5281/zenodo.20058306> .
 
 ##############################################################
 #  ONTOLOGY SCHEMA

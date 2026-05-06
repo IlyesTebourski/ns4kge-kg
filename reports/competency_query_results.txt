@@ -1,4 +1,4 @@
-Graph loaded: 6398 triples
+Graph loaded: 6400 triples
 
 ============================================================
 UC: CQ1 - Datasets most frequently used to evaluate negative sampling methods

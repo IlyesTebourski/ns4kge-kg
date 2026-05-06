@@ -1,4 +1,4 @@
-Graph loaded: 6398 triples
+Graph loaded: 6400 triples
 
 ============================================================
 DEBUG: Number of experimentations per article

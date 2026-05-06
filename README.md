@@ -27,7 +27,7 @@ Instantiated knowledge graph built from the NS4KGE ontology and the NS4KGE extra
 - Release target: `v1.0.0-paper`.
 - Release date: 2026-05-06.
 - License: CC BY 4.0.
-- Zenodo DOI: to be added after the public GitHub release is archived on Zenodo.
+- Zenodo DOI: `https://doi.org/10.5281/zenodo.20058972`.
 - Dereferenceable KG landing IRI: `https://w3id.org/ns4kge/kg`.
 - Ontology artifact: `https://doi.org/10.5281/zenodo.20058306` and `https://github.com/IlyesTebourski/ns4kge-ontology`.
 - Extraction pipeline artifact: `https://github.com/IlyesTebourski/ns4kge-extraction-pipeline`.

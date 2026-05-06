@@ -11,8 +11,8 @@
     "Nicoleta Preda",
     "Fatiha Sais"
   ],
-  "doi": null,
-  "doi_status": "To be added after the public GitHub release is archived on Zenodo.",
+  "doi": "10.5281/zenodo.20058972",
+  "doi_url": "https://doi.org/10.5281/zenodo.20058972",
   "ontology": {
     "artifact": "ns4kge-ontology",
     "version": "v1.0.0",
@@ -47,7 +47,7 @@
     "version_iri": "https://w3id.org/ns4kge/kg/1.0.0",
     "instance_base": "https://w3id.org/ns4kge/id/",
     "path": "kg/NSArticles_populated.ttl",
-    "sha256": "615d26e33594a3e4707571512a9538768352c74f50fe65e39fb135d7fddbc0a2"
+    "sha256": "1f406be321141be1b20c9cdf74ecfe61055fda5a4401a2893d7ecc2dc49d8a46"
   },
   "sources_manifest": "provenance/sources.csv",
   "source_text_policy": "Source article text is not redistributed. The KG artifact contains structured extraction outputs, source metadata, and checksums only.",
