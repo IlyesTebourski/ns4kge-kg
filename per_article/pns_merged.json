@@ -1,0 +1,160 @@
+{
+  "Article": {
+    "title": "Enhancing Knowledge Graph Embedding with Probabilistic Negative Sampling",
+    "date": "2017"
+  },
+  "proposedNSMethod": "Probabilistic Negative Sampling",
+  "proposedKGEModel": "",
+  "mentionedNSMethods": [
+    "Bernoulli Negative Sampling"
+  ],
+  "mentionedKGEModels": [
+    "TransE",
+    "TransH",
+    "TransR",
+    "TransG"
+  ],
+  "Experimentation": {
+    "Hardware": [],
+    "TrainingProtocol": {
+      "LossFunction": [
+        "margin-based ranking loss"
+      ],
+      "Optimizer": [
+        "Adam"
+      ],
+      "learningRate": 0.001,
+      "nsRatio": null
+    },
+    "Configurations": [
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18",
+        "Metric": "MR",
+        "KGEModel": "TransR",
+        "NSMethod": "Probabilistic Negative Sampling",
+        "result": 15
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18",
+        "Metric": "MR",
+        "KGEModel": "TransR",
+        "NSMethod": "Bernoulli Negative Sampling",
+        "result": 205
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18",
+        "Metric": "MR",
+        "KGEModel": "TransE",
+        "NSMethod": "Unknown",
+        "result": 263
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18",
+        "Metric": "MR",
+        "KGEModel": "TransH",
+        "NSMethod": "Bernoulli Negative Sampling",
+        "result": 401
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18",
+        "Metric": "Hits@10",
+        "KGEModel": "TransR",
+        "NSMethod": "Probabilistic Negative Sampling",
+        "result": 0.764
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18",
+        "Metric": "Hits@10",
+        "KGEModel": "TransR",
+        "NSMethod": "Bernoulli Negative Sampling",
+        "result": 0.759
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18",
+        "Metric": "Hits@10",
+        "KGEModel": "TransE",
+        "NSMethod": "Unknown",
+        "result": 0.754
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18",
+        "Metric": "Hits@10",
+        "KGEModel": "TransH",
+        "NSMethod": "Bernoulli Negative Sampling",
+        "result": 0.73
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K",
+        "Metric": "MR",
+        "KGEModel": "TransR",
+        "NSMethod": "Probabilistic Negative Sampling",
+        "result": 144
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K",
+        "Metric": "MR",
+        "KGEModel": "TransR",
+        "NSMethod": "Bernoulli Negative Sampling",
+        "result": 191
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K",
+        "Metric": "MR",
+        "KGEModel": "TransH",
+        "NSMethod": "Bernoulli Negative Sampling",
+        "result": 212
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K",
+        "Metric": "MR",
+        "KGEModel": "TransE",
+        "NSMethod": "Unknown",
+        "result": 243
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K",
+        "Metric": "Hits@10",
+        "KGEModel": "TransR",
+        "NSMethod": "Probabilistic Negative Sampling",
+        "result": 0.472
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K",
+        "Metric": "Hits@10",
+        "KGEModel": "TransR",
+        "NSMethod": "Bernoulli Negative Sampling",
+        "result": 0.464
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K",
+        "Metric": "Hits@10",
+        "KGEModel": "TransH",
+        "NSMethod": "Bernoulli Negative Sampling",
+        "result": 0.457
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K",
+        "Metric": "Hits@10",
+        "KGEModel": "TransE",
+        "NSMethod": "Unknown",
+        "result": 0.349
+      }
+    ]
+  }
+}

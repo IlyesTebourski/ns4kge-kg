@@ -1,0 +1,186 @@
+<article/pns> rdf:type ns4kge:Article .
+<article/pns> ns4kge:title "Enhancing Knowledge Graph Embedding with Probabilistic Negative Sampling"^^xsd:string .
+<article/pns> ns4kge:date "2017"^^xsd:gYear .
+<article/pns> ns4kge:proposesNSMethod <ns-method/probabilistic-negative-sampling> .
+<article/pns> ns4kge:mentionsNSMethod <ns-method/bernoulli-negative-sampling> .
+<article/pns> ns4kge:mentionsKGEModel <kge-model/transe> .
+<article/pns> ns4kge:mentionsKGEModel <kge-model/transh> .
+<article/pns> ns4kge:mentionsKGEModel <kge-model/transr> .
+<article/pns> ns4kge:mentionsKGEModel <kge-model/transg> .
+<article/pns> ns4kge:hasExperimentation <experimentation/pns> .
+
+<category/static-ns> rdf:type ns4kge:Category .
+
+<subcategory/probabilistic> rdf:type ns4kge:Subcategory .
+
+<ns-method/probabilistic-negative-sampling> rdf:type ns4kge:NSMethod .
+<ns-method/probabilistic-negative-sampling> ns4kge:hasCategory <category/static-ns> .
+<ns-method/probabilistic-negative-sampling> ns4kge:hasSubcategory <subcategory/probabilistic> .
+
+<ns-method/bernoulli-negative-sampling> rdf:type ns4kge:NSMethod .
+<ns-method/bernoulli-negative-sampling> ns4kge:hasCategory <category/static-ns> .
+<ns-method/bernoulli-negative-sampling> ns4kge:hasSubcategory <subcategory/probabilistic> .
+
+<kge-model/transe> rdf:type ns4kge:KGEModel .
+
+<kge-model/transh> rdf:type ns4kge:KGEModel .
+
+<kge-model/transr> rdf:type ns4kge:KGEModel .
+
+<kge-model/transg> rdf:type ns4kge:KGEModel .
+
+<dataset/wn18> rdf:type ns4kge:Dataset .
+<task/link-prediction> rdf:type ns4kge:Task .
+<metric/mr> rdf:type ns4kge:Metric .
+<metric/hits-10> rdf:type ns4kge:Metric .
+<dataset/fb15k> rdf:type ns4kge:Dataset .
+<loss-function/margin-based-ranking-loss> rdf:type ns4kge:LossFunction .
+<optimizer/adam> rdf:type ns4kge:Optimizer .
+
+<experimentation/pns> rdf:type ns4kge:Experimentation .
+<experimentation/pns> ns4kge:hasTrainingProtocol <training-protocol/pns> .
+<experimentation/pns> ns4kge:hasConfiguration <configuration/pns/1> .
+<experimentation/pns> ns4kge:hasConfiguration <configuration/pns/2> .
+<experimentation/pns> ns4kge:hasConfiguration <configuration/pns/3> .
+<experimentation/pns> ns4kge:hasConfiguration <configuration/pns/4> .
+<experimentation/pns> ns4kge:hasConfiguration <configuration/pns/5> .
+<experimentation/pns> ns4kge:hasConfiguration <configuration/pns/6> .
+<experimentation/pns> ns4kge:hasConfiguration <configuration/pns/7> .
+<experimentation/pns> ns4kge:hasConfiguration <configuration/pns/8> .
+<experimentation/pns> ns4kge:hasConfiguration <configuration/pns/9> .
+<experimentation/pns> ns4kge:hasConfiguration <configuration/pns/10> .
+<experimentation/pns> ns4kge:hasConfiguration <configuration/pns/11> .
+<experimentation/pns> ns4kge:hasConfiguration <configuration/pns/12> .
+<experimentation/pns> ns4kge:hasConfiguration <configuration/pns/13> .
+<experimentation/pns> ns4kge:hasConfiguration <configuration/pns/14> .
+<experimentation/pns> ns4kge:hasConfiguration <configuration/pns/15> .
+<experimentation/pns> ns4kge:hasConfiguration <configuration/pns/16> .
+
+<training-protocol/pns> rdf:type ns4kge:TrainingProtocol .
+<training-protocol/pns> ns4kge:hasOptimizer    <optimizer/adam> .
+<training-protocol/pns> ns4kge:hasLossFunction <loss-function/margin-based-ranking-loss> .
+<training-protocol/pns> ns4kge:learningRate "0.001"^^xsd:decimal .
+
+<configuration/pns/1> rdf:type ns4kge:Configuration .
+<configuration/pns/1> ns4kge:hasTask    <task/link-prediction> .
+<configuration/pns/1> ns4kge:hasDataset <dataset/wn18> .
+<configuration/pns/1> ns4kge:hasMetric  <metric/mr> .
+<configuration/pns/1> ns4kge:hasKGEModel <kge-model/transr> .
+<configuration/pns/1> ns4kge:hasNSMethod <ns-method/probabilistic-negative-sampling> .
+<configuration/pns/1> ns4kge:result "15"^^xsd:decimal .
+
+<configuration/pns/2> rdf:type ns4kge:Configuration .
+<configuration/pns/2> ns4kge:hasTask    <task/link-prediction> .
+<configuration/pns/2> ns4kge:hasDataset <dataset/wn18> .
+<configuration/pns/2> ns4kge:hasMetric  <metric/mr> .
+<configuration/pns/2> ns4kge:hasKGEModel <kge-model/transr> .
+<configuration/pns/2> ns4kge:hasNSMethod <ns-method/bernoulli-negative-sampling> .
+<configuration/pns/2> ns4kge:result "205"^^xsd:decimal .
+
+<configuration/pns/3> rdf:type ns4kge:Configuration .
+<configuration/pns/3> ns4kge:hasTask    <task/link-prediction> .
+<configuration/pns/3> ns4kge:hasDataset <dataset/wn18> .
+<configuration/pns/3> ns4kge:hasMetric  <metric/mr> .
+<configuration/pns/3> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/pns/3> ns4kge:result "263"^^xsd:decimal .
+
+<configuration/pns/4> rdf:type ns4kge:Configuration .
+<configuration/pns/4> ns4kge:hasTask    <task/link-prediction> .
+<configuration/pns/4> ns4kge:hasDataset <dataset/wn18> .
+<configuration/pns/4> ns4kge:hasMetric  <metric/mr> .
+<configuration/pns/4> ns4kge:hasKGEModel <kge-model/transh> .
+<configuration/pns/4> ns4kge:hasNSMethod <ns-method/bernoulli-negative-sampling> .
+<configuration/pns/4> ns4kge:result "401"^^xsd:decimal .
+
+<configuration/pns/5> rdf:type ns4kge:Configuration .
+<configuration/pns/5> ns4kge:hasTask    <task/link-prediction> .
+<configuration/pns/5> ns4kge:hasDataset <dataset/wn18> .
+<configuration/pns/5> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/pns/5> ns4kge:hasKGEModel <kge-model/transr> .
+<configuration/pns/5> ns4kge:hasNSMethod <ns-method/probabilistic-negative-sampling> .
+<configuration/pns/5> ns4kge:result "0.764"^^xsd:decimal .
+
+<configuration/pns/6> rdf:type ns4kge:Configuration .
+<configuration/pns/6> ns4kge:hasTask    <task/link-prediction> .
+<configuration/pns/6> ns4kge:hasDataset <dataset/wn18> .
+<configuration/pns/6> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/pns/6> ns4kge:hasKGEModel <kge-model/transr> .
+<configuration/pns/6> ns4kge:hasNSMethod <ns-method/bernoulli-negative-sampling> .
+<configuration/pns/6> ns4kge:result "0.759"^^xsd:decimal .
+
+<configuration/pns/7> rdf:type ns4kge:Configuration .
+<configuration/pns/7> ns4kge:hasTask    <task/link-prediction> .
+<configuration/pns/7> ns4kge:hasDataset <dataset/wn18> .
+<configuration/pns/7> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/pns/7> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/pns/7> ns4kge:result "0.754"^^xsd:decimal .
+
+<configuration/pns/8> rdf:type ns4kge:Configuration .
+<configuration/pns/8> ns4kge:hasTask    <task/link-prediction> .
+<configuration/pns/8> ns4kge:hasDataset <dataset/wn18> .
+<configuration/pns/8> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/pns/8> ns4kge:hasKGEModel <kge-model/transh> .
+<configuration/pns/8> ns4kge:hasNSMethod <ns-method/bernoulli-negative-sampling> .
+<configuration/pns/8> ns4kge:result "0.73"^^xsd:decimal .
+
+<configuration/pns/9> rdf:type ns4kge:Configuration .
+<configuration/pns/9> ns4kge:hasTask    <task/link-prediction> .
+<configuration/pns/9> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/pns/9> ns4kge:hasMetric  <metric/mr> .
+<configuration/pns/9> ns4kge:hasKGEModel <kge-model/transr> .
+<configuration/pns/9> ns4kge:hasNSMethod <ns-method/probabilistic-negative-sampling> .
+<configuration/pns/9> ns4kge:result "144"^^xsd:decimal .
+
+<configuration/pns/10> rdf:type ns4kge:Configuration .
+<configuration/pns/10> ns4kge:hasTask    <task/link-prediction> .
+<configuration/pns/10> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/pns/10> ns4kge:hasMetric  <metric/mr> .
+<configuration/pns/10> ns4kge:hasKGEModel <kge-model/transr> .
+<configuration/pns/10> ns4kge:hasNSMethod <ns-method/bernoulli-negative-sampling> .
+<configuration/pns/10> ns4kge:result "191"^^xsd:decimal .
+
+<configuration/pns/11> rdf:type ns4kge:Configuration .
+<configuration/pns/11> ns4kge:hasTask    <task/link-prediction> .
+<configuration/pns/11> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/pns/11> ns4kge:hasMetric  <metric/mr> .
+<configuration/pns/11> ns4kge:hasKGEModel <kge-model/transh> .
+<configuration/pns/11> ns4kge:hasNSMethod <ns-method/bernoulli-negative-sampling> .
+<configuration/pns/11> ns4kge:result "212"^^xsd:decimal .
+
+<configuration/pns/12> rdf:type ns4kge:Configuration .
+<configuration/pns/12> ns4kge:hasTask    <task/link-prediction> .
+<configuration/pns/12> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/pns/12> ns4kge:hasMetric  <metric/mr> .
+<configuration/pns/12> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/pns/12> ns4kge:result "243"^^xsd:decimal .
+
+<configuration/pns/13> rdf:type ns4kge:Configuration .
+<configuration/pns/13> ns4kge:hasTask    <task/link-prediction> .
+<configuration/pns/13> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/pns/13> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/pns/13> ns4kge:hasKGEModel <kge-model/transr> .
+<configuration/pns/13> ns4kge:hasNSMethod <ns-method/probabilistic-negative-sampling> .
+<configuration/pns/13> ns4kge:result "0.472"^^xsd:decimal .
+
+<configuration/pns/14> rdf:type ns4kge:Configuration .
+<configuration/pns/14> ns4kge:hasTask    <task/link-prediction> .
+<configuration/pns/14> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/pns/14> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/pns/14> ns4kge:hasKGEModel <kge-model/transr> .
+<configuration/pns/14> ns4kge:hasNSMethod <ns-method/bernoulli-negative-sampling> .
+<configuration/pns/14> ns4kge:result "0.464"^^xsd:decimal .
+
+<configuration/pns/15> rdf:type ns4kge:Configuration .
+<configuration/pns/15> ns4kge:hasTask    <task/link-prediction> .
+<configuration/pns/15> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/pns/15> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/pns/15> ns4kge:hasKGEModel <kge-model/transh> .
+<configuration/pns/15> ns4kge:hasNSMethod <ns-method/bernoulli-negative-sampling> .
+<configuration/pns/15> ns4kge:result "0.457"^^xsd:decimal .
+
+<configuration/pns/16> rdf:type ns4kge:Configuration .
+<configuration/pns/16> ns4kge:hasTask    <task/link-prediction> .
+<configuration/pns/16> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/pns/16> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/pns/16> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/pns/16> ns4kge:result "0.349"^^xsd:decimal .

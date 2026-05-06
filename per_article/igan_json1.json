@@ -1,0 +1,37 @@
+{
+  "Article": {
+    "title": "Incorporating GAN for Negative Sampling in Knowledge Representation Learning",
+    "date": "2018"
+  },
+  "proposedNSMethod": "GAN-based Negative Sampling",
+  "proposedKGEModel": "",
+  "mentionedNSMethods": [
+    "Random Negative Sampling",
+    "Uniform Negative Sampling",
+    "Bernoulli Negative Sampling"
+  ],
+  "mentionedKGEModels": [
+    "TransE",
+    "TransH",
+    "TransR",
+    "TransD",
+    "Unstructured Model",
+    "Structured Embedding",
+    "Single Layer Model",
+    "Neural Tensor Network"
+  ],
+  "Experimentation": {
+    "Hardware": [],
+    "TrainingProtocol": {
+      "LossFunction": [
+        "margin-based ranking loss"
+      ],
+      "Optimizer": [
+        "Adam"
+      ],
+      "learningRate": null,
+      "nsRatio": null,
+      "batchSize": null
+    }
+  }
+}

@@ -1,0 +1,1147 @@
+{
+  "Article": {
+    "title": "Incorporating GAN for Negative Sampling in Knowledge Representation Learning",
+    "date": "2018"
+  },
+  "proposedNSMethod": "GAN-based Negative Sampling",
+  "proposedKGEModel": "",
+  "mentionedNSMethods": [
+    "Bernoulli Negative Sampling",
+    "Random Negative Sampling",
+    "GAN-pretrain",
+    "Uniform Negative Sampling",
+    "GAN-scratch"
+  ],
+  "mentionedKGEModels": [
+    "TransR",
+    "Structured Embedding",
+    "TransH",
+    "TransE",
+    "TransE + A-LSTM",
+    "Single Layer Model",
+    "SME(Bilinear)",
+    "TransD",
+    "Unstructured Model",
+    "Neural Tensor Network"
+  ],
+  "Experimentation": {
+    "Hardware": [],
+    "TrainingProtocol": {
+      "LossFunction": [
+        "margin-based ranking loss"
+      ],
+      "Optimizer": [
+        "Adam"
+      ],
+      "learningRate": null,
+      "nsRatio": null,
+      "batchSize": null
+    },
+    "Configurations": [
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K",
+        "Metric": "MR",
+        "KGEModel": "TransE",
+        "NSMethod": "Unknown",
+        "result": 61
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K",
+        "Metric": "MR",
+        "KGEModel": "TransE + A-LSTM",
+        "NSMethod": "GAN-pretrain",
+        "result": 74
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K",
+        "Metric": "MR",
+        "KGEModel": "TransD",
+        "NSMethod": "GAN-pretrain",
+        "result": 79
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K",
+        "Metric": "MR",
+        "KGEModel": "TransH",
+        "NSMethod": "GAN-pretrain",
+        "result": 81
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K",
+        "Metric": "MR",
+        "KGEModel": "TransR",
+        "NSMethod": "Unknown",
+        "result": 77
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K",
+        "Metric": "MR",
+        "KGEModel": "Unstructured Model",
+        "NSMethod": "GAN-pretrain",
+        "result": 305
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K",
+        "Metric": "MR",
+        "KGEModel": "Structured Embedding",
+        "NSMethod": "Unknown",
+        "result": 162
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K",
+        "Metric": "MR",
+        "KGEModel": "SME(Bilinear)",
+        "NSMethod": "GAN-scratch",
+        "result": 139
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K",
+        "Metric": "MR",
+        "KGEModel": "TransE",
+        "NSMethod": "GAN-scratch",
+        "result": 90
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K",
+        "Metric": "MR",
+        "KGEModel": "TransE",
+        "NSMethod": "GAN-pretrain",
+        "result": 81
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K",
+        "Metric": "MR",
+        "KGEModel": "TransH",
+        "NSMethod": "Unknown",
+        "result": 87
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K",
+        "Metric": "MR",
+        "KGEModel": "TransH",
+        "NSMethod": "GAN-scratch",
+        "result": 90
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K",
+        "Metric": "MR",
+        "KGEModel": "TransR",
+        "NSMethod": "GAN-scratch",
+        "result": 138
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K",
+        "Metric": "MR",
+        "KGEModel": "TransR",
+        "NSMethod": "GAN-pretrain",
+        "result": 86
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K",
+        "Metric": "MR",
+        "KGEModel": "TransD",
+        "NSMethod": "Unknown",
+        "result": 91
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K",
+        "Metric": "MR",
+        "KGEModel": "TransD",
+        "NSMethod": "GAN-scratch",
+        "result": 89
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K",
+        "Metric": "MR",
+        "KGEModel": "TransE + A-LSTM",
+        "NSMethod": "Unknown",
+        "result": 77
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K",
+        "Metric": "MR",
+        "KGEModel": "TransE + A-LSTM",
+        "NSMethod": "GAN-scratch",
+        "result": 79
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K",
+        "Metric": "MR",
+        "KGEModel": "Unstructured Model",
+        "NSMethod": "Unknown",
+        "result": 979
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K",
+        "Metric": "MR",
+        "KGEModel": "Unstructured Model",
+        "NSMethod": "GAN-scratch",
+        "result": 332
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K",
+        "Metric": "MR",
+        "KGEModel": "Structured Embedding",
+        "NSMethod": "GAN-scratch",
+        "result": 207
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K",
+        "Metric": "MR",
+        "KGEModel": "Structured Embedding",
+        "NSMethod": "GAN-pretrain",
+        "result": 220
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K",
+        "Metric": "MR",
+        "KGEModel": "SME(Bilinear)",
+        "NSMethod": "Unknown",
+        "result": 158
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K",
+        "Metric": "MR",
+        "KGEModel": "SME(Bilinear)",
+        "NSMethod": "GAN-pretrain",
+        "result": 170
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K",
+        "Metric": "Hits@10",
+        "KGEModel": "TransD",
+        "NSMethod": "GAN-pretrain",
+        "result": 77.6
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K",
+        "Metric": "Hits@10",
+        "KGEModel": "TransH",
+        "NSMethod": "GAN-pretrain",
+        "result": 77.0
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K",
+        "Metric": "Hits@10",
+        "KGEModel": "TransE + A-LSTM",
+        "NSMethod": "GAN-pretrain",
+        "result": 76.3
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K",
+        "Metric": "Hits@10",
+        "KGEModel": "TransR",
+        "NSMethod": "GAN-pretrain",
+        "result": 76.0
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K",
+        "Metric": "Hits@10",
+        "KGEModel": "Unstructured Model",
+        "NSMethod": "Unknown",
+        "result": 6.3
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K",
+        "Metric": "Hits@10",
+        "KGEModel": "Unstructured Model",
+        "NSMethod": "GAN-scratch",
+        "result": 24.5
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K",
+        "Metric": "Hits@10",
+        "KGEModel": "Unstructured Model",
+        "NSMethod": "GAN-pretrain",
+        "result": 28.7
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K",
+        "Metric": "Hits@10",
+        "KGEModel": "Structured Embedding",
+        "NSMethod": "Unknown",
+        "result": 39.8
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K",
+        "Metric": "Hits@10",
+        "KGEModel": "Structured Embedding",
+        "NSMethod": "GAN-scratch",
+        "result": 53.3
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K",
+        "Metric": "Hits@10",
+        "KGEModel": "Structured Embedding",
+        "NSMethod": "GAN-pretrain",
+        "result": 53.8
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K",
+        "Metric": "Hits@10",
+        "KGEModel": "SME(Bilinear)",
+        "NSMethod": "Unknown",
+        "result": 41.3
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K",
+        "Metric": "Hits@10",
+        "KGEModel": "SME(Bilinear)",
+        "NSMethod": "GAN-scratch",
+        "result": 45.8
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K",
+        "Metric": "Hits@10",
+        "KGEModel": "SME(Bilinear)",
+        "NSMethod": "GAN-pretrain",
+        "result": 45.7
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K",
+        "Metric": "Hits@10",
+        "KGEModel": "TransE",
+        "NSMethod": "Unknown",
+        "result": 69.6
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K",
+        "Metric": "Hits@10",
+        "KGEModel": "TransE",
+        "NSMethod": "GAN-scratch",
+        "result": 73.1
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K",
+        "Metric": "Hits@10",
+        "KGEModel": "TransE",
+        "NSMethod": "GAN-pretrain",
+        "result": 74.0
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K",
+        "Metric": "Hits@10",
+        "KGEModel": "TransH",
+        "NSMethod": "Unknown",
+        "result": 64.4
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K",
+        "Metric": "Hits@10",
+        "KGEModel": "TransH",
+        "NSMethod": "GAN-scratch",
+        "result": 73.3
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K",
+        "Metric": "Hits@10",
+        "KGEModel": "TransR",
+        "NSMethod": "Unknown",
+        "result": 68.7
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K",
+        "Metric": "Hits@10",
+        "KGEModel": "TransR",
+        "NSMethod": "GAN-scratch",
+        "result": 58.3
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K",
+        "Metric": "Hits@10",
+        "KGEModel": "TransD",
+        "NSMethod": "Unknown",
+        "result": 77.3
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K",
+        "Metric": "Hits@10",
+        "KGEModel": "TransD",
+        "NSMethod": "GAN-scratch",
+        "result": 74.0
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K",
+        "Metric": "Hits@10",
+        "KGEModel": "TransE + A-LSTM",
+        "NSMethod": "Unknown",
+        "result": 75.5
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K",
+        "Metric": "Hits@10",
+        "KGEModel": "TransE + A-LSTM",
+        "NSMethod": "GAN-scratch",
+        "result": 75.8
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18",
+        "Metric": "MR",
+        "KGEModel": "TransE + A-LSTM",
+        "NSMethod": "GAN-scratch",
+        "result": 114
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18",
+        "Metric": "MR",
+        "KGEModel": "TransE + A-LSTM",
+        "NSMethod": "GAN-pretrain",
+        "result": 120
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18",
+        "Metric": "MR",
+        "KGEModel": "TransE + A-LSTM",
+        "NSMethod": "Unknown",
+        "result": 123
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18",
+        "Metric": "MR",
+        "KGEModel": "TransR",
+        "NSMethod": "GAN-scratch",
+        "result": 213
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18",
+        "Metric": "MR",
+        "KGEModel": "TransD",
+        "NSMethod": "GAN-scratch",
+        "result": 221
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18",
+        "Metric": "MR",
+        "KGEModel": "Unstructured Model",
+        "NSMethod": "Unknown",
+        "result": 304
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18",
+        "Metric": "MR",
+        "KGEModel": "Unstructured Model",
+        "NSMethod": "GAN-scratch",
+        "result": 477
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18",
+        "Metric": "MR",
+        "KGEModel": "Unstructured Model",
+        "NSMethod": "GAN-pretrain",
+        "result": 431
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18",
+        "Metric": "MR",
+        "KGEModel": "Structured Embedding",
+        "NSMethod": "Unknown",
+        "result": 985
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18",
+        "Metric": "MR",
+        "KGEModel": "Structured Embedding",
+        "NSMethod": "GAN-scratch",
+        "result": 773
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18",
+        "Metric": "MR",
+        "KGEModel": "Structured Embedding",
+        "NSMethod": "GAN-pretrain",
+        "result": 762
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18",
+        "Metric": "MR",
+        "KGEModel": "SME(Bilinear)",
+        "NSMethod": "Unknown",
+        "result": 509
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18",
+        "Metric": "MR",
+        "KGEModel": "SME(Bilinear)",
+        "NSMethod": "GAN-scratch",
+        "result": 358
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18",
+        "Metric": "MR",
+        "KGEModel": "SME(Bilinear)",
+        "NSMethod": "GAN-pretrain",
+        "result": 417
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18",
+        "Metric": "MR",
+        "KGEModel": "TransE",
+        "NSMethod": "Unknown",
+        "result": 251
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18",
+        "Metric": "MR",
+        "KGEModel": "TransE",
+        "NSMethod": "GAN-scratch",
+        "result": 244
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18",
+        "Metric": "MR",
+        "KGEModel": "TransE",
+        "NSMethod": "GAN-pretrain",
+        "result": 240
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18",
+        "Metric": "MR",
+        "KGEModel": "TransH",
+        "NSMethod": "Unknown",
+        "result": 303
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18",
+        "Metric": "MR",
+        "KGEModel": "TransH",
+        "NSMethod": "GAN-scratch",
+        "result": 276
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18",
+        "Metric": "MR",
+        "KGEModel": "TransH",
+        "NSMethod": "GAN-pretrain",
+        "result": 258
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18",
+        "Metric": "MR",
+        "KGEModel": "TransR",
+        "NSMethod": "Unknown",
+        "result": 225
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18",
+        "Metric": "MR",
+        "KGEModel": "TransR",
+        "NSMethod": "GAN-pretrain",
+        "result": 291
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18",
+        "Metric": "MR",
+        "KGEModel": "TransD",
+        "NSMethod": "Unknown",
+        "result": 229
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18",
+        "Metric": "MR",
+        "KGEModel": "TransD",
+        "NSMethod": "GAN-pretrain",
+        "result": 248
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18",
+        "Metric": "Hits@10",
+        "KGEModel": "TransH",
+        "NSMethod": "GAN-pretrain",
+        "result": 94.0
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18",
+        "Metric": "Hits@10",
+        "KGEModel": "TransR",
+        "NSMethod": "GAN-pretrain",
+        "result": 93.7
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18",
+        "Metric": "Hits@10",
+        "KGEModel": "TransD",
+        "NSMethod": "GAN-pretrain",
+        "result": 93.3
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18",
+        "Metric": "Hits@10",
+        "KGEModel": "Unstructured Model",
+        "NSMethod": "Unknown",
+        "result": 38.2
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18",
+        "Metric": "Hits@10",
+        "KGEModel": "Unstructured Model",
+        "NSMethod": "GAN-scratch",
+        "result": 80.5
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18",
+        "Metric": "Hits@10",
+        "KGEModel": "Unstructured Model",
+        "NSMethod": "GAN-pretrain",
+        "result": 82.9
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18",
+        "Metric": "Hits@10",
+        "KGEModel": "Structured Embedding",
+        "NSMethod": "Unknown",
+        "result": 80.5
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18",
+        "Metric": "Hits@10",
+        "KGEModel": "Structured Embedding",
+        "NSMethod": "GAN-scratch",
+        "result": 86.1
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18",
+        "Metric": "Hits@10",
+        "KGEModel": "Structured Embedding",
+        "NSMethod": "GAN-pretrain",
+        "result": 87.4
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18",
+        "Metric": "Hits@10",
+        "KGEModel": "SME(Bilinear)",
+        "NSMethod": "Unknown",
+        "result": 61.3
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18",
+        "Metric": "Hits@10",
+        "KGEModel": "SME(Bilinear)",
+        "NSMethod": "GAN-scratch",
+        "result": 74.6
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18",
+        "Metric": "Hits@10",
+        "KGEModel": "SME(Bilinear)",
+        "NSMethod": "GAN-pretrain",
+        "result": 78.9
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18",
+        "Metric": "Hits@10",
+        "KGEModel": "TransE",
+        "NSMethod": "Unknown",
+        "result": 89.2
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18",
+        "Metric": "Hits@10",
+        "KGEModel": "TransE",
+        "NSMethod": "GAN-scratch",
+        "result": 92.7
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18",
+        "Metric": "Hits@10",
+        "KGEModel": "TransE",
+        "NSMethod": "GAN-pretrain",
+        "result": 91.3
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18",
+        "Metric": "Hits@10",
+        "KGEModel": "TransH",
+        "NSMethod": "Unknown",
+        "result": 86.7
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18",
+        "Metric": "Hits@10",
+        "KGEModel": "TransH",
+        "NSMethod": "GAN-scratch",
+        "result": 86.9
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18",
+        "Metric": "Hits@10",
+        "KGEModel": "TransR",
+        "NSMethod": "Unknown",
+        "result": 92.0
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18",
+        "Metric": "Hits@10",
+        "KGEModel": "TransR",
+        "NSMethod": "GAN-scratch",
+        "result": 87.3
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18",
+        "Metric": "Hits@10",
+        "KGEModel": "TransD",
+        "NSMethod": "Unknown",
+        "result": 92.5
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18",
+        "Metric": "Hits@10",
+        "KGEModel": "TransD",
+        "NSMethod": "GAN-scratch",
+        "result": 93.0
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18",
+        "Metric": "Hits@10",
+        "KGEModel": "TransE + A-LSTM",
+        "NSMethod": "Unknown",
+        "result": 90.9
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18",
+        "Metric": "Hits@10",
+        "KGEModel": "TransE + A-LSTM",
+        "NSMethod": "GAN-scratch",
+        "result": 92.3
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18",
+        "Metric": "Hits@10",
+        "KGEModel": "TransE + A-LSTM",
+        "NSMethod": "GAN-pretrain",
+        "result": 92.7
+      },
+      {
+        "Task": "Triple Classification",
+        "Dataset": "FB13",
+        "Metric": "Accuracy",
+        "KGEModel": "TransD",
+        "NSMethod": "GAN-pretrain",
+        "result": 89.7
+      },
+      {
+        "Task": "Triple Classification",
+        "Dataset": "FB13",
+        "Metric": "Accuracy",
+        "KGEModel": "TransD",
+        "NSMethod": "Unknown",
+        "result": 89.1
+      },
+      {
+        "Task": "Triple Classification",
+        "Dataset": "FB13",
+        "Metric": "Accuracy",
+        "KGEModel": "TransR",
+        "NSMethod": "GAN-pretrain",
+        "result": 86.6
+      },
+      {
+        "Task": "Triple Classification",
+        "Dataset": "FB13",
+        "Metric": "Accuracy",
+        "KGEModel": "Structured Embedding",
+        "NSMethod": "Unknown",
+        "result": 75.2
+      },
+      {
+        "Task": "Triple Classification",
+        "Dataset": "FB13",
+        "Metric": "Accuracy",
+        "KGEModel": "Structured Embedding",
+        "NSMethod": "GAN-scratch",
+        "result": 84.2
+      },
+      {
+        "Task": "Triple Classification",
+        "Dataset": "FB13",
+        "Metric": "Accuracy",
+        "KGEModel": "Structured Embedding",
+        "NSMethod": "GAN-pretrain",
+        "result": 84.7
+      },
+      {
+        "Task": "Triple Classification",
+        "Dataset": "FB13",
+        "Metric": "Accuracy",
+        "KGEModel": "SME(Bilinear)",
+        "NSMethod": "Unknown",
+        "result": 63.7
+      },
+      {
+        "Task": "Triple Classification",
+        "Dataset": "FB13",
+        "Metric": "Accuracy",
+        "KGEModel": "SME(Bilinear)",
+        "NSMethod": "GAN-scratch",
+        "result": 77.0
+      },
+      {
+        "Task": "Triple Classification",
+        "Dataset": "FB13",
+        "Metric": "Accuracy",
+        "KGEModel": "SME(Bilinear)",
+        "NSMethod": "GAN-pretrain",
+        "result": 79.6
+      },
+      {
+        "Task": "Triple Classification",
+        "Dataset": "FB13",
+        "Metric": "Accuracy",
+        "KGEModel": "Single Layer Model",
+        "NSMethod": "Unknown",
+        "result": 85.3
+      },
+      {
+        "Task": "Triple Classification",
+        "Dataset": "FB13",
+        "Metric": "Accuracy",
+        "KGEModel": "Single Layer Model",
+        "NSMethod": "GAN-scratch",
+        "result": 85.6
+      },
+      {
+        "Task": "Triple Classification",
+        "Dataset": "FB13",
+        "Metric": "Accuracy",
+        "KGEModel": "Single Layer Model",
+        "NSMethod": "GAN-pretrain",
+        "result": 83.8
+      },
+      {
+        "Task": "Triple Classification",
+        "Dataset": "FB13",
+        "Metric": "Accuracy",
+        "KGEModel": "TransE",
+        "NSMethod": "Unknown",
+        "result": 81.5
+      },
+      {
+        "Task": "Triple Classification",
+        "Dataset": "FB13",
+        "Metric": "Accuracy",
+        "KGEModel": "TransE",
+        "NSMethod": "GAN-scratch",
+        "result": 83.1
+      },
+      {
+        "Task": "Triple Classification",
+        "Dataset": "FB13",
+        "Metric": "Accuracy",
+        "KGEModel": "TransE",
+        "NSMethod": "GAN-pretrain",
+        "result": 85.2
+      },
+      {
+        "Task": "Triple Classification",
+        "Dataset": "FB13",
+        "Metric": "Accuracy",
+        "KGEModel": "TransH",
+        "NSMethod": "Unknown",
+        "result": 83.3
+      },
+      {
+        "Task": "Triple Classification",
+        "Dataset": "FB13",
+        "Metric": "Accuracy",
+        "KGEModel": "TransH",
+        "NSMethod": "GAN-scratch",
+        "result": 85.0
+      },
+      {
+        "Task": "Triple Classification",
+        "Dataset": "FB13",
+        "Metric": "Accuracy",
+        "KGEModel": "TransH",
+        "NSMethod": "GAN-pretrain",
+        "result": 86.3
+      },
+      {
+        "Task": "Triple Classification",
+        "Dataset": "FB13",
+        "Metric": "Accuracy",
+        "KGEModel": "TransR",
+        "NSMethod": "Unknown",
+        "result": 82.5
+      },
+      {
+        "Task": "Triple Classification",
+        "Dataset": "FB13",
+        "Metric": "Accuracy",
+        "KGEModel": "TransR",
+        "NSMethod": "GAN-scratch",
+        "result": 85.4
+      },
+      {
+        "Task": "Triple Classification",
+        "Dataset": "FB13",
+        "Metric": "Accuracy",
+        "KGEModel": "TransD",
+        "NSMethod": "GAN-scratch",
+        "result": 85.3
+      },
+      {
+        "Task": "Triple Classification",
+        "Dataset": "WN11",
+        "Metric": "Accuracy",
+        "KGEModel": "TransR",
+        "NSMethod": "GAN-pretrain",
+        "result": 86.3
+      },
+      {
+        "Task": "Triple Classification",
+        "Dataset": "WN11",
+        "Metric": "Accuracy",
+        "KGEModel": "TransD",
+        "NSMethod": "Unknown",
+        "result": 86.4
+      },
+      {
+        "Task": "Triple Classification",
+        "Dataset": "WN11",
+        "Metric": "Accuracy",
+        "KGEModel": "TransR",
+        "NSMethod": "Unknown",
+        "result": 85.9
+      },
+      {
+        "Task": "Triple Classification",
+        "Dataset": "WN11",
+        "Metric": "Accuracy",
+        "KGEModel": "Structured Embedding",
+        "NSMethod": "Unknown",
+        "result": 53.0
+      },
+      {
+        "Task": "Triple Classification",
+        "Dataset": "WN11",
+        "Metric": "Accuracy",
+        "KGEModel": "Structured Embedding",
+        "NSMethod": "GAN-scratch",
+        "result": 60.1
+      },
+      {
+        "Task": "Triple Classification",
+        "Dataset": "WN11",
+        "Metric": "Accuracy",
+        "KGEModel": "Structured Embedding",
+        "NSMethod": "GAN-pretrain",
+        "result": 63.2
+      },
+      {
+        "Task": "Triple Classification",
+        "Dataset": "WN11",
+        "Metric": "Accuracy",
+        "KGEModel": "SME(Bilinear)",
+        "NSMethod": "Unknown",
+        "result": 70.0
+      },
+      {
+        "Task": "Triple Classification",
+        "Dataset": "WN11",
+        "Metric": "Accuracy",
+        "KGEModel": "SME(Bilinear)",
+        "NSMethod": "GAN-scratch",
+        "result": 72.1
+      },
+      {
+        "Task": "Triple Classification",
+        "Dataset": "WN11",
+        "Metric": "Accuracy",
+        "KGEModel": "SME(Bilinear)",
+        "NSMethod": "GAN-pretrain",
+        "result": 74.3
+      },
+      {
+        "Task": "Triple Classification",
+        "Dataset": "WN11",
+        "Metric": "Accuracy",
+        "KGEModel": "Single Layer Model",
+        "NSMethod": "Unknown",
+        "result": 69.9
+      },
+      {
+        "Task": "Triple Classification",
+        "Dataset": "WN11",
+        "Metric": "Accuracy",
+        "KGEModel": "Single Layer Model",
+        "NSMethod": "GAN-scratch",
+        "result": 72.7
+      },
+      {
+        "Task": "Triple Classification",
+        "Dataset": "WN11",
+        "Metric": "Accuracy",
+        "KGEModel": "Single Layer Model",
+        "NSMethod": "GAN-pretrain",
+        "result": 75.3
+      },
+      {
+        "Task": "Triple Classification",
+        "Dataset": "WN11",
+        "Metric": "Accuracy",
+        "KGEModel": "TransE",
+        "NSMethod": "Unknown",
+        "result": 75.9
+      },
+      {
+        "Task": "Triple Classification",
+        "Dataset": "WN11",
+        "Metric": "Accuracy",
+        "KGEModel": "TransE",
+        "NSMethod": "GAN-scratch",
+        "result": 85.1
+      },
+      {
+        "Task": "Triple Classification",
+        "Dataset": "WN11",
+        "Metric": "Accuracy",
+        "KGEModel": "TransE",
+        "NSMethod": "GAN-pretrain",
+        "result": 85.4
+      },
+      {
+        "Task": "Triple Classification",
+        "Dataset": "WN11",
+        "Metric": "Accuracy",
+        "KGEModel": "TransH",
+        "NSMethod": "Unknown",
+        "result": 78.8
+      },
+      {
+        "Task": "Triple Classification",
+        "Dataset": "WN11",
+        "Metric": "Accuracy",
+        "KGEModel": "TransH",
+        "NSMethod": "GAN-scratch",
+        "result": 85.5
+      },
+      {
+        "Task": "Triple Classification",
+        "Dataset": "WN11",
+        "Metric": "Accuracy",
+        "KGEModel": "TransH",
+        "NSMethod": "GAN-pretrain",
+        "result": 85.9
+      },
+      {
+        "Task": "Triple Classification",
+        "Dataset": "WN11",
+        "Metric": "Accuracy",
+        "KGEModel": "TransR",
+        "NSMethod": "GAN-scratch",
+        "result": 85.2
+      },
+      {
+        "Task": "Triple Classification",
+        "Dataset": "WN11",
+        "Metric": "Accuracy",
+        "KGEModel": "TransD",
+        "NSMethod": "GAN-scratch",
+        "result": 82.6
+      },
+      {
+        "Task": "Triple Classification",
+        "Dataset": "WN11",
+        "Metric": "Accuracy",
+        "KGEModel": "TransD",
+        "NSMethod": "GAN-pretrain",
+        "result": 84.0
+      }
+    ]
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "Article": {
+    "title": "KBGAN: Adversarial Learning for Knowledge Graph Embeddings",
+    "date": "2018"
+  },
+  "proposedNSMethod": "KBGAN",
+  "proposedKGEModel": "",
+  "mentionedNSMethods": [
+    "Uniform Negative Sampling",
+    "Bernoulli Negative Sampling",
+    "Type-constrained Negative Sampling"
+  ],
+  "mentionedKGEModels": [
+    "TransE",
+    "TransH",
+    "TransR",
+    "TransD",
+    "RESCAL",
+    "DistMult",
+    "ComplEx",
+    "ManifoldE",
+    "HolE",
+    "ConvE"
+  ],
+  "Experimentation": {
+    "Hardware": [],
+    "TrainingProtocol": {
+      "LossFunction": [
+        "Marginal loss function",
+        "Log-softmax loss function"
+      ],
+      "Optimizer": [
+        "Adam"
+      ],
+      "learningRate": 0.001,
+      "nsRatio": null,
+      "batchSize": null,
+      "epochSize": 5000
+    }
+  }
+}

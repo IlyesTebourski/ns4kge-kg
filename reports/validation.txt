@@ -1,0 +1,7 @@
+Data graph:   6398 triples
+Shapes graph: 94 triples
+
+Validation Report
+Conforms: True
+
+Ontology conforms to all SHACL shapes.

@@ -1,0 +1,34 @@
+{
+  "Article": {
+    "title": "Investigations on Knowledge Base Embedding for Relation Prediction and Extraction",
+    "date": "2018"
+  },
+  "proposedNSMethod": "",
+  "proposedKGEModel": "",
+  "mentionedNSMethods": [],
+  "mentionedKGEModels": [
+    "TransE",
+    "TransH",
+    "TransR",
+    "TransD",
+    "ManifoldE",
+    "RESCAL",
+    "DistMult",
+    "ComplEx",
+    "HOLE",
+    "ConvE",
+    "PTransE"
+  ],
+  "Experimentation": {
+    "Hardware": [],
+    "TrainingProtocol": {
+      "LossFunction": [
+        "margin-based ranking loss"
+      ],
+      "Optimizer": [],
+      "learningRate": null,
+      "nsRatio": null,
+      "batchSize": null
+    }
+  }
+}

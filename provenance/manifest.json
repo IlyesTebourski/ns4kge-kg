@@ -1,0 +1,65 @@
+{
+  "artifact_name": "ns4kge-kg",
+  "title": "NS4KGE Knowledge Graph",
+  "kg_version": "v1.0.0-paper",
+  "release_target": "v1.0.0-paper",
+  "repository": "https://github.com/IlyesTebourski/ns4kge-kg",
+  "license": "CC-BY-4.0",
+  "creators": [
+    "Ilyes Tebourski",
+    "Pierre-Henri Paris",
+    "Nicoleta Preda",
+    "Fatiha Sais"
+  ],
+  "doi": null,
+  "doi_status": "To be added after the public GitHub release is archived on Zenodo.",
+  "ontology": {
+    "artifact": "ns4kge-ontology",
+    "version": "v1.0.0",
+    "doi": "10.5281/zenodo.20058306",
+    "iri": "https://w3id.org/ns4kge/ontology",
+    "namespace": "https://w3id.org/ns4kge/ontology#",
+    "path": "../ns4kge-ontology/ontology/NSArticles_ontology.ttl"
+  },
+  "pipeline": {
+    "artifact": "ns4kge-extraction-pipeline",
+    "version": "1.0.0",
+    "path": "../ns4kge-extraction-pipeline",
+    "repository": "https://github.com/IlyesTebourski/ns4kge-extraction-pipeline",
+    "commit": null,
+    "commit_status": "To be filled after the extraction pipeline repository is finalized for release.",
+    "doi": null,
+    "doi_status": "To be added after the pipeline release is archived on Zenodo."
+  },
+  "generation": {
+    "models_available_in_pipeline": [
+      "claude-opus-4-6",
+      "gpt-4o"
+    ],
+    "provenance_limitation": "The moved legacy per-article outputs did not record the exact model used for each individual file. This limitation is documented for the paper artifact; future regenerated outputs should record per-file model provenance."
+  },
+  "prompts": {
+    "prompt1_no_results.txt": "sha256:984c55a0b09ac961f37412d558e8d9ce50200bd394946488d31c3670eba88066",
+    "prompt2_tab.txt": "sha256:e2611dd7996b9322e93d9a4290ae436c3a8a29c31dbde536aa467159f296ba7f"
+  },
+  "graph": {
+    "iri": "https://w3id.org/ns4kge/kg",
+    "version_iri": "https://w3id.org/ns4kge/kg/1.0.0",
+    "instance_base": "https://w3id.org/ns4kge/id/",
+    "path": "kg/NSArticles_populated.ttl",
+    "sha256": "615d26e33594a3e4707571512a9538768352c74f50fe65e39fb135d7fddbc0a2"
+  },
+  "sources_manifest": "provenance/sources.csv",
+  "source_text_policy": "Source article text is not redistributed. The KG artifact contains structured extraction outputs, source metadata, and checksums only.",
+  "validation": {
+    "shacl_conforms": true,
+    "validated_at": "2026-05-06",
+    "report": "reports/validation.txt"
+  },
+  "reports": {
+    "competency_queries": "reports/competency_query_results.txt",
+    "debug_queries": "reports/debug_query_results.txt",
+    "source_text_audit": "reports/source_text_audit.txt",
+    "data_quality_notes": "reports/data_quality_notes.md"
+  }
+}

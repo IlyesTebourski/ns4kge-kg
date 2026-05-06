@@ -1,0 +1,28 @@
+{
+  "Article": {
+    "title": "Enhancing Knowledge Graph Embedding with Probabilistic Negative Sampling",
+    "date": "2017"
+  },
+  "proposedNSMethod": "Probabilistic Negative Sampling",
+  "proposedKGEModel": "",
+  "mentionedNSMethods": [],
+  "mentionedKGEModels": [
+    "TransE",
+    "TransH",
+    "TransR",
+    "TransG"
+  ],
+  "Experimentation": {
+    "Hardware": [],
+    "TrainingProtocol": {
+      "LossFunction": [
+        "margin-based ranking loss"
+      ],
+      "Optimizer": [
+        "Adam"
+      ],
+      "learningRate": 0.001,
+      "nsRatio": null
+    }
+  }
+}

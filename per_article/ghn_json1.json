@@ -1,0 +1,49 @@
+{
+  "Article": {
+    "title": "Improving Knowledge Graph Completion with Generative Hard Negative Mining",
+    "date": "2023"
+  },
+  "proposedNSMethod": "Generative Hard Negative Mining",
+  "proposedKGEModel": "",
+  "mentionedNSMethods": [
+    "In-batch Negative Sampling",
+    "Pre-batch Negative Sampling",
+    "Self Negative Sampling",
+    "Approximate Nearest Neighbor Negative Sampling",
+    "Hard Negative Mixing",
+    "Reinforced Negative Sampling",
+    "NSCaching",
+    "Adversarial Contrast"
+  ],
+  "mentionedKGEModels": [
+    "TransE",
+    "TransH",
+    "ComplEx",
+    "RotatE",
+    "DKRL",
+    "KEPLER",
+    "MTL-KGC",
+    "KG-BERT",
+    "StAR",
+    "SimKGC",
+    "Tucker",
+    "DistMult"
+  ],
+  "Experimentation": {
+    "Hardware": [
+      "NVIDIA A100"
+    ],
+    "TrainingProtocol": {
+      "LossFunction": [
+        "Cross-entropy loss",
+        "InfoNCE"
+      ],
+      "Optimizer": [
+        "AdamW"
+      ],
+      "learningRate": 3e-05,
+      "nsRatio": null,
+      "batchSize": 1024
+    }
+  }
+}

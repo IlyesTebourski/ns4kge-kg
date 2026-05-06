@@ -1,0 +1,29 @@
+NS4KGE KG Source Text Audit
+
+Audit date: 2026-05-06
+Artifact version: v1.0.0-paper
+
+Scope
+- per_article/*.json
+- per_article/*.ttl
+- kg/NSArticles_populated.ttl
+
+Checks
+- Counted generated JSON string values longer than 180 characters.
+- Counted generated per-article TTL lines longer than 260 characters.
+- Searched generated per-article files for common article-prose markers: abstract, introduction, related work, conclusion, we propose, this paper, in this paper.
+- Parsed the assembled KG and counted RDF literals longer than 180 characters.
+
+Results
+- JSON files checked: 24
+- Per-article TTL files checked: 8
+- Assembled KG triples checked: 6398
+- JSON string values longer than 180 characters: 0
+- Per-article TTL lines longer than 260 characters: 0
+- Per-article files with prose-marker hits: 0
+- Assembled KG literals longer than 180 characters: 0
+
+Conclusion
+- No substantial source article prose was found in the generated JSON, generated TTL, or assembled KG.
+- The artifact contains article titles, years, structured extraction outputs, source metadata, checksums, and RDF metadata.
+- This audit supports the release boundary but does not replace manual legal review of source-text redistribution constraints.

@@ -1,0 +1,244 @@
+{
+  "Configurations": [
+    {
+      "Task": "Relation Prediction",
+      "Dataset": "WN18",
+      "Metric": "MRR",
+      "KGEModel": "TransE",
+      "NSMethod": "Unknown",
+      "result": 0.971
+    },
+    {
+      "Task": "Relation Prediction",
+      "Dataset": "WN18",
+      "Metric": "Hits@1",
+      "KGEModel": "TransE",
+      "NSMethod": "Unknown",
+      "result": 0.956
+    },
+    {
+      "Task": "Relation Prediction",
+      "Dataset": "WN18",
+      "Metric": "MRR",
+      "KGEModel": "DistMult",
+      "NSMethod": "Unknown",
+      "result": 0.623
+    },
+    {
+      "Task": "Relation Prediction",
+      "Dataset": "WN18",
+      "Metric": "Hits@1",
+      "KGEModel": "DistMult",
+      "NSMethod": "Unknown",
+      "result": 0.256
+    },
+    {
+      "Task": "Relation Prediction",
+      "Dataset": "WN18",
+      "Metric": "MRR",
+      "KGEModel": "ComplEx",
+      "NSMethod": "Unknown",
+      "result": 0.991
+    },
+    {
+      "Task": "Relation Prediction",
+      "Dataset": "WN18",
+      "Metric": "Hits@1",
+      "KGEModel": "ComplEx",
+      "NSMethod": "Unknown",
+      "result": 0.987
+    },
+    {
+      "Task": "Relation Prediction",
+      "Dataset": "FB15k",
+      "Metric": "MRR",
+      "KGEModel": "TransE",
+      "NSMethod": "Unknown",
+      "result": 0.883
+    },
+    {
+      "Task": "Relation Prediction",
+      "Dataset": "FB15k",
+      "Metric": "Hits@1",
+      "KGEModel": "TransE",
+      "NSMethod": "Unknown",
+      "result": 0.829
+    },
+    {
+      "Task": "Relation Prediction",
+      "Dataset": "FB15k",
+      "Metric": "MRR",
+      "KGEModel": "DistMult",
+      "NSMethod": "Unknown",
+      "result": 0.695
+    },
+    {
+      "Task": "Relation Prediction",
+      "Dataset": "FB15k",
+      "Metric": "Hits@1",
+      "KGEModel": "DistMult",
+      "NSMethod": "Unknown",
+      "result": 0.463
+    },
+    {
+      "Task": "Relation Prediction",
+      "Dataset": "FB15k",
+      "Metric": "MRR",
+      "KGEModel": "ComplEx",
+      "NSMethod": "Unknown",
+      "result": 0.971
+    },
+    {
+      "Task": "Relation Prediction",
+      "Dataset": "FB15k",
+      "Metric": "Hits@1",
+      "KGEModel": "ComplEx",
+      "NSMethod": "Unknown",
+      "result": 0.95
+    },
+    {
+      "Task": "Relation Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "MRR",
+      "KGEModel": "TransE",
+      "NSMethod": "Unknown",
+      "result": 0.843
+    },
+    {
+      "Task": "Relation Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "Hits@1",
+      "KGEModel": "TransE",
+      "NSMethod": "Unknown",
+      "result": 0.735
+    },
+    {
+      "Task": "Relation Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "MRR",
+      "KGEModel": "DistMult",
+      "NSMethod": "Unknown",
+      "result": 0.871
+    },
+    {
+      "Task": "Relation Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "Hits@1",
+      "KGEModel": "DistMult",
+      "NSMethod": "Unknown",
+      "result": 0.81
+    },
+    {
+      "Task": "Relation Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "MRR",
+      "KGEModel": "ComplEx",
+      "NSMethod": "Unknown",
+      "result": 0.894
+    },
+    {
+      "Task": "Relation Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "Hits@1",
+      "KGEModel": "ComplEx",
+      "NSMethod": "Unknown",
+      "result": 0.813
+    },
+    {
+      "Task": "Relation Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "MRR",
+      "KGEModel": "TransE",
+      "NSMethod": "Unknown",
+      "result": 0.955
+    },
+    {
+      "Task": "Relation Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "Hits@1",
+      "KGEModel": "TransE",
+      "NSMethod": "Unknown",
+      "result": 0.93
+    },
+    {
+      "Task": "Relation Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "MRR",
+      "KGEModel": "DistMult",
+      "NSMethod": "Unknown",
+      "result": 0.926
+    },
+    {
+      "Task": "Relation Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "Hits@1",
+      "KGEModel": "DistMult",
+      "NSMethod": "Unknown",
+      "result": 0.88
+    },
+    {
+      "Task": "Relation Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "MRR",
+      "KGEModel": "ComplEx",
+      "NSMethod": "Unknown",
+      "result": 0.956
+    },
+    {
+      "Task": "Relation Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "Hits@1",
+      "KGEModel": "ComplEx",
+      "NSMethod": "Unknown",
+      "result": 0.933
+    },
+    {
+      "Task": "Relation Prediction",
+      "Dataset": "FB3M",
+      "Metric": "MRR",
+      "KGEModel": "TransE",
+      "NSMethod": "Unknown",
+      "result": 0.475
+    },
+    {
+      "Task": "Relation Prediction",
+      "Dataset": "FB3M",
+      "Metric": "Hits@1",
+      "KGEModel": "TransE",
+      "NSMethod": "Unknown",
+      "result": 0.364
+    },
+    {
+      "Task": "Relation Prediction",
+      "Dataset": "FB3M",
+      "Metric": "MRR",
+      "KGEModel": "DistMult",
+      "NSMethod": "Unknown",
+      "result": 0.62
+    },
+    {
+      "Task": "Relation Prediction",
+      "Dataset": "FB3M",
+      "Metric": "Hits@1",
+      "KGEModel": "DistMult",
+      "NSMethod": "Unknown",
+      "result": 0.439
+    },
+    {
+      "Task": "Relation Prediction",
+      "Dataset": "FB3M",
+      "Metric": "MRR",
+      "KGEModel": "ComplEx",
+      "NSMethod": "Unknown",
+      "result": 0.683
+    },
+    {
+      "Task": "Relation Prediction",
+      "Dataset": "FB3M",
+      "Metric": "Hits@1",
+      "KGEModel": "ComplEx",
+      "NSMethod": "Unknown",
+      "result": 0.46
+    }
+  ]
+}

@@ -1,0 +1,297 @@
+<article/randomcorrupt> rdf:type ns4kge:Article .
+<article/randomcorrupt> ns4kge:title "Investigations on Knowledge Base Embedding for Relation Prediction and Extraction"^^xsd:string .
+<article/randomcorrupt> ns4kge:date "2018"^^xsd:gYear .
+<article/randomcorrupt> ns4kge:mentionsKGEModel <kge-model/transr> .
+<article/randomcorrupt> ns4kge:mentionsKGEModel <kge-model/transe> .
+<article/randomcorrupt> ns4kge:mentionsKGEModel <kge-model/distmult> .
+<article/randomcorrupt> ns4kge:mentionsKGEModel <kge-model/ptranse> .
+<article/randomcorrupt> ns4kge:mentionsKGEModel <kge-model/complex> .
+<article/randomcorrupt> ns4kge:mentionsKGEModel <kge-model/hole> .
+<article/randomcorrupt> ns4kge:mentionsKGEModel <kge-model/rescal> .
+<article/randomcorrupt> ns4kge:mentionsKGEModel <kge-model/manifolde> .
+<article/randomcorrupt> ns4kge:mentionsKGEModel <kge-model/transh> .
+<article/randomcorrupt> ns4kge:mentionsKGEModel <kge-model/conve> .
+<article/randomcorrupt> ns4kge:mentionsKGEModel <kge-model/transd> .
+<article/randomcorrupt> ns4kge:hasExperimentation <experimentation/randomcorrupt> .
+
+<category/static-ns> rdf:type ns4kge:Category .
+
+<subcategory/random> rdf:type ns4kge:Subcategory .
+
+<kge-model/transr> rdf:type ns4kge:KGEModel .
+
+<kge-model/transe> rdf:type ns4kge:KGEModel .
+
+<kge-model/distmult> rdf:type ns4kge:KGEModel .
+
+<kge-model/ptranse> rdf:type ns4kge:KGEModel .
+
+<kge-model/complex> rdf:type ns4kge:KGEModel .
+
+<kge-model/hole> rdf:type ns4kge:KGEModel .
+
+<kge-model/rescal> rdf:type ns4kge:KGEModel .
+
+<kge-model/manifolde> rdf:type ns4kge:KGEModel .
+
+<kge-model/transh> rdf:type ns4kge:KGEModel .
+
+<kge-model/conve> rdf:type ns4kge:KGEModel .
+
+<kge-model/transd> rdf:type ns4kge:KGEModel .
+
+<dataset/wn18> rdf:type ns4kge:Dataset .
+<task/relation-prediction> rdf:type ns4kge:Task .
+<metric/mrr> rdf:type ns4kge:Metric .
+<metric/hits-1> rdf:type ns4kge:Metric .
+<dataset/fb15k> rdf:type ns4kge:Dataset .
+<dataset/wn18rr> rdf:type ns4kge:Dataset .
+<dataset/fb15k-237> rdf:type ns4kge:Dataset .
+<dataset/fb3m> rdf:type ns4kge:Dataset .
+<loss-function/margin-based-ranking-loss> rdf:type ns4kge:LossFunction .
+
+<experimentation/randomcorrupt> rdf:type ns4kge:Experimentation .
+<experimentation/randomcorrupt> ns4kge:hasTrainingProtocol <training-protocol/randomcorrupt> .
+<experimentation/randomcorrupt> ns4kge:hasConfiguration <configuration/randomcorrupt/1> .
+<experimentation/randomcorrupt> ns4kge:hasConfiguration <configuration/randomcorrupt/2> .
+<experimentation/randomcorrupt> ns4kge:hasConfiguration <configuration/randomcorrupt/3> .
+<experimentation/randomcorrupt> ns4kge:hasConfiguration <configuration/randomcorrupt/4> .
+<experimentation/randomcorrupt> ns4kge:hasConfiguration <configuration/randomcorrupt/5> .
+<experimentation/randomcorrupt> ns4kge:hasConfiguration <configuration/randomcorrupt/6> .
+<experimentation/randomcorrupt> ns4kge:hasConfiguration <configuration/randomcorrupt/7> .
+<experimentation/randomcorrupt> ns4kge:hasConfiguration <configuration/randomcorrupt/8> .
+<experimentation/randomcorrupt> ns4kge:hasConfiguration <configuration/randomcorrupt/9> .
+<experimentation/randomcorrupt> ns4kge:hasConfiguration <configuration/randomcorrupt/10> .
+<experimentation/randomcorrupt> ns4kge:hasConfiguration <configuration/randomcorrupt/11> .
+<experimentation/randomcorrupt> ns4kge:hasConfiguration <configuration/randomcorrupt/12> .
+<experimentation/randomcorrupt> ns4kge:hasConfiguration <configuration/randomcorrupt/13> .
+<experimentation/randomcorrupt> ns4kge:hasConfiguration <configuration/randomcorrupt/14> .
+<experimentation/randomcorrupt> ns4kge:hasConfiguration <configuration/randomcorrupt/15> .
+<experimentation/randomcorrupt> ns4kge:hasConfiguration <configuration/randomcorrupt/16> .
+<experimentation/randomcorrupt> ns4kge:hasConfiguration <configuration/randomcorrupt/17> .
+<experimentation/randomcorrupt> ns4kge:hasConfiguration <configuration/randomcorrupt/18> .
+<experimentation/randomcorrupt> ns4kge:hasConfiguration <configuration/randomcorrupt/19> .
+<experimentation/randomcorrupt> ns4kge:hasConfiguration <configuration/randomcorrupt/20> .
+<experimentation/randomcorrupt> ns4kge:hasConfiguration <configuration/randomcorrupt/21> .
+<experimentation/randomcorrupt> ns4kge:hasConfiguration <configuration/randomcorrupt/22> .
+<experimentation/randomcorrupt> ns4kge:hasConfiguration <configuration/randomcorrupt/23> .
+<experimentation/randomcorrupt> ns4kge:hasConfiguration <configuration/randomcorrupt/24> .
+<experimentation/randomcorrupt> ns4kge:hasConfiguration <configuration/randomcorrupt/25> .
+<experimentation/randomcorrupt> ns4kge:hasConfiguration <configuration/randomcorrupt/26> .
+<experimentation/randomcorrupt> ns4kge:hasConfiguration <configuration/randomcorrupt/27> .
+<experimentation/randomcorrupt> ns4kge:hasConfiguration <configuration/randomcorrupt/28> .
+<experimentation/randomcorrupt> ns4kge:hasConfiguration <configuration/randomcorrupt/29> .
+<experimentation/randomcorrupt> ns4kge:hasConfiguration <configuration/randomcorrupt/30> .
+
+<training-protocol/randomcorrupt> rdf:type ns4kge:TrainingProtocol .
+<training-protocol/randomcorrupt> ns4kge:hasLossFunction <loss-function/margin-based-ranking-loss> .
+
+<configuration/randomcorrupt/1> rdf:type ns4kge:Configuration .
+<configuration/randomcorrupt/1> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/randomcorrupt/1> ns4kge:hasDataset <dataset/wn18> .
+<configuration/randomcorrupt/1> ns4kge:hasMetric  <metric/mrr> .
+<configuration/randomcorrupt/1> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/randomcorrupt/1> ns4kge:result "0.971"^^xsd:decimal .
+
+<configuration/randomcorrupt/2> rdf:type ns4kge:Configuration .
+<configuration/randomcorrupt/2> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/randomcorrupt/2> ns4kge:hasDataset <dataset/wn18> .
+<configuration/randomcorrupt/2> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/randomcorrupt/2> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/randomcorrupt/2> ns4kge:result "0.956"^^xsd:decimal .
+
+<configuration/randomcorrupt/3> rdf:type ns4kge:Configuration .
+<configuration/randomcorrupt/3> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/randomcorrupt/3> ns4kge:hasDataset <dataset/wn18> .
+<configuration/randomcorrupt/3> ns4kge:hasMetric  <metric/mrr> .
+<configuration/randomcorrupt/3> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/randomcorrupt/3> ns4kge:result "0.623"^^xsd:decimal .
+
+<configuration/randomcorrupt/4> rdf:type ns4kge:Configuration .
+<configuration/randomcorrupt/4> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/randomcorrupt/4> ns4kge:hasDataset <dataset/wn18> .
+<configuration/randomcorrupt/4> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/randomcorrupt/4> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/randomcorrupt/4> ns4kge:result "0.256"^^xsd:decimal .
+
+<configuration/randomcorrupt/5> rdf:type ns4kge:Configuration .
+<configuration/randomcorrupt/5> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/randomcorrupt/5> ns4kge:hasDataset <dataset/wn18> .
+<configuration/randomcorrupt/5> ns4kge:hasMetric  <metric/mrr> .
+<configuration/randomcorrupt/5> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/randomcorrupt/5> ns4kge:result "0.991"^^xsd:decimal .
+
+<configuration/randomcorrupt/6> rdf:type ns4kge:Configuration .
+<configuration/randomcorrupt/6> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/randomcorrupt/6> ns4kge:hasDataset <dataset/wn18> .
+<configuration/randomcorrupt/6> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/randomcorrupt/6> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/randomcorrupt/6> ns4kge:result "0.987"^^xsd:decimal .
+
+<configuration/randomcorrupt/7> rdf:type ns4kge:Configuration .
+<configuration/randomcorrupt/7> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/randomcorrupt/7> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/randomcorrupt/7> ns4kge:hasMetric  <metric/mrr> .
+<configuration/randomcorrupt/7> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/randomcorrupt/7> ns4kge:result "0.883"^^xsd:decimal .
+
+<configuration/randomcorrupt/8> rdf:type ns4kge:Configuration .
+<configuration/randomcorrupt/8> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/randomcorrupt/8> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/randomcorrupt/8> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/randomcorrupt/8> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/randomcorrupt/8> ns4kge:result "0.829"^^xsd:decimal .
+
+<configuration/randomcorrupt/9> rdf:type ns4kge:Configuration .
+<configuration/randomcorrupt/9> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/randomcorrupt/9> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/randomcorrupt/9> ns4kge:hasMetric  <metric/mrr> .
+<configuration/randomcorrupt/9> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/randomcorrupt/9> ns4kge:result "0.695"^^xsd:decimal .
+
+<configuration/randomcorrupt/10> rdf:type ns4kge:Configuration .
+<configuration/randomcorrupt/10> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/randomcorrupt/10> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/randomcorrupt/10> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/randomcorrupt/10> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/randomcorrupt/10> ns4kge:result "0.463"^^xsd:decimal .
+
+<configuration/randomcorrupt/11> rdf:type ns4kge:Configuration .
+<configuration/randomcorrupt/11> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/randomcorrupt/11> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/randomcorrupt/11> ns4kge:hasMetric  <metric/mrr> .
+<configuration/randomcorrupt/11> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/randomcorrupt/11> ns4kge:result "0.971"^^xsd:decimal .
+
+<configuration/randomcorrupt/12> rdf:type ns4kge:Configuration .
+<configuration/randomcorrupt/12> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/randomcorrupt/12> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/randomcorrupt/12> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/randomcorrupt/12> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/randomcorrupt/12> ns4kge:result "0.95"^^xsd:decimal .
+
+<configuration/randomcorrupt/13> rdf:type ns4kge:Configuration .
+<configuration/randomcorrupt/13> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/randomcorrupt/13> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/randomcorrupt/13> ns4kge:hasMetric  <metric/mrr> .
+<configuration/randomcorrupt/13> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/randomcorrupt/13> ns4kge:result "0.843"^^xsd:decimal .
+
+<configuration/randomcorrupt/14> rdf:type ns4kge:Configuration .
+<configuration/randomcorrupt/14> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/randomcorrupt/14> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/randomcorrupt/14> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/randomcorrupt/14> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/randomcorrupt/14> ns4kge:result "0.735"^^xsd:decimal .
+
+<configuration/randomcorrupt/15> rdf:type ns4kge:Configuration .
+<configuration/randomcorrupt/15> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/randomcorrupt/15> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/randomcorrupt/15> ns4kge:hasMetric  <metric/mrr> .
+<configuration/randomcorrupt/15> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/randomcorrupt/15> ns4kge:result "0.871"^^xsd:decimal .
+
+<configuration/randomcorrupt/16> rdf:type ns4kge:Configuration .
+<configuration/randomcorrupt/16> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/randomcorrupt/16> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/randomcorrupt/16> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/randomcorrupt/16> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/randomcorrupt/16> ns4kge:result "0.81"^^xsd:decimal .
+
+<configuration/randomcorrupt/17> rdf:type ns4kge:Configuration .
+<configuration/randomcorrupt/17> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/randomcorrupt/17> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/randomcorrupt/17> ns4kge:hasMetric  <metric/mrr> .
+<configuration/randomcorrupt/17> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/randomcorrupt/17> ns4kge:result "0.894"^^xsd:decimal .
+
+<configuration/randomcorrupt/18> rdf:type ns4kge:Configuration .
+<configuration/randomcorrupt/18> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/randomcorrupt/18> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/randomcorrupt/18> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/randomcorrupt/18> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/randomcorrupt/18> ns4kge:result "0.813"^^xsd:decimal .
+
+<configuration/randomcorrupt/19> rdf:type ns4kge:Configuration .
+<configuration/randomcorrupt/19> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/randomcorrupt/19> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/randomcorrupt/19> ns4kge:hasMetric  <metric/mrr> .
+<configuration/randomcorrupt/19> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/randomcorrupt/19> ns4kge:result "0.955"^^xsd:decimal .
+
+<configuration/randomcorrupt/20> rdf:type ns4kge:Configuration .
+<configuration/randomcorrupt/20> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/randomcorrupt/20> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/randomcorrupt/20> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/randomcorrupt/20> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/randomcorrupt/20> ns4kge:result "0.93"^^xsd:decimal .
+
+<configuration/randomcorrupt/21> rdf:type ns4kge:Configuration .
+<configuration/randomcorrupt/21> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/randomcorrupt/21> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/randomcorrupt/21> ns4kge:hasMetric  <metric/mrr> .
+<configuration/randomcorrupt/21> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/randomcorrupt/21> ns4kge:result "0.926"^^xsd:decimal .
+
+<configuration/randomcorrupt/22> rdf:type ns4kge:Configuration .
+<configuration/randomcorrupt/22> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/randomcorrupt/22> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/randomcorrupt/22> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/randomcorrupt/22> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/randomcorrupt/22> ns4kge:result "0.88"^^xsd:decimal .
+
+<configuration/randomcorrupt/23> rdf:type ns4kge:Configuration .
+<configuration/randomcorrupt/23> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/randomcorrupt/23> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/randomcorrupt/23> ns4kge:hasMetric  <metric/mrr> .
+<configuration/randomcorrupt/23> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/randomcorrupt/23> ns4kge:result "0.956"^^xsd:decimal .
+
+<configuration/randomcorrupt/24> rdf:type ns4kge:Configuration .
+<configuration/randomcorrupt/24> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/randomcorrupt/24> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/randomcorrupt/24> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/randomcorrupt/24> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/randomcorrupt/24> ns4kge:result "0.933"^^xsd:decimal .
+
+<configuration/randomcorrupt/25> rdf:type ns4kge:Configuration .
+<configuration/randomcorrupt/25> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/randomcorrupt/25> ns4kge:hasDataset <dataset/fb3m> .
+<configuration/randomcorrupt/25> ns4kge:hasMetric  <metric/mrr> .
+<configuration/randomcorrupt/25> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/randomcorrupt/25> ns4kge:result "0.475"^^xsd:decimal .
+
+<configuration/randomcorrupt/26> rdf:type ns4kge:Configuration .
+<configuration/randomcorrupt/26> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/randomcorrupt/26> ns4kge:hasDataset <dataset/fb3m> .
+<configuration/randomcorrupt/26> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/randomcorrupt/26> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/randomcorrupt/26> ns4kge:result "0.364"^^xsd:decimal .
+
+<configuration/randomcorrupt/27> rdf:type ns4kge:Configuration .
+<configuration/randomcorrupt/27> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/randomcorrupt/27> ns4kge:hasDataset <dataset/fb3m> .
+<configuration/randomcorrupt/27> ns4kge:hasMetric  <metric/mrr> .
+<configuration/randomcorrupt/27> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/randomcorrupt/27> ns4kge:result "0.62"^^xsd:decimal .
+
+<configuration/randomcorrupt/28> rdf:type ns4kge:Configuration .
+<configuration/randomcorrupt/28> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/randomcorrupt/28> ns4kge:hasDataset <dataset/fb3m> .
+<configuration/randomcorrupt/28> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/randomcorrupt/28> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/randomcorrupt/28> ns4kge:result "0.439"^^xsd:decimal .
+
+<configuration/randomcorrupt/29> rdf:type ns4kge:Configuration .
+<configuration/randomcorrupt/29> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/randomcorrupt/29> ns4kge:hasDataset <dataset/fb3m> .
+<configuration/randomcorrupt/29> ns4kge:hasMetric  <metric/mrr> .
+<configuration/randomcorrupt/29> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/randomcorrupt/29> ns4kge:result "0.683"^^xsd:decimal .
+
+<configuration/randomcorrupt/30> rdf:type ns4kge:Configuration .
+<configuration/randomcorrupt/30> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/randomcorrupt/30> ns4kge:hasDataset <dataset/fb3m> .
+<configuration/randomcorrupt/30> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/randomcorrupt/30> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/randomcorrupt/30> ns4kge:result "0.46"^^xsd:decimal .

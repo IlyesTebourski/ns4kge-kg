@@ -1,0 +1,35 @@
+{
+  "Article": {
+    "title": "MixKG: Mixing for harder negative samples in knowledge graph",
+    "date": "2022"
+  },
+  "proposedNSMethod": "MixKG",
+  "proposedKGEModel": "",
+  "mentionedNSMethods": [
+    "Uniform Negative Sampling",
+    "Bernoulli Negative Sampling",
+    "KBGAN",
+    "IGAN",
+    "NSCaching",
+    "SANS",
+    "RW-SANS"
+  ],
+  "mentionedKGEModels": [
+    "TransE",
+    "RotatE",
+    "ComplEx",
+    "DistMult"
+  ],
+  "Experimentation": {
+    "Hardware": [],
+    "TrainingProtocol": {
+      "LossFunction": [],
+      "Optimizer": [
+        "Adam"
+      ],
+      "learningRate": null,
+      "nsRatio": null,
+      "batchSize": null
+    }
+  }
+}

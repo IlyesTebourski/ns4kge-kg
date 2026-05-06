@@ -1,0 +1,62 @@
+{
+  "Article": {
+    "title": "Adversarial Knowledge Representation Learning without External Model",
+    "date": "2018"
+  },
+  "proposedNSMethod": "Loss Adaptive Sampling",
+  "proposedKGEModel": "",
+  "mentionedNSMethods": [
+    "Uniform Random Negative Sampling",
+    "KBGAN",
+    "GAN-scratch",
+    "GAN-pretrain",
+    "Bernoulli Negative Sampling",
+    "Nearest-neighbour Sampling",
+    "Near-miss Sampling",
+    "Domain Sampling",
+    "Type-constrained Negative Sampling"
+  ],
+  "mentionedKGEModels": [
+    "TransE",
+    "TransH",
+    "TransR",
+    "TransD",
+    "KG2E",
+    "TransA",
+    "TranSparse",
+    "TransG",
+    "STransE",
+    "puTransE",
+    "ITransF",
+    "RESCAL",
+    "DistMult",
+    "HolE",
+    "ComplEx",
+    "ConvE",
+    "ProjE",
+    "ANALOGY",
+    "R-GCN",
+    "SSE",
+    "TKRL",
+    "PTransE",
+    "RTransE",
+    "TEKE",
+    "DKRL",
+    "KALE",
+    "RUGE"
+  ],
+  "Experimentation": {
+    "Hardware": [],
+    "TrainingProtocol": {
+      "LossFunction": [
+        "margin-based ranking loss"
+      ],
+      "Optimizer": [
+        "Adam"
+      ],
+      "learningRate": null,
+      "nsRatio": null,
+      "batchSize": null
+    }
+  }
+}

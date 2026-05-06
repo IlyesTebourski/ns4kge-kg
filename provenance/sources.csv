@@ -1,0 +1,9 @@
+slug,title,year,source_file,source_sha256,source_doi,source_url
+eans,"Entity Aware Negative Sampling with Auxiliary Loss of False Negative Prediction for Knowledge Graph Embedding",2022,EANS.md,08c9d676ce783951caa0f35614faaff56a51fccf8a37b1667007cb7428f76329,10.48550/arxiv.2210.06242,https://arxiv.org/abs/2210.06242
+ghn,"Improving Knowledge Graph Completion with Generative Hard Negative Mining",2023,GHN.md,c3ba2f3991d1f254cd2d5a44e28d75e613f63f6f6fe8b5deebc639e74b2e8db2,10.18653/v1/2023.findings-acl.362,https://doi.org/10.18653/v1/2023.findings-acl.362
+igan,"Incorporating GAN for Negative Sampling in Knowledge Representation Learning",2018,IGAN.md,0f1bf57c9f69ae19ddbd3e06718ae577366220149864b8dccd2fca2084546005,10.1609/aaai.v32i1.11536,https://doi.org/10.1609/aaai.v32i1.11536
+kbgan,"KBGAN: Adversarial Learning for Knowledge Graph Embeddings",2018,KBGAN.md,81ff94799e3a8739271b45d013d201fc3e737d3b692b5d1f527c1d02bb5d8588,10.18653/v1/n18-1133,https://doi.org/10.18653/v1/n18-1133
+las,"Adversarial Knowledge Representation Learning without External Model",2018,LAS.md,692e6b1586639f73d5f903749ff3a1501fddb3b1312a59c4b8c352e06b0c91d3,10.1109/access.2018.2889481,https://doi.org/10.1109/access.2018.2889481
+m2ixkg,"MixKG: Mixing for harder negative samples in knowledge graph",2022,M2ixKG.md,9cce41d62a5671f3042e811a7f4256552a2dcc16d99bae824e13d0fcc0a74e86,10.48550/arxiv.2202.09606,https://arxiv.org/abs/2202.09606
+pns,"Enhancing Knowledge Graph Embedding with Probabilistic Negative Sampling",2017,PNS.md,382e5f9811d3a52d122aa9cd2982d24961e1a2247464a1660ef1e0c7d7ecbae6,10.1145/3041021.3054238,https://doi.org/10.1145/3041021.3054238
+randomcorrupt,"Investigations on Knowledge Base Embedding for Relation Prediction and Extraction",2018,RandomCorrupt.md,c1e48cf7244d41c83584959c16b08c0415d25a6fd0aa5c28b7a5973237da7965,10.48550/arxiv.1802.02114,https://arxiv.org/abs/1802.02114

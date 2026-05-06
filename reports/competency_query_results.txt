@@ -1,0 +1,255 @@
+Graph loaded: 6398 triples
+
+============================================================
+UC: CQ1 - Datasets most frequently used to evaluate negative sampling methods
+============================================================
+  dataset/fb15k-237 | 196 | 5
+  dataset/wn18rr | 196 | 5
+  dataset/wn18 | 77 | 4
+  dataset/fb15k | 38 | 2
+  dataset/fb13 | 14 | 1
+  dataset/wn11 | 14 | 1
+  dataset/wikidata5m | 12 | 1
+
+============================================================
+UC: CQ2 - KGE models most associated with each negative sampling method
+============================================================
+  ns-method/bernoulli-negative-sampling | kge-model/transr | 4
+  ns-method/bernoulli-negative-sampling | kge-model/transh | 4
+  ns-method/entity-aware-negative-sampling | kge-model/transe | 6
+  ns-method/entity-aware-negative-sampling | kge-model/transd | 6
+  ns-method/entity-aware-negative-sampling | kge-model/distmult | 6
+  ns-method/entity-aware-negative-sampling | kge-model/complex | 6
+  ns-method/entity-aware-negative-sampling | kge-model/rotate | 6
+  ns-method/entity-aware-negative-sampling-self-adversarial-negative-sampling | kge-model/transe | 6
+  ns-method/entity-aware-negative-sampling-self-adversarial-negative-sampling | kge-model/transd | 6
+  ns-method/entity-aware-negative-sampling-self-adversarial-negative-sampling | kge-model/distmult | 6
+  ns-method/entity-aware-negative-sampling-self-adversarial-negative-sampling | kge-model/complex | 6
+  ns-method/entity-aware-negative-sampling-self-adversarial-negative-sampling | kge-model/rotate | 6
+  ns-method/gan-pretrain | kge-model/transd | 6
+  ns-method/gan-pretrain | kge-model/transh | 6
+  ns-method/gan-pretrain | kge-model/transe | 6
+  ns-method/gan-pretrain | kge-model/transr | 6
+  ns-method/gan-pretrain | kge-model/structured-embedding | 6
+  ns-method/gan-pretrain | kge-model/sme-bilinear | 6
+  ns-method/gan-pretrain | kge-model/transe-a-lstm | 4
+  ns-method/gan-pretrain | kge-model/unstructured-model | 4
+  ... (60 more rows)
+
+============================================================
+UC: CQ3 - Evaluation metrics most frequently reported
+============================================================
+  metric/hits-10 | 263 | 7
+  metric/mrr | 215 | 6
+  metric/mr | 147 | 4
+  metric/accuracy | 42 | 1
+  metric/hits-1 | 41 | 2
+  metric/hits-3 | 26 | 1
+
+============================================================
+UC: CQ4 - Most frequent dataset, KGE model, and negative sampling method combinations
+============================================================
+  dataset/fb15k-237 | kge-model/transe | ns-method/loss-adaptive-sampling | 9
+  dataset/wn18rr | kge-model/transe | ns-method/loss-adaptive-sampling | 9
+  dataset/fb15k-237 | kge-model/transe | ns-method/kbgan | 8
+  dataset/wn18rr | kge-model/transe | ns-method/kbgan | 8
+  dataset/fb15k-237 | kge-model/transe | ns-method/uniform-negative-sampling | 7
+  dataset/wn18rr | kge-model/transe | ns-method/uniform-negative-sampling | 7
+  dataset/fb15k-237 | kge-model/transd | ns-method/kbgan | 6
+  dataset/wn18rr | kge-model/transd | ns-method/kbgan | 6
+  dataset/wn18 | kge-model/transe | ns-method/loss-adaptive-sampling | 6
+  dataset/fb15k-237 | kge-model/transd | ns-method/loss-adaptive-sampling | 6
+  dataset/wn18 | kge-model/transd | ns-method/loss-adaptive-sampling | 6
+  dataset/wn18rr | kge-model/transd | ns-method/loss-adaptive-sampling | 6
+  dataset/fb15k-237 | kge-model/transe | ns-method/nscaching | 5
+  dataset/wn18rr | kge-model/transe | ns-method/nscaching | 5
+  dataset/fb15k-237 | kge-model/transd | ns-method/uniform-negative-sampling | 5
+  dataset/wn18rr | kge-model/transd | ns-method/uniform-negative-sampling | 5
+  dataset/fb15k-237 | kge-model/distmult | ns-method/uniform-negative-sampling | 5
+  dataset/fb15k-237 | kge-model/distmult | ns-method/nscaching | 5
+  dataset/fb15k-237 | kge-model/distmult | ns-method/kbgan | 5
+  dataset/wn18rr | kge-model/distmult | ns-method/uniform-negative-sampling | 5
+  ... (180 more rows)
+
+============================================================
+UC: CQ5 - Completeness of experimental descriptions by article
+============================================================
+  article/eans | yes | no | yes | yes | no
+  article/ghn | yes | yes | yes | yes | no
+  article/ghn | yes | yes | yes | yes | no
+  article/igan | yes | no | yes | no | no
+  article/kbgan | yes | yes | yes | no | no
+  article/kbgan | yes | yes | yes | no | no
+  article/las | yes | no | yes | no | no
+  article/m2ixkg | yes | no | no | no | no
+  article/pns | yes | yes | yes | no | no
+  article/randomcorrupt | no | no | yes | no | no
+
+============================================================
+UC: CQ6 - Underrepresented negative sampling method and dataset combinations
+============================================================
+  (no results)
+
+============================================================
+UC: CQ7 - Articles with incomplete experimental configurations
+============================================================
+  article/eans | ok | missing | ok | ok | missing
+  article/ghn | ok | ok | ok | ok | missing
+  article/ghn | ok | ok | ok | ok | missing
+  article/igan | ok | missing | ok | missing | missing
+  article/kbgan | ok | ok | ok | missing | missing
+  article/kbgan | ok | ok | ok | missing | missing
+  article/las | ok | missing | ok | missing | missing
+  article/m2ixkg | ok | missing | missing | missing | missing
+  article/pns | ok | ok | ok | missing | missing
+  article/randomcorrupt | missing | missing | ok | missing | missing
+
+============================================================
+UC: CQ8 - Experimental dimensions most often missing
+============================================================
+  nsRatio | 8
+  hardware | 6
+  learningRate | 5
+  optimizer | 1
+  lossFunction | 1
+
+============================================================
+UC: CQ9 - Negative sampling methods evaluated on dataset/fb15k-237
+============================================================
+  ns-method/uniform-negative-sampling | 3
+  ns-method/kbgan | 3
+  ns-method/nscaching | 2
+  ns-method/entity-aware-negative-sampling | 1
+  ns-method/entity-aware-negative-sampling-self-adversarial-negative-sampling | 1
+  ns-method/self-adversarial-negative-sampling | 1
+  ns-method/structure-aware-negative-sampling-self-adversarial-negative-sampling | 1
+  ns-method/in-batch-negative-sampling | 1
+  ns-method/generative-hard-negative-mining | 1
+  ns-method/ghn-sl | 1
+  ns-method/kbgan-distmult | 1
+  ns-method/kbgan-complex | 1
+  ns-method/uniform-random-negative-sampling | 1
+  ns-method/loss-adaptive-sampling | 1
+  ns-method/sans | 1
+  ns-method/rw-sans | 1
+  ns-method/mixkg-hnm-sf | 1
+  ns-method/mixkg-hnm-ces | 1
+
+============================================================
+UC: CQ10 - Most frequent configurations for link prediction
+============================================================
+  dataset/fb15k-237 | kge-model/transe | ns-method/uniform-negative-sampling | metric/mrr | 3
+  dataset/fb15k-237 | kge-model/transe | ns-method/kbgan | metric/mrr | 3
+  dataset/fb15k-237 | kge-model/transe | ns-method/uniform-negative-sampling | metric/hits-10 | 3
+  dataset/fb15k-237 | kge-model/transe | ns-method/kbgan | metric/hits-10 | 3
+  dataset/wn18rr | kge-model/transe | ns-method/uniform-negative-sampling | metric/mrr | 3
+  dataset/wn18rr | kge-model/transe | ns-method/kbgan | metric/mrr | 3
+  dataset/wn18rr | kge-model/transe | ns-method/uniform-negative-sampling | metric/hits-10 | 3
+  dataset/wn18rr | kge-model/transe | ns-method/kbgan | metric/hits-10 | 3
+  dataset/fb15k-237 | kge-model/transe | ns-method/loss-adaptive-sampling | metric/mrr | 3
+  dataset/fb15k-237 | kge-model/transe | ns-method/loss-adaptive-sampling | metric/mr | 3
+  dataset/fb15k-237 | kge-model/transe | ns-method/loss-adaptive-sampling | metric/hits-10 | 3
+  dataset/wn18rr | kge-model/transe | ns-method/loss-adaptive-sampling | metric/mrr | 3
+  dataset/wn18rr | kge-model/transe | ns-method/loss-adaptive-sampling | metric/mr | 3
+  dataset/wn18rr | kge-model/transe | ns-method/loss-adaptive-sampling | metric/hits-10 | 3
+  dataset/fb15k-237 | kge-model/transe | ns-method/kbgan | metric/mr | 2
+  dataset/fb15k-237 | kge-model/transe | ns-method/nscaching | metric/mrr | 2
+  dataset/fb15k-237 | kge-model/transe | ns-method/nscaching | metric/hits-10 | 2
+  dataset/wn18rr | kge-model/transe | ns-method/kbgan | metric/mr | 2
+  dataset/wn18rr | kge-model/transe | ns-method/nscaching | metric/mrr | 2
+  dataset/wn18rr | kge-model/transe | ns-method/nscaching | metric/hits-10 | 2
+
+============================================================
+UC: CQ11 - Similar configurations with divergent results
+============================================================
+  dataset/wn18rr | kge-model/distmult | metric/mr | 4765 | 11351 | 6586 | 2
+  dataset/wn18rr | kge-model/transd | metric/mr | 3104 | 6937 | 3833 | 2
+  dataset/wn18rr | kge-model/transe | metric/mr | 2678 | 5356 | 2678 | 2
+  dataset/wn18rr | kge-model/complex | metric/mr | 5226 | 7528 | 2302 | 2
+  dataset/fb15k-237 | kge-model/complex | metric/mr | 166 | 881 | 715 | 2
+  dataset/fb15k-237 | kge-model/transd | metric/mr | 184 | 825 | 641 | 2
+  dataset/fb15k-237 | kge-model/transe | metric/mr | 169 | 722 | 553 | 2
+  dataset/fb15k-237 | kge-model/distmult | metric/mr | 173 | 472 | 299 | 2
+  dataset/wn18 | kge-model/transr | metric/mr | 15 | 291 | 276 | 2
+  dataset/fb15k | kge-model/transe | metric/mr | 61 | 243 | 182 | 2
+  dataset/wn18 | kge-model/transh | metric/mr | 258 | 401 | 143 | 2
+  dataset/wn18 | kge-model/transd | metric/mr | 221 | 359 | 138 | 2
+  dataset/fb15k | kge-model/transh | metric/mr | 81 | 212 | 131 | 2
+  dataset/fb15k | kge-model/transr | metric/mr | 77 | 191 | 114 | 2
+  dataset/wn18 | kge-model/transe | metric/hits-10 | 0.754 | 94.9 | 94.146 | 4
+
+============================================================
+UC: CQ12 - Best negative sampling method by task and dataset according to maximum result
+============================================================
+  task/link-prediction | dataset/fb15k | ns-method/gan-scratch | kge-model/unstructured-model | metric/mr | 332
+  task/link-prediction | dataset/fb15k | ns-method/gan-pretrain | kge-model/unstructured-model | metric/mr | 305
+  task/link-prediction | dataset/fb15k | ns-method/gan-pretrain | kge-model/structured-embedding | metric/mr | 220
+  task/link-prediction | dataset/fb15k | ns-method/bernoulli-negative-sampling | kge-model/transh | metric/mr | 212
+  task/link-prediction | dataset/fb15k | ns-method/gan-scratch | kge-model/structured-embedding | metric/mr | 207
+  task/link-prediction | dataset/fb15k | ns-method/bernoulli-negative-sampling | kge-model/transr | metric/mr | 191
+  task/link-prediction | dataset/fb15k | ns-method/gan-pretrain | kge-model/sme-bilinear | metric/mr | 170
+  task/link-prediction | dataset/fb15k | ns-method/probabilistic-negative-sampling | kge-model/transr | metric/mr | 144
+  task/link-prediction | dataset/fb15k | ns-method/gan-scratch | kge-model/sme-bilinear | metric/mr | 139
+  task/link-prediction | dataset/fb15k | ns-method/gan-scratch | kge-model/transr | metric/mr | 138
+  task/link-prediction | dataset/fb15k | ns-method/gan-scratch | kge-model/transe | metric/mr | 90
+  task/link-prediction | dataset/fb15k | ns-method/gan-scratch | kge-model/transh | metric/mr | 90
+  task/link-prediction | dataset/fb15k | ns-method/gan-scratch | kge-model/transd | metric/mr | 89
+  task/link-prediction | dataset/fb15k | ns-method/gan-pretrain | kge-model/transr | metric/mr | 86
+  task/link-prediction | dataset/fb15k | ns-method/gan-pretrain | kge-model/transh | metric/mr | 81
+  task/link-prediction | dataset/fb15k | ns-method/gan-pretrain | kge-model/transe | metric/mr | 81
+  task/link-prediction | dataset/fb15k | ns-method/gan-pretrain | kge-model/transd | metric/mr | 79
+  task/link-prediction | dataset/fb15k | ns-method/gan-scratch | kge-model/transe-a-lstm | metric/mr | 79
+  task/link-prediction | dataset/fb15k | ns-method/gan-pretrain | kge-model/transd | metric/hits-10 | 77.6
+  task/link-prediction | dataset/fb15k | ns-method/gan-pretrain | kge-model/transh | metric/hits-10 | 77.0
+  ... (443 more rows)
+
+============================================================
+UC: UC1 - Negative sampling method, dataset, and KGE model combinations evaluated in the literature
+============================================================
+  ns-method/loss-adaptive-sampling | dataset/fb15k-237 | kge-model/transe | 9
+  ns-method/loss-adaptive-sampling | dataset/wn18rr | kge-model/transe | 9
+  ns-method/kbgan | dataset/fb15k-237 | kge-model/transe | 8
+  ns-method/kbgan | dataset/wn18rr | kge-model/transe | 8
+  ns-method/uniform-negative-sampling | dataset/fb15k-237 | kge-model/transe | 7
+  ns-method/uniform-negative-sampling | dataset/wn18rr | kge-model/transe | 7
+  ns-method/kbgan | dataset/fb15k-237 | kge-model/transd | 6
+  ns-method/kbgan | dataset/wn18rr | kge-model/transd | 6
+  ns-method/loss-adaptive-sampling | dataset/wn18 | kge-model/transe | 6
+  ns-method/loss-adaptive-sampling | dataset/fb15k-237 | kge-model/transd | 6
+  ns-method/loss-adaptive-sampling | dataset/wn18 | kge-model/transd | 6
+  ns-method/loss-adaptive-sampling | dataset/wn18rr | kge-model/transd | 6
+  ns-method/nscaching | dataset/fb15k-237 | kge-model/transe | 5
+  ns-method/nscaching | dataset/wn18rr | kge-model/transe | 5
+  ns-method/uniform-negative-sampling | dataset/fb15k-237 | kge-model/transd | 5
+  ns-method/uniform-negative-sampling | dataset/wn18rr | kge-model/transd | 5
+  ns-method/uniform-negative-sampling | dataset/fb15k-237 | kge-model/distmult | 5
+  ns-method/nscaching | dataset/fb15k-237 | kge-model/distmult | 5
+  ns-method/kbgan | dataset/fb15k-237 | kge-model/distmult | 5
+  ns-method/uniform-negative-sampling | dataset/wn18rr | kge-model/distmult | 5
+  ... (180 more rows)
+
+============================================================
+UC: UC3 - Top link prediction configurations for experimental blueprinting
+============================================================
+  ns-method/gan-pretrain | kge-model/transd | optimizer/adam | loss-function/margin-based-ranking-loss | dataset/fb15k | metric/hits-10 | 77.6
+  ns-method/gan-pretrain | kge-model/transh | optimizer/adam | loss-function/margin-based-ranking-loss | dataset/fb15k | metric/hits-10 | 77.0
+  ns-method/gan-pretrain | kge-model/transe-a-lstm | optimizer/adam | loss-function/margin-based-ranking-loss | dataset/fb15k | metric/hits-10 | 76.3
+  ns-method/gan-pretrain | kge-model/transr | optimizer/adam | loss-function/margin-based-ranking-loss | dataset/fb15k | metric/hits-10 | 76.0
+  ns-method/gan-scratch | kge-model/transe-a-lstm | optimizer/adam | loss-function/margin-based-ranking-loss | dataset/fb15k | metric/hits-10 | 75.8
+  ns-method/gan-pretrain | kge-model/transe | optimizer/adam | loss-function/margin-based-ranking-loss | dataset/fb15k | metric/hits-10 | 74.0
+  ns-method/gan-scratch | kge-model/transd | optimizer/adam | loss-function/margin-based-ranking-loss | dataset/fb15k | metric/hits-10 | 74.0
+  ns-method/gan-scratch | kge-model/transh | optimizer/adam | loss-function/margin-based-ranking-loss | dataset/fb15k | metric/hits-10 | 73.3
+  ns-method/gan-scratch | kge-model/transe | optimizer/adam | loss-function/margin-based-ranking-loss | dataset/fb15k | metric/hits-10 | 73.1
+  ns-method/gan-scratch | kge-model/transr | optimizer/adam | loss-function/margin-based-ranking-loss | dataset/fb15k | metric/hits-10 | 58.3
+  ns-method/gan-pretrain | kge-model/structured-embedding | optimizer/adam | loss-function/margin-based-ranking-loss | dataset/fb15k | metric/hits-10 | 53.8
+  ns-method/gan-scratch | kge-model/structured-embedding | optimizer/adam | loss-function/margin-based-ranking-loss | dataset/fb15k | metric/hits-10 | 53.3
+  ns-method/gan-scratch | kge-model/sme-bilinear | optimizer/adam | loss-function/margin-based-ranking-loss | dataset/fb15k | metric/hits-10 | 45.8
+  ns-method/gan-pretrain | kge-model/sme-bilinear | optimizer/adam | loss-function/margin-based-ranking-loss | dataset/fb15k | metric/hits-10 | 45.7
+  ns-method/gan-pretrain | kge-model/unstructured-model | optimizer/adam | loss-function/margin-based-ranking-loss | dataset/fb15k | metric/hits-10 | 28.7
+  ns-method/gan-scratch | kge-model/unstructured-model | optimizer/adam | loss-function/margin-based-ranking-loss | dataset/fb15k | metric/hits-10 | 24.5
+  ns-method/probabilistic-negative-sampling | kge-model/transr | optimizer/adam | loss-function/margin-based-ranking-loss | dataset/fb15k | metric/hits-10 | 0.472
+  ns-method/bernoulli-negative-sampling | kge-model/transr | optimizer/adam | loss-function/margin-based-ranking-loss | dataset/fb15k | metric/hits-10 | 0.464
+  ns-method/bernoulli-negative-sampling | kge-model/transh | optimizer/adam | loss-function/margin-based-ranking-loss | dataset/fb15k | metric/hits-10 | 0.457
+  ns-method/gan-scratch | kge-model/unstructured-model | optimizer/adam | loss-function/margin-based-ranking-loss | dataset/fb15k | metric/mr | 332
+  ... (547 more rows)
+

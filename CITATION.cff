@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "If you use this knowledge graph in scientific work, please cite the associated NO-FaCTS paper and this artifact release."
+title: "NS4KGE Knowledge Graph"
+version: "1.0.0-paper"
+date-released: 2026-05-06
+authors:
+  - given-names: "Ilyes"
+    family-names: "Tebourski"
+  - given-names: "Pierre-Henri"
+    family-names: "Paris"
+  - given-names: "Nicoleta"
+    family-names: "Preda"
+  - given-names: "Fatiha"
+    family-names: "Sais"
+license: "CC-BY-4.0"
+repository-code: "https://github.com/IlyesTebourski/ns4kge-kg"
+url: "https://w3id.org/ns4kge/kg"
+abstract: "Populated knowledge graph of negative sampling methods for knowledge graph embeddings extracted from scientific articles."
+keywords:
+  - "knowledge graph embeddings"
+  - "negative sampling"
+  - "knowledge graph"
+  - "semantic web"
