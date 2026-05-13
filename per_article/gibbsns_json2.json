@@ -1,0 +1,1292 @@
+{
+  "Configurations": [
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "MRR",
+      "KGEModel": "KGE-EML+GNS",
+      "NSMethod": "Gibbs Negative Sampling",
+      "result": 0.365
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "Hits@1",
+      "KGEModel": "KGE-EML+GNS",
+      "NSMethod": "Gibbs Negative Sampling",
+      "result": 0.265
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "Hits@3",
+      "KGEModel": "KGE-EML+GNS",
+      "NSMethod": "Gibbs Negative Sampling",
+      "result": 0.398
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "Hits@10",
+      "KGEModel": "KGE-EML+GNS",
+      "NSMethod": "Gibbs Negative Sampling",
+      "result": 0.55
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "MRR",
+      "KGEModel": "KGE-EML+GNS",
+      "NSMethod": "Gibbs Negative Sampling",
+      "result": 0.487
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "Hits@1",
+      "KGEModel": "KGE-EML+GNS",
+      "NSMethod": "Gibbs Negative Sampling",
+      "result": 0.447
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "Hits@3",
+      "KGEModel": "KGE-EML+GNS",
+      "NSMethod": "Gibbs Negative Sampling",
+      "result": 0.506
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "Hits@10",
+      "KGEModel": "KGE-EML+GNS",
+      "NSMethod": "Gibbs Negative Sampling",
+      "result": 0.569
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "MRR",
+      "KGEModel": "KGE-EML",
+      "NSMethod": "Unknown",
+      "result": 0.36
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "Hits@1",
+      "KGEModel": "KGE-EML",
+      "NSMethod": "Unknown",
+      "result": 0.267
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "Hits@3",
+      "KGEModel": "KGE-EML",
+      "NSMethod": "Unknown",
+      "result": 0.395
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "Hits@10",
+      "KGEModel": "KGE-EML",
+      "NSMethod": "Unknown",
+      "result": 0.545
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "MRR",
+      "KGEModel": "KGE-EML",
+      "NSMethod": "Unknown",
+      "result": 0.477
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "Hits@1",
+      "KGEModel": "KGE-EML",
+      "NSMethod": "Unknown",
+      "result": 0.444
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "Hits@3",
+      "KGEModel": "KGE-EML",
+      "NSMethod": "Unknown",
+      "result": 0.492
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "Hits@10",
+      "KGEModel": "KGE-EML",
+      "NSMethod": "Unknown",
+      "result": 0.534
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "MRR",
+      "KGEModel": "TuckER",
+      "NSMethod": "Unknown",
+      "result": 0.358
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "Hits@1",
+      "KGEModel": "TuckER",
+      "NSMethod": "Unknown",
+      "result": 0.266
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "Hits@3",
+      "KGEModel": "TuckER",
+      "NSMethod": "Unknown",
+      "result": 0.394
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "Hits@10",
+      "KGEModel": "TuckER",
+      "NSMethod": "Unknown",
+      "result": 0.544
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "MRR",
+      "KGEModel": "TuckER",
+      "NSMethod": "Unknown",
+      "result": 0.47
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "Hits@1",
+      "KGEModel": "TuckER",
+      "NSMethod": "Unknown",
+      "result": 0.43
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "Hits@3",
+      "KGEModel": "TuckER",
+      "NSMethod": "Unknown",
+      "result": 0.482
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "Hits@10",
+      "KGEModel": "TuckER",
+      "NSMethod": "Unknown",
+      "result": 0.526
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "MRR",
+      "KGEModel": "InteractE",
+      "NSMethod": "Unknown",
+      "result": 0.354
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "Hits@1",
+      "KGEModel": "InteractE",
+      "NSMethod": "Unknown",
+      "result": 0.263
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "Hits@10",
+      "KGEModel": "InteractE",
+      "NSMethod": "Unknown",
+      "result": 0.535
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "MRR",
+      "KGEModel": "InteractE",
+      "NSMethod": "Unknown",
+      "result": 0.463
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "Hits@1",
+      "KGEModel": "InteractE",
+      "NSMethod": "Unknown",
+      "result": 0.43
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "Hits@10",
+      "KGEModel": "InteractE",
+      "NSMethod": "Unknown",
+      "result": 0.528
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "MRR",
+      "KGEModel": "PairRE",
+      "NSMethod": "Unknown",
+      "result": 0.351
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "Hits@1",
+      "KGEModel": "PairRE",
+      "NSMethod": "Unknown",
+      "result": 0.256
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "Hits@3",
+      "KGEModel": "PairRE",
+      "NSMethod": "Unknown",
+      "result": 0.387
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "Hits@10",
+      "KGEModel": "PairRE",
+      "NSMethod": "Unknown",
+      "result": 0.544
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "MRR",
+      "KGEModel": "PROCRUSTES",
+      "NSMethod": "Unknown",
+      "result": 0.345
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "Hits@10",
+      "KGEModel": "PROCRUSTES",
+      "NSMethod": "Unknown",
+      "result": 0.541
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "MRR",
+      "KGEModel": "PROCRUSTES",
+      "NSMethod": "Unknown",
+      "result": 0.474
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "Hits@10",
+      "KGEModel": "PROCRUSTES",
+      "NSMethod": "Unknown",
+      "result": 0.569
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "MRR",
+      "KGEModel": "RotatE",
+      "NSMethod": "Unknown",
+      "result": 0.338
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "Hits@1",
+      "KGEModel": "RotatE",
+      "NSMethod": "Unknown",
+      "result": 0.241
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "Hits@3",
+      "KGEModel": "RotatE",
+      "NSMethod": "Unknown",
+      "result": 0.375
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "Hits@10",
+      "KGEModel": "RotatE",
+      "NSMethod": "Unknown",
+      "result": 0.533
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "MRR",
+      "KGEModel": "RotatE",
+      "NSMethod": "Unknown",
+      "result": 0.476
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "Hits@1",
+      "KGEModel": "RotatE",
+      "NSMethod": "Unknown",
+      "result": 0.428
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "Hits@3",
+      "KGEModel": "RotatE",
+      "NSMethod": "Unknown",
+      "result": 0.492
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "Hits@10",
+      "KGEModel": "RotatE",
+      "NSMethod": "Unknown",
+      "result": 0.571
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "MRR",
+      "KGEModel": "TransE",
+      "NSMethod": "Unknown",
+      "result": 0.33
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "Hits@1",
+      "KGEModel": "TransE",
+      "NSMethod": "Unknown",
+      "result": 0.231
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "Hits@3",
+      "KGEModel": "TransE",
+      "NSMethod": "Unknown",
+      "result": 0.369
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "Hits@10",
+      "KGEModel": "TransE",
+      "NSMethod": "Unknown",
+      "result": 0.528
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "MRR",
+      "KGEModel": "TransE",
+      "NSMethod": "Unknown",
+      "result": 0.223
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "Hits@10",
+      "KGEModel": "TransE",
+      "NSMethod": "Unknown",
+      "result": 0.529
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "MRR",
+      "KGEModel": "DistMult",
+      "NSMethod": "Unknown",
+      "result": 0.308
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "MRR",
+      "KGEModel": "DistMult",
+      "NSMethod": "Unknown",
+      "result": 0.439
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "Hits@10",
+      "KGEModel": "DistMult",
+      "NSMethod": "Unknown",
+      "result": 0.533
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "MRR",
+      "KGEModel": "ComplEx",
+      "NSMethod": "Unknown",
+      "result": 0.323
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "MRR",
+      "KGEModel": "ComplEx",
+      "NSMethod": "Unknown",
+      "result": 0.468
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "Hits@10",
+      "KGEModel": "ComplEx",
+      "NSMethod": "Unknown",
+      "result": 0.554
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "MRR",
+      "KGEModel": "ConvE",
+      "NSMethod": "Unknown",
+      "result": 0.325
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "MRR",
+      "KGEModel": "ConvE",
+      "NSMethod": "Unknown",
+      "result": 0.43
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k",
+      "Metric": "Hits@10",
+      "KGEModel": "KGE-EML+GNS",
+      "NSMethod": "Gibbs Negative Sampling",
+      "result": 0.913
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k",
+      "Metric": "Hits@10",
+      "KGEModel": "PairRE",
+      "NSMethod": "Unknown",
+      "result": 0.94
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k",
+      "Metric": "Hits@10",
+      "KGEModel": "ComplEx",
+      "NSMethod": "Unknown",
+      "result": 0.939
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "MR",
+      "KGEModel": "TransE",
+      "NSMethod": "Gibbs Negative Sampling",
+      "result": 159
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "MRR",
+      "KGEModel": "TransE",
+      "NSMethod": "Gibbs Negative Sampling",
+      "result": 0.343
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "Hits@10",
+      "KGEModel": "TransE",
+      "NSMethod": "Gibbs Negative Sampling",
+      "result": 0.53
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "MR",
+      "KGEModel": "TransE",
+      "NSMethod": "Gibbs Negative Sampling",
+      "result": 2906
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "MRR",
+      "KGEModel": "TransE",
+      "NSMethod": "Gibbs Negative Sampling",
+      "result": 0.03
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "Hits@10",
+      "KGEModel": "TransE",
+      "NSMethod": "Gibbs Negative Sampling",
+      "result": 0.523
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "MR",
+      "KGEModel": "TransE",
+      "NSMethod": "Uniform Random Negative Sampling",
+      "result": 357
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "MRR",
+      "KGEModel": "TransE",
+      "NSMethod": "Uniform Random Negative Sampling",
+      "result": 0.294
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "Hits@10",
+      "KGEModel": "TransE",
+      "NSMethod": "Uniform Random Negative Sampling",
+      "result": 0.465
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "MR",
+      "KGEModel": "TransE",
+      "NSMethod": "Uniform Random Negative Sampling",
+      "result": 3384
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "MRR",
+      "KGEModel": "TransE",
+      "NSMethod": "Uniform Random Negative Sampling",
+      "result": 0.226
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "Hits@10",
+      "KGEModel": "TransE",
+      "NSMethod": "Uniform Random Negative Sampling",
+      "result": 0.501
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "MR",
+      "KGEModel": "TransE",
+      "NSMethod": "KBGAN",
+      "result": 722
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "MRR",
+      "KGEModel": "TransE",
+      "NSMethod": "KBGAN",
+      "result": 0.293
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "Hits@10",
+      "KGEModel": "TransE",
+      "NSMethod": "KBGAN",
+      "result": 0.466
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "MRR",
+      "KGEModel": "TransE",
+      "NSMethod": "NSCaching",
+      "result": 0.299
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "Hits@10",
+      "KGEModel": "TransE",
+      "NSMethod": "NSCaching",
+      "result": 0.476
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "MR",
+      "KGEModel": "TransE",
+      "NSMethod": "EANS",
+      "result": 169
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "MRR",
+      "KGEModel": "TransE",
+      "NSMethod": "EANS",
+      "result": 0.338
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "Hits@10",
+      "KGEModel": "TransE",
+      "NSMethod": "EANS",
+      "result": 0.526
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "MR",
+      "KGEModel": "TransE",
+      "NSMethod": "EANS",
+      "result": 3488
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "MRR",
+      "KGEModel": "TransE",
+      "NSMethod": "EANS",
+      "result": 0.222
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "Hits@10",
+      "KGEModel": "TransE",
+      "NSMethod": "EANS",
+      "result": 0.526
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "MR",
+      "KGEModel": "TransD",
+      "NSMethod": "Gibbs Negative Sampling",
+      "result": 167
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "MRR",
+      "KGEModel": "TransD",
+      "NSMethod": "Gibbs Negative Sampling",
+      "result": 0.341
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "Hits@10",
+      "KGEModel": "TransD",
+      "NSMethod": "Gibbs Negative Sampling",
+      "result": 0.529
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "MR",
+      "KGEModel": "TransD",
+      "NSMethod": "Gibbs Negative Sampling",
+      "result": 5199
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "MRR",
+      "KGEModel": "TransD",
+      "NSMethod": "Gibbs Negative Sampling",
+      "result": 0.226
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "Hits@10",
+      "KGEModel": "TransD",
+      "NSMethod": "Gibbs Negative Sampling",
+      "result": 0.495
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "MR",
+      "KGEModel": "TransD",
+      "NSMethod": "Uniform Random Negative Sampling",
+      "result": 188
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "MRR",
+      "KGEModel": "TransD",
+      "NSMethod": "Uniform Random Negative Sampling",
+      "result": 0.245
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "Hits@10",
+      "KGEModel": "TransD",
+      "NSMethod": "Uniform Random Negative Sampling",
+      "result": 0.429
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "MR",
+      "KGEModel": "TransD",
+      "NSMethod": "Uniform Random Negative Sampling",
+      "result": 3555
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "MRR",
+      "KGEModel": "TransD",
+      "NSMethod": "Uniform Random Negative Sampling",
+      "result": 0.19
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "Hits@10",
+      "KGEModel": "TransD",
+      "NSMethod": "Uniform Random Negative Sampling",
+      "result": 0.464
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "MRR",
+      "KGEModel": "TransD",
+      "NSMethod": "EANS",
+      "result": 0.334
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "Hits@10",
+      "KGEModel": "TransD",
+      "NSMethod": "EANS",
+      "result": 0.519
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "MRR",
+      "KGEModel": "TransD",
+      "NSMethod": "NSCaching",
+      "result": 0.286
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "Hits@10",
+      "KGEModel": "TransD",
+      "NSMethod": "NSCaching",
+      "result": 0.479
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "MR",
+      "KGEModel": "TransD",
+      "NSMethod": "NSCaching",
+      "result": 3104
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "Hits@10",
+      "KGEModel": "TransD",
+      "NSMethod": "NSCaching",
+      "result": 0.484
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "MRR",
+      "KGEModel": "TransD",
+      "NSMethod": "KBGAN",
+      "result": 0.247
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "Hits@10",
+      "KGEModel": "TransD",
+      "NSMethod": "KBGAN",
+      "result": 0.444
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "Hits@10",
+      "KGEModel": "TransD",
+      "NSMethod": "EANS",
+      "result": 0.476
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "MR",
+      "KGEModel": "DistMult",
+      "NSMethod": "Gibbs Negative Sampling",
+      "result": 176
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "MRR",
+      "KGEModel": "DistMult",
+      "NSMethod": "Gibbs Negative Sampling",
+      "result": 0.302
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "Hits@10",
+      "KGEModel": "DistMult",
+      "NSMethod": "Gibbs Negative Sampling",
+      "result": 0.477
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "MR",
+      "KGEModel": "DistMult",
+      "NSMethod": "Gibbs Negative Sampling",
+      "result": 3580
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "MRR",
+      "KGEModel": "DistMult",
+      "NSMethod": "Gibbs Negative Sampling",
+      "result": 0.391
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "Hits@10",
+      "KGEModel": "DistMult",
+      "NSMethod": "Gibbs Negative Sampling",
+      "result": 0.539
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "MR",
+      "KGEModel": "DistMult",
+      "NSMethod": "Uniform Random Negative Sampling",
+      "result": 254
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "MRR",
+      "KGEModel": "DistMult",
+      "NSMethod": "Uniform Random Negative Sampling",
+      "result": 0.241
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "Hits@10",
+      "KGEModel": "DistMult",
+      "NSMethod": "Uniform Random Negative Sampling",
+      "result": 0.419
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "MRR",
+      "KGEModel": "DistMult",
+      "NSMethod": "Uniform Random Negative Sampling",
+      "result": 0.43
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "Hits@10",
+      "KGEModel": "DistMult",
+      "NSMethod": "Uniform Random Negative Sampling",
+      "result": 0.49
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "MRR",
+      "KGEModel": "DistMult",
+      "NSMethod": "EANS",
+      "result": 0.309
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "Hits@10",
+      "KGEModel": "DistMult",
+      "NSMethod": "EANS",
+      "result": 0.482
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "MRR",
+      "KGEModel": "DistMult",
+      "NSMethod": "EANS",
+      "result": 0.438
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "Hits@10",
+      "KGEModel": "DistMult",
+      "NSMethod": "EANS",
+      "result": 0.538
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "MRR",
+      "KGEModel": "DistMult",
+      "NSMethod": "NSCaching",
+      "result": 0.283
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "Hits@10",
+      "KGEModel": "DistMult",
+      "NSMethod": "NSCaching",
+      "result": 0.456
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "MRR",
+      "KGEModel": "DistMult",
+      "NSMethod": "KBGAN",
+      "result": 0.227
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "Hits@10",
+      "KGEModel": "DistMult",
+      "NSMethod": "KBGAN",
+      "result": 0.4
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "MR",
+      "KGEModel": "ComplEx",
+      "NSMethod": "Gibbs Negative Sampling",
+      "result": 203
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "MRR",
+      "KGEModel": "ComplEx",
+      "NSMethod": "Gibbs Negative Sampling",
+      "result": 0.27
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "Hits@10",
+      "KGEModel": "ComplEx",
+      "NSMethod": "Gibbs Negative Sampling",
+      "result": 0.428
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "MR",
+      "KGEModel": "ComplEx",
+      "NSMethod": "Gibbs Negative Sampling",
+      "result": 3842
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "MRR",
+      "KGEModel": "ComplEx",
+      "NSMethod": "Gibbs Negative Sampling",
+      "result": 0.468
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "Hits@10",
+      "KGEModel": "ComplEx",
+      "NSMethod": "Gibbs Negative Sampling",
+      "result": 0.559
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "MR",
+      "KGEModel": "ComplEx",
+      "NSMethod": "Uniform Random Negative Sampling",
+      "result": 339
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "MRR",
+      "KGEModel": "ComplEx",
+      "NSMethod": "Uniform Random Negative Sampling",
+      "result": 0.247
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "Hits@10",
+      "KGEModel": "ComplEx",
+      "NSMethod": "Uniform Random Negative Sampling",
+      "result": 0.428
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "MRR",
+      "KGEModel": "ComplEx",
+      "NSMethod": "Uniform Random Negative Sampling",
+      "result": 0.44
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "Hits@10",
+      "KGEModel": "ComplEx",
+      "NSMethod": "Uniform Random Negative Sampling",
+      "result": 0.51
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "MRR",
+      "KGEModel": "ComplEx",
+      "NSMethod": "EANS",
+      "result": 0.323
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "Hits@10",
+      "KGEModel": "ComplEx",
+      "NSMethod": "EANS",
+      "result": 0.503
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "MRR",
+      "KGEModel": "ComplEx",
+      "NSMethod": "EANS",
+      "result": 0.463
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "Hits@10",
+      "KGEModel": "ComplEx",
+      "NSMethod": "EANS",
+      "result": 0.558
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "MRR",
+      "KGEModel": "ComplEx",
+      "NSMethod": "NSCaching",
+      "result": 0.302
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "Hits@10",
+      "KGEModel": "ComplEx",
+      "NSMethod": "NSCaching",
+      "result": 0.481
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "MRR",
+      "KGEModel": "ComplEx",
+      "NSMethod": "KBGAN",
+      "result": 0.191
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "Hits@10",
+      "KGEModel": "ComplEx",
+      "NSMethod": "KBGAN",
+      "result": 0.321
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "MR",
+      "KGEModel": "RotatE",
+      "NSMethod": "Gibbs Negative Sampling",
+      "result": 162
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "MRR",
+      "KGEModel": "RotatE",
+      "NSMethod": "Gibbs Negative Sampling",
+      "result": 0.334
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "Hits@10",
+      "KGEModel": "RotatE",
+      "NSMethod": "Gibbs Negative Sampling",
+      "result": 0.52
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "MR",
+      "KGEModel": "RotatE",
+      "NSMethod": "Gibbs Negative Sampling",
+      "result": 3105
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "MRR",
+      "KGEModel": "RotatE",
+      "NSMethod": "Gibbs Negative Sampling",
+      "result": 0.492
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "Hits@10",
+      "KGEModel": "RotatE",
+      "NSMethod": "Gibbs Negative Sampling",
+      "result": 0.577
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "MR",
+      "KGEModel": "RotatE",
+      "NSMethod": "Uniform Random Negative Sampling",
+      "result": 187
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "MRR",
+      "KGEModel": "RotatE",
+      "NSMethod": "Uniform Random Negative Sampling",
+      "result": 0.295
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "Hits@10",
+      "KGEModel": "RotatE",
+      "NSMethod": "Uniform Random Negative Sampling",
+      "result": 0.478
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "MRR",
+      "KGEModel": "RotatE",
+      "NSMethod": "Uniform Random Negative Sampling",
+      "result": 0.473
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "Hits@10",
+      "KGEModel": "RotatE",
+      "NSMethod": "Uniform Random Negative Sampling",
+      "result": 0.565
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "MR",
+      "KGEModel": "RotatE",
+      "NSMethod": "EANS",
+      "result": 169
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "MRR",
+      "KGEModel": "RotatE",
+      "NSMethod": "EANS",
+      "result": 0.341
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "Hits@10",
+      "KGEModel": "RotatE",
+      "NSMethod": "EANS",
+      "result": 0.528
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "MRR",
+      "KGEModel": "RotatE",
+      "NSMethod": "EANS",
+      "result": 0.487
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "Hits@10",
+      "KGEModel": "RotatE",
+      "NSMethod": "EANS",
+      "result": 0.574
+    }
+  ]
+}

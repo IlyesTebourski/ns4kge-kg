@@ -1,0 +1,1444 @@
+{
+  "Configurations": [
+    {
+      "Task": "Link Prediction",
+      "Dataset": "MovieLens",
+      "Metric": "MRR",
+      "KGEModel": "DeepWalk",
+      "NSMethod": "Markov chain Monte Carlo Negative Sampling",
+      "result": 0.053
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "MovieLens",
+      "Metric": "MRR",
+      "KGEModel": "DeepWalk",
+      "NSMethod": "KBGAN",
+      "result": 0.049
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "MovieLens",
+      "Metric": "MRR",
+      "KGEModel": "DeepWalk",
+      "NSMethod": "IRGAN",
+      "result": 0.047
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "MovieLens",
+      "Metric": "MRR",
+      "KGEModel": "DeepWalk",
+      "NSMethod": "Power of Degree",
+      "result": 0.025
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "MovieLens",
+      "Metric": "MRR",
+      "KGEModel": "DeepWalk",
+      "NSMethod": "Weighted Regularized Matrix Factorization",
+      "result": 0.022
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "MovieLens",
+      "Metric": "MRR",
+      "KGEModel": "DeepWalk",
+      "NSMethod": "Random Negative Sampling",
+      "result": 0.031
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "MovieLens",
+      "Metric": "MRR",
+      "KGEModel": "DeepWalk",
+      "NSMethod": "PinSAGE",
+      "result": 0.036
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "MovieLens",
+      "Metric": "MRR",
+      "KGEModel": "DeepWalk",
+      "NSMethod": "Weighted Approximate-Rank Pairwise",
+      "result": 0.041
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "MovieLens",
+      "Metric": "MRR",
+      "KGEModel": "DeepWalk",
+      "NSMethod": "Dynamic Negative Sampling",
+      "result": 0.04
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "MovieLens",
+      "Metric": "MRR",
+      "KGEModel": "GCN",
+      "NSMethod": "Markov chain Monte Carlo Negative Sampling",
+      "result": 0.122
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "MovieLens",
+      "Metric": "MRR",
+      "KGEModel": "GCN",
+      "NSMethod": "KBGAN",
+      "result": 0.114
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "MovieLens",
+      "Metric": "MRR",
+      "KGEModel": "GCN",
+      "NSMethod": "Weighted Approximate-Rank Pairwise",
+      "result": 0.114
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "MovieLens",
+      "Metric": "MRR",
+      "KGEModel": "GCN",
+      "NSMethod": "Dynamic Negative Sampling",
+      "result": 0.113
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "MovieLens",
+      "Metric": "MRR",
+      "KGEModel": "GCN",
+      "NSMethod": "Power of Degree",
+      "result": 0.062
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "MovieLens",
+      "Metric": "MRR",
+      "KGEModel": "GCN",
+      "NSMethod": "Weighted Regularized Matrix Factorization",
+      "result": 0.038
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "MovieLens",
+      "Metric": "MRR",
+      "KGEModel": "GCN",
+      "NSMethod": "Random Negative Sampling",
+      "result": 0.082
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "MovieLens",
+      "Metric": "MRR",
+      "KGEModel": "GCN",
+      "NSMethod": "PinSAGE",
+      "result": 0.091
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "MovieLens",
+      "Metric": "MRR",
+      "KGEModel": "GCN",
+      "NSMethod": "IRGAN",
+      "result": 0.111
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "MovieLens",
+      "Metric": "MRR",
+      "KGEModel": "GraphSAGE",
+      "NSMethod": "Markov chain Monte Carlo Negative Sampling",
+      "result": 0.114
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "MovieLens",
+      "Metric": "MRR",
+      "KGEModel": "GraphSAGE",
+      "NSMethod": "Dynamic Negative Sampling",
+      "result": 0.115
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "MovieLens",
+      "Metric": "MRR",
+      "KGEModel": "GraphSAGE",
+      "NSMethod": "Weighted Approximate-Rank Pairwise",
+      "result": 0.111
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "MovieLens",
+      "Metric": "MRR",
+      "KGEModel": "GraphSAGE",
+      "NSMethod": "IRGAN",
+      "result": 0.101
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "MovieLens",
+      "Metric": "MRR",
+      "KGEModel": "GraphSAGE",
+      "NSMethod": "KBGAN",
+      "result": 0.1
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "MovieLens",
+      "Metric": "MRR",
+      "KGEModel": "GraphSAGE",
+      "NSMethod": "PinSAGE",
+      "result": 0.09
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "MovieLens",
+      "Metric": "MRR",
+      "KGEModel": "GraphSAGE",
+      "NSMethod": "Random Negative Sampling",
+      "result": 0.079
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "MovieLens",
+      "Metric": "MRR",
+      "KGEModel": "GraphSAGE",
+      "NSMethod": "Power of Degree",
+      "result": 0.063
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "MovieLens",
+      "Metric": "MRR",
+      "KGEModel": "GraphSAGE",
+      "NSMethod": "Weighted Regularized Matrix Factorization",
+      "result": 0.04
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Amazon",
+      "Metric": "MRR",
+      "KGEModel": "DeepWalk",
+      "NSMethod": "Markov chain Monte Carlo Negative Sampling",
+      "result": 0.065
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Amazon",
+      "Metric": "MRR",
+      "KGEModel": "DeepWalk",
+      "NSMethod": "Dynamic Negative Sampling",
+      "result": 0.063
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Amazon",
+      "Metric": "MRR",
+      "KGEModel": "DeepWalk",
+      "NSMethod": "Weighted Approximate-Rank Pairwise",
+      "result": 0.061
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Amazon",
+      "Metric": "MRR",
+      "KGEModel": "DeepWalk",
+      "NSMethod": "Power of Degree",
+      "result": 0.041
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Amazon",
+      "Metric": "MRR",
+      "KGEModel": "DeepWalk",
+      "NSMethod": "Weighted Regularized Matrix Factorization",
+      "result": 0.034
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Amazon",
+      "Metric": "MRR",
+      "KGEModel": "DeepWalk",
+      "NSMethod": "Random Negative Sampling",
+      "result": 0.046
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Amazon",
+      "Metric": "MRR",
+      "KGEModel": "DeepWalk",
+      "NSMethod": "PinSAGE",
+      "result": 0.057
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Amazon",
+      "Metric": "MRR",
+      "KGEModel": "DeepWalk",
+      "NSMethod": "IRGAN",
+      "result": 0.059
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Amazon",
+      "Metric": "MRR",
+      "KGEModel": "DeepWalk",
+      "NSMethod": "KBGAN",
+      "result": 0.06
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Amazon",
+      "Metric": "MRR",
+      "KGEModel": "GraphSAGE",
+      "NSMethod": "Markov chain Monte Carlo Negative Sampling",
+      "result": 0.108
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Amazon",
+      "Metric": "MRR",
+      "KGEModel": "GraphSAGE",
+      "NSMethod": "Dynamic Negative Sampling",
+      "result": 0.101
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Amazon",
+      "Metric": "MRR",
+      "KGEModel": "GraphSAGE",
+      "NSMethod": "Weighted Approximate-Rank Pairwise",
+      "result": 0.098
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Amazon",
+      "Metric": "MRR",
+      "KGEModel": "GraphSAGE",
+      "NSMethod": "IRGAN",
+      "result": 0.091
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Amazon",
+      "Metric": "MRR",
+      "KGEModel": "GraphSAGE",
+      "NSMethod": "KBGAN",
+      "result": 0.089
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Amazon",
+      "Metric": "MRR",
+      "KGEModel": "GraphSAGE",
+      "NSMethod": "PinSAGE",
+      "result": 0.08
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Amazon",
+      "Metric": "MRR",
+      "KGEModel": "GraphSAGE",
+      "NSMethod": "Random Negative Sampling",
+      "result": 0.079
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Amazon",
+      "Metric": "MRR",
+      "KGEModel": "GraphSAGE",
+      "NSMethod": "Power of Degree",
+      "result": 0.057
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Amazon",
+      "Metric": "MRR",
+      "KGEModel": "GraphSAGE",
+      "NSMethod": "Weighted Regularized Matrix Factorization",
+      "result": 0.043
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Alibaba",
+      "Metric": "MRR",
+      "KGEModel": "DeepWalk",
+      "NSMethod": "Markov chain Monte Carlo Negative Sampling",
+      "result": 0.07
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Alibaba",
+      "Metric": "MRR",
+      "KGEModel": "DeepWalk",
+      "NSMethod": "Weighted Approximate-Rank Pairwise",
+      "result": 0.067
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Alibaba",
+      "Metric": "MRR",
+      "KGEModel": "DeepWalk",
+      "NSMethod": "Dynamic Negative Sampling",
+      "result": 0.067
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Alibaba",
+      "Metric": "MRR",
+      "KGEModel": "DeepWalk",
+      "NSMethod": "Power of Degree",
+      "result": 0.037
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Alibaba",
+      "Metric": "MRR",
+      "KGEModel": "DeepWalk",
+      "NSMethod": "Weighted Regularized Matrix Factorization",
+      "result": 0.036
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Alibaba",
+      "Metric": "MRR",
+      "KGEModel": "DeepWalk",
+      "NSMethod": "Random Negative Sampling",
+      "result": 0.035
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Alibaba",
+      "Metric": "MRR",
+      "KGEModel": "DeepWalk",
+      "NSMethod": "PinSAGE",
+      "result": 0.054
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Alibaba",
+      "Metric": "MRR",
+      "KGEModel": "DeepWalk",
+      "NSMethod": "IRGAN",
+      "result": 0.061
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Alibaba",
+      "Metric": "MRR",
+      "KGEModel": "DeepWalk",
+      "NSMethod": "KBGAN",
+      "result": 0.065
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Alibaba",
+      "Metric": "MRR",
+      "KGEModel": "GraphSAGE",
+      "NSMethod": "Markov chain Monte Carlo Negative Sampling",
+      "result": 0.116
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Alibaba",
+      "Metric": "MRR",
+      "KGEModel": "GraphSAGE",
+      "NSMethod": "Weighted Approximate-Rank Pairwise",
+      "result": 0.106
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Alibaba",
+      "Metric": "MRR",
+      "KGEModel": "GraphSAGE",
+      "NSMethod": "Dynamic Negative Sampling",
+      "result": 0.09
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Alibaba",
+      "Metric": "MRR",
+      "KGEModel": "GraphSAGE",
+      "NSMethod": "Power of Degree",
+      "result": 0.064
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Alibaba",
+      "Metric": "MRR",
+      "KGEModel": "GraphSAGE",
+      "NSMethod": "Weighted Regularized Matrix Factorization",
+      "result": 0.057
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Alibaba",
+      "Metric": "MRR",
+      "KGEModel": "GraphSAGE",
+      "NSMethod": "Random Negative Sampling",
+      "result": 0.078
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Alibaba",
+      "Metric": "MRR",
+      "KGEModel": "GraphSAGE",
+      "NSMethod": "PinSAGE",
+      "result": 0.081
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Alibaba",
+      "Metric": "MRR",
+      "KGEModel": "GraphSAGE",
+      "NSMethod": "IRGAN",
+      "result": 0.083
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Alibaba",
+      "Metric": "MRR",
+      "KGEModel": "GraphSAGE",
+      "NSMethod": "KBGAN",
+      "result": 0.087
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "MovieLens",
+      "Metric": "Hits@30",
+      "KGEModel": "DeepWalk",
+      "NSMethod": "Markov chain Monte Carlo Negative Sampling",
+      "result": 0.23
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "MovieLens",
+      "Metric": "Hits@30",
+      "KGEModel": "DeepWalk",
+      "NSMethod": "IRGAN",
+      "result": 0.207
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "MovieLens",
+      "Metric": "Hits@30",
+      "KGEModel": "DeepWalk",
+      "NSMethod": "KBGAN",
+      "result": 0.198
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "MovieLens",
+      "Metric": "Hits@30",
+      "KGEModel": "DeepWalk",
+      "NSMethod": "Power of Degree",
+      "result": 0.115
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "MovieLens",
+      "Metric": "Hits@30",
+      "KGEModel": "DeepWalk",
+      "NSMethod": "Weighted Regularized Matrix Factorization",
+      "result": 0.11
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "MovieLens",
+      "Metric": "Hits@30",
+      "KGEModel": "DeepWalk",
+      "NSMethod": "Random Negative Sampling",
+      "result": 0.143
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "MovieLens",
+      "Metric": "Hits@30",
+      "KGEModel": "DeepWalk",
+      "NSMethod": "PinSAGE",
+      "result": 0.158
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "MovieLens",
+      "Metric": "Hits@30",
+      "KGEModel": "DeepWalk",
+      "NSMethod": "Weighted Approximate-Rank Pairwise",
+      "result": 0.164
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "MovieLens",
+      "Metric": "Hits@30",
+      "KGEModel": "DeepWalk",
+      "NSMethod": "Dynamic Negative Sampling",
+      "result": 0.166
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "MovieLens",
+      "Metric": "Hits@30",
+      "KGEModel": "GCN",
+      "NSMethod": "Markov chain Monte Carlo Negative Sampling",
+      "result": 0.426
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "MovieLens",
+      "Metric": "Hits@30",
+      "KGEModel": "GCN",
+      "NSMethod": "KBGAN",
+      "result": 0.42
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "MovieLens",
+      "Metric": "Hits@30",
+      "KGEModel": "GCN",
+      "NSMethod": "IRGAN",
+      "result": 0.415
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "MovieLens",
+      "Metric": "Hits@30",
+      "KGEModel": "GCN",
+      "NSMethod": "Power of Degree",
+      "result": 0.27
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "MovieLens",
+      "Metric": "Hits@30",
+      "KGEModel": "GCN",
+      "NSMethod": "Weighted Regularized Matrix Factorization",
+      "result": 0.187
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "MovieLens",
+      "Metric": "Hits@30",
+      "KGEModel": "GCN",
+      "NSMethod": "Random Negative Sampling",
+      "result": 0.362
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "MovieLens",
+      "Metric": "Hits@30",
+      "KGEModel": "GCN",
+      "NSMethod": "PinSAGE",
+      "result": 0.379
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "MovieLens",
+      "Metric": "Hits@30",
+      "KGEModel": "GCN",
+      "NSMethod": "Weighted Approximate-Rank Pairwise",
+      "result": 0.406
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "MovieLens",
+      "Metric": "Hits@30",
+      "KGEModel": "GCN",
+      "NSMethod": "Dynamic Negative Sampling",
+      "result": 0.404
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "MovieLens",
+      "Metric": "Hits@30",
+      "KGEModel": "GraphSAGE",
+      "NSMethod": "Markov chain Monte Carlo Negative Sampling",
+      "result": 0.413
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "MovieLens",
+      "Metric": "Hits@30",
+      "KGEModel": "GraphSAGE",
+      "NSMethod": "Dynamic Negative Sampling",
+      "result": 0.41
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "MovieLens",
+      "Metric": "Hits@30",
+      "KGEModel": "GraphSAGE",
+      "NSMethod": "IRGAN",
+      "result": 0.408
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "MovieLens",
+      "Metric": "Hits@30",
+      "KGEModel": "GraphSAGE",
+      "NSMethod": "Weighted Approximate-Rank Pairwise",
+      "result": 0.404
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "MovieLens",
+      "Metric": "Hits@30",
+      "KGEModel": "GraphSAGE",
+      "NSMethod": "KBGAN",
+      "result": 0.401
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "MovieLens",
+      "Metric": "Hits@30",
+      "KGEModel": "GraphSAGE",
+      "NSMethod": "PinSAGE",
+      "result": 0.383
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "MovieLens",
+      "Metric": "Hits@30",
+      "KGEModel": "GraphSAGE",
+      "NSMethod": "Random Negative Sampling",
+      "result": 0.356
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "MovieLens",
+      "Metric": "Hits@30",
+      "KGEModel": "GraphSAGE",
+      "NSMethod": "Power of Degree",
+      "result": 0.27
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "MovieLens",
+      "Metric": "Hits@30",
+      "KGEModel": "GraphSAGE",
+      "NSMethod": "Weighted Regularized Matrix Factorization",
+      "result": 0.181
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Amazon",
+      "Metric": "Hits@30",
+      "KGEModel": "DeepWalk",
+      "NSMethod": "Markov chain Monte Carlo Negative Sampling",
+      "result": 0.207
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Amazon",
+      "Metric": "Hits@30",
+      "KGEModel": "DeepWalk",
+      "NSMethod": "IRGAN",
+      "result": 0.183
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Amazon",
+      "Metric": "Hits@30",
+      "KGEModel": "DeepWalk",
+      "NSMethod": "Dynamic Negative Sampling",
+      "result": 0.182
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Amazon",
+      "Metric": "Hits@30",
+      "KGEModel": "DeepWalk",
+      "NSMethod": "Weighted Approximate-Rank Pairwise",
+      "result": 0.181
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Amazon",
+      "Metric": "Hits@30",
+      "KGEModel": "DeepWalk",
+      "NSMethod": "KBGAN",
+      "result": 0.181
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Amazon",
+      "Metric": "Hits@30",
+      "KGEModel": "DeepWalk",
+      "NSMethod": "PinSAGE",
+      "result": 0.176
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Amazon",
+      "Metric": "Hits@30",
+      "KGEModel": "DeepWalk",
+      "NSMethod": "Random Negative Sampling",
+      "result": 0.171
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Amazon",
+      "Metric": "Hits@30",
+      "KGEModel": "DeepWalk",
+      "NSMethod": "Power of Degree",
+      "result": 0.161
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Amazon",
+      "Metric": "Hits@30",
+      "KGEModel": "DeepWalk",
+      "NSMethod": "Weighted Regularized Matrix Factorization",
+      "result": 0.139
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Amazon",
+      "Metric": "Hits@30",
+      "KGEModel": "GraphSAGE",
+      "NSMethod": "Markov chain Monte Carlo Negative Sampling",
+      "result": 0.386
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Amazon",
+      "Metric": "Hits@30",
+      "KGEModel": "GraphSAGE",
+      "NSMethod": "Dynamic Negative Sampling",
+      "result": 0.358
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Amazon",
+      "Metric": "Hits@30",
+      "KGEModel": "GraphSAGE",
+      "NSMethod": "KBGAN",
+      "result": 0.347
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Amazon",
+      "Metric": "Hits@30",
+      "KGEModel": "GraphSAGE",
+      "NSMethod": "IRGAN",
+      "result": 0.342
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Amazon",
+      "Metric": "Hits@30",
+      "KGEModel": "GraphSAGE",
+      "NSMethod": "Weighted Approximate-Rank Pairwise",
+      "result": 0.34
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Amazon",
+      "Metric": "Hits@30",
+      "KGEModel": "GraphSAGE",
+      "NSMethod": "PinSAGE",
+      "result": 0.333
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Amazon",
+      "Metric": "Hits@30",
+      "KGEModel": "GraphSAGE",
+      "NSMethod": "Random Negative Sampling",
+      "result": 0.317
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Amazon",
+      "Metric": "Hits@30",
+      "KGEModel": "GraphSAGE",
+      "NSMethod": "Power of Degree",
+      "result": 0.238
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Amazon",
+      "Metric": "Hits@30",
+      "KGEModel": "GraphSAGE",
+      "NSMethod": "Weighted Regularized Matrix Factorization",
+      "result": 0.188
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Alibaba",
+      "Metric": "Hits@30",
+      "KGEModel": "DeepWalk",
+      "NSMethod": "Markov chain Monte Carlo Negative Sampling",
+      "result": 0.201
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Alibaba",
+      "Metric": "Hits@30",
+      "KGEModel": "DeepWalk",
+      "NSMethod": "Dynamic Negative Sampling",
+      "result": 0.186
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Alibaba",
+      "Metric": "Hits@30",
+      "KGEModel": "DeepWalk",
+      "NSMethod": "KBGAN",
+      "result": 0.181
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Alibaba",
+      "Metric": "Hits@30",
+      "KGEModel": "DeepWalk",
+      "NSMethod": "Weighted Approximate-Rank Pairwise",
+      "result": 0.178
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Alibaba",
+      "Metric": "Hits@30",
+      "KGEModel": "DeepWalk",
+      "NSMethod": "IRGAN",
+      "result": 0.175
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Alibaba",
+      "Metric": "Hits@30",
+      "KGEModel": "DeepWalk",
+      "NSMethod": "PinSAGE",
+      "result": 0.146
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Alibaba",
+      "Metric": "Hits@30",
+      "KGEModel": "DeepWalk",
+      "NSMethod": "Power of Degree",
+      "result": 0.138
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Alibaba",
+      "Metric": "Hits@30",
+      "KGEModel": "DeepWalk",
+      "NSMethod": "Random Negative Sampling",
+      "result": 0.132
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Alibaba",
+      "Metric": "Hits@30",
+      "KGEModel": "DeepWalk",
+      "NSMethod": "Weighted Regularized Matrix Factorization",
+      "result": 0.121
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Alibaba",
+      "Metric": "Hits@30",
+      "KGEModel": "GraphSAGE",
+      "NSMethod": "Markov chain Monte Carlo Negative Sampling",
+      "result": 0.387
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Alibaba",
+      "Metric": "Hits@30",
+      "KGEModel": "GraphSAGE",
+      "NSMethod": "Weighted Approximate-Rank Pairwise",
+      "result": 0.342
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Alibaba",
+      "Metric": "Hits@30",
+      "KGEModel": "GraphSAGE",
+      "NSMethod": "Dynamic Negative Sampling",
+      "result": 0.336
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Alibaba",
+      "Metric": "Hits@30",
+      "KGEModel": "GraphSAGE",
+      "NSMethod": "KBGAN",
+      "result": 0.331
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Alibaba",
+      "Metric": "Hits@30",
+      "KGEModel": "GraphSAGE",
+      "NSMethod": "IRGAN",
+      "result": 0.32
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Alibaba",
+      "Metric": "Hits@30",
+      "KGEModel": "GraphSAGE",
+      "NSMethod": "PinSAGE",
+      "result": 0.312
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Alibaba",
+      "Metric": "Hits@30",
+      "KGEModel": "GraphSAGE",
+      "NSMethod": "Random Negative Sampling",
+      "result": 0.302
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Alibaba",
+      "Metric": "Hits@30",
+      "KGEModel": "GraphSAGE",
+      "NSMethod": "Power of Degree",
+      "result": 0.249
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Alibaba",
+      "Metric": "Hits@30",
+      "KGEModel": "GraphSAGE",
+      "NSMethod": "Weighted Regularized Matrix Factorization",
+      "result": 0.227
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Arxiv",
+      "Metric": "AUC",
+      "KGEModel": "DeepWalk",
+      "NSMethod": "Markov chain Monte Carlo Negative Sampling",
+      "result": 73.1
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Arxiv",
+      "Metric": "AUC",
+      "KGEModel": "DeepWalk",
+      "NSMethod": "KBGAN",
+      "result": 71.6
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Arxiv",
+      "Metric": "AUC",
+      "KGEModel": "DeepWalk",
+      "NSMethod": "IRGAN",
+      "result": 71.1
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Arxiv",
+      "Metric": "AUC",
+      "KGEModel": "DeepWalk",
+      "NSMethod": "Weighted Approximate-Rank Pairwise",
+      "result": 70.5
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Arxiv",
+      "Metric": "AUC",
+      "KGEModel": "DeepWalk",
+      "NSMethod": "Dynamic Negative Sampling",
+      "result": 70.4
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Arxiv",
+      "Metric": "AUC",
+      "KGEModel": "DeepWalk",
+      "NSMethod": "PinSAGE",
+      "result": 67.2
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Arxiv",
+      "Metric": "AUC",
+      "KGEModel": "DeepWalk",
+      "NSMethod": "Weighted Regularized Matrix Factorization",
+      "result": 65.3
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Arxiv",
+      "Metric": "AUC",
+      "KGEModel": "DeepWalk",
+      "NSMethod": "Power of Degree",
+      "result": 64.6
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Arxiv",
+      "Metric": "AUC",
+      "KGEModel": "DeepWalk",
+      "NSMethod": "Random Negative Sampling",
+      "result": 62.2
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Arxiv",
+      "Metric": "AUC",
+      "KGEModel": "GCN",
+      "NSMethod": "Markov chain Monte Carlo Negative Sampling",
+      "result": 82.6
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Arxiv",
+      "Metric": "AUC",
+      "KGEModel": "GCN",
+      "NSMethod": "IRGAN",
+      "result": 82.0
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Arxiv",
+      "Metric": "AUC",
+      "KGEModel": "GCN",
+      "NSMethod": "KBGAN",
+      "result": 81.7
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Arxiv",
+      "Metric": "AUC",
+      "KGEModel": "GCN",
+      "NSMethod": "Weighted Approximate-Rank Pairwise",
+      "result": 81.6
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Arxiv",
+      "Metric": "AUC",
+      "KGEModel": "GCN",
+      "NSMethod": "Dynamic Negative Sampling",
+      "result": 81.5
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Arxiv",
+      "Metric": "AUC",
+      "KGEModel": "GCN",
+      "NSMethod": "PinSAGE",
+      "result": 80.4
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Arxiv",
+      "Metric": "AUC",
+      "KGEModel": "GCN",
+      "NSMethod": "Weighted Regularized Matrix Factorization",
+      "result": 80.3
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Arxiv",
+      "Metric": "AUC",
+      "KGEModel": "GCN",
+      "NSMethod": "Power of Degree",
+      "result": 79.6
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Arxiv",
+      "Metric": "AUC",
+      "KGEModel": "GCN",
+      "NSMethod": "Random Negative Sampling",
+      "result": 74.3
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Arxiv",
+      "Metric": "AUC",
+      "KGEModel": "GraphSAGE",
+      "NSMethod": "Markov chain Monte Carlo Negative Sampling",
+      "result": 83.5
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Arxiv",
+      "Metric": "AUC",
+      "KGEModel": "GraphSAGE",
+      "NSMethod": "Weighted Approximate-Rank Pairwise",
+      "result": 82.7
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Arxiv",
+      "Metric": "AUC",
+      "KGEModel": "GraphSAGE",
+      "NSMethod": "Dynamic Negative Sampling",
+      "result": 82.6
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Arxiv",
+      "Metric": "AUC",
+      "KGEModel": "GraphSAGE",
+      "NSMethod": "IRGAN",
+      "result": 82.2
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Arxiv",
+      "Metric": "AUC",
+      "KGEModel": "GraphSAGE",
+      "NSMethod": "KBGAN",
+      "result": 82.1
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Arxiv",
+      "Metric": "AUC",
+      "KGEModel": "GraphSAGE",
+      "NSMethod": "PinSAGE",
+      "result": 80.1
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Arxiv",
+      "Metric": "AUC",
+      "KGEModel": "GraphSAGE",
+      "NSMethod": "Weighted Regularized Matrix Factorization",
+      "result": 79.1
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Arxiv",
+      "Metric": "AUC",
+      "KGEModel": "GraphSAGE",
+      "NSMethod": "Power of Degree",
+      "result": 78.9
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Arxiv",
+      "Metric": "AUC",
+      "KGEModel": "GraphSAGE",
+      "NSMethod": "Random Negative Sampling",
+      "result": 74.7
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "BlogCatalog",
+      "Metric": "F1",
+      "KGEModel": "DeepWalk",
+      "NSMethod": "Markov chain Monte Carlo Negative Sampling",
+      "result": 43.3
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "BlogCatalog",
+      "Metric": "F1",
+      "KGEModel": "DeepWalk",
+      "NSMethod": "Dynamic Negative Sampling",
+      "result": 42.5
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "BlogCatalog",
+      "Metric": "F1",
+      "KGEModel": "DeepWalk",
+      "NSMethod": "KBGAN",
+      "result": 42.3
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "BlogCatalog",
+      "Metric": "F1",
+      "KGEModel": "DeepWalk",
+      "NSMethod": "Weighted Approximate-Rank Pairwise",
+      "result": 42.1
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "BlogCatalog",
+      "Metric": "F1",
+      "KGEModel": "DeepWalk",
+      "NSMethod": "IRGAN",
+      "result": 41.8
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "BlogCatalog",
+      "Metric": "F1",
+      "KGEModel": "DeepWalk",
+      "NSMethod": "PinSAGE",
+      "result": 40.1
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "BlogCatalog",
+      "Metric": "F1",
+      "KGEModel": "DeepWalk",
+      "NSMethod": "Power of Degree",
+      "result": 39.1
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "BlogCatalog",
+      "Metric": "F1",
+      "KGEModel": "DeepWalk",
+      "NSMethod": "Weighted Regularized Matrix Factorization",
+      "result": 37.5
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "BlogCatalog",
+      "Metric": "F1",
+      "KGEModel": "DeepWalk",
+      "NSMethod": "Random Negative Sampling",
+      "result": 36.0
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "BlogCatalog",
+      "Metric": "F1",
+      "KGEModel": "GCN",
+      "NSMethod": "Markov chain Monte Carlo Negative Sampling",
+      "result": 49.9
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "BlogCatalog",
+      "Metric": "F1",
+      "KGEModel": "GCN",
+      "NSMethod": "Dynamic Negative Sampling",
+      "result": 48.6
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "BlogCatalog",
+      "Metric": "F1",
+      "KGEModel": "GCN",
+      "NSMethod": "KBGAN",
+      "result": 48.3
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "BlogCatalog",
+      "Metric": "F1",
+      "KGEModel": "GCN",
+      "NSMethod": "IRGAN",
+      "result": 47.9
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "BlogCatalog",
+      "Metric": "F1",
+      "KGEModel": "GCN",
+      "NSMethod": "Weighted Approximate-Rank Pairwise",
+      "result": 47.7
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "BlogCatalog",
+      "Metric": "F1",
+      "KGEModel": "GCN",
+      "NSMethod": "PinSAGE",
+      "result": 45.7
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "BlogCatalog",
+      "Metric": "F1",
+      "KGEModel": "GCN",
+      "NSMethod": "Power of Degree",
+      "result": 44.6
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "BlogCatalog",
+      "Metric": "F1",
+      "KGEModel": "GCN",
+      "NSMethod": "Weighted Regularized Matrix Factorization",
+      "result": 43.3
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "BlogCatalog",
+      "Metric": "F1",
+      "KGEModel": "GCN",
+      "NSMethod": "Random Negative Sampling",
+      "result": 42.3
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "BlogCatalog",
+      "Metric": "F1",
+      "KGEModel": "GraphSAGE",
+      "NSMethod": "Markov chain Monte Carlo Negative Sampling",
+      "result": 50.1
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "BlogCatalog",
+      "Metric": "F1",
+      "KGEModel": "GraphSAGE",
+      "NSMethod": "Dynamic Negative Sampling",
+      "result": 48.5
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "BlogCatalog",
+      "Metric": "F1",
+      "KGEModel": "GraphSAGE",
+      "NSMethod": "KBGAN",
+      "result": 48.5
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "BlogCatalog",
+      "Metric": "F1",
+      "KGEModel": "GraphSAGE",
+      "NSMethod": "IRGAN",
+      "result": 47.6
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "BlogCatalog",
+      "Metric": "F1",
+      "KGEModel": "GraphSAGE",
+      "NSMethod": "Weighted Approximate-Rank Pairwise",
+      "result": 47.5
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "BlogCatalog",
+      "Metric": "F1",
+      "KGEModel": "GraphSAGE",
+      "NSMethod": "PinSAGE",
+      "result": 45.1
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "BlogCatalog",
+      "Metric": "F1",
+      "KGEModel": "GraphSAGE",
+      "NSMethod": "Power of Degree",
+      "result": 44.0
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "BlogCatalog",
+      "Metric": "F1",
+      "KGEModel": "GraphSAGE",
+      "NSMethod": "Weighted Regularized Matrix Factorization",
+      "result": 43.1
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "BlogCatalog",
+      "Metric": "F1",
+      "KGEModel": "GraphSAGE",
+      "NSMethod": "Random Negative Sampling",
+      "result": 41.6
+    }
+  ]
+}

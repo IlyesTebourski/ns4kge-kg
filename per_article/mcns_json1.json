@@ -1,0 +1,39 @@
+{
+  "Article": {
+    "title": "Understanding Negative Sampling in Graph Representation Learning",
+    "date": "2020"
+  },
+  "proposedNSMethod": "Markov chain Monte Carlo Negative Sampling",
+  "proposedKGEModel": "",
+  "mentionedNSMethods": [
+    "Power of Degree",
+    "Random Negative Sampling",
+    "Weighted Regularized Matrix Factorization",
+    "Weighted Approximate-Rank Pairwise",
+    "Dynamic Negative Sampling",
+    "PinSAGE",
+    "IRGAN",
+    "KBGAN",
+    "Bayesian Personalized Ranking"
+  ],
+  "mentionedKGEModels": [
+    "DeepWalk",
+    "LINE",
+    "node2vec",
+    "GCN",
+    "GraphSAGE",
+    "FastGCN"
+  ],
+  "Experimentation": {
+    "Hardware": [],
+    "TrainingProtocol": {
+      "LossFunction": [
+        "cross-entropy loss",
+        "skewed hinge loss"
+      ],
+      "Optimizer": [],
+      "learningRate": null,
+      "nsRatio": null
+    }
+  }
+}

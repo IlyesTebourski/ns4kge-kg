@@ -1,0 +1,30 @@
+{
+  "Article": {
+    "title": "Structure Aware Negative Sampling in Knowledge Graphs",
+    "date": "2020"
+  },
+  "proposedNSMethod": "Structure Aware Negative Sampling",
+  "proposedKGEModel": "",
+  "mentionedNSMethods": [
+    "Uniform Negative Sampling",
+    "Self-Adversarial Negative Sampling",
+    "KBGAN",
+    "NSCaching",
+    "Noise Contrastive Estimation",
+    "Random Walk Structure Aware Negative Sampling"
+  ],
+  "mentionedKGEModels": [
+    "TransE",
+    "DistMult",
+    "RotatE"
+  ],
+  "Experimentation": {
+    "Hardware": [],
+    "TrainingProtocol": {
+      "LossFunction": [],
+      "Optimizer": [],
+      "learningRate": null,
+      "nsRatio": null
+    }
+  }
+}

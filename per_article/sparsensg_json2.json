@@ -1,0 +1,820 @@
+{
+  "Configurations": [
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18",
+      "Metric": "MRR",
+      "KGEModel": "TransE",
+      "NSMethod": "Unknown",
+      "result": 0.454
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18",
+      "Metric": "MRR",
+      "KGEModel": "TransE",
+      "NSMethod": "Negative Sampling Based on Frequency of Relational Association Entities",
+      "result": 0.596
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18",
+      "Metric": "MRR",
+      "KGEModel": "TransH",
+      "NSMethod": "Negative Sampling Based on Frequency of Relational Association Entities",
+      "result": 0.591
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18",
+      "Metric": "MRR",
+      "KGEModel": "ComplEx",
+      "NSMethod": "Negative Sampling Based on Frequency of Relational Association Entities",
+      "result": 0.942
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18",
+      "Metric": "MRR",
+      "KGEModel": "ANALOGY",
+      "NSMethod": "Unknown",
+      "result": 0.942
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18",
+      "Metric": "MRR",
+      "KGEModel": "ANALOGY",
+      "NSMethod": "Negative Sampling Based on Frequency of Relational Association Entities",
+      "result": 0.94
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18",
+      "Metric": "MRR",
+      "KGEModel": "ComplEx",
+      "NSMethod": "Unknown",
+      "result": 0.941
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18",
+      "Metric": "MRR",
+      "KGEModel": "DistMult",
+      "NSMethod": "Unknown",
+      "result": 0.882
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18",
+      "Metric": "MRR",
+      "KGEModel": "DistMult",
+      "NSMethod": "Negative Sampling Based on Frequency of Relational Association Entities",
+      "result": 0.83
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18",
+      "Metric": "MR",
+      "KGEModel": "TransE",
+      "NSMethod": "Unknown",
+      "result": 251
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18",
+      "Metric": "MR",
+      "KGEModel": "TransE",
+      "NSMethod": "Negative Sampling Based on Frequency of Relational Association Entities",
+      "result": 199.5
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18",
+      "Metric": "MR",
+      "KGEModel": "TransH",
+      "NSMethod": "Negative Sampling Based on Frequency of Relational Association Entities",
+      "result": 188.2
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18",
+      "Metric": "MR",
+      "KGEModel": "TransH",
+      "NSMethod": "Unknown",
+      "result": 388
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18",
+      "Metric": "MR",
+      "KGEModel": "DistMult",
+      "NSMethod": "Negative Sampling Based on Frequency of Relational Association Entities",
+      "result": 285
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18",
+      "Metric": "MR",
+      "KGEModel": "ComplEx",
+      "NSMethod": "Negative Sampling Based on Frequency of Relational Association Entities",
+      "result": 327
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18",
+      "Metric": "MR",
+      "KGEModel": "ANALOGY",
+      "NSMethod": "Negative Sampling Based on Frequency of Relational Association Entities",
+      "result": 336
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18",
+      "Metric": "Hits@10",
+      "KGEModel": "ComplEx",
+      "NSMethod": "Unknown",
+      "result": 94.7
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18",
+      "Metric": "Hits@10",
+      "KGEModel": "ANALOGY",
+      "NSMethod": "Unknown",
+      "result": 94.7
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18",
+      "Metric": "Hits@10",
+      "KGEModel": "ComplEx",
+      "NSMethod": "Negative Sampling Based on Frequency of Relational Association Entities",
+      "result": 94.5
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18",
+      "Metric": "Hits@10",
+      "KGEModel": "ANALOGY",
+      "NSMethod": "Negative Sampling Based on Frequency of Relational Association Entities",
+      "result": 94.2
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18",
+      "Metric": "Hits@10",
+      "KGEModel": "DistMult",
+      "NSMethod": "Negative Sampling Based on Frequency of Relational Association Entities",
+      "result": 94.0
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18",
+      "Metric": "Hits@10",
+      "KGEModel": "DistMult",
+      "NSMethod": "Unknown",
+      "result": 93.6
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18",
+      "Metric": "Hits@10",
+      "KGEModel": "TransE",
+      "NSMethod": "Unknown",
+      "result": 89.2
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18",
+      "Metric": "Hits@10",
+      "KGEModel": "TransH",
+      "NSMethod": "Negative Sampling Based on Frequency of Relational Association Entities",
+      "result": 85.8
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18",
+      "Metric": "Hits@10",
+      "KGEModel": "TransE",
+      "NSMethod": "Negative Sampling Based on Frequency of Relational Association Entities",
+      "result": 82.6
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18",
+      "Metric": "Hits@10",
+      "KGEModel": "TransH",
+      "NSMethod": "Unknown",
+      "result": 82.3
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K",
+      "Metric": "MRR",
+      "KGEModel": "ANALOGY",
+      "NSMethod": "Unknown",
+      "result": 0.725
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K",
+      "Metric": "MRR",
+      "KGEModel": "ANALOGY",
+      "NSMethod": "Negative Sampling Based on Frequency of Relational Association Entities",
+      "result": 0.693
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K",
+      "Metric": "MRR",
+      "KGEModel": "ComplEx",
+      "NSMethod": "Unknown",
+      "result": 0.692
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K",
+      "Metric": "MRR",
+      "KGEModel": "ComplEx",
+      "NSMethod": "Negative Sampling Based on Frequency of Relational Association Entities",
+      "result": 0.686
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K",
+      "Metric": "MRR",
+      "KGEModel": "DistMult",
+      "NSMethod": "Unknown",
+      "result": 0.654
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K",
+      "Metric": "MRR",
+      "KGEModel": "DistMult",
+      "NSMethod": "Negative Sampling Based on Frequency of Relational Association Entities",
+      "result": 0.65
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K",
+      "Metric": "MRR",
+      "KGEModel": "TransE",
+      "NSMethod": "Negative Sampling Based on Frequency of Relational Association Entities",
+      "result": 0.509
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K",
+      "Metric": "MRR",
+      "KGEModel": "TransH",
+      "NSMethod": "Negative Sampling Based on Frequency of Relational Association Entities",
+      "result": 0.508
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K",
+      "Metric": "MRR",
+      "KGEModel": "TransE",
+      "NSMethod": "Unknown",
+      "result": 0.38
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K",
+      "Metric": "MR",
+      "KGEModel": "DistMult",
+      "NSMethod": "Negative Sampling Based on Frequency of Relational Association Entities",
+      "result": 41.4
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K",
+      "Metric": "MR",
+      "KGEModel": "ComplEx",
+      "NSMethod": "Negative Sampling Based on Frequency of Relational Association Entities",
+      "result": 42.7
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K",
+      "Metric": "MR",
+      "KGEModel": "ANALOGY",
+      "NSMethod": "Negative Sampling Based on Frequency of Relational Association Entities",
+      "result": 42.9
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K",
+      "Metric": "MR",
+      "KGEModel": "TransH",
+      "NSMethod": "Negative Sampling Based on Frequency of Relational Association Entities",
+      "result": 47.5
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K",
+      "Metric": "MR",
+      "KGEModel": "TransE",
+      "NSMethod": "Negative Sampling Based on Frequency of Relational Association Entities",
+      "result": 47.9
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K",
+      "Metric": "MR",
+      "KGEModel": "TransH",
+      "NSMethod": "Unknown",
+      "result": 87
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K",
+      "Metric": "MR",
+      "KGEModel": "TransE",
+      "NSMethod": "Unknown",
+      "result": 125
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K",
+      "Metric": "Hits@10",
+      "KGEModel": "ANALOGY",
+      "NSMethod": "Unknown",
+      "result": 85.4
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K",
+      "Metric": "Hits@10",
+      "KGEModel": "ComplEx",
+      "NSMethod": "Unknown",
+      "result": 84.0
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K",
+      "Metric": "Hits@10",
+      "KGEModel": "DistMult",
+      "NSMethod": "Negative Sampling Based on Frequency of Relational Association Entities",
+      "result": 82.7
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K",
+      "Metric": "Hits@10",
+      "KGEModel": "ComplEx",
+      "NSMethod": "Negative Sampling Based on Frequency of Relational Association Entities",
+      "result": 82.7
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K",
+      "Metric": "Hits@10",
+      "KGEModel": "ANALOGY",
+      "NSMethod": "Negative Sampling Based on Frequency of Relational Association Entities",
+      "result": 82.7
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K",
+      "Metric": "Hits@10",
+      "KGEModel": "DistMult",
+      "NSMethod": "Unknown",
+      "result": 82.4
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K",
+      "Metric": "Hits@10",
+      "KGEModel": "TransE",
+      "NSMethod": "Negative Sampling Based on Frequency of Relational Association Entities",
+      "result": 74.1
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K",
+      "Metric": "Hits@10",
+      "KGEModel": "TransH",
+      "NSMethod": "Negative Sampling Based on Frequency of Relational Association Entities",
+      "result": 74.1
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K",
+      "Metric": "Hits@10",
+      "KGEModel": "TransH",
+      "NSMethod": "Unknown",
+      "result": 64.4
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K",
+      "Metric": "Hits@10",
+      "KGEModel": "TransE",
+      "NSMethod": "Unknown",
+      "result": 47.1
+    },
+    {
+      "Task": "Relation Prediction",
+      "Dataset": "WN18",
+      "Metric": "MR",
+      "KGEModel": "DistMult",
+      "NSMethod": "Negative Sampling Based on Frequency of Relational Association Entities",
+      "result": 2.96
+    },
+    {
+      "Task": "Relation Prediction",
+      "Dataset": "WN18",
+      "Metric": "MR",
+      "KGEModel": "TransH",
+      "NSMethod": "Negative Sampling Based on Frequency of Relational Association Entities",
+      "result": 2.92
+    },
+    {
+      "Task": "Relation Prediction",
+      "Dataset": "WN18",
+      "Metric": "MR",
+      "KGEModel": "ComplEx",
+      "NSMethod": "Negative Sampling Based on Frequency of Relational Association Entities",
+      "result": 2.97
+    },
+    {
+      "Task": "Relation Prediction",
+      "Dataset": "WN18",
+      "Metric": "MR",
+      "KGEModel": "DistMult",
+      "NSMethod": "Unknown",
+      "result": 3.02
+    },
+    {
+      "Task": "Relation Prediction",
+      "Dataset": "WN18",
+      "Metric": "MR",
+      "KGEModel": "TransE",
+      "NSMethod": "Negative Sampling Based on Frequency of Relational Association Entities",
+      "result": 3.14
+    },
+    {
+      "Task": "Relation Prediction",
+      "Dataset": "WN18",
+      "Metric": "MR",
+      "KGEModel": "ComplEx",
+      "NSMethod": "Unknown",
+      "result": 3.16
+    },
+    {
+      "Task": "Relation Prediction",
+      "Dataset": "WN18",
+      "Metric": "MR",
+      "KGEModel": "TransE",
+      "NSMethod": "Unknown",
+      "result": 3.27
+    },
+    {
+      "Task": "Relation Prediction",
+      "Dataset": "WN18",
+      "Metric": "MR",
+      "KGEModel": "TransH",
+      "NSMethod": "Unknown",
+      "result": 3.34
+    },
+    {
+      "Task": "Relation Prediction",
+      "Dataset": "WN18",
+      "Metric": "MR",
+      "KGEModel": "ANALOGY",
+      "NSMethod": "Negative Sampling Based on Frequency of Relational Association Entities",
+      "result": 3.49
+    },
+    {
+      "Task": "Relation Prediction",
+      "Dataset": "WN18",
+      "Metric": "MR",
+      "KGEModel": "ANALOGY",
+      "NSMethod": "Unknown",
+      "result": 3.57
+    },
+    {
+      "Task": "Relation Prediction",
+      "Dataset": "WN18",
+      "Metric": "Hits@3",
+      "KGEModel": "ANALOGY",
+      "NSMethod": "Negative Sampling Based on Frequency of Relational Association Entities",
+      "result": 78.3
+    },
+    {
+      "Task": "Relation Prediction",
+      "Dataset": "WN18",
+      "Metric": "Hits@3",
+      "KGEModel": "ANALOGY",
+      "NSMethod": "Unknown",
+      "result": 76.9
+    },
+    {
+      "Task": "Relation Prediction",
+      "Dataset": "WN18",
+      "Metric": "Hits@3",
+      "KGEModel": "ComplEx",
+      "NSMethod": "Negative Sampling Based on Frequency of Relational Association Entities",
+      "result": 76.2
+    },
+    {
+      "Task": "Relation Prediction",
+      "Dataset": "WN18",
+      "Metric": "Hits@3",
+      "KGEModel": "ComplEx",
+      "NSMethod": "Unknown",
+      "result": 75.7
+    },
+    {
+      "Task": "Relation Prediction",
+      "Dataset": "WN18",
+      "Metric": "Hits@3",
+      "KGEModel": "DistMult",
+      "NSMethod": "Negative Sampling Based on Frequency of Relational Association Entities",
+      "result": 74.9
+    },
+    {
+      "Task": "Relation Prediction",
+      "Dataset": "WN18",
+      "Metric": "Hits@3",
+      "KGEModel": "TransE",
+      "NSMethod": "Negative Sampling Based on Frequency of Relational Association Entities",
+      "result": 74.8
+    },
+    {
+      "Task": "Relation Prediction",
+      "Dataset": "WN18",
+      "Metric": "Hits@3",
+      "KGEModel": "TransE",
+      "NSMethod": "Unknown",
+      "result": 73.64
+    },
+    {
+      "Task": "Relation Prediction",
+      "Dataset": "WN18",
+      "Metric": "Hits@3",
+      "KGEModel": "TransH",
+      "NSMethod": "Negative Sampling Based on Frequency of Relational Association Entities",
+      "result": 73.6
+    },
+    {
+      "Task": "Relation Prediction",
+      "Dataset": "WN18",
+      "Metric": "Hits@3",
+      "KGEModel": "DistMult",
+      "NSMethod": "Unknown",
+      "result": 72.6
+    },
+    {
+      "Task": "Relation Prediction",
+      "Dataset": "WN18",
+      "Metric": "Hits@3",
+      "KGEModel": "TransH",
+      "NSMethod": "Unknown",
+      "result": 70.1
+    },
+    {
+      "Task": "Relation Prediction",
+      "Dataset": "FB15K",
+      "Metric": "MR",
+      "KGEModel": "TransH",
+      "NSMethod": "Negative Sampling Based on Frequency of Relational Association Entities",
+      "result": 2.87
+    },
+    {
+      "Task": "Relation Prediction",
+      "Dataset": "FB15K",
+      "Metric": "MR",
+      "KGEModel": "TransE",
+      "NSMethod": "Negative Sampling Based on Frequency of Relational Association Entities",
+      "result": 2.93
+    },
+    {
+      "Task": "Relation Prediction",
+      "Dataset": "FB15K",
+      "Metric": "MR",
+      "KGEModel": "ANALOGY",
+      "NSMethod": "Negative Sampling Based on Frequency of Relational Association Entities",
+      "result": 30.5
+    },
+    {
+      "Task": "Relation Prediction",
+      "Dataset": "FB15K",
+      "Metric": "MR",
+      "KGEModel": "DistMult",
+      "NSMethod": "Negative Sampling Based on Frequency of Relational Association Entities",
+      "result": 32.6
+    },
+    {
+      "Task": "Relation Prediction",
+      "Dataset": "FB15K",
+      "Metric": "MR",
+      "KGEModel": "ComplEx",
+      "NSMethod": "Negative Sampling Based on Frequency of Relational Association Entities",
+      "result": 33.24
+    },
+    {
+      "Task": "Relation Prediction",
+      "Dataset": "FB15K",
+      "Metric": "MR",
+      "KGEModel": "ComplEx",
+      "NSMethod": "Unknown",
+      "result": 51.3
+    },
+    {
+      "Task": "Relation Prediction",
+      "Dataset": "FB15K",
+      "Metric": "MR",
+      "KGEModel": "DistMult",
+      "NSMethod": "Unknown",
+      "result": 53.6
+    },
+    {
+      "Task": "Relation Prediction",
+      "Dataset": "FB15K",
+      "Metric": "MR",
+      "KGEModel": "ANALOGY",
+      "NSMethod": "Unknown",
+      "result": 54.3
+    },
+    {
+      "Task": "Relation Prediction",
+      "Dataset": "FB15K",
+      "Metric": "MR",
+      "KGEModel": "TransE",
+      "NSMethod": "Unknown",
+      "result": 207.6
+    },
+    {
+      "Task": "Relation Prediction",
+      "Dataset": "FB15K",
+      "Metric": "MR",
+      "KGEModel": "TransH",
+      "NSMethod": "Unknown",
+      "result": 212.4
+    },
+    {
+      "Task": "Relation Prediction",
+      "Dataset": "FB15K",
+      "Metric": "Hits@3",
+      "KGEModel": "DistMult",
+      "NSMethod": "Negative Sampling Based on Frequency of Relational Association Entities",
+      "result": 97.0
+    },
+    {
+      "Task": "Relation Prediction",
+      "Dataset": "FB15K",
+      "Metric": "Hits@3",
+      "KGEModel": "ANALOGY",
+      "NSMethod": "Negative Sampling Based on Frequency of Relational Association Entities",
+      "result": 95.4
+    },
+    {
+      "Task": "Relation Prediction",
+      "Dataset": "FB15K",
+      "Metric": "Hits@3",
+      "KGEModel": "DistMult",
+      "NSMethod": "Unknown",
+      "result": 95.0
+    },
+    {
+      "Task": "Relation Prediction",
+      "Dataset": "FB15K",
+      "Metric": "Hits@3",
+      "KGEModel": "ComplEx",
+      "NSMethod": "Negative Sampling Based on Frequency of Relational Association Entities",
+      "result": 94.6
+    },
+    {
+      "Task": "Relation Prediction",
+      "Dataset": "FB15K",
+      "Metric": "Hits@3",
+      "KGEModel": "TransH",
+      "NSMethod": "Negative Sampling Based on Frequency of Relational Association Entities",
+      "result": 94.0
+    },
+    {
+      "Task": "Relation Prediction",
+      "Dataset": "FB15K",
+      "Metric": "Hits@3",
+      "KGEModel": "TransE",
+      "NSMethod": "Negative Sampling Based on Frequency of Relational Association Entities",
+      "result": 93.7
+    },
+    {
+      "Task": "Relation Prediction",
+      "Dataset": "FB15K",
+      "Metric": "Hits@3",
+      "KGEModel": "ComplEx",
+      "NSMethod": "Unknown",
+      "result": 93.5
+    },
+    {
+      "Task": "Relation Prediction",
+      "Dataset": "FB15K",
+      "Metric": "Hits@3",
+      "KGEModel": "ANALOGY",
+      "NSMethod": "Unknown",
+      "result": 89.4
+    },
+    {
+      "Task": "Relation Prediction",
+      "Dataset": "FB15K",
+      "Metric": "Hits@3",
+      "KGEModel": "TransE",
+      "NSMethod": "Unknown",
+      "result": 58.8
+    },
+    {
+      "Task": "Relation Prediction",
+      "Dataset": "FB15K",
+      "Metric": "Hits@3",
+      "KGEModel": "TransH",
+      "NSMethod": "Unknown",
+      "result": 48.2
+    },
+    {
+      "Task": "Triple Classification",
+      "Dataset": "FB15K",
+      "Metric": "Accuracy",
+      "KGEModel": "ANALOGY",
+      "NSMethod": "Negative Sampling Based on Frequency of Relational Association Entities",
+      "result": 89.5
+    },
+    {
+      "Task": "Triple Classification",
+      "Dataset": "FB15K",
+      "Metric": "Accuracy",
+      "KGEModel": "ComplEx",
+      "NSMethod": "Negative Sampling Based on Frequency of Relational Association Entities",
+      "result": 88.6
+    },
+    {
+      "Task": "Triple Classification",
+      "Dataset": "FB15K",
+      "Metric": "Accuracy",
+      "KGEModel": "ANALOGY",
+      "NSMethod": "Unknown",
+      "result": 87.8
+    },
+    {
+      "Task": "Triple Classification",
+      "Dataset": "FB15K",
+      "Metric": "Accuracy",
+      "KGEModel": "DistMult",
+      "NSMethod": "Negative Sampling Based on Frequency of Relational Association Entities",
+      "result": 87.7
+    },
+    {
+      "Task": "Triple Classification",
+      "Dataset": "FB15K",
+      "Metric": "Accuracy",
+      "KGEModel": "ComplEx",
+      "NSMethod": "Unknown",
+      "result": 87.2
+    },
+    {
+      "Task": "Triple Classification",
+      "Dataset": "FB15K",
+      "Metric": "Accuracy",
+      "KGEModel": "DistMult",
+      "NSMethod": "Unknown",
+      "result": 87.0
+    },
+    {
+      "Task": "Triple Classification",
+      "Dataset": "FB15K",
+      "Metric": "Accuracy",
+      "KGEModel": "TransE",
+      "NSMethod": "Negative Sampling Based on Frequency of Relational Association Entities",
+      "result": 83.0
+    },
+    {
+      "Task": "Triple Classification",
+      "Dataset": "FB15K",
+      "Metric": "Accuracy",
+      "KGEModel": "TransH",
+      "NSMethod": "Negative Sampling Based on Frequency of Relational Association Entities",
+      "result": 83.1
+    },
+    {
+      "Task": "Triple Classification",
+      "Dataset": "FB15K",
+      "Metric": "Accuracy",
+      "KGEModel": "TransH",
+      "NSMethod": "Unknown",
+      "result": 80.2
+    },
+    {
+      "Task": "Triple Classification",
+      "Dataset": "FB15K",
+      "Metric": "Accuracy",
+      "KGEModel": "TransE",
+      "NSMethod": "Unknown",
+      "result": 79.6
+    }
+  ]
+}

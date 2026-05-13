@@ -1,0 +1,101 @@
+<article/gns> rdf:type ns4kge:Article .
+<article/gns> ns4kge:title "Good negative sampling for triple classification"^^xsd:string .
+<article/gns> ns4kge:proposesNSMethod <ns-method/good-negative-sampling> .
+<article/gns> ns4kge:mentionsNSMethod <ns-method/bernoulli-negative-sampling> .
+<article/gns> ns4kge:mentionsNSMethod <ns-method/iterative-negative-sampling> .
+<article/gns> ns4kge:mentionsNSMethod <ns-method/uniform-negative-sampling> .
+<article/gns> ns4kge:mentionsNSMethod <ns-method/typed-negative-sampling> .
+<article/gns> ns4kge:mentionsNSMethod <ns-method/pseudo-typed-negative-sampling> .
+<article/gns> ns4kge:mentionsKGEModel <kge-model/reasonkge> .
+<article/gns> ns4kge:mentionsKGEModel <kge-model/transe> .
+<article/gns> ns4kge:mentionsKGEModel <kge-model/complex> .
+<article/gns> ns4kge:mentionsKGEModel <kge-model/bert> .
+<article/gns> ns4kge:mentionsKGEModel <kge-model/distmult> .
+<article/gns> ns4kge:mentionsKGEModel <kge-model/kg-bert> .
+<article/gns> ns4kge:mentionsKGEModel <kge-model/rescal> .
+<article/gns> ns4kge:mentionsKGEModel <kge-model/transowl> .
+<article/gns> ns4kge:hasExperimentation <experimentation/gns> .
+
+<category/static-ns> rdf:type ns4kge:Category .
+
+<subcategory/knowledge-constrained> rdf:type ns4kge:Subcategory .
+
+<ns-method/good-negative-sampling> rdf:type ns4kge:NSMethod .
+<ns-method/good-negative-sampling> ns4kge:hasCategory <category/static-ns> .
+<ns-method/good-negative-sampling> ns4kge:hasSubcategory <subcategory/knowledge-constrained> .
+
+<ns-method/bernoulli-negative-sampling> rdf:type ns4kge:NSMethod .
+<ns-method/bernoulli-negative-sampling> ns4kge:hasCategory <category/static-ns> .
+<subcategory/probabilistic> rdf:type ns4kge:Subcategory .
+
+<ns-method/bernoulli-negative-sampling> ns4kge:hasSubcategory <subcategory/probabilistic> .
+
+<ns-method/iterative-negative-sampling> rdf:type ns4kge:NSMethod .
+
+<ns-method/uniform-negative-sampling> rdf:type ns4kge:NSMethod .
+<ns-method/uniform-negative-sampling> ns4kge:hasCategory <category/static-ns> .
+<subcategory/random> rdf:type ns4kge:Subcategory .
+
+<ns-method/uniform-negative-sampling> ns4kge:hasSubcategory <subcategory/random> .
+
+<ns-method/typed-negative-sampling> rdf:type ns4kge:NSMethod .
+
+<ns-method/pseudo-typed-negative-sampling> rdf:type ns4kge:NSMethod .
+
+<kge-model/reasonkge> rdf:type ns4kge:KGEModel .
+
+<kge-model/transe> rdf:type ns4kge:KGEModel .
+
+<kge-model/complex> rdf:type ns4kge:KGEModel .
+
+<kge-model/bert> rdf:type ns4kge:KGEModel .
+
+<kge-model/distmult> rdf:type ns4kge:KGEModel .
+
+<kge-model/kg-bert> rdf:type ns4kge:KGEModel .
+
+<kge-model/rescal> rdf:type ns4kge:KGEModel .
+
+<kge-model/transowl> rdf:type ns4kge:KGEModel .
+
+<dataset/fb13-fb13-reduced> rdf:type ns4kge:Dataset .
+<task/triple-classification> rdf:type ns4kge:Task .
+<metric/accuracy> rdf:type ns4kge:Metric .
+<loss-function/cross-entropy-loss> rdf:type ns4kge:LossFunction .
+<optimizer/adam> rdf:type ns4kge:Optimizer .
+
+<experimentation/gns> rdf:type ns4kge:Experimentation .
+<experimentation/gns> ns4kge:hasTrainingProtocol <training-protocol/gns> .
+<experimentation/gns> ns4kge:hasConfiguration <configuration/gns/1> .
+<experimentation/gns> ns4kge:hasConfiguration <configuration/gns/2> .
+<experimentation/gns> ns4kge:hasConfiguration <configuration/gns/3> .
+
+<training-protocol/gns> rdf:type ns4kge:TrainingProtocol .
+<training-protocol/gns> ns4kge:hasOptimizer    <optimizer/adam> .
+<training-protocol/gns> ns4kge:hasLossFunction <loss-function/cross-entropy-loss> .
+<training-protocol/gns> ns4kge:learningRate "0.00005"^^xsd:decimal .
+<training-protocol/gns> ns4kge:nsRatio "1"^^xsd:decimal .
+
+<configuration/gns/1> rdf:type ns4kge:Configuration .
+<configuration/gns/1> ns4kge:hasTask    <task/triple-classification> .
+<configuration/gns/1> ns4kge:hasDataset <dataset/fb13-fb13-reduced> .
+<configuration/gns/1> ns4kge:hasMetric  <metric/accuracy> .
+<configuration/gns/1> ns4kge:hasKGEModel <kge-model/kg-bert> .
+<configuration/gns/1> ns4kge:hasNSMethod <ns-method/uniform-negative-sampling> .
+<configuration/gns/1> ns4kge:result "0.5182"^^xsd:decimal .
+
+<configuration/gns/2> rdf:type ns4kge:Configuration .
+<configuration/gns/2> ns4kge:hasTask    <task/triple-classification> .
+<configuration/gns/2> ns4kge:hasDataset <dataset/fb13-fb13-reduced> .
+<configuration/gns/2> ns4kge:hasMetric  <metric/accuracy> .
+<configuration/gns/2> ns4kge:hasKGEModel <kge-model/kg-bert> .
+<configuration/gns/2> ns4kge:hasNSMethod <ns-method/pseudo-typed-negative-sampling> .
+<configuration/gns/2> ns4kge:result "0.8972"^^xsd:decimal .
+
+<configuration/gns/3> rdf:type ns4kge:Configuration .
+<configuration/gns/3> ns4kge:hasTask    <task/triple-classification> .
+<configuration/gns/3> ns4kge:hasDataset <dataset/fb13-fb13-reduced> .
+<configuration/gns/3> ns4kge:hasMetric  <metric/accuracy> .
+<configuration/gns/3> ns4kge:hasKGEModel <kge-model/kg-bert> .
+<configuration/gns/3> ns4kge:hasNSMethod <ns-method/good-negative-sampling> .
+<configuration/gns/3> ns4kge:result "0.9013"^^xsd:decimal .

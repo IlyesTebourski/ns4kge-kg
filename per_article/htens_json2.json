@@ -1,0 +1,516 @@
+{
+  "Configurations": [
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K",
+      "Metric": "MRR",
+      "KGEModel": "TransE",
+      "NSMethod": "Uniform Sampling",
+      "result": 51.67
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K",
+      "Metric": "Hits@10",
+      "KGEModel": "TransE",
+      "NSMethod": "Uniform Sampling",
+      "result": 77.09
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K237",
+      "Metric": "MRR",
+      "KGEModel": "TransE",
+      "NSMethod": "Uniform Sampling",
+      "result": 28.62
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K237",
+      "Metric": "Hits@10",
+      "KGEModel": "TransE",
+      "NSMethod": "Uniform Sampling",
+      "result": 46.75
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K",
+      "Metric": "MRR",
+      "KGEModel": "TransE",
+      "NSMethod": "KBGAN(raw)",
+      "result": 49.96
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K",
+      "Metric": "Hits@10",
+      "KGEModel": "TransE",
+      "NSMethod": "KBGAN(raw)",
+      "result": 73.43
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K237",
+      "Metric": "MRR",
+      "KGEModel": "TransE",
+      "NSMethod": "KBGAN(raw)",
+      "result": 29.41
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K237",
+      "Metric": "Hits@10",
+      "KGEModel": "TransE",
+      "NSMethod": "KBGAN(raw)",
+      "result": 47.95
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K",
+      "Metric": "MRR",
+      "KGEModel": "TransE",
+      "NSMethod": "KBGAN(pre)",
+      "result": 55.44
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K",
+      "Metric": "Hits@10",
+      "KGEModel": "TransE",
+      "NSMethod": "KBGAN(pre)",
+      "result": 77.98
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K237",
+      "Metric": "MRR",
+      "KGEModel": "TransE",
+      "NSMethod": "KBGAN(pre)",
+      "result": 30.61
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K237",
+      "Metric": "Hits@10",
+      "KGEModel": "TransE",
+      "NSMethod": "KBGAN(pre)",
+      "result": 48.96
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K",
+      "Metric": "MRR",
+      "KGEModel": "TransE",
+      "NSMethod": "Hierarchical Type Enhanced Negative Sampling",
+      "result": 61.83
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K",
+      "Metric": "Hits@10",
+      "KGEModel": "TransE",
+      "NSMethod": "Hierarchical Type Enhanced Negative Sampling",
+      "result": 82.57
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K237",
+      "Metric": "MRR",
+      "KGEModel": "TransE",
+      "NSMethod": "Hierarchical Type Enhanced Negative Sampling",
+      "result": 31.88
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K237",
+      "Metric": "Hits@10",
+      "KGEModel": "TransE",
+      "NSMethod": "Hierarchical Type Enhanced Negative Sampling",
+      "result": 50.48
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K",
+      "Metric": "MRR",
+      "KGEModel": "TransD",
+      "NSMethod": "Uniform Sampling",
+      "result": 51.16
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K",
+      "Metric": "Hits@10",
+      "KGEModel": "TransD",
+      "NSMethod": "Uniform Sampling",
+      "result": 76.56
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K237",
+      "Metric": "MRR",
+      "KGEModel": "TransD",
+      "NSMethod": "Uniform Sampling",
+      "result": 29.43
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K237",
+      "Metric": "Hits@10",
+      "KGEModel": "TransD",
+      "NSMethod": "Uniform Sampling",
+      "result": 47.77
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K",
+      "Metric": "MRR",
+      "KGEModel": "TransD",
+      "NSMethod": "KBGAN(raw)",
+      "result": 49.14
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K",
+      "Metric": "Hits@10",
+      "KGEModel": "TransD",
+      "NSMethod": "KBGAN(raw)",
+      "result": 73.46
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K237",
+      "Metric": "MRR",
+      "KGEModel": "TransD",
+      "NSMethod": "KBGAN(raw)",
+      "result": 30.27
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K237",
+      "Metric": "Hits@10",
+      "KGEModel": "TransD",
+      "NSMethod": "KBGAN(raw)",
+      "result": 48.66
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K",
+      "Metric": "MRR",
+      "KGEModel": "TransD",
+      "NSMethod": "KBGAN(pre)",
+      "result": 53.78
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K",
+      "Metric": "Hits@10",
+      "KGEModel": "TransD",
+      "NSMethod": "KBGAN(pre)",
+      "result": 76.81
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K237",
+      "Metric": "MRR",
+      "KGEModel": "TransD",
+      "NSMethod": "KBGAN(pre)",
+      "result": 31.49
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K237",
+      "Metric": "Hits@10",
+      "KGEModel": "TransD",
+      "NSMethod": "KBGAN(pre)",
+      "result": 49.87
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K",
+      "Metric": "MRR",
+      "KGEModel": "TransD",
+      "NSMethod": "Hierarchical Type Enhanced Negative Sampling",
+      "result": 61.12
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K",
+      "Metric": "Hits@10",
+      "KGEModel": "TransD",
+      "NSMethod": "Hierarchical Type Enhanced Negative Sampling",
+      "result": 82.13
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K237",
+      "Metric": "MRR",
+      "KGEModel": "TransD",
+      "NSMethod": "Hierarchical Type Enhanced Negative Sampling",
+      "result": 32.52
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K237",
+      "Metric": "Hits@10",
+      "KGEModel": "TransD",
+      "NSMethod": "Hierarchical Type Enhanced Negative Sampling",
+      "result": 51.29
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K",
+      "Metric": "MRR",
+      "KGEModel": "DistMult",
+      "NSMethod": "Uniform Sampling",
+      "result": 55.31
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K",
+      "Metric": "Hits@10",
+      "KGEModel": "DistMult",
+      "NSMethod": "Uniform Sampling",
+      "result": 81.22
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K237",
+      "Metric": "MRR",
+      "KGEModel": "DistMult",
+      "NSMethod": "Uniform Sampling",
+      "result": 27.47
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K237",
+      "Metric": "Hits@10",
+      "KGEModel": "DistMult",
+      "NSMethod": "Uniform Sampling",
+      "result": 44.43
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K",
+      "Metric": "MRR",
+      "KGEModel": "DistMult",
+      "NSMethod": "KBGAN(raw)",
+      "result": 58.99
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K",
+      "Metric": "Hits@10",
+      "KGEModel": "DistMult",
+      "NSMethod": "KBGAN(raw)",
+      "result": 82.66
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K237",
+      "Metric": "MRR",
+      "KGEModel": "DistMult",
+      "NSMethod": "KBGAN(raw)",
+      "result": 29.51
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K237",
+      "Metric": "Hits@10",
+      "KGEModel": "DistMult",
+      "NSMethod": "KBGAN(raw)",
+      "result": 45.93
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K",
+      "Metric": "MRR",
+      "KGEModel": "DistMult",
+      "NSMethod": "KBGAN(pre)",
+      "result": 65.27
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K",
+      "Metric": "Hits@10",
+      "KGEModel": "DistMult",
+      "NSMethod": "KBGAN(pre)",
+      "result": 85.91
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K237",
+      "Metric": "MRR",
+      "KGEModel": "DistMult",
+      "NSMethod": "KBGAN(pre)",
+      "result": 30.54
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K237",
+      "Metric": "Hits@10",
+      "KGEModel": "DistMult",
+      "NSMethod": "KBGAN(pre)",
+      "result": 48.08
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K",
+      "Metric": "MRR",
+      "KGEModel": "DistMult",
+      "NSMethod": "Hierarchical Type Enhanced Negative Sampling",
+      "result": 67.76
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K",
+      "Metric": "Hits@10",
+      "KGEModel": "DistMult",
+      "NSMethod": "Hierarchical Type Enhanced Negative Sampling",
+      "result": 85.81
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K237",
+      "Metric": "MRR",
+      "KGEModel": "DistMult",
+      "NSMethod": "Hierarchical Type Enhanced Negative Sampling",
+      "result": 31.08
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K237",
+      "Metric": "Hits@10",
+      "KGEModel": "DistMult",
+      "NSMethod": "Hierarchical Type Enhanced Negative Sampling",
+      "result": 48.15
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K",
+      "Metric": "MRR",
+      "KGEModel": "ComplEx",
+      "NSMethod": "Uniform Sampling",
+      "result": 66.18
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K",
+      "Metric": "Hits@10",
+      "KGEModel": "ComplEx",
+      "NSMethod": "Uniform Sampling",
+      "result": 86.48
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K237",
+      "Metric": "MRR",
+      "KGEModel": "ComplEx",
+      "NSMethod": "Uniform Sampling",
+      "result": 28.4
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K237",
+      "Metric": "Hits@10",
+      "KGEModel": "ComplEx",
+      "NSMethod": "Uniform Sampling",
+      "result": 46.39
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K",
+      "Metric": "MRR",
+      "KGEModel": "ComplEx",
+      "NSMethod": "KBGAN(raw)",
+      "result": 69.32
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K",
+      "Metric": "Hits@10",
+      "KGEModel": "ComplEx",
+      "NSMethod": "KBGAN(raw)",
+      "result": 86.26
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K237",
+      "Metric": "MRR",
+      "KGEModel": "ComplEx",
+      "NSMethod": "KBGAN(raw)",
+      "result": 30.7
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K237",
+      "Metric": "Hits@10",
+      "KGEModel": "ComplEx",
+      "NSMethod": "KBGAN(raw)",
+      "result": 48.08
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K",
+      "Metric": "MRR",
+      "KGEModel": "ComplEx",
+      "NSMethod": "KBGAN(pre)",
+      "result": 73.76
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K",
+      "Metric": "Hits@10",
+      "KGEModel": "ComplEx",
+      "NSMethod": "KBGAN(pre)",
+      "result": 87.47
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K237",
+      "Metric": "MRR",
+      "KGEModel": "ComplEx",
+      "NSMethod": "KBGAN(pre)",
+      "result": 30.97
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K237",
+      "Metric": "Hits@10",
+      "KGEModel": "ComplEx",
+      "NSMethod": "KBGAN(pre)",
+      "result": 49.04
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K",
+      "Metric": "MRR",
+      "KGEModel": "ComplEx",
+      "NSMethod": "Hierarchical Type Enhanced Negative Sampling",
+      "result": 76.73
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K",
+      "Metric": "Hits@10",
+      "KGEModel": "ComplEx",
+      "NSMethod": "Hierarchical Type Enhanced Negative Sampling",
+      "result": 87.33
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K237",
+      "Metric": "MRR",
+      "KGEModel": "ComplEx",
+      "NSMethod": "Hierarchical Type Enhanced Negative Sampling",
+      "result": 31.69
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K237",
+      "Metric": "Hits@10",
+      "KGEModel": "ComplEx",
+      "NSMethod": "Hierarchical Type Enhanced Negative Sampling",
+      "result": 49.53
+    }
+  ]
+}

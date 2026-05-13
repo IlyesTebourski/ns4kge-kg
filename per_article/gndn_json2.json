@@ -1,0 +1,404 @@
+{
+  "Configurations": [
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18",
+      "Metric": "MRR",
+      "KGEModel": "KBGAN",
+      "NSMethod": "Unknown",
+      "result": 0.213
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18",
+      "Metric": "Hits@10",
+      "KGEModel": "KBGAN",
+      "NSMethod": "Unknown",
+      "result": 48.1
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K",
+      "Metric": "MRR",
+      "KGEModel": "KBGAN",
+      "NSMethod": "Unknown",
+      "result": 0.278
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K",
+      "Metric": "Hits@10",
+      "KGEModel": "KBGAN",
+      "NSMethod": "Unknown",
+      "result": 45.8
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18",
+      "Metric": "MRR",
+      "KGEModel": "ConvE",
+      "NSMethod": "Unknown",
+      "result": 0.46
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18",
+      "Metric": "Hits@10",
+      "KGEModel": "ConvE",
+      "NSMethod": "Unknown",
+      "result": 48.0
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K",
+      "Metric": "MRR",
+      "KGEModel": "ConvE",
+      "NSMethod": "Unknown",
+      "result": 0.316
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K",
+      "Metric": "Hits@10",
+      "KGEModel": "ConvE",
+      "NSMethod": "Unknown",
+      "result": 49.1
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18",
+      "Metric": "MRR",
+      "KGEModel": "ConvKB",
+      "NSMethod": "Unknown",
+      "result": 0.248
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18",
+      "Metric": "Hits@10",
+      "KGEModel": "ConvKB",
+      "NSMethod": "Unknown",
+      "result": 52.5
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K",
+      "Metric": "MRR",
+      "KGEModel": "ConvKB",
+      "NSMethod": "Unknown",
+      "result": 0.396
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K",
+      "Metric": "Hits@10",
+      "KGEModel": "ConvKB",
+      "NSMethod": "Unknown",
+      "result": 51.7
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18",
+      "Metric": "MRR",
+      "KGEModel": "Knowledge Completion GAN",
+      "NSMethod": "Knowledge Completion GAN",
+      "result": 0.327
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18",
+      "Metric": "Hits@10",
+      "KGEModel": "Knowledge Completion GAN",
+      "NSMethod": "Knowledge Completion GAN",
+      "result": 55.4
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K",
+      "Metric": "MRR",
+      "KGEModel": "Knowledge Completion GAN",
+      "NSMethod": "Knowledge Completion GAN",
+      "result": 0.472
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K",
+      "Metric": "Hits@10",
+      "KGEModel": "Knowledge Completion GAN",
+      "NSMethod": "Knowledge Completion GAN",
+      "result": 59.3
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18",
+      "Metric": "MRR",
+      "KGEModel": "PathG-RNN [2 hop]",
+      "NSMethod": "Unknown",
+      "result": 0.41
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18",
+      "Metric": "Hits@10",
+      "KGEModel": "PathG-RNN [2 hop]",
+      "NSMethod": "Unknown",
+      "result": 73.7
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K",
+      "Metric": "MRR",
+      "KGEModel": "PathG-RNN [2 hop]",
+      "NSMethod": "Unknown",
+      "result": 0.47
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K",
+      "Metric": "Hits@10",
+      "KGEModel": "PathG-RNN [2 hop]",
+      "NSMethod": "Unknown",
+      "result": 76.3
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18",
+      "Metric": "MRR",
+      "KGEModel": "PathG-RNN [3 hop]",
+      "NSMethod": "Unknown",
+      "result": 0.43
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18",
+      "Metric": "Hits@10",
+      "KGEModel": "PathG-RNN [3 hop]",
+      "NSMethod": "Unknown",
+      "result": 75.0
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K",
+      "Metric": "MRR",
+      "KGEModel": "PathG-RNN [3 hop]",
+      "NSMethod": "Unknown",
+      "result": 0.48
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K",
+      "Metric": "Hits@10",
+      "KGEModel": "PathG-RNN [3 hop]",
+      "NSMethod": "Unknown",
+      "result": 78.5
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18",
+      "Metric": "MRR",
+      "KGEModel": "PTransE [2 hop]",
+      "NSMethod": "Unknown",
+      "result": 0.49
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18",
+      "Metric": "Hits@10",
+      "KGEModel": "PTransE [2 hop]",
+      "NSMethod": "Unknown",
+      "result": 78.2
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K",
+      "Metric": "MRR",
+      "KGEModel": "PTransE [2 hop]",
+      "NSMethod": "Unknown",
+      "result": 0.5
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K",
+      "Metric": "Hits@10",
+      "KGEModel": "PTransE [2 hop]",
+      "NSMethod": "Unknown",
+      "result": 82.2
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18",
+      "Metric": "MRR",
+      "KGEModel": "PTransE [3 hop]",
+      "NSMethod": "Unknown",
+      "result": 0.54
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18",
+      "Metric": "Hits@10",
+      "KGEModel": "PTransE [3 hop]",
+      "NSMethod": "Unknown",
+      "result": 80.5
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K",
+      "Metric": "MRR",
+      "KGEModel": "PTransE [3 hop]",
+      "NSMethod": "Unknown",
+      "result": 0.58
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K",
+      "Metric": "Hits@10",
+      "KGEModel": "PTransE [3 hop]",
+      "NSMethod": "Unknown",
+      "result": 84.6
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18",
+      "Metric": "MRR",
+      "KGEModel": "Path-KCGAN [2 hop]",
+      "NSMethod": "Knowledge Completion GAN",
+      "result": 0.58
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18",
+      "Metric": "Hits@10",
+      "KGEModel": "Path-KCGAN [2 hop]",
+      "NSMethod": "Knowledge Completion GAN",
+      "result": 85.4
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K",
+      "Metric": "MRR",
+      "KGEModel": "Path-KCGAN [2 hop]",
+      "NSMethod": "Knowledge Completion GAN",
+      "result": 0.63
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K",
+      "Metric": "Hits@10",
+      "KGEModel": "Path-KCGAN [2 hop]",
+      "NSMethod": "Knowledge Completion GAN",
+      "result": 87.1
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18",
+      "Metric": "MRR",
+      "KGEModel": "Path-KCGAN [3 hop]",
+      "NSMethod": "Knowledge Completion GAN",
+      "result": 0.6
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18",
+      "Metric": "Hits@10",
+      "KGEModel": "Path-KCGAN [3 hop]",
+      "NSMethod": "Knowledge Completion GAN",
+      "result": 87.7
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K",
+      "Metric": "MRR",
+      "KGEModel": "Path-KCGAN [3 hop]",
+      "NSMethod": "Knowledge Completion GAN",
+      "result": 0.67
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K",
+      "Metric": "Hits@10",
+      "KGEModel": "Path-KCGAN [3 hop]",
+      "NSMethod": "Knowledge Completion GAN",
+      "result": 91.3
+    },
+    {
+      "Task": "Triple Classification",
+      "Dataset": "WN18",
+      "Metric": "Accuracy",
+      "KGEModel": "TransE",
+      "NSMethod": "Unknown",
+      "result": 70.9
+    },
+    {
+      "Task": "Triple Classification",
+      "Dataset": "FB15K",
+      "Metric": "Accuracy",
+      "KGEModel": "TransE",
+      "NSMethod": "Unknown",
+      "result": 79.6
+    },
+    {
+      "Task": "Triple Classification",
+      "Dataset": "WN18",
+      "Metric": "Accuracy",
+      "KGEModel": "NTN",
+      "NSMethod": "Unknown",
+      "result": 70.6
+    },
+    {
+      "Task": "Triple Classification",
+      "Dataset": "FB15K",
+      "Metric": "Accuracy",
+      "KGEModel": "NTN",
+      "NSMethod": "Unknown",
+      "result": 87.2
+    },
+    {
+      "Task": "Triple Classification",
+      "Dataset": "WN18",
+      "Metric": "Accuracy",
+      "KGEModel": "TransG",
+      "NSMethod": "Unknown",
+      "result": 87.4
+    },
+    {
+      "Task": "Triple Classification",
+      "Dataset": "FB15K",
+      "Metric": "Accuracy",
+      "KGEModel": "TransG",
+      "NSMethod": "Unknown",
+      "result": 87.3
+    },
+    {
+      "Task": "Triple Classification",
+      "Dataset": "WN18",
+      "Metric": "Accuracy",
+      "KGEModel": "ConvKB",
+      "NSMethod": "Unknown",
+      "result": 87.6
+    },
+    {
+      "Task": "Triple Classification",
+      "Dataset": "FB15K",
+      "Metric": "Accuracy",
+      "KGEModel": "ConvKB",
+      "NSMethod": "Unknown",
+      "result": 88.8
+    },
+    {
+      "Task": "Triple Classification",
+      "Dataset": "WN18",
+      "Metric": "Accuracy",
+      "KGEModel": "Knowledge Completion GAN",
+      "NSMethod": "Knowledge Completion GAN",
+      "result": 89.5
+    },
+    {
+      "Task": "Triple Classification",
+      "Dataset": "FB15K",
+      "Metric": "Accuracy",
+      "KGEModel": "Knowledge Completion GAN",
+      "NSMethod": "Knowledge Completion GAN",
+      "result": 94.5
+    }
+  ]
+}

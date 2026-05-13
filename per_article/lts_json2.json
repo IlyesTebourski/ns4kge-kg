@@ -1,0 +1,292 @@
+{
+  "Configurations": [
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18",
+      "Metric": "MR",
+      "KGEModel": "TransE-LTS",
+      "NSMethod": "Negative Sampling of Potential Topic Similarities",
+      "result": 203
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18",
+      "Metric": "MR",
+      "KGEModel": "TransE-SNS",
+      "NSMethod": "Bernoulli Negative Sampling",
+      "result": 195
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18",
+      "Metric": "MR",
+      "KGEModel": "TransE-SNS",
+      "NSMethod": "Uniform Negative Sampling",
+      "result": 208
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18",
+      "Metric": "MR",
+      "KGEModel": "TranSparse",
+      "NSMethod": "Bernoulli Negative Sampling",
+      "result": 211
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18",
+      "Metric": "MR",
+      "KGEModel": "TransD",
+      "NSMethod": "Bernoulli Negative Sampling",
+      "result": 212
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18",
+      "Metric": "MR",
+      "KGEModel": "TransE",
+      "NSMethod": "Unknown",
+      "result": 251
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18",
+      "Metric": "MR",
+      "KGEModel": "TransE",
+      "NSMethod": "GAN",
+      "result": 240
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18",
+      "Metric": "Hits@10",
+      "KGEModel": "TransE-LTS",
+      "NSMethod": "Negative Sampling of Potential Topic Similarities",
+      "result": 95.7
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18",
+      "Metric": "Hits@10",
+      "KGEModel": "TransE-SNS",
+      "NSMethod": "Bernoulli Negative Sampling",
+      "result": 94.6
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18",
+      "Metric": "Hits@10",
+      "KGEModel": "TransE-SNS",
+      "NSMethod": "Uniform Negative Sampling",
+      "result": 94.0
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18",
+      "Metric": "Hits@10",
+      "KGEModel": "TranSparse",
+      "NSMethod": "Bernoulli Negative Sampling",
+      "result": 93.2
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18",
+      "Metric": "Hits@10",
+      "KGEModel": "TransE",
+      "NSMethod": "GAN",
+      "result": 92.7
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18",
+      "Metric": "Hits@10",
+      "KGEModel": "TransE",
+      "NSMethod": "Unknown",
+      "result": 89.2
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18",
+      "Metric": "Hits@10",
+      "KGEModel": "TransD",
+      "NSMethod": "Bernoulli Negative Sampling",
+      "result": 92.2
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K",
+      "Metric": "MR",
+      "KGEModel": "TransE-SNS",
+      "NSMethod": "Uniform Negative Sampling",
+      "result": 56
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K",
+      "Metric": "MR",
+      "KGEModel": "TransE-LTS",
+      "NSMethod": "Negative Sampling of Potential Topic Similarities",
+      "result": 62
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K",
+      "Metric": "MR",
+      "KGEModel": "TranSparse",
+      "NSMethod": "Uniform Negative Sampling",
+      "result": 66
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K",
+      "Metric": "MR",
+      "KGEModel": "TransD",
+      "NSMethod": "Uniform Negative Sampling",
+      "result": 67
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K",
+      "Metric": "MR",
+      "KGEModel": "TransE",
+      "NSMethod": "GAN",
+      "result": 81
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K",
+      "Metric": "MR",
+      "KGEModel": "TransE",
+      "NSMethod": "Unknown",
+      "result": 125
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K",
+      "Metric": "Hits@10",
+      "KGEModel": "TransE-LTS",
+      "NSMethod": "Negative Sampling of Potential Topic Similarities",
+      "result": 84.3
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K",
+      "Metric": "Hits@10",
+      "KGEModel": "TransE-SNS",
+      "NSMethod": "Bernoulli Negative Sampling",
+      "result": 83.0
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K",
+      "Metric": "Hits@10",
+      "KGEModel": "TransE-SNS",
+      "NSMethod": "Uniform Negative Sampling",
+      "result": 80.1
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K",
+      "Metric": "Hits@10",
+      "KGEModel": "TranSparse",
+      "NSMethod": "Bernoulli Negative Sampling",
+      "result": 79.9
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K",
+      "Metric": "Hits@10",
+      "KGEModel": "TransD",
+      "NSMethod": "Bernoulli Negative Sampling",
+      "result": 77.3
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K",
+      "Metric": "Hits@10",
+      "KGEModel": "TransE",
+      "NSMethod": "GAN",
+      "result": 74.0
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K",
+      "Metric": "Hits@10",
+      "KGEModel": "TransE",
+      "NSMethod": "Unknown",
+      "result": 47.1
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K",
+      "Metric": "Hits@10",
+      "KGEModel": "TransE-LTS",
+      "NSMethod": "Uniform Negative Sampling",
+      "result": 81.4
+    },
+    {
+      "Task": "Entity Alignment",
+      "Dataset": "DBP-LGD",
+      "Metric": "Hits@1",
+      "KGEModel": "TransE-LTS",
+      "NSMethod": "Negative Sampling of Potential Topic Similarities",
+      "result": 13.89
+    },
+    {
+      "Task": "Entity Alignment",
+      "Dataset": "DBP-LGD",
+      "Metric": "Hits@1",
+      "KGEModel": "TransE",
+      "NSMethod": "Unknown",
+      "result": 7.01
+    },
+    {
+      "Task": "Entity Alignment",
+      "Dataset": "DBP-GEO",
+      "Metric": "Hits@1",
+      "KGEModel": "TransE-LTS",
+      "NSMethod": "Negative Sampling of Potential Topic Similarities",
+      "result": 12.64
+    },
+    {
+      "Task": "Entity Alignment",
+      "Dataset": "DBP-GEO",
+      "Metric": "Hits@1",
+      "KGEModel": "TransE",
+      "NSMethod": "Unknown",
+      "result": 6.71
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K",
+      "Metric": "Hits@10",
+      "KGEModel": "SE",
+      "NSMethod": "Unknown",
+      "result": 39.8
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K",
+      "Metric": "Hits@10",
+      "KGEModel": "CTransR",
+      "NSMethod": "Bernoulli Negative Sampling",
+      "result": 70.2
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K",
+      "Metric": "Hits@10",
+      "KGEModel": "TransR",
+      "NSMethod": "Bernoulli Negative Sampling",
+      "result": 68.7
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K",
+      "Metric": "Hits@10",
+      "KGEModel": "TransH",
+      "NSMethod": "Bernoulli Negative Sampling",
+      "result": 64.4
+    }
+  ]
+}

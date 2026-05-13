@@ -1,0 +1,539 @@
+<article/ruga> rdf:type ns4kge:Article .
+<article/ruga> ns4kge:title "Improving Knowledge Graph Completion Using Soft Rules and Adversarial Learning"^^xsd:string .
+<article/ruga> ns4kge:date "2021"^^xsd:gYear .
+<article/ruga> ns4kge:proposesNSMethod <ns-method/soft-rules-and-graph-adversarial-learning> .
+<article/ruga> ns4kge:mentionsNSMethod <ns-method/kbgan> .
+<article/ruga> ns4kge:mentionsNSMethod <ns-method/uniform-negative-sampling> .
+<article/ruga> ns4kge:mentionsKGEModel <kge-model/distmult> .
+<article/ruga> ns4kge:mentionsKGEModel <kge-model/transh> .
+<article/ruga> ns4kge:mentionsKGEModel <kge-model/ruge> .
+<article/ruga> ns4kge:mentionsKGEModel <kge-model/transd> .
+<article/ruga> ns4kge:mentionsKGEModel <kge-model/ruga> .
+<article/ruga> ns4kge:mentionsKGEModel <kge-model/hole> .
+<article/ruga> ns4kge:mentionsKGEModel <kge-model/transr> .
+<article/ruga> ns4kge:mentionsKGEModel <kge-model/transe> .
+<article/ruga> ns4kge:mentionsKGEModel <kge-model/complex> .
+<article/ruga> ns4kge:mentionsKGEModel <kge-model/rescal> .
+<article/ruga> ns4kge:hasExperimentation <experimentation/ruga> .
+
+<category/adversarial-ns> rdf:type ns4kge:Category .
+
+<subcategory/knowledge-constrained> rdf:type ns4kge:Subcategory .
+
+<ns-method/soft-rules-and-graph-adversarial-learning> rdf:type ns4kge:NSMethod .
+<ns-method/soft-rules-and-graph-adversarial-learning> ns4kge:hasCategory <category/adversarial-ns> .
+<ns-method/soft-rules-and-graph-adversarial-learning> ns4kge:hasSubcategory <subcategory/knowledge-constrained> .
+
+<ns-method/kbgan> rdf:type ns4kge:NSMethod .
+<ns-method/kbgan> ns4kge:hasCategory <category/adversarial-ns> .
+<subcategory/standard> rdf:type ns4kge:Subcategory .
+
+<ns-method/kbgan> ns4kge:hasSubcategory <subcategory/standard> .
+
+<ns-method/uniform-negative-sampling> rdf:type ns4kge:NSMethod .
+<category/static-ns> rdf:type ns4kge:Category .
+
+<ns-method/uniform-negative-sampling> ns4kge:hasCategory <category/static-ns> .
+<subcategory/random> rdf:type ns4kge:Subcategory .
+
+<ns-method/uniform-negative-sampling> ns4kge:hasSubcategory <subcategory/random> .
+
+<kge-model/distmult> rdf:type ns4kge:KGEModel .
+
+<kge-model/transh> rdf:type ns4kge:KGEModel .
+
+<kge-model/ruge> rdf:type ns4kge:KGEModel .
+
+<kge-model/transd> rdf:type ns4kge:KGEModel .
+
+<kge-model/ruga> rdf:type ns4kge:KGEModel .
+
+<kge-model/hole> rdf:type ns4kge:KGEModel .
+
+<kge-model/transr> rdf:type ns4kge:KGEModel .
+
+<kge-model/transe> rdf:type ns4kge:KGEModel .
+
+<kge-model/complex> rdf:type ns4kge:KGEModel .
+
+<kge-model/rescal> rdf:type ns4kge:KGEModel .
+
+<dataset/fb15k> rdf:type ns4kge:Dataset .
+<task/link-prediction> rdf:type ns4kge:Task .
+<metric/mrr> rdf:type ns4kge:Metric .
+<metric/mr> rdf:type ns4kge:Metric .
+<metric/hits-1> rdf:type ns4kge:Metric .
+<metric/hits-3> rdf:type ns4kge:Metric .
+<metric/hits-5> rdf:type ns4kge:Metric .
+<metric/hits-10> rdf:type ns4kge:Metric .
+<dataset/yago37> rdf:type ns4kge:Dataset .
+<task/triple-classification> rdf:type ns4kge:Task .
+<metric/accuracy> rdf:type ns4kge:Metric .
+<loss-function/margin-based-ranking-loss> rdf:type ns4kge:LossFunction .
+<loss-function/log-softmax-loss> rdf:type ns4kge:LossFunction .
+<loss-function/cross-entropy-loss> rdf:type ns4kge:LossFunction .
+<loss-function/negative-sampling-loss> rdf:type ns4kge:LossFunction .
+
+<experimentation/ruga> rdf:type ns4kge:Experimentation .
+<experimentation/ruga> ns4kge:hasTrainingProtocol <training-protocol/ruga> .
+<experimentation/ruga> ns4kge:hasConfiguration <configuration/ruga/1> .
+<experimentation/ruga> ns4kge:hasConfiguration <configuration/ruga/2> .
+<experimentation/ruga> ns4kge:hasConfiguration <configuration/ruga/3> .
+<experimentation/ruga> ns4kge:hasConfiguration <configuration/ruga/4> .
+<experimentation/ruga> ns4kge:hasConfiguration <configuration/ruga/5> .
+<experimentation/ruga> ns4kge:hasConfiguration <configuration/ruga/6> .
+<experimentation/ruga> ns4kge:hasConfiguration <configuration/ruga/7> .
+<experimentation/ruga> ns4kge:hasConfiguration <configuration/ruga/8> .
+<experimentation/ruga> ns4kge:hasConfiguration <configuration/ruga/9> .
+<experimentation/ruga> ns4kge:hasConfiguration <configuration/ruga/10> .
+<experimentation/ruga> ns4kge:hasConfiguration <configuration/ruga/11> .
+<experimentation/ruga> ns4kge:hasConfiguration <configuration/ruga/12> .
+<experimentation/ruga> ns4kge:hasConfiguration <configuration/ruga/13> .
+<experimentation/ruga> ns4kge:hasConfiguration <configuration/ruga/14> .
+<experimentation/ruga> ns4kge:hasConfiguration <configuration/ruga/15> .
+<experimentation/ruga> ns4kge:hasConfiguration <configuration/ruga/16> .
+<experimentation/ruga> ns4kge:hasConfiguration <configuration/ruga/17> .
+<experimentation/ruga> ns4kge:hasConfiguration <configuration/ruga/18> .
+<experimentation/ruga> ns4kge:hasConfiguration <configuration/ruga/19> .
+<experimentation/ruga> ns4kge:hasConfiguration <configuration/ruga/20> .
+<experimentation/ruga> ns4kge:hasConfiguration <configuration/ruga/21> .
+<experimentation/ruga> ns4kge:hasConfiguration <configuration/ruga/22> .
+<experimentation/ruga> ns4kge:hasConfiguration <configuration/ruga/23> .
+<experimentation/ruga> ns4kge:hasConfiguration <configuration/ruga/24> .
+<experimentation/ruga> ns4kge:hasConfiguration <configuration/ruga/25> .
+<experimentation/ruga> ns4kge:hasConfiguration <configuration/ruga/26> .
+<experimentation/ruga> ns4kge:hasConfiguration <configuration/ruga/27> .
+<experimentation/ruga> ns4kge:hasConfiguration <configuration/ruga/28> .
+<experimentation/ruga> ns4kge:hasConfiguration <configuration/ruga/29> .
+<experimentation/ruga> ns4kge:hasConfiguration <configuration/ruga/30> .
+<experimentation/ruga> ns4kge:hasConfiguration <configuration/ruga/31> .
+<experimentation/ruga> ns4kge:hasConfiguration <configuration/ruga/32> .
+<experimentation/ruga> ns4kge:hasConfiguration <configuration/ruga/33> .
+<experimentation/ruga> ns4kge:hasConfiguration <configuration/ruga/34> .
+<experimentation/ruga> ns4kge:hasConfiguration <configuration/ruga/35> .
+<experimentation/ruga> ns4kge:hasConfiguration <configuration/ruga/36> .
+<experimentation/ruga> ns4kge:hasConfiguration <configuration/ruga/37> .
+<experimentation/ruga> ns4kge:hasConfiguration <configuration/ruga/38> .
+<experimentation/ruga> ns4kge:hasConfiguration <configuration/ruga/39> .
+<experimentation/ruga> ns4kge:hasConfiguration <configuration/ruga/40> .
+<experimentation/ruga> ns4kge:hasConfiguration <configuration/ruga/41> .
+<experimentation/ruga> ns4kge:hasConfiguration <configuration/ruga/42> .
+<experimentation/ruga> ns4kge:hasConfiguration <configuration/ruga/43> .
+<experimentation/ruga> ns4kge:hasConfiguration <configuration/ruga/44> .
+<experimentation/ruga> ns4kge:hasConfiguration <configuration/ruga/45> .
+<experimentation/ruga> ns4kge:hasConfiguration <configuration/ruga/46> .
+<experimentation/ruga> ns4kge:hasConfiguration <configuration/ruga/47> .
+<experimentation/ruga> ns4kge:hasConfiguration <configuration/ruga/48> .
+<experimentation/ruga> ns4kge:hasConfiguration <configuration/ruga/49> .
+<experimentation/ruga> ns4kge:hasConfiguration <configuration/ruga/50> .
+<experimentation/ruga> ns4kge:hasConfiguration <configuration/ruga/51> .
+<experimentation/ruga> ns4kge:hasConfiguration <configuration/ruga/52> .
+<experimentation/ruga> ns4kge:hasConfiguration <configuration/ruga/53> .
+<experimentation/ruga> ns4kge:hasConfiguration <configuration/ruga/54> .
+<experimentation/ruga> ns4kge:hasConfiguration <configuration/ruga/55> .
+
+<training-protocol/ruga> rdf:type ns4kge:TrainingProtocol .
+<training-protocol/ruga> ns4kge:hasLossFunction <loss-function/margin-based-ranking-loss> .
+<training-protocol/ruga> ns4kge:hasLossFunction <loss-function/log-softmax-loss> .
+<training-protocol/ruga> ns4kge:hasLossFunction <loss-function/cross-entropy-loss> .
+<training-protocol/ruga> ns4kge:hasLossFunction <loss-function/negative-sampling-loss> .
+<training-protocol/ruga> ns4kge:nsRatio "10"^^xsd:decimal .
+
+<configuration/ruga/1> rdf:type ns4kge:Configuration .
+<configuration/ruga/1> ns4kge:hasTask    <task/link-prediction> .
+<configuration/ruga/1> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/ruga/1> ns4kge:hasMetric  <metric/mrr> .
+<configuration/ruga/1> ns4kge:hasKGEModel <kge-model/ruga> .
+<configuration/ruga/1> ns4kge:hasNSMethod <ns-method/soft-rules-and-graph-adversarial-learning> .
+<configuration/ruga/1> ns4kge:result "0.779"^^xsd:decimal .
+
+<configuration/ruga/2> rdf:type ns4kge:Configuration .
+<configuration/ruga/2> ns4kge:hasTask    <task/link-prediction> .
+<configuration/ruga/2> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/ruga/2> ns4kge:hasMetric  <metric/mrr> .
+<configuration/ruga/2> ns4kge:hasKGEModel <kge-model/ruge> .
+<configuration/ruga/2> ns4kge:result "0.767"^^xsd:decimal .
+
+<configuration/ruga/3> rdf:type ns4kge:Configuration .
+<configuration/ruga/3> ns4kge:hasTask    <task/link-prediction> .
+<configuration/ruga/3> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/ruga/3> ns4kge:hasMetric  <metric/mrr> .
+<configuration/ruga/3> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/ruga/3> ns4kge:result "0.69"^^xsd:decimal .
+
+<configuration/ruga/4> rdf:type ns4kge:Configuration .
+<configuration/ruga/4> ns4kge:hasTask    <task/link-prediction> .
+<configuration/ruga/4> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/ruga/4> ns4kge:hasMetric  <metric/mr> .
+<configuration/ruga/4> ns4kge:hasKGEModel <kge-model/ruga> .
+<configuration/ruga/4> ns4kge:hasNSMethod <ns-method/soft-rules-and-graph-adversarial-learning> .
+<configuration/ruga/4> ns4kge:result "1"^^xsd:decimal .
+
+<configuration/ruga/5> rdf:type ns4kge:Configuration .
+<configuration/ruga/5> ns4kge:hasTask    <task/link-prediction> .
+<configuration/ruga/5> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/ruga/5> ns4kge:hasMetric  <metric/mr> .
+<configuration/ruga/5> ns4kge:hasKGEModel <kge-model/ruge> .
+<configuration/ruga/5> ns4kge:result "1"^^xsd:decimal .
+
+<configuration/ruga/6> rdf:type ns4kge:Configuration .
+<configuration/ruga/6> ns4kge:hasTask    <task/link-prediction> .
+<configuration/ruga/6> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/ruga/6> ns4kge:hasMetric  <metric/mr> .
+<configuration/ruga/6> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/ruga/6> ns4kge:result "1"^^xsd:decimal .
+
+<configuration/ruga/7> rdf:type ns4kge:Configuration .
+<configuration/ruga/7> ns4kge:hasTask    <task/link-prediction> .
+<configuration/ruga/7> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/ruga/7> ns4kge:hasMetric  <metric/mr> .
+<configuration/ruga/7> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/ruga/7> ns4kge:result "1"^^xsd:decimal .
+
+<configuration/ruga/8> rdf:type ns4kge:Configuration .
+<configuration/ruga/8> ns4kge:hasTask    <task/link-prediction> .
+<configuration/ruga/8> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/ruga/8> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/ruga/8> ns4kge:hasKGEModel <kge-model/ruga> .
+<configuration/ruga/8> ns4kge:hasNSMethod <ns-method/soft-rules-and-graph-adversarial-learning> .
+<configuration/ruga/8> ns4kge:result "0.708"^^xsd:decimal .
+
+<configuration/ruga/9> rdf:type ns4kge:Configuration .
+<configuration/ruga/9> ns4kge:hasTask    <task/link-prediction> .
+<configuration/ruga/9> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/ruga/9> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/ruga/9> ns4kge:hasKGEModel <kge-model/ruge> .
+<configuration/ruga/9> ns4kge:result "0.701"^^xsd:decimal .
+
+<configuration/ruga/10> rdf:type ns4kge:Configuration .
+<configuration/ruga/10> ns4kge:hasTask    <task/link-prediction> .
+<configuration/ruga/10> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/ruga/10> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/ruga/10> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/ruga/10> ns4kge:result "0.593"^^xsd:decimal .
+
+<configuration/ruga/11> rdf:type ns4kge:Configuration .
+<configuration/ruga/11> ns4kge:hasTask    <task/link-prediction> .
+<configuration/ruga/11> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/ruga/11> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/ruga/11> ns4kge:hasKGEModel <kge-model/ruga> .
+<configuration/ruga/11> ns4kge:hasNSMethod <ns-method/soft-rules-and-graph-adversarial-learning> .
+<configuration/ruga/11> ns4kge:result "0.826"^^xsd:decimal .
+
+<configuration/ruga/12> rdf:type ns4kge:Configuration .
+<configuration/ruga/12> ns4kge:hasTask    <task/link-prediction> .
+<configuration/ruga/12> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/ruga/12> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/ruga/12> ns4kge:hasKGEModel <kge-model/ruge> .
+<configuration/ruga/12> ns4kge:result "0.817"^^xsd:decimal .
+
+<configuration/ruga/13> rdf:type ns4kge:Configuration .
+<configuration/ruga/13> ns4kge:hasTask    <task/link-prediction> .
+<configuration/ruga/13> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/ruga/13> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/ruga/13> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/ruga/13> ns4kge:result "0.747"^^xsd:decimal .
+
+<configuration/ruga/14> rdf:type ns4kge:Configuration .
+<configuration/ruga/14> ns4kge:hasTask    <task/link-prediction> .
+<configuration/ruga/14> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/ruga/14> ns4kge:hasMetric  <metric/hits-5> .
+<configuration/ruga/14> ns4kge:hasKGEModel <kge-model/ruga> .
+<configuration/ruga/14> ns4kge:hasNSMethod <ns-method/soft-rules-and-graph-adversarial-learning> .
+<configuration/ruga/14> ns4kge:result "0.846"^^xsd:decimal .
+
+<configuration/ruga/15> rdf:type ns4kge:Configuration .
+<configuration/ruga/15> ns4kge:hasTask    <task/link-prediction> .
+<configuration/ruga/15> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/ruga/15> ns4kge:hasMetric  <metric/hits-5> .
+<configuration/ruga/15> ns4kge:hasKGEModel <kge-model/ruge> .
+<configuration/ruga/15> ns4kge:result "0.834"^^xsd:decimal .
+
+<configuration/ruga/16> rdf:type ns4kge:Configuration .
+<configuration/ruga/16> ns4kge:hasTask    <task/link-prediction> .
+<configuration/ruga/16> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/ruga/16> ns4kge:hasMetric  <metric/hits-5> .
+<configuration/ruga/16> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/ruga/16> ns4kge:result "0.786"^^xsd:decimal .
+
+<configuration/ruga/17> rdf:type ns4kge:Configuration .
+<configuration/ruga/17> ns4kge:hasTask    <task/link-prediction> .
+<configuration/ruga/17> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/ruga/17> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/ruga/17> ns4kge:hasKGEModel <kge-model/ruga> .
+<configuration/ruga/17> ns4kge:hasNSMethod <ns-method/soft-rules-and-graph-adversarial-learning> .
+<configuration/ruga/17> ns4kge:result "0.875"^^xsd:decimal .
+
+<configuration/ruga/18> rdf:type ns4kge:Configuration .
+<configuration/ruga/18> ns4kge:hasTask    <task/link-prediction> .
+<configuration/ruga/18> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/ruga/18> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/ruga/18> ns4kge:hasKGEModel <kge-model/ruge> .
+<configuration/ruga/18> ns4kge:result "0.861"^^xsd:decimal .
+
+<configuration/ruga/19> rdf:type ns4kge:Configuration .
+<configuration/ruga/19> ns4kge:hasTask    <task/link-prediction> .
+<configuration/ruga/19> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/ruga/19> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/ruga/19> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/ruga/19> ns4kge:result "0.83"^^xsd:decimal .
+
+<configuration/ruga/20> rdf:type ns4kge:Configuration .
+<configuration/ruga/20> ns4kge:hasTask    <task/link-prediction> .
+<configuration/ruga/20> ns4kge:hasDataset <dataset/yago37> .
+<configuration/ruga/20> ns4kge:hasMetric  <metric/mrr> .
+<configuration/ruga/20> ns4kge:hasKGEModel <kge-model/ruga> .
+<configuration/ruga/20> ns4kge:hasNSMethod <ns-method/soft-rules-and-graph-adversarial-learning> .
+<configuration/ruga/20> ns4kge:result "0.432"^^xsd:decimal .
+
+<configuration/ruga/21> rdf:type ns4kge:Configuration .
+<configuration/ruga/21> ns4kge:hasTask    <task/link-prediction> .
+<configuration/ruga/21> ns4kge:hasDataset <dataset/yago37> .
+<configuration/ruga/21> ns4kge:hasMetric  <metric/mrr> .
+<configuration/ruga/21> ns4kge:hasKGEModel <kge-model/ruge> .
+<configuration/ruga/21> ns4kge:result "0.429"^^xsd:decimal .
+
+<configuration/ruga/22> rdf:type ns4kge:Configuration .
+<configuration/ruga/22> ns4kge:hasTask    <task/link-prediction> .
+<configuration/ruga/22> ns4kge:hasDataset <dataset/yago37> .
+<configuration/ruga/22> ns4kge:hasMetric  <metric/mrr> .
+<configuration/ruga/22> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/ruga/22> ns4kge:result "0.415"^^xsd:decimal .
+
+<configuration/ruga/23> rdf:type ns4kge:Configuration .
+<configuration/ruga/23> ns4kge:hasTask    <task/link-prediction> .
+<configuration/ruga/23> ns4kge:hasDataset <dataset/yago37> .
+<configuration/ruga/23> ns4kge:hasMetric  <metric/mr> .
+<configuration/ruga/23> ns4kge:hasKGEModel <kge-model/ruga> .
+<configuration/ruga/23> ns4kge:hasNSMethod <ns-method/soft-rules-and-graph-adversarial-learning> .
+<configuration/ruga/23> ns4kge:result "4"^^xsd:decimal .
+
+<configuration/ruga/24> rdf:type ns4kge:Configuration .
+<configuration/ruga/24> ns4kge:hasTask    <task/link-prediction> .
+<configuration/ruga/24> ns4kge:hasDataset <dataset/yago37> .
+<configuration/ruga/24> ns4kge:hasMetric  <metric/mr> .
+<configuration/ruga/24> ns4kge:hasKGEModel <kge-model/ruge> .
+<configuration/ruga/24> ns4kge:result "4"^^xsd:decimal .
+
+<configuration/ruga/25> rdf:type ns4kge:Configuration .
+<configuration/ruga/25> ns4kge:hasTask    <task/link-prediction> .
+<configuration/ruga/25> ns4kge:hasDataset <dataset/yago37> .
+<configuration/ruga/25> ns4kge:hasMetric  <metric/mr> .
+<configuration/ruga/25> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/ruga/25> ns4kge:result "4"^^xsd:decimal .
+
+<configuration/ruga/26> rdf:type ns4kge:Configuration .
+<configuration/ruga/26> ns4kge:hasTask    <task/link-prediction> .
+<configuration/ruga/26> ns4kge:hasDataset <dataset/yago37> .
+<configuration/ruga/26> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/ruga/26> ns4kge:hasKGEModel <kge-model/ruga> .
+<configuration/ruga/26> ns4kge:hasNSMethod <ns-method/soft-rules-and-graph-adversarial-learning> .
+<configuration/ruga/26> ns4kge:result "0.345"^^xsd:decimal .
+
+<configuration/ruga/27> rdf:type ns4kge:Configuration .
+<configuration/ruga/27> ns4kge:hasTask    <task/link-prediction> .
+<configuration/ruga/27> ns4kge:hasDataset <dataset/yago37> .
+<configuration/ruga/27> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/ruga/27> ns4kge:hasKGEModel <kge-model/ruge> .
+<configuration/ruga/27> ns4kge:result "0.338"^^xsd:decimal .
+
+<configuration/ruga/28> rdf:type ns4kge:Configuration .
+<configuration/ruga/28> ns4kge:hasTask    <task/link-prediction> .
+<configuration/ruga/28> ns4kge:hasDataset <dataset/yago37> .
+<configuration/ruga/28> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/ruga/28> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/ruga/28> ns4kge:result "0.32"^^xsd:decimal .
+
+<configuration/ruga/29> rdf:type ns4kge:Configuration .
+<configuration/ruga/29> ns4kge:hasTask    <task/link-prediction> .
+<configuration/ruga/29> ns4kge:hasDataset <dataset/yago37> .
+<configuration/ruga/29> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/ruga/29> ns4kge:hasKGEModel <kge-model/ruga> .
+<configuration/ruga/29> ns4kge:hasNSMethod <ns-method/soft-rules-and-graph-adversarial-learning> .
+<configuration/ruga/29> ns4kge:result "0.49"^^xsd:decimal .
+
+<configuration/ruga/30> rdf:type ns4kge:Configuration .
+<configuration/ruga/30> ns4kge:hasTask    <task/link-prediction> .
+<configuration/ruga/30> ns4kge:hasDataset <dataset/yago37> .
+<configuration/ruga/30> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/ruga/30> ns4kge:hasKGEModel <kge-model/ruge> .
+<configuration/ruga/30> ns4kge:result "0.481"^^xsd:decimal .
+
+<configuration/ruga/31> rdf:type ns4kge:Configuration .
+<configuration/ruga/31> ns4kge:hasTask    <task/link-prediction> .
+<configuration/ruga/31> ns4kge:hasDataset <dataset/yago37> .
+<configuration/ruga/31> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/ruga/31> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/ruga/31> ns4kge:result "0.465"^^xsd:decimal .
+
+<configuration/ruga/32> rdf:type ns4kge:Configuration .
+<configuration/ruga/32> ns4kge:hasTask    <task/link-prediction> .
+<configuration/ruga/32> ns4kge:hasDataset <dataset/yago37> .
+<configuration/ruga/32> ns4kge:hasMetric  <metric/hits-5> .
+<configuration/ruga/32> ns4kge:hasKGEModel <kge-model/ruga> .
+<configuration/ruga/32> ns4kge:hasNSMethod <ns-method/soft-rules-and-graph-adversarial-learning> .
+<configuration/ruga/32> ns4kge:result "0.548"^^xsd:decimal .
+
+<configuration/ruga/33> rdf:type ns4kge:Configuration .
+<configuration/ruga/33> ns4kge:hasTask    <task/link-prediction> .
+<configuration/ruga/33> ns4kge:hasDataset <dataset/yago37> .
+<configuration/ruga/33> ns4kge:hasMetric  <metric/hits-5> .
+<configuration/ruga/33> ns4kge:hasKGEModel <kge-model/ruge> .
+<configuration/ruga/33> ns4kge:result "0.54"^^xsd:decimal .
+
+<configuration/ruga/34> rdf:type ns4kge:Configuration .
+<configuration/ruga/34> ns4kge:hasTask    <task/link-prediction> .
+<configuration/ruga/34> ns4kge:hasDataset <dataset/yago37> .
+<configuration/ruga/34> ns4kge:hasMetric  <metric/hits-5> .
+<configuration/ruga/34> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/ruga/34> ns4kge:result "0.53"^^xsd:decimal .
+
+<configuration/ruga/35> rdf:type ns4kge:Configuration .
+<configuration/ruga/35> ns4kge:hasTask    <task/link-prediction> .
+<configuration/ruga/35> ns4kge:hasDataset <dataset/yago37> .
+<configuration/ruga/35> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/ruga/35> ns4kge:hasKGEModel <kge-model/ruga> .
+<configuration/ruga/35> ns4kge:hasNSMethod <ns-method/soft-rules-and-graph-adversarial-learning> .
+<configuration/ruga/35> ns4kge:result "0.611"^^xsd:decimal .
+
+<configuration/ruga/36> rdf:type ns4kge:Configuration .
+<configuration/ruga/36> ns4kge:hasTask    <task/link-prediction> .
+<configuration/ruga/36> ns4kge:hasDataset <dataset/yago37> .
+<configuration/ruga/36> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/ruga/36> ns4kge:hasKGEModel <kge-model/ruge> .
+<configuration/ruga/36> ns4kge:result "0.602"^^xsd:decimal .
+
+<configuration/ruga/37> rdf:type ns4kge:Configuration .
+<configuration/ruga/37> ns4kge:hasTask    <task/link-prediction> .
+<configuration/ruga/37> ns4kge:hasDataset <dataset/yago37> .
+<configuration/ruga/37> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/ruga/37> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/ruga/37> ns4kge:result "0.601"^^xsd:decimal .
+
+<configuration/ruga/38> rdf:type ns4kge:Configuration .
+<configuration/ruga/38> ns4kge:hasTask    <task/link-prediction> .
+<configuration/ruga/38> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/ruga/38> ns4kge:hasMetric  <metric/mrr> .
+<configuration/ruga/38> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/ruga/38> ns4kge:result "0.392"^^xsd:decimal .
+
+<configuration/ruga/39> rdf:type ns4kge:Configuration .
+<configuration/ruga/39> ns4kge:hasTask    <task/link-prediction> .
+<configuration/ruga/39> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/ruga/39> ns4kge:hasMetric  <metric/mrr> .
+<configuration/ruga/39> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/ruga/39> ns4kge:result "0.634"^^xsd:decimal .
+
+<configuration/ruga/40> rdf:type ns4kge:Configuration .
+<configuration/ruga/40> ns4kge:hasTask    <task/link-prediction> .
+<configuration/ruga/40> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/ruga/40> ns4kge:hasMetric  <metric/mrr> .
+<configuration/ruga/40> ns4kge:hasKGEModel <kge-model/hole> .
+<configuration/ruga/40> ns4kge:result "0.608"^^xsd:decimal .
+
+<configuration/ruga/41> rdf:type ns4kge:Configuration .
+<configuration/ruga/41> ns4kge:hasTask    <task/link-prediction> .
+<configuration/ruga/41> ns4kge:hasDataset <dataset/yago37> .
+<configuration/ruga/41> ns4kge:hasMetric  <metric/mrr> .
+<configuration/ruga/41> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/ruga/41> ns4kge:result "0.302"^^xsd:decimal .
+
+<configuration/ruga/42> rdf:type ns4kge:Configuration .
+<configuration/ruga/42> ns4kge:hasTask    <task/link-prediction> .
+<configuration/ruga/42> ns4kge:hasDataset <dataset/yago37> .
+<configuration/ruga/42> ns4kge:hasMetric  <metric/mrr> .
+<configuration/ruga/42> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/ruga/42> ns4kge:result "0.358"^^xsd:decimal .
+
+<configuration/ruga/43> rdf:type ns4kge:Configuration .
+<configuration/ruga/43> ns4kge:hasTask    <task/link-prediction> .
+<configuration/ruga/43> ns4kge:hasDataset <dataset/yago37> .
+<configuration/ruga/43> ns4kge:hasMetric  <metric/mrr> .
+<configuration/ruga/43> ns4kge:hasKGEModel <kge-model/hole> .
+<configuration/ruga/43> ns4kge:result "0.378"^^xsd:decimal .
+
+<configuration/ruga/44> rdf:type ns4kge:Configuration .
+<configuration/ruga/44> ns4kge:hasTask    <task/triple-classification> .
+<configuration/ruga/44> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/ruga/44> ns4kge:hasMetric  <metric/accuracy> .
+<configuration/ruga/44> ns4kge:hasKGEModel <kge-model/ruga> .
+<configuration/ruga/44> ns4kge:hasNSMethod <ns-method/soft-rules-and-graph-adversarial-learning> .
+<configuration/ruga/44> ns4kge:result "0.763"^^xsd:decimal .
+
+<configuration/ruga/45> rdf:type ns4kge:Configuration .
+<configuration/ruga/45> ns4kge:hasTask    <task/triple-classification> .
+<configuration/ruga/45> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/ruga/45> ns4kge:hasMetric  <metric/accuracy> .
+<configuration/ruga/45> ns4kge:hasKGEModel <kge-model/ruge> .
+<configuration/ruga/45> ns4kge:result "0.741"^^xsd:decimal .
+
+<configuration/ruga/46> rdf:type ns4kge:Configuration .
+<configuration/ruga/46> ns4kge:hasTask    <task/triple-classification> .
+<configuration/ruga/46> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/ruga/46> ns4kge:hasMetric  <metric/accuracy> .
+<configuration/ruga/46> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/ruga/46> ns4kge:result "0.735"^^xsd:decimal .
+
+<configuration/ruga/47> rdf:type ns4kge:Configuration .
+<configuration/ruga/47> ns4kge:hasTask    <task/triple-classification> .
+<configuration/ruga/47> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/ruga/47> ns4kge:hasMetric  <metric/accuracy> .
+<configuration/ruga/47> ns4kge:hasKGEModel <kge-model/hole> .
+<configuration/ruga/47> ns4kge:result "0.714"^^xsd:decimal .
+
+<configuration/ruga/48> rdf:type ns4kge:Configuration .
+<configuration/ruga/48> ns4kge:hasTask    <task/triple-classification> .
+<configuration/ruga/48> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/ruga/48> ns4kge:hasMetric  <metric/accuracy> .
+<configuration/ruga/48> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/ruga/48> ns4kge:result "0.702"^^xsd:decimal .
+
+<configuration/ruga/49> rdf:type ns4kge:Configuration .
+<configuration/ruga/49> ns4kge:hasTask    <task/triple-classification> .
+<configuration/ruga/49> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/ruga/49> ns4kge:hasMetric  <metric/accuracy> .
+<configuration/ruga/49> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/ruga/49> ns4kge:result "0.695"^^xsd:decimal .
+
+<configuration/ruga/50> rdf:type ns4kge:Configuration .
+<configuration/ruga/50> ns4kge:hasTask    <task/triple-classification> .
+<configuration/ruga/50> ns4kge:hasDataset <dataset/yago37> .
+<configuration/ruga/50> ns4kge:hasMetric  <metric/accuracy> .
+<configuration/ruga/50> ns4kge:hasKGEModel <kge-model/ruga> .
+<configuration/ruga/50> ns4kge:hasNSMethod <ns-method/soft-rules-and-graph-adversarial-learning> .
+<configuration/ruga/50> ns4kge:result "0.814"^^xsd:decimal .
+
+<configuration/ruga/51> rdf:type ns4kge:Configuration .
+<configuration/ruga/51> ns4kge:hasTask    <task/triple-classification> .
+<configuration/ruga/51> ns4kge:hasDataset <dataset/yago37> .
+<configuration/ruga/51> ns4kge:hasMetric  <metric/accuracy> .
+<configuration/ruga/51> ns4kge:hasKGEModel <kge-model/ruge> .
+<configuration/ruga/51> ns4kge:result "0.81"^^xsd:decimal .
+
+<configuration/ruga/52> rdf:type ns4kge:Configuration .
+<configuration/ruga/52> ns4kge:hasTask    <task/triple-classification> .
+<configuration/ruga/52> ns4kge:hasDataset <dataset/yago37> .
+<configuration/ruga/52> ns4kge:hasMetric  <metric/accuracy> .
+<configuration/ruga/52> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/ruga/52> ns4kge:result "0.801"^^xsd:decimal .
+
+<configuration/ruga/53> rdf:type ns4kge:Configuration .
+<configuration/ruga/53> ns4kge:hasTask    <task/triple-classification> .
+<configuration/ruga/53> ns4kge:hasDataset <dataset/yago37> .
+<configuration/ruga/53> ns4kge:hasMetric  <metric/accuracy> .
+<configuration/ruga/53> ns4kge:hasKGEModel <kge-model/hole> .
+<configuration/ruga/53> ns4kge:result "0.778"^^xsd:decimal .
+
+<configuration/ruga/54> rdf:type ns4kge:Configuration .
+<configuration/ruga/54> ns4kge:hasTask    <task/triple-classification> .
+<configuration/ruga/54> ns4kge:hasDataset <dataset/yago37> .
+<configuration/ruga/54> ns4kge:hasMetric  <metric/accuracy> .
+<configuration/ruga/54> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/ruga/54> ns4kge:result "0.725"^^xsd:decimal .
+
+<configuration/ruga/55> rdf:type ns4kge:Configuration .
+<configuration/ruga/55> ns4kge:hasTask    <task/triple-classification> .
+<configuration/ruga/55> ns4kge:hasDataset <dataset/yago37> .
+<configuration/ruga/55> ns4kge:hasMetric  <metric/accuracy> .
+<configuration/ruga/55> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/ruga/55> ns4kge:result "0.703"^^xsd:decimal .

@@ -1,0 +1,45 @@
+{
+  "Article": {
+    "title": "Entity-Relation Distribution-aware Negative Sampling for Knowledge Graph Embedding",
+    "date": "2024"
+  },
+  "proposedNSMethod": "Entity-Relation Distribution-aware Negative Sampling",
+  "proposedKGEModel": "",
+  "mentionedNSMethods": [
+    "Uniform Sampling",
+    "Bernoulli Sampling",
+    "KBGAN",
+    "IGAN",
+    "NSCaching",
+    "Self-Adv",
+    "SANS",
+    "Subsampling",
+    "Non-Sampling"
+  ],
+  "mentionedKGEModels": [
+    "TransE",
+    "TransD",
+    "TransR",
+    "RotatE",
+    "DistMult",
+    "ComplEx",
+    "SimplE",
+    "ConvKB",
+    "ConvE",
+    "InteractE",
+    "CompGCN"
+  ],
+  "Experimentation": {
+    "Hardware": [],
+    "TrainingProtocol": {
+      "LossFunction": [
+        "Negative Sampling loss"
+      ],
+      "Optimizer": [
+        "Adam"
+      ],
+      "learningRate": null,
+      "nsRatio": null
+    }
+  }
+}

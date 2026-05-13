@@ -1,0 +1,1060 @@
+{
+  "Configurations": [
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K-237",
+      "Metric": "Hits@10",
+      "KGEModel": "TransE",
+      "NSMethod": "KBGAN",
+      "result": 46.59
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K-237",
+      "Metric": "MRR",
+      "KGEModel": "TransE",
+      "NSMethod": "KBGAN",
+      "result": 0.2926
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18",
+      "Metric": "Hits@10",
+      "KGEModel": "TransE",
+      "NSMethod": "KBGAN",
+      "result": 94.8
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18",
+      "Metric": "MRR",
+      "KGEModel": "TransE",
+      "NSMethod": "KBGAN",
+      "result": 0.6606
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "Hits@10",
+      "KGEModel": "TransE",
+      "NSMethod": "KBGAN",
+      "result": 43.24
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "MRR",
+      "KGEModel": "TransE",
+      "NSMethod": "KBGAN",
+      "result": 0.1808
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K-237",
+      "Metric": "Hits@10",
+      "KGEModel": "TransE",
+      "NSMethod": "NSCaching",
+      "result": 47.64
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K-237",
+      "Metric": "MRR",
+      "KGEModel": "TransE",
+      "NSMethod": "NSCaching",
+      "result": 0.2993
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18",
+      "Metric": "Hits@10",
+      "KGEModel": "TransE",
+      "NSMethod": "NSCaching",
+      "result": 94.63
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18",
+      "Metric": "MRR",
+      "KGEModel": "TransE",
+      "NSMethod": "NSCaching",
+      "result": 0.7818
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "Hits@10",
+      "KGEModel": "TransE",
+      "NSMethod": "NSCaching",
+      "result": 47.83
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "MRR",
+      "KGEModel": "TransE",
+      "NSMethod": "NSCaching",
+      "result": 0.2002
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K-237",
+      "Metric": "Hits@10",
+      "KGEModel": "TransE",
+      "NSMethod": "Uniform Negative Sampling",
+      "result": 48.03
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K-237",
+      "Metric": "MRR",
+      "KGEModel": "TransE",
+      "NSMethod": "Uniform Negative Sampling",
+      "result": 0.2927
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18",
+      "Metric": "Hits@10",
+      "KGEModel": "TransE",
+      "NSMethod": "Uniform Negative Sampling",
+      "result": 95.53
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18",
+      "Metric": "MRR",
+      "KGEModel": "TransE",
+      "NSMethod": "Uniform Negative Sampling",
+      "result": 0.6085
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "Hits@10",
+      "KGEModel": "TransE",
+      "NSMethod": "Uniform Negative Sampling",
+      "result": 49.63
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "MRR",
+      "KGEModel": "TransE",
+      "NSMethod": "Uniform Negative Sampling",
+      "result": 0.2022
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K-237",
+      "Metric": "Hits@10",
+      "KGEModel": "TransE",
+      "NSMethod": "Uniform Structure Aware Negative Sampling",
+      "result": 48.35
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K-237",
+      "Metric": "MRR",
+      "KGEModel": "TransE",
+      "NSMethod": "Uniform Structure Aware Negative Sampling",
+      "result": 0.2962
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18",
+      "Metric": "Hits@10",
+      "KGEModel": "TransE",
+      "NSMethod": "Uniform Structure Aware Negative Sampling",
+      "result": 95.09
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18",
+      "Metric": "MRR",
+      "KGEModel": "TransE",
+      "NSMethod": "Uniform Structure Aware Negative Sampling",
+      "result": 0.8228
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "Hits@10",
+      "KGEModel": "TransE",
+      "NSMethod": "Uniform Structure Aware Negative Sampling",
+      "result": 51.15
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "MRR",
+      "KGEModel": "TransE",
+      "NSMethod": "Uniform Structure Aware Negative Sampling",
+      "result": 0.2254
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K-237",
+      "Metric": "Hits@10",
+      "KGEModel": "TransE",
+      "NSMethod": "Uniform Random Walk Structure Aware Negative Sampling",
+      "result": 48.5
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K-237",
+      "Metric": "MRR",
+      "KGEModel": "TransE",
+      "NSMethod": "Uniform Random Walk Structure Aware Negative Sampling",
+      "result": 0.2981
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18",
+      "Metric": "Hits@10",
+      "KGEModel": "TransE",
+      "NSMethod": "Uniform Random Walk Structure Aware Negative Sampling",
+      "result": 95.22
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18",
+      "Metric": "MRR",
+      "KGEModel": "TransE",
+      "NSMethod": "Uniform Random Walk Structure Aware Negative Sampling",
+      "result": 0.8195
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "Hits@10",
+      "KGEModel": "TransE",
+      "NSMethod": "Uniform Random Walk Structure Aware Negative Sampling",
+      "result": 53.41
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "MRR",
+      "KGEModel": "TransE",
+      "NSMethod": "Uniform Random Walk Structure Aware Negative Sampling",
+      "result": 0.2317
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K-237",
+      "Metric": "Hits@10",
+      "KGEModel": "DistMult",
+      "NSMethod": "KBGAN",
+      "result": 39.91
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K-237",
+      "Metric": "MRR",
+      "KGEModel": "DistMult",
+      "NSMethod": "KBGAN",
+      "result": 0.2272
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18",
+      "Metric": "Hits@10",
+      "KGEModel": "DistMult",
+      "NSMethod": "KBGAN",
+      "result": 93.08
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18",
+      "Metric": "MRR",
+      "KGEModel": "DistMult",
+      "NSMethod": "KBGAN",
+      "result": 0.7275
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "Hits@10",
+      "KGEModel": "DistMult",
+      "NSMethod": "KBGAN",
+      "result": 29.52
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "MRR",
+      "KGEModel": "DistMult",
+      "NSMethod": "KBGAN",
+      "result": 0.2039
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K-237",
+      "Metric": "Hits@10",
+      "KGEModel": "DistMult",
+      "NSMethod": "NSCaching",
+      "result": 45.56
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K-237",
+      "Metric": "MRR",
+      "KGEModel": "DistMult",
+      "NSMethod": "NSCaching",
+      "result": 0.2834
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18",
+      "Metric": "Hits@10",
+      "KGEModel": "DistMult",
+      "NSMethod": "NSCaching",
+      "result": 93.74
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18",
+      "Metric": "MRR",
+      "KGEModel": "DistMult",
+      "NSMethod": "NSCaching",
+      "result": 0.8306
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "Hits@10",
+      "KGEModel": "DistMult",
+      "NSMethod": "NSCaching",
+      "result": 45.45
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "MRR",
+      "KGEModel": "DistMult",
+      "NSMethod": "NSCaching",
+      "result": 0.4128
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K-237",
+      "Metric": "Hits@10",
+      "KGEModel": "DistMult",
+      "NSMethod": "Uniform Negative Sampling",
+      "result": 40.26
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K-237",
+      "Metric": "MRR",
+      "KGEModel": "DistMult",
+      "NSMethod": "Uniform Negative Sampling",
+      "result": 0.2537
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18",
+      "Metric": "Hits@10",
+      "KGEModel": "DistMult",
+      "NSMethod": "Uniform Negative Sampling",
+      "result": 81.39
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18",
+      "Metric": "MRR",
+      "KGEModel": "DistMult",
+      "NSMethod": "Uniform Negative Sampling",
+      "result": 0.4689
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "Hits@10",
+      "KGEModel": "DistMult",
+      "NSMethod": "Uniform Negative Sampling",
+      "result": 52.86
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "MRR",
+      "KGEModel": "DistMult",
+      "NSMethod": "Uniform Negative Sampling",
+      "result": 0.3938
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K-237",
+      "Metric": "Hits@10",
+      "KGEModel": "DistMult",
+      "NSMethod": "Uniform Structure Aware Negative Sampling",
+      "result": 41.0
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K-237",
+      "Metric": "MRR",
+      "KGEModel": "DistMult",
+      "NSMethod": "Uniform Structure Aware Negative Sampling",
+      "result": 0.2595
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18",
+      "Metric": "Hits@10",
+      "KGEModel": "DistMult",
+      "NSMethod": "Uniform Structure Aware Negative Sampling",
+      "result": 93.19
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18",
+      "Metric": "MRR",
+      "KGEModel": "DistMult",
+      "NSMethod": "Uniform Structure Aware Negative Sampling",
+      "result": 0.7553
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "Hits@10",
+      "KGEModel": "DistMult",
+      "NSMethod": "Uniform Structure Aware Negative Sampling",
+      "result": 44.74
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "MRR",
+      "KGEModel": "DistMult",
+      "NSMethod": "Uniform Structure Aware Negative Sampling",
+      "result": 0.4025
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K-237",
+      "Metric": "Hits@10",
+      "KGEModel": "DistMult",
+      "NSMethod": "Uniform Random Walk Structure Aware Negative Sampling",
+      "result": 41.46
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K-237",
+      "Metric": "MRR",
+      "KGEModel": "DistMult",
+      "NSMethod": "Uniform Random Walk Structure Aware Negative Sampling",
+      "result": 0.2621
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18",
+      "Metric": "Hits@10",
+      "KGEModel": "DistMult",
+      "NSMethod": "Uniform Random Walk Structure Aware Negative Sampling",
+      "result": 89.8
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18",
+      "Metric": "MRR",
+      "KGEModel": "DistMult",
+      "NSMethod": "Uniform Random Walk Structure Aware Negative Sampling",
+      "result": 0.6235
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "Hits@10",
+      "KGEModel": "DistMult",
+      "NSMethod": "Uniform Random Walk Structure Aware Negative Sampling",
+      "result": 49.09
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "MRR",
+      "KGEModel": "DistMult",
+      "NSMethod": "Uniform Random Walk Structure Aware Negative Sampling",
+      "result": 0.4071
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K-237",
+      "Metric": "Hits@10",
+      "KGEModel": "RotatE",
+      "NSMethod": "Uniform Negative Sampling",
+      "result": 47.85
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K-237",
+      "Metric": "MRR",
+      "KGEModel": "RotatE",
+      "NSMethod": "Uniform Negative Sampling",
+      "result": 0.2946
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18",
+      "Metric": "Hits@10",
+      "KGEModel": "RotatE",
+      "NSMethod": "Uniform Negative Sampling",
+      "result": 96.09
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18",
+      "Metric": "MRR",
+      "KGEModel": "RotatE",
+      "NSMethod": "Uniform Negative Sampling",
+      "result": 0.9474
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "Hits@10",
+      "KGEModel": "RotatE",
+      "NSMethod": "Uniform Negative Sampling",
+      "result": 56.51
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "MRR",
+      "KGEModel": "RotatE",
+      "NSMethod": "Uniform Negative Sampling",
+      "result": 0.4711
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K-237",
+      "Metric": "Hits@10",
+      "KGEModel": "RotatE",
+      "NSMethod": "Uniform Structure Aware Negative Sampling",
+      "result": 48.22
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K-237",
+      "Metric": "MRR",
+      "KGEModel": "RotatE",
+      "NSMethod": "Uniform Structure Aware Negative Sampling",
+      "result": 0.2985
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18",
+      "Metric": "Hits@10",
+      "KGEModel": "RotatE",
+      "NSMethod": "Uniform Structure Aware Negative Sampling",
+      "result": 95.97
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18",
+      "Metric": "MRR",
+      "KGEModel": "RotatE",
+      "NSMethod": "Uniform Structure Aware Negative Sampling",
+      "result": 0.9499
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "Hits@10",
+      "KGEModel": "RotatE",
+      "NSMethod": "Uniform Structure Aware Negative Sampling",
+      "result": 55.76
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "MRR",
+      "KGEModel": "RotatE",
+      "NSMethod": "Uniform Structure Aware Negative Sampling",
+      "result": 0.4769
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K-237",
+      "Metric": "Hits@10",
+      "KGEModel": "RotatE",
+      "NSMethod": "Uniform Random Walk Structure Aware Negative Sampling",
+      "result": 48.47
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K-237",
+      "Metric": "MRR",
+      "KGEModel": "RotatE",
+      "NSMethod": "Uniform Random Walk Structure Aware Negative Sampling",
+      "result": 0.3003
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18",
+      "Metric": "Hits@10",
+      "KGEModel": "RotatE",
+      "NSMethod": "Uniform Random Walk Structure Aware Negative Sampling",
+      "result": 96.07
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18",
+      "Metric": "MRR",
+      "KGEModel": "RotatE",
+      "NSMethod": "Uniform Random Walk Structure Aware Negative Sampling",
+      "result": 0.9489
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "Hits@10",
+      "KGEModel": "RotatE",
+      "NSMethod": "Uniform Random Walk Structure Aware Negative Sampling",
+      "result": 57.12
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "MRR",
+      "KGEModel": "RotatE",
+      "NSMethod": "Uniform Random Walk Structure Aware Negative Sampling",
+      "result": 0.4796
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K-237",
+      "Metric": "Hits@10",
+      "KGEModel": "TransE",
+      "NSMethod": "Self-Adversarial Negative Sampling",
+      "result": 52.73
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K-237",
+      "Metric": "MRR",
+      "KGEModel": "TransE",
+      "NSMethod": "Self-Adversarial Negative Sampling",
+      "result": 0.3296
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18",
+      "Metric": "Hits@10",
+      "KGEModel": "TransE",
+      "NSMethod": "Self-Adversarial Negative Sampling",
+      "result": 92.02
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18",
+      "Metric": "MRR",
+      "KGEModel": "TransE",
+      "NSMethod": "Self-Adversarial Negative Sampling",
+      "result": 0.7722
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "Hits@10",
+      "KGEModel": "TransE",
+      "NSMethod": "Self-Adversarial Negative Sampling",
+      "result": 52.78
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "MRR",
+      "KGEModel": "TransE",
+      "NSMethod": "Self-Adversarial Negative Sampling",
+      "result": 0.2232
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K-237",
+      "Metric": "Hits@10",
+      "KGEModel": "TransE",
+      "NSMethod": "Self-Adversarial Structure Aware Negative Sampling",
+      "result": 52.03
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K-237",
+      "Metric": "MRR",
+      "KGEModel": "TransE",
+      "NSMethod": "Self-Adversarial Structure Aware Negative Sampling",
+      "result": 0.3265
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18",
+      "Metric": "Hits@10",
+      "KGEModel": "TransE",
+      "NSMethod": "Self-Adversarial Structure Aware Negative Sampling",
+      "result": 84.06
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18",
+      "Metric": "MRR",
+      "KGEModel": "TransE",
+      "NSMethod": "Self-Adversarial Structure Aware Negative Sampling",
+      "result": 0.7136
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "Hits@10",
+      "KGEModel": "TransE",
+      "NSMethod": "Self-Adversarial Structure Aware Negative Sampling",
+      "result": 53.21
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "MRR",
+      "KGEModel": "TransE",
+      "NSMethod": "Self-Adversarial Structure Aware Negative Sampling",
+      "result": 0.2249
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K-237",
+      "Metric": "Hits@10",
+      "KGEModel": "TransE",
+      "NSMethod": "Self-Adversarial Random Walk Structure Aware Negative Sampling",
+      "result": 50.04
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K-237",
+      "Metric": "MRR",
+      "KGEModel": "TransE",
+      "NSMethod": "Self-Adversarial Random Walk Structure Aware Negative Sampling",
+      "result": 0.306
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18",
+      "Metric": "Hits@10",
+      "KGEModel": "TransE",
+      "NSMethod": "Self-Adversarial Random Walk Structure Aware Negative Sampling",
+      "result": 88.51
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18",
+      "Metric": "MRR",
+      "KGEModel": "TransE",
+      "NSMethod": "Self-Adversarial Random Walk Structure Aware Negative Sampling",
+      "result": 0.7429
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "Hits@10",
+      "KGEModel": "TransE",
+      "NSMethod": "Self-Adversarial Random Walk Structure Aware Negative Sampling",
+      "result": 53.81
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "MRR",
+      "KGEModel": "TransE",
+      "NSMethod": "Self-Adversarial Random Walk Structure Aware Negative Sampling",
+      "result": 0.2273
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K-237",
+      "Metric": "Hits@10",
+      "KGEModel": "DistMult",
+      "NSMethod": "Self-Adversarial Negative Sampling",
+      "result": 48.41
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K-237",
+      "Metric": "MRR",
+      "KGEModel": "DistMult",
+      "NSMethod": "Self-Adversarial Negative Sampling",
+      "result": 0.3091
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18",
+      "Metric": "Hits@10",
+      "KGEModel": "DistMult",
+      "NSMethod": "Self-Adversarial Negative Sampling",
+      "result": 92.94
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18",
+      "Metric": "MRR",
+      "KGEModel": "DistMult",
+      "NSMethod": "Self-Adversarial Negative Sampling",
+      "result": 0.6837
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "Hits@10",
+      "KGEModel": "DistMult",
+      "NSMethod": "Self-Adversarial Negative Sampling",
+      "result": 53.8
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "MRR",
+      "KGEModel": "DistMult",
+      "NSMethod": "Self-Adversarial Negative Sampling",
+      "result": 0.4399
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K-237",
+      "Metric": "Hits@10",
+      "KGEModel": "DistMult",
+      "NSMethod": "Self-Adversarial Structure Aware Negative Sampling",
+      "result": 48.68
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K-237",
+      "Metric": "MRR",
+      "KGEModel": "DistMult",
+      "NSMethod": "Self-Adversarial Structure Aware Negative Sampling",
+      "result": 0.31
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18",
+      "Metric": "Hits@10",
+      "KGEModel": "DistMult",
+      "NSMethod": "Self-Adversarial Structure Aware Negative Sampling",
+      "result": 93.04
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18",
+      "Metric": "MRR",
+      "KGEModel": "DistMult",
+      "NSMethod": "Self-Adversarial Structure Aware Negative Sampling",
+      "result": 0.7561
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "Hits@10",
+      "KGEModel": "DistMult",
+      "NSMethod": "Self-Adversarial Structure Aware Negative Sampling",
+      "result": 38.7
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "MRR",
+      "KGEModel": "DistMult",
+      "NSMethod": "Self-Adversarial Structure Aware Negative Sampling",
+      "result": 0.3684
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K-237",
+      "Metric": "Hits@10",
+      "KGEModel": "DistMult",
+      "NSMethod": "Self-Adversarial Random Walk Structure Aware Negative Sampling",
+      "result": 48.17
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K-237",
+      "Metric": "MRR",
+      "KGEModel": "DistMult",
+      "NSMethod": "Self-Adversarial Random Walk Structure Aware Negative Sampling",
+      "result": 0.3071
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18",
+      "Metric": "Hits@10",
+      "KGEModel": "DistMult",
+      "NSMethod": "Self-Adversarial Random Walk Structure Aware Negative Sampling",
+      "result": 91.08
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18",
+      "Metric": "MRR",
+      "KGEModel": "DistMult",
+      "NSMethod": "Self-Adversarial Random Walk Structure Aware Negative Sampling",
+      "result": 0.6634
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "Hits@10",
+      "KGEModel": "DistMult",
+      "NSMethod": "Self-Adversarial Random Walk Structure Aware Negative Sampling",
+      "result": 42.74
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "MRR",
+      "KGEModel": "DistMult",
+      "NSMethod": "Self-Adversarial Random Walk Structure Aware Negative Sampling",
+      "result": 0.3836
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K-237",
+      "Metric": "Hits@10",
+      "KGEModel": "RotatE",
+      "NSMethod": "Self-Adversarial Negative Sampling",
+      "result": 53.03
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K-237",
+      "Metric": "MRR",
+      "KGEModel": "RotatE",
+      "NSMethod": "Self-Adversarial Negative Sampling",
+      "result": 0.3362
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18",
+      "Metric": "Hits@10",
+      "KGEModel": "RotatE",
+      "NSMethod": "Self-Adversarial Negative Sampling",
+      "result": 96.05
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18",
+      "Metric": "MRR",
+      "KGEModel": "RotatE",
+      "NSMethod": "Self-Adversarial Negative Sampling",
+      "result": 0.9498
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "Hits@10",
+      "KGEModel": "RotatE",
+      "NSMethod": "Self-Adversarial Negative Sampling",
+      "result": 57.29
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "MRR",
+      "KGEModel": "RotatE",
+      "NSMethod": "Self-Adversarial Negative Sampling",
+      "result": 0.476
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K-237",
+      "Metric": "Hits@10",
+      "KGEModel": "RotatE",
+      "NSMethod": "Self-Adversarial Structure Aware Negative Sampling",
+      "result": 53.12
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K-237",
+      "Metric": "MRR",
+      "KGEModel": "RotatE",
+      "NSMethod": "Self-Adversarial Structure Aware Negative Sampling",
+      "result": 0.3358
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18",
+      "Metric": "Hits@10",
+      "KGEModel": "RotatE",
+      "NSMethod": "Self-Adversarial Structure Aware Negative Sampling",
+      "result": 95.85
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18",
+      "Metric": "MRR",
+      "KGEModel": "RotatE",
+      "NSMethod": "Self-Adversarial Structure Aware Negative Sampling",
+      "result": 0.9494
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "Hits@10",
+      "KGEModel": "RotatE",
+      "NSMethod": "Self-Adversarial Structure Aware Negative Sampling",
+      "result": 57.12
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "MRR",
+      "KGEModel": "RotatE",
+      "NSMethod": "Self-Adversarial Structure Aware Negative Sampling",
+      "result": 0.4745
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K-237",
+      "Metric": "Hits@10",
+      "KGEModel": "RotatE",
+      "NSMethod": "Self-Adversarial Random Walk Structure Aware Negative Sampling",
+      "result": 51.07
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K-237",
+      "Metric": "MRR",
+      "KGEModel": "RotatE",
+      "NSMethod": "Self-Adversarial Random Walk Structure Aware Negative Sampling",
+      "result": 0.3161
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18",
+      "Metric": "Hits@10",
+      "KGEModel": "RotatE",
+      "NSMethod": "Self-Adversarial Random Walk Structure Aware Negative Sampling",
+      "result": 96.09
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18",
+      "Metric": "MRR",
+      "KGEModel": "RotatE",
+      "NSMethod": "Self-Adversarial Random Walk Structure Aware Negative Sampling",
+      "result": 0.9496
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "Hits@10",
+      "KGEModel": "RotatE",
+      "NSMethod": "Self-Adversarial Random Walk Structure Aware Negative Sampling",
+      "result": 56.94
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "MRR",
+      "KGEModel": "RotatE",
+      "NSMethod": "Self-Adversarial Random Walk Structure Aware Negative Sampling",
+      "result": 0.4805
+    }
+  ]
+}

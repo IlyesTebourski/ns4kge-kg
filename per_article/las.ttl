@@ -7,8 +7,8 @@
 <article/las> ns4kge:mentionsNSMethod <ns-method/gan-scratch> .
 <article/las> ns4kge:mentionsNSMethod <ns-method/uniform-random-negative-sampling> .
 <article/las> ns4kge:mentionsNSMethod <ns-method/bernoulli-negative-sampling> .
-<article/las> ns4kge:mentionsNSMethod <ns-method/domain-sampling> .
-<article/las> ns4kge:mentionsNSMethod <ns-method/nearest-neighbour-sampling> .
+<article/las> ns4kge:mentionsNSMethod <ns-method/domain-based-negative-sampling> .
+<article/las> ns4kge:mentionsNSMethod <ns-method/nearest-neighbor-sampling> .
 <article/las> ns4kge:mentionsNSMethod <ns-method/near-miss-sampling> .
 <article/las> ns4kge:mentionsNSMethod <ns-method/type-constrained-negative-sampling> .
 <article/las> ns4kge:mentionsKGEModel <kge-model/tkrl> .
@@ -39,7 +39,7 @@
 <article/las> ns4kge:mentionsKGEModel <kge-model/transa> .
 <article/las> ns4kge:mentionsKGEModel <kge-model/kale> .
 <article/las> ns4kge:mentionsKGEModel <kge-model/transr> .
-<article/las> ns4kge:mentionsKGEModel <kge-model/r-gcn> .
+<article/las> ns4kge:mentionsKGEModel <kge-model/rgcn> .
 <article/las> ns4kge:hasExperimentation <experimentation/las> .
 
 <category/self-adversarial-ns> rdf:type ns4kge:Category .
@@ -80,18 +80,14 @@
 
 <ns-method/bernoulli-negative-sampling> ns4kge:hasSubcategory <subcategory/probabilistic> .
 
-<ns-method/domain-sampling> rdf:type ns4kge:NSMethod .
-<ns-method/domain-sampling> ns4kge:hasCategory <category/static-ns> .
-<ns-method/domain-sampling> ns4kge:hasSubcategory <subcategory/probabilistic> .
+<ns-method/domain-based-negative-sampling> rdf:type ns4kge:NSMethod .
 
-<ns-method/nearest-neighbour-sampling> rdf:type ns4kge:NSMethod .
-<ns-method/nearest-neighbour-sampling> ns4kge:hasCategory <category/static-ns> .
-<subcategory/model-guided> rdf:type ns4kge:Subcategory .
-
-<ns-method/nearest-neighbour-sampling> ns4kge:hasSubcategory <subcategory/model-guided> .
+<ns-method/nearest-neighbor-sampling> rdf:type ns4kge:NSMethod .
 
 <ns-method/near-miss-sampling> rdf:type ns4kge:NSMethod .
 <ns-method/near-miss-sampling> ns4kge:hasCategory <category/static-ns> .
+<subcategory/model-guided> rdf:type ns4kge:Subcategory .
+
 <ns-method/near-miss-sampling> ns4kge:hasSubcategory <subcategory/model-guided> .
 
 <ns-method/type-constrained-negative-sampling> rdf:type ns4kge:NSMethod .
@@ -152,7 +148,7 @@
 
 <kge-model/transr> rdf:type ns4kge:KGEModel .
 
-<kge-model/r-gcn> rdf:type ns4kge:KGEModel .
+<kge-model/rgcn> rdf:type ns4kge:KGEModel .
 
 <dataset/fb15k-237> rdf:type ns4kge:Dataset .
 <task/link-prediction> rdf:type ns4kge:Task .
@@ -249,30 +245,6 @@
 <experimentation/las> ns4kge:hasConfiguration <configuration/las/81> .
 <experimentation/las> ns4kge:hasConfiguration <configuration/las/82> .
 <experimentation/las> ns4kge:hasConfiguration <configuration/las/83> .
-<experimentation/las> ns4kge:hasConfiguration <configuration/las/84> .
-<experimentation/las> ns4kge:hasConfiguration <configuration/las/85> .
-<experimentation/las> ns4kge:hasConfiguration <configuration/las/86> .
-<experimentation/las> ns4kge:hasConfiguration <configuration/las/87> .
-<experimentation/las> ns4kge:hasConfiguration <configuration/las/88> .
-<experimentation/las> ns4kge:hasConfiguration <configuration/las/89> .
-<experimentation/las> ns4kge:hasConfiguration <configuration/las/90> .
-<experimentation/las> ns4kge:hasConfiguration <configuration/las/91> .
-<experimentation/las> ns4kge:hasConfiguration <configuration/las/92> .
-<experimentation/las> ns4kge:hasConfiguration <configuration/las/93> .
-<experimentation/las> ns4kge:hasConfiguration <configuration/las/94> .
-<experimentation/las> ns4kge:hasConfiguration <configuration/las/95> .
-<experimentation/las> ns4kge:hasConfiguration <configuration/las/96> .
-<experimentation/las> ns4kge:hasConfiguration <configuration/las/97> .
-<experimentation/las> ns4kge:hasConfiguration <configuration/las/98> .
-<experimentation/las> ns4kge:hasConfiguration <configuration/las/99> .
-<experimentation/las> ns4kge:hasConfiguration <configuration/las/100> .
-<experimentation/las> ns4kge:hasConfiguration <configuration/las/101> .
-<experimentation/las> ns4kge:hasConfiguration <configuration/las/102> .
-<experimentation/las> ns4kge:hasConfiguration <configuration/las/103> .
-<experimentation/las> ns4kge:hasConfiguration <configuration/las/104> .
-<experimentation/las> ns4kge:hasConfiguration <configuration/las/105> .
-<experimentation/las> ns4kge:hasConfiguration <configuration/las/106> .
-<experimentation/las> ns4kge:hasConfiguration <configuration/las/107> .
 
 <training-protocol/las> rdf:type ns4kge:TrainingProtocol .
 <training-protocol/las> ns4kge:hasOptimizer    <optimizer/adam> .
@@ -572,7 +544,7 @@
 <configuration/las/37> ns4kge:hasMetric  <metric/mrr> .
 <configuration/las/37> ns4kge:hasKGEModel <kge-model/transe> .
 <configuration/las/37> ns4kge:hasNSMethod <ns-method/loss-adaptive-sampling> .
-<configuration/las/37> ns4kge:result "0.284"^^xsd:decimal .
+<configuration/las/37> ns4kge:result "0.307"^^xsd:decimal .
 
 <configuration/las/38> rdf:type ns4kge:Configuration .
 <configuration/las/38> ns4kge:hasTask    <task/link-prediction> .
@@ -588,7 +560,7 @@
 <configuration/las/39> ns4kge:hasMetric  <metric/hits-10> .
 <configuration/las/39> ns4kge:hasKGEModel <kge-model/transe> .
 <configuration/las/39> ns4kge:hasNSMethod <ns-method/loss-adaptive-sampling> .
-<configuration/las/39> ns4kge:result "0.464"^^xsd:decimal .
+<configuration/las/39> ns4kge:result "0.482"^^xsd:decimal .
 
 <configuration/las/40> rdf:type ns4kge:Configuration .
 <configuration/las/40> ns4kge:hasTask    <task/link-prediction> .
@@ -604,7 +576,7 @@
 <configuration/las/41> ns4kge:hasMetric  <metric/mr> .
 <configuration/las/41> ns4kge:hasKGEModel <kge-model/transe> .
 <configuration/las/41> ns4kge:hasNSMethod <ns-method/loss-adaptive-sampling> .
-<configuration/las/41> ns4kge:result "282"^^xsd:decimal .
+<configuration/las/41> ns4kge:result "266"^^xsd:decimal .
 
 <configuration/las/42> rdf:type ns4kge:Configuration .
 <configuration/las/42> ns4kge:hasTask    <task/link-prediction> .
@@ -620,7 +592,7 @@
 <configuration/las/43> ns4kge:hasMetric  <metric/mrr> .
 <configuration/las/43> ns4kge:hasKGEModel <kge-model/transe> .
 <configuration/las/43> ns4kge:hasNSMethod <ns-method/loss-adaptive-sampling> .
-<configuration/las/43> ns4kge:result "0.208"^^xsd:decimal .
+<configuration/las/43> ns4kge:result "0.231"^^xsd:decimal .
 
 <configuration/las/44> rdf:type ns4kge:Configuration .
 <configuration/las/44> ns4kge:hasTask    <task/link-prediction> .
@@ -628,7 +600,7 @@
 <configuration/las/44> ns4kge:hasMetric  <metric/mr> .
 <configuration/las/44> ns4kge:hasKGEModel <kge-model/transe> .
 <configuration/las/44> ns4kge:hasNSMethod <ns-method/loss-adaptive-sampling> .
-<configuration/las/44> ns4kge:result "3676"^^xsd:decimal .
+<configuration/las/44> ns4kge:result "2678"^^xsd:decimal .
 
 <configuration/las/45> rdf:type ns4kge:Configuration .
 <configuration/las/45> ns4kge:hasTask    <task/link-prediction> .
@@ -636,480 +608,288 @@
 <configuration/las/45> ns4kge:hasMetric  <metric/hits-10> .
 <configuration/las/45> ns4kge:hasKGEModel <kge-model/transe> .
 <configuration/las/45> ns4kge:hasNSMethod <ns-method/loss-adaptive-sampling> .
-<configuration/las/45> ns4kge:result "0.491"^^xsd:decimal .
+<configuration/las/45> ns4kge:result "0.522"^^xsd:decimal .
 
 <configuration/las/46> rdf:type ns4kge:Configuration .
 <configuration/las/46> ns4kge:hasTask    <task/link-prediction> .
 <configuration/las/46> ns4kge:hasDataset <dataset/fb15k-237> .
 <configuration/las/46> ns4kge:hasMetric  <metric/mrr> .
-<configuration/las/46> ns4kge:hasKGEModel <kge-model/transe> .
-<configuration/las/46> ns4kge:hasNSMethod <ns-method/loss-adaptive-sampling> .
-<configuration/las/46> ns4kge:result "0.284"^^xsd:decimal .
+<configuration/las/46> ns4kge:hasKGEModel <kge-model/transd> .
+<configuration/las/46> ns4kge:hasNSMethod <ns-method/kbgan> .
+<configuration/las/46> ns4kge:result "0.277"^^xsd:decimal .
 
 <configuration/las/47> rdf:type ns4kge:Configuration .
 <configuration/las/47> ns4kge:hasTask    <task/link-prediction> .
 <configuration/las/47> ns4kge:hasDataset <dataset/fb15k-237> .
 <configuration/las/47> ns4kge:hasMetric  <metric/mr> .
-<configuration/las/47> ns4kge:hasKGEModel <kge-model/transe> .
-<configuration/las/47> ns4kge:hasNSMethod <ns-method/loss-adaptive-sampling> .
-<configuration/las/47> ns4kge:result "270"^^xsd:decimal .
+<configuration/las/47> ns4kge:hasKGEModel <kge-model/transd> .
+<configuration/las/47> ns4kge:hasNSMethod <ns-method/kbgan> .
+<configuration/las/47> ns4kge:result "510"^^xsd:decimal .
 
 <configuration/las/48> rdf:type ns4kge:Configuration .
 <configuration/las/48> ns4kge:hasTask    <task/link-prediction> .
 <configuration/las/48> ns4kge:hasDataset <dataset/fb15k-237> .
 <configuration/las/48> ns4kge:hasMetric  <metric/hits-10> .
-<configuration/las/48> ns4kge:hasKGEModel <kge-model/transe> .
-<configuration/las/48> ns4kge:hasNSMethod <ns-method/loss-adaptive-sampling> .
-<configuration/las/48> ns4kge:result "0.465"^^xsd:decimal .
+<configuration/las/48> ns4kge:hasKGEModel <kge-model/transd> .
+<configuration/las/48> ns4kge:hasNSMethod <ns-method/kbgan> .
+<configuration/las/48> ns4kge:result "0.459"^^xsd:decimal .
 
 <configuration/las/49> rdf:type ns4kge:Configuration .
 <configuration/las/49> ns4kge:hasTask    <task/link-prediction> .
 <configuration/las/49> ns4kge:hasDataset <dataset/wn18> .
 <configuration/las/49> ns4kge:hasMetric  <metric/mrr> .
-<configuration/las/49> ns4kge:hasKGEModel <kge-model/transe> .
-<configuration/las/49> ns4kge:hasNSMethod <ns-method/loss-adaptive-sampling> .
-<configuration/las/49> ns4kge:result "0.651"^^xsd:decimal .
+<configuration/las/49> ns4kge:hasKGEModel <kge-model/transd> .
+<configuration/las/49> ns4kge:hasNSMethod <ns-method/kbgan> .
+<configuration/las/49> ns4kge:result "0.779"^^xsd:decimal .
 
 <configuration/las/50> rdf:type ns4kge:Configuration .
 <configuration/las/50> ns4kge:hasTask    <task/link-prediction> .
 <configuration/las/50> ns4kge:hasDataset <dataset/wn18> .
 <configuration/las/50> ns4kge:hasMetric  <metric/mr> .
-<configuration/las/50> ns4kge:hasKGEModel <kge-model/transe> .
-<configuration/las/50> ns4kge:hasNSMethod <ns-method/loss-adaptive-sampling> .
-<configuration/las/50> ns4kge:result "266"^^xsd:decimal .
+<configuration/las/50> ns4kge:hasKGEModel <kge-model/transd> .
+<configuration/las/50> ns4kge:hasNSMethod <ns-method/kbgan> .
+<configuration/las/50> ns4kge:result "359"^^xsd:decimal .
 
 <configuration/las/51> rdf:type ns4kge:Configuration .
 <configuration/las/51> ns4kge:hasTask    <task/link-prediction> .
 <configuration/las/51> ns4kge:hasDataset <dataset/wn18> .
 <configuration/las/51> ns4kge:hasMetric  <metric/hits-10> .
-<configuration/las/51> ns4kge:hasKGEModel <kge-model/transe> .
-<configuration/las/51> ns4kge:hasNSMethod <ns-method/loss-adaptive-sampling> .
-<configuration/las/51> ns4kge:result "0.948"^^xsd:decimal .
+<configuration/las/51> ns4kge:hasKGEModel <kge-model/transd> .
+<configuration/las/51> ns4kge:hasNSMethod <ns-method/kbgan> .
+<configuration/las/51> ns4kge:result "0.949"^^xsd:decimal .
 
 <configuration/las/52> rdf:type ns4kge:Configuration .
 <configuration/las/52> ns4kge:hasTask    <task/link-prediction> .
 <configuration/las/52> ns4kge:hasDataset <dataset/wn18rr> .
 <configuration/las/52> ns4kge:hasMetric  <metric/mrr> .
-<configuration/las/52> ns4kge:hasKGEModel <kge-model/transe> .
-<configuration/las/52> ns4kge:hasNSMethod <ns-method/loss-adaptive-sampling> .
-<configuration/las/52> ns4kge:result "0.208"^^xsd:decimal .
+<configuration/las/52> ns4kge:hasKGEModel <kge-model/transd> .
+<configuration/las/52> ns4kge:hasNSMethod <ns-method/kbgan> .
+<configuration/las/52> ns4kge:result "0.216"^^xsd:decimal .
 
 <configuration/las/53> rdf:type ns4kge:Configuration .
 <configuration/las/53> ns4kge:hasTask    <task/link-prediction> .
 <configuration/las/53> ns4kge:hasDataset <dataset/wn18rr> .
 <configuration/las/53> ns4kge:hasMetric  <metric/mr> .
-<configuration/las/53> ns4kge:hasKGEModel <kge-model/transe> .
-<configuration/las/53> ns4kge:hasNSMethod <ns-method/loss-adaptive-sampling> .
-<configuration/las/53> ns4kge:result "3597"^^xsd:decimal .
+<configuration/las/53> ns4kge:hasKGEModel <kge-model/transd> .
+<configuration/las/53> ns4kge:hasNSMethod <ns-method/kbgan> .
+<configuration/las/53> ns4kge:result "4402"^^xsd:decimal .
 
 <configuration/las/54> rdf:type ns4kge:Configuration .
 <configuration/las/54> ns4kge:hasTask    <task/link-prediction> .
 <configuration/las/54> ns4kge:hasDataset <dataset/wn18rr> .
 <configuration/las/54> ns4kge:hasMetric  <metric/hits-10> .
-<configuration/las/54> ns4kge:hasKGEModel <kge-model/transe> .
-<configuration/las/54> ns4kge:hasNSMethod <ns-method/loss-adaptive-sampling> .
-<configuration/las/54> ns4kge:result "0.489"^^xsd:decimal .
+<configuration/las/54> ns4kge:hasKGEModel <kge-model/transd> .
+<configuration/las/54> ns4kge:hasNSMethod <ns-method/kbgan> .
+<configuration/las/54> ns4kge:result "0.474"^^xsd:decimal .
 
 <configuration/las/55> rdf:type ns4kge:Configuration .
 <configuration/las/55> ns4kge:hasTask    <task/link-prediction> .
 <configuration/las/55> ns4kge:hasDataset <dataset/fb15k-237> .
 <configuration/las/55> ns4kge:hasMetric  <metric/mrr> .
 <configuration/las/55> ns4kge:hasKGEModel <kge-model/transd> .
-<configuration/las/55> ns4kge:hasNSMethod <ns-method/kbgan> .
-<configuration/las/55> ns4kge:result "0.277"^^xsd:decimal .
+<configuration/las/55> ns4kge:hasNSMethod <ns-method/loss-adaptive-sampling> .
+<configuration/las/55> ns4kge:result "0.286"^^xsd:decimal .
 
 <configuration/las/56> rdf:type ns4kge:Configuration .
 <configuration/las/56> ns4kge:hasTask    <task/link-prediction> .
 <configuration/las/56> ns4kge:hasDataset <dataset/fb15k-237> .
 <configuration/las/56> ns4kge:hasMetric  <metric/mr> .
 <configuration/las/56> ns4kge:hasKGEModel <kge-model/transd> .
-<configuration/las/56> ns4kge:hasNSMethod <ns-method/kbgan> .
-<configuration/las/56> ns4kge:result "510"^^xsd:decimal .
+<configuration/las/56> ns4kge:hasNSMethod <ns-method/loss-adaptive-sampling> .
+<configuration/las/56> ns4kge:result "273"^^xsd:decimal .
 
 <configuration/las/57> rdf:type ns4kge:Configuration .
 <configuration/las/57> ns4kge:hasTask    <task/link-prediction> .
 <configuration/las/57> ns4kge:hasDataset <dataset/fb15k-237> .
 <configuration/las/57> ns4kge:hasMetric  <metric/hits-10> .
 <configuration/las/57> ns4kge:hasKGEModel <kge-model/transd> .
-<configuration/las/57> ns4kge:hasNSMethod <ns-method/kbgan> .
-<configuration/las/57> ns4kge:result "0.459"^^xsd:decimal .
+<configuration/las/57> ns4kge:hasNSMethod <ns-method/loss-adaptive-sampling> .
+<configuration/las/57> ns4kge:result "0.469"^^xsd:decimal .
 
 <configuration/las/58> rdf:type ns4kge:Configuration .
 <configuration/las/58> ns4kge:hasTask    <task/link-prediction> .
 <configuration/las/58> ns4kge:hasDataset <dataset/wn18> .
 <configuration/las/58> ns4kge:hasMetric  <metric/mrr> .
 <configuration/las/58> ns4kge:hasKGEModel <kge-model/transd> .
-<configuration/las/58> ns4kge:hasNSMethod <ns-method/kbgan> .
-<configuration/las/58> ns4kge:result "0.779"^^xsd:decimal .
+<configuration/las/58> ns4kge:hasNSMethod <ns-method/loss-adaptive-sampling> .
+<configuration/las/58> ns4kge:result "0.752"^^xsd:decimal .
 
 <configuration/las/59> rdf:type ns4kge:Configuration .
 <configuration/las/59> ns4kge:hasTask    <task/link-prediction> .
 <configuration/las/59> ns4kge:hasDataset <dataset/wn18> .
 <configuration/las/59> ns4kge:hasMetric  <metric/mr> .
 <configuration/las/59> ns4kge:hasKGEModel <kge-model/transd> .
-<configuration/las/59> ns4kge:hasNSMethod <ns-method/kbgan> .
-<configuration/las/59> ns4kge:result "359"^^xsd:decimal .
+<configuration/las/59> ns4kge:hasNSMethod <ns-method/loss-adaptive-sampling> .
+<configuration/las/59> ns4kge:result "296"^^xsd:decimal .
 
 <configuration/las/60> rdf:type ns4kge:Configuration .
 <configuration/las/60> ns4kge:hasTask    <task/link-prediction> .
 <configuration/las/60> ns4kge:hasDataset <dataset/wn18> .
 <configuration/las/60> ns4kge:hasMetric  <metric/hits-10> .
 <configuration/las/60> ns4kge:hasKGEModel <kge-model/transd> .
-<configuration/las/60> ns4kge:hasNSMethod <ns-method/kbgan> .
-<configuration/las/60> ns4kge:result "0.949"^^xsd:decimal .
+<configuration/las/60> ns4kge:hasNSMethod <ns-method/loss-adaptive-sampling> .
+<configuration/las/60> ns4kge:result "0.95"^^xsd:decimal .
 
 <configuration/las/61> rdf:type ns4kge:Configuration .
 <configuration/las/61> ns4kge:hasTask    <task/link-prediction> .
 <configuration/las/61> ns4kge:hasDataset <dataset/wn18rr> .
 <configuration/las/61> ns4kge:hasMetric  <metric/mrr> .
 <configuration/las/61> ns4kge:hasKGEModel <kge-model/transd> .
-<configuration/las/61> ns4kge:hasNSMethod <ns-method/kbgan> .
-<configuration/las/61> ns4kge:result "0.216"^^xsd:decimal .
+<configuration/las/61> ns4kge:hasNSMethod <ns-method/loss-adaptive-sampling> .
+<configuration/las/61> ns4kge:result "0.222"^^xsd:decimal .
 
 <configuration/las/62> rdf:type ns4kge:Configuration .
 <configuration/las/62> ns4kge:hasTask    <task/link-prediction> .
 <configuration/las/62> ns4kge:hasDataset <dataset/wn18rr> .
 <configuration/las/62> ns4kge:hasMetric  <metric/mr> .
 <configuration/las/62> ns4kge:hasKGEModel <kge-model/transd> .
-<configuration/las/62> ns4kge:hasNSMethod <ns-method/kbgan> .
-<configuration/las/62> ns4kge:result "4402"^^xsd:decimal .
+<configuration/las/62> ns4kge:hasNSMethod <ns-method/loss-adaptive-sampling> .
+<configuration/las/62> ns4kge:result "4023"^^xsd:decimal .
 
 <configuration/las/63> rdf:type ns4kge:Configuration .
 <configuration/las/63> ns4kge:hasTask    <task/link-prediction> .
 <configuration/las/63> ns4kge:hasDataset <dataset/wn18rr> .
 <configuration/las/63> ns4kge:hasMetric  <metric/hits-10> .
 <configuration/las/63> ns4kge:hasKGEModel <kge-model/transd> .
-<configuration/las/63> ns4kge:hasNSMethod <ns-method/kbgan> .
-<configuration/las/63> ns4kge:result "0.474"^^xsd:decimal .
+<configuration/las/63> ns4kge:hasNSMethod <ns-method/loss-adaptive-sampling> .
+<configuration/las/63> ns4kge:result "0.492"^^xsd:decimal .
 
 <configuration/las/64> rdf:type ns4kge:Configuration .
 <configuration/las/64> ns4kge:hasTask    <task/link-prediction> .
 <configuration/las/64> ns4kge:hasDataset <dataset/fb15k-237> .
 <configuration/las/64> ns4kge:hasMetric  <metric/mrr> .
-<configuration/las/64> ns4kge:hasKGEModel <kge-model/transd> .
-<configuration/las/64> ns4kge:hasNSMethod <ns-method/loss-adaptive-sampling> .
-<configuration/las/64> ns4kge:result "0.286"^^xsd:decimal .
+<configuration/las/64> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/las/64> ns4kge:result "0.241"^^xsd:decimal .
 
 <configuration/las/65> rdf:type ns4kge:Configuration .
 <configuration/las/65> ns4kge:hasTask    <task/link-prediction> .
 <configuration/las/65> ns4kge:hasDataset <dataset/fb15k-237> .
 <configuration/las/65> ns4kge:hasMetric  <metric/mr> .
-<configuration/las/65> ns4kge:hasKGEModel <kge-model/transd> .
-<configuration/las/65> ns4kge:hasNSMethod <ns-method/loss-adaptive-sampling> .
-<configuration/las/65> ns4kge:result "273"^^xsd:decimal .
+<configuration/las/65> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/las/65> ns4kge:result "254"^^xsd:decimal .
 
 <configuration/las/66> rdf:type ns4kge:Configuration .
 <configuration/las/66> ns4kge:hasTask    <task/link-prediction> .
 <configuration/las/66> ns4kge:hasDataset <dataset/fb15k-237> .
 <configuration/las/66> ns4kge:hasMetric  <metric/hits-10> .
-<configuration/las/66> ns4kge:hasKGEModel <kge-model/transd> .
-<configuration/las/66> ns4kge:hasNSMethod <ns-method/loss-adaptive-sampling> .
-<configuration/las/66> ns4kge:result "0.469"^^xsd:decimal .
+<configuration/las/66> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/las/66> ns4kge:result "0.419"^^xsd:decimal .
 
 <configuration/las/67> rdf:type ns4kge:Configuration .
 <configuration/las/67> ns4kge:hasTask    <task/link-prediction> .
-<configuration/las/67> ns4kge:hasDataset <dataset/wn18> .
+<configuration/las/67> ns4kge:hasDataset <dataset/wn18rr> .
 <configuration/las/67> ns4kge:hasMetric  <metric/mrr> .
-<configuration/las/67> ns4kge:hasKGEModel <kge-model/transd> .
-<configuration/las/67> ns4kge:hasNSMethod <ns-method/loss-adaptive-sampling> .
-<configuration/las/67> ns4kge:result "0.752"^^xsd:decimal .
+<configuration/las/67> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/las/67> ns4kge:result "0.43"^^xsd:decimal .
 
 <configuration/las/68> rdf:type ns4kge:Configuration .
 <configuration/las/68> ns4kge:hasTask    <task/link-prediction> .
-<configuration/las/68> ns4kge:hasDataset <dataset/wn18> .
+<configuration/las/68> ns4kge:hasDataset <dataset/wn18rr> .
 <configuration/las/68> ns4kge:hasMetric  <metric/mr> .
-<configuration/las/68> ns4kge:hasKGEModel <kge-model/transd> .
-<configuration/las/68> ns4kge:hasNSMethod <ns-method/loss-adaptive-sampling> .
-<configuration/las/68> ns4kge:result "319"^^xsd:decimal .
+<configuration/las/68> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/las/68> ns4kge:result "5110"^^xsd:decimal .
 
 <configuration/las/69> rdf:type ns4kge:Configuration .
 <configuration/las/69> ns4kge:hasTask    <task/link-prediction> .
-<configuration/las/69> ns4kge:hasDataset <dataset/wn18> .
+<configuration/las/69> ns4kge:hasDataset <dataset/wn18rr> .
 <configuration/las/69> ns4kge:hasMetric  <metric/hits-10> .
-<configuration/las/69> ns4kge:hasKGEModel <kge-model/transd> .
-<configuration/las/69> ns4kge:hasNSMethod <ns-method/loss-adaptive-sampling> .
-<configuration/las/69> ns4kge:result "0.95"^^xsd:decimal .
+<configuration/las/69> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/las/69> ns4kge:result "0.49"^^xsd:decimal .
 
 <configuration/las/70> rdf:type ns4kge:Configuration .
 <configuration/las/70> ns4kge:hasTask    <task/link-prediction> .
-<configuration/las/70> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/las/70> ns4kge:hasDataset <dataset/fb15k-237> .
 <configuration/las/70> ns4kge:hasMetric  <metric/mrr> .
-<configuration/las/70> ns4kge:hasKGEModel <kge-model/transd> .
-<configuration/las/70> ns4kge:hasNSMethod <ns-method/loss-adaptive-sampling> .
-<configuration/las/70> ns4kge:result "0.222"^^xsd:decimal .
+<configuration/las/70> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/las/70> ns4kge:result "0.247"^^xsd:decimal .
 
 <configuration/las/71> rdf:type ns4kge:Configuration .
 <configuration/las/71> ns4kge:hasTask    <task/link-prediction> .
-<configuration/las/71> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/las/71> ns4kge:hasDataset <dataset/fb15k-237> .
 <configuration/las/71> ns4kge:hasMetric  <metric/mr> .
-<configuration/las/71> ns4kge:hasKGEModel <kge-model/transd> .
-<configuration/las/71> ns4kge:hasNSMethod <ns-method/loss-adaptive-sampling> .
-<configuration/las/71> ns4kge:result "4023"^^xsd:decimal .
+<configuration/las/71> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/las/71> ns4kge:result "339"^^xsd:decimal .
 
 <configuration/las/72> rdf:type ns4kge:Configuration .
 <configuration/las/72> ns4kge:hasTask    <task/link-prediction> .
-<configuration/las/72> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/las/72> ns4kge:hasDataset <dataset/fb15k-237> .
 <configuration/las/72> ns4kge:hasMetric  <metric/hits-10> .
-<configuration/las/72> ns4kge:hasKGEModel <kge-model/transd> .
-<configuration/las/72> ns4kge:hasNSMethod <ns-method/loss-adaptive-sampling> .
-<configuration/las/72> ns4kge:result "0.492"^^xsd:decimal .
+<configuration/las/72> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/las/72> ns4kge:result "0.428"^^xsd:decimal .
 
 <configuration/las/73> rdf:type ns4kge:Configuration .
 <configuration/las/73> ns4kge:hasTask    <task/link-prediction> .
-<configuration/las/73> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/las/73> ns4kge:hasDataset <dataset/wn18rr> .
 <configuration/las/73> ns4kge:hasMetric  <metric/mrr> .
-<configuration/las/73> ns4kge:hasKGEModel <kge-model/transd> .
-<configuration/las/73> ns4kge:hasNSMethod <ns-method/loss-adaptive-sampling> .
-<configuration/las/73> ns4kge:result "0.286"^^xsd:decimal .
+<configuration/las/73> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/las/73> ns4kge:result "0.44"^^xsd:decimal .
 
 <configuration/las/74> rdf:type ns4kge:Configuration .
 <configuration/las/74> ns4kge:hasTask    <task/link-prediction> .
-<configuration/las/74> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/las/74> ns4kge:hasDataset <dataset/wn18rr> .
 <configuration/las/74> ns4kge:hasMetric  <metric/mr> .
-<configuration/las/74> ns4kge:hasKGEModel <kge-model/transd> .
-<configuration/las/74> ns4kge:hasNSMethod <ns-method/loss-adaptive-sampling> .
-<configuration/las/74> ns4kge:result "278"^^xsd:decimal .
+<configuration/las/74> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/las/74> ns4kge:result "5261"^^xsd:decimal .
 
 <configuration/las/75> rdf:type ns4kge:Configuration .
 <configuration/las/75> ns4kge:hasTask    <task/link-prediction> .
-<configuration/las/75> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/las/75> ns4kge:hasDataset <dataset/wn18rr> .
 <configuration/las/75> ns4kge:hasMetric  <metric/hits-10> .
-<configuration/las/75> ns4kge:hasKGEModel <kge-model/transd> .
-<configuration/las/75> ns4kge:hasNSMethod <ns-method/loss-adaptive-sampling> .
-<configuration/las/75> ns4kge:result "0.469"^^xsd:decimal .
+<configuration/las/75> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/las/75> ns4kge:result "0.51"^^xsd:decimal .
 
 <configuration/las/76> rdf:type ns4kge:Configuration .
 <configuration/las/76> ns4kge:hasTask    <task/link-prediction> .
-<configuration/las/76> ns4kge:hasDataset <dataset/wn18> .
+<configuration/las/76> ns4kge:hasDataset <dataset/fb15k-237> .
 <configuration/las/76> ns4kge:hasMetric  <metric/mrr> .
-<configuration/las/76> ns4kge:hasKGEModel <kge-model/transd> .
-<configuration/las/76> ns4kge:hasNSMethod <ns-method/loss-adaptive-sampling> .
-<configuration/las/76> ns4kge:result "0.751"^^xsd:decimal .
+<configuration/las/76> ns4kge:hasKGEModel <kge-model/rgcn> .
+<configuration/las/76> ns4kge:result "0.248"^^xsd:decimal .
 
 <configuration/las/77> rdf:type ns4kge:Configuration .
 <configuration/las/77> ns4kge:hasTask    <task/link-prediction> .
-<configuration/las/77> ns4kge:hasDataset <dataset/wn18> .
-<configuration/las/77> ns4kge:hasMetric  <metric/mr> .
-<configuration/las/77> ns4kge:hasKGEModel <kge-model/transd> .
-<configuration/las/77> ns4kge:hasNSMethod <ns-method/loss-adaptive-sampling> .
-<configuration/las/77> ns4kge:result "296"^^xsd:decimal .
+<configuration/las/77> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/las/77> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/las/77> ns4kge:hasKGEModel <kge-model/rgcn> .
+<configuration/las/77> ns4kge:result "0.417"^^xsd:decimal .
 
 <configuration/las/78> rdf:type ns4kge:Configuration .
 <configuration/las/78> ns4kge:hasTask    <task/link-prediction> .
-<configuration/las/78> ns4kge:hasDataset <dataset/wn18> .
-<configuration/las/78> ns4kge:hasMetric  <metric/hits-10> .
-<configuration/las/78> ns4kge:hasKGEModel <kge-model/transd> .
-<configuration/las/78> ns4kge:hasNSMethod <ns-method/loss-adaptive-sampling> .
-<configuration/las/78> ns4kge:result "0.947"^^xsd:decimal .
+<configuration/las/78> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/las/78> ns4kge:hasMetric  <metric/mrr> .
+<configuration/las/78> ns4kge:hasKGEModel <kge-model/conve> .
+<configuration/las/78> ns4kge:result "0.316"^^xsd:decimal .
 
 <configuration/las/79> rdf:type ns4kge:Configuration .
 <configuration/las/79> ns4kge:hasTask    <task/link-prediction> .
-<configuration/las/79> ns4kge:hasDataset <dataset/wn18rr> .
-<configuration/las/79> ns4kge:hasMetric  <metric/mrr> .
-<configuration/las/79> ns4kge:hasKGEModel <kge-model/transd> .
-<configuration/las/79> ns4kge:hasNSMethod <ns-method/loss-adaptive-sampling> .
-<configuration/las/79> ns4kge:result "0.218"^^xsd:decimal .
+<configuration/las/79> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/las/79> ns4kge:hasMetric  <metric/mr> .
+<configuration/las/79> ns4kge:hasKGEModel <kge-model/conve> .
+<configuration/las/79> ns4kge:result "246"^^xsd:decimal .
 
 <configuration/las/80> rdf:type ns4kge:Configuration .
 <configuration/las/80> ns4kge:hasTask    <task/link-prediction> .
-<configuration/las/80> ns4kge:hasDataset <dataset/wn18rr> .
-<configuration/las/80> ns4kge:hasMetric  <metric/mr> .
-<configuration/las/80> ns4kge:hasKGEModel <kge-model/transd> .
-<configuration/las/80> ns4kge:hasNSMethod <ns-method/loss-adaptive-sampling> .
-<configuration/las/80> ns4kge:result "4138"^^xsd:decimal .
+<configuration/las/80> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/las/80> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/las/80> ns4kge:hasKGEModel <kge-model/conve> .
+<configuration/las/80> ns4kge:result "0.491"^^xsd:decimal .
 
 <configuration/las/81> rdf:type ns4kge:Configuration .
 <configuration/las/81> ns4kge:hasTask    <task/link-prediction> .
 <configuration/las/81> ns4kge:hasDataset <dataset/wn18rr> .
-<configuration/las/81> ns4kge:hasMetric  <metric/hits-10> .
-<configuration/las/81> ns4kge:hasKGEModel <kge-model/transd> .
-<configuration/las/81> ns4kge:hasNSMethod <ns-method/loss-adaptive-sampling> .
-<configuration/las/81> ns4kge:result "0.486"^^xsd:decimal .
+<configuration/las/81> ns4kge:hasMetric  <metric/mrr> .
+<configuration/las/81> ns4kge:hasKGEModel <kge-model/conve> .
+<configuration/las/81> ns4kge:result "0.46"^^xsd:decimal .
 
 <configuration/las/82> rdf:type ns4kge:Configuration .
 <configuration/las/82> ns4kge:hasTask    <task/link-prediction> .
-<configuration/las/82> ns4kge:hasDataset <dataset/fb15k-237> .
-<configuration/las/82> ns4kge:hasMetric  <metric/mrr> .
-<configuration/las/82> ns4kge:hasKGEModel <kge-model/distmult> .
-<configuration/las/82> ns4kge:result "24.1"^^xsd:decimal .
+<configuration/las/82> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/las/82> ns4kge:hasMetric  <metric/mr> .
+<configuration/las/82> ns4kge:hasKGEModel <kge-model/conve> .
+<configuration/las/82> ns4kge:result "5277"^^xsd:decimal .
 
 <configuration/las/83> rdf:type ns4kge:Configuration .
 <configuration/las/83> ns4kge:hasTask    <task/link-prediction> .
-<configuration/las/83> ns4kge:hasDataset <dataset/fb15k-237> .
-<configuration/las/83> ns4kge:hasMetric  <metric/mr> .
-<configuration/las/83> ns4kge:hasKGEModel <kge-model/distmult> .
-<configuration/las/83> ns4kge:result "254"^^xsd:decimal .
-
-<configuration/las/84> rdf:type ns4kge:Configuration .
-<configuration/las/84> ns4kge:hasTask    <task/link-prediction> .
-<configuration/las/84> ns4kge:hasDataset <dataset/fb15k-237> .
-<configuration/las/84> ns4kge:hasMetric  <metric/hits-10> .
-<configuration/las/84> ns4kge:hasKGEModel <kge-model/distmult> .
-<configuration/las/84> ns4kge:result "41.9"^^xsd:decimal .
-
-<configuration/las/85> rdf:type ns4kge:Configuration .
-<configuration/las/85> ns4kge:hasTask    <task/link-prediction> .
-<configuration/las/85> ns4kge:hasDataset <dataset/wn18rr> .
-<configuration/las/85> ns4kge:hasMetric  <metric/mrr> .
-<configuration/las/85> ns4kge:hasKGEModel <kge-model/distmult> .
-<configuration/las/85> ns4kge:result "43.0"^^xsd:decimal .
-
-<configuration/las/86> rdf:type ns4kge:Configuration .
-<configuration/las/86> ns4kge:hasTask    <task/link-prediction> .
-<configuration/las/86> ns4kge:hasDataset <dataset/wn18rr> .
-<configuration/las/86> ns4kge:hasMetric  <metric/mr> .
-<configuration/las/86> ns4kge:hasKGEModel <kge-model/distmult> .
-<configuration/las/86> ns4kge:result "5110"^^xsd:decimal .
-
-<configuration/las/87> rdf:type ns4kge:Configuration .
-<configuration/las/87> ns4kge:hasTask    <task/link-prediction> .
-<configuration/las/87> ns4kge:hasDataset <dataset/wn18rr> .
-<configuration/las/87> ns4kge:hasMetric  <metric/hits-10> .
-<configuration/las/87> ns4kge:hasKGEModel <kge-model/distmult> .
-<configuration/las/87> ns4kge:result "49.0"^^xsd:decimal .
-
-<configuration/las/88> rdf:type ns4kge:Configuration .
-<configuration/las/88> ns4kge:hasTask    <task/link-prediction> .
-<configuration/las/88> ns4kge:hasDataset <dataset/fb15k-237> .
-<configuration/las/88> ns4kge:hasMetric  <metric/mrr> .
-<configuration/las/88> ns4kge:hasKGEModel <kge-model/complex> .
-<configuration/las/88> ns4kge:result "24.7"^^xsd:decimal .
-
-<configuration/las/89> rdf:type ns4kge:Configuration .
-<configuration/las/89> ns4kge:hasTask    <task/link-prediction> .
-<configuration/las/89> ns4kge:hasDataset <dataset/fb15k-237> .
-<configuration/las/89> ns4kge:hasMetric  <metric/mr> .
-<configuration/las/89> ns4kge:hasKGEModel <kge-model/complex> .
-<configuration/las/89> ns4kge:result "339"^^xsd:decimal .
-
-<configuration/las/90> rdf:type ns4kge:Configuration .
-<configuration/las/90> ns4kge:hasTask    <task/link-prediction> .
-<configuration/las/90> ns4kge:hasDataset <dataset/fb15k-237> .
-<configuration/las/90> ns4kge:hasMetric  <metric/hits-10> .
-<configuration/las/90> ns4kge:hasKGEModel <kge-model/complex> .
-<configuration/las/90> ns4kge:result "42.8"^^xsd:decimal .
-
-<configuration/las/91> rdf:type ns4kge:Configuration .
-<configuration/las/91> ns4kge:hasTask    <task/link-prediction> .
-<configuration/las/91> ns4kge:hasDataset <dataset/wn18rr> .
-<configuration/las/91> ns4kge:hasMetric  <metric/mrr> .
-<configuration/las/91> ns4kge:hasKGEModel <kge-model/complex> .
-<configuration/las/91> ns4kge:result "44.0"^^xsd:decimal .
-
-<configuration/las/92> rdf:type ns4kge:Configuration .
-<configuration/las/92> ns4kge:hasTask    <task/link-prediction> .
-<configuration/las/92> ns4kge:hasDataset <dataset/wn18rr> .
-<configuration/las/92> ns4kge:hasMetric  <metric/mr> .
-<configuration/las/92> ns4kge:hasKGEModel <kge-model/complex> .
-<configuration/las/92> ns4kge:result "5261"^^xsd:decimal .
-
-<configuration/las/93> rdf:type ns4kge:Configuration .
-<configuration/las/93> ns4kge:hasTask    <task/link-prediction> .
-<configuration/las/93> ns4kge:hasDataset <dataset/wn18rr> .
-<configuration/las/93> ns4kge:hasMetric  <metric/hits-10> .
-<configuration/las/93> ns4kge:hasKGEModel <kge-model/complex> .
-<configuration/las/93> ns4kge:result "51.0"^^xsd:decimal .
-
-<configuration/las/94> rdf:type ns4kge:Configuration .
-<configuration/las/94> ns4kge:hasTask    <task/link-prediction> .
-<configuration/las/94> ns4kge:hasDataset <dataset/fb15k-237> .
-<configuration/las/94> ns4kge:hasMetric  <metric/mrr> .
-<configuration/las/94> ns4kge:hasKGEModel <kge-model/r-gcn> .
-<configuration/las/94> ns4kge:result "24.8"^^xsd:decimal .
-
-<configuration/las/95> rdf:type ns4kge:Configuration .
-<configuration/las/95> ns4kge:hasTask    <task/link-prediction> .
-<configuration/las/95> ns4kge:hasDataset <dataset/fb15k-237> .
-<configuration/las/95> ns4kge:hasMetric  <metric/hits-10> .
-<configuration/las/95> ns4kge:hasKGEModel <kge-model/r-gcn> .
-<configuration/las/95> ns4kge:result "41.7"^^xsd:decimal .
-
-<configuration/las/96> rdf:type ns4kge:Configuration .
-<configuration/las/96> ns4kge:hasTask    <task/link-prediction> .
-<configuration/las/96> ns4kge:hasDataset <dataset/fb15k-237> .
-<configuration/las/96> ns4kge:hasMetric  <metric/mrr> .
-<configuration/las/96> ns4kge:hasKGEModel <kge-model/conve> .
-<configuration/las/96> ns4kge:result "31.6"^^xsd:decimal .
-
-<configuration/las/97> rdf:type ns4kge:Configuration .
-<configuration/las/97> ns4kge:hasTask    <task/link-prediction> .
-<configuration/las/97> ns4kge:hasDataset <dataset/fb15k-237> .
-<configuration/las/97> ns4kge:hasMetric  <metric/mr> .
-<configuration/las/97> ns4kge:hasKGEModel <kge-model/conve> .
-<configuration/las/97> ns4kge:result "246"^^xsd:decimal .
-
-<configuration/las/98> rdf:type ns4kge:Configuration .
-<configuration/las/98> ns4kge:hasTask    <task/link-prediction> .
-<configuration/las/98> ns4kge:hasDataset <dataset/fb15k-237> .
-<configuration/las/98> ns4kge:hasMetric  <metric/hits-10> .
-<configuration/las/98> ns4kge:hasKGEModel <kge-model/conve> .
-<configuration/las/98> ns4kge:result "49.1"^^xsd:decimal .
-
-<configuration/las/99> rdf:type ns4kge:Configuration .
-<configuration/las/99> ns4kge:hasTask    <task/link-prediction> .
-<configuration/las/99> ns4kge:hasDataset <dataset/wn18rr> .
-<configuration/las/99> ns4kge:hasMetric  <metric/mrr> .
-<configuration/las/99> ns4kge:hasKGEModel <kge-model/conve> .
-<configuration/las/99> ns4kge:result "46.0"^^xsd:decimal .
-
-<configuration/las/100> rdf:type ns4kge:Configuration .
-<configuration/las/100> ns4kge:hasTask    <task/link-prediction> .
-<configuration/las/100> ns4kge:hasDataset <dataset/wn18rr> .
-<configuration/las/100> ns4kge:hasMetric  <metric/mr> .
-<configuration/las/100> ns4kge:hasKGEModel <kge-model/conve> .
-<configuration/las/100> ns4kge:result "5277"^^xsd:decimal .
-
-<configuration/las/101> rdf:type ns4kge:Configuration .
-<configuration/las/101> ns4kge:hasTask    <task/link-prediction> .
-<configuration/las/101> ns4kge:hasDataset <dataset/wn18rr> .
-<configuration/las/101> ns4kge:hasMetric  <metric/hits-10> .
-<configuration/las/101> ns4kge:hasKGEModel <kge-model/conve> .
-<configuration/las/101> ns4kge:result "48.0"^^xsd:decimal .
-
-<configuration/las/102> rdf:type ns4kge:Configuration .
-<configuration/las/102> ns4kge:hasTask    <task/link-prediction> .
-<configuration/las/102> ns4kge:hasDataset <dataset/fb15k-237> .
-<configuration/las/102> ns4kge:hasMetric  <metric/mrr> .
-<configuration/las/102> ns4kge:hasKGEModel <kge-model/transe> .
-<configuration/las/102> ns4kge:hasNSMethod <ns-method/loss-adaptive-sampling> .
-<configuration/las/102> ns4kge:result "30.7"^^xsd:decimal .
-
-<configuration/las/103> rdf:type ns4kge:Configuration .
-<configuration/las/103> ns4kge:hasTask    <task/link-prediction> .
-<configuration/las/103> ns4kge:hasDataset <dataset/fb15k-237> .
-<configuration/las/103> ns4kge:hasMetric  <metric/mr> .
-<configuration/las/103> ns4kge:hasKGEModel <kge-model/transe> .
-<configuration/las/103> ns4kge:hasNSMethod <ns-method/loss-adaptive-sampling> .
-<configuration/las/103> ns4kge:result "277"^^xsd:decimal .
-
-<configuration/las/104> rdf:type ns4kge:Configuration .
-<configuration/las/104> ns4kge:hasTask    <task/link-prediction> .
-<configuration/las/104> ns4kge:hasDataset <dataset/fb15k-237> .
-<configuration/las/104> ns4kge:hasMetric  <metric/hits-10> .
-<configuration/las/104> ns4kge:hasKGEModel <kge-model/transe> .
-<configuration/las/104> ns4kge:hasNSMethod <ns-method/loss-adaptive-sampling> .
-<configuration/las/104> ns4kge:result "48.2"^^xsd:decimal .
-
-<configuration/las/105> rdf:type ns4kge:Configuration .
-<configuration/las/105> ns4kge:hasTask    <task/link-prediction> .
-<configuration/las/105> ns4kge:hasDataset <dataset/wn18rr> .
-<configuration/las/105> ns4kge:hasMetric  <metric/mrr> .
-<configuration/las/105> ns4kge:hasKGEModel <kge-model/transe> .
-<configuration/las/105> ns4kge:hasNSMethod <ns-method/loss-adaptive-sampling> .
-<configuration/las/105> ns4kge:result "23.1"^^xsd:decimal .
-
-<configuration/las/106> rdf:type ns4kge:Configuration .
-<configuration/las/106> ns4kge:hasTask    <task/link-prediction> .
-<configuration/las/106> ns4kge:hasDataset <dataset/wn18rr> .
-<configuration/las/106> ns4kge:hasMetric  <metric/mr> .
-<configuration/las/106> ns4kge:hasKGEModel <kge-model/transe> .
-<configuration/las/106> ns4kge:hasNSMethod <ns-method/loss-adaptive-sampling> .
-<configuration/las/106> ns4kge:result "2678"^^xsd:decimal .
-
-<configuration/las/107> rdf:type ns4kge:Configuration .
-<configuration/las/107> ns4kge:hasTask    <task/link-prediction> .
-<configuration/las/107> ns4kge:hasDataset <dataset/wn18rr> .
-<configuration/las/107> ns4kge:hasMetric  <metric/hits-10> .
-<configuration/las/107> ns4kge:hasKGEModel <kge-model/transe> .
-<configuration/las/107> ns4kge:hasNSMethod <ns-method/loss-adaptive-sampling> .
-<configuration/las/107> ns4kge:result "52.2"^^xsd:decimal .
+<configuration/las/83> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/las/83> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/las/83> ns4kge:hasKGEModel <kge-model/conve> .
+<configuration/las/83> ns4kge:result "0.48"^^xsd:decimal .

@@ -1,0 +1,364 @@
+<article/condconstraints> rdf:type ns4kge:Article .
+<article/condconstraints> ns4kge:title "Conditional Constraints for Knowledge Graph Embeddings"^^xsd:string .
+<article/condconstraints> ns4kge:date "2020"^^xsd:gYear .
+<article/condconstraints> ns4kge:proposesNSMethod <ns-method/conditional-constraint-based-negative-sampling> .
+<article/condconstraints> ns4kge:mentionsNSMethod <ns-method/closed-world-constraints-neg-ratio-1> .
+<article/condconstraints> ns4kge:mentionsNSMethod <ns-method/local-closed-world-assumption-negative-sampling> .
+<article/condconstraints> ns4kge:mentionsNSMethod <ns-method/closed-world-constraints-neg-ratio-5> .
+<article/condconstraints> ns4kge:mentionsNSMethod <ns-method/open-world-constraints-neg-ratio-1> .
+<article/condconstraints> ns4kge:mentionsNSMethod <ns-method/filtered-negative-sampling> .
+<article/condconstraints> ns4kge:mentionsNSMethod <ns-method/no-constraints-neg-ratio-1> .
+<article/condconstraints> ns4kge:mentionsNSMethod <ns-method/bernoulli-negative-sampling> .
+<article/condconstraints> ns4kge:mentionsNSMethod <ns-method/no-constraints-neg-ratio-5> .
+<article/condconstraints> ns4kge:mentionsNSMethod <ns-method/open-world-constraints-neg-ratio-5> .
+<article/condconstraints> ns4kge:mentionsKGEModel <kge-model/transe> .
+<article/condconstraints> ns4kge:mentionsKGEModel <kge-model/rescal> .
+<article/condconstraints> ns4kge:mentionsKGEModel <kge-model/transh> .
+<article/condconstraints> ns4kge:mentionsKGEModel <kge-model/trescal> .
+<article/condconstraints> ns4kge:hasExperimentation <experimentation/condconstraints> .
+
+<ns-method/conditional-constraint-based-negative-sampling> rdf:type ns4kge:NSMethod .
+
+<ns-method/closed-world-constraints-neg-ratio-1> rdf:type ns4kge:NSMethod .
+
+<ns-method/local-closed-world-assumption-negative-sampling> rdf:type ns4kge:NSMethod .
+
+<ns-method/closed-world-constraints-neg-ratio-5> rdf:type ns4kge:NSMethod .
+
+<ns-method/open-world-constraints-neg-ratio-1> rdf:type ns4kge:NSMethod .
+
+<ns-method/filtered-negative-sampling> rdf:type ns4kge:NSMethod .
+
+<ns-method/no-constraints-neg-ratio-1> rdf:type ns4kge:NSMethod .
+
+<ns-method/bernoulli-negative-sampling> rdf:type ns4kge:NSMethod .
+<category/static-ns> rdf:type ns4kge:Category .
+
+<ns-method/bernoulli-negative-sampling> ns4kge:hasCategory <category/static-ns> .
+<subcategory/probabilistic> rdf:type ns4kge:Subcategory .
+
+<ns-method/bernoulli-negative-sampling> ns4kge:hasSubcategory <subcategory/probabilistic> .
+
+<ns-method/no-constraints-neg-ratio-5> rdf:type ns4kge:NSMethod .
+
+<ns-method/open-world-constraints-neg-ratio-5> rdf:type ns4kge:NSMethod .
+
+<kge-model/transe> rdf:type ns4kge:KGEModel .
+
+<kge-model/rescal> rdf:type ns4kge:KGEModel .
+
+<kge-model/transh> rdf:type ns4kge:KGEModel .
+
+<kge-model/trescal> rdf:type ns4kge:KGEModel .
+
+<dataset/table-1-dataset> rdf:type ns4kge:Dataset .
+<task/link-prediction> rdf:type ns4kge:Task .
+<metric/mr> rdf:type ns4kge:Metric .
+<metric/mrr> rdf:type ns4kge:Metric .
+<metric/hits-10> rdf:type ns4kge:Metric .
+<dataset/mutag> rdf:type ns4kge:Dataset .
+<loss-function/margin-based-ranking-loss> rdf:type ns4kge:LossFunction .
+
+<experimentation/condconstraints> rdf:type ns4kge:Experimentation .
+<experimentation/condconstraints> ns4kge:hasTrainingProtocol <training-protocol/condconstraints> .
+<experimentation/condconstraints> ns4kge:hasConfiguration <configuration/condconstraints/1> .
+<experimentation/condconstraints> ns4kge:hasConfiguration <configuration/condconstraints/2> .
+<experimentation/condconstraints> ns4kge:hasConfiguration <configuration/condconstraints/3> .
+<experimentation/condconstraints> ns4kge:hasConfiguration <configuration/condconstraints/4> .
+<experimentation/condconstraints> ns4kge:hasConfiguration <configuration/condconstraints/5> .
+<experimentation/condconstraints> ns4kge:hasConfiguration <configuration/condconstraints/6> .
+<experimentation/condconstraints> ns4kge:hasConfiguration <configuration/condconstraints/7> .
+<experimentation/condconstraints> ns4kge:hasConfiguration <configuration/condconstraints/8> .
+<experimentation/condconstraints> ns4kge:hasConfiguration <configuration/condconstraints/9> .
+<experimentation/condconstraints> ns4kge:hasConfiguration <configuration/condconstraints/10> .
+<experimentation/condconstraints> ns4kge:hasConfiguration <configuration/condconstraints/11> .
+<experimentation/condconstraints> ns4kge:hasConfiguration <configuration/condconstraints/12> .
+<experimentation/condconstraints> ns4kge:hasConfiguration <configuration/condconstraints/13> .
+<experimentation/condconstraints> ns4kge:hasConfiguration <configuration/condconstraints/14> .
+<experimentation/condconstraints> ns4kge:hasConfiguration <configuration/condconstraints/15> .
+<experimentation/condconstraints> ns4kge:hasConfiguration <configuration/condconstraints/16> .
+<experimentation/condconstraints> ns4kge:hasConfiguration <configuration/condconstraints/17> .
+<experimentation/condconstraints> ns4kge:hasConfiguration <configuration/condconstraints/18> .
+<experimentation/condconstraints> ns4kge:hasConfiguration <configuration/condconstraints/19> .
+<experimentation/condconstraints> ns4kge:hasConfiguration <configuration/condconstraints/20> .
+<experimentation/condconstraints> ns4kge:hasConfiguration <configuration/condconstraints/21> .
+<experimentation/condconstraints> ns4kge:hasConfiguration <configuration/condconstraints/22> .
+<experimentation/condconstraints> ns4kge:hasConfiguration <configuration/condconstraints/23> .
+<experimentation/condconstraints> ns4kge:hasConfiguration <configuration/condconstraints/24> .
+<experimentation/condconstraints> ns4kge:hasConfiguration <configuration/condconstraints/25> .
+<experimentation/condconstraints> ns4kge:hasConfiguration <configuration/condconstraints/26> .
+<experimentation/condconstraints> ns4kge:hasConfiguration <configuration/condconstraints/27> .
+<experimentation/condconstraints> ns4kge:hasConfiguration <configuration/condconstraints/28> .
+<experimentation/condconstraints> ns4kge:hasConfiguration <configuration/condconstraints/29> .
+<experimentation/condconstraints> ns4kge:hasConfiguration <configuration/condconstraints/30> .
+<experimentation/condconstraints> ns4kge:hasConfiguration <configuration/condconstraints/31> .
+<experimentation/condconstraints> ns4kge:hasConfiguration <configuration/condconstraints/32> .
+<experimentation/condconstraints> ns4kge:hasConfiguration <configuration/condconstraints/33> .
+
+<training-protocol/condconstraints> rdf:type ns4kge:TrainingProtocol .
+<training-protocol/condconstraints> ns4kge:hasLossFunction <loss-function/margin-based-ranking-loss> .
+<training-protocol/condconstraints> ns4kge:learningRate "0.001"^^xsd:decimal .
+
+<configuration/condconstraints/1> rdf:type ns4kge:Configuration .
+<configuration/condconstraints/1> ns4kge:hasTask    <task/link-prediction> .
+<configuration/condconstraints/1> ns4kge:hasDataset <dataset/table-1-dataset> .
+<configuration/condconstraints/1> ns4kge:hasMetric  <metric/mr> .
+<configuration/condconstraints/1> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/condconstraints/1> ns4kge:hasNSMethod <ns-method/no-constraints-neg-ratio-5> .
+<configuration/condconstraints/1> ns4kge:result "653.403"^^xsd:decimal .
+
+<configuration/condconstraints/2> rdf:type ns4kge:Configuration .
+<configuration/condconstraints/2> ns4kge:hasTask    <task/link-prediction> .
+<configuration/condconstraints/2> ns4kge:hasDataset <dataset/table-1-dataset> .
+<configuration/condconstraints/2> ns4kge:hasMetric  <metric/mr> .
+<configuration/condconstraints/2> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/condconstraints/2> ns4kge:hasNSMethod <ns-method/open-world-constraints-neg-ratio-1> .
+<configuration/condconstraints/2> ns4kge:result "663.658"^^xsd:decimal .
+
+<configuration/condconstraints/3> rdf:type ns4kge:Configuration .
+<configuration/condconstraints/3> ns4kge:hasTask    <task/link-prediction> .
+<configuration/condconstraints/3> ns4kge:hasDataset <dataset/table-1-dataset> .
+<configuration/condconstraints/3> ns4kge:hasMetric  <metric/mr> .
+<configuration/condconstraints/3> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/condconstraints/3> ns4kge:hasNSMethod <ns-method/no-constraints-neg-ratio-1> .
+<configuration/condconstraints/3> ns4kge:result "667.86"^^xsd:decimal .
+
+<configuration/condconstraints/4> rdf:type ns4kge:Configuration .
+<configuration/condconstraints/4> ns4kge:hasTask    <task/link-prediction> .
+<configuration/condconstraints/4> ns4kge:hasDataset <dataset/table-1-dataset> .
+<configuration/condconstraints/4> ns4kge:hasMetric  <metric/mr> .
+<configuration/condconstraints/4> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/condconstraints/4> ns4kge:hasNSMethod <ns-method/closed-world-constraints-neg-ratio-1> .
+<configuration/condconstraints/4> ns4kge:result "801.26"^^xsd:decimal .
+
+<configuration/condconstraints/5> rdf:type ns4kge:Configuration .
+<configuration/condconstraints/5> ns4kge:hasTask    <task/link-prediction> .
+<configuration/condconstraints/5> ns4kge:hasDataset <dataset/table-1-dataset> .
+<configuration/condconstraints/5> ns4kge:hasMetric  <metric/mr> .
+<configuration/condconstraints/5> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/condconstraints/5> ns4kge:hasNSMethod <ns-method/closed-world-constraints-neg-ratio-5> .
+<configuration/condconstraints/5> ns4kge:result "870.899"^^xsd:decimal .
+
+<configuration/condconstraints/6> rdf:type ns4kge:Configuration .
+<configuration/condconstraints/6> ns4kge:hasTask    <task/link-prediction> .
+<configuration/condconstraints/6> ns4kge:hasDataset <dataset/table-1-dataset> .
+<configuration/condconstraints/6> ns4kge:hasMetric  <metric/mrr> .
+<configuration/condconstraints/6> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/condconstraints/6> ns4kge:hasNSMethod <ns-method/no-constraints-neg-ratio-5> .
+<configuration/condconstraints/6> ns4kge:result "0.34"^^xsd:decimal .
+
+<configuration/condconstraints/7> rdf:type ns4kge:Configuration .
+<configuration/condconstraints/7> ns4kge:hasTask    <task/link-prediction> .
+<configuration/condconstraints/7> ns4kge:hasDataset <dataset/table-1-dataset> .
+<configuration/condconstraints/7> ns4kge:hasMetric  <metric/mrr> .
+<configuration/condconstraints/7> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/condconstraints/7> ns4kge:hasNSMethod <ns-method/closed-world-constraints-neg-ratio-1> .
+<configuration/condconstraints/7> ns4kge:result "0.265"^^xsd:decimal .
+
+<configuration/condconstraints/8> rdf:type ns4kge:Configuration .
+<configuration/condconstraints/8> ns4kge:hasTask    <task/link-prediction> .
+<configuration/condconstraints/8> ns4kge:hasDataset <dataset/table-1-dataset> .
+<configuration/condconstraints/8> ns4kge:hasMetric  <metric/mrr> .
+<configuration/condconstraints/8> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/condconstraints/8> ns4kge:hasNSMethod <ns-method/closed-world-constraints-neg-ratio-5> .
+<configuration/condconstraints/8> ns4kge:result "0.25"^^xsd:decimal .
+
+<configuration/condconstraints/9> rdf:type ns4kge:Configuration .
+<configuration/condconstraints/9> ns4kge:hasTask    <task/link-prediction> .
+<configuration/condconstraints/9> ns4kge:hasDataset <dataset/table-1-dataset> .
+<configuration/condconstraints/9> ns4kge:hasMetric  <metric/mrr> .
+<configuration/condconstraints/9> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/condconstraints/9> ns4kge:hasNSMethod <ns-method/no-constraints-neg-ratio-1> .
+<configuration/condconstraints/9> ns4kge:result "0.23"^^xsd:decimal .
+
+<configuration/condconstraints/10> rdf:type ns4kge:Configuration .
+<configuration/condconstraints/10> ns4kge:hasTask    <task/link-prediction> .
+<configuration/condconstraints/10> ns4kge:hasDataset <dataset/table-1-dataset> .
+<configuration/condconstraints/10> ns4kge:hasMetric  <metric/mrr> .
+<configuration/condconstraints/10> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/condconstraints/10> ns4kge:hasNSMethod <ns-method/open-world-constraints-neg-ratio-1> .
+<configuration/condconstraints/10> ns4kge:result "0.208"^^xsd:decimal .
+
+<configuration/condconstraints/11> rdf:type ns4kge:Configuration .
+<configuration/condconstraints/11> ns4kge:hasTask    <task/link-prediction> .
+<configuration/condconstraints/11> ns4kge:hasDataset <dataset/table-1-dataset> .
+<configuration/condconstraints/11> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/condconstraints/11> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/condconstraints/11> ns4kge:hasNSMethod <ns-method/no-constraints-neg-ratio-5> .
+<configuration/condconstraints/11> ns4kge:result "0.572"^^xsd:decimal .
+
+<configuration/condconstraints/12> rdf:type ns4kge:Configuration .
+<configuration/condconstraints/12> ns4kge:hasTask    <task/link-prediction> .
+<configuration/condconstraints/12> ns4kge:hasDataset <dataset/table-1-dataset> .
+<configuration/condconstraints/12> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/condconstraints/12> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/condconstraints/12> ns4kge:hasNSMethod <ns-method/closed-world-constraints-neg-ratio-1> .
+<configuration/condconstraints/12> ns4kge:result "0.486"^^xsd:decimal .
+
+<configuration/condconstraints/13> rdf:type ns4kge:Configuration .
+<configuration/condconstraints/13> ns4kge:hasTask    <task/link-prediction> .
+<configuration/condconstraints/13> ns4kge:hasDataset <dataset/table-1-dataset> .
+<configuration/condconstraints/13> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/condconstraints/13> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/condconstraints/13> ns4kge:hasNSMethod <ns-method/closed-world-constraints-neg-ratio-5> .
+<configuration/condconstraints/13> ns4kge:result "0.468"^^xsd:decimal .
+
+<configuration/condconstraints/14> rdf:type ns4kge:Configuration .
+<configuration/condconstraints/14> ns4kge:hasTask    <task/link-prediction> .
+<configuration/condconstraints/14> ns4kge:hasDataset <dataset/table-1-dataset> .
+<configuration/condconstraints/14> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/condconstraints/14> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/condconstraints/14> ns4kge:hasNSMethod <ns-method/no-constraints-neg-ratio-1> .
+<configuration/condconstraints/14> ns4kge:result "0.452"^^xsd:decimal .
+
+<configuration/condconstraints/15> rdf:type ns4kge:Configuration .
+<configuration/condconstraints/15> ns4kge:hasTask    <task/link-prediction> .
+<configuration/condconstraints/15> ns4kge:hasDataset <dataset/table-1-dataset> .
+<configuration/condconstraints/15> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/condconstraints/15> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/condconstraints/15> ns4kge:hasNSMethod <ns-method/open-world-constraints-neg-ratio-1> .
+<configuration/condconstraints/15> ns4kge:result "0.412"^^xsd:decimal .
+
+<configuration/condconstraints/16> rdf:type ns4kge:Configuration .
+<configuration/condconstraints/16> ns4kge:hasTask    <task/link-prediction> .
+<configuration/condconstraints/16> ns4kge:hasDataset <dataset/mutag> .
+<configuration/condconstraints/16> ns4kge:hasMetric  <metric/mr> .
+<configuration/condconstraints/16> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/condconstraints/16> ns4kge:hasNSMethod <ns-method/closed-world-constraints-neg-ratio-5> .
+<configuration/condconstraints/16> ns4kge:result "1975.455"^^xsd:decimal .
+
+<configuration/condconstraints/17> rdf:type ns4kge:Configuration .
+<configuration/condconstraints/17> ns4kge:hasTask    <task/link-prediction> .
+<configuration/condconstraints/17> ns4kge:hasDataset <dataset/mutag> .
+<configuration/condconstraints/17> ns4kge:hasMetric  <metric/mr> .
+<configuration/condconstraints/17> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/condconstraints/17> ns4kge:hasNSMethod <ns-method/open-world-constraints-neg-ratio-5> .
+<configuration/condconstraints/17> ns4kge:result "2170.18"^^xsd:decimal .
+
+<configuration/condconstraints/18> rdf:type ns4kge:Configuration .
+<configuration/condconstraints/18> ns4kge:hasTask    <task/link-prediction> .
+<configuration/condconstraints/18> ns4kge:hasDataset <dataset/mutag> .
+<configuration/condconstraints/18> ns4kge:hasMetric  <metric/mr> .
+<configuration/condconstraints/18> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/condconstraints/18> ns4kge:hasNSMethod <ns-method/no-constraints-neg-ratio-5> .
+<configuration/condconstraints/18> ns4kge:result "2341.297"^^xsd:decimal .
+
+<configuration/condconstraints/19> rdf:type ns4kge:Configuration .
+<configuration/condconstraints/19> ns4kge:hasTask    <task/link-prediction> .
+<configuration/condconstraints/19> ns4kge:hasDataset <dataset/mutag> .
+<configuration/condconstraints/19> ns4kge:hasMetric  <metric/mr> .
+<configuration/condconstraints/19> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/condconstraints/19> ns4kge:hasNSMethod <ns-method/open-world-constraints-neg-ratio-1> .
+<configuration/condconstraints/19> ns4kge:result "3166.192"^^xsd:decimal .
+
+<configuration/condconstraints/20> rdf:type ns4kge:Configuration .
+<configuration/condconstraints/20> ns4kge:hasTask    <task/link-prediction> .
+<configuration/condconstraints/20> ns4kge:hasDataset <dataset/mutag> .
+<configuration/condconstraints/20> ns4kge:hasMetric  <metric/mr> .
+<configuration/condconstraints/20> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/condconstraints/20> ns4kge:hasNSMethod <ns-method/closed-world-constraints-neg-ratio-1> .
+<configuration/condconstraints/20> ns4kge:result "3232.653"^^xsd:decimal .
+
+<configuration/condconstraints/21> rdf:type ns4kge:Configuration .
+<configuration/condconstraints/21> ns4kge:hasTask    <task/link-prediction> .
+<configuration/condconstraints/21> ns4kge:hasDataset <dataset/mutag> .
+<configuration/condconstraints/21> ns4kge:hasMetric  <metric/mr> .
+<configuration/condconstraints/21> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/condconstraints/21> ns4kge:hasNSMethod <ns-method/no-constraints-neg-ratio-1> .
+<configuration/condconstraints/21> ns4kge:result "3408.81"^^xsd:decimal .
+
+<configuration/condconstraints/22> rdf:type ns4kge:Configuration .
+<configuration/condconstraints/22> ns4kge:hasTask    <task/link-prediction> .
+<configuration/condconstraints/22> ns4kge:hasDataset <dataset/mutag> .
+<configuration/condconstraints/22> ns4kge:hasMetric  <metric/mrr> .
+<configuration/condconstraints/22> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/condconstraints/22> ns4kge:hasNSMethod <ns-method/closed-world-constraints-neg-ratio-5> .
+<configuration/condconstraints/22> ns4kge:result "0.11"^^xsd:decimal .
+
+<configuration/condconstraints/23> rdf:type ns4kge:Configuration .
+<configuration/condconstraints/23> ns4kge:hasTask    <task/link-prediction> .
+<configuration/condconstraints/23> ns4kge:hasDataset <dataset/mutag> .
+<configuration/condconstraints/23> ns4kge:hasMetric  <metric/mrr> .
+<configuration/condconstraints/23> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/condconstraints/23> ns4kge:hasNSMethod <ns-method/open-world-constraints-neg-ratio-5> .
+<configuration/condconstraints/23> ns4kge:result "0.1"^^xsd:decimal .
+
+<configuration/condconstraints/24> rdf:type ns4kge:Configuration .
+<configuration/condconstraints/24> ns4kge:hasTask    <task/link-prediction> .
+<configuration/condconstraints/24> ns4kge:hasDataset <dataset/mutag> .
+<configuration/condconstraints/24> ns4kge:hasMetric  <metric/mrr> .
+<configuration/condconstraints/24> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/condconstraints/24> ns4kge:hasNSMethod <ns-method/no-constraints-neg-ratio-5> .
+<configuration/condconstraints/24> ns4kge:result "0.093"^^xsd:decimal .
+
+<configuration/condconstraints/25> rdf:type ns4kge:Configuration .
+<configuration/condconstraints/25> ns4kge:hasTask    <task/link-prediction> .
+<configuration/condconstraints/25> ns4kge:hasDataset <dataset/mutag> .
+<configuration/condconstraints/25> ns4kge:hasMetric  <metric/mrr> .
+<configuration/condconstraints/25> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/condconstraints/25> ns4kge:hasNSMethod <ns-method/open-world-constraints-neg-ratio-1> .
+<configuration/condconstraints/25> ns4kge:result "0.051"^^xsd:decimal .
+
+<configuration/condconstraints/26> rdf:type ns4kge:Configuration .
+<configuration/condconstraints/26> ns4kge:hasTask    <task/link-prediction> .
+<configuration/condconstraints/26> ns4kge:hasDataset <dataset/mutag> .
+<configuration/condconstraints/26> ns4kge:hasMetric  <metric/mrr> .
+<configuration/condconstraints/26> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/condconstraints/26> ns4kge:hasNSMethod <ns-method/no-constraints-neg-ratio-1> .
+<configuration/condconstraints/26> ns4kge:result "0.043"^^xsd:decimal .
+
+<configuration/condconstraints/27> rdf:type ns4kge:Configuration .
+<configuration/condconstraints/27> ns4kge:hasTask    <task/link-prediction> .
+<configuration/condconstraints/27> ns4kge:hasDataset <dataset/mutag> .
+<configuration/condconstraints/27> ns4kge:hasMetric  <metric/mrr> .
+<configuration/condconstraints/27> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/condconstraints/27> ns4kge:hasNSMethod <ns-method/closed-world-constraints-neg-ratio-1> .
+<configuration/condconstraints/27> ns4kge:result "0.043"^^xsd:decimal .
+
+<configuration/condconstraints/28> rdf:type ns4kge:Configuration .
+<configuration/condconstraints/28> ns4kge:hasTask    <task/link-prediction> .
+<configuration/condconstraints/28> ns4kge:hasDataset <dataset/mutag> .
+<configuration/condconstraints/28> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/condconstraints/28> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/condconstraints/28> ns4kge:hasNSMethod <ns-method/closed-world-constraints-neg-ratio-5> .
+<configuration/condconstraints/28> ns4kge:result "0.215"^^xsd:decimal .
+
+<configuration/condconstraints/29> rdf:type ns4kge:Configuration .
+<configuration/condconstraints/29> ns4kge:hasTask    <task/link-prediction> .
+<configuration/condconstraints/29> ns4kge:hasDataset <dataset/mutag> .
+<configuration/condconstraints/29> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/condconstraints/29> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/condconstraints/29> ns4kge:hasNSMethod <ns-method/no-constraints-neg-ratio-5> .
+<configuration/condconstraints/29> ns4kge:result "0.181"^^xsd:decimal .
+
+<configuration/condconstraints/30> rdf:type ns4kge:Configuration .
+<configuration/condconstraints/30> ns4kge:hasTask    <task/link-prediction> .
+<configuration/condconstraints/30> ns4kge:hasDataset <dataset/mutag> .
+<configuration/condconstraints/30> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/condconstraints/30> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/condconstraints/30> ns4kge:hasNSMethod <ns-method/open-world-constraints-neg-ratio-5> .
+<configuration/condconstraints/30> ns4kge:result "0.18"^^xsd:decimal .
+
+<configuration/condconstraints/31> rdf:type ns4kge:Configuration .
+<configuration/condconstraints/31> ns4kge:hasTask    <task/link-prediction> .
+<configuration/condconstraints/31> ns4kge:hasDataset <dataset/mutag> .
+<configuration/condconstraints/31> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/condconstraints/31> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/condconstraints/31> ns4kge:hasNSMethod <ns-method/open-world-constraints-neg-ratio-1> .
+<configuration/condconstraints/31> ns4kge:result "0.105"^^xsd:decimal .
+
+<configuration/condconstraints/32> rdf:type ns4kge:Configuration .
+<configuration/condconstraints/32> ns4kge:hasTask    <task/link-prediction> .
+<configuration/condconstraints/32> ns4kge:hasDataset <dataset/mutag> .
+<configuration/condconstraints/32> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/condconstraints/32> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/condconstraints/32> ns4kge:hasNSMethod <ns-method/closed-world-constraints-neg-ratio-1> .
+<configuration/condconstraints/32> ns4kge:result "0.091"^^xsd:decimal .
+
+<configuration/condconstraints/33> rdf:type ns4kge:Configuration .
+<configuration/condconstraints/33> ns4kge:hasTask    <task/link-prediction> .
+<configuration/condconstraints/33> ns4kge:hasDataset <dataset/mutag> .
+<configuration/condconstraints/33> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/condconstraints/33> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/condconstraints/33> ns4kge:hasNSMethod <ns-method/no-constraints-neg-ratio-1> .
+<configuration/condconstraints/33> ns4kge:result "0.089"^^xsd:decimal .

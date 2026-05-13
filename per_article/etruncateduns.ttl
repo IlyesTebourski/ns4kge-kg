@@ -1,0 +1,702 @@
+<article/etruncateduns> rdf:type ns4kge:Article .
+<article/etruncateduns> ns4kge:title "Bootstrapping Entity Alignment with Knowledge Graph Embedding"^^xsd:string .
+<article/etruncateduns> ns4kge:date "2018"^^xsd:gYear .
+<article/etruncateduns> ns4kge:proposesNSMethod <ns-method/epsilon-truncated-uniform-negative-sampling> .
+<article/etruncateduns> ns4kge:mentionsNSMethod <ns-method/uniform-negative-sampling> .
+<article/etruncateduns> ns4kge:mentionsKGEModel <kge-model/kr-ear> .
+<article/etruncateduns> ns4kge:mentionsKGEModel <kge-model/ptranse> .
+<article/etruncateduns> ns4kge:mentionsKGEModel <kge-model/transe> .
+<article/etruncateduns> ns4kge:mentionsKGEModel <kge-model/transr> .
+<article/etruncateduns> ns4kge:mentionsKGEModel <kge-model/iptranse> .
+<article/etruncateduns> ns4kge:mentionsKGEModel <kge-model/mtranse> .
+<article/etruncateduns> ns4kge:mentionsKGEModel <kge-model/jape> .
+<article/etruncateduns> ns4kge:mentionsKGEModel <kge-model/transh> .
+<article/etruncateduns> ns4kge:mentionsKGEModel <kge-model/aligne> .
+<article/etruncateduns> ns4kge:hasExperimentation <experimentation/etruncateduns> .
+
+<ns-method/epsilon-truncated-uniform-negative-sampling> rdf:type ns4kge:NSMethod .
+
+<ns-method/uniform-negative-sampling> rdf:type ns4kge:NSMethod .
+<category/static-ns> rdf:type ns4kge:Category .
+
+<ns-method/uniform-negative-sampling> ns4kge:hasCategory <category/static-ns> .
+<subcategory/random> rdf:type ns4kge:Subcategory .
+
+<ns-method/uniform-negative-sampling> ns4kge:hasSubcategory <subcategory/random> .
+
+<kge-model/bootea> rdf:type ns4kge:KGEModel .
+
+<kge-model/kr-ear> rdf:type ns4kge:KGEModel .
+
+<kge-model/ptranse> rdf:type ns4kge:KGEModel .
+
+<kge-model/transe> rdf:type ns4kge:KGEModel .
+
+<kge-model/transr> rdf:type ns4kge:KGEModel .
+
+<kge-model/iptranse> rdf:type ns4kge:KGEModel .
+
+<kge-model/mtranse> rdf:type ns4kge:KGEModel .
+
+<kge-model/jape> rdf:type ns4kge:KGEModel .
+
+<kge-model/transh> rdf:type ns4kge:KGEModel .
+
+<kge-model/aligne> rdf:type ns4kge:KGEModel .
+
+<dataset/dbp-zh-en> rdf:type ns4kge:Dataset .
+<task/entity-alignment> rdf:type ns4kge:Task .
+<metric/hits-1> rdf:type ns4kge:Metric .
+<metric/hits-10> rdf:type ns4kge:Metric .
+<metric/mrr> rdf:type ns4kge:Metric .
+<dataset/dbp-ja-en> rdf:type ns4kge:Dataset .
+<dataset/dbp-fr-en> rdf:type ns4kge:Dataset .
+<dataset/dbp-wd> rdf:type ns4kge:Dataset .
+<dataset/dbp-yg> rdf:type ns4kge:Dataset .
+<loss-function/limit-based-loss> rdf:type ns4kge:LossFunction .
+<loss-function/negative-log-likelihood> rdf:type ns4kge:LossFunction .
+<optimizer/adagrad> rdf:type ns4kge:Optimizer .
+<hardware/intel-xeon-e3-3-3-ghz-cpu> rdf:type ns4kge:Hardware .
+<hardware/nvidia-geforce-gtx-1080-ti-gpu> rdf:type ns4kge:Hardware .
+
+<experimentation/etruncateduns> rdf:type ns4kge:Experimentation .
+<experimentation/etruncateduns> ns4kge:hasTrainingProtocol <training-protocol/etruncateduns> .
+<experimentation/etruncateduns> ns4kge:hasConfiguration <configuration/etruncateduns/1> .
+<experimentation/etruncateduns> ns4kge:hasConfiguration <configuration/etruncateduns/2> .
+<experimentation/etruncateduns> ns4kge:hasConfiguration <configuration/etruncateduns/3> .
+<experimentation/etruncateduns> ns4kge:hasConfiguration <configuration/etruncateduns/4> .
+<experimentation/etruncateduns> ns4kge:hasConfiguration <configuration/etruncateduns/5> .
+<experimentation/etruncateduns> ns4kge:hasConfiguration <configuration/etruncateduns/6> .
+<experimentation/etruncateduns> ns4kge:hasConfiguration <configuration/etruncateduns/7> .
+<experimentation/etruncateduns> ns4kge:hasConfiguration <configuration/etruncateduns/8> .
+<experimentation/etruncateduns> ns4kge:hasConfiguration <configuration/etruncateduns/9> .
+<experimentation/etruncateduns> ns4kge:hasConfiguration <configuration/etruncateduns/10> .
+<experimentation/etruncateduns> ns4kge:hasConfiguration <configuration/etruncateduns/11> .
+<experimentation/etruncateduns> ns4kge:hasConfiguration <configuration/etruncateduns/12> .
+<experimentation/etruncateduns> ns4kge:hasConfiguration <configuration/etruncateduns/13> .
+<experimentation/etruncateduns> ns4kge:hasConfiguration <configuration/etruncateduns/14> .
+<experimentation/etruncateduns> ns4kge:hasConfiguration <configuration/etruncateduns/15> .
+<experimentation/etruncateduns> ns4kge:hasConfiguration <configuration/etruncateduns/16> .
+<experimentation/etruncateduns> ns4kge:hasConfiguration <configuration/etruncateduns/17> .
+<experimentation/etruncateduns> ns4kge:hasConfiguration <configuration/etruncateduns/18> .
+<experimentation/etruncateduns> ns4kge:hasConfiguration <configuration/etruncateduns/19> .
+<experimentation/etruncateduns> ns4kge:hasConfiguration <configuration/etruncateduns/20> .
+<experimentation/etruncateduns> ns4kge:hasConfiguration <configuration/etruncateduns/21> .
+<experimentation/etruncateduns> ns4kge:hasConfiguration <configuration/etruncateduns/22> .
+<experimentation/etruncateduns> ns4kge:hasConfiguration <configuration/etruncateduns/23> .
+<experimentation/etruncateduns> ns4kge:hasConfiguration <configuration/etruncateduns/24> .
+<experimentation/etruncateduns> ns4kge:hasConfiguration <configuration/etruncateduns/25> .
+<experimentation/etruncateduns> ns4kge:hasConfiguration <configuration/etruncateduns/26> .
+<experimentation/etruncateduns> ns4kge:hasConfiguration <configuration/etruncateduns/27> .
+<experimentation/etruncateduns> ns4kge:hasConfiguration <configuration/etruncateduns/28> .
+<experimentation/etruncateduns> ns4kge:hasConfiguration <configuration/etruncateduns/29> .
+<experimentation/etruncateduns> ns4kge:hasConfiguration <configuration/etruncateduns/30> .
+<experimentation/etruncateduns> ns4kge:hasConfiguration <configuration/etruncateduns/31> .
+<experimentation/etruncateduns> ns4kge:hasConfiguration <configuration/etruncateduns/32> .
+<experimentation/etruncateduns> ns4kge:hasConfiguration <configuration/etruncateduns/33> .
+<experimentation/etruncateduns> ns4kge:hasConfiguration <configuration/etruncateduns/34> .
+<experimentation/etruncateduns> ns4kge:hasConfiguration <configuration/etruncateduns/35> .
+<experimentation/etruncateduns> ns4kge:hasConfiguration <configuration/etruncateduns/36> .
+<experimentation/etruncateduns> ns4kge:hasConfiguration <configuration/etruncateduns/37> .
+<experimentation/etruncateduns> ns4kge:hasConfiguration <configuration/etruncateduns/38> .
+<experimentation/etruncateduns> ns4kge:hasConfiguration <configuration/etruncateduns/39> .
+<experimentation/etruncateduns> ns4kge:hasConfiguration <configuration/etruncateduns/40> .
+<experimentation/etruncateduns> ns4kge:hasConfiguration <configuration/etruncateduns/41> .
+<experimentation/etruncateduns> ns4kge:hasConfiguration <configuration/etruncateduns/42> .
+<experimentation/etruncateduns> ns4kge:hasConfiguration <configuration/etruncateduns/43> .
+<experimentation/etruncateduns> ns4kge:hasConfiguration <configuration/etruncateduns/44> .
+<experimentation/etruncateduns> ns4kge:hasConfiguration <configuration/etruncateduns/45> .
+<experimentation/etruncateduns> ns4kge:hasConfiguration <configuration/etruncateduns/46> .
+<experimentation/etruncateduns> ns4kge:hasConfiguration <configuration/etruncateduns/47> .
+<experimentation/etruncateduns> ns4kge:hasConfiguration <configuration/etruncateduns/48> .
+<experimentation/etruncateduns> ns4kge:hasConfiguration <configuration/etruncateduns/49> .
+<experimentation/etruncateduns> ns4kge:hasConfiguration <configuration/etruncateduns/50> .
+<experimentation/etruncateduns> ns4kge:hasConfiguration <configuration/etruncateduns/51> .
+<experimentation/etruncateduns> ns4kge:hasConfiguration <configuration/etruncateduns/52> .
+<experimentation/etruncateduns> ns4kge:hasConfiguration <configuration/etruncateduns/53> .
+<experimentation/etruncateduns> ns4kge:hasConfiguration <configuration/etruncateduns/54> .
+<experimentation/etruncateduns> ns4kge:hasConfiguration <configuration/etruncateduns/55> .
+<experimentation/etruncateduns> ns4kge:hasConfiguration <configuration/etruncateduns/56> .
+<experimentation/etruncateduns> ns4kge:hasConfiguration <configuration/etruncateduns/57> .
+<experimentation/etruncateduns> ns4kge:hasConfiguration <configuration/etruncateduns/58> .
+<experimentation/etruncateduns> ns4kge:hasConfiguration <configuration/etruncateduns/59> .
+<experimentation/etruncateduns> ns4kge:hasConfiguration <configuration/etruncateduns/60> .
+<experimentation/etruncateduns> ns4kge:hasConfiguration <configuration/etruncateduns/61> .
+<experimentation/etruncateduns> ns4kge:hasConfiguration <configuration/etruncateduns/62> .
+<experimentation/etruncateduns> ns4kge:hasConfiguration <configuration/etruncateduns/63> .
+<experimentation/etruncateduns> ns4kge:hasConfiguration <configuration/etruncateduns/64> .
+<experimentation/etruncateduns> ns4kge:hasConfiguration <configuration/etruncateduns/65> .
+<experimentation/etruncateduns> ns4kge:hasConfiguration <configuration/etruncateduns/66> .
+<experimentation/etruncateduns> ns4kge:hasConfiguration <configuration/etruncateduns/67> .
+<experimentation/etruncateduns> ns4kge:hasConfiguration <configuration/etruncateduns/68> .
+<experimentation/etruncateduns> ns4kge:hasConfiguration <configuration/etruncateduns/69> .
+<experimentation/etruncateduns> ns4kge:hasConfiguration <configuration/etruncateduns/70> .
+<experimentation/etruncateduns> ns4kge:hasConfiguration <configuration/etruncateduns/71> .
+<experimentation/etruncateduns> ns4kge:hasConfiguration <configuration/etruncateduns/72> .
+<experimentation/etruncateduns> ns4kge:hasConfiguration <configuration/etruncateduns/73> .
+<experimentation/etruncateduns> ns4kge:hasConfiguration <configuration/etruncateduns/74> .
+<experimentation/etruncateduns> ns4kge:hasConfiguration <configuration/etruncateduns/75> .
+
+<training-protocol/etruncateduns> rdf:type ns4kge:TrainingProtocol .
+<training-protocol/etruncateduns> ns4kge:hasOptimizer    <optimizer/adagrad> .
+<training-protocol/etruncateduns> ns4kge:hasLossFunction <loss-function/limit-based-loss> .
+<training-protocol/etruncateduns> ns4kge:hasLossFunction <loss-function/negative-log-likelihood> .
+<training-protocol/etruncateduns> ns4kge:hasHardware     <hardware/intel-xeon-e3-3-3-ghz-cpu> .
+<training-protocol/etruncateduns> ns4kge:hasHardware     <hardware/nvidia-geforce-gtx-1080-ti-gpu> .
+<training-protocol/etruncateduns> ns4kge:learningRate "0.01"^^xsd:decimal .
+<training-protocol/etruncateduns> ns4kge:nsRatio "10"^^xsd:decimal .
+
+<configuration/etruncateduns/1> rdf:type ns4kge:Configuration .
+<configuration/etruncateduns/1> ns4kge:hasTask    <task/entity-alignment> .
+<configuration/etruncateduns/1> ns4kge:hasDataset <dataset/dbp-zh-en> .
+<configuration/etruncateduns/1> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/etruncateduns/1> ns4kge:hasKGEModel <kge-model/bootea> .
+<configuration/etruncateduns/1> ns4kge:hasNSMethod <ns-method/epsilon-truncated-uniform-negative-sampling> .
+<configuration/etruncateduns/1> ns4kge:result "0.6294"^^xsd:decimal .
+
+<configuration/etruncateduns/2> rdf:type ns4kge:Configuration .
+<configuration/etruncateduns/2> ns4kge:hasTask    <task/entity-alignment> .
+<configuration/etruncateduns/2> ns4kge:hasDataset <dataset/dbp-zh-en> .
+<configuration/etruncateduns/2> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/etruncateduns/2> ns4kge:hasKGEModel <kge-model/bootea> .
+<configuration/etruncateduns/2> ns4kge:hasNSMethod <ns-method/epsilon-truncated-uniform-negative-sampling> .
+<configuration/etruncateduns/2> ns4kge:result "0.8475"^^xsd:decimal .
+
+<configuration/etruncateduns/3> rdf:type ns4kge:Configuration .
+<configuration/etruncateduns/3> ns4kge:hasTask    <task/entity-alignment> .
+<configuration/etruncateduns/3> ns4kge:hasDataset <dataset/dbp-zh-en> .
+<configuration/etruncateduns/3> ns4kge:hasMetric  <metric/mrr> .
+<configuration/etruncateduns/3> ns4kge:hasKGEModel <kge-model/bootea> .
+<configuration/etruncateduns/3> ns4kge:hasNSMethod <ns-method/epsilon-truncated-uniform-negative-sampling> .
+<configuration/etruncateduns/3> ns4kge:result "0.703"^^xsd:decimal .
+
+<configuration/etruncateduns/4> rdf:type ns4kge:Configuration .
+<configuration/etruncateduns/4> ns4kge:hasTask    <task/entity-alignment> .
+<configuration/etruncateduns/4> ns4kge:hasDataset <dataset/dbp-zh-en> .
+<configuration/etruncateduns/4> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/etruncateduns/4> ns4kge:hasKGEModel <kge-model/aligne> .
+<configuration/etruncateduns/4> ns4kge:hasNSMethod <ns-method/epsilon-truncated-uniform-negative-sampling> .
+<configuration/etruncateduns/4> ns4kge:result "0.4718"^^xsd:decimal .
+
+<configuration/etruncateduns/5> rdf:type ns4kge:Configuration .
+<configuration/etruncateduns/5> ns4kge:hasTask    <task/entity-alignment> .
+<configuration/etruncateduns/5> ns4kge:hasDataset <dataset/dbp-zh-en> .
+<configuration/etruncateduns/5> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/etruncateduns/5> ns4kge:hasKGEModel <kge-model/aligne> .
+<configuration/etruncateduns/5> ns4kge:hasNSMethod <ns-method/epsilon-truncated-uniform-negative-sampling> .
+<configuration/etruncateduns/5> ns4kge:result "0.7919"^^xsd:decimal .
+
+<configuration/etruncateduns/6> rdf:type ns4kge:Configuration .
+<configuration/etruncateduns/6> ns4kge:hasTask    <task/entity-alignment> .
+<configuration/etruncateduns/6> ns4kge:hasDataset <dataset/dbp-zh-en> .
+<configuration/etruncateduns/6> ns4kge:hasMetric  <metric/mrr> .
+<configuration/etruncateduns/6> ns4kge:hasKGEModel <kge-model/aligne> .
+<configuration/etruncateduns/6> ns4kge:hasNSMethod <ns-method/epsilon-truncated-uniform-negative-sampling> .
+<configuration/etruncateduns/6> ns4kge:result "0.581"^^xsd:decimal .
+
+<configuration/etruncateduns/7> rdf:type ns4kge:Configuration .
+<configuration/etruncateduns/7> ns4kge:hasTask    <task/entity-alignment> .
+<configuration/etruncateduns/7> ns4kge:hasDataset <dataset/dbp-zh-en> .
+<configuration/etruncateduns/7> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/etruncateduns/7> ns4kge:hasKGEModel <kge-model/jape> .
+<configuration/etruncateduns/7> ns4kge:result "0.4118"^^xsd:decimal .
+
+<configuration/etruncateduns/8> rdf:type ns4kge:Configuration .
+<configuration/etruncateduns/8> ns4kge:hasTask    <task/entity-alignment> .
+<configuration/etruncateduns/8> ns4kge:hasDataset <dataset/dbp-zh-en> .
+<configuration/etruncateduns/8> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/etruncateduns/8> ns4kge:hasKGEModel <kge-model/jape> .
+<configuration/etruncateduns/8> ns4kge:result "0.7446"^^xsd:decimal .
+
+<configuration/etruncateduns/9> rdf:type ns4kge:Configuration .
+<configuration/etruncateduns/9> ns4kge:hasTask    <task/entity-alignment> .
+<configuration/etruncateduns/9> ns4kge:hasDataset <dataset/dbp-zh-en> .
+<configuration/etruncateduns/9> ns4kge:hasMetric  <metric/mrr> .
+<configuration/etruncateduns/9> ns4kge:hasKGEModel <kge-model/jape> .
+<configuration/etruncateduns/9> ns4kge:result "0.49"^^xsd:decimal .
+
+<configuration/etruncateduns/10> rdf:type ns4kge:Configuration .
+<configuration/etruncateduns/10> ns4kge:hasTask    <task/entity-alignment> .
+<configuration/etruncateduns/10> ns4kge:hasDataset <dataset/dbp-zh-en> .
+<configuration/etruncateduns/10> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/etruncateduns/10> ns4kge:hasKGEModel <kge-model/iptranse> .
+<configuration/etruncateduns/10> ns4kge:result "0.4059"^^xsd:decimal .
+
+<configuration/etruncateduns/11> rdf:type ns4kge:Configuration .
+<configuration/etruncateduns/11> ns4kge:hasTask    <task/entity-alignment> .
+<configuration/etruncateduns/11> ns4kge:hasDataset <dataset/dbp-zh-en> .
+<configuration/etruncateduns/11> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/etruncateduns/11> ns4kge:hasKGEModel <kge-model/iptranse> .
+<configuration/etruncateduns/11> ns4kge:result "0.7347"^^xsd:decimal .
+
+<configuration/etruncateduns/12> rdf:type ns4kge:Configuration .
+<configuration/etruncateduns/12> ns4kge:hasTask    <task/entity-alignment> .
+<configuration/etruncateduns/12> ns4kge:hasDataset <dataset/dbp-zh-en> .
+<configuration/etruncateduns/12> ns4kge:hasMetric  <metric/mrr> .
+<configuration/etruncateduns/12> ns4kge:hasKGEModel <kge-model/iptranse> .
+<configuration/etruncateduns/12> ns4kge:result "0.516"^^xsd:decimal .
+
+<configuration/etruncateduns/13> rdf:type ns4kge:Configuration .
+<configuration/etruncateduns/13> ns4kge:hasTask    <task/entity-alignment> .
+<configuration/etruncateduns/13> ns4kge:hasDataset <dataset/dbp-zh-en> .
+<configuration/etruncateduns/13> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/etruncateduns/13> ns4kge:hasKGEModel <kge-model/mtranse> .
+<configuration/etruncateduns/13> ns4kge:result "0.3083"^^xsd:decimal .
+
+<configuration/etruncateduns/14> rdf:type ns4kge:Configuration .
+<configuration/etruncateduns/14> ns4kge:hasTask    <task/entity-alignment> .
+<configuration/etruncateduns/14> ns4kge:hasDataset <dataset/dbp-zh-en> .
+<configuration/etruncateduns/14> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/etruncateduns/14> ns4kge:hasKGEModel <kge-model/mtranse> .
+<configuration/etruncateduns/14> ns4kge:result "0.6141"^^xsd:decimal .
+
+<configuration/etruncateduns/15> rdf:type ns4kge:Configuration .
+<configuration/etruncateduns/15> ns4kge:hasTask    <task/entity-alignment> .
+<configuration/etruncateduns/15> ns4kge:hasDataset <dataset/dbp-zh-en> .
+<configuration/etruncateduns/15> ns4kge:hasMetric  <metric/mrr> .
+<configuration/etruncateduns/15> ns4kge:hasKGEModel <kge-model/mtranse> .
+<configuration/etruncateduns/15> ns4kge:result "0.364"^^xsd:decimal .
+
+<configuration/etruncateduns/16> rdf:type ns4kge:Configuration .
+<configuration/etruncateduns/16> ns4kge:hasTask    <task/entity-alignment> .
+<configuration/etruncateduns/16> ns4kge:hasDataset <dataset/dbp-ja-en> .
+<configuration/etruncateduns/16> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/etruncateduns/16> ns4kge:hasKGEModel <kge-model/bootea> .
+<configuration/etruncateduns/16> ns4kge:hasNSMethod <ns-method/epsilon-truncated-uniform-negative-sampling> .
+<configuration/etruncateduns/16> ns4kge:result "0.6223"^^xsd:decimal .
+
+<configuration/etruncateduns/17> rdf:type ns4kge:Configuration .
+<configuration/etruncateduns/17> ns4kge:hasTask    <task/entity-alignment> .
+<configuration/etruncateduns/17> ns4kge:hasDataset <dataset/dbp-ja-en> .
+<configuration/etruncateduns/17> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/etruncateduns/17> ns4kge:hasKGEModel <kge-model/bootea> .
+<configuration/etruncateduns/17> ns4kge:hasNSMethod <ns-method/epsilon-truncated-uniform-negative-sampling> .
+<configuration/etruncateduns/17> ns4kge:result "0.8539"^^xsd:decimal .
+
+<configuration/etruncateduns/18> rdf:type ns4kge:Configuration .
+<configuration/etruncateduns/18> ns4kge:hasTask    <task/entity-alignment> .
+<configuration/etruncateduns/18> ns4kge:hasDataset <dataset/dbp-ja-en> .
+<configuration/etruncateduns/18> ns4kge:hasMetric  <metric/mrr> .
+<configuration/etruncateduns/18> ns4kge:hasKGEModel <kge-model/bootea> .
+<configuration/etruncateduns/18> ns4kge:hasNSMethod <ns-method/epsilon-truncated-uniform-negative-sampling> .
+<configuration/etruncateduns/18> ns4kge:result "0.701"^^xsd:decimal .
+
+<configuration/etruncateduns/19> rdf:type ns4kge:Configuration .
+<configuration/etruncateduns/19> ns4kge:hasTask    <task/entity-alignment> .
+<configuration/etruncateduns/19> ns4kge:hasDataset <dataset/dbp-ja-en> .
+<configuration/etruncateduns/19> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/etruncateduns/19> ns4kge:hasKGEModel <kge-model/aligne> .
+<configuration/etruncateduns/19> ns4kge:hasNSMethod <ns-method/epsilon-truncated-uniform-negative-sampling> .
+<configuration/etruncateduns/19> ns4kge:result "0.4476"^^xsd:decimal .
+
+<configuration/etruncateduns/20> rdf:type ns4kge:Configuration .
+<configuration/etruncateduns/20> ns4kge:hasTask    <task/entity-alignment> .
+<configuration/etruncateduns/20> ns4kge:hasDataset <dataset/dbp-ja-en> .
+<configuration/etruncateduns/20> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/etruncateduns/20> ns4kge:hasKGEModel <kge-model/aligne> .
+<configuration/etruncateduns/20> ns4kge:hasNSMethod <ns-method/epsilon-truncated-uniform-negative-sampling> .
+<configuration/etruncateduns/20> ns4kge:result "0.7889"^^xsd:decimal .
+
+<configuration/etruncateduns/21> rdf:type ns4kge:Configuration .
+<configuration/etruncateduns/21> ns4kge:hasTask    <task/entity-alignment> .
+<configuration/etruncateduns/21> ns4kge:hasDataset <dataset/dbp-ja-en> .
+<configuration/etruncateduns/21> ns4kge:hasMetric  <metric/mrr> .
+<configuration/etruncateduns/21> ns4kge:hasKGEModel <kge-model/aligne> .
+<configuration/etruncateduns/21> ns4kge:hasNSMethod <ns-method/epsilon-truncated-uniform-negative-sampling> .
+<configuration/etruncateduns/21> ns4kge:result "0.563"^^xsd:decimal .
+
+<configuration/etruncateduns/22> rdf:type ns4kge:Configuration .
+<configuration/etruncateduns/22> ns4kge:hasTask    <task/entity-alignment> .
+<configuration/etruncateduns/22> ns4kge:hasDataset <dataset/dbp-ja-en> .
+<configuration/etruncateduns/22> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/etruncateduns/22> ns4kge:hasKGEModel <kge-model/jape> .
+<configuration/etruncateduns/22> ns4kge:result "0.3625"^^xsd:decimal .
+
+<configuration/etruncateduns/23> rdf:type ns4kge:Configuration .
+<configuration/etruncateduns/23> ns4kge:hasTask    <task/entity-alignment> .
+<configuration/etruncateduns/23> ns4kge:hasDataset <dataset/dbp-ja-en> .
+<configuration/etruncateduns/23> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/etruncateduns/23> ns4kge:hasKGEModel <kge-model/jape> .
+<configuration/etruncateduns/23> ns4kge:result "0.685"^^xsd:decimal .
+
+<configuration/etruncateduns/24> rdf:type ns4kge:Configuration .
+<configuration/etruncateduns/24> ns4kge:hasTask    <task/entity-alignment> .
+<configuration/etruncateduns/24> ns4kge:hasDataset <dataset/dbp-ja-en> .
+<configuration/etruncateduns/24> ns4kge:hasMetric  <metric/mrr> .
+<configuration/etruncateduns/24> ns4kge:hasKGEModel <kge-model/jape> .
+<configuration/etruncateduns/24> ns4kge:result "0.476"^^xsd:decimal .
+
+<configuration/etruncateduns/25> rdf:type ns4kge:Configuration .
+<configuration/etruncateduns/25> ns4kge:hasTask    <task/entity-alignment> .
+<configuration/etruncateduns/25> ns4kge:hasDataset <dataset/dbp-ja-en> .
+<configuration/etruncateduns/25> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/etruncateduns/25> ns4kge:hasKGEModel <kge-model/iptranse> .
+<configuration/etruncateduns/25> ns4kge:result "0.3669"^^xsd:decimal .
+
+<configuration/etruncateduns/26> rdf:type ns4kge:Configuration .
+<configuration/etruncateduns/26> ns4kge:hasTask    <task/entity-alignment> .
+<configuration/etruncateduns/26> ns4kge:hasDataset <dataset/dbp-ja-en> .
+<configuration/etruncateduns/26> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/etruncateduns/26> ns4kge:hasKGEModel <kge-model/iptranse> .
+<configuration/etruncateduns/26> ns4kge:result "0.6926"^^xsd:decimal .
+
+<configuration/etruncateduns/27> rdf:type ns4kge:Configuration .
+<configuration/etruncateduns/27> ns4kge:hasTask    <task/entity-alignment> .
+<configuration/etruncateduns/27> ns4kge:hasDataset <dataset/dbp-ja-en> .
+<configuration/etruncateduns/27> ns4kge:hasMetric  <metric/mrr> .
+<configuration/etruncateduns/27> ns4kge:hasKGEModel <kge-model/iptranse> .
+<configuration/etruncateduns/27> ns4kge:result "0.474"^^xsd:decimal .
+
+<configuration/etruncateduns/28> rdf:type ns4kge:Configuration .
+<configuration/etruncateduns/28> ns4kge:hasTask    <task/entity-alignment> .
+<configuration/etruncateduns/28> ns4kge:hasDataset <dataset/dbp-ja-en> .
+<configuration/etruncateduns/28> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/etruncateduns/28> ns4kge:hasKGEModel <kge-model/mtranse> .
+<configuration/etruncateduns/28> ns4kge:result "0.2786"^^xsd:decimal .
+
+<configuration/etruncateduns/29> rdf:type ns4kge:Configuration .
+<configuration/etruncateduns/29> ns4kge:hasTask    <task/entity-alignment> .
+<configuration/etruncateduns/29> ns4kge:hasDataset <dataset/dbp-ja-en> .
+<configuration/etruncateduns/29> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/etruncateduns/29> ns4kge:hasKGEModel <kge-model/mtranse> .
+<configuration/etruncateduns/29> ns4kge:result "0.5745"^^xsd:decimal .
+
+<configuration/etruncateduns/30> rdf:type ns4kge:Configuration .
+<configuration/etruncateduns/30> ns4kge:hasTask    <task/entity-alignment> .
+<configuration/etruncateduns/30> ns4kge:hasDataset <dataset/dbp-ja-en> .
+<configuration/etruncateduns/30> ns4kge:hasMetric  <metric/mrr> .
+<configuration/etruncateduns/30> ns4kge:hasKGEModel <kge-model/mtranse> .
+<configuration/etruncateduns/30> ns4kge:result "0.349"^^xsd:decimal .
+
+<configuration/etruncateduns/31> rdf:type ns4kge:Configuration .
+<configuration/etruncateduns/31> ns4kge:hasTask    <task/entity-alignment> .
+<configuration/etruncateduns/31> ns4kge:hasDataset <dataset/dbp-fr-en> .
+<configuration/etruncateduns/31> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/etruncateduns/31> ns4kge:hasKGEModel <kge-model/bootea> .
+<configuration/etruncateduns/31> ns4kge:hasNSMethod <ns-method/epsilon-truncated-uniform-negative-sampling> .
+<configuration/etruncateduns/31> ns4kge:result "0.653"^^xsd:decimal .
+
+<configuration/etruncateduns/32> rdf:type ns4kge:Configuration .
+<configuration/etruncateduns/32> ns4kge:hasTask    <task/entity-alignment> .
+<configuration/etruncateduns/32> ns4kge:hasDataset <dataset/dbp-fr-en> .
+<configuration/etruncateduns/32> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/etruncateduns/32> ns4kge:hasKGEModel <kge-model/bootea> .
+<configuration/etruncateduns/32> ns4kge:hasNSMethod <ns-method/epsilon-truncated-uniform-negative-sampling> .
+<configuration/etruncateduns/32> ns4kge:result "0.8744"^^xsd:decimal .
+
+<configuration/etruncateduns/33> rdf:type ns4kge:Configuration .
+<configuration/etruncateduns/33> ns4kge:hasTask    <task/entity-alignment> .
+<configuration/etruncateduns/33> ns4kge:hasDataset <dataset/dbp-fr-en> .
+<configuration/etruncateduns/33> ns4kge:hasMetric  <metric/mrr> .
+<configuration/etruncateduns/33> ns4kge:hasKGEModel <kge-model/bootea> .
+<configuration/etruncateduns/33> ns4kge:hasNSMethod <ns-method/epsilon-truncated-uniform-negative-sampling> .
+<configuration/etruncateduns/33> ns4kge:result "0.731"^^xsd:decimal .
+
+<configuration/etruncateduns/34> rdf:type ns4kge:Configuration .
+<configuration/etruncateduns/34> ns4kge:hasTask    <task/entity-alignment> .
+<configuration/etruncateduns/34> ns4kge:hasDataset <dataset/dbp-fr-en> .
+<configuration/etruncateduns/34> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/etruncateduns/34> ns4kge:hasKGEModel <kge-model/aligne> .
+<configuration/etruncateduns/34> ns4kge:hasNSMethod <ns-method/epsilon-truncated-uniform-negative-sampling> .
+<configuration/etruncateduns/34> ns4kge:result "0.4812"^^xsd:decimal .
+
+<configuration/etruncateduns/35> rdf:type ns4kge:Configuration .
+<configuration/etruncateduns/35> ns4kge:hasTask    <task/entity-alignment> .
+<configuration/etruncateduns/35> ns4kge:hasDataset <dataset/dbp-fr-en> .
+<configuration/etruncateduns/35> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/etruncateduns/35> ns4kge:hasKGEModel <kge-model/aligne> .
+<configuration/etruncateduns/35> ns4kge:hasNSMethod <ns-method/epsilon-truncated-uniform-negative-sampling> .
+<configuration/etruncateduns/35> ns4kge:result "0.8243"^^xsd:decimal .
+
+<configuration/etruncateduns/36> rdf:type ns4kge:Configuration .
+<configuration/etruncateduns/36> ns4kge:hasTask    <task/entity-alignment> .
+<configuration/etruncateduns/36> ns4kge:hasDataset <dataset/dbp-fr-en> .
+<configuration/etruncateduns/36> ns4kge:hasMetric  <metric/mrr> .
+<configuration/etruncateduns/36> ns4kge:hasKGEModel <kge-model/aligne> .
+<configuration/etruncateduns/36> ns4kge:hasNSMethod <ns-method/epsilon-truncated-uniform-negative-sampling> .
+<configuration/etruncateduns/36> ns4kge:result "0.599"^^xsd:decimal .
+
+<configuration/etruncateduns/37> rdf:type ns4kge:Configuration .
+<configuration/etruncateduns/37> ns4kge:hasTask    <task/entity-alignment> .
+<configuration/etruncateduns/37> ns4kge:hasDataset <dataset/dbp-fr-en> .
+<configuration/etruncateduns/37> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/etruncateduns/37> ns4kge:hasKGEModel <kge-model/iptranse> .
+<configuration/etruncateduns/37> ns4kge:result "0.333"^^xsd:decimal .
+
+<configuration/etruncateduns/38> rdf:type ns4kge:Configuration .
+<configuration/etruncateduns/38> ns4kge:hasTask    <task/entity-alignment> .
+<configuration/etruncateduns/38> ns4kge:hasDataset <dataset/dbp-fr-en> .
+<configuration/etruncateduns/38> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/etruncateduns/38> ns4kge:hasKGEModel <kge-model/iptranse> .
+<configuration/etruncateduns/38> ns4kge:result "0.6854"^^xsd:decimal .
+
+<configuration/etruncateduns/39> rdf:type ns4kge:Configuration .
+<configuration/etruncateduns/39> ns4kge:hasTask    <task/entity-alignment> .
+<configuration/etruncateduns/39> ns4kge:hasDataset <dataset/dbp-fr-en> .
+<configuration/etruncateduns/39> ns4kge:hasMetric  <metric/mrr> .
+<configuration/etruncateduns/39> ns4kge:hasKGEModel <kge-model/iptranse> .
+<configuration/etruncateduns/39> ns4kge:result "0.451"^^xsd:decimal .
+
+<configuration/etruncateduns/40> rdf:type ns4kge:Configuration .
+<configuration/etruncateduns/40> ns4kge:hasTask    <task/entity-alignment> .
+<configuration/etruncateduns/40> ns4kge:hasDataset <dataset/dbp-fr-en> .
+<configuration/etruncateduns/40> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/etruncateduns/40> ns4kge:hasKGEModel <kge-model/jape> .
+<configuration/etruncateduns/40> ns4kge:result "0.3239"^^xsd:decimal .
+
+<configuration/etruncateduns/41> rdf:type ns4kge:Configuration .
+<configuration/etruncateduns/41> ns4kge:hasTask    <task/entity-alignment> .
+<configuration/etruncateduns/41> ns4kge:hasDataset <dataset/dbp-fr-en> .
+<configuration/etruncateduns/41> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/etruncateduns/41> ns4kge:hasKGEModel <kge-model/jape> .
+<configuration/etruncateduns/41> ns4kge:result "0.6668"^^xsd:decimal .
+
+<configuration/etruncateduns/42> rdf:type ns4kge:Configuration .
+<configuration/etruncateduns/42> ns4kge:hasTask    <task/entity-alignment> .
+<configuration/etruncateduns/42> ns4kge:hasDataset <dataset/dbp-fr-en> .
+<configuration/etruncateduns/42> ns4kge:hasMetric  <metric/mrr> .
+<configuration/etruncateduns/42> ns4kge:hasKGEModel <kge-model/jape> .
+<configuration/etruncateduns/42> ns4kge:result "0.43"^^xsd:decimal .
+
+<configuration/etruncateduns/43> rdf:type ns4kge:Configuration .
+<configuration/etruncateduns/43> ns4kge:hasTask    <task/entity-alignment> .
+<configuration/etruncateduns/43> ns4kge:hasDataset <dataset/dbp-fr-en> .
+<configuration/etruncateduns/43> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/etruncateduns/43> ns4kge:hasKGEModel <kge-model/mtranse> .
+<configuration/etruncateduns/43> ns4kge:result "0.2441"^^xsd:decimal .
+
+<configuration/etruncateduns/44> rdf:type ns4kge:Configuration .
+<configuration/etruncateduns/44> ns4kge:hasTask    <task/entity-alignment> .
+<configuration/etruncateduns/44> ns4kge:hasDataset <dataset/dbp-fr-en> .
+<configuration/etruncateduns/44> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/etruncateduns/44> ns4kge:hasKGEModel <kge-model/mtranse> .
+<configuration/etruncateduns/44> ns4kge:result "0.5555"^^xsd:decimal .
+
+<configuration/etruncateduns/45> rdf:type ns4kge:Configuration .
+<configuration/etruncateduns/45> ns4kge:hasTask    <task/entity-alignment> .
+<configuration/etruncateduns/45> ns4kge:hasDataset <dataset/dbp-fr-en> .
+<configuration/etruncateduns/45> ns4kge:hasMetric  <metric/mrr> .
+<configuration/etruncateduns/45> ns4kge:hasKGEModel <kge-model/mtranse> .
+<configuration/etruncateduns/45> ns4kge:result "0.335"^^xsd:decimal .
+
+<configuration/etruncateduns/46> rdf:type ns4kge:Configuration .
+<configuration/etruncateduns/46> ns4kge:hasTask    <task/entity-alignment> .
+<configuration/etruncateduns/46> ns4kge:hasDataset <dataset/dbp-wd> .
+<configuration/etruncateduns/46> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/etruncateduns/46> ns4kge:hasKGEModel <kge-model/bootea> .
+<configuration/etruncateduns/46> ns4kge:hasNSMethod <ns-method/epsilon-truncated-uniform-negative-sampling> .
+<configuration/etruncateduns/46> ns4kge:result "0.7479"^^xsd:decimal .
+
+<configuration/etruncateduns/47> rdf:type ns4kge:Configuration .
+<configuration/etruncateduns/47> ns4kge:hasTask    <task/entity-alignment> .
+<configuration/etruncateduns/47> ns4kge:hasDataset <dataset/dbp-wd> .
+<configuration/etruncateduns/47> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/etruncateduns/47> ns4kge:hasKGEModel <kge-model/bootea> .
+<configuration/etruncateduns/47> ns4kge:hasNSMethod <ns-method/epsilon-truncated-uniform-negative-sampling> .
+<configuration/etruncateduns/47> ns4kge:result "0.8984"^^xsd:decimal .
+
+<configuration/etruncateduns/48> rdf:type ns4kge:Configuration .
+<configuration/etruncateduns/48> ns4kge:hasTask    <task/entity-alignment> .
+<configuration/etruncateduns/48> ns4kge:hasDataset <dataset/dbp-wd> .
+<configuration/etruncateduns/48> ns4kge:hasMetric  <metric/mrr> .
+<configuration/etruncateduns/48> ns4kge:hasKGEModel <kge-model/bootea> .
+<configuration/etruncateduns/48> ns4kge:hasNSMethod <ns-method/epsilon-truncated-uniform-negative-sampling> .
+<configuration/etruncateduns/48> ns4kge:result "0.801"^^xsd:decimal .
+
+<configuration/etruncateduns/49> rdf:type ns4kge:Configuration .
+<configuration/etruncateduns/49> ns4kge:hasTask    <task/entity-alignment> .
+<configuration/etruncateduns/49> ns4kge:hasDataset <dataset/dbp-wd> .
+<configuration/etruncateduns/49> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/etruncateduns/49> ns4kge:hasKGEModel <kge-model/aligne> .
+<configuration/etruncateduns/49> ns4kge:hasNSMethod <ns-method/epsilon-truncated-uniform-negative-sampling> .
+<configuration/etruncateduns/49> ns4kge:result "0.5655"^^xsd:decimal .
+
+<configuration/etruncateduns/50> rdf:type ns4kge:Configuration .
+<configuration/etruncateduns/50> ns4kge:hasTask    <task/entity-alignment> .
+<configuration/etruncateduns/50> ns4kge:hasDataset <dataset/dbp-wd> .
+<configuration/etruncateduns/50> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/etruncateduns/50> ns4kge:hasKGEModel <kge-model/aligne> .
+<configuration/etruncateduns/50> ns4kge:hasNSMethod <ns-method/epsilon-truncated-uniform-negative-sampling> .
+<configuration/etruncateduns/50> ns4kge:result "0.827"^^xsd:decimal .
+
+<configuration/etruncateduns/51> rdf:type ns4kge:Configuration .
+<configuration/etruncateduns/51> ns4kge:hasTask    <task/entity-alignment> .
+<configuration/etruncateduns/51> ns4kge:hasDataset <dataset/dbp-wd> .
+<configuration/etruncateduns/51> ns4kge:hasMetric  <metric/mrr> .
+<configuration/etruncateduns/51> ns4kge:hasKGEModel <kge-model/aligne> .
+<configuration/etruncateduns/51> ns4kge:hasNSMethod <ns-method/epsilon-truncated-uniform-negative-sampling> .
+<configuration/etruncateduns/51> ns4kge:result "0.655"^^xsd:decimal .
+
+<configuration/etruncateduns/52> rdf:type ns4kge:Configuration .
+<configuration/etruncateduns/52> ns4kge:hasTask    <task/entity-alignment> .
+<configuration/etruncateduns/52> ns4kge:hasDataset <dataset/dbp-wd> .
+<configuration/etruncateduns/52> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/etruncateduns/52> ns4kge:hasKGEModel <kge-model/iptranse> .
+<configuration/etruncateduns/52> ns4kge:result "0.3485"^^xsd:decimal .
+
+<configuration/etruncateduns/53> rdf:type ns4kge:Configuration .
+<configuration/etruncateduns/53> ns4kge:hasTask    <task/entity-alignment> .
+<configuration/etruncateduns/53> ns4kge:hasDataset <dataset/dbp-wd> .
+<configuration/etruncateduns/53> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/etruncateduns/53> ns4kge:hasKGEModel <kge-model/iptranse> .
+<configuration/etruncateduns/53> ns4kge:result "0.6384"^^xsd:decimal .
+
+<configuration/etruncateduns/54> rdf:type ns4kge:Configuration .
+<configuration/etruncateduns/54> ns4kge:hasTask    <task/entity-alignment> .
+<configuration/etruncateduns/54> ns4kge:hasDataset <dataset/dbp-wd> .
+<configuration/etruncateduns/54> ns4kge:hasMetric  <metric/mrr> .
+<configuration/etruncateduns/54> ns4kge:hasKGEModel <kge-model/iptranse> .
+<configuration/etruncateduns/54> ns4kge:result "0.447"^^xsd:decimal .
+
+<configuration/etruncateduns/55> rdf:type ns4kge:Configuration .
+<configuration/etruncateduns/55> ns4kge:hasTask    <task/entity-alignment> .
+<configuration/etruncateduns/55> ns4kge:hasDataset <dataset/dbp-wd> .
+<configuration/etruncateduns/55> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/etruncateduns/55> ns4kge:hasKGEModel <kge-model/jape> .
+<configuration/etruncateduns/55> ns4kge:result "0.3184"^^xsd:decimal .
+
+<configuration/etruncateduns/56> rdf:type ns4kge:Configuration .
+<configuration/etruncateduns/56> ns4kge:hasTask    <task/entity-alignment> .
+<configuration/etruncateduns/56> ns4kge:hasDataset <dataset/dbp-wd> .
+<configuration/etruncateduns/56> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/etruncateduns/56> ns4kge:hasKGEModel <kge-model/jape> .
+<configuration/etruncateduns/56> ns4kge:result "0.5888"^^xsd:decimal .
+
+<configuration/etruncateduns/57> rdf:type ns4kge:Configuration .
+<configuration/etruncateduns/57> ns4kge:hasTask    <task/entity-alignment> .
+<configuration/etruncateduns/57> ns4kge:hasDataset <dataset/dbp-wd> .
+<configuration/etruncateduns/57> ns4kge:hasMetric  <metric/mrr> .
+<configuration/etruncateduns/57> ns4kge:hasKGEModel <kge-model/jape> .
+<configuration/etruncateduns/57> ns4kge:result "0.411"^^xsd:decimal .
+
+<configuration/etruncateduns/58> rdf:type ns4kge:Configuration .
+<configuration/etruncateduns/58> ns4kge:hasTask    <task/entity-alignment> .
+<configuration/etruncateduns/58> ns4kge:hasDataset <dataset/dbp-wd> .
+<configuration/etruncateduns/58> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/etruncateduns/58> ns4kge:hasKGEModel <kge-model/mtranse> .
+<configuration/etruncateduns/58> ns4kge:result "0.2812"^^xsd:decimal .
+
+<configuration/etruncateduns/59> rdf:type ns4kge:Configuration .
+<configuration/etruncateduns/59> ns4kge:hasTask    <task/entity-alignment> .
+<configuration/etruncateduns/59> ns4kge:hasDataset <dataset/dbp-wd> .
+<configuration/etruncateduns/59> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/etruncateduns/59> ns4kge:hasKGEModel <kge-model/mtranse> .
+<configuration/etruncateduns/59> ns4kge:result "0.5195"^^xsd:decimal .
+
+<configuration/etruncateduns/60> rdf:type ns4kge:Configuration .
+<configuration/etruncateduns/60> ns4kge:hasTask    <task/entity-alignment> .
+<configuration/etruncateduns/60> ns4kge:hasDataset <dataset/dbp-wd> .
+<configuration/etruncateduns/60> ns4kge:hasMetric  <metric/mrr> .
+<configuration/etruncateduns/60> ns4kge:hasKGEModel <kge-model/mtranse> .
+<configuration/etruncateduns/60> ns4kge:result "0.363"^^xsd:decimal .
+
+<configuration/etruncateduns/61> rdf:type ns4kge:Configuration .
+<configuration/etruncateduns/61> ns4kge:hasTask    <task/entity-alignment> .
+<configuration/etruncateduns/61> ns4kge:hasDataset <dataset/dbp-yg> .
+<configuration/etruncateduns/61> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/etruncateduns/61> ns4kge:hasKGEModel <kge-model/bootea> .
+<configuration/etruncateduns/61> ns4kge:hasNSMethod <ns-method/epsilon-truncated-uniform-negative-sampling> .
+<configuration/etruncateduns/61> ns4kge:result "0.761"^^xsd:decimal .
+
+<configuration/etruncateduns/62> rdf:type ns4kge:Configuration .
+<configuration/etruncateduns/62> ns4kge:hasTask    <task/entity-alignment> .
+<configuration/etruncateduns/62> ns4kge:hasDataset <dataset/dbp-yg> .
+<configuration/etruncateduns/62> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/etruncateduns/62> ns4kge:hasKGEModel <kge-model/bootea> .
+<configuration/etruncateduns/62> ns4kge:hasNSMethod <ns-method/epsilon-truncated-uniform-negative-sampling> .
+<configuration/etruncateduns/62> ns4kge:result "0.8944"^^xsd:decimal .
+
+<configuration/etruncateduns/63> rdf:type ns4kge:Configuration .
+<configuration/etruncateduns/63> ns4kge:hasTask    <task/entity-alignment> .
+<configuration/etruncateduns/63> ns4kge:hasDataset <dataset/dbp-yg> .
+<configuration/etruncateduns/63> ns4kge:hasMetric  <metric/mrr> .
+<configuration/etruncateduns/63> ns4kge:hasKGEModel <kge-model/bootea> .
+<configuration/etruncateduns/63> ns4kge:hasNSMethod <ns-method/epsilon-truncated-uniform-negative-sampling> .
+<configuration/etruncateduns/63> ns4kge:result "0.808"^^xsd:decimal .
+
+<configuration/etruncateduns/64> rdf:type ns4kge:Configuration .
+<configuration/etruncateduns/64> ns4kge:hasTask    <task/entity-alignment> .
+<configuration/etruncateduns/64> ns4kge:hasDataset <dataset/dbp-yg> .
+<configuration/etruncateduns/64> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/etruncateduns/64> ns4kge:hasKGEModel <kge-model/aligne> .
+<configuration/etruncateduns/64> ns4kge:hasNSMethod <ns-method/epsilon-truncated-uniform-negative-sampling> .
+<configuration/etruncateduns/64> ns4kge:result "0.6329"^^xsd:decimal .
+
+<configuration/etruncateduns/65> rdf:type ns4kge:Configuration .
+<configuration/etruncateduns/65> ns4kge:hasTask    <task/entity-alignment> .
+<configuration/etruncateduns/65> ns4kge:hasDataset <dataset/dbp-yg> .
+<configuration/etruncateduns/65> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/etruncateduns/65> ns4kge:hasKGEModel <kge-model/aligne> .
+<configuration/etruncateduns/65> ns4kge:hasNSMethod <ns-method/epsilon-truncated-uniform-negative-sampling> .
+<configuration/etruncateduns/65> ns4kge:result "0.8476"^^xsd:decimal .
+
+<configuration/etruncateduns/66> rdf:type ns4kge:Configuration .
+<configuration/etruncateduns/66> ns4kge:hasTask    <task/entity-alignment> .
+<configuration/etruncateduns/66> ns4kge:hasDataset <dataset/dbp-yg> .
+<configuration/etruncateduns/66> ns4kge:hasMetric  <metric/mrr> .
+<configuration/etruncateduns/66> ns4kge:hasKGEModel <kge-model/aligne> .
+<configuration/etruncateduns/66> ns4kge:hasNSMethod <ns-method/epsilon-truncated-uniform-negative-sampling> .
+<configuration/etruncateduns/66> ns4kge:result "0.707"^^xsd:decimal .
+
+<configuration/etruncateduns/67> rdf:type ns4kge:Configuration .
+<configuration/etruncateduns/67> ns4kge:hasTask    <task/entity-alignment> .
+<configuration/etruncateduns/67> ns4kge:hasDataset <dataset/dbp-yg> .
+<configuration/etruncateduns/67> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/etruncateduns/67> ns4kge:hasKGEModel <kge-model/iptranse> .
+<configuration/etruncateduns/67> ns4kge:result "0.2974"^^xsd:decimal .
+
+<configuration/etruncateduns/68> rdf:type ns4kge:Configuration .
+<configuration/etruncateduns/68> ns4kge:hasTask    <task/entity-alignment> .
+<configuration/etruncateduns/68> ns4kge:hasDataset <dataset/dbp-yg> .
+<configuration/etruncateduns/68> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/etruncateduns/68> ns4kge:hasKGEModel <kge-model/iptranse> .
+<configuration/etruncateduns/68> ns4kge:result "0.5576"^^xsd:decimal .
+
+<configuration/etruncateduns/69> rdf:type ns4kge:Configuration .
+<configuration/etruncateduns/69> ns4kge:hasTask    <task/entity-alignment> .
+<configuration/etruncateduns/69> ns4kge:hasDataset <dataset/dbp-yg> .
+<configuration/etruncateduns/69> ns4kge:hasMetric  <metric/mrr> .
+<configuration/etruncateduns/69> ns4kge:hasKGEModel <kge-model/iptranse> .
+<configuration/etruncateduns/69> ns4kge:result "0.386"^^xsd:decimal .
+
+<configuration/etruncateduns/70> rdf:type ns4kge:Configuration .
+<configuration/etruncateduns/70> ns4kge:hasTask    <task/entity-alignment> .
+<configuration/etruncateduns/70> ns4kge:hasDataset <dataset/dbp-yg> .
+<configuration/etruncateduns/70> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/etruncateduns/70> ns4kge:hasKGEModel <kge-model/mtranse> .
+<configuration/etruncateduns/70> ns4kge:result "0.2515"^^xsd:decimal .
+
+<configuration/etruncateduns/71> rdf:type ns4kge:Configuration .
+<configuration/etruncateduns/71> ns4kge:hasTask    <task/entity-alignment> .
+<configuration/etruncateduns/71> ns4kge:hasDataset <dataset/dbp-yg> .
+<configuration/etruncateduns/71> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/etruncateduns/71> ns4kge:hasKGEModel <kge-model/mtranse> .
+<configuration/etruncateduns/71> ns4kge:result "0.4929"^^xsd:decimal .
+
+<configuration/etruncateduns/72> rdf:type ns4kge:Configuration .
+<configuration/etruncateduns/72> ns4kge:hasTask    <task/entity-alignment> .
+<configuration/etruncateduns/72> ns4kge:hasDataset <dataset/dbp-yg> .
+<configuration/etruncateduns/72> ns4kge:hasMetric  <metric/mrr> .
+<configuration/etruncateduns/72> ns4kge:hasKGEModel <kge-model/mtranse> .
+<configuration/etruncateduns/72> ns4kge:result "0.334"^^xsd:decimal .
+
+<configuration/etruncateduns/73> rdf:type ns4kge:Configuration .
+<configuration/etruncateduns/73> ns4kge:hasTask    <task/entity-alignment> .
+<configuration/etruncateduns/73> ns4kge:hasDataset <dataset/dbp-yg> .
+<configuration/etruncateduns/73> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/etruncateduns/73> ns4kge:hasKGEModel <kge-model/jape> .
+<configuration/etruncateduns/73> ns4kge:result "0.2357"^^xsd:decimal .
+
+<configuration/etruncateduns/74> rdf:type ns4kge:Configuration .
+<configuration/etruncateduns/74> ns4kge:hasTask    <task/entity-alignment> .
+<configuration/etruncateduns/74> ns4kge:hasDataset <dataset/dbp-yg> .
+<configuration/etruncateduns/74> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/etruncateduns/74> ns4kge:hasKGEModel <kge-model/jape> .
+<configuration/etruncateduns/74> ns4kge:result "0.4841"^^xsd:decimal .
+
+<configuration/etruncateduns/75> rdf:type ns4kge:Configuration .
+<configuration/etruncateduns/75> ns4kge:hasTask    <task/entity-alignment> .
+<configuration/etruncateduns/75> ns4kge:hasDataset <dataset/dbp-yg> .
+<configuration/etruncateduns/75> ns4kge:hasMetric  <metric/mrr> .
+<configuration/etruncateduns/75> ns4kge:hasKGEModel <kge-model/jape> .
+<configuration/etruncateduns/75> ns4kge:result "0.32"^^xsd:decimal .

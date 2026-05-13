@@ -3,7 +3,7 @@
 Instantiated knowledge graph built from the NS4KGE ontology and the NS4KGE extraction pipeline.
 
 ## Contents
-- `kg/NSArticles_populated.ttl` is the assembled RDF/Turtle graph used for validation and querying.
+- `kg/ns4kge_populated.ttl` is the assembled RDF/Turtle graph used for validation and querying.
 - `per_article/` contains generated per-article JSON and TTL outputs.
 - `provenance/manifest.json` records ontology, pipeline, prompt, model, and source-corpus metadata.
 - `provenance/sources.csv` records article-level source metadata, source DOIs or URLs where available, and local source-file checksums without publishing source paper text.
@@ -69,9 +69,9 @@ The repository contains only generated structured outputs, assembled RDF, proven
 From the pipeline folder:
 
 ```bash
-uv run nofacts-populate-onto --output-dir ../ns4kge-kg/per_article --ontology ../ns4kge-ontology/ontology/NSArticles_ontology.ttl --out ../ns4kge-kg/kg/NSArticles_populated.ttl
-uv run nofacts-validate --data ../ns4kge-kg/kg/NSArticles_populated.ttl --shapes ../ns4kge-ontology/ontology/NSArticles_shapes.ttl
-uv run nofacts-query --data ../ns4kge-kg/kg/NSArticles_populated.ttl
+uv run nofacts-populate-onto --output-dir ../ns4kge-kg/per_article --ontology ../ns4kge-ontology/ontology/ns4kge_ontology.ttl --out ../ns4kge-kg/kg/ns4kge_populated.ttl
+uv run nofacts-validate --data ../ns4kge-kg/kg/ns4kge_populated.ttl --shapes ../ns4kge-ontology/ontology/ns4kge_shapes.ttl
+uv run nofacts-query --data ../ns4kge-kg/kg/ns4kge_populated.ttl
 ```
 
 ## License

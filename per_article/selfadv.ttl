@@ -1,0 +1,1283 @@
+<article/selfadv> rdf:type ns4kge:Article .
+<article/selfadv> ns4kge:title "RotatE: Knowledge Graph Embedding by Relational Rotation in Complex Space"^^xsd:string .
+<article/selfadv> ns4kge:date "2019"^^xsd:gYear .
+<article/selfadv> ns4kge:proposesNSMethod <ns-method/self-adversarial-negative-sampling> .
+<article/selfadv> ns4kge:mentionsNSMethod <ns-method/kbgan> .
+<article/selfadv> ns4kge:mentionsNSMethod <ns-method/uniform-negative-sampling> .
+<article/selfadv> ns4kge:mentionsKGEModel <kge-model/distmult> .
+<article/selfadv> ns4kge:mentionsKGEModel <kge-model/protate> .
+<article/selfadv> ns4kge:mentionsKGEModel <kge-model/stranse> .
+<article/selfadv> ns4kge:mentionsKGEModel <kge-model/conve> .
+<article/selfadv> ns4kge:mentionsKGEModel <kge-model/transh> .
+<article/selfadv> ns4kge:mentionsKGEModel <kge-model/hole> .
+<article/selfadv> ns4kge:mentionsKGEModel <kge-model/transr> .
+<article/selfadv> ns4kge:mentionsKGEModel <kge-model/toruse> .
+<article/selfadv> ns4kge:mentionsKGEModel <kge-model/transe> .
+<article/selfadv> ns4kge:mentionsKGEModel <kge-model/kg2e> .
+<article/selfadv> ns4kge:mentionsKGEModel <kge-model/complex> .
+<article/selfadv> ns4kge:hasExperimentation <experimentation/selfadv> .
+
+<category/self-adversarial-ns> rdf:type ns4kge:Category .
+
+<subcategory/direct> rdf:type ns4kge:Subcategory .
+
+<ns-method/self-adversarial-negative-sampling> rdf:type ns4kge:NSMethod .
+<ns-method/self-adversarial-negative-sampling> ns4kge:hasCategory <category/self-adversarial-ns> .
+<ns-method/self-adversarial-negative-sampling> ns4kge:hasSubcategory <subcategory/direct> .
+
+<ns-method/kbgan> rdf:type ns4kge:NSMethod .
+<category/adversarial-ns> rdf:type ns4kge:Category .
+
+<ns-method/kbgan> ns4kge:hasCategory <category/adversarial-ns> .
+<subcategory/standard> rdf:type ns4kge:Subcategory .
+
+<ns-method/kbgan> ns4kge:hasSubcategory <subcategory/standard> .
+
+<ns-method/uniform-negative-sampling> rdf:type ns4kge:NSMethod .
+<category/static-ns> rdf:type ns4kge:Category .
+
+<ns-method/uniform-negative-sampling> ns4kge:hasCategory <category/static-ns> .
+<subcategory/random> rdf:type ns4kge:Subcategory .
+
+<ns-method/uniform-negative-sampling> ns4kge:hasSubcategory <subcategory/random> .
+
+<kge-model/rotate> rdf:type ns4kge:KGEModel .
+
+<kge-model/distmult> rdf:type ns4kge:KGEModel .
+
+<kge-model/protate> rdf:type ns4kge:KGEModel .
+
+<kge-model/stranse> rdf:type ns4kge:KGEModel .
+
+<kge-model/conve> rdf:type ns4kge:KGEModel .
+
+<kge-model/transh> rdf:type ns4kge:KGEModel .
+
+<kge-model/hole> rdf:type ns4kge:KGEModel .
+
+<kge-model/transr> rdf:type ns4kge:KGEModel .
+
+<kge-model/toruse> rdf:type ns4kge:KGEModel .
+
+<kge-model/transe> rdf:type ns4kge:KGEModel .
+
+<kge-model/kg2e> rdf:type ns4kge:KGEModel .
+
+<kge-model/complex> rdf:type ns4kge:KGEModel .
+
+<dataset/fb15k> rdf:type ns4kge:Dataset .
+<task/link-prediction> rdf:type ns4kge:Task .
+<metric/mr> rdf:type ns4kge:Metric .
+<metric/mrr> rdf:type ns4kge:Metric .
+<metric/hits-1> rdf:type ns4kge:Metric .
+<metric/hits-3> rdf:type ns4kge:Metric .
+<metric/hits-10> rdf:type ns4kge:Metric .
+<dataset/wn18> rdf:type ns4kge:Dataset .
+<dataset/fb15k-237> rdf:type ns4kge:Dataset .
+<dataset/wn18rr> rdf:type ns4kge:Dataset .
+<dataset/countries-s1> rdf:type ns4kge:Dataset .
+<metric/auc> rdf:type ns4kge:Metric .
+<dataset/countries-s2> rdf:type ns4kge:Dataset .
+<dataset/countries-s3> rdf:type ns4kge:Dataset .
+<dataset/yago3-10> rdf:type ns4kge:Dataset .
+<loss-function/negative-sampling-loss> rdf:type ns4kge:LossFunction .
+<optimizer/adam> rdf:type ns4kge:Optimizer .
+
+<experimentation/selfadv> rdf:type ns4kge:Experimentation .
+<experimentation/selfadv> ns4kge:hasTrainingProtocol <training-protocol/selfadv> .
+<experimentation/selfadv> ns4kge:hasConfiguration <configuration/selfadv/1> .
+<experimentation/selfadv> ns4kge:hasConfiguration <configuration/selfadv/2> .
+<experimentation/selfadv> ns4kge:hasConfiguration <configuration/selfadv/3> .
+<experimentation/selfadv> ns4kge:hasConfiguration <configuration/selfadv/4> .
+<experimentation/selfadv> ns4kge:hasConfiguration <configuration/selfadv/5> .
+<experimentation/selfadv> ns4kge:hasConfiguration <configuration/selfadv/6> .
+<experimentation/selfadv> ns4kge:hasConfiguration <configuration/selfadv/7> .
+<experimentation/selfadv> ns4kge:hasConfiguration <configuration/selfadv/8> .
+<experimentation/selfadv> ns4kge:hasConfiguration <configuration/selfadv/9> .
+<experimentation/selfadv> ns4kge:hasConfiguration <configuration/selfadv/10> .
+<experimentation/selfadv> ns4kge:hasConfiguration <configuration/selfadv/11> .
+<experimentation/selfadv> ns4kge:hasConfiguration <configuration/selfadv/12> .
+<experimentation/selfadv> ns4kge:hasConfiguration <configuration/selfadv/13> .
+<experimentation/selfadv> ns4kge:hasConfiguration <configuration/selfadv/14> .
+<experimentation/selfadv> ns4kge:hasConfiguration <configuration/selfadv/15> .
+<experimentation/selfadv> ns4kge:hasConfiguration <configuration/selfadv/16> .
+<experimentation/selfadv> ns4kge:hasConfiguration <configuration/selfadv/17> .
+<experimentation/selfadv> ns4kge:hasConfiguration <configuration/selfadv/18> .
+<experimentation/selfadv> ns4kge:hasConfiguration <configuration/selfadv/19> .
+<experimentation/selfadv> ns4kge:hasConfiguration <configuration/selfadv/20> .
+<experimentation/selfadv> ns4kge:hasConfiguration <configuration/selfadv/21> .
+<experimentation/selfadv> ns4kge:hasConfiguration <configuration/selfadv/22> .
+<experimentation/selfadv> ns4kge:hasConfiguration <configuration/selfadv/23> .
+<experimentation/selfadv> ns4kge:hasConfiguration <configuration/selfadv/24> .
+<experimentation/selfadv> ns4kge:hasConfiguration <configuration/selfadv/25> .
+<experimentation/selfadv> ns4kge:hasConfiguration <configuration/selfadv/26> .
+<experimentation/selfadv> ns4kge:hasConfiguration <configuration/selfadv/27> .
+<experimentation/selfadv> ns4kge:hasConfiguration <configuration/selfadv/28> .
+<experimentation/selfadv> ns4kge:hasConfiguration <configuration/selfadv/29> .
+<experimentation/selfadv> ns4kge:hasConfiguration <configuration/selfadv/30> .
+<experimentation/selfadv> ns4kge:hasConfiguration <configuration/selfadv/31> .
+<experimentation/selfadv> ns4kge:hasConfiguration <configuration/selfadv/32> .
+<experimentation/selfadv> ns4kge:hasConfiguration <configuration/selfadv/33> .
+<experimentation/selfadv> ns4kge:hasConfiguration <configuration/selfadv/34> .
+<experimentation/selfadv> ns4kge:hasConfiguration <configuration/selfadv/35> .
+<experimentation/selfadv> ns4kge:hasConfiguration <configuration/selfadv/36> .
+<experimentation/selfadv> ns4kge:hasConfiguration <configuration/selfadv/37> .
+<experimentation/selfadv> ns4kge:hasConfiguration <configuration/selfadv/38> .
+<experimentation/selfadv> ns4kge:hasConfiguration <configuration/selfadv/39> .
+<experimentation/selfadv> ns4kge:hasConfiguration <configuration/selfadv/40> .
+<experimentation/selfadv> ns4kge:hasConfiguration <configuration/selfadv/41> .
+<experimentation/selfadv> ns4kge:hasConfiguration <configuration/selfadv/42> .
+<experimentation/selfadv> ns4kge:hasConfiguration <configuration/selfadv/43> .
+<experimentation/selfadv> ns4kge:hasConfiguration <configuration/selfadv/44> .
+<experimentation/selfadv> ns4kge:hasConfiguration <configuration/selfadv/45> .
+<experimentation/selfadv> ns4kge:hasConfiguration <configuration/selfadv/46> .
+<experimentation/selfadv> ns4kge:hasConfiguration <configuration/selfadv/47> .
+<experimentation/selfadv> ns4kge:hasConfiguration <configuration/selfadv/48> .
+<experimentation/selfadv> ns4kge:hasConfiguration <configuration/selfadv/49> .
+<experimentation/selfadv> ns4kge:hasConfiguration <configuration/selfadv/50> .
+<experimentation/selfadv> ns4kge:hasConfiguration <configuration/selfadv/51> .
+<experimentation/selfadv> ns4kge:hasConfiguration <configuration/selfadv/52> .
+<experimentation/selfadv> ns4kge:hasConfiguration <configuration/selfadv/53> .
+<experimentation/selfadv> ns4kge:hasConfiguration <configuration/selfadv/54> .
+<experimentation/selfadv> ns4kge:hasConfiguration <configuration/selfadv/55> .
+<experimentation/selfadv> ns4kge:hasConfiguration <configuration/selfadv/56> .
+<experimentation/selfadv> ns4kge:hasConfiguration <configuration/selfadv/57> .
+<experimentation/selfadv> ns4kge:hasConfiguration <configuration/selfadv/58> .
+<experimentation/selfadv> ns4kge:hasConfiguration <configuration/selfadv/59> .
+<experimentation/selfadv> ns4kge:hasConfiguration <configuration/selfadv/60> .
+<experimentation/selfadv> ns4kge:hasConfiguration <configuration/selfadv/61> .
+<experimentation/selfadv> ns4kge:hasConfiguration <configuration/selfadv/62> .
+<experimentation/selfadv> ns4kge:hasConfiguration <configuration/selfadv/63> .
+<experimentation/selfadv> ns4kge:hasConfiguration <configuration/selfadv/64> .
+<experimentation/selfadv> ns4kge:hasConfiguration <configuration/selfadv/65> .
+<experimentation/selfadv> ns4kge:hasConfiguration <configuration/selfadv/66> .
+<experimentation/selfadv> ns4kge:hasConfiguration <configuration/selfadv/67> .
+<experimentation/selfadv> ns4kge:hasConfiguration <configuration/selfadv/68> .
+<experimentation/selfadv> ns4kge:hasConfiguration <configuration/selfadv/69> .
+<experimentation/selfadv> ns4kge:hasConfiguration <configuration/selfadv/70> .
+<experimentation/selfadv> ns4kge:hasConfiguration <configuration/selfadv/71> .
+<experimentation/selfadv> ns4kge:hasConfiguration <configuration/selfadv/72> .
+<experimentation/selfadv> ns4kge:hasConfiguration <configuration/selfadv/73> .
+<experimentation/selfadv> ns4kge:hasConfiguration <configuration/selfadv/74> .
+<experimentation/selfadv> ns4kge:hasConfiguration <configuration/selfadv/75> .
+<experimentation/selfadv> ns4kge:hasConfiguration <configuration/selfadv/76> .
+<experimentation/selfadv> ns4kge:hasConfiguration <configuration/selfadv/77> .
+<experimentation/selfadv> ns4kge:hasConfiguration <configuration/selfadv/78> .
+<experimentation/selfadv> ns4kge:hasConfiguration <configuration/selfadv/79> .
+<experimentation/selfadv> ns4kge:hasConfiguration <configuration/selfadv/80> .
+<experimentation/selfadv> ns4kge:hasConfiguration <configuration/selfadv/81> .
+<experimentation/selfadv> ns4kge:hasConfiguration <configuration/selfadv/82> .
+<experimentation/selfadv> ns4kge:hasConfiguration <configuration/selfadv/83> .
+<experimentation/selfadv> ns4kge:hasConfiguration <configuration/selfadv/84> .
+<experimentation/selfadv> ns4kge:hasConfiguration <configuration/selfadv/85> .
+<experimentation/selfadv> ns4kge:hasConfiguration <configuration/selfadv/86> .
+<experimentation/selfadv> ns4kge:hasConfiguration <configuration/selfadv/87> .
+<experimentation/selfadv> ns4kge:hasConfiguration <configuration/selfadv/88> .
+<experimentation/selfadv> ns4kge:hasConfiguration <configuration/selfadv/89> .
+<experimentation/selfadv> ns4kge:hasConfiguration <configuration/selfadv/90> .
+<experimentation/selfadv> ns4kge:hasConfiguration <configuration/selfadv/91> .
+<experimentation/selfadv> ns4kge:hasConfiguration <configuration/selfadv/92> .
+<experimentation/selfadv> ns4kge:hasConfiguration <configuration/selfadv/93> .
+<experimentation/selfadv> ns4kge:hasConfiguration <configuration/selfadv/94> .
+<experimentation/selfadv> ns4kge:hasConfiguration <configuration/selfadv/95> .
+<experimentation/selfadv> ns4kge:hasConfiguration <configuration/selfadv/96> .
+<experimentation/selfadv> ns4kge:hasConfiguration <configuration/selfadv/97> .
+<experimentation/selfadv> ns4kge:hasConfiguration <configuration/selfadv/98> .
+<experimentation/selfadv> ns4kge:hasConfiguration <configuration/selfadv/99> .
+<experimentation/selfadv> ns4kge:hasConfiguration <configuration/selfadv/100> .
+<experimentation/selfadv> ns4kge:hasConfiguration <configuration/selfadv/101> .
+<experimentation/selfadv> ns4kge:hasConfiguration <configuration/selfadv/102> .
+<experimentation/selfadv> ns4kge:hasConfiguration <configuration/selfadv/103> .
+<experimentation/selfadv> ns4kge:hasConfiguration <configuration/selfadv/104> .
+<experimentation/selfadv> ns4kge:hasConfiguration <configuration/selfadv/105> .
+<experimentation/selfadv> ns4kge:hasConfiguration <configuration/selfadv/106> .
+<experimentation/selfadv> ns4kge:hasConfiguration <configuration/selfadv/107> .
+<experimentation/selfadv> ns4kge:hasConfiguration <configuration/selfadv/108> .
+<experimentation/selfadv> ns4kge:hasConfiguration <configuration/selfadv/109> .
+<experimentation/selfadv> ns4kge:hasConfiguration <configuration/selfadv/110> .
+<experimentation/selfadv> ns4kge:hasConfiguration <configuration/selfadv/111> .
+<experimentation/selfadv> ns4kge:hasConfiguration <configuration/selfadv/112> .
+<experimentation/selfadv> ns4kge:hasConfiguration <configuration/selfadv/113> .
+<experimentation/selfadv> ns4kge:hasConfiguration <configuration/selfadv/114> .
+<experimentation/selfadv> ns4kge:hasConfiguration <configuration/selfadv/115> .
+<experimentation/selfadv> ns4kge:hasConfiguration <configuration/selfadv/116> .
+<experimentation/selfadv> ns4kge:hasConfiguration <configuration/selfadv/117> .
+<experimentation/selfadv> ns4kge:hasConfiguration <configuration/selfadv/118> .
+<experimentation/selfadv> ns4kge:hasConfiguration <configuration/selfadv/119> .
+<experimentation/selfadv> ns4kge:hasConfiguration <configuration/selfadv/120> .
+<experimentation/selfadv> ns4kge:hasConfiguration <configuration/selfadv/121> .
+<experimentation/selfadv> ns4kge:hasConfiguration <configuration/selfadv/122> .
+<experimentation/selfadv> ns4kge:hasConfiguration <configuration/selfadv/123> .
+<experimentation/selfadv> ns4kge:hasConfiguration <configuration/selfadv/124> .
+<experimentation/selfadv> ns4kge:hasConfiguration <configuration/selfadv/125> .
+<experimentation/selfadv> ns4kge:hasConfiguration <configuration/selfadv/126> .
+<experimentation/selfadv> ns4kge:hasConfiguration <configuration/selfadv/127> .
+<experimentation/selfadv> ns4kge:hasConfiguration <configuration/selfadv/128> .
+<experimentation/selfadv> ns4kge:hasConfiguration <configuration/selfadv/129> .
+<experimentation/selfadv> ns4kge:hasConfiguration <configuration/selfadv/130> .
+<experimentation/selfadv> ns4kge:hasConfiguration <configuration/selfadv/131> .
+<experimentation/selfadv> ns4kge:hasConfiguration <configuration/selfadv/132> .
+<experimentation/selfadv> ns4kge:hasConfiguration <configuration/selfadv/133> .
+<experimentation/selfadv> ns4kge:hasConfiguration <configuration/selfadv/134> .
+<experimentation/selfadv> ns4kge:hasConfiguration <configuration/selfadv/135> .
+<experimentation/selfadv> ns4kge:hasConfiguration <configuration/selfadv/136> .
+<experimentation/selfadv> ns4kge:hasConfiguration <configuration/selfadv/137> .
+<experimentation/selfadv> ns4kge:hasConfiguration <configuration/selfadv/138> .
+<experimentation/selfadv> ns4kge:hasConfiguration <configuration/selfadv/139> .
+<experimentation/selfadv> ns4kge:hasConfiguration <configuration/selfadv/140> .
+
+<training-protocol/selfadv> rdf:type ns4kge:TrainingProtocol .
+<training-protocol/selfadv> ns4kge:hasOptimizer    <optimizer/adam> .
+<training-protocol/selfadv> ns4kge:hasLossFunction <loss-function/negative-sampling-loss> .
+
+<configuration/selfadv/1> rdf:type ns4kge:Configuration .
+<configuration/selfadv/1> ns4kge:hasTask    <task/link-prediction> .
+<configuration/selfadv/1> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/selfadv/1> ns4kge:hasMetric  <metric/mr> .
+<configuration/selfadv/1> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/selfadv/1> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/selfadv/1> ns4kge:result "40"^^xsd:decimal .
+
+<configuration/selfadv/2> rdf:type ns4kge:Configuration .
+<configuration/selfadv/2> ns4kge:hasTask    <task/link-prediction> .
+<configuration/selfadv/2> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/selfadv/2> ns4kge:hasMetric  <metric/mr> .
+<configuration/selfadv/2> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/selfadv/2> ns4kge:result "42"^^xsd:decimal .
+
+<configuration/selfadv/3> rdf:type ns4kge:Configuration .
+<configuration/selfadv/3> ns4kge:hasTask    <task/link-prediction> .
+<configuration/selfadv/3> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/selfadv/3> ns4kge:hasMetric  <metric/mr> .
+<configuration/selfadv/3> ns4kge:hasKGEModel <kge-model/protate> .
+<configuration/selfadv/3> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/selfadv/3> ns4kge:result "43"^^xsd:decimal .
+
+<configuration/selfadv/4> rdf:type ns4kge:Configuration .
+<configuration/selfadv/4> ns4kge:hasTask    <task/link-prediction> .
+<configuration/selfadv/4> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/selfadv/4> ns4kge:hasMetric  <metric/mr> .
+<configuration/selfadv/4> ns4kge:hasKGEModel <kge-model/conve> .
+<configuration/selfadv/4> ns4kge:result "51"^^xsd:decimal .
+
+<configuration/selfadv/5> rdf:type ns4kge:Configuration .
+<configuration/selfadv/5> ns4kge:hasTask    <task/link-prediction> .
+<configuration/selfadv/5> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/selfadv/5> ns4kge:hasMetric  <metric/mrr> .
+<configuration/selfadv/5> ns4kge:hasKGEModel <kge-model/protate> .
+<configuration/selfadv/5> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/selfadv/5> ns4kge:result "0.799"^^xsd:decimal .
+
+<configuration/selfadv/6> rdf:type ns4kge:Configuration .
+<configuration/selfadv/6> ns4kge:hasTask    <task/link-prediction> .
+<configuration/selfadv/6> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/selfadv/6> ns4kge:hasMetric  <metric/mrr> .
+<configuration/selfadv/6> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/selfadv/6> ns4kge:result "0.798"^^xsd:decimal .
+
+<configuration/selfadv/7> rdf:type ns4kge:Configuration .
+<configuration/selfadv/7> ns4kge:hasTask    <task/link-prediction> .
+<configuration/selfadv/7> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/selfadv/7> ns4kge:hasMetric  <metric/mrr> .
+<configuration/selfadv/7> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/selfadv/7> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/selfadv/7> ns4kge:result "0.797"^^xsd:decimal .
+
+<configuration/selfadv/8> rdf:type ns4kge:Configuration .
+<configuration/selfadv/8> ns4kge:hasTask    <task/link-prediction> .
+<configuration/selfadv/8> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/selfadv/8> ns4kge:hasMetric  <metric/mrr> .
+<configuration/selfadv/8> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/selfadv/8> ns4kge:result "0.692"^^xsd:decimal .
+
+<configuration/selfadv/9> rdf:type ns4kge:Configuration .
+<configuration/selfadv/9> ns4kge:hasTask    <task/link-prediction> .
+<configuration/selfadv/9> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/selfadv/9> ns4kge:hasMetric  <metric/mrr> .
+<configuration/selfadv/9> ns4kge:hasKGEModel <kge-model/conve> .
+<configuration/selfadv/9> ns4kge:result "0.657"^^xsd:decimal .
+
+<configuration/selfadv/10> rdf:type ns4kge:Configuration .
+<configuration/selfadv/10> ns4kge:hasTask    <task/link-prediction> .
+<configuration/selfadv/10> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/selfadv/10> ns4kge:hasMetric  <metric/mrr> .
+<configuration/selfadv/10> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/selfadv/10> ns4kge:result "0.463"^^xsd:decimal .
+
+<configuration/selfadv/11> rdf:type ns4kge:Configuration .
+<configuration/selfadv/11> ns4kge:hasTask    <task/link-prediction> .
+<configuration/selfadv/11> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/selfadv/11> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/selfadv/11> ns4kge:hasKGEModel <kge-model/protate> .
+<configuration/selfadv/11> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/selfadv/11> ns4kge:result "0.75"^^xsd:decimal .
+
+<configuration/selfadv/12> rdf:type ns4kge:Configuration .
+<configuration/selfadv/12> ns4kge:hasTask    <task/link-prediction> .
+<configuration/selfadv/12> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/selfadv/12> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/selfadv/12> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/selfadv/12> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/selfadv/12> ns4kge:result "0.746"^^xsd:decimal .
+
+<configuration/selfadv/13> rdf:type ns4kge:Configuration .
+<configuration/selfadv/13> ns4kge:hasTask    <task/link-prediction> .
+<configuration/selfadv/13> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/selfadv/13> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/selfadv/13> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/selfadv/13> ns4kge:result "0.599"^^xsd:decimal .
+
+<configuration/selfadv/14> rdf:type ns4kge:Configuration .
+<configuration/selfadv/14> ns4kge:hasTask    <task/link-prediction> .
+<configuration/selfadv/14> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/selfadv/14> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/selfadv/14> ns4kge:hasKGEModel <kge-model/conve> .
+<configuration/selfadv/14> ns4kge:result "0.558"^^xsd:decimal .
+
+<configuration/selfadv/15> rdf:type ns4kge:Configuration .
+<configuration/selfadv/15> ns4kge:hasTask    <task/link-prediction> .
+<configuration/selfadv/15> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/selfadv/15> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/selfadv/15> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/selfadv/15> ns4kge:result "0.297"^^xsd:decimal .
+
+<configuration/selfadv/16> rdf:type ns4kge:Configuration .
+<configuration/selfadv/16> ns4kge:hasTask    <task/link-prediction> .
+<configuration/selfadv/16> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/selfadv/16> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/selfadv/16> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/selfadv/16> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/selfadv/16> ns4kge:result "0.83"^^xsd:decimal .
+
+<configuration/selfadv/17> rdf:type ns4kge:Configuration .
+<configuration/selfadv/17> ns4kge:hasTask    <task/link-prediction> .
+<configuration/selfadv/17> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/selfadv/17> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/selfadv/17> ns4kge:hasKGEModel <kge-model/protate> .
+<configuration/selfadv/17> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/selfadv/17> ns4kge:result "0.829"^^xsd:decimal .
+
+<configuration/selfadv/18> rdf:type ns4kge:Configuration .
+<configuration/selfadv/18> ns4kge:hasTask    <task/link-prediction> .
+<configuration/selfadv/18> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/selfadv/18> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/selfadv/18> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/selfadv/18> ns4kge:result "0.759"^^xsd:decimal .
+
+<configuration/selfadv/19> rdf:type ns4kge:Configuration .
+<configuration/selfadv/19> ns4kge:hasTask    <task/link-prediction> .
+<configuration/selfadv/19> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/selfadv/19> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/selfadv/19> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/selfadv/19> ns4kge:result "0.893"^^xsd:decimal .
+
+<configuration/selfadv/20> rdf:type ns4kge:Configuration .
+<configuration/selfadv/20> ns4kge:hasTask    <task/link-prediction> .
+<configuration/selfadv/20> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/selfadv/20> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/selfadv/20> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/selfadv/20> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/selfadv/20> ns4kge:result "0.884"^^xsd:decimal .
+
+<configuration/selfadv/21> rdf:type ns4kge:Configuration .
+<configuration/selfadv/21> ns4kge:hasTask    <task/link-prediction> .
+<configuration/selfadv/21> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/selfadv/21> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/selfadv/21> ns4kge:hasKGEModel <kge-model/protate> .
+<configuration/selfadv/21> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/selfadv/21> ns4kge:result "0.884"^^xsd:decimal .
+
+<configuration/selfadv/22> rdf:type ns4kge:Configuration .
+<configuration/selfadv/22> ns4kge:hasTask    <task/link-prediction> .
+<configuration/selfadv/22> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/selfadv/22> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/selfadv/22> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/selfadv/22> ns4kge:result "0.84"^^xsd:decimal .
+
+<configuration/selfadv/23> rdf:type ns4kge:Configuration .
+<configuration/selfadv/23> ns4kge:hasTask    <task/link-prediction> .
+<configuration/selfadv/23> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/selfadv/23> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/selfadv/23> ns4kge:hasKGEModel <kge-model/conve> .
+<configuration/selfadv/23> ns4kge:result "0.831"^^xsd:decimal .
+
+<configuration/selfadv/24> rdf:type ns4kge:Configuration .
+<configuration/selfadv/24> ns4kge:hasTask    <task/link-prediction> .
+<configuration/selfadv/24> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/selfadv/24> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/selfadv/24> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/selfadv/24> ns4kge:result "0.749"^^xsd:decimal .
+
+<configuration/selfadv/25> rdf:type ns4kge:Configuration .
+<configuration/selfadv/25> ns4kge:hasTask    <task/link-prediction> .
+<configuration/selfadv/25> ns4kge:hasDataset <dataset/wn18> .
+<configuration/selfadv/25> ns4kge:hasMetric  <metric/mr> .
+<configuration/selfadv/25> ns4kge:hasKGEModel <kge-model/protate> .
+<configuration/selfadv/25> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/selfadv/25> ns4kge:result "254"^^xsd:decimal .
+
+<configuration/selfadv/26> rdf:type ns4kge:Configuration .
+<configuration/selfadv/26> ns4kge:hasTask    <task/link-prediction> .
+<configuration/selfadv/26> ns4kge:hasDataset <dataset/wn18> .
+<configuration/selfadv/26> ns4kge:hasMetric  <metric/mr> .
+<configuration/selfadv/26> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/selfadv/26> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/selfadv/26> ns4kge:result "309"^^xsd:decimal .
+
+<configuration/selfadv/27> rdf:type ns4kge:Configuration .
+<configuration/selfadv/27> ns4kge:hasTask    <task/link-prediction> .
+<configuration/selfadv/27> ns4kge:hasDataset <dataset/wn18> .
+<configuration/selfadv/27> ns4kge:hasMetric  <metric/mr> .
+<configuration/selfadv/27> ns4kge:hasKGEModel <kge-model/conve> .
+<configuration/selfadv/27> ns4kge:result "374"^^xsd:decimal .
+
+<configuration/selfadv/28> rdf:type ns4kge:Configuration .
+<configuration/selfadv/28> ns4kge:hasTask    <task/link-prediction> .
+<configuration/selfadv/28> ns4kge:hasDataset <dataset/wn18> .
+<configuration/selfadv/28> ns4kge:hasMetric  <metric/mr> .
+<configuration/selfadv/28> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/selfadv/28> ns4kge:result "655"^^xsd:decimal .
+
+<configuration/selfadv/29> rdf:type ns4kge:Configuration .
+<configuration/selfadv/29> ns4kge:hasTask    <task/link-prediction> .
+<configuration/selfadv/29> ns4kge:hasDataset <dataset/wn18> .
+<configuration/selfadv/29> ns4kge:hasMetric  <metric/mrr> .
+<configuration/selfadv/29> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/selfadv/29> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/selfadv/29> ns4kge:result "0.949"^^xsd:decimal .
+
+<configuration/selfadv/30> rdf:type ns4kge:Configuration .
+<configuration/selfadv/30> ns4kge:hasTask    <task/link-prediction> .
+<configuration/selfadv/30> ns4kge:hasDataset <dataset/wn18> .
+<configuration/selfadv/30> ns4kge:hasMetric  <metric/mrr> .
+<configuration/selfadv/30> ns4kge:hasKGEModel <kge-model/protate> .
+<configuration/selfadv/30> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/selfadv/30> ns4kge:result "0.947"^^xsd:decimal .
+
+<configuration/selfadv/31> rdf:type ns4kge:Configuration .
+<configuration/selfadv/31> ns4kge:hasTask    <task/link-prediction> .
+<configuration/selfadv/31> ns4kge:hasDataset <dataset/wn18> .
+<configuration/selfadv/31> ns4kge:hasMetric  <metric/mrr> .
+<configuration/selfadv/31> ns4kge:hasKGEModel <kge-model/conve> .
+<configuration/selfadv/31> ns4kge:result "0.943"^^xsd:decimal .
+
+<configuration/selfadv/32> rdf:type ns4kge:Configuration .
+<configuration/selfadv/32> ns4kge:hasTask    <task/link-prediction> .
+<configuration/selfadv/32> ns4kge:hasDataset <dataset/wn18> .
+<configuration/selfadv/32> ns4kge:hasMetric  <metric/mrr> .
+<configuration/selfadv/32> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/selfadv/32> ns4kge:result "0.941"^^xsd:decimal .
+
+<configuration/selfadv/33> rdf:type ns4kge:Configuration .
+<configuration/selfadv/33> ns4kge:hasTask    <task/link-prediction> .
+<configuration/selfadv/33> ns4kge:hasDataset <dataset/wn18> .
+<configuration/selfadv/33> ns4kge:hasMetric  <metric/mrr> .
+<configuration/selfadv/33> ns4kge:hasKGEModel <kge-model/hole> .
+<configuration/selfadv/33> ns4kge:result "0.938"^^xsd:decimal .
+
+<configuration/selfadv/34> rdf:type ns4kge:Configuration .
+<configuration/selfadv/34> ns4kge:hasTask    <task/link-prediction> .
+<configuration/selfadv/34> ns4kge:hasDataset <dataset/wn18> .
+<configuration/selfadv/34> ns4kge:hasMetric  <metric/mrr> .
+<configuration/selfadv/34> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/selfadv/34> ns4kge:result "0.495"^^xsd:decimal .
+
+<configuration/selfadv/35> rdf:type ns4kge:Configuration .
+<configuration/selfadv/35> ns4kge:hasTask    <task/link-prediction> .
+<configuration/selfadv/35> ns4kge:hasDataset <dataset/wn18> .
+<configuration/selfadv/35> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/selfadv/35> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/selfadv/35> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/selfadv/35> ns4kge:result "0.944"^^xsd:decimal .
+
+<configuration/selfadv/36> rdf:type ns4kge:Configuration .
+<configuration/selfadv/36> ns4kge:hasTask    <task/link-prediction> .
+<configuration/selfadv/36> ns4kge:hasDataset <dataset/wn18> .
+<configuration/selfadv/36> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/selfadv/36> ns4kge:hasKGEModel <kge-model/protate> .
+<configuration/selfadv/36> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/selfadv/36> ns4kge:result "0.942"^^xsd:decimal .
+
+<configuration/selfadv/37> rdf:type ns4kge:Configuration .
+<configuration/selfadv/37> ns4kge:hasTask    <task/link-prediction> .
+<configuration/selfadv/37> ns4kge:hasDataset <dataset/wn18> .
+<configuration/selfadv/37> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/selfadv/37> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/selfadv/37> ns4kge:result "0.936"^^xsd:decimal .
+
+<configuration/selfadv/38> rdf:type ns4kge:Configuration .
+<configuration/selfadv/38> ns4kge:hasTask    <task/link-prediction> .
+<configuration/selfadv/38> ns4kge:hasDataset <dataset/wn18> .
+<configuration/selfadv/38> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/selfadv/38> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/selfadv/38> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/selfadv/38> ns4kge:result "0.952"^^xsd:decimal .
+
+<configuration/selfadv/39> rdf:type ns4kge:Configuration .
+<configuration/selfadv/39> ns4kge:hasTask    <task/link-prediction> .
+<configuration/selfadv/39> ns4kge:hasDataset <dataset/wn18> .
+<configuration/selfadv/39> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/selfadv/39> ns4kge:hasKGEModel <kge-model/protate> .
+<configuration/selfadv/39> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/selfadv/39> ns4kge:result "0.95"^^xsd:decimal .
+
+<configuration/selfadv/40> rdf:type ns4kge:Configuration .
+<configuration/selfadv/40> ns4kge:hasTask    <task/link-prediction> .
+<configuration/selfadv/40> ns4kge:hasDataset <dataset/wn18> .
+<configuration/selfadv/40> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/selfadv/40> ns4kge:hasKGEModel <kge-model/conve> .
+<configuration/selfadv/40> ns4kge:result "0.946"^^xsd:decimal .
+
+<configuration/selfadv/41> rdf:type ns4kge:Configuration .
+<configuration/selfadv/41> ns4kge:hasTask    <task/link-prediction> .
+<configuration/selfadv/41> ns4kge:hasDataset <dataset/wn18> .
+<configuration/selfadv/41> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/selfadv/41> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/selfadv/41> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/selfadv/41> ns4kge:result "0.959"^^xsd:decimal .
+
+<configuration/selfadv/42> rdf:type ns4kge:Configuration .
+<configuration/selfadv/42> ns4kge:hasTask    <task/link-prediction> .
+<configuration/selfadv/42> ns4kge:hasDataset <dataset/wn18> .
+<configuration/selfadv/42> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/selfadv/42> ns4kge:hasKGEModel <kge-model/protate> .
+<configuration/selfadv/42> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/selfadv/42> ns4kge:result "0.957"^^xsd:decimal .
+
+<configuration/selfadv/43> rdf:type ns4kge:Configuration .
+<configuration/selfadv/43> ns4kge:hasTask    <task/link-prediction> .
+<configuration/selfadv/43> ns4kge:hasDataset <dataset/wn18> .
+<configuration/selfadv/43> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/selfadv/43> ns4kge:hasKGEModel <kge-model/conve> .
+<configuration/selfadv/43> ns4kge:result "0.956"^^xsd:decimal .
+
+<configuration/selfadv/44> rdf:type ns4kge:Configuration .
+<configuration/selfadv/44> ns4kge:hasTask    <task/link-prediction> .
+<configuration/selfadv/44> ns4kge:hasDataset <dataset/wn18> .
+<configuration/selfadv/44> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/selfadv/44> ns4kge:hasKGEModel <kge-model/hole> .
+<configuration/selfadv/44> ns4kge:result "0.949"^^xsd:decimal .
+
+<configuration/selfadv/45> rdf:type ns4kge:Configuration .
+<configuration/selfadv/45> ns4kge:hasTask    <task/link-prediction> .
+<configuration/selfadv/45> ns4kge:hasDataset <dataset/wn18> .
+<configuration/selfadv/45> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/selfadv/45> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/selfadv/45> ns4kge:result "0.946"^^xsd:decimal .
+
+<configuration/selfadv/46> rdf:type ns4kge:Configuration .
+<configuration/selfadv/46> ns4kge:hasTask    <task/link-prediction> .
+<configuration/selfadv/46> ns4kge:hasDataset <dataset/wn18> .
+<configuration/selfadv/46> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/selfadv/46> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/selfadv/46> ns4kge:result "0.943"^^xsd:decimal .
+
+<configuration/selfadv/47> rdf:type ns4kge:Configuration .
+<configuration/selfadv/47> ns4kge:hasTask    <task/link-prediction> .
+<configuration/selfadv/47> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/selfadv/47> ns4kge:hasMetric  <metric/mr> .
+<configuration/selfadv/47> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/selfadv/47> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/selfadv/47> ns4kge:result "177"^^xsd:decimal .
+
+<configuration/selfadv/48> rdf:type ns4kge:Configuration .
+<configuration/selfadv/48> ns4kge:hasTask    <task/link-prediction> .
+<configuration/selfadv/48> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/selfadv/48> ns4kge:hasMetric  <metric/mr> .
+<configuration/selfadv/48> ns4kge:hasKGEModel <kge-model/protate> .
+<configuration/selfadv/48> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/selfadv/48> ns4kge:result "178"^^xsd:decimal .
+
+<configuration/selfadv/49> rdf:type ns4kge:Configuration .
+<configuration/selfadv/49> ns4kge:hasTask    <task/link-prediction> .
+<configuration/selfadv/49> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/selfadv/49> ns4kge:hasMetric  <metric/mr> .
+<configuration/selfadv/49> ns4kge:hasKGEModel <kge-model/conve> .
+<configuration/selfadv/49> ns4kge:result "244"^^xsd:decimal .
+
+<configuration/selfadv/50> rdf:type ns4kge:Configuration .
+<configuration/selfadv/50> ns4kge:hasTask    <task/link-prediction> .
+<configuration/selfadv/50> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/selfadv/50> ns4kge:hasMetric  <metric/mr> .
+<configuration/selfadv/50> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/selfadv/50> ns4kge:result "254"^^xsd:decimal .
+
+<configuration/selfadv/51> rdf:type ns4kge:Configuration .
+<configuration/selfadv/51> ns4kge:hasTask    <task/link-prediction> .
+<configuration/selfadv/51> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/selfadv/51> ns4kge:hasMetric  <metric/mr> .
+<configuration/selfadv/51> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/selfadv/51> ns4kge:result "339"^^xsd:decimal .
+
+<configuration/selfadv/52> rdf:type ns4kge:Configuration .
+<configuration/selfadv/52> ns4kge:hasTask    <task/link-prediction> .
+<configuration/selfadv/52> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/selfadv/52> ns4kge:hasMetric  <metric/mr> .
+<configuration/selfadv/52> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/selfadv/52> ns4kge:result "357"^^xsd:decimal .
+
+<configuration/selfadv/53> rdf:type ns4kge:Configuration .
+<configuration/selfadv/53> ns4kge:hasTask    <task/link-prediction> .
+<configuration/selfadv/53> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/selfadv/53> ns4kge:hasMetric  <metric/mrr> .
+<configuration/selfadv/53> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/selfadv/53> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/selfadv/53> ns4kge:result "0.338"^^xsd:decimal .
+
+<configuration/selfadv/54> rdf:type ns4kge:Configuration .
+<configuration/selfadv/54> ns4kge:hasTask    <task/link-prediction> .
+<configuration/selfadv/54> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/selfadv/54> ns4kge:hasMetric  <metric/mrr> .
+<configuration/selfadv/54> ns4kge:hasKGEModel <kge-model/protate> .
+<configuration/selfadv/54> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/selfadv/54> ns4kge:result "0.328"^^xsd:decimal .
+
+<configuration/selfadv/55> rdf:type ns4kge:Configuration .
+<configuration/selfadv/55> ns4kge:hasTask    <task/link-prediction> .
+<configuration/selfadv/55> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/selfadv/55> ns4kge:hasMetric  <metric/mrr> .
+<configuration/selfadv/55> ns4kge:hasKGEModel <kge-model/conve> .
+<configuration/selfadv/55> ns4kge:result "0.325"^^xsd:decimal .
+
+<configuration/selfadv/56> rdf:type ns4kge:Configuration .
+<configuration/selfadv/56> ns4kge:hasTask    <task/link-prediction> .
+<configuration/selfadv/56> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/selfadv/56> ns4kge:hasMetric  <metric/mrr> .
+<configuration/selfadv/56> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/selfadv/56> ns4kge:result "0.294"^^xsd:decimal .
+
+<configuration/selfadv/57> rdf:type ns4kge:Configuration .
+<configuration/selfadv/57> ns4kge:hasTask    <task/link-prediction> .
+<configuration/selfadv/57> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/selfadv/57> ns4kge:hasMetric  <metric/mrr> .
+<configuration/selfadv/57> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/selfadv/57> ns4kge:result "0.247"^^xsd:decimal .
+
+<configuration/selfadv/58> rdf:type ns4kge:Configuration .
+<configuration/selfadv/58> ns4kge:hasTask    <task/link-prediction> .
+<configuration/selfadv/58> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/selfadv/58> ns4kge:hasMetric  <metric/mrr> .
+<configuration/selfadv/58> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/selfadv/58> ns4kge:result "0.241"^^xsd:decimal .
+
+<configuration/selfadv/59> rdf:type ns4kge:Configuration .
+<configuration/selfadv/59> ns4kge:hasTask    <task/link-prediction> .
+<configuration/selfadv/59> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/selfadv/59> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/selfadv/59> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/selfadv/59> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/selfadv/59> ns4kge:result "0.241"^^xsd:decimal .
+
+<configuration/selfadv/60> rdf:type ns4kge:Configuration .
+<configuration/selfadv/60> ns4kge:hasTask    <task/link-prediction> .
+<configuration/selfadv/60> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/selfadv/60> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/selfadv/60> ns4kge:hasKGEModel <kge-model/conve> .
+<configuration/selfadv/60> ns4kge:result "0.237"^^xsd:decimal .
+
+<configuration/selfadv/61> rdf:type ns4kge:Configuration .
+<configuration/selfadv/61> ns4kge:hasTask    <task/link-prediction> .
+<configuration/selfadv/61> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/selfadv/61> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/selfadv/61> ns4kge:hasKGEModel <kge-model/protate> .
+<configuration/selfadv/61> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/selfadv/61> ns4kge:result "0.23"^^xsd:decimal .
+
+<configuration/selfadv/62> rdf:type ns4kge:Configuration .
+<configuration/selfadv/62> ns4kge:hasTask    <task/link-prediction> .
+<configuration/selfadv/62> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/selfadv/62> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/selfadv/62> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/selfadv/62> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/selfadv/62> ns4kge:result "0.375"^^xsd:decimal .
+
+<configuration/selfadv/63> rdf:type ns4kge:Configuration .
+<configuration/selfadv/63> ns4kge:hasTask    <task/link-prediction> .
+<configuration/selfadv/63> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/selfadv/63> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/selfadv/63> ns4kge:hasKGEModel <kge-model/protate> .
+<configuration/selfadv/63> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/selfadv/63> ns4kge:result "0.365"^^xsd:decimal .
+
+<configuration/selfadv/64> rdf:type ns4kge:Configuration .
+<configuration/selfadv/64> ns4kge:hasTask    <task/link-prediction> .
+<configuration/selfadv/64> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/selfadv/64> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/selfadv/64> ns4kge:hasKGEModel <kge-model/conve> .
+<configuration/selfadv/64> ns4kge:result "0.356"^^xsd:decimal .
+
+<configuration/selfadv/65> rdf:type ns4kge:Configuration .
+<configuration/selfadv/65> ns4kge:hasTask    <task/link-prediction> .
+<configuration/selfadv/65> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/selfadv/65> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/selfadv/65> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/selfadv/65> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/selfadv/65> ns4kge:result "0.533"^^xsd:decimal .
+
+<configuration/selfadv/66> rdf:type ns4kge:Configuration .
+<configuration/selfadv/66> ns4kge:hasTask    <task/link-prediction> .
+<configuration/selfadv/66> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/selfadv/66> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/selfadv/66> ns4kge:hasKGEModel <kge-model/protate> .
+<configuration/selfadv/66> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/selfadv/66> ns4kge:result "0.524"^^xsd:decimal .
+
+<configuration/selfadv/67> rdf:type ns4kge:Configuration .
+<configuration/selfadv/67> ns4kge:hasTask    <task/link-prediction> .
+<configuration/selfadv/67> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/selfadv/67> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/selfadv/67> ns4kge:hasKGEModel <kge-model/conve> .
+<configuration/selfadv/67> ns4kge:result "0.501"^^xsd:decimal .
+
+<configuration/selfadv/68> rdf:type ns4kge:Configuration .
+<configuration/selfadv/68> ns4kge:hasTask    <task/link-prediction> .
+<configuration/selfadv/68> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/selfadv/68> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/selfadv/68> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/selfadv/68> ns4kge:result "0.465"^^xsd:decimal .
+
+<configuration/selfadv/69> rdf:type ns4kge:Configuration .
+<configuration/selfadv/69> ns4kge:hasTask    <task/link-prediction> .
+<configuration/selfadv/69> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/selfadv/69> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/selfadv/69> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/selfadv/69> ns4kge:result "0.428"^^xsd:decimal .
+
+<configuration/selfadv/70> rdf:type ns4kge:Configuration .
+<configuration/selfadv/70> ns4kge:hasTask    <task/link-prediction> .
+<configuration/selfadv/70> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/selfadv/70> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/selfadv/70> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/selfadv/70> ns4kge:result "0.419"^^xsd:decimal .
+
+<configuration/selfadv/71> rdf:type ns4kge:Configuration .
+<configuration/selfadv/71> ns4kge:hasTask    <task/link-prediction> .
+<configuration/selfadv/71> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/selfadv/71> ns4kge:hasMetric  <metric/mr> .
+<configuration/selfadv/71> ns4kge:hasKGEModel <kge-model/protate> .
+<configuration/selfadv/71> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/selfadv/71> ns4kge:result "2923"^^xsd:decimal .
+
+<configuration/selfadv/72> rdf:type ns4kge:Configuration .
+<configuration/selfadv/72> ns4kge:hasTask    <task/link-prediction> .
+<configuration/selfadv/72> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/selfadv/72> ns4kge:hasMetric  <metric/mr> .
+<configuration/selfadv/72> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/selfadv/72> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/selfadv/72> ns4kge:result "3340"^^xsd:decimal .
+
+<configuration/selfadv/73> rdf:type ns4kge:Configuration .
+<configuration/selfadv/73> ns4kge:hasTask    <task/link-prediction> .
+<configuration/selfadv/73> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/selfadv/73> ns4kge:hasMetric  <metric/mr> .
+<configuration/selfadv/73> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/selfadv/73> ns4kge:result "3384"^^xsd:decimal .
+
+<configuration/selfadv/74> rdf:type ns4kge:Configuration .
+<configuration/selfadv/74> ns4kge:hasTask    <task/link-prediction> .
+<configuration/selfadv/74> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/selfadv/74> ns4kge:hasMetric  <metric/mrr> .
+<configuration/selfadv/74> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/selfadv/74> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/selfadv/74> ns4kge:result "0.476"^^xsd:decimal .
+
+<configuration/selfadv/75> rdf:type ns4kge:Configuration .
+<configuration/selfadv/75> ns4kge:hasTask    <task/link-prediction> .
+<configuration/selfadv/75> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/selfadv/75> ns4kge:hasMetric  <metric/mrr> .
+<configuration/selfadv/75> ns4kge:hasKGEModel <kge-model/protate> .
+<configuration/selfadv/75> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/selfadv/75> ns4kge:result "0.462"^^xsd:decimal .
+
+<configuration/selfadv/76> rdf:type ns4kge:Configuration .
+<configuration/selfadv/76> ns4kge:hasTask    <task/link-prediction> .
+<configuration/selfadv/76> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/selfadv/76> ns4kge:hasMetric  <metric/mrr> .
+<configuration/selfadv/76> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/selfadv/76> ns4kge:result "0.44"^^xsd:decimal .
+
+<configuration/selfadv/77> rdf:type ns4kge:Configuration .
+<configuration/selfadv/77> ns4kge:hasTask    <task/link-prediction> .
+<configuration/selfadv/77> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/selfadv/77> ns4kge:hasMetric  <metric/mrr> .
+<configuration/selfadv/77> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/selfadv/77> ns4kge:result "0.43"^^xsd:decimal .
+
+<configuration/selfadv/78> rdf:type ns4kge:Configuration .
+<configuration/selfadv/78> ns4kge:hasTask    <task/link-prediction> .
+<configuration/selfadv/78> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/selfadv/78> ns4kge:hasMetric  <metric/mrr> .
+<configuration/selfadv/78> ns4kge:hasKGEModel <kge-model/conve> .
+<configuration/selfadv/78> ns4kge:result "0.43"^^xsd:decimal .
+
+<configuration/selfadv/79> rdf:type ns4kge:Configuration .
+<configuration/selfadv/79> ns4kge:hasTask    <task/link-prediction> .
+<configuration/selfadv/79> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/selfadv/79> ns4kge:hasMetric  <metric/mrr> .
+<configuration/selfadv/79> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/selfadv/79> ns4kge:result "0.226"^^xsd:decimal .
+
+<configuration/selfadv/80> rdf:type ns4kge:Configuration .
+<configuration/selfadv/80> ns4kge:hasTask    <task/link-prediction> .
+<configuration/selfadv/80> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/selfadv/80> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/selfadv/80> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/selfadv/80> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/selfadv/80> ns4kge:result "0.428"^^xsd:decimal .
+
+<configuration/selfadv/81> rdf:type ns4kge:Configuration .
+<configuration/selfadv/81> ns4kge:hasTask    <task/link-prediction> .
+<configuration/selfadv/81> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/selfadv/81> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/selfadv/81> ns4kge:hasKGEModel <kge-model/protate> .
+<configuration/selfadv/81> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/selfadv/81> ns4kge:result "0.417"^^xsd:decimal .
+
+<configuration/selfadv/82> rdf:type ns4kge:Configuration .
+<configuration/selfadv/82> ns4kge:hasTask    <task/link-prediction> .
+<configuration/selfadv/82> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/selfadv/82> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/selfadv/82> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/selfadv/82> ns4kge:result "0.41"^^xsd:decimal .
+
+<configuration/selfadv/83> rdf:type ns4kge:Configuration .
+<configuration/selfadv/83> ns4kge:hasTask    <task/link-prediction> .
+<configuration/selfadv/83> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/selfadv/83> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/selfadv/83> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/selfadv/83> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/selfadv/83> ns4kge:result "0.492"^^xsd:decimal .
+
+<configuration/selfadv/84> rdf:type ns4kge:Configuration .
+<configuration/selfadv/84> ns4kge:hasTask    <task/link-prediction> .
+<configuration/selfadv/84> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/selfadv/84> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/selfadv/84> ns4kge:hasKGEModel <kge-model/protate> .
+<configuration/selfadv/84> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/selfadv/84> ns4kge:result "0.479"^^xsd:decimal .
+
+<configuration/selfadv/85> rdf:type ns4kge:Configuration .
+<configuration/selfadv/85> ns4kge:hasTask    <task/link-prediction> .
+<configuration/selfadv/85> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/selfadv/85> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/selfadv/85> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/selfadv/85> ns4kge:result "0.46"^^xsd:decimal .
+
+<configuration/selfadv/86> rdf:type ns4kge:Configuration .
+<configuration/selfadv/86> ns4kge:hasTask    <task/link-prediction> .
+<configuration/selfadv/86> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/selfadv/86> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/selfadv/86> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/selfadv/86> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/selfadv/86> ns4kge:result "0.571"^^xsd:decimal .
+
+<configuration/selfadv/87> rdf:type ns4kge:Configuration .
+<configuration/selfadv/87> ns4kge:hasTask    <task/link-prediction> .
+<configuration/selfadv/87> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/selfadv/87> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/selfadv/87> ns4kge:hasKGEModel <kge-model/protate> .
+<configuration/selfadv/87> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/selfadv/87> ns4kge:result "0.552"^^xsd:decimal .
+
+<configuration/selfadv/88> rdf:type ns4kge:Configuration .
+<configuration/selfadv/88> ns4kge:hasTask    <task/link-prediction> .
+<configuration/selfadv/88> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/selfadv/88> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/selfadv/88> ns4kge:hasKGEModel <kge-model/conve> .
+<configuration/selfadv/88> ns4kge:result "0.52"^^xsd:decimal .
+
+<configuration/selfadv/89> rdf:type ns4kge:Configuration .
+<configuration/selfadv/89> ns4kge:hasTask    <task/link-prediction> .
+<configuration/selfadv/89> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/selfadv/89> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/selfadv/89> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/selfadv/89> ns4kge:result "0.51"^^xsd:decimal .
+
+<configuration/selfadv/90> rdf:type ns4kge:Configuration .
+<configuration/selfadv/90> ns4kge:hasTask    <task/link-prediction> .
+<configuration/selfadv/90> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/selfadv/90> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/selfadv/90> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/selfadv/90> ns4kge:result "0.501"^^xsd:decimal .
+
+<configuration/selfadv/91> rdf:type ns4kge:Configuration .
+<configuration/selfadv/91> ns4kge:hasTask    <task/link-prediction> .
+<configuration/selfadv/91> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/selfadv/91> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/selfadv/91> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/selfadv/91> ns4kge:result "0.49"^^xsd:decimal .
+
+<configuration/selfadv/92> rdf:type ns4kge:Configuration .
+<configuration/selfadv/92> ns4kge:hasTask    <task/link-prediction> .
+<configuration/selfadv/92> ns4kge:hasDataset <dataset/countries-s1> .
+<configuration/selfadv/92> ns4kge:hasMetric  <metric/auc> .
+<configuration/selfadv/92> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/selfadv/92> ns4kge:result "1"^^xsd:decimal .
+
+<configuration/selfadv/93> rdf:type ns4kge:Configuration .
+<configuration/selfadv/93> ns4kge:hasTask    <task/link-prediction> .
+<configuration/selfadv/93> ns4kge:hasDataset <dataset/countries-s1> .
+<configuration/selfadv/93> ns4kge:hasMetric  <metric/auc> .
+<configuration/selfadv/93> ns4kge:hasKGEModel <kge-model/conve> .
+<configuration/selfadv/93> ns4kge:result "1"^^xsd:decimal .
+
+<configuration/selfadv/94> rdf:type ns4kge:Configuration .
+<configuration/selfadv/94> ns4kge:hasTask    <task/link-prediction> .
+<configuration/selfadv/94> ns4kge:hasDataset <dataset/countries-s1> .
+<configuration/selfadv/94> ns4kge:hasMetric  <metric/auc> .
+<configuration/selfadv/94> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/selfadv/94> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/selfadv/94> ns4kge:result "1"^^xsd:decimal .
+
+<configuration/selfadv/95> rdf:type ns4kge:Configuration .
+<configuration/selfadv/95> ns4kge:hasTask    <task/link-prediction> .
+<configuration/selfadv/95> ns4kge:hasDataset <dataset/countries-s2> .
+<configuration/selfadv/95> ns4kge:hasMetric  <metric/auc> .
+<configuration/selfadv/95> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/selfadv/95> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/selfadv/95> ns4kge:result "1"^^xsd:decimal .
+
+<configuration/selfadv/96> rdf:type ns4kge:Configuration .
+<configuration/selfadv/96> ns4kge:hasTask    <task/link-prediction> .
+<configuration/selfadv/96> ns4kge:hasDataset <dataset/countries-s2> .
+<configuration/selfadv/96> ns4kge:hasMetric  <metric/auc> .
+<configuration/selfadv/96> ns4kge:hasKGEModel <kge-model/conve> .
+<configuration/selfadv/96> ns4kge:result "0.99"^^xsd:decimal .
+
+<configuration/selfadv/97> rdf:type ns4kge:Configuration .
+<configuration/selfadv/97> ns4kge:hasTask    <task/link-prediction> .
+<configuration/selfadv/97> ns4kge:hasDataset <dataset/countries-s2> .
+<configuration/selfadv/97> ns4kge:hasMetric  <metric/auc> .
+<configuration/selfadv/97> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/selfadv/97> ns4kge:result "0.72"^^xsd:decimal .
+
+<configuration/selfadv/98> rdf:type ns4kge:Configuration .
+<configuration/selfadv/98> ns4kge:hasTask    <task/link-prediction> .
+<configuration/selfadv/98> ns4kge:hasDataset <dataset/countries-s3> .
+<configuration/selfadv/98> ns4kge:hasMetric  <metric/auc> .
+<configuration/selfadv/98> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/selfadv/98> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/selfadv/98> ns4kge:result "0.95"^^xsd:decimal .
+
+<configuration/selfadv/99> rdf:type ns4kge:Configuration .
+<configuration/selfadv/99> ns4kge:hasTask    <task/link-prediction> .
+<configuration/selfadv/99> ns4kge:hasDataset <dataset/countries-s3> .
+<configuration/selfadv/99> ns4kge:hasMetric  <metric/auc> .
+<configuration/selfadv/99> ns4kge:hasKGEModel <kge-model/conve> .
+<configuration/selfadv/99> ns4kge:result "0.86"^^xsd:decimal .
+
+<configuration/selfadv/100> rdf:type ns4kge:Configuration .
+<configuration/selfadv/100> ns4kge:hasTask    <task/link-prediction> .
+<configuration/selfadv/100> ns4kge:hasDataset <dataset/countries-s3> .
+<configuration/selfadv/100> ns4kge:hasMetric  <metric/auc> .
+<configuration/selfadv/100> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/selfadv/100> ns4kge:result "0.52"^^xsd:decimal .
+
+<configuration/selfadv/101> rdf:type ns4kge:Configuration .
+<configuration/selfadv/101> ns4kge:hasTask    <task/link-prediction> .
+<configuration/selfadv/101> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/selfadv/101> ns4kge:hasMetric  <metric/mrr> .
+<configuration/selfadv/101> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/selfadv/101> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/selfadv/101> ns4kge:result "0.332"^^xsd:decimal .
+
+<configuration/selfadv/102> rdf:type ns4kge:Configuration .
+<configuration/selfadv/102> ns4kge:hasTask    <task/link-prediction> .
+<configuration/selfadv/102> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/selfadv/102> ns4kge:hasMetric  <metric/mrr> .
+<configuration/selfadv/102> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/selfadv/102> ns4kge:hasNSMethod <ns-method/kbgan> .
+<configuration/selfadv/102> ns4kge:result "0.278"^^xsd:decimal .
+
+<configuration/selfadv/103> rdf:type ns4kge:Configuration .
+<configuration/selfadv/103> ns4kge:hasTask    <task/link-prediction> .
+<configuration/selfadv/103> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/selfadv/103> ns4kge:hasMetric  <metric/mrr> .
+<configuration/selfadv/103> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/selfadv/103> ns4kge:hasNSMethod <ns-method/uniform-negative-sampling> .
+<configuration/selfadv/103> ns4kge:result "0.242"^^xsd:decimal .
+
+<configuration/selfadv/104> rdf:type ns4kge:Configuration .
+<configuration/selfadv/104> ns4kge:hasTask    <task/link-prediction> .
+<configuration/selfadv/104> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/selfadv/104> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/selfadv/104> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/selfadv/104> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/selfadv/104> ns4kge:result "0.531"^^xsd:decimal .
+
+<configuration/selfadv/105> rdf:type ns4kge:Configuration .
+<configuration/selfadv/105> ns4kge:hasTask    <task/link-prediction> .
+<configuration/selfadv/105> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/selfadv/105> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/selfadv/105> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/selfadv/105> ns4kge:hasNSMethod <ns-method/kbgan> .
+<configuration/selfadv/105> ns4kge:result "0.453"^^xsd:decimal .
+
+<configuration/selfadv/106> rdf:type ns4kge:Configuration .
+<configuration/selfadv/106> ns4kge:hasTask    <task/link-prediction> .
+<configuration/selfadv/106> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/selfadv/106> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/selfadv/106> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/selfadv/106> ns4kge:hasNSMethod <ns-method/uniform-negative-sampling> .
+<configuration/selfadv/106> ns4kge:result "0.422"^^xsd:decimal .
+
+<configuration/selfadv/107> rdf:type ns4kge:Configuration .
+<configuration/selfadv/107> ns4kge:hasTask    <task/link-prediction> .
+<configuration/selfadv/107> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/selfadv/107> ns4kge:hasMetric  <metric/mrr> .
+<configuration/selfadv/107> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/selfadv/107> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/selfadv/107> ns4kge:result "0.223"^^xsd:decimal .
+
+<configuration/selfadv/108> rdf:type ns4kge:Configuration .
+<configuration/selfadv/108> ns4kge:hasTask    <task/link-prediction> .
+<configuration/selfadv/108> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/selfadv/108> ns4kge:hasMetric  <metric/mrr> .
+<configuration/selfadv/108> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/selfadv/108> ns4kge:hasNSMethod <ns-method/kbgan> .
+<configuration/selfadv/108> ns4kge:result "0.21"^^xsd:decimal .
+
+<configuration/selfadv/109> rdf:type ns4kge:Configuration .
+<configuration/selfadv/109> ns4kge:hasTask    <task/link-prediction> .
+<configuration/selfadv/109> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/selfadv/109> ns4kge:hasMetric  <metric/mrr> .
+<configuration/selfadv/109> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/selfadv/109> ns4kge:hasNSMethod <ns-method/uniform-negative-sampling> .
+<configuration/selfadv/109> ns4kge:result "0.186"^^xsd:decimal .
+
+<configuration/selfadv/110> rdf:type ns4kge:Configuration .
+<configuration/selfadv/110> ns4kge:hasTask    <task/link-prediction> .
+<configuration/selfadv/110> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/selfadv/110> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/selfadv/110> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/selfadv/110> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/selfadv/110> ns4kge:result "0.51"^^xsd:decimal .
+
+<configuration/selfadv/111> rdf:type ns4kge:Configuration .
+<configuration/selfadv/111> ns4kge:hasTask    <task/link-prediction> .
+<configuration/selfadv/111> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/selfadv/111> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/selfadv/111> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/selfadv/111> ns4kge:hasNSMethod <ns-method/kbgan> .
+<configuration/selfadv/111> ns4kge:result "0.479"^^xsd:decimal .
+
+<configuration/selfadv/112> rdf:type ns4kge:Configuration .
+<configuration/selfadv/112> ns4kge:hasTask    <task/link-prediction> .
+<configuration/selfadv/112> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/selfadv/112> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/selfadv/112> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/selfadv/112> ns4kge:hasNSMethod <ns-method/uniform-negative-sampling> .
+<configuration/selfadv/112> ns4kge:result "0.459"^^xsd:decimal .
+
+<configuration/selfadv/113> rdf:type ns4kge:Configuration .
+<configuration/selfadv/113> ns4kge:hasTask    <task/link-prediction> .
+<configuration/selfadv/113> ns4kge:hasDataset <dataset/wn18> .
+<configuration/selfadv/113> ns4kge:hasMetric  <metric/mrr> .
+<configuration/selfadv/113> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/selfadv/113> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/selfadv/113> ns4kge:result "0.736"^^xsd:decimal .
+
+<configuration/selfadv/114> rdf:type ns4kge:Configuration .
+<configuration/selfadv/114> ns4kge:hasTask    <task/link-prediction> .
+<configuration/selfadv/114> ns4kge:hasDataset <dataset/wn18> .
+<configuration/selfadv/114> ns4kge:hasMetric  <metric/mrr> .
+<configuration/selfadv/114> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/selfadv/114> ns4kge:hasNSMethod <ns-method/kbgan> .
+<configuration/selfadv/114> ns4kge:result "0.705"^^xsd:decimal .
+
+<configuration/selfadv/115> rdf:type ns4kge:Configuration .
+<configuration/selfadv/115> ns4kge:hasTask    <task/link-prediction> .
+<configuration/selfadv/115> ns4kge:hasDataset <dataset/wn18> .
+<configuration/selfadv/115> ns4kge:hasMetric  <metric/mrr> .
+<configuration/selfadv/115> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/selfadv/115> ns4kge:hasNSMethod <ns-method/uniform-negative-sampling> .
+<configuration/selfadv/115> ns4kge:result "0.433"^^xsd:decimal .
+
+<configuration/selfadv/116> rdf:type ns4kge:Configuration .
+<configuration/selfadv/116> ns4kge:hasTask    <task/link-prediction> .
+<configuration/selfadv/116> ns4kge:hasDataset <dataset/wn18> .
+<configuration/selfadv/116> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/selfadv/116> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/selfadv/116> ns4kge:hasNSMethod <ns-method/kbgan> .
+<configuration/selfadv/116> ns4kge:result "0.949"^^xsd:decimal .
+
+<configuration/selfadv/117> rdf:type ns4kge:Configuration .
+<configuration/selfadv/117> ns4kge:hasTask    <task/link-prediction> .
+<configuration/selfadv/117> ns4kge:hasDataset <dataset/wn18> .
+<configuration/selfadv/117> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/selfadv/117> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/selfadv/117> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/selfadv/117> ns4kge:result "0.947"^^xsd:decimal .
+
+<configuration/selfadv/118> rdf:type ns4kge:Configuration .
+<configuration/selfadv/118> ns4kge:hasTask    <task/link-prediction> .
+<configuration/selfadv/118> ns4kge:hasDataset <dataset/wn18> .
+<configuration/selfadv/118> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/selfadv/118> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/selfadv/118> ns4kge:hasNSMethod <ns-method/uniform-negative-sampling> .
+<configuration/selfadv/118> ns4kge:result "0.915"^^xsd:decimal .
+
+<configuration/selfadv/119> rdf:type ns4kge:Configuration .
+<configuration/selfadv/119> ns4kge:hasTask    <task/link-prediction> .
+<configuration/selfadv/119> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/selfadv/119> ns4kge:hasMetric  <metric/mrr> .
+<configuration/selfadv/119> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/selfadv/119> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/selfadv/119> ns4kge:result "0.735"^^xsd:decimal .
+
+<configuration/selfadv/120> rdf:type ns4kge:Configuration .
+<configuration/selfadv/120> ns4kge:hasTask    <task/link-prediction> .
+<configuration/selfadv/120> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/selfadv/120> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/selfadv/120> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/selfadv/120> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/selfadv/120> ns4kge:result "0.871"^^xsd:decimal .
+
+<configuration/selfadv/121> rdf:type ns4kge:Configuration .
+<configuration/selfadv/121> ns4kge:hasTask    <task/link-prediction> .
+<configuration/selfadv/121> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/selfadv/121> ns4kge:hasMetric  <metric/mrr> .
+<configuration/selfadv/121> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/selfadv/121> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/selfadv/121> ns4kge:result "0.78"^^xsd:decimal .
+
+<configuration/selfadv/122> rdf:type ns4kge:Configuration .
+<configuration/selfadv/122> ns4kge:hasTask    <task/link-prediction> .
+<configuration/selfadv/122> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/selfadv/122> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/selfadv/122> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/selfadv/122> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/selfadv/122> ns4kge:result "0.89"^^xsd:decimal .
+
+<configuration/selfadv/123> rdf:type ns4kge:Configuration .
+<configuration/selfadv/123> ns4kge:hasTask    <task/link-prediction> .
+<configuration/selfadv/123> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/selfadv/123> ns4kge:hasMetric  <metric/mrr> .
+<configuration/selfadv/123> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/selfadv/123> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/selfadv/123> ns4kge:result "0.319"^^xsd:decimal .
+
+<configuration/selfadv/124> rdf:type ns4kge:Configuration .
+<configuration/selfadv/124> ns4kge:hasTask    <task/link-prediction> .
+<configuration/selfadv/124> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/selfadv/124> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/selfadv/124> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/selfadv/124> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/selfadv/124> ns4kge:result "0.509"^^xsd:decimal .
+
+<configuration/selfadv/125> rdf:type ns4kge:Configuration .
+<configuration/selfadv/125> ns4kge:hasTask    <task/link-prediction> .
+<configuration/selfadv/125> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/selfadv/125> ns4kge:hasMetric  <metric/mr> .
+<configuration/selfadv/125> ns4kge:hasKGEModel <kge-model/conve> .
+<configuration/selfadv/125> ns4kge:result "1671"^^xsd:decimal .
+
+<configuration/selfadv/126> rdf:type ns4kge:Configuration .
+<configuration/selfadv/126> ns4kge:hasTask    <task/link-prediction> .
+<configuration/selfadv/126> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/selfadv/126> ns4kge:hasMetric  <metric/mr> .
+<configuration/selfadv/126> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/selfadv/126> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/selfadv/126> ns4kge:result "1767"^^xsd:decimal .
+
+<configuration/selfadv/127> rdf:type ns4kge:Configuration .
+<configuration/selfadv/127> ns4kge:hasTask    <task/link-prediction> .
+<configuration/selfadv/127> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/selfadv/127> ns4kge:hasMetric  <metric/mr> .
+<configuration/selfadv/127> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/selfadv/127> ns4kge:result "5926"^^xsd:decimal .
+
+<configuration/selfadv/128> rdf:type ns4kge:Configuration .
+<configuration/selfadv/128> ns4kge:hasTask    <task/link-prediction> .
+<configuration/selfadv/128> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/selfadv/128> ns4kge:hasMetric  <metric/mrr> .
+<configuration/selfadv/128> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/selfadv/128> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/selfadv/128> ns4kge:result "0.495"^^xsd:decimal .
+
+<configuration/selfadv/129> rdf:type ns4kge:Configuration .
+<configuration/selfadv/129> ns4kge:hasTask    <task/link-prediction> .
+<configuration/selfadv/129> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/selfadv/129> ns4kge:hasMetric  <metric/mrr> .
+<configuration/selfadv/129> ns4kge:hasKGEModel <kge-model/conve> .
+<configuration/selfadv/129> ns4kge:result "0.44"^^xsd:decimal .
+
+<configuration/selfadv/130> rdf:type ns4kge:Configuration .
+<configuration/selfadv/130> ns4kge:hasTask    <task/link-prediction> .
+<configuration/selfadv/130> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/selfadv/130> ns4kge:hasMetric  <metric/mrr> .
+<configuration/selfadv/130> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/selfadv/130> ns4kge:result "0.36"^^xsd:decimal .
+
+<configuration/selfadv/131> rdf:type ns4kge:Configuration .
+<configuration/selfadv/131> ns4kge:hasTask    <task/link-prediction> .
+<configuration/selfadv/131> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/selfadv/131> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/selfadv/131> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/selfadv/131> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/selfadv/131> ns4kge:result "0.402"^^xsd:decimal .
+
+<configuration/selfadv/132> rdf:type ns4kge:Configuration .
+<configuration/selfadv/132> ns4kge:hasTask    <task/link-prediction> .
+<configuration/selfadv/132> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/selfadv/132> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/selfadv/132> ns4kge:hasKGEModel <kge-model/conve> .
+<configuration/selfadv/132> ns4kge:result "0.35"^^xsd:decimal .
+
+<configuration/selfadv/133> rdf:type ns4kge:Configuration .
+<configuration/selfadv/133> ns4kge:hasTask    <task/link-prediction> .
+<configuration/selfadv/133> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/selfadv/133> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/selfadv/133> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/selfadv/133> ns4kge:result "0.26"^^xsd:decimal .
+
+<configuration/selfadv/134> rdf:type ns4kge:Configuration .
+<configuration/selfadv/134> ns4kge:hasTask    <task/link-prediction> .
+<configuration/selfadv/134> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/selfadv/134> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/selfadv/134> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/selfadv/134> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/selfadv/134> ns4kge:result "0.55"^^xsd:decimal .
+
+<configuration/selfadv/135> rdf:type ns4kge:Configuration .
+<configuration/selfadv/135> ns4kge:hasTask    <task/link-prediction> .
+<configuration/selfadv/135> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/selfadv/135> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/selfadv/135> ns4kge:hasKGEModel <kge-model/conve> .
+<configuration/selfadv/135> ns4kge:result "0.49"^^xsd:decimal .
+
+<configuration/selfadv/136> rdf:type ns4kge:Configuration .
+<configuration/selfadv/136> ns4kge:hasTask    <task/link-prediction> .
+<configuration/selfadv/136> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/selfadv/136> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/selfadv/136> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/selfadv/136> ns4kge:result "0.4"^^xsd:decimal .
+
+<configuration/selfadv/137> rdf:type ns4kge:Configuration .
+<configuration/selfadv/137> ns4kge:hasTask    <task/link-prediction> .
+<configuration/selfadv/137> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/selfadv/137> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/selfadv/137> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/selfadv/137> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/selfadv/137> ns4kge:result "0.67"^^xsd:decimal .
+
+<configuration/selfadv/138> rdf:type ns4kge:Configuration .
+<configuration/selfadv/138> ns4kge:hasTask    <task/link-prediction> .
+<configuration/selfadv/138> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/selfadv/138> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/selfadv/138> ns4kge:hasKGEModel <kge-model/conve> .
+<configuration/selfadv/138> ns4kge:result "0.62"^^xsd:decimal .
+
+<configuration/selfadv/139> rdf:type ns4kge:Configuration .
+<configuration/selfadv/139> ns4kge:hasTask    <task/link-prediction> .
+<configuration/selfadv/139> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/selfadv/139> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/selfadv/139> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/selfadv/139> ns4kge:result "0.55"^^xsd:decimal .
+
+<configuration/selfadv/140> rdf:type ns4kge:Configuration .
+<configuration/selfadv/140> ns4kge:hasTask    <task/link-prediction> .
+<configuration/selfadv/140> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/selfadv/140> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/selfadv/140> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/selfadv/140> ns4kge:result "0.54"^^xsd:decimal .

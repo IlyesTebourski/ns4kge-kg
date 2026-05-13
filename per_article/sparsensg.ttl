@@ -1,0 +1,949 @@
+<article/sparsensg> rdf:type ns4kge:Article .
+<article/sparsensg> ns4kge:title "A Novel Negative Sampling Based on Frequency of Relational Association Entities for Knowledge Graph Embedding"^^xsd:string .
+<article/sparsensg> ns4kge:date "2021"^^xsd:gYear .
+<article/sparsensg> ns4kge:proposesNSMethod <ns-method/negative-sampling-based-on-frequency-of-relational-association-entities> .
+<article/sparsensg> ns4kge:mentionsNSMethod <ns-method/bernoulli-negative-sampling> .
+<article/sparsensg> ns4kge:mentionsKGEModel <kge-model/transg> .
+<article/sparsensg> ns4kge:mentionsKGEModel <kge-model/sme> .
+<article/sparsensg> ns4kge:mentionsKGEModel <kge-model/ntn> .
+<article/sparsensg> ns4kge:mentionsKGEModel <kge-model/transh> .
+<article/sparsensg> ns4kge:mentionsKGEModel <kge-model/complex> .
+<article/sparsensg> ns4kge:mentionsKGEModel <kge-model/se> .
+<article/sparsensg> ns4kge:mentionsKGEModel <kge-model/distmult> .
+<article/sparsensg> ns4kge:mentionsKGEModel <kge-model/transa> .
+<article/sparsensg> ns4kge:mentionsKGEModel <kge-model/analogy> .
+<article/sparsensg> ns4kge:mentionsKGEModel <kge-model/transd> .
+<article/sparsensg> ns4kge:mentionsKGEModel <kge-model/transe> .
+<article/sparsensg> ns4kge:mentionsKGEModel <kge-model/sse> .
+<article/sparsensg> ns4kge:mentionsKGEModel <kge-model/transr> .
+<article/sparsensg> ns4kge:mentionsKGEModel <kge-model/transparse> .
+<article/sparsensg> ns4kge:hasExperimentation <experimentation/sparsensg> .
+
+<ns-method/negative-sampling-based-on-frequency-of-relational-association-entities> rdf:type ns4kge:NSMethod .
+
+<ns-method/bernoulli-negative-sampling> rdf:type ns4kge:NSMethod .
+<category/static-ns> rdf:type ns4kge:Category .
+
+<ns-method/bernoulli-negative-sampling> ns4kge:hasCategory <category/static-ns> .
+<subcategory/probabilistic> rdf:type ns4kge:Subcategory .
+
+<ns-method/bernoulli-negative-sampling> ns4kge:hasSubcategory <subcategory/probabilistic> .
+
+<kge-model/transg> rdf:type ns4kge:KGEModel .
+
+<kge-model/sme> rdf:type ns4kge:KGEModel .
+
+<kge-model/ntn> rdf:type ns4kge:KGEModel .
+
+<kge-model/transh> rdf:type ns4kge:KGEModel .
+
+<kge-model/complex> rdf:type ns4kge:KGEModel .
+
+<kge-model/se> rdf:type ns4kge:KGEModel .
+
+<kge-model/distmult> rdf:type ns4kge:KGEModel .
+
+<kge-model/transa> rdf:type ns4kge:KGEModel .
+
+<kge-model/analogy> rdf:type ns4kge:KGEModel .
+
+<kge-model/transd> rdf:type ns4kge:KGEModel .
+
+<kge-model/transe> rdf:type ns4kge:KGEModel .
+
+<kge-model/sse> rdf:type ns4kge:KGEModel .
+
+<kge-model/transr> rdf:type ns4kge:KGEModel .
+
+<kge-model/transparse> rdf:type ns4kge:KGEModel .
+
+<dataset/wn18> rdf:type ns4kge:Dataset .
+<task/link-prediction> rdf:type ns4kge:Task .
+<metric/mrr> rdf:type ns4kge:Metric .
+<metric/mr> rdf:type ns4kge:Metric .
+<metric/hits-10> rdf:type ns4kge:Metric .
+<dataset/fb15k> rdf:type ns4kge:Dataset .
+<task/relation-prediction> rdf:type ns4kge:Task .
+<metric/hits-3> rdf:type ns4kge:Metric .
+<task/triple-classification> rdf:type ns4kge:Task .
+<metric/accuracy> rdf:type ns4kge:Metric .
+<loss-function/margin-based-ranking-loss> rdf:type ns4kge:LossFunction .
+<optimizer/sgd> rdf:type ns4kge:Optimizer .
+
+<experimentation/sparsensg> rdf:type ns4kge:Experimentation .
+<experimentation/sparsensg> ns4kge:hasTrainingProtocol <training-protocol/sparsensg> .
+<experimentation/sparsensg> ns4kge:hasConfiguration <configuration/sparsensg/1> .
+<experimentation/sparsensg> ns4kge:hasConfiguration <configuration/sparsensg/2> .
+<experimentation/sparsensg> ns4kge:hasConfiguration <configuration/sparsensg/3> .
+<experimentation/sparsensg> ns4kge:hasConfiguration <configuration/sparsensg/4> .
+<experimentation/sparsensg> ns4kge:hasConfiguration <configuration/sparsensg/5> .
+<experimentation/sparsensg> ns4kge:hasConfiguration <configuration/sparsensg/6> .
+<experimentation/sparsensg> ns4kge:hasConfiguration <configuration/sparsensg/7> .
+<experimentation/sparsensg> ns4kge:hasConfiguration <configuration/sparsensg/8> .
+<experimentation/sparsensg> ns4kge:hasConfiguration <configuration/sparsensg/9> .
+<experimentation/sparsensg> ns4kge:hasConfiguration <configuration/sparsensg/10> .
+<experimentation/sparsensg> ns4kge:hasConfiguration <configuration/sparsensg/11> .
+<experimentation/sparsensg> ns4kge:hasConfiguration <configuration/sparsensg/12> .
+<experimentation/sparsensg> ns4kge:hasConfiguration <configuration/sparsensg/13> .
+<experimentation/sparsensg> ns4kge:hasConfiguration <configuration/sparsensg/14> .
+<experimentation/sparsensg> ns4kge:hasConfiguration <configuration/sparsensg/15> .
+<experimentation/sparsensg> ns4kge:hasConfiguration <configuration/sparsensg/16> .
+<experimentation/sparsensg> ns4kge:hasConfiguration <configuration/sparsensg/17> .
+<experimentation/sparsensg> ns4kge:hasConfiguration <configuration/sparsensg/18> .
+<experimentation/sparsensg> ns4kge:hasConfiguration <configuration/sparsensg/19> .
+<experimentation/sparsensg> ns4kge:hasConfiguration <configuration/sparsensg/20> .
+<experimentation/sparsensg> ns4kge:hasConfiguration <configuration/sparsensg/21> .
+<experimentation/sparsensg> ns4kge:hasConfiguration <configuration/sparsensg/22> .
+<experimentation/sparsensg> ns4kge:hasConfiguration <configuration/sparsensg/23> .
+<experimentation/sparsensg> ns4kge:hasConfiguration <configuration/sparsensg/24> .
+<experimentation/sparsensg> ns4kge:hasConfiguration <configuration/sparsensg/25> .
+<experimentation/sparsensg> ns4kge:hasConfiguration <configuration/sparsensg/26> .
+<experimentation/sparsensg> ns4kge:hasConfiguration <configuration/sparsensg/27> .
+<experimentation/sparsensg> ns4kge:hasConfiguration <configuration/sparsensg/28> .
+<experimentation/sparsensg> ns4kge:hasConfiguration <configuration/sparsensg/29> .
+<experimentation/sparsensg> ns4kge:hasConfiguration <configuration/sparsensg/30> .
+<experimentation/sparsensg> ns4kge:hasConfiguration <configuration/sparsensg/31> .
+<experimentation/sparsensg> ns4kge:hasConfiguration <configuration/sparsensg/32> .
+<experimentation/sparsensg> ns4kge:hasConfiguration <configuration/sparsensg/33> .
+<experimentation/sparsensg> ns4kge:hasConfiguration <configuration/sparsensg/34> .
+<experimentation/sparsensg> ns4kge:hasConfiguration <configuration/sparsensg/35> .
+<experimentation/sparsensg> ns4kge:hasConfiguration <configuration/sparsensg/36> .
+<experimentation/sparsensg> ns4kge:hasConfiguration <configuration/sparsensg/37> .
+<experimentation/sparsensg> ns4kge:hasConfiguration <configuration/sparsensg/38> .
+<experimentation/sparsensg> ns4kge:hasConfiguration <configuration/sparsensg/39> .
+<experimentation/sparsensg> ns4kge:hasConfiguration <configuration/sparsensg/40> .
+<experimentation/sparsensg> ns4kge:hasConfiguration <configuration/sparsensg/41> .
+<experimentation/sparsensg> ns4kge:hasConfiguration <configuration/sparsensg/42> .
+<experimentation/sparsensg> ns4kge:hasConfiguration <configuration/sparsensg/43> .
+<experimentation/sparsensg> ns4kge:hasConfiguration <configuration/sparsensg/44> .
+<experimentation/sparsensg> ns4kge:hasConfiguration <configuration/sparsensg/45> .
+<experimentation/sparsensg> ns4kge:hasConfiguration <configuration/sparsensg/46> .
+<experimentation/sparsensg> ns4kge:hasConfiguration <configuration/sparsensg/47> .
+<experimentation/sparsensg> ns4kge:hasConfiguration <configuration/sparsensg/48> .
+<experimentation/sparsensg> ns4kge:hasConfiguration <configuration/sparsensg/49> .
+<experimentation/sparsensg> ns4kge:hasConfiguration <configuration/sparsensg/50> .
+<experimentation/sparsensg> ns4kge:hasConfiguration <configuration/sparsensg/51> .
+<experimentation/sparsensg> ns4kge:hasConfiguration <configuration/sparsensg/52> .
+<experimentation/sparsensg> ns4kge:hasConfiguration <configuration/sparsensg/53> .
+<experimentation/sparsensg> ns4kge:hasConfiguration <configuration/sparsensg/54> .
+<experimentation/sparsensg> ns4kge:hasConfiguration <configuration/sparsensg/55> .
+<experimentation/sparsensg> ns4kge:hasConfiguration <configuration/sparsensg/56> .
+<experimentation/sparsensg> ns4kge:hasConfiguration <configuration/sparsensg/57> .
+<experimentation/sparsensg> ns4kge:hasConfiguration <configuration/sparsensg/58> .
+<experimentation/sparsensg> ns4kge:hasConfiguration <configuration/sparsensg/59> .
+<experimentation/sparsensg> ns4kge:hasConfiguration <configuration/sparsensg/60> .
+<experimentation/sparsensg> ns4kge:hasConfiguration <configuration/sparsensg/61> .
+<experimentation/sparsensg> ns4kge:hasConfiguration <configuration/sparsensg/62> .
+<experimentation/sparsensg> ns4kge:hasConfiguration <configuration/sparsensg/63> .
+<experimentation/sparsensg> ns4kge:hasConfiguration <configuration/sparsensg/64> .
+<experimentation/sparsensg> ns4kge:hasConfiguration <configuration/sparsensg/65> .
+<experimentation/sparsensg> ns4kge:hasConfiguration <configuration/sparsensg/66> .
+<experimentation/sparsensg> ns4kge:hasConfiguration <configuration/sparsensg/67> .
+<experimentation/sparsensg> ns4kge:hasConfiguration <configuration/sparsensg/68> .
+<experimentation/sparsensg> ns4kge:hasConfiguration <configuration/sparsensg/69> .
+<experimentation/sparsensg> ns4kge:hasConfiguration <configuration/sparsensg/70> .
+<experimentation/sparsensg> ns4kge:hasConfiguration <configuration/sparsensg/71> .
+<experimentation/sparsensg> ns4kge:hasConfiguration <configuration/sparsensg/72> .
+<experimentation/sparsensg> ns4kge:hasConfiguration <configuration/sparsensg/73> .
+<experimentation/sparsensg> ns4kge:hasConfiguration <configuration/sparsensg/74> .
+<experimentation/sparsensg> ns4kge:hasConfiguration <configuration/sparsensg/75> .
+<experimentation/sparsensg> ns4kge:hasConfiguration <configuration/sparsensg/76> .
+<experimentation/sparsensg> ns4kge:hasConfiguration <configuration/sparsensg/77> .
+<experimentation/sparsensg> ns4kge:hasConfiguration <configuration/sparsensg/78> .
+<experimentation/sparsensg> ns4kge:hasConfiguration <configuration/sparsensg/79> .
+<experimentation/sparsensg> ns4kge:hasConfiguration <configuration/sparsensg/80> .
+<experimentation/sparsensg> ns4kge:hasConfiguration <configuration/sparsensg/81> .
+<experimentation/sparsensg> ns4kge:hasConfiguration <configuration/sparsensg/82> .
+<experimentation/sparsensg> ns4kge:hasConfiguration <configuration/sparsensg/83> .
+<experimentation/sparsensg> ns4kge:hasConfiguration <configuration/sparsensg/84> .
+<experimentation/sparsensg> ns4kge:hasConfiguration <configuration/sparsensg/85> .
+<experimentation/sparsensg> ns4kge:hasConfiguration <configuration/sparsensg/86> .
+<experimentation/sparsensg> ns4kge:hasConfiguration <configuration/sparsensg/87> .
+<experimentation/sparsensg> ns4kge:hasConfiguration <configuration/sparsensg/88> .
+<experimentation/sparsensg> ns4kge:hasConfiguration <configuration/sparsensg/89> .
+<experimentation/sparsensg> ns4kge:hasConfiguration <configuration/sparsensg/90> .
+<experimentation/sparsensg> ns4kge:hasConfiguration <configuration/sparsensg/91> .
+<experimentation/sparsensg> ns4kge:hasConfiguration <configuration/sparsensg/92> .
+<experimentation/sparsensg> ns4kge:hasConfiguration <configuration/sparsensg/93> .
+<experimentation/sparsensg> ns4kge:hasConfiguration <configuration/sparsensg/94> .
+<experimentation/sparsensg> ns4kge:hasConfiguration <configuration/sparsensg/95> .
+<experimentation/sparsensg> ns4kge:hasConfiguration <configuration/sparsensg/96> .
+<experimentation/sparsensg> ns4kge:hasConfiguration <configuration/sparsensg/97> .
+<experimentation/sparsensg> ns4kge:hasConfiguration <configuration/sparsensg/98> .
+<experimentation/sparsensg> ns4kge:hasConfiguration <configuration/sparsensg/99> .
+<experimentation/sparsensg> ns4kge:hasConfiguration <configuration/sparsensg/100> .
+<experimentation/sparsensg> ns4kge:hasConfiguration <configuration/sparsensg/101> .
+<experimentation/sparsensg> ns4kge:hasConfiguration <configuration/sparsensg/102> .
+
+<training-protocol/sparsensg> rdf:type ns4kge:TrainingProtocol .
+<training-protocol/sparsensg> ns4kge:hasOptimizer    <optimizer/sgd> .
+<training-protocol/sparsensg> ns4kge:hasLossFunction <loss-function/margin-based-ranking-loss> .
+
+<configuration/sparsensg/1> rdf:type ns4kge:Configuration .
+<configuration/sparsensg/1> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sparsensg/1> ns4kge:hasDataset <dataset/wn18> .
+<configuration/sparsensg/1> ns4kge:hasMetric  <metric/mrr> .
+<configuration/sparsensg/1> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/sparsensg/1> ns4kge:result "0.454"^^xsd:decimal .
+
+<configuration/sparsensg/2> rdf:type ns4kge:Configuration .
+<configuration/sparsensg/2> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sparsensg/2> ns4kge:hasDataset <dataset/wn18> .
+<configuration/sparsensg/2> ns4kge:hasMetric  <metric/mrr> .
+<configuration/sparsensg/2> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/sparsensg/2> ns4kge:hasNSMethod <ns-method/negative-sampling-based-on-frequency-of-relational-association-entities> .
+<configuration/sparsensg/2> ns4kge:result "0.596"^^xsd:decimal .
+
+<configuration/sparsensg/3> rdf:type ns4kge:Configuration .
+<configuration/sparsensg/3> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sparsensg/3> ns4kge:hasDataset <dataset/wn18> .
+<configuration/sparsensg/3> ns4kge:hasMetric  <metric/mrr> .
+<configuration/sparsensg/3> ns4kge:hasKGEModel <kge-model/transh> .
+<configuration/sparsensg/3> ns4kge:hasNSMethod <ns-method/negative-sampling-based-on-frequency-of-relational-association-entities> .
+<configuration/sparsensg/3> ns4kge:result "0.591"^^xsd:decimal .
+
+<configuration/sparsensg/4> rdf:type ns4kge:Configuration .
+<configuration/sparsensg/4> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sparsensg/4> ns4kge:hasDataset <dataset/wn18> .
+<configuration/sparsensg/4> ns4kge:hasMetric  <metric/mrr> .
+<configuration/sparsensg/4> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/sparsensg/4> ns4kge:hasNSMethod <ns-method/negative-sampling-based-on-frequency-of-relational-association-entities> .
+<configuration/sparsensg/4> ns4kge:result "0.942"^^xsd:decimal .
+
+<configuration/sparsensg/5> rdf:type ns4kge:Configuration .
+<configuration/sparsensg/5> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sparsensg/5> ns4kge:hasDataset <dataset/wn18> .
+<configuration/sparsensg/5> ns4kge:hasMetric  <metric/mrr> .
+<configuration/sparsensg/5> ns4kge:hasKGEModel <kge-model/analogy> .
+<configuration/sparsensg/5> ns4kge:result "0.942"^^xsd:decimal .
+
+<configuration/sparsensg/6> rdf:type ns4kge:Configuration .
+<configuration/sparsensg/6> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sparsensg/6> ns4kge:hasDataset <dataset/wn18> .
+<configuration/sparsensg/6> ns4kge:hasMetric  <metric/mrr> .
+<configuration/sparsensg/6> ns4kge:hasKGEModel <kge-model/analogy> .
+<configuration/sparsensg/6> ns4kge:hasNSMethod <ns-method/negative-sampling-based-on-frequency-of-relational-association-entities> .
+<configuration/sparsensg/6> ns4kge:result "0.94"^^xsd:decimal .
+
+<configuration/sparsensg/7> rdf:type ns4kge:Configuration .
+<configuration/sparsensg/7> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sparsensg/7> ns4kge:hasDataset <dataset/wn18> .
+<configuration/sparsensg/7> ns4kge:hasMetric  <metric/mrr> .
+<configuration/sparsensg/7> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/sparsensg/7> ns4kge:result "0.941"^^xsd:decimal .
+
+<configuration/sparsensg/8> rdf:type ns4kge:Configuration .
+<configuration/sparsensg/8> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sparsensg/8> ns4kge:hasDataset <dataset/wn18> .
+<configuration/sparsensg/8> ns4kge:hasMetric  <metric/mrr> .
+<configuration/sparsensg/8> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/sparsensg/8> ns4kge:result "0.882"^^xsd:decimal .
+
+<configuration/sparsensg/9> rdf:type ns4kge:Configuration .
+<configuration/sparsensg/9> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sparsensg/9> ns4kge:hasDataset <dataset/wn18> .
+<configuration/sparsensg/9> ns4kge:hasMetric  <metric/mrr> .
+<configuration/sparsensg/9> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/sparsensg/9> ns4kge:hasNSMethod <ns-method/negative-sampling-based-on-frequency-of-relational-association-entities> .
+<configuration/sparsensg/9> ns4kge:result "0.83"^^xsd:decimal .
+
+<configuration/sparsensg/10> rdf:type ns4kge:Configuration .
+<configuration/sparsensg/10> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sparsensg/10> ns4kge:hasDataset <dataset/wn18> .
+<configuration/sparsensg/10> ns4kge:hasMetric  <metric/mr> .
+<configuration/sparsensg/10> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/sparsensg/10> ns4kge:result "251"^^xsd:decimal .
+
+<configuration/sparsensg/11> rdf:type ns4kge:Configuration .
+<configuration/sparsensg/11> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sparsensg/11> ns4kge:hasDataset <dataset/wn18> .
+<configuration/sparsensg/11> ns4kge:hasMetric  <metric/mr> .
+<configuration/sparsensg/11> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/sparsensg/11> ns4kge:hasNSMethod <ns-method/negative-sampling-based-on-frequency-of-relational-association-entities> .
+<configuration/sparsensg/11> ns4kge:result "199.5"^^xsd:decimal .
+
+<configuration/sparsensg/12> rdf:type ns4kge:Configuration .
+<configuration/sparsensg/12> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sparsensg/12> ns4kge:hasDataset <dataset/wn18> .
+<configuration/sparsensg/12> ns4kge:hasMetric  <metric/mr> .
+<configuration/sparsensg/12> ns4kge:hasKGEModel <kge-model/transh> .
+<configuration/sparsensg/12> ns4kge:hasNSMethod <ns-method/negative-sampling-based-on-frequency-of-relational-association-entities> .
+<configuration/sparsensg/12> ns4kge:result "188.2"^^xsd:decimal .
+
+<configuration/sparsensg/13> rdf:type ns4kge:Configuration .
+<configuration/sparsensg/13> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sparsensg/13> ns4kge:hasDataset <dataset/wn18> .
+<configuration/sparsensg/13> ns4kge:hasMetric  <metric/mr> .
+<configuration/sparsensg/13> ns4kge:hasKGEModel <kge-model/transh> .
+<configuration/sparsensg/13> ns4kge:result "388"^^xsd:decimal .
+
+<configuration/sparsensg/14> rdf:type ns4kge:Configuration .
+<configuration/sparsensg/14> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sparsensg/14> ns4kge:hasDataset <dataset/wn18> .
+<configuration/sparsensg/14> ns4kge:hasMetric  <metric/mr> .
+<configuration/sparsensg/14> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/sparsensg/14> ns4kge:hasNSMethod <ns-method/negative-sampling-based-on-frequency-of-relational-association-entities> .
+<configuration/sparsensg/14> ns4kge:result "285"^^xsd:decimal .
+
+<configuration/sparsensg/15> rdf:type ns4kge:Configuration .
+<configuration/sparsensg/15> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sparsensg/15> ns4kge:hasDataset <dataset/wn18> .
+<configuration/sparsensg/15> ns4kge:hasMetric  <metric/mr> .
+<configuration/sparsensg/15> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/sparsensg/15> ns4kge:hasNSMethod <ns-method/negative-sampling-based-on-frequency-of-relational-association-entities> .
+<configuration/sparsensg/15> ns4kge:result "327"^^xsd:decimal .
+
+<configuration/sparsensg/16> rdf:type ns4kge:Configuration .
+<configuration/sparsensg/16> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sparsensg/16> ns4kge:hasDataset <dataset/wn18> .
+<configuration/sparsensg/16> ns4kge:hasMetric  <metric/mr> .
+<configuration/sparsensg/16> ns4kge:hasKGEModel <kge-model/analogy> .
+<configuration/sparsensg/16> ns4kge:hasNSMethod <ns-method/negative-sampling-based-on-frequency-of-relational-association-entities> .
+<configuration/sparsensg/16> ns4kge:result "336"^^xsd:decimal .
+
+<configuration/sparsensg/17> rdf:type ns4kge:Configuration .
+<configuration/sparsensg/17> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sparsensg/17> ns4kge:hasDataset <dataset/wn18> .
+<configuration/sparsensg/17> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/sparsensg/17> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/sparsensg/17> ns4kge:result "0.947"^^xsd:decimal .
+
+<configuration/sparsensg/18> rdf:type ns4kge:Configuration .
+<configuration/sparsensg/18> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sparsensg/18> ns4kge:hasDataset <dataset/wn18> .
+<configuration/sparsensg/18> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/sparsensg/18> ns4kge:hasKGEModel <kge-model/analogy> .
+<configuration/sparsensg/18> ns4kge:result "0.947"^^xsd:decimal .
+
+<configuration/sparsensg/19> rdf:type ns4kge:Configuration .
+<configuration/sparsensg/19> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sparsensg/19> ns4kge:hasDataset <dataset/wn18> .
+<configuration/sparsensg/19> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/sparsensg/19> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/sparsensg/19> ns4kge:hasNSMethod <ns-method/negative-sampling-based-on-frequency-of-relational-association-entities> .
+<configuration/sparsensg/19> ns4kge:result "0.945"^^xsd:decimal .
+
+<configuration/sparsensg/20> rdf:type ns4kge:Configuration .
+<configuration/sparsensg/20> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sparsensg/20> ns4kge:hasDataset <dataset/wn18> .
+<configuration/sparsensg/20> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/sparsensg/20> ns4kge:hasKGEModel <kge-model/analogy> .
+<configuration/sparsensg/20> ns4kge:hasNSMethod <ns-method/negative-sampling-based-on-frequency-of-relational-association-entities> .
+<configuration/sparsensg/20> ns4kge:result "0.942"^^xsd:decimal .
+
+<configuration/sparsensg/21> rdf:type ns4kge:Configuration .
+<configuration/sparsensg/21> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sparsensg/21> ns4kge:hasDataset <dataset/wn18> .
+<configuration/sparsensg/21> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/sparsensg/21> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/sparsensg/21> ns4kge:hasNSMethod <ns-method/negative-sampling-based-on-frequency-of-relational-association-entities> .
+<configuration/sparsensg/21> ns4kge:result "0.94"^^xsd:decimal .
+
+<configuration/sparsensg/22> rdf:type ns4kge:Configuration .
+<configuration/sparsensg/22> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sparsensg/22> ns4kge:hasDataset <dataset/wn18> .
+<configuration/sparsensg/22> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/sparsensg/22> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/sparsensg/22> ns4kge:result "0.936"^^xsd:decimal .
+
+<configuration/sparsensg/23> rdf:type ns4kge:Configuration .
+<configuration/sparsensg/23> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sparsensg/23> ns4kge:hasDataset <dataset/wn18> .
+<configuration/sparsensg/23> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/sparsensg/23> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/sparsensg/23> ns4kge:result "0.892"^^xsd:decimal .
+
+<configuration/sparsensg/24> rdf:type ns4kge:Configuration .
+<configuration/sparsensg/24> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sparsensg/24> ns4kge:hasDataset <dataset/wn18> .
+<configuration/sparsensg/24> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/sparsensg/24> ns4kge:hasKGEModel <kge-model/transh> .
+<configuration/sparsensg/24> ns4kge:hasNSMethod <ns-method/negative-sampling-based-on-frequency-of-relational-association-entities> .
+<configuration/sparsensg/24> ns4kge:result "0.858"^^xsd:decimal .
+
+<configuration/sparsensg/25> rdf:type ns4kge:Configuration .
+<configuration/sparsensg/25> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sparsensg/25> ns4kge:hasDataset <dataset/wn18> .
+<configuration/sparsensg/25> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/sparsensg/25> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/sparsensg/25> ns4kge:hasNSMethod <ns-method/negative-sampling-based-on-frequency-of-relational-association-entities> .
+<configuration/sparsensg/25> ns4kge:result "0.826"^^xsd:decimal .
+
+<configuration/sparsensg/26> rdf:type ns4kge:Configuration .
+<configuration/sparsensg/26> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sparsensg/26> ns4kge:hasDataset <dataset/wn18> .
+<configuration/sparsensg/26> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/sparsensg/26> ns4kge:hasKGEModel <kge-model/transh> .
+<configuration/sparsensg/26> ns4kge:result "0.823"^^xsd:decimal .
+
+<configuration/sparsensg/27> rdf:type ns4kge:Configuration .
+<configuration/sparsensg/27> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sparsensg/27> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/sparsensg/27> ns4kge:hasMetric  <metric/mrr> .
+<configuration/sparsensg/27> ns4kge:hasKGEModel <kge-model/analogy> .
+<configuration/sparsensg/27> ns4kge:result "0.725"^^xsd:decimal .
+
+<configuration/sparsensg/28> rdf:type ns4kge:Configuration .
+<configuration/sparsensg/28> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sparsensg/28> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/sparsensg/28> ns4kge:hasMetric  <metric/mrr> .
+<configuration/sparsensg/28> ns4kge:hasKGEModel <kge-model/analogy> .
+<configuration/sparsensg/28> ns4kge:hasNSMethod <ns-method/negative-sampling-based-on-frequency-of-relational-association-entities> .
+<configuration/sparsensg/28> ns4kge:result "0.693"^^xsd:decimal .
+
+<configuration/sparsensg/29> rdf:type ns4kge:Configuration .
+<configuration/sparsensg/29> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sparsensg/29> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/sparsensg/29> ns4kge:hasMetric  <metric/mrr> .
+<configuration/sparsensg/29> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/sparsensg/29> ns4kge:result "0.692"^^xsd:decimal .
+
+<configuration/sparsensg/30> rdf:type ns4kge:Configuration .
+<configuration/sparsensg/30> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sparsensg/30> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/sparsensg/30> ns4kge:hasMetric  <metric/mrr> .
+<configuration/sparsensg/30> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/sparsensg/30> ns4kge:hasNSMethod <ns-method/negative-sampling-based-on-frequency-of-relational-association-entities> .
+<configuration/sparsensg/30> ns4kge:result "0.686"^^xsd:decimal .
+
+<configuration/sparsensg/31> rdf:type ns4kge:Configuration .
+<configuration/sparsensg/31> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sparsensg/31> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/sparsensg/31> ns4kge:hasMetric  <metric/mrr> .
+<configuration/sparsensg/31> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/sparsensg/31> ns4kge:result "0.654"^^xsd:decimal .
+
+<configuration/sparsensg/32> rdf:type ns4kge:Configuration .
+<configuration/sparsensg/32> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sparsensg/32> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/sparsensg/32> ns4kge:hasMetric  <metric/mrr> .
+<configuration/sparsensg/32> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/sparsensg/32> ns4kge:hasNSMethod <ns-method/negative-sampling-based-on-frequency-of-relational-association-entities> .
+<configuration/sparsensg/32> ns4kge:result "0.65"^^xsd:decimal .
+
+<configuration/sparsensg/33> rdf:type ns4kge:Configuration .
+<configuration/sparsensg/33> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sparsensg/33> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/sparsensg/33> ns4kge:hasMetric  <metric/mrr> .
+<configuration/sparsensg/33> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/sparsensg/33> ns4kge:hasNSMethod <ns-method/negative-sampling-based-on-frequency-of-relational-association-entities> .
+<configuration/sparsensg/33> ns4kge:result "0.509"^^xsd:decimal .
+
+<configuration/sparsensg/34> rdf:type ns4kge:Configuration .
+<configuration/sparsensg/34> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sparsensg/34> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/sparsensg/34> ns4kge:hasMetric  <metric/mrr> .
+<configuration/sparsensg/34> ns4kge:hasKGEModel <kge-model/transh> .
+<configuration/sparsensg/34> ns4kge:hasNSMethod <ns-method/negative-sampling-based-on-frequency-of-relational-association-entities> .
+<configuration/sparsensg/34> ns4kge:result "0.508"^^xsd:decimal .
+
+<configuration/sparsensg/35> rdf:type ns4kge:Configuration .
+<configuration/sparsensg/35> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sparsensg/35> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/sparsensg/35> ns4kge:hasMetric  <metric/mrr> .
+<configuration/sparsensg/35> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/sparsensg/35> ns4kge:result "0.38"^^xsd:decimal .
+
+<configuration/sparsensg/36> rdf:type ns4kge:Configuration .
+<configuration/sparsensg/36> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sparsensg/36> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/sparsensg/36> ns4kge:hasMetric  <metric/mr> .
+<configuration/sparsensg/36> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/sparsensg/36> ns4kge:hasNSMethod <ns-method/negative-sampling-based-on-frequency-of-relational-association-entities> .
+<configuration/sparsensg/36> ns4kge:result "41.4"^^xsd:decimal .
+
+<configuration/sparsensg/37> rdf:type ns4kge:Configuration .
+<configuration/sparsensg/37> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sparsensg/37> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/sparsensg/37> ns4kge:hasMetric  <metric/mr> .
+<configuration/sparsensg/37> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/sparsensg/37> ns4kge:hasNSMethod <ns-method/negative-sampling-based-on-frequency-of-relational-association-entities> .
+<configuration/sparsensg/37> ns4kge:result "42.7"^^xsd:decimal .
+
+<configuration/sparsensg/38> rdf:type ns4kge:Configuration .
+<configuration/sparsensg/38> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sparsensg/38> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/sparsensg/38> ns4kge:hasMetric  <metric/mr> .
+<configuration/sparsensg/38> ns4kge:hasKGEModel <kge-model/analogy> .
+<configuration/sparsensg/38> ns4kge:hasNSMethod <ns-method/negative-sampling-based-on-frequency-of-relational-association-entities> .
+<configuration/sparsensg/38> ns4kge:result "42.9"^^xsd:decimal .
+
+<configuration/sparsensg/39> rdf:type ns4kge:Configuration .
+<configuration/sparsensg/39> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sparsensg/39> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/sparsensg/39> ns4kge:hasMetric  <metric/mr> .
+<configuration/sparsensg/39> ns4kge:hasKGEModel <kge-model/transh> .
+<configuration/sparsensg/39> ns4kge:hasNSMethod <ns-method/negative-sampling-based-on-frequency-of-relational-association-entities> .
+<configuration/sparsensg/39> ns4kge:result "47.5"^^xsd:decimal .
+
+<configuration/sparsensg/40> rdf:type ns4kge:Configuration .
+<configuration/sparsensg/40> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sparsensg/40> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/sparsensg/40> ns4kge:hasMetric  <metric/mr> .
+<configuration/sparsensg/40> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/sparsensg/40> ns4kge:hasNSMethod <ns-method/negative-sampling-based-on-frequency-of-relational-association-entities> .
+<configuration/sparsensg/40> ns4kge:result "47.9"^^xsd:decimal .
+
+<configuration/sparsensg/41> rdf:type ns4kge:Configuration .
+<configuration/sparsensg/41> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sparsensg/41> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/sparsensg/41> ns4kge:hasMetric  <metric/mr> .
+<configuration/sparsensg/41> ns4kge:hasKGEModel <kge-model/transh> .
+<configuration/sparsensg/41> ns4kge:result "87"^^xsd:decimal .
+
+<configuration/sparsensg/42> rdf:type ns4kge:Configuration .
+<configuration/sparsensg/42> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sparsensg/42> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/sparsensg/42> ns4kge:hasMetric  <metric/mr> .
+<configuration/sparsensg/42> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/sparsensg/42> ns4kge:result "125"^^xsd:decimal .
+
+<configuration/sparsensg/43> rdf:type ns4kge:Configuration .
+<configuration/sparsensg/43> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sparsensg/43> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/sparsensg/43> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/sparsensg/43> ns4kge:hasKGEModel <kge-model/analogy> .
+<configuration/sparsensg/43> ns4kge:result "0.854"^^xsd:decimal .
+
+<configuration/sparsensg/44> rdf:type ns4kge:Configuration .
+<configuration/sparsensg/44> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sparsensg/44> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/sparsensg/44> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/sparsensg/44> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/sparsensg/44> ns4kge:result "0.84"^^xsd:decimal .
+
+<configuration/sparsensg/45> rdf:type ns4kge:Configuration .
+<configuration/sparsensg/45> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sparsensg/45> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/sparsensg/45> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/sparsensg/45> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/sparsensg/45> ns4kge:hasNSMethod <ns-method/negative-sampling-based-on-frequency-of-relational-association-entities> .
+<configuration/sparsensg/45> ns4kge:result "0.827"^^xsd:decimal .
+
+<configuration/sparsensg/46> rdf:type ns4kge:Configuration .
+<configuration/sparsensg/46> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sparsensg/46> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/sparsensg/46> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/sparsensg/46> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/sparsensg/46> ns4kge:hasNSMethod <ns-method/negative-sampling-based-on-frequency-of-relational-association-entities> .
+<configuration/sparsensg/46> ns4kge:result "0.827"^^xsd:decimal .
+
+<configuration/sparsensg/47> rdf:type ns4kge:Configuration .
+<configuration/sparsensg/47> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sparsensg/47> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/sparsensg/47> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/sparsensg/47> ns4kge:hasKGEModel <kge-model/analogy> .
+<configuration/sparsensg/47> ns4kge:hasNSMethod <ns-method/negative-sampling-based-on-frequency-of-relational-association-entities> .
+<configuration/sparsensg/47> ns4kge:result "0.827"^^xsd:decimal .
+
+<configuration/sparsensg/48> rdf:type ns4kge:Configuration .
+<configuration/sparsensg/48> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sparsensg/48> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/sparsensg/48> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/sparsensg/48> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/sparsensg/48> ns4kge:result "0.824"^^xsd:decimal .
+
+<configuration/sparsensg/49> rdf:type ns4kge:Configuration .
+<configuration/sparsensg/49> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sparsensg/49> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/sparsensg/49> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/sparsensg/49> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/sparsensg/49> ns4kge:hasNSMethod <ns-method/negative-sampling-based-on-frequency-of-relational-association-entities> .
+<configuration/sparsensg/49> ns4kge:result "0.741"^^xsd:decimal .
+
+<configuration/sparsensg/50> rdf:type ns4kge:Configuration .
+<configuration/sparsensg/50> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sparsensg/50> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/sparsensg/50> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/sparsensg/50> ns4kge:hasKGEModel <kge-model/transh> .
+<configuration/sparsensg/50> ns4kge:hasNSMethod <ns-method/negative-sampling-based-on-frequency-of-relational-association-entities> .
+<configuration/sparsensg/50> ns4kge:result "0.741"^^xsd:decimal .
+
+<configuration/sparsensg/51> rdf:type ns4kge:Configuration .
+<configuration/sparsensg/51> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sparsensg/51> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/sparsensg/51> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/sparsensg/51> ns4kge:hasKGEModel <kge-model/transh> .
+<configuration/sparsensg/51> ns4kge:result "0.644"^^xsd:decimal .
+
+<configuration/sparsensg/52> rdf:type ns4kge:Configuration .
+<configuration/sparsensg/52> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sparsensg/52> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/sparsensg/52> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/sparsensg/52> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/sparsensg/52> ns4kge:result "0.471"^^xsd:decimal .
+
+<configuration/sparsensg/53> rdf:type ns4kge:Configuration .
+<configuration/sparsensg/53> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/sparsensg/53> ns4kge:hasDataset <dataset/wn18> .
+<configuration/sparsensg/53> ns4kge:hasMetric  <metric/mr> .
+<configuration/sparsensg/53> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/sparsensg/53> ns4kge:hasNSMethod <ns-method/negative-sampling-based-on-frequency-of-relational-association-entities> .
+<configuration/sparsensg/53> ns4kge:result "2.96"^^xsd:decimal .
+
+<configuration/sparsensg/54> rdf:type ns4kge:Configuration .
+<configuration/sparsensg/54> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/sparsensg/54> ns4kge:hasDataset <dataset/wn18> .
+<configuration/sparsensg/54> ns4kge:hasMetric  <metric/mr> .
+<configuration/sparsensg/54> ns4kge:hasKGEModel <kge-model/transh> .
+<configuration/sparsensg/54> ns4kge:hasNSMethod <ns-method/negative-sampling-based-on-frequency-of-relational-association-entities> .
+<configuration/sparsensg/54> ns4kge:result "2.92"^^xsd:decimal .
+
+<configuration/sparsensg/55> rdf:type ns4kge:Configuration .
+<configuration/sparsensg/55> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/sparsensg/55> ns4kge:hasDataset <dataset/wn18> .
+<configuration/sparsensg/55> ns4kge:hasMetric  <metric/mr> .
+<configuration/sparsensg/55> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/sparsensg/55> ns4kge:hasNSMethod <ns-method/negative-sampling-based-on-frequency-of-relational-association-entities> .
+<configuration/sparsensg/55> ns4kge:result "2.97"^^xsd:decimal .
+
+<configuration/sparsensg/56> rdf:type ns4kge:Configuration .
+<configuration/sparsensg/56> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/sparsensg/56> ns4kge:hasDataset <dataset/wn18> .
+<configuration/sparsensg/56> ns4kge:hasMetric  <metric/mr> .
+<configuration/sparsensg/56> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/sparsensg/56> ns4kge:result "3.02"^^xsd:decimal .
+
+<configuration/sparsensg/57> rdf:type ns4kge:Configuration .
+<configuration/sparsensg/57> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/sparsensg/57> ns4kge:hasDataset <dataset/wn18> .
+<configuration/sparsensg/57> ns4kge:hasMetric  <metric/mr> .
+<configuration/sparsensg/57> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/sparsensg/57> ns4kge:hasNSMethod <ns-method/negative-sampling-based-on-frequency-of-relational-association-entities> .
+<configuration/sparsensg/57> ns4kge:result "3.14"^^xsd:decimal .
+
+<configuration/sparsensg/58> rdf:type ns4kge:Configuration .
+<configuration/sparsensg/58> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/sparsensg/58> ns4kge:hasDataset <dataset/wn18> .
+<configuration/sparsensg/58> ns4kge:hasMetric  <metric/mr> .
+<configuration/sparsensg/58> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/sparsensg/58> ns4kge:result "3.16"^^xsd:decimal .
+
+<configuration/sparsensg/59> rdf:type ns4kge:Configuration .
+<configuration/sparsensg/59> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/sparsensg/59> ns4kge:hasDataset <dataset/wn18> .
+<configuration/sparsensg/59> ns4kge:hasMetric  <metric/mr> .
+<configuration/sparsensg/59> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/sparsensg/59> ns4kge:result "3.27"^^xsd:decimal .
+
+<configuration/sparsensg/60> rdf:type ns4kge:Configuration .
+<configuration/sparsensg/60> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/sparsensg/60> ns4kge:hasDataset <dataset/wn18> .
+<configuration/sparsensg/60> ns4kge:hasMetric  <metric/mr> .
+<configuration/sparsensg/60> ns4kge:hasKGEModel <kge-model/transh> .
+<configuration/sparsensg/60> ns4kge:result "3.34"^^xsd:decimal .
+
+<configuration/sparsensg/61> rdf:type ns4kge:Configuration .
+<configuration/sparsensg/61> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/sparsensg/61> ns4kge:hasDataset <dataset/wn18> .
+<configuration/sparsensg/61> ns4kge:hasMetric  <metric/mr> .
+<configuration/sparsensg/61> ns4kge:hasKGEModel <kge-model/analogy> .
+<configuration/sparsensg/61> ns4kge:hasNSMethod <ns-method/negative-sampling-based-on-frequency-of-relational-association-entities> .
+<configuration/sparsensg/61> ns4kge:result "3.49"^^xsd:decimal .
+
+<configuration/sparsensg/62> rdf:type ns4kge:Configuration .
+<configuration/sparsensg/62> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/sparsensg/62> ns4kge:hasDataset <dataset/wn18> .
+<configuration/sparsensg/62> ns4kge:hasMetric  <metric/mr> .
+<configuration/sparsensg/62> ns4kge:hasKGEModel <kge-model/analogy> .
+<configuration/sparsensg/62> ns4kge:result "3.57"^^xsd:decimal .
+
+<configuration/sparsensg/63> rdf:type ns4kge:Configuration .
+<configuration/sparsensg/63> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/sparsensg/63> ns4kge:hasDataset <dataset/wn18> .
+<configuration/sparsensg/63> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/sparsensg/63> ns4kge:hasKGEModel <kge-model/analogy> .
+<configuration/sparsensg/63> ns4kge:hasNSMethod <ns-method/negative-sampling-based-on-frequency-of-relational-association-entities> .
+<configuration/sparsensg/63> ns4kge:result "0.783"^^xsd:decimal .
+
+<configuration/sparsensg/64> rdf:type ns4kge:Configuration .
+<configuration/sparsensg/64> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/sparsensg/64> ns4kge:hasDataset <dataset/wn18> .
+<configuration/sparsensg/64> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/sparsensg/64> ns4kge:hasKGEModel <kge-model/analogy> .
+<configuration/sparsensg/64> ns4kge:result "0.769"^^xsd:decimal .
+
+<configuration/sparsensg/65> rdf:type ns4kge:Configuration .
+<configuration/sparsensg/65> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/sparsensg/65> ns4kge:hasDataset <dataset/wn18> .
+<configuration/sparsensg/65> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/sparsensg/65> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/sparsensg/65> ns4kge:hasNSMethod <ns-method/negative-sampling-based-on-frequency-of-relational-association-entities> .
+<configuration/sparsensg/65> ns4kge:result "0.762"^^xsd:decimal .
+
+<configuration/sparsensg/66> rdf:type ns4kge:Configuration .
+<configuration/sparsensg/66> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/sparsensg/66> ns4kge:hasDataset <dataset/wn18> .
+<configuration/sparsensg/66> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/sparsensg/66> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/sparsensg/66> ns4kge:result "0.757"^^xsd:decimal .
+
+<configuration/sparsensg/67> rdf:type ns4kge:Configuration .
+<configuration/sparsensg/67> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/sparsensg/67> ns4kge:hasDataset <dataset/wn18> .
+<configuration/sparsensg/67> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/sparsensg/67> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/sparsensg/67> ns4kge:hasNSMethod <ns-method/negative-sampling-based-on-frequency-of-relational-association-entities> .
+<configuration/sparsensg/67> ns4kge:result "0.749"^^xsd:decimal .
+
+<configuration/sparsensg/68> rdf:type ns4kge:Configuration .
+<configuration/sparsensg/68> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/sparsensg/68> ns4kge:hasDataset <dataset/wn18> .
+<configuration/sparsensg/68> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/sparsensg/68> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/sparsensg/68> ns4kge:hasNSMethod <ns-method/negative-sampling-based-on-frequency-of-relational-association-entities> .
+<configuration/sparsensg/68> ns4kge:result "0.748"^^xsd:decimal .
+
+<configuration/sparsensg/69> rdf:type ns4kge:Configuration .
+<configuration/sparsensg/69> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/sparsensg/69> ns4kge:hasDataset <dataset/wn18> .
+<configuration/sparsensg/69> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/sparsensg/69> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/sparsensg/69> ns4kge:result "0.7364"^^xsd:decimal .
+
+<configuration/sparsensg/70> rdf:type ns4kge:Configuration .
+<configuration/sparsensg/70> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/sparsensg/70> ns4kge:hasDataset <dataset/wn18> .
+<configuration/sparsensg/70> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/sparsensg/70> ns4kge:hasKGEModel <kge-model/transh> .
+<configuration/sparsensg/70> ns4kge:hasNSMethod <ns-method/negative-sampling-based-on-frequency-of-relational-association-entities> .
+<configuration/sparsensg/70> ns4kge:result "0.736"^^xsd:decimal .
+
+<configuration/sparsensg/71> rdf:type ns4kge:Configuration .
+<configuration/sparsensg/71> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/sparsensg/71> ns4kge:hasDataset <dataset/wn18> .
+<configuration/sparsensg/71> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/sparsensg/71> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/sparsensg/71> ns4kge:result "0.726"^^xsd:decimal .
+
+<configuration/sparsensg/72> rdf:type ns4kge:Configuration .
+<configuration/sparsensg/72> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/sparsensg/72> ns4kge:hasDataset <dataset/wn18> .
+<configuration/sparsensg/72> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/sparsensg/72> ns4kge:hasKGEModel <kge-model/transh> .
+<configuration/sparsensg/72> ns4kge:result "0.701"^^xsd:decimal .
+
+<configuration/sparsensg/73> rdf:type ns4kge:Configuration .
+<configuration/sparsensg/73> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/sparsensg/73> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/sparsensg/73> ns4kge:hasMetric  <metric/mr> .
+<configuration/sparsensg/73> ns4kge:hasKGEModel <kge-model/transh> .
+<configuration/sparsensg/73> ns4kge:hasNSMethod <ns-method/negative-sampling-based-on-frequency-of-relational-association-entities> .
+<configuration/sparsensg/73> ns4kge:result "2.87"^^xsd:decimal .
+
+<configuration/sparsensg/74> rdf:type ns4kge:Configuration .
+<configuration/sparsensg/74> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/sparsensg/74> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/sparsensg/74> ns4kge:hasMetric  <metric/mr> .
+<configuration/sparsensg/74> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/sparsensg/74> ns4kge:hasNSMethod <ns-method/negative-sampling-based-on-frequency-of-relational-association-entities> .
+<configuration/sparsensg/74> ns4kge:result "2.93"^^xsd:decimal .
+
+<configuration/sparsensg/75> rdf:type ns4kge:Configuration .
+<configuration/sparsensg/75> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/sparsensg/75> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/sparsensg/75> ns4kge:hasMetric  <metric/mr> .
+<configuration/sparsensg/75> ns4kge:hasKGEModel <kge-model/analogy> .
+<configuration/sparsensg/75> ns4kge:hasNSMethod <ns-method/negative-sampling-based-on-frequency-of-relational-association-entities> .
+<configuration/sparsensg/75> ns4kge:result "30.5"^^xsd:decimal .
+
+<configuration/sparsensg/76> rdf:type ns4kge:Configuration .
+<configuration/sparsensg/76> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/sparsensg/76> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/sparsensg/76> ns4kge:hasMetric  <metric/mr> .
+<configuration/sparsensg/76> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/sparsensg/76> ns4kge:hasNSMethod <ns-method/negative-sampling-based-on-frequency-of-relational-association-entities> .
+<configuration/sparsensg/76> ns4kge:result "32.6"^^xsd:decimal .
+
+<configuration/sparsensg/77> rdf:type ns4kge:Configuration .
+<configuration/sparsensg/77> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/sparsensg/77> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/sparsensg/77> ns4kge:hasMetric  <metric/mr> .
+<configuration/sparsensg/77> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/sparsensg/77> ns4kge:hasNSMethod <ns-method/negative-sampling-based-on-frequency-of-relational-association-entities> .
+<configuration/sparsensg/77> ns4kge:result "33.24"^^xsd:decimal .
+
+<configuration/sparsensg/78> rdf:type ns4kge:Configuration .
+<configuration/sparsensg/78> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/sparsensg/78> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/sparsensg/78> ns4kge:hasMetric  <metric/mr> .
+<configuration/sparsensg/78> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/sparsensg/78> ns4kge:result "51.3"^^xsd:decimal .
+
+<configuration/sparsensg/79> rdf:type ns4kge:Configuration .
+<configuration/sparsensg/79> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/sparsensg/79> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/sparsensg/79> ns4kge:hasMetric  <metric/mr> .
+<configuration/sparsensg/79> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/sparsensg/79> ns4kge:result "53.6"^^xsd:decimal .
+
+<configuration/sparsensg/80> rdf:type ns4kge:Configuration .
+<configuration/sparsensg/80> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/sparsensg/80> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/sparsensg/80> ns4kge:hasMetric  <metric/mr> .
+<configuration/sparsensg/80> ns4kge:hasKGEModel <kge-model/analogy> .
+<configuration/sparsensg/80> ns4kge:result "54.3"^^xsd:decimal .
+
+<configuration/sparsensg/81> rdf:type ns4kge:Configuration .
+<configuration/sparsensg/81> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/sparsensg/81> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/sparsensg/81> ns4kge:hasMetric  <metric/mr> .
+<configuration/sparsensg/81> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/sparsensg/81> ns4kge:result "207.6"^^xsd:decimal .
+
+<configuration/sparsensg/82> rdf:type ns4kge:Configuration .
+<configuration/sparsensg/82> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/sparsensg/82> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/sparsensg/82> ns4kge:hasMetric  <metric/mr> .
+<configuration/sparsensg/82> ns4kge:hasKGEModel <kge-model/transh> .
+<configuration/sparsensg/82> ns4kge:result "212.4"^^xsd:decimal .
+
+<configuration/sparsensg/83> rdf:type ns4kge:Configuration .
+<configuration/sparsensg/83> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/sparsensg/83> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/sparsensg/83> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/sparsensg/83> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/sparsensg/83> ns4kge:hasNSMethod <ns-method/negative-sampling-based-on-frequency-of-relational-association-entities> .
+<configuration/sparsensg/83> ns4kge:result "0.97"^^xsd:decimal .
+
+<configuration/sparsensg/84> rdf:type ns4kge:Configuration .
+<configuration/sparsensg/84> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/sparsensg/84> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/sparsensg/84> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/sparsensg/84> ns4kge:hasKGEModel <kge-model/analogy> .
+<configuration/sparsensg/84> ns4kge:hasNSMethod <ns-method/negative-sampling-based-on-frequency-of-relational-association-entities> .
+<configuration/sparsensg/84> ns4kge:result "0.954"^^xsd:decimal .
+
+<configuration/sparsensg/85> rdf:type ns4kge:Configuration .
+<configuration/sparsensg/85> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/sparsensg/85> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/sparsensg/85> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/sparsensg/85> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/sparsensg/85> ns4kge:result "0.95"^^xsd:decimal .
+
+<configuration/sparsensg/86> rdf:type ns4kge:Configuration .
+<configuration/sparsensg/86> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/sparsensg/86> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/sparsensg/86> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/sparsensg/86> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/sparsensg/86> ns4kge:hasNSMethod <ns-method/negative-sampling-based-on-frequency-of-relational-association-entities> .
+<configuration/sparsensg/86> ns4kge:result "0.946"^^xsd:decimal .
+
+<configuration/sparsensg/87> rdf:type ns4kge:Configuration .
+<configuration/sparsensg/87> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/sparsensg/87> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/sparsensg/87> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/sparsensg/87> ns4kge:hasKGEModel <kge-model/transh> .
+<configuration/sparsensg/87> ns4kge:hasNSMethod <ns-method/negative-sampling-based-on-frequency-of-relational-association-entities> .
+<configuration/sparsensg/87> ns4kge:result "0.94"^^xsd:decimal .
+
+<configuration/sparsensg/88> rdf:type ns4kge:Configuration .
+<configuration/sparsensg/88> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/sparsensg/88> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/sparsensg/88> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/sparsensg/88> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/sparsensg/88> ns4kge:hasNSMethod <ns-method/negative-sampling-based-on-frequency-of-relational-association-entities> .
+<configuration/sparsensg/88> ns4kge:result "0.937"^^xsd:decimal .
+
+<configuration/sparsensg/89> rdf:type ns4kge:Configuration .
+<configuration/sparsensg/89> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/sparsensg/89> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/sparsensg/89> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/sparsensg/89> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/sparsensg/89> ns4kge:result "0.935"^^xsd:decimal .
+
+<configuration/sparsensg/90> rdf:type ns4kge:Configuration .
+<configuration/sparsensg/90> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/sparsensg/90> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/sparsensg/90> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/sparsensg/90> ns4kge:hasKGEModel <kge-model/analogy> .
+<configuration/sparsensg/90> ns4kge:result "0.894"^^xsd:decimal .
+
+<configuration/sparsensg/91> rdf:type ns4kge:Configuration .
+<configuration/sparsensg/91> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/sparsensg/91> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/sparsensg/91> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/sparsensg/91> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/sparsensg/91> ns4kge:result "0.588"^^xsd:decimal .
+
+<configuration/sparsensg/92> rdf:type ns4kge:Configuration .
+<configuration/sparsensg/92> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/sparsensg/92> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/sparsensg/92> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/sparsensg/92> ns4kge:hasKGEModel <kge-model/transh> .
+<configuration/sparsensg/92> ns4kge:result "0.482"^^xsd:decimal .
+
+<configuration/sparsensg/93> rdf:type ns4kge:Configuration .
+<configuration/sparsensg/93> ns4kge:hasTask    <task/triple-classification> .
+<configuration/sparsensg/93> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/sparsensg/93> ns4kge:hasMetric  <metric/accuracy> .
+<configuration/sparsensg/93> ns4kge:hasKGEModel <kge-model/analogy> .
+<configuration/sparsensg/93> ns4kge:hasNSMethod <ns-method/negative-sampling-based-on-frequency-of-relational-association-entities> .
+<configuration/sparsensg/93> ns4kge:result "0.895"^^xsd:decimal .
+
+<configuration/sparsensg/94> rdf:type ns4kge:Configuration .
+<configuration/sparsensg/94> ns4kge:hasTask    <task/triple-classification> .
+<configuration/sparsensg/94> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/sparsensg/94> ns4kge:hasMetric  <metric/accuracy> .
+<configuration/sparsensg/94> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/sparsensg/94> ns4kge:hasNSMethod <ns-method/negative-sampling-based-on-frequency-of-relational-association-entities> .
+<configuration/sparsensg/94> ns4kge:result "0.886"^^xsd:decimal .
+
+<configuration/sparsensg/95> rdf:type ns4kge:Configuration .
+<configuration/sparsensg/95> ns4kge:hasTask    <task/triple-classification> .
+<configuration/sparsensg/95> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/sparsensg/95> ns4kge:hasMetric  <metric/accuracy> .
+<configuration/sparsensg/95> ns4kge:hasKGEModel <kge-model/analogy> .
+<configuration/sparsensg/95> ns4kge:result "0.878"^^xsd:decimal .
+
+<configuration/sparsensg/96> rdf:type ns4kge:Configuration .
+<configuration/sparsensg/96> ns4kge:hasTask    <task/triple-classification> .
+<configuration/sparsensg/96> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/sparsensg/96> ns4kge:hasMetric  <metric/accuracy> .
+<configuration/sparsensg/96> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/sparsensg/96> ns4kge:hasNSMethod <ns-method/negative-sampling-based-on-frequency-of-relational-association-entities> .
+<configuration/sparsensg/96> ns4kge:result "0.877"^^xsd:decimal .
+
+<configuration/sparsensg/97> rdf:type ns4kge:Configuration .
+<configuration/sparsensg/97> ns4kge:hasTask    <task/triple-classification> .
+<configuration/sparsensg/97> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/sparsensg/97> ns4kge:hasMetric  <metric/accuracy> .
+<configuration/sparsensg/97> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/sparsensg/97> ns4kge:result "0.872"^^xsd:decimal .
+
+<configuration/sparsensg/98> rdf:type ns4kge:Configuration .
+<configuration/sparsensg/98> ns4kge:hasTask    <task/triple-classification> .
+<configuration/sparsensg/98> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/sparsensg/98> ns4kge:hasMetric  <metric/accuracy> .
+<configuration/sparsensg/98> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/sparsensg/98> ns4kge:result "0.87"^^xsd:decimal .
+
+<configuration/sparsensg/99> rdf:type ns4kge:Configuration .
+<configuration/sparsensg/99> ns4kge:hasTask    <task/triple-classification> .
+<configuration/sparsensg/99> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/sparsensg/99> ns4kge:hasMetric  <metric/accuracy> .
+<configuration/sparsensg/99> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/sparsensg/99> ns4kge:hasNSMethod <ns-method/negative-sampling-based-on-frequency-of-relational-association-entities> .
+<configuration/sparsensg/99> ns4kge:result "0.83"^^xsd:decimal .
+
+<configuration/sparsensg/100> rdf:type ns4kge:Configuration .
+<configuration/sparsensg/100> ns4kge:hasTask    <task/triple-classification> .
+<configuration/sparsensg/100> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/sparsensg/100> ns4kge:hasMetric  <metric/accuracy> .
+<configuration/sparsensg/100> ns4kge:hasKGEModel <kge-model/transh> .
+<configuration/sparsensg/100> ns4kge:hasNSMethod <ns-method/negative-sampling-based-on-frequency-of-relational-association-entities> .
+<configuration/sparsensg/100> ns4kge:result "0.831"^^xsd:decimal .
+
+<configuration/sparsensg/101> rdf:type ns4kge:Configuration .
+<configuration/sparsensg/101> ns4kge:hasTask    <task/triple-classification> .
+<configuration/sparsensg/101> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/sparsensg/101> ns4kge:hasMetric  <metric/accuracy> .
+<configuration/sparsensg/101> ns4kge:hasKGEModel <kge-model/transh> .
+<configuration/sparsensg/101> ns4kge:result "0.802"^^xsd:decimal .
+
+<configuration/sparsensg/102> rdf:type ns4kge:Configuration .
+<configuration/sparsensg/102> ns4kge:hasTask    <task/triple-classification> .
+<configuration/sparsensg/102> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/sparsensg/102> ns4kge:hasMetric  <metric/accuracy> .
+<configuration/sparsensg/102> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/sparsensg/102> ns4kge:result "0.796"^^xsd:decimal .

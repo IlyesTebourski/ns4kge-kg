@@ -1,0 +1,2958 @@
+<article/cake> rdf:type ns4kge:Article .
+<article/cake> ns4kge:title "CAKE: A Scalable Commonsense-Aware Framework For Multi-View Knowledge Graph Completion"^^xsd:string .
+<article/cake> ns4kge:date "2022"^^xsd:gYear .
+<article/cake> ns4kge:proposesNSMethod <ns-method/commonsense-aware-negative-sampling> .
+<article/cake> ns4kge:mentionsNSMethod <ns-method/cake> .
+<article/cake> ns4kge:mentionsNSMethod <ns-method/domain-based-negative-sampling> .
+<article/cake> ns4kge:mentionsNSMethod <ns-method/mvlp> .
+<article/cake> ns4kge:mentionsNSMethod <ns-method/uniform-negative-sampling> .
+<article/cake> ns4kge:mentionsNSMethod <ns-method/type-constrained-negative-sampling> .
+<article/cake> ns4kge:mentionsNSMethod <ns-method/self-adversarial-negative-sampling> .
+<article/cake> ns4kge:mentionsNSMethod <ns-method/nscaching> .
+<article/cake> ns4kge:mentionsKGEModel <kge-model/distmult> .
+<article/cake> ns4kge:mentionsKGEModel <kge-model/transe> .
+<article/cake> ns4kge:mentionsKGEModel <kge-model/rescal> .
+<article/cake> ns4kge:mentionsKGEModel <kge-model/joie> .
+<article/cake> ns4kge:mentionsKGEModel <kge-model/complex> .
+<article/cake> ns4kge:mentionsKGEModel <kge-model/kbgan> .
+<article/cake> ns4kge:mentionsKGEModel <kge-model/hake> .
+<article/cake> ns4kge:mentionsKGEModel <kge-model/rotate> .
+<article/cake> ns4kge:mentionsKGEModel <kge-model/transh> .
+<article/cake> ns4kge:hasExperimentation <experimentation/cake> .
+
+<category/self-adversarial-ns> rdf:type ns4kge:Category .
+
+<subcategory/knowledge-constrained> rdf:type ns4kge:Subcategory .
+
+<ns-method/commonsense-aware-negative-sampling> rdf:type ns4kge:NSMethod .
+<ns-method/commonsense-aware-negative-sampling> ns4kge:hasCategory <category/self-adversarial-ns> .
+<ns-method/commonsense-aware-negative-sampling> ns4kge:hasSubcategory <subcategory/knowledge-constrained> .
+
+<ns-method/cake> rdf:type ns4kge:NSMethod .
+<ns-method/cake> ns4kge:hasCategory <category/self-adversarial-ns> .
+<ns-method/cake> ns4kge:hasSubcategory <subcategory/knowledge-constrained> .
+
+<ns-method/domain-based-negative-sampling> rdf:type ns4kge:NSMethod .
+
+<ns-method/mvlp> rdf:type ns4kge:NSMethod .
+
+<ns-method/uniform-negative-sampling> rdf:type ns4kge:NSMethod .
+<category/static-ns> rdf:type ns4kge:Category .
+
+<ns-method/uniform-negative-sampling> ns4kge:hasCategory <category/static-ns> .
+<subcategory/random> rdf:type ns4kge:Subcategory .
+
+<ns-method/uniform-negative-sampling> ns4kge:hasSubcategory <subcategory/random> .
+
+<ns-method/type-constrained-negative-sampling> rdf:type ns4kge:NSMethod .
+<ns-method/type-constrained-negative-sampling> ns4kge:hasCategory <category/static-ns> .
+<ns-method/type-constrained-negative-sampling> ns4kge:hasSubcategory <subcategory/knowledge-constrained> .
+
+<ns-method/self-adversarial-negative-sampling> rdf:type ns4kge:NSMethod .
+<ns-method/self-adversarial-negative-sampling> ns4kge:hasCategory <category/self-adversarial-ns> .
+<subcategory/direct> rdf:type ns4kge:Subcategory .
+
+<ns-method/self-adversarial-negative-sampling> ns4kge:hasSubcategory <subcategory/direct> .
+
+<ns-method/nscaching> rdf:type ns4kge:NSMethod .
+<ns-method/nscaching> ns4kge:hasCategory <category/self-adversarial-ns> .
+<ns-method/nscaching> ns4kge:hasSubcategory <subcategory/direct> .
+
+<kge-model/distmult> rdf:type ns4kge:KGEModel .
+
+<kge-model/transe> rdf:type ns4kge:KGEModel .
+
+<kge-model/rescal> rdf:type ns4kge:KGEModel .
+
+<kge-model/joie> rdf:type ns4kge:KGEModel .
+
+<kge-model/complex> rdf:type ns4kge:KGEModel .
+
+<kge-model/kbgan> rdf:type ns4kge:KGEModel .
+
+<kge-model/hake> rdf:type ns4kge:KGEModel .
+
+<kge-model/rotate> rdf:type ns4kge:KGEModel .
+
+<kge-model/transh> rdf:type ns4kge:KGEModel .
+
+<dataset/fb15k> rdf:type ns4kge:Dataset .
+<task/link-prediction> rdf:type ns4kge:Task .
+<metric/mr> rdf:type ns4kge:Metric .
+<metric/mrr> rdf:type ns4kge:Metric .
+<metric/hits-10> rdf:type ns4kge:Metric .
+<metric/hits-3> rdf:type ns4kge:Metric .
+<metric/hits-1> rdf:type ns4kge:Metric .
+<dataset/fb15k-237> rdf:type ns4kge:Dataset .
+<dataset/dbpedia-242> rdf:type ns4kge:Dataset .
+<dataset/nell-995> rdf:type ns4kge:Dataset .
+<optimizer/adam> rdf:type ns4kge:Optimizer .
+<hardware/geforce-gtx-2080ti> rdf:type ns4kge:Hardware .
+
+<experimentation/cake> rdf:type ns4kge:Experimentation .
+<experimentation/cake> ns4kge:hasTrainingProtocol <training-protocol/cake> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/1> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/2> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/3> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/4> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/5> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/6> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/7> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/8> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/9> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/10> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/11> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/12> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/13> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/14> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/15> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/16> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/17> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/18> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/19> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/20> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/21> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/22> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/23> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/24> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/25> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/26> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/27> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/28> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/29> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/30> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/31> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/32> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/33> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/34> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/35> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/36> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/37> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/38> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/39> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/40> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/41> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/42> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/43> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/44> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/45> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/46> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/47> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/48> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/49> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/50> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/51> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/52> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/53> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/54> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/55> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/56> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/57> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/58> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/59> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/60> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/61> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/62> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/63> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/64> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/65> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/66> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/67> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/68> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/69> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/70> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/71> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/72> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/73> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/74> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/75> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/76> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/77> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/78> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/79> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/80> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/81> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/82> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/83> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/84> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/85> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/86> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/87> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/88> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/89> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/90> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/91> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/92> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/93> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/94> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/95> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/96> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/97> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/98> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/99> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/100> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/101> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/102> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/103> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/104> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/105> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/106> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/107> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/108> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/109> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/110> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/111> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/112> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/113> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/114> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/115> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/116> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/117> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/118> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/119> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/120> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/121> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/122> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/123> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/124> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/125> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/126> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/127> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/128> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/129> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/130> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/131> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/132> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/133> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/134> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/135> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/136> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/137> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/138> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/139> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/140> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/141> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/142> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/143> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/144> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/145> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/146> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/147> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/148> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/149> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/150> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/151> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/152> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/153> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/154> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/155> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/156> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/157> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/158> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/159> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/160> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/161> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/162> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/163> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/164> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/165> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/166> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/167> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/168> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/169> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/170> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/171> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/172> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/173> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/174> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/175> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/176> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/177> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/178> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/179> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/180> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/181> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/182> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/183> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/184> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/185> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/186> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/187> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/188> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/189> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/190> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/191> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/192> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/193> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/194> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/195> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/196> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/197> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/198> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/199> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/200> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/201> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/202> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/203> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/204> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/205> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/206> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/207> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/208> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/209> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/210> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/211> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/212> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/213> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/214> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/215> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/216> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/217> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/218> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/219> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/220> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/221> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/222> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/223> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/224> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/225> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/226> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/227> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/228> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/229> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/230> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/231> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/232> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/233> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/234> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/235> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/236> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/237> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/238> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/239> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/240> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/241> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/242> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/243> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/244> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/245> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/246> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/247> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/248> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/249> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/250> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/251> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/252> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/253> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/254> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/255> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/256> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/257> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/258> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/259> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/260> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/261> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/262> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/263> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/264> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/265> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/266> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/267> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/268> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/269> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/270> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/271> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/272> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/273> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/274> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/275> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/276> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/277> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/278> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/279> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/280> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/281> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/282> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/283> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/284> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/285> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/286> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/287> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/288> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/289> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/290> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/291> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/292> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/293> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/294> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/295> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/296> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/297> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/298> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/299> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/300> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/301> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/302> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/303> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/304> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/305> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/306> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/307> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/308> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/309> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/310> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/311> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/312> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/313> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/314> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/315> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/316> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/317> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/318> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/319> .
+<experimentation/cake> ns4kge:hasConfiguration <configuration/cake/320> .
+
+<training-protocol/cake> rdf:type ns4kge:TrainingProtocol .
+<training-protocol/cake> ns4kge:hasOptimizer    <optimizer/adam> .
+<training-protocol/cake> ns4kge:hasHardware     <hardware/geforce-gtx-2080ti> .
+<training-protocol/cake> ns4kge:nsRatio "2"^^xsd:decimal .
+
+<configuration/cake/1> rdf:type ns4kge:Configuration .
+<configuration/cake/1> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/1> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/cake/1> ns4kge:hasMetric  <metric/mr> .
+<configuration/cake/1> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/cake/1> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/cake/1> ns4kge:result "35"^^xsd:decimal .
+
+<configuration/cake/2> rdf:type ns4kge:Configuration .
+<configuration/cake/2> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/2> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/cake/2> ns4kge:hasMetric  <metric/mrr> .
+<configuration/cake/2> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/cake/2> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/cake/2> ns4kge:result "0.626"^^xsd:decimal .
+
+<configuration/cake/3> rdf:type ns4kge:Configuration .
+<configuration/cake/3> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/3> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/cake/3> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/cake/3> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/cake/3> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/cake/3> ns4kge:result "0.838"^^xsd:decimal .
+
+<configuration/cake/4> rdf:type ns4kge:Configuration .
+<configuration/cake/4> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/4> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/cake/4> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/cake/4> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/cake/4> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/cake/4> ns4kge:result "0.723"^^xsd:decimal .
+
+<configuration/cake/5> rdf:type ns4kge:Configuration .
+<configuration/cake/5> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/5> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/cake/5> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/cake/5> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/cake/5> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/cake/5> ns4kge:result "0.496"^^xsd:decimal .
+
+<configuration/cake/6> rdf:type ns4kge:Configuration .
+<configuration/cake/6> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/6> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/cake/6> ns4kge:hasMetric  <metric/mr> .
+<configuration/cake/6> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/cake/6> ns4kge:hasNSMethod <ns-method/commonsense-aware-negative-sampling> .
+<configuration/cake/6> ns4kge:result "34"^^xsd:decimal .
+
+<configuration/cake/7> rdf:type ns4kge:Configuration .
+<configuration/cake/7> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/7> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/cake/7> ns4kge:hasMetric  <metric/mrr> .
+<configuration/cake/7> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/cake/7> ns4kge:hasNSMethod <ns-method/commonsense-aware-negative-sampling> .
+<configuration/cake/7> ns4kge:result "0.671"^^xsd:decimal .
+
+<configuration/cake/8> rdf:type ns4kge:Configuration .
+<configuration/cake/8> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/8> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/cake/8> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/cake/8> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/cake/8> ns4kge:hasNSMethod <ns-method/commonsense-aware-negative-sampling> .
+<configuration/cake/8> ns4kge:result "0.864"^^xsd:decimal .
+
+<configuration/cake/9> rdf:type ns4kge:Configuration .
+<configuration/cake/9> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/9> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/cake/9> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/cake/9> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/cake/9> ns4kge:hasNSMethod <ns-method/commonsense-aware-negative-sampling> .
+<configuration/cake/9> ns4kge:result "0.761"^^xsd:decimal .
+
+<configuration/cake/10> rdf:type ns4kge:Configuration .
+<configuration/cake/10> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/10> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/cake/10> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/cake/10> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/cake/10> ns4kge:hasNSMethod <ns-method/commonsense-aware-negative-sampling> .
+<configuration/cake/10> ns4kge:result "0.552"^^xsd:decimal .
+
+<configuration/cake/11> rdf:type ns4kge:Configuration .
+<configuration/cake/11> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/11> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/cake/11> ns4kge:hasMetric  <metric/mr> .
+<configuration/cake/11> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/cake/11> ns4kge:hasNSMethod <ns-method/mvlp> .
+<configuration/cake/11> ns4kge:result "35"^^xsd:decimal .
+
+<configuration/cake/12> rdf:type ns4kge:Configuration .
+<configuration/cake/12> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/12> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/cake/12> ns4kge:hasMetric  <metric/mrr> .
+<configuration/cake/12> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/cake/12> ns4kge:hasNSMethod <ns-method/mvlp> .
+<configuration/cake/12> ns4kge:result "0.636"^^xsd:decimal .
+
+<configuration/cake/13> rdf:type ns4kge:Configuration .
+<configuration/cake/13> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/13> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/cake/13> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/cake/13> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/cake/13> ns4kge:hasNSMethod <ns-method/mvlp> .
+<configuration/cake/13> ns4kge:result "0.839"^^xsd:decimal .
+
+<configuration/cake/14> rdf:type ns4kge:Configuration .
+<configuration/cake/14> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/14> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/cake/14> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/cake/14> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/cake/14> ns4kge:hasNSMethod <ns-method/mvlp> .
+<configuration/cake/14> ns4kge:result "0.725"^^xsd:decimal .
+
+<configuration/cake/15> rdf:type ns4kge:Configuration .
+<configuration/cake/15> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/15> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/cake/15> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/cake/15> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/cake/15> ns4kge:hasNSMethod <ns-method/mvlp> .
+<configuration/cake/15> ns4kge:result "0.513"^^xsd:decimal .
+
+<configuration/cake/16> rdf:type ns4kge:Configuration .
+<configuration/cake/16> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/16> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/cake/16> ns4kge:hasMetric  <metric/mr> .
+<configuration/cake/16> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/cake/16> ns4kge:hasNSMethod <ns-method/cake> .
+<configuration/cake/16> ns4kge:result "33"^^xsd:decimal .
+
+<configuration/cake/17> rdf:type ns4kge:Configuration .
+<configuration/cake/17> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/17> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/cake/17> ns4kge:hasMetric  <metric/mrr> .
+<configuration/cake/17> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/cake/17> ns4kge:hasNSMethod <ns-method/cake> .
+<configuration/cake/17> ns4kge:result "0.672"^^xsd:decimal .
+
+<configuration/cake/18> rdf:type ns4kge:Configuration .
+<configuration/cake/18> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/18> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/cake/18> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/cake/18> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/cake/18> ns4kge:hasNSMethod <ns-method/cake> .
+<configuration/cake/18> ns4kge:result "0.865"^^xsd:decimal .
+
+<configuration/cake/19> rdf:type ns4kge:Configuration .
+<configuration/cake/19> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/19> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/cake/19> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/cake/19> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/cake/19> ns4kge:hasNSMethod <ns-method/cake> .
+<configuration/cake/19> ns4kge:result "0.761"^^xsd:decimal .
+
+<configuration/cake/20> rdf:type ns4kge:Configuration .
+<configuration/cake/20> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/20> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/cake/20> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/cake/20> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/cake/20> ns4kge:hasNSMethod <ns-method/cake> .
+<configuration/cake/20> ns4kge:result "0.555"^^xsd:decimal .
+
+<configuration/cake/21> rdf:type ns4kge:Configuration .
+<configuration/cake/21> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/21> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/cake/21> ns4kge:hasMetric  <metric/mr> .
+<configuration/cake/21> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/cake/21> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/cake/21> ns4kge:result "35"^^xsd:decimal .
+
+<configuration/cake/22> rdf:type ns4kge:Configuration .
+<configuration/cake/22> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/22> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/cake/22> ns4kge:hasMetric  <metric/mrr> .
+<configuration/cake/22> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/cake/22> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/cake/22> ns4kge:result "0.657"^^xsd:decimal .
+
+<configuration/cake/23> rdf:type ns4kge:Configuration .
+<configuration/cake/23> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/23> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/cake/23> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/cake/23> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/cake/23> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/cake/23> ns4kge:result "0.85"^^xsd:decimal .
+
+<configuration/cake/24> rdf:type ns4kge:Configuration .
+<configuration/cake/24> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/24> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/cake/24> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/cake/24> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/cake/24> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/cake/24> ns4kge:result "0.746"^^xsd:decimal .
+
+<configuration/cake/25> rdf:type ns4kge:Configuration .
+<configuration/cake/25> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/25> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/cake/25> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/cake/25> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/cake/25> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/cake/25> ns4kge:result "0.537"^^xsd:decimal .
+
+<configuration/cake/26> rdf:type ns4kge:Configuration .
+<configuration/cake/26> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/26> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/cake/26> ns4kge:hasMetric  <metric/mr> .
+<configuration/cake/26> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/cake/26> ns4kge:hasNSMethod <ns-method/commonsense-aware-negative-sampling> .
+<configuration/cake/26> ns4kge:result "33"^^xsd:decimal .
+
+<configuration/cake/27> rdf:type ns4kge:Configuration .
+<configuration/cake/27> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/27> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/cake/27> ns4kge:hasMetric  <metric/mrr> .
+<configuration/cake/27> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/cake/27> ns4kge:hasNSMethod <ns-method/commonsense-aware-negative-sampling> .
+<configuration/cake/27> ns4kge:result "0.702"^^xsd:decimal .
+
+<configuration/cake/28> rdf:type ns4kge:Configuration .
+<configuration/cake/28> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/28> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/cake/28> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/cake/28> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/cake/28> ns4kge:hasNSMethod <ns-method/commonsense-aware-negative-sampling> .
+<configuration/cake/28> ns4kge:result "0.877"^^xsd:decimal .
+
+<configuration/cake/29> rdf:type ns4kge:Configuration .
+<configuration/cake/29> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/29> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/cake/29> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/cake/29> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/cake/29> ns4kge:hasNSMethod <ns-method/commonsense-aware-negative-sampling> .
+<configuration/cake/29> ns4kge:result "0.79"^^xsd:decimal .
+
+<configuration/cake/30> rdf:type ns4kge:Configuration .
+<configuration/cake/30> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/30> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/cake/30> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/cake/30> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/cake/30> ns4kge:hasNSMethod <ns-method/commonsense-aware-negative-sampling> .
+<configuration/cake/30> ns4kge:result "0.588"^^xsd:decimal .
+
+<configuration/cake/31> rdf:type ns4kge:Configuration .
+<configuration/cake/31> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/31> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/cake/31> ns4kge:hasMetric  <metric/mr> .
+<configuration/cake/31> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/cake/31> ns4kge:hasNSMethod <ns-method/mvlp> .
+<configuration/cake/31> ns4kge:result "34"^^xsd:decimal .
+
+<configuration/cake/32> rdf:type ns4kge:Configuration .
+<configuration/cake/32> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/32> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/cake/32> ns4kge:hasMetric  <metric/mrr> .
+<configuration/cake/32> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/cake/32> ns4kge:hasNSMethod <ns-method/mvlp> .
+<configuration/cake/32> ns4kge:result "0.688"^^xsd:decimal .
+
+<configuration/cake/33> rdf:type ns4kge:Configuration .
+<configuration/cake/33> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/33> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/cake/33> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/cake/33> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/cake/33> ns4kge:hasNSMethod <ns-method/mvlp> .
+<configuration/cake/33> ns4kge:result "0.86"^^xsd:decimal .
+
+<configuration/cake/34> rdf:type ns4kge:Configuration .
+<configuration/cake/34> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/34> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/cake/34> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/cake/34> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/cake/34> ns4kge:hasNSMethod <ns-method/mvlp> .
+<configuration/cake/34> ns4kge:result "0.768"^^xsd:decimal .
+
+<configuration/cake/35> rdf:type ns4kge:Configuration .
+<configuration/cake/35> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/35> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/cake/35> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/cake/35> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/cake/35> ns4kge:hasNSMethod <ns-method/mvlp> .
+<configuration/cake/35> ns4kge:result "0.579"^^xsd:decimal .
+
+<configuration/cake/36> rdf:type ns4kge:Configuration .
+<configuration/cake/36> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/36> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/cake/36> ns4kge:hasMetric  <metric/mr> .
+<configuration/cake/36> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/cake/36> ns4kge:hasNSMethod <ns-method/cake> .
+<configuration/cake/36> ns4kge:result "31"^^xsd:decimal .
+
+<configuration/cake/37> rdf:type ns4kge:Configuration .
+<configuration/cake/37> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/37> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/cake/37> ns4kge:hasMetric  <metric/mrr> .
+<configuration/cake/37> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/cake/37> ns4kge:hasNSMethod <ns-method/cake> .
+<configuration/cake/37> ns4kge:result "0.705"^^xsd:decimal .
+
+<configuration/cake/38> rdf:type ns4kge:Configuration .
+<configuration/cake/38> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/38> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/cake/38> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/cake/38> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/cake/38> ns4kge:hasNSMethod <ns-method/cake> .
+<configuration/cake/38> ns4kge:result "0.878"^^xsd:decimal .
+
+<configuration/cake/39> rdf:type ns4kge:Configuration .
+<configuration/cake/39> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/39> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/cake/39> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/cake/39> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/cake/39> ns4kge:hasNSMethod <ns-method/cake> .
+<configuration/cake/39> ns4kge:result "0.792"^^xsd:decimal .
+
+<configuration/cake/40> rdf:type ns4kge:Configuration .
+<configuration/cake/40> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/40> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/cake/40> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/cake/40> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/cake/40> ns4kge:hasNSMethod <ns-method/cake> .
+<configuration/cake/40> ns4kge:result "0.593"^^xsd:decimal .
+
+<configuration/cake/41> rdf:type ns4kge:Configuration .
+<configuration/cake/41> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/41> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/cake/41> ns4kge:hasMetric  <metric/mr> .
+<configuration/cake/41> ns4kge:hasKGEModel <kge-model/hake> .
+<configuration/cake/41> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/cake/41> ns4kge:result "34"^^xsd:decimal .
+
+<configuration/cake/42> rdf:type ns4kge:Configuration .
+<configuration/cake/42> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/42> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/cake/42> ns4kge:hasMetric  <metric/mrr> .
+<configuration/cake/42> ns4kge:hasKGEModel <kge-model/hake> .
+<configuration/cake/42> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/cake/42> ns4kge:result "0.69"^^xsd:decimal .
+
+<configuration/cake/43> rdf:type ns4kge:Configuration .
+<configuration/cake/43> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/43> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/cake/43> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/cake/43> ns4kge:hasKGEModel <kge-model/hake> .
+<configuration/cake/43> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/cake/43> ns4kge:result "0.872"^^xsd:decimal .
+
+<configuration/cake/44> rdf:type ns4kge:Configuration .
+<configuration/cake/44> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/44> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/cake/44> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/cake/44> ns4kge:hasKGEModel <kge-model/hake> .
+<configuration/cake/44> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/cake/44> ns4kge:result "0.78"^^xsd:decimal .
+
+<configuration/cake/45> rdf:type ns4kge:Configuration .
+<configuration/cake/45> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/45> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/cake/45> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/cake/45> ns4kge:hasKGEModel <kge-model/hake> .
+<configuration/cake/45> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/cake/45> ns4kge:result "0.574"^^xsd:decimal .
+
+<configuration/cake/46> rdf:type ns4kge:Configuration .
+<configuration/cake/46> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/46> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/cake/46> ns4kge:hasMetric  <metric/mr> .
+<configuration/cake/46> ns4kge:hasKGEModel <kge-model/hake> .
+<configuration/cake/46> ns4kge:hasNSMethod <ns-method/commonsense-aware-negative-sampling> .
+<configuration/cake/46> ns4kge:result "37"^^xsd:decimal .
+
+<configuration/cake/47> rdf:type ns4kge:Configuration .
+<configuration/cake/47> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/47> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/cake/47> ns4kge:hasMetric  <metric/mrr> .
+<configuration/cake/47> ns4kge:hasKGEModel <kge-model/hake> .
+<configuration/cake/47> ns4kge:hasNSMethod <ns-method/commonsense-aware-negative-sampling> .
+<configuration/cake/47> ns4kge:result "0.723"^^xsd:decimal .
+
+<configuration/cake/48> rdf:type ns4kge:Configuration .
+<configuration/cake/48> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/48> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/cake/48> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/cake/48> ns4kge:hasKGEModel <kge-model/hake> .
+<configuration/cake/48> ns4kge:hasNSMethod <ns-method/commonsense-aware-negative-sampling> .
+<configuration/cake/48> ns4kge:result "0.882"^^xsd:decimal .
+
+<configuration/cake/49> rdf:type ns4kge:Configuration .
+<configuration/cake/49> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/49> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/cake/49> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/cake/49> ns4kge:hasKGEModel <kge-model/hake> .
+<configuration/cake/49> ns4kge:hasNSMethod <ns-method/commonsense-aware-negative-sampling> .
+<configuration/cake/49> ns4kge:result "0.808"^^xsd:decimal .
+
+<configuration/cake/50> rdf:type ns4kge:Configuration .
+<configuration/cake/50> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/50> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/cake/50> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/cake/50> ns4kge:hasKGEModel <kge-model/hake> .
+<configuration/cake/50> ns4kge:hasNSMethod <ns-method/commonsense-aware-negative-sampling> .
+<configuration/cake/50> ns4kge:result "0.616"^^xsd:decimal .
+
+<configuration/cake/51> rdf:type ns4kge:Configuration .
+<configuration/cake/51> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/51> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/cake/51> ns4kge:hasMetric  <metric/mr> .
+<configuration/cake/51> ns4kge:hasKGEModel <kge-model/hake> .
+<configuration/cake/51> ns4kge:hasNSMethod <ns-method/mvlp> .
+<configuration/cake/51> ns4kge:result "32"^^xsd:decimal .
+
+<configuration/cake/52> rdf:type ns4kge:Configuration .
+<configuration/cake/52> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/52> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/cake/52> ns4kge:hasMetric  <metric/mrr> .
+<configuration/cake/52> ns4kge:hasKGEModel <kge-model/hake> .
+<configuration/cake/52> ns4kge:hasNSMethod <ns-method/mvlp> .
+<configuration/cake/52> ns4kge:result "0.729"^^xsd:decimal .
+
+<configuration/cake/53> rdf:type ns4kge:Configuration .
+<configuration/cake/53> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/53> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/cake/53> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/cake/53> ns4kge:hasKGEModel <kge-model/hake> .
+<configuration/cake/53> ns4kge:hasNSMethod <ns-method/mvlp> .
+<configuration/cake/53> ns4kge:result "0.89"^^xsd:decimal .
+
+<configuration/cake/54> rdf:type ns4kge:Configuration .
+<configuration/cake/54> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/54> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/cake/54> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/cake/54> ns4kge:hasKGEModel <kge-model/hake> .
+<configuration/cake/54> ns4kge:hasNSMethod <ns-method/mvlp> .
+<configuration/cake/54> ns4kge:result "0.817"^^xsd:decimal .
+
+<configuration/cake/55> rdf:type ns4kge:Configuration .
+<configuration/cake/55> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/55> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/cake/55> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/cake/55> ns4kge:hasKGEModel <kge-model/hake> .
+<configuration/cake/55> ns4kge:hasNSMethod <ns-method/mvlp> .
+<configuration/cake/55> ns4kge:result "0.622"^^xsd:decimal .
+
+<configuration/cake/56> rdf:type ns4kge:Configuration .
+<configuration/cake/56> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/56> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/cake/56> ns4kge:hasMetric  <metric/mr> .
+<configuration/cake/56> ns4kge:hasKGEModel <kge-model/hake> .
+<configuration/cake/56> ns4kge:hasNSMethod <ns-method/cake> .
+<configuration/cake/56> ns4kge:result "30"^^xsd:decimal .
+
+<configuration/cake/57> rdf:type ns4kge:Configuration .
+<configuration/cake/57> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/57> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/cake/57> ns4kge:hasMetric  <metric/mrr> .
+<configuration/cake/57> ns4kge:hasKGEModel <kge-model/hake> .
+<configuration/cake/57> ns4kge:hasNSMethod <ns-method/cake> .
+<configuration/cake/57> ns4kge:result "0.741"^^xsd:decimal .
+
+<configuration/cake/58> rdf:type ns4kge:Configuration .
+<configuration/cake/58> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/58> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/cake/58> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/cake/58> ns4kge:hasKGEModel <kge-model/hake> .
+<configuration/cake/58> ns4kge:hasNSMethod <ns-method/cake> .
+<configuration/cake/58> ns4kge:result "0.896"^^xsd:decimal .
+
+<configuration/cake/59> rdf:type ns4kge:Configuration .
+<configuration/cake/59> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/59> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/cake/59> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/cake/59> ns4kge:hasKGEModel <kge-model/hake> .
+<configuration/cake/59> ns4kge:hasNSMethod <ns-method/cake> .
+<configuration/cake/59> ns4kge:result "0.825"^^xsd:decimal .
+
+<configuration/cake/60> rdf:type ns4kge:Configuration .
+<configuration/cake/60> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/60> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/cake/60> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/cake/60> ns4kge:hasKGEModel <kge-model/hake> .
+<configuration/cake/60> ns4kge:hasNSMethod <ns-method/cake> .
+<configuration/cake/60> ns4kge:result "0.646"^^xsd:decimal .
+
+<configuration/cake/61> rdf:type ns4kge:Configuration .
+<configuration/cake/61> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/61> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/cake/61> ns4kge:hasMetric  <metric/mr> .
+<configuration/cake/61> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/cake/61> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/cake/61> ns4kge:result "195"^^xsd:decimal .
+
+<configuration/cake/62> rdf:type ns4kge:Configuration .
+<configuration/cake/62> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/62> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/cake/62> ns4kge:hasMetric  <metric/mrr> .
+<configuration/cake/62> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/cake/62> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/cake/62> ns4kge:result "0.268"^^xsd:decimal .
+
+<configuration/cake/63> rdf:type ns4kge:Configuration .
+<configuration/cake/63> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/63> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/cake/63> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/cake/63> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/cake/63> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/cake/63> ns4kge:result "0.454"^^xsd:decimal .
+
+<configuration/cake/64> rdf:type ns4kge:Configuration .
+<configuration/cake/64> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/64> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/cake/64> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/cake/64> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/cake/64> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/cake/64> ns4kge:result "0.298"^^xsd:decimal .
+
+<configuration/cake/65> rdf:type ns4kge:Configuration .
+<configuration/cake/65> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/65> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/cake/65> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/cake/65> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/cake/65> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/cake/65> ns4kge:result "0.176"^^xsd:decimal .
+
+<configuration/cake/66> rdf:type ns4kge:Configuration .
+<configuration/cake/66> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/66> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/cake/66> ns4kge:hasMetric  <metric/mr> .
+<configuration/cake/66> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/cake/66> ns4kge:hasNSMethod <ns-method/commonsense-aware-negative-sampling> .
+<configuration/cake/66> ns4kge:result "175"^^xsd:decimal .
+
+<configuration/cake/67> rdf:type ns4kge:Configuration .
+<configuration/cake/67> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/67> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/cake/67> ns4kge:hasMetric  <metric/mrr> .
+<configuration/cake/67> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/cake/67> ns4kge:hasNSMethod <ns-method/commonsense-aware-negative-sampling> .
+<configuration/cake/67> ns4kge:result "0.298"^^xsd:decimal .
+
+<configuration/cake/68> rdf:type ns4kge:Configuration .
+<configuration/cake/68> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/68> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/cake/68> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/cake/68> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/cake/68> ns4kge:hasNSMethod <ns-method/commonsense-aware-negative-sampling> .
+<configuration/cake/68> ns4kge:result "0.49"^^xsd:decimal .
+
+<configuration/cake/69> rdf:type ns4kge:Configuration .
+<configuration/cake/69> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/69> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/cake/69> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/cake/69> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/cake/69> ns4kge:hasNSMethod <ns-method/commonsense-aware-negative-sampling> .
+<configuration/cake/69> ns4kge:result "0.333"^^xsd:decimal .
+
+<configuration/cake/70> rdf:type ns4kge:Configuration .
+<configuration/cake/70> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/70> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/cake/70> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/cake/70> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/cake/70> ns4kge:hasNSMethod <ns-method/commonsense-aware-negative-sampling> .
+<configuration/cake/70> ns4kge:result "0.203"^^xsd:decimal .
+
+<configuration/cake/71> rdf:type ns4kge:Configuration .
+<configuration/cake/71> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/71> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/cake/71> ns4kge:hasMetric  <metric/mr> .
+<configuration/cake/71> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/cake/71> ns4kge:hasNSMethod <ns-method/mvlp> .
+<configuration/cake/71> ns4kge:result "181"^^xsd:decimal .
+
+<configuration/cake/72> rdf:type ns4kge:Configuration .
+<configuration/cake/72> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/72> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/cake/72> ns4kge:hasMetric  <metric/mrr> .
+<configuration/cake/72> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/cake/72> ns4kge:hasNSMethod <ns-method/mvlp> .
+<configuration/cake/72> ns4kge:result "0.29"^^xsd:decimal .
+
+<configuration/cake/73> rdf:type ns4kge:Configuration .
+<configuration/cake/73> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/73> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/cake/73> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/cake/73> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/cake/73> ns4kge:hasNSMethod <ns-method/mvlp> .
+<configuration/cake/73> ns4kge:result "0.476"^^xsd:decimal .
+
+<configuration/cake/74> rdf:type ns4kge:Configuration .
+<configuration/cake/74> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/74> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/cake/74> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/cake/74> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/cake/74> ns4kge:hasNSMethod <ns-method/mvlp> .
+<configuration/cake/74> ns4kge:result "0.323"^^xsd:decimal .
+
+<configuration/cake/75> rdf:type ns4kge:Configuration .
+<configuration/cake/75> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/75> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/cake/75> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/cake/75> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/cake/75> ns4kge:hasNSMethod <ns-method/mvlp> .
+<configuration/cake/75> ns4kge:result "0.186"^^xsd:decimal .
+
+<configuration/cake/76> rdf:type ns4kge:Configuration .
+<configuration/cake/76> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/76> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/cake/76> ns4kge:hasMetric  <metric/mr> .
+<configuration/cake/76> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/cake/76> ns4kge:hasNSMethod <ns-method/cake> .
+<configuration/cake/76> ns4kge:result "175"^^xsd:decimal .
+
+<configuration/cake/77> rdf:type ns4kge:Configuration .
+<configuration/cake/77> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/77> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/cake/77> ns4kge:hasMetric  <metric/mrr> .
+<configuration/cake/77> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/cake/77> ns4kge:hasNSMethod <ns-method/cake> .
+<configuration/cake/77> ns4kge:result "0.301"^^xsd:decimal .
+
+<configuration/cake/78> rdf:type ns4kge:Configuration .
+<configuration/cake/78> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/78> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/cake/78> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/cake/78> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/cake/78> ns4kge:hasNSMethod <ns-method/cake> .
+<configuration/cake/78> ns4kge:result "0.493"^^xsd:decimal .
+
+<configuration/cake/79> rdf:type ns4kge:Configuration .
+<configuration/cake/79> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/79> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/cake/79> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/cake/79> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/cake/79> ns4kge:hasNSMethod <ns-method/cake> .
+<configuration/cake/79> ns4kge:result "0.335"^^xsd:decimal .
+
+<configuration/cake/80> rdf:type ns4kge:Configuration .
+<configuration/cake/80> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/80> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/cake/80> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/cake/80> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/cake/80> ns4kge:hasNSMethod <ns-method/cake> .
+<configuration/cake/80> ns4kge:result "0.206"^^xsd:decimal .
+
+<configuration/cake/81> rdf:type ns4kge:Configuration .
+<configuration/cake/81> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/81> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/cake/81> ns4kge:hasMetric  <metric/mr> .
+<configuration/cake/81> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/cake/81> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/cake/81> ns4kge:result "204"^^xsd:decimal .
+
+<configuration/cake/82> rdf:type ns4kge:Configuration .
+<configuration/cake/82> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/82> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/cake/82> ns4kge:hasMetric  <metric/mrr> .
+<configuration/cake/82> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/cake/82> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/cake/82> ns4kge:result "0.269"^^xsd:decimal .
+
+<configuration/cake/83> rdf:type ns4kge:Configuration .
+<configuration/cake/83> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/83> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/cake/83> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/cake/83> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/cake/83> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/cake/83> ns4kge:result "0.452"^^xsd:decimal .
+
+<configuration/cake/84> rdf:type ns4kge:Configuration .
+<configuration/cake/84> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/84> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/cake/84> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/cake/84> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/cake/84> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/cake/84> ns4kge:result "0.298"^^xsd:decimal .
+
+<configuration/cake/85> rdf:type ns4kge:Configuration .
+<configuration/cake/85> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/85> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/cake/85> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/cake/85> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/cake/85> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/cake/85> ns4kge:result "0.179"^^xsd:decimal .
+
+<configuration/cake/86> rdf:type ns4kge:Configuration .
+<configuration/cake/86> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/86> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/cake/86> ns4kge:hasMetric  <metric/mr> .
+<configuration/cake/86> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/cake/86> ns4kge:hasNSMethod <ns-method/commonsense-aware-negative-sampling> .
+<configuration/cake/86> ns4kge:result "182"^^xsd:decimal .
+
+<configuration/cake/87> rdf:type ns4kge:Configuration .
+<configuration/cake/87> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/87> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/cake/87> ns4kge:hasMetric  <metric/mrr> .
+<configuration/cake/87> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/cake/87> ns4kge:hasNSMethod <ns-method/commonsense-aware-negative-sampling> .
+<configuration/cake/87> ns4kge:result "0.296"^^xsd:decimal .
+
+<configuration/cake/88> rdf:type ns4kge:Configuration .
+<configuration/cake/88> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/88> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/cake/88> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/cake/88> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/cake/88> ns4kge:hasNSMethod <ns-method/commonsense-aware-negative-sampling> .
+<configuration/cake/88> ns4kge:result "0.486"^^xsd:decimal .
+
+<configuration/cake/89> rdf:type ns4kge:Configuration .
+<configuration/cake/89> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/89> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/cake/89> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/cake/89> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/cake/89> ns4kge:hasNSMethod <ns-method/commonsense-aware-negative-sampling> .
+<configuration/cake/89> ns4kge:result "0.329"^^xsd:decimal .
+
+<configuration/cake/90> rdf:type ns4kge:Configuration .
+<configuration/cake/90> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/90> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/cake/90> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/cake/90> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/cake/90> ns4kge:hasNSMethod <ns-method/commonsense-aware-negative-sampling> .
+<configuration/cake/90> ns4kge:result "0.202"^^xsd:decimal .
+
+<configuration/cake/91> rdf:type ns4kge:Configuration .
+<configuration/cake/91> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/91> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/cake/91> ns4kge:hasMetric  <metric/mr> .
+<configuration/cake/91> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/cake/91> ns4kge:hasNSMethod <ns-method/mvlp> .
+<configuration/cake/91> ns4kge:result "188"^^xsd:decimal .
+
+<configuration/cake/92> rdf:type ns4kge:Configuration .
+<configuration/cake/92> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/92> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/cake/92> ns4kge:hasMetric  <metric/mrr> .
+<configuration/cake/92> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/cake/92> ns4kge:hasNSMethod <ns-method/mvlp> .
+<configuration/cake/92> ns4kge:result "0.308"^^xsd:decimal .
+
+<configuration/cake/93> rdf:type ns4kge:Configuration .
+<configuration/cake/93> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/93> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/cake/93> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/cake/93> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/cake/93> ns4kge:hasNSMethod <ns-method/mvlp> .
+<configuration/cake/93> ns4kge:result "0.493"^^xsd:decimal .
+
+<configuration/cake/94> rdf:type ns4kge:Configuration .
+<configuration/cake/94> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/94> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/cake/94> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/cake/94> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/cake/94> ns4kge:hasNSMethod <ns-method/mvlp> .
+<configuration/cake/94> ns4kge:result "0.34"^^xsd:decimal .
+
+<configuration/cake/95> rdf:type ns4kge:Configuration .
+<configuration/cake/95> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/95> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/cake/95> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/cake/95> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/cake/95> ns4kge:hasNSMethod <ns-method/mvlp> .
+<configuration/cake/95> ns4kge:result "0.217"^^xsd:decimal .
+
+<configuration/cake/96> rdf:type ns4kge:Configuration .
+<configuration/cake/96> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/96> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/cake/96> ns4kge:hasMetric  <metric/mr> .
+<configuration/cake/96> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/cake/96> ns4kge:hasNSMethod <ns-method/cake> .
+<configuration/cake/96> ns4kge:result "181"^^xsd:decimal .
+
+<configuration/cake/97> rdf:type ns4kge:Configuration .
+<configuration/cake/97> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/97> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/cake/97> ns4kge:hasMetric  <metric/mrr> .
+<configuration/cake/97> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/cake/97> ns4kge:hasNSMethod <ns-method/cake> .
+<configuration/cake/97> ns4kge:result "0.318"^^xsd:decimal .
+
+<configuration/cake/98> rdf:type ns4kge:Configuration .
+<configuration/cake/98> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/98> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/cake/98> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/cake/98> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/cake/98> ns4kge:hasNSMethod <ns-method/cake> .
+<configuration/cake/98> ns4kge:result "0.511"^^xsd:decimal .
+
+<configuration/cake/99> rdf:type ns4kge:Configuration .
+<configuration/cake/99> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/99> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/cake/99> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/cake/99> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/cake/99> ns4kge:hasNSMethod <ns-method/cake> .
+<configuration/cake/99> ns4kge:result "0.354"^^xsd:decimal .
+
+<configuration/cake/100> rdf:type ns4kge:Configuration .
+<configuration/cake/100> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/100> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/cake/100> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/cake/100> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/cake/100> ns4kge:hasNSMethod <ns-method/cake> .
+<configuration/cake/100> ns4kge:result "0.223"^^xsd:decimal .
+
+<configuration/cake/101> rdf:type ns4kge:Configuration .
+<configuration/cake/101> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/101> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/cake/101> ns4kge:hasMetric  <metric/mr> .
+<configuration/cake/101> ns4kge:hasKGEModel <kge-model/hake> .
+<configuration/cake/101> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/cake/101> ns4kge:result "176"^^xsd:decimal .
+
+<configuration/cake/102> rdf:type ns4kge:Configuration .
+<configuration/cake/102> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/102> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/cake/102> ns4kge:hasMetric  <metric/mrr> .
+<configuration/cake/102> ns4kge:hasKGEModel <kge-model/hake> .
+<configuration/cake/102> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/cake/102> ns4kge:result "0.306"^^xsd:decimal .
+
+<configuration/cake/103> rdf:type ns4kge:Configuration .
+<configuration/cake/103> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/103> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/cake/103> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/cake/103> ns4kge:hasKGEModel <kge-model/hake> .
+<configuration/cake/103> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/cake/103> ns4kge:result "0.486"^^xsd:decimal .
+
+<configuration/cake/104> rdf:type ns4kge:Configuration .
+<configuration/cake/104> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/104> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/cake/104> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/cake/104> ns4kge:hasKGEModel <kge-model/hake> .
+<configuration/cake/104> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/cake/104> ns4kge:result "0.337"^^xsd:decimal .
+
+<configuration/cake/105> rdf:type ns4kge:Configuration .
+<configuration/cake/105> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/105> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/cake/105> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/cake/105> ns4kge:hasKGEModel <kge-model/hake> .
+<configuration/cake/105> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/cake/105> ns4kge:result "0.216"^^xsd:decimal .
+
+<configuration/cake/106> rdf:type ns4kge:Configuration .
+<configuration/cake/106> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/106> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/cake/106> ns4kge:hasMetric  <metric/mr> .
+<configuration/cake/106> ns4kge:hasKGEModel <kge-model/hake> .
+<configuration/cake/106> ns4kge:hasNSMethod <ns-method/commonsense-aware-negative-sampling> .
+<configuration/cake/106> ns4kge:result "174"^^xsd:decimal .
+
+<configuration/cake/107> rdf:type ns4kge:Configuration .
+<configuration/cake/107> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/107> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/cake/107> ns4kge:hasMetric  <metric/mrr> .
+<configuration/cake/107> ns4kge:hasKGEModel <kge-model/hake> .
+<configuration/cake/107> ns4kge:hasNSMethod <ns-method/commonsense-aware-negative-sampling> .
+<configuration/cake/107> ns4kge:result "0.315"^^xsd:decimal .
+
+<configuration/cake/108> rdf:type ns4kge:Configuration .
+<configuration/cake/108> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/108> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/cake/108> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/cake/108> ns4kge:hasKGEModel <kge-model/hake> .
+<configuration/cake/108> ns4kge:hasNSMethod <ns-method/commonsense-aware-negative-sampling> .
+<configuration/cake/108> ns4kge:result "0.501"^^xsd:decimal .
+
+<configuration/cake/109> rdf:type ns4kge:Configuration .
+<configuration/cake/109> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/109> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/cake/109> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/cake/109> ns4kge:hasKGEModel <kge-model/hake> .
+<configuration/cake/109> ns4kge:hasNSMethod <ns-method/commonsense-aware-negative-sampling> .
+<configuration/cake/109> ns4kge:result "0.344"^^xsd:decimal .
+
+<configuration/cake/110> rdf:type ns4kge:Configuration .
+<configuration/cake/110> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/110> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/cake/110> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/cake/110> ns4kge:hasKGEModel <kge-model/hake> .
+<configuration/cake/110> ns4kge:hasNSMethod <ns-method/commonsense-aware-negative-sampling> .
+<configuration/cake/110> ns4kge:result "0.221"^^xsd:decimal .
+
+<configuration/cake/111> rdf:type ns4kge:Configuration .
+<configuration/cake/111> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/111> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/cake/111> ns4kge:hasMetric  <metric/mr> .
+<configuration/cake/111> ns4kge:hasKGEModel <kge-model/hake> .
+<configuration/cake/111> ns4kge:hasNSMethod <ns-method/mvlp> .
+<configuration/cake/111> ns4kge:result "172"^^xsd:decimal .
+
+<configuration/cake/112> rdf:type ns4kge:Configuration .
+<configuration/cake/112> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/112> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/cake/112> ns4kge:hasMetric  <metric/mrr> .
+<configuration/cake/112> ns4kge:hasKGEModel <kge-model/hake> .
+<configuration/cake/112> ns4kge:hasNSMethod <ns-method/mvlp> .
+<configuration/cake/112> ns4kge:result "0.32"^^xsd:decimal .
+
+<configuration/cake/113> rdf:type ns4kge:Configuration .
+<configuration/cake/113> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/113> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/cake/113> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/cake/113> ns4kge:hasKGEModel <kge-model/hake> .
+<configuration/cake/113> ns4kge:hasNSMethod <ns-method/mvlp> .
+<configuration/cake/113> ns4kge:result "0.508"^^xsd:decimal .
+
+<configuration/cake/114> rdf:type ns4kge:Configuration .
+<configuration/cake/114> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/114> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/cake/114> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/cake/114> ns4kge:hasKGEModel <kge-model/hake> .
+<configuration/cake/114> ns4kge:hasNSMethod <ns-method/mvlp> .
+<configuration/cake/114> ns4kge:result "0.352"^^xsd:decimal .
+
+<configuration/cake/115> rdf:type ns4kge:Configuration .
+<configuration/cake/115> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/115> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/cake/115> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/cake/115> ns4kge:hasKGEModel <kge-model/hake> .
+<configuration/cake/115> ns4kge:hasNSMethod <ns-method/mvlp> .
+<configuration/cake/115> ns4kge:result "0.227"^^xsd:decimal .
+
+<configuration/cake/116> rdf:type ns4kge:Configuration .
+<configuration/cake/116> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/116> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/cake/116> ns4kge:hasMetric  <metric/mr> .
+<configuration/cake/116> ns4kge:hasKGEModel <kge-model/hake> .
+<configuration/cake/116> ns4kge:hasNSMethod <ns-method/cake> .
+<configuration/cake/116> ns4kge:result "170"^^xsd:decimal .
+
+<configuration/cake/117> rdf:type ns4kge:Configuration .
+<configuration/cake/117> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/117> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/cake/117> ns4kge:hasMetric  <metric/mrr> .
+<configuration/cake/117> ns4kge:hasKGEModel <kge-model/hake> .
+<configuration/cake/117> ns4kge:hasNSMethod <ns-method/cake> .
+<configuration/cake/117> ns4kge:result "0.321"^^xsd:decimal .
+
+<configuration/cake/118> rdf:type ns4kge:Configuration .
+<configuration/cake/118> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/118> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/cake/118> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/cake/118> ns4kge:hasKGEModel <kge-model/hake> .
+<configuration/cake/118> ns4kge:hasNSMethod <ns-method/cake> .
+<configuration/cake/118> ns4kge:result "0.515"^^xsd:decimal .
+
+<configuration/cake/119> rdf:type ns4kge:Configuration .
+<configuration/cake/119> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/119> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/cake/119> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/cake/119> ns4kge:hasKGEModel <kge-model/hake> .
+<configuration/cake/119> ns4kge:hasNSMethod <ns-method/cake> .
+<configuration/cake/119> ns4kge:result "0.355"^^xsd:decimal .
+
+<configuration/cake/120> rdf:type ns4kge:Configuration .
+<configuration/cake/120> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/120> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/cake/120> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/cake/120> ns4kge:hasKGEModel <kge-model/hake> .
+<configuration/cake/120> ns4kge:hasNSMethod <ns-method/cake> .
+<configuration/cake/120> ns4kge:result "0.226"^^xsd:decimal .
+
+<configuration/cake/121> rdf:type ns4kge:Configuration .
+<configuration/cake/121> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/121> ns4kge:hasDataset <dataset/dbpedia-242> .
+<configuration/cake/121> ns4kge:hasMetric  <metric/mr> .
+<configuration/cake/121> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/cake/121> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/cake/121> ns4kge:result "2733"^^xsd:decimal .
+
+<configuration/cake/122> rdf:type ns4kge:Configuration .
+<configuration/cake/122> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/122> ns4kge:hasDataset <dataset/dbpedia-242> .
+<configuration/cake/122> ns4kge:hasMetric  <metric/mrr> .
+<configuration/cake/122> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/cake/122> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/cake/122> ns4kge:result "0.242"^^xsd:decimal .
+
+<configuration/cake/123> rdf:type ns4kge:Configuration .
+<configuration/cake/123> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/123> ns4kge:hasDataset <dataset/dbpedia-242> .
+<configuration/cake/123> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/cake/123> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/cake/123> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/cake/123> ns4kge:result "0.468"^^xsd:decimal .
+
+<configuration/cake/124> rdf:type ns4kge:Configuration .
+<configuration/cake/124> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/124> ns4kge:hasDataset <dataset/dbpedia-242> .
+<configuration/cake/124> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/cake/124> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/cake/124> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/cake/124> ns4kge:result "0.344"^^xsd:decimal .
+
+<configuration/cake/125> rdf:type ns4kge:Configuration .
+<configuration/cake/125> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/125> ns4kge:hasDataset <dataset/dbpedia-242> .
+<configuration/cake/125> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/cake/125> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/cake/125> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/cake/125> ns4kge:result "0.1"^^xsd:decimal .
+
+<configuration/cake/126> rdf:type ns4kge:Configuration .
+<configuration/cake/126> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/126> ns4kge:hasDataset <dataset/dbpedia-242> .
+<configuration/cake/126> ns4kge:hasMetric  <metric/mr> .
+<configuration/cake/126> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/cake/126> ns4kge:hasNSMethod <ns-method/commonsense-aware-negative-sampling> .
+<configuration/cake/126> ns4kge:result "1889"^^xsd:decimal .
+
+<configuration/cake/127> rdf:type ns4kge:Configuration .
+<configuration/cake/127> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/127> ns4kge:hasDataset <dataset/dbpedia-242> .
+<configuration/cake/127> ns4kge:hasMetric  <metric/mrr> .
+<configuration/cake/127> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/cake/127> ns4kge:hasNSMethod <ns-method/commonsense-aware-negative-sampling> .
+<configuration/cake/127> ns4kge:result "0.287"^^xsd:decimal .
+
+<configuration/cake/128> rdf:type ns4kge:Configuration .
+<configuration/cake/128> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/128> ns4kge:hasDataset <dataset/dbpedia-242> .
+<configuration/cake/128> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/cake/128> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/cake/128> ns4kge:hasNSMethod <ns-method/commonsense-aware-negative-sampling> .
+<configuration/cake/128> ns4kge:result "0.575"^^xsd:decimal .
+
+<configuration/cake/129> rdf:type ns4kge:Configuration .
+<configuration/cake/129> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/129> ns4kge:hasDataset <dataset/dbpedia-242> .
+<configuration/cake/129> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/cake/129> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/cake/129> ns4kge:hasNSMethod <ns-method/commonsense-aware-negative-sampling> .
+<configuration/cake/129> ns4kge:result "0.427"^^xsd:decimal .
+
+<configuration/cake/130> rdf:type ns4kge:Configuration .
+<configuration/cake/130> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/130> ns4kge:hasDataset <dataset/dbpedia-242> .
+<configuration/cake/130> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/cake/130> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/cake/130> ns4kge:hasNSMethod <ns-method/commonsense-aware-negative-sampling> .
+<configuration/cake/130> ns4kge:result "0.103"^^xsd:decimal .
+
+<configuration/cake/131> rdf:type ns4kge:Configuration .
+<configuration/cake/131> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/131> ns4kge:hasDataset <dataset/dbpedia-242> .
+<configuration/cake/131> ns4kge:hasMetric  <metric/mr> .
+<configuration/cake/131> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/cake/131> ns4kge:hasNSMethod <ns-method/mvlp> .
+<configuration/cake/131> ns4kge:result "881"^^xsd:decimal .
+
+<configuration/cake/132> rdf:type ns4kge:Configuration .
+<configuration/cake/132> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/132> ns4kge:hasDataset <dataset/dbpedia-242> .
+<configuration/cake/132> ns4kge:hasMetric  <metric/mrr> .
+<configuration/cake/132> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/cake/132> ns4kge:hasNSMethod <ns-method/mvlp> .
+<configuration/cake/132> ns4kge:result "0.322"^^xsd:decimal .
+
+<configuration/cake/133> rdf:type ns4kge:Configuration .
+<configuration/cake/133> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/133> ns4kge:hasDataset <dataset/dbpedia-242> .
+<configuration/cake/133> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/cake/133> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/cake/133> ns4kge:hasNSMethod <ns-method/mvlp> .
+<configuration/cake/133> ns4kge:result "0.585"^^xsd:decimal .
+
+<configuration/cake/134> rdf:type ns4kge:Configuration .
+<configuration/cake/134> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/134> ns4kge:hasDataset <dataset/dbpedia-242> .
+<configuration/cake/134> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/cake/134> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/cake/134> ns4kge:hasNSMethod <ns-method/mvlp> .
+<configuration/cake/134> ns4kge:result "0.45"^^xsd:decimal .
+
+<configuration/cake/135> rdf:type ns4kge:Configuration .
+<configuration/cake/135> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/135> ns4kge:hasDataset <dataset/dbpedia-242> .
+<configuration/cake/135> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/cake/135> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/cake/135> ns4kge:hasNSMethod <ns-method/mvlp> .
+<configuration/cake/135> ns4kge:result "0.152"^^xsd:decimal .
+
+<configuration/cake/136> rdf:type ns4kge:Configuration .
+<configuration/cake/136> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/136> ns4kge:hasDataset <dataset/dbpedia-242> .
+<configuration/cake/136> ns4kge:hasMetric  <metric/mr> .
+<configuration/cake/136> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/cake/136> ns4kge:hasNSMethod <ns-method/cake> .
+<configuration/cake/136> ns4kge:result "881"^^xsd:decimal .
+
+<configuration/cake/137> rdf:type ns4kge:Configuration .
+<configuration/cake/137> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/137> ns4kge:hasDataset <dataset/dbpedia-242> .
+<configuration/cake/137> ns4kge:hasMetric  <metric/mrr> .
+<configuration/cake/137> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/cake/137> ns4kge:hasNSMethod <ns-method/cake> .
+<configuration/cake/137> ns4kge:result "0.33"^^xsd:decimal .
+
+<configuration/cake/138> rdf:type ns4kge:Configuration .
+<configuration/cake/138> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/138> ns4kge:hasDataset <dataset/dbpedia-242> .
+<configuration/cake/138> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/cake/138> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/cake/138> ns4kge:hasNSMethod <ns-method/cake> .
+<configuration/cake/138> ns4kge:result "0.595"^^xsd:decimal .
+
+<configuration/cake/139> rdf:type ns4kge:Configuration .
+<configuration/cake/139> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/139> ns4kge:hasDataset <dataset/dbpedia-242> .
+<configuration/cake/139> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/cake/139> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/cake/139> ns4kge:hasNSMethod <ns-method/cake> .
+<configuration/cake/139> ns4kge:result "0.458"^^xsd:decimal .
+
+<configuration/cake/140> rdf:type ns4kge:Configuration .
+<configuration/cake/140> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/140> ns4kge:hasDataset <dataset/dbpedia-242> .
+<configuration/cake/140> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/cake/140> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/cake/140> ns4kge:hasNSMethod <ns-method/cake> .
+<configuration/cake/140> ns4kge:result "0.16"^^xsd:decimal .
+
+<configuration/cake/141> rdf:type ns4kge:Configuration .
+<configuration/cake/141> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/141> ns4kge:hasDataset <dataset/dbpedia-242> .
+<configuration/cake/141> ns4kge:hasMetric  <metric/mr> .
+<configuration/cake/141> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/cake/141> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/cake/141> ns4kge:result "1950"^^xsd:decimal .
+
+<configuration/cake/142> rdf:type ns4kge:Configuration .
+<configuration/cake/142> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/142> ns4kge:hasDataset <dataset/dbpedia-242> .
+<configuration/cake/142> ns4kge:hasMetric  <metric/mrr> .
+<configuration/cake/142> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/cake/142> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/cake/142> ns4kge:result "0.374"^^xsd:decimal .
+
+<configuration/cake/143> rdf:type ns4kge:Configuration .
+<configuration/cake/143> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/143> ns4kge:hasDataset <dataset/dbpedia-242> .
+<configuration/cake/143> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/cake/143> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/cake/143> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/cake/143> ns4kge:result "0.582"^^xsd:decimal .
+
+<configuration/cake/144> rdf:type ns4kge:Configuration .
+<configuration/cake/144> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/144> ns4kge:hasDataset <dataset/dbpedia-242> .
+<configuration/cake/144> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/cake/144> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/cake/144> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/cake/144> ns4kge:result "0.457"^^xsd:decimal .
+
+<configuration/cake/145> rdf:type ns4kge:Configuration .
+<configuration/cake/145> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/145> ns4kge:hasDataset <dataset/dbpedia-242> .
+<configuration/cake/145> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/cake/145> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/cake/145> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/cake/145> ns4kge:result "0.249"^^xsd:decimal .
+
+<configuration/cake/146> rdf:type ns4kge:Configuration .
+<configuration/cake/146> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/146> ns4kge:hasDataset <dataset/dbpedia-242> .
+<configuration/cake/146> ns4kge:hasMetric  <metric/mr> .
+<configuration/cake/146> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/cake/146> ns4kge:hasNSMethod <ns-method/commonsense-aware-negative-sampling> .
+<configuration/cake/146> ns4kge:result "1063"^^xsd:decimal .
+
+<configuration/cake/147> rdf:type ns4kge:Configuration .
+<configuration/cake/147> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/147> ns4kge:hasDataset <dataset/dbpedia-242> .
+<configuration/cake/147> ns4kge:hasMetric  <metric/mrr> .
+<configuration/cake/147> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/cake/147> ns4kge:hasNSMethod <ns-method/commonsense-aware-negative-sampling> .
+<configuration/cake/147> ns4kge:result "0.407"^^xsd:decimal .
+
+<configuration/cake/148> rdf:type ns4kge:Configuration .
+<configuration/cake/148> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/148> ns4kge:hasDataset <dataset/dbpedia-242> .
+<configuration/cake/148> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/cake/148> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/cake/148> ns4kge:hasNSMethod <ns-method/commonsense-aware-negative-sampling> .
+<configuration/cake/148> ns4kge:result "0.593"^^xsd:decimal .
+
+<configuration/cake/149> rdf:type ns4kge:Configuration .
+<configuration/cake/149> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/149> ns4kge:hasDataset <dataset/dbpedia-242> .
+<configuration/cake/149> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/cake/149> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/cake/149> ns4kge:hasNSMethod <ns-method/commonsense-aware-negative-sampling> .
+<configuration/cake/149> ns4kge:result "0.476"^^xsd:decimal .
+
+<configuration/cake/150> rdf:type ns4kge:Configuration .
+<configuration/cake/150> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/150> ns4kge:hasDataset <dataset/dbpedia-242> .
+<configuration/cake/150> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/cake/150> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/cake/150> ns4kge:hasNSMethod <ns-method/commonsense-aware-negative-sampling> .
+<configuration/cake/150> ns4kge:result "0.3"^^xsd:decimal .
+
+<configuration/cake/151> rdf:type ns4kge:Configuration .
+<configuration/cake/151> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/151> ns4kge:hasDataset <dataset/dbpedia-242> .
+<configuration/cake/151> ns4kge:hasMetric  <metric/mr> .
+<configuration/cake/151> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/cake/151> ns4kge:hasNSMethod <ns-method/mvlp> .
+<configuration/cake/151> ns4kge:result "983"^^xsd:decimal .
+
+<configuration/cake/152> rdf:type ns4kge:Configuration .
+<configuration/cake/152> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/152> ns4kge:hasDataset <dataset/dbpedia-242> .
+<configuration/cake/152> ns4kge:hasMetric  <metric/mrr> .
+<configuration/cake/152> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/cake/152> ns4kge:hasNSMethod <ns-method/mvlp> .
+<configuration/cake/152> ns4kge:result "0.393"^^xsd:decimal .
+
+<configuration/cake/153> rdf:type ns4kge:Configuration .
+<configuration/cake/153> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/153> ns4kge:hasDataset <dataset/dbpedia-242> .
+<configuration/cake/153> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/cake/153> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/cake/153> ns4kge:hasNSMethod <ns-method/mvlp> .
+<configuration/cake/153> ns4kge:result "0.594"^^xsd:decimal .
+
+<configuration/cake/154> rdf:type ns4kge:Configuration .
+<configuration/cake/154> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/154> ns4kge:hasDataset <dataset/dbpedia-242> .
+<configuration/cake/154> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/cake/154> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/cake/154> ns4kge:hasNSMethod <ns-method/mvlp> .
+<configuration/cake/154> ns4kge:result "0.474"^^xsd:decimal .
+
+<configuration/cake/155> rdf:type ns4kge:Configuration .
+<configuration/cake/155> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/155> ns4kge:hasDataset <dataset/dbpedia-242> .
+<configuration/cake/155> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/cake/155> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/cake/155> ns4kge:hasNSMethod <ns-method/mvlp> .
+<configuration/cake/155> ns4kge:result "0.273"^^xsd:decimal .
+
+<configuration/cake/156> rdf:type ns4kge:Configuration .
+<configuration/cake/156> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/156> ns4kge:hasDataset <dataset/dbpedia-242> .
+<configuration/cake/156> ns4kge:hasMetric  <metric/mr> .
+<configuration/cake/156> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/cake/156> ns4kge:hasNSMethod <ns-method/cake> .
+<configuration/cake/156> ns4kge:result "1027"^^xsd:decimal .
+
+<configuration/cake/157> rdf:type ns4kge:Configuration .
+<configuration/cake/157> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/157> ns4kge:hasDataset <dataset/dbpedia-242> .
+<configuration/cake/157> ns4kge:hasMetric  <metric/mrr> .
+<configuration/cake/157> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/cake/157> ns4kge:hasNSMethod <ns-method/cake> .
+<configuration/cake/157> ns4kge:result "0.423"^^xsd:decimal .
+
+<configuration/cake/158> rdf:type ns4kge:Configuration .
+<configuration/cake/158> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/158> ns4kge:hasDataset <dataset/dbpedia-242> .
+<configuration/cake/158> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/cake/158> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/cake/158> ns4kge:hasNSMethod <ns-method/cake> .
+<configuration/cake/158> ns4kge:result "0.603"^^xsd:decimal .
+
+<configuration/cake/159> rdf:type ns4kge:Configuration .
+<configuration/cake/159> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/159> ns4kge:hasDataset <dataset/dbpedia-242> .
+<configuration/cake/159> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/cake/159> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/cake/159> ns4kge:hasNSMethod <ns-method/cake> .
+<configuration/cake/159> ns4kge:result "0.486"^^xsd:decimal .
+
+<configuration/cake/160> rdf:type ns4kge:Configuration .
+<configuration/cake/160> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/160> ns4kge:hasDataset <dataset/dbpedia-242> .
+<configuration/cake/160> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/cake/160> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/cake/160> ns4kge:hasNSMethod <ns-method/cake> .
+<configuration/cake/160> ns4kge:result "0.32"^^xsd:decimal .
+
+<configuration/cake/161> rdf:type ns4kge:Configuration .
+<configuration/cake/161> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/161> ns4kge:hasDataset <dataset/dbpedia-242> .
+<configuration/cake/161> ns4kge:hasMetric  <metric/mr> .
+<configuration/cake/161> ns4kge:hasKGEModel <kge-model/hake> .
+<configuration/cake/161> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/cake/161> ns4kge:result "1757"^^xsd:decimal .
+
+<configuration/cake/162> rdf:type ns4kge:Configuration .
+<configuration/cake/162> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/162> ns4kge:hasDataset <dataset/dbpedia-242> .
+<configuration/cake/162> ns4kge:hasMetric  <metric/mrr> .
+<configuration/cake/162> ns4kge:hasKGEModel <kge-model/hake> .
+<configuration/cake/162> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/cake/162> ns4kge:result "0.408"^^xsd:decimal .
+
+<configuration/cake/163> rdf:type ns4kge:Configuration .
+<configuration/cake/163> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/163> ns4kge:hasDataset <dataset/dbpedia-242> .
+<configuration/cake/163> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/cake/163> ns4kge:hasKGEModel <kge-model/hake> .
+<configuration/cake/163> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/cake/163> ns4kge:result "0.579"^^xsd:decimal .
+
+<configuration/cake/164> rdf:type ns4kge:Configuration .
+<configuration/cake/164> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/164> ns4kge:hasDataset <dataset/dbpedia-242> .
+<configuration/cake/164> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/cake/164> ns4kge:hasKGEModel <kge-model/hake> .
+<configuration/cake/164> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/cake/164> ns4kge:result "0.463"^^xsd:decimal .
+
+<configuration/cake/165> rdf:type ns4kge:Configuration .
+<configuration/cake/165> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/165> ns4kge:hasDataset <dataset/dbpedia-242> .
+<configuration/cake/165> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/cake/165> ns4kge:hasKGEModel <kge-model/hake> .
+<configuration/cake/165> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/cake/165> ns4kge:result "0.312"^^xsd:decimal .
+
+<configuration/cake/166> rdf:type ns4kge:Configuration .
+<configuration/cake/166> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/166> ns4kge:hasDataset <dataset/dbpedia-242> .
+<configuration/cake/166> ns4kge:hasMetric  <metric/mr> .
+<configuration/cake/166> ns4kge:hasKGEModel <kge-model/hake> .
+<configuration/cake/166> ns4kge:hasNSMethod <ns-method/commonsense-aware-negative-sampling> .
+<configuration/cake/166> ns4kge:result "1147"^^xsd:decimal .
+
+<configuration/cake/167> rdf:type ns4kge:Configuration .
+<configuration/cake/167> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/167> ns4kge:hasDataset <dataset/dbpedia-242> .
+<configuration/cake/167> ns4kge:hasMetric  <metric/mrr> .
+<configuration/cake/167> ns4kge:hasKGEModel <kge-model/hake> .
+<configuration/cake/167> ns4kge:hasNSMethod <ns-method/commonsense-aware-negative-sampling> .
+<configuration/cake/167> ns4kge:result "0.427"^^xsd:decimal .
+
+<configuration/cake/168> rdf:type ns4kge:Configuration .
+<configuration/cake/168> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/168> ns4kge:hasDataset <dataset/dbpedia-242> .
+<configuration/cake/168> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/cake/168> ns4kge:hasKGEModel <kge-model/hake> .
+<configuration/cake/168> ns4kge:hasNSMethod <ns-method/commonsense-aware-negative-sampling> .
+<configuration/cake/168> ns4kge:result "0.587"^^xsd:decimal .
+
+<configuration/cake/169> rdf:type ns4kge:Configuration .
+<configuration/cake/169> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/169> ns4kge:hasDataset <dataset/dbpedia-242> .
+<configuration/cake/169> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/cake/169> ns4kge:hasKGEModel <kge-model/hake> .
+<configuration/cake/169> ns4kge:hasNSMethod <ns-method/commonsense-aware-negative-sampling> .
+<configuration/cake/169> ns4kge:result "0.472"^^xsd:decimal .
+
+<configuration/cake/170> rdf:type ns4kge:Configuration .
+<configuration/cake/170> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/170> ns4kge:hasDataset <dataset/dbpedia-242> .
+<configuration/cake/170> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/cake/170> ns4kge:hasKGEModel <kge-model/hake> .
+<configuration/cake/170> ns4kge:hasNSMethod <ns-method/commonsense-aware-negative-sampling> .
+<configuration/cake/170> ns4kge:result "0.341"^^xsd:decimal .
+
+<configuration/cake/171> rdf:type ns4kge:Configuration .
+<configuration/cake/171> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/171> ns4kge:hasDataset <dataset/dbpedia-242> .
+<configuration/cake/171> ns4kge:hasMetric  <metric/mr> .
+<configuration/cake/171> ns4kge:hasKGEModel <kge-model/hake> .
+<configuration/cake/171> ns4kge:hasNSMethod <ns-method/mvlp> .
+<configuration/cake/171> ns4kge:result "1083"^^xsd:decimal .
+
+<configuration/cake/172> rdf:type ns4kge:Configuration .
+<configuration/cake/172> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/172> ns4kge:hasDataset <dataset/dbpedia-242> .
+<configuration/cake/172> ns4kge:hasMetric  <metric/mrr> .
+<configuration/cake/172> ns4kge:hasKGEModel <kge-model/hake> .
+<configuration/cake/172> ns4kge:hasNSMethod <ns-method/mvlp> .
+<configuration/cake/172> ns4kge:result "0.411"^^xsd:decimal .
+
+<configuration/cake/173> rdf:type ns4kge:Configuration .
+<configuration/cake/173> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/173> ns4kge:hasDataset <dataset/dbpedia-242> .
+<configuration/cake/173> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/cake/173> ns4kge:hasKGEModel <kge-model/hake> .
+<configuration/cake/173> ns4kge:hasNSMethod <ns-method/mvlp> .
+<configuration/cake/173> ns4kge:result "0.58"^^xsd:decimal .
+
+<configuration/cake/174> rdf:type ns4kge:Configuration .
+<configuration/cake/174> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/174> ns4kge:hasDataset <dataset/dbpedia-242> .
+<configuration/cake/174> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/cake/174> ns4kge:hasKGEModel <kge-model/hake> .
+<configuration/cake/174> ns4kge:hasNSMethod <ns-method/mvlp> .
+<configuration/cake/174> ns4kge:result "0.463"^^xsd:decimal .
+
+<configuration/cake/175> rdf:type ns4kge:Configuration .
+<configuration/cake/175> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/175> ns4kge:hasDataset <dataset/dbpedia-242> .
+<configuration/cake/175> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/cake/175> ns4kge:hasKGEModel <kge-model/hake> .
+<configuration/cake/175> ns4kge:hasNSMethod <ns-method/mvlp> .
+<configuration/cake/175> ns4kge:result "0.319"^^xsd:decimal .
+
+<configuration/cake/176> rdf:type ns4kge:Configuration .
+<configuration/cake/176> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/176> ns4kge:hasDataset <dataset/dbpedia-242> .
+<configuration/cake/176> ns4kge:hasMetric  <metric/mr> .
+<configuration/cake/176> ns4kge:hasKGEModel <kge-model/hake> .
+<configuration/cake/176> ns4kge:hasNSMethod <ns-method/cake> .
+<configuration/cake/176> ns4kge:result "931"^^xsd:decimal .
+
+<configuration/cake/177> rdf:type ns4kge:Configuration .
+<configuration/cake/177> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/177> ns4kge:hasDataset <dataset/dbpedia-242> .
+<configuration/cake/177> ns4kge:hasMetric  <metric/mrr> .
+<configuration/cake/177> ns4kge:hasKGEModel <kge-model/hake> .
+<configuration/cake/177> ns4kge:hasNSMethod <ns-method/cake> .
+<configuration/cake/177> ns4kge:result "0.437"^^xsd:decimal .
+
+<configuration/cake/178> rdf:type ns4kge:Configuration .
+<configuration/cake/178> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/178> ns4kge:hasDataset <dataset/dbpedia-242> .
+<configuration/cake/178> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/cake/178> ns4kge:hasKGEModel <kge-model/hake> .
+<configuration/cake/178> ns4kge:hasNSMethod <ns-method/cake> .
+<configuration/cake/178> ns4kge:result "0.593"^^xsd:decimal .
+
+<configuration/cake/179> rdf:type ns4kge:Configuration .
+<configuration/cake/179> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/179> ns4kge:hasDataset <dataset/dbpedia-242> .
+<configuration/cake/179> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/cake/179> ns4kge:hasKGEModel <kge-model/hake> .
+<configuration/cake/179> ns4kge:hasNSMethod <ns-method/cake> .
+<configuration/cake/179> ns4kge:result "0.481"^^xsd:decimal .
+
+<configuration/cake/180> rdf:type ns4kge:Configuration .
+<configuration/cake/180> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/180> ns4kge:hasDataset <dataset/dbpedia-242> .
+<configuration/cake/180> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/cake/180> ns4kge:hasKGEModel <kge-model/hake> .
+<configuration/cake/180> ns4kge:hasNSMethod <ns-method/cake> .
+<configuration/cake/180> ns4kge:result "0.353"^^xsd:decimal .
+
+<configuration/cake/181> rdf:type ns4kge:Configuration .
+<configuration/cake/181> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/181> ns4kge:hasDataset <dataset/nell-995> .
+<configuration/cake/181> ns4kge:hasMetric  <metric/mr> .
+<configuration/cake/181> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/cake/181> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/cake/181> ns4kge:result "1081"^^xsd:decimal .
+
+<configuration/cake/182> rdf:type ns4kge:Configuration .
+<configuration/cake/182> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/182> ns4kge:hasDataset <dataset/nell-995> .
+<configuration/cake/182> ns4kge:hasMetric  <metric/mrr> .
+<configuration/cake/182> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/cake/182> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/cake/182> ns4kge:result "0.429"^^xsd:decimal .
+
+<configuration/cake/183> rdf:type ns4kge:Configuration .
+<configuration/cake/183> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/183> ns4kge:hasDataset <dataset/nell-995> .
+<configuration/cake/183> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/cake/183> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/cake/183> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/cake/183> ns4kge:result "0.557"^^xsd:decimal .
+
+<configuration/cake/184> rdf:type ns4kge:Configuration .
+<configuration/cake/184> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/184> ns4kge:hasDataset <dataset/nell-995> .
+<configuration/cake/184> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/cake/184> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/cake/184> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/cake/184> ns4kge:result "0.477"^^xsd:decimal .
+
+<configuration/cake/185> rdf:type ns4kge:Configuration .
+<configuration/cake/185> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/185> ns4kge:hasDataset <dataset/nell-995> .
+<configuration/cake/185> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/cake/185> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/cake/185> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/cake/185> ns4kge:result "0.354"^^xsd:decimal .
+
+<configuration/cake/186> rdf:type ns4kge:Configuration .
+<configuration/cake/186> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/186> ns4kge:hasDataset <dataset/nell-995> .
+<configuration/cake/186> ns4kge:hasMetric  <metric/mr> .
+<configuration/cake/186> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/cake/186> ns4kge:hasNSMethod <ns-method/commonsense-aware-negative-sampling> .
+<configuration/cake/186> ns4kge:result "1022"^^xsd:decimal .
+
+<configuration/cake/187> rdf:type ns4kge:Configuration .
+<configuration/cake/187> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/187> ns4kge:hasDataset <dataset/nell-995> .
+<configuration/cake/187> ns4kge:hasMetric  <metric/mrr> .
+<configuration/cake/187> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/cake/187> ns4kge:hasNSMethod <ns-method/commonsense-aware-negative-sampling> .
+<configuration/cake/187> ns4kge:result "0.433"^^xsd:decimal .
+
+<configuration/cake/188> rdf:type ns4kge:Configuration .
+<configuration/cake/188> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/188> ns4kge:hasDataset <dataset/nell-995> .
+<configuration/cake/188> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/cake/188> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/cake/188> ns4kge:hasNSMethod <ns-method/commonsense-aware-negative-sampling> .
+<configuration/cake/188> ns4kge:result "0.591"^^xsd:decimal .
+
+<configuration/cake/189> rdf:type ns4kge:Configuration .
+<configuration/cake/189> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/189> ns4kge:hasDataset <dataset/nell-995> .
+<configuration/cake/189> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/cake/189> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/cake/189> ns4kge:hasNSMethod <ns-method/commonsense-aware-negative-sampling> .
+<configuration/cake/189> ns4kge:result "0.495"^^xsd:decimal .
+
+<configuration/cake/190> rdf:type ns4kge:Configuration .
+<configuration/cake/190> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/190> ns4kge:hasDataset <dataset/nell-995> .
+<configuration/cake/190> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/cake/190> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/cake/190> ns4kge:hasNSMethod <ns-method/commonsense-aware-negative-sampling> .
+<configuration/cake/190> ns4kge:result "0.336"^^xsd:decimal .
+
+<configuration/cake/191> rdf:type ns4kge:Configuration .
+<configuration/cake/191> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/191> ns4kge:hasDataset <dataset/nell-995> .
+<configuration/cake/191> ns4kge:hasMetric  <metric/mr> .
+<configuration/cake/191> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/cake/191> ns4kge:hasNSMethod <ns-method/mvlp> .
+<configuration/cake/191> ns4kge:result "336"^^xsd:decimal .
+
+<configuration/cake/192> rdf:type ns4kge:Configuration .
+<configuration/cake/192> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/192> ns4kge:hasDataset <dataset/nell-995> .
+<configuration/cake/192> ns4kge:hasMetric  <metric/mrr> .
+<configuration/cake/192> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/cake/192> ns4kge:hasNSMethod <ns-method/mvlp> .
+<configuration/cake/192> ns4kge:result "0.509"^^xsd:decimal .
+
+<configuration/cake/193> rdf:type ns4kge:Configuration .
+<configuration/cake/193> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/193> ns4kge:hasDataset <dataset/nell-995> .
+<configuration/cake/193> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/cake/193> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/cake/193> ns4kge:hasNSMethod <ns-method/mvlp> .
+<configuration/cake/193> ns4kge:result "0.617"^^xsd:decimal .
+
+<configuration/cake/194> rdf:type ns4kge:Configuration .
+<configuration/cake/194> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/194> ns4kge:hasDataset <dataset/nell-995> .
+<configuration/cake/194> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/cake/194> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/cake/194> ns4kge:hasNSMethod <ns-method/mvlp> .
+<configuration/cake/194> ns4kge:result "0.547"^^xsd:decimal .
+
+<configuration/cake/195> rdf:type ns4kge:Configuration .
+<configuration/cake/195> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/195> ns4kge:hasDataset <dataset/nell-995> .
+<configuration/cake/195> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/cake/195> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/cake/195> ns4kge:hasNSMethod <ns-method/mvlp> .
+<configuration/cake/195> ns4kge:result "0.444"^^xsd:decimal .
+
+<configuration/cake/196> rdf:type ns4kge:Configuration .
+<configuration/cake/196> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/196> ns4kge:hasDataset <dataset/nell-995> .
+<configuration/cake/196> ns4kge:hasMetric  <metric/mr> .
+<configuration/cake/196> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/cake/196> ns4kge:hasNSMethod <ns-method/cake> .
+<configuration/cake/196> ns4kge:result "317"^^xsd:decimal .
+
+<configuration/cake/197> rdf:type ns4kge:Configuration .
+<configuration/cake/197> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/197> ns4kge:hasDataset <dataset/nell-995> .
+<configuration/cake/197> ns4kge:hasMetric  <metric/mrr> .
+<configuration/cake/197> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/cake/197> ns4kge:hasNSMethod <ns-method/cake> .
+<configuration/cake/197> ns4kge:result "0.533"^^xsd:decimal .
+
+<configuration/cake/198> rdf:type ns4kge:Configuration .
+<configuration/cake/198> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/198> ns4kge:hasDataset <dataset/nell-995> .
+<configuration/cake/198> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/cake/198> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/cake/198> ns4kge:hasNSMethod <ns-method/cake> .
+<configuration/cake/198> ns4kge:result "0.65"^^xsd:decimal .
+
+<configuration/cake/199> rdf:type ns4kge:Configuration .
+<configuration/cake/199> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/199> ns4kge:hasDataset <dataset/nell-995> .
+<configuration/cake/199> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/cake/199> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/cake/199> ns4kge:hasNSMethod <ns-method/cake> .
+<configuration/cake/199> ns4kge:result "0.578"^^xsd:decimal .
+
+<configuration/cake/200> rdf:type ns4kge:Configuration .
+<configuration/cake/200> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/200> ns4kge:hasDataset <dataset/nell-995> .
+<configuration/cake/200> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/cake/200> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/cake/200> ns4kge:hasNSMethod <ns-method/cake> .
+<configuration/cake/200> ns4kge:result "0.461"^^xsd:decimal .
+
+<configuration/cake/201> rdf:type ns4kge:Configuration .
+<configuration/cake/201> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/201> ns4kge:hasDataset <dataset/nell-995> .
+<configuration/cake/201> ns4kge:hasMetric  <metric/mr> .
+<configuration/cake/201> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/cake/201> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/cake/201> ns4kge:result "2077"^^xsd:decimal .
+
+<configuration/cake/202> rdf:type ns4kge:Configuration .
+<configuration/cake/202> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/202> ns4kge:hasDataset <dataset/nell-995> .
+<configuration/cake/202> ns4kge:hasMetric  <metric/mrr> .
+<configuration/cake/202> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/cake/202> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/cake/202> ns4kge:result "0.46"^^xsd:decimal .
+
+<configuration/cake/203> rdf:type ns4kge:Configuration .
+<configuration/cake/203> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/203> ns4kge:hasDataset <dataset/nell-995> .
+<configuration/cake/203> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/cake/203> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/cake/203> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/cake/203> ns4kge:result "0.553"^^xsd:decimal .
+
+<configuration/cake/204> rdf:type ns4kge:Configuration .
+<configuration/cake/204> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/204> ns4kge:hasDataset <dataset/nell-995> .
+<configuration/cake/204> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/cake/204> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/cake/204> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/cake/204> ns4kge:result "0.493"^^xsd:decimal .
+
+<configuration/cake/205> rdf:type ns4kge:Configuration .
+<configuration/cake/205> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/205> ns4kge:hasDataset <dataset/nell-995> .
+<configuration/cake/205> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/cake/205> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/cake/205> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/cake/205> ns4kge:result "0.403"^^xsd:decimal .
+
+<configuration/cake/206> rdf:type ns4kge:Configuration .
+<configuration/cake/206> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/206> ns4kge:hasDataset <dataset/nell-995> .
+<configuration/cake/206> ns4kge:hasMetric  <metric/mr> .
+<configuration/cake/206> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/cake/206> ns4kge:hasNSMethod <ns-method/commonsense-aware-negative-sampling> .
+<configuration/cake/206> ns4kge:result "1097"^^xsd:decimal .
+
+<configuration/cake/207> rdf:type ns4kge:Configuration .
+<configuration/cake/207> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/207> ns4kge:hasDataset <dataset/nell-995> .
+<configuration/cake/207> ns4kge:hasMetric  <metric/mrr> .
+<configuration/cake/207> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/cake/207> ns4kge:hasNSMethod <ns-method/commonsense-aware-negative-sampling> .
+<configuration/cake/207> ns4kge:result "0.531"^^xsd:decimal .
+
+<configuration/cake/208> rdf:type ns4kge:Configuration .
+<configuration/cake/208> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/208> ns4kge:hasDataset <dataset/nell-995> .
+<configuration/cake/208> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/cake/208> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/cake/208> ns4kge:hasNSMethod <ns-method/commonsense-aware-negative-sampling> .
+<configuration/cake/208> ns4kge:result "0.644"^^xsd:decimal .
+
+<configuration/cake/209> rdf:type ns4kge:Configuration .
+<configuration/cake/209> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/209> ns4kge:hasDataset <dataset/nell-995> .
+<configuration/cake/209> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/cake/209> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/cake/209> ns4kge:hasNSMethod <ns-method/commonsense-aware-negative-sampling> .
+<configuration/cake/209> ns4kge:result "0.573"^^xsd:decimal .
+
+<configuration/cake/210> rdf:type ns4kge:Configuration .
+<configuration/cake/210> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/210> ns4kge:hasDataset <dataset/nell-995> .
+<configuration/cake/210> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/cake/210> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/cake/210> ns4kge:hasNSMethod <ns-method/commonsense-aware-negative-sampling> .
+<configuration/cake/210> ns4kge:result "0.461"^^xsd:decimal .
+
+<configuration/cake/211> rdf:type ns4kge:Configuration .
+<configuration/cake/211> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/211> ns4kge:hasDataset <dataset/nell-995> .
+<configuration/cake/211> ns4kge:hasMetric  <metric/mr> .
+<configuration/cake/211> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/cake/211> ns4kge:hasNSMethod <ns-method/mvlp> .
+<configuration/cake/211> ns4kge:result "356"^^xsd:decimal .
+
+<configuration/cake/212> rdf:type ns4kge:Configuration .
+<configuration/cake/212> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/212> ns4kge:hasDataset <dataset/nell-995> .
+<configuration/cake/212> ns4kge:hasMetric  <metric/mrr> .
+<configuration/cake/212> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/cake/212> ns4kge:hasNSMethod <ns-method/mvlp> .
+<configuration/cake/212> ns4kge:result "0.519"^^xsd:decimal .
+
+<configuration/cake/213> rdf:type ns4kge:Configuration .
+<configuration/cake/213> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/213> ns4kge:hasDataset <dataset/nell-995> .
+<configuration/cake/213> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/cake/213> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/cake/213> ns4kge:hasNSMethod <ns-method/mvlp> .
+<configuration/cake/213> ns4kge:result "0.628"^^xsd:decimal .
+
+<configuration/cake/214> rdf:type ns4kge:Configuration .
+<configuration/cake/214> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/214> ns4kge:hasDataset <dataset/nell-995> .
+<configuration/cake/214> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/cake/214> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/cake/214> ns4kge:hasNSMethod <ns-method/mvlp> .
+<configuration/cake/214> ns4kge:result "0.564"^^xsd:decimal .
+
+<configuration/cake/215> rdf:type ns4kge:Configuration .
+<configuration/cake/215> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/215> ns4kge:hasDataset <dataset/nell-995> .
+<configuration/cake/215> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/cake/215> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/cake/215> ns4kge:hasNSMethod <ns-method/mvlp> .
+<configuration/cake/215> ns4kge:result "0.447"^^xsd:decimal .
+
+<configuration/cake/216> rdf:type ns4kge:Configuration .
+<configuration/cake/216> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/216> ns4kge:hasDataset <dataset/nell-995> .
+<configuration/cake/216> ns4kge:hasMetric  <metric/mr> .
+<configuration/cake/216> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/cake/216> ns4kge:hasNSMethod <ns-method/cake> .
+<configuration/cake/216> ns4kge:result "329"^^xsd:decimal .
+
+<configuration/cake/217> rdf:type ns4kge:Configuration .
+<configuration/cake/217> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/217> ns4kge:hasDataset <dataset/nell-995> .
+<configuration/cake/217> ns4kge:hasMetric  <metric/mrr> .
+<configuration/cake/217> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/cake/217> ns4kge:hasNSMethod <ns-method/cake> .
+<configuration/cake/217> ns4kge:result "0.546"^^xsd:decimal .
+
+<configuration/cake/218> rdf:type ns4kge:Configuration .
+<configuration/cake/218> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/218> ns4kge:hasDataset <dataset/nell-995> .
+<configuration/cake/218> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/cake/218> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/cake/218> ns4kge:hasNSMethod <ns-method/cake> .
+<configuration/cake/218> ns4kge:result "0.66"^^xsd:decimal .
+
+<configuration/cake/219> rdf:type ns4kge:Configuration .
+<configuration/cake/219> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/219> ns4kge:hasDataset <dataset/nell-995> .
+<configuration/cake/219> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/cake/219> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/cake/219> ns4kge:hasNSMethod <ns-method/cake> .
+<configuration/cake/219> ns4kge:result "0.592"^^xsd:decimal .
+
+<configuration/cake/220> rdf:type ns4kge:Configuration .
+<configuration/cake/220> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/220> ns4kge:hasDataset <dataset/nell-995> .
+<configuration/cake/220> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/cake/220> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/cake/220> ns4kge:hasNSMethod <ns-method/cake> .
+<configuration/cake/220> ns4kge:result "0.474"^^xsd:decimal .
+
+<configuration/cake/221> rdf:type ns4kge:Configuration .
+<configuration/cake/221> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/221> ns4kge:hasDataset <dataset/nell-995> .
+<configuration/cake/221> ns4kge:hasMetric  <metric/mr> .
+<configuration/cake/221> ns4kge:hasKGEModel <kge-model/hake> .
+<configuration/cake/221> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/cake/221> ns4kge:result "1157"^^xsd:decimal .
+
+<configuration/cake/222> rdf:type ns4kge:Configuration .
+<configuration/cake/222> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/222> ns4kge:hasDataset <dataset/nell-995> .
+<configuration/cake/222> ns4kge:hasMetric  <metric/mrr> .
+<configuration/cake/222> ns4kge:hasKGEModel <kge-model/hake> .
+<configuration/cake/222> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/cake/222> ns4kge:result "0.502"^^xsd:decimal .
+
+<configuration/cake/223> rdf:type ns4kge:Configuration .
+<configuration/cake/223> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/223> ns4kge:hasDataset <dataset/nell-995> .
+<configuration/cake/223> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/cake/223> ns4kge:hasKGEModel <kge-model/hake> .
+<configuration/cake/223> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/cake/223> ns4kge:result "0.61"^^xsd:decimal .
+
+<configuration/cake/224> rdf:type ns4kge:Configuration .
+<configuration/cake/224> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/224> ns4kge:hasDataset <dataset/nell-995> .
+<configuration/cake/224> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/cake/224> ns4kge:hasKGEModel <kge-model/hake> .
+<configuration/cake/224> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/cake/224> ns4kge:result "0.538"^^xsd:decimal .
+
+<configuration/cake/225> rdf:type ns4kge:Configuration .
+<configuration/cake/225> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/225> ns4kge:hasDataset <dataset/nell-995> .
+<configuration/cake/225> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/cake/225> ns4kge:hasKGEModel <kge-model/hake> .
+<configuration/cake/225> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/cake/225> ns4kge:result "0.437"^^xsd:decimal .
+
+<configuration/cake/226> rdf:type ns4kge:Configuration .
+<configuration/cake/226> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/226> ns4kge:hasDataset <dataset/nell-995> .
+<configuration/cake/226> ns4kge:hasMetric  <metric/mr> .
+<configuration/cake/226> ns4kge:hasKGEModel <kge-model/hake> .
+<configuration/cake/226> ns4kge:hasNSMethod <ns-method/commonsense-aware-negative-sampling> .
+<configuration/cake/226> ns4kge:result "2011"^^xsd:decimal .
+
+<configuration/cake/227> rdf:type ns4kge:Configuration .
+<configuration/cake/227> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/227> ns4kge:hasDataset <dataset/nell-995> .
+<configuration/cake/227> ns4kge:hasMetric  <metric/mrr> .
+<configuration/cake/227> ns4kge:hasKGEModel <kge-model/hake> .
+<configuration/cake/227> ns4kge:hasNSMethod <ns-method/commonsense-aware-negative-sampling> .
+<configuration/cake/227> ns4kge:result "0.52"^^xsd:decimal .
+
+<configuration/cake/228> rdf:type ns4kge:Configuration .
+<configuration/cake/228> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/228> ns4kge:hasDataset <dataset/nell-995> .
+<configuration/cake/228> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/cake/228> ns4kge:hasKGEModel <kge-model/hake> .
+<configuration/cake/228> ns4kge:hasNSMethod <ns-method/commonsense-aware-negative-sampling> .
+<configuration/cake/228> ns4kge:result "0.64"^^xsd:decimal .
+
+<configuration/cake/229> rdf:type ns4kge:Configuration .
+<configuration/cake/229> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/229> ns4kge:hasDataset <dataset/nell-995> .
+<configuration/cake/229> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/cake/229> ns4kge:hasKGEModel <kge-model/hake> .
+<configuration/cake/229> ns4kge:hasNSMethod <ns-method/commonsense-aware-negative-sampling> .
+<configuration/cake/229> ns4kge:result "0.556"^^xsd:decimal .
+
+<configuration/cake/230> rdf:type ns4kge:Configuration .
+<configuration/cake/230> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/230> ns4kge:hasDataset <dataset/nell-995> .
+<configuration/cake/230> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/cake/230> ns4kge:hasKGEModel <kge-model/hake> .
+<configuration/cake/230> ns4kge:hasNSMethod <ns-method/commonsense-aware-negative-sampling> .
+<configuration/cake/230> ns4kge:result "0.451"^^xsd:decimal .
+
+<configuration/cake/231> rdf:type ns4kge:Configuration .
+<configuration/cake/231> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/231> ns4kge:hasDataset <dataset/nell-995> .
+<configuration/cake/231> ns4kge:hasMetric  <metric/mr> .
+<configuration/cake/231> ns4kge:hasKGEModel <kge-model/hake> .
+<configuration/cake/231> ns4kge:hasNSMethod <ns-method/mvlp> .
+<configuration/cake/231> ns4kge:result "478"^^xsd:decimal .
+
+<configuration/cake/232> rdf:type ns4kge:Configuration .
+<configuration/cake/232> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/232> ns4kge:hasDataset <dataset/nell-995> .
+<configuration/cake/232> ns4kge:hasMetric  <metric/mrr> .
+<configuration/cake/232> ns4kge:hasKGEModel <kge-model/hake> .
+<configuration/cake/232> ns4kge:hasNSMethod <ns-method/mvlp> .
+<configuration/cake/232> ns4kge:result "0.51"^^xsd:decimal .
+
+<configuration/cake/233> rdf:type ns4kge:Configuration .
+<configuration/cake/233> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/233> ns4kge:hasDataset <dataset/nell-995> .
+<configuration/cake/233> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/cake/233> ns4kge:hasKGEModel <kge-model/hake> .
+<configuration/cake/233> ns4kge:hasNSMethod <ns-method/mvlp> .
+<configuration/cake/233> ns4kge:result "0.614"^^xsd:decimal .
+
+<configuration/cake/234> rdf:type ns4kge:Configuration .
+<configuration/cake/234> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/234> ns4kge:hasDataset <dataset/nell-995> .
+<configuration/cake/234> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/cake/234> ns4kge:hasKGEModel <kge-model/hake> .
+<configuration/cake/234> ns4kge:hasNSMethod <ns-method/mvlp> .
+<configuration/cake/234> ns4kge:result "0.551"^^xsd:decimal .
+
+<configuration/cake/235> rdf:type ns4kge:Configuration .
+<configuration/cake/235> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/235> ns4kge:hasDataset <dataset/nell-995> .
+<configuration/cake/235> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/cake/235> ns4kge:hasKGEModel <kge-model/hake> .
+<configuration/cake/235> ns4kge:hasNSMethod <ns-method/mvlp> .
+<configuration/cake/235> ns4kge:result "0.444"^^xsd:decimal .
+
+<configuration/cake/236> rdf:type ns4kge:Configuration .
+<configuration/cake/236> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/236> ns4kge:hasDataset <dataset/nell-995> .
+<configuration/cake/236> ns4kge:hasMetric  <metric/mr> .
+<configuration/cake/236> ns4kge:hasKGEModel <kge-model/hake> .
+<configuration/cake/236> ns4kge:hasNSMethod <ns-method/cake> .
+<configuration/cake/236> ns4kge:result "433"^^xsd:decimal .
+
+<configuration/cake/237> rdf:type ns4kge:Configuration .
+<configuration/cake/237> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/237> ns4kge:hasDataset <dataset/nell-995> .
+<configuration/cake/237> ns4kge:hasMetric  <metric/mrr> .
+<configuration/cake/237> ns4kge:hasKGEModel <kge-model/hake> .
+<configuration/cake/237> ns4kge:hasNSMethod <ns-method/cake> .
+<configuration/cake/237> ns4kge:result "0.543"^^xsd:decimal .
+
+<configuration/cake/238> rdf:type ns4kge:Configuration .
+<configuration/cake/238> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/238> ns4kge:hasDataset <dataset/nell-995> .
+<configuration/cake/238> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/cake/238> ns4kge:hasKGEModel <kge-model/hake> .
+<configuration/cake/238> ns4kge:hasNSMethod <ns-method/cake> .
+<configuration/cake/238> ns4kge:result "0.655"^^xsd:decimal .
+
+<configuration/cake/239> rdf:type ns4kge:Configuration .
+<configuration/cake/239> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/239> ns4kge:hasDataset <dataset/nell-995> .
+<configuration/cake/239> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/cake/239> ns4kge:hasKGEModel <kge-model/hake> .
+<configuration/cake/239> ns4kge:hasNSMethod <ns-method/cake> .
+<configuration/cake/239> ns4kge:result "0.583"^^xsd:decimal .
+
+<configuration/cake/240> rdf:type ns4kge:Configuration .
+<configuration/cake/240> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/240> ns4kge:hasDataset <dataset/nell-995> .
+<configuration/cake/240> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/cake/240> ns4kge:hasKGEModel <kge-model/hake> .
+<configuration/cake/240> ns4kge:hasNSMethod <ns-method/cake> .
+<configuration/cake/240> ns4kge:result "0.477"^^xsd:decimal .
+
+<configuration/cake/241> rdf:type ns4kge:Configuration .
+<configuration/cake/241> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/241> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/cake/241> ns4kge:hasMetric  <metric/mr> .
+<configuration/cake/241> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/cake/241> ns4kge:hasNSMethod <ns-method/uniform-negative-sampling> .
+<configuration/cake/241> ns4kge:result "178"^^xsd:decimal .
+
+<configuration/cake/242> rdf:type ns4kge:Configuration .
+<configuration/cake/242> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/242> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/cake/242> ns4kge:hasMetric  <metric/mrr> .
+<configuration/cake/242> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/cake/242> ns4kge:hasNSMethod <ns-method/uniform-negative-sampling> .
+<configuration/cake/242> ns4kge:result "0.301"^^xsd:decimal .
+
+<configuration/cake/243> rdf:type ns4kge:Configuration .
+<configuration/cake/243> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/243> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/cake/243> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/cake/243> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/cake/243> ns4kge:hasNSMethod <ns-method/uniform-negative-sampling> .
+<configuration/cake/243> ns4kge:result "0.505"^^xsd:decimal .
+
+<configuration/cake/244> rdf:type ns4kge:Configuration .
+<configuration/cake/244> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/244> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/cake/244> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/cake/244> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/cake/244> ns4kge:hasNSMethod <ns-method/uniform-negative-sampling> .
+<configuration/cake/244> ns4kge:result "0.339"^^xsd:decimal .
+
+<configuration/cake/245> rdf:type ns4kge:Configuration .
+<configuration/cake/245> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/245> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/cake/245> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/cake/245> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/cake/245> ns4kge:hasNSMethod <ns-method/uniform-negative-sampling> .
+<configuration/cake/245> ns4kge:result "0.201"^^xsd:decimal .
+
+<configuration/cake/246> rdf:type ns4kge:Configuration .
+<configuration/cake/246> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/246> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/cake/246> ns4kge:hasMetric  <metric/mr> .
+<configuration/cake/246> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/cake/246> ns4kge:result "144"^^xsd:decimal .
+
+<configuration/cake/247> rdf:type ns4kge:Configuration .
+<configuration/cake/247> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/247> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/cake/247> ns4kge:hasMetric  <metric/mrr> .
+<configuration/cake/247> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/cake/247> ns4kge:result "0.35"^^xsd:decimal .
+
+<configuration/cake/248> rdf:type ns4kge:Configuration .
+<configuration/cake/248> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/248> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/cake/248> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/cake/248> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/cake/248> ns4kge:result "0.578"^^xsd:decimal .
+
+<configuration/cake/249> rdf:type ns4kge:Configuration .
+<configuration/cake/249> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/249> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/cake/249> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/cake/249> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/cake/249> ns4kge:result "0.415"^^xsd:decimal .
+
+<configuration/cake/250> rdf:type ns4kge:Configuration .
+<configuration/cake/250> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/250> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/cake/250> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/cake/250> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/cake/250> ns4kge:result "0.227"^^xsd:decimal .
+
+<configuration/cake/251> rdf:type ns4kge:Configuration .
+<configuration/cake/251> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/251> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/cake/251> ns4kge:hasMetric  <metric/mr> .
+<configuration/cake/251> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/cake/251> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/cake/251> ns4kge:result "209"^^xsd:decimal .
+
+<configuration/cake/252> rdf:type ns4kge:Configuration .
+<configuration/cake/252> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/252> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/cake/252> ns4kge:hasMetric  <metric/mrr> .
+<configuration/cake/252> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/cake/252> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/cake/252> ns4kge:result "0.292"^^xsd:decimal .
+
+<configuration/cake/253> rdf:type ns4kge:Configuration .
+<configuration/cake/253> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/253> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/cake/253> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/cake/253> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/cake/253> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/cake/253> ns4kge:result "0.56"^^xsd:decimal .
+
+<configuration/cake/254> rdf:type ns4kge:Configuration .
+<configuration/cake/254> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/254> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/cake/254> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/cake/254> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/cake/254> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/cake/254> ns4kge:result "0.375"^^xsd:decimal .
+
+<configuration/cake/255> rdf:type ns4kge:Configuration .
+<configuration/cake/255> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/255> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/cake/255> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/cake/255> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/cake/255> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/cake/255> ns4kge:result "0.144"^^xsd:decimal .
+
+<configuration/cake/256> rdf:type ns4kge:Configuration .
+<configuration/cake/256> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/256> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/cake/256> ns4kge:hasMetric  <metric/mr> .
+<configuration/cake/256> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/cake/256> ns4kge:hasNSMethod <ns-method/domain-based-negative-sampling> .
+<configuration/cake/256> ns4kge:result "35"^^xsd:decimal .
+
+<configuration/cake/257> rdf:type ns4kge:Configuration .
+<configuration/cake/257> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/257> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/cake/257> ns4kge:hasMetric  <metric/mrr> .
+<configuration/cake/257> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/cake/257> ns4kge:hasNSMethod <ns-method/domain-based-negative-sampling> .
+<configuration/cake/257> ns4kge:result "0.619"^^xsd:decimal .
+
+<configuration/cake/258> rdf:type ns4kge:Configuration .
+<configuration/cake/258> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/258> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/cake/258> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/cake/258> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/cake/258> ns4kge:hasNSMethod <ns-method/domain-based-negative-sampling> .
+<configuration/cake/258> ns4kge:result "0.839"^^xsd:decimal .
+
+<configuration/cake/259> rdf:type ns4kge:Configuration .
+<configuration/cake/259> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/259> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/cake/259> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/cake/259> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/cake/259> ns4kge:hasNSMethod <ns-method/domain-based-negative-sampling> .
+<configuration/cake/259> ns4kge:result "0.715"^^xsd:decimal .
+
+<configuration/cake/260> rdf:type ns4kge:Configuration .
+<configuration/cake/260> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/260> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/cake/260> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/cake/260> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/cake/260> ns4kge:hasNSMethod <ns-method/domain-based-negative-sampling> .
+<configuration/cake/260> ns4kge:result "0.489"^^xsd:decimal .
+
+<configuration/cake/261> rdf:type ns4kge:Configuration .
+<configuration/cake/261> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/261> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/cake/261> ns4kge:hasMetric  <metric/mr> .
+<configuration/cake/261> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/cake/261> ns4kge:hasNSMethod <ns-method/uniform-negative-sampling> .
+<configuration/cake/261> ns4kge:result "361"^^xsd:decimal .
+
+<configuration/cake/262> rdf:type ns4kge:Configuration .
+<configuration/cake/262> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/262> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/cake/262> ns4kge:hasMetric  <metric/mrr> .
+<configuration/cake/262> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/cake/262> ns4kge:hasNSMethod <ns-method/uniform-negative-sampling> .
+<configuration/cake/262> ns4kge:result "0.171"^^xsd:decimal .
+
+<configuration/cake/263> rdf:type ns4kge:Configuration .
+<configuration/cake/263> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/263> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/cake/263> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/cake/263> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/cake/263> ns4kge:hasNSMethod <ns-method/uniform-negative-sampling> .
+<configuration/cake/263> ns4kge:result "0.323"^^xsd:decimal .
+
+<configuration/cake/264> rdf:type ns4kge:Configuration .
+<configuration/cake/264> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/264> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/cake/264> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/cake/264> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/cake/264> ns4kge:hasNSMethod <ns-method/uniform-negative-sampling> .
+<configuration/cake/264> ns4kge:result "0.182"^^xsd:decimal .
+
+<configuration/cake/265> rdf:type ns4kge:Configuration .
+<configuration/cake/265> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/265> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/cake/265> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/cake/265> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/cake/265> ns4kge:hasNSMethod <ns-method/uniform-negative-sampling> .
+<configuration/cake/265> ns4kge:result "0.097"^^xsd:decimal .
+
+<configuration/cake/266> rdf:type ns4kge:Configuration .
+<configuration/cake/266> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/266> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/cake/266> ns4kge:hasMetric  <metric/mr> .
+<configuration/cake/266> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/cake/266> ns4kge:result "343"^^xsd:decimal .
+
+<configuration/cake/267> rdf:type ns4kge:Configuration .
+<configuration/cake/267> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/267> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/cake/267> ns4kge:hasMetric  <metric/mrr> .
+<configuration/cake/267> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/cake/267> ns4kge:result "0.261"^^xsd:decimal .
+
+<configuration/cake/268> rdf:type ns4kge:Configuration .
+<configuration/cake/268> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/268> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/cake/268> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/cake/268> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/cake/268> ns4kge:result "0.446"^^xsd:decimal .
+
+<configuration/cake/269> rdf:type ns4kge:Configuration .
+<configuration/cake/269> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/269> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/cake/269> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/cake/269> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/cake/269> ns4kge:result "0.297"^^xsd:decimal .
+
+<configuration/cake/270> rdf:type ns4kge:Configuration .
+<configuration/cake/270> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/270> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/cake/270> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/cake/270> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/cake/270> ns4kge:result "0.168"^^xsd:decimal .
+
+<configuration/cake/271> rdf:type ns4kge:Configuration .
+<configuration/cake/271> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/271> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/cake/271> ns4kge:hasMetric  <metric/mr> .
+<configuration/cake/271> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/cake/271> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/cake/271> ns4kge:result "556"^^xsd:decimal .
+
+<configuration/cake/272> rdf:type ns4kge:Configuration .
+<configuration/cake/272> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/272> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/cake/272> ns4kge:hasMetric  <metric/mrr> .
+<configuration/cake/272> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/cake/272> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/cake/272> ns4kge:result "0.205"^^xsd:decimal .
+
+<configuration/cake/273> rdf:type ns4kge:Configuration .
+<configuration/cake/273> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/273> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/cake/273> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/cake/273> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/cake/273> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/cake/273> ns4kge:result "0.353"^^xsd:decimal .
+
+<configuration/cake/274> rdf:type ns4kge:Configuration .
+<configuration/cake/274> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/274> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/cake/274> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/cake/274> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/cake/274> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/cake/274> ns4kge:result "0.226"^^xsd:decimal .
+
+<configuration/cake/275> rdf:type ns4kge:Configuration .
+<configuration/cake/275> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/275> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/cake/275> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/cake/275> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/cake/275> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/cake/275> ns4kge:result "0.131"^^xsd:decimal .
+
+<configuration/cake/276> rdf:type ns4kge:Configuration .
+<configuration/cake/276> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/276> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/cake/276> ns4kge:hasMetric  <metric/mr> .
+<configuration/cake/276> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/cake/276> ns4kge:hasNSMethod <ns-method/domain-based-negative-sampling> .
+<configuration/cake/276> ns4kge:result "186"^^xsd:decimal .
+
+<configuration/cake/277> rdf:type ns4kge:Configuration .
+<configuration/cake/277> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/277> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/cake/277> ns4kge:hasMetric  <metric/mrr> .
+<configuration/cake/277> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/cake/277> ns4kge:hasNSMethod <ns-method/domain-based-negative-sampling> .
+<configuration/cake/277> ns4kge:result "0.283"^^xsd:decimal .
+
+<configuration/cake/278> rdf:type ns4kge:Configuration .
+<configuration/cake/278> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/278> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/cake/278> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/cake/278> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/cake/278> ns4kge:hasNSMethod <ns-method/domain-based-negative-sampling> .
+<configuration/cake/278> ns4kge:result "0.467"^^xsd:decimal .
+
+<configuration/cake/279> rdf:type ns4kge:Configuration .
+<configuration/cake/279> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/279> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/cake/279> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/cake/279> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/cake/279> ns4kge:hasNSMethod <ns-method/domain-based-negative-sampling> .
+<configuration/cake/279> ns4kge:result "0.314"^^xsd:decimal .
+
+<configuration/cake/280> rdf:type ns4kge:Configuration .
+<configuration/cake/280> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/280> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/cake/280> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/cake/280> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/cake/280> ns4kge:hasNSMethod <ns-method/domain-based-negative-sampling> .
+<configuration/cake/280> ns4kge:result "0.19"^^xsd:decimal .
+
+<configuration/cake/281> rdf:type ns4kge:Configuration .
+<configuration/cake/281> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/281> ns4kge:hasDataset <dataset/dbpedia-242> .
+<configuration/cake/281> ns4kge:hasMetric  <metric/mr> .
+<configuration/cake/281> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/cake/281> ns4kge:hasNSMethod <ns-method/uniform-negative-sampling> .
+<configuration/cake/281> ns4kge:result "5750"^^xsd:decimal .
+
+<configuration/cake/282> rdf:type ns4kge:Configuration .
+<configuration/cake/282> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/282> ns4kge:hasDataset <dataset/dbpedia-242> .
+<configuration/cake/282> ns4kge:hasMetric  <metric/mrr> .
+<configuration/cake/282> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/cake/282> ns4kge:hasNSMethod <ns-method/uniform-negative-sampling> .
+<configuration/cake/282> ns4kge:result "0.124"^^xsd:decimal .
+
+<configuration/cake/283> rdf:type ns4kge:Configuration .
+<configuration/cake/283> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/283> ns4kge:hasDataset <dataset/dbpedia-242> .
+<configuration/cake/283> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/cake/283> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/cake/283> ns4kge:hasNSMethod <ns-method/uniform-negative-sampling> .
+<configuration/cake/283> ns4kge:result "0.262"^^xsd:decimal .
+
+<configuration/cake/284> rdf:type ns4kge:Configuration .
+<configuration/cake/284> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/284> ns4kge:hasDataset <dataset/dbpedia-242> .
+<configuration/cake/284> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/cake/284> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/cake/284> ns4kge:hasNSMethod <ns-method/uniform-negative-sampling> .
+<configuration/cake/284> ns4kge:result "0.183"^^xsd:decimal .
+
+<configuration/cake/285> rdf:type ns4kge:Configuration .
+<configuration/cake/285> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/285> ns4kge:hasDataset <dataset/dbpedia-242> .
+<configuration/cake/285> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/cake/285> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/cake/285> ns4kge:hasNSMethod <ns-method/uniform-negative-sampling> .
+<configuration/cake/285> ns4kge:result "0.033"^^xsd:decimal .
+
+<configuration/cake/286> rdf:type ns4kge:Configuration .
+<configuration/cake/286> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/286> ns4kge:hasDataset <dataset/dbpedia-242> .
+<configuration/cake/286> ns4kge:hasMetric  <metric/mr> .
+<configuration/cake/286> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/cake/286> ns4kge:result "2292"^^xsd:decimal .
+
+<configuration/cake/287> rdf:type ns4kge:Configuration .
+<configuration/cake/287> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/287> ns4kge:hasDataset <dataset/dbpedia-242> .
+<configuration/cake/287> ns4kge:hasMetric  <metric/mrr> .
+<configuration/cake/287> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/cake/287> ns4kge:result "0.202"^^xsd:decimal .
+
+<configuration/cake/288> rdf:type ns4kge:Configuration .
+<configuration/cake/288> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/288> ns4kge:hasDataset <dataset/dbpedia-242> .
+<configuration/cake/288> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/cake/288> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/cake/288> ns4kge:result "0.395"^^xsd:decimal .
+
+<configuration/cake/289> rdf:type ns4kge:Configuration .
+<configuration/cake/289> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/289> ns4kge:hasDataset <dataset/dbpedia-242> .
+<configuration/cake/289> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/cake/289> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/cake/289> ns4kge:result "0.247"^^xsd:decimal .
+
+<configuration/cake/290> rdf:type ns4kge:Configuration .
+<configuration/cake/290> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/290> ns4kge:hasDataset <dataset/dbpedia-242> .
+<configuration/cake/290> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/cake/290> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/cake/290> ns4kge:result "0.101"^^xsd:decimal .
+
+<configuration/cake/291> rdf:type ns4kge:Configuration .
+<configuration/cake/291> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/291> ns4kge:hasDataset <dataset/dbpedia-242> .
+<configuration/cake/291> ns4kge:hasMetric  <metric/mr> .
+<configuration/cake/291> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/cake/291> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/cake/291> ns4kge:result "5465"^^xsd:decimal .
+
+<configuration/cake/292> rdf:type ns4kge:Configuration .
+<configuration/cake/292> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/292> ns4kge:hasDataset <dataset/dbpedia-242> .
+<configuration/cake/292> ns4kge:hasMetric  <metric/mrr> .
+<configuration/cake/292> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/cake/292> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/cake/292> ns4kge:result "0.156"^^xsd:decimal .
+
+<configuration/cake/293> rdf:type ns4kge:Configuration .
+<configuration/cake/293> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/293> ns4kge:hasDataset <dataset/dbpedia-242> .
+<configuration/cake/293> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/cake/293> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/cake/293> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/cake/293> ns4kge:result "0.34"^^xsd:decimal .
+
+<configuration/cake/294> rdf:type ns4kge:Configuration .
+<configuration/cake/294> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/294> ns4kge:hasDataset <dataset/dbpedia-242> .
+<configuration/cake/294> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/cake/294> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/cake/294> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/cake/294> ns4kge:result "0.212"^^xsd:decimal .
+
+<configuration/cake/295> rdf:type ns4kge:Configuration .
+<configuration/cake/295> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/295> ns4kge:hasDataset <dataset/dbpedia-242> .
+<configuration/cake/295> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/cake/295> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/cake/295> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/cake/295> ns4kge:result "0.05"^^xsd:decimal .
+
+<configuration/cake/296> rdf:type ns4kge:Configuration .
+<configuration/cake/296> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/296> ns4kge:hasDataset <dataset/dbpedia-242> .
+<configuration/cake/296> ns4kge:hasMetric  <metric/mr> .
+<configuration/cake/296> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/cake/296> ns4kge:hasNSMethod <ns-method/domain-based-negative-sampling> .
+<configuration/cake/296> ns4kge:result "3415"^^xsd:decimal .
+
+<configuration/cake/297> rdf:type ns4kge:Configuration .
+<configuration/cake/297> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/297> ns4kge:hasDataset <dataset/dbpedia-242> .
+<configuration/cake/297> ns4kge:hasMetric  <metric/mrr> .
+<configuration/cake/297> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/cake/297> ns4kge:hasNSMethod <ns-method/domain-based-negative-sampling> .
+<configuration/cake/297> ns4kge:result "0.203"^^xsd:decimal .
+
+<configuration/cake/298> rdf:type ns4kge:Configuration .
+<configuration/cake/298> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/298> ns4kge:hasDataset <dataset/dbpedia-242> .
+<configuration/cake/298> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/cake/298> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/cake/298> ns4kge:hasNSMethod <ns-method/domain-based-negative-sampling> .
+<configuration/cake/298> ns4kge:result "0.51"^^xsd:decimal .
+
+<configuration/cake/299> rdf:type ns4kge:Configuration .
+<configuration/cake/299> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/299> ns4kge:hasDataset <dataset/dbpedia-242> .
+<configuration/cake/299> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/cake/299> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/cake/299> ns4kge:hasNSMethod <ns-method/domain-based-negative-sampling> .
+<configuration/cake/299> ns4kge:result "0.346"^^xsd:decimal .
+
+<configuration/cake/300> rdf:type ns4kge:Configuration .
+<configuration/cake/300> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/300> ns4kge:hasDataset <dataset/dbpedia-242> .
+<configuration/cake/300> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/cake/300> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/cake/300> ns4kge:hasNSMethod <ns-method/domain-based-negative-sampling> .
+<configuration/cake/300> ns4kge:result "0.009"^^xsd:decimal .
+
+<configuration/cake/301> rdf:type ns4kge:Configuration .
+<configuration/cake/301> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/301> ns4kge:hasDataset <dataset/nell-995> .
+<configuration/cake/301> ns4kge:hasMetric  <metric/mr> .
+<configuration/cake/301> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/cake/301> ns4kge:hasNSMethod <ns-method/uniform-negative-sampling> .
+<configuration/cake/301> ns4kge:result "8650"^^xsd:decimal .
+
+<configuration/cake/302> rdf:type ns4kge:Configuration .
+<configuration/cake/302> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/302> ns4kge:hasDataset <dataset/nell-995> .
+<configuration/cake/302> ns4kge:hasMetric  <metric/mrr> .
+<configuration/cake/302> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/cake/302> ns4kge:hasNSMethod <ns-method/uniform-negative-sampling> .
+<configuration/cake/302> ns4kge:result "0.167"^^xsd:decimal .
+
+<configuration/cake/303> rdf:type ns4kge:Configuration .
+<configuration/cake/303> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/303> ns4kge:hasDataset <dataset/nell-995> .
+<configuration/cake/303> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/cake/303> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/cake/303> ns4kge:hasNSMethod <ns-method/uniform-negative-sampling> .
+<configuration/cake/303> ns4kge:result "0.354"^^xsd:decimal .
+
+<configuration/cake/304> rdf:type ns4kge:Configuration .
+<configuration/cake/304> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/304> ns4kge:hasDataset <dataset/nell-995> .
+<configuration/cake/304> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/cake/304> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/cake/304> ns4kge:hasNSMethod <ns-method/uniform-negative-sampling> .
+<configuration/cake/304> ns4kge:result "0.219"^^xsd:decimal .
+
+<configuration/cake/305> rdf:type ns4kge:Configuration .
+<configuration/cake/305> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/305> ns4kge:hasDataset <dataset/nell-995> .
+<configuration/cake/305> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/cake/305> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/cake/305> ns4kge:hasNSMethod <ns-method/uniform-negative-sampling> .
+<configuration/cake/305> ns4kge:result "0.068"^^xsd:decimal .
+
+<configuration/cake/306> rdf:type ns4kge:Configuration .
+<configuration/cake/306> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/306> ns4kge:hasDataset <dataset/nell-995> .
+<configuration/cake/306> ns4kge:hasMetric  <metric/mr> .
+<configuration/cake/306> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/cake/306> ns4kge:result "9172"^^xsd:decimal .
+
+<configuration/cake/307> rdf:type ns4kge:Configuration .
+<configuration/cake/307> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/307> ns4kge:hasDataset <dataset/nell-995> .
+<configuration/cake/307> ns4kge:hasMetric  <metric/mrr> .
+<configuration/cake/307> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/cake/307> ns4kge:result "0.176"^^xsd:decimal .
+
+<configuration/cake/308> rdf:type ns4kge:Configuration .
+<configuration/cake/308> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/308> ns4kge:hasDataset <dataset/nell-995> .
+<configuration/cake/308> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/cake/308> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/cake/308> ns4kge:result "0.297"^^xsd:decimal .
+
+<configuration/cake/309> rdf:type ns4kge:Configuration .
+<configuration/cake/309> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/309> ns4kge:hasDataset <dataset/nell-995> .
+<configuration/cake/309> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/cake/309> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/cake/309> ns4kge:result "0.21"^^xsd:decimal .
+
+<configuration/cake/310> rdf:type ns4kge:Configuration .
+<configuration/cake/310> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/310> ns4kge:hasDataset <dataset/nell-995> .
+<configuration/cake/310> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/cake/310> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/cake/310> ns4kge:result "0.106"^^xsd:decimal .
+
+<configuration/cake/311> rdf:type ns4kge:Configuration .
+<configuration/cake/311> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/311> ns4kge:hasDataset <dataset/nell-995> .
+<configuration/cake/311> ns4kge:hasMetric  <metric/mr> .
+<configuration/cake/311> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/cake/311> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/cake/311> ns4kge:result "13967"^^xsd:decimal .
+
+<configuration/cake/312> rdf:type ns4kge:Configuration .
+<configuration/cake/312> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/312> ns4kge:hasDataset <dataset/nell-995> .
+<configuration/cake/312> ns4kge:hasMetric  <metric/mrr> .
+<configuration/cake/312> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/cake/312> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/cake/312> ns4kge:result "0.107"^^xsd:decimal .
+
+<configuration/cake/313> rdf:type ns4kge:Configuration .
+<configuration/cake/313> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/313> ns4kge:hasDataset <dataset/nell-995> .
+<configuration/cake/313> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/cake/313> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/cake/313> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/cake/313> ns4kge:result "0.205"^^xsd:decimal .
+
+<configuration/cake/314> rdf:type ns4kge:Configuration .
+<configuration/cake/314> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/314> ns4kge:hasDataset <dataset/nell-995> .
+<configuration/cake/314> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/cake/314> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/cake/314> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/cake/314> ns4kge:result "0.122"^^xsd:decimal .
+
+<configuration/cake/315> rdf:type ns4kge:Configuration .
+<configuration/cake/315> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/315> ns4kge:hasDataset <dataset/nell-995> .
+<configuration/cake/315> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/cake/315> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/cake/315> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/cake/315> ns4kge:result "0.107"^^xsd:decimal .
+
+<configuration/cake/316> rdf:type ns4kge:Configuration .
+<configuration/cake/316> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/316> ns4kge:hasDataset <dataset/nell-995> .
+<configuration/cake/316> ns4kge:hasMetric  <metric/mr> .
+<configuration/cake/316> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/cake/316> ns4kge:hasNSMethod <ns-method/domain-based-negative-sampling> .
+<configuration/cake/316> ns4kge:result "1319"^^xsd:decimal .
+
+<configuration/cake/317> rdf:type ns4kge:Configuration .
+<configuration/cake/317> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/317> ns4kge:hasDataset <dataset/nell-995> .
+<configuration/cake/317> ns4kge:hasMetric  <metric/mrr> .
+<configuration/cake/317> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/cake/317> ns4kge:hasNSMethod <ns-method/domain-based-negative-sampling> .
+<configuration/cake/317> ns4kge:result "0.381"^^xsd:decimal .
+
+<configuration/cake/318> rdf:type ns4kge:Configuration .
+<configuration/cake/318> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/318> ns4kge:hasDataset <dataset/nell-995> .
+<configuration/cake/318> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/cake/318> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/cake/318> ns4kge:hasNSMethod <ns-method/domain-based-negative-sampling> .
+<configuration/cake/318> ns4kge:result "0.549"^^xsd:decimal .
+
+<configuration/cake/319> rdf:type ns4kge:Configuration .
+<configuration/cake/319> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/319> ns4kge:hasDataset <dataset/nell-995> .
+<configuration/cake/319> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/cake/319> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/cake/319> ns4kge:hasNSMethod <ns-method/domain-based-negative-sampling> .
+<configuration/cake/319> ns4kge:result "0.468"^^xsd:decimal .
+
+<configuration/cake/320> rdf:type ns4kge:Configuration .
+<configuration/cake/320> ns4kge:hasTask    <task/link-prediction> .
+<configuration/cake/320> ns4kge:hasDataset <dataset/nell-995> .
+<configuration/cake/320> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/cake/320> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/cake/320> ns4kge:hasNSMethod <ns-method/domain-based-negative-sampling> .
+<configuration/cake/320> ns4kge:result "0.271"^^xsd:decimal .

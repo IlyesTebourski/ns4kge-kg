@@ -1,0 +1,29 @@
+{
+  "Article": {
+    "title": "Diffusion-based Negative Sampling on Graphs for Link Prediction",
+    "date": "2024"
+  },
+  "proposedNSMethod": "Conditional Diffusion-based Multi-level Negative Sampling",
+  "proposedKGEModel": "",
+  "mentionedNSMethods": [
+    "Uniform Negative Sampling",
+    "Popularity-based Negative Sampling",
+    "Dynamic Negative Sampling",
+    "Markov Chain Monte Carlo Negative Sampling",
+    "Subgraph-based Negative Sampling",
+    "MixGCF"
+  ],
+  "mentionedKGEModels": [],
+  "Experimentation": {
+    "Hardware": [],
+    "TrainingProtocol": {
+      "LossFunction": [
+        "log-sigmoid loss",
+        "mean squared error"
+      ],
+      "Optimizer": [],
+      "learningRate": null,
+      "nsRatio": null
+    }
+  }
+}

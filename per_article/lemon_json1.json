@@ -1,0 +1,30 @@
+{
+  "Article": {
+    "title": "Language Model-driven Negative Sampling",
+    "date": "2022"
+  },
+  "proposedNSMethod": "Language Model-driven Negative Sampling",
+  "proposedKGEModel": "",
+  "mentionedNSMethods": [
+    "Uniform Negative Sampling",
+    "Bernoulli Negative Sampling",
+    "Generative Adversarial Network-based Negative Sampling",
+    "Structure-aware Negative Sampling",
+    "Adversarial Negative Sampling"
+  ],
+  "mentionedKGEModels": [
+    "TransE",
+    "RotatE"
+  ],
+  "Experimentation": {
+    "Hardware": [],
+    "TrainingProtocol": {
+      "LossFunction": [
+        "margin-based ranking loss"
+      ],
+      "Optimizer": [],
+      "learningRate": null,
+      "nsRatio": null
+    }
+  }
+}

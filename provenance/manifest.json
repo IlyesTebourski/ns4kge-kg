@@ -19,15 +19,14 @@
     "doi": "10.5281/zenodo.20058306",
     "iri": "https://w3id.org/ns4kge/ontology",
     "namespace": "https://w3id.org/ns4kge/ontology#",
-    "path": "../ns4kge-ontology/ontology/NSArticles_ontology.ttl"
+    "path": "../ns4kge-ontology/ontology/ns4kge_ontology.ttl"
   },
   "pipeline": {
     "artifact": "ns4kge-extraction-pipeline",
     "version": "1.0.0",
     "path": "../ns4kge-extraction-pipeline",
     "repository": "https://github.com/IlyesTebourski/ns4kge-extraction-pipeline",
-    "commit": null,
-    "commit_status": "To be filled after the extraction pipeline repository is finalized for release.",
+    "commit": "33565fa",
     "doi": null,
     "doi_status": "To be added after the pipeline release is archived on Zenodo."
   },
@@ -36,7 +35,7 @@
       "claude-opus-4-6",
       "gpt-4o"
     ],
-    "provenance_limitation": "The moved legacy per-article outputs did not record the exact model used for each individual file. This limitation is documented for the paper artifact; future regenerated outputs should record per-file model provenance."
+    "provenance_limitation": "Per-article LLM extraction (JSON1, JSON2) was performed with the legacy pipeline. TTLs were regenerated from merged JSONs using ns4kge-extraction-pipeline commit 33565fa with URI normalization, result normalization, and deduplication improvements."
   },
   "prompts": {
     "prompt1_no_results.txt": "sha256:984c55a0b09ac961f37412d558e8d9ce50200bd394946488d31c3670eba88066",
@@ -46,14 +45,14 @@
     "iri": "https://w3id.org/ns4kge/kg",
     "version_iri": "https://w3id.org/ns4kge/kg/1.0.0",
     "instance_base": "https://w3id.org/ns4kge/id/",
-    "path": "kg/NSArticles_populated.ttl",
-    "sha256": "1f406be321141be1b20c9cdf74ecfe61055fda5a4401a2893d7ecc2dc49d8a46"
+    "path": "kg/ns4kge_populated.ttl",
+    "sha256": "f16c827fcd72fbca80a4bc062fb74a1c0b51c9949ad725485d2f5188e8689e23"
   },
   "sources_manifest": "provenance/sources.csv",
   "source_text_policy": "Source article text is not redistributed. The KG artifact contains structured extraction outputs, source metadata, and checksums only.",
   "validation": {
     "shacl_conforms": true,
-    "validated_at": "2026-05-06",
+    "validated_at": "2026-05-13",
     "report": "reports/validation.txt"
   },
   "reports": {

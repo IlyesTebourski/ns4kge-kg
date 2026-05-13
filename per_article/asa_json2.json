@@ -1,0 +1,924 @@
+{
+  "Configurations": [
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Amazon",
+      "Metric": "AUC",
+      "KGEModel": "RelGNN",
+      "NSMethod": "Adaptive Self-Adversarial Negative Sampling",
+      "result": 99.14
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Amazon",
+      "Metric": "AUC",
+      "KGEModel": "RelGNN",
+      "NSMethod": "Unknown",
+      "result": 98.84
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Amazon",
+      "Metric": "AUC",
+      "KGEModel": "R-GCN",
+      "NSMethod": "Adaptive Self-Adversarial Negative Sampling",
+      "result": 98.37
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Amazon",
+      "Metric": "AUC",
+      "KGEModel": "R-GCN",
+      "NSMethod": "Unknown",
+      "result": 97.16
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Amazon",
+      "Metric": "AUC",
+      "KGEModel": "GATNE",
+      "NSMethod": "Unknown",
+      "result": 96.25
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Amazon",
+      "Metric": "AUC",
+      "KGEModel": "metapath2vec",
+      "NSMethod": "Unknown",
+      "result": 94.15
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Amazon",
+      "Metric": "AUC",
+      "KGEModel": "HAN",
+      "NSMethod": "Unknown",
+      "result": 87.57
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Amazon",
+      "Metric": "AUC",
+      "KGEModel": "DistMult",
+      "NSMethod": "Adaptive Self-Adversarial Negative Sampling",
+      "result": 64.85
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Amazon",
+      "Metric": "AUC",
+      "KGEModel": "DistMult",
+      "NSMethod": "Unknown",
+      "result": 53.94
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Amazon",
+      "Metric": "AUC",
+      "KGEModel": "ComplEx",
+      "NSMethod": "Unknown",
+      "result": 53.18
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Amazon",
+      "Metric": "AUC",
+      "KGEModel": "ConvE",
+      "NSMethod": "Unknown",
+      "result": 49.65
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Amazon",
+      "Metric": "AP",
+      "KGEModel": "RelGNN",
+      "NSMethod": "Adaptive Self-Adversarial Negative Sampling",
+      "result": 99.01
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Amazon",
+      "Metric": "AP",
+      "KGEModel": "RelGNN",
+      "NSMethod": "Unknown",
+      "result": 98.55
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Amazon",
+      "Metric": "AP",
+      "KGEModel": "R-GCN",
+      "NSMethod": "Adaptive Self-Adversarial Negative Sampling",
+      "result": 97.87
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Amazon",
+      "Metric": "AP",
+      "KGEModel": "R-GCN",
+      "NSMethod": "Unknown",
+      "result": 95.87
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Amazon",
+      "Metric": "AP",
+      "KGEModel": "GATNE",
+      "NSMethod": "Unknown",
+      "result": 94.77
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Amazon",
+      "Metric": "AP",
+      "KGEModel": "metapath2vec",
+      "NSMethod": "Unknown",
+      "result": 94.01
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Amazon",
+      "Metric": "AP",
+      "KGEModel": "HAN",
+      "NSMethod": "Unknown",
+      "result": 88.15
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Amazon",
+      "Metric": "AP",
+      "KGEModel": "DistMult",
+      "NSMethod": "Adaptive Self-Adversarial Negative Sampling",
+      "result": 67.29
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Amazon",
+      "Metric": "AP",
+      "KGEModel": "DistMult",
+      "NSMethod": "Unknown",
+      "result": 53.51
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Amazon",
+      "Metric": "AP",
+      "KGEModel": "ComplEx",
+      "NSMethod": "Unknown",
+      "result": 53.18
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Amazon",
+      "Metric": "AP",
+      "KGEModel": "ConvE",
+      "NSMethod": "Unknown",
+      "result": 49.79
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Amazon",
+      "Metric": "F1",
+      "KGEModel": "RelGNN",
+      "NSMethod": "Unknown",
+      "result": 95.17
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Amazon",
+      "Metric": "F1",
+      "KGEModel": "R-GCN",
+      "NSMethod": "Unknown",
+      "result": 94.52
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Amazon",
+      "Metric": "F1",
+      "KGEModel": "R-GCN",
+      "NSMethod": "Adaptive Self-Adversarial Negative Sampling",
+      "result": 94.21
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Amazon",
+      "Metric": "F1",
+      "KGEModel": "GATNE",
+      "NSMethod": "Unknown",
+      "result": 91.36
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Amazon",
+      "Metric": "F1",
+      "KGEModel": "RelGNN",
+      "NSMethod": "Adaptive Self-Adversarial Negative Sampling",
+      "result": 90.44
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Amazon",
+      "Metric": "F1",
+      "KGEModel": "metapath2vec",
+      "NSMethod": "Unknown",
+      "result": 87.48
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Amazon",
+      "Metric": "F1",
+      "KGEModel": "HAN",
+      "NSMethod": "Unknown",
+      "result": 77.35
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Amazon",
+      "Metric": "F1",
+      "KGEModel": "ConvE",
+      "NSMethod": "Unknown",
+      "result": 66.38
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Amazon",
+      "Metric": "F1",
+      "KGEModel": "DistMult",
+      "NSMethod": "Adaptive Self-Adversarial Negative Sampling",
+      "result": 64.3
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Amazon",
+      "Metric": "F1",
+      "KGEModel": "ComplEx",
+      "NSMethod": "Unknown",
+      "result": 54.39
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Amazon",
+      "Metric": "F1",
+      "KGEModel": "DistMult",
+      "NSMethod": "Unknown",
+      "result": 53.71
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Youtube",
+      "Metric": "AUC",
+      "KGEModel": "RelGNN",
+      "NSMethod": "Adaptive Self-Adversarial Negative Sampling",
+      "result": 96.44
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Youtube",
+      "Metric": "AUC",
+      "KGEModel": "RelGNN",
+      "NSMethod": "Unknown",
+      "result": 94.39
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Youtube",
+      "Metric": "AUC",
+      "KGEModel": "R-GCN",
+      "NSMethod": "Adaptive Self-Adversarial Negative Sampling",
+      "result": 93.19
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Youtube",
+      "Metric": "AUC",
+      "KGEModel": "R-GCN",
+      "NSMethod": "Unknown",
+      "result": 92.38
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Youtube",
+      "Metric": "AUC",
+      "KGEModel": "GATNE",
+      "NSMethod": "Unknown",
+      "result": 84.47
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Youtube",
+      "Metric": "AUC",
+      "KGEModel": "DistMult",
+      "NSMethod": "Adaptive Self-Adversarial Negative Sampling",
+      "result": 76.45
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Youtube",
+      "Metric": "AUC",
+      "KGEModel": "metapath2vec",
+      "NSMethod": "Unknown",
+      "result": 70.98
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Youtube",
+      "Metric": "AUC",
+      "KGEModel": "HAN",
+      "NSMethod": "Unknown",
+      "result": 64.66
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Youtube",
+      "Metric": "AUC",
+      "KGEModel": "DistMult",
+      "NSMethod": "Unknown",
+      "result": 52.49
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Youtube",
+      "Metric": "AUC",
+      "KGEModel": "ComplEx",
+      "NSMethod": "Unknown",
+      "result": 52.11
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Youtube",
+      "Metric": "AUC",
+      "KGEModel": "ConvE",
+      "NSMethod": "Unknown",
+      "result": 50.03
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Youtube",
+      "Metric": "AP",
+      "KGEModel": "RelGNN",
+      "NSMethod": "Adaptive Self-Adversarial Negative Sampling",
+      "result": 96.08
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Youtube",
+      "Metric": "AP",
+      "KGEModel": "RelGNN",
+      "NSMethod": "Unknown",
+      "result": 93.41
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Youtube",
+      "Metric": "AP",
+      "KGEModel": "R-GCN",
+      "NSMethod": "Adaptive Self-Adversarial Negative Sampling",
+      "result": 93.11
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Youtube",
+      "Metric": "AP",
+      "KGEModel": "R-GCN",
+      "NSMethod": "Unknown",
+      "result": 92.18
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Youtube",
+      "Metric": "AP",
+      "KGEModel": "GATNE",
+      "NSMethod": "Unknown",
+      "result": 82.32
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Youtube",
+      "Metric": "AP",
+      "KGEModel": "DistMult",
+      "NSMethod": "Adaptive Self-Adversarial Negative Sampling",
+      "result": 78.63
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Youtube",
+      "Metric": "AP",
+      "KGEModel": "metapath2vec",
+      "NSMethod": "Unknown",
+      "result": 70.02
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Youtube",
+      "Metric": "AP",
+      "KGEModel": "HAN",
+      "NSMethod": "Unknown",
+      "result": 61.24
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Youtube",
+      "Metric": "AP",
+      "KGEModel": "DistMult",
+      "NSMethod": "Unknown",
+      "result": 52.12
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Youtube",
+      "Metric": "AP",
+      "KGEModel": "ComplEx",
+      "NSMethod": "Unknown",
+      "result": 51.6
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Youtube",
+      "Metric": "AP",
+      "KGEModel": "ConvE",
+      "NSMethod": "Unknown",
+      "result": 50.07
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Youtube",
+      "Metric": "F1",
+      "KGEModel": "RelGNN",
+      "NSMethod": "Unknown",
+      "result": 86.32
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Youtube",
+      "Metric": "F1",
+      "KGEModel": "RelGNN",
+      "NSMethod": "Adaptive Self-Adversarial Negative Sampling",
+      "result": 83.89
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Youtube",
+      "Metric": "F1",
+      "KGEModel": "R-GCN",
+      "NSMethod": "Unknown",
+      "result": 83.35
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Youtube",
+      "Metric": "F1",
+      "KGEModel": "R-GCN",
+      "NSMethod": "Adaptive Self-Adversarial Negative Sampling",
+      "result": 79.33
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Youtube",
+      "Metric": "F1",
+      "KGEModel": "GATNE",
+      "NSMethod": "Unknown",
+      "result": 76.83
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Youtube",
+      "Metric": "F1",
+      "KGEModel": "DistMult",
+      "NSMethod": "Adaptive Self-Adversarial Negative Sampling",
+      "result": 69.48
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Youtube",
+      "Metric": "F1",
+      "KGEModel": "metapath2vec",
+      "NSMethod": "Unknown",
+      "result": 65.34
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Youtube",
+      "Metric": "F1",
+      "KGEModel": "HAN",
+      "NSMethod": "Unknown",
+      "result": 65.45
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Youtube",
+      "Metric": "F1",
+      "KGEModel": "ComplEx",
+      "NSMethod": "Unknown",
+      "result": 50.97
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Youtube",
+      "Metric": "F1",
+      "KGEModel": "DistMult",
+      "NSMethod": "Unknown",
+      "result": 49.5
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Youtube",
+      "Metric": "F1",
+      "KGEModel": "ConvE",
+      "NSMethod": "Unknown",
+      "result": 27.32
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Company",
+      "Metric": "AUC",
+      "KGEModel": "RelGNN",
+      "NSMethod": "Adaptive Self-Adversarial Negative Sampling",
+      "result": 77.68
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Company",
+      "Metric": "AUC",
+      "KGEModel": "RelGNN",
+      "NSMethod": "Unknown",
+      "result": 74.94
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Company",
+      "Metric": "AUC",
+      "KGEModel": "metapath2vec",
+      "NSMethod": "Unknown",
+      "result": 73.47
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Company",
+      "Metric": "AUC",
+      "KGEModel": "R-GCN",
+      "NSMethod": "Adaptive Self-Adversarial Negative Sampling",
+      "result": 69.96
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Company",
+      "Metric": "AUC",
+      "KGEModel": "GATNE",
+      "NSMethod": "Unknown",
+      "result": 69.72
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Company",
+      "Metric": "AUC",
+      "KGEModel": "R-GCN",
+      "NSMethod": "Unknown",
+      "result": 68.69
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Company",
+      "Metric": "AUC",
+      "KGEModel": "DistMult",
+      "NSMethod": "Adaptive Self-Adversarial Negative Sampling",
+      "result": 67.86
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Company",
+      "Metric": "AUC",
+      "KGEModel": "ComplEx",
+      "NSMethod": "Unknown",
+      "result": 56.31
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Company",
+      "Metric": "AUC",
+      "KGEModel": "DistMult",
+      "NSMethod": "Unknown",
+      "result": 55.29
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Company",
+      "Metric": "AUC",
+      "KGEModel": "ConvE",
+      "NSMethod": "Unknown",
+      "result": 52.43
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Company",
+      "Metric": "AUC",
+      "KGEModel": "HAN",
+      "NSMethod": "Unknown",
+      "result": 52.33
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Company",
+      "Metric": "AP",
+      "KGEModel": "RelGNN",
+      "NSMethod": "Adaptive Self-Adversarial Negative Sampling",
+      "result": 77.78
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Company",
+      "Metric": "AP",
+      "KGEModel": "RelGNN",
+      "NSMethod": "Unknown",
+      "result": 73.91
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Company",
+      "Metric": "AP",
+      "KGEModel": "R-GCN",
+      "NSMethod": "Adaptive Self-Adversarial Negative Sampling",
+      "result": 73.2
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Company",
+      "Metric": "AP",
+      "KGEModel": "metapath2vec",
+      "NSMethod": "Unknown",
+      "result": 70.88
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Company",
+      "Metric": "AP",
+      "KGEModel": "R-GCN",
+      "NSMethod": "Unknown",
+      "result": 69.95
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Company",
+      "Metric": "AP",
+      "KGEModel": "DistMult",
+      "NSMethod": "Adaptive Self-Adversarial Negative Sampling",
+      "result": 68.72
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Company",
+      "Metric": "AP",
+      "KGEModel": "GATNE",
+      "NSMethod": "Unknown",
+      "result": 67.22
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Company",
+      "Metric": "AP",
+      "KGEModel": "DistMult",
+      "NSMethod": "Unknown",
+      "result": 56.26
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Company",
+      "Metric": "AP",
+      "KGEModel": "ComplEx",
+      "NSMethod": "Unknown",
+      "result": 55.3
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Company",
+      "Metric": "AP",
+      "KGEModel": "ConvE",
+      "NSMethod": "Unknown",
+      "result": 53.17
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Company",
+      "Metric": "AP",
+      "KGEModel": "HAN",
+      "NSMethod": "Unknown",
+      "result": 52.06
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Company",
+      "Metric": "F1",
+      "KGEModel": "RelGNN",
+      "NSMethod": "Adaptive Self-Adversarial Negative Sampling",
+      "result": 74.43
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Company",
+      "Metric": "F1",
+      "KGEModel": "RelGNN",
+      "NSMethod": "Unknown",
+      "result": 70.45
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Company",
+      "Metric": "F1",
+      "KGEModel": "R-GCN",
+      "NSMethod": "Adaptive Self-Adversarial Negative Sampling",
+      "result": 67.9
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Company",
+      "Metric": "F1",
+      "KGEModel": "R-GCN",
+      "NSMethod": "Unknown",
+      "result": 66.75
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Company",
+      "Metric": "F1",
+      "KGEModel": "DistMult",
+      "NSMethod": "Adaptive Self-Adversarial Negative Sampling",
+      "result": 66.47
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Company",
+      "Metric": "F1",
+      "KGEModel": "GATNE",
+      "NSMethod": "Unknown",
+      "result": 61.87
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Company",
+      "Metric": "F1",
+      "KGEModel": "DistMult",
+      "NSMethod": "Unknown",
+      "result": 56.51
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Company",
+      "Metric": "F1",
+      "KGEModel": "ComplEx",
+      "NSMethod": "Unknown",
+      "result": 55.33
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Company",
+      "Metric": "F1",
+      "KGEModel": "HAN",
+      "NSMethod": "Unknown",
+      "result": 41.88
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Company",
+      "Metric": "F1",
+      "KGEModel": "ConvE",
+      "NSMethod": "Unknown",
+      "result": 29.15
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Company",
+      "Metric": "F1",
+      "KGEModel": "metapath2vec",
+      "NSMethod": "Unknown",
+      "result": 16.35
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Company",
+      "Metric": "MRR",
+      "KGEModel": "RelGNN",
+      "NSMethod": "Adaptive Self-Adversarial Negative Sampling",
+      "result": 0.0818
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Company",
+      "Metric": "MRR",
+      "KGEModel": "RelGNN",
+      "NSMethod": "NSCaching",
+      "result": 0.0789
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Company",
+      "Metric": "MRR",
+      "KGEModel": "RelGNN",
+      "NSMethod": "ASA\u2081\u2080\u2080",
+      "result": 0.0754
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Company",
+      "Metric": "MRR",
+      "KGEModel": "RelGNN",
+      "NSMethod": "Random Negative Sampling",
+      "result": 0.0457
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Company",
+      "Metric": "Hits@1",
+      "KGEModel": "RelGNN",
+      "NSMethod": "NSCaching",
+      "result": 5.38
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Company",
+      "Metric": "Hits@1",
+      "KGEModel": "RelGNN",
+      "NSMethod": "Adaptive Self-Adversarial Negative Sampling",
+      "result": 5.18
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Company",
+      "Metric": "Hits@1",
+      "KGEModel": "RelGNN",
+      "NSMethod": "ASA\u2085\u2080\u2080",
+      "result": 4.32
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Company",
+      "Metric": "Hits@1",
+      "KGEModel": "RelGNN",
+      "NSMethod": "Random Negative Sampling",
+      "result": 2.37
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Company",
+      "Metric": "Hits@10",
+      "KGEModel": "RelGNN",
+      "NSMethod": "ASA\u2081\u2080\u2080",
+      "result": 14.35
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Company",
+      "Metric": "Hits@10",
+      "KGEModel": "RelGNN",
+      "NSMethod": "ASA\u2085\u2080\u2080",
+      "result": 13.71
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Company",
+      "Metric": "Hits@10",
+      "KGEModel": "RelGNN",
+      "NSMethod": "Adaptive Self-Adversarial Negative Sampling",
+      "result": 13.32
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Company",
+      "Metric": "Hits@10",
+      "KGEModel": "RelGNN",
+      "NSMethod": "Random Negative Sampling",
+      "result": 7.71
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Company",
+      "Metric": "Hits@30",
+      "KGEModel": "RelGNN",
+      "NSMethod": "ASA\u2081\u2080\u2080",
+      "result": 23.71
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Company",
+      "Metric": "Hits@30",
+      "KGEModel": "RelGNN",
+      "NSMethod": "ASA\u2085\u2080\u2080",
+      "result": 22.99
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Company",
+      "Metric": "Hits@30",
+      "KGEModel": "RelGNN",
+      "NSMethod": "Adaptive Self-Adversarial Negative Sampling",
+      "result": 22.01
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Company",
+      "Metric": "Hits@30",
+      "KGEModel": "RelGNN",
+      "NSMethod": "Random Negative Sampling",
+      "result": 14.94
+    }
+  ]
+}

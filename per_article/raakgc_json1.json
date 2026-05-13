@@ -1,0 +1,48 @@
+{
+  "Article": {
+    "title": "Knowledge Graph Completion with Relation-Aware Anchor Enhancement",
+    "date": "2025"
+  },
+  "proposedNSMethod": "Relation-Aware Anchor Enhancement",
+  "proposedKGEModel": "RAA-KGC",
+  "mentionedNSMethods": [
+    "Self-Negative Sampling",
+    "In-Batch Negative Sampling",
+    "In-Batch-Relation Negative Sampling"
+  ],
+  "mentionedKGEModels": [
+    "TransE",
+    "ComplEx",
+    "DistMult",
+    "ConvE",
+    "RGCN",
+    "RotatE",
+    "QuatE",
+    "KG-BERT",
+    "MTL-KGC",
+    "StAR",
+    "SimKGC",
+    "HaSa",
+    "DKRL",
+    "KEPLER",
+    "KGT5-context",
+    "KG-S2S",
+    "LMKE",
+    "ConKGC",
+    "BERTRL",
+    "GenKGC",
+    "KICGPT",
+    "InsKGC"
+  ],
+  "Experimentation": {
+    "Hardware": [],
+    "TrainingProtocol": {
+      "LossFunction": [
+        "InfoNCE"
+      ],
+      "Optimizer": [],
+      "learningRate": null,
+      "nsRatio": null
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "Article": {
+    "title": "Hierarchical Type Enhanced Negative Sampling for Knowledge Graph Embedding",
+    "date": "2023"
+  },
+  "proposedNSMethod": "Hierarchical Type Enhanced Negative Sampling",
+  "proposedKGEModel": "",
+  "mentionedNSMethods": [
+    "Uniform Sampling",
+    "Bernoulli Negative Sampling",
+    "Hard Type Constraint",
+    "Soft Type Constraint",
+    "KBGAN",
+    "IGAN",
+    "Cache-based Negative Sampling"
+  ],
+  "mentionedKGEModels": [
+    "TransE",
+    "TransD",
+    "DistMult",
+    "ComplEx"
+  ],
+  "Experimentation": {
+    "Hardware": [],
+    "TrainingProtocol": {
+      "LossFunction": [
+        "marginal loss",
+        "log-softmax loss",
+        "Kullback-Leibler divergence loss"
+      ],
+      "Optimizer": [
+        "Adam"
+      ],
+      "learningRate": null,
+      "nsRatio": null
+    }
+  }
+}

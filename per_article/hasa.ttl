@@ -1,0 +1,995 @@
+<article/hasa> rdf:type ns4kge:Article .
+<article/hasa> ns4kge:title "HaSa: Hardness and Structure-Aware Contrastive Knowledge Graph Embedding"^^xsd:string .
+<article/hasa> ns4kge:date "2024"^^xsd:gYear .
+<article/hasa> ns4kge:proposesNSMethod <ns-method/hardness-and-structure-aware-contrastive-knowledge-graph-embedding> .
+<article/hasa> ns4kge:mentionsNSMethod <ns-method/noise-contrastive-estimation> .
+<article/hasa> ns4kge:mentionsNSMethod <ns-method/simple-infonce> .
+<article/hasa> ns4kge:mentionsNSMethod <ns-method/self-adversarial-negative-sampling> .
+<article/hasa> ns4kge:mentionsNSMethod <ns-method/hard-infonce> .
+<article/hasa> ns4kge:mentionsNSMethod <ns-method/kbgan> .
+<article/hasa> ns4kge:mentionsKGEModel <kge-model/kg-bert> .
+<article/hasa> ns4kge:mentionsKGEModel <kge-model/sentence-bert> .
+<article/hasa> ns4kge:mentionsKGEModel <kge-model/hasa> .
+<article/hasa> ns4kge:mentionsKGEModel <kge-model/distmult> .
+<article/hasa> ns4kge:mentionsKGEModel <kge-model/transe> .
+<article/hasa> ns4kge:mentionsKGEModel <kge-model/complex> .
+<article/hasa> ns4kge:mentionsKGEModel <kge-model/lass> .
+<article/hasa> ns4kge:mentionsKGEModel <kge-model/star> .
+<article/hasa> ns4kge:mentionsKGEModel <kge-model/hasa> .
+<article/hasa> ns4kge:mentionsKGEModel <kge-model/rotate> .
+<article/hasa> ns4kge:mentionsKGEModel <kge-model/kbgan> .
+<article/hasa> ns4kge:hasExperimentation <experimentation/hasa> .
+
+<category/self-adversarial-ns> rdf:type ns4kge:Category .
+
+<subcategory/model-guided> rdf:type ns4kge:Subcategory .
+
+<ns-method/hardness-and-structure-aware-contrastive-knowledge-graph-embedding> rdf:type ns4kge:NSMethod .
+<ns-method/hardness-and-structure-aware-contrastive-knowledge-graph-embedding> ns4kge:hasCategory <category/self-adversarial-ns> .
+<ns-method/hardness-and-structure-aware-contrastive-knowledge-graph-embedding> ns4kge:hasSubcategory <subcategory/model-guided> .
+
+<ns-method/noise-contrastive-estimation> rdf:type ns4kge:NSMethod .
+
+<ns-method/simple-infonce> rdf:type ns4kge:NSMethod .
+
+<ns-method/self-adversarial-negative-sampling> rdf:type ns4kge:NSMethod .
+<ns-method/self-adversarial-negative-sampling> ns4kge:hasCategory <category/self-adversarial-ns> .
+<subcategory/direct> rdf:type ns4kge:Subcategory .
+
+<ns-method/self-adversarial-negative-sampling> ns4kge:hasSubcategory <subcategory/direct> .
+
+<ns-method/hard-infonce> rdf:type ns4kge:NSMethod .
+
+<ns-method/kbgan> rdf:type ns4kge:NSMethod .
+<category/adversarial-ns> rdf:type ns4kge:Category .
+
+<ns-method/kbgan> ns4kge:hasCategory <category/adversarial-ns> .
+<subcategory/standard> rdf:type ns4kge:Subcategory .
+
+<ns-method/kbgan> ns4kge:hasSubcategory <subcategory/standard> .
+
+<kge-model/kg-bert> rdf:type ns4kge:KGEModel .
+
+<kge-model/sentence-bert> rdf:type ns4kge:KGEModel .
+
+<kge-model/hasa> rdf:type ns4kge:KGEModel .
+
+<kge-model/distmult> rdf:type ns4kge:KGEModel .
+
+<kge-model/transe> rdf:type ns4kge:KGEModel .
+
+<kge-model/complex> rdf:type ns4kge:KGEModel .
+
+<kge-model/lass> rdf:type ns4kge:KGEModel .
+
+<kge-model/star> rdf:type ns4kge:KGEModel .
+
+<kge-model/rotate> rdf:type ns4kge:KGEModel .
+
+<kge-model/kbgan> rdf:type ns4kge:KGEModel .
+
+<dataset/wn18rr> rdf:type ns4kge:Dataset .
+<task/link-prediction> rdf:type ns4kge:Task .
+<metric/mr> rdf:type ns4kge:Metric .
+<metric/mrr> rdf:type ns4kge:Metric .
+<metric/hits-1> rdf:type ns4kge:Metric .
+<metric/hits-3> rdf:type ns4kge:Metric .
+<metric/hits-10> rdf:type ns4kge:Metric .
+<dataset/fb15k-237> rdf:type ns4kge:Dataset .
+<loss-function/infonce> rdf:type ns4kge:LossFunction .
+<loss-function/hasa-loss> rdf:type ns4kge:LossFunction .
+<loss-function/triplet-loss> rdf:type ns4kge:LossFunction .
+<loss-function/negative-log-likelihood> rdf:type ns4kge:LossFunction .
+<loss-function/cross-entropy-loss> rdf:type ns4kge:LossFunction .
+<loss-function/negative-sampling-loss> rdf:type ns4kge:LossFunction .
+<optimizer/adamw> rdf:type ns4kge:Optimizer .
+<hardware/nvidia-tesla-v100> rdf:type ns4kge:Hardware .
+
+<experimentation/hasa> rdf:type ns4kge:Experimentation .
+<experimentation/hasa> ns4kge:hasTrainingProtocol <training-protocol/hasa> .
+<experimentation/hasa> ns4kge:hasConfiguration <configuration/hasa/1> .
+<experimentation/hasa> ns4kge:hasConfiguration <configuration/hasa/2> .
+<experimentation/hasa> ns4kge:hasConfiguration <configuration/hasa/3> .
+<experimentation/hasa> ns4kge:hasConfiguration <configuration/hasa/4> .
+<experimentation/hasa> ns4kge:hasConfiguration <configuration/hasa/5> .
+<experimentation/hasa> ns4kge:hasConfiguration <configuration/hasa/6> .
+<experimentation/hasa> ns4kge:hasConfiguration <configuration/hasa/7> .
+<experimentation/hasa> ns4kge:hasConfiguration <configuration/hasa/8> .
+<experimentation/hasa> ns4kge:hasConfiguration <configuration/hasa/9> .
+<experimentation/hasa> ns4kge:hasConfiguration <configuration/hasa/10> .
+<experimentation/hasa> ns4kge:hasConfiguration <configuration/hasa/11> .
+<experimentation/hasa> ns4kge:hasConfiguration <configuration/hasa/12> .
+<experimentation/hasa> ns4kge:hasConfiguration <configuration/hasa/13> .
+<experimentation/hasa> ns4kge:hasConfiguration <configuration/hasa/14> .
+<experimentation/hasa> ns4kge:hasConfiguration <configuration/hasa/15> .
+<experimentation/hasa> ns4kge:hasConfiguration <configuration/hasa/16> .
+<experimentation/hasa> ns4kge:hasConfiguration <configuration/hasa/17> .
+<experimentation/hasa> ns4kge:hasConfiguration <configuration/hasa/18> .
+<experimentation/hasa> ns4kge:hasConfiguration <configuration/hasa/19> .
+<experimentation/hasa> ns4kge:hasConfiguration <configuration/hasa/20> .
+<experimentation/hasa> ns4kge:hasConfiguration <configuration/hasa/21> .
+<experimentation/hasa> ns4kge:hasConfiguration <configuration/hasa/22> .
+<experimentation/hasa> ns4kge:hasConfiguration <configuration/hasa/23> .
+<experimentation/hasa> ns4kge:hasConfiguration <configuration/hasa/24> .
+<experimentation/hasa> ns4kge:hasConfiguration <configuration/hasa/25> .
+<experimentation/hasa> ns4kge:hasConfiguration <configuration/hasa/26> .
+<experimentation/hasa> ns4kge:hasConfiguration <configuration/hasa/27> .
+<experimentation/hasa> ns4kge:hasConfiguration <configuration/hasa/28> .
+<experimentation/hasa> ns4kge:hasConfiguration <configuration/hasa/29> .
+<experimentation/hasa> ns4kge:hasConfiguration <configuration/hasa/30> .
+<experimentation/hasa> ns4kge:hasConfiguration <configuration/hasa/31> .
+<experimentation/hasa> ns4kge:hasConfiguration <configuration/hasa/32> .
+<experimentation/hasa> ns4kge:hasConfiguration <configuration/hasa/33> .
+<experimentation/hasa> ns4kge:hasConfiguration <configuration/hasa/34> .
+<experimentation/hasa> ns4kge:hasConfiguration <configuration/hasa/35> .
+<experimentation/hasa> ns4kge:hasConfiguration <configuration/hasa/36> .
+<experimentation/hasa> ns4kge:hasConfiguration <configuration/hasa/37> .
+<experimentation/hasa> ns4kge:hasConfiguration <configuration/hasa/38> .
+<experimentation/hasa> ns4kge:hasConfiguration <configuration/hasa/39> .
+<experimentation/hasa> ns4kge:hasConfiguration <configuration/hasa/40> .
+<experimentation/hasa> ns4kge:hasConfiguration <configuration/hasa/41> .
+<experimentation/hasa> ns4kge:hasConfiguration <configuration/hasa/42> .
+<experimentation/hasa> ns4kge:hasConfiguration <configuration/hasa/43> .
+<experimentation/hasa> ns4kge:hasConfiguration <configuration/hasa/44> .
+<experimentation/hasa> ns4kge:hasConfiguration <configuration/hasa/45> .
+<experimentation/hasa> ns4kge:hasConfiguration <configuration/hasa/46> .
+<experimentation/hasa> ns4kge:hasConfiguration <configuration/hasa/47> .
+<experimentation/hasa> ns4kge:hasConfiguration <configuration/hasa/48> .
+<experimentation/hasa> ns4kge:hasConfiguration <configuration/hasa/49> .
+<experimentation/hasa> ns4kge:hasConfiguration <configuration/hasa/50> .
+<experimentation/hasa> ns4kge:hasConfiguration <configuration/hasa/51> .
+<experimentation/hasa> ns4kge:hasConfiguration <configuration/hasa/52> .
+<experimentation/hasa> ns4kge:hasConfiguration <configuration/hasa/53> .
+<experimentation/hasa> ns4kge:hasConfiguration <configuration/hasa/54> .
+<experimentation/hasa> ns4kge:hasConfiguration <configuration/hasa/55> .
+<experimentation/hasa> ns4kge:hasConfiguration <configuration/hasa/56> .
+<experimentation/hasa> ns4kge:hasConfiguration <configuration/hasa/57> .
+<experimentation/hasa> ns4kge:hasConfiguration <configuration/hasa/58> .
+<experimentation/hasa> ns4kge:hasConfiguration <configuration/hasa/59> .
+<experimentation/hasa> ns4kge:hasConfiguration <configuration/hasa/60> .
+<experimentation/hasa> ns4kge:hasConfiguration <configuration/hasa/61> .
+<experimentation/hasa> ns4kge:hasConfiguration <configuration/hasa/62> .
+<experimentation/hasa> ns4kge:hasConfiguration <configuration/hasa/63> .
+<experimentation/hasa> ns4kge:hasConfiguration <configuration/hasa/64> .
+<experimentation/hasa> ns4kge:hasConfiguration <configuration/hasa/65> .
+<experimentation/hasa> ns4kge:hasConfiguration <configuration/hasa/66> .
+<experimentation/hasa> ns4kge:hasConfiguration <configuration/hasa/67> .
+<experimentation/hasa> ns4kge:hasConfiguration <configuration/hasa/68> .
+<experimentation/hasa> ns4kge:hasConfiguration <configuration/hasa/69> .
+<experimentation/hasa> ns4kge:hasConfiguration <configuration/hasa/70> .
+<experimentation/hasa> ns4kge:hasConfiguration <configuration/hasa/71> .
+<experimentation/hasa> ns4kge:hasConfiguration <configuration/hasa/72> .
+<experimentation/hasa> ns4kge:hasConfiguration <configuration/hasa/73> .
+<experimentation/hasa> ns4kge:hasConfiguration <configuration/hasa/74> .
+<experimentation/hasa> ns4kge:hasConfiguration <configuration/hasa/75> .
+<experimentation/hasa> ns4kge:hasConfiguration <configuration/hasa/76> .
+<experimentation/hasa> ns4kge:hasConfiguration <configuration/hasa/77> .
+<experimentation/hasa> ns4kge:hasConfiguration <configuration/hasa/78> .
+<experimentation/hasa> ns4kge:hasConfiguration <configuration/hasa/79> .
+<experimentation/hasa> ns4kge:hasConfiguration <configuration/hasa/80> .
+<experimentation/hasa> ns4kge:hasConfiguration <configuration/hasa/81> .
+<experimentation/hasa> ns4kge:hasConfiguration <configuration/hasa/82> .
+<experimentation/hasa> ns4kge:hasConfiguration <configuration/hasa/83> .
+<experimentation/hasa> ns4kge:hasConfiguration <configuration/hasa/84> .
+<experimentation/hasa> ns4kge:hasConfiguration <configuration/hasa/85> .
+<experimentation/hasa> ns4kge:hasConfiguration <configuration/hasa/86> .
+<experimentation/hasa> ns4kge:hasConfiguration <configuration/hasa/87> .
+<experimentation/hasa> ns4kge:hasConfiguration <configuration/hasa/88> .
+<experimentation/hasa> ns4kge:hasConfiguration <configuration/hasa/89> .
+<experimentation/hasa> ns4kge:hasConfiguration <configuration/hasa/90> .
+<experimentation/hasa> ns4kge:hasConfiguration <configuration/hasa/91> .
+<experimentation/hasa> ns4kge:hasConfiguration <configuration/hasa/92> .
+<experimentation/hasa> ns4kge:hasConfiguration <configuration/hasa/93> .
+<experimentation/hasa> ns4kge:hasConfiguration <configuration/hasa/94> .
+<experimentation/hasa> ns4kge:hasConfiguration <configuration/hasa/95> .
+<experimentation/hasa> ns4kge:hasConfiguration <configuration/hasa/96> .
+<experimentation/hasa> ns4kge:hasConfiguration <configuration/hasa/97> .
+<experimentation/hasa> ns4kge:hasConfiguration <configuration/hasa/98> .
+<experimentation/hasa> ns4kge:hasConfiguration <configuration/hasa/99> .
+<experimentation/hasa> ns4kge:hasConfiguration <configuration/hasa/100> .
+<experimentation/hasa> ns4kge:hasConfiguration <configuration/hasa/101> .
+<experimentation/hasa> ns4kge:hasConfiguration <configuration/hasa/102> .
+<experimentation/hasa> ns4kge:hasConfiguration <configuration/hasa/103> .
+<experimentation/hasa> ns4kge:hasConfiguration <configuration/hasa/104> .
+<experimentation/hasa> ns4kge:hasConfiguration <configuration/hasa/105> .
+
+<training-protocol/hasa> rdf:type ns4kge:TrainingProtocol .
+<training-protocol/hasa> ns4kge:hasOptimizer    <optimizer/adamw> .
+<training-protocol/hasa> ns4kge:hasLossFunction <loss-function/infonce> .
+<training-protocol/hasa> ns4kge:hasLossFunction <loss-function/hasa-loss> .
+<training-protocol/hasa> ns4kge:hasLossFunction <loss-function/hasa-loss> .
+<training-protocol/hasa> ns4kge:hasLossFunction <loss-function/triplet-loss> .
+<training-protocol/hasa> ns4kge:hasLossFunction <loss-function/negative-log-likelihood> .
+<training-protocol/hasa> ns4kge:hasLossFunction <loss-function/cross-entropy-loss> .
+<training-protocol/hasa> ns4kge:hasLossFunction <loss-function/negative-sampling-loss> .
+<training-protocol/hasa> ns4kge:hasHardware     <hardware/nvidia-tesla-v100> .
+<training-protocol/hasa> ns4kge:learningRate "0.00002"^^xsd:decimal .
+
+<configuration/hasa/1> rdf:type ns4kge:Configuration .
+<configuration/hasa/1> ns4kge:hasTask    <task/link-prediction> .
+<configuration/hasa/1> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/hasa/1> ns4kge:hasMetric  <metric/mr> .
+<configuration/hasa/1> ns4kge:hasKGEModel <kge-model/sentence-bert> .
+<configuration/hasa/1> ns4kge:hasNSMethod <ns-method/simple-infonce> .
+<configuration/hasa/1> ns4kge:result "100"^^xsd:decimal .
+
+<configuration/hasa/2> rdf:type ns4kge:Configuration .
+<configuration/hasa/2> ns4kge:hasTask    <task/link-prediction> .
+<configuration/hasa/2> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/hasa/2> ns4kge:hasMetric  <metric/mrr> .
+<configuration/hasa/2> ns4kge:hasKGEModel <kge-model/sentence-bert> .
+<configuration/hasa/2> ns4kge:hasNSMethod <ns-method/simple-infonce> .
+<configuration/hasa/2> ns4kge:result "0.424"^^xsd:decimal .
+
+<configuration/hasa/3> rdf:type ns4kge:Configuration .
+<configuration/hasa/3> ns4kge:hasTask    <task/link-prediction> .
+<configuration/hasa/3> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/hasa/3> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/hasa/3> ns4kge:hasKGEModel <kge-model/sentence-bert> .
+<configuration/hasa/3> ns4kge:hasNSMethod <ns-method/simple-infonce> .
+<configuration/hasa/3> ns4kge:result "0.303"^^xsd:decimal .
+
+<configuration/hasa/4> rdf:type ns4kge:Configuration .
+<configuration/hasa/4> ns4kge:hasTask    <task/link-prediction> .
+<configuration/hasa/4> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/hasa/4> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/hasa/4> ns4kge:hasKGEModel <kge-model/sentence-bert> .
+<configuration/hasa/4> ns4kge:hasNSMethod <ns-method/simple-infonce> .
+<configuration/hasa/4> ns4kge:result "0.487"^^xsd:decimal .
+
+<configuration/hasa/5> rdf:type ns4kge:Configuration .
+<configuration/hasa/5> ns4kge:hasTask    <task/link-prediction> .
+<configuration/hasa/5> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/hasa/5> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/hasa/5> ns4kge:hasKGEModel <kge-model/sentence-bert> .
+<configuration/hasa/5> ns4kge:hasNSMethod <ns-method/simple-infonce> .
+<configuration/hasa/5> ns4kge:result "0.656"^^xsd:decimal .
+
+<configuration/hasa/6> rdf:type ns4kge:Configuration .
+<configuration/hasa/6> ns4kge:hasTask    <task/link-prediction> .
+<configuration/hasa/6> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/hasa/6> ns4kge:hasMetric  <metric/mr> .
+<configuration/hasa/6> ns4kge:hasKGEModel <kge-model/sentence-bert> .
+<configuration/hasa/6> ns4kge:hasNSMethod <ns-method/simple-infonce> .
+<configuration/hasa/6> ns4kge:result "151"^^xsd:decimal .
+
+<configuration/hasa/7> rdf:type ns4kge:Configuration .
+<configuration/hasa/7> ns4kge:hasTask    <task/link-prediction> .
+<configuration/hasa/7> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/hasa/7> ns4kge:hasMetric  <metric/mrr> .
+<configuration/hasa/7> ns4kge:hasKGEModel <kge-model/sentence-bert> .
+<configuration/hasa/7> ns4kge:hasNSMethod <ns-method/simple-infonce> .
+<configuration/hasa/7> ns4kge:result "0.277"^^xsd:decimal .
+
+<configuration/hasa/8> rdf:type ns4kge:Configuration .
+<configuration/hasa/8> ns4kge:hasTask    <task/link-prediction> .
+<configuration/hasa/8> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/hasa/8> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/hasa/8> ns4kge:hasKGEModel <kge-model/sentence-bert> .
+<configuration/hasa/8> ns4kge:hasNSMethod <ns-method/simple-infonce> .
+<configuration/hasa/8> ns4kge:result "0.186"^^xsd:decimal .
+
+<configuration/hasa/9> rdf:type ns4kge:Configuration .
+<configuration/hasa/9> ns4kge:hasTask    <task/link-prediction> .
+<configuration/hasa/9> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/hasa/9> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/hasa/9> ns4kge:hasKGEModel <kge-model/sentence-bert> .
+<configuration/hasa/9> ns4kge:hasNSMethod <ns-method/simple-infonce> .
+<configuration/hasa/9> ns4kge:result "0.306"^^xsd:decimal .
+
+<configuration/hasa/10> rdf:type ns4kge:Configuration .
+<configuration/hasa/10> ns4kge:hasTask    <task/link-prediction> .
+<configuration/hasa/10> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/hasa/10> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/hasa/10> ns4kge:hasKGEModel <kge-model/sentence-bert> .
+<configuration/hasa/10> ns4kge:hasNSMethod <ns-method/simple-infonce> .
+<configuration/hasa/10> ns4kge:result "0.466"^^xsd:decimal .
+
+<configuration/hasa/11> rdf:type ns4kge:Configuration .
+<configuration/hasa/11> ns4kge:hasTask    <task/link-prediction> .
+<configuration/hasa/11> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/hasa/11> ns4kge:hasMetric  <metric/mr> .
+<configuration/hasa/11> ns4kge:hasKGEModel <kge-model/sentence-bert> .
+<configuration/hasa/11> ns4kge:hasNSMethod <ns-method/hard-infonce> .
+<configuration/hasa/11> ns4kge:result "123"^^xsd:decimal .
+
+<configuration/hasa/12> rdf:type ns4kge:Configuration .
+<configuration/hasa/12> ns4kge:hasTask    <task/link-prediction> .
+<configuration/hasa/12> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/hasa/12> ns4kge:hasMetric  <metric/mrr> .
+<configuration/hasa/12> ns4kge:hasKGEModel <kge-model/sentence-bert> .
+<configuration/hasa/12> ns4kge:hasNSMethod <ns-method/hard-infonce> .
+<configuration/hasa/12> ns4kge:result "0.447"^^xsd:decimal .
+
+<configuration/hasa/13> rdf:type ns4kge:Configuration .
+<configuration/hasa/13> ns4kge:hasTask    <task/link-prediction> .
+<configuration/hasa/13> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/hasa/13> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/hasa/13> ns4kge:hasKGEModel <kge-model/sentence-bert> .
+<configuration/hasa/13> ns4kge:hasNSMethod <ns-method/hard-infonce> .
+<configuration/hasa/13> ns4kge:result "0.341"^^xsd:decimal .
+
+<configuration/hasa/14> rdf:type ns4kge:Configuration .
+<configuration/hasa/14> ns4kge:hasTask    <task/link-prediction> .
+<configuration/hasa/14> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/hasa/14> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/hasa/14> ns4kge:hasKGEModel <kge-model/sentence-bert> .
+<configuration/hasa/14> ns4kge:hasNSMethod <ns-method/hard-infonce> .
+<configuration/hasa/14> ns4kge:result "0.497"^^xsd:decimal .
+
+<configuration/hasa/15> rdf:type ns4kge:Configuration .
+<configuration/hasa/15> ns4kge:hasTask    <task/link-prediction> .
+<configuration/hasa/15> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/hasa/15> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/hasa/15> ns4kge:hasKGEModel <kge-model/sentence-bert> .
+<configuration/hasa/15> ns4kge:hasNSMethod <ns-method/hard-infonce> .
+<configuration/hasa/15> ns4kge:result "0.656"^^xsd:decimal .
+
+<configuration/hasa/16> rdf:type ns4kge:Configuration .
+<configuration/hasa/16> ns4kge:hasTask    <task/link-prediction> .
+<configuration/hasa/16> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/hasa/16> ns4kge:hasMetric  <metric/mr> .
+<configuration/hasa/16> ns4kge:hasKGEModel <kge-model/sentence-bert> .
+<configuration/hasa/16> ns4kge:hasNSMethod <ns-method/hard-infonce> .
+<configuration/hasa/16> ns4kge:result "165"^^xsd:decimal .
+
+<configuration/hasa/17> rdf:type ns4kge:Configuration .
+<configuration/hasa/17> ns4kge:hasTask    <task/link-prediction> .
+<configuration/hasa/17> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/hasa/17> ns4kge:hasMetric  <metric/mrr> .
+<configuration/hasa/17> ns4kge:hasKGEModel <kge-model/sentence-bert> .
+<configuration/hasa/17> ns4kge:hasNSMethod <ns-method/hard-infonce> .
+<configuration/hasa/17> ns4kge:result "0.29"^^xsd:decimal .
+
+<configuration/hasa/18> rdf:type ns4kge:Configuration .
+<configuration/hasa/18> ns4kge:hasTask    <task/link-prediction> .
+<configuration/hasa/18> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/hasa/18> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/hasa/18> ns4kge:hasKGEModel <kge-model/sentence-bert> .
+<configuration/hasa/18> ns4kge:hasNSMethod <ns-method/hard-infonce> .
+<configuration/hasa/18> ns4kge:result "0.209"^^xsd:decimal .
+
+<configuration/hasa/19> rdf:type ns4kge:Configuration .
+<configuration/hasa/19> ns4kge:hasTask    <task/link-prediction> .
+<configuration/hasa/19> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/hasa/19> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/hasa/19> ns4kge:hasKGEModel <kge-model/sentence-bert> .
+<configuration/hasa/19> ns4kge:hasNSMethod <ns-method/hard-infonce> .
+<configuration/hasa/19> ns4kge:result "0.309"^^xsd:decimal .
+
+<configuration/hasa/20> rdf:type ns4kge:Configuration .
+<configuration/hasa/20> ns4kge:hasTask    <task/link-prediction> .
+<configuration/hasa/20> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/hasa/20> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/hasa/20> ns4kge:hasKGEModel <kge-model/sentence-bert> .
+<configuration/hasa/20> ns4kge:hasNSMethod <ns-method/hard-infonce> .
+<configuration/hasa/20> ns4kge:result "0.465"^^xsd:decimal .
+
+<configuration/hasa/21> rdf:type ns4kge:Configuration .
+<configuration/hasa/21> ns4kge:hasTask    <task/link-prediction> .
+<configuration/hasa/21> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/hasa/21> ns4kge:hasMetric  <metric/mr> .
+<configuration/hasa/21> ns4kge:hasKGEModel <kge-model/sentence-bert> .
+<configuration/hasa/21> ns4kge:hasNSMethod <ns-method/hardness-and-structure-aware-contrastive-knowledge-graph-embedding> .
+<configuration/hasa/21> ns4kge:result "123"^^xsd:decimal .
+
+<configuration/hasa/22> rdf:type ns4kge:Configuration .
+<configuration/hasa/22> ns4kge:hasTask    <task/link-prediction> .
+<configuration/hasa/22> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/hasa/22> ns4kge:hasMetric  <metric/mrr> .
+<configuration/hasa/22> ns4kge:hasKGEModel <kge-model/sentence-bert> .
+<configuration/hasa/22> ns4kge:hasNSMethod <ns-method/hardness-and-structure-aware-contrastive-knowledge-graph-embedding> .
+<configuration/hasa/22> ns4kge:result "0.452"^^xsd:decimal .
+
+<configuration/hasa/23> rdf:type ns4kge:Configuration .
+<configuration/hasa/23> ns4kge:hasTask    <task/link-prediction> .
+<configuration/hasa/23> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/hasa/23> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/hasa/23> ns4kge:hasKGEModel <kge-model/sentence-bert> .
+<configuration/hasa/23> ns4kge:hasNSMethod <ns-method/hardness-and-structure-aware-contrastive-knowledge-graph-embedding> .
+<configuration/hasa/23> ns4kge:result "0.351"^^xsd:decimal .
+
+<configuration/hasa/24> rdf:type ns4kge:Configuration .
+<configuration/hasa/24> ns4kge:hasTask    <task/link-prediction> .
+<configuration/hasa/24> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/hasa/24> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/hasa/24> ns4kge:hasKGEModel <kge-model/sentence-bert> .
+<configuration/hasa/24> ns4kge:hasNSMethod <ns-method/hardness-and-structure-aware-contrastive-knowledge-graph-embedding> .
+<configuration/hasa/24> ns4kge:result "0.501"^^xsd:decimal .
+
+<configuration/hasa/25> rdf:type ns4kge:Configuration .
+<configuration/hasa/25> ns4kge:hasTask    <task/link-prediction> .
+<configuration/hasa/25> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/hasa/25> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/hasa/25> ns4kge:hasKGEModel <kge-model/sentence-bert> .
+<configuration/hasa/25> ns4kge:hasNSMethod <ns-method/hardness-and-structure-aware-contrastive-knowledge-graph-embedding> .
+<configuration/hasa/25> ns4kge:result "0.65"^^xsd:decimal .
+
+<configuration/hasa/26> rdf:type ns4kge:Configuration .
+<configuration/hasa/26> ns4kge:hasTask    <task/link-prediction> .
+<configuration/hasa/26> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/hasa/26> ns4kge:hasMetric  <metric/mr> .
+<configuration/hasa/26> ns4kge:hasKGEModel <kge-model/sentence-bert> .
+<configuration/hasa/26> ns4kge:hasNSMethod <ns-method/hardness-and-structure-aware-contrastive-knowledge-graph-embedding> .
+<configuration/hasa/26> ns4kge:result "163"^^xsd:decimal .
+
+<configuration/hasa/27> rdf:type ns4kge:Configuration .
+<configuration/hasa/27> ns4kge:hasTask    <task/link-prediction> .
+<configuration/hasa/27> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/hasa/27> ns4kge:hasMetric  <metric/mrr> .
+<configuration/hasa/27> ns4kge:hasKGEModel <kge-model/sentence-bert> .
+<configuration/hasa/27> ns4kge:hasNSMethod <ns-method/hardness-and-structure-aware-contrastive-knowledge-graph-embedding> .
+<configuration/hasa/27> ns4kge:result "0.3"^^xsd:decimal .
+
+<configuration/hasa/28> rdf:type ns4kge:Configuration .
+<configuration/hasa/28> ns4kge:hasTask    <task/link-prediction> .
+<configuration/hasa/28> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/hasa/28> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/hasa/28> ns4kge:hasKGEModel <kge-model/sentence-bert> .
+<configuration/hasa/28> ns4kge:hasNSMethod <ns-method/hardness-and-structure-aware-contrastive-knowledge-graph-embedding> .
+<configuration/hasa/28> ns4kge:result "0.22"^^xsd:decimal .
+
+<configuration/hasa/29> rdf:type ns4kge:Configuration .
+<configuration/hasa/29> ns4kge:hasTask    <task/link-prediction> .
+<configuration/hasa/29> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/hasa/29> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/hasa/29> ns4kge:hasKGEModel <kge-model/sentence-bert> .
+<configuration/hasa/29> ns4kge:hasNSMethod <ns-method/hardness-and-structure-aware-contrastive-knowledge-graph-embedding> .
+<configuration/hasa/29> ns4kge:result "0.317"^^xsd:decimal .
+
+<configuration/hasa/30> rdf:type ns4kge:Configuration .
+<configuration/hasa/30> ns4kge:hasTask    <task/link-prediction> .
+<configuration/hasa/30> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/hasa/30> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/hasa/30> ns4kge:hasKGEModel <kge-model/sentence-bert> .
+<configuration/hasa/30> ns4kge:hasNSMethod <ns-method/hardness-and-structure-aware-contrastive-knowledge-graph-embedding> .
+<configuration/hasa/30> ns4kge:result "0.468"^^xsd:decimal .
+
+<configuration/hasa/31> rdf:type ns4kge:Configuration .
+<configuration/hasa/31> ns4kge:hasTask    <task/link-prediction> .
+<configuration/hasa/31> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/hasa/31> ns4kge:hasMetric  <metric/mr> .
+<configuration/hasa/31> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/hasa/31> ns4kge:result "2300"^^xsd:decimal .
+
+<configuration/hasa/32> rdf:type ns4kge:Configuration .
+<configuration/hasa/32> ns4kge:hasTask    <task/link-prediction> .
+<configuration/hasa/32> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/hasa/32> ns4kge:hasMetric  <metric/mrr> .
+<configuration/hasa/32> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/hasa/32> ns4kge:result "0.243"^^xsd:decimal .
+
+<configuration/hasa/33> rdf:type ns4kge:Configuration .
+<configuration/hasa/33> ns4kge:hasTask    <task/link-prediction> .
+<configuration/hasa/33> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/hasa/33> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/hasa/33> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/hasa/33> ns4kge:result "0.043"^^xsd:decimal .
+
+<configuration/hasa/34> rdf:type ns4kge:Configuration .
+<configuration/hasa/34> ns4kge:hasTask    <task/link-prediction> .
+<configuration/hasa/34> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/hasa/34> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/hasa/34> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/hasa/34> ns4kge:result "0.441"^^xsd:decimal .
+
+<configuration/hasa/35> rdf:type ns4kge:Configuration .
+<configuration/hasa/35> ns4kge:hasTask    <task/link-prediction> .
+<configuration/hasa/35> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/hasa/35> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/hasa/35> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/hasa/35> ns4kge:result "0.532"^^xsd:decimal .
+
+<configuration/hasa/36> rdf:type ns4kge:Configuration .
+<configuration/hasa/36> ns4kge:hasTask    <task/link-prediction> .
+<configuration/hasa/36> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/hasa/36> ns4kge:hasMetric  <metric/mr> .
+<configuration/hasa/36> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/hasa/36> ns4kge:result "323"^^xsd:decimal .
+
+<configuration/hasa/37> rdf:type ns4kge:Configuration .
+<configuration/hasa/37> ns4kge:hasTask    <task/link-prediction> .
+<configuration/hasa/37> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/hasa/37> ns4kge:hasMetric  <metric/mrr> .
+<configuration/hasa/37> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/hasa/37> ns4kge:result "0.279"^^xsd:decimal .
+
+<configuration/hasa/38> rdf:type ns4kge:Configuration .
+<configuration/hasa/38> ns4kge:hasTask    <task/link-prediction> .
+<configuration/hasa/38> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/hasa/38> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/hasa/38> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/hasa/38> ns4kge:result "0.198"^^xsd:decimal .
+
+<configuration/hasa/39> rdf:type ns4kge:Configuration .
+<configuration/hasa/39> ns4kge:hasTask    <task/link-prediction> .
+<configuration/hasa/39> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/hasa/39> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/hasa/39> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/hasa/39> ns4kge:result "0.376"^^xsd:decimal .
+
+<configuration/hasa/40> rdf:type ns4kge:Configuration .
+<configuration/hasa/40> ns4kge:hasTask    <task/link-prediction> .
+<configuration/hasa/40> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/hasa/40> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/hasa/40> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/hasa/40> ns4kge:result "0.441"^^xsd:decimal .
+
+<configuration/hasa/41> rdf:type ns4kge:Configuration .
+<configuration/hasa/41> ns4kge:hasTask    <task/link-prediction> .
+<configuration/hasa/41> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/hasa/41> ns4kge:hasMetric  <metric/mr> .
+<configuration/hasa/41> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/hasa/41> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/hasa/41> ns4kge:result "3340"^^xsd:decimal .
+
+<configuration/hasa/42> rdf:type ns4kge:Configuration .
+<configuration/hasa/42> ns4kge:hasTask    <task/link-prediction> .
+<configuration/hasa/42> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/hasa/42> ns4kge:hasMetric  <metric/mrr> .
+<configuration/hasa/42> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/hasa/42> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/hasa/42> ns4kge:result "0.476"^^xsd:decimal .
+
+<configuration/hasa/43> rdf:type ns4kge:Configuration .
+<configuration/hasa/43> ns4kge:hasTask    <task/link-prediction> .
+<configuration/hasa/43> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/hasa/43> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/hasa/43> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/hasa/43> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/hasa/43> ns4kge:result "0.428"^^xsd:decimal .
+
+<configuration/hasa/44> rdf:type ns4kge:Configuration .
+<configuration/hasa/44> ns4kge:hasTask    <task/link-prediction> .
+<configuration/hasa/44> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/hasa/44> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/hasa/44> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/hasa/44> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/hasa/44> ns4kge:result "0.492"^^xsd:decimal .
+
+<configuration/hasa/45> rdf:type ns4kge:Configuration .
+<configuration/hasa/45> ns4kge:hasTask    <task/link-prediction> .
+<configuration/hasa/45> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/hasa/45> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/hasa/45> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/hasa/45> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/hasa/45> ns4kge:result "0.571"^^xsd:decimal .
+
+<configuration/hasa/46> rdf:type ns4kge:Configuration .
+<configuration/hasa/46> ns4kge:hasTask    <task/link-prediction> .
+<configuration/hasa/46> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/hasa/46> ns4kge:hasMetric  <metric/mr> .
+<configuration/hasa/46> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/hasa/46> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/hasa/46> ns4kge:result "177"^^xsd:decimal .
+
+<configuration/hasa/47> rdf:type ns4kge:Configuration .
+<configuration/hasa/47> ns4kge:hasTask    <task/link-prediction> .
+<configuration/hasa/47> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/hasa/47> ns4kge:hasMetric  <metric/mrr> .
+<configuration/hasa/47> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/hasa/47> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/hasa/47> ns4kge:result "0.338"^^xsd:decimal .
+
+<configuration/hasa/48> rdf:type ns4kge:Configuration .
+<configuration/hasa/48> ns4kge:hasTask    <task/link-prediction> .
+<configuration/hasa/48> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/hasa/48> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/hasa/48> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/hasa/48> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/hasa/48> ns4kge:result "0.241"^^xsd:decimal .
+
+<configuration/hasa/49> rdf:type ns4kge:Configuration .
+<configuration/hasa/49> ns4kge:hasTask    <task/link-prediction> .
+<configuration/hasa/49> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/hasa/49> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/hasa/49> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/hasa/49> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/hasa/49> ns4kge:result "0.375"^^xsd:decimal .
+
+<configuration/hasa/50> rdf:type ns4kge:Configuration .
+<configuration/hasa/50> ns4kge:hasTask    <task/link-prediction> .
+<configuration/hasa/50> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/hasa/50> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/hasa/50> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/hasa/50> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/hasa/50> ns4kge:result "0.533"^^xsd:decimal .
+
+<configuration/hasa/51> rdf:type ns4kge:Configuration .
+<configuration/hasa/51> ns4kge:hasTask    <task/link-prediction> .
+<configuration/hasa/51> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/hasa/51> ns4kge:hasMetric  <metric/mr> .
+<configuration/hasa/51> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/hasa/51> ns4kge:result "7000"^^xsd:decimal .
+
+<configuration/hasa/52> rdf:type ns4kge:Configuration .
+<configuration/hasa/52> ns4kge:hasTask    <task/link-prediction> .
+<configuration/hasa/52> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/hasa/52> ns4kge:hasMetric  <metric/mrr> .
+<configuration/hasa/52> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/hasa/52> ns4kge:result "0.444"^^xsd:decimal .
+
+<configuration/hasa/53> rdf:type ns4kge:Configuration .
+<configuration/hasa/53> ns4kge:hasTask    <task/link-prediction> .
+<configuration/hasa/53> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/hasa/53> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/hasa/53> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/hasa/53> ns4kge:result "0.412"^^xsd:decimal .
+
+<configuration/hasa/54> rdf:type ns4kge:Configuration .
+<configuration/hasa/54> ns4kge:hasTask    <task/link-prediction> .
+<configuration/hasa/54> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/hasa/54> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/hasa/54> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/hasa/54> ns4kge:result "0.47"^^xsd:decimal .
+
+<configuration/hasa/55> rdf:type ns4kge:Configuration .
+<configuration/hasa/55> ns4kge:hasTask    <task/link-prediction> .
+<configuration/hasa/55> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/hasa/55> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/hasa/55> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/hasa/55> ns4kge:result "0.504"^^xsd:decimal .
+
+<configuration/hasa/56> rdf:type ns4kge:Configuration .
+<configuration/hasa/56> ns4kge:hasTask    <task/link-prediction> .
+<configuration/hasa/56> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/hasa/56> ns4kge:hasMetric  <metric/mr> .
+<configuration/hasa/56> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/hasa/56> ns4kge:result "512"^^xsd:decimal .
+
+<configuration/hasa/57> rdf:type ns4kge:Configuration .
+<configuration/hasa/57> ns4kge:hasTask    <task/link-prediction> .
+<configuration/hasa/57> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/hasa/57> ns4kge:hasMetric  <metric/mrr> .
+<configuration/hasa/57> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/hasa/57> ns4kge:result "0.281"^^xsd:decimal .
+
+<configuration/hasa/58> rdf:type ns4kge:Configuration .
+<configuration/hasa/58> ns4kge:hasTask    <task/link-prediction> .
+<configuration/hasa/58> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/hasa/58> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/hasa/58> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/hasa/58> ns4kge:result "0.199"^^xsd:decimal .
+
+<configuration/hasa/59> rdf:type ns4kge:Configuration .
+<configuration/hasa/59> ns4kge:hasTask    <task/link-prediction> .
+<configuration/hasa/59> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/hasa/59> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/hasa/59> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/hasa/59> ns4kge:result "0.301"^^xsd:decimal .
+
+<configuration/hasa/60> rdf:type ns4kge:Configuration .
+<configuration/hasa/60> ns4kge:hasTask    <task/link-prediction> .
+<configuration/hasa/60> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/hasa/60> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/hasa/60> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/hasa/60> ns4kge:result "0.446"^^xsd:decimal .
+
+<configuration/hasa/61> rdf:type ns4kge:Configuration .
+<configuration/hasa/61> ns4kge:hasTask    <task/link-prediction> .
+<configuration/hasa/61> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/hasa/61> ns4kge:hasMetric  <metric/mr> .
+<configuration/hasa/61> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/hasa/61> ns4kge:result "5542"^^xsd:decimal .
+
+<configuration/hasa/62> rdf:type ns4kge:Configuration .
+<configuration/hasa/62> ns4kge:hasTask    <task/link-prediction> .
+<configuration/hasa/62> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/hasa/62> ns4kge:hasMetric  <metric/mrr> .
+<configuration/hasa/62> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/hasa/62> ns4kge:result "0.468"^^xsd:decimal .
+
+<configuration/hasa/63> rdf:type ns4kge:Configuration .
+<configuration/hasa/63> ns4kge:hasTask    <task/link-prediction> .
+<configuration/hasa/63> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/hasa/63> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/hasa/63> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/hasa/63> ns4kge:result "0.427"^^xsd:decimal .
+
+<configuration/hasa/64> rdf:type ns4kge:Configuration .
+<configuration/hasa/64> ns4kge:hasTask    <task/link-prediction> .
+<configuration/hasa/64> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/hasa/64> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/hasa/64> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/hasa/64> ns4kge:result "0.485"^^xsd:decimal .
+
+<configuration/hasa/65> rdf:type ns4kge:Configuration .
+<configuration/hasa/65> ns4kge:hasTask    <task/link-prediction> .
+<configuration/hasa/65> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/hasa/65> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/hasa/65> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/hasa/65> ns4kge:result "0.554"^^xsd:decimal .
+
+<configuration/hasa/66> rdf:type ns4kge:Configuration .
+<configuration/hasa/66> ns4kge:hasTask    <task/link-prediction> .
+<configuration/hasa/66> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/hasa/66> ns4kge:hasMetric  <metric/mr> .
+<configuration/hasa/66> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/hasa/66> ns4kge:result "546"^^xsd:decimal .
+
+<configuration/hasa/67> rdf:type ns4kge:Configuration .
+<configuration/hasa/67> ns4kge:hasTask    <task/link-prediction> .
+<configuration/hasa/67> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/hasa/67> ns4kge:hasMetric  <metric/mrr> .
+<configuration/hasa/67> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/hasa/67> ns4kge:result "0.278"^^xsd:decimal .
+
+<configuration/hasa/68> rdf:type ns4kge:Configuration .
+<configuration/hasa/68> ns4kge:hasTask    <task/link-prediction> .
+<configuration/hasa/68> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/hasa/68> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/hasa/68> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/hasa/68> ns4kge:result "0.194"^^xsd:decimal .
+
+<configuration/hasa/69> rdf:type ns4kge:Configuration .
+<configuration/hasa/69> ns4kge:hasTask    <task/link-prediction> .
+<configuration/hasa/69> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/hasa/69> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/hasa/69> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/hasa/69> ns4kge:result "0.297"^^xsd:decimal .
+
+<configuration/hasa/70> rdf:type ns4kge:Configuration .
+<configuration/hasa/70> ns4kge:hasTask    <task/link-prediction> .
+<configuration/hasa/70> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/hasa/70> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/hasa/70> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/hasa/70> ns4kge:result "0.45"^^xsd:decimal .
+
+<configuration/hasa/71> rdf:type ns4kge:Configuration .
+<configuration/hasa/71> ns4kge:hasTask    <task/link-prediction> .
+<configuration/hasa/71> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/hasa/71> ns4kge:hasMetric  <metric/mrr> .
+<configuration/hasa/71> ns4kge:hasKGEModel <kge-model/kbgan> .
+<configuration/hasa/71> ns4kge:hasNSMethod <ns-method/kbgan> .
+<configuration/hasa/71> ns4kge:result "0.277"^^xsd:decimal .
+
+<configuration/hasa/72> rdf:type ns4kge:Configuration .
+<configuration/hasa/72> ns4kge:hasTask    <task/link-prediction> .
+<configuration/hasa/72> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/hasa/72> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/hasa/72> ns4kge:hasKGEModel <kge-model/kbgan> .
+<configuration/hasa/72> ns4kge:hasNSMethod <ns-method/kbgan> .
+<configuration/hasa/72> ns4kge:result "0.458"^^xsd:decimal .
+
+<configuration/hasa/73> rdf:type ns4kge:Configuration .
+<configuration/hasa/73> ns4kge:hasTask    <task/link-prediction> .
+<configuration/hasa/73> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/hasa/73> ns4kge:hasMetric  <metric/mrr> .
+<configuration/hasa/73> ns4kge:hasKGEModel <kge-model/kbgan> .
+<configuration/hasa/73> ns4kge:hasNSMethod <ns-method/kbgan> .
+<configuration/hasa/73> ns4kge:result "0.277"^^xsd:decimal .
+
+<configuration/hasa/74> rdf:type ns4kge:Configuration .
+<configuration/hasa/74> ns4kge:hasTask    <task/link-prediction> .
+<configuration/hasa/74> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/hasa/74> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/hasa/74> ns4kge:hasKGEModel <kge-model/kbgan> .
+<configuration/hasa/74> ns4kge:hasNSMethod <ns-method/kbgan> .
+<configuration/hasa/74> ns4kge:result "0.458"^^xsd:decimal .
+
+<configuration/hasa/75> rdf:type ns4kge:Configuration .
+<configuration/hasa/75> ns4kge:hasTask    <task/link-prediction> .
+<configuration/hasa/75> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/hasa/75> ns4kge:hasMetric  <metric/mr> .
+<configuration/hasa/75> ns4kge:hasKGEModel <kge-model/kg-bert> .
+<configuration/hasa/75> ns4kge:result "97"^^xsd:decimal .
+
+<configuration/hasa/76> rdf:type ns4kge:Configuration .
+<configuration/hasa/76> ns4kge:hasTask    <task/link-prediction> .
+<configuration/hasa/76> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/hasa/76> ns4kge:hasMetric  <metric/mrr> .
+<configuration/hasa/76> ns4kge:hasKGEModel <kge-model/kg-bert> .
+<configuration/hasa/76> ns4kge:result "0.216"^^xsd:decimal .
+
+<configuration/hasa/77> rdf:type ns4kge:Configuration .
+<configuration/hasa/77> ns4kge:hasTask    <task/link-prediction> .
+<configuration/hasa/77> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/hasa/77> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/hasa/77> ns4kge:hasKGEModel <kge-model/kg-bert> .
+<configuration/hasa/77> ns4kge:result "0.041"^^xsd:decimal .
+
+<configuration/hasa/78> rdf:type ns4kge:Configuration .
+<configuration/hasa/78> ns4kge:hasTask    <task/link-prediction> .
+<configuration/hasa/78> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/hasa/78> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/hasa/78> ns4kge:hasKGEModel <kge-model/kg-bert> .
+<configuration/hasa/78> ns4kge:result "0.302"^^xsd:decimal .
+
+<configuration/hasa/79> rdf:type ns4kge:Configuration .
+<configuration/hasa/79> ns4kge:hasTask    <task/link-prediction> .
+<configuration/hasa/79> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/hasa/79> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/hasa/79> ns4kge:hasKGEModel <kge-model/kg-bert> .
+<configuration/hasa/79> ns4kge:result "0.524"^^xsd:decimal .
+
+<configuration/hasa/80> rdf:type ns4kge:Configuration .
+<configuration/hasa/80> ns4kge:hasTask    <task/link-prediction> .
+<configuration/hasa/80> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/hasa/80> ns4kge:hasMetric  <metric/mr> .
+<configuration/hasa/80> ns4kge:hasKGEModel <kge-model/kg-bert> .
+<configuration/hasa/80> ns4kge:result "153"^^xsd:decimal .
+
+<configuration/hasa/81> rdf:type ns4kge:Configuration .
+<configuration/hasa/81> ns4kge:hasTask    <task/link-prediction> .
+<configuration/hasa/81> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/hasa/81> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/hasa/81> ns4kge:hasKGEModel <kge-model/kg-bert> .
+<configuration/hasa/81> ns4kge:result "0.42"^^xsd:decimal .
+
+<configuration/hasa/82> rdf:type ns4kge:Configuration .
+<configuration/hasa/82> ns4kge:hasTask    <task/link-prediction> .
+<configuration/hasa/82> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/hasa/82> ns4kge:hasMetric  <metric/mr> .
+<configuration/hasa/82> ns4kge:hasKGEModel <kge-model/star> .
+<configuration/hasa/82> ns4kge:result "51"^^xsd:decimal .
+
+<configuration/hasa/83> rdf:type ns4kge:Configuration .
+<configuration/hasa/83> ns4kge:hasTask    <task/link-prediction> .
+<configuration/hasa/83> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/hasa/83> ns4kge:hasMetric  <metric/mrr> .
+<configuration/hasa/83> ns4kge:hasKGEModel <kge-model/star> .
+<configuration/hasa/83> ns4kge:result "0.401"^^xsd:decimal .
+
+<configuration/hasa/84> rdf:type ns4kge:Configuration .
+<configuration/hasa/84> ns4kge:hasTask    <task/link-prediction> .
+<configuration/hasa/84> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/hasa/84> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/hasa/84> ns4kge:hasKGEModel <kge-model/star> .
+<configuration/hasa/84> ns4kge:result "0.243"^^xsd:decimal .
+
+<configuration/hasa/85> rdf:type ns4kge:Configuration .
+<configuration/hasa/85> ns4kge:hasTask    <task/link-prediction> .
+<configuration/hasa/85> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/hasa/85> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/hasa/85> ns4kge:hasKGEModel <kge-model/star> .
+<configuration/hasa/85> ns4kge:result "0.491"^^xsd:decimal .
+
+<configuration/hasa/86> rdf:type ns4kge:Configuration .
+<configuration/hasa/86> ns4kge:hasTask    <task/link-prediction> .
+<configuration/hasa/86> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/hasa/86> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/hasa/86> ns4kge:hasKGEModel <kge-model/star> .
+<configuration/hasa/86> ns4kge:result "0.709"^^xsd:decimal .
+
+<configuration/hasa/87> rdf:type ns4kge:Configuration .
+<configuration/hasa/87> ns4kge:hasTask    <task/link-prediction> .
+<configuration/hasa/87> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/hasa/87> ns4kge:hasMetric  <metric/mr> .
+<configuration/hasa/87> ns4kge:hasKGEModel <kge-model/star> .
+<configuration/hasa/87> ns4kge:result "117"^^xsd:decimal .
+
+<configuration/hasa/88> rdf:type ns4kge:Configuration .
+<configuration/hasa/88> ns4kge:hasTask    <task/link-prediction> .
+<configuration/hasa/88> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/hasa/88> ns4kge:hasMetric  <metric/mrr> .
+<configuration/hasa/88> ns4kge:hasKGEModel <kge-model/star> .
+<configuration/hasa/88> ns4kge:result "0.296"^^xsd:decimal .
+
+<configuration/hasa/89> rdf:type ns4kge:Configuration .
+<configuration/hasa/89> ns4kge:hasTask    <task/link-prediction> .
+<configuration/hasa/89> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/hasa/89> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/hasa/89> ns4kge:hasKGEModel <kge-model/star> .
+<configuration/hasa/89> ns4kge:result "0.205"^^xsd:decimal .
+
+<configuration/hasa/90> rdf:type ns4kge:Configuration .
+<configuration/hasa/90> ns4kge:hasTask    <task/link-prediction> .
+<configuration/hasa/90> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/hasa/90> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/hasa/90> ns4kge:hasKGEModel <kge-model/star> .
+<configuration/hasa/90> ns4kge:result "0.322"^^xsd:decimal .
+
+<configuration/hasa/91> rdf:type ns4kge:Configuration .
+<configuration/hasa/91> ns4kge:hasTask    <task/link-prediction> .
+<configuration/hasa/91> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/hasa/91> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/hasa/91> ns4kge:hasKGEModel <kge-model/star> .
+<configuration/hasa/91> ns4kge:result "0.482"^^xsd:decimal .
+
+<configuration/hasa/92> rdf:type ns4kge:Configuration .
+<configuration/hasa/92> ns4kge:hasTask    <task/link-prediction> .
+<configuration/hasa/92> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/hasa/92> ns4kge:hasMetric  <metric/mr> .
+<configuration/hasa/92> ns4kge:hasKGEModel <kge-model/lass> .
+<configuration/hasa/92> ns4kge:result "55"^^xsd:decimal .
+
+<configuration/hasa/93> rdf:type ns4kge:Configuration .
+<configuration/hasa/93> ns4kge:hasTask    <task/link-prediction> .
+<configuration/hasa/93> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/hasa/93> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/hasa/93> ns4kge:hasKGEModel <kge-model/lass> .
+<configuration/hasa/93> ns4kge:result "0.725"^^xsd:decimal .
+
+<configuration/hasa/94> rdf:type ns4kge:Configuration .
+<configuration/hasa/94> ns4kge:hasTask    <task/link-prediction> .
+<configuration/hasa/94> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/hasa/94> ns4kge:hasMetric  <metric/mr> .
+<configuration/hasa/94> ns4kge:hasKGEModel <kge-model/lass> .
+<configuration/hasa/94> ns4kge:result "131"^^xsd:decimal .
+
+<configuration/hasa/95> rdf:type ns4kge:Configuration .
+<configuration/hasa/95> ns4kge:hasTask    <task/link-prediction> .
+<configuration/hasa/95> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/hasa/95> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/hasa/95> ns4kge:hasKGEModel <kge-model/lass> .
+<configuration/hasa/95> ns4kge:result "0.479"^^xsd:decimal .
+
+<configuration/hasa/96> rdf:type ns4kge:Configuration .
+<configuration/hasa/96> ns4kge:hasTask    <task/link-prediction> .
+<configuration/hasa/96> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/hasa/96> ns4kge:hasMetric  <metric/mr> .
+<configuration/hasa/96> ns4kge:hasKGEModel <kge-model/hasa> .
+<configuration/hasa/96> ns4kge:hasNSMethod <ns-method/hardness-and-structure-aware-contrastive-knowledge-graph-embedding> .
+<configuration/hasa/96> ns4kge:result "112"^^xsd:decimal .
+
+<configuration/hasa/97> rdf:type ns4kge:Configuration .
+<configuration/hasa/97> ns4kge:hasTask    <task/link-prediction> .
+<configuration/hasa/97> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/hasa/97> ns4kge:hasMetric  <metric/mrr> .
+<configuration/hasa/97> ns4kge:hasKGEModel <kge-model/hasa> .
+<configuration/hasa/97> ns4kge:hasNSMethod <ns-method/hardness-and-structure-aware-contrastive-knowledge-graph-embedding> .
+<configuration/hasa/97> ns4kge:result "0.538"^^xsd:decimal .
+
+<configuration/hasa/98> rdf:type ns4kge:Configuration .
+<configuration/hasa/98> ns4kge:hasTask    <task/link-prediction> .
+<configuration/hasa/98> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/hasa/98> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/hasa/98> ns4kge:hasKGEModel <kge-model/hasa> .
+<configuration/hasa/98> ns4kge:hasNSMethod <ns-method/hardness-and-structure-aware-contrastive-knowledge-graph-embedding> .
+<configuration/hasa/98> ns4kge:result "0.444"^^xsd:decimal .
+
+<configuration/hasa/99> rdf:type ns4kge:Configuration .
+<configuration/hasa/99> ns4kge:hasTask    <task/link-prediction> .
+<configuration/hasa/99> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/hasa/99> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/hasa/99> ns4kge:hasKGEModel <kge-model/hasa> .
+<configuration/hasa/99> ns4kge:hasNSMethod <ns-method/hardness-and-structure-aware-contrastive-knowledge-graph-embedding> .
+<configuration/hasa/99> ns4kge:result "0.588"^^xsd:decimal .
+
+<configuration/hasa/100> rdf:type ns4kge:Configuration .
+<configuration/hasa/100> ns4kge:hasTask    <task/link-prediction> .
+<configuration/hasa/100> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/hasa/100> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/hasa/100> ns4kge:hasKGEModel <kge-model/hasa> .
+<configuration/hasa/100> ns4kge:hasNSMethod <ns-method/hardness-and-structure-aware-contrastive-knowledge-graph-embedding> .
+<configuration/hasa/100> ns4kge:result "0.713"^^xsd:decimal .
+
+<configuration/hasa/101> rdf:type ns4kge:Configuration .
+<configuration/hasa/101> ns4kge:hasTask    <task/link-prediction> .
+<configuration/hasa/101> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/hasa/101> ns4kge:hasMetric  <metric/mr> .
+<configuration/hasa/101> ns4kge:hasKGEModel <kge-model/hasa> .
+<configuration/hasa/101> ns4kge:hasNSMethod <ns-method/hardness-and-structure-aware-contrastive-knowledge-graph-embedding> .
+<configuration/hasa/101> ns4kge:result "146"^^xsd:decimal .
+
+<configuration/hasa/102> rdf:type ns4kge:Configuration .
+<configuration/hasa/102> ns4kge:hasTask    <task/link-prediction> .
+<configuration/hasa/102> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/hasa/102> ns4kge:hasMetric  <metric/mrr> .
+<configuration/hasa/102> ns4kge:hasKGEModel <kge-model/hasa> .
+<configuration/hasa/102> ns4kge:hasNSMethod <ns-method/hardness-and-structure-aware-contrastive-knowledge-graph-embedding> .
+<configuration/hasa/102> ns4kge:result "0.316"^^xsd:decimal .
+
+<configuration/hasa/103> rdf:type ns4kge:Configuration .
+<configuration/hasa/103> ns4kge:hasTask    <task/link-prediction> .
+<configuration/hasa/103> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/hasa/103> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/hasa/103> ns4kge:hasKGEModel <kge-model/hasa> .
+<configuration/hasa/103> ns4kge:hasNSMethod <ns-method/hardness-and-structure-aware-contrastive-knowledge-graph-embedding> .
+<configuration/hasa/103> ns4kge:result "0.233"^^xsd:decimal .
+
+<configuration/hasa/104> rdf:type ns4kge:Configuration .
+<configuration/hasa/104> ns4kge:hasTask    <task/link-prediction> .
+<configuration/hasa/104> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/hasa/104> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/hasa/104> ns4kge:hasKGEModel <kge-model/hasa> .
+<configuration/hasa/104> ns4kge:hasNSMethod <ns-method/hardness-and-structure-aware-contrastive-knowledge-graph-embedding> .
+<configuration/hasa/104> ns4kge:result "0.34"^^xsd:decimal .
+
+<configuration/hasa/105> rdf:type ns4kge:Configuration .
+<configuration/hasa/105> ns4kge:hasTask    <task/link-prediction> .
+<configuration/hasa/105> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/hasa/105> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/hasa/105> ns4kge:hasKGEModel <kge-model/hasa> .
+<configuration/hasa/105> ns4kge:hasNSMethod <ns-method/hardness-and-structure-aware-contrastive-knowledge-graph-embedding> .
+<configuration/hasa/105> ns4kge:result "0.483"^^xsd:decimal .

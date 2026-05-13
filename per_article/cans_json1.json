@@ -1,0 +1,35 @@
+{
+  "Article": {
+    "title": "Confidence-Aware Negative Sampling Method for Noisy Knowledge Graph Embedding",
+    "date": "2018"
+  },
+  "proposedNSMethod": "Confidence-Aware Negative Sampling",
+  "proposedKGEModel": "",
+  "mentionedNSMethods": [
+    "Uniform Negative Sampling",
+    "Bernoulli Negative Sampling"
+  ],
+  "mentionedKGEModels": [
+    "TransE",
+    "TransH",
+    "TransR",
+    "TransD",
+    "ManifoldE",
+    "GTrans",
+    "puTransE",
+    "CKRL"
+  ],
+  "Experimentation": {
+    "Hardware": [],
+    "TrainingProtocol": {
+      "LossFunction": [
+        "pairwise ranking loss"
+      ],
+      "Optimizer": [
+        "SGD"
+      ],
+      "learningRate": 0.001,
+      "nsRatio": 20
+    }
+  }
+}

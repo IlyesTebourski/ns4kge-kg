@@ -1,0 +1,1001 @@
+{
+  "Article": {
+    "title": "Diffusion-based Negative Sampling on Graphs for Link Prediction",
+    "date": "2024"
+  },
+  "proposedNSMethod": "Conditional Diffusion-based Multi-level Negative Sampling",
+  "proposedKGEModel": "",
+  "mentionedNSMethods": [
+    "Markov Chain Monte Carlo Negative Sampling",
+    "Uniform Negative Sampling",
+    "MixGCF",
+    "Popularity-based Negative Sampling",
+    "Dynamic Negative Sampling",
+    "Subgraph-based Negative Sampling"
+  ],
+  "mentionedKGEModels": [
+    "ARVGA",
+    "ScaLed",
+    "GAT",
+    "SEAL",
+    "KBGAN",
+    "GVAE",
+    "GCN",
+    "SAGE",
+    "GraphGAN"
+  ],
+  "Experimentation": {
+    "Hardware": [],
+    "TrainingProtocol": {
+      "LossFunction": [
+        "log-sigmoid loss",
+        "mean squared error"
+      ],
+      "Optimizer": [],
+      "learningRate": null,
+      "nsRatio": null
+    },
+    "Configurations": [
+      {
+        "Task": "Link Prediction",
+        "Dataset": "Cora",
+        "Metric": "MAP",
+        "KGEModel": "GCN",
+        "NSMethod": "Conditional Diffusion-based Multi-level Negative Sampling",
+        "result": 0.793
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "Cora",
+        "Metric": "NDCG",
+        "KGEModel": "GCN",
+        "NSMethod": "Conditional Diffusion-based Multi-level Negative Sampling",
+        "result": 0.844
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "Cora",
+        "Metric": "MAP",
+        "KGEModel": "GVAE",
+        "NSMethod": "Unknown",
+        "result": 0.783
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "Cora",
+        "Metric": "NDCG",
+        "KGEModel": "GVAE",
+        "NSMethod": "Unknown",
+        "result": 0.835
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "Cora",
+        "Metric": "MAP",
+        "KGEModel": "GCN",
+        "NSMethod": "Markov Chain Monte Carlo Negative Sampling",
+        "result": 0.756
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "Cora",
+        "Metric": "NDCG",
+        "KGEModel": "GCN",
+        "NSMethod": "Markov Chain Monte Carlo Negative Sampling",
+        "result": 0.815
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "Cora",
+        "Metric": "MAP",
+        "KGEModel": "GCN",
+        "NSMethod": "Uniform Negative Sampling",
+        "result": 0.742
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "Cora",
+        "Metric": "NDCG",
+        "KGEModel": "GCN",
+        "NSMethod": "Uniform Negative Sampling",
+        "result": 0.805
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "Cora",
+        "Metric": "MAP",
+        "KGEModel": "GCN",
+        "NSMethod": "Popularity-based Negative Sampling",
+        "result": 0.73
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "Cora",
+        "Metric": "NDCG",
+        "KGEModel": "GCN",
+        "NSMethod": "Popularity-based Negative Sampling",
+        "result": 0.795
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "Cora",
+        "Metric": "MAP",
+        "KGEModel": "GCN",
+        "NSMethod": "Dynamic Negative Sampling",
+        "result": 0.735
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "Cora",
+        "Metric": "NDCG",
+        "KGEModel": "GCN",
+        "NSMethod": "Dynamic Negative Sampling",
+        "result": 0.799
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "Cora",
+        "Metric": "MAP",
+        "KGEModel": "GraphGAN",
+        "NSMethod": "Unknown",
+        "result": 0.739
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "Cora",
+        "Metric": "NDCG",
+        "KGEModel": "GraphGAN",
+        "NSMethod": "Unknown",
+        "result": 0.802
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "Cora",
+        "Metric": "MAP",
+        "KGEModel": "ARVGA",
+        "NSMethod": "Unknown",
+        "result": 0.732
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "Cora",
+        "Metric": "NDCG",
+        "KGEModel": "ARVGA",
+        "NSMethod": "Unknown",
+        "result": 0.797
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "Cora",
+        "Metric": "MAP",
+        "KGEModel": "KBGAN",
+        "NSMethod": "Unknown",
+        "result": 0.615
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "Cora",
+        "Metric": "NDCG",
+        "KGEModel": "KBGAN",
+        "NSMethod": "Unknown",
+        "result": 0.705
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "Cora",
+        "Metric": "MAP",
+        "KGEModel": "SEAL",
+        "NSMethod": "Unknown",
+        "result": 0.751
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "Cora",
+        "Metric": "NDCG",
+        "KGEModel": "SEAL",
+        "NSMethod": "Unknown",
+        "result": 0.812
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "Cora",
+        "Metric": "MAP",
+        "KGEModel": "ScaLed",
+        "NSMethod": "Unknown",
+        "result": 0.676
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "Cora",
+        "Metric": "NDCG",
+        "KGEModel": "ScaLed",
+        "NSMethod": "Unknown",
+        "result": 0.752
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "Citeseer",
+        "Metric": "MAP",
+        "KGEModel": "GCN",
+        "NSMethod": "Conditional Diffusion-based Multi-level Negative Sampling",
+        "result": 0.79
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "Citeseer",
+        "Metric": "NDCG",
+        "KGEModel": "GCN",
+        "NSMethod": "Conditional Diffusion-based Multi-level Negative Sampling",
+        "result": 0.841
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "Citeseer",
+        "Metric": "MAP",
+        "KGEModel": "GCN",
+        "NSMethod": "Dynamic Negative Sampling",
+        "result": 0.777
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "Citeseer",
+        "Metric": "NDCG",
+        "KGEModel": "GCN",
+        "NSMethod": "Dynamic Negative Sampling",
+        "result": 0.831
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "Citeseer",
+        "Metric": "MAP",
+        "KGEModel": "GCN",
+        "NSMethod": "Markov Chain Monte Carlo Negative Sampling",
+        "result": 0.75
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "Citeseer",
+        "Metric": "NDCG",
+        "KGEModel": "GCN",
+        "NSMethod": "Markov Chain Monte Carlo Negative Sampling",
+        "result": 0.81
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "Citeseer",
+        "Metric": "MAP",
+        "KGEModel": "GCN",
+        "NSMethod": "Popularity-based Negative Sampling",
+        "result": 0.748
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "Citeseer",
+        "Metric": "NDCG",
+        "KGEModel": "GCN",
+        "NSMethod": "Popularity-based Negative Sampling",
+        "result": 0.809
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "Citeseer",
+        "Metric": "MAP",
+        "KGEModel": "GVAE",
+        "NSMethod": "Unknown",
+        "result": 0.743
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "Citeseer",
+        "Metric": "NDCG",
+        "KGEModel": "GVAE",
+        "NSMethod": "Unknown",
+        "result": 0.805
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "Citeseer",
+        "Metric": "MAP",
+        "KGEModel": "GCN",
+        "NSMethod": "Uniform Negative Sampling",
+        "result": 0.735
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "Citeseer",
+        "Metric": "NDCG",
+        "KGEModel": "GCN",
+        "NSMethod": "Uniform Negative Sampling",
+        "result": 0.799
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "Citeseer",
+        "Metric": "MAP",
+        "KGEModel": "GraphGAN",
+        "NSMethod": "Unknown",
+        "result": 0.74
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "Citeseer",
+        "Metric": "NDCG",
+        "KGEModel": "GraphGAN",
+        "NSMethod": "Unknown",
+        "result": 0.803
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "Citeseer",
+        "Metric": "MAP",
+        "KGEModel": "ARVGA",
+        "NSMethod": "Unknown",
+        "result": 0.689
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "Citeseer",
+        "Metric": "NDCG",
+        "KGEModel": "ARVGA",
+        "NSMethod": "Unknown",
+        "result": 0.763
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "Citeseer",
+        "Metric": "MAP",
+        "KGEModel": "KBGAN",
+        "NSMethod": "Unknown",
+        "result": 0.568
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "Citeseer",
+        "Metric": "NDCG",
+        "KGEModel": "KBGAN",
+        "NSMethod": "Unknown",
+        "result": 0.668
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "Citeseer",
+        "Metric": "MAP",
+        "KGEModel": "SEAL",
+        "NSMethod": "Unknown",
+        "result": 0.718
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "Citeseer",
+        "Metric": "NDCG",
+        "KGEModel": "SEAL",
+        "NSMethod": "Unknown",
+        "result": 0.784
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "Citeseer",
+        "Metric": "MAP",
+        "KGEModel": "ScaLed",
+        "NSMethod": "Unknown",
+        "result": 0.63
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "Citeseer",
+        "Metric": "NDCG",
+        "KGEModel": "ScaLed",
+        "NSMethod": "Unknown",
+        "result": 0.712
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "Coauthor-CS",
+        "Metric": "MAP",
+        "KGEModel": "GCN",
+        "NSMethod": "Conditional Diffusion-based Multi-level Negative Sampling",
+        "result": 0.871
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "Coauthor-CS",
+        "Metric": "NDCG",
+        "KGEModel": "GCN",
+        "NSMethod": "Conditional Diffusion-based Multi-level Negative Sampling",
+        "result": 0.903
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "Coauthor-CS",
+        "Metric": "MAP",
+        "KGEModel": "KBGAN",
+        "NSMethod": "Unknown",
+        "result": 0.852
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "Coauthor-CS",
+        "Metric": "NDCG",
+        "KGEModel": "KBGAN",
+        "NSMethod": "Unknown",
+        "result": 0.888
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "Coauthor-CS",
+        "Metric": "MAP",
+        "KGEModel": "SEAL",
+        "NSMethod": "Unknown",
+        "result": 0.85
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "Coauthor-CS",
+        "Metric": "NDCG",
+        "KGEModel": "SEAL",
+        "NSMethod": "Unknown",
+        "result": 0.886
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "Coauthor-CS",
+        "Metric": "MAP",
+        "KGEModel": "GCN",
+        "NSMethod": "Dynamic Negative Sampling",
+        "result": 0.845
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "Coauthor-CS",
+        "Metric": "NDCG",
+        "KGEModel": "GCN",
+        "NSMethod": "Dynamic Negative Sampling",
+        "result": 0.883
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "Coauthor-CS",
+        "Metric": "MAP",
+        "KGEModel": "GVAE",
+        "NSMethod": "Unknown",
+        "result": 0.843
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "Coauthor-CS",
+        "Metric": "NDCG",
+        "KGEModel": "GVAE",
+        "NSMethod": "Unknown",
+        "result": 0.882
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "Coauthor-CS",
+        "Metric": "MAP",
+        "KGEModel": "GCN",
+        "NSMethod": "Uniform Negative Sampling",
+        "result": 0.823
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "Coauthor-CS",
+        "Metric": "NDCG",
+        "KGEModel": "GCN",
+        "NSMethod": "Uniform Negative Sampling",
+        "result": 0.867
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "Coauthor-CS",
+        "Metric": "MAP",
+        "KGEModel": "GCN",
+        "NSMethod": "Popularity-based Negative Sampling",
+        "result": 0.817
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "Coauthor-CS",
+        "Metric": "NDCG",
+        "KGEModel": "GCN",
+        "NSMethod": "Popularity-based Negative Sampling",
+        "result": 0.863
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "Coauthor-CS",
+        "Metric": "MAP",
+        "KGEModel": "GCN",
+        "NSMethod": "Markov Chain Monte Carlo Negative Sampling",
+        "result": 0.824
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "Coauthor-CS",
+        "Metric": "NDCG",
+        "KGEModel": "GCN",
+        "NSMethod": "Markov Chain Monte Carlo Negative Sampling",
+        "result": 0.868
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "Coauthor-CS",
+        "Metric": "MAP",
+        "KGEModel": "GraphGAN",
+        "NSMethod": "Unknown",
+        "result": 0.818
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "Coauthor-CS",
+        "Metric": "NDCG",
+        "KGEModel": "GraphGAN",
+        "NSMethod": "Unknown",
+        "result": 0.863
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "Coauthor-CS",
+        "Metric": "MAP",
+        "KGEModel": "ARVGA",
+        "NSMethod": "Unknown",
+        "result": 0.811
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "Coauthor-CS",
+        "Metric": "NDCG",
+        "KGEModel": "ARVGA",
+        "NSMethod": "Unknown",
+        "result": 0.858
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "Coauthor-CS",
+        "Metric": "MAP",
+        "KGEModel": "ScaLed",
+        "NSMethod": "Unknown",
+        "result": 0.828
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "Coauthor-CS",
+        "Metric": "NDCG",
+        "KGEModel": "ScaLed",
+        "NSMethod": "Unknown",
+        "result": 0.869
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "Actor",
+        "Metric": "MAP",
+        "KGEModel": "GCN",
+        "NSMethod": "Conditional Diffusion-based Multi-level Negative Sampling",
+        "result": 0.6
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "Actor",
+        "Metric": "NDCG",
+        "KGEModel": "GCN",
+        "NSMethod": "Conditional Diffusion-based Multi-level Negative Sampling",
+        "result": 0.696
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "Actor",
+        "Metric": "MAP",
+        "KGEModel": "GVAE",
+        "NSMethod": "Unknown",
+        "result": 0.587
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "Actor",
+        "Metric": "NDCG",
+        "KGEModel": "GVAE",
+        "NSMethod": "Unknown",
+        "result": 0.684
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "Actor",
+        "Metric": "MAP",
+        "KGEModel": "GCN",
+        "NSMethod": "Dynamic Negative Sampling",
+        "result": 0.558
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "Actor",
+        "Metric": "NDCG",
+        "KGEModel": "GCN",
+        "NSMethod": "Dynamic Negative Sampling",
+        "result": 0.663
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "Actor",
+        "Metric": "MAP",
+        "KGEModel": "GCN",
+        "NSMethod": "Markov Chain Monte Carlo Negative Sampling",
+        "result": 0.555
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "Actor",
+        "Metric": "NDCG",
+        "KGEModel": "GCN",
+        "NSMethod": "Markov Chain Monte Carlo Negative Sampling",
+        "result": 0.659
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "Actor",
+        "Metric": "MAP",
+        "KGEModel": "GCN",
+        "NSMethod": "Uniform Negative Sampling",
+        "result": 0.521
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "Actor",
+        "Metric": "NDCG",
+        "KGEModel": "GCN",
+        "NSMethod": "Uniform Negative Sampling",
+        "result": 0.634
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "Actor",
+        "Metric": "MAP",
+        "KGEModel": "GCN",
+        "NSMethod": "Popularity-based Negative Sampling",
+        "result": 0.517
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "Actor",
+        "Metric": "NDCG",
+        "KGEModel": "GCN",
+        "NSMethod": "Popularity-based Negative Sampling",
+        "result": 0.631
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "Actor",
+        "Metric": "MAP",
+        "KGEModel": "GraphGAN",
+        "NSMethod": "Unknown",
+        "result": 0.534
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "Actor",
+        "Metric": "NDCG",
+        "KGEModel": "GraphGAN",
+        "NSMethod": "Unknown",
+        "result": 0.644
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "Actor",
+        "Metric": "MAP",
+        "KGEModel": "ARVGA",
+        "NSMethod": "Unknown",
+        "result": 0.526
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "Actor",
+        "Metric": "NDCG",
+        "KGEModel": "ARVGA",
+        "NSMethod": "Unknown",
+        "result": 0.638
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "Actor",
+        "Metric": "MAP",
+        "KGEModel": "KBGAN",
+        "NSMethod": "Unknown",
+        "result": 0.472
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "Actor",
+        "Metric": "NDCG",
+        "KGEModel": "KBGAN",
+        "NSMethod": "Unknown",
+        "result": 0.596
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "Actor",
+        "Metric": "MAP",
+        "KGEModel": "SEAL",
+        "NSMethod": "Unknown",
+        "result": 0.536
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "Actor",
+        "Metric": "NDCG",
+        "KGEModel": "SEAL",
+        "NSMethod": "Unknown",
+        "result": 0.641
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "Actor",
+        "Metric": "MAP",
+        "KGEModel": "ScaLed",
+        "NSMethod": "Unknown",
+        "result": 0.459
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "Actor",
+        "Metric": "NDCG",
+        "KGEModel": "ScaLed",
+        "NSMethod": "Unknown",
+        "result": 0.558
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "Cora",
+        "Metric": "MAP",
+        "KGEModel": "GAT",
+        "NSMethod": "Unknown",
+        "result": 0.766
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "Cora",
+        "Metric": "NDCG",
+        "KGEModel": "GAT",
+        "NSMethod": "Unknown",
+        "result": 0.824
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "Cora",
+        "Metric": "MAP",
+        "KGEModel": "GAT",
+        "NSMethod": "Conditional Diffusion-based Multi-level Negative Sampling",
+        "result": 0.813
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "Cora",
+        "Metric": "NDCG",
+        "KGEModel": "GAT",
+        "NSMethod": "Conditional Diffusion-based Multi-level Negative Sampling",
+        "result": 0.859
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "Cora",
+        "Metric": "MAP",
+        "KGEModel": "SAGE",
+        "NSMethod": "Unknown",
+        "result": 0.598
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "Cora",
+        "Metric": "NDCG",
+        "KGEModel": "SAGE",
+        "NSMethod": "Unknown",
+        "result": 0.668
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "Cora",
+        "Metric": "MAP",
+        "KGEModel": "SAGE",
+        "NSMethod": "Conditional Diffusion-based Multi-level Negative Sampling",
+        "result": 0.7
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "Cora",
+        "Metric": "NDCG",
+        "KGEModel": "SAGE",
+        "NSMethod": "Conditional Diffusion-based Multi-level Negative Sampling",
+        "result": 0.773
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "Citeseer",
+        "Metric": "MAP",
+        "KGEModel": "GAT",
+        "NSMethod": "Unknown",
+        "result": 0.767
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "Citeseer",
+        "Metric": "NDCG",
+        "KGEModel": "GAT",
+        "NSMethod": "Unknown",
+        "result": 0.763
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "Citeseer",
+        "Metric": "MAP",
+        "KGEModel": "GAT",
+        "NSMethod": "Conditional Diffusion-based Multi-level Negative Sampling",
+        "result": 0.788
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "Citeseer",
+        "Metric": "NDCG",
+        "KGEModel": "GAT",
+        "NSMethod": "Conditional Diffusion-based Multi-level Negative Sampling",
+        "result": 0.84
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "Citeseer",
+        "Metric": "MAP",
+        "KGEModel": "SAGE",
+        "NSMethod": "Unknown",
+        "result": 0.622
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "Citeseer",
+        "Metric": "NDCG",
+        "KGEModel": "SAGE",
+        "NSMethod": "Unknown",
+        "result": 0.713
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "Citeseer",
+        "Metric": "MAP",
+        "KGEModel": "SAGE",
+        "NSMethod": "Conditional Diffusion-based Multi-level Negative Sampling",
+        "result": 0.669
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "Citeseer",
+        "Metric": "NDCG",
+        "KGEModel": "SAGE",
+        "NSMethod": "Conditional Diffusion-based Multi-level Negative Sampling",
+        "result": 0.749
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "Coauthor-CS",
+        "Metric": "MAP",
+        "KGEModel": "GAT",
+        "NSMethod": "Unknown",
+        "result": 0.833
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "Coauthor-CS",
+        "Metric": "NDCG",
+        "KGEModel": "GAT",
+        "NSMethod": "Unknown",
+        "result": 0.874
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "Coauthor-CS",
+        "Metric": "MAP",
+        "KGEModel": "GAT",
+        "NSMethod": "Conditional Diffusion-based Multi-level Negative Sampling",
+        "result": 0.851
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "Coauthor-CS",
+        "Metric": "NDCG",
+        "KGEModel": "GAT",
+        "NSMethod": "Conditional Diffusion-based Multi-level Negative Sampling",
+        "result": 0.889
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "Coauthor-CS",
+        "Metric": "MAP",
+        "KGEModel": "SAGE",
+        "NSMethod": "Unknown",
+        "result": 0.768
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "Coauthor-CS",
+        "Metric": "NDCG",
+        "KGEModel": "SAGE",
+        "NSMethod": "Unknown",
+        "result": 0.826
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "Coauthor-CS",
+        "Metric": "MAP",
+        "KGEModel": "SAGE",
+        "NSMethod": "Conditional Diffusion-based Multi-level Negative Sampling",
+        "result": 0.843
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "Coauthor-CS",
+        "Metric": "NDCG",
+        "KGEModel": "SAGE",
+        "NSMethod": "Conditional Diffusion-based Multi-level Negative Sampling",
+        "result": 0.883
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "Actor",
+        "Metric": "MAP",
+        "KGEModel": "GAT",
+        "NSMethod": "Unknown",
+        "result": 0.479
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "Actor",
+        "Metric": "NDCG",
+        "KGEModel": "GAT",
+        "NSMethod": "Unknown",
+        "result": 0.603
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "Actor",
+        "Metric": "MAP",
+        "KGEModel": "GAT",
+        "NSMethod": "Conditional Diffusion-based Multi-level Negative Sampling",
+        "result": 0.573
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "Actor",
+        "Metric": "NDCG",
+        "KGEModel": "GAT",
+        "NSMethod": "Conditional Diffusion-based Multi-level Negative Sampling",
+        "result": 0.675
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "Actor",
+        "Metric": "MAP",
+        "KGEModel": "SAGE",
+        "NSMethod": "Unknown",
+        "result": 0.486
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "Actor",
+        "Metric": "NDCG",
+        "KGEModel": "SAGE",
+        "NSMethod": "Unknown",
+        "result": 0.604
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "Actor",
+        "Metric": "MAP",
+        "KGEModel": "SAGE",
+        "NSMethod": "Conditional Diffusion-based Multi-level Negative Sampling",
+        "result": 0.582
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "Actor",
+        "Metric": "NDCG",
+        "KGEModel": "SAGE",
+        "NSMethod": "Conditional Diffusion-based Multi-level Negative Sampling",
+        "result": 0.682
+      }
+    ]
+  }
+}

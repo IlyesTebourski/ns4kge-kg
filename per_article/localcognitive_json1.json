@@ -1,0 +1,43 @@
+{
+  "Article": {
+    "title": "RatE: Relation-Adaptive Translating Embedding for Knowledge Graph Completion",
+    "date": "2020"
+  },
+  "proposedNSMethod": "Local-cognitive negative sampling",
+  "proposedKGEModel": "Relation-adaptive translating Embedding",
+  "mentionedNSMethods": [
+    "Self-adversarial negative sampling",
+    "Type-constraint training",
+    "Uniform negative sampling",
+    "KBGAN"
+  ],
+  "mentionedKGEModels": [
+    "TransE",
+    "RotatE",
+    "DistMult",
+    "HolE",
+    "ComplEx",
+    "ConvE",
+    "QuatE",
+    "TuckER",
+    "TransH",
+    "TransR",
+    "TransD",
+    "TorusE"
+  ],
+  "Experimentation": {
+    "Hardware": [
+      "Titan V GPU"
+    ],
+    "TrainingProtocol": {
+      "LossFunction": [
+        "Self-adversarial negative sampling loss"
+      ],
+      "Optimizer": [
+        "Adam"
+      ],
+      "learningRate": 5e-05,
+      "nsRatio": null
+    }
+  }
+}

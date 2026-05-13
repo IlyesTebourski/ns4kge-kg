@@ -1,0 +1,525 @@
+<article/typeconstraints> rdf:type ns4kge:Article .
+<article/typeconstraints> ns4kge:title "Type-Constrained Representation Learning in Knowledge Graphs"^^xsd:string .
+<article/typeconstraints> ns4kge:date "2015"^^xsd:gYear .
+<article/typeconstraints> ns4kge:proposesNSMethod <ns-method/type-constrained-negative-sampling> .
+<article/typeconstraints> ns4kge:mentionsNSMethod <ns-method/local-closed-world-assumption> .
+<article/typeconstraints> ns4kge:mentionsKGEModel <kge-model/mwnn> .
+<article/typeconstraints> ns4kge:mentionsKGEModel <kge-model/transh> .
+<article/typeconstraints> ns4kge:mentionsKGEModel <kge-model/ntn> .
+<article/typeconstraints> ns4kge:mentionsKGEModel <kge-model/transe> .
+<article/typeconstraints> ns4kge:mentionsKGEModel <kge-model/transr> .
+<article/typeconstraints> ns4kge:mentionsKGEModel <kge-model/rescal> .
+<article/typeconstraints> ns4kge:hasExperimentation <experimentation/typeconstraints> .
+
+<category/static-ns> rdf:type ns4kge:Category .
+
+<subcategory/knowledge-constrained> rdf:type ns4kge:Subcategory .
+
+<ns-method/type-constrained-negative-sampling> rdf:type ns4kge:NSMethod .
+<ns-method/type-constrained-negative-sampling> ns4kge:hasCategory <category/static-ns> .
+<ns-method/type-constrained-negative-sampling> ns4kge:hasSubcategory <subcategory/knowledge-constrained> .
+
+<ns-method/local-closed-world-assumption> rdf:type ns4kge:NSMethod .
+
+<kge-model/mwnn> rdf:type ns4kge:KGEModel .
+
+<kge-model/transh> rdf:type ns4kge:KGEModel .
+
+<kge-model/ntn> rdf:type ns4kge:KGEModel .
+
+<kge-model/transe> rdf:type ns4kge:KGEModel .
+
+<kge-model/transr> rdf:type ns4kge:KGEModel .
+
+<kge-model/rescal> rdf:type ns4kge:KGEModel .
+
+<dataset/freebase-150k> rdf:type ns4kge:Dataset .
+<task/link-prediction> rdf:type ns4kge:Task .
+<metric/auprc> rdf:type ns4kge:Metric .
+<metric/auroc> rdf:type ns4kge:Metric .
+<dataset/dbpedia-music> rdf:type ns4kge:Dataset .
+<dataset/yagoc-195k> rdf:type ns4kge:Dataset .
+<loss-function/regularized-least-squares> rdf:type ns4kge:LossFunction .
+<loss-function/max-margin-based-ranking-loss> rdf:type ns4kge:LossFunction .
+<loss-function/bernoulli-cross-entropy-loss> rdf:type ns4kge:LossFunction .
+<optimizer/sgd> rdf:type ns4kge:Optimizer .
+<optimizer/als> rdf:type ns4kge:Optimizer .
+
+<experimentation/typeconstraints> rdf:type ns4kge:Experimentation .
+<experimentation/typeconstraints> ns4kge:hasTrainingProtocol <training-protocol/typeconstraints> .
+<experimentation/typeconstraints> ns4kge:hasConfiguration <configuration/typeconstraints/1> .
+<experimentation/typeconstraints> ns4kge:hasConfiguration <configuration/typeconstraints/2> .
+<experimentation/typeconstraints> ns4kge:hasConfiguration <configuration/typeconstraints/3> .
+<experimentation/typeconstraints> ns4kge:hasConfiguration <configuration/typeconstraints/4> .
+<experimentation/typeconstraints> ns4kge:hasConfiguration <configuration/typeconstraints/5> .
+<experimentation/typeconstraints> ns4kge:hasConfiguration <configuration/typeconstraints/6> .
+<experimentation/typeconstraints> ns4kge:hasConfiguration <configuration/typeconstraints/7> .
+<experimentation/typeconstraints> ns4kge:hasConfiguration <configuration/typeconstraints/8> .
+<experimentation/typeconstraints> ns4kge:hasConfiguration <configuration/typeconstraints/9> .
+<experimentation/typeconstraints> ns4kge:hasConfiguration <configuration/typeconstraints/10> .
+<experimentation/typeconstraints> ns4kge:hasConfiguration <configuration/typeconstraints/11> .
+<experimentation/typeconstraints> ns4kge:hasConfiguration <configuration/typeconstraints/12> .
+<experimentation/typeconstraints> ns4kge:hasConfiguration <configuration/typeconstraints/13> .
+<experimentation/typeconstraints> ns4kge:hasConfiguration <configuration/typeconstraints/14> .
+<experimentation/typeconstraints> ns4kge:hasConfiguration <configuration/typeconstraints/15> .
+<experimentation/typeconstraints> ns4kge:hasConfiguration <configuration/typeconstraints/16> .
+<experimentation/typeconstraints> ns4kge:hasConfiguration <configuration/typeconstraints/17> .
+<experimentation/typeconstraints> ns4kge:hasConfiguration <configuration/typeconstraints/18> .
+<experimentation/typeconstraints> ns4kge:hasConfiguration <configuration/typeconstraints/19> .
+<experimentation/typeconstraints> ns4kge:hasConfiguration <configuration/typeconstraints/20> .
+<experimentation/typeconstraints> ns4kge:hasConfiguration <configuration/typeconstraints/21> .
+<experimentation/typeconstraints> ns4kge:hasConfiguration <configuration/typeconstraints/22> .
+<experimentation/typeconstraints> ns4kge:hasConfiguration <configuration/typeconstraints/23> .
+<experimentation/typeconstraints> ns4kge:hasConfiguration <configuration/typeconstraints/24> .
+<experimentation/typeconstraints> ns4kge:hasConfiguration <configuration/typeconstraints/25> .
+<experimentation/typeconstraints> ns4kge:hasConfiguration <configuration/typeconstraints/26> .
+<experimentation/typeconstraints> ns4kge:hasConfiguration <configuration/typeconstraints/27> .
+<experimentation/typeconstraints> ns4kge:hasConfiguration <configuration/typeconstraints/28> .
+<experimentation/typeconstraints> ns4kge:hasConfiguration <configuration/typeconstraints/29> .
+<experimentation/typeconstraints> ns4kge:hasConfiguration <configuration/typeconstraints/30> .
+<experimentation/typeconstraints> ns4kge:hasConfiguration <configuration/typeconstraints/31> .
+<experimentation/typeconstraints> ns4kge:hasConfiguration <configuration/typeconstraints/32> .
+<experimentation/typeconstraints> ns4kge:hasConfiguration <configuration/typeconstraints/33> .
+<experimentation/typeconstraints> ns4kge:hasConfiguration <configuration/typeconstraints/34> .
+<experimentation/typeconstraints> ns4kge:hasConfiguration <configuration/typeconstraints/35> .
+<experimentation/typeconstraints> ns4kge:hasConfiguration <configuration/typeconstraints/36> .
+<experimentation/typeconstraints> ns4kge:hasConfiguration <configuration/typeconstraints/37> .
+<experimentation/typeconstraints> ns4kge:hasConfiguration <configuration/typeconstraints/38> .
+<experimentation/typeconstraints> ns4kge:hasConfiguration <configuration/typeconstraints/39> .
+<experimentation/typeconstraints> ns4kge:hasConfiguration <configuration/typeconstraints/40> .
+<experimentation/typeconstraints> ns4kge:hasConfiguration <configuration/typeconstraints/41> .
+<experimentation/typeconstraints> ns4kge:hasConfiguration <configuration/typeconstraints/42> .
+<experimentation/typeconstraints> ns4kge:hasConfiguration <configuration/typeconstraints/43> .
+<experimentation/typeconstraints> ns4kge:hasConfiguration <configuration/typeconstraints/44> .
+<experimentation/typeconstraints> ns4kge:hasConfiguration <configuration/typeconstraints/45> .
+<experimentation/typeconstraints> ns4kge:hasConfiguration <configuration/typeconstraints/46> .
+<experimentation/typeconstraints> ns4kge:hasConfiguration <configuration/typeconstraints/47> .
+<experimentation/typeconstraints> ns4kge:hasConfiguration <configuration/typeconstraints/48> .
+<experimentation/typeconstraints> ns4kge:hasConfiguration <configuration/typeconstraints/49> .
+<experimentation/typeconstraints> ns4kge:hasConfiguration <configuration/typeconstraints/50> .
+<experimentation/typeconstraints> ns4kge:hasConfiguration <configuration/typeconstraints/51> .
+<experimentation/typeconstraints> ns4kge:hasConfiguration <configuration/typeconstraints/52> .
+<experimentation/typeconstraints> ns4kge:hasConfiguration <configuration/typeconstraints/53> .
+<experimentation/typeconstraints> ns4kge:hasConfiguration <configuration/typeconstraints/54> .
+
+<training-protocol/typeconstraints> rdf:type ns4kge:TrainingProtocol .
+<training-protocol/typeconstraints> ns4kge:hasOptimizer    <optimizer/sgd> .
+<training-protocol/typeconstraints> ns4kge:hasOptimizer    <optimizer/als> .
+<training-protocol/typeconstraints> ns4kge:hasLossFunction <loss-function/regularized-least-squares> .
+<training-protocol/typeconstraints> ns4kge:hasLossFunction <loss-function/max-margin-based-ranking-loss> .
+<training-protocol/typeconstraints> ns4kge:hasLossFunction <loss-function/bernoulli-cross-entropy-loss> .
+<training-protocol/typeconstraints> ns4kge:nsRatio "5"^^xsd:decimal .
+
+<configuration/typeconstraints/1> rdf:type ns4kge:Configuration .
+<configuration/typeconstraints/1> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeconstraints/1> ns4kge:hasDataset <dataset/freebase-150k> .
+<configuration/typeconstraints/1> ns4kge:hasMetric  <metric/auprc> .
+<configuration/typeconstraints/1> ns4kge:hasKGEModel <kge-model/rescal> .
+<configuration/typeconstraints/1> ns4kge:result "0.514"^^xsd:decimal .
+
+<configuration/typeconstraints/2> rdf:type ns4kge:Configuration .
+<configuration/typeconstraints/2> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeconstraints/2> ns4kge:hasDataset <dataset/freebase-150k> .
+<configuration/typeconstraints/2> ns4kge:hasMetric  <metric/auprc> .
+<configuration/typeconstraints/2> ns4kge:hasKGEModel <kge-model/rescal> .
+<configuration/typeconstraints/2> ns4kge:hasNSMethod <ns-method/type-constrained-negative-sampling> .
+<configuration/typeconstraints/2> ns4kge:result "0.654"^^xsd:decimal .
+
+<configuration/typeconstraints/3> rdf:type ns4kge:Configuration .
+<configuration/typeconstraints/3> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeconstraints/3> ns4kge:hasDataset <dataset/freebase-150k> .
+<configuration/typeconstraints/3> ns4kge:hasMetric  <metric/auprc> .
+<configuration/typeconstraints/3> ns4kge:hasKGEModel <kge-model/rescal> .
+<configuration/typeconstraints/3> ns4kge:hasNSMethod <ns-method/local-closed-world-assumption> .
+<configuration/typeconstraints/3> ns4kge:result "0.699"^^xsd:decimal .
+
+<configuration/typeconstraints/4> rdf:type ns4kge:Configuration .
+<configuration/typeconstraints/4> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeconstraints/4> ns4kge:hasDataset <dataset/freebase-150k> .
+<configuration/typeconstraints/4> ns4kge:hasMetric  <metric/auroc> .
+<configuration/typeconstraints/4> ns4kge:hasKGEModel <kge-model/rescal> .
+<configuration/typeconstraints/4> ns4kge:result "0.753"^^xsd:decimal .
+
+<configuration/typeconstraints/5> rdf:type ns4kge:Configuration .
+<configuration/typeconstraints/5> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeconstraints/5> ns4kge:hasDataset <dataset/freebase-150k> .
+<configuration/typeconstraints/5> ns4kge:hasMetric  <metric/auroc> .
+<configuration/typeconstraints/5> ns4kge:hasKGEModel <kge-model/rescal> .
+<configuration/typeconstraints/5> ns4kge:hasNSMethod <ns-method/type-constrained-negative-sampling> .
+<configuration/typeconstraints/5> ns4kge:result "0.877"^^xsd:decimal .
+
+<configuration/typeconstraints/6> rdf:type ns4kge:Configuration .
+<configuration/typeconstraints/6> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeconstraints/6> ns4kge:hasDataset <dataset/freebase-150k> .
+<configuration/typeconstraints/6> ns4kge:hasMetric  <metric/auroc> .
+<configuration/typeconstraints/6> ns4kge:hasKGEModel <kge-model/rescal> .
+<configuration/typeconstraints/6> ns4kge:hasNSMethod <ns-method/local-closed-world-assumption> .
+<configuration/typeconstraints/6> ns4kge:result "0.896"^^xsd:decimal .
+
+<configuration/typeconstraints/7> rdf:type ns4kge:Configuration .
+<configuration/typeconstraints/7> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeconstraints/7> ns4kge:hasDataset <dataset/dbpedia-music> .
+<configuration/typeconstraints/7> ns4kge:hasMetric  <metric/auprc> .
+<configuration/typeconstraints/7> ns4kge:hasKGEModel <kge-model/rescal> .
+<configuration/typeconstraints/7> ns4kge:result "0.416"^^xsd:decimal .
+
+<configuration/typeconstraints/8> rdf:type ns4kge:Configuration .
+<configuration/typeconstraints/8> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeconstraints/8> ns4kge:hasDataset <dataset/dbpedia-music> .
+<configuration/typeconstraints/8> ns4kge:hasMetric  <metric/auprc> .
+<configuration/typeconstraints/8> ns4kge:hasKGEModel <kge-model/rescal> .
+<configuration/typeconstraints/8> ns4kge:hasNSMethod <ns-method/type-constrained-negative-sampling> .
+<configuration/typeconstraints/8> ns4kge:result "0.545"^^xsd:decimal .
+
+<configuration/typeconstraints/9> rdf:type ns4kge:Configuration .
+<configuration/typeconstraints/9> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeconstraints/9> ns4kge:hasDataset <dataset/dbpedia-music> .
+<configuration/typeconstraints/9> ns4kge:hasMetric  <metric/auprc> .
+<configuration/typeconstraints/9> ns4kge:hasKGEModel <kge-model/rescal> .
+<configuration/typeconstraints/9> ns4kge:hasNSMethod <ns-method/local-closed-world-assumption> .
+<configuration/typeconstraints/9> ns4kge:result "0.571"^^xsd:decimal .
+
+<configuration/typeconstraints/10> rdf:type ns4kge:Configuration .
+<configuration/typeconstraints/10> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeconstraints/10> ns4kge:hasDataset <dataset/dbpedia-music> .
+<configuration/typeconstraints/10> ns4kge:hasMetric  <metric/auroc> .
+<configuration/typeconstraints/10> ns4kge:hasKGEModel <kge-model/rescal> .
+<configuration/typeconstraints/10> ns4kge:result "0.653"^^xsd:decimal .
+
+<configuration/typeconstraints/11> rdf:type ns4kge:Configuration .
+<configuration/typeconstraints/11> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeconstraints/11> ns4kge:hasDataset <dataset/dbpedia-music> .
+<configuration/typeconstraints/11> ns4kge:hasMetric  <metric/auroc> .
+<configuration/typeconstraints/11> ns4kge:hasKGEModel <kge-model/rescal> .
+<configuration/typeconstraints/11> ns4kge:hasNSMethod <ns-method/type-constrained-negative-sampling> .
+<configuration/typeconstraints/11> ns4kge:result "0.755"^^xsd:decimal .
+
+<configuration/typeconstraints/12> rdf:type ns4kge:Configuration .
+<configuration/typeconstraints/12> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeconstraints/12> ns4kge:hasDataset <dataset/dbpedia-music> .
+<configuration/typeconstraints/12> ns4kge:hasMetric  <metric/auroc> .
+<configuration/typeconstraints/12> ns4kge:hasKGEModel <kge-model/rescal> .
+<configuration/typeconstraints/12> ns4kge:hasNSMethod <ns-method/local-closed-world-assumption> .
+<configuration/typeconstraints/12> ns4kge:result "0.8"^^xsd:decimal .
+
+<configuration/typeconstraints/13> rdf:type ns4kge:Configuration .
+<configuration/typeconstraints/13> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeconstraints/13> ns4kge:hasDataset <dataset/yagoc-195k> .
+<configuration/typeconstraints/13> ns4kge:hasMetric  <metric/auprc> .
+<configuration/typeconstraints/13> ns4kge:hasKGEModel <kge-model/rescal> .
+<configuration/typeconstraints/13> ns4kge:result "0.721"^^xsd:decimal .
+
+<configuration/typeconstraints/14> rdf:type ns4kge:Configuration .
+<configuration/typeconstraints/14> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeconstraints/14> ns4kge:hasDataset <dataset/yagoc-195k> .
+<configuration/typeconstraints/14> ns4kge:hasMetric  <metric/auprc> .
+<configuration/typeconstraints/14> ns4kge:hasKGEModel <kge-model/rescal> .
+<configuration/typeconstraints/14> ns4kge:hasNSMethod <ns-method/type-constrained-negative-sampling> .
+<configuration/typeconstraints/14> ns4kge:result "0.739"^^xsd:decimal .
+
+<configuration/typeconstraints/15> rdf:type ns4kge:Configuration .
+<configuration/typeconstraints/15> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeconstraints/15> ns4kge:hasDataset <dataset/yagoc-195k> .
+<configuration/typeconstraints/15> ns4kge:hasMetric  <metric/auprc> .
+<configuration/typeconstraints/15> ns4kge:hasKGEModel <kge-model/rescal> .
+<configuration/typeconstraints/15> ns4kge:hasNSMethod <ns-method/local-closed-world-assumption> .
+<configuration/typeconstraints/15> ns4kge:result "0.68"^^xsd:decimal .
+
+<configuration/typeconstraints/16> rdf:type ns4kge:Configuration .
+<configuration/typeconstraints/16> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeconstraints/16> ns4kge:hasDataset <dataset/yagoc-195k> .
+<configuration/typeconstraints/16> ns4kge:hasMetric  <metric/auroc> .
+<configuration/typeconstraints/16> ns4kge:hasKGEModel <kge-model/rescal> .
+<configuration/typeconstraints/16> ns4kge:result "0.8"^^xsd:decimal .
+
+<configuration/typeconstraints/17> rdf:type ns4kge:Configuration .
+<configuration/typeconstraints/17> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeconstraints/17> ns4kge:hasDataset <dataset/yagoc-195k> .
+<configuration/typeconstraints/17> ns4kge:hasMetric  <metric/auroc> .
+<configuration/typeconstraints/17> ns4kge:hasKGEModel <kge-model/rescal> .
+<configuration/typeconstraints/17> ns4kge:hasNSMethod <ns-method/type-constrained-negative-sampling> .
+<configuration/typeconstraints/17> ns4kge:result "0.833"^^xsd:decimal .
+
+<configuration/typeconstraints/18> rdf:type ns4kge:Configuration .
+<configuration/typeconstraints/18> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeconstraints/18> ns4kge:hasDataset <dataset/yagoc-195k> .
+<configuration/typeconstraints/18> ns4kge:hasMetric  <metric/auroc> .
+<configuration/typeconstraints/18> ns4kge:hasKGEModel <kge-model/rescal> .
+<configuration/typeconstraints/18> ns4kge:hasNSMethod <ns-method/local-closed-world-assumption> .
+<configuration/typeconstraints/18> ns4kge:result "0.849"^^xsd:decimal .
+
+<configuration/typeconstraints/19> rdf:type ns4kge:Configuration .
+<configuration/typeconstraints/19> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeconstraints/19> ns4kge:hasDataset <dataset/freebase-150k> .
+<configuration/typeconstraints/19> ns4kge:hasMetric  <metric/auprc> .
+<configuration/typeconstraints/19> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/typeconstraints/19> ns4kge:result "0.743"^^xsd:decimal .
+
+<configuration/typeconstraints/20> rdf:type ns4kge:Configuration .
+<configuration/typeconstraints/20> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeconstraints/20> ns4kge:hasDataset <dataset/freebase-150k> .
+<configuration/typeconstraints/20> ns4kge:hasMetric  <metric/auprc> .
+<configuration/typeconstraints/20> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/typeconstraints/20> ns4kge:hasNSMethod <ns-method/type-constrained-negative-sampling> .
+<configuration/typeconstraints/20> ns4kge:result "0.808"^^xsd:decimal .
+
+<configuration/typeconstraints/21> rdf:type ns4kge:Configuration .
+<configuration/typeconstraints/21> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeconstraints/21> ns4kge:hasDataset <dataset/freebase-150k> .
+<configuration/typeconstraints/21> ns4kge:hasMetric  <metric/auprc> .
+<configuration/typeconstraints/21> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/typeconstraints/21> ns4kge:hasNSMethod <ns-method/local-closed-world-assumption> .
+<configuration/typeconstraints/21> ns4kge:result "0.831"^^xsd:decimal .
+
+<configuration/typeconstraints/22> rdf:type ns4kge:Configuration .
+<configuration/typeconstraints/22> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeconstraints/22> ns4kge:hasDataset <dataset/freebase-150k> .
+<configuration/typeconstraints/22> ns4kge:hasMetric  <metric/auroc> .
+<configuration/typeconstraints/22> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/typeconstraints/22> ns4kge:result "0.892"^^xsd:decimal .
+
+<configuration/typeconstraints/23> rdf:type ns4kge:Configuration .
+<configuration/typeconstraints/23> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeconstraints/23> ns4kge:hasDataset <dataset/freebase-150k> .
+<configuration/typeconstraints/23> ns4kge:hasMetric  <metric/auroc> .
+<configuration/typeconstraints/23> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/typeconstraints/23> ns4kge:hasNSMethod <ns-method/type-constrained-negative-sampling> .
+<configuration/typeconstraints/23> ns4kge:result "0.918"^^xsd:decimal .
+
+<configuration/typeconstraints/24> rdf:type ns4kge:Configuration .
+<configuration/typeconstraints/24> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeconstraints/24> ns4kge:hasDataset <dataset/freebase-150k> .
+<configuration/typeconstraints/24> ns4kge:hasMetric  <metric/auroc> .
+<configuration/typeconstraints/24> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/typeconstraints/24> ns4kge:hasNSMethod <ns-method/local-closed-world-assumption> .
+<configuration/typeconstraints/24> ns4kge:result "0.932"^^xsd:decimal .
+
+<configuration/typeconstraints/25> rdf:type ns4kge:Configuration .
+<configuration/typeconstraints/25> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeconstraints/25> ns4kge:hasDataset <dataset/dbpedia-music> .
+<configuration/typeconstraints/25> ns4kge:hasMetric  <metric/auprc> .
+<configuration/typeconstraints/25> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/typeconstraints/25> ns4kge:result "0.748"^^xsd:decimal .
+
+<configuration/typeconstraints/26> rdf:type ns4kge:Configuration .
+<configuration/typeconstraints/26> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeconstraints/26> ns4kge:hasDataset <dataset/dbpedia-music> .
+<configuration/typeconstraints/26> ns4kge:hasMetric  <metric/auprc> .
+<configuration/typeconstraints/26> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/typeconstraints/26> ns4kge:hasNSMethod <ns-method/type-constrained-negative-sampling> .
+<configuration/typeconstraints/26> ns4kge:result "0.826"^^xsd:decimal .
+
+<configuration/typeconstraints/27> rdf:type ns4kge:Configuration .
+<configuration/typeconstraints/27> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeconstraints/27> ns4kge:hasDataset <dataset/dbpedia-music> .
+<configuration/typeconstraints/27> ns4kge:hasMetric  <metric/auprc> .
+<configuration/typeconstraints/27> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/typeconstraints/27> ns4kge:hasNSMethod <ns-method/local-closed-world-assumption> .
+<configuration/typeconstraints/27> ns4kge:result "0.848"^^xsd:decimal .
+
+<configuration/typeconstraints/28> rdf:type ns4kge:Configuration .
+<configuration/typeconstraints/28> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeconstraints/28> ns4kge:hasDataset <dataset/dbpedia-music> .
+<configuration/typeconstraints/28> ns4kge:hasMetric  <metric/auroc> .
+<configuration/typeconstraints/28> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/typeconstraints/28> ns4kge:result "0.911"^^xsd:decimal .
+
+<configuration/typeconstraints/29> rdf:type ns4kge:Configuration .
+<configuration/typeconstraints/29> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeconstraints/29> ns4kge:hasDataset <dataset/dbpedia-music> .
+<configuration/typeconstraints/29> ns4kge:hasMetric  <metric/auroc> .
+<configuration/typeconstraints/29> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/typeconstraints/29> ns4kge:hasNSMethod <ns-method/type-constrained-negative-sampling> .
+<configuration/typeconstraints/29> ns4kge:result "0.942"^^xsd:decimal .
+
+<configuration/typeconstraints/30> rdf:type ns4kge:Configuration .
+<configuration/typeconstraints/30> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeconstraints/30> ns4kge:hasDataset <dataset/dbpedia-music> .
+<configuration/typeconstraints/30> ns4kge:hasMetric  <metric/auroc> .
+<configuration/typeconstraints/30> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/typeconstraints/30> ns4kge:hasNSMethod <ns-method/local-closed-world-assumption> .
+<configuration/typeconstraints/30> ns4kge:result "0.953"^^xsd:decimal .
+
+<configuration/typeconstraints/31> rdf:type ns4kge:Configuration .
+<configuration/typeconstraints/31> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeconstraints/31> ns4kge:hasDataset <dataset/yagoc-195k> .
+<configuration/typeconstraints/31> ns4kge:hasMetric  <metric/auprc> .
+<configuration/typeconstraints/31> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/typeconstraints/31> ns4kge:result "0.849"^^xsd:decimal .
+
+<configuration/typeconstraints/32> rdf:type ns4kge:Configuration .
+<configuration/typeconstraints/32> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeconstraints/32> ns4kge:hasDataset <dataset/yagoc-195k> .
+<configuration/typeconstraints/32> ns4kge:hasMetric  <metric/auprc> .
+<configuration/typeconstraints/32> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/typeconstraints/32> ns4kge:hasNSMethod <ns-method/type-constrained-negative-sampling> .
+<configuration/typeconstraints/32> ns4kge:result "0.896"^^xsd:decimal .
+
+<configuration/typeconstraints/33> rdf:type ns4kge:Configuration .
+<configuration/typeconstraints/33> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeconstraints/33> ns4kge:hasDataset <dataset/yagoc-195k> .
+<configuration/typeconstraints/33> ns4kge:hasMetric  <metric/auprc> .
+<configuration/typeconstraints/33> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/typeconstraints/33> ns4kge:hasNSMethod <ns-method/local-closed-world-assumption> .
+<configuration/typeconstraints/33> ns4kge:result "0.872"^^xsd:decimal .
+
+<configuration/typeconstraints/34> rdf:type ns4kge:Configuration .
+<configuration/typeconstraints/34> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeconstraints/34> ns4kge:hasDataset <dataset/yagoc-195k> .
+<configuration/typeconstraints/34> ns4kge:hasMetric  <metric/auroc> .
+<configuration/typeconstraints/34> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/typeconstraints/34> ns4kge:result "0.96"^^xsd:decimal .
+
+<configuration/typeconstraints/35> rdf:type ns4kge:Configuration .
+<configuration/typeconstraints/35> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeconstraints/35> ns4kge:hasDataset <dataset/yagoc-195k> .
+<configuration/typeconstraints/35> ns4kge:hasMetric  <metric/auroc> .
+<configuration/typeconstraints/35> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/typeconstraints/35> ns4kge:hasNSMethod <ns-method/type-constrained-negative-sampling> .
+<configuration/typeconstraints/35> ns4kge:result "0.974"^^xsd:decimal .
+
+<configuration/typeconstraints/36> rdf:type ns4kge:Configuration .
+<configuration/typeconstraints/36> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeconstraints/36> ns4kge:hasDataset <dataset/yagoc-195k> .
+<configuration/typeconstraints/36> ns4kge:hasMetric  <metric/auroc> .
+<configuration/typeconstraints/36> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/typeconstraints/36> ns4kge:hasNSMethod <ns-method/local-closed-world-assumption> .
+<configuration/typeconstraints/36> ns4kge:result "0.962"^^xsd:decimal .
+
+<configuration/typeconstraints/37> rdf:type ns4kge:Configuration .
+<configuration/typeconstraints/37> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeconstraints/37> ns4kge:hasDataset <dataset/freebase-150k> .
+<configuration/typeconstraints/37> ns4kge:hasMetric  <metric/auprc> .
+<configuration/typeconstraints/37> ns4kge:hasKGEModel <kge-model/mwnn> .
+<configuration/typeconstraints/37> ns4kge:result "0.512"^^xsd:decimal .
+
+<configuration/typeconstraints/38> rdf:type ns4kge:Configuration .
+<configuration/typeconstraints/38> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeconstraints/38> ns4kge:hasDataset <dataset/freebase-150k> .
+<configuration/typeconstraints/38> ns4kge:hasMetric  <metric/auprc> .
+<configuration/typeconstraints/38> ns4kge:hasKGEModel <kge-model/mwnn> .
+<configuration/typeconstraints/38> ns4kge:hasNSMethod <ns-method/type-constrained-negative-sampling> .
+<configuration/typeconstraints/38> ns4kge:result "0.837"^^xsd:decimal .
+
+<configuration/typeconstraints/39> rdf:type ns4kge:Configuration .
+<configuration/typeconstraints/39> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeconstraints/39> ns4kge:hasDataset <dataset/freebase-150k> .
+<configuration/typeconstraints/39> ns4kge:hasMetric  <metric/auprc> .
+<configuration/typeconstraints/39> ns4kge:hasKGEModel <kge-model/mwnn> .
+<configuration/typeconstraints/39> ns4kge:hasNSMethod <ns-method/local-closed-world-assumption> .
+<configuration/typeconstraints/39> ns4kge:result "0.776"^^xsd:decimal .
+
+<configuration/typeconstraints/40> rdf:type ns4kge:Configuration .
+<configuration/typeconstraints/40> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeconstraints/40> ns4kge:hasDataset <dataset/freebase-150k> .
+<configuration/typeconstraints/40> ns4kge:hasMetric  <metric/auroc> .
+<configuration/typeconstraints/40> ns4kge:hasKGEModel <kge-model/mwnn> .
+<configuration/typeconstraints/40> ns4kge:result "0.879"^^xsd:decimal .
+
+<configuration/typeconstraints/41> rdf:type ns4kge:Configuration .
+<configuration/typeconstraints/41> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeconstraints/41> ns4kge:hasDataset <dataset/freebase-150k> .
+<configuration/typeconstraints/41> ns4kge:hasMetric  <metric/auroc> .
+<configuration/typeconstraints/41> ns4kge:hasKGEModel <kge-model/mwnn> .
+<configuration/typeconstraints/41> ns4kge:hasNSMethod <ns-method/type-constrained-negative-sampling> .
+<configuration/typeconstraints/41> ns4kge:result "0.967"^^xsd:decimal .
+
+<configuration/typeconstraints/42> rdf:type ns4kge:Configuration .
+<configuration/typeconstraints/42> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeconstraints/42> ns4kge:hasDataset <dataset/freebase-150k> .
+<configuration/typeconstraints/42> ns4kge:hasMetric  <metric/auroc> .
+<configuration/typeconstraints/42> ns4kge:hasKGEModel <kge-model/mwnn> .
+<configuration/typeconstraints/42> ns4kge:hasNSMethod <ns-method/local-closed-world-assumption> .
+<configuration/typeconstraints/42> ns4kge:result "0.956"^^xsd:decimal .
+
+<configuration/typeconstraints/43> rdf:type ns4kge:Configuration .
+<configuration/typeconstraints/43> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeconstraints/43> ns4kge:hasDataset <dataset/dbpedia-music> .
+<configuration/typeconstraints/43> ns4kge:hasMetric  <metric/auprc> .
+<configuration/typeconstraints/43> ns4kge:hasKGEModel <kge-model/mwnn> .
+<configuration/typeconstraints/43> ns4kge:result "0.538"^^xsd:decimal .
+
+<configuration/typeconstraints/44> rdf:type ns4kge:Configuration .
+<configuration/typeconstraints/44> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeconstraints/44> ns4kge:hasDataset <dataset/dbpedia-music> .
+<configuration/typeconstraints/44> ns4kge:hasMetric  <metric/auprc> .
+<configuration/typeconstraints/44> ns4kge:hasKGEModel <kge-model/mwnn> .
+<configuration/typeconstraints/44> ns4kge:hasNSMethod <ns-method/type-constrained-negative-sampling> .
+<configuration/typeconstraints/44> ns4kge:result "0.754"^^xsd:decimal .
+
+<configuration/typeconstraints/45> rdf:type ns4kge:Configuration .
+<configuration/typeconstraints/45> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeconstraints/45> ns4kge:hasDataset <dataset/dbpedia-music> .
+<configuration/typeconstraints/45> ns4kge:hasMetric  <metric/auprc> .
+<configuration/typeconstraints/45> ns4kge:hasKGEModel <kge-model/mwnn> .
+<configuration/typeconstraints/45> ns4kge:hasNSMethod <ns-method/local-closed-world-assumption> .
+<configuration/typeconstraints/45> ns4kge:result "0.723"^^xsd:decimal .
+
+<configuration/typeconstraints/46> rdf:type ns4kge:Configuration .
+<configuration/typeconstraints/46> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeconstraints/46> ns4kge:hasDataset <dataset/dbpedia-music> .
+<configuration/typeconstraints/46> ns4kge:hasMetric  <metric/auroc> .
+<configuration/typeconstraints/46> ns4kge:hasKGEModel <kge-model/mwnn> .
+<configuration/typeconstraints/46> ns4kge:result "0.865"^^xsd:decimal .
+
+<configuration/typeconstraints/47> rdf:type ns4kge:Configuration .
+<configuration/typeconstraints/47> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeconstraints/47> ns4kge:hasDataset <dataset/dbpedia-music> .
+<configuration/typeconstraints/47> ns4kge:hasMetric  <metric/auroc> .
+<configuration/typeconstraints/47> ns4kge:hasKGEModel <kge-model/mwnn> .
+<configuration/typeconstraints/47> ns4kge:hasNSMethod <ns-method/type-constrained-negative-sampling> .
+<configuration/typeconstraints/47> ns4kge:result "0.913"^^xsd:decimal .
+
+<configuration/typeconstraints/48> rdf:type ns4kge:Configuration .
+<configuration/typeconstraints/48> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeconstraints/48> ns4kge:hasDataset <dataset/dbpedia-music> .
+<configuration/typeconstraints/48> ns4kge:hasMetric  <metric/auroc> .
+<configuration/typeconstraints/48> ns4kge:hasKGEModel <kge-model/mwnn> .
+<configuration/typeconstraints/48> ns4kge:hasNSMethod <ns-method/local-closed-world-assumption> .
+<configuration/typeconstraints/48> ns4kge:result "0.9"^^xsd:decimal .
+
+<configuration/typeconstraints/49> rdf:type ns4kge:Configuration .
+<configuration/typeconstraints/49> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeconstraints/49> ns4kge:hasDataset <dataset/yagoc-195k> .
+<configuration/typeconstraints/49> ns4kge:hasMetric  <metric/auprc> .
+<configuration/typeconstraints/49> ns4kge:hasKGEModel <kge-model/mwnn> .
+<configuration/typeconstraints/49> ns4kge:result "0.684"^^xsd:decimal .
+
+<configuration/typeconstraints/50> rdf:type ns4kge:Configuration .
+<configuration/typeconstraints/50> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeconstraints/50> ns4kge:hasDataset <dataset/yagoc-195k> .
+<configuration/typeconstraints/50> ns4kge:hasMetric  <metric/auprc> .
+<configuration/typeconstraints/50> ns4kge:hasKGEModel <kge-model/mwnn> .
+<configuration/typeconstraints/50> ns4kge:hasNSMethod <ns-method/type-constrained-negative-sampling> .
+<configuration/typeconstraints/50> ns4kge:result "0.84"^^xsd:decimal .
+
+<configuration/typeconstraints/51> rdf:type ns4kge:Configuration .
+<configuration/typeconstraints/51> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeconstraints/51> ns4kge:hasDataset <dataset/yagoc-195k> .
+<configuration/typeconstraints/51> ns4kge:hasMetric  <metric/auprc> .
+<configuration/typeconstraints/51> ns4kge:hasKGEModel <kge-model/mwnn> .
+<configuration/typeconstraints/51> ns4kge:hasNSMethod <ns-method/local-closed-world-assumption> .
+<configuration/typeconstraints/51> ns4kge:result "0.836"^^xsd:decimal .
+
+<configuration/typeconstraints/52> rdf:type ns4kge:Configuration .
+<configuration/typeconstraints/52> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeconstraints/52> ns4kge:hasDataset <dataset/yagoc-195k> .
+<configuration/typeconstraints/52> ns4kge:hasMetric  <metric/auroc> .
+<configuration/typeconstraints/52> ns4kge:hasKGEModel <kge-model/mwnn> .
+<configuration/typeconstraints/52> ns4kge:result "0.957"^^xsd:decimal .
+
+<configuration/typeconstraints/53> rdf:type ns4kge:Configuration .
+<configuration/typeconstraints/53> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeconstraints/53> ns4kge:hasDataset <dataset/yagoc-195k> .
+<configuration/typeconstraints/53> ns4kge:hasMetric  <metric/auroc> .
+<configuration/typeconstraints/53> ns4kge:hasKGEModel <kge-model/mwnn> .
+<configuration/typeconstraints/53> ns4kge:hasNSMethod <ns-method/type-constrained-negative-sampling> .
+<configuration/typeconstraints/53> ns4kge:result "0.96"^^xsd:decimal .
+
+<configuration/typeconstraints/54> rdf:type ns4kge:Configuration .
+<configuration/typeconstraints/54> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeconstraints/54> ns4kge:hasDataset <dataset/yagoc-195k> .
+<configuration/typeconstraints/54> ns4kge:hasMetric  <metric/auroc> .
+<configuration/typeconstraints/54> ns4kge:hasKGEModel <kge-model/mwnn> .
+<configuration/typeconstraints/54> ns4kge:hasNSMethod <ns-method/local-closed-world-assumption> .
+<configuration/typeconstraints/54> ns4kge:result "0.943"^^xsd:decimal .

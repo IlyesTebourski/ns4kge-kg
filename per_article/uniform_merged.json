@@ -1,0 +1,257 @@
+{
+  "Article": {
+    "title": "Translating Embeddings for Modeling Multi-relational Data",
+    "date": "2013"
+  },
+  "proposedNSMethod": "",
+  "proposedKGEModel": "TransE",
+  "mentionedNSMethods": [],
+  "mentionedKGEModels": [
+    "Unstructured",
+    "Structured Embeddings",
+    "SME(linear)",
+    "Neural Tensor Model",
+    "SME(bilinear)",
+    "LFM",
+    "RESCAL"
+  ],
+  "Experimentation": {
+    "Hardware": [],
+    "TrainingProtocol": {
+      "LossFunction": [
+        "margin-based ranking loss"
+      ],
+      "Optimizer": [
+        "SGD"
+      ],
+      "learningRate": 0.01,
+      "nsRatio": 1.0
+    },
+    "Configurations": [
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN",
+        "Metric": "MR",
+        "KGEModel": "TransE",
+        "NSMethod": "Unknown",
+        "result": 251
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN",
+        "Metric": "MR",
+        "KGEModel": "Unstructured",
+        "NSMethod": "Unknown",
+        "result": 304
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN",
+        "Metric": "MR",
+        "KGEModel": "LFM",
+        "NSMethod": "Unknown",
+        "result": 456
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN",
+        "Metric": "MR",
+        "KGEModel": "SME(bilinear)",
+        "NSMethod": "Unknown",
+        "result": 509
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN",
+        "Metric": "MR",
+        "KGEModel": "SME(linear)",
+        "NSMethod": "Unknown",
+        "result": 533
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN",
+        "Metric": "MR",
+        "KGEModel": "Structured Embeddings",
+        "NSMethod": "Unknown",
+        "result": 985
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN",
+        "Metric": "MR",
+        "KGEModel": "RESCAL",
+        "NSMethod": "Unknown",
+        "result": 1163
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN",
+        "Metric": "Hits@10",
+        "KGEModel": "TransE",
+        "NSMethod": "Unknown",
+        "result": 89.2
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN",
+        "Metric": "Hits@10",
+        "KGEModel": "LFM",
+        "NSMethod": "Unknown",
+        "result": 81.6
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN",
+        "Metric": "Hits@10",
+        "KGEModel": "Structured Embeddings",
+        "NSMethod": "Unknown",
+        "result": 80.5
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN",
+        "Metric": "Hits@10",
+        "KGEModel": "SME(linear)",
+        "NSMethod": "Unknown",
+        "result": 74.1
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN",
+        "Metric": "Hits@10",
+        "KGEModel": "SME(bilinear)",
+        "NSMethod": "Unknown",
+        "result": 61.3
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN",
+        "Metric": "Hits@10",
+        "KGEModel": "RESCAL",
+        "NSMethod": "Unknown",
+        "result": 52.8
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN",
+        "Metric": "Hits@10",
+        "KGEModel": "Unstructured",
+        "NSMethod": "Unknown",
+        "result": 38.2
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K",
+        "Metric": "MR",
+        "KGEModel": "TransE",
+        "NSMethod": "Unknown",
+        "result": 125
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K",
+        "Metric": "MR",
+        "KGEModel": "SME(linear)",
+        "NSMethod": "Unknown",
+        "result": 154
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K",
+        "Metric": "MR",
+        "KGEModel": "SME(bilinear)",
+        "NSMethod": "Unknown",
+        "result": 158
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K",
+        "Metric": "MR",
+        "KGEModel": "Structured Embeddings",
+        "NSMethod": "Unknown",
+        "result": 162
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K",
+        "Metric": "MR",
+        "KGEModel": "LFM",
+        "NSMethod": "Unknown",
+        "result": 164
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K",
+        "Metric": "MR",
+        "KGEModel": "RESCAL",
+        "NSMethod": "Unknown",
+        "result": 683
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K",
+        "Metric": "MR",
+        "KGEModel": "Unstructured",
+        "NSMethod": "Unknown",
+        "result": 979
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K",
+        "Metric": "Hits@10",
+        "KGEModel": "TransE",
+        "NSMethod": "Unknown",
+        "result": 47.1
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K",
+        "Metric": "Hits@10",
+        "KGEModel": "RESCAL",
+        "NSMethod": "Unknown",
+        "result": 44.1
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K",
+        "Metric": "Hits@10",
+        "KGEModel": "SME(bilinear)",
+        "NSMethod": "Unknown",
+        "result": 41.3
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K",
+        "Metric": "Hits@10",
+        "KGEModel": "SME(linear)",
+        "NSMethod": "Unknown",
+        "result": 40.8
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K",
+        "Metric": "Hits@10",
+        "KGEModel": "Structured Embeddings",
+        "NSMethod": "Unknown",
+        "result": 39.8
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K",
+        "Metric": "Hits@10",
+        "KGEModel": "LFM",
+        "NSMethod": "Unknown",
+        "result": 33.1
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K",
+        "Metric": "Hits@10",
+        "KGEModel": "Unstructured",
+        "NSMethod": "Unknown",
+        "result": 6.3
+      }
+    ]
+  }
+}

@@ -1,0 +1,434 @@
+<article/truncatedns> rdf:type ns4kge:Article .
+<article/truncatedns> ns4kge:title "Fusing Attribute Character Embeddings with Truncated Negative Sampling for Entity Alignment"^^xsd:string .
+<article/truncatedns> ns4kge:date "2023"^^xsd:gYear .
+<article/truncatedns> ns4kge:proposesNSMethod <ns-method/truncated-negative-sampling> .
+<article/truncatedns> ns4kge:mentionsNSMethod <ns-method/random-negative-sampling> .
+<article/truncatedns> ns4kge:mentionsKGEModel <kge-model/bootea> .
+<article/truncatedns> ns4kge:mentionsKGEModel <kge-model/truncated-negative-sampling> .
+<article/truncatedns> ns4kge:mentionsKGEModel <kge-model/transe> .
+<article/truncatedns> ns4kge:mentionsKGEModel <kge-model/transr> .
+<article/truncatedns> ns4kge:mentionsKGEModel <kge-model/simple> .
+<article/truncatedns> ns4kge:mentionsKGEModel <kge-model/mtranse> .
+<article/truncatedns> ns4kge:mentionsKGEModel <kge-model/rotate> .
+<article/truncatedns> ns4kge:mentionsKGEModel <kge-model/dat> .
+<article/truncatedns> ns4kge:mentionsKGEModel <kge-model/hake> .
+<article/truncatedns> ns4kge:mentionsKGEModel <kge-model/rescal> .
+<article/truncatedns> ns4kge:mentionsKGEModel <kge-model/multike> .
+<article/truncatedns> ns4kge:mentionsKGEModel <kge-model/kd-coe> .
+<article/truncatedns> ns4kge:mentionsKGEModel <kge-model/transd> .
+<article/truncatedns> ns4kge:mentionsKGEModel <kge-model/crosse> .
+<article/truncatedns> ns4kge:mentionsKGEModel <kge-model/iptranse> .
+<article/truncatedns> ns4kge:mentionsKGEModel <kge-model/transedge> .
+<article/truncatedns> ns4kge:mentionsKGEModel <kge-model/transh> .
+<article/truncatedns> ns4kge:mentionsKGEModel <kge-model/jape> .
+<article/truncatedns> ns4kge:mentionsKGEModel <kge-model/murp> .
+<article/truncatedns> ns4kge:hasExperimentation <experimentation/truncatedns> .
+
+<category/dynamic-ns> rdf:type ns4kge:Category .
+
+<subcategory/self-adaptive> rdf:type ns4kge:Subcategory .
+
+<ns-method/truncated-negative-sampling> rdf:type ns4kge:NSMethod .
+<ns-method/truncated-negative-sampling> ns4kge:hasCategory <category/dynamic-ns> .
+<ns-method/truncated-negative-sampling> ns4kge:hasSubcategory <subcategory/self-adaptive> .
+
+<ns-method/random-negative-sampling> rdf:type ns4kge:NSMethod .
+<category/static-ns> rdf:type ns4kge:Category .
+
+<ns-method/random-negative-sampling> ns4kge:hasCategory <category/static-ns> .
+<subcategory/random> rdf:type ns4kge:Subcategory .
+
+<ns-method/random-negative-sampling> ns4kge:hasSubcategory <subcategory/random> .
+
+<kge-model/bootea> rdf:type ns4kge:KGEModel .
+
+<kge-model/truncated-negative-sampling> rdf:type ns4kge:KGEModel .
+
+<kge-model/transe> rdf:type ns4kge:KGEModel .
+
+<kge-model/transr> rdf:type ns4kge:KGEModel .
+
+<kge-model/simple> rdf:type ns4kge:KGEModel .
+
+<kge-model/mtranse> rdf:type ns4kge:KGEModel .
+
+<kge-model/rotate> rdf:type ns4kge:KGEModel .
+
+<kge-model/dat> rdf:type ns4kge:KGEModel .
+
+<kge-model/hake> rdf:type ns4kge:KGEModel .
+
+<kge-model/rescal> rdf:type ns4kge:KGEModel .
+
+<kge-model/multike> rdf:type ns4kge:KGEModel .
+
+<kge-model/kd-coe> rdf:type ns4kge:KGEModel .
+
+<kge-model/transd> rdf:type ns4kge:KGEModel .
+
+<kge-model/crosse> rdf:type ns4kge:KGEModel .
+
+<kge-model/iptranse> rdf:type ns4kge:KGEModel .
+
+<kge-model/transedge> rdf:type ns4kge:KGEModel .
+
+<kge-model/transh> rdf:type ns4kge:KGEModel .
+
+<kge-model/jape> rdf:type ns4kge:KGEModel .
+
+<kge-model/murp> rdf:type ns4kge:KGEModel .
+
+<dataset/d-w15k> rdf:type ns4kge:Dataset .
+<task/entity-alignment> rdf:type ns4kge:Task .
+<metric/hits-1> rdf:type ns4kge:Metric .
+<metric/hits-5> rdf:type ns4kge:Metric .
+<metric/hits-10> rdf:type ns4kge:Metric .
+<metric/hits-50> rdf:type ns4kge:Metric .
+<metric/mrr> rdf:type ns4kge:Metric .
+<metric/mr> rdf:type ns4kge:Metric .
+<dataset/en-de15k> rdf:type ns4kge:Dataset .
+<loss-function/margin-based-ranking-loss> rdf:type ns4kge:LossFunction .
+<hardware/amd-ryzen-7-4800h-2-9-ghz-cpu> rdf:type ns4kge:Hardware .
+<hardware/nvidia-geforce-gtx-1650-ti-gpu> rdf:type ns4kge:Hardware .
+
+<experimentation/truncatedns> rdf:type ns4kge:Experimentation .
+<experimentation/truncatedns> ns4kge:hasTrainingProtocol <training-protocol/truncatedns> .
+<experimentation/truncatedns> ns4kge:hasConfiguration <configuration/truncatedns/1> .
+<experimentation/truncatedns> ns4kge:hasConfiguration <configuration/truncatedns/2> .
+<experimentation/truncatedns> ns4kge:hasConfiguration <configuration/truncatedns/3> .
+<experimentation/truncatedns> ns4kge:hasConfiguration <configuration/truncatedns/4> .
+<experimentation/truncatedns> ns4kge:hasConfiguration <configuration/truncatedns/5> .
+<experimentation/truncatedns> ns4kge:hasConfiguration <configuration/truncatedns/6> .
+<experimentation/truncatedns> ns4kge:hasConfiguration <configuration/truncatedns/7> .
+<experimentation/truncatedns> ns4kge:hasConfiguration <configuration/truncatedns/8> .
+<experimentation/truncatedns> ns4kge:hasConfiguration <configuration/truncatedns/9> .
+<experimentation/truncatedns> ns4kge:hasConfiguration <configuration/truncatedns/10> .
+<experimentation/truncatedns> ns4kge:hasConfiguration <configuration/truncatedns/11> .
+<experimentation/truncatedns> ns4kge:hasConfiguration <configuration/truncatedns/12> .
+<experimentation/truncatedns> ns4kge:hasConfiguration <configuration/truncatedns/13> .
+<experimentation/truncatedns> ns4kge:hasConfiguration <configuration/truncatedns/14> .
+<experimentation/truncatedns> ns4kge:hasConfiguration <configuration/truncatedns/15> .
+<experimentation/truncatedns> ns4kge:hasConfiguration <configuration/truncatedns/16> .
+<experimentation/truncatedns> ns4kge:hasConfiguration <configuration/truncatedns/17> .
+<experimentation/truncatedns> ns4kge:hasConfiguration <configuration/truncatedns/18> .
+<experimentation/truncatedns> ns4kge:hasConfiguration <configuration/truncatedns/19> .
+<experimentation/truncatedns> ns4kge:hasConfiguration <configuration/truncatedns/20> .
+<experimentation/truncatedns> ns4kge:hasConfiguration <configuration/truncatedns/21> .
+<experimentation/truncatedns> ns4kge:hasConfiguration <configuration/truncatedns/22> .
+<experimentation/truncatedns> ns4kge:hasConfiguration <configuration/truncatedns/23> .
+<experimentation/truncatedns> ns4kge:hasConfiguration <configuration/truncatedns/24> .
+<experimentation/truncatedns> ns4kge:hasConfiguration <configuration/truncatedns/25> .
+<experimentation/truncatedns> ns4kge:hasConfiguration <configuration/truncatedns/26> .
+<experimentation/truncatedns> ns4kge:hasConfiguration <configuration/truncatedns/27> .
+<experimentation/truncatedns> ns4kge:hasConfiguration <configuration/truncatedns/28> .
+<experimentation/truncatedns> ns4kge:hasConfiguration <configuration/truncatedns/29> .
+<experimentation/truncatedns> ns4kge:hasConfiguration <configuration/truncatedns/30> .
+<experimentation/truncatedns> ns4kge:hasConfiguration <configuration/truncatedns/31> .
+<experimentation/truncatedns> ns4kge:hasConfiguration <configuration/truncatedns/32> .
+<experimentation/truncatedns> ns4kge:hasConfiguration <configuration/truncatedns/33> .
+<experimentation/truncatedns> ns4kge:hasConfiguration <configuration/truncatedns/34> .
+<experimentation/truncatedns> ns4kge:hasConfiguration <configuration/truncatedns/35> .
+<experimentation/truncatedns> ns4kge:hasConfiguration <configuration/truncatedns/36> .
+<experimentation/truncatedns> ns4kge:hasConfiguration <configuration/truncatedns/37> .
+<experimentation/truncatedns> ns4kge:hasConfiguration <configuration/truncatedns/38> .
+<experimentation/truncatedns> ns4kge:hasConfiguration <configuration/truncatedns/39> .
+<experimentation/truncatedns> ns4kge:hasConfiguration <configuration/truncatedns/40> .
+
+<training-protocol/truncatedns> rdf:type ns4kge:TrainingProtocol .
+<training-protocol/truncatedns> ns4kge:hasLossFunction <loss-function/margin-based-ranking-loss> .
+<training-protocol/truncatedns> ns4kge:hasHardware     <hardware/amd-ryzen-7-4800h-2-9-ghz-cpu> .
+<training-protocol/truncatedns> ns4kge:hasHardware     <hardware/nvidia-geforce-gtx-1650-ti-gpu> .
+<training-protocol/truncatedns> ns4kge:learningRate "0.01"^^xsd:decimal .
+<training-protocol/truncatedns> ns4kge:nsRatio "5"^^xsd:decimal .
+
+<configuration/truncatedns/1> rdf:type ns4kge:Configuration .
+<configuration/truncatedns/1> ns4kge:hasTask    <task/entity-alignment> .
+<configuration/truncatedns/1> ns4kge:hasDataset <dataset/d-w15k> .
+<configuration/truncatedns/1> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/truncatedns/1> ns4kge:hasKGEModel <kge-model/iptranse> .
+<configuration/truncatedns/1> ns4kge:result "0.3273"^^xsd:decimal .
+
+<configuration/truncatedns/2> rdf:type ns4kge:Configuration .
+<configuration/truncatedns/2> ns4kge:hasTask    <task/entity-alignment> .
+<configuration/truncatedns/2> ns4kge:hasDataset <dataset/d-w15k> .
+<configuration/truncatedns/2> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/truncatedns/2> ns4kge:hasKGEModel <kge-model/truncated-negative-sampling> .
+<configuration/truncatedns/2> ns4kge:hasNSMethod <ns-method/truncated-negative-sampling> .
+<configuration/truncatedns/2> ns4kge:result "0.3241"^^xsd:decimal .
+
+<configuration/truncatedns/3> rdf:type ns4kge:Configuration .
+<configuration/truncatedns/3> ns4kge:hasTask    <task/entity-alignment> .
+<configuration/truncatedns/3> ns4kge:hasDataset <dataset/d-w15k> .
+<configuration/truncatedns/3> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/truncatedns/3> ns4kge:hasKGEModel <kge-model/mtranse> .
+<configuration/truncatedns/3> ns4kge:result "0.1651"^^xsd:decimal .
+
+<configuration/truncatedns/4> rdf:type ns4kge:Configuration .
+<configuration/truncatedns/4> ns4kge:hasTask    <task/entity-alignment> .
+<configuration/truncatedns/4> ns4kge:hasDataset <dataset/d-w15k> .
+<configuration/truncatedns/4> ns4kge:hasMetric  <metric/hits-5> .
+<configuration/truncatedns/4> ns4kge:hasKGEModel <kge-model/truncated-negative-sampling> .
+<configuration/truncatedns/4> ns4kge:hasNSMethod <ns-method/truncated-negative-sampling> .
+<configuration/truncatedns/4> ns4kge:result "0.4902"^^xsd:decimal .
+
+<configuration/truncatedns/5> rdf:type ns4kge:Configuration .
+<configuration/truncatedns/5> ns4kge:hasTask    <task/entity-alignment> .
+<configuration/truncatedns/5> ns4kge:hasDataset <dataset/d-w15k> .
+<configuration/truncatedns/5> ns4kge:hasMetric  <metric/hits-5> .
+<configuration/truncatedns/5> ns4kge:hasKGEModel <kge-model/iptranse> .
+<configuration/truncatedns/5> ns4kge:result "0.4356"^^xsd:decimal .
+
+<configuration/truncatedns/6> rdf:type ns4kge:Configuration .
+<configuration/truncatedns/6> ns4kge:hasTask    <task/entity-alignment> .
+<configuration/truncatedns/6> ns4kge:hasDataset <dataset/d-w15k> .
+<configuration/truncatedns/6> ns4kge:hasMetric  <metric/hits-5> .
+<configuration/truncatedns/6> ns4kge:hasKGEModel <kge-model/mtranse> .
+<configuration/truncatedns/6> ns4kge:result "0.3247"^^xsd:decimal .
+
+<configuration/truncatedns/7> rdf:type ns4kge:Configuration .
+<configuration/truncatedns/7> ns4kge:hasTask    <task/entity-alignment> .
+<configuration/truncatedns/7> ns4kge:hasDataset <dataset/d-w15k> .
+<configuration/truncatedns/7> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/truncatedns/7> ns4kge:hasKGEModel <kge-model/truncated-negative-sampling> .
+<configuration/truncatedns/7> ns4kge:hasNSMethod <ns-method/truncated-negative-sampling> .
+<configuration/truncatedns/7> ns4kge:result "0.5616"^^xsd:decimal .
+
+<configuration/truncatedns/8> rdf:type ns4kge:Configuration .
+<configuration/truncatedns/8> ns4kge:hasTask    <task/entity-alignment> .
+<configuration/truncatedns/8> ns4kge:hasDataset <dataset/d-w15k> .
+<configuration/truncatedns/8> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/truncatedns/8> ns4kge:hasKGEModel <kge-model/iptranse> .
+<configuration/truncatedns/8> ns4kge:result "0.5437"^^xsd:decimal .
+
+<configuration/truncatedns/9> rdf:type ns4kge:Configuration .
+<configuration/truncatedns/9> ns4kge:hasTask    <task/entity-alignment> .
+<configuration/truncatedns/9> ns4kge:hasDataset <dataset/d-w15k> .
+<configuration/truncatedns/9> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/truncatedns/9> ns4kge:hasKGEModel <kge-model/mtranse> .
+<configuration/truncatedns/9> ns4kge:result "0.3951"^^xsd:decimal .
+
+<configuration/truncatedns/10> rdf:type ns4kge:Configuration .
+<configuration/truncatedns/10> ns4kge:hasTask    <task/entity-alignment> .
+<configuration/truncatedns/10> ns4kge:hasDataset <dataset/d-w15k> .
+<configuration/truncatedns/10> ns4kge:hasMetric  <metric/hits-50> .
+<configuration/truncatedns/10> ns4kge:hasKGEModel <kge-model/truncated-negative-sampling> .
+<configuration/truncatedns/10> ns4kge:hasNSMethod <ns-method/truncated-negative-sampling> .
+<configuration/truncatedns/10> ns4kge:result "0.7992"^^xsd:decimal .
+
+<configuration/truncatedns/11> rdf:type ns4kge:Configuration .
+<configuration/truncatedns/11> ns4kge:hasTask    <task/entity-alignment> .
+<configuration/truncatedns/11> ns4kge:hasDataset <dataset/d-w15k> .
+<configuration/truncatedns/11> ns4kge:hasMetric  <metric/hits-50> .
+<configuration/truncatedns/11> ns4kge:hasKGEModel <kge-model/iptranse> .
+<configuration/truncatedns/11> ns4kge:result "0.6938"^^xsd:decimal .
+
+<configuration/truncatedns/12> rdf:type ns4kge:Configuration .
+<configuration/truncatedns/12> ns4kge:hasTask    <task/entity-alignment> .
+<configuration/truncatedns/12> ns4kge:hasDataset <dataset/d-w15k> .
+<configuration/truncatedns/12> ns4kge:hasMetric  <metric/hits-50> .
+<configuration/truncatedns/12> ns4kge:hasKGEModel <kge-model/mtranse> .
+<configuration/truncatedns/12> ns4kge:result "0.5784"^^xsd:decimal .
+
+<configuration/truncatedns/13> rdf:type ns4kge:Configuration .
+<configuration/truncatedns/13> ns4kge:hasTask    <task/entity-alignment> .
+<configuration/truncatedns/13> ns4kge:hasDataset <dataset/d-w15k> .
+<configuration/truncatedns/13> ns4kge:hasMetric  <metric/mrr> .
+<configuration/truncatedns/13> ns4kge:hasKGEModel <kge-model/truncated-negative-sampling> .
+<configuration/truncatedns/13> ns4kge:hasNSMethod <ns-method/truncated-negative-sampling> .
+<configuration/truncatedns/13> ns4kge:result "0.41"^^xsd:decimal .
+
+<configuration/truncatedns/14> rdf:type ns4kge:Configuration .
+<configuration/truncatedns/14> ns4kge:hasTask    <task/entity-alignment> .
+<configuration/truncatedns/14> ns4kge:hasDataset <dataset/d-w15k> .
+<configuration/truncatedns/14> ns4kge:hasMetric  <metric/mrr> .
+<configuration/truncatedns/14> ns4kge:hasKGEModel <kge-model/iptranse> .
+<configuration/truncatedns/14> ns4kge:result "0.37"^^xsd:decimal .
+
+<configuration/truncatedns/15> rdf:type ns4kge:Configuration .
+<configuration/truncatedns/15> ns4kge:hasTask    <task/entity-alignment> .
+<configuration/truncatedns/15> ns4kge:hasDataset <dataset/d-w15k> .
+<configuration/truncatedns/15> ns4kge:hasMetric  <metric/mrr> .
+<configuration/truncatedns/15> ns4kge:hasKGEModel <kge-model/mtranse> .
+<configuration/truncatedns/15> ns4kge:result "0.24"^^xsd:decimal .
+
+<configuration/truncatedns/16> rdf:type ns4kge:Configuration .
+<configuration/truncatedns/16> ns4kge:hasTask    <task/entity-alignment> .
+<configuration/truncatedns/16> ns4kge:hasDataset <dataset/d-w15k> .
+<configuration/truncatedns/16> ns4kge:hasMetric  <metric/mr> .
+<configuration/truncatedns/16> ns4kge:hasKGEModel <kge-model/truncated-negative-sampling> .
+<configuration/truncatedns/16> ns4kge:hasNSMethod <ns-method/truncated-negative-sampling> .
+<configuration/truncatedns/16> ns4kge:result "235"^^xsd:decimal .
+
+<configuration/truncatedns/17> rdf:type ns4kge:Configuration .
+<configuration/truncatedns/17> ns4kge:hasTask    <task/entity-alignment> .
+<configuration/truncatedns/17> ns4kge:hasDataset <dataset/d-w15k> .
+<configuration/truncatedns/17> ns4kge:hasMetric  <metric/mr> .
+<configuration/truncatedns/17> ns4kge:hasKGEModel <kge-model/iptranse> .
+<configuration/truncatedns/17> ns4kge:result "240"^^xsd:decimal .
+
+<configuration/truncatedns/18> rdf:type ns4kge:Configuration .
+<configuration/truncatedns/18> ns4kge:hasTask    <task/entity-alignment> .
+<configuration/truncatedns/18> ns4kge:hasDataset <dataset/d-w15k> .
+<configuration/truncatedns/18> ns4kge:hasMetric  <metric/mr> .
+<configuration/truncatedns/18> ns4kge:hasKGEModel <kge-model/jape> .
+<configuration/truncatedns/18> ns4kge:result "258"^^xsd:decimal .
+
+<configuration/truncatedns/19> rdf:type ns4kge:Configuration .
+<configuration/truncatedns/19> ns4kge:hasTask    <task/entity-alignment> .
+<configuration/truncatedns/19> ns4kge:hasDataset <dataset/d-w15k> .
+<configuration/truncatedns/19> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/truncatedns/19> ns4kge:hasKGEModel <kge-model/jape> .
+<configuration/truncatedns/19> ns4kge:result "0.1445"^^xsd:decimal .
+
+<configuration/truncatedns/20> rdf:type ns4kge:Configuration .
+<configuration/truncatedns/20> ns4kge:hasTask    <task/entity-alignment> .
+<configuration/truncatedns/20> ns4kge:hasDataset <dataset/d-w15k> .
+<configuration/truncatedns/20> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/truncatedns/20> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/truncatedns/20> ns4kge:result "0.0835"^^xsd:decimal .
+
+<configuration/truncatedns/21> rdf:type ns4kge:Configuration .
+<configuration/truncatedns/21> ns4kge:hasTask    <task/entity-alignment> .
+<configuration/truncatedns/21> ns4kge:hasDataset <dataset/en-de15k> .
+<configuration/truncatedns/21> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/truncatedns/21> ns4kge:hasKGEModel <kge-model/truncated-negative-sampling> .
+<configuration/truncatedns/21> ns4kge:hasNSMethod <ns-method/truncated-negative-sampling> .
+<configuration/truncatedns/21> ns4kge:result "0.659"^^xsd:decimal .
+
+<configuration/truncatedns/22> rdf:type ns4kge:Configuration .
+<configuration/truncatedns/22> ns4kge:hasTask    <task/entity-alignment> .
+<configuration/truncatedns/22> ns4kge:hasDataset <dataset/en-de15k> .
+<configuration/truncatedns/22> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/truncatedns/22> ns4kge:hasKGEModel <kge-model/iptranse> .
+<configuration/truncatedns/22> ns4kge:result "0.3522"^^xsd:decimal .
+
+<configuration/truncatedns/23> rdf:type ns4kge:Configuration .
+<configuration/truncatedns/23> ns4kge:hasTask    <task/entity-alignment> .
+<configuration/truncatedns/23> ns4kge:hasDataset <dataset/en-de15k> .
+<configuration/truncatedns/23> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/truncatedns/23> ns4kge:hasKGEModel <kge-model/jape> .
+<configuration/truncatedns/23> ns4kge:result "0.1224"^^xsd:decimal .
+
+<configuration/truncatedns/24> rdf:type ns4kge:Configuration .
+<configuration/truncatedns/24> ns4kge:hasTask    <task/entity-alignment> .
+<configuration/truncatedns/24> ns4kge:hasDataset <dataset/en-de15k> .
+<configuration/truncatedns/24> ns4kge:hasMetric  <metric/hits-5> .
+<configuration/truncatedns/24> ns4kge:hasKGEModel <kge-model/truncated-negative-sampling> .
+<configuration/truncatedns/24> ns4kge:hasNSMethod <ns-method/truncated-negative-sampling> .
+<configuration/truncatedns/24> ns4kge:result "0.7952"^^xsd:decimal .
+
+<configuration/truncatedns/25> rdf:type ns4kge:Configuration .
+<configuration/truncatedns/25> ns4kge:hasTask    <task/entity-alignment> .
+<configuration/truncatedns/25> ns4kge:hasDataset <dataset/en-de15k> .
+<configuration/truncatedns/25> ns4kge:hasMetric  <metric/hits-5> .
+<configuration/truncatedns/25> ns4kge:hasKGEModel <kge-model/iptranse> .
+<configuration/truncatedns/25> ns4kge:result "0.5136"^^xsd:decimal .
+
+<configuration/truncatedns/26> rdf:type ns4kge:Configuration .
+<configuration/truncatedns/26> ns4kge:hasTask    <task/entity-alignment> .
+<configuration/truncatedns/26> ns4kge:hasDataset <dataset/en-de15k> .
+<configuration/truncatedns/26> ns4kge:hasMetric  <metric/hits-5> .
+<configuration/truncatedns/26> ns4kge:hasKGEModel <kge-model/jape> .
+<configuration/truncatedns/26> ns4kge:result "0.2626"^^xsd:decimal .
+
+<configuration/truncatedns/27> rdf:type ns4kge:Configuration .
+<configuration/truncatedns/27> ns4kge:hasTask    <task/entity-alignment> .
+<configuration/truncatedns/27> ns4kge:hasDataset <dataset/en-de15k> .
+<configuration/truncatedns/27> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/truncatedns/27> ns4kge:hasKGEModel <kge-model/truncated-negative-sampling> .
+<configuration/truncatedns/27> ns4kge:hasNSMethod <ns-method/truncated-negative-sampling> .
+<configuration/truncatedns/27> ns4kge:result "0.8387"^^xsd:decimal .
+
+<configuration/truncatedns/28> rdf:type ns4kge:Configuration .
+<configuration/truncatedns/28> ns4kge:hasTask    <task/entity-alignment> .
+<configuration/truncatedns/28> ns4kge:hasDataset <dataset/en-de15k> .
+<configuration/truncatedns/28> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/truncatedns/28> ns4kge:hasKGEModel <kge-model/iptranse> .
+<configuration/truncatedns/28> ns4kge:result "0.7952"^^xsd:decimal .
+
+<configuration/truncatedns/29> rdf:type ns4kge:Configuration .
+<configuration/truncatedns/29> ns4kge:hasTask    <task/entity-alignment> .
+<configuration/truncatedns/29> ns4kge:hasDataset <dataset/en-de15k> .
+<configuration/truncatedns/29> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/truncatedns/29> ns4kge:hasKGEModel <kge-model/jape> .
+<configuration/truncatedns/29> ns4kge:result "0.3438"^^xsd:decimal .
+
+<configuration/truncatedns/30> rdf:type ns4kge:Configuration .
+<configuration/truncatedns/30> ns4kge:hasTask    <task/entity-alignment> .
+<configuration/truncatedns/30> ns4kge:hasDataset <dataset/en-de15k> .
+<configuration/truncatedns/30> ns4kge:hasMetric  <metric/hits-50> .
+<configuration/truncatedns/30> ns4kge:hasKGEModel <kge-model/truncated-negative-sampling> .
+<configuration/truncatedns/30> ns4kge:hasNSMethod <ns-method/truncated-negative-sampling> .
+<configuration/truncatedns/30> ns4kge:result "0.9167"^^xsd:decimal .
+
+<configuration/truncatedns/31> rdf:type ns4kge:Configuration .
+<configuration/truncatedns/31> ns4kge:hasTask    <task/entity-alignment> .
+<configuration/truncatedns/31> ns4kge:hasDataset <dataset/en-de15k> .
+<configuration/truncatedns/31> ns4kge:hasMetric  <metric/hits-50> .
+<configuration/truncatedns/31> ns4kge:hasKGEModel <kge-model/iptranse> .
+<configuration/truncatedns/31> ns4kge:result "0.8827"^^xsd:decimal .
+
+<configuration/truncatedns/32> rdf:type ns4kge:Configuration .
+<configuration/truncatedns/32> ns4kge:hasTask    <task/entity-alignment> .
+<configuration/truncatedns/32> ns4kge:hasDataset <dataset/en-de15k> .
+<configuration/truncatedns/32> ns4kge:hasMetric  <metric/hits-50> .
+<configuration/truncatedns/32> ns4kge:hasKGEModel <kge-model/jape> .
+<configuration/truncatedns/32> ns4kge:result "0.5195"^^xsd:decimal .
+
+<configuration/truncatedns/33> rdf:type ns4kge:Configuration .
+<configuration/truncatedns/33> ns4kge:hasTask    <task/entity-alignment> .
+<configuration/truncatedns/33> ns4kge:hasDataset <dataset/en-de15k> .
+<configuration/truncatedns/33> ns4kge:hasMetric  <metric/mrr> .
+<configuration/truncatedns/33> ns4kge:hasKGEModel <kge-model/truncated-negative-sampling> .
+<configuration/truncatedns/33> ns4kge:hasNSMethod <ns-method/truncated-negative-sampling> .
+<configuration/truncatedns/33> ns4kge:result "0.72"^^xsd:decimal .
+
+<configuration/truncatedns/34> rdf:type ns4kge:Configuration .
+<configuration/truncatedns/34> ns4kge:hasTask    <task/entity-alignment> .
+<configuration/truncatedns/34> ns4kge:hasDataset <dataset/en-de15k> .
+<configuration/truncatedns/34> ns4kge:hasMetric  <metric/mrr> .
+<configuration/truncatedns/34> ns4kge:hasKGEModel <kge-model/iptranse> .
+<configuration/truncatedns/34> ns4kge:result "0.68"^^xsd:decimal .
+
+<configuration/truncatedns/35> rdf:type ns4kge:Configuration .
+<configuration/truncatedns/35> ns4kge:hasTask    <task/entity-alignment> .
+<configuration/truncatedns/35> ns4kge:hasDataset <dataset/en-de15k> .
+<configuration/truncatedns/35> ns4kge:hasMetric  <metric/mrr> .
+<configuration/truncatedns/35> ns4kge:hasKGEModel <kge-model/jape> .
+<configuration/truncatedns/35> ns4kge:result "0.2"^^xsd:decimal .
+
+<configuration/truncatedns/36> rdf:type ns4kge:Configuration .
+<configuration/truncatedns/36> ns4kge:hasTask    <task/entity-alignment> .
+<configuration/truncatedns/36> ns4kge:hasDataset <dataset/en-de15k> .
+<configuration/truncatedns/36> ns4kge:hasMetric  <metric/mr> .
+<configuration/truncatedns/36> ns4kge:hasKGEModel <kge-model/truncated-negative-sampling> .
+<configuration/truncatedns/36> ns4kge:hasNSMethod <ns-method/truncated-negative-sampling> .
+<configuration/truncatedns/36> ns4kge:result "48"^^xsd:decimal .
+
+<configuration/truncatedns/37> rdf:type ns4kge:Configuration .
+<configuration/truncatedns/37> ns4kge:hasTask    <task/entity-alignment> .
+<configuration/truncatedns/37> ns4kge:hasDataset <dataset/en-de15k> .
+<configuration/truncatedns/37> ns4kge:hasMetric  <metric/mr> .
+<configuration/truncatedns/37> ns4kge:hasKGEModel <kge-model/iptranse> .
+<configuration/truncatedns/37> ns4kge:result "117"^^xsd:decimal .
+
+<configuration/truncatedns/38> rdf:type ns4kge:Configuration .
+<configuration/truncatedns/38> ns4kge:hasTask    <task/entity-alignment> .
+<configuration/truncatedns/38> ns4kge:hasDataset <dataset/en-de15k> .
+<configuration/truncatedns/38> ns4kge:hasMetric  <metric/mr> .
+<configuration/truncatedns/38> ns4kge:hasKGEModel <kge-model/jape> .
+<configuration/truncatedns/38> ns4kge:result "357"^^xsd:decimal .
+
+<configuration/truncatedns/39> rdf:type ns4kge:Configuration .
+<configuration/truncatedns/39> ns4kge:hasTask    <task/entity-alignment> .
+<configuration/truncatedns/39> ns4kge:hasDataset <dataset/en-de15k> .
+<configuration/truncatedns/39> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/truncatedns/39> ns4kge:hasKGEModel <kge-model/mtranse> .
+<configuration/truncatedns/39> ns4kge:result "0.119"^^xsd:decimal .
+
+<configuration/truncatedns/40> rdf:type ns4kge:Configuration .
+<configuration/truncatedns/40> ns4kge:hasTask    <task/entity-alignment> .
+<configuration/truncatedns/40> ns4kge:hasDataset <dataset/en-de15k> .
+<configuration/truncatedns/40> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/truncatedns/40> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/truncatedns/40> ns4kge:result "0.0642"^^xsd:decimal .

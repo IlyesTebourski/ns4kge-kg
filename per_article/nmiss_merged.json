@@ -1,0 +1,234 @@
+{
+  "Article": {
+    "title": "Analysis of the Impact of Negative Sampling on Link Prediction in Knowledge Graphs",
+    "date": "2018"
+  },
+  "proposedNSMethod": "Nearest Neighbor Sampling",
+  "proposedKGEModel": "",
+  "mentionedNSMethods": [
+    "Noise Contrastive Estimation",
+    "Corrupting Positive Instances",
+    "Relational Sampling",
+    "Random Sampling",
+    "Near Miss Sampling",
+    "Importance Sampling",
+    "Typed Sampling"
+  ],
+  "mentionedKGEModels": [
+    "DistMult",
+    "Neural Tensor Networks",
+    "HolE",
+    "TransE",
+    "ComplEx",
+    "RESCAL"
+  ],
+  "Experimentation": {
+    "Hardware": [],
+    "TrainingProtocol": {
+      "LossFunction": [
+        "max-margin loss",
+        "cross-entropy loss",
+        "binary negative log likelihood"
+      ],
+      "Optimizer": [
+        "Adam"
+      ],
+      "learningRate": null,
+      "nsRatio": null
+    },
+    "Configurations": [
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15k",
+        "Metric": "MRR",
+        "KGEModel": "DistMult",
+        "NSMethod": "Near Miss Sampling",
+        "result": 0.46
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15k",
+        "Metric": "Hits@10",
+        "KGEModel": "DistMult",
+        "NSMethod": "Near Miss Sampling",
+        "result": 70.64
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15k",
+        "Metric": "MRR",
+        "KGEModel": "RESCAL",
+        "NSMethod": "Near Miss Sampling",
+        "result": 0.42
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15k",
+        "Metric": "Hits@10",
+        "KGEModel": "RESCAL",
+        "NSMethod": "Near Miss Sampling",
+        "result": 64.34
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15k",
+        "Metric": "MRR",
+        "KGEModel": "TransE",
+        "NSMethod": "Near Miss Sampling",
+        "result": 0.37
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15k",
+        "Metric": "Hits@10",
+        "KGEModel": "TransE",
+        "NSMethod": "Near Miss Sampling",
+        "result": 62.97
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18",
+        "Metric": "MRR",
+        "KGEModel": "DistMult",
+        "NSMethod": "Corrupting Positive Instances",
+        "result": 0.82
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18",
+        "Metric": "Hits@10",
+        "KGEModel": "DistMult",
+        "NSMethod": "Corrupting Positive Instances",
+        "result": 94.06
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18",
+        "Metric": "MRR",
+        "KGEModel": "RESCAL",
+        "NSMethod": "Corrupting Positive Instances",
+        "result": 0.92
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18",
+        "Metric": "Hits@10",
+        "KGEModel": "RESCAL",
+        "NSMethod": "Corrupting Positive Instances",
+        "result": 93.91
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18",
+        "Metric": "MRR",
+        "KGEModel": "TransE",
+        "NSMethod": "Corrupting Positive Instances",
+        "result": 0.4
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18",
+        "Metric": "Hits@10",
+        "KGEModel": "TransE",
+        "NSMethod": "Corrupting Positive Instances",
+        "result": 86.98
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15k",
+        "Metric": "MRR",
+        "KGEModel": "DistMult",
+        "NSMethod": "Unknown",
+        "result": 0.35
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15k",
+        "Metric": "Hits@10",
+        "KGEModel": "DistMult",
+        "NSMethod": "Unknown",
+        "result": 57.7
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15k",
+        "Metric": "MRR",
+        "KGEModel": "RESCAL",
+        "NSMethod": "Unknown",
+        "result": 0.31
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15k",
+        "Metric": "Hits@10",
+        "KGEModel": "RESCAL",
+        "NSMethod": "Unknown",
+        "result": 51.9
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15k",
+        "Metric": "MRR",
+        "KGEModel": "TransE",
+        "NSMethod": "Unknown",
+        "result": 0.32
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15k",
+        "Metric": "Hits@10",
+        "KGEModel": "TransE",
+        "NSMethod": "Unknown",
+        "result": 53.9
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18",
+        "Metric": "MRR",
+        "KGEModel": "DistMult",
+        "NSMethod": "Unknown",
+        "result": 0.83
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18",
+        "Metric": "Hits@10",
+        "KGEModel": "DistMult",
+        "NSMethod": "Unknown",
+        "result": 94.2
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18",
+        "Metric": "MRR",
+        "KGEModel": "RESCAL",
+        "NSMethod": "Unknown",
+        "result": 0.89
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18",
+        "Metric": "Hits@10",
+        "KGEModel": "RESCAL",
+        "NSMethod": "Unknown",
+        "result": 92.8
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18",
+        "Metric": "MRR",
+        "KGEModel": "TransE",
+        "NSMethod": "Unknown",
+        "result": 0.38
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18",
+        "Metric": "Hits@10",
+        "KGEModel": "TransE",
+        "NSMethod": "Unknown",
+        "result": 90.9
+      }
+    ]
+  }
+}

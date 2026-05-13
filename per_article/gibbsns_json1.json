@@ -1,0 +1,39 @@
+{
+  "Article": {
+    "title": "Link Prediction Based on Data Augmentation and Metric Learning Knowledge Graph Embedding",
+    "date": "2024"
+  },
+  "proposedNSMethod": "Gibbs Negative Sampling",
+  "proposedKGEModel": "KGE-EML",
+  "mentionedNSMethods": [
+    "Uniform Random Negative Sampling",
+    "KBGAN",
+    "NSCaching",
+    "EANS"
+  ],
+  "mentionedKGEModels": [
+    "TransE",
+    "TransH",
+    "RotatE",
+    "PairRE",
+    "RESCAL",
+    "DistMult",
+    "ComplEx",
+    "TuckER",
+    "ConvE",
+    "InteractE",
+    "KG-BERT"
+  ],
+  "Experimentation": {
+    "Hardware": [],
+    "TrainingProtocol": {
+      "LossFunction": [
+        "binary cross-entropy loss",
+        "contrastive loss"
+      ],
+      "Optimizer": [],
+      "learningRate": null,
+      "nsRatio": null
+    }
+  }
+}

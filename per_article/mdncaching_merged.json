@@ -1,0 +1,867 @@
+{
+  "Article": {
+    "title": "MDNCaching: A Strategy to Generate Quality Negatives for Knowledge Graph Embedding",
+    "date": "2022"
+  },
+  "proposedNSMethod": "Matrix Decomposed Negative Caching",
+  "proposedKGEModel": "",
+  "mentionedNSMethods": [
+    "Structure Aware Negative Sampling",
+    "Uniform Negative Sampling",
+    "Bernoulli Negative Sampling",
+    "KBGAN",
+    "NSCaching",
+    "IGAN"
+  ],
+  "mentionedKGEModels": [
+    "DistMult",
+    "TransD",
+    "ComplEx",
+    "TransE"
+  ],
+  "Experimentation": {
+    "Hardware": [],
+    "TrainingProtocol": {
+      "LossFunction": [],
+      "Optimizer": [
+        "Adam"
+      ],
+      "learningRate": null,
+      "nsRatio": null
+    },
+    "Configurations": [
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18RR",
+        "Metric": "MRR",
+        "KGEModel": "TransE",
+        "NSMethod": "Bernoulli Negative Sampling",
+        "result": 0.1784
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18RR",
+        "Metric": "MR",
+        "KGEModel": "TransE",
+        "NSMethod": "Bernoulli Negative Sampling",
+        "result": 3924
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18RR",
+        "Metric": "Hits@10",
+        "KGEModel": "TransE",
+        "NSMethod": "Bernoulli Negative Sampling",
+        "result": 45.09
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K237",
+        "Metric": "MRR",
+        "KGEModel": "TransE",
+        "NSMethod": "Bernoulli Negative Sampling",
+        "result": 0.2556
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K237",
+        "Metric": "MR",
+        "KGEModel": "TransE",
+        "NSMethod": "Bernoulli Negative Sampling",
+        "result": 197
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K237",
+        "Metric": "Hits@10",
+        "KGEModel": "TransE",
+        "NSMethod": "Bernoulli Negative Sampling",
+        "result": 41.89
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18RR",
+        "Metric": "MRR",
+        "KGEModel": "TransE",
+        "NSMethod": "KBGAN",
+        "result": 0.1808
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18RR",
+        "Metric": "MR",
+        "KGEModel": "TransE",
+        "NSMethod": "KBGAN",
+        "result": 5356
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18RR",
+        "Metric": "Hits@10",
+        "KGEModel": "TransE",
+        "NSMethod": "KBGAN",
+        "result": 43.24
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K237",
+        "Metric": "MRR",
+        "KGEModel": "TransE",
+        "NSMethod": "KBGAN",
+        "result": 0.2926
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K237",
+        "Metric": "MR",
+        "KGEModel": "TransE",
+        "NSMethod": "KBGAN",
+        "result": 722
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K237",
+        "Metric": "Hits@10",
+        "KGEModel": "TransE",
+        "NSMethod": "KBGAN",
+        "result": 46.59
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18RR",
+        "Metric": "MRR",
+        "KGEModel": "TransE",
+        "NSMethod": "Structure Aware Negative Sampling",
+        "result": 0.2317
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18RR",
+        "Metric": "Hits@10",
+        "KGEModel": "TransE",
+        "NSMethod": "Structure Aware Negative Sampling",
+        "result": 53.41
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K237",
+        "Metric": "MRR",
+        "KGEModel": "TransE",
+        "NSMethod": "Structure Aware Negative Sampling",
+        "result": 0.2981
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K237",
+        "Metric": "Hits@10",
+        "KGEModel": "TransE",
+        "NSMethod": "Structure Aware Negative Sampling",
+        "result": 48.5
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18RR",
+        "Metric": "MRR",
+        "KGEModel": "TransE",
+        "NSMethod": "NSCaching",
+        "result": 0.2002
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18RR",
+        "Metric": "MR",
+        "KGEModel": "TransE",
+        "NSMethod": "NSCaching",
+        "result": 4472
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18RR",
+        "Metric": "Hits@10",
+        "KGEModel": "TransE",
+        "NSMethod": "NSCaching",
+        "result": 47.83
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K237",
+        "Metric": "MRR",
+        "KGEModel": "TransE",
+        "NSMethod": "NSCaching",
+        "result": 0.2993
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K237",
+        "Metric": "MR",
+        "KGEModel": "TransE",
+        "NSMethod": "NSCaching",
+        "result": 186
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K237",
+        "Metric": "Hits@10",
+        "KGEModel": "TransE",
+        "NSMethod": "NSCaching",
+        "result": 47.64
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18RR",
+        "Metric": "MRR",
+        "KGEModel": "TransE",
+        "NSMethod": "Matrix Decomposed Negative Caching",
+        "result": 0.239
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18RR",
+        "Metric": "MR",
+        "KGEModel": "TransE",
+        "NSMethod": "Matrix Decomposed Negative Caching",
+        "result": 3054
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18RR",
+        "Metric": "Hits@10",
+        "KGEModel": "TransE",
+        "NSMethod": "Matrix Decomposed Negative Caching",
+        "result": 53.2
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K237",
+        "Metric": "MRR",
+        "KGEModel": "TransE",
+        "NSMethod": "Matrix Decomposed Negative Caching",
+        "result": 0.333
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K237",
+        "Metric": "MR",
+        "KGEModel": "TransE",
+        "NSMethod": "Matrix Decomposed Negative Caching",
+        "result": 200
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K237",
+        "Metric": "Hits@10",
+        "KGEModel": "TransE",
+        "NSMethod": "Matrix Decomposed Negative Caching",
+        "result": 52.3
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18RR",
+        "Metric": "MRR",
+        "KGEModel": "TransD",
+        "NSMethod": "Bernoulli Negative Sampling",
+        "result": 0.1901
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18RR",
+        "Metric": "MR",
+        "KGEModel": "TransD",
+        "NSMethod": "Bernoulli Negative Sampling",
+        "result": 3555
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18RR",
+        "Metric": "Hits@10",
+        "KGEModel": "TransD",
+        "NSMethod": "Bernoulli Negative Sampling",
+        "result": 46.41
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K237",
+        "Metric": "MRR",
+        "KGEModel": "TransD",
+        "NSMethod": "Bernoulli Negative Sampling",
+        "result": 0.2451
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K237",
+        "Metric": "MR",
+        "KGEModel": "TransD",
+        "NSMethod": "Bernoulli Negative Sampling",
+        "result": 188
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K237",
+        "Metric": "Hits@10",
+        "KGEModel": "TransD",
+        "NSMethod": "Bernoulli Negative Sampling",
+        "result": 42.89
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18RR",
+        "Metric": "MRR",
+        "KGEModel": "TransD",
+        "NSMethod": "KBGAN",
+        "result": 0.1875
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18RR",
+        "Metric": "MR",
+        "KGEModel": "TransD",
+        "NSMethod": "KBGAN",
+        "result": 4083
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18RR",
+        "Metric": "Hits@10",
+        "KGEModel": "TransD",
+        "NSMethod": "KBGAN",
+        "result": 46.41
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K237",
+        "Metric": "MRR",
+        "KGEModel": "TransD",
+        "NSMethod": "KBGAN",
+        "result": 0.2465
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K237",
+        "Metric": "MR",
+        "KGEModel": "TransD",
+        "NSMethod": "KBGAN",
+        "result": 825
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K237",
+        "Metric": "Hits@10",
+        "KGEModel": "TransD",
+        "NSMethod": "KBGAN",
+        "result": 44.4
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18RR",
+        "Metric": "MRR",
+        "KGEModel": "TransD",
+        "NSMethod": "NSCaching",
+        "result": 0.2013
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18RR",
+        "Metric": "MR",
+        "KGEModel": "TransD",
+        "NSMethod": "NSCaching",
+        "result": 3104
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18RR",
+        "Metric": "Hits@10",
+        "KGEModel": "TransD",
+        "NSMethod": "NSCaching",
+        "result": 48.39
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K237",
+        "Metric": "MRR",
+        "KGEModel": "TransD",
+        "NSMethod": "NSCaching",
+        "result": 0.2863
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K237",
+        "Metric": "MR",
+        "KGEModel": "TransD",
+        "NSMethod": "NSCaching",
+        "result": 189
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K237",
+        "Metric": "Hits@10",
+        "KGEModel": "TransD",
+        "NSMethod": "NSCaching",
+        "result": 47.85
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18RR",
+        "Metric": "MRR",
+        "KGEModel": "TransD",
+        "NSMethod": "Matrix Decomposed Negative Caching",
+        "result": 0.1737
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18RR",
+        "Metric": "MR",
+        "KGEModel": "TransD",
+        "NSMethod": "Matrix Decomposed Negative Caching",
+        "result": 4477
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18RR",
+        "Metric": "Hits@10",
+        "KGEModel": "TransD",
+        "NSMethod": "Matrix Decomposed Negative Caching",
+        "result": 48.36
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K237",
+        "Metric": "MRR",
+        "KGEModel": "TransD",
+        "NSMethod": "Matrix Decomposed Negative Caching",
+        "result": 0.2683
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K237",
+        "Metric": "MR",
+        "KGEModel": "TransD",
+        "NSMethod": "Matrix Decomposed Negative Caching",
+        "result": 354
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K237",
+        "Metric": "Hits@10",
+        "KGEModel": "TransD",
+        "NSMethod": "Matrix Decomposed Negative Caching",
+        "result": 46.43
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18RR",
+        "Metric": "MRR",
+        "KGEModel": "DistMult",
+        "NSMethod": "Bernoulli Negative Sampling",
+        "result": 0.3964
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18RR",
+        "Metric": "MR",
+        "KGEModel": "DistMult",
+        "NSMethod": "Bernoulli Negative Sampling",
+        "result": 7420
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18RR",
+        "Metric": "Hits@10",
+        "KGEModel": "DistMult",
+        "NSMethod": "Bernoulli Negative Sampling",
+        "result": 45.25
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K237",
+        "Metric": "MRR",
+        "KGEModel": "DistMult",
+        "NSMethod": "Bernoulli Negative Sampling",
+        "result": 0.2491
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K237",
+        "Metric": "MR",
+        "KGEModel": "DistMult",
+        "NSMethod": "Bernoulli Negative Sampling",
+        "result": 280
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K237",
+        "Metric": "Hits@10",
+        "KGEModel": "DistMult",
+        "NSMethod": "Bernoulli Negative Sampling",
+        "result": 42.03
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18RR",
+        "Metric": "MRR",
+        "KGEModel": "DistMult",
+        "NSMethod": "KBGAN",
+        "result": 0.2039
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18RR",
+        "Metric": "MR",
+        "KGEModel": "DistMult",
+        "NSMethod": "KBGAN",
+        "result": 11351
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18RR",
+        "Metric": "Hits@10",
+        "KGEModel": "DistMult",
+        "NSMethod": "KBGAN",
+        "result": 29.52
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K237",
+        "Metric": "MRR",
+        "KGEModel": "DistMult",
+        "NSMethod": "KBGAN",
+        "result": 0.2272
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K237",
+        "Metric": "MR",
+        "KGEModel": "DistMult",
+        "NSMethod": "KBGAN",
+        "result": 276
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K237",
+        "Metric": "Hits@10",
+        "KGEModel": "DistMult",
+        "NSMethod": "KBGAN",
+        "result": 39.91
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18RR",
+        "Metric": "MRR",
+        "KGEModel": "DistMult",
+        "NSMethod": "Structure Aware Negative Sampling",
+        "result": 0.4071
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18RR",
+        "Metric": "Hits@10",
+        "KGEModel": "DistMult",
+        "NSMethod": "Structure Aware Negative Sampling",
+        "result": 49.09
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K237",
+        "Metric": "MRR",
+        "KGEModel": "DistMult",
+        "NSMethod": "Structure Aware Negative Sampling",
+        "result": 0.2621
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K237",
+        "Metric": "Hits@10",
+        "KGEModel": "DistMult",
+        "NSMethod": "Structure Aware Negative Sampling",
+        "result": 41.46
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18RR",
+        "Metric": "MRR",
+        "KGEModel": "DistMult",
+        "NSMethod": "NSCaching",
+        "result": 0.4128
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18RR",
+        "Metric": "MR",
+        "KGEModel": "DistMult",
+        "NSMethod": "NSCaching",
+        "result": 7708
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18RR",
+        "Metric": "Hits@10",
+        "KGEModel": "DistMult",
+        "NSMethod": "NSCaching",
+        "result": 45.45
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K237",
+        "Metric": "MRR",
+        "KGEModel": "DistMult",
+        "NSMethod": "NSCaching",
+        "result": 0.2834
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K237",
+        "Metric": "MR",
+        "KGEModel": "DistMult",
+        "NSMethod": "NSCaching",
+        "result": 273
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K237",
+        "Metric": "Hits@10",
+        "KGEModel": "DistMult",
+        "NSMethod": "NSCaching",
+        "result": 45.56
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18RR",
+        "Metric": "MRR",
+        "KGEModel": "DistMult",
+        "NSMethod": "Matrix Decomposed Negative Caching",
+        "result": 0.3921
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18RR",
+        "Metric": "MR",
+        "KGEModel": "DistMult",
+        "NSMethod": "Matrix Decomposed Negative Caching",
+        "result": 2946
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18RR",
+        "Metric": "Hits@10",
+        "KGEModel": "DistMult",
+        "NSMethod": "Matrix Decomposed Negative Caching",
+        "result": 51.37
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K237",
+        "Metric": "MRR",
+        "KGEModel": "DistMult",
+        "NSMethod": "Matrix Decomposed Negative Caching",
+        "result": 0.2694
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K237",
+        "Metric": "MR",
+        "KGEModel": "DistMult",
+        "NSMethod": "Matrix Decomposed Negative Caching",
+        "result": 403
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K237",
+        "Metric": "Hits@10",
+        "KGEModel": "DistMult",
+        "NSMethod": "Matrix Decomposed Negative Caching",
+        "result": 44.1
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18RR",
+        "Metric": "MRR",
+        "KGEModel": "ComplEx",
+        "NSMethod": "Bernoulli Negative Sampling",
+        "result": 0.4431
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18RR",
+        "Metric": "MR",
+        "KGEModel": "ComplEx",
+        "NSMethod": "Bernoulli Negative Sampling",
+        "result": 4693
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18RR",
+        "Metric": "Hits@10",
+        "KGEModel": "ComplEx",
+        "NSMethod": "Bernoulli Negative Sampling",
+        "result": 51.77
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K237",
+        "Metric": "MRR",
+        "KGEModel": "ComplEx",
+        "NSMethod": "Bernoulli Negative Sampling",
+        "result": 0.2596
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K237",
+        "Metric": "MR",
+        "KGEModel": "ComplEx",
+        "NSMethod": "Bernoulli Negative Sampling",
+        "result": 238
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K237",
+        "Metric": "Hits@10",
+        "KGEModel": "ComplEx",
+        "NSMethod": "Bernoulli Negative Sampling",
+        "result": 43.54
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18RR",
+        "Metric": "MRR",
+        "KGEModel": "ComplEx",
+        "NSMethod": "KBGAN",
+        "result": 0.318
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18RR",
+        "Metric": "MR",
+        "KGEModel": "ComplEx",
+        "NSMethod": "KBGAN",
+        "result": 7528
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18RR",
+        "Metric": "Hits@10",
+        "KGEModel": "ComplEx",
+        "NSMethod": "KBGAN",
+        "result": 35.51
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K237",
+        "Metric": "MRR",
+        "KGEModel": "ComplEx",
+        "NSMethod": "KBGAN",
+        "result": 0.191
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K237",
+        "Metric": "MR",
+        "KGEModel": "ComplEx",
+        "NSMethod": "KBGAN",
+        "result": 881
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K237",
+        "Metric": "Hits@10",
+        "KGEModel": "ComplEx",
+        "NSMethod": "KBGAN",
+        "result": 32.07
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18RR",
+        "Metric": "MRR",
+        "KGEModel": "ComplEx",
+        "NSMethod": "NSCaching",
+        "result": 0.4463
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18RR",
+        "Metric": "MR",
+        "KGEModel": "ComplEx",
+        "NSMethod": "NSCaching",
+        "result": 5365
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18RR",
+        "Metric": "Hits@10",
+        "KGEModel": "ComplEx",
+        "NSMethod": "NSCaching",
+        "result": 50.89
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K237",
+        "Metric": "MRR",
+        "KGEModel": "ComplEx",
+        "NSMethod": "NSCaching",
+        "result": 0.3021
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K237",
+        "Metric": "MR",
+        "KGEModel": "ComplEx",
+        "NSMethod": "NSCaching",
+        "result": 221
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K237",
+        "Metric": "Hits@10",
+        "KGEModel": "ComplEx",
+        "NSMethod": "NSCaching",
+        "result": 48.05
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18RR",
+        "Metric": "MRR",
+        "KGEModel": "ComplEx",
+        "NSMethod": "Matrix Decomposed Negative Caching",
+        "result": 0.4729
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18RR",
+        "Metric": "MR",
+        "KGEModel": "ComplEx",
+        "NSMethod": "Matrix Decomposed Negative Caching",
+        "result": 5312
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18RR",
+        "Metric": "Hits@10",
+        "KGEModel": "ComplEx",
+        "NSMethod": "Matrix Decomposed Negative Caching",
+        "result": 54.05
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K237",
+        "Metric": "MRR",
+        "KGEModel": "ComplEx",
+        "NSMethod": "Matrix Decomposed Negative Caching",
+        "result": 0.3594
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K237",
+        "Metric": "MR",
+        "KGEModel": "ComplEx",
+        "NSMethod": "Matrix Decomposed Negative Caching",
+        "result": 415
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K237",
+        "Metric": "Hits@10",
+        "KGEModel": "ComplEx",
+        "NSMethod": "Matrix Decomposed Negative Caching",
+        "result": 53.29
+      }
+    ]
+  }
+}

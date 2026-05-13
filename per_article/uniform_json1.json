@@ -1,0 +1,31 @@
+{
+  "Article": {
+    "title": "Translating Embeddings for Modeling Multi-relational Data",
+    "date": "2013"
+  },
+  "proposedNSMethod": "",
+  "proposedKGEModel": "TransE",
+  "mentionedNSMethods": [],
+  "mentionedKGEModels": [
+    "Structured Embeddings",
+    "RESCAL",
+    "SME(linear)",
+    "SME(bilinear)",
+    "LFM",
+    "Unstructured",
+    "Neural Tensor Model"
+  ],
+  "Experimentation": {
+    "Hardware": [],
+    "TrainingProtocol": {
+      "LossFunction": [
+        "margin-based ranking loss"
+      ],
+      "Optimizer": [
+        "SGD"
+      ],
+      "learningRate": 0.01,
+      "nsRatio": 1.0
+    }
+  }
+}

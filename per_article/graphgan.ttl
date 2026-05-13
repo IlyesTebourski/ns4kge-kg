@@ -1,0 +1,364 @@
+<article/graphgan> rdf:type ns4kge:Article .
+<article/graphgan> ns4kge:title "GraphGAN: Graph Representation Learning with Generative Adversarial Nets"^^xsd:string .
+<article/graphgan> ns4kge:date "2017"^^xsd:gYear .
+<article/graphgan> ns4kge:mentionsKGEModel <kge-model/struc2vec> .
+<article/graphgan> ns4kge:mentionsKGEModel <kge-model/ppne> .
+<article/graphgan> ns4kge:mentionsKGEModel <kge-model/deepwalk> .
+<article/graphgan> ns4kge:mentionsKGEModel <kge-model/line> .
+<article/graphgan> ns4kge:mentionsKGEModel <kge-model/node2vec> .
+<article/graphgan> ns4kge:mentionsKGEModel <kge-model/sdne> .
+<article/graphgan> ns4kge:hasExperimentation <experimentation/graphgan> .
+
+<category/adversarial-ns> rdf:type ns4kge:Category .
+
+<subcategory/standard> rdf:type ns4kge:Subcategory .
+
+<kge-model/graphgan> rdf:type ns4kge:KGEModel .
+
+<kge-model/struc2vec> rdf:type ns4kge:KGEModel .
+
+<kge-model/ppne> rdf:type ns4kge:KGEModel .
+
+<kge-model/deepwalk> rdf:type ns4kge:KGEModel .
+
+<kge-model/line> rdf:type ns4kge:KGEModel .
+
+<kge-model/node2vec> rdf:type ns4kge:KGEModel .
+
+<kge-model/sdne> rdf:type ns4kge:KGEModel .
+
+<dataset/arxiv-astroph> rdf:type ns4kge:Dataset .
+<task/link-prediction> rdf:type ns4kge:Task .
+<metric/accuracy> rdf:type ns4kge:Metric .
+<metric/f1> rdf:type ns4kge:Metric .
+<dataset/arxiv-grqc> rdf:type ns4kge:Dataset .
+<dataset/blogcatalog> rdf:type ns4kge:Dataset .
+<dataset/wikipedia> rdf:type ns4kge:Dataset .
+<optimizer/sgd> rdf:type ns4kge:Optimizer .
+
+<experimentation/graphgan> rdf:type ns4kge:Experimentation .
+<experimentation/graphgan> ns4kge:hasTrainingProtocol <training-protocol/graphgan> .
+<experimentation/graphgan> ns4kge:hasConfiguration <configuration/graphgan/1> .
+<experimentation/graphgan> ns4kge:hasConfiguration <configuration/graphgan/2> .
+<experimentation/graphgan> ns4kge:hasConfiguration <configuration/graphgan/3> .
+<experimentation/graphgan> ns4kge:hasConfiguration <configuration/graphgan/4> .
+<experimentation/graphgan> ns4kge:hasConfiguration <configuration/graphgan/5> .
+<experimentation/graphgan> ns4kge:hasConfiguration <configuration/graphgan/6> .
+<experimentation/graphgan> ns4kge:hasConfiguration <configuration/graphgan/7> .
+<experimentation/graphgan> ns4kge:hasConfiguration <configuration/graphgan/8> .
+<experimentation/graphgan> ns4kge:hasConfiguration <configuration/graphgan/9> .
+<experimentation/graphgan> ns4kge:hasConfiguration <configuration/graphgan/10> .
+<experimentation/graphgan> ns4kge:hasConfiguration <configuration/graphgan/11> .
+<experimentation/graphgan> ns4kge:hasConfiguration <configuration/graphgan/12> .
+<experimentation/graphgan> ns4kge:hasConfiguration <configuration/graphgan/13> .
+<experimentation/graphgan> ns4kge:hasConfiguration <configuration/graphgan/14> .
+<experimentation/graphgan> ns4kge:hasConfiguration <configuration/graphgan/15> .
+<experimentation/graphgan> ns4kge:hasConfiguration <configuration/graphgan/16> .
+<experimentation/graphgan> ns4kge:hasConfiguration <configuration/graphgan/17> .
+<experimentation/graphgan> ns4kge:hasConfiguration <configuration/graphgan/18> .
+<experimentation/graphgan> ns4kge:hasConfiguration <configuration/graphgan/19> .
+<experimentation/graphgan> ns4kge:hasConfiguration <configuration/graphgan/20> .
+<experimentation/graphgan> ns4kge:hasConfiguration <configuration/graphgan/21> .
+<experimentation/graphgan> ns4kge:hasConfiguration <configuration/graphgan/22> .
+<experimentation/graphgan> ns4kge:hasConfiguration <configuration/graphgan/23> .
+<experimentation/graphgan> ns4kge:hasConfiguration <configuration/graphgan/24> .
+<experimentation/graphgan> ns4kge:hasConfiguration <configuration/graphgan/25> .
+<experimentation/graphgan> ns4kge:hasConfiguration <configuration/graphgan/26> .
+<experimentation/graphgan> ns4kge:hasConfiguration <configuration/graphgan/27> .
+<experimentation/graphgan> ns4kge:hasConfiguration <configuration/graphgan/28> .
+<experimentation/graphgan> ns4kge:hasConfiguration <configuration/graphgan/29> .
+<experimentation/graphgan> ns4kge:hasConfiguration <configuration/graphgan/30> .
+<experimentation/graphgan> ns4kge:hasConfiguration <configuration/graphgan/31> .
+<experimentation/graphgan> ns4kge:hasConfiguration <configuration/graphgan/32> .
+<experimentation/graphgan> ns4kge:hasConfiguration <configuration/graphgan/33> .
+<experimentation/graphgan> ns4kge:hasConfiguration <configuration/graphgan/34> .
+<experimentation/graphgan> ns4kge:hasConfiguration <configuration/graphgan/35> .
+<experimentation/graphgan> ns4kge:hasConfiguration <configuration/graphgan/36> .
+<experimentation/graphgan> ns4kge:hasConfiguration <configuration/graphgan/37> .
+<experimentation/graphgan> ns4kge:hasConfiguration <configuration/graphgan/38> .
+<experimentation/graphgan> ns4kge:hasConfiguration <configuration/graphgan/39> .
+<experimentation/graphgan> ns4kge:hasConfiguration <configuration/graphgan/40> .
+
+<training-protocol/graphgan> rdf:type ns4kge:TrainingProtocol .
+<training-protocol/graphgan> ns4kge:hasOptimizer    <optimizer/sgd> .
+<training-protocol/graphgan> ns4kge:learningRate "0.001"^^xsd:decimal .
+
+<configuration/graphgan/1> rdf:type ns4kge:Configuration .
+<configuration/graphgan/1> ns4kge:hasTask    <task/link-prediction> .
+<configuration/graphgan/1> ns4kge:hasDataset <dataset/arxiv-astroph> .
+<configuration/graphgan/1> ns4kge:hasMetric  <metric/accuracy> .
+<configuration/graphgan/1> ns4kge:hasKGEModel <kge-model/graphgan> .
+<configuration/graphgan/1> ns4kge:result "0.855"^^xsd:decimal .
+
+<configuration/graphgan/2> rdf:type ns4kge:Configuration .
+<configuration/graphgan/2> ns4kge:hasTask    <task/link-prediction> .
+<configuration/graphgan/2> ns4kge:hasDataset <dataset/arxiv-astroph> .
+<configuration/graphgan/2> ns4kge:hasMetric  <metric/f1> .
+<configuration/graphgan/2> ns4kge:hasKGEModel <kge-model/graphgan> .
+<configuration/graphgan/2> ns4kge:result "0.859"^^xsd:decimal .
+
+<configuration/graphgan/3> rdf:type ns4kge:Configuration .
+<configuration/graphgan/3> ns4kge:hasTask    <task/link-prediction> .
+<configuration/graphgan/3> ns4kge:hasDataset <dataset/arxiv-astroph> .
+<configuration/graphgan/3> ns4kge:hasMetric  <metric/accuracy> .
+<configuration/graphgan/3> ns4kge:hasKGEModel <kge-model/node2vec> .
+<configuration/graphgan/3> ns4kge:result "0.845"^^xsd:decimal .
+
+<configuration/graphgan/4> rdf:type ns4kge:Configuration .
+<configuration/graphgan/4> ns4kge:hasTask    <task/link-prediction> .
+<configuration/graphgan/4> ns4kge:hasDataset <dataset/arxiv-astroph> .
+<configuration/graphgan/4> ns4kge:hasMetric  <metric/f1> .
+<configuration/graphgan/4> ns4kge:hasKGEModel <kge-model/node2vec> .
+<configuration/graphgan/4> ns4kge:result "0.854"^^xsd:decimal .
+
+<configuration/graphgan/5> rdf:type ns4kge:Configuration .
+<configuration/graphgan/5> ns4kge:hasTask    <task/link-prediction> .
+<configuration/graphgan/5> ns4kge:hasDataset <dataset/arxiv-astroph> .
+<configuration/graphgan/5> ns4kge:hasMetric  <metric/accuracy> .
+<configuration/graphgan/5> ns4kge:hasKGEModel <kge-model/deepwalk> .
+<configuration/graphgan/5> ns4kge:result "0.841"^^xsd:decimal .
+
+<configuration/graphgan/6> rdf:type ns4kge:Configuration .
+<configuration/graphgan/6> ns4kge:hasTask    <task/link-prediction> .
+<configuration/graphgan/6> ns4kge:hasDataset <dataset/arxiv-astroph> .
+<configuration/graphgan/6> ns4kge:hasMetric  <metric/f1> .
+<configuration/graphgan/6> ns4kge:hasKGEModel <kge-model/deepwalk> .
+<configuration/graphgan/6> ns4kge:result "0.839"^^xsd:decimal .
+
+<configuration/graphgan/7> rdf:type ns4kge:Configuration .
+<configuration/graphgan/7> ns4kge:hasTask    <task/link-prediction> .
+<configuration/graphgan/7> ns4kge:hasDataset <dataset/arxiv-astroph> .
+<configuration/graphgan/7> ns4kge:hasMetric  <metric/accuracy> .
+<configuration/graphgan/7> ns4kge:hasKGEModel <kge-model/line> .
+<configuration/graphgan/7> ns4kge:result "0.82"^^xsd:decimal .
+
+<configuration/graphgan/8> rdf:type ns4kge:Configuration .
+<configuration/graphgan/8> ns4kge:hasTask    <task/link-prediction> .
+<configuration/graphgan/8> ns4kge:hasDataset <dataset/arxiv-astroph> .
+<configuration/graphgan/8> ns4kge:hasMetric  <metric/f1> .
+<configuration/graphgan/8> ns4kge:hasKGEModel <kge-model/line> .
+<configuration/graphgan/8> ns4kge:result "0.814"^^xsd:decimal .
+
+<configuration/graphgan/9> rdf:type ns4kge:Configuration .
+<configuration/graphgan/9> ns4kge:hasTask    <task/link-prediction> .
+<configuration/graphgan/9> ns4kge:hasDataset <dataset/arxiv-astroph> .
+<configuration/graphgan/9> ns4kge:hasMetric  <metric/accuracy> .
+<configuration/graphgan/9> ns4kge:hasKGEModel <kge-model/struc2vec> .
+<configuration/graphgan/9> ns4kge:result "0.821"^^xsd:decimal .
+
+<configuration/graphgan/10> rdf:type ns4kge:Configuration .
+<configuration/graphgan/10> ns4kge:hasTask    <task/link-prediction> .
+<configuration/graphgan/10> ns4kge:hasDataset <dataset/arxiv-astroph> .
+<configuration/graphgan/10> ns4kge:hasMetric  <metric/f1> .
+<configuration/graphgan/10> ns4kge:hasKGEModel <kge-model/struc2vec> .
+<configuration/graphgan/10> ns4kge:result "0.81"^^xsd:decimal .
+
+<configuration/graphgan/11> rdf:type ns4kge:Configuration .
+<configuration/graphgan/11> ns4kge:hasTask    <task/link-prediction> .
+<configuration/graphgan/11> ns4kge:hasDataset <dataset/arxiv-grqc> .
+<configuration/graphgan/11> ns4kge:hasMetric  <metric/accuracy> .
+<configuration/graphgan/11> ns4kge:hasKGEModel <kge-model/graphgan> .
+<configuration/graphgan/11> ns4kge:result "0.849"^^xsd:decimal .
+
+<configuration/graphgan/12> rdf:type ns4kge:Configuration .
+<configuration/graphgan/12> ns4kge:hasTask    <task/link-prediction> .
+<configuration/graphgan/12> ns4kge:hasDataset <dataset/arxiv-grqc> .
+<configuration/graphgan/12> ns4kge:hasMetric  <metric/f1> .
+<configuration/graphgan/12> ns4kge:hasKGEModel <kge-model/graphgan> .
+<configuration/graphgan/12> ns4kge:result "0.853"^^xsd:decimal .
+
+<configuration/graphgan/13> rdf:type ns4kge:Configuration .
+<configuration/graphgan/13> ns4kge:hasTask    <task/link-prediction> .
+<configuration/graphgan/13> ns4kge:hasDataset <dataset/arxiv-grqc> .
+<configuration/graphgan/13> ns4kge:hasMetric  <metric/accuracy> .
+<configuration/graphgan/13> ns4kge:hasKGEModel <kge-model/node2vec> .
+<configuration/graphgan/13> ns4kge:result "0.844"^^xsd:decimal .
+
+<configuration/graphgan/14> rdf:type ns4kge:Configuration .
+<configuration/graphgan/14> ns4kge:hasTask    <task/link-prediction> .
+<configuration/graphgan/14> ns4kge:hasDataset <dataset/arxiv-grqc> .
+<configuration/graphgan/14> ns4kge:hasMetric  <metric/f1> .
+<configuration/graphgan/14> ns4kge:hasKGEModel <kge-model/node2vec> .
+<configuration/graphgan/14> ns4kge:result "0.842"^^xsd:decimal .
+
+<configuration/graphgan/15> rdf:type ns4kge:Configuration .
+<configuration/graphgan/15> ns4kge:hasTask    <task/link-prediction> .
+<configuration/graphgan/15> ns4kge:hasDataset <dataset/arxiv-grqc> .
+<configuration/graphgan/15> ns4kge:hasMetric  <metric/accuracy> .
+<configuration/graphgan/15> ns4kge:hasKGEModel <kge-model/deepwalk> .
+<configuration/graphgan/15> ns4kge:result "0.803"^^xsd:decimal .
+
+<configuration/graphgan/16> rdf:type ns4kge:Configuration .
+<configuration/graphgan/16> ns4kge:hasTask    <task/link-prediction> .
+<configuration/graphgan/16> ns4kge:hasDataset <dataset/arxiv-grqc> .
+<configuration/graphgan/16> ns4kge:hasMetric  <metric/f1> .
+<configuration/graphgan/16> ns4kge:hasKGEModel <kge-model/deepwalk> .
+<configuration/graphgan/16> ns4kge:result "0.812"^^xsd:decimal .
+
+<configuration/graphgan/17> rdf:type ns4kge:Configuration .
+<configuration/graphgan/17> ns4kge:hasTask    <task/link-prediction> .
+<configuration/graphgan/17> ns4kge:hasDataset <dataset/arxiv-grqc> .
+<configuration/graphgan/17> ns4kge:hasMetric  <metric/accuracy> .
+<configuration/graphgan/17> ns4kge:hasKGEModel <kge-model/line> .
+<configuration/graphgan/17> ns4kge:result "0.764"^^xsd:decimal .
+
+<configuration/graphgan/18> rdf:type ns4kge:Configuration .
+<configuration/graphgan/18> ns4kge:hasTask    <task/link-prediction> .
+<configuration/graphgan/18> ns4kge:hasDataset <dataset/arxiv-grqc> .
+<configuration/graphgan/18> ns4kge:hasMetric  <metric/f1> .
+<configuration/graphgan/18> ns4kge:hasKGEModel <kge-model/line> .
+<configuration/graphgan/18> ns4kge:result "0.761"^^xsd:decimal .
+
+<configuration/graphgan/19> rdf:type ns4kge:Configuration .
+<configuration/graphgan/19> ns4kge:hasTask    <task/link-prediction> .
+<configuration/graphgan/19> ns4kge:hasDataset <dataset/arxiv-grqc> .
+<configuration/graphgan/19> ns4kge:hasMetric  <metric/accuracy> .
+<configuration/graphgan/19> ns4kge:hasKGEModel <kge-model/struc2vec> .
+<configuration/graphgan/19> ns4kge:result "0.78"^^xsd:decimal .
+
+<configuration/graphgan/20> rdf:type ns4kge:Configuration .
+<configuration/graphgan/20> ns4kge:hasTask    <task/link-prediction> .
+<configuration/graphgan/20> ns4kge:hasDataset <dataset/arxiv-grqc> .
+<configuration/graphgan/20> ns4kge:hasMetric  <metric/f1> .
+<configuration/graphgan/20> ns4kge:hasKGEModel <kge-model/struc2vec> .
+<configuration/graphgan/20> ns4kge:result "0.776"^^xsd:decimal .
+
+<configuration/graphgan/21> rdf:type ns4kge:Configuration .
+<configuration/graphgan/21> ns4kge:hasTask    <task/link-prediction> .
+<configuration/graphgan/21> ns4kge:hasDataset <dataset/blogcatalog> .
+<configuration/graphgan/21> ns4kge:hasMetric  <metric/accuracy> .
+<configuration/graphgan/21> ns4kge:hasKGEModel <kge-model/graphgan> .
+<configuration/graphgan/21> ns4kge:result "0.232"^^xsd:decimal .
+
+<configuration/graphgan/22> rdf:type ns4kge:Configuration .
+<configuration/graphgan/22> ns4kge:hasTask    <task/link-prediction> .
+<configuration/graphgan/22> ns4kge:hasDataset <dataset/blogcatalog> .
+<configuration/graphgan/22> ns4kge:hasMetric  <metric/f1> .
+<configuration/graphgan/22> ns4kge:hasKGEModel <kge-model/graphgan> .
+<configuration/graphgan/22> ns4kge:result "0.221"^^xsd:decimal .
+
+<configuration/graphgan/23> rdf:type ns4kge:Configuration .
+<configuration/graphgan/23> ns4kge:hasTask    <task/link-prediction> .
+<configuration/graphgan/23> ns4kge:hasDataset <dataset/blogcatalog> .
+<configuration/graphgan/23> ns4kge:hasMetric  <metric/accuracy> .
+<configuration/graphgan/23> ns4kge:hasKGEModel <kge-model/struc2vec> .
+<configuration/graphgan/23> ns4kge:result "0.228"^^xsd:decimal .
+
+<configuration/graphgan/24> rdf:type ns4kge:Configuration .
+<configuration/graphgan/24> ns4kge:hasTask    <task/link-prediction> .
+<configuration/graphgan/24> ns4kge:hasDataset <dataset/blogcatalog> .
+<configuration/graphgan/24> ns4kge:hasMetric  <metric/f1> .
+<configuration/graphgan/24> ns4kge:hasKGEModel <kge-model/struc2vec> .
+<configuration/graphgan/24> ns4kge:result "0.216"^^xsd:decimal .
+
+<configuration/graphgan/25> rdf:type ns4kge:Configuration .
+<configuration/graphgan/25> ns4kge:hasTask    <task/link-prediction> .
+<configuration/graphgan/25> ns4kge:hasDataset <dataset/blogcatalog> .
+<configuration/graphgan/25> ns4kge:hasMetric  <metric/accuracy> .
+<configuration/graphgan/25> ns4kge:hasKGEModel <kge-model/deepwalk> .
+<configuration/graphgan/25> ns4kge:result "0.225"^^xsd:decimal .
+
+<configuration/graphgan/26> rdf:type ns4kge:Configuration .
+<configuration/graphgan/26> ns4kge:hasTask    <task/link-prediction> .
+<configuration/graphgan/26> ns4kge:hasDataset <dataset/blogcatalog> .
+<configuration/graphgan/26> ns4kge:hasMetric  <metric/f1> .
+<configuration/graphgan/26> ns4kge:hasKGEModel <kge-model/deepwalk> .
+<configuration/graphgan/26> ns4kge:result "0.214"^^xsd:decimal .
+
+<configuration/graphgan/27> rdf:type ns4kge:Configuration .
+<configuration/graphgan/27> ns4kge:hasTask    <task/link-prediction> .
+<configuration/graphgan/27> ns4kge:hasDataset <dataset/blogcatalog> .
+<configuration/graphgan/27> ns4kge:hasMetric  <metric/accuracy> .
+<configuration/graphgan/27> ns4kge:hasKGEModel <kge-model/node2vec> .
+<configuration/graphgan/27> ns4kge:result "0.215"^^xsd:decimal .
+
+<configuration/graphgan/28> rdf:type ns4kge:Configuration .
+<configuration/graphgan/28> ns4kge:hasTask    <task/link-prediction> .
+<configuration/graphgan/28> ns4kge:hasDataset <dataset/blogcatalog> .
+<configuration/graphgan/28> ns4kge:hasMetric  <metric/f1> .
+<configuration/graphgan/28> ns4kge:hasKGEModel <kge-model/node2vec> .
+<configuration/graphgan/28> ns4kge:result "0.206"^^xsd:decimal .
+
+<configuration/graphgan/29> rdf:type ns4kge:Configuration .
+<configuration/graphgan/29> ns4kge:hasTask    <task/link-prediction> .
+<configuration/graphgan/29> ns4kge:hasDataset <dataset/blogcatalog> .
+<configuration/graphgan/29> ns4kge:hasMetric  <metric/accuracy> .
+<configuration/graphgan/29> ns4kge:hasKGEModel <kge-model/line> .
+<configuration/graphgan/29> ns4kge:result "0.205"^^xsd:decimal .
+
+<configuration/graphgan/30> rdf:type ns4kge:Configuration .
+<configuration/graphgan/30> ns4kge:hasTask    <task/link-prediction> .
+<configuration/graphgan/30> ns4kge:hasDataset <dataset/blogcatalog> .
+<configuration/graphgan/30> ns4kge:hasMetric  <metric/f1> .
+<configuration/graphgan/30> ns4kge:hasKGEModel <kge-model/line> .
+<configuration/graphgan/30> ns4kge:result "0.192"^^xsd:decimal .
+
+<configuration/graphgan/31> rdf:type ns4kge:Configuration .
+<configuration/graphgan/31> ns4kge:hasTask    <task/link-prediction> .
+<configuration/graphgan/31> ns4kge:hasDataset <dataset/wikipedia> .
+<configuration/graphgan/31> ns4kge:hasMetric  <metric/accuracy> .
+<configuration/graphgan/31> ns4kge:hasKGEModel <kge-model/graphgan> .
+<configuration/graphgan/31> ns4kge:result "0.213"^^xsd:decimal .
+
+<configuration/graphgan/32> rdf:type ns4kge:Configuration .
+<configuration/graphgan/32> ns4kge:hasTask    <task/link-prediction> .
+<configuration/graphgan/32> ns4kge:hasDataset <dataset/wikipedia> .
+<configuration/graphgan/32> ns4kge:hasMetric  <metric/f1> .
+<configuration/graphgan/32> ns4kge:hasKGEModel <kge-model/graphgan> .
+<configuration/graphgan/32> ns4kge:result "0.194"^^xsd:decimal .
+
+<configuration/graphgan/33> rdf:type ns4kge:Configuration .
+<configuration/graphgan/33> ns4kge:hasTask    <task/link-prediction> .
+<configuration/graphgan/33> ns4kge:hasDataset <dataset/wikipedia> .
+<configuration/graphgan/33> ns4kge:hasMetric  <metric/accuracy> .
+<configuration/graphgan/33> ns4kge:hasKGEModel <kge-model/struc2vec> .
+<configuration/graphgan/33> ns4kge:result "0.211"^^xsd:decimal .
+
+<configuration/graphgan/34> rdf:type ns4kge:Configuration .
+<configuration/graphgan/34> ns4kge:hasTask    <task/link-prediction> .
+<configuration/graphgan/34> ns4kge:hasDataset <dataset/wikipedia> .
+<configuration/graphgan/34> ns4kge:hasMetric  <metric/f1> .
+<configuration/graphgan/34> ns4kge:hasKGEModel <kge-model/struc2vec> .
+<configuration/graphgan/34> ns4kge:result "0.19"^^xsd:decimal .
+
+<configuration/graphgan/35> rdf:type ns4kge:Configuration .
+<configuration/graphgan/35> ns4kge:hasTask    <task/link-prediction> .
+<configuration/graphgan/35> ns4kge:hasDataset <dataset/wikipedia> .
+<configuration/graphgan/35> ns4kge:hasMetric  <metric/accuracy> .
+<configuration/graphgan/35> ns4kge:hasKGEModel <kge-model/deepwalk> .
+<configuration/graphgan/35> ns4kge:result "0.194"^^xsd:decimal .
+
+<configuration/graphgan/36> rdf:type ns4kge:Configuration .
+<configuration/graphgan/36> ns4kge:hasTask    <task/link-prediction> .
+<configuration/graphgan/36> ns4kge:hasDataset <dataset/wikipedia> .
+<configuration/graphgan/36> ns4kge:hasMetric  <metric/f1> .
+<configuration/graphgan/36> ns4kge:hasKGEModel <kge-model/deepwalk> .
+<configuration/graphgan/36> ns4kge:result "0.183"^^xsd:decimal .
+
+<configuration/graphgan/37> rdf:type ns4kge:Configuration .
+<configuration/graphgan/37> ns4kge:hasTask    <task/link-prediction> .
+<configuration/graphgan/37> ns4kge:hasDataset <dataset/wikipedia> .
+<configuration/graphgan/37> ns4kge:hasMetric  <metric/accuracy> .
+<configuration/graphgan/37> ns4kge:hasKGEModel <kge-model/node2vec> .
+<configuration/graphgan/37> ns4kge:result "0.191"^^xsd:decimal .
+
+<configuration/graphgan/38> rdf:type ns4kge:Configuration .
+<configuration/graphgan/38> ns4kge:hasTask    <task/link-prediction> .
+<configuration/graphgan/38> ns4kge:hasDataset <dataset/wikipedia> .
+<configuration/graphgan/38> ns4kge:hasMetric  <metric/f1> .
+<configuration/graphgan/38> ns4kge:hasKGEModel <kge-model/node2vec> .
+<configuration/graphgan/38> ns4kge:result "0.179"^^xsd:decimal .
+
+<configuration/graphgan/39> rdf:type ns4kge:Configuration .
+<configuration/graphgan/39> ns4kge:hasTask    <task/link-prediction> .
+<configuration/graphgan/39> ns4kge:hasDataset <dataset/wikipedia> .
+<configuration/graphgan/39> ns4kge:hasMetric  <metric/accuracy> .
+<configuration/graphgan/39> ns4kge:hasKGEModel <kge-model/line> .
+<configuration/graphgan/39> ns4kge:result "0.175"^^xsd:decimal .
+
+<configuration/graphgan/40> rdf:type ns4kge:Configuration .
+<configuration/graphgan/40> ns4kge:hasTask    <task/link-prediction> .
+<configuration/graphgan/40> ns4kge:hasDataset <dataset/wikipedia> .
+<configuration/graphgan/40> ns4kge:hasMetric  <metric/f1> .
+<configuration/graphgan/40> ns4kge:hasKGEModel <kge-model/line> .
+<configuration/graphgan/40> ns4kge:result "0.164"^^xsd:decimal .

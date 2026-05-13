@@ -1,0 +1,37 @@
+{
+  "Article": {
+    "title": "Improving Knowledge Graph Completion Using Soft Rules and Adversarial Learning",
+    "date": "2021"
+  },
+  "proposedNSMethod": "soft Rules and graph adversarial learning",
+  "proposedKGEModel": "",
+  "mentionedNSMethods": [
+    "Uniform Negative Sampling",
+    "KBGAN"
+  ],
+  "mentionedKGEModels": [
+    "TransE",
+    "TransH",
+    "TransR",
+    "TransD",
+    "ComplEx",
+    "RESCAL",
+    "DistMult",
+    "HolE",
+    "RUGE"
+  ],
+  "Experimentation": {
+    "Hardware": [],
+    "TrainingProtocol": {
+      "LossFunction": [
+        "margin-based ranking loss",
+        "log-softmax loss",
+        "cross-entropy loss",
+        "negative sampling loss"
+      ],
+      "Optimizer": [],
+      "learningRate": null,
+      "nsRatio": 10.0
+    }
+  }
+}

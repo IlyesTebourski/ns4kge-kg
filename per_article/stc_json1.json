@@ -1,0 +1,37 @@
+{
+  "Article": {
+    "title": "Representation Learning of Knowledge Graphs with Hierarchical Types",
+    "date": "2016"
+  },
+  "proposedNSMethod": "Soft Type Constraint",
+  "proposedKGEModel": "Type-embodied Knowledge Representation Learning",
+  "mentionedNSMethods": [
+    "Bernoulli Negative Sampling",
+    "Uniform Negative Sampling"
+  ],
+  "mentionedKGEModels": [
+    "TransE",
+    "TransH",
+    "TransR",
+    "TransD",
+    "RESCAL",
+    "SE",
+    "SME",
+    "LFM",
+    "NTN",
+    "DKRL"
+  ],
+  "Experimentation": {
+    "Hardware": [],
+    "TrainingProtocol": {
+      "LossFunction": [
+        "margin-based ranking loss"
+      ],
+      "Optimizer": [
+        "SGD"
+      ],
+      "learningRate": 0.0025,
+      "nsRatio": null
+    }
+  }
+}

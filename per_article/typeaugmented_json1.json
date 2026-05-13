@@ -1,0 +1,47 @@
+{
+  "Article": {
+    "title": "A type-augmented knowledge graph embedding framework for knowledge graph completion",
+    "date": "2023"
+  },
+  "proposedNSMethod": "Type-constrained negative sampling",
+  "proposedKGEModel": "TaKE",
+  "mentionedNSMethods": [
+    "Uniform negative sampling",
+    "Bernoulli negative sampling",
+    "Self-adversarial negative sampling",
+    "Type-constrained negative sampling",
+    "Soft Type Constraint"
+  ],
+  "mentionedKGEModels": [
+    "TransE",
+    "TransH",
+    "TransR",
+    "RotatE",
+    "HAKE",
+    "RatE",
+    "DistMult",
+    "ComplEx",
+    "SimplE",
+    "TKRL",
+    "TransC",
+    "JOIE",
+    "TransT",
+    "TaRP",
+    "CAKE",
+    "TypeDM",
+    "TypeComplex"
+  ],
+  "Experimentation": {
+    "Hardware": [],
+    "TrainingProtocol": {
+      "LossFunction": [
+        "cross-entropy loss"
+      ],
+      "Optimizer": [
+        "Adam"
+      ],
+      "learningRate": null,
+      "nsRatio": null
+    }
+  }
+}

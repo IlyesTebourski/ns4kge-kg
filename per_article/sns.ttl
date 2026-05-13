@@ -1,0 +1,1815 @@
+<article/sns> rdf:type ns4kge:Article .
+<article/sns> ns4kge:title "Simple negative sampling for link prediction in knowledge graphs"^^xsd:string .
+<article/sns> ns4kge:date "2021"^^xsd:gYear .
+<article/sns> ns4kge:proposesNSMethod <ns-method/simple-negative-sampling> .
+<article/sns> ns4kge:mentionsNSMethod <ns-method/ksgan> .
+<article/sns> ns4kge:mentionsNSMethod <ns-method/sans> .
+<article/sns> ns4kge:mentionsNSMethod <ns-method/uniform-random-negative-sampling> .
+<article/sns> ns4kge:mentionsNSMethod <ns-method/kbgan> .
+<article/sns> ns4kge:mentionsNSMethod <ns-method/nscaching> .
+<article/sns> ns4kge:mentionsNSMethod <ns-method/igan> .
+<article/sns> ns4kge:mentionsKGEModel <kge-model/transh> .
+<article/sns> ns4kge:mentionsKGEModel <kge-model/distmult> .
+<article/sns> ns4kge:hasExperimentation <experimentation/sns> .
+
+<category/dynamic-ns> rdf:type ns4kge:Category .
+
+<subcategory/self-adaptive> rdf:type ns4kge:Subcategory .
+
+<ns-method/simple-negative-sampling> rdf:type ns4kge:NSMethod .
+<ns-method/simple-negative-sampling> ns4kge:hasCategory <category/dynamic-ns> .
+<ns-method/simple-negative-sampling> ns4kge:hasSubcategory <subcategory/self-adaptive> .
+
+<ns-method/ksgan> rdf:type ns4kge:NSMethod .
+<category/adversarial-ns> rdf:type ns4kge:Category .
+
+<ns-method/ksgan> ns4kge:hasCategory <category/adversarial-ns> .
+<subcategory/knowledge-constrained> rdf:type ns4kge:Subcategory .
+
+<ns-method/ksgan> ns4kge:hasSubcategory <subcategory/knowledge-constrained> .
+
+<ns-method/sans> rdf:type ns4kge:NSMethod .
+<category/static-ns> rdf:type ns4kge:Category .
+
+<ns-method/sans> ns4kge:hasCategory <category/static-ns> .
+<ns-method/sans> ns4kge:hasSubcategory <subcategory/knowledge-constrained> .
+
+<ns-method/uniform-random-negative-sampling> rdf:type ns4kge:NSMethod .
+<ns-method/uniform-random-negative-sampling> ns4kge:hasCategory <category/static-ns> .
+<subcategory/random> rdf:type ns4kge:Subcategory .
+
+<ns-method/uniform-random-negative-sampling> ns4kge:hasSubcategory <subcategory/random> .
+
+<ns-method/kbgan> rdf:type ns4kge:NSMethod .
+<ns-method/kbgan> ns4kge:hasCategory <category/adversarial-ns> .
+<subcategory/standard> rdf:type ns4kge:Subcategory .
+
+<ns-method/kbgan> ns4kge:hasSubcategory <subcategory/standard> .
+
+<ns-method/nscaching> rdf:type ns4kge:NSMethod .
+<category/self-adversarial-ns> rdf:type ns4kge:Category .
+
+<ns-method/nscaching> ns4kge:hasCategory <category/self-adversarial-ns> .
+<subcategory/direct> rdf:type ns4kge:Subcategory .
+
+<ns-method/nscaching> ns4kge:hasSubcategory <subcategory/direct> .
+
+<ns-method/igan> rdf:type ns4kge:NSMethod .
+<ns-method/igan> ns4kge:hasCategory <category/adversarial-ns> .
+<ns-method/igan> ns4kge:hasSubcategory <subcategory/standard> .
+
+<kge-model/transh> rdf:type ns4kge:KGEModel .
+
+<kge-model/distmult> rdf:type ns4kge:KGEModel .
+
+<dataset/wn18rr> rdf:type ns4kge:Dataset .
+<task/link-prediction> rdf:type ns4kge:Task .
+<metric/mrr> rdf:type ns4kge:Metric .
+<metric/hits-10> rdf:type ns4kge:Metric .
+<metric/hits-3> rdf:type ns4kge:Metric .
+<metric/hits-1> rdf:type ns4kge:Metric .
+<dataset/wn18> rdf:type ns4kge:Dataset .
+<dataset/fb15k-237> rdf:type ns4kge:Dataset .
+<dataset/fb15k> rdf:type ns4kge:Dataset .
+<dataset/yago3-10> rdf:type ns4kge:Dataset .
+<dataset/fight-hf-23r> rdf:type ns4kge:Dataset .
+<loss-function/margin-based-ranking-loss> rdf:type ns4kge:LossFunction .
+<optimizer/adam> rdf:type ns4kge:Optimizer .
+<hardware/nvidia-a100-pcie-40gb> rdf:type ns4kge:Hardware .
+
+<experimentation/sns> rdf:type ns4kge:Experimentation .
+<experimentation/sns> ns4kge:hasTrainingProtocol <training-protocol/sns> .
+<experimentation/sns> ns4kge:hasConfiguration <configuration/sns/1> .
+<experimentation/sns> ns4kge:hasConfiguration <configuration/sns/2> .
+<experimentation/sns> ns4kge:hasConfiguration <configuration/sns/3> .
+<experimentation/sns> ns4kge:hasConfiguration <configuration/sns/4> .
+<experimentation/sns> ns4kge:hasConfiguration <configuration/sns/5> .
+<experimentation/sns> ns4kge:hasConfiguration <configuration/sns/6> .
+<experimentation/sns> ns4kge:hasConfiguration <configuration/sns/7> .
+<experimentation/sns> ns4kge:hasConfiguration <configuration/sns/8> .
+<experimentation/sns> ns4kge:hasConfiguration <configuration/sns/9> .
+<experimentation/sns> ns4kge:hasConfiguration <configuration/sns/10> .
+<experimentation/sns> ns4kge:hasConfiguration <configuration/sns/11> .
+<experimentation/sns> ns4kge:hasConfiguration <configuration/sns/12> .
+<experimentation/sns> ns4kge:hasConfiguration <configuration/sns/13> .
+<experimentation/sns> ns4kge:hasConfiguration <configuration/sns/14> .
+<experimentation/sns> ns4kge:hasConfiguration <configuration/sns/15> .
+<experimentation/sns> ns4kge:hasConfiguration <configuration/sns/16> .
+<experimentation/sns> ns4kge:hasConfiguration <configuration/sns/17> .
+<experimentation/sns> ns4kge:hasConfiguration <configuration/sns/18> .
+<experimentation/sns> ns4kge:hasConfiguration <configuration/sns/19> .
+<experimentation/sns> ns4kge:hasConfiguration <configuration/sns/20> .
+<experimentation/sns> ns4kge:hasConfiguration <configuration/sns/21> .
+<experimentation/sns> ns4kge:hasConfiguration <configuration/sns/22> .
+<experimentation/sns> ns4kge:hasConfiguration <configuration/sns/23> .
+<experimentation/sns> ns4kge:hasConfiguration <configuration/sns/24> .
+<experimentation/sns> ns4kge:hasConfiguration <configuration/sns/25> .
+<experimentation/sns> ns4kge:hasConfiguration <configuration/sns/26> .
+<experimentation/sns> ns4kge:hasConfiguration <configuration/sns/27> .
+<experimentation/sns> ns4kge:hasConfiguration <configuration/sns/28> .
+<experimentation/sns> ns4kge:hasConfiguration <configuration/sns/29> .
+<experimentation/sns> ns4kge:hasConfiguration <configuration/sns/30> .
+<experimentation/sns> ns4kge:hasConfiguration <configuration/sns/31> .
+<experimentation/sns> ns4kge:hasConfiguration <configuration/sns/32> .
+<experimentation/sns> ns4kge:hasConfiguration <configuration/sns/33> .
+<experimentation/sns> ns4kge:hasConfiguration <configuration/sns/34> .
+<experimentation/sns> ns4kge:hasConfiguration <configuration/sns/35> .
+<experimentation/sns> ns4kge:hasConfiguration <configuration/sns/36> .
+<experimentation/sns> ns4kge:hasConfiguration <configuration/sns/37> .
+<experimentation/sns> ns4kge:hasConfiguration <configuration/sns/38> .
+<experimentation/sns> ns4kge:hasConfiguration <configuration/sns/39> .
+<experimentation/sns> ns4kge:hasConfiguration <configuration/sns/40> .
+<experimentation/sns> ns4kge:hasConfiguration <configuration/sns/41> .
+<experimentation/sns> ns4kge:hasConfiguration <configuration/sns/42> .
+<experimentation/sns> ns4kge:hasConfiguration <configuration/sns/43> .
+<experimentation/sns> ns4kge:hasConfiguration <configuration/sns/44> .
+<experimentation/sns> ns4kge:hasConfiguration <configuration/sns/45> .
+<experimentation/sns> ns4kge:hasConfiguration <configuration/sns/46> .
+<experimentation/sns> ns4kge:hasConfiguration <configuration/sns/47> .
+<experimentation/sns> ns4kge:hasConfiguration <configuration/sns/48> .
+<experimentation/sns> ns4kge:hasConfiguration <configuration/sns/49> .
+<experimentation/sns> ns4kge:hasConfiguration <configuration/sns/50> .
+<experimentation/sns> ns4kge:hasConfiguration <configuration/sns/51> .
+<experimentation/sns> ns4kge:hasConfiguration <configuration/sns/52> .
+<experimentation/sns> ns4kge:hasConfiguration <configuration/sns/53> .
+<experimentation/sns> ns4kge:hasConfiguration <configuration/sns/54> .
+<experimentation/sns> ns4kge:hasConfiguration <configuration/sns/55> .
+<experimentation/sns> ns4kge:hasConfiguration <configuration/sns/56> .
+<experimentation/sns> ns4kge:hasConfiguration <configuration/sns/57> .
+<experimentation/sns> ns4kge:hasConfiguration <configuration/sns/58> .
+<experimentation/sns> ns4kge:hasConfiguration <configuration/sns/59> .
+<experimentation/sns> ns4kge:hasConfiguration <configuration/sns/60> .
+<experimentation/sns> ns4kge:hasConfiguration <configuration/sns/61> .
+<experimentation/sns> ns4kge:hasConfiguration <configuration/sns/62> .
+<experimentation/sns> ns4kge:hasConfiguration <configuration/sns/63> .
+<experimentation/sns> ns4kge:hasConfiguration <configuration/sns/64> .
+<experimentation/sns> ns4kge:hasConfiguration <configuration/sns/65> .
+<experimentation/sns> ns4kge:hasConfiguration <configuration/sns/66> .
+<experimentation/sns> ns4kge:hasConfiguration <configuration/sns/67> .
+<experimentation/sns> ns4kge:hasConfiguration <configuration/sns/68> .
+<experimentation/sns> ns4kge:hasConfiguration <configuration/sns/69> .
+<experimentation/sns> ns4kge:hasConfiguration <configuration/sns/70> .
+<experimentation/sns> ns4kge:hasConfiguration <configuration/sns/71> .
+<experimentation/sns> ns4kge:hasConfiguration <configuration/sns/72> .
+<experimentation/sns> ns4kge:hasConfiguration <configuration/sns/73> .
+<experimentation/sns> ns4kge:hasConfiguration <configuration/sns/74> .
+<experimentation/sns> ns4kge:hasConfiguration <configuration/sns/75> .
+<experimentation/sns> ns4kge:hasConfiguration <configuration/sns/76> .
+<experimentation/sns> ns4kge:hasConfiguration <configuration/sns/77> .
+<experimentation/sns> ns4kge:hasConfiguration <configuration/sns/78> .
+<experimentation/sns> ns4kge:hasConfiguration <configuration/sns/79> .
+<experimentation/sns> ns4kge:hasConfiguration <configuration/sns/80> .
+<experimentation/sns> ns4kge:hasConfiguration <configuration/sns/81> .
+<experimentation/sns> ns4kge:hasConfiguration <configuration/sns/82> .
+<experimentation/sns> ns4kge:hasConfiguration <configuration/sns/83> .
+<experimentation/sns> ns4kge:hasConfiguration <configuration/sns/84> .
+<experimentation/sns> ns4kge:hasConfiguration <configuration/sns/85> .
+<experimentation/sns> ns4kge:hasConfiguration <configuration/sns/86> .
+<experimentation/sns> ns4kge:hasConfiguration <configuration/sns/87> .
+<experimentation/sns> ns4kge:hasConfiguration <configuration/sns/88> .
+<experimentation/sns> ns4kge:hasConfiguration <configuration/sns/89> .
+<experimentation/sns> ns4kge:hasConfiguration <configuration/sns/90> .
+<experimentation/sns> ns4kge:hasConfiguration <configuration/sns/91> .
+<experimentation/sns> ns4kge:hasConfiguration <configuration/sns/92> .
+<experimentation/sns> ns4kge:hasConfiguration <configuration/sns/93> .
+<experimentation/sns> ns4kge:hasConfiguration <configuration/sns/94> .
+<experimentation/sns> ns4kge:hasConfiguration <configuration/sns/95> .
+<experimentation/sns> ns4kge:hasConfiguration <configuration/sns/96> .
+<experimentation/sns> ns4kge:hasConfiguration <configuration/sns/97> .
+<experimentation/sns> ns4kge:hasConfiguration <configuration/sns/98> .
+<experimentation/sns> ns4kge:hasConfiguration <configuration/sns/99> .
+<experimentation/sns> ns4kge:hasConfiguration <configuration/sns/100> .
+<experimentation/sns> ns4kge:hasConfiguration <configuration/sns/101> .
+<experimentation/sns> ns4kge:hasConfiguration <configuration/sns/102> .
+<experimentation/sns> ns4kge:hasConfiguration <configuration/sns/103> .
+<experimentation/sns> ns4kge:hasConfiguration <configuration/sns/104> .
+<experimentation/sns> ns4kge:hasConfiguration <configuration/sns/105> .
+<experimentation/sns> ns4kge:hasConfiguration <configuration/sns/106> .
+<experimentation/sns> ns4kge:hasConfiguration <configuration/sns/107> .
+<experimentation/sns> ns4kge:hasConfiguration <configuration/sns/108> .
+<experimentation/sns> ns4kge:hasConfiguration <configuration/sns/109> .
+<experimentation/sns> ns4kge:hasConfiguration <configuration/sns/110> .
+<experimentation/sns> ns4kge:hasConfiguration <configuration/sns/111> .
+<experimentation/sns> ns4kge:hasConfiguration <configuration/sns/112> .
+<experimentation/sns> ns4kge:hasConfiguration <configuration/sns/113> .
+<experimentation/sns> ns4kge:hasConfiguration <configuration/sns/114> .
+<experimentation/sns> ns4kge:hasConfiguration <configuration/sns/115> .
+<experimentation/sns> ns4kge:hasConfiguration <configuration/sns/116> .
+<experimentation/sns> ns4kge:hasConfiguration <configuration/sns/117> .
+<experimentation/sns> ns4kge:hasConfiguration <configuration/sns/118> .
+<experimentation/sns> ns4kge:hasConfiguration <configuration/sns/119> .
+<experimentation/sns> ns4kge:hasConfiguration <configuration/sns/120> .
+<experimentation/sns> ns4kge:hasConfiguration <configuration/sns/121> .
+<experimentation/sns> ns4kge:hasConfiguration <configuration/sns/122> .
+<experimentation/sns> ns4kge:hasConfiguration <configuration/sns/123> .
+<experimentation/sns> ns4kge:hasConfiguration <configuration/sns/124> .
+<experimentation/sns> ns4kge:hasConfiguration <configuration/sns/125> .
+<experimentation/sns> ns4kge:hasConfiguration <configuration/sns/126> .
+<experimentation/sns> ns4kge:hasConfiguration <configuration/sns/127> .
+<experimentation/sns> ns4kge:hasConfiguration <configuration/sns/128> .
+<experimentation/sns> ns4kge:hasConfiguration <configuration/sns/129> .
+<experimentation/sns> ns4kge:hasConfiguration <configuration/sns/130> .
+<experimentation/sns> ns4kge:hasConfiguration <configuration/sns/131> .
+<experimentation/sns> ns4kge:hasConfiguration <configuration/sns/132> .
+<experimentation/sns> ns4kge:hasConfiguration <configuration/sns/133> .
+<experimentation/sns> ns4kge:hasConfiguration <configuration/sns/134> .
+<experimentation/sns> ns4kge:hasConfiguration <configuration/sns/135> .
+<experimentation/sns> ns4kge:hasConfiguration <configuration/sns/136> .
+<experimentation/sns> ns4kge:hasConfiguration <configuration/sns/137> .
+<experimentation/sns> ns4kge:hasConfiguration <configuration/sns/138> .
+<experimentation/sns> ns4kge:hasConfiguration <configuration/sns/139> .
+<experimentation/sns> ns4kge:hasConfiguration <configuration/sns/140> .
+<experimentation/sns> ns4kge:hasConfiguration <configuration/sns/141> .
+<experimentation/sns> ns4kge:hasConfiguration <configuration/sns/142> .
+<experimentation/sns> ns4kge:hasConfiguration <configuration/sns/143> .
+<experimentation/sns> ns4kge:hasConfiguration <configuration/sns/144> .
+<experimentation/sns> ns4kge:hasConfiguration <configuration/sns/145> .
+<experimentation/sns> ns4kge:hasConfiguration <configuration/sns/146> .
+<experimentation/sns> ns4kge:hasConfiguration <configuration/sns/147> .
+<experimentation/sns> ns4kge:hasConfiguration <configuration/sns/148> .
+<experimentation/sns> ns4kge:hasConfiguration <configuration/sns/149> .
+<experimentation/sns> ns4kge:hasConfiguration <configuration/sns/150> .
+<experimentation/sns> ns4kge:hasConfiguration <configuration/sns/151> .
+<experimentation/sns> ns4kge:hasConfiguration <configuration/sns/152> .
+<experimentation/sns> ns4kge:hasConfiguration <configuration/sns/153> .
+<experimentation/sns> ns4kge:hasConfiguration <configuration/sns/154> .
+<experimentation/sns> ns4kge:hasConfiguration <configuration/sns/155> .
+<experimentation/sns> ns4kge:hasConfiguration <configuration/sns/156> .
+<experimentation/sns> ns4kge:hasConfiguration <configuration/sns/157> .
+<experimentation/sns> ns4kge:hasConfiguration <configuration/sns/158> .
+<experimentation/sns> ns4kge:hasConfiguration <configuration/sns/159> .
+<experimentation/sns> ns4kge:hasConfiguration <configuration/sns/160> .
+<experimentation/sns> ns4kge:hasConfiguration <configuration/sns/161> .
+<experimentation/sns> ns4kge:hasConfiguration <configuration/sns/162> .
+<experimentation/sns> ns4kge:hasConfiguration <configuration/sns/163> .
+<experimentation/sns> ns4kge:hasConfiguration <configuration/sns/164> .
+<experimentation/sns> ns4kge:hasConfiguration <configuration/sns/165> .
+<experimentation/sns> ns4kge:hasConfiguration <configuration/sns/166> .
+<experimentation/sns> ns4kge:hasConfiguration <configuration/sns/167> .
+<experimentation/sns> ns4kge:hasConfiguration <configuration/sns/168> .
+<experimentation/sns> ns4kge:hasConfiguration <configuration/sns/169> .
+<experimentation/sns> ns4kge:hasConfiguration <configuration/sns/170> .
+<experimentation/sns> ns4kge:hasConfiguration <configuration/sns/171> .
+<experimentation/sns> ns4kge:hasConfiguration <configuration/sns/172> .
+<experimentation/sns> ns4kge:hasConfiguration <configuration/sns/173> .
+<experimentation/sns> ns4kge:hasConfiguration <configuration/sns/174> .
+<experimentation/sns> ns4kge:hasConfiguration <configuration/sns/175> .
+<experimentation/sns> ns4kge:hasConfiguration <configuration/sns/176> .
+<experimentation/sns> ns4kge:hasConfiguration <configuration/sns/177> .
+<experimentation/sns> ns4kge:hasConfiguration <configuration/sns/178> .
+<experimentation/sns> ns4kge:hasConfiguration <configuration/sns/179> .
+<experimentation/sns> ns4kge:hasConfiguration <configuration/sns/180> .
+<experimentation/sns> ns4kge:hasConfiguration <configuration/sns/181> .
+<experimentation/sns> ns4kge:hasConfiguration <configuration/sns/182> .
+<experimentation/sns> ns4kge:hasConfiguration <configuration/sns/183> .
+<experimentation/sns> ns4kge:hasConfiguration <configuration/sns/184> .
+<experimentation/sns> ns4kge:hasConfiguration <configuration/sns/185> .
+<experimentation/sns> ns4kge:hasConfiguration <configuration/sns/186> .
+<experimentation/sns> ns4kge:hasConfiguration <configuration/sns/187> .
+<experimentation/sns> ns4kge:hasConfiguration <configuration/sns/188> .
+<experimentation/sns> ns4kge:hasConfiguration <configuration/sns/189> .
+<experimentation/sns> ns4kge:hasConfiguration <configuration/sns/190> .
+<experimentation/sns> ns4kge:hasConfiguration <configuration/sns/191> .
+<experimentation/sns> ns4kge:hasConfiguration <configuration/sns/192> .
+
+<training-protocol/sns> rdf:type ns4kge:TrainingProtocol .
+<training-protocol/sns> ns4kge:hasOptimizer    <optimizer/adam> .
+<training-protocol/sns> ns4kge:hasLossFunction <loss-function/margin-based-ranking-loss> .
+<training-protocol/sns> ns4kge:hasHardware     <hardware/nvidia-a100-pcie-40gb> .
+<training-protocol/sns> ns4kge:learningRate "0.0001"^^xsd:decimal .
+
+<configuration/sns/1> rdf:type ns4kge:Configuration .
+<configuration/sns/1> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sns/1> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/sns/1> ns4kge:hasMetric  <metric/mrr> .
+<configuration/sns/1> ns4kge:hasKGEModel <kge-model/transh> .
+<configuration/sns/1> ns4kge:hasNSMethod <ns-method/simple-negative-sampling> .
+<configuration/sns/1> ns4kge:result "0.1852"^^xsd:decimal .
+
+<configuration/sns/2> rdf:type ns4kge:Configuration .
+<configuration/sns/2> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sns/2> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/sns/2> ns4kge:hasMetric  <metric/mrr> .
+<configuration/sns/2> ns4kge:hasKGEModel <kge-model/transh> .
+<configuration/sns/2> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/sns/2> ns4kge:result "0.1713"^^xsd:decimal .
+
+<configuration/sns/3> rdf:type ns4kge:Configuration .
+<configuration/sns/3> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sns/3> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/sns/3> ns4kge:hasMetric  <metric/mrr> .
+<configuration/sns/3> ns4kge:hasKGEModel <kge-model/transh> .
+<configuration/sns/3> ns4kge:hasNSMethod <ns-method/kbgan> .
+<configuration/sns/3> ns4kge:result "0.1708"^^xsd:decimal .
+
+<configuration/sns/4> rdf:type ns4kge:Configuration .
+<configuration/sns/4> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sns/4> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/sns/4> ns4kge:hasMetric  <metric/mrr> .
+<configuration/sns/4> ns4kge:hasKGEModel <kge-model/transh> .
+<configuration/sns/4> ns4kge:hasNSMethod <ns-method/uniform-random-negative-sampling> .
+<configuration/sns/4> ns4kge:result "0.152"^^xsd:decimal .
+
+<configuration/sns/5> rdf:type ns4kge:Configuration .
+<configuration/sns/5> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sns/5> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/sns/5> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/sns/5> ns4kge:hasKGEModel <kge-model/transh> .
+<configuration/sns/5> ns4kge:hasNSMethod <ns-method/simple-negative-sampling> .
+<configuration/sns/5> ns4kge:result "0.4304"^^xsd:decimal .
+
+<configuration/sns/6> rdf:type ns4kge:Configuration .
+<configuration/sns/6> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sns/6> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/sns/6> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/sns/6> ns4kge:hasKGEModel <kge-model/transh> .
+<configuration/sns/6> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/sns/6> ns4kge:result "0.4068"^^xsd:decimal .
+
+<configuration/sns/7> rdf:type ns4kge:Configuration .
+<configuration/sns/7> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sns/7> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/sns/7> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/sns/7> ns4kge:hasKGEModel <kge-model/transh> .
+<configuration/sns/7> ns4kge:hasNSMethod <ns-method/kbgan> .
+<configuration/sns/7> ns4kge:result "0.4008"^^xsd:decimal .
+
+<configuration/sns/8> rdf:type ns4kge:Configuration .
+<configuration/sns/8> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sns/8> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/sns/8> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/sns/8> ns4kge:hasKGEModel <kge-model/transh> .
+<configuration/sns/8> ns4kge:hasNSMethod <ns-method/uniform-random-negative-sampling> .
+<configuration/sns/8> ns4kge:result "0.3227"^^xsd:decimal .
+
+<configuration/sns/9> rdf:type ns4kge:Configuration .
+<configuration/sns/9> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sns/9> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/sns/9> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/sns/9> ns4kge:hasKGEModel <kge-model/transh> .
+<configuration/sns/9> ns4kge:hasNSMethod <ns-method/simple-negative-sampling> .
+<configuration/sns/9> ns4kge:result "0.3382"^^xsd:decimal .
+
+<configuration/sns/10> rdf:type ns4kge:Configuration .
+<configuration/sns/10> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sns/10> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/sns/10> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/sns/10> ns4kge:hasKGEModel <kge-model/transh> .
+<configuration/sns/10> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/sns/10> ns4kge:result "0.3143"^^xsd:decimal .
+
+<configuration/sns/11> rdf:type ns4kge:Configuration .
+<configuration/sns/11> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sns/11> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/sns/11> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/sns/11> ns4kge:hasKGEModel <kge-model/transh> .
+<configuration/sns/11> ns4kge:hasNSMethod <ns-method/kbgan> .
+<configuration/sns/11> ns4kge:result "0.2935"^^xsd:decimal .
+
+<configuration/sns/12> rdf:type ns4kge:Configuration .
+<configuration/sns/12> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sns/12> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/sns/12> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/sns/12> ns4kge:hasKGEModel <kge-model/transh> .
+<configuration/sns/12> ns4kge:hasNSMethod <ns-method/uniform-random-negative-sampling> .
+<configuration/sns/12> ns4kge:result "0.2372"^^xsd:decimal .
+
+<configuration/sns/13> rdf:type ns4kge:Configuration .
+<configuration/sns/13> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sns/13> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/sns/13> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/sns/13> ns4kge:hasKGEModel <kge-model/transh> .
+<configuration/sns/13> ns4kge:hasNSMethod <ns-method/simple-negative-sampling> .
+<configuration/sns/13> ns4kge:result "0.018"^^xsd:decimal .
+
+<configuration/sns/14> rdf:type ns4kge:Configuration .
+<configuration/sns/14> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sns/14> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/sns/14> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/sns/14> ns4kge:hasKGEModel <kge-model/transh> .
+<configuration/sns/14> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/sns/14> ns4kge:result "0.93"^^xsd:decimal .
+
+<configuration/sns/15> rdf:type ns4kge:Configuration .
+<configuration/sns/15> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sns/15> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/sns/15> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/sns/15> ns4kge:hasKGEModel <kge-model/transh> .
+<configuration/sns/15> ns4kge:hasNSMethod <ns-method/kbgan> .
+<configuration/sns/15> ns4kge:result "0.1"^^xsd:decimal .
+
+<configuration/sns/16> rdf:type ns4kge:Configuration .
+<configuration/sns/16> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sns/16> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/sns/16> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/sns/16> ns4kge:hasKGEModel <kge-model/transh> .
+<configuration/sns/16> ns4kge:hasNSMethod <ns-method/uniform-random-negative-sampling> .
+<configuration/sns/16> ns4kge:result "0.11"^^xsd:decimal .
+
+<configuration/sns/17> rdf:type ns4kge:Configuration .
+<configuration/sns/17> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sns/17> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/sns/17> ns4kge:hasMetric  <metric/mrr> .
+<configuration/sns/17> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/sns/17> ns4kge:hasNSMethod <ns-method/simple-negative-sampling> .
+<configuration/sns/17> ns4kge:result "0.2333"^^xsd:decimal .
+
+<configuration/sns/18> rdf:type ns4kge:Configuration .
+<configuration/sns/18> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sns/18> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/sns/18> ns4kge:hasMetric  <metric/mrr> .
+<configuration/sns/18> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/sns/18> ns4kge:hasNSMethod <ns-method/kbgan> .
+<configuration/sns/18> ns4kge:result "0.2285"^^xsd:decimal .
+
+<configuration/sns/19> rdf:type ns4kge:Configuration .
+<configuration/sns/19> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sns/19> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/sns/19> ns4kge:hasMetric  <metric/mrr> .
+<configuration/sns/19> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/sns/19> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/sns/19> ns4kge:result "0.2262"^^xsd:decimal .
+
+<configuration/sns/20> rdf:type ns4kge:Configuration .
+<configuration/sns/20> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sns/20> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/sns/20> ns4kge:hasMetric  <metric/mrr> .
+<configuration/sns/20> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/sns/20> ns4kge:hasNSMethod <ns-method/uniform-random-negative-sampling> .
+<configuration/sns/20> ns4kge:result "0.1918"^^xsd:decimal .
+
+<configuration/sns/21> rdf:type ns4kge:Configuration .
+<configuration/sns/21> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sns/21> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/sns/21> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/sns/21> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/sns/21> ns4kge:hasNSMethod <ns-method/simple-negative-sampling> .
+<configuration/sns/21> ns4kge:result "0.3783"^^xsd:decimal .
+
+<configuration/sns/22> rdf:type ns4kge:Configuration .
+<configuration/sns/22> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sns/22> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/sns/22> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/sns/22> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/sns/22> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/sns/22> ns4kge:result "0.3737"^^xsd:decimal .
+
+<configuration/sns/23> rdf:type ns4kge:Configuration .
+<configuration/sns/23> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sns/23> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/sns/23> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/sns/23> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/sns/23> ns4kge:hasNSMethod <ns-method/kbgan> .
+<configuration/sns/23> ns4kge:result "0.3342"^^xsd:decimal .
+
+<configuration/sns/24> rdf:type ns4kge:Configuration .
+<configuration/sns/24> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sns/24> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/sns/24> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/sns/24> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/sns/24> ns4kge:hasNSMethod <ns-method/uniform-random-negative-sampling> .
+<configuration/sns/24> ns4kge:result "0.3216"^^xsd:decimal .
+
+<configuration/sns/25> rdf:type ns4kge:Configuration .
+<configuration/sns/25> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sns/25> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/sns/25> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/sns/25> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/sns/25> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/sns/25> ns4kge:result "0.2911"^^xsd:decimal .
+
+<configuration/sns/26> rdf:type ns4kge:Configuration .
+<configuration/sns/26> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sns/26> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/sns/26> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/sns/26> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/sns/26> ns4kge:hasNSMethod <ns-method/kbgan> .
+<configuration/sns/26> ns4kge:result "0.2723"^^xsd:decimal .
+
+<configuration/sns/27> rdf:type ns4kge:Configuration .
+<configuration/sns/27> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sns/27> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/sns/27> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/sns/27> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/sns/27> ns4kge:hasNSMethod <ns-method/simple-negative-sampling> .
+<configuration/sns/27> ns4kge:result "0.2512"^^xsd:decimal .
+
+<configuration/sns/28> rdf:type ns4kge:Configuration .
+<configuration/sns/28> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sns/28> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/sns/28> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/sns/28> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/sns/28> ns4kge:hasNSMethod <ns-method/uniform-random-negative-sampling> .
+<configuration/sns/28> ns4kge:result "0.2388"^^xsd:decimal .
+
+<configuration/sns/29> rdf:type ns4kge:Configuration .
+<configuration/sns/29> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sns/29> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/sns/29> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/sns/29> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/sns/29> ns4kge:hasNSMethod <ns-method/simple-negative-sampling> .
+<configuration/sns/29> ns4kge:result "0.1849"^^xsd:decimal .
+
+<configuration/sns/30> rdf:type ns4kge:Configuration .
+<configuration/sns/30> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sns/30> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/sns/30> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/sns/30> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/sns/30> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/sns/30> ns4kge:result "0.1784"^^xsd:decimal .
+
+<configuration/sns/31> rdf:type ns4kge:Configuration .
+<configuration/sns/31> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sns/31> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/sns/31> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/sns/31> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/sns/31> ns4kge:hasNSMethod <ns-method/kbgan> .
+<configuration/sns/31> ns4kge:result "0.1734"^^xsd:decimal .
+
+<configuration/sns/32> rdf:type ns4kge:Configuration .
+<configuration/sns/32> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sns/32> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/sns/32> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/sns/32> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/sns/32> ns4kge:hasNSMethod <ns-method/uniform-random-negative-sampling> .
+<configuration/sns/32> ns4kge:result "0.1422"^^xsd:decimal .
+
+<configuration/sns/33> rdf:type ns4kge:Configuration .
+<configuration/sns/33> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sns/33> ns4kge:hasDataset <dataset/wn18> .
+<configuration/sns/33> ns4kge:hasMetric  <metric/mrr> .
+<configuration/sns/33> ns4kge:hasKGEModel <kge-model/transh> .
+<configuration/sns/33> ns4kge:hasNSMethod <ns-method/simple-negative-sampling> .
+<configuration/sns/33> ns4kge:result "0.448"^^xsd:decimal .
+
+<configuration/sns/34> rdf:type ns4kge:Configuration .
+<configuration/sns/34> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sns/34> ns4kge:hasDataset <dataset/wn18> .
+<configuration/sns/34> ns4kge:hasMetric  <metric/mrr> .
+<configuration/sns/34> ns4kge:hasKGEModel <kge-model/transh> .
+<configuration/sns/34> ns4kge:hasNSMethod <ns-method/kbgan> .
+<configuration/sns/34> ns4kge:result "0.4183"^^xsd:decimal .
+
+<configuration/sns/35> rdf:type ns4kge:Configuration .
+<configuration/sns/35> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sns/35> ns4kge:hasDataset <dataset/wn18> .
+<configuration/sns/35> ns4kge:hasMetric  <metric/mrr> .
+<configuration/sns/35> ns4kge:hasKGEModel <kge-model/transh> .
+<configuration/sns/35> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/sns/35> ns4kge:result "0.4171"^^xsd:decimal .
+
+<configuration/sns/36> rdf:type ns4kge:Configuration .
+<configuration/sns/36> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sns/36> ns4kge:hasDataset <dataset/wn18> .
+<configuration/sns/36> ns4kge:hasMetric  <metric/mrr> .
+<configuration/sns/36> ns4kge:hasKGEModel <kge-model/transh> .
+<configuration/sns/36> ns4kge:hasNSMethod <ns-method/uniform-random-negative-sampling> .
+<configuration/sns/36> ns4kge:result "0.3199"^^xsd:decimal .
+
+<configuration/sns/37> rdf:type ns4kge:Configuration .
+<configuration/sns/37> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sns/37> ns4kge:hasDataset <dataset/wn18> .
+<configuration/sns/37> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/sns/37> ns4kge:hasKGEModel <kge-model/transh> .
+<configuration/sns/37> ns4kge:hasNSMethod <ns-method/simple-negative-sampling> .
+<configuration/sns/37> ns4kge:result "0.9147"^^xsd:decimal .
+
+<configuration/sns/38> rdf:type ns4kge:Configuration .
+<configuration/sns/38> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sns/38> ns4kge:hasDataset <dataset/wn18> .
+<configuration/sns/38> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/sns/38> ns4kge:hasKGEModel <kge-model/transh> .
+<configuration/sns/38> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/sns/38> ns4kge:result "0.8865"^^xsd:decimal .
+
+<configuration/sns/39> rdf:type ns4kge:Configuration .
+<configuration/sns/39> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sns/39> ns4kge:hasDataset <dataset/wn18> .
+<configuration/sns/39> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/sns/39> ns4kge:hasKGEModel <kge-model/transh> .
+<configuration/sns/39> ns4kge:hasNSMethod <ns-method/kbgan> .
+<configuration/sns/39> ns4kge:result "0.8734"^^xsd:decimal .
+
+<configuration/sns/40> rdf:type ns4kge:Configuration .
+<configuration/sns/40> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sns/40> ns4kge:hasDataset <dataset/wn18> .
+<configuration/sns/40> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/sns/40> ns4kge:hasKGEModel <kge-model/transh> .
+<configuration/sns/40> ns4kge:hasNSMethod <ns-method/uniform-random-negative-sampling> .
+<configuration/sns/40> ns4kge:result "0.7943"^^xsd:decimal .
+
+<configuration/sns/41> rdf:type ns4kge:Configuration .
+<configuration/sns/41> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sns/41> ns4kge:hasDataset <dataset/wn18> .
+<configuration/sns/41> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/sns/41> ns4kge:hasKGEModel <kge-model/transh> .
+<configuration/sns/41> ns4kge:hasNSMethod <ns-method/simple-negative-sampling> .
+<configuration/sns/41> ns4kge:result "0.793"^^xsd:decimal .
+
+<configuration/sns/42> rdf:type ns4kge:Configuration .
+<configuration/sns/42> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sns/42> ns4kge:hasDataset <dataset/wn18> .
+<configuration/sns/42> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/sns/42> ns4kge:hasKGEModel <kge-model/transh> .
+<configuration/sns/42> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/sns/42> ns4kge:result "0.7405"^^xsd:decimal .
+
+<configuration/sns/43> rdf:type ns4kge:Configuration .
+<configuration/sns/43> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sns/43> ns4kge:hasDataset <dataset/wn18> .
+<configuration/sns/43> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/sns/43> ns4kge:hasKGEModel <kge-model/transh> .
+<configuration/sns/43> ns4kge:hasNSMethod <ns-method/kbgan> .
+<configuration/sns/43> ns4kge:result "0.7367"^^xsd:decimal .
+
+<configuration/sns/44> rdf:type ns4kge:Configuration .
+<configuration/sns/44> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sns/44> ns4kge:hasDataset <dataset/wn18> .
+<configuration/sns/44> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/sns/44> ns4kge:hasKGEModel <kge-model/transh> .
+<configuration/sns/44> ns4kge:hasNSMethod <ns-method/uniform-random-negative-sampling> .
+<configuration/sns/44> ns4kge:result "0.6425"^^xsd:decimal .
+
+<configuration/sns/45> rdf:type ns4kge:Configuration .
+<configuration/sns/45> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sns/45> ns4kge:hasDataset <dataset/wn18> .
+<configuration/sns/45> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/sns/45> ns4kge:hasKGEModel <kge-model/transh> .
+<configuration/sns/45> ns4kge:hasNSMethod <ns-method/simple-negative-sampling> .
+<configuration/sns/45> ns4kge:result "0.1928"^^xsd:decimal .
+
+<configuration/sns/46> rdf:type ns4kge:Configuration .
+<configuration/sns/46> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sns/46> ns4kge:hasDataset <dataset/wn18> .
+<configuration/sns/46> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/sns/46> ns4kge:hasKGEModel <kge-model/transh> .
+<configuration/sns/46> ns4kge:hasNSMethod <ns-method/kbgan> .
+<configuration/sns/46> ns4kge:result "0.1809"^^xsd:decimal .
+
+<configuration/sns/47> rdf:type ns4kge:Configuration .
+<configuration/sns/47> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sns/47> ns4kge:hasDataset <dataset/wn18> .
+<configuration/sns/47> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/sns/47> ns4kge:hasKGEModel <kge-model/transh> .
+<configuration/sns/47> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/sns/47> ns4kge:result "0.1748"^^xsd:decimal .
+
+<configuration/sns/48> rdf:type ns4kge:Configuration .
+<configuration/sns/48> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sns/48> ns4kge:hasDataset <dataset/wn18> .
+<configuration/sns/48> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/sns/48> ns4kge:hasKGEModel <kge-model/transh> .
+<configuration/sns/48> ns4kge:hasNSMethod <ns-method/uniform-random-negative-sampling> .
+<configuration/sns/48> ns4kge:result "0.1185"^^xsd:decimal .
+
+<configuration/sns/49> rdf:type ns4kge:Configuration .
+<configuration/sns/49> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sns/49> ns4kge:hasDataset <dataset/wn18> .
+<configuration/sns/49> ns4kge:hasMetric  <metric/mrr> .
+<configuration/sns/49> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/sns/49> ns4kge:hasNSMethod <ns-method/simple-negative-sampling> .
+<configuration/sns/49> ns4kge:result "0.3931"^^xsd:decimal .
+
+<configuration/sns/50> rdf:type ns4kge:Configuration .
+<configuration/sns/50> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sns/50> ns4kge:hasDataset <dataset/wn18> .
+<configuration/sns/50> ns4kge:hasMetric  <metric/mrr> .
+<configuration/sns/50> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/sns/50> ns4kge:hasNSMethod <ns-method/kbgan> .
+<configuration/sns/50> ns4kge:result "0.3791"^^xsd:decimal .
+
+<configuration/sns/51> rdf:type ns4kge:Configuration .
+<configuration/sns/51> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sns/51> ns4kge:hasDataset <dataset/wn18> .
+<configuration/sns/51> ns4kge:hasMetric  <metric/mrr> .
+<configuration/sns/51> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/sns/51> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/sns/51> ns4kge:result "0.3772"^^xsd:decimal .
+
+<configuration/sns/52> rdf:type ns4kge:Configuration .
+<configuration/sns/52> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sns/52> ns4kge:hasDataset <dataset/wn18> .
+<configuration/sns/52> ns4kge:hasMetric  <metric/mrr> .
+<configuration/sns/52> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/sns/52> ns4kge:hasNSMethod <ns-method/uniform-random-negative-sampling> .
+<configuration/sns/52> ns4kge:result "0.3453"^^xsd:decimal .
+
+<configuration/sns/53> rdf:type ns4kge:Configuration .
+<configuration/sns/53> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sns/53> ns4kge:hasDataset <dataset/wn18> .
+<configuration/sns/53> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/sns/53> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/sns/53> ns4kge:hasNSMethod <ns-method/kbgan> .
+<configuration/sns/53> ns4kge:result "0.5728"^^xsd:decimal .
+
+<configuration/sns/54> rdf:type ns4kge:Configuration .
+<configuration/sns/54> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sns/54> ns4kge:hasDataset <dataset/wn18> .
+<configuration/sns/54> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/sns/54> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/sns/54> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/sns/54> ns4kge:result "0.5685"^^xsd:decimal .
+
+<configuration/sns/55> rdf:type ns4kge:Configuration .
+<configuration/sns/55> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sns/55> ns4kge:hasDataset <dataset/wn18> .
+<configuration/sns/55> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/sns/55> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/sns/55> ns4kge:hasNSMethod <ns-method/simple-negative-sampling> .
+<configuration/sns/55> ns4kge:result "0.5646"^^xsd:decimal .
+
+<configuration/sns/56> rdf:type ns4kge:Configuration .
+<configuration/sns/56> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sns/56> ns4kge:hasDataset <dataset/wn18> .
+<configuration/sns/56> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/sns/56> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/sns/56> ns4kge:hasNSMethod <ns-method/uniform-random-negative-sampling> .
+<configuration/sns/56> ns4kge:result "0.5282"^^xsd:decimal .
+
+<configuration/sns/57> rdf:type ns4kge:Configuration .
+<configuration/sns/57> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sns/57> ns4kge:hasDataset <dataset/wn18> .
+<configuration/sns/57> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/sns/57> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/sns/57> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/sns/57> ns4kge:result "0.4218"^^xsd:decimal .
+
+<configuration/sns/58> rdf:type ns4kge:Configuration .
+<configuration/sns/58> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sns/58> ns4kge:hasDataset <dataset/wn18> .
+<configuration/sns/58> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/sns/58> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/sns/58> ns4kge:hasNSMethod <ns-method/simple-negative-sampling> .
+<configuration/sns/58> ns4kge:result "0.4213"^^xsd:decimal .
+
+<configuration/sns/59> rdf:type ns4kge:Configuration .
+<configuration/sns/59> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sns/59> ns4kge:hasDataset <dataset/wn18> .
+<configuration/sns/59> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/sns/59> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/sns/59> ns4kge:hasNSMethod <ns-method/kbgan> .
+<configuration/sns/59> ns4kge:result "0.4197"^^xsd:decimal .
+
+<configuration/sns/60> rdf:type ns4kge:Configuration .
+<configuration/sns/60> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sns/60> ns4kge:hasDataset <dataset/wn18> .
+<configuration/sns/60> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/sns/60> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/sns/60> ns4kge:hasNSMethod <ns-method/uniform-random-negative-sampling> .
+<configuration/sns/60> ns4kge:result "0.3733"^^xsd:decimal .
+
+<configuration/sns/61> rdf:type ns4kge:Configuration .
+<configuration/sns/61> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sns/61> ns4kge:hasDataset <dataset/wn18> .
+<configuration/sns/61> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/sns/61> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/sns/61> ns4kge:hasNSMethod <ns-method/simple-negative-sampling> .
+<configuration/sns/61> ns4kge:result "0.3138"^^xsd:decimal .
+
+<configuration/sns/62> rdf:type ns4kge:Configuration .
+<configuration/sns/62> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sns/62> ns4kge:hasDataset <dataset/wn18> .
+<configuration/sns/62> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/sns/62> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/sns/62> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/sns/62> ns4kge:result "0.2904"^^xsd:decimal .
+
+<configuration/sns/63> rdf:type ns4kge:Configuration .
+<configuration/sns/63> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sns/63> ns4kge:hasDataset <dataset/wn18> .
+<configuration/sns/63> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/sns/63> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/sns/63> ns4kge:hasNSMethod <ns-method/kbgan> .
+<configuration/sns/63> ns4kge:result "0.2839"^^xsd:decimal .
+
+<configuration/sns/64> rdf:type ns4kge:Configuration .
+<configuration/sns/64> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sns/64> ns4kge:hasDataset <dataset/wn18> .
+<configuration/sns/64> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/sns/64> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/sns/64> ns4kge:hasNSMethod <ns-method/uniform-random-negative-sampling> .
+<configuration/sns/64> ns4kge:result "0.2575"^^xsd:decimal .
+
+<configuration/sns/65> rdf:type ns4kge:Configuration .
+<configuration/sns/65> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sns/65> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/sns/65> ns4kge:hasMetric  <metric/mrr> .
+<configuration/sns/65> ns4kge:hasKGEModel <kge-model/transh> .
+<configuration/sns/65> ns4kge:hasNSMethod <ns-method/simple-negative-sampling> .
+<configuration/sns/65> ns4kge:result "0.2514"^^xsd:decimal .
+
+<configuration/sns/66> rdf:type ns4kge:Configuration .
+<configuration/sns/66> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sns/66> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/sns/66> ns4kge:hasMetric  <metric/mrr> .
+<configuration/sns/66> ns4kge:hasKGEModel <kge-model/transh> .
+<configuration/sns/66> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/sns/66> ns4kge:result "0.2476"^^xsd:decimal .
+
+<configuration/sns/67> rdf:type ns4kge:Configuration .
+<configuration/sns/67> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sns/67> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/sns/67> ns4kge:hasMetric  <metric/mrr> .
+<configuration/sns/67> ns4kge:hasKGEModel <kge-model/transh> .
+<configuration/sns/67> ns4kge:hasNSMethod <ns-method/kbgan> .
+<configuration/sns/67> ns4kge:result "0.2162"^^xsd:decimal .
+
+<configuration/sns/68> rdf:type ns4kge:Configuration .
+<configuration/sns/68> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sns/68> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/sns/68> ns4kge:hasMetric  <metric/mrr> .
+<configuration/sns/68> ns4kge:hasKGEModel <kge-model/transh> .
+<configuration/sns/68> ns4kge:hasNSMethod <ns-method/uniform-random-negative-sampling> .
+<configuration/sns/68> ns4kge:result "0.1988"^^xsd:decimal .
+
+<configuration/sns/69> rdf:type ns4kge:Configuration .
+<configuration/sns/69> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sns/69> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/sns/69> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/sns/69> ns4kge:hasKGEModel <kge-model/transh> .
+<configuration/sns/69> ns4kge:hasNSMethod <ns-method/simple-negative-sampling> .
+<configuration/sns/69> ns4kge:result "0.429"^^xsd:decimal .
+
+<configuration/sns/70> rdf:type ns4kge:Configuration .
+<configuration/sns/70> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sns/70> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/sns/70> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/sns/70> ns4kge:hasKGEModel <kge-model/transh> .
+<configuration/sns/70> ns4kge:hasNSMethod <ns-method/kbgan> .
+<configuration/sns/70> ns4kge:result "0.4058"^^xsd:decimal .
+
+<configuration/sns/71> rdf:type ns4kge:Configuration .
+<configuration/sns/71> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sns/71> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/sns/71> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/sns/71> ns4kge:hasKGEModel <kge-model/transh> .
+<configuration/sns/71> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/sns/71> ns4kge:result "0.4039"^^xsd:decimal .
+
+<configuration/sns/72> rdf:type ns4kge:Configuration .
+<configuration/sns/72> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sns/72> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/sns/72> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/sns/72> ns4kge:hasKGEModel <kge-model/transh> .
+<configuration/sns/72> ns4kge:hasNSMethod <ns-method/uniform-random-negative-sampling> .
+<configuration/sns/72> ns4kge:result "0.3668"^^xsd:decimal .
+
+<configuration/sns/73> rdf:type ns4kge:Configuration .
+<configuration/sns/73> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sns/73> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/sns/73> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/sns/73> ns4kge:hasKGEModel <kge-model/transh> .
+<configuration/sns/73> ns4kge:hasNSMethod <ns-method/simple-negative-sampling> .
+<configuration/sns/73> ns4kge:result "0.2944"^^xsd:decimal .
+
+<configuration/sns/74> rdf:type ns4kge:Configuration .
+<configuration/sns/74> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sns/74> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/sns/74> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/sns/74> ns4kge:hasKGEModel <kge-model/transh> .
+<configuration/sns/74> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/sns/74> ns4kge:result "0.2659"^^xsd:decimal .
+
+<configuration/sns/75> rdf:type ns4kge:Configuration .
+<configuration/sns/75> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sns/75> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/sns/75> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/sns/75> ns4kge:hasKGEModel <kge-model/transh> .
+<configuration/sns/75> ns4kge:hasNSMethod <ns-method/kbgan> .
+<configuration/sns/75> ns4kge:result "0.2352"^^xsd:decimal .
+
+<configuration/sns/76> rdf:type ns4kge:Configuration .
+<configuration/sns/76> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sns/76> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/sns/76> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/sns/76> ns4kge:hasKGEModel <kge-model/transh> .
+<configuration/sns/76> ns4kge:hasNSMethod <ns-method/uniform-random-negative-sampling> .
+<configuration/sns/76> ns4kge:result "0.225"^^xsd:decimal .
+
+<configuration/sns/77> rdf:type ns4kge:Configuration .
+<configuration/sns/77> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sns/77> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/sns/77> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/sns/77> ns4kge:hasKGEModel <kge-model/transh> .
+<configuration/sns/77> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/sns/77> ns4kge:result "0.1733"^^xsd:decimal .
+
+<configuration/sns/78> rdf:type ns4kge:Configuration .
+<configuration/sns/78> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sns/78> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/sns/78> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/sns/78> ns4kge:hasKGEModel <kge-model/transh> .
+<configuration/sns/78> ns4kge:hasNSMethod <ns-method/kbgan> .
+<configuration/sns/78> ns4kge:result "0.1523"^^xsd:decimal .
+
+<configuration/sns/79> rdf:type ns4kge:Configuration .
+<configuration/sns/79> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sns/79> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/sns/79> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/sns/79> ns4kge:hasKGEModel <kge-model/transh> .
+<configuration/sns/79> ns4kge:hasNSMethod <ns-method/simple-negative-sampling> .
+<configuration/sns/79> ns4kge:result "0.1518"^^xsd:decimal .
+
+<configuration/sns/80> rdf:type ns4kge:Configuration .
+<configuration/sns/80> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sns/80> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/sns/80> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/sns/80> ns4kge:hasKGEModel <kge-model/transh> .
+<configuration/sns/80> ns4kge:hasNSMethod <ns-method/uniform-random-negative-sampling> .
+<configuration/sns/80> ns4kge:result "0.115"^^xsd:decimal .
+
+<configuration/sns/81> rdf:type ns4kge:Configuration .
+<configuration/sns/81> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sns/81> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/sns/81> ns4kge:hasMetric  <metric/mrr> .
+<configuration/sns/81> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/sns/81> ns4kge:hasNSMethod <ns-method/simple-negative-sampling> .
+<configuration/sns/81> ns4kge:result "0.2471"^^xsd:decimal .
+
+<configuration/sns/82> rdf:type ns4kge:Configuration .
+<configuration/sns/82> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sns/82> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/sns/82> ns4kge:hasMetric  <metric/mrr> .
+<configuration/sns/82> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/sns/82> ns4kge:hasNSMethod <ns-method/kbgan> .
+<configuration/sns/82> ns4kge:result "0.2282"^^xsd:decimal .
+
+<configuration/sns/83> rdf:type ns4kge:Configuration .
+<configuration/sns/83> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sns/83> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/sns/83> ns4kge:hasMetric  <metric/mrr> .
+<configuration/sns/83> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/sns/83> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/sns/83> ns4kge:result "0.2205"^^xsd:decimal .
+
+<configuration/sns/84> rdf:type ns4kge:Configuration .
+<configuration/sns/84> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sns/84> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/sns/84> ns4kge:hasMetric  <metric/mrr> .
+<configuration/sns/84> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/sns/84> ns4kge:hasNSMethod <ns-method/uniform-random-negative-sampling> .
+<configuration/sns/84> ns4kge:result "0.1918"^^xsd:decimal .
+
+<configuration/sns/85> rdf:type ns4kge:Configuration .
+<configuration/sns/85> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sns/85> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/sns/85> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/sns/85> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/sns/85> ns4kge:hasNSMethod <ns-method/simple-negative-sampling> .
+<configuration/sns/85> ns4kge:result "0.3818"^^xsd:decimal .
+
+<configuration/sns/86> rdf:type ns4kge:Configuration .
+<configuration/sns/86> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sns/86> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/sns/86> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/sns/86> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/sns/86> ns4kge:hasNSMethod <ns-method/kbgan> .
+<configuration/sns/86> ns4kge:result "0.3623"^^xsd:decimal .
+
+<configuration/sns/87> rdf:type ns4kge:Configuration .
+<configuration/sns/87> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sns/87> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/sns/87> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/sns/87> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/sns/87> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/sns/87> ns4kge:result "0.3487"^^xsd:decimal .
+
+<configuration/sns/88> rdf:type ns4kge:Configuration .
+<configuration/sns/88> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sns/88> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/sns/88> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/sns/88> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/sns/88> ns4kge:hasNSMethod <ns-method/uniform-random-negative-sampling> .
+<configuration/sns/88> ns4kge:result "0.3182"^^xsd:decimal .
+
+<configuration/sns/89> rdf:type ns4kge:Configuration .
+<configuration/sns/89> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sns/89> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/sns/89> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/sns/89> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/sns/89> ns4kge:hasNSMethod <ns-method/kbgan> .
+<configuration/sns/89> ns4kge:result "0.2723"^^xsd:decimal .
+
+<configuration/sns/90> rdf:type ns4kge:Configuration .
+<configuration/sns/90> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sns/90> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/sns/90> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/sns/90> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/sns/90> ns4kge:hasNSMethod <ns-method/simple-negative-sampling> .
+<configuration/sns/90> ns4kge:result "0.2697"^^xsd:decimal .
+
+<configuration/sns/91> rdf:type ns4kge:Configuration .
+<configuration/sns/91> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sns/91> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/sns/91> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/sns/91> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/sns/91> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/sns/91> ns4kge:result "0.2569"^^xsd:decimal .
+
+<configuration/sns/92> rdf:type ns4kge:Configuration .
+<configuration/sns/92> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sns/92> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/sns/92> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/sns/92> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/sns/92> ns4kge:hasNSMethod <ns-method/uniform-random-negative-sampling> .
+<configuration/sns/92> ns4kge:result "0.2071"^^xsd:decimal .
+
+<configuration/sns/93> rdf:type ns4kge:Configuration .
+<configuration/sns/93> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sns/93> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/sns/93> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/sns/93> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/sns/93> ns4kge:hasNSMethod <ns-method/simple-negative-sampling> .
+<configuration/sns/93> ns4kge:result "0.178"^^xsd:decimal .
+
+<configuration/sns/94> rdf:type ns4kge:Configuration .
+<configuration/sns/94> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sns/94> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/sns/94> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/sns/94> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/sns/94> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/sns/94> ns4kge:result "0.1572"^^xsd:decimal .
+
+<configuration/sns/95> rdf:type ns4kge:Configuration .
+<configuration/sns/95> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sns/95> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/sns/95> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/sns/95> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/sns/95> ns4kge:hasNSMethod <ns-method/kbgan> .
+<configuration/sns/95> ns4kge:result "0.1302"^^xsd:decimal .
+
+<configuration/sns/96> rdf:type ns4kge:Configuration .
+<configuration/sns/96> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sns/96> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/sns/96> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/sns/96> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/sns/96> ns4kge:hasNSMethod <ns-method/uniform-random-negative-sampling> .
+<configuration/sns/96> ns4kge:result "0.1296"^^xsd:decimal .
+
+<configuration/sns/97> rdf:type ns4kge:Configuration .
+<configuration/sns/97> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sns/97> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/sns/97> ns4kge:hasMetric  <metric/mrr> .
+<configuration/sns/97> ns4kge:hasKGEModel <kge-model/transh> .
+<configuration/sns/97> ns4kge:hasNSMethod <ns-method/simple-negative-sampling> .
+<configuration/sns/97> ns4kge:result "0.436"^^xsd:decimal .
+
+<configuration/sns/98> rdf:type ns4kge:Configuration .
+<configuration/sns/98> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sns/98> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/sns/98> ns4kge:hasMetric  <metric/mrr> .
+<configuration/sns/98> ns4kge:hasKGEModel <kge-model/transh> .
+<configuration/sns/98> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/sns/98> ns4kge:result "0.3926"^^xsd:decimal .
+
+<configuration/sns/99> rdf:type ns4kge:Configuration .
+<configuration/sns/99> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sns/99> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/sns/99> ns4kge:hasMetric  <metric/mrr> .
+<configuration/sns/99> ns4kge:hasKGEModel <kge-model/transh> .
+<configuration/sns/99> ns4kge:hasNSMethod <ns-method/kbgan> .
+<configuration/sns/99> ns4kge:result "0.3228"^^xsd:decimal .
+
+<configuration/sns/100> rdf:type ns4kge:Configuration .
+<configuration/sns/100> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sns/100> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/sns/100> ns4kge:hasMetric  <metric/mrr> .
+<configuration/sns/100> ns4kge:hasKGEModel <kge-model/transh> .
+<configuration/sns/100> ns4kge:hasNSMethod <ns-method/uniform-random-negative-sampling> .
+<configuration/sns/100> ns4kge:result "0.3115"^^xsd:decimal .
+
+<configuration/sns/101> rdf:type ns4kge:Configuration .
+<configuration/sns/101> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sns/101> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/sns/101> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/sns/101> ns4kge:hasKGEModel <kge-model/transh> .
+<configuration/sns/101> ns4kge:hasNSMethod <ns-method/simple-negative-sampling> .
+<configuration/sns/101> ns4kge:result "0.6672"^^xsd:decimal .
+
+<configuration/sns/102> rdf:type ns4kge:Configuration .
+<configuration/sns/102> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sns/102> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/sns/102> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/sns/102> ns4kge:hasKGEModel <kge-model/transh> .
+<configuration/sns/102> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/sns/102> ns4kge:result "0.6122"^^xsd:decimal .
+
+<configuration/sns/103> rdf:type ns4kge:Configuration .
+<configuration/sns/103> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sns/103> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/sns/103> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/sns/103> ns4kge:hasKGEModel <kge-model/transh> .
+<configuration/sns/103> ns4kge:hasNSMethod <ns-method/kbgan> .
+<configuration/sns/103> ns4kge:result "0.5367"^^xsd:decimal .
+
+<configuration/sns/104> rdf:type ns4kge:Configuration .
+<configuration/sns/104> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sns/104> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/sns/104> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/sns/104> ns4kge:hasKGEModel <kge-model/transh> .
+<configuration/sns/104> ns4kge:hasNSMethod <ns-method/uniform-random-negative-sampling> .
+<configuration/sns/104> ns4kge:result "0.5288"^^xsd:decimal .
+
+<configuration/sns/105> rdf:type ns4kge:Configuration .
+<configuration/sns/105> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sns/105> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/sns/105> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/sns/105> ns4kge:hasKGEModel <kge-model/transh> .
+<configuration/sns/105> ns4kge:hasNSMethod <ns-method/simple-negative-sampling> .
+<configuration/sns/105> ns4kge:result "0.5152"^^xsd:decimal .
+
+<configuration/sns/106> rdf:type ns4kge:Configuration .
+<configuration/sns/106> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sns/106> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/sns/106> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/sns/106> ns4kge:hasKGEModel <kge-model/transh> .
+<configuration/sns/106> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/sns/106> ns4kge:result "0.4499"^^xsd:decimal .
+
+<configuration/sns/107> rdf:type ns4kge:Configuration .
+<configuration/sns/107> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sns/107> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/sns/107> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/sns/107> ns4kge:hasKGEModel <kge-model/transh> .
+<configuration/sns/107> ns4kge:hasNSMethod <ns-method/kbgan> .
+<configuration/sns/107> ns4kge:result "0.3834"^^xsd:decimal .
+
+<configuration/sns/108> rdf:type ns4kge:Configuration .
+<configuration/sns/108> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sns/108> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/sns/108> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/sns/108> ns4kge:hasKGEModel <kge-model/transh> .
+<configuration/sns/108> ns4kge:hasNSMethod <ns-method/uniform-random-negative-sampling> .
+<configuration/sns/108> ns4kge:result "0.3668"^^xsd:decimal .
+
+<configuration/sns/109> rdf:type ns4kge:Configuration .
+<configuration/sns/109> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sns/109> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/sns/109> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/sns/109> ns4kge:hasKGEModel <kge-model/transh> .
+<configuration/sns/109> ns4kge:hasNSMethod <ns-method/simple-negative-sampling> .
+<configuration/sns/109> ns4kge:result "0.3058"^^xsd:decimal .
+
+<configuration/sns/110> rdf:type ns4kge:Configuration .
+<configuration/sns/110> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sns/110> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/sns/110> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/sns/110> ns4kge:hasKGEModel <kge-model/transh> .
+<configuration/sns/110> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/sns/110> ns4kge:result "0.255"^^xsd:decimal .
+
+<configuration/sns/111> rdf:type ns4kge:Configuration .
+<configuration/sns/111> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sns/111> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/sns/111> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/sns/111> ns4kge:hasKGEModel <kge-model/transh> .
+<configuration/sns/111> ns4kge:hasNSMethod <ns-method/kbgan> .
+<configuration/sns/111> ns4kge:result "0.2052"^^xsd:decimal .
+
+<configuration/sns/112> rdf:type ns4kge:Configuration .
+<configuration/sns/112> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sns/112> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/sns/112> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/sns/112> ns4kge:hasKGEModel <kge-model/transh> .
+<configuration/sns/112> ns4kge:hasNSMethod <ns-method/uniform-random-negative-sampling> .
+<configuration/sns/112> ns4kge:result "0.1958"^^xsd:decimal .
+
+<configuration/sns/113> rdf:type ns4kge:Configuration .
+<configuration/sns/113> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sns/113> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/sns/113> ns4kge:hasMetric  <metric/mrr> .
+<configuration/sns/113> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/sns/113> ns4kge:hasNSMethod <ns-method/simple-negative-sampling> .
+<configuration/sns/113> ns4kge:result "0.2937"^^xsd:decimal .
+
+<configuration/sns/114> rdf:type ns4kge:Configuration .
+<configuration/sns/114> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sns/114> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/sns/114> ns4kge:hasMetric  <metric/mrr> .
+<configuration/sns/114> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/sns/114> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/sns/114> ns4kge:result "0.2327"^^xsd:decimal .
+
+<configuration/sns/115> rdf:type ns4kge:Configuration .
+<configuration/sns/115> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sns/115> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/sns/115> ns4kge:hasMetric  <metric/mrr> .
+<configuration/sns/115> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/sns/115> ns4kge:hasNSMethod <ns-method/kbgan> .
+<configuration/sns/115> ns4kge:result "0.2203"^^xsd:decimal .
+
+<configuration/sns/116> rdf:type ns4kge:Configuration .
+<configuration/sns/116> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sns/116> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/sns/116> ns4kge:hasMetric  <metric/mrr> .
+<configuration/sns/116> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/sns/116> ns4kge:hasNSMethod <ns-method/uniform-random-negative-sampling> .
+<configuration/sns/116> ns4kge:result "0.2188"^^xsd:decimal .
+
+<configuration/sns/117> rdf:type ns4kge:Configuration .
+<configuration/sns/117> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sns/117> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/sns/117> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/sns/117> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/sns/117> ns4kge:hasNSMethod <ns-method/simple-negative-sampling> .
+<configuration/sns/117> ns4kge:result "0.4562"^^xsd:decimal .
+
+<configuration/sns/118> rdf:type ns4kge:Configuration .
+<configuration/sns/118> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sns/118> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/sns/118> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/sns/118> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/sns/118> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/sns/118> ns4kge:result "0.3989"^^xsd:decimal .
+
+<configuration/sns/119> rdf:type ns4kge:Configuration .
+<configuration/sns/119> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sns/119> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/sns/119> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/sns/119> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/sns/119> ns4kge:hasNSMethod <ns-method/kbgan> .
+<configuration/sns/119> ns4kge:result "0.3554"^^xsd:decimal .
+
+<configuration/sns/120> rdf:type ns4kge:Configuration .
+<configuration/sns/120> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sns/120> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/sns/120> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/sns/120> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/sns/120> ns4kge:hasNSMethod <ns-method/uniform-random-negative-sampling> .
+<configuration/sns/120> ns4kge:result "0.3325"^^xsd:decimal .
+
+<configuration/sns/121> rdf:type ns4kge:Configuration .
+<configuration/sns/121> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sns/121> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/sns/121> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/sns/121> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/sns/121> ns4kge:hasNSMethod <ns-method/simple-negative-sampling> .
+<configuration/sns/121> ns4kge:result "0.3266"^^xsd:decimal .
+
+<configuration/sns/122> rdf:type ns4kge:Configuration .
+<configuration/sns/122> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sns/122> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/sns/122> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/sns/122> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/sns/122> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/sns/122> ns4kge:result "0.2741"^^xsd:decimal .
+
+<configuration/sns/123> rdf:type ns4kge:Configuration .
+<configuration/sns/123> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sns/123> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/sns/123> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/sns/123> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/sns/123> ns4kge:hasNSMethod <ns-method/kbgan> .
+<configuration/sns/123> ns4kge:result "0.2312"^^xsd:decimal .
+
+<configuration/sns/124> rdf:type ns4kge:Configuration .
+<configuration/sns/124> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sns/124> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/sns/124> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/sns/124> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/sns/124> ns4kge:hasNSMethod <ns-method/uniform-random-negative-sampling> .
+<configuration/sns/124> ns4kge:result "0.2184"^^xsd:decimal .
+
+<configuration/sns/125> rdf:type ns4kge:Configuration .
+<configuration/sns/125> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sns/125> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/sns/125> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/sns/125> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/sns/125> ns4kge:hasNSMethod <ns-method/simple-negative-sampling> .
+<configuration/sns/125> ns4kge:result "0.2079"^^xsd:decimal .
+
+<configuration/sns/126> rdf:type ns4kge:Configuration .
+<configuration/sns/126> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sns/126> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/sns/126> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/sns/126> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/sns/126> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/sns/126> ns4kge:result "0.1619"^^xsd:decimal .
+
+<configuration/sns/127> rdf:type ns4kge:Configuration .
+<configuration/sns/127> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sns/127> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/sns/127> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/sns/127> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/sns/127> ns4kge:hasNSMethod <ns-method/kbgan> .
+<configuration/sns/127> ns4kge:result "0.1592"^^xsd:decimal .
+
+<configuration/sns/128> rdf:type ns4kge:Configuration .
+<configuration/sns/128> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sns/128> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/sns/128> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/sns/128> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/sns/128> ns4kge:hasNSMethod <ns-method/uniform-random-negative-sampling> .
+<configuration/sns/128> ns4kge:result "0.1295"^^xsd:decimal .
+
+<configuration/sns/129> rdf:type ns4kge:Configuration .
+<configuration/sns/129> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sns/129> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/sns/129> ns4kge:hasMetric  <metric/mrr> .
+<configuration/sns/129> ns4kge:hasKGEModel <kge-model/transh> .
+<configuration/sns/129> ns4kge:hasNSMethod <ns-method/simple-negative-sampling> .
+<configuration/sns/129> ns4kge:result "0.1488"^^xsd:decimal .
+
+<configuration/sns/130> rdf:type ns4kge:Configuration .
+<configuration/sns/130> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sns/130> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/sns/130> ns4kge:hasMetric  <metric/mrr> .
+<configuration/sns/130> ns4kge:hasKGEModel <kge-model/transh> .
+<configuration/sns/130> ns4kge:hasNSMethod <ns-method/kbgan> .
+<configuration/sns/130> ns4kge:result "0.1467"^^xsd:decimal .
+
+<configuration/sns/131> rdf:type ns4kge:Configuration .
+<configuration/sns/131> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sns/131> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/sns/131> ns4kge:hasMetric  <metric/mrr> .
+<configuration/sns/131> ns4kge:hasKGEModel <kge-model/transh> .
+<configuration/sns/131> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/sns/131> ns4kge:result "0.1431"^^xsd:decimal .
+
+<configuration/sns/132> rdf:type ns4kge:Configuration .
+<configuration/sns/132> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sns/132> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/sns/132> ns4kge:hasMetric  <metric/mrr> .
+<configuration/sns/132> ns4kge:hasKGEModel <kge-model/transh> .
+<configuration/sns/132> ns4kge:hasNSMethod <ns-method/uniform-random-negative-sampling> .
+<configuration/sns/132> ns4kge:result "0.085"^^xsd:decimal .
+
+<configuration/sns/133> rdf:type ns4kge:Configuration .
+<configuration/sns/133> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sns/133> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/sns/133> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/sns/133> ns4kge:hasKGEModel <kge-model/transh> .
+<configuration/sns/133> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/sns/133> ns4kge:result "0.2676"^^xsd:decimal .
+
+<configuration/sns/134> rdf:type ns4kge:Configuration .
+<configuration/sns/134> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sns/134> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/sns/134> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/sns/134> ns4kge:hasKGEModel <kge-model/transh> .
+<configuration/sns/134> ns4kge:hasNSMethod <ns-method/simple-negative-sampling> .
+<configuration/sns/134> ns4kge:result "0.2672"^^xsd:decimal .
+
+<configuration/sns/135> rdf:type ns4kge:Configuration .
+<configuration/sns/135> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sns/135> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/sns/135> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/sns/135> ns4kge:hasKGEModel <kge-model/transh> .
+<configuration/sns/135> ns4kge:hasNSMethod <ns-method/kbgan> .
+<configuration/sns/135> ns4kge:result "0.2608"^^xsd:decimal .
+
+<configuration/sns/136> rdf:type ns4kge:Configuration .
+<configuration/sns/136> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sns/136> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/sns/136> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/sns/136> ns4kge:hasKGEModel <kge-model/transh> .
+<configuration/sns/136> ns4kge:hasNSMethod <ns-method/uniform-random-negative-sampling> .
+<configuration/sns/136> ns4kge:result "0.1896"^^xsd:decimal .
+
+<configuration/sns/137> rdf:type ns4kge:Configuration .
+<configuration/sns/137> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sns/137> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/sns/137> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/sns/137> ns4kge:hasKGEModel <kge-model/transh> .
+<configuration/sns/137> ns4kge:hasNSMethod <ns-method/simple-negative-sampling> .
+<configuration/sns/137> ns4kge:result "0.1623"^^xsd:decimal .
+
+<configuration/sns/138> rdf:type ns4kge:Configuration .
+<configuration/sns/138> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sns/138> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/sns/138> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/sns/138> ns4kge:hasKGEModel <kge-model/transh> .
+<configuration/sns/138> ns4kge:hasNSMethod <ns-method/kbgan> .
+<configuration/sns/138> ns4kge:result "0.1603"^^xsd:decimal .
+
+<configuration/sns/139> rdf:type ns4kge:Configuration .
+<configuration/sns/139> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sns/139> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/sns/139> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/sns/139> ns4kge:hasKGEModel <kge-model/transh> .
+<configuration/sns/139> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/sns/139> ns4kge:result "0.1597"^^xsd:decimal .
+
+<configuration/sns/140> rdf:type ns4kge:Configuration .
+<configuration/sns/140> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sns/140> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/sns/140> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/sns/140> ns4kge:hasKGEModel <kge-model/transh> .
+<configuration/sns/140> ns4kge:hasNSMethod <ns-method/uniform-random-negative-sampling> .
+<configuration/sns/140> ns4kge:result "0.0905"^^xsd:decimal .
+
+<configuration/sns/141> rdf:type ns4kge:Configuration .
+<configuration/sns/141> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sns/141> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/sns/141> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/sns/141> ns4kge:hasKGEModel <kge-model/transh> .
+<configuration/sns/141> ns4kge:hasNSMethod <ns-method/simple-negative-sampling> .
+<configuration/sns/141> ns4kge:result "0.0887"^^xsd:decimal .
+
+<configuration/sns/142> rdf:type ns4kge:Configuration .
+<configuration/sns/142> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sns/142> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/sns/142> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/sns/142> ns4kge:hasKGEModel <kge-model/transh> .
+<configuration/sns/142> ns4kge:hasNSMethod <ns-method/kbgan> .
+<configuration/sns/142> ns4kge:result "0.0834"^^xsd:decimal .
+
+<configuration/sns/143> rdf:type ns4kge:Configuration .
+<configuration/sns/143> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sns/143> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/sns/143> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/sns/143> ns4kge:hasKGEModel <kge-model/transh> .
+<configuration/sns/143> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/sns/143> ns4kge:result "0.0749"^^xsd:decimal .
+
+<configuration/sns/144> rdf:type ns4kge:Configuration .
+<configuration/sns/144> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sns/144> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/sns/144> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/sns/144> ns4kge:hasKGEModel <kge-model/transh> .
+<configuration/sns/144> ns4kge:hasNSMethod <ns-method/uniform-random-negative-sampling> .
+<configuration/sns/144> ns4kge:result "0.0124"^^xsd:decimal .
+
+<configuration/sns/145> rdf:type ns4kge:Configuration .
+<configuration/sns/145> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sns/145> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/sns/145> ns4kge:hasMetric  <metric/mrr> .
+<configuration/sns/145> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/sns/145> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/sns/145> ns4kge:result "0.0875"^^xsd:decimal .
+
+<configuration/sns/146> rdf:type ns4kge:Configuration .
+<configuration/sns/146> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sns/146> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/sns/146> ns4kge:hasMetric  <metric/mrr> .
+<configuration/sns/146> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/sns/146> ns4kge:hasNSMethod <ns-method/simple-negative-sampling> .
+<configuration/sns/146> ns4kge:result "0.0804"^^xsd:decimal .
+
+<configuration/sns/147> rdf:type ns4kge:Configuration .
+<configuration/sns/147> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sns/147> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/sns/147> ns4kge:hasMetric  <metric/mrr> .
+<configuration/sns/147> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/sns/147> ns4kge:hasNSMethod <ns-method/kbgan> .
+<configuration/sns/147> ns4kge:result "0.0712"^^xsd:decimal .
+
+<configuration/sns/148> rdf:type ns4kge:Configuration .
+<configuration/sns/148> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sns/148> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/sns/148> ns4kge:hasMetric  <metric/mrr> .
+<configuration/sns/148> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/sns/148> ns4kge:hasNSMethod <ns-method/uniform-random-negative-sampling> .
+<configuration/sns/148> ns4kge:result "0.0533"^^xsd:decimal .
+
+<configuration/sns/149> rdf:type ns4kge:Configuration .
+<configuration/sns/149> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sns/149> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/sns/149> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/sns/149> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/sns/149> ns4kge:hasNSMethod <ns-method/simple-negative-sampling> .
+<configuration/sns/149> ns4kge:result "0.1672"^^xsd:decimal .
+
+<configuration/sns/150> rdf:type ns4kge:Configuration .
+<configuration/sns/150> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sns/150> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/sns/150> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/sns/150> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/sns/150> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/sns/150> ns4kge:result "0.1422"^^xsd:decimal .
+
+<configuration/sns/151> rdf:type ns4kge:Configuration .
+<configuration/sns/151> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sns/151> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/sns/151> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/sns/151> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/sns/151> ns4kge:hasNSMethod <ns-method/kbgan> .
+<configuration/sns/151> ns4kge:result "0.1398"^^xsd:decimal .
+
+<configuration/sns/152> rdf:type ns4kge:Configuration .
+<configuration/sns/152> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sns/152> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/sns/152> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/sns/152> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/sns/152> ns4kge:hasNSMethod <ns-method/uniform-random-negative-sampling> .
+<configuration/sns/152> ns4kge:result "0.1059"^^xsd:decimal .
+
+<configuration/sns/153> rdf:type ns4kge:Configuration .
+<configuration/sns/153> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sns/153> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/sns/153> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/sns/153> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/sns/153> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/sns/153> ns4kge:result "0.0886"^^xsd:decimal .
+
+<configuration/sns/154> rdf:type ns4kge:Configuration .
+<configuration/sns/154> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sns/154> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/sns/154> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/sns/154> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/sns/154> ns4kge:hasNSMethod <ns-method/simple-negative-sampling> .
+<configuration/sns/154> ns4kge:result "0.0839"^^xsd:decimal .
+
+<configuration/sns/155> rdf:type ns4kge:Configuration .
+<configuration/sns/155> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sns/155> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/sns/155> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/sns/155> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/sns/155> ns4kge:hasNSMethod <ns-method/kbgan> .
+<configuration/sns/155> ns4kge:result "0.0779"^^xsd:decimal .
+
+<configuration/sns/156> rdf:type ns4kge:Configuration .
+<configuration/sns/156> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sns/156> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/sns/156> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/sns/156> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/sns/156> ns4kge:hasNSMethod <ns-method/uniform-random-negative-sampling> .
+<configuration/sns/156> ns4kge:result "0.0544"^^xsd:decimal .
+
+<configuration/sns/157> rdf:type ns4kge:Configuration .
+<configuration/sns/157> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sns/157> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/sns/157> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/sns/157> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/sns/157> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/sns/157> ns4kge:result "0.0564"^^xsd:decimal .
+
+<configuration/sns/158> rdf:type ns4kge:Configuration .
+<configuration/sns/158> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sns/158> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/sns/158> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/sns/158> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/sns/158> ns4kge:hasNSMethod <ns-method/simple-negative-sampling> .
+<configuration/sns/158> ns4kge:result "0.0498"^^xsd:decimal .
+
+<configuration/sns/159> rdf:type ns4kge:Configuration .
+<configuration/sns/159> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sns/159> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/sns/159> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/sns/159> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/sns/159> ns4kge:hasNSMethod <ns-method/kbgan> .
+<configuration/sns/159> ns4kge:result "0.0319"^^xsd:decimal .
+
+<configuration/sns/160> rdf:type ns4kge:Configuration .
+<configuration/sns/160> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sns/160> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/sns/160> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/sns/160> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/sns/160> ns4kge:hasNSMethod <ns-method/uniform-random-negative-sampling> .
+<configuration/sns/160> ns4kge:result "0.0235"^^xsd:decimal .
+
+<configuration/sns/161> rdf:type ns4kge:Configuration .
+<configuration/sns/161> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sns/161> ns4kge:hasDataset <dataset/fight-hf-23r> .
+<configuration/sns/161> ns4kge:hasMetric  <metric/mrr> .
+<configuration/sns/161> ns4kge:hasKGEModel <kge-model/transh> .
+<configuration/sns/161> ns4kge:hasNSMethod <ns-method/simple-negative-sampling> .
+<configuration/sns/161> ns4kge:result "0.041"^^xsd:decimal .
+
+<configuration/sns/162> rdf:type ns4kge:Configuration .
+<configuration/sns/162> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sns/162> ns4kge:hasDataset <dataset/fight-hf-23r> .
+<configuration/sns/162> ns4kge:hasMetric  <metric/mrr> .
+<configuration/sns/162> ns4kge:hasKGEModel <kge-model/transh> .
+<configuration/sns/162> ns4kge:hasNSMethod <ns-method/kbgan> .
+<configuration/sns/162> ns4kge:result "0.0342"^^xsd:decimal .
+
+<configuration/sns/163> rdf:type ns4kge:Configuration .
+<configuration/sns/163> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sns/163> ns4kge:hasDataset <dataset/fight-hf-23r> .
+<configuration/sns/163> ns4kge:hasMetric  <metric/mrr> .
+<configuration/sns/163> ns4kge:hasKGEModel <kge-model/transh> .
+<configuration/sns/163> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/sns/163> ns4kge:result "0.0294"^^xsd:decimal .
+
+<configuration/sns/164> rdf:type ns4kge:Configuration .
+<configuration/sns/164> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sns/164> ns4kge:hasDataset <dataset/fight-hf-23r> .
+<configuration/sns/164> ns4kge:hasMetric  <metric/mrr> .
+<configuration/sns/164> ns4kge:hasKGEModel <kge-model/transh> .
+<configuration/sns/164> ns4kge:hasNSMethod <ns-method/uniform-random-negative-sampling> .
+<configuration/sns/164> ns4kge:result "0.02"^^xsd:decimal .
+
+<configuration/sns/165> rdf:type ns4kge:Configuration .
+<configuration/sns/165> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sns/165> ns4kge:hasDataset <dataset/fight-hf-23r> .
+<configuration/sns/165> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/sns/165> ns4kge:hasKGEModel <kge-model/transh> .
+<configuration/sns/165> ns4kge:hasNSMethod <ns-method/simple-negative-sampling> .
+<configuration/sns/165> ns4kge:result "0.0892"^^xsd:decimal .
+
+<configuration/sns/166> rdf:type ns4kge:Configuration .
+<configuration/sns/166> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sns/166> ns4kge:hasDataset <dataset/fight-hf-23r> .
+<configuration/sns/166> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/sns/166> ns4kge:hasKGEModel <kge-model/transh> .
+<configuration/sns/166> ns4kge:hasNSMethod <ns-method/kbgan> .
+<configuration/sns/166> ns4kge:result "0.0724"^^xsd:decimal .
+
+<configuration/sns/167> rdf:type ns4kge:Configuration .
+<configuration/sns/167> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sns/167> ns4kge:hasDataset <dataset/fight-hf-23r> .
+<configuration/sns/167> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/sns/167> ns4kge:hasKGEModel <kge-model/transh> .
+<configuration/sns/167> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/sns/167> ns4kge:result "0.0696"^^xsd:decimal .
+
+<configuration/sns/168> rdf:type ns4kge:Configuration .
+<configuration/sns/168> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sns/168> ns4kge:hasDataset <dataset/fight-hf-23r> .
+<configuration/sns/168> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/sns/168> ns4kge:hasKGEModel <kge-model/transh> .
+<configuration/sns/168> ns4kge:hasNSMethod <ns-method/uniform-random-negative-sampling> .
+<configuration/sns/168> ns4kge:result "0.0395"^^xsd:decimal .
+
+<configuration/sns/169> rdf:type ns4kge:Configuration .
+<configuration/sns/169> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sns/169> ns4kge:hasDataset <dataset/fight-hf-23r> .
+<configuration/sns/169> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/sns/169> ns4kge:hasKGEModel <kge-model/transh> .
+<configuration/sns/169> ns4kge:hasNSMethod <ns-method/kbgan> .
+<configuration/sns/169> ns4kge:result "0.0289"^^xsd:decimal .
+
+<configuration/sns/170> rdf:type ns4kge:Configuration .
+<configuration/sns/170> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sns/170> ns4kge:hasDataset <dataset/fight-hf-23r> .
+<configuration/sns/170> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/sns/170> ns4kge:hasKGEModel <kge-model/transh> .
+<configuration/sns/170> ns4kge:hasNSMethod <ns-method/simple-negative-sampling> .
+<configuration/sns/170> ns4kge:result "0.0206"^^xsd:decimal .
+
+<configuration/sns/171> rdf:type ns4kge:Configuration .
+<configuration/sns/171> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sns/171> ns4kge:hasDataset <dataset/fight-hf-23r> .
+<configuration/sns/171> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/sns/171> ns4kge:hasKGEModel <kge-model/transh> .
+<configuration/sns/171> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/sns/171> ns4kge:result "0.0197"^^xsd:decimal .
+
+<configuration/sns/172> rdf:type ns4kge:Configuration .
+<configuration/sns/172> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sns/172> ns4kge:hasDataset <dataset/fight-hf-23r> .
+<configuration/sns/172> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/sns/172> ns4kge:hasKGEModel <kge-model/transh> .
+<configuration/sns/172> ns4kge:hasNSMethod <ns-method/uniform-random-negative-sampling> .
+<configuration/sns/172> ns4kge:result "0.0186"^^xsd:decimal .
+
+<configuration/sns/173> rdf:type ns4kge:Configuration .
+<configuration/sns/173> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sns/173> ns4kge:hasDataset <dataset/fight-hf-23r> .
+<configuration/sns/173> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/sns/173> ns4kge:hasKGEModel <kge-model/transh> .
+<configuration/sns/173> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/sns/173> ns4kge:result "0.66"^^xsd:decimal .
+
+<configuration/sns/174> rdf:type ns4kge:Configuration .
+<configuration/sns/174> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sns/174> ns4kge:hasDataset <dataset/fight-hf-23r> .
+<configuration/sns/174> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/sns/174> ns4kge:hasKGEModel <kge-model/transh> .
+<configuration/sns/174> ns4kge:hasNSMethod <ns-method/simple-negative-sampling> .
+<configuration/sns/174> ns4kge:result "0.64"^^xsd:decimal .
+
+<configuration/sns/175> rdf:type ns4kge:Configuration .
+<configuration/sns/175> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sns/175> ns4kge:hasDataset <dataset/fight-hf-23r> .
+<configuration/sns/175> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/sns/175> ns4kge:hasKGEModel <kge-model/transh> .
+<configuration/sns/175> ns4kge:hasNSMethod <ns-method/uniform-random-negative-sampling> .
+<configuration/sns/175> ns4kge:result "0.63"^^xsd:decimal .
+
+<configuration/sns/176> rdf:type ns4kge:Configuration .
+<configuration/sns/176> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sns/176> ns4kge:hasDataset <dataset/fight-hf-23r> .
+<configuration/sns/176> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/sns/176> ns4kge:hasKGEModel <kge-model/transh> .
+<configuration/sns/176> ns4kge:hasNSMethod <ns-method/kbgan> .
+<configuration/sns/176> ns4kge:result "0.59"^^xsd:decimal .
+
+<configuration/sns/177> rdf:type ns4kge:Configuration .
+<configuration/sns/177> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sns/177> ns4kge:hasDataset <dataset/fight-hf-23r> .
+<configuration/sns/177> ns4kge:hasMetric  <metric/mrr> .
+<configuration/sns/177> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/sns/177> ns4kge:hasNSMethod <ns-method/simple-negative-sampling> .
+<configuration/sns/177> ns4kge:result "0.1899"^^xsd:decimal .
+
+<configuration/sns/178> rdf:type ns4kge:Configuration .
+<configuration/sns/178> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sns/178> ns4kge:hasDataset <dataset/fight-hf-23r> .
+<configuration/sns/178> ns4kge:hasMetric  <metric/mrr> .
+<configuration/sns/178> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/sns/178> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/sns/178> ns4kge:result "0.1863"^^xsd:decimal .
+
+<configuration/sns/179> rdf:type ns4kge:Configuration .
+<configuration/sns/179> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sns/179> ns4kge:hasDataset <dataset/fight-hf-23r> .
+<configuration/sns/179> ns4kge:hasMetric  <metric/mrr> .
+<configuration/sns/179> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/sns/179> ns4kge:hasNSMethod <ns-method/kbgan> .
+<configuration/sns/179> ns4kge:result "0.1681"^^xsd:decimal .
+
+<configuration/sns/180> rdf:type ns4kge:Configuration .
+<configuration/sns/180> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sns/180> ns4kge:hasDataset <dataset/fight-hf-23r> .
+<configuration/sns/180> ns4kge:hasMetric  <metric/mrr> .
+<configuration/sns/180> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/sns/180> ns4kge:hasNSMethod <ns-method/uniform-random-negative-sampling> .
+<configuration/sns/180> ns4kge:result "0.1439"^^xsd:decimal .
+
+<configuration/sns/181> rdf:type ns4kge:Configuration .
+<configuration/sns/181> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sns/181> ns4kge:hasDataset <dataset/fight-hf-23r> .
+<configuration/sns/181> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/sns/181> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/sns/181> ns4kge:hasNSMethod <ns-method/simple-negative-sampling> .
+<configuration/sns/181> ns4kge:result "0.3378"^^xsd:decimal .
+
+<configuration/sns/182> rdf:type ns4kge:Configuration .
+<configuration/sns/182> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sns/182> ns4kge:hasDataset <dataset/fight-hf-23r> .
+<configuration/sns/182> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/sns/182> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/sns/182> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/sns/182> ns4kge:result "0.3036"^^xsd:decimal .
+
+<configuration/sns/183> rdf:type ns4kge:Configuration .
+<configuration/sns/183> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sns/183> ns4kge:hasDataset <dataset/fight-hf-23r> .
+<configuration/sns/183> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/sns/183> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/sns/183> ns4kge:hasNSMethod <ns-method/kbgan> .
+<configuration/sns/183> ns4kge:result "0.2825"^^xsd:decimal .
+
+<configuration/sns/184> rdf:type ns4kge:Configuration .
+<configuration/sns/184> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sns/184> ns4kge:hasDataset <dataset/fight-hf-23r> .
+<configuration/sns/184> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/sns/184> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/sns/184> ns4kge:hasNSMethod <ns-method/uniform-random-negative-sampling> .
+<configuration/sns/184> ns4kge:result "0.2601"^^xsd:decimal .
+
+<configuration/sns/185> rdf:type ns4kge:Configuration .
+<configuration/sns/185> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sns/185> ns4kge:hasDataset <dataset/fight-hf-23r> .
+<configuration/sns/185> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/sns/185> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/sns/185> ns4kge:hasNSMethod <ns-method/simple-negative-sampling> .
+<configuration/sns/185> ns4kge:result "0.2219"^^xsd:decimal .
+
+<configuration/sns/186> rdf:type ns4kge:Configuration .
+<configuration/sns/186> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sns/186> ns4kge:hasDataset <dataset/fight-hf-23r> .
+<configuration/sns/186> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/sns/186> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/sns/186> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/sns/186> ns4kge:result "0.2013"^^xsd:decimal .
+
+<configuration/sns/187> rdf:type ns4kge:Configuration .
+<configuration/sns/187> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sns/187> ns4kge:hasDataset <dataset/fight-hf-23r> .
+<configuration/sns/187> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/sns/187> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/sns/187> ns4kge:hasNSMethod <ns-method/kbgan> .
+<configuration/sns/187> ns4kge:result "0.1864"^^xsd:decimal .
+
+<configuration/sns/188> rdf:type ns4kge:Configuration .
+<configuration/sns/188> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sns/188> ns4kge:hasDataset <dataset/fight-hf-23r> .
+<configuration/sns/188> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/sns/188> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/sns/188> ns4kge:hasNSMethod <ns-method/uniform-random-negative-sampling> .
+<configuration/sns/188> ns4kge:result "0.1429"^^xsd:decimal .
+
+<configuration/sns/189> rdf:type ns4kge:Configuration .
+<configuration/sns/189> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sns/189> ns4kge:hasDataset <dataset/fight-hf-23r> .
+<configuration/sns/189> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/sns/189> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/sns/189> ns4kge:hasNSMethod <ns-method/kbgan> .
+<configuration/sns/189> ns4kge:result "0.1438"^^xsd:decimal .
+
+<configuration/sns/190> rdf:type ns4kge:Configuration .
+<configuration/sns/190> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sns/190> ns4kge:hasDataset <dataset/fight-hf-23r> .
+<configuration/sns/190> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/sns/190> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/sns/190> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/sns/190> ns4kge:result "0.131"^^xsd:decimal .
+
+<configuration/sns/191> rdf:type ns4kge:Configuration .
+<configuration/sns/191> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sns/191> ns4kge:hasDataset <dataset/fight-hf-23r> .
+<configuration/sns/191> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/sns/191> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/sns/191> ns4kge:hasNSMethod <ns-method/simple-negative-sampling> .
+<configuration/sns/191> ns4kge:result "0.1263"^^xsd:decimal .
+
+<configuration/sns/192> rdf:type ns4kge:Configuration .
+<configuration/sns/192> ns4kge:hasTask    <task/link-prediction> .
+<configuration/sns/192> ns4kge:hasDataset <dataset/fight-hf-23r> .
+<configuration/sns/192> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/sns/192> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/sns/192> ns4kge:hasNSMethod <ns-method/uniform-random-negative-sampling> .
+<configuration/sns/192> ns4kge:result "0.0875"^^xsd:decimal .

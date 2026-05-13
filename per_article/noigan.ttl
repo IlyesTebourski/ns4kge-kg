@@ -1,0 +1,3193 @@
+<article/noigan> rdf:type ns4kge:Article .
+<article/noigan> ns4kge:title "NoiGAN: Noise Aware Knowledge Graph Embedding with GAN"^^xsd:string .
+<article/noigan> ns4kge:date "2020"^^xsd:gYear .
+<article/noigan> ns4kge:proposesNSMethod <ns-method/noigan> .
+<article/noigan> ns4kge:mentionsNSMethod <ns-method/noigan-hard> .
+<article/noigan> ns4kge:mentionsNSMethod <ns-method/noigan-hard-70-percent> .
+<article/noigan> ns4kge:mentionsNSMethod <ns-method/unknown-40-percent> .
+<article/noigan> ns4kge:mentionsNSMethod <ns-method/unknown-100-percent> .
+<article/noigan> ns4kge:mentionsNSMethod <ns-method/noigan-soft-40-percent> .
+<article/noigan> ns4kge:mentionsNSMethod <ns-method/noigan-hard-20-percent> .
+<article/noigan> ns4kge:mentionsNSMethod <ns-method/noigan-soft-100-percent> .
+<article/noigan> ns4kge:mentionsNSMethod <ns-method/noigan-hard-100-percent> .
+<article/noigan> ns4kge:mentionsNSMethod <ns-method/random-negative-sampling> .
+<article/noigan> ns4kge:mentionsNSMethod <ns-method/ckrl-40-percent> .
+<article/noigan> ns4kge:mentionsNSMethod <ns-method/ckrl-70-percent> .
+<article/noigan> ns4kge:mentionsNSMethod <ns-method/unknown-70-percent> .
+<article/noigan> ns4kge:mentionsNSMethod <ns-method/kbgan> .
+<article/noigan> ns4kge:mentionsNSMethod <ns-method/ckrl> .
+<article/noigan> ns4kge:mentionsNSMethod <ns-method/noigan-soft> .
+<article/noigan> ns4kge:mentionsNSMethod <ns-method/noigan-soft-70-percent> .
+<article/noigan> ns4kge:mentionsNSMethod <ns-method/ckrl-100-percent> .
+<article/noigan> ns4kge:mentionsNSMethod <ns-method/noigan-hard-40-percent> .
+<article/noigan> ns4kge:mentionsNSMethod <ns-method/ckrl-20-percent> .
+<article/noigan> ns4kge:mentionsNSMethod <ns-method/kbgan-40-percent> .
+<article/noigan> ns4kge:mentionsNSMethod <ns-method/noigan-soft-20-percent> .
+<article/noigan> ns4kge:mentionsKGEModel <kge-model/distmult> .
+<article/noigan> ns4kge:mentionsKGEModel <kge-model/attention> .
+<article/noigan> ns4kge:mentionsKGEModel <kge-model/transh> .
+<article/noigan> ns4kge:mentionsKGEModel <kge-model/kbgan> .
+<article/noigan> ns4kge:mentionsKGEModel <kge-model/transr> .
+<article/noigan> ns4kge:mentionsKGEModel <kge-model/rotate> .
+<article/noigan> ns4kge:mentionsKGEModel <kge-model/transe> .
+<article/noigan> ns4kge:mentionsKGEModel <kge-model/ckrl> .
+<article/noigan> ns4kge:mentionsKGEModel <kge-model/complex> .
+<article/noigan> ns4kge:mentionsKGEModel <kge-model/rescal> .
+<article/noigan> ns4kge:hasExperimentation <experimentation/noigan> .
+
+<category/adversarial-ns> rdf:type ns4kge:Category .
+
+<subcategory/knowledge-constrained> rdf:type ns4kge:Subcategory .
+
+<ns-method/noigan> rdf:type ns4kge:NSMethod .
+<ns-method/noigan> ns4kge:hasCategory <category/adversarial-ns> .
+<ns-method/noigan> ns4kge:hasSubcategory <subcategory/knowledge-constrained> .
+
+<ns-method/noigan-hard> rdf:type ns4kge:NSMethod .
+
+<ns-method/noigan-hard-70-percent> rdf:type ns4kge:NSMethod .
+
+<ns-method/unknown-40-percent> rdf:type ns4kge:NSMethod .
+
+<ns-method/unknown-100-percent> rdf:type ns4kge:NSMethod .
+
+<ns-method/noigan-soft-40-percent> rdf:type ns4kge:NSMethod .
+
+<ns-method/noigan-hard-20-percent> rdf:type ns4kge:NSMethod .
+
+<ns-method/noigan-soft-100-percent> rdf:type ns4kge:NSMethod .
+
+<ns-method/noigan-hard-100-percent> rdf:type ns4kge:NSMethod .
+
+<ns-method/random-negative-sampling> rdf:type ns4kge:NSMethod .
+<category/static-ns> rdf:type ns4kge:Category .
+
+<ns-method/random-negative-sampling> ns4kge:hasCategory <category/static-ns> .
+<subcategory/random> rdf:type ns4kge:Subcategory .
+
+<ns-method/random-negative-sampling> ns4kge:hasSubcategory <subcategory/random> .
+
+<ns-method/ckrl-40-percent> rdf:type ns4kge:NSMethod .
+
+<ns-method/ckrl-70-percent> rdf:type ns4kge:NSMethod .
+
+<ns-method/unknown-70-percent> rdf:type ns4kge:NSMethod .
+
+<ns-method/kbgan> rdf:type ns4kge:NSMethod .
+<ns-method/kbgan> ns4kge:hasCategory <category/adversarial-ns> .
+<subcategory/standard> rdf:type ns4kge:Subcategory .
+
+<ns-method/kbgan> ns4kge:hasSubcategory <subcategory/standard> .
+
+<ns-method/ckrl> rdf:type ns4kge:NSMethod .
+
+<ns-method/noigan-soft> rdf:type ns4kge:NSMethod .
+
+<ns-method/noigan-soft-70-percent> rdf:type ns4kge:NSMethod .
+
+<ns-method/ckrl-100-percent> rdf:type ns4kge:NSMethod .
+
+<ns-method/noigan-hard-40-percent> rdf:type ns4kge:NSMethod .
+
+<ns-method/ckrl-20-percent> rdf:type ns4kge:NSMethod .
+
+<ns-method/kbgan-40-percent> rdf:type ns4kge:NSMethod .
+
+<ns-method/noigan-soft-20-percent> rdf:type ns4kge:NSMethod .
+
+<kge-model/distmult> rdf:type ns4kge:KGEModel .
+
+<kge-model/attention> rdf:type ns4kge:KGEModel .
+
+<kge-model/transh> rdf:type ns4kge:KGEModel .
+
+<kge-model/kbgan> rdf:type ns4kge:KGEModel .
+
+<kge-model/transr> rdf:type ns4kge:KGEModel .
+
+<kge-model/rotate> rdf:type ns4kge:KGEModel .
+
+<kge-model/transe> rdf:type ns4kge:KGEModel .
+
+<kge-model/ckrl> rdf:type ns4kge:KGEModel .
+
+<kge-model/complex> rdf:type ns4kge:KGEModel .
+
+<kge-model/rescal> rdf:type ns4kge:KGEModel .
+
+<dataset/fb15k> rdf:type ns4kge:Dataset .
+<task/triple-classification> rdf:type ns4kge:Task .
+<metric/auc> rdf:type ns4kge:Metric .
+<dataset/yago3-10> rdf:type ns4kge:Dataset .
+<dataset/wn18> rdf:type ns4kge:Dataset .
+<metric/spe> rdf:type ns4kge:Metric .
+<dataset/fb15k-237> rdf:type ns4kge:Dataset .
+<task/link-prediction> rdf:type ns4kge:Task .
+<metric/mrr> rdf:type ns4kge:Metric .
+<metric/hits-1> rdf:type ns4kge:Metric .
+<metric/hits-3> rdf:type ns4kge:Metric .
+<metric/hits-10> rdf:type ns4kge:Metric .
+<dataset/wn18rr> rdf:type ns4kge:Dataset .
+<loss-function/negative-sampling-loss> rdf:type ns4kge:LossFunction .
+<loss-function/cross-entropy-loss> rdf:type ns4kge:LossFunction .
+<optimizer/adam> rdf:type ns4kge:Optimizer .
+
+<experimentation/noigan> rdf:type ns4kge:Experimentation .
+<experimentation/noigan> ns4kge:hasTrainingProtocol <training-protocol/noigan> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/1> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/2> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/3> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/4> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/5> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/6> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/7> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/8> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/9> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/10> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/11> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/12> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/13> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/14> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/15> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/16> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/17> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/18> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/19> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/20> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/21> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/22> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/23> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/24> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/25> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/26> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/27> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/28> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/29> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/30> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/31> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/32> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/33> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/34> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/35> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/36> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/37> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/38> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/39> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/40> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/41> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/42> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/43> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/44> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/45> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/46> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/47> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/48> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/49> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/50> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/51> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/52> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/53> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/54> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/55> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/56> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/57> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/58> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/59> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/60> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/61> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/62> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/63> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/64> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/65> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/66> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/67> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/68> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/69> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/70> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/71> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/72> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/73> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/74> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/75> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/76> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/77> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/78> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/79> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/80> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/81> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/82> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/83> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/84> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/85> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/86> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/87> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/88> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/89> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/90> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/91> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/92> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/93> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/94> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/95> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/96> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/97> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/98> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/99> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/100> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/101> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/102> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/103> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/104> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/105> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/106> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/107> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/108> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/109> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/110> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/111> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/112> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/113> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/114> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/115> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/116> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/117> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/118> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/119> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/120> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/121> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/122> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/123> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/124> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/125> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/126> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/127> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/128> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/129> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/130> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/131> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/132> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/133> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/134> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/135> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/136> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/137> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/138> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/139> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/140> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/141> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/142> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/143> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/144> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/145> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/146> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/147> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/148> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/149> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/150> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/151> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/152> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/153> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/154> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/155> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/156> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/157> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/158> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/159> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/160> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/161> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/162> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/163> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/164> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/165> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/166> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/167> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/168> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/169> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/170> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/171> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/172> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/173> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/174> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/175> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/176> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/177> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/178> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/179> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/180> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/181> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/182> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/183> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/184> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/185> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/186> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/187> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/188> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/189> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/190> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/191> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/192> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/193> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/194> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/195> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/196> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/197> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/198> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/199> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/200> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/201> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/202> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/203> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/204> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/205> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/206> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/207> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/208> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/209> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/210> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/211> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/212> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/213> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/214> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/215> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/216> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/217> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/218> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/219> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/220> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/221> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/222> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/223> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/224> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/225> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/226> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/227> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/228> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/229> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/230> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/231> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/232> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/233> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/234> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/235> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/236> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/237> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/238> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/239> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/240> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/241> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/242> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/243> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/244> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/245> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/246> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/247> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/248> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/249> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/250> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/251> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/252> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/253> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/254> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/255> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/256> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/257> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/258> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/259> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/260> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/261> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/262> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/263> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/264> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/265> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/266> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/267> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/268> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/269> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/270> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/271> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/272> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/273> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/274> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/275> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/276> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/277> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/278> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/279> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/280> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/281> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/282> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/283> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/284> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/285> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/286> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/287> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/288> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/289> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/290> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/291> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/292> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/293> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/294> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/295> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/296> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/297> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/298> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/299> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/300> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/301> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/302> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/303> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/304> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/305> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/306> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/307> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/308> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/309> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/310> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/311> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/312> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/313> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/314> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/315> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/316> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/317> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/318> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/319> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/320> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/321> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/322> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/323> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/324> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/325> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/326> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/327> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/328> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/329> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/330> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/331> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/332> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/333> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/334> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/335> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/336> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/337> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/338> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/339> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/340> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/341> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/342> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/343> .
+<experimentation/noigan> ns4kge:hasConfiguration <configuration/noigan/344> .
+
+<training-protocol/noigan> rdf:type ns4kge:TrainingProtocol .
+<training-protocol/noigan> ns4kge:hasOptimizer    <optimizer/adam> .
+<training-protocol/noigan> ns4kge:hasLossFunction <loss-function/negative-sampling-loss> .
+<training-protocol/noigan> ns4kge:hasLossFunction <loss-function/cross-entropy-loss> .
+
+<configuration/noigan/1> rdf:type ns4kge:Configuration .
+<configuration/noigan/1> ns4kge:hasTask    <task/triple-classification> .
+<configuration/noigan/1> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/noigan/1> ns4kge:hasMetric  <metric/auc> .
+<configuration/noigan/1> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/noigan/1> ns4kge:hasNSMethod <ns-method/ckrl> .
+<configuration/noigan/1> ns4kge:result "0.548"^^xsd:decimal .
+
+<configuration/noigan/2> rdf:type ns4kge:Configuration .
+<configuration/noigan/2> ns4kge:hasTask    <task/triple-classification> .
+<configuration/noigan/2> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/noigan/2> ns4kge:hasMetric  <metric/auc> .
+<configuration/noigan/2> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/noigan/2> ns4kge:hasNSMethod <ns-method/noigan-soft> .
+<configuration/noigan/2> ns4kge:result "0.949"^^xsd:decimal .
+
+<configuration/noigan/3> rdf:type ns4kge:Configuration .
+<configuration/noigan/3> ns4kge:hasTask    <task/triple-classification> .
+<configuration/noigan/3> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/noigan/3> ns4kge:hasMetric  <metric/auc> .
+<configuration/noigan/3> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/noigan/3> ns4kge:hasNSMethod <ns-method/noigan-hard> .
+<configuration/noigan/3> ns4kge:result "0.946"^^xsd:decimal .
+
+<configuration/noigan/4> rdf:type ns4kge:Configuration .
+<configuration/noigan/4> ns4kge:hasTask    <task/triple-classification> .
+<configuration/noigan/4> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/noigan/4> ns4kge:hasMetric  <metric/auc> .
+<configuration/noigan/4> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/noigan/4> ns4kge:hasNSMethod <ns-method/ckrl> .
+<configuration/noigan/4> ns4kge:result "0.455"^^xsd:decimal .
+
+<configuration/noigan/5> rdf:type ns4kge:Configuration .
+<configuration/noigan/5> ns4kge:hasTask    <task/triple-classification> .
+<configuration/noigan/5> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/noigan/5> ns4kge:hasMetric  <metric/auc> .
+<configuration/noigan/5> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/noigan/5> ns4kge:hasNSMethod <ns-method/noigan-soft> .
+<configuration/noigan/5> ns4kge:result "0.929"^^xsd:decimal .
+
+<configuration/noigan/6> rdf:type ns4kge:Configuration .
+<configuration/noigan/6> ns4kge:hasTask    <task/triple-classification> .
+<configuration/noigan/6> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/noigan/6> ns4kge:hasMetric  <metric/auc> .
+<configuration/noigan/6> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/noigan/6> ns4kge:hasNSMethod <ns-method/noigan-hard> .
+<configuration/noigan/6> ns4kge:result "0.942"^^xsd:decimal .
+
+<configuration/noigan/7> rdf:type ns4kge:Configuration .
+<configuration/noigan/7> ns4kge:hasTask    <task/triple-classification> .
+<configuration/noigan/7> ns4kge:hasDataset <dataset/wn18> .
+<configuration/noigan/7> ns4kge:hasMetric  <metric/auc> .
+<configuration/noigan/7> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/noigan/7> ns4kge:hasNSMethod <ns-method/ckrl> .
+<configuration/noigan/7> ns4kge:result "0.704"^^xsd:decimal .
+
+<configuration/noigan/8> rdf:type ns4kge:Configuration .
+<configuration/noigan/8> ns4kge:hasTask    <task/triple-classification> .
+<configuration/noigan/8> ns4kge:hasDataset <dataset/wn18> .
+<configuration/noigan/8> ns4kge:hasMetric  <metric/auc> .
+<configuration/noigan/8> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/noigan/8> ns4kge:hasNSMethod <ns-method/noigan-soft> .
+<configuration/noigan/8> ns4kge:result "0.794"^^xsd:decimal .
+
+<configuration/noigan/9> rdf:type ns4kge:Configuration .
+<configuration/noigan/9> ns4kge:hasTask    <task/triple-classification> .
+<configuration/noigan/9> ns4kge:hasDataset <dataset/wn18> .
+<configuration/noigan/9> ns4kge:hasMetric  <metric/auc> .
+<configuration/noigan/9> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/noigan/9> ns4kge:hasNSMethod <ns-method/noigan-hard> .
+<configuration/noigan/9> ns4kge:result "0.836"^^xsd:decimal .
+
+<configuration/noigan/10> rdf:type ns4kge:Configuration .
+<configuration/noigan/10> ns4kge:hasTask    <task/triple-classification> .
+<configuration/noigan/10> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/noigan/10> ns4kge:hasMetric  <metric/spe> .
+<configuration/noigan/10> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/noigan/10> ns4kge:hasNSMethod <ns-method/ckrl> .
+<configuration/noigan/10> ns4kge:result "0.006"^^xsd:decimal .
+
+<configuration/noigan/11> rdf:type ns4kge:Configuration .
+<configuration/noigan/11> ns4kge:hasTask    <task/triple-classification> .
+<configuration/noigan/11> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/noigan/11> ns4kge:hasMetric  <metric/spe> .
+<configuration/noigan/11> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/noigan/11> ns4kge:hasNSMethod <ns-method/noigan-soft> .
+<configuration/noigan/11> ns4kge:result "0.791"^^xsd:decimal .
+
+<configuration/noigan/12> rdf:type ns4kge:Configuration .
+<configuration/noigan/12> ns4kge:hasTask    <task/triple-classification> .
+<configuration/noigan/12> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/noigan/12> ns4kge:hasMetric  <metric/spe> .
+<configuration/noigan/12> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/noigan/12> ns4kge:hasNSMethod <ns-method/noigan-hard> .
+<configuration/noigan/12> ns4kge:result "0.821"^^xsd:decimal .
+
+<configuration/noigan/13> rdf:type ns4kge:Configuration .
+<configuration/noigan/13> ns4kge:hasTask    <task/triple-classification> .
+<configuration/noigan/13> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/noigan/13> ns4kge:hasMetric  <metric/spe> .
+<configuration/noigan/13> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/noigan/13> ns4kge:hasNSMethod <ns-method/ckrl> .
+<configuration/noigan/13> ns4kge:result "0.018"^^xsd:decimal .
+
+<configuration/noigan/14> rdf:type ns4kge:Configuration .
+<configuration/noigan/14> ns4kge:hasTask    <task/triple-classification> .
+<configuration/noigan/14> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/noigan/14> ns4kge:hasMetric  <metric/spe> .
+<configuration/noigan/14> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/noigan/14> ns4kge:hasNSMethod <ns-method/noigan-soft> .
+<configuration/noigan/14> ns4kge:result "0.625"^^xsd:decimal .
+
+<configuration/noigan/15> rdf:type ns4kge:Configuration .
+<configuration/noigan/15> ns4kge:hasTask    <task/triple-classification> .
+<configuration/noigan/15> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/noigan/15> ns4kge:hasMetric  <metric/spe> .
+<configuration/noigan/15> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/noigan/15> ns4kge:hasNSMethod <ns-method/noigan-hard> .
+<configuration/noigan/15> ns4kge:result "0.73"^^xsd:decimal .
+
+<configuration/noigan/16> rdf:type ns4kge:Configuration .
+<configuration/noigan/16> ns4kge:hasTask    <task/triple-classification> .
+<configuration/noigan/16> ns4kge:hasDataset <dataset/wn18> .
+<configuration/noigan/16> ns4kge:hasMetric  <metric/spe> .
+<configuration/noigan/16> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/noigan/16> ns4kge:hasNSMethod <ns-method/ckrl> .
+<configuration/noigan/16> ns4kge:result "0"^^xsd:decimal .
+
+<configuration/noigan/17> rdf:type ns4kge:Configuration .
+<configuration/noigan/17> ns4kge:hasTask    <task/triple-classification> .
+<configuration/noigan/17> ns4kge:hasDataset <dataset/wn18> .
+<configuration/noigan/17> ns4kge:hasMetric  <metric/spe> .
+<configuration/noigan/17> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/noigan/17> ns4kge:hasNSMethod <ns-method/noigan-soft> .
+<configuration/noigan/17> ns4kge:result "0.452"^^xsd:decimal .
+
+<configuration/noigan/18> rdf:type ns4kge:Configuration .
+<configuration/noigan/18> ns4kge:hasTask    <task/triple-classification> .
+<configuration/noigan/18> ns4kge:hasDataset <dataset/wn18> .
+<configuration/noigan/18> ns4kge:hasMetric  <metric/spe> .
+<configuration/noigan/18> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/noigan/18> ns4kge:hasNSMethod <ns-method/noigan-hard> .
+<configuration/noigan/18> ns4kge:result "0.565"^^xsd:decimal .
+
+<configuration/noigan/19> rdf:type ns4kge:Configuration .
+<configuration/noigan/19> ns4kge:hasTask    <task/triple-classification> .
+<configuration/noigan/19> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/noigan/19> ns4kge:hasMetric  <metric/auc> .
+<configuration/noigan/19> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/noigan/19> ns4kge:hasNSMethod <ns-method/ckrl-20-percent> .
+<configuration/noigan/19> ns4kge:result "0.687"^^xsd:decimal .
+
+<configuration/noigan/20> rdf:type ns4kge:Configuration .
+<configuration/noigan/20> ns4kge:hasTask    <task/triple-classification> .
+<configuration/noigan/20> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/noigan/20> ns4kge:hasMetric  <metric/auc> .
+<configuration/noigan/20> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/noigan/20> ns4kge:hasNSMethod <ns-method/noigan-soft-20-percent> .
+<configuration/noigan/20> ns4kge:result "0.933"^^xsd:decimal .
+
+<configuration/noigan/21> rdf:type ns4kge:Configuration .
+<configuration/noigan/21> ns4kge:hasTask    <task/triple-classification> .
+<configuration/noigan/21> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/noigan/21> ns4kge:hasMetric  <metric/auc> .
+<configuration/noigan/21> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/noigan/21> ns4kge:hasNSMethod <ns-method/noigan-hard-20-percent> .
+<configuration/noigan/21> ns4kge:result "0.954"^^xsd:decimal .
+
+<configuration/noigan/22> rdf:type ns4kge:Configuration .
+<configuration/noigan/22> ns4kge:hasTask    <task/triple-classification> .
+<configuration/noigan/22> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/noigan/22> ns4kge:hasMetric  <metric/auc> .
+<configuration/noigan/22> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/noigan/22> ns4kge:hasNSMethod <ns-method/ckrl-20-percent> .
+<configuration/noigan/22> ns4kge:result "0.521"^^xsd:decimal .
+
+<configuration/noigan/23> rdf:type ns4kge:Configuration .
+<configuration/noigan/23> ns4kge:hasTask    <task/triple-classification> .
+<configuration/noigan/23> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/noigan/23> ns4kge:hasMetric  <metric/auc> .
+<configuration/noigan/23> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/noigan/23> ns4kge:hasNSMethod <ns-method/noigan-soft-20-percent> .
+<configuration/noigan/23> ns4kge:result "0.914"^^xsd:decimal .
+
+<configuration/noigan/24> rdf:type ns4kge:Configuration .
+<configuration/noigan/24> ns4kge:hasTask    <task/triple-classification> .
+<configuration/noigan/24> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/noigan/24> ns4kge:hasMetric  <metric/auc> .
+<configuration/noigan/24> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/noigan/24> ns4kge:hasNSMethod <ns-method/noigan-hard-20-percent> .
+<configuration/noigan/24> ns4kge:result "0.934"^^xsd:decimal .
+
+<configuration/noigan/25> rdf:type ns4kge:Configuration .
+<configuration/noigan/25> ns4kge:hasTask    <task/triple-classification> .
+<configuration/noigan/25> ns4kge:hasDataset <dataset/wn18> .
+<configuration/noigan/25> ns4kge:hasMetric  <metric/auc> .
+<configuration/noigan/25> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/noigan/25> ns4kge:hasNSMethod <ns-method/ckrl-20-percent> .
+<configuration/noigan/25> ns4kge:result "0.71"^^xsd:decimal .
+
+<configuration/noigan/26> rdf:type ns4kge:Configuration .
+<configuration/noigan/26> ns4kge:hasTask    <task/triple-classification> .
+<configuration/noigan/26> ns4kge:hasDataset <dataset/wn18> .
+<configuration/noigan/26> ns4kge:hasMetric  <metric/auc> .
+<configuration/noigan/26> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/noigan/26> ns4kge:hasNSMethod <ns-method/noigan-soft-20-percent> .
+<configuration/noigan/26> ns4kge:result "0.756"^^xsd:decimal .
+
+<configuration/noigan/27> rdf:type ns4kge:Configuration .
+<configuration/noigan/27> ns4kge:hasTask    <task/triple-classification> .
+<configuration/noigan/27> ns4kge:hasDataset <dataset/wn18> .
+<configuration/noigan/27> ns4kge:hasMetric  <metric/auc> .
+<configuration/noigan/27> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/noigan/27> ns4kge:hasNSMethod <ns-method/noigan-hard-20-percent> .
+<configuration/noigan/27> ns4kge:result "0.799"^^xsd:decimal .
+
+<configuration/noigan/28> rdf:type ns4kge:Configuration .
+<configuration/noigan/28> ns4kge:hasTask    <task/triple-classification> .
+<configuration/noigan/28> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/noigan/28> ns4kge:hasMetric  <metric/spe> .
+<configuration/noigan/28> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/noigan/28> ns4kge:hasNSMethod <ns-method/ckrl-20-percent> .
+<configuration/noigan/28> ns4kge:result "0.008"^^xsd:decimal .
+
+<configuration/noigan/29> rdf:type ns4kge:Configuration .
+<configuration/noigan/29> ns4kge:hasTask    <task/triple-classification> .
+<configuration/noigan/29> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/noigan/29> ns4kge:hasMetric  <metric/spe> .
+<configuration/noigan/29> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/noigan/29> ns4kge:hasNSMethod <ns-method/noigan-soft-20-percent> .
+<configuration/noigan/29> ns4kge:result "0.733"^^xsd:decimal .
+
+<configuration/noigan/30> rdf:type ns4kge:Configuration .
+<configuration/noigan/30> ns4kge:hasTask    <task/triple-classification> .
+<configuration/noigan/30> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/noigan/30> ns4kge:hasMetric  <metric/spe> .
+<configuration/noigan/30> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/noigan/30> ns4kge:hasNSMethod <ns-method/noigan-hard-20-percent> .
+<configuration/noigan/30> ns4kge:result "0.823"^^xsd:decimal .
+
+<configuration/noigan/31> rdf:type ns4kge:Configuration .
+<configuration/noigan/31> ns4kge:hasTask    <task/triple-classification> .
+<configuration/noigan/31> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/noigan/31> ns4kge:hasMetric  <metric/spe> .
+<configuration/noigan/31> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/noigan/31> ns4kge:hasNSMethod <ns-method/ckrl-20-percent> .
+<configuration/noigan/31> ns4kge:result "0"^^xsd:decimal .
+
+<configuration/noigan/32> rdf:type ns4kge:Configuration .
+<configuration/noigan/32> ns4kge:hasTask    <task/triple-classification> .
+<configuration/noigan/32> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/noigan/32> ns4kge:hasMetric  <metric/spe> .
+<configuration/noigan/32> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/noigan/32> ns4kge:hasNSMethod <ns-method/noigan-soft-20-percent> .
+<configuration/noigan/32> ns4kge:result "0.619"^^xsd:decimal .
+
+<configuration/noigan/33> rdf:type ns4kge:Configuration .
+<configuration/noigan/33> ns4kge:hasTask    <task/triple-classification> .
+<configuration/noigan/33> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/noigan/33> ns4kge:hasMetric  <metric/spe> .
+<configuration/noigan/33> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/noigan/33> ns4kge:hasNSMethod <ns-method/noigan-hard-20-percent> .
+<configuration/noigan/33> ns4kge:result "0.711"^^xsd:decimal .
+
+<configuration/noigan/34> rdf:type ns4kge:Configuration .
+<configuration/noigan/34> ns4kge:hasTask    <task/triple-classification> .
+<configuration/noigan/34> ns4kge:hasDataset <dataset/wn18> .
+<configuration/noigan/34> ns4kge:hasMetric  <metric/spe> .
+<configuration/noigan/34> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/noigan/34> ns4kge:hasNSMethod <ns-method/ckrl-20-percent> .
+<configuration/noigan/34> ns4kge:result "0"^^xsd:decimal .
+
+<configuration/noigan/35> rdf:type ns4kge:Configuration .
+<configuration/noigan/35> ns4kge:hasTask    <task/triple-classification> .
+<configuration/noigan/35> ns4kge:hasDataset <dataset/wn18> .
+<configuration/noigan/35> ns4kge:hasMetric  <metric/spe> .
+<configuration/noigan/35> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/noigan/35> ns4kge:hasNSMethod <ns-method/noigan-soft-20-percent> .
+<configuration/noigan/35> ns4kge:result "0.336"^^xsd:decimal .
+
+<configuration/noigan/36> rdf:type ns4kge:Configuration .
+<configuration/noigan/36> ns4kge:hasTask    <task/triple-classification> .
+<configuration/noigan/36> ns4kge:hasDataset <dataset/wn18> .
+<configuration/noigan/36> ns4kge:hasMetric  <metric/spe> .
+<configuration/noigan/36> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/noigan/36> ns4kge:hasNSMethod <ns-method/noigan-hard-20-percent> .
+<configuration/noigan/36> ns4kge:result "0.524"^^xsd:decimal .
+
+<configuration/noigan/37> rdf:type ns4kge:Configuration .
+<configuration/noigan/37> ns4kge:hasTask    <task/triple-classification> .
+<configuration/noigan/37> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/noigan/37> ns4kge:hasMetric  <metric/auc> .
+<configuration/noigan/37> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/noigan/37> ns4kge:hasNSMethod <ns-method/ckrl-40-percent> .
+<configuration/noigan/37> ns4kge:result "0.725"^^xsd:decimal .
+
+<configuration/noigan/38> rdf:type ns4kge:Configuration .
+<configuration/noigan/38> ns4kge:hasTask    <task/triple-classification> .
+<configuration/noigan/38> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/noigan/38> ns4kge:hasMetric  <metric/auc> .
+<configuration/noigan/38> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/noigan/38> ns4kge:hasNSMethod <ns-method/noigan-soft-40-percent> .
+<configuration/noigan/38> ns4kge:result "0.931"^^xsd:decimal .
+
+<configuration/noigan/39> rdf:type ns4kge:Configuration .
+<configuration/noigan/39> ns4kge:hasTask    <task/triple-classification> .
+<configuration/noigan/39> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/noigan/39> ns4kge:hasMetric  <metric/auc> .
+<configuration/noigan/39> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/noigan/39> ns4kge:hasNSMethod <ns-method/noigan-hard-40-percent> .
+<configuration/noigan/39> ns4kge:result "0.95"^^xsd:decimal .
+
+<configuration/noigan/40> rdf:type ns4kge:Configuration .
+<configuration/noigan/40> ns4kge:hasTask    <task/triple-classification> .
+<configuration/noigan/40> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/noigan/40> ns4kge:hasMetric  <metric/auc> .
+<configuration/noigan/40> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/noigan/40> ns4kge:hasNSMethod <ns-method/ckrl-40-percent> .
+<configuration/noigan/40> ns4kge:result "0.577"^^xsd:decimal .
+
+<configuration/noigan/41> rdf:type ns4kge:Configuration .
+<configuration/noigan/41> ns4kge:hasTask    <task/triple-classification> .
+<configuration/noigan/41> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/noigan/41> ns4kge:hasMetric  <metric/auc> .
+<configuration/noigan/41> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/noigan/41> ns4kge:hasNSMethod <ns-method/noigan-soft-40-percent> .
+<configuration/noigan/41> ns4kge:result "0.894"^^xsd:decimal .
+
+<configuration/noigan/42> rdf:type ns4kge:Configuration .
+<configuration/noigan/42> ns4kge:hasTask    <task/triple-classification> .
+<configuration/noigan/42> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/noigan/42> ns4kge:hasMetric  <metric/auc> .
+<configuration/noigan/42> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/noigan/42> ns4kge:hasNSMethod <ns-method/noigan-hard-40-percent> .
+<configuration/noigan/42> ns4kge:result "0.929"^^xsd:decimal .
+
+<configuration/noigan/43> rdf:type ns4kge:Configuration .
+<configuration/noigan/43> ns4kge:hasTask    <task/triple-classification> .
+<configuration/noigan/43> ns4kge:hasDataset <dataset/wn18> .
+<configuration/noigan/43> ns4kge:hasMetric  <metric/auc> .
+<configuration/noigan/43> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/noigan/43> ns4kge:hasNSMethod <ns-method/ckrl-40-percent> .
+<configuration/noigan/43> ns4kge:result "0.725"^^xsd:decimal .
+
+<configuration/noigan/44> rdf:type ns4kge:Configuration .
+<configuration/noigan/44> ns4kge:hasTask    <task/triple-classification> .
+<configuration/noigan/44> ns4kge:hasDataset <dataset/wn18> .
+<configuration/noigan/44> ns4kge:hasMetric  <metric/auc> .
+<configuration/noigan/44> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/noigan/44> ns4kge:hasNSMethod <ns-method/noigan-soft-40-percent> .
+<configuration/noigan/44> ns4kge:result "0.682"^^xsd:decimal .
+
+<configuration/noigan/45> rdf:type ns4kge:Configuration .
+<configuration/noigan/45> ns4kge:hasTask    <task/triple-classification> .
+<configuration/noigan/45> ns4kge:hasDataset <dataset/wn18> .
+<configuration/noigan/45> ns4kge:hasMetric  <metric/auc> .
+<configuration/noigan/45> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/noigan/45> ns4kge:hasNSMethod <ns-method/noigan-hard-40-percent> .
+<configuration/noigan/45> ns4kge:result "0.741"^^xsd:decimal .
+
+<configuration/noigan/46> rdf:type ns4kge:Configuration .
+<configuration/noigan/46> ns4kge:hasTask    <task/triple-classification> .
+<configuration/noigan/46> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/noigan/46> ns4kge:hasMetric  <metric/spe> .
+<configuration/noigan/46> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/noigan/46> ns4kge:hasNSMethod <ns-method/ckrl-40-percent> .
+<configuration/noigan/46> ns4kge:result "0.018"^^xsd:decimal .
+
+<configuration/noigan/47> rdf:type ns4kge:Configuration .
+<configuration/noigan/47> ns4kge:hasTask    <task/triple-classification> .
+<configuration/noigan/47> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/noigan/47> ns4kge:hasMetric  <metric/spe> .
+<configuration/noigan/47> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/noigan/47> ns4kge:hasNSMethod <ns-method/noigan-soft-40-percent> .
+<configuration/noigan/47> ns4kge:result "0.699"^^xsd:decimal .
+
+<configuration/noigan/48> rdf:type ns4kge:Configuration .
+<configuration/noigan/48> ns4kge:hasTask    <task/triple-classification> .
+<configuration/noigan/48> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/noigan/48> ns4kge:hasMetric  <metric/spe> .
+<configuration/noigan/48> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/noigan/48> ns4kge:hasNSMethod <ns-method/noigan-hard-40-percent> .
+<configuration/noigan/48> ns4kge:result "0.78"^^xsd:decimal .
+
+<configuration/noigan/49> rdf:type ns4kge:Configuration .
+<configuration/noigan/49> ns4kge:hasTask    <task/triple-classification> .
+<configuration/noigan/49> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/noigan/49> ns4kge:hasMetric  <metric/spe> .
+<configuration/noigan/49> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/noigan/49> ns4kge:hasNSMethod <ns-method/ckrl-40-percent> .
+<configuration/noigan/49> ns4kge:result "1"^^xsd:decimal .
+
+<configuration/noigan/50> rdf:type ns4kge:Configuration .
+<configuration/noigan/50> ns4kge:hasTask    <task/triple-classification> .
+<configuration/noigan/50> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/noigan/50> ns4kge:hasMetric  <metric/spe> .
+<configuration/noigan/50> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/noigan/50> ns4kge:hasNSMethod <ns-method/noigan-soft-40-percent> .
+<configuration/noigan/50> ns4kge:result "0.552"^^xsd:decimal .
+
+<configuration/noigan/51> rdf:type ns4kge:Configuration .
+<configuration/noigan/51> ns4kge:hasTask    <task/triple-classification> .
+<configuration/noigan/51> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/noigan/51> ns4kge:hasMetric  <metric/spe> .
+<configuration/noigan/51> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/noigan/51> ns4kge:hasNSMethod <ns-method/noigan-hard-40-percent> .
+<configuration/noigan/51> ns4kge:result "0.711"^^xsd:decimal .
+
+<configuration/noigan/52> rdf:type ns4kge:Configuration .
+<configuration/noigan/52> ns4kge:hasTask    <task/triple-classification> .
+<configuration/noigan/52> ns4kge:hasDataset <dataset/wn18> .
+<configuration/noigan/52> ns4kge:hasMetric  <metric/spe> .
+<configuration/noigan/52> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/noigan/52> ns4kge:hasNSMethod <ns-method/ckrl-40-percent> .
+<configuration/noigan/52> ns4kge:result "0"^^xsd:decimal .
+
+<configuration/noigan/53> rdf:type ns4kge:Configuration .
+<configuration/noigan/53> ns4kge:hasTask    <task/triple-classification> .
+<configuration/noigan/53> ns4kge:hasDataset <dataset/wn18> .
+<configuration/noigan/53> ns4kge:hasMetric  <metric/spe> .
+<configuration/noigan/53> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/noigan/53> ns4kge:hasNSMethod <ns-method/noigan-soft-40-percent> .
+<configuration/noigan/53> ns4kge:result "0.345"^^xsd:decimal .
+
+<configuration/noigan/54> rdf:type ns4kge:Configuration .
+<configuration/noigan/54> ns4kge:hasTask    <task/triple-classification> .
+<configuration/noigan/54> ns4kge:hasDataset <dataset/wn18> .
+<configuration/noigan/54> ns4kge:hasMetric  <metric/spe> .
+<configuration/noigan/54> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/noigan/54> ns4kge:hasNSMethod <ns-method/noigan-hard-40-percent> .
+<configuration/noigan/54> ns4kge:result "0.464"^^xsd:decimal .
+
+<configuration/noigan/55> rdf:type ns4kge:Configuration .
+<configuration/noigan/55> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/55> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/noigan/55> ns4kge:hasMetric  <metric/mrr> .
+<configuration/noigan/55> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/noigan/55> ns4kge:result "0.218"^^xsd:decimal .
+
+<configuration/noigan/56> rdf:type ns4kge:Configuration .
+<configuration/noigan/56> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/56> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/noigan/56> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/noigan/56> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/noigan/56> ns4kge:result "0.136"^^xsd:decimal .
+
+<configuration/noigan/57> rdf:type ns4kge:Configuration .
+<configuration/noigan/57> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/57> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/noigan/57> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/noigan/57> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/noigan/57> ns4kge:result "0.236"^^xsd:decimal .
+
+<configuration/noigan/58> rdf:type ns4kge:Configuration .
+<configuration/noigan/58> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/58> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/noigan/58> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/noigan/58> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/noigan/58> ns4kge:result "0.388"^^xsd:decimal .
+
+<configuration/noigan/59> rdf:type ns4kge:Configuration .
+<configuration/noigan/59> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/59> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/noigan/59> ns4kge:hasMetric  <metric/mrr> .
+<configuration/noigan/59> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/noigan/59> ns4kge:result "0.292"^^xsd:decimal .
+
+<configuration/noigan/60> rdf:type ns4kge:Configuration .
+<configuration/noigan/60> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/60> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/noigan/60> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/noigan/60> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/noigan/60> ns4kge:result "0.203"^^xsd:decimal .
+
+<configuration/noigan/61> rdf:type ns4kge:Configuration .
+<configuration/noigan/61> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/61> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/noigan/61> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/noigan/61> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/noigan/61> ns4kge:result "0.325"^^xsd:decimal .
+
+<configuration/noigan/62> rdf:type ns4kge:Configuration .
+<configuration/noigan/62> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/62> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/noigan/62> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/noigan/62> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/noigan/62> ns4kge:result "0.47"^^xsd:decimal .
+
+<configuration/noigan/63> rdf:type ns4kge:Configuration .
+<configuration/noigan/63> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/63> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/noigan/63> ns4kge:hasMetric  <metric/mrr> .
+<configuration/noigan/63> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/noigan/63> ns4kge:result "0.424"^^xsd:decimal .
+
+<configuration/noigan/64> rdf:type ns4kge:Configuration .
+<configuration/noigan/64> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/64> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/noigan/64> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/noigan/64> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/noigan/64> ns4kge:result "0.382"^^xsd:decimal .
+
+<configuration/noigan/65> rdf:type ns4kge:Configuration .
+<configuration/noigan/65> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/65> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/noigan/65> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/noigan/65> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/noigan/65> ns4kge:result "0.437"^^xsd:decimal .
+
+<configuration/noigan/66> rdf:type ns4kge:Configuration .
+<configuration/noigan/66> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/66> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/noigan/66> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/noigan/66> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/noigan/66> ns4kge:result "0.507"^^xsd:decimal .
+
+<configuration/noigan/67> rdf:type ns4kge:Configuration .
+<configuration/noigan/67> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/67> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/noigan/67> ns4kge:hasMetric  <metric/mrr> .
+<configuration/noigan/67> ns4kge:hasKGEModel <kge-model/kbgan> .
+<configuration/noigan/67> ns4kge:hasNSMethod <ns-method/kbgan> .
+<configuration/noigan/67> ns4kge:result "0.266"^^xsd:decimal .
+
+<configuration/noigan/68> rdf:type ns4kge:Configuration .
+<configuration/noigan/68> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/68> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/noigan/68> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/noigan/68> ns4kge:hasKGEModel <kge-model/kbgan> .
+<configuration/noigan/68> ns4kge:hasNSMethod <ns-method/kbgan> .
+<configuration/noigan/68> ns4kge:result "0.186"^^xsd:decimal .
+
+<configuration/noigan/69> rdf:type ns4kge:Configuration .
+<configuration/noigan/69> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/69> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/noigan/69> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/noigan/69> ns4kge:hasKGEModel <kge-model/kbgan> .
+<configuration/noigan/69> ns4kge:hasNSMethod <ns-method/kbgan> .
+<configuration/noigan/69> ns4kge:result "0.29"^^xsd:decimal .
+
+<configuration/noigan/70> rdf:type ns4kge:Configuration .
+<configuration/noigan/70> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/70> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/noigan/70> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/noigan/70> ns4kge:hasKGEModel <kge-model/kbgan> .
+<configuration/noigan/70> ns4kge:hasNSMethod <ns-method/kbgan> .
+<configuration/noigan/70> ns4kge:result "0.427"^^xsd:decimal .
+
+<configuration/noigan/71> rdf:type ns4kge:Configuration .
+<configuration/noigan/71> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/71> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/noigan/71> ns4kge:hasMetric  <metric/mrr> .
+<configuration/noigan/71> ns4kge:hasKGEModel <kge-model/kbgan> .
+<configuration/noigan/71> ns4kge:hasNSMethod <ns-method/kbgan> .
+<configuration/noigan/71> ns4kge:result "0.071"^^xsd:decimal .
+
+<configuration/noigan/72> rdf:type ns4kge:Configuration .
+<configuration/noigan/72> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/72> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/noigan/72> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/noigan/72> ns4kge:hasKGEModel <kge-model/kbgan> .
+<configuration/noigan/72> ns4kge:hasNSMethod <ns-method/kbgan> .
+<configuration/noigan/72> ns4kge:result "0.041"^^xsd:decimal .
+
+<configuration/noigan/73> rdf:type ns4kge:Configuration .
+<configuration/noigan/73> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/73> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/noigan/73> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/noigan/73> ns4kge:hasKGEModel <kge-model/kbgan> .
+<configuration/noigan/73> ns4kge:hasNSMethod <ns-method/kbgan> .
+<configuration/noigan/73> ns4kge:result "0.07"^^xsd:decimal .
+
+<configuration/noigan/74> rdf:type ns4kge:Configuration .
+<configuration/noigan/74> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/74> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/noigan/74> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/noigan/74> ns4kge:hasKGEModel <kge-model/kbgan> .
+<configuration/noigan/74> ns4kge:hasNSMethod <ns-method/kbgan> .
+<configuration/noigan/74> ns4kge:result "0.124"^^xsd:decimal .
+
+<configuration/noigan/75> rdf:type ns4kge:Configuration .
+<configuration/noigan/75> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/75> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/noigan/75> ns4kge:hasMetric  <metric/mrr> .
+<configuration/noigan/75> ns4kge:hasKGEModel <kge-model/kbgan> .
+<configuration/noigan/75> ns4kge:hasNSMethod <ns-method/kbgan> .
+<configuration/noigan/75> ns4kge:result "0.215"^^xsd:decimal .
+
+<configuration/noigan/76> rdf:type ns4kge:Configuration .
+<configuration/noigan/76> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/76> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/noigan/76> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/noigan/76> ns4kge:hasKGEModel <kge-model/kbgan> .
+<configuration/noigan/76> ns4kge:hasNSMethod <ns-method/kbgan> .
+<configuration/noigan/76> ns4kge:result "0.036"^^xsd:decimal .
+
+<configuration/noigan/77> rdf:type ns4kge:Configuration .
+<configuration/noigan/77> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/77> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/noigan/77> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/noigan/77> ns4kge:hasKGEModel <kge-model/kbgan> .
+<configuration/noigan/77> ns4kge:hasNSMethod <ns-method/kbgan> .
+<configuration/noigan/77> ns4kge:result "0.356"^^xsd:decimal .
+
+<configuration/noigan/78> rdf:type ns4kge:Configuration .
+<configuration/noigan/78> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/78> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/noigan/78> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/noigan/78> ns4kge:hasKGEModel <kge-model/kbgan> .
+<configuration/noigan/78> ns4kge:hasNSMethod <ns-method/kbgan> .
+<configuration/noigan/78> ns4kge:result "0.507"^^xsd:decimal .
+
+<configuration/noigan/79> rdf:type ns4kge:Configuration .
+<configuration/noigan/79> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/79> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/noigan/79> ns4kge:hasMetric  <metric/mrr> .
+<configuration/noigan/79> ns4kge:hasKGEModel <kge-model/attention> .
+<configuration/noigan/79> ns4kge:result "0.436"^^xsd:decimal .
+
+<configuration/noigan/80> rdf:type ns4kge:Configuration .
+<configuration/noigan/80> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/80> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/noigan/80> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/noigan/80> ns4kge:hasKGEModel <kge-model/attention> .
+<configuration/noigan/80> ns4kge:result "0.36"^^xsd:decimal .
+
+<configuration/noigan/81> rdf:type ns4kge:Configuration .
+<configuration/noigan/81> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/81> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/noigan/81> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/noigan/81> ns4kge:hasKGEModel <kge-model/attention> .
+<configuration/noigan/81> ns4kge:result "0.464"^^xsd:decimal .
+
+<configuration/noigan/82> rdf:type ns4kge:Configuration .
+<configuration/noigan/82> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/82> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/noigan/82> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/noigan/82> ns4kge:hasKGEModel <kge-model/attention> .
+<configuration/noigan/82> ns4kge:result "0.589"^^xsd:decimal .
+
+<configuration/noigan/83> rdf:type ns4kge:Configuration .
+<configuration/noigan/83> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/83> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/noigan/83> ns4kge:hasMetric  <metric/mrr> .
+<configuration/noigan/83> ns4kge:hasKGEModel <kge-model/attention> .
+<configuration/noigan/83> ns4kge:result "0.443"^^xsd:decimal .
+
+<configuration/noigan/84> rdf:type ns4kge:Configuration .
+<configuration/noigan/84> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/84> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/noigan/84> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/noigan/84> ns4kge:hasKGEModel <kge-model/attention> .
+<configuration/noigan/84> ns4kge:result "0.363"^^xsd:decimal .
+
+<configuration/noigan/85> rdf:type ns4kge:Configuration .
+<configuration/noigan/85> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/85> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/noigan/85> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/noigan/85> ns4kge:hasKGEModel <kge-model/attention> .
+<configuration/noigan/85> ns4kge:result "0.489"^^xsd:decimal .
+
+<configuration/noigan/86> rdf:type ns4kge:Configuration .
+<configuration/noigan/86> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/86> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/noigan/86> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/noigan/86> ns4kge:hasKGEModel <kge-model/attention> .
+<configuration/noigan/86> ns4kge:result "0.583"^^xsd:decimal .
+
+<configuration/noigan/87> rdf:type ns4kge:Configuration .
+<configuration/noigan/87> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/87> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/noigan/87> ns4kge:hasMetric  <metric/mrr> .
+<configuration/noigan/87> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/noigan/87> ns4kge:result "0.33"^^xsd:decimal .
+
+<configuration/noigan/88> rdf:type ns4kge:Configuration .
+<configuration/noigan/88> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/88> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/noigan/88> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/noigan/88> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/noigan/88> ns4kge:result "0.229"^^xsd:decimal .
+
+<configuration/noigan/89> rdf:type ns4kge:Configuration .
+<configuration/noigan/89> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/89> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/noigan/89> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/noigan/89> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/noigan/89> ns4kge:result "0.371"^^xsd:decimal .
+
+<configuration/noigan/90> rdf:type ns4kge:Configuration .
+<configuration/noigan/90> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/90> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/noigan/90> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/noigan/90> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/noigan/90> ns4kge:result "0.531"^^xsd:decimal .
+
+<configuration/noigan/91> rdf:type ns4kge:Configuration .
+<configuration/noigan/91> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/91> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/noigan/91> ns4kge:hasMetric  <metric/mrr> .
+<configuration/noigan/91> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/noigan/91> ns4kge:result "0.41"^^xsd:decimal .
+
+<configuration/noigan/92> rdf:type ns4kge:Configuration .
+<configuration/noigan/92> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/92> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/noigan/92> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/noigan/92> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/noigan/92> ns4kge:result "0.299"^^xsd:decimal .
+
+<configuration/noigan/93> rdf:type ns4kge:Configuration .
+<configuration/noigan/93> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/93> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/noigan/93> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/noigan/93> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/noigan/93> ns4kge:result "0.469"^^xsd:decimal .
+
+<configuration/noigan/94> rdf:type ns4kge:Configuration .
+<configuration/noigan/94> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/94> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/noigan/94> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/noigan/94> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/noigan/94> ns4kge:result "0.62"^^xsd:decimal .
+
+<configuration/noigan/95> rdf:type ns4kge:Configuration .
+<configuration/noigan/95> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/95> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/noigan/95> ns4kge:hasMetric  <metric/mrr> .
+<configuration/noigan/95> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/noigan/95> ns4kge:result "0.229"^^xsd:decimal .
+
+<configuration/noigan/96> rdf:type ns4kge:Configuration .
+<configuration/noigan/96> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/96> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/noigan/96> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/noigan/96> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/noigan/96> ns4kge:result "0.022"^^xsd:decimal .
+
+<configuration/noigan/97> rdf:type ns4kge:Configuration .
+<configuration/noigan/97> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/97> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/noigan/97> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/noigan/97> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/noigan/97> ns4kge:result "0.403"^^xsd:decimal .
+
+<configuration/noigan/98> rdf:type ns4kge:Configuration .
+<configuration/noigan/98> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/98> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/noigan/98> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/noigan/98> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/noigan/98> ns4kge:result "0.526"^^xsd:decimal .
+
+<configuration/noigan/99> rdf:type ns4kge:Configuration .
+<configuration/noigan/99> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/99> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/noigan/99> ns4kge:hasMetric  <metric/mrr> .
+<configuration/noigan/99> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/noigan/99> ns4kge:hasNSMethod <ns-method/ckrl> .
+<configuration/noigan/99> ns4kge:result "0.33"^^xsd:decimal .
+
+<configuration/noigan/100> rdf:type ns4kge:Configuration .
+<configuration/noigan/100> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/100> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/noigan/100> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/noigan/100> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/noigan/100> ns4kge:hasNSMethod <ns-method/ckrl> .
+<configuration/noigan/100> ns4kge:result "0.229"^^xsd:decimal .
+
+<configuration/noigan/101> rdf:type ns4kge:Configuration .
+<configuration/noigan/101> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/101> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/noigan/101> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/noigan/101> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/noigan/101> ns4kge:hasNSMethod <ns-method/ckrl> .
+<configuration/noigan/101> ns4kge:result "0.372"^^xsd:decimal .
+
+<configuration/noigan/102> rdf:type ns4kge:Configuration .
+<configuration/noigan/102> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/102> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/noigan/102> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/noigan/102> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/noigan/102> ns4kge:hasNSMethod <ns-method/ckrl> .
+<configuration/noigan/102> ns4kge:result "0.529"^^xsd:decimal .
+
+<configuration/noigan/103> rdf:type ns4kge:Configuration .
+<configuration/noigan/103> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/103> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/noigan/103> ns4kge:hasMetric  <metric/mrr> .
+<configuration/noigan/103> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/noigan/103> ns4kge:hasNSMethod <ns-method/ckrl> .
+<configuration/noigan/103> ns4kge:result "0.377"^^xsd:decimal .
+
+<configuration/noigan/104> rdf:type ns4kge:Configuration .
+<configuration/noigan/104> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/104> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/noigan/104> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/noigan/104> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/noigan/104> ns4kge:hasNSMethod <ns-method/ckrl> .
+<configuration/noigan/104> ns4kge:result "0.264"^^xsd:decimal .
+
+<configuration/noigan/105> rdf:type ns4kge:Configuration .
+<configuration/noigan/105> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/105> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/noigan/105> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/noigan/105> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/noigan/105> ns4kge:hasNSMethod <ns-method/ckrl> .
+<configuration/noigan/105> ns4kge:result "0.438"^^xsd:decimal .
+
+<configuration/noigan/106> rdf:type ns4kge:Configuration .
+<configuration/noigan/106> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/106> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/noigan/106> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/noigan/106> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/noigan/106> ns4kge:hasNSMethod <ns-method/ckrl> .
+<configuration/noigan/106> ns4kge:result "0.585"^^xsd:decimal .
+
+<configuration/noigan/107> rdf:type ns4kge:Configuration .
+<configuration/noigan/107> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/107> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/noigan/107> ns4kge:hasMetric  <metric/mrr> .
+<configuration/noigan/107> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/noigan/107> ns4kge:hasNSMethod <ns-method/ckrl> .
+<configuration/noigan/107> ns4kge:result "0.231"^^xsd:decimal .
+
+<configuration/noigan/108> rdf:type ns4kge:Configuration .
+<configuration/noigan/108> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/108> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/noigan/108> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/noigan/108> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/noigan/108> ns4kge:hasNSMethod <ns-method/ckrl> .
+<configuration/noigan/108> ns4kge:result "0.027"^^xsd:decimal .
+
+<configuration/noigan/109> rdf:type ns4kge:Configuration .
+<configuration/noigan/109> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/109> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/noigan/109> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/noigan/109> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/noigan/109> ns4kge:hasNSMethod <ns-method/ckrl> .
+<configuration/noigan/109> ns4kge:result "0.404"^^xsd:decimal .
+
+<configuration/noigan/110> rdf:type ns4kge:Configuration .
+<configuration/noigan/110> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/110> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/noigan/110> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/noigan/110> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/noigan/110> ns4kge:hasNSMethod <ns-method/ckrl> .
+<configuration/noigan/110> ns4kge:result "0.53"^^xsd:decimal .
+
+<configuration/noigan/111> rdf:type ns4kge:Configuration .
+<configuration/noigan/111> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/111> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/noigan/111> ns4kge:hasMetric  <metric/mrr> .
+<configuration/noigan/111> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/noigan/111> ns4kge:hasNSMethod <ns-method/noigan-soft> .
+<configuration/noigan/111> ns4kge:result "0.318"^^xsd:decimal .
+
+<configuration/noigan/112> rdf:type ns4kge:Configuration .
+<configuration/noigan/112> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/112> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/noigan/112> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/noigan/112> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/noigan/112> ns4kge:hasNSMethod <ns-method/noigan-soft> .
+<configuration/noigan/112> ns4kge:result "0.217"^^xsd:decimal .
+
+<configuration/noigan/113> rdf:type ns4kge:Configuration .
+<configuration/noigan/113> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/113> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/noigan/113> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/noigan/113> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/noigan/113> ns4kge:hasNSMethod <ns-method/noigan-soft> .
+<configuration/noigan/113> ns4kge:result "0.358"^^xsd:decimal .
+
+<configuration/noigan/114> rdf:type ns4kge:Configuration .
+<configuration/noigan/114> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/114> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/noigan/114> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/noigan/114> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/noigan/114> ns4kge:hasNSMethod <ns-method/noigan-soft> .
+<configuration/noigan/114> ns4kge:result "0.518"^^xsd:decimal .
+
+<configuration/noigan/115> rdf:type ns4kge:Configuration .
+<configuration/noigan/115> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/115> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/noigan/115> ns4kge:hasMetric  <metric/mrr> .
+<configuration/noigan/115> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/noigan/115> ns4kge:hasNSMethod <ns-method/noigan-soft> .
+<configuration/noigan/115> ns4kge:result "0.37"^^xsd:decimal .
+
+<configuration/noigan/116> rdf:type ns4kge:Configuration .
+<configuration/noigan/116> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/116> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/noigan/116> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/noigan/116> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/noigan/116> ns4kge:hasNSMethod <ns-method/noigan-soft> .
+<configuration/noigan/116> ns4kge:result "0.267"^^xsd:decimal .
+
+<configuration/noigan/117> rdf:type ns4kge:Configuration .
+<configuration/noigan/117> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/117> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/noigan/117> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/noigan/117> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/noigan/117> ns4kge:hasNSMethod <ns-method/noigan-soft> .
+<configuration/noigan/117> ns4kge:result "0.42"^^xsd:decimal .
+
+<configuration/noigan/118> rdf:type ns4kge:Configuration .
+<configuration/noigan/118> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/118> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/noigan/118> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/noigan/118> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/noigan/118> ns4kge:hasNSMethod <ns-method/noigan-soft> .
+<configuration/noigan/118> ns4kge:result "0.567"^^xsd:decimal .
+
+<configuration/noigan/119> rdf:type ns4kge:Configuration .
+<configuration/noigan/119> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/119> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/noigan/119> ns4kge:hasMetric  <metric/mrr> .
+<configuration/noigan/119> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/noigan/119> ns4kge:hasNSMethod <ns-method/noigan-soft> .
+<configuration/noigan/119> ns4kge:result "0.231"^^xsd:decimal .
+
+<configuration/noigan/120> rdf:type ns4kge:Configuration .
+<configuration/noigan/120> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/120> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/noigan/120> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/noigan/120> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/noigan/120> ns4kge:hasNSMethod <ns-method/noigan-soft> .
+<configuration/noigan/120> ns4kge:result "0.026"^^xsd:decimal .
+
+<configuration/noigan/121> rdf:type ns4kge:Configuration .
+<configuration/noigan/121> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/121> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/noigan/121> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/noigan/121> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/noigan/121> ns4kge:hasNSMethod <ns-method/noigan-soft> .
+<configuration/noigan/121> ns4kge:result "0.407"^^xsd:decimal .
+
+<configuration/noigan/122> rdf:type ns4kge:Configuration .
+<configuration/noigan/122> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/122> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/noigan/122> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/noigan/122> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/noigan/122> ns4kge:hasNSMethod <ns-method/noigan-soft> .
+<configuration/noigan/122> ns4kge:result "0.524"^^xsd:decimal .
+
+<configuration/noigan/123> rdf:type ns4kge:Configuration .
+<configuration/noigan/123> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/123> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/noigan/123> ns4kge:hasMetric  <metric/mrr> .
+<configuration/noigan/123> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/noigan/123> ns4kge:hasNSMethod <ns-method/noigan-hard> .
+<configuration/noigan/123> ns4kge:result "0.308"^^xsd:decimal .
+
+<configuration/noigan/124> rdf:type ns4kge:Configuration .
+<configuration/noigan/124> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/124> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/noigan/124> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/noigan/124> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/noigan/124> ns4kge:hasNSMethod <ns-method/noigan-hard> .
+<configuration/noigan/124> ns4kge:result "0.209"^^xsd:decimal .
+
+<configuration/noigan/125> rdf:type ns4kge:Configuration .
+<configuration/noigan/125> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/125> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/noigan/125> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/noigan/125> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/noigan/125> ns4kge:hasNSMethod <ns-method/noigan-hard> .
+<configuration/noigan/125> ns4kge:result "0.349"^^xsd:decimal .
+
+<configuration/noigan/126> rdf:type ns4kge:Configuration .
+<configuration/noigan/126> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/126> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/noigan/126> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/noigan/126> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/noigan/126> ns4kge:hasNSMethod <ns-method/noigan-hard> .
+<configuration/noigan/126> ns4kge:result "0.502"^^xsd:decimal .
+
+<configuration/noigan/127> rdf:type ns4kge:Configuration .
+<configuration/noigan/127> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/127> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/noigan/127> ns4kge:hasMetric  <metric/mrr> .
+<configuration/noigan/127> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/noigan/127> ns4kge:hasNSMethod <ns-method/noigan-hard> .
+<configuration/noigan/127> ns4kge:result "0.345"^^xsd:decimal .
+
+<configuration/noigan/128> rdf:type ns4kge:Configuration .
+<configuration/noigan/128> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/128> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/noigan/128> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/noigan/128> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/noigan/128> ns4kge:hasNSMethod <ns-method/noigan-hard> .
+<configuration/noigan/128> ns4kge:result "0.248"^^xsd:decimal .
+
+<configuration/noigan/129> rdf:type ns4kge:Configuration .
+<configuration/noigan/129> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/129> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/noigan/129> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/noigan/129> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/noigan/129> ns4kge:hasNSMethod <ns-method/noigan-hard> .
+<configuration/noigan/129> ns4kge:result "0.393"^^xsd:decimal .
+
+<configuration/noigan/130> rdf:type ns4kge:Configuration .
+<configuration/noigan/130> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/130> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/noigan/130> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/noigan/130> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/noigan/130> ns4kge:hasNSMethod <ns-method/noigan-hard> .
+<configuration/noigan/130> ns4kge:result "0.531"^^xsd:decimal .
+
+<configuration/noigan/131> rdf:type ns4kge:Configuration .
+<configuration/noigan/131> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/131> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/noigan/131> ns4kge:hasMetric  <metric/mrr> .
+<configuration/noigan/131> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/noigan/131> ns4kge:hasNSMethod <ns-method/noigan-hard> .
+<configuration/noigan/131> ns4kge:result "0.223"^^xsd:decimal .
+
+<configuration/noigan/132> rdf:type ns4kge:Configuration .
+<configuration/noigan/132> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/132> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/noigan/132> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/noigan/132> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/noigan/132> ns4kge:hasNSMethod <ns-method/noigan-hard> .
+<configuration/noigan/132> ns4kge:result "0.031"^^xsd:decimal .
+
+<configuration/noigan/133> rdf:type ns4kge:Configuration .
+<configuration/noigan/133> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/133> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/noigan/133> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/noigan/133> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/noigan/133> ns4kge:hasNSMethod <ns-method/noigan-hard> .
+<configuration/noigan/133> ns4kge:result "0.381"^^xsd:decimal .
+
+<configuration/noigan/134> rdf:type ns4kge:Configuration .
+<configuration/noigan/134> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/134> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/noigan/134> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/noigan/134> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/noigan/134> ns4kge:hasNSMethod <ns-method/noigan-hard> .
+<configuration/noigan/134> ns4kge:result "0.503"^^xsd:decimal .
+
+<configuration/noigan/135> rdf:type ns4kge:Configuration .
+<configuration/noigan/135> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/135> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/noigan/135> ns4kge:hasMetric  <metric/mrr> .
+<configuration/noigan/135> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/noigan/135> ns4kge:result "0.326"^^xsd:decimal .
+
+<configuration/noigan/136> rdf:type ns4kge:Configuration .
+<configuration/noigan/136> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/136> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/noigan/136> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/noigan/136> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/noigan/136> ns4kge:result "0.228"^^xsd:decimal .
+
+<configuration/noigan/137> rdf:type ns4kge:Configuration .
+<configuration/noigan/137> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/137> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/noigan/137> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/noigan/137> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/noigan/137> ns4kge:result "0.363"^^xsd:decimal .
+
+<configuration/noigan/138> rdf:type ns4kge:Configuration .
+<configuration/noigan/138> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/138> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/noigan/138> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/noigan/138> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/noigan/138> ns4kge:result "0.521"^^xsd:decimal .
+
+<configuration/noigan/139> rdf:type ns4kge:Configuration .
+<configuration/noigan/139> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/139> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/noigan/139> ns4kge:hasMetric  <metric/mrr> .
+<configuration/noigan/139> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/noigan/139> ns4kge:result "0.38"^^xsd:decimal .
+
+<configuration/noigan/140> rdf:type ns4kge:Configuration .
+<configuration/noigan/140> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/140> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/noigan/140> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/noigan/140> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/noigan/140> ns4kge:result "0.269"^^xsd:decimal .
+
+<configuration/noigan/141> rdf:type ns4kge:Configuration .
+<configuration/noigan/141> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/141> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/noigan/141> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/noigan/141> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/noigan/141> ns4kge:result "0.437"^^xsd:decimal .
+
+<configuration/noigan/142> rdf:type ns4kge:Configuration .
+<configuration/noigan/142> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/142> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/noigan/142> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/noigan/142> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/noigan/142> ns4kge:result "0.594"^^xsd:decimal .
+
+<configuration/noigan/143> rdf:type ns4kge:Configuration .
+<configuration/noigan/143> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/143> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/noigan/143> ns4kge:hasMetric  <metric/mrr> .
+<configuration/noigan/143> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/noigan/143> ns4kge:result "0.472"^^xsd:decimal .
+
+<configuration/noigan/144> rdf:type ns4kge:Configuration .
+<configuration/noigan/144> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/144> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/noigan/144> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/noigan/144> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/noigan/144> ns4kge:result "0.429"^^xsd:decimal .
+
+<configuration/noigan/145> rdf:type ns4kge:Configuration .
+<configuration/noigan/145> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/145> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/noigan/145> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/noigan/145> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/noigan/145> ns4kge:result "0.488"^^xsd:decimal .
+
+<configuration/noigan/146> rdf:type ns4kge:Configuration .
+<configuration/noigan/146> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/146> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/noigan/146> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/noigan/146> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/noigan/146> ns4kge:result "0.557"^^xsd:decimal .
+
+<configuration/noigan/147> rdf:type ns4kge:Configuration .
+<configuration/noigan/147> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/147> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/noigan/147> ns4kge:hasMetric  <metric/mrr> .
+<configuration/noigan/147> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/noigan/147> ns4kge:hasNSMethod <ns-method/noigan-soft> .
+<configuration/noigan/147> ns4kge:result "0.326"^^xsd:decimal .
+
+<configuration/noigan/148> rdf:type ns4kge:Configuration .
+<configuration/noigan/148> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/148> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/noigan/148> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/noigan/148> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/noigan/148> ns4kge:hasNSMethod <ns-method/noigan-soft> .
+<configuration/noigan/148> ns4kge:result "0.229"^^xsd:decimal .
+
+<configuration/noigan/149> rdf:type ns4kge:Configuration .
+<configuration/noigan/149> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/149> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/noigan/149> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/noigan/149> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/noigan/149> ns4kge:hasNSMethod <ns-method/noigan-soft> .
+<configuration/noigan/149> ns4kge:result "0.363"^^xsd:decimal .
+
+<configuration/noigan/150> rdf:type ns4kge:Configuration .
+<configuration/noigan/150> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/150> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/noigan/150> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/noigan/150> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/noigan/150> ns4kge:hasNSMethod <ns-method/noigan-soft> .
+<configuration/noigan/150> ns4kge:result "0.52"^^xsd:decimal .
+
+<configuration/noigan/151> rdf:type ns4kge:Configuration .
+<configuration/noigan/151> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/151> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/noigan/151> ns4kge:hasMetric  <metric/mrr> .
+<configuration/noigan/151> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/noigan/151> ns4kge:hasNSMethod <ns-method/noigan-soft> .
+<configuration/noigan/151> ns4kge:result "0.43"^^xsd:decimal .
+
+<configuration/noigan/152> rdf:type ns4kge:Configuration .
+<configuration/noigan/152> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/152> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/noigan/152> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/noigan/152> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/noigan/152> ns4kge:hasNSMethod <ns-method/noigan-soft> .
+<configuration/noigan/152> ns4kge:result "0.33"^^xsd:decimal .
+
+<configuration/noigan/153> rdf:type ns4kge:Configuration .
+<configuration/noigan/153> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/153> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/noigan/153> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/noigan/153> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/noigan/153> ns4kge:hasNSMethod <ns-method/noigan-soft> .
+<configuration/noigan/153> ns4kge:result "0.487"^^xsd:decimal .
+
+<configuration/noigan/154> rdf:type ns4kge:Configuration .
+<configuration/noigan/154> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/154> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/noigan/154> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/noigan/154> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/noigan/154> ns4kge:hasNSMethod <ns-method/noigan-soft> .
+<configuration/noigan/154> ns4kge:result "0.62"^^xsd:decimal .
+
+<configuration/noigan/155> rdf:type ns4kge:Configuration .
+<configuration/noigan/155> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/155> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/noigan/155> ns4kge:hasMetric  <metric/mrr> .
+<configuration/noigan/155> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/noigan/155> ns4kge:hasNSMethod <ns-method/noigan-soft> .
+<configuration/noigan/155> ns4kge:result "0.466"^^xsd:decimal .
+
+<configuration/noigan/156> rdf:type ns4kge:Configuration .
+<configuration/noigan/156> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/156> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/noigan/156> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/noigan/156> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/noigan/156> ns4kge:hasNSMethod <ns-method/noigan-soft> .
+<configuration/noigan/156> ns4kge:result "0.42"^^xsd:decimal .
+
+<configuration/noigan/157> rdf:type ns4kge:Configuration .
+<configuration/noigan/157> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/157> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/noigan/157> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/noigan/157> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/noigan/157> ns4kge:hasNSMethod <ns-method/noigan-soft> .
+<configuration/noigan/157> ns4kge:result "0.485"^^xsd:decimal .
+
+<configuration/noigan/158> rdf:type ns4kge:Configuration .
+<configuration/noigan/158> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/158> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/noigan/158> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/noigan/158> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/noigan/158> ns4kge:hasNSMethod <ns-method/noigan-soft> .
+<configuration/noigan/158> ns4kge:result "0.554"^^xsd:decimal .
+
+<configuration/noigan/159> rdf:type ns4kge:Configuration .
+<configuration/noigan/159> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/159> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/noigan/159> ns4kge:hasMetric  <metric/mrr> .
+<configuration/noigan/159> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/noigan/159> ns4kge:hasNSMethod <ns-method/noigan-hard> .
+<configuration/noigan/159> ns4kge:result "0.325"^^xsd:decimal .
+
+<configuration/noigan/160> rdf:type ns4kge:Configuration .
+<configuration/noigan/160> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/160> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/noigan/160> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/noigan/160> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/noigan/160> ns4kge:hasNSMethod <ns-method/noigan-hard> .
+<configuration/noigan/160> ns4kge:result "0.228"^^xsd:decimal .
+
+<configuration/noigan/161> rdf:type ns4kge:Configuration .
+<configuration/noigan/161> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/161> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/noigan/161> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/noigan/161> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/noigan/161> ns4kge:hasNSMethod <ns-method/noigan-hard> .
+<configuration/noigan/161> ns4kge:result "0.363"^^xsd:decimal .
+
+<configuration/noigan/162> rdf:type ns4kge:Configuration .
+<configuration/noigan/162> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/162> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/noigan/162> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/noigan/162> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/noigan/162> ns4kge:hasNSMethod <ns-method/noigan-hard> .
+<configuration/noigan/162> ns4kge:result "0.518"^^xsd:decimal .
+
+<configuration/noigan/163> rdf:type ns4kge:Configuration .
+<configuration/noigan/163> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/163> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/noigan/163> ns4kge:hasMetric  <metric/mrr> .
+<configuration/noigan/163> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/noigan/163> ns4kge:hasNSMethod <ns-method/noigan-hard> .
+<configuration/noigan/163> ns4kge:result "0.413"^^xsd:decimal .
+
+<configuration/noigan/164> rdf:type ns4kge:Configuration .
+<configuration/noigan/164> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/164> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/noigan/164> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/noigan/164> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/noigan/164> ns4kge:hasNSMethod <ns-method/noigan-hard> .
+<configuration/noigan/164> ns4kge:result "0.312"^^xsd:decimal .
+
+<configuration/noigan/165> rdf:type ns4kge:Configuration .
+<configuration/noigan/165> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/165> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/noigan/165> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/noigan/165> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/noigan/165> ns4kge:hasNSMethod <ns-method/noigan-hard> .
+<configuration/noigan/165> ns4kge:result "0.471"^^xsd:decimal .
+
+<configuration/noigan/166> rdf:type ns4kge:Configuration .
+<configuration/noigan/166> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/166> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/noigan/166> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/noigan/166> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/noigan/166> ns4kge:hasNSMethod <ns-method/noigan-hard> .
+<configuration/noigan/166> ns4kge:result "0.602"^^xsd:decimal .
+
+<configuration/noigan/167> rdf:type ns4kge:Configuration .
+<configuration/noigan/167> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/167> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/noigan/167> ns4kge:hasMetric  <metric/mrr> .
+<configuration/noigan/167> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/noigan/167> ns4kge:hasNSMethod <ns-method/noigan-hard> .
+<configuration/noigan/167> ns4kge:result "0.465"^^xsd:decimal .
+
+<configuration/noigan/168> rdf:type ns4kge:Configuration .
+<configuration/noigan/168> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/168> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/noigan/168> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/noigan/168> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/noigan/168> ns4kge:hasNSMethod <ns-method/noigan-hard> .
+<configuration/noigan/168> ns4kge:result "0.42"^^xsd:decimal .
+
+<configuration/noigan/169> rdf:type ns4kge:Configuration .
+<configuration/noigan/169> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/169> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/noigan/169> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/noigan/169> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/noigan/169> ns4kge:hasNSMethod <ns-method/noigan-hard> .
+<configuration/noigan/169> ns4kge:result "0.483"^^xsd:decimal .
+
+<configuration/noigan/170> rdf:type ns4kge:Configuration .
+<configuration/noigan/170> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/170> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/noigan/170> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/noigan/170> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/noigan/170> ns4kge:hasNSMethod <ns-method/noigan-hard> .
+<configuration/noigan/170> ns4kge:result "0.551"^^xsd:decimal .
+
+<configuration/noigan/171> rdf:type ns4kge:Configuration .
+<configuration/noigan/171> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/171> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/noigan/171> ns4kge:hasMetric  <metric/mrr> .
+<configuration/noigan/171> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/noigan/171> ns4kge:hasNSMethod <ns-method/unknown-40-percent> .
+<configuration/noigan/171> ns4kge:result "0.207"^^xsd:decimal .
+
+<configuration/noigan/172> rdf:type ns4kge:Configuration .
+<configuration/noigan/172> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/172> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/noigan/172> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/noigan/172> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/noigan/172> ns4kge:hasNSMethod <ns-method/unknown-40-percent> .
+<configuration/noigan/172> ns4kge:result "0.127"^^xsd:decimal .
+
+<configuration/noigan/173> rdf:type ns4kge:Configuration .
+<configuration/noigan/173> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/173> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/noigan/173> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/noigan/173> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/noigan/173> ns4kge:hasNSMethod <ns-method/unknown-40-percent> .
+<configuration/noigan/173> ns4kge:result "0.229"^^xsd:decimal .
+
+<configuration/noigan/174> rdf:type ns4kge:Configuration .
+<configuration/noigan/174> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/174> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/noigan/174> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/noigan/174> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/noigan/174> ns4kge:hasNSMethod <ns-method/unknown-40-percent> .
+<configuration/noigan/174> ns4kge:result "0.369"^^xsd:decimal .
+
+<configuration/noigan/175> rdf:type ns4kge:Configuration .
+<configuration/noigan/175> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/175> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/noigan/175> ns4kge:hasMetric  <metric/mrr> .
+<configuration/noigan/175> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/noigan/175> ns4kge:hasNSMethod <ns-method/unknown-40-percent> .
+<configuration/noigan/175> ns4kge:result "0.089"^^xsd:decimal .
+
+<configuration/noigan/176> rdf:type ns4kge:Configuration .
+<configuration/noigan/176> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/176> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/noigan/176> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/noigan/176> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/noigan/176> ns4kge:hasNSMethod <ns-method/unknown-40-percent> .
+<configuration/noigan/176> ns4kge:result "0.038"^^xsd:decimal .
+
+<configuration/noigan/177> rdf:type ns4kge:Configuration .
+<configuration/noigan/177> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/177> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/noigan/177> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/noigan/177> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/noigan/177> ns4kge:hasNSMethod <ns-method/unknown-40-percent> .
+<configuration/noigan/177> ns4kge:result "0.095"^^xsd:decimal .
+
+<configuration/noigan/178> rdf:type ns4kge:Configuration .
+<configuration/noigan/178> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/178> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/noigan/178> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/noigan/178> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/noigan/178> ns4kge:hasNSMethod <ns-method/unknown-40-percent> .
+<configuration/noigan/178> ns4kge:result "0.188"^^xsd:decimal .
+
+<configuration/noigan/179> rdf:type ns4kge:Configuration .
+<configuration/noigan/179> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/179> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/noigan/179> ns4kge:hasMetric  <metric/mrr> .
+<configuration/noigan/179> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/noigan/179> ns4kge:hasNSMethod <ns-method/unknown-40-percent> .
+<configuration/noigan/179> ns4kge:result "0.364"^^xsd:decimal .
+
+<configuration/noigan/180> rdf:type ns4kge:Configuration .
+<configuration/noigan/180> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/180> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/noigan/180> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/noigan/180> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/noigan/180> ns4kge:hasNSMethod <ns-method/unknown-40-percent> .
+<configuration/noigan/180> ns4kge:result "0.31"^^xsd:decimal .
+
+<configuration/noigan/181> rdf:type ns4kge:Configuration .
+<configuration/noigan/181> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/181> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/noigan/181> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/noigan/181> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/noigan/181> ns4kge:hasNSMethod <ns-method/unknown-40-percent> .
+<configuration/noigan/181> ns4kge:result "0.4"^^xsd:decimal .
+
+<configuration/noigan/182> rdf:type ns4kge:Configuration .
+<configuration/noigan/182> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/182> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/noigan/182> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/noigan/182> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/noigan/182> ns4kge:hasNSMethod <ns-method/unknown-40-percent> .
+<configuration/noigan/182> ns4kge:result "0.449"^^xsd:decimal .
+
+<configuration/noigan/183> rdf:type ns4kge:Configuration .
+<configuration/noigan/183> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/183> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/noigan/183> ns4kge:hasMetric  <metric/mrr> .
+<configuration/noigan/183> ns4kge:hasKGEModel <kge-model/kbgan> .
+<configuration/noigan/183> ns4kge:hasNSMethod <ns-method/kbgan-40-percent> .
+<configuration/noigan/183> ns4kge:result "0.177"^^xsd:decimal .
+
+<configuration/noigan/184> rdf:type ns4kge:Configuration .
+<configuration/noigan/184> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/184> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/noigan/184> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/noigan/184> ns4kge:hasKGEModel <kge-model/kbgan> .
+<configuration/noigan/184> ns4kge:hasNSMethod <ns-method/kbgan-40-percent> .
+<configuration/noigan/184> ns4kge:result "0.079"^^xsd:decimal .
+
+<configuration/noigan/185> rdf:type ns4kge:Configuration .
+<configuration/noigan/185> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/185> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/noigan/185> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/noigan/185> ns4kge:hasKGEModel <kge-model/kbgan> .
+<configuration/noigan/185> ns4kge:hasNSMethod <ns-method/kbgan-40-percent> .
+<configuration/noigan/185> ns4kge:result "0.214"^^xsd:decimal .
+
+<configuration/noigan/186> rdf:type ns4kge:Configuration .
+<configuration/noigan/186> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/186> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/noigan/186> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/noigan/186> ns4kge:hasKGEModel <kge-model/kbgan> .
+<configuration/noigan/186> ns4kge:hasNSMethod <ns-method/kbgan-40-percent> .
+<configuration/noigan/186> ns4kge:result "0.363"^^xsd:decimal .
+
+<configuration/noigan/187> rdf:type ns4kge:Configuration .
+<configuration/noigan/187> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/187> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/noigan/187> ns4kge:hasMetric  <metric/mrr> .
+<configuration/noigan/187> ns4kge:hasKGEModel <kge-model/attention> .
+<configuration/noigan/187> ns4kge:hasNSMethod <ns-method/unknown-40-percent> .
+<configuration/noigan/187> ns4kge:result "0.326"^^xsd:decimal .
+
+<configuration/noigan/188> rdf:type ns4kge:Configuration .
+<configuration/noigan/188> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/188> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/noigan/188> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/noigan/188> ns4kge:hasKGEModel <kge-model/attention> .
+<configuration/noigan/188> ns4kge:hasNSMethod <ns-method/unknown-40-percent> .
+<configuration/noigan/188> ns4kge:result "0.249"^^xsd:decimal .
+
+<configuration/noigan/189> rdf:type ns4kge:Configuration .
+<configuration/noigan/189> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/189> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/noigan/189> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/noigan/189> ns4kge:hasKGEModel <kge-model/attention> .
+<configuration/noigan/189> ns4kge:hasNSMethod <ns-method/unknown-40-percent> .
+<configuration/noigan/189> ns4kge:result "0.352"^^xsd:decimal .
+
+<configuration/noigan/190> rdf:type ns4kge:Configuration .
+<configuration/noigan/190> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/190> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/noigan/190> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/noigan/190> ns4kge:hasKGEModel <kge-model/attention> .
+<configuration/noigan/190> ns4kge:hasNSMethod <ns-method/unknown-40-percent> .
+<configuration/noigan/190> ns4kge:result "0.48"^^xsd:decimal .
+
+<configuration/noigan/191> rdf:type ns4kge:Configuration .
+<configuration/noigan/191> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/191> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/noigan/191> ns4kge:hasMetric  <metric/mrr> .
+<configuration/noigan/191> ns4kge:hasKGEModel <kge-model/attention> .
+<configuration/noigan/191> ns4kge:hasNSMethod <ns-method/unknown-40-percent> .
+<configuration/noigan/191> ns4kge:result "0.23"^^xsd:decimal .
+
+<configuration/noigan/192> rdf:type ns4kge:Configuration .
+<configuration/noigan/192> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/192> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/noigan/192> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/noigan/192> ns4kge:hasKGEModel <kge-model/attention> .
+<configuration/noigan/192> ns4kge:hasNSMethod <ns-method/unknown-40-percent> .
+<configuration/noigan/192> ns4kge:result "0.035"^^xsd:decimal .
+
+<configuration/noigan/193> rdf:type ns4kge:Configuration .
+<configuration/noigan/193> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/193> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/noigan/193> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/noigan/193> ns4kge:hasKGEModel <kge-model/attention> .
+<configuration/noigan/193> ns4kge:hasNSMethod <ns-method/unknown-40-percent> .
+<configuration/noigan/193> ns4kge:result "0.357"^^xsd:decimal .
+
+<configuration/noigan/194> rdf:type ns4kge:Configuration .
+<configuration/noigan/194> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/194> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/noigan/194> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/noigan/194> ns4kge:hasKGEModel <kge-model/attention> .
+<configuration/noigan/194> ns4kge:hasNSMethod <ns-method/unknown-40-percent> .
+<configuration/noigan/194> ns4kge:result "0.586"^^xsd:decimal .
+
+<configuration/noigan/195> rdf:type ns4kge:Configuration .
+<configuration/noigan/195> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/195> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/noigan/195> ns4kge:hasMetric  <metric/mrr> .
+<configuration/noigan/195> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/noigan/195> ns4kge:hasNSMethod <ns-method/unknown-40-percent> .
+<configuration/noigan/195> ns4kge:result "0.182"^^xsd:decimal .
+
+<configuration/noigan/196> rdf:type ns4kge:Configuration .
+<configuration/noigan/196> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/196> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/noigan/196> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/noigan/196> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/noigan/196> ns4kge:hasNSMethod <ns-method/unknown-40-percent> .
+<configuration/noigan/196> ns4kge:result "0.026"^^xsd:decimal .
+
+<configuration/noigan/197> rdf:type ns4kge:Configuration .
+<configuration/noigan/197> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/197> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/noigan/197> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/noigan/197> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/noigan/197> ns4kge:hasNSMethod <ns-method/unknown-40-percent> .
+<configuration/noigan/197> ns4kge:result "0.271"^^xsd:decimal .
+
+<configuration/noigan/198> rdf:type ns4kge:Configuration .
+<configuration/noigan/198> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/198> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/noigan/198> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/noigan/198> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/noigan/198> ns4kge:hasNSMethod <ns-method/unknown-40-percent> .
+<configuration/noigan/198> ns4kge:result "0.463"^^xsd:decimal .
+
+<configuration/noigan/199> rdf:type ns4kge:Configuration .
+<configuration/noigan/199> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/199> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/noigan/199> ns4kge:hasMetric  <metric/mrr> .
+<configuration/noigan/199> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/noigan/199> ns4kge:hasNSMethod <ns-method/unknown-40-percent> .
+<configuration/noigan/199> ns4kge:result "0.15"^^xsd:decimal .
+
+<configuration/noigan/200> rdf:type ns4kge:Configuration .
+<configuration/noigan/200> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/200> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/noigan/200> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/noigan/200> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/noigan/200> ns4kge:hasNSMethod <ns-method/unknown-40-percent> .
+<configuration/noigan/200> ns4kge:result "0.001"^^xsd:decimal .
+
+<configuration/noigan/201> rdf:type ns4kge:Configuration .
+<configuration/noigan/201> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/201> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/noigan/201> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/noigan/201> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/noigan/201> ns4kge:hasNSMethod <ns-method/unknown-40-percent> .
+<configuration/noigan/201> ns4kge:result "0.231"^^xsd:decimal .
+
+<configuration/noigan/202> rdf:type ns4kge:Configuration .
+<configuration/noigan/202> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/202> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/noigan/202> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/noigan/202> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/noigan/202> ns4kge:hasNSMethod <ns-method/unknown-40-percent> .
+<configuration/noigan/202> ns4kge:result "0.429"^^xsd:decimal .
+
+<configuration/noigan/203> rdf:type ns4kge:Configuration .
+<configuration/noigan/203> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/203> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/noigan/203> ns4kge:hasMetric  <metric/mrr> .
+<configuration/noigan/203> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/noigan/203> ns4kge:hasNSMethod <ns-method/unknown-40-percent> .
+<configuration/noigan/203> ns4kge:result "0.185"^^xsd:decimal .
+
+<configuration/noigan/204> rdf:type ns4kge:Configuration .
+<configuration/noigan/204> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/204> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/noigan/204> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/noigan/204> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/noigan/204> ns4kge:hasNSMethod <ns-method/unknown-40-percent> .
+<configuration/noigan/204> ns4kge:result "0.008"^^xsd:decimal .
+
+<configuration/noigan/205> rdf:type ns4kge:Configuration .
+<configuration/noigan/205> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/205> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/noigan/205> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/noigan/205> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/noigan/205> ns4kge:hasNSMethod <ns-method/unknown-40-percent> .
+<configuration/noigan/205> ns4kge:result "0.331"^^xsd:decimal .
+
+<configuration/noigan/206> rdf:type ns4kge:Configuration .
+<configuration/noigan/206> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/206> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/noigan/206> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/noigan/206> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/noigan/206> ns4kge:hasNSMethod <ns-method/unknown-40-percent> .
+<configuration/noigan/206> ns4kge:result "0.455"^^xsd:decimal .
+
+<configuration/noigan/207> rdf:type ns4kge:Configuration .
+<configuration/noigan/207> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/207> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/noigan/207> ns4kge:hasMetric  <metric/mrr> .
+<configuration/noigan/207> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/noigan/207> ns4kge:hasNSMethod <ns-method/ckrl-40-percent> .
+<configuration/noigan/207> ns4kge:result "0.19"^^xsd:decimal .
+
+<configuration/noigan/208> rdf:type ns4kge:Configuration .
+<configuration/noigan/208> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/208> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/noigan/208> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/noigan/208> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/noigan/208> ns4kge:hasNSMethod <ns-method/ckrl-40-percent> .
+<configuration/noigan/208> ns4kge:result "0.035"^^xsd:decimal .
+
+<configuration/noigan/209> rdf:type ns4kge:Configuration .
+<configuration/noigan/209> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/209> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/noigan/209> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/noigan/209> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/noigan/209> ns4kge:hasNSMethod <ns-method/ckrl-40-percent> .
+<configuration/noigan/209> ns4kge:result "0.276"^^xsd:decimal .
+
+<configuration/noigan/210> rdf:type ns4kge:Configuration .
+<configuration/noigan/210> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/210> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/noigan/210> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/noigan/210> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/noigan/210> ns4kge:hasNSMethod <ns-method/ckrl-40-percent> .
+<configuration/noigan/210> ns4kge:result "0.471"^^xsd:decimal .
+
+<configuration/noigan/211> rdf:type ns4kge:Configuration .
+<configuration/noigan/211> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/211> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/noigan/211> ns4kge:hasMetric  <metric/mrr> .
+<configuration/noigan/211> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/noigan/211> ns4kge:hasNSMethod <ns-method/ckrl-40-percent> .
+<configuration/noigan/211> ns4kge:result "0.122"^^xsd:decimal .
+
+<configuration/noigan/212> rdf:type ns4kge:Configuration .
+<configuration/noigan/212> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/212> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/noigan/212> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/noigan/212> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/noigan/212> ns4kge:hasNSMethod <ns-method/ckrl-40-percent> .
+<configuration/noigan/212> ns4kge:result "0.007"^^xsd:decimal .
+
+<configuration/noigan/213> rdf:type ns4kge:Configuration .
+<configuration/noigan/213> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/213> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/noigan/213> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/noigan/213> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/noigan/213> ns4kge:hasNSMethod <ns-method/ckrl-40-percent> .
+<configuration/noigan/213> ns4kge:result "0.175"^^xsd:decimal .
+
+<configuration/noigan/214> rdf:type ns4kge:Configuration .
+<configuration/noigan/214> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/214> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/noigan/214> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/noigan/214> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/noigan/214> ns4kge:hasNSMethod <ns-method/ckrl-40-percent> .
+<configuration/noigan/214> ns4kge:result "0.344"^^xsd:decimal .
+
+<configuration/noigan/215> rdf:type ns4kge:Configuration .
+<configuration/noigan/215> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/215> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/noigan/215> ns4kge:hasMetric  <metric/mrr> .
+<configuration/noigan/215> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/noigan/215> ns4kge:hasNSMethod <ns-method/ckrl-40-percent> .
+<configuration/noigan/215> ns4kge:result "0.186"^^xsd:decimal .
+
+<configuration/noigan/216> rdf:type ns4kge:Configuration .
+<configuration/noigan/216> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/216> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/noigan/216> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/noigan/216> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/noigan/216> ns4kge:hasNSMethod <ns-method/ckrl-40-percent> .
+<configuration/noigan/216> ns4kge:result "0.01"^^xsd:decimal .
+
+<configuration/noigan/217> rdf:type ns4kge:Configuration .
+<configuration/noigan/217> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/217> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/noigan/217> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/noigan/217> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/noigan/217> ns4kge:hasNSMethod <ns-method/ckrl-40-percent> .
+<configuration/noigan/217> ns4kge:result "0.327"^^xsd:decimal .
+
+<configuration/noigan/218> rdf:type ns4kge:Configuration .
+<configuration/noigan/218> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/218> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/noigan/218> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/noigan/218> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/noigan/218> ns4kge:hasNSMethod <ns-method/ckrl-40-percent> .
+<configuration/noigan/218> ns4kge:result "0.462"^^xsd:decimal .
+
+<configuration/noigan/219> rdf:type ns4kge:Configuration .
+<configuration/noigan/219> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/219> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/noigan/219> ns4kge:hasMetric  <metric/mrr> .
+<configuration/noigan/219> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/noigan/219> ns4kge:hasNSMethod <ns-method/noigan-soft-40-percent> .
+<configuration/noigan/219> ns4kge:result "0.212"^^xsd:decimal .
+
+<configuration/noigan/220> rdf:type ns4kge:Configuration .
+<configuration/noigan/220> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/220> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/noigan/220> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/noigan/220> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/noigan/220> ns4kge:hasNSMethod <ns-method/noigan-soft-40-percent> .
+<configuration/noigan/220> ns4kge:result "0.064"^^xsd:decimal .
+
+<configuration/noigan/221> rdf:type ns4kge:Configuration .
+<configuration/noigan/221> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/221> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/noigan/221> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/noigan/221> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/noigan/221> ns4kge:hasNSMethod <ns-method/noigan-soft-40-percent> .
+<configuration/noigan/221> ns4kge:result "0.294"^^xsd:decimal .
+
+<configuration/noigan/222> rdf:type ns4kge:Configuration .
+<configuration/noigan/222> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/222> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/noigan/222> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/noigan/222> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/noigan/222> ns4kge:hasNSMethod <ns-method/noigan-soft-40-percent> .
+<configuration/noigan/222> ns4kge:result "0.482"^^xsd:decimal .
+
+<configuration/noigan/223> rdf:type ns4kge:Configuration .
+<configuration/noigan/223> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/223> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/noigan/223> ns4kge:hasMetric  <metric/mrr> .
+<configuration/noigan/223> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/noigan/223> ns4kge:hasNSMethod <ns-method/noigan-soft-40-percent> .
+<configuration/noigan/223> ns4kge:result "0.109"^^xsd:decimal .
+
+<configuration/noigan/224> rdf:type ns4kge:Configuration .
+<configuration/noigan/224> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/224> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/noigan/224> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/noigan/224> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/noigan/224> ns4kge:hasNSMethod <ns-method/noigan-soft-40-percent> .
+<configuration/noigan/224> ns4kge:result "0.306"^^xsd:decimal .
+
+<configuration/noigan/225> rdf:type ns4kge:Configuration .
+<configuration/noigan/225> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/225> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/noigan/225> ns4kge:hasMetric  <metric/mrr> .
+<configuration/noigan/225> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/noigan/225> ns4kge:hasNSMethod <ns-method/noigan-soft-40-percent> .
+<configuration/noigan/225> ns4kge:result "0.188"^^xsd:decimal .
+
+<configuration/noigan/226> rdf:type ns4kge:Configuration .
+<configuration/noigan/226> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/226> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/noigan/226> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/noigan/226> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/noigan/226> ns4kge:hasNSMethod <ns-method/noigan-soft-40-percent> .
+<configuration/noigan/226> ns4kge:result "0.337"^^xsd:decimal .
+
+<configuration/noigan/227> rdf:type ns4kge:Configuration .
+<configuration/noigan/227> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/227> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/noigan/227> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/noigan/227> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/noigan/227> ns4kge:hasNSMethod <ns-method/noigan-soft-40-percent> .
+<configuration/noigan/227> ns4kge:result "0.469"^^xsd:decimal .
+
+<configuration/noigan/228> rdf:type ns4kge:Configuration .
+<configuration/noigan/228> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/228> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/noigan/228> ns4kge:hasMetric  <metric/mrr> .
+<configuration/noigan/228> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/noigan/228> ns4kge:hasNSMethod <ns-method/noigan-hard-40-percent> .
+<configuration/noigan/228> ns4kge:result "0.227"^^xsd:decimal .
+
+<configuration/noigan/229> rdf:type ns4kge:Configuration .
+<configuration/noigan/229> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/229> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/noigan/229> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/noigan/229> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/noigan/229> ns4kge:hasNSMethod <ns-method/noigan-hard-40-percent> .
+<configuration/noigan/229> ns4kge:result "0.095"^^xsd:decimal .
+
+<configuration/noigan/230> rdf:type ns4kge:Configuration .
+<configuration/noigan/230> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/230> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/noigan/230> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/noigan/230> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/noigan/230> ns4kge:hasNSMethod <ns-method/noigan-hard-40-percent> .
+<configuration/noigan/230> ns4kge:result "0.296"^^xsd:decimal .
+
+<configuration/noigan/231> rdf:type ns4kge:Configuration .
+<configuration/noigan/231> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/231> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/noigan/231> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/noigan/231> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/noigan/231> ns4kge:hasNSMethod <ns-method/noigan-hard-40-percent> .
+<configuration/noigan/231> ns4kge:result "0.473"^^xsd:decimal .
+
+<configuration/noigan/232> rdf:type ns4kge:Configuration .
+<configuration/noigan/232> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/232> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/noigan/232> ns4kge:hasMetric  <metric/mrr> .
+<configuration/noigan/232> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/noigan/232> ns4kge:hasNSMethod <ns-method/noigan-hard-40-percent> .
+<configuration/noigan/232> ns4kge:result "0.321"^^xsd:decimal .
+
+<configuration/noigan/233> rdf:type ns4kge:Configuration .
+<configuration/noigan/233> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/233> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/noigan/233> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/noigan/233> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/noigan/233> ns4kge:hasNSMethod <ns-method/noigan-hard-40-percent> .
+<configuration/noigan/233> ns4kge:result "0.204"^^xsd:decimal .
+
+<configuration/noigan/234> rdf:type ns4kge:Configuration .
+<configuration/noigan/234> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/234> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/noigan/234> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/noigan/234> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/noigan/234> ns4kge:hasNSMethod <ns-method/noigan-hard-40-percent> .
+<configuration/noigan/234> ns4kge:result "0.383"^^xsd:decimal .
+
+<configuration/noigan/235> rdf:type ns4kge:Configuration .
+<configuration/noigan/235> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/235> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/noigan/235> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/noigan/235> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/noigan/235> ns4kge:hasNSMethod <ns-method/noigan-hard-40-percent> .
+<configuration/noigan/235> ns4kge:result "0.538"^^xsd:decimal .
+
+<configuration/noigan/236> rdf:type ns4kge:Configuration .
+<configuration/noigan/236> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/236> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/noigan/236> ns4kge:hasMetric  <metric/mrr> .
+<configuration/noigan/236> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/noigan/236> ns4kge:hasNSMethod <ns-method/noigan-hard-40-percent> .
+<configuration/noigan/236> ns4kge:result "0.168"^^xsd:decimal .
+
+<configuration/noigan/237> rdf:type ns4kge:Configuration .
+<configuration/noigan/237> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/237> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/noigan/237> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/noigan/237> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/noigan/237> ns4kge:hasNSMethod <ns-method/noigan-hard-40-percent> .
+<configuration/noigan/237> ns4kge:result "0.407"^^xsd:decimal .
+
+<configuration/noigan/238> rdf:type ns4kge:Configuration .
+<configuration/noigan/238> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/238> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/noigan/238> ns4kge:hasMetric  <metric/mrr> .
+<configuration/noigan/238> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/noigan/238> ns4kge:hasNSMethod <ns-method/unknown-40-percent> .
+<configuration/noigan/238> ns4kge:result "0.284"^^xsd:decimal .
+
+<configuration/noigan/239> rdf:type ns4kge:Configuration .
+<configuration/noigan/239> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/239> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/noigan/239> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/noigan/239> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/noigan/239> ns4kge:hasNSMethod <ns-method/unknown-40-percent> .
+<configuration/noigan/239> ns4kge:result "0.189"^^xsd:decimal .
+
+<configuration/noigan/240> rdf:type ns4kge:Configuration .
+<configuration/noigan/240> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/240> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/noigan/240> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/noigan/240> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/noigan/240> ns4kge:hasNSMethod <ns-method/unknown-40-percent> .
+<configuration/noigan/240> ns4kge:result "0.322"^^xsd:decimal .
+
+<configuration/noigan/241> rdf:type ns4kge:Configuration .
+<configuration/noigan/241> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/241> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/noigan/241> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/noigan/241> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/noigan/241> ns4kge:hasNSMethod <ns-method/unknown-40-percent> .
+<configuration/noigan/241> ns4kge:result "0.469"^^xsd:decimal .
+
+<configuration/noigan/242> rdf:type ns4kge:Configuration .
+<configuration/noigan/242> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/242> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/noigan/242> ns4kge:hasMetric  <metric/mrr> .
+<configuration/noigan/242> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/noigan/242> ns4kge:hasNSMethod <ns-method/unknown-40-percent> .
+<configuration/noigan/242> ns4kge:result "0.399"^^xsd:decimal .
+
+<configuration/noigan/243> rdf:type ns4kge:Configuration .
+<configuration/noigan/243> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/243> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/noigan/243> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/noigan/243> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/noigan/243> ns4kge:hasNSMethod <ns-method/unknown-40-percent> .
+<configuration/noigan/243> ns4kge:result "0.345"^^xsd:decimal .
+
+<configuration/noigan/244> rdf:type ns4kge:Configuration .
+<configuration/noigan/244> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/244> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/noigan/244> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/noigan/244> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/noigan/244> ns4kge:hasNSMethod <ns-method/unknown-40-percent> .
+<configuration/noigan/244> ns4kge:result "0.438"^^xsd:decimal .
+
+<configuration/noigan/245> rdf:type ns4kge:Configuration .
+<configuration/noigan/245> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/245> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/noigan/245> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/noigan/245> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/noigan/245> ns4kge:hasNSMethod <ns-method/unknown-40-percent> .
+<configuration/noigan/245> ns4kge:result "0.481"^^xsd:decimal .
+
+<configuration/noigan/246> rdf:type ns4kge:Configuration .
+<configuration/noigan/246> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/246> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/noigan/246> ns4kge:hasMetric  <metric/mrr> .
+<configuration/noigan/246> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/noigan/246> ns4kge:hasNSMethod <ns-method/noigan-soft-40-percent> .
+<configuration/noigan/246> ns4kge:result "0.294"^^xsd:decimal .
+
+<configuration/noigan/247> rdf:type ns4kge:Configuration .
+<configuration/noigan/247> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/247> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/noigan/247> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/noigan/247> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/noigan/247> ns4kge:hasNSMethod <ns-method/noigan-soft-40-percent> .
+<configuration/noigan/247> ns4kge:result "0.197"^^xsd:decimal .
+
+<configuration/noigan/248> rdf:type ns4kge:Configuration .
+<configuration/noigan/248> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/248> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/noigan/248> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/noigan/248> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/noigan/248> ns4kge:hasNSMethod <ns-method/noigan-soft-40-percent> .
+<configuration/noigan/248> ns4kge:result "0.331"^^xsd:decimal .
+
+<configuration/noigan/249> rdf:type ns4kge:Configuration .
+<configuration/noigan/249> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/249> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/noigan/249> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/noigan/249> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/noigan/249> ns4kge:hasNSMethod <ns-method/noigan-soft-40-percent> .
+<configuration/noigan/249> ns4kge:result "0.488"^^xsd:decimal .
+
+<configuration/noigan/250> rdf:type ns4kge:Configuration .
+<configuration/noigan/250> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/250> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/noigan/250> ns4kge:hasMetric  <metric/mrr> .
+<configuration/noigan/250> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/noigan/250> ns4kge:hasNSMethod <ns-method/noigan-soft-40-percent> .
+<configuration/noigan/250> ns4kge:result "0.22"^^xsd:decimal .
+
+<configuration/noigan/251> rdf:type ns4kge:Configuration .
+<configuration/noigan/251> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/251> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/noigan/251> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/noigan/251> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/noigan/251> ns4kge:hasNSMethod <ns-method/noigan-soft-40-percent> .
+<configuration/noigan/251> ns4kge:result "0.12"^^xsd:decimal .
+
+<configuration/noigan/252> rdf:type ns4kge:Configuration .
+<configuration/noigan/252> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/252> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/noigan/252> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/noigan/252> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/noigan/252> ns4kge:hasNSMethod <ns-method/noigan-soft-40-percent> .
+<configuration/noigan/252> ns4kge:result "0.266"^^xsd:decimal .
+
+<configuration/noigan/253> rdf:type ns4kge:Configuration .
+<configuration/noigan/253> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/253> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/noigan/253> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/noigan/253> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/noigan/253> ns4kge:hasNSMethod <ns-method/noigan-soft-40-percent> .
+<configuration/noigan/253> ns4kge:result "0.42"^^xsd:decimal .
+
+<configuration/noigan/254> rdf:type ns4kge:Configuration .
+<configuration/noigan/254> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/254> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/noigan/254> ns4kge:hasMetric  <metric/mrr> .
+<configuration/noigan/254> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/noigan/254> ns4kge:hasNSMethod <ns-method/noigan-soft-40-percent> .
+<configuration/noigan/254> ns4kge:result "0.403"^^xsd:decimal .
+
+<configuration/noigan/255> rdf:type ns4kge:Configuration .
+<configuration/noigan/255> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/255> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/noigan/255> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/noigan/255> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/noigan/255> ns4kge:hasNSMethod <ns-method/noigan-soft-40-percent> .
+<configuration/noigan/255> ns4kge:result "0.339"^^xsd:decimal .
+
+<configuration/noigan/256> rdf:type ns4kge:Configuration .
+<configuration/noigan/256> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/256> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/noigan/256> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/noigan/256> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/noigan/256> ns4kge:hasNSMethod <ns-method/noigan-soft-40-percent> .
+<configuration/noigan/256> ns4kge:result "0.447"^^xsd:decimal .
+
+<configuration/noigan/257> rdf:type ns4kge:Configuration .
+<configuration/noigan/257> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/257> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/noigan/257> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/noigan/257> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/noigan/257> ns4kge:hasNSMethod <ns-method/noigan-soft-40-percent> .
+<configuration/noigan/257> ns4kge:result "0.506"^^xsd:decimal .
+
+<configuration/noigan/258> rdf:type ns4kge:Configuration .
+<configuration/noigan/258> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/258> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/noigan/258> ns4kge:hasMetric  <metric/mrr> .
+<configuration/noigan/258> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/noigan/258> ns4kge:hasNSMethod <ns-method/noigan-hard-40-percent> .
+<configuration/noigan/258> ns4kge:result "0.296"^^xsd:decimal .
+
+<configuration/noigan/259> rdf:type ns4kge:Configuration .
+<configuration/noigan/259> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/259> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/noigan/259> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/noigan/259> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/noigan/259> ns4kge:hasNSMethod <ns-method/noigan-hard-40-percent> .
+<configuration/noigan/259> ns4kge:result "0.198"^^xsd:decimal .
+
+<configuration/noigan/260> rdf:type ns4kge:Configuration .
+<configuration/noigan/260> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/260> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/noigan/260> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/noigan/260> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/noigan/260> ns4kge:hasNSMethod <ns-method/noigan-hard-40-percent> .
+<configuration/noigan/260> ns4kge:result "0.336"^^xsd:decimal .
+
+<configuration/noigan/261> rdf:type ns4kge:Configuration .
+<configuration/noigan/261> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/261> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/noigan/261> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/noigan/261> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/noigan/261> ns4kge:hasNSMethod <ns-method/noigan-hard-40-percent> .
+<configuration/noigan/261> ns4kge:result "0.489"^^xsd:decimal .
+
+<configuration/noigan/262> rdf:type ns4kge:Configuration .
+<configuration/noigan/262> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/262> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/noigan/262> ns4kge:hasMetric  <metric/mrr> .
+<configuration/noigan/262> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/noigan/262> ns4kge:hasNSMethod <ns-method/noigan-hard-40-percent> .
+<configuration/noigan/262> ns4kge:result "0.223"^^xsd:decimal .
+
+<configuration/noigan/263> rdf:type ns4kge:Configuration .
+<configuration/noigan/263> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/263> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/noigan/263> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/noigan/263> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/noigan/263> ns4kge:hasNSMethod <ns-method/noigan-hard-40-percent> .
+<configuration/noigan/263> ns4kge:result "0.121"^^xsd:decimal .
+
+<configuration/noigan/264> rdf:type ns4kge:Configuration .
+<configuration/noigan/264> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/264> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/noigan/264> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/noigan/264> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/noigan/264> ns4kge:hasNSMethod <ns-method/noigan-hard-40-percent> .
+<configuration/noigan/264> ns4kge:result "0.269"^^xsd:decimal .
+
+<configuration/noigan/265> rdf:type ns4kge:Configuration .
+<configuration/noigan/265> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/265> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/noigan/265> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/noigan/265> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/noigan/265> ns4kge:hasNSMethod <ns-method/noigan-hard-40-percent> .
+<configuration/noigan/265> ns4kge:result "0.423"^^xsd:decimal .
+
+<configuration/noigan/266> rdf:type ns4kge:Configuration .
+<configuration/noigan/266> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/266> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/noigan/266> ns4kge:hasMetric  <metric/mrr> .
+<configuration/noigan/266> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/noigan/266> ns4kge:hasNSMethod <ns-method/noigan-hard-40-percent> .
+<configuration/noigan/266> ns4kge:result "0.403"^^xsd:decimal .
+
+<configuration/noigan/267> rdf:type ns4kge:Configuration .
+<configuration/noigan/267> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/267> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/noigan/267> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/noigan/267> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/noigan/267> ns4kge:hasNSMethod <ns-method/noigan-hard-40-percent> .
+<configuration/noigan/267> ns4kge:result "0.339"^^xsd:decimal .
+
+<configuration/noigan/268> rdf:type ns4kge:Configuration .
+<configuration/noigan/268> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/268> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/noigan/268> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/noigan/268> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/noigan/268> ns4kge:hasNSMethod <ns-method/noigan-hard-40-percent> .
+<configuration/noigan/268> ns4kge:result "0.445"^^xsd:decimal .
+
+<configuration/noigan/269> rdf:type ns4kge:Configuration .
+<configuration/noigan/269> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/269> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/noigan/269> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/noigan/269> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/noigan/269> ns4kge:hasNSMethod <ns-method/noigan-hard-40-percent> .
+<configuration/noigan/269> ns4kge:result "0.507"^^xsd:decimal .
+
+<configuration/noigan/270> rdf:type ns4kge:Configuration .
+<configuration/noigan/270> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/270> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/noigan/270> ns4kge:hasMetric  <metric/mrr> .
+<configuration/noigan/270> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/noigan/270> ns4kge:hasNSMethod <ns-method/unknown-70-percent> .
+<configuration/noigan/270> ns4kge:result "0.196"^^xsd:decimal .
+
+<configuration/noigan/271> rdf:type ns4kge:Configuration .
+<configuration/noigan/271> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/271> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/noigan/271> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/noigan/271> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/noigan/271> ns4kge:hasNSMethod <ns-method/unknown-70-percent> .
+<configuration/noigan/271> ns4kge:result "0.342"^^xsd:decimal .
+
+<configuration/noigan/272> rdf:type ns4kge:Configuration .
+<configuration/noigan/272> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/272> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/noigan/272> ns4kge:hasMetric  <metric/mrr> .
+<configuration/noigan/272> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/noigan/272> ns4kge:hasNSMethod <ns-method/unknown-70-percent> .
+<configuration/noigan/272> ns4kge:result "0.328"^^xsd:decimal .
+
+<configuration/noigan/273> rdf:type ns4kge:Configuration .
+<configuration/noigan/273> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/273> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/noigan/273> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/noigan/273> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/noigan/273> ns4kge:hasNSMethod <ns-method/unknown-70-percent> .
+<configuration/noigan/273> ns4kge:result "0.42"^^xsd:decimal .
+
+<configuration/noigan/274> rdf:type ns4kge:Configuration .
+<configuration/noigan/274> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/274> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/noigan/274> ns4kge:hasMetric  <metric/mrr> .
+<configuration/noigan/274> ns4kge:hasKGEModel <kge-model/attention> .
+<configuration/noigan/274> ns4kge:hasNSMethod <ns-method/unknown-70-percent> .
+<configuration/noigan/274> ns4kge:result "0.255"^^xsd:decimal .
+
+<configuration/noigan/275> rdf:type ns4kge:Configuration .
+<configuration/noigan/275> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/275> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/noigan/275> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/noigan/275> ns4kge:hasKGEModel <kge-model/attention> .
+<configuration/noigan/275> ns4kge:hasNSMethod <ns-method/unknown-70-percent> .
+<configuration/noigan/275> ns4kge:result "0.174"^^xsd:decimal .
+
+<configuration/noigan/276> rdf:type ns4kge:Configuration .
+<configuration/noigan/276> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/276> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/noigan/276> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/noigan/276> ns4kge:hasKGEModel <kge-model/attention> .
+<configuration/noigan/276> ns4kge:hasNSMethod <ns-method/unknown-70-percent> .
+<configuration/noigan/276> ns4kge:result "0.28"^^xsd:decimal .
+
+<configuration/noigan/277> rdf:type ns4kge:Configuration .
+<configuration/noigan/277> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/277> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/noigan/277> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/noigan/277> ns4kge:hasKGEModel <kge-model/attention> .
+<configuration/noigan/277> ns4kge:hasNSMethod <ns-method/unknown-70-percent> .
+<configuration/noigan/277> ns4kge:result "0.414"^^xsd:decimal .
+
+<configuration/noigan/278> rdf:type ns4kge:Configuration .
+<configuration/noigan/278> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/278> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/noigan/278> ns4kge:hasMetric  <metric/mrr> .
+<configuration/noigan/278> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/noigan/278> ns4kge:hasNSMethod <ns-method/unknown-70-percent> .
+<configuration/noigan/278> ns4kge:result "0.167"^^xsd:decimal .
+
+<configuration/noigan/279> rdf:type ns4kge:Configuration .
+<configuration/noigan/279> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/279> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/noigan/279> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/noigan/279> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/noigan/279> ns4kge:hasNSMethod <ns-method/unknown-70-percent> .
+<configuration/noigan/279> ns4kge:result "0.44"^^xsd:decimal .
+
+<configuration/noigan/280> rdf:type ns4kge:Configuration .
+<configuration/noigan/280> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/280> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/noigan/280> ns4kge:hasMetric  <metric/mrr> .
+<configuration/noigan/280> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/noigan/280> ns4kge:hasNSMethod <ns-method/ckrl-70-percent> .
+<configuration/noigan/280> ns4kge:result "0.171"^^xsd:decimal .
+
+<configuration/noigan/281> rdf:type ns4kge:Configuration .
+<configuration/noigan/281> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/281> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/noigan/281> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/noigan/281> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/noigan/281> ns4kge:hasNSMethod <ns-method/ckrl-70-percent> .
+<configuration/noigan/281> ns4kge:result "0.449"^^xsd:decimal .
+
+<configuration/noigan/282> rdf:type ns4kge:Configuration .
+<configuration/noigan/282> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/282> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/noigan/282> ns4kge:hasMetric  <metric/mrr> .
+<configuration/noigan/282> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/noigan/282> ns4kge:hasNSMethod <ns-method/noigan-soft-70-percent> .
+<configuration/noigan/282> ns4kge:result "0.189"^^xsd:decimal .
+
+<configuration/noigan/283> rdf:type ns4kge:Configuration .
+<configuration/noigan/283> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/283> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/noigan/283> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/noigan/283> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/noigan/283> ns4kge:hasNSMethod <ns-method/noigan-soft-70-percent> .
+<configuration/noigan/283> ns4kge:result "0.464"^^xsd:decimal .
+
+<configuration/noigan/284> rdf:type ns4kge:Configuration .
+<configuration/noigan/284> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/284> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/noigan/284> ns4kge:hasMetric  <metric/mrr> .
+<configuration/noigan/284> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/noigan/284> ns4kge:hasNSMethod <ns-method/noigan-hard-70-percent> .
+<configuration/noigan/284> ns4kge:result "0.199"^^xsd:decimal .
+
+<configuration/noigan/285> rdf:type ns4kge:Configuration .
+<configuration/noigan/285> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/285> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/noigan/285> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/noigan/285> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/noigan/285> ns4kge:hasNSMethod <ns-method/noigan-hard-70-percent> .
+<configuration/noigan/285> ns4kge:result "0.059"^^xsd:decimal .
+
+<configuration/noigan/286> rdf:type ns4kge:Configuration .
+<configuration/noigan/286> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/286> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/noigan/286> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/noigan/286> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/noigan/286> ns4kge:hasNSMethod <ns-method/noigan-hard-70-percent> .
+<configuration/noigan/286> ns4kge:result "0.275"^^xsd:decimal .
+
+<configuration/noigan/287> rdf:type ns4kge:Configuration .
+<configuration/noigan/287> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/287> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/noigan/287> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/noigan/287> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/noigan/287> ns4kge:hasNSMethod <ns-method/noigan-hard-70-percent> .
+<configuration/noigan/287> ns4kge:result "0.457"^^xsd:decimal .
+
+<configuration/noigan/288> rdf:type ns4kge:Configuration .
+<configuration/noigan/288> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/288> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/noigan/288> ns4kge:hasMetric  <metric/mrr> .
+<configuration/noigan/288> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/noigan/288> ns4kge:hasNSMethod <ns-method/noigan-hard-70-percent> .
+<configuration/noigan/288> ns4kge:result "0.21"^^xsd:decimal .
+
+<configuration/noigan/289> rdf:type ns4kge:Configuration .
+<configuration/noigan/289> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/289> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/noigan/289> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/noigan/289> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/noigan/289> ns4kge:hasNSMethod <ns-method/noigan-hard-70-percent> .
+<configuration/noigan/289> ns4kge:result "0.091"^^xsd:decimal .
+
+<configuration/noigan/290> rdf:type ns4kge:Configuration .
+<configuration/noigan/290> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/290> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/noigan/290> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/noigan/290> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/noigan/290> ns4kge:hasNSMethod <ns-method/noigan-hard-70-percent> .
+<configuration/noigan/290> ns4kge:result "0.268"^^xsd:decimal .
+
+<configuration/noigan/291> rdf:type ns4kge:Configuration .
+<configuration/noigan/291> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/291> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/noigan/291> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/noigan/291> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/noigan/291> ns4kge:hasNSMethod <ns-method/noigan-hard-70-percent> .
+<configuration/noigan/291> ns4kge:result "0.443"^^xsd:decimal .
+
+<configuration/noigan/292> rdf:type ns4kge:Configuration .
+<configuration/noigan/292> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/292> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/noigan/292> ns4kge:hasMetric  <metric/mrr> .
+<configuration/noigan/292> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/noigan/292> ns4kge:hasNSMethod <ns-method/unknown-70-percent> .
+<configuration/noigan/292> ns4kge:result "0.254"^^xsd:decimal .
+
+<configuration/noigan/293> rdf:type ns4kge:Configuration .
+<configuration/noigan/293> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/293> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/noigan/293> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/noigan/293> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/noigan/293> ns4kge:hasNSMethod <ns-method/unknown-70-percent> .
+<configuration/noigan/293> ns4kge:result "0.444"^^xsd:decimal .
+
+<configuration/noigan/294> rdf:type ns4kge:Configuration .
+<configuration/noigan/294> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/294> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/noigan/294> ns4kge:hasMetric  <metric/mrr> .
+<configuration/noigan/294> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/noigan/294> ns4kge:hasNSMethod <ns-method/unknown-70-percent> .
+<configuration/noigan/294> ns4kge:result "0.357"^^xsd:decimal .
+
+<configuration/noigan/295> rdf:type ns4kge:Configuration .
+<configuration/noigan/295> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/295> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/noigan/295> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/noigan/295> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/noigan/295> ns4kge:hasNSMethod <ns-method/unknown-70-percent> .
+<configuration/noigan/295> ns4kge:result "0.456"^^xsd:decimal .
+
+<configuration/noigan/296> rdf:type ns4kge:Configuration .
+<configuration/noigan/296> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/296> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/noigan/296> ns4kge:hasMetric  <metric/mrr> .
+<configuration/noigan/296> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/noigan/296> ns4kge:hasNSMethod <ns-method/noigan-soft-70-percent> .
+<configuration/noigan/296> ns4kge:result "0.279"^^xsd:decimal .
+
+<configuration/noigan/297> rdf:type ns4kge:Configuration .
+<configuration/noigan/297> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/297> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/noigan/297> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/noigan/297> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/noigan/297> ns4kge:hasNSMethod <ns-method/noigan-soft-70-percent> .
+<configuration/noigan/297> ns4kge:result "0.179"^^xsd:decimal .
+
+<configuration/noigan/298> rdf:type ns4kge:Configuration .
+<configuration/noigan/298> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/298> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/noigan/298> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/noigan/298> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/noigan/298> ns4kge:hasNSMethod <ns-method/noigan-soft-70-percent> .
+<configuration/noigan/298> ns4kge:result "0.321"^^xsd:decimal .
+
+<configuration/noigan/299> rdf:type ns4kge:Configuration .
+<configuration/noigan/299> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/299> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/noigan/299> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/noigan/299> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/noigan/299> ns4kge:hasNSMethod <ns-method/noigan-soft-70-percent> .
+<configuration/noigan/299> ns4kge:result "0.475"^^xsd:decimal .
+
+<configuration/noigan/300> rdf:type ns4kge:Configuration .
+<configuration/noigan/300> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/300> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/noigan/300> ns4kge:hasMetric  <metric/mrr> .
+<configuration/noigan/300> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/noigan/300> ns4kge:hasNSMethod <ns-method/noigan-soft-70-percent> .
+<configuration/noigan/300> ns4kge:result "0.366"^^xsd:decimal .
+
+<configuration/noigan/301> rdf:type ns4kge:Configuration .
+<configuration/noigan/301> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/301> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/noigan/301> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/noigan/301> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/noigan/301> ns4kge:hasNSMethod <ns-method/noigan-soft-70-percent> .
+<configuration/noigan/301> ns4kge:result "0.473"^^xsd:decimal .
+
+<configuration/noigan/302> rdf:type ns4kge:Configuration .
+<configuration/noigan/302> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/302> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/noigan/302> ns4kge:hasMetric  <metric/mrr> .
+<configuration/noigan/302> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/noigan/302> ns4kge:hasNSMethod <ns-method/noigan-hard-70-percent> .
+<configuration/noigan/302> ns4kge:result "0.282"^^xsd:decimal .
+
+<configuration/noigan/303> rdf:type ns4kge:Configuration .
+<configuration/noigan/303> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/303> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/noigan/303> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/noigan/303> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/noigan/303> ns4kge:hasNSMethod <ns-method/noigan-hard-70-percent> .
+<configuration/noigan/303> ns4kge:result "0.184"^^xsd:decimal .
+
+<configuration/noigan/304> rdf:type ns4kge:Configuration .
+<configuration/noigan/304> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/304> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/noigan/304> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/noigan/304> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/noigan/304> ns4kge:hasNSMethod <ns-method/noigan-hard-70-percent> .
+<configuration/noigan/304> ns4kge:result "0.321"^^xsd:decimal .
+
+<configuration/noigan/305> rdf:type ns4kge:Configuration .
+<configuration/noigan/305> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/305> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/noigan/305> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/noigan/305> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/noigan/305> ns4kge:hasNSMethod <ns-method/noigan-hard-70-percent> .
+<configuration/noigan/305> ns4kge:result "0.478"^^xsd:decimal .
+
+<configuration/noigan/306> rdf:type ns4kge:Configuration .
+<configuration/noigan/306> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/306> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/noigan/306> ns4kge:hasMetric  <metric/mrr> .
+<configuration/noigan/306> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/noigan/306> ns4kge:hasNSMethod <ns-method/noigan-hard-70-percent> .
+<configuration/noigan/306> ns4kge:result "0.368"^^xsd:decimal .
+
+<configuration/noigan/307> rdf:type ns4kge:Configuration .
+<configuration/noigan/307> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/307> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/noigan/307> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/noigan/307> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/noigan/307> ns4kge:hasNSMethod <ns-method/noigan-hard-70-percent> .
+<configuration/noigan/307> ns4kge:result "0.298"^^xsd:decimal .
+
+<configuration/noigan/308> rdf:type ns4kge:Configuration .
+<configuration/noigan/308> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/308> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/noigan/308> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/noigan/308> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/noigan/308> ns4kge:hasNSMethod <ns-method/noigan-hard-70-percent> .
+<configuration/noigan/308> ns4kge:result "0.424"^^xsd:decimal .
+
+<configuration/noigan/309> rdf:type ns4kge:Configuration .
+<configuration/noigan/309> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/309> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/noigan/309> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/noigan/309> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/noigan/309> ns4kge:hasNSMethod <ns-method/noigan-hard-70-percent> .
+<configuration/noigan/309> ns4kge:result "0.474"^^xsd:decimal .
+
+<configuration/noigan/310> rdf:type ns4kge:Configuration .
+<configuration/noigan/310> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/310> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/noigan/310> ns4kge:hasMetric  <metric/mrr> .
+<configuration/noigan/310> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/noigan/310> ns4kge:hasNSMethod <ns-method/noigan-soft-100-percent> .
+<configuration/noigan/310> ns4kge:result "0.283"^^xsd:decimal .
+
+<configuration/noigan/311> rdf:type ns4kge:Configuration .
+<configuration/noigan/311> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/311> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/noigan/311> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/noigan/311> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/noigan/311> ns4kge:hasNSMethod <ns-method/noigan-soft-100-percent> .
+<configuration/noigan/311> ns4kge:result "0.201"^^xsd:decimal .
+
+<configuration/noigan/312> rdf:type ns4kge:Configuration .
+<configuration/noigan/312> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/312> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/noigan/312> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/noigan/312> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/noigan/312> ns4kge:hasNSMethod <ns-method/noigan-soft-100-percent> .
+<configuration/noigan/312> ns4kge:result "0.312"^^xsd:decimal .
+
+<configuration/noigan/313> rdf:type ns4kge:Configuration .
+<configuration/noigan/313> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/313> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/noigan/313> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/noigan/313> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/noigan/313> ns4kge:hasNSMethod <ns-method/noigan-soft-100-percent> .
+<configuration/noigan/313> ns4kge:result "0.447"^^xsd:decimal .
+
+<configuration/noigan/314> rdf:type ns4kge:Configuration .
+<configuration/noigan/314> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/314> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/noigan/314> ns4kge:hasMetric  <metric/mrr> .
+<configuration/noigan/314> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/noigan/314> ns4kge:hasNSMethod <ns-method/noigan-soft-100-percent> .
+<configuration/noigan/314> ns4kge:result "0.327"^^xsd:decimal .
+
+<configuration/noigan/315> rdf:type ns4kge:Configuration .
+<configuration/noigan/315> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/315> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/noigan/315> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/noigan/315> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/noigan/315> ns4kge:hasNSMethod <ns-method/noigan-soft-100-percent> .
+<configuration/noigan/315> ns4kge:result "0.401"^^xsd:decimal .
+
+<configuration/noigan/316> rdf:type ns4kge:Configuration .
+<configuration/noigan/316> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/316> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/noigan/316> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/noigan/316> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/noigan/316> ns4kge:hasNSMethod <ns-method/noigan-soft-100-percent> .
+<configuration/noigan/316> ns4kge:result "0.453"^^xsd:decimal .
+
+<configuration/noigan/317> rdf:type ns4kge:Configuration .
+<configuration/noigan/317> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/317> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/noigan/317> ns4kge:hasMetric  <metric/mrr> .
+<configuration/noigan/317> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/noigan/317> ns4kge:hasNSMethod <ns-method/noigan-hard-100-percent> .
+<configuration/noigan/317> ns4kge:result "0.271"^^xsd:decimal .
+
+<configuration/noigan/318> rdf:type ns4kge:Configuration .
+<configuration/noigan/318> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/318> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/noigan/318> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/noigan/318> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/noigan/318> ns4kge:hasNSMethod <ns-method/noigan-hard-100-percent> .
+<configuration/noigan/318> ns4kge:result "0.175"^^xsd:decimal .
+
+<configuration/noigan/319> rdf:type ns4kge:Configuration .
+<configuration/noigan/319> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/319> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/noigan/319> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/noigan/319> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/noigan/319> ns4kge:hasNSMethod <ns-method/noigan-hard-100-percent> .
+<configuration/noigan/319> ns4kge:result "0.309"^^xsd:decimal .
+
+<configuration/noigan/320> rdf:type ns4kge:Configuration .
+<configuration/noigan/320> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/320> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/noigan/320> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/noigan/320> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/noigan/320> ns4kge:hasNSMethod <ns-method/noigan-hard-100-percent> .
+<configuration/noigan/320> ns4kge:result "0.461"^^xsd:decimal .
+
+<configuration/noigan/321> rdf:type ns4kge:Configuration .
+<configuration/noigan/321> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/321> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/noigan/321> ns4kge:hasMetric  <metric/mrr> .
+<configuration/noigan/321> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/noigan/321> ns4kge:hasNSMethod <ns-method/noigan-hard-100-percent> .
+<configuration/noigan/321> ns4kge:result "0.327"^^xsd:decimal .
+
+<configuration/noigan/322> rdf:type ns4kge:Configuration .
+<configuration/noigan/322> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/322> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/noigan/322> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/noigan/322> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/noigan/322> ns4kge:hasNSMethod <ns-method/noigan-hard-100-percent> .
+<configuration/noigan/322> ns4kge:result "0.244"^^xsd:decimal .
+
+<configuration/noigan/323> rdf:type ns4kge:Configuration .
+<configuration/noigan/323> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/323> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/noigan/323> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/noigan/323> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/noigan/323> ns4kge:hasNSMethod <ns-method/noigan-hard-100-percent> .
+<configuration/noigan/323> ns4kge:result "0.399"^^xsd:decimal .
+
+<configuration/noigan/324> rdf:type ns4kge:Configuration .
+<configuration/noigan/324> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/324> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/noigan/324> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/noigan/324> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/noigan/324> ns4kge:hasNSMethod <ns-method/noigan-hard-100-percent> .
+<configuration/noigan/324> ns4kge:result "0.452"^^xsd:decimal .
+
+<configuration/noigan/325> rdf:type ns4kge:Configuration .
+<configuration/noigan/325> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/325> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/noigan/325> ns4kge:hasMetric  <metric/mrr> .
+<configuration/noigan/325> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/noigan/325> ns4kge:hasNSMethod <ns-method/unknown-100-percent> .
+<configuration/noigan/325> ns4kge:result "0.234"^^xsd:decimal .
+
+<configuration/noigan/326> rdf:type ns4kge:Configuration .
+<configuration/noigan/326> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/326> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/noigan/326> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/noigan/326> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/noigan/326> ns4kge:hasNSMethod <ns-method/unknown-100-percent> .
+<configuration/noigan/326> ns4kge:result "0.418"^^xsd:decimal .
+
+<configuration/noigan/327> rdf:type ns4kge:Configuration .
+<configuration/noigan/327> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/327> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/noigan/327> ns4kge:hasMetric  <metric/mrr> .
+<configuration/noigan/327> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/noigan/327> ns4kge:hasNSMethod <ns-method/unknown-100-percent> .
+<configuration/noigan/327> ns4kge:result "0.315"^^xsd:decimal .
+
+<configuration/noigan/328> rdf:type ns4kge:Configuration .
+<configuration/noigan/328> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/328> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/noigan/328> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/noigan/328> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/noigan/328> ns4kge:hasNSMethod <ns-method/unknown-100-percent> .
+<configuration/noigan/328> ns4kge:result "0.429"^^xsd:decimal .
+
+<configuration/noigan/329> rdf:type ns4kge:Configuration .
+<configuration/noigan/329> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/329> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/noigan/329> ns4kge:hasMetric  <metric/mrr> .
+<configuration/noigan/329> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/noigan/329> ns4kge:hasNSMethod <ns-method/noigan-hard-100-percent> .
+<configuration/noigan/329> ns4kge:result "0.185"^^xsd:decimal .
+
+<configuration/noigan/330> rdf:type ns4kge:Configuration .
+<configuration/noigan/330> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/330> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/noigan/330> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/noigan/330> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/noigan/330> ns4kge:hasNSMethod <ns-method/noigan-hard-100-percent> .
+<configuration/noigan/330> ns4kge:result "0.446"^^xsd:decimal .
+
+<configuration/noigan/331> rdf:type ns4kge:Configuration .
+<configuration/noigan/331> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/331> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/noigan/331> ns4kge:hasMetric  <metric/mrr> .
+<configuration/noigan/331> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/noigan/331> ns4kge:hasNSMethod <ns-method/noigan-hard-100-percent> .
+<configuration/noigan/331> ns4kge:result "0.144"^^xsd:decimal .
+
+<configuration/noigan/332> rdf:type ns4kge:Configuration .
+<configuration/noigan/332> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/332> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/noigan/332> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/noigan/332> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/noigan/332> ns4kge:hasNSMethod <ns-method/noigan-hard-100-percent> .
+<configuration/noigan/332> ns4kge:result "0.016"^^xsd:decimal .
+
+<configuration/noigan/333> rdf:type ns4kge:Configuration .
+<configuration/noigan/333> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/333> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/noigan/333> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/noigan/333> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/noigan/333> ns4kge:hasNSMethod <ns-method/noigan-hard-100-percent> .
+<configuration/noigan/333> ns4kge:result "0.213"^^xsd:decimal .
+
+<configuration/noigan/334> rdf:type ns4kge:Configuration .
+<configuration/noigan/334> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/334> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/noigan/334> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/noigan/334> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/noigan/334> ns4kge:hasNSMethod <ns-method/noigan-hard-100-percent> .
+<configuration/noigan/334> ns4kge:result "0.384"^^xsd:decimal .
+
+<configuration/noigan/335> rdf:type ns4kge:Configuration .
+<configuration/noigan/335> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/335> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/noigan/335> ns4kge:hasMetric  <metric/mrr> .
+<configuration/noigan/335> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/noigan/335> ns4kge:hasNSMethod <ns-method/noigan-soft-100-percent> .
+<configuration/noigan/335> ns4kge:result "0.173"^^xsd:decimal .
+
+<configuration/noigan/336> rdf:type ns4kge:Configuration .
+<configuration/noigan/336> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/336> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/noigan/336> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/noigan/336> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/noigan/336> ns4kge:hasNSMethod <ns-method/noigan-soft-100-percent> .
+<configuration/noigan/336> ns4kge:result "0.454"^^xsd:decimal .
+
+<configuration/noigan/337> rdf:type ns4kge:Configuration .
+<configuration/noigan/337> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/337> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/noigan/337> ns4kge:hasMetric  <metric/mrr> .
+<configuration/noigan/337> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/noigan/337> ns4kge:hasNSMethod <ns-method/ckrl-100-percent> .
+<configuration/noigan/337> ns4kge:result "0.161"^^xsd:decimal .
+
+<configuration/noigan/338> rdf:type ns4kge:Configuration .
+<configuration/noigan/338> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/338> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/noigan/338> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/noigan/338> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/noigan/338> ns4kge:hasNSMethod <ns-method/ckrl-100-percent> .
+<configuration/noigan/338> ns4kge:result "0.43"^^xsd:decimal .
+
+<configuration/noigan/339> rdf:type ns4kge:Configuration .
+<configuration/noigan/339> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/339> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/noigan/339> ns4kge:hasMetric  <metric/mrr> .
+<configuration/noigan/339> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/noigan/339> ns4kge:hasNSMethod <ns-method/unknown-100-percent> .
+<configuration/noigan/339> ns4kge:result "0.157"^^xsd:decimal .
+
+<configuration/noigan/340> rdf:type ns4kge:Configuration .
+<configuration/noigan/340> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/340> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/noigan/340> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/noigan/340> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/noigan/340> ns4kge:hasNSMethod <ns-method/unknown-100-percent> .
+<configuration/noigan/340> ns4kge:result "0.422"^^xsd:decimal .
+
+<configuration/noigan/341> rdf:type ns4kge:Configuration .
+<configuration/noigan/341> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/341> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/noigan/341> ns4kge:hasMetric  <metric/mrr> .
+<configuration/noigan/341> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/noigan/341> ns4kge:hasNSMethod <ns-method/unknown-100-percent> .
+<configuration/noigan/341> ns4kge:result "0.196"^^xsd:decimal .
+
+<configuration/noigan/342> rdf:type ns4kge:Configuration .
+<configuration/noigan/342> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/342> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/noigan/342> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/noigan/342> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/noigan/342> ns4kge:hasNSMethod <ns-method/unknown-100-percent> .
+<configuration/noigan/342> ns4kge:result "0.342"^^xsd:decimal .
+
+<configuration/noigan/343> rdf:type ns4kge:Configuration .
+<configuration/noigan/343> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/343> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/noigan/343> ns4kge:hasMetric  <metric/mrr> .
+<configuration/noigan/343> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/noigan/343> ns4kge:hasNSMethod <ns-method/unknown-100-percent> .
+<configuration/noigan/343> ns4kge:result "0.312"^^xsd:decimal .
+
+<configuration/noigan/344> rdf:type ns4kge:Configuration .
+<configuration/noigan/344> ns4kge:hasTask    <task/link-prediction> .
+<configuration/noigan/344> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/noigan/344> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/noigan/344> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/noigan/344> ns4kge:hasNSMethod <ns-method/unknown-100-percent> .
+<configuration/noigan/344> ns4kge:result "0.422"^^xsd:decimal .

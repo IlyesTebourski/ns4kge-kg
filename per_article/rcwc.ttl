@@ -1,0 +1,976 @@
+<article/rcwc> rdf:type ns4kge:Article .
+<article/rcwc> ns4kge:title "KGBoost: A Classification-Based Knowledge Base Completion Method with Negative Sampling"^^xsd:string .
+<article/rcwc> ns4kge:date "2021"^^xsd:gYear .
+<article/rcwc> ns4kge:proposesNSMethod <ns-method/range-constrained-with-co-occurrence-negative-sampling> .
+<article/rcwc> ns4kge:mentionsNSMethod <ns-method/bernoulli-negative-sampling> .
+<article/rcwc> ns4kge:mentionsNSMethod <ns-method/local-closed-world-assumption-negative-sampling> .
+<article/rcwc> ns4kge:mentionsNSMethod <ns-method/self-adversarial-negative-sampling> .
+<article/rcwc> ns4kge:mentionsNSMethod <ns-method/gan-based-negative-sampling> .
+<article/rcwc> ns4kge:mentionsNSMethod <ns-method/naive-negative-sampling> .
+<article/rcwc> ns4kge:mentionsKGEModel <kge-model/distmult> .
+<article/rcwc> ns4kge:mentionsKGEModel <kge-model/conve> .
+<article/rcwc> ns4kge:mentionsKGEModel <kge-model/interacte> .
+<article/rcwc> ns4kge:mentionsKGEModel <kge-model/sacn> .
+<article/rcwc> ns4kge:mentionsKGEModel <kge-model/transh> .
+<article/rcwc> ns4kge:mentionsKGEModel <kge-model/transr> .
+<article/rcwc> ns4kge:mentionsKGEModel <kge-model/rotate> .
+<article/rcwc> ns4kge:mentionsKGEModel <kge-model/transe> .
+<article/rcwc> ns4kge:mentionsKGEModel <kge-model/kgboost-r> .
+<article/rcwc> ns4kge:mentionsKGEModel <kge-model/kgboost-t> .
+<article/rcwc> ns4kge:mentionsKGEModel <kge-model/complex> .
+<article/rcwc> ns4kge:mentionsKGEModel <kge-model/rescal> .
+<article/rcwc> ns4kge:hasExperimentation <experimentation/rcwc> .
+
+<category/static-ns> rdf:type ns4kge:Category .
+
+<subcategory/knowledge-constrained> rdf:type ns4kge:Subcategory .
+
+<ns-method/range-constrained-with-co-occurrence-negative-sampling> rdf:type ns4kge:NSMethod .
+<ns-method/range-constrained-with-co-occurrence-negative-sampling> ns4kge:hasCategory <category/static-ns> .
+<ns-method/range-constrained-with-co-occurrence-negative-sampling> ns4kge:hasSubcategory <subcategory/knowledge-constrained> .
+
+<ns-method/bernoulli-negative-sampling> rdf:type ns4kge:NSMethod .
+<ns-method/bernoulli-negative-sampling> ns4kge:hasCategory <category/static-ns> .
+<subcategory/probabilistic> rdf:type ns4kge:Subcategory .
+
+<ns-method/bernoulli-negative-sampling> ns4kge:hasSubcategory <subcategory/probabilistic> .
+
+<ns-method/local-closed-world-assumption-negative-sampling> rdf:type ns4kge:NSMethod .
+
+<ns-method/self-adversarial-negative-sampling> rdf:type ns4kge:NSMethod .
+<category/self-adversarial-ns> rdf:type ns4kge:Category .
+
+<ns-method/self-adversarial-negative-sampling> ns4kge:hasCategory <category/self-adversarial-ns> .
+<subcategory/direct> rdf:type ns4kge:Subcategory .
+
+<ns-method/self-adversarial-negative-sampling> ns4kge:hasSubcategory <subcategory/direct> .
+
+<ns-method/gan-based-negative-sampling> rdf:type ns4kge:NSMethod .
+<category/adversarial-ns> rdf:type ns4kge:Category .
+
+<ns-method/gan-based-negative-sampling> ns4kge:hasCategory <category/adversarial-ns> .
+<subcategory/standard> rdf:type ns4kge:Subcategory .
+
+<ns-method/gan-based-negative-sampling> ns4kge:hasSubcategory <subcategory/standard> .
+
+<ns-method/naive-negative-sampling> rdf:type ns4kge:NSMethod .
+
+<kge-model/distmult> rdf:type ns4kge:KGEModel .
+
+<kge-model/conve> rdf:type ns4kge:KGEModel .
+
+<kge-model/interacte> rdf:type ns4kge:KGEModel .
+
+<kge-model/sacn> rdf:type ns4kge:KGEModel .
+
+<kge-model/transh> rdf:type ns4kge:KGEModel .
+
+<kge-model/transr> rdf:type ns4kge:KGEModel .
+
+<kge-model/rotate> rdf:type ns4kge:KGEModel .
+
+<kge-model/transe> rdf:type ns4kge:KGEModel .
+
+<kge-model/kgboost-r> rdf:type ns4kge:KGEModel .
+
+<kge-model/kgboost-t> rdf:type ns4kge:KGEModel .
+
+<kge-model/complex> rdf:type ns4kge:KGEModel .
+
+<kge-model/rescal> rdf:type ns4kge:KGEModel .
+
+<dataset/fb15k> rdf:type ns4kge:Dataset .
+<task/link-prediction> rdf:type ns4kge:Task .
+<metric/mr> rdf:type ns4kge:Metric .
+<metric/mrr> rdf:type ns4kge:Metric .
+<metric/hits-1> rdf:type ns4kge:Metric .
+<metric/hits-3> rdf:type ns4kge:Metric .
+<metric/hits-10> rdf:type ns4kge:Metric .
+<dataset/wn18> rdf:type ns4kge:Dataset .
+<dataset/fb15k-237> rdf:type ns4kge:Dataset .
+<dataset/wn18rr> rdf:type ns4kge:Dataset .
+<loss-function/negative-log-likelihood-loss> rdf:type ns4kge:LossFunction .
+<loss-function/binary-cross-entropy-loss> rdf:type ns4kge:LossFunction .
+
+<experimentation/rcwc> rdf:type ns4kge:Experimentation .
+<experimentation/rcwc> ns4kge:hasTrainingProtocol <training-protocol/rcwc> .
+<experimentation/rcwc> ns4kge:hasConfiguration <configuration/rcwc/1> .
+<experimentation/rcwc> ns4kge:hasConfiguration <configuration/rcwc/2> .
+<experimentation/rcwc> ns4kge:hasConfiguration <configuration/rcwc/3> .
+<experimentation/rcwc> ns4kge:hasConfiguration <configuration/rcwc/4> .
+<experimentation/rcwc> ns4kge:hasConfiguration <configuration/rcwc/5> .
+<experimentation/rcwc> ns4kge:hasConfiguration <configuration/rcwc/6> .
+<experimentation/rcwc> ns4kge:hasConfiguration <configuration/rcwc/7> .
+<experimentation/rcwc> ns4kge:hasConfiguration <configuration/rcwc/8> .
+<experimentation/rcwc> ns4kge:hasConfiguration <configuration/rcwc/9> .
+<experimentation/rcwc> ns4kge:hasConfiguration <configuration/rcwc/10> .
+<experimentation/rcwc> ns4kge:hasConfiguration <configuration/rcwc/11> .
+<experimentation/rcwc> ns4kge:hasConfiguration <configuration/rcwc/12> .
+<experimentation/rcwc> ns4kge:hasConfiguration <configuration/rcwc/13> .
+<experimentation/rcwc> ns4kge:hasConfiguration <configuration/rcwc/14> .
+<experimentation/rcwc> ns4kge:hasConfiguration <configuration/rcwc/15> .
+<experimentation/rcwc> ns4kge:hasConfiguration <configuration/rcwc/16> .
+<experimentation/rcwc> ns4kge:hasConfiguration <configuration/rcwc/17> .
+<experimentation/rcwc> ns4kge:hasConfiguration <configuration/rcwc/18> .
+<experimentation/rcwc> ns4kge:hasConfiguration <configuration/rcwc/19> .
+<experimentation/rcwc> ns4kge:hasConfiguration <configuration/rcwc/20> .
+<experimentation/rcwc> ns4kge:hasConfiguration <configuration/rcwc/21> .
+<experimentation/rcwc> ns4kge:hasConfiguration <configuration/rcwc/22> .
+<experimentation/rcwc> ns4kge:hasConfiguration <configuration/rcwc/23> .
+<experimentation/rcwc> ns4kge:hasConfiguration <configuration/rcwc/24> .
+<experimentation/rcwc> ns4kge:hasConfiguration <configuration/rcwc/25> .
+<experimentation/rcwc> ns4kge:hasConfiguration <configuration/rcwc/26> .
+<experimentation/rcwc> ns4kge:hasConfiguration <configuration/rcwc/27> .
+<experimentation/rcwc> ns4kge:hasConfiguration <configuration/rcwc/28> .
+<experimentation/rcwc> ns4kge:hasConfiguration <configuration/rcwc/29> .
+<experimentation/rcwc> ns4kge:hasConfiguration <configuration/rcwc/30> .
+<experimentation/rcwc> ns4kge:hasConfiguration <configuration/rcwc/31> .
+<experimentation/rcwc> ns4kge:hasConfiguration <configuration/rcwc/32> .
+<experimentation/rcwc> ns4kge:hasConfiguration <configuration/rcwc/33> .
+<experimentation/rcwc> ns4kge:hasConfiguration <configuration/rcwc/34> .
+<experimentation/rcwc> ns4kge:hasConfiguration <configuration/rcwc/35> .
+<experimentation/rcwc> ns4kge:hasConfiguration <configuration/rcwc/36> .
+<experimentation/rcwc> ns4kge:hasConfiguration <configuration/rcwc/37> .
+<experimentation/rcwc> ns4kge:hasConfiguration <configuration/rcwc/38> .
+<experimentation/rcwc> ns4kge:hasConfiguration <configuration/rcwc/39> .
+<experimentation/rcwc> ns4kge:hasConfiguration <configuration/rcwc/40> .
+<experimentation/rcwc> ns4kge:hasConfiguration <configuration/rcwc/41> .
+<experimentation/rcwc> ns4kge:hasConfiguration <configuration/rcwc/42> .
+<experimentation/rcwc> ns4kge:hasConfiguration <configuration/rcwc/43> .
+<experimentation/rcwc> ns4kge:hasConfiguration <configuration/rcwc/44> .
+<experimentation/rcwc> ns4kge:hasConfiguration <configuration/rcwc/45> .
+<experimentation/rcwc> ns4kge:hasConfiguration <configuration/rcwc/46> .
+<experimentation/rcwc> ns4kge:hasConfiguration <configuration/rcwc/47> .
+<experimentation/rcwc> ns4kge:hasConfiguration <configuration/rcwc/48> .
+<experimentation/rcwc> ns4kge:hasConfiguration <configuration/rcwc/49> .
+<experimentation/rcwc> ns4kge:hasConfiguration <configuration/rcwc/50> .
+<experimentation/rcwc> ns4kge:hasConfiguration <configuration/rcwc/51> .
+<experimentation/rcwc> ns4kge:hasConfiguration <configuration/rcwc/52> .
+<experimentation/rcwc> ns4kge:hasConfiguration <configuration/rcwc/53> .
+<experimentation/rcwc> ns4kge:hasConfiguration <configuration/rcwc/54> .
+<experimentation/rcwc> ns4kge:hasConfiguration <configuration/rcwc/55> .
+<experimentation/rcwc> ns4kge:hasConfiguration <configuration/rcwc/56> .
+<experimentation/rcwc> ns4kge:hasConfiguration <configuration/rcwc/57> .
+<experimentation/rcwc> ns4kge:hasConfiguration <configuration/rcwc/58> .
+<experimentation/rcwc> ns4kge:hasConfiguration <configuration/rcwc/59> .
+<experimentation/rcwc> ns4kge:hasConfiguration <configuration/rcwc/60> .
+<experimentation/rcwc> ns4kge:hasConfiguration <configuration/rcwc/61> .
+<experimentation/rcwc> ns4kge:hasConfiguration <configuration/rcwc/62> .
+<experimentation/rcwc> ns4kge:hasConfiguration <configuration/rcwc/63> .
+<experimentation/rcwc> ns4kge:hasConfiguration <configuration/rcwc/64> .
+<experimentation/rcwc> ns4kge:hasConfiguration <configuration/rcwc/65> .
+<experimentation/rcwc> ns4kge:hasConfiguration <configuration/rcwc/66> .
+<experimentation/rcwc> ns4kge:hasConfiguration <configuration/rcwc/67> .
+<experimentation/rcwc> ns4kge:hasConfiguration <configuration/rcwc/68> .
+<experimentation/rcwc> ns4kge:hasConfiguration <configuration/rcwc/69> .
+<experimentation/rcwc> ns4kge:hasConfiguration <configuration/rcwc/70> .
+<experimentation/rcwc> ns4kge:hasConfiguration <configuration/rcwc/71> .
+<experimentation/rcwc> ns4kge:hasConfiguration <configuration/rcwc/72> .
+<experimentation/rcwc> ns4kge:hasConfiguration <configuration/rcwc/73> .
+<experimentation/rcwc> ns4kge:hasConfiguration <configuration/rcwc/74> .
+<experimentation/rcwc> ns4kge:hasConfiguration <configuration/rcwc/75> .
+<experimentation/rcwc> ns4kge:hasConfiguration <configuration/rcwc/76> .
+<experimentation/rcwc> ns4kge:hasConfiguration <configuration/rcwc/77> .
+<experimentation/rcwc> ns4kge:hasConfiguration <configuration/rcwc/78> .
+<experimentation/rcwc> ns4kge:hasConfiguration <configuration/rcwc/79> .
+<experimentation/rcwc> ns4kge:hasConfiguration <configuration/rcwc/80> .
+<experimentation/rcwc> ns4kge:hasConfiguration <configuration/rcwc/81> .
+<experimentation/rcwc> ns4kge:hasConfiguration <configuration/rcwc/82> .
+<experimentation/rcwc> ns4kge:hasConfiguration <configuration/rcwc/83> .
+<experimentation/rcwc> ns4kge:hasConfiguration <configuration/rcwc/84> .
+<experimentation/rcwc> ns4kge:hasConfiguration <configuration/rcwc/85> .
+<experimentation/rcwc> ns4kge:hasConfiguration <configuration/rcwc/86> .
+<experimentation/rcwc> ns4kge:hasConfiguration <configuration/rcwc/87> .
+<experimentation/rcwc> ns4kge:hasConfiguration <configuration/rcwc/88> .
+<experimentation/rcwc> ns4kge:hasConfiguration <configuration/rcwc/89> .
+<experimentation/rcwc> ns4kge:hasConfiguration <configuration/rcwc/90> .
+<experimentation/rcwc> ns4kge:hasConfiguration <configuration/rcwc/91> .
+<experimentation/rcwc> ns4kge:hasConfiguration <configuration/rcwc/92> .
+<experimentation/rcwc> ns4kge:hasConfiguration <configuration/rcwc/93> .
+<experimentation/rcwc> ns4kge:hasConfiguration <configuration/rcwc/94> .
+<experimentation/rcwc> ns4kge:hasConfiguration <configuration/rcwc/95> .
+<experimentation/rcwc> ns4kge:hasConfiguration <configuration/rcwc/96> .
+<experimentation/rcwc> ns4kge:hasConfiguration <configuration/rcwc/97> .
+<experimentation/rcwc> ns4kge:hasConfiguration <configuration/rcwc/98> .
+<experimentation/rcwc> ns4kge:hasConfiguration <configuration/rcwc/99> .
+<experimentation/rcwc> ns4kge:hasConfiguration <configuration/rcwc/100> .
+<experimentation/rcwc> ns4kge:hasConfiguration <configuration/rcwc/101> .
+
+<training-protocol/rcwc> rdf:type ns4kge:TrainingProtocol .
+<training-protocol/rcwc> ns4kge:hasLossFunction <loss-function/negative-log-likelihood-loss> .
+<training-protocol/rcwc> ns4kge:hasLossFunction <loss-function/binary-cross-entropy-loss> .
+
+<configuration/rcwc/1> rdf:type ns4kge:Configuration .
+<configuration/rcwc/1> ns4kge:hasTask    <task/link-prediction> .
+<configuration/rcwc/1> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/rcwc/1> ns4kge:hasMetric  <metric/mr> .
+<configuration/rcwc/1> ns4kge:hasKGEModel <kge-model/kgboost-t> .
+<configuration/rcwc/1> ns4kge:hasNSMethod <ns-method/range-constrained-with-co-occurrence-negative-sampling> .
+<configuration/rcwc/1> ns4kge:result "15"^^xsd:decimal .
+
+<configuration/rcwc/2> rdf:type ns4kge:Configuration .
+<configuration/rcwc/2> ns4kge:hasTask    <task/link-prediction> .
+<configuration/rcwc/2> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/rcwc/2> ns4kge:hasMetric  <metric/mr> .
+<configuration/rcwc/2> ns4kge:hasKGEModel <kge-model/kgboost-r> .
+<configuration/rcwc/2> ns4kge:hasNSMethod <ns-method/range-constrained-with-co-occurrence-negative-sampling> .
+<configuration/rcwc/2> ns4kge:result "16"^^xsd:decimal .
+
+<configuration/rcwc/3> rdf:type ns4kge:Configuration .
+<configuration/rcwc/3> ns4kge:hasTask    <task/link-prediction> .
+<configuration/rcwc/3> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/rcwc/3> ns4kge:hasMetric  <metric/mr> .
+<configuration/rcwc/3> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/rcwc/3> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/rcwc/3> ns4kge:result "40"^^xsd:decimal .
+
+<configuration/rcwc/4> rdf:type ns4kge:Configuration .
+<configuration/rcwc/4> ns4kge:hasTask    <task/link-prediction> .
+<configuration/rcwc/4> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/rcwc/4> ns4kge:hasMetric  <metric/mr> .
+<configuration/rcwc/4> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/rcwc/4> ns4kge:result "42"^^xsd:decimal .
+
+<configuration/rcwc/5> rdf:type ns4kge:Configuration .
+<configuration/rcwc/5> ns4kge:hasTask    <task/link-prediction> .
+<configuration/rcwc/5> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/rcwc/5> ns4kge:hasMetric  <metric/mrr> .
+<configuration/rcwc/5> ns4kge:hasKGEModel <kge-model/kgboost-r> .
+<configuration/rcwc/5> ns4kge:hasNSMethod <ns-method/range-constrained-with-co-occurrence-negative-sampling> .
+<configuration/rcwc/5> ns4kge:result "0.817"^^xsd:decimal .
+
+<configuration/rcwc/6> rdf:type ns4kge:Configuration .
+<configuration/rcwc/6> ns4kge:hasTask    <task/link-prediction> .
+<configuration/rcwc/6> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/rcwc/6> ns4kge:hasMetric  <metric/mrr> .
+<configuration/rcwc/6> ns4kge:hasKGEModel <kge-model/kgboost-t> .
+<configuration/rcwc/6> ns4kge:hasNSMethod <ns-method/range-constrained-with-co-occurrence-negative-sampling> .
+<configuration/rcwc/6> ns4kge:result "0.811"^^xsd:decimal .
+
+<configuration/rcwc/7> rdf:type ns4kge:Configuration .
+<configuration/rcwc/7> ns4kge:hasTask    <task/link-prediction> .
+<configuration/rcwc/7> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/rcwc/7> ns4kge:hasMetric  <metric/mrr> .
+<configuration/rcwc/7> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/rcwc/7> ns4kge:result "0.798"^^xsd:decimal .
+
+<configuration/rcwc/8> rdf:type ns4kge:Configuration .
+<configuration/rcwc/8> ns4kge:hasTask    <task/link-prediction> .
+<configuration/rcwc/8> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/rcwc/8> ns4kge:hasMetric  <metric/mrr> .
+<configuration/rcwc/8> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/rcwc/8> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/rcwc/8> ns4kge:result "0.797"^^xsd:decimal .
+
+<configuration/rcwc/9> rdf:type ns4kge:Configuration .
+<configuration/rcwc/9> ns4kge:hasTask    <task/link-prediction> .
+<configuration/rcwc/9> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/rcwc/9> ns4kge:hasMetric  <metric/mrr> .
+<configuration/rcwc/9> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/rcwc/9> ns4kge:result "0.463"^^xsd:decimal .
+
+<configuration/rcwc/10> rdf:type ns4kge:Configuration .
+<configuration/rcwc/10> ns4kge:hasTask    <task/link-prediction> .
+<configuration/rcwc/10> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/rcwc/10> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/rcwc/10> ns4kge:hasKGEModel <kge-model/kgboost-r> .
+<configuration/rcwc/10> ns4kge:hasNSMethod <ns-method/range-constrained-with-co-occurrence-negative-sampling> .
+<configuration/rcwc/10> ns4kge:result "0.751"^^xsd:decimal .
+
+<configuration/rcwc/11> rdf:type ns4kge:Configuration .
+<configuration/rcwc/11> ns4kge:hasTask    <task/link-prediction> .
+<configuration/rcwc/11> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/rcwc/11> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/rcwc/11> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/rcwc/11> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/rcwc/11> ns4kge:result "0.746"^^xsd:decimal .
+
+<configuration/rcwc/12> rdf:type ns4kge:Configuration .
+<configuration/rcwc/12> ns4kge:hasTask    <task/link-prediction> .
+<configuration/rcwc/12> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/rcwc/12> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/rcwc/12> ns4kge:hasKGEModel <kge-model/kgboost-t> .
+<configuration/rcwc/12> ns4kge:hasNSMethod <ns-method/range-constrained-with-co-occurrence-negative-sampling> .
+<configuration/rcwc/12> ns4kge:result "0.739"^^xsd:decimal .
+
+<configuration/rcwc/13> rdf:type ns4kge:Configuration .
+<configuration/rcwc/13> ns4kge:hasTask    <task/link-prediction> .
+<configuration/rcwc/13> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/rcwc/13> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/rcwc/13> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/rcwc/13> ns4kge:result "0.599"^^xsd:decimal .
+
+<configuration/rcwc/14> rdf:type ns4kge:Configuration .
+<configuration/rcwc/14> ns4kge:hasTask    <task/link-prediction> .
+<configuration/rcwc/14> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/rcwc/14> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/rcwc/14> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/rcwc/14> ns4kge:result "0.297"^^xsd:decimal .
+
+<configuration/rcwc/15> rdf:type ns4kge:Configuration .
+<configuration/rcwc/15> ns4kge:hasTask    <task/link-prediction> .
+<configuration/rcwc/15> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/rcwc/15> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/rcwc/15> ns4kge:hasKGEModel <kge-model/kgboost-r> .
+<configuration/rcwc/15> ns4kge:hasNSMethod <ns-method/range-constrained-with-co-occurrence-negative-sampling> .
+<configuration/rcwc/15> ns4kge:result "0.868"^^xsd:decimal .
+
+<configuration/rcwc/16> rdf:type ns4kge:Configuration .
+<configuration/rcwc/16> ns4kge:hasTask    <task/link-prediction> .
+<configuration/rcwc/16> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/rcwc/16> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/rcwc/16> ns4kge:hasKGEModel <kge-model/kgboost-t> .
+<configuration/rcwc/16> ns4kge:hasNSMethod <ns-method/range-constrained-with-co-occurrence-negative-sampling> .
+<configuration/rcwc/16> ns4kge:result "0.867"^^xsd:decimal .
+
+<configuration/rcwc/17> rdf:type ns4kge:Configuration .
+<configuration/rcwc/17> ns4kge:hasTask    <task/link-prediction> .
+<configuration/rcwc/17> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/rcwc/17> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/rcwc/17> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/rcwc/17> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/rcwc/17> ns4kge:result "0.83"^^xsd:decimal .
+
+<configuration/rcwc/18> rdf:type ns4kge:Configuration .
+<configuration/rcwc/18> ns4kge:hasTask    <task/link-prediction> .
+<configuration/rcwc/18> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/rcwc/18> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/rcwc/18> ns4kge:hasKGEModel <kge-model/kgboost-t> .
+<configuration/rcwc/18> ns4kge:hasNSMethod <ns-method/range-constrained-with-co-occurrence-negative-sampling> .
+<configuration/rcwc/18> ns4kge:result "0.915"^^xsd:decimal .
+
+<configuration/rcwc/19> rdf:type ns4kge:Configuration .
+<configuration/rcwc/19> ns4kge:hasTask    <task/link-prediction> .
+<configuration/rcwc/19> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/rcwc/19> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/rcwc/19> ns4kge:hasKGEModel <kge-model/kgboost-r> .
+<configuration/rcwc/19> ns4kge:hasNSMethod <ns-method/range-constrained-with-co-occurrence-negative-sampling> .
+<configuration/rcwc/19> ns4kge:result "0.914"^^xsd:decimal .
+
+<configuration/rcwc/20> rdf:type ns4kge:Configuration .
+<configuration/rcwc/20> ns4kge:hasTask    <task/link-prediction> .
+<configuration/rcwc/20> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/rcwc/20> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/rcwc/20> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/rcwc/20> ns4kge:result "0.893"^^xsd:decimal .
+
+<configuration/rcwc/21> rdf:type ns4kge:Configuration .
+<configuration/rcwc/21> ns4kge:hasTask    <task/link-prediction> .
+<configuration/rcwc/21> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/rcwc/21> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/rcwc/21> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/rcwc/21> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/rcwc/21> ns4kge:result "0.884"^^xsd:decimal .
+
+<configuration/rcwc/22> rdf:type ns4kge:Configuration .
+<configuration/rcwc/22> ns4kge:hasTask    <task/link-prediction> .
+<configuration/rcwc/22> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/rcwc/22> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/rcwc/22> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/rcwc/22> ns4kge:result "0.749"^^xsd:decimal .
+
+<configuration/rcwc/23> rdf:type ns4kge:Configuration .
+<configuration/rcwc/23> ns4kge:hasTask    <task/link-prediction> .
+<configuration/rcwc/23> ns4kge:hasDataset <dataset/wn18> .
+<configuration/rcwc/23> ns4kge:hasMetric  <metric/mr> .
+<configuration/rcwc/23> ns4kge:hasKGEModel <kge-model/kgboost-r> .
+<configuration/rcwc/23> ns4kge:hasNSMethod <ns-method/range-constrained-with-co-occurrence-negative-sampling> .
+<configuration/rcwc/23> ns4kge:result "131"^^xsd:decimal .
+
+<configuration/rcwc/24> rdf:type ns4kge:Configuration .
+<configuration/rcwc/24> ns4kge:hasTask    <task/link-prediction> .
+<configuration/rcwc/24> ns4kge:hasDataset <dataset/wn18> .
+<configuration/rcwc/24> ns4kge:hasMetric  <metric/mr> .
+<configuration/rcwc/24> ns4kge:hasKGEModel <kge-model/kgboost-t> .
+<configuration/rcwc/24> ns4kge:hasNSMethod <ns-method/range-constrained-with-co-occurrence-negative-sampling> .
+<configuration/rcwc/24> ns4kge:result "189"^^xsd:decimal .
+
+<configuration/rcwc/25> rdf:type ns4kge:Configuration .
+<configuration/rcwc/25> ns4kge:hasTask    <task/link-prediction> .
+<configuration/rcwc/25> ns4kge:hasDataset <dataset/wn18> .
+<configuration/rcwc/25> ns4kge:hasMetric  <metric/mr> .
+<configuration/rcwc/25> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/rcwc/25> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/rcwc/25> ns4kge:result "309"^^xsd:decimal .
+
+<configuration/rcwc/26> rdf:type ns4kge:Configuration .
+<configuration/rcwc/26> ns4kge:hasTask    <task/link-prediction> .
+<configuration/rcwc/26> ns4kge:hasDataset <dataset/wn18> .
+<configuration/rcwc/26> ns4kge:hasMetric  <metric/mrr> .
+<configuration/rcwc/26> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/rcwc/26> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/rcwc/26> ns4kge:result "0.949"^^xsd:decimal .
+
+<configuration/rcwc/27> rdf:type ns4kge:Configuration .
+<configuration/rcwc/27> ns4kge:hasTask    <task/link-prediction> .
+<configuration/rcwc/27> ns4kge:hasDataset <dataset/wn18> .
+<configuration/rcwc/27> ns4kge:hasMetric  <metric/mrr> .
+<configuration/rcwc/27> ns4kge:hasKGEModel <kge-model/conve> .
+<configuration/rcwc/27> ns4kge:result "0.943"^^xsd:decimal .
+
+<configuration/rcwc/28> rdf:type ns4kge:Configuration .
+<configuration/rcwc/28> ns4kge:hasTask    <task/link-prediction> .
+<configuration/rcwc/28> ns4kge:hasDataset <dataset/wn18> .
+<configuration/rcwc/28> ns4kge:hasMetric  <metric/mrr> .
+<configuration/rcwc/28> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/rcwc/28> ns4kge:result "0.941"^^xsd:decimal .
+
+<configuration/rcwc/29> rdf:type ns4kge:Configuration .
+<configuration/rcwc/29> ns4kge:hasTask    <task/link-prediction> .
+<configuration/rcwc/29> ns4kge:hasDataset <dataset/wn18> .
+<configuration/rcwc/29> ns4kge:hasMetric  <metric/mrr> .
+<configuration/rcwc/29> ns4kge:hasKGEModel <kge-model/kgboost-r> .
+<configuration/rcwc/29> ns4kge:hasNSMethod <ns-method/range-constrained-with-co-occurrence-negative-sampling> .
+<configuration/rcwc/29> ns4kge:result "0.939"^^xsd:decimal .
+
+<configuration/rcwc/30> rdf:type ns4kge:Configuration .
+<configuration/rcwc/30> ns4kge:hasTask    <task/link-prediction> .
+<configuration/rcwc/30> ns4kge:hasDataset <dataset/wn18> .
+<configuration/rcwc/30> ns4kge:hasMetric  <metric/mrr> .
+<configuration/rcwc/30> ns4kge:hasKGEModel <kge-model/kgboost-t> .
+<configuration/rcwc/30> ns4kge:hasNSMethod <ns-method/range-constrained-with-co-occurrence-negative-sampling> .
+<configuration/rcwc/30> ns4kge:result "0.82"^^xsd:decimal .
+
+<configuration/rcwc/31> rdf:type ns4kge:Configuration .
+<configuration/rcwc/31> ns4kge:hasTask    <task/link-prediction> .
+<configuration/rcwc/31> ns4kge:hasDataset <dataset/wn18> .
+<configuration/rcwc/31> ns4kge:hasMetric  <metric/mrr> .
+<configuration/rcwc/31> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/rcwc/31> ns4kge:result "0.495"^^xsd:decimal .
+
+<configuration/rcwc/32> rdf:type ns4kge:Configuration .
+<configuration/rcwc/32> ns4kge:hasTask    <task/link-prediction> .
+<configuration/rcwc/32> ns4kge:hasDataset <dataset/wn18> .
+<configuration/rcwc/32> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/rcwc/32> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/rcwc/32> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/rcwc/32> ns4kge:result "0.944"^^xsd:decimal .
+
+<configuration/rcwc/33> rdf:type ns4kge:Configuration .
+<configuration/rcwc/33> ns4kge:hasTask    <task/link-prediction> .
+<configuration/rcwc/33> ns4kge:hasDataset <dataset/wn18> .
+<configuration/rcwc/33> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/rcwc/33> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/rcwc/33> ns4kge:result "0.936"^^xsd:decimal .
+
+<configuration/rcwc/34> rdf:type ns4kge:Configuration .
+<configuration/rcwc/34> ns4kge:hasTask    <task/link-prediction> .
+<configuration/rcwc/34> ns4kge:hasDataset <dataset/wn18> .
+<configuration/rcwc/34> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/rcwc/34> ns4kge:hasKGEModel <kge-model/conve> .
+<configuration/rcwc/34> ns4kge:result "0.935"^^xsd:decimal .
+
+<configuration/rcwc/35> rdf:type ns4kge:Configuration .
+<configuration/rcwc/35> ns4kge:hasTask    <task/link-prediction> .
+<configuration/rcwc/35> ns4kge:hasDataset <dataset/wn18> .
+<configuration/rcwc/35> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/rcwc/35> ns4kge:hasKGEModel <kge-model/kgboost-r> .
+<configuration/rcwc/35> ns4kge:hasNSMethod <ns-method/range-constrained-with-co-occurrence-negative-sampling> .
+<configuration/rcwc/35> ns4kge:result "0.929"^^xsd:decimal .
+
+<configuration/rcwc/36> rdf:type ns4kge:Configuration .
+<configuration/rcwc/36> ns4kge:hasTask    <task/link-prediction> .
+<configuration/rcwc/36> ns4kge:hasDataset <dataset/wn18> .
+<configuration/rcwc/36> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/rcwc/36> ns4kge:hasKGEModel <kge-model/kgboost-t> .
+<configuration/rcwc/36> ns4kge:hasNSMethod <ns-method/range-constrained-with-co-occurrence-negative-sampling> .
+<configuration/rcwc/36> ns4kge:result "0.703"^^xsd:decimal .
+
+<configuration/rcwc/37> rdf:type ns4kge:Configuration .
+<configuration/rcwc/37> ns4kge:hasTask    <task/link-prediction> .
+<configuration/rcwc/37> ns4kge:hasDataset <dataset/wn18> .
+<configuration/rcwc/37> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/rcwc/37> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/rcwc/37> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/rcwc/37> ns4kge:result "0.952"^^xsd:decimal .
+
+<configuration/rcwc/38> rdf:type ns4kge:Configuration .
+<configuration/rcwc/38> ns4kge:hasTask    <task/link-prediction> .
+<configuration/rcwc/38> ns4kge:hasDataset <dataset/wn18> .
+<configuration/rcwc/38> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/rcwc/38> ns4kge:hasKGEModel <kge-model/conve> .
+<configuration/rcwc/38> ns4kge:result "0.946"^^xsd:decimal .
+
+<configuration/rcwc/39> rdf:type ns4kge:Configuration .
+<configuration/rcwc/39> ns4kge:hasTask    <task/link-prediction> .
+<configuration/rcwc/39> ns4kge:hasDataset <dataset/wn18> .
+<configuration/rcwc/39> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/rcwc/39> ns4kge:hasKGEModel <kge-model/kgboost-r> .
+<configuration/rcwc/39> ns4kge:hasNSMethod <ns-method/range-constrained-with-co-occurrence-negative-sampling> .
+<configuration/rcwc/39> ns4kge:result "0.946"^^xsd:decimal .
+
+<configuration/rcwc/40> rdf:type ns4kge:Configuration .
+<configuration/rcwc/40> ns4kge:hasTask    <task/link-prediction> .
+<configuration/rcwc/40> ns4kge:hasDataset <dataset/wn18> .
+<configuration/rcwc/40> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/rcwc/40> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/rcwc/40> ns4kge:result "0.945"^^xsd:decimal .
+
+<configuration/rcwc/41> rdf:type ns4kge:Configuration .
+<configuration/rcwc/41> ns4kge:hasTask    <task/link-prediction> .
+<configuration/rcwc/41> ns4kge:hasDataset <dataset/wn18> .
+<configuration/rcwc/41> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/rcwc/41> ns4kge:hasKGEModel <kge-model/kgboost-t> .
+<configuration/rcwc/41> ns4kge:hasNSMethod <ns-method/range-constrained-with-co-occurrence-negative-sampling> .
+<configuration/rcwc/41> ns4kge:result "0.936"^^xsd:decimal .
+
+<configuration/rcwc/42> rdf:type ns4kge:Configuration .
+<configuration/rcwc/42> ns4kge:hasTask    <task/link-prediction> .
+<configuration/rcwc/42> ns4kge:hasDataset <dataset/wn18> .
+<configuration/rcwc/42> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/rcwc/42> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/rcwc/42> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/rcwc/42> ns4kge:result "0.959"^^xsd:decimal .
+
+<configuration/rcwc/43> rdf:type ns4kge:Configuration .
+<configuration/rcwc/43> ns4kge:hasTask    <task/link-prediction> .
+<configuration/rcwc/43> ns4kge:hasDataset <dataset/wn18> .
+<configuration/rcwc/43> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/rcwc/43> ns4kge:hasKGEModel <kge-model/conve> .
+<configuration/rcwc/43> ns4kge:result "0.956"^^xsd:decimal .
+
+<configuration/rcwc/44> rdf:type ns4kge:Configuration .
+<configuration/rcwc/44> ns4kge:hasTask    <task/link-prediction> .
+<configuration/rcwc/44> ns4kge:hasDataset <dataset/wn18> .
+<configuration/rcwc/44> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/rcwc/44> ns4kge:hasKGEModel <kge-model/kgboost-r> .
+<configuration/rcwc/44> ns4kge:hasNSMethod <ns-method/range-constrained-with-co-occurrence-negative-sampling> .
+<configuration/rcwc/44> ns4kge:result "0.955"^^xsd:decimal .
+
+<configuration/rcwc/45> rdf:type ns4kge:Configuration .
+<configuration/rcwc/45> ns4kge:hasTask    <task/link-prediction> .
+<configuration/rcwc/45> ns4kge:hasDataset <dataset/wn18> .
+<configuration/rcwc/45> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/rcwc/45> ns4kge:hasKGEModel <kge-model/kgboost-t> .
+<configuration/rcwc/45> ns4kge:hasNSMethod <ns-method/range-constrained-with-co-occurrence-negative-sampling> .
+<configuration/rcwc/45> ns4kge:result "0.951"^^xsd:decimal .
+
+<configuration/rcwc/46> rdf:type ns4kge:Configuration .
+<configuration/rcwc/46> ns4kge:hasTask    <task/link-prediction> .
+<configuration/rcwc/46> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/rcwc/46> ns4kge:hasMetric  <metric/mr> .
+<configuration/rcwc/46> ns4kge:hasKGEModel <kge-model/kgboost-r> .
+<configuration/rcwc/46> ns4kge:hasNSMethod <ns-method/range-constrained-with-co-occurrence-negative-sampling> .
+<configuration/rcwc/46> ns4kge:result "77"^^xsd:decimal .
+
+<configuration/rcwc/47> rdf:type ns4kge:Configuration .
+<configuration/rcwc/47> ns4kge:hasTask    <task/link-prediction> .
+<configuration/rcwc/47> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/rcwc/47> ns4kge:hasMetric  <metric/mr> .
+<configuration/rcwc/47> ns4kge:hasKGEModel <kge-model/kgboost-t> .
+<configuration/rcwc/47> ns4kge:hasNSMethod <ns-method/range-constrained-with-co-occurrence-negative-sampling> .
+<configuration/rcwc/47> ns4kge:result "78"^^xsd:decimal .
+
+<configuration/rcwc/48> rdf:type ns4kge:Configuration .
+<configuration/rcwc/48> ns4kge:hasTask    <task/link-prediction> .
+<configuration/rcwc/48> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/rcwc/48> ns4kge:hasMetric  <metric/mr> .
+<configuration/rcwc/48> ns4kge:hasKGEModel <kge-model/interacte> .
+<configuration/rcwc/48> ns4kge:result "172"^^xsd:decimal .
+
+<configuration/rcwc/49> rdf:type ns4kge:Configuration .
+<configuration/rcwc/49> ns4kge:hasTask    <task/link-prediction> .
+<configuration/rcwc/49> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/rcwc/49> ns4kge:hasMetric  <metric/mr> .
+<configuration/rcwc/49> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/rcwc/49> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/rcwc/49> ns4kge:result "177"^^xsd:decimal .
+
+<configuration/rcwc/50> rdf:type ns4kge:Configuration .
+<configuration/rcwc/50> ns4kge:hasTask    <task/link-prediction> .
+<configuration/rcwc/50> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/rcwc/50> ns4kge:hasMetric  <metric/mr> .
+<configuration/rcwc/50> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/rcwc/50> ns4kge:result "357"^^xsd:decimal .
+
+<configuration/rcwc/51> rdf:type ns4kge:Configuration .
+<configuration/rcwc/51> ns4kge:hasTask    <task/link-prediction> .
+<configuration/rcwc/51> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/rcwc/51> ns4kge:hasMetric  <metric/mrr> .
+<configuration/rcwc/51> ns4kge:hasKGEModel <kge-model/kgboost-t> .
+<configuration/rcwc/51> ns4kge:hasNSMethod <ns-method/range-constrained-with-co-occurrence-negative-sampling> .
+<configuration/rcwc/51> ns4kge:result "0.426"^^xsd:decimal .
+
+<configuration/rcwc/52> rdf:type ns4kge:Configuration .
+<configuration/rcwc/52> ns4kge:hasTask    <task/link-prediction> .
+<configuration/rcwc/52> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/rcwc/52> ns4kge:hasMetric  <metric/mrr> .
+<configuration/rcwc/52> ns4kge:hasKGEModel <kge-model/kgboost-r> .
+<configuration/rcwc/52> ns4kge:hasNSMethod <ns-method/range-constrained-with-co-occurrence-negative-sampling> .
+<configuration/rcwc/52> ns4kge:result "0.425"^^xsd:decimal .
+
+<configuration/rcwc/53> rdf:type ns4kge:Configuration .
+<configuration/rcwc/53> ns4kge:hasTask    <task/link-prediction> .
+<configuration/rcwc/53> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/rcwc/53> ns4kge:hasMetric  <metric/mrr> .
+<configuration/rcwc/53> ns4kge:hasKGEModel <kge-model/interacte> .
+<configuration/rcwc/53> ns4kge:result "0.354"^^xsd:decimal .
+
+<configuration/rcwc/54> rdf:type ns4kge:Configuration .
+<configuration/rcwc/54> ns4kge:hasTask    <task/link-prediction> .
+<configuration/rcwc/54> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/rcwc/54> ns4kge:hasMetric  <metric/mrr> .
+<configuration/rcwc/54> ns4kge:hasKGEModel <kge-model/sacn> .
+<configuration/rcwc/54> ns4kge:result "0.35"^^xsd:decimal .
+
+<configuration/rcwc/55> rdf:type ns4kge:Configuration .
+<configuration/rcwc/55> ns4kge:hasTask    <task/link-prediction> .
+<configuration/rcwc/55> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/rcwc/55> ns4kge:hasMetric  <metric/mrr> .
+<configuration/rcwc/55> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/rcwc/55> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/rcwc/55> ns4kge:result "0.338"^^xsd:decimal .
+
+<configuration/rcwc/56> rdf:type ns4kge:Configuration .
+<configuration/rcwc/56> ns4kge:hasTask    <task/link-prediction> .
+<configuration/rcwc/56> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/rcwc/56> ns4kge:hasMetric  <metric/mrr> .
+<configuration/rcwc/56> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/rcwc/56> ns4kge:result "0.294"^^xsd:decimal .
+
+<configuration/rcwc/57> rdf:type ns4kge:Configuration .
+<configuration/rcwc/57> ns4kge:hasTask    <task/link-prediction> .
+<configuration/rcwc/57> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/rcwc/57> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/rcwc/57> ns4kge:hasKGEModel <kge-model/kgboost-r> .
+<configuration/rcwc/57> ns4kge:hasNSMethod <ns-method/range-constrained-with-co-occurrence-negative-sampling> .
+<configuration/rcwc/57> ns4kge:result "0.336"^^xsd:decimal .
+
+<configuration/rcwc/58> rdf:type ns4kge:Configuration .
+<configuration/rcwc/58> ns4kge:hasTask    <task/link-prediction> .
+<configuration/rcwc/58> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/rcwc/58> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/rcwc/58> ns4kge:hasKGEModel <kge-model/kgboost-t> .
+<configuration/rcwc/58> ns4kge:hasNSMethod <ns-method/range-constrained-with-co-occurrence-negative-sampling> .
+<configuration/rcwc/58> ns4kge:result "0.335"^^xsd:decimal .
+
+<configuration/rcwc/59> rdf:type ns4kge:Configuration .
+<configuration/rcwc/59> ns4kge:hasTask    <task/link-prediction> .
+<configuration/rcwc/59> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/rcwc/59> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/rcwc/59> ns4kge:hasKGEModel <kge-model/interacte> .
+<configuration/rcwc/59> ns4kge:result "0.263"^^xsd:decimal .
+
+<configuration/rcwc/60> rdf:type ns4kge:Configuration .
+<configuration/rcwc/60> ns4kge:hasTask    <task/link-prediction> .
+<configuration/rcwc/60> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/rcwc/60> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/rcwc/60> ns4kge:hasKGEModel <kge-model/sacn> .
+<configuration/rcwc/60> ns4kge:result "0.26"^^xsd:decimal .
+
+<configuration/rcwc/61> rdf:type ns4kge:Configuration .
+<configuration/rcwc/61> ns4kge:hasTask    <task/link-prediction> .
+<configuration/rcwc/61> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/rcwc/61> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/rcwc/61> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/rcwc/61> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/rcwc/61> ns4kge:result "0.241"^^xsd:decimal .
+
+<configuration/rcwc/62> rdf:type ns4kge:Configuration .
+<configuration/rcwc/62> ns4kge:hasTask    <task/link-prediction> .
+<configuration/rcwc/62> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/rcwc/62> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/rcwc/62> ns4kge:hasKGEModel <kge-model/kgboost-t> .
+<configuration/rcwc/62> ns4kge:hasNSMethod <ns-method/range-constrained-with-co-occurrence-negative-sampling> .
+<configuration/rcwc/62> ns4kge:result "0.462"^^xsd:decimal .
+
+<configuration/rcwc/63> rdf:type ns4kge:Configuration .
+<configuration/rcwc/63> ns4kge:hasTask    <task/link-prediction> .
+<configuration/rcwc/63> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/rcwc/63> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/rcwc/63> ns4kge:hasKGEModel <kge-model/kgboost-r> .
+<configuration/rcwc/63> ns4kge:hasNSMethod <ns-method/range-constrained-with-co-occurrence-negative-sampling> .
+<configuration/rcwc/63> ns4kge:result "0.46"^^xsd:decimal .
+
+<configuration/rcwc/64> rdf:type ns4kge:Configuration .
+<configuration/rcwc/64> ns4kge:hasTask    <task/link-prediction> .
+<configuration/rcwc/64> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/rcwc/64> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/rcwc/64> ns4kge:hasKGEModel <kge-model/sacn> .
+<configuration/rcwc/64> ns4kge:result "0.39"^^xsd:decimal .
+
+<configuration/rcwc/65> rdf:type ns4kge:Configuration .
+<configuration/rcwc/65> ns4kge:hasTask    <task/link-prediction> .
+<configuration/rcwc/65> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/rcwc/65> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/rcwc/65> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/rcwc/65> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/rcwc/65> ns4kge:result "0.375"^^xsd:decimal .
+
+<configuration/rcwc/66> rdf:type ns4kge:Configuration .
+<configuration/rcwc/66> ns4kge:hasTask    <task/link-prediction> .
+<configuration/rcwc/66> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/rcwc/66> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/rcwc/66> ns4kge:hasKGEModel <kge-model/kgboost-t> .
+<configuration/rcwc/66> ns4kge:hasNSMethod <ns-method/range-constrained-with-co-occurrence-negative-sampling> .
+<configuration/rcwc/66> ns4kge:result "0.608"^^xsd:decimal .
+
+<configuration/rcwc/67> rdf:type ns4kge:Configuration .
+<configuration/rcwc/67> ns4kge:hasTask    <task/link-prediction> .
+<configuration/rcwc/67> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/rcwc/67> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/rcwc/67> ns4kge:hasKGEModel <kge-model/kgboost-r> .
+<configuration/rcwc/67> ns4kge:hasNSMethod <ns-method/range-constrained-with-co-occurrence-negative-sampling> .
+<configuration/rcwc/67> ns4kge:result "0.606"^^xsd:decimal .
+
+<configuration/rcwc/68> rdf:type ns4kge:Configuration .
+<configuration/rcwc/68> ns4kge:hasTask    <task/link-prediction> .
+<configuration/rcwc/68> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/rcwc/68> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/rcwc/68> ns4kge:hasKGEModel <kge-model/sacn> .
+<configuration/rcwc/68> ns4kge:result "0.54"^^xsd:decimal .
+
+<configuration/rcwc/69> rdf:type ns4kge:Configuration .
+<configuration/rcwc/69> ns4kge:hasTask    <task/link-prediction> .
+<configuration/rcwc/69> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/rcwc/69> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/rcwc/69> ns4kge:hasKGEModel <kge-model/interacte> .
+<configuration/rcwc/69> ns4kge:result "0.535"^^xsd:decimal .
+
+<configuration/rcwc/70> rdf:type ns4kge:Configuration .
+<configuration/rcwc/70> ns4kge:hasTask    <task/link-prediction> .
+<configuration/rcwc/70> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/rcwc/70> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/rcwc/70> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/rcwc/70> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/rcwc/70> ns4kge:result "0.533"^^xsd:decimal .
+
+<configuration/rcwc/71> rdf:type ns4kge:Configuration .
+<configuration/rcwc/71> ns4kge:hasTask    <task/link-prediction> .
+<configuration/rcwc/71> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/rcwc/71> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/rcwc/71> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/rcwc/71> ns4kge:result "0.465"^^xsd:decimal .
+
+<configuration/rcwc/72> rdf:type ns4kge:Configuration .
+<configuration/rcwc/72> ns4kge:hasTask    <task/link-prediction> .
+<configuration/rcwc/72> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/rcwc/72> ns4kge:hasMetric  <metric/mr> .
+<configuration/rcwc/72> ns4kge:hasKGEModel <kge-model/kgboost-t> .
+<configuration/rcwc/72> ns4kge:hasNSMethod <ns-method/range-constrained-with-co-occurrence-negative-sampling> .
+<configuration/rcwc/72> ns4kge:result "2405"^^xsd:decimal .
+
+<configuration/rcwc/73> rdf:type ns4kge:Configuration .
+<configuration/rcwc/73> ns4kge:hasTask    <task/link-prediction> .
+<configuration/rcwc/73> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/rcwc/73> ns4kge:hasMetric  <metric/mr> .
+<configuration/rcwc/73> ns4kge:hasKGEModel <kge-model/kgboost-r> .
+<configuration/rcwc/73> ns4kge:hasNSMethod <ns-method/range-constrained-with-co-occurrence-negative-sampling> .
+<configuration/rcwc/73> ns4kge:result "2476"^^xsd:decimal .
+
+<configuration/rcwc/74> rdf:type ns4kge:Configuration .
+<configuration/rcwc/74> ns4kge:hasTask    <task/link-prediction> .
+<configuration/rcwc/74> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/rcwc/74> ns4kge:hasMetric  <metric/mr> .
+<configuration/rcwc/74> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/rcwc/74> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/rcwc/74> ns4kge:result "3340"^^xsd:decimal .
+
+<configuration/rcwc/75> rdf:type ns4kge:Configuration .
+<configuration/rcwc/75> ns4kge:hasTask    <task/link-prediction> .
+<configuration/rcwc/75> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/rcwc/75> ns4kge:hasMetric  <metric/mrr> .
+<configuration/rcwc/75> ns4kge:hasKGEModel <kge-model/kgboost-r> .
+<configuration/rcwc/75> ns4kge:hasNSMethod <ns-method/range-constrained-with-co-occurrence-negative-sampling> .
+<configuration/rcwc/75> ns4kge:result "0.478"^^xsd:decimal .
+
+<configuration/rcwc/76> rdf:type ns4kge:Configuration .
+<configuration/rcwc/76> ns4kge:hasTask    <task/link-prediction> .
+<configuration/rcwc/76> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/rcwc/76> ns4kge:hasMetric  <metric/mrr> .
+<configuration/rcwc/76> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/rcwc/76> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/rcwc/76> ns4kge:result "0.476"^^xsd:decimal .
+
+<configuration/rcwc/77> rdf:type ns4kge:Configuration .
+<configuration/rcwc/77> ns4kge:hasTask    <task/link-prediction> .
+<configuration/rcwc/77> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/rcwc/77> ns4kge:hasMetric  <metric/mrr> .
+<configuration/rcwc/77> ns4kge:hasKGEModel <kge-model/sacn> .
+<configuration/rcwc/77> ns4kge:result "0.47"^^xsd:decimal .
+
+<configuration/rcwc/78> rdf:type ns4kge:Configuration .
+<configuration/rcwc/78> ns4kge:hasTask    <task/link-prediction> .
+<configuration/rcwc/78> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/rcwc/78> ns4kge:hasMetric  <metric/mrr> .
+<configuration/rcwc/78> ns4kge:hasKGEModel <kge-model/interacte> .
+<configuration/rcwc/78> ns4kge:result "0.463"^^xsd:decimal .
+
+<configuration/rcwc/79> rdf:type ns4kge:Configuration .
+<configuration/rcwc/79> ns4kge:hasTask    <task/link-prediction> .
+<configuration/rcwc/79> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/rcwc/79> ns4kge:hasMetric  <metric/mrr> .
+<configuration/rcwc/79> ns4kge:hasKGEModel <kge-model/kgboost-t> .
+<configuration/rcwc/79> ns4kge:hasNSMethod <ns-method/range-constrained-with-co-occurrence-negative-sampling> .
+<configuration/rcwc/79> ns4kge:result "0.265"^^xsd:decimal .
+
+<configuration/rcwc/80> rdf:type ns4kge:Configuration .
+<configuration/rcwc/80> ns4kge:hasTask    <task/link-prediction> .
+<configuration/rcwc/80> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/rcwc/80> ns4kge:hasMetric  <metric/mrr> .
+<configuration/rcwc/80> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/rcwc/80> ns4kge:result "0.226"^^xsd:decimal .
+
+<configuration/rcwc/81> rdf:type ns4kge:Configuration .
+<configuration/rcwc/81> ns4kge:hasTask    <task/link-prediction> .
+<configuration/rcwc/81> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/rcwc/81> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/rcwc/81> ns4kge:hasKGEModel <kge-model/kgboost-r> .
+<configuration/rcwc/81> ns4kge:hasNSMethod <ns-method/range-constrained-with-co-occurrence-negative-sampling> .
+<configuration/rcwc/81> ns4kge:result "0.436"^^xsd:decimal .
+
+<configuration/rcwc/82> rdf:type ns4kge:Configuration .
+<configuration/rcwc/82> ns4kge:hasTask    <task/link-prediction> .
+<configuration/rcwc/82> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/rcwc/82> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/rcwc/82> ns4kge:hasKGEModel <kge-model/sacn> .
+<configuration/rcwc/82> ns4kge:result "0.43"^^xsd:decimal .
+
+<configuration/rcwc/83> rdf:type ns4kge:Configuration .
+<configuration/rcwc/83> ns4kge:hasTask    <task/link-prediction> .
+<configuration/rcwc/83> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/rcwc/83> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/rcwc/83> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/rcwc/83> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/rcwc/83> ns4kge:result "0.428"^^xsd:decimal .
+
+<configuration/rcwc/84> rdf:type ns4kge:Configuration .
+<configuration/rcwc/84> ns4kge:hasTask    <task/link-prediction> .
+<configuration/rcwc/84> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/rcwc/84> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/rcwc/84> ns4kge:hasKGEModel <kge-model/interacte> .
+<configuration/rcwc/84> ns4kge:result "0.43"^^xsd:decimal .
+
+<configuration/rcwc/85> rdf:type ns4kge:Configuration .
+<configuration/rcwc/85> ns4kge:hasTask    <task/link-prediction> .
+<configuration/rcwc/85> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/rcwc/85> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/rcwc/85> ns4kge:hasKGEModel <kge-model/kgboost-t> .
+<configuration/rcwc/85> ns4kge:hasNSMethod <ns-method/range-constrained-with-co-occurrence-negative-sampling> .
+<configuration/rcwc/85> ns4kge:result "0.062"^^xsd:decimal .
+
+<configuration/rcwc/86> rdf:type ns4kge:Configuration .
+<configuration/rcwc/86> ns4kge:hasTask    <task/link-prediction> .
+<configuration/rcwc/86> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/rcwc/86> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/rcwc/86> ns4kge:hasKGEModel <kge-model/kgboost-r> .
+<configuration/rcwc/86> ns4kge:hasNSMethod <ns-method/range-constrained-with-co-occurrence-negative-sampling> .
+<configuration/rcwc/86> ns4kge:result "0.493"^^xsd:decimal .
+
+<configuration/rcwc/87> rdf:type ns4kge:Configuration .
+<configuration/rcwc/87> ns4kge:hasTask    <task/link-prediction> .
+<configuration/rcwc/87> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/rcwc/87> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/rcwc/87> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/rcwc/87> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/rcwc/87> ns4kge:result "0.492"^^xsd:decimal .
+
+<configuration/rcwc/88> rdf:type ns4kge:Configuration .
+<configuration/rcwc/88> ns4kge:hasTask    <task/link-prediction> .
+<configuration/rcwc/88> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/rcwc/88> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/rcwc/88> ns4kge:hasKGEModel <kge-model/sacn> .
+<configuration/rcwc/88> ns4kge:result "0.48"^^xsd:decimal .
+
+<configuration/rcwc/89> rdf:type ns4kge:Configuration .
+<configuration/rcwc/89> ns4kge:hasTask    <task/link-prediction> .
+<configuration/rcwc/89> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/rcwc/89> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/rcwc/89> ns4kge:hasKGEModel <kge-model/kgboost-t> .
+<configuration/rcwc/89> ns4kge:hasNSMethod <ns-method/range-constrained-with-co-occurrence-negative-sampling> .
+<configuration/rcwc/89> ns4kge:result "0.445"^^xsd:decimal .
+
+<configuration/rcwc/90> rdf:type ns4kge:Configuration .
+<configuration/rcwc/90> ns4kge:hasTask    <task/link-prediction> .
+<configuration/rcwc/90> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/rcwc/90> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/rcwc/90> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/rcwc/90> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/rcwc/90> ns4kge:result "0.571"^^xsd:decimal .
+
+<configuration/rcwc/91> rdf:type ns4kge:Configuration .
+<configuration/rcwc/91> ns4kge:hasTask    <task/link-prediction> .
+<configuration/rcwc/91> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/rcwc/91> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/rcwc/91> ns4kge:hasKGEModel <kge-model/kgboost-r> .
+<configuration/rcwc/91> ns4kge:hasNSMethod <ns-method/range-constrained-with-co-occurrence-negative-sampling> .
+<configuration/rcwc/91> ns4kge:result "0.56"^^xsd:decimal .
+
+<configuration/rcwc/92> rdf:type ns4kge:Configuration .
+<configuration/rcwc/92> ns4kge:hasTask    <task/link-prediction> .
+<configuration/rcwc/92> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/rcwc/92> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/rcwc/92> ns4kge:hasKGEModel <kge-model/kgboost-t> .
+<configuration/rcwc/92> ns4kge:hasNSMethod <ns-method/range-constrained-with-co-occurrence-negative-sampling> .
+<configuration/rcwc/92> ns4kge:result "0.544"^^xsd:decimal .
+
+<configuration/rcwc/93> rdf:type ns4kge:Configuration .
+<configuration/rcwc/93> ns4kge:hasTask    <task/link-prediction> .
+<configuration/rcwc/93> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/rcwc/93> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/rcwc/93> ns4kge:hasKGEModel <kge-model/sacn> .
+<configuration/rcwc/93> ns4kge:result "0.54"^^xsd:decimal .
+
+<configuration/rcwc/94> rdf:type ns4kge:Configuration .
+<configuration/rcwc/94> ns4kge:hasTask    <task/link-prediction> .
+<configuration/rcwc/94> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/rcwc/94> ns4kge:hasMetric  <metric/mrr> .
+<configuration/rcwc/94> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/rcwc/94> ns4kge:hasNSMethod <ns-method/naive-negative-sampling> .
+<configuration/rcwc/94> ns4kge:result "0.295"^^xsd:decimal .
+
+<configuration/rcwc/95> rdf:type ns4kge:Configuration .
+<configuration/rcwc/95> ns4kge:hasTask    <task/link-prediction> .
+<configuration/rcwc/95> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/rcwc/95> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/rcwc/95> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/rcwc/95> ns4kge:hasNSMethod <ns-method/naive-negative-sampling> .
+<configuration/rcwc/95> ns4kge:result "0.48"^^xsd:decimal .
+
+<configuration/rcwc/96> rdf:type ns4kge:Configuration .
+<configuration/rcwc/96> ns4kge:hasTask    <task/link-prediction> .
+<configuration/rcwc/96> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/rcwc/96> ns4kge:hasMetric  <metric/mrr> .
+<configuration/rcwc/96> ns4kge:hasKGEModel <kge-model/kgboost-r> .
+<configuration/rcwc/96> ns4kge:hasNSMethod <ns-method/naive-negative-sampling> .
+<configuration/rcwc/96> ns4kge:result "0.307"^^xsd:decimal .
+
+<configuration/rcwc/97> rdf:type ns4kge:Configuration .
+<configuration/rcwc/97> ns4kge:hasTask    <task/link-prediction> .
+<configuration/rcwc/97> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/rcwc/97> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/rcwc/97> ns4kge:hasKGEModel <kge-model/kgboost-r> .
+<configuration/rcwc/97> ns4kge:hasNSMethod <ns-method/naive-negative-sampling> .
+<configuration/rcwc/97> ns4kge:result "0.479"^^xsd:decimal .
+
+<configuration/rcwc/98> rdf:type ns4kge:Configuration .
+<configuration/rcwc/98> ns4kge:hasTask    <task/link-prediction> .
+<configuration/rcwc/98> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/rcwc/98> ns4kge:hasMetric  <metric/mrr> .
+<configuration/rcwc/98> ns4kge:hasKGEModel <kge-model/kgboost-r> .
+<configuration/rcwc/98> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/rcwc/98> ns4kge:result "0.354"^^xsd:decimal .
+
+<configuration/rcwc/99> rdf:type ns4kge:Configuration .
+<configuration/rcwc/99> ns4kge:hasTask    <task/link-prediction> .
+<configuration/rcwc/99> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/rcwc/99> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/rcwc/99> ns4kge:hasKGEModel <kge-model/kgboost-r> .
+<configuration/rcwc/99> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/rcwc/99> ns4kge:result "0.532"^^xsd:decimal .
+
+<configuration/rcwc/100> rdf:type ns4kge:Configuration .
+<configuration/rcwc/100> ns4kge:hasTask    <task/link-prediction> .
+<configuration/rcwc/100> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/rcwc/100> ns4kge:hasMetric  <metric/mrr> .
+<configuration/rcwc/100> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/rcwc/100> ns4kge:hasNSMethod <ns-method/range-constrained-with-co-occurrence-negative-sampling> .
+<configuration/rcwc/100> ns4kge:result "0.248"^^xsd:decimal .
+
+<configuration/rcwc/101> rdf:type ns4kge:Configuration .
+<configuration/rcwc/101> ns4kge:hasTask    <task/link-prediction> .
+<configuration/rcwc/101> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/rcwc/101> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/rcwc/101> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/rcwc/101> ns4kge:hasNSMethod <ns-method/range-constrained-with-co-occurrence-negative-sampling> .
+<configuration/rcwc/101> ns4kge:result "0.419"^^xsd:decimal .

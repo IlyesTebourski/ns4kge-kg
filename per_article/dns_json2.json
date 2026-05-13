@@ -1,0 +1,276 @@
+{
+  "Configurations": [
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k",
+      "Metric": "MRR",
+      "KGEModel": "TransE",
+      "NSMethod": "Random Negative Sampling",
+      "result": 46.3
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k",
+      "Metric": "Hits@10",
+      "KGEModel": "TransE",
+      "NSMethod": "Random Negative Sampling",
+      "result": 74.9
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k",
+      "Metric": "Hits@1",
+      "KGEModel": "TransE",
+      "NSMethod": "Random Negative Sampling",
+      "result": 29.7
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Fb15k-237",
+      "Metric": "MRR",
+      "KGEModel": "TransE",
+      "NSMethod": "Random Negative Sampling",
+      "result": 25
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Fb15k-237",
+      "Metric": "Hits@10",
+      "KGEModel": "TransE",
+      "NSMethod": "Random Negative Sampling",
+      "result": 42.8
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Fb15k-237",
+      "Metric": "Hits@1",
+      "KGEModel": "TransE",
+      "NSMethod": "Random Negative Sampling",
+      "result": 16.9
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "Hits@10",
+      "KGEModel": "TransE",
+      "NSMethod": "Random Negative Sampling",
+      "result": 43.2
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k",
+      "Metric": "MRR",
+      "KGEModel": "TransE",
+      "NSMethod": "Distributional Negative Sampling",
+      "result": 43.0
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k",
+      "Metric": "Hits@10",
+      "KGEModel": "TransE",
+      "NSMethod": "Distributional Negative Sampling",
+      "result": 63.9
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k",
+      "Metric": "Hits@1",
+      "KGEModel": "TransE",
+      "NSMethod": "Distributional Negative Sampling",
+      "result": 31.1
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Fb15k-237",
+      "Metric": "MRR",
+      "KGEModel": "TransE",
+      "NSMethod": "Distributional Negative Sampling",
+      "result": 29.2
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Fb15k-237",
+      "Metric": "Hits@10",
+      "KGEModel": "TransE",
+      "NSMethod": "Distributional Negative Sampling",
+      "result": 45.7
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Fb15k-237",
+      "Metric": "Hits@1",
+      "KGEModel": "TransE",
+      "NSMethod": "Distributional Negative Sampling",
+      "result": 20.9
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "MRR",
+      "KGEModel": "TransE",
+      "NSMethod": "Distributional Negative Sampling",
+      "result": 18.4
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "Hits@10",
+      "KGEModel": "TransE",
+      "NSMethod": "Distributional Negative Sampling",
+      "result": 44.4
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "Hits@1",
+      "KGEModel": "TransE",
+      "NSMethod": "Distributional Negative Sampling",
+      "result": 4.3
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k",
+      "Metric": "MRR",
+      "KGEModel": "RESCAL",
+      "NSMethod": "Random Negative Sampling",
+      "result": 35.4
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k",
+      "Metric": "Hits@10",
+      "KGEModel": "RESCAL",
+      "NSMethod": "Random Negative Sampling",
+      "result": 58.7
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k",
+      "Metric": "Hits@1",
+      "KGEModel": "RESCAL",
+      "NSMethod": "Random Negative Sampling",
+      "result": 23.5
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Fb15k-237",
+      "Metric": "MRR",
+      "KGEModel": "RESCAL",
+      "NSMethod": "Random Negative Sampling",
+      "result": 22.6
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Fb15k-237",
+      "Metric": "Hits@10",
+      "KGEModel": "RESCAL",
+      "NSMethod": "Random Negative Sampling",
+      "result": 34.4
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Fb15k-237",
+      "Metric": "Hits@1",
+      "KGEModel": "RESCAL",
+      "NSMethod": "Random Negative Sampling",
+      "result": 16.3
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "MRR",
+      "KGEModel": "RESCAL",
+      "NSMethod": "Random Negative Sampling",
+      "result": 39.9
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "Hits@10",
+      "KGEModel": "RESCAL",
+      "NSMethod": "Random Negative Sampling",
+      "result": 42.1
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "Hits@1",
+      "KGEModel": "RESCAL",
+      "NSMethod": "Random Negative Sampling",
+      "result": 38.6
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k",
+      "Metric": "MRR",
+      "KGEModel": "RESCAL",
+      "NSMethod": "Distributional Negative Sampling",
+      "result": 41.2
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k",
+      "Metric": "Hits@10",
+      "KGEModel": "RESCAL",
+      "NSMethod": "Distributional Negative Sampling",
+      "result": 62.7
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k",
+      "Metric": "Hits@1",
+      "KGEModel": "RESCAL",
+      "NSMethod": "Distributional Negative Sampling",
+      "result": 29.6
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Fb15k-237",
+      "Metric": "MRR",
+      "KGEModel": "RESCAL",
+      "NSMethod": "Distributional Negative Sampling",
+      "result": 27.5
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Fb15k-237",
+      "Metric": "Hits@10",
+      "KGEModel": "RESCAL",
+      "NSMethod": "Distributional Negative Sampling",
+      "result": 44.1
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Fb15k-237",
+      "Metric": "Hits@1",
+      "KGEModel": "RESCAL",
+      "NSMethod": "Distributional Negative Sampling",
+      "result": 19.2
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "MRR",
+      "KGEModel": "RESCAL",
+      "NSMethod": "Distributional Negative Sampling",
+      "result": 42.8
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "Hits@10",
+      "KGEModel": "RESCAL",
+      "NSMethod": "Distributional Negative Sampling",
+      "result": 44.1
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "Hits@1",
+      "KGEModel": "RESCAL",
+      "NSMethod": "Distributional Negative Sampling",
+      "result": 42.1
+    }
+  ]
+}

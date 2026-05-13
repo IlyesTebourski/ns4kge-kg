@@ -1,0 +1,35 @@
+{
+  "Article": {
+    "title": "Improving Knowledge Graph Embeddings with Ontological Reasoning",
+    "date": "2022"
+  },
+  "proposedNSMethod": "ReasonKGE",
+  "proposedKGEModel": "",
+  "mentionedNSMethods": [
+    "Random Negative Sampling",
+    "Static Sampling",
+    "Type-Constrained Negative Sampling",
+    "Distributional Negative Sampling",
+    "Nearest Neighbor Sampling",
+    "Near Miss Sampling",
+    "Structure-Aware Negative Sampling",
+    "NSCaching"
+  ],
+  "mentionedKGEModels": [
+    "TransE",
+    "ComplEx",
+    "Embed2Reason"
+  ],
+  "Experimentation": {
+    "Hardware": [],
+    "TrainingProtocol": {
+      "LossFunction": [
+        "margin-based ranking loss",
+        "cross-entropy loss"
+      ],
+      "Optimizer": [],
+      "learningRate": null,
+      "nsRatio": null
+    }
+  }
+}

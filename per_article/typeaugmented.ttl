@@ -1,0 +1,1559 @@
+<article/typeaugmented> rdf:type ns4kge:Article .
+<article/typeaugmented> ns4kge:title "A type-augmented knowledge graph embedding framework for knowledge graph completion"^^xsd:string .
+<article/typeaugmented> ns4kge:date "2023"^^xsd:gYear .
+<article/typeaugmented> ns4kge:proposesNSMethod <ns-method/type-constrained-negative-sampling> .
+<article/typeaugmented> ns4kge:mentionsNSMethod <ns-method/type-constrained-negative-sampling> .
+<article/typeaugmented> ns4kge:mentionsNSMethod <ns-method/bernoulli-negative-sampling> .
+<article/typeaugmented> ns4kge:mentionsNSMethod <ns-method/soft-type-constraint> .
+<article/typeaugmented> ns4kge:mentionsNSMethod <ns-method/uniform-negative-sampling> .
+<article/typeaugmented> ns4kge:mentionsNSMethod <ns-method/self-adversarial-negative-sampling> .
+<article/typeaugmented> ns4kge:mentionsKGEModel <kge-model/rate> .
+<article/typeaugmented> ns4kge:mentionsKGEModel <kge-model/complex> .
+<article/typeaugmented> ns4kge:mentionsKGEModel <kge-model/take-simple> .
+<article/typeaugmented> ns4kge:mentionsKGEModel <kge-model/transe> .
+<article/typeaugmented> ns4kge:mentionsKGEModel <kge-model/transr> .
+<article/typeaugmented> ns4kge:mentionsKGEModel <kge-model/simple> .
+<article/typeaugmented> ns4kge:mentionsKGEModel <kge-model/take-rotate> .
+<article/typeaugmented> ns4kge:mentionsKGEModel <kge-model/transc> .
+<article/typeaugmented> ns4kge:mentionsKGEModel <kge-model/rotate> .
+<article/typeaugmented> ns4kge:mentionsKGEModel <kge-model/hake> .
+<article/typeaugmented> ns4kge:mentionsKGEModel <kge-model/transt> .
+<article/typeaugmented> ns4kge:mentionsKGEModel <kge-model/take-distmult> .
+<article/typeaugmented> ns4kge:mentionsKGEModel <kge-model/take-transe> .
+<article/typeaugmented> ns4kge:mentionsKGEModel <kge-model/tkrl> .
+<article/typeaugmented> ns4kge:mentionsKGEModel <kge-model/joie> .
+<article/typeaugmented> ns4kge:mentionsKGEModel <kge-model/distmult> .
+<article/typeaugmented> ns4kge:mentionsKGEModel <kge-model/cake> .
+<article/typeaugmented> ns4kge:mentionsKGEModel <kge-model/typedm> .
+<article/typeaugmented> ns4kge:mentionsKGEModel <kge-model/tarp> .
+<article/typeaugmented> ns4kge:mentionsKGEModel <kge-model/transh> .
+<article/typeaugmented> ns4kge:mentionsKGEModel <kge-model/take-complex> .
+<article/typeaugmented> ns4kge:mentionsKGEModel <kge-model/typecomplex> .
+<article/typeaugmented> ns4kge:hasExperimentation <experimentation/typeaugmented> .
+
+<ns-method/type-constrained-negative-sampling> rdf:type ns4kge:NSMethod .
+<category/static-ns> rdf:type ns4kge:Category .
+
+<ns-method/type-constrained-negative-sampling> ns4kge:hasCategory <category/static-ns> .
+<subcategory/knowledge-constrained> rdf:type ns4kge:Subcategory .
+
+<ns-method/type-constrained-negative-sampling> ns4kge:hasSubcategory <subcategory/knowledge-constrained> .
+
+<ns-method/bernoulli-negative-sampling> rdf:type ns4kge:NSMethod .
+<ns-method/bernoulli-negative-sampling> ns4kge:hasCategory <category/static-ns> .
+<subcategory/probabilistic> rdf:type ns4kge:Subcategory .
+
+<ns-method/bernoulli-negative-sampling> ns4kge:hasSubcategory <subcategory/probabilistic> .
+
+<ns-method/soft-type-constraint> rdf:type ns4kge:NSMethod .
+
+<ns-method/uniform-negative-sampling> rdf:type ns4kge:NSMethod .
+<ns-method/uniform-negative-sampling> ns4kge:hasCategory <category/static-ns> .
+<subcategory/random> rdf:type ns4kge:Subcategory .
+
+<ns-method/uniform-negative-sampling> ns4kge:hasSubcategory <subcategory/random> .
+
+<ns-method/self-adversarial-negative-sampling> rdf:type ns4kge:NSMethod .
+<category/self-adversarial-ns> rdf:type ns4kge:Category .
+
+<ns-method/self-adversarial-negative-sampling> ns4kge:hasCategory <category/self-adversarial-ns> .
+<subcategory/direct> rdf:type ns4kge:Subcategory .
+
+<ns-method/self-adversarial-negative-sampling> ns4kge:hasSubcategory <subcategory/direct> .
+
+<kge-model/take> rdf:type ns4kge:KGEModel .
+
+<kge-model/rate> rdf:type ns4kge:KGEModel .
+
+<kge-model/complex> rdf:type ns4kge:KGEModel .
+
+<kge-model/take-simple> rdf:type ns4kge:KGEModel .
+
+<kge-model/transe> rdf:type ns4kge:KGEModel .
+
+<kge-model/transr> rdf:type ns4kge:KGEModel .
+
+<kge-model/simple> rdf:type ns4kge:KGEModel .
+
+<kge-model/take-rotate> rdf:type ns4kge:KGEModel .
+
+<kge-model/transc> rdf:type ns4kge:KGEModel .
+
+<kge-model/rotate> rdf:type ns4kge:KGEModel .
+
+<kge-model/hake> rdf:type ns4kge:KGEModel .
+
+<kge-model/transt> rdf:type ns4kge:KGEModel .
+
+<kge-model/take-distmult> rdf:type ns4kge:KGEModel .
+
+<kge-model/take-transe> rdf:type ns4kge:KGEModel .
+
+<kge-model/tkrl> rdf:type ns4kge:KGEModel .
+
+<kge-model/joie> rdf:type ns4kge:KGEModel .
+
+<kge-model/distmult> rdf:type ns4kge:KGEModel .
+
+<kge-model/cake> rdf:type ns4kge:KGEModel .
+
+<kge-model/typedm> rdf:type ns4kge:KGEModel .
+
+<kge-model/tarp> rdf:type ns4kge:KGEModel .
+
+<kge-model/transh> rdf:type ns4kge:KGEModel .
+
+<kge-model/take-complex> rdf:type ns4kge:KGEModel .
+
+<kge-model/typecomplex> rdf:type ns4kge:KGEModel .
+
+<dataset/fb15k> rdf:type ns4kge:Dataset .
+<task/link-prediction> rdf:type ns4kge:Task .
+<metric/mrr> rdf:type ns4kge:Metric .
+<metric/hits-1> rdf:type ns4kge:Metric .
+<metric/hits-3> rdf:type ns4kge:Metric .
+<metric/hits-10> rdf:type ns4kge:Metric .
+<dataset/fb15k-237> rdf:type ns4kge:Dataset .
+<dataset/wn18> rdf:type ns4kge:Dataset .
+<dataset/yago3-10> rdf:type ns4kge:Dataset .
+<loss-function/cross-entropy-loss> rdf:type ns4kge:LossFunction .
+<optimizer/adam> rdf:type ns4kge:Optimizer .
+
+<experimentation/typeaugmented> rdf:type ns4kge:Experimentation .
+<experimentation/typeaugmented> ns4kge:hasTrainingProtocol <training-protocol/typeaugmented> .
+<experimentation/typeaugmented> ns4kge:hasConfiguration <configuration/typeaugmented/1> .
+<experimentation/typeaugmented> ns4kge:hasConfiguration <configuration/typeaugmented/2> .
+<experimentation/typeaugmented> ns4kge:hasConfiguration <configuration/typeaugmented/3> .
+<experimentation/typeaugmented> ns4kge:hasConfiguration <configuration/typeaugmented/4> .
+<experimentation/typeaugmented> ns4kge:hasConfiguration <configuration/typeaugmented/5> .
+<experimentation/typeaugmented> ns4kge:hasConfiguration <configuration/typeaugmented/6> .
+<experimentation/typeaugmented> ns4kge:hasConfiguration <configuration/typeaugmented/7> .
+<experimentation/typeaugmented> ns4kge:hasConfiguration <configuration/typeaugmented/8> .
+<experimentation/typeaugmented> ns4kge:hasConfiguration <configuration/typeaugmented/9> .
+<experimentation/typeaugmented> ns4kge:hasConfiguration <configuration/typeaugmented/10> .
+<experimentation/typeaugmented> ns4kge:hasConfiguration <configuration/typeaugmented/11> .
+<experimentation/typeaugmented> ns4kge:hasConfiguration <configuration/typeaugmented/12> .
+<experimentation/typeaugmented> ns4kge:hasConfiguration <configuration/typeaugmented/13> .
+<experimentation/typeaugmented> ns4kge:hasConfiguration <configuration/typeaugmented/14> .
+<experimentation/typeaugmented> ns4kge:hasConfiguration <configuration/typeaugmented/15> .
+<experimentation/typeaugmented> ns4kge:hasConfiguration <configuration/typeaugmented/16> .
+<experimentation/typeaugmented> ns4kge:hasConfiguration <configuration/typeaugmented/17> .
+<experimentation/typeaugmented> ns4kge:hasConfiguration <configuration/typeaugmented/18> .
+<experimentation/typeaugmented> ns4kge:hasConfiguration <configuration/typeaugmented/19> .
+<experimentation/typeaugmented> ns4kge:hasConfiguration <configuration/typeaugmented/20> .
+<experimentation/typeaugmented> ns4kge:hasConfiguration <configuration/typeaugmented/21> .
+<experimentation/typeaugmented> ns4kge:hasConfiguration <configuration/typeaugmented/22> .
+<experimentation/typeaugmented> ns4kge:hasConfiguration <configuration/typeaugmented/23> .
+<experimentation/typeaugmented> ns4kge:hasConfiguration <configuration/typeaugmented/24> .
+<experimentation/typeaugmented> ns4kge:hasConfiguration <configuration/typeaugmented/25> .
+<experimentation/typeaugmented> ns4kge:hasConfiguration <configuration/typeaugmented/26> .
+<experimentation/typeaugmented> ns4kge:hasConfiguration <configuration/typeaugmented/27> .
+<experimentation/typeaugmented> ns4kge:hasConfiguration <configuration/typeaugmented/28> .
+<experimentation/typeaugmented> ns4kge:hasConfiguration <configuration/typeaugmented/29> .
+<experimentation/typeaugmented> ns4kge:hasConfiguration <configuration/typeaugmented/30> .
+<experimentation/typeaugmented> ns4kge:hasConfiguration <configuration/typeaugmented/31> .
+<experimentation/typeaugmented> ns4kge:hasConfiguration <configuration/typeaugmented/32> .
+<experimentation/typeaugmented> ns4kge:hasConfiguration <configuration/typeaugmented/33> .
+<experimentation/typeaugmented> ns4kge:hasConfiguration <configuration/typeaugmented/34> .
+<experimentation/typeaugmented> ns4kge:hasConfiguration <configuration/typeaugmented/35> .
+<experimentation/typeaugmented> ns4kge:hasConfiguration <configuration/typeaugmented/36> .
+<experimentation/typeaugmented> ns4kge:hasConfiguration <configuration/typeaugmented/37> .
+<experimentation/typeaugmented> ns4kge:hasConfiguration <configuration/typeaugmented/38> .
+<experimentation/typeaugmented> ns4kge:hasConfiguration <configuration/typeaugmented/39> .
+<experimentation/typeaugmented> ns4kge:hasConfiguration <configuration/typeaugmented/40> .
+<experimentation/typeaugmented> ns4kge:hasConfiguration <configuration/typeaugmented/41> .
+<experimentation/typeaugmented> ns4kge:hasConfiguration <configuration/typeaugmented/42> .
+<experimentation/typeaugmented> ns4kge:hasConfiguration <configuration/typeaugmented/43> .
+<experimentation/typeaugmented> ns4kge:hasConfiguration <configuration/typeaugmented/44> .
+<experimentation/typeaugmented> ns4kge:hasConfiguration <configuration/typeaugmented/45> .
+<experimentation/typeaugmented> ns4kge:hasConfiguration <configuration/typeaugmented/46> .
+<experimentation/typeaugmented> ns4kge:hasConfiguration <configuration/typeaugmented/47> .
+<experimentation/typeaugmented> ns4kge:hasConfiguration <configuration/typeaugmented/48> .
+<experimentation/typeaugmented> ns4kge:hasConfiguration <configuration/typeaugmented/49> .
+<experimentation/typeaugmented> ns4kge:hasConfiguration <configuration/typeaugmented/50> .
+<experimentation/typeaugmented> ns4kge:hasConfiguration <configuration/typeaugmented/51> .
+<experimentation/typeaugmented> ns4kge:hasConfiguration <configuration/typeaugmented/52> .
+<experimentation/typeaugmented> ns4kge:hasConfiguration <configuration/typeaugmented/53> .
+<experimentation/typeaugmented> ns4kge:hasConfiguration <configuration/typeaugmented/54> .
+<experimentation/typeaugmented> ns4kge:hasConfiguration <configuration/typeaugmented/55> .
+<experimentation/typeaugmented> ns4kge:hasConfiguration <configuration/typeaugmented/56> .
+<experimentation/typeaugmented> ns4kge:hasConfiguration <configuration/typeaugmented/57> .
+<experimentation/typeaugmented> ns4kge:hasConfiguration <configuration/typeaugmented/58> .
+<experimentation/typeaugmented> ns4kge:hasConfiguration <configuration/typeaugmented/59> .
+<experimentation/typeaugmented> ns4kge:hasConfiguration <configuration/typeaugmented/60> .
+<experimentation/typeaugmented> ns4kge:hasConfiguration <configuration/typeaugmented/61> .
+<experimentation/typeaugmented> ns4kge:hasConfiguration <configuration/typeaugmented/62> .
+<experimentation/typeaugmented> ns4kge:hasConfiguration <configuration/typeaugmented/63> .
+<experimentation/typeaugmented> ns4kge:hasConfiguration <configuration/typeaugmented/64> .
+<experimentation/typeaugmented> ns4kge:hasConfiguration <configuration/typeaugmented/65> .
+<experimentation/typeaugmented> ns4kge:hasConfiguration <configuration/typeaugmented/66> .
+<experimentation/typeaugmented> ns4kge:hasConfiguration <configuration/typeaugmented/67> .
+<experimentation/typeaugmented> ns4kge:hasConfiguration <configuration/typeaugmented/68> .
+<experimentation/typeaugmented> ns4kge:hasConfiguration <configuration/typeaugmented/69> .
+<experimentation/typeaugmented> ns4kge:hasConfiguration <configuration/typeaugmented/70> .
+<experimentation/typeaugmented> ns4kge:hasConfiguration <configuration/typeaugmented/71> .
+<experimentation/typeaugmented> ns4kge:hasConfiguration <configuration/typeaugmented/72> .
+<experimentation/typeaugmented> ns4kge:hasConfiguration <configuration/typeaugmented/73> .
+<experimentation/typeaugmented> ns4kge:hasConfiguration <configuration/typeaugmented/74> .
+<experimentation/typeaugmented> ns4kge:hasConfiguration <configuration/typeaugmented/75> .
+<experimentation/typeaugmented> ns4kge:hasConfiguration <configuration/typeaugmented/76> .
+<experimentation/typeaugmented> ns4kge:hasConfiguration <configuration/typeaugmented/77> .
+<experimentation/typeaugmented> ns4kge:hasConfiguration <configuration/typeaugmented/78> .
+<experimentation/typeaugmented> ns4kge:hasConfiguration <configuration/typeaugmented/79> .
+<experimentation/typeaugmented> ns4kge:hasConfiguration <configuration/typeaugmented/80> .
+<experimentation/typeaugmented> ns4kge:hasConfiguration <configuration/typeaugmented/81> .
+<experimentation/typeaugmented> ns4kge:hasConfiguration <configuration/typeaugmented/82> .
+<experimentation/typeaugmented> ns4kge:hasConfiguration <configuration/typeaugmented/83> .
+<experimentation/typeaugmented> ns4kge:hasConfiguration <configuration/typeaugmented/84> .
+<experimentation/typeaugmented> ns4kge:hasConfiguration <configuration/typeaugmented/85> .
+<experimentation/typeaugmented> ns4kge:hasConfiguration <configuration/typeaugmented/86> .
+<experimentation/typeaugmented> ns4kge:hasConfiguration <configuration/typeaugmented/87> .
+<experimentation/typeaugmented> ns4kge:hasConfiguration <configuration/typeaugmented/88> .
+<experimentation/typeaugmented> ns4kge:hasConfiguration <configuration/typeaugmented/89> .
+<experimentation/typeaugmented> ns4kge:hasConfiguration <configuration/typeaugmented/90> .
+<experimentation/typeaugmented> ns4kge:hasConfiguration <configuration/typeaugmented/91> .
+<experimentation/typeaugmented> ns4kge:hasConfiguration <configuration/typeaugmented/92> .
+<experimentation/typeaugmented> ns4kge:hasConfiguration <configuration/typeaugmented/93> .
+<experimentation/typeaugmented> ns4kge:hasConfiguration <configuration/typeaugmented/94> .
+<experimentation/typeaugmented> ns4kge:hasConfiguration <configuration/typeaugmented/95> .
+<experimentation/typeaugmented> ns4kge:hasConfiguration <configuration/typeaugmented/96> .
+<experimentation/typeaugmented> ns4kge:hasConfiguration <configuration/typeaugmented/97> .
+<experimentation/typeaugmented> ns4kge:hasConfiguration <configuration/typeaugmented/98> .
+<experimentation/typeaugmented> ns4kge:hasConfiguration <configuration/typeaugmented/99> .
+<experimentation/typeaugmented> ns4kge:hasConfiguration <configuration/typeaugmented/100> .
+<experimentation/typeaugmented> ns4kge:hasConfiguration <configuration/typeaugmented/101> .
+<experimentation/typeaugmented> ns4kge:hasConfiguration <configuration/typeaugmented/102> .
+<experimentation/typeaugmented> ns4kge:hasConfiguration <configuration/typeaugmented/103> .
+<experimentation/typeaugmented> ns4kge:hasConfiguration <configuration/typeaugmented/104> .
+<experimentation/typeaugmented> ns4kge:hasConfiguration <configuration/typeaugmented/105> .
+<experimentation/typeaugmented> ns4kge:hasConfiguration <configuration/typeaugmented/106> .
+<experimentation/typeaugmented> ns4kge:hasConfiguration <configuration/typeaugmented/107> .
+<experimentation/typeaugmented> ns4kge:hasConfiguration <configuration/typeaugmented/108> .
+<experimentation/typeaugmented> ns4kge:hasConfiguration <configuration/typeaugmented/109> .
+<experimentation/typeaugmented> ns4kge:hasConfiguration <configuration/typeaugmented/110> .
+<experimentation/typeaugmented> ns4kge:hasConfiguration <configuration/typeaugmented/111> .
+<experimentation/typeaugmented> ns4kge:hasConfiguration <configuration/typeaugmented/112> .
+<experimentation/typeaugmented> ns4kge:hasConfiguration <configuration/typeaugmented/113> .
+<experimentation/typeaugmented> ns4kge:hasConfiguration <configuration/typeaugmented/114> .
+<experimentation/typeaugmented> ns4kge:hasConfiguration <configuration/typeaugmented/115> .
+<experimentation/typeaugmented> ns4kge:hasConfiguration <configuration/typeaugmented/116> .
+<experimentation/typeaugmented> ns4kge:hasConfiguration <configuration/typeaugmented/117> .
+<experimentation/typeaugmented> ns4kge:hasConfiguration <configuration/typeaugmented/118> .
+<experimentation/typeaugmented> ns4kge:hasConfiguration <configuration/typeaugmented/119> .
+<experimentation/typeaugmented> ns4kge:hasConfiguration <configuration/typeaugmented/120> .
+<experimentation/typeaugmented> ns4kge:hasConfiguration <configuration/typeaugmented/121> .
+<experimentation/typeaugmented> ns4kge:hasConfiguration <configuration/typeaugmented/122> .
+<experimentation/typeaugmented> ns4kge:hasConfiguration <configuration/typeaugmented/123> .
+<experimentation/typeaugmented> ns4kge:hasConfiguration <configuration/typeaugmented/124> .
+<experimentation/typeaugmented> ns4kge:hasConfiguration <configuration/typeaugmented/125> .
+<experimentation/typeaugmented> ns4kge:hasConfiguration <configuration/typeaugmented/126> .
+<experimentation/typeaugmented> ns4kge:hasConfiguration <configuration/typeaugmented/127> .
+<experimentation/typeaugmented> ns4kge:hasConfiguration <configuration/typeaugmented/128> .
+<experimentation/typeaugmented> ns4kge:hasConfiguration <configuration/typeaugmented/129> .
+<experimentation/typeaugmented> ns4kge:hasConfiguration <configuration/typeaugmented/130> .
+<experimentation/typeaugmented> ns4kge:hasConfiguration <configuration/typeaugmented/131> .
+<experimentation/typeaugmented> ns4kge:hasConfiguration <configuration/typeaugmented/132> .
+<experimentation/typeaugmented> ns4kge:hasConfiguration <configuration/typeaugmented/133> .
+<experimentation/typeaugmented> ns4kge:hasConfiguration <configuration/typeaugmented/134> .
+<experimentation/typeaugmented> ns4kge:hasConfiguration <configuration/typeaugmented/135> .
+<experimentation/typeaugmented> ns4kge:hasConfiguration <configuration/typeaugmented/136> .
+<experimentation/typeaugmented> ns4kge:hasConfiguration <configuration/typeaugmented/137> .
+<experimentation/typeaugmented> ns4kge:hasConfiguration <configuration/typeaugmented/138> .
+<experimentation/typeaugmented> ns4kge:hasConfiguration <configuration/typeaugmented/139> .
+<experimentation/typeaugmented> ns4kge:hasConfiguration <configuration/typeaugmented/140> .
+<experimentation/typeaugmented> ns4kge:hasConfiguration <configuration/typeaugmented/141> .
+<experimentation/typeaugmented> ns4kge:hasConfiguration <configuration/typeaugmented/142> .
+<experimentation/typeaugmented> ns4kge:hasConfiguration <configuration/typeaugmented/143> .
+<experimentation/typeaugmented> ns4kge:hasConfiguration <configuration/typeaugmented/144> .
+<experimentation/typeaugmented> ns4kge:hasConfiguration <configuration/typeaugmented/145> .
+<experimentation/typeaugmented> ns4kge:hasConfiguration <configuration/typeaugmented/146> .
+<experimentation/typeaugmented> ns4kge:hasConfiguration <configuration/typeaugmented/147> .
+<experimentation/typeaugmented> ns4kge:hasConfiguration <configuration/typeaugmented/148> .
+<experimentation/typeaugmented> ns4kge:hasConfiguration <configuration/typeaugmented/149> .
+<experimentation/typeaugmented> ns4kge:hasConfiguration <configuration/typeaugmented/150> .
+<experimentation/typeaugmented> ns4kge:hasConfiguration <configuration/typeaugmented/151> .
+<experimentation/typeaugmented> ns4kge:hasConfiguration <configuration/typeaugmented/152> .
+<experimentation/typeaugmented> ns4kge:hasConfiguration <configuration/typeaugmented/153> .
+<experimentation/typeaugmented> ns4kge:hasConfiguration <configuration/typeaugmented/154> .
+<experimentation/typeaugmented> ns4kge:hasConfiguration <configuration/typeaugmented/155> .
+<experimentation/typeaugmented> ns4kge:hasConfiguration <configuration/typeaugmented/156> .
+<experimentation/typeaugmented> ns4kge:hasConfiguration <configuration/typeaugmented/157> .
+<experimentation/typeaugmented> ns4kge:hasConfiguration <configuration/typeaugmented/158> .
+<experimentation/typeaugmented> ns4kge:hasConfiguration <configuration/typeaugmented/159> .
+<experimentation/typeaugmented> ns4kge:hasConfiguration <configuration/typeaugmented/160> .
+<experimentation/typeaugmented> ns4kge:hasConfiguration <configuration/typeaugmented/161> .
+<experimentation/typeaugmented> ns4kge:hasConfiguration <configuration/typeaugmented/162> .
+<experimentation/typeaugmented> ns4kge:hasConfiguration <configuration/typeaugmented/163> .
+<experimentation/typeaugmented> ns4kge:hasConfiguration <configuration/typeaugmented/164> .
+<experimentation/typeaugmented> ns4kge:hasConfiguration <configuration/typeaugmented/165> .
+<experimentation/typeaugmented> ns4kge:hasConfiguration <configuration/typeaugmented/166> .
+<experimentation/typeaugmented> ns4kge:hasConfiguration <configuration/typeaugmented/167> .
+<experimentation/typeaugmented> ns4kge:hasConfiguration <configuration/typeaugmented/168> .
+<experimentation/typeaugmented> ns4kge:hasConfiguration <configuration/typeaugmented/169> .
+<experimentation/typeaugmented> ns4kge:hasConfiguration <configuration/typeaugmented/170> .
+<experimentation/typeaugmented> ns4kge:hasConfiguration <configuration/typeaugmented/171> .
+<experimentation/typeaugmented> ns4kge:hasConfiguration <configuration/typeaugmented/172> .
+<experimentation/typeaugmented> ns4kge:hasConfiguration <configuration/typeaugmented/173> .
+<experimentation/typeaugmented> ns4kge:hasConfiguration <configuration/typeaugmented/174> .
+<experimentation/typeaugmented> ns4kge:hasConfiguration <configuration/typeaugmented/175> .
+<experimentation/typeaugmented> ns4kge:hasConfiguration <configuration/typeaugmented/176> .
+<experimentation/typeaugmented> ns4kge:hasConfiguration <configuration/typeaugmented/177> .
+<experimentation/typeaugmented> ns4kge:hasConfiguration <configuration/typeaugmented/178> .
+<experimentation/typeaugmented> ns4kge:hasConfiguration <configuration/typeaugmented/179> .
+
+<training-protocol/typeaugmented> rdf:type ns4kge:TrainingProtocol .
+<training-protocol/typeaugmented> ns4kge:hasOptimizer    <optimizer/adam> .
+<training-protocol/typeaugmented> ns4kge:hasLossFunction <loss-function/cross-entropy-loss> .
+
+<configuration/typeaugmented/1> rdf:type ns4kge:Configuration .
+<configuration/typeaugmented/1> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeaugmented/1> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/typeaugmented/1> ns4kge:hasMetric  <metric/mrr> .
+<configuration/typeaugmented/1> ns4kge:hasKGEModel <kge-model/simple> .
+<configuration/typeaugmented/1> ns4kge:result "0.727"^^xsd:decimal .
+
+<configuration/typeaugmented/2> rdf:type ns4kge:Configuration .
+<configuration/typeaugmented/2> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeaugmented/2> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/typeaugmented/2> ns4kge:hasMetric  <metric/mrr> .
+<configuration/typeaugmented/2> ns4kge:hasKGEModel <kge-model/take-simple> .
+<configuration/typeaugmented/2> ns4kge:result "0.806"^^xsd:decimal .
+
+<configuration/typeaugmented/3> rdf:type ns4kge:Configuration .
+<configuration/typeaugmented/3> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeaugmented/3> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/typeaugmented/3> ns4kge:hasMetric  <metric/mrr> .
+<configuration/typeaugmented/3> ns4kge:hasKGEModel <kge-model/take-rotate> .
+<configuration/typeaugmented/3> ns4kge:result "0.804"^^xsd:decimal .
+
+<configuration/typeaugmented/4> rdf:type ns4kge:Configuration .
+<configuration/typeaugmented/4> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeaugmented/4> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/typeaugmented/4> ns4kge:hasMetric  <metric/mrr> .
+<configuration/typeaugmented/4> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/typeaugmented/4> ns4kge:result "0.797"^^xsd:decimal .
+
+<configuration/typeaugmented/5> rdf:type ns4kge:Configuration .
+<configuration/typeaugmented/5> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeaugmented/5> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/typeaugmented/5> ns4kge:hasMetric  <metric/mrr> .
+<configuration/typeaugmented/5> ns4kge:hasKGEModel <kge-model/take-complex> .
+<configuration/typeaugmented/5> ns4kge:result "0.778"^^xsd:decimal .
+
+<configuration/typeaugmented/6> rdf:type ns4kge:Configuration .
+<configuration/typeaugmented/6> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeaugmented/6> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/typeaugmented/6> ns4kge:hasMetric  <metric/mrr> .
+<configuration/typeaugmented/6> ns4kge:hasKGEModel <kge-model/typecomplex> .
+<configuration/typeaugmented/6> ns4kge:result "0.761"^^xsd:decimal .
+
+<configuration/typeaugmented/7> rdf:type ns4kge:Configuration .
+<configuration/typeaugmented/7> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeaugmented/7> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/typeaugmented/7> ns4kge:hasMetric  <metric/mrr> .
+<configuration/typeaugmented/7> ns4kge:hasKGEModel <kge-model/take-distmult> .
+<configuration/typeaugmented/7> ns4kge:result "0.757"^^xsd:decimal .
+
+<configuration/typeaugmented/8> rdf:type ns4kge:Configuration .
+<configuration/typeaugmented/8> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeaugmented/8> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/typeaugmented/8> ns4kge:hasMetric  <metric/mrr> .
+<configuration/typeaugmented/8> ns4kge:hasKGEModel <kge-model/typedm> .
+<configuration/typeaugmented/8> ns4kge:result "0.75"^^xsd:decimal .
+
+<configuration/typeaugmented/9> rdf:type ns4kge:Configuration .
+<configuration/typeaugmented/9> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeaugmented/9> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/typeaugmented/9> ns4kge:hasMetric  <metric/mrr> .
+<configuration/typeaugmented/9> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/typeaugmented/9> ns4kge:result "0.692"^^xsd:decimal .
+
+<configuration/typeaugmented/10> rdf:type ns4kge:Configuration .
+<configuration/typeaugmented/10> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeaugmented/10> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/typeaugmented/10> ns4kge:hasMetric  <metric/mrr> .
+<configuration/typeaugmented/10> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/typeaugmented/10> ns4kge:result "0.654"^^xsd:decimal .
+
+<configuration/typeaugmented/11> rdf:type ns4kge:Configuration .
+<configuration/typeaugmented/11> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeaugmented/11> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/typeaugmented/11> ns4kge:hasMetric  <metric/mrr> .
+<configuration/typeaugmented/11> ns4kge:hasKGEModel <kge-model/take-transe> .
+<configuration/typeaugmented/11> ns4kge:result "0.49"^^xsd:decimal .
+
+<configuration/typeaugmented/12> rdf:type ns4kge:Configuration .
+<configuration/typeaugmented/12> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeaugmented/12> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/typeaugmented/12> ns4kge:hasMetric  <metric/mrr> .
+<configuration/typeaugmented/12> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/typeaugmented/12> ns4kge:result "0.38"^^xsd:decimal .
+
+<configuration/typeaugmented/13> rdf:type ns4kge:Configuration .
+<configuration/typeaugmented/13> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeaugmented/13> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/typeaugmented/13> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/typeaugmented/13> ns4kge:hasKGEModel <kge-model/take-rotate> .
+<configuration/typeaugmented/13> ns4kge:result "0.752"^^xsd:decimal .
+
+<configuration/typeaugmented/14> rdf:type ns4kge:Configuration .
+<configuration/typeaugmented/14> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeaugmented/14> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/typeaugmented/14> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/typeaugmented/14> ns4kge:hasKGEModel <kge-model/take-simple> .
+<configuration/typeaugmented/14> ns4kge:result "0.751"^^xsd:decimal .
+
+<configuration/typeaugmented/15> rdf:type ns4kge:Configuration .
+<configuration/typeaugmented/15> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeaugmented/15> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/typeaugmented/15> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/typeaugmented/15> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/typeaugmented/15> ns4kge:result "0.746"^^xsd:decimal .
+
+<configuration/typeaugmented/16> rdf:type ns4kge:Configuration .
+<configuration/typeaugmented/16> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeaugmented/16> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/typeaugmented/16> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/typeaugmented/16> ns4kge:hasKGEModel <kge-model/take-complex> .
+<configuration/typeaugmented/16> ns4kge:result "0.701"^^xsd:decimal .
+
+<configuration/typeaugmented/17> rdf:type ns4kge:Configuration .
+<configuration/typeaugmented/17> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeaugmented/17> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/typeaugmented/17> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/typeaugmented/17> ns4kge:hasKGEModel <kge-model/typecomplex> .
+<configuration/typeaugmented/17> ns4kge:result "0.688"^^xsd:decimal .
+
+<configuration/typeaugmented/18> rdf:type ns4kge:Configuration .
+<configuration/typeaugmented/18> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeaugmented/18> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/typeaugmented/18> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/typeaugmented/18> ns4kge:hasKGEModel <kge-model/take-distmult> .
+<configuration/typeaugmented/18> ns4kge:result "0.674"^^xsd:decimal .
+
+<configuration/typeaugmented/19> rdf:type ns4kge:Configuration .
+<configuration/typeaugmented/19> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeaugmented/19> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/typeaugmented/19> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/typeaugmented/19> ns4kge:hasKGEModel <kge-model/typedm> .
+<configuration/typeaugmented/19> ns4kge:result "0.673"^^xsd:decimal .
+
+<configuration/typeaugmented/20> rdf:type ns4kge:Configuration .
+<configuration/typeaugmented/20> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeaugmented/20> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/typeaugmented/20> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/typeaugmented/20> ns4kge:hasKGEModel <kge-model/simple> .
+<configuration/typeaugmented/20> ns4kge:result "0.66"^^xsd:decimal .
+
+<configuration/typeaugmented/21> rdf:type ns4kge:Configuration .
+<configuration/typeaugmented/21> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeaugmented/21> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/typeaugmented/21> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/typeaugmented/21> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/typeaugmented/21> ns4kge:result "0.599"^^xsd:decimal .
+
+<configuration/typeaugmented/22> rdf:type ns4kge:Configuration .
+<configuration/typeaugmented/22> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeaugmented/22> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/typeaugmented/22> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/typeaugmented/22> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/typeaugmented/22> ns4kge:result "0.546"^^xsd:decimal .
+
+<configuration/typeaugmented/23> rdf:type ns4kge:Configuration .
+<configuration/typeaugmented/23> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeaugmented/23> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/typeaugmented/23> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/typeaugmented/23> ns4kge:hasKGEModel <kge-model/take-transe> .
+<configuration/typeaugmented/23> ns4kge:result "0.365"^^xsd:decimal .
+
+<configuration/typeaugmented/24> rdf:type ns4kge:Configuration .
+<configuration/typeaugmented/24> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeaugmented/24> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/typeaugmented/24> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/typeaugmented/24> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/typeaugmented/24> ns4kge:result "0.231"^^xsd:decimal .
+
+<configuration/typeaugmented/25> rdf:type ns4kge:Configuration .
+<configuration/typeaugmented/25> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeaugmented/25> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/typeaugmented/25> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/typeaugmented/25> ns4kge:hasKGEModel <kge-model/take-simple> .
+<configuration/typeaugmented/25> ns4kge:result "0.842"^^xsd:decimal .
+
+<configuration/typeaugmented/26> rdf:type ns4kge:Configuration .
+<configuration/typeaugmented/26> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeaugmented/26> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/typeaugmented/26> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/typeaugmented/26> ns4kge:hasKGEModel <kge-model/take-complex> .
+<configuration/typeaugmented/26> ns4kge:result "0.839"^^xsd:decimal .
+
+<configuration/typeaugmented/27> rdf:type ns4kge:Configuration .
+<configuration/typeaugmented/27> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeaugmented/27> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/typeaugmented/27> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/typeaugmented/27> ns4kge:hasKGEModel <kge-model/take-rotate> .
+<configuration/typeaugmented/27> ns4kge:result "0.838"^^xsd:decimal .
+
+<configuration/typeaugmented/28> rdf:type ns4kge:Configuration .
+<configuration/typeaugmented/28> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeaugmented/28> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/typeaugmented/28> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/typeaugmented/28> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/typeaugmented/28> ns4kge:result "0.83"^^xsd:decimal .
+
+<configuration/typeaugmented/29> rdf:type ns4kge:Configuration .
+<configuration/typeaugmented/29> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeaugmented/29> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/typeaugmented/29> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/typeaugmented/29> ns4kge:hasKGEModel <kge-model/take-distmult> .
+<configuration/typeaugmented/29> ns4kge:result "0.823"^^xsd:decimal .
+
+<configuration/typeaugmented/30> rdf:type ns4kge:Configuration .
+<configuration/typeaugmented/30> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeaugmented/30> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/typeaugmented/30> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/typeaugmented/30> ns4kge:hasKGEModel <kge-model/simple> .
+<configuration/typeaugmented/30> ns4kge:result "0.773"^^xsd:decimal .
+
+<configuration/typeaugmented/31> rdf:type ns4kge:Configuration .
+<configuration/typeaugmented/31> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeaugmented/31> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/typeaugmented/31> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/typeaugmented/31> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/typeaugmented/31> ns4kge:result "0.759"^^xsd:decimal .
+
+<configuration/typeaugmented/32> rdf:type ns4kge:Configuration .
+<configuration/typeaugmented/32> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeaugmented/32> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/typeaugmented/32> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/typeaugmented/32> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/typeaugmented/32> ns4kge:result "0.733"^^xsd:decimal .
+
+<configuration/typeaugmented/33> rdf:type ns4kge:Configuration .
+<configuration/typeaugmented/33> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeaugmented/33> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/typeaugmented/33> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/typeaugmented/33> ns4kge:hasKGEModel <kge-model/take-transe> .
+<configuration/typeaugmented/33> ns4kge:result "0.574"^^xsd:decimal .
+
+<configuration/typeaugmented/34> rdf:type ns4kge:Configuration .
+<configuration/typeaugmented/34> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeaugmented/34> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/typeaugmented/34> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/typeaugmented/34> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/typeaugmented/34> ns4kge:result "0.478"^^xsd:decimal .
+
+<configuration/typeaugmented/35> rdf:type ns4kge:Configuration .
+<configuration/typeaugmented/35> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeaugmented/35> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/typeaugmented/35> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/typeaugmented/35> ns4kge:hasKGEModel <kge-model/take-rotate> .
+<configuration/typeaugmented/35> ns4kge:result "0.902"^^xsd:decimal .
+
+<configuration/typeaugmented/36> rdf:type ns4kge:Configuration .
+<configuration/typeaugmented/36> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeaugmented/36> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/typeaugmented/36> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/typeaugmented/36> ns4kge:hasKGEModel <kge-model/take-simple> .
+<configuration/typeaugmented/36> ns4kge:result "0.897"^^xsd:decimal .
+
+<configuration/typeaugmented/37> rdf:type ns4kge:Configuration .
+<configuration/typeaugmented/37> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeaugmented/37> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/typeaugmented/37> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/typeaugmented/37> ns4kge:hasKGEModel <kge-model/take-complex> .
+<configuration/typeaugmented/37> ns4kge:result "0.895"^^xsd:decimal .
+
+<configuration/typeaugmented/38> rdf:type ns4kge:Configuration .
+<configuration/typeaugmented/38> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeaugmented/38> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/typeaugmented/38> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/typeaugmented/38> ns4kge:hasKGEModel <kge-model/take-distmult> .
+<configuration/typeaugmented/38> ns4kge:result "0.89"^^xsd:decimal .
+
+<configuration/typeaugmented/39> rdf:type ns4kge:Configuration .
+<configuration/typeaugmented/39> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeaugmented/39> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/typeaugmented/39> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/typeaugmented/39> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/typeaugmented/39> ns4kge:result "0.884"^^xsd:decimal .
+
+<configuration/typeaugmented/40> rdf:type ns4kge:Configuration .
+<configuration/typeaugmented/40> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeaugmented/40> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/typeaugmented/40> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/typeaugmented/40> ns4kge:hasKGEModel <kge-model/typecomplex> .
+<configuration/typeaugmented/40> ns4kge:result "0.867"^^xsd:decimal .
+
+<configuration/typeaugmented/41> rdf:type ns4kge:Configuration .
+<configuration/typeaugmented/41> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeaugmented/41> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/typeaugmented/41> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/typeaugmented/41> ns4kge:hasKGEModel <kge-model/typedm> .
+<configuration/typeaugmented/41> ns4kge:result "0.861"^^xsd:decimal .
+
+<configuration/typeaugmented/42> rdf:type ns4kge:Configuration .
+<configuration/typeaugmented/42> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeaugmented/42> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/typeaugmented/42> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/typeaugmented/42> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/typeaugmented/42> ns4kge:result "0.84"^^xsd:decimal .
+
+<configuration/typeaugmented/43> rdf:type ns4kge:Configuration .
+<configuration/typeaugmented/43> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeaugmented/43> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/typeaugmented/43> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/typeaugmented/43> ns4kge:hasKGEModel <kge-model/simple> .
+<configuration/typeaugmented/43> ns4kge:result "0.838"^^xsd:decimal .
+
+<configuration/typeaugmented/44> rdf:type ns4kge:Configuration .
+<configuration/typeaugmented/44> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeaugmented/44> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/typeaugmented/44> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/typeaugmented/44> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/typeaugmented/44> ns4kge:result "0.824"^^xsd:decimal .
+
+<configuration/typeaugmented/45> rdf:type ns4kge:Configuration .
+<configuration/typeaugmented/45> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeaugmented/45> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/typeaugmented/45> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/typeaugmented/45> ns4kge:hasKGEModel <kge-model/take-transe> .
+<configuration/typeaugmented/45> ns4kge:result "0.699"^^xsd:decimal .
+
+<configuration/typeaugmented/46> rdf:type ns4kge:Configuration .
+<configuration/typeaugmented/46> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeaugmented/46> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/typeaugmented/46> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/typeaugmented/46> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/typeaugmented/46> ns4kge:result "0.649"^^xsd:decimal .
+
+<configuration/typeaugmented/47> rdf:type ns4kge:Configuration .
+<configuration/typeaugmented/47> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeaugmented/47> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/typeaugmented/47> ns4kge:hasMetric  <metric/mrr> .
+<configuration/typeaugmented/47> ns4kge:hasKGEModel <kge-model/take-simple> .
+<configuration/typeaugmented/47> ns4kge:result "0.352"^^xsd:decimal .
+
+<configuration/typeaugmented/48> rdf:type ns4kge:Configuration .
+<configuration/typeaugmented/48> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeaugmented/48> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/typeaugmented/48> ns4kge:hasMetric  <metric/mrr> .
+<configuration/typeaugmented/48> ns4kge:hasKGEModel <kge-model/take-rotate> .
+<configuration/typeaugmented/48> ns4kge:result "0.347"^^xsd:decimal .
+
+<configuration/typeaugmented/49> rdf:type ns4kge:Configuration .
+<configuration/typeaugmented/49> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeaugmented/49> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/typeaugmented/49> ns4kge:hasMetric  <metric/mrr> .
+<configuration/typeaugmented/49> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/typeaugmented/49> ns4kge:result "0.338"^^xsd:decimal .
+
+<configuration/typeaugmented/50> rdf:type ns4kge:Configuration .
+<configuration/typeaugmented/50> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeaugmented/50> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/typeaugmented/50> ns4kge:hasMetric  <metric/mrr> .
+<configuration/typeaugmented/50> ns4kge:hasKGEModel <kge-model/simple> .
+<configuration/typeaugmented/50> ns4kge:result "0.309"^^xsd:decimal .
+
+<configuration/typeaugmented/51> rdf:type ns4kge:Configuration .
+<configuration/typeaugmented/51> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeaugmented/51> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/typeaugmented/51> ns4kge:hasMetric  <metric/mrr> .
+<configuration/typeaugmented/51> ns4kge:hasKGEModel <kge-model/take-transe> .
+<configuration/typeaugmented/51> ns4kge:result "0.301"^^xsd:decimal .
+
+<configuration/typeaugmented/52> rdf:type ns4kge:Configuration .
+<configuration/typeaugmented/52> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeaugmented/52> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/typeaugmented/52> ns4kge:hasMetric  <metric/mrr> .
+<configuration/typeaugmented/52> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/typeaugmented/52> ns4kge:result "0.294"^^xsd:decimal .
+
+<configuration/typeaugmented/53> rdf:type ns4kge:Configuration .
+<configuration/typeaugmented/53> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeaugmented/53> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/typeaugmented/53> ns4kge:hasMetric  <metric/mrr> .
+<configuration/typeaugmented/53> ns4kge:hasKGEModel <kge-model/take-complex> .
+<configuration/typeaugmented/53> ns4kge:result "0.267"^^xsd:decimal .
+
+<configuration/typeaugmented/54> rdf:type ns4kge:Configuration .
+<configuration/typeaugmented/54> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeaugmented/54> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/typeaugmented/54> ns4kge:hasMetric  <metric/mrr> .
+<configuration/typeaugmented/54> ns4kge:hasKGEModel <kge-model/typecomplex> .
+<configuration/typeaugmented/54> ns4kge:result "0.259"^^xsd:decimal .
+
+<configuration/typeaugmented/55> rdf:type ns4kge:Configuration .
+<configuration/typeaugmented/55> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeaugmented/55> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/typeaugmented/55> ns4kge:hasMetric  <metric/mrr> .
+<configuration/typeaugmented/55> ns4kge:hasKGEModel <kge-model/take-distmult> .
+<configuration/typeaugmented/55> ns4kge:result "0.259"^^xsd:decimal .
+
+<configuration/typeaugmented/56> rdf:type ns4kge:Configuration .
+<configuration/typeaugmented/56> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeaugmented/56> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/typeaugmented/56> ns4kge:hasMetric  <metric/mrr> .
+<configuration/typeaugmented/56> ns4kge:hasKGEModel <kge-model/typedm> .
+<configuration/typeaugmented/56> ns4kge:result "0.252"^^xsd:decimal .
+
+<configuration/typeaugmented/57> rdf:type ns4kge:Configuration .
+<configuration/typeaugmented/57> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeaugmented/57> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/typeaugmented/57> ns4kge:hasMetric  <metric/mrr> .
+<configuration/typeaugmented/57> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/typeaugmented/57> ns4kge:result "0.247"^^xsd:decimal .
+
+<configuration/typeaugmented/58> rdf:type ns4kge:Configuration .
+<configuration/typeaugmented/58> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeaugmented/58> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/typeaugmented/58> ns4kge:hasMetric  <metric/mrr> .
+<configuration/typeaugmented/58> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/typeaugmented/58> ns4kge:result "0.241"^^xsd:decimal .
+
+<configuration/typeaugmented/59> rdf:type ns4kge:Configuration .
+<configuration/typeaugmented/59> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeaugmented/59> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/typeaugmented/59> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/typeaugmented/59> ns4kge:hasKGEModel <kge-model/take-simple> .
+<configuration/typeaugmented/59> ns4kge:result "0.255"^^xsd:decimal .
+
+<configuration/typeaugmented/60> rdf:type ns4kge:Configuration .
+<configuration/typeaugmented/60> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeaugmented/60> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/typeaugmented/60> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/typeaugmented/60> ns4kge:hasKGEModel <kge-model/take-rotate> .
+<configuration/typeaugmented/60> ns4kge:result "0.252"^^xsd:decimal .
+
+<configuration/typeaugmented/61> rdf:type ns4kge:Configuration .
+<configuration/typeaugmented/61> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeaugmented/61> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/typeaugmented/61> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/typeaugmented/61> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/typeaugmented/61> ns4kge:result "0.241"^^xsd:decimal .
+
+<configuration/typeaugmented/62> rdf:type ns4kge:Configuration .
+<configuration/typeaugmented/62> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeaugmented/62> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/typeaugmented/62> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/typeaugmented/62> ns4kge:hasKGEModel <kge-model/simple> .
+<configuration/typeaugmented/62> ns4kge:result "0.228"^^xsd:decimal .
+
+<configuration/typeaugmented/63> rdf:type ns4kge:Configuration .
+<configuration/typeaugmented/63> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeaugmented/63> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/typeaugmented/63> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/typeaugmented/63> ns4kge:hasKGEModel <kge-model/take-transe> .
+<configuration/typeaugmented/63> ns4kge:result "0.199"^^xsd:decimal .
+
+<configuration/typeaugmented/64> rdf:type ns4kge:Configuration .
+<configuration/typeaugmented/64> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeaugmented/64> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/typeaugmented/64> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/typeaugmented/64> ns4kge:hasKGEModel <kge-model/take-complex> .
+<configuration/typeaugmented/64> ns4kge:result "0.189"^^xsd:decimal .
+
+<configuration/typeaugmented/65> rdf:type ns4kge:Configuration .
+<configuration/typeaugmented/65> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeaugmented/65> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/typeaugmented/65> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/typeaugmented/65> ns4kge:hasKGEModel <kge-model/typecomplex> .
+<configuration/typeaugmented/65> ns4kge:result "0.186"^^xsd:decimal .
+
+<configuration/typeaugmented/66> rdf:type ns4kge:Configuration .
+<configuration/typeaugmented/66> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeaugmented/66> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/typeaugmented/66> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/typeaugmented/66> ns4kge:hasKGEModel <kge-model/take-distmult> .
+<configuration/typeaugmented/66> ns4kge:result "0.178"^^xsd:decimal .
+
+<configuration/typeaugmented/67> rdf:type ns4kge:Configuration .
+<configuration/typeaugmented/67> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeaugmented/67> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/typeaugmented/67> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/typeaugmented/67> ns4kge:hasKGEModel <kge-model/typedm> .
+<configuration/typeaugmented/67> ns4kge:result "0.178"^^xsd:decimal .
+
+<configuration/typeaugmented/68> rdf:type ns4kge:Configuration .
+<configuration/typeaugmented/68> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeaugmented/68> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/typeaugmented/68> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/typeaugmented/68> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/typeaugmented/68> ns4kge:result "0.158"^^xsd:decimal .
+
+<configuration/typeaugmented/69> rdf:type ns4kge:Configuration .
+<configuration/typeaugmented/69> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeaugmented/69> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/typeaugmented/69> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/typeaugmented/69> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/typeaugmented/69> ns4kge:result "0.155"^^xsd:decimal .
+
+<configuration/typeaugmented/70> rdf:type ns4kge:Configuration .
+<configuration/typeaugmented/70> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeaugmented/70> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/typeaugmented/70> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/typeaugmented/70> ns4kge:hasKGEModel <kge-model/take-simple> .
+<configuration/typeaugmented/70> ns4kge:result "0.39"^^xsd:decimal .
+
+<configuration/typeaugmented/71> rdf:type ns4kge:Configuration .
+<configuration/typeaugmented/71> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeaugmented/71> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/typeaugmented/71> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/typeaugmented/71> ns4kge:hasKGEModel <kge-model/take-rotate> .
+<configuration/typeaugmented/71> ns4kge:result "0.386"^^xsd:decimal .
+
+<configuration/typeaugmented/72> rdf:type ns4kge:Configuration .
+<configuration/typeaugmented/72> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeaugmented/72> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/typeaugmented/72> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/typeaugmented/72> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/typeaugmented/72> ns4kge:result "0.375"^^xsd:decimal .
+
+<configuration/typeaugmented/73> rdf:type ns4kge:Configuration .
+<configuration/typeaugmented/73> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeaugmented/73> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/typeaugmented/73> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/typeaugmented/73> ns4kge:hasKGEModel <kge-model/simple> .
+<configuration/typeaugmented/73> ns4kge:result "0.34"^^xsd:decimal .
+
+<configuration/typeaugmented/74> rdf:type ns4kge:Configuration .
+<configuration/typeaugmented/74> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeaugmented/74> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/typeaugmented/74> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/typeaugmented/74> ns4kge:hasKGEModel <kge-model/take-transe> .
+<configuration/typeaugmented/74> ns4kge:result "0.337"^^xsd:decimal .
+
+<configuration/typeaugmented/75> rdf:type ns4kge:Configuration .
+<configuration/typeaugmented/75> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeaugmented/75> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/typeaugmented/75> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/typeaugmented/75> ns4kge:hasKGEModel <kge-model/take-distmult> .
+<configuration/typeaugmented/75> ns4kge:result "0.287"^^xsd:decimal .
+
+<configuration/typeaugmented/76> rdf:type ns4kge:Configuration .
+<configuration/typeaugmented/76> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeaugmented/76> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/typeaugmented/76> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/typeaugmented/76> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/typeaugmented/76> ns4kge:result "0.275"^^xsd:decimal .
+
+<configuration/typeaugmented/77> rdf:type ns4kge:Configuration .
+<configuration/typeaugmented/77> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeaugmented/77> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/typeaugmented/77> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/typeaugmented/77> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/typeaugmented/77> ns4kge:result "0.263"^^xsd:decimal .
+
+<configuration/typeaugmented/78> rdf:type ns4kge:Configuration .
+<configuration/typeaugmented/78> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeaugmented/78> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/typeaugmented/78> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/typeaugmented/78> ns4kge:hasKGEModel <kge-model/take-complex> .
+<configuration/typeaugmented/78> ns4kge:result "0.206"^^xsd:decimal .
+
+<configuration/typeaugmented/79> rdf:type ns4kge:Configuration .
+<configuration/typeaugmented/79> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeaugmented/79> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/typeaugmented/79> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/typeaugmented/79> ns4kge:hasKGEModel <kge-model/take-simple> .
+<configuration/typeaugmented/79> ns4kge:result "0.549"^^xsd:decimal .
+
+<configuration/typeaugmented/80> rdf:type ns4kge:Configuration .
+<configuration/typeaugmented/80> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeaugmented/80> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/typeaugmented/80> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/typeaugmented/80> ns4kge:hasKGEModel <kge-model/take-rotate> .
+<configuration/typeaugmented/80> ns4kge:result "0.541"^^xsd:decimal .
+
+<configuration/typeaugmented/81> rdf:type ns4kge:Configuration .
+<configuration/typeaugmented/81> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeaugmented/81> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/typeaugmented/81> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/typeaugmented/81> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/typeaugmented/81> ns4kge:result "0.533"^^xsd:decimal .
+
+<configuration/typeaugmented/82> rdf:type ns4kge:Configuration .
+<configuration/typeaugmented/82> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeaugmented/82> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/typeaugmented/82> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/typeaugmented/82> ns4kge:hasKGEModel <kge-model/take-transe> .
+<configuration/typeaugmented/82> ns4kge:result "0.486"^^xsd:decimal .
+
+<configuration/typeaugmented/83> rdf:type ns4kge:Configuration .
+<configuration/typeaugmented/83> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeaugmented/83> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/typeaugmented/83> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/typeaugmented/83> ns4kge:hasKGEModel <kge-model/simple> .
+<configuration/typeaugmented/83> ns4kge:result "0.476"^^xsd:decimal .
+
+<configuration/typeaugmented/84> rdf:type ns4kge:Configuration .
+<configuration/typeaugmented/84> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeaugmented/84> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/typeaugmented/84> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/typeaugmented/84> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/typeaugmented/84> ns4kge:result "0.465"^^xsd:decimal .
+
+<configuration/typeaugmented/85> rdf:type ns4kge:Configuration .
+<configuration/typeaugmented/85> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeaugmented/85> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/typeaugmented/85> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/typeaugmented/85> ns4kge:hasKGEModel <kge-model/take-complex> .
+<configuration/typeaugmented/85> ns4kge:result "0.442"^^xsd:decimal .
+
+<configuration/typeaugmented/86> rdf:type ns4kge:Configuration .
+<configuration/typeaugmented/86> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeaugmented/86> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/typeaugmented/86> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/typeaugmented/86> ns4kge:hasKGEModel <kge-model/take-distmult> .
+<configuration/typeaugmented/86> ns4kge:result "0.432"^^xsd:decimal .
+
+<configuration/typeaugmented/87> rdf:type ns4kge:Configuration .
+<configuration/typeaugmented/87> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeaugmented/87> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/typeaugmented/87> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/typeaugmented/87> ns4kge:hasKGEModel <kge-model/typecomplex> .
+<configuration/typeaugmented/87> ns4kge:result "0.431"^^xsd:decimal .
+
+<configuration/typeaugmented/88> rdf:type ns4kge:Configuration .
+<configuration/typeaugmented/88> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeaugmented/88> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/typeaugmented/88> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/typeaugmented/88> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/typeaugmented/88> ns4kge:result "0.428"^^xsd:decimal .
+
+<configuration/typeaugmented/89> rdf:type ns4kge:Configuration .
+<configuration/typeaugmented/89> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeaugmented/89> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/typeaugmented/89> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/typeaugmented/89> ns4kge:hasKGEModel <kge-model/typedm> .
+<configuration/typeaugmented/89> ns4kge:result "0.425"^^xsd:decimal .
+
+<configuration/typeaugmented/90> rdf:type ns4kge:Configuration .
+<configuration/typeaugmented/90> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeaugmented/90> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/typeaugmented/90> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/typeaugmented/90> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/typeaugmented/90> ns4kge:result "0.419"^^xsd:decimal .
+
+<configuration/typeaugmented/91> rdf:type ns4kge:Configuration .
+<configuration/typeaugmented/91> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeaugmented/91> ns4kge:hasDataset <dataset/wn18> .
+<configuration/typeaugmented/91> ns4kge:hasMetric  <metric/mrr> .
+<configuration/typeaugmented/91> ns4kge:hasKGEModel <kge-model/take-simple> .
+<configuration/typeaugmented/91> ns4kge:result "0.956"^^xsd:decimal .
+
+<configuration/typeaugmented/92> rdf:type ns4kge:Configuration .
+<configuration/typeaugmented/92> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeaugmented/92> ns4kge:hasDataset <dataset/wn18> .
+<configuration/typeaugmented/92> ns4kge:hasMetric  <metric/mrr> .
+<configuration/typeaugmented/92> ns4kge:hasKGEModel <kge-model/take-rotate> .
+<configuration/typeaugmented/92> ns4kge:result "0.953"^^xsd:decimal .
+
+<configuration/typeaugmented/93> rdf:type ns4kge:Configuration .
+<configuration/typeaugmented/93> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeaugmented/93> ns4kge:hasDataset <dataset/wn18> .
+<configuration/typeaugmented/93> ns4kge:hasMetric  <metric/mrr> .
+<configuration/typeaugmented/93> ns4kge:hasKGEModel <kge-model/take-complex> .
+<configuration/typeaugmented/93> ns4kge:result "0.95"^^xsd:decimal .
+
+<configuration/typeaugmented/94> rdf:type ns4kge:Configuration .
+<configuration/typeaugmented/94> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeaugmented/94> ns4kge:hasDataset <dataset/wn18> .
+<configuration/typeaugmented/94> ns4kge:hasMetric  <metric/mrr> .
+<configuration/typeaugmented/94> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/typeaugmented/94> ns4kge:result "0.949"^^xsd:decimal .
+
+<configuration/typeaugmented/95> rdf:type ns4kge:Configuration .
+<configuration/typeaugmented/95> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeaugmented/95> ns4kge:hasDataset <dataset/wn18> .
+<configuration/typeaugmented/95> ns4kge:hasMetric  <metric/mrr> .
+<configuration/typeaugmented/95> ns4kge:hasKGEModel <kge-model/simple> .
+<configuration/typeaugmented/95> ns4kge:result "0.942"^^xsd:decimal .
+
+<configuration/typeaugmented/96> rdf:type ns4kge:Configuration .
+<configuration/typeaugmented/96> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeaugmented/96> ns4kge:hasDataset <dataset/wn18> .
+<configuration/typeaugmented/96> ns4kge:hasMetric  <metric/mrr> .
+<configuration/typeaugmented/96> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/typeaugmented/96> ns4kge:result "0.941"^^xsd:decimal .
+
+<configuration/typeaugmented/97> rdf:type ns4kge:Configuration .
+<configuration/typeaugmented/97> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeaugmented/97> ns4kge:hasDataset <dataset/wn18> .
+<configuration/typeaugmented/97> ns4kge:hasMetric  <metric/mrr> .
+<configuration/typeaugmented/97> ns4kge:hasKGEModel <kge-model/typecomplex> .
+<configuration/typeaugmented/97> ns4kge:result "0.939"^^xsd:decimal .
+
+<configuration/typeaugmented/98> rdf:type ns4kge:Configuration .
+<configuration/typeaugmented/98> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeaugmented/98> ns4kge:hasDataset <dataset/wn18> .
+<configuration/typeaugmented/98> ns4kge:hasMetric  <metric/mrr> .
+<configuration/typeaugmented/98> ns4kge:hasKGEModel <kge-model/take-distmult> .
+<configuration/typeaugmented/98> ns4kge:result "0.93"^^xsd:decimal .
+
+<configuration/typeaugmented/99> rdf:type ns4kge:Configuration .
+<configuration/typeaugmented/99> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeaugmented/99> ns4kge:hasDataset <dataset/wn18> .
+<configuration/typeaugmented/99> ns4kge:hasMetric  <metric/mrr> .
+<configuration/typeaugmented/99> ns4kge:hasKGEModel <kge-model/typedm> .
+<configuration/typeaugmented/99> ns4kge:result "0.926"^^xsd:decimal .
+
+<configuration/typeaugmented/100> rdf:type ns4kge:Configuration .
+<configuration/typeaugmented/100> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeaugmented/100> ns4kge:hasDataset <dataset/wn18> .
+<configuration/typeaugmented/100> ns4kge:hasMetric  <metric/mrr> .
+<configuration/typeaugmented/100> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/typeaugmented/100> ns4kge:result "0.797"^^xsd:decimal .
+
+<configuration/typeaugmented/101> rdf:type ns4kge:Configuration .
+<configuration/typeaugmented/101> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeaugmented/101> ns4kge:hasDataset <dataset/wn18> .
+<configuration/typeaugmented/101> ns4kge:hasMetric  <metric/mrr> .
+<configuration/typeaugmented/101> ns4kge:hasKGEModel <kge-model/take-transe> .
+<configuration/typeaugmented/101> ns4kge:result "0.565"^^xsd:decimal .
+
+<configuration/typeaugmented/102> rdf:type ns4kge:Configuration .
+<configuration/typeaugmented/102> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeaugmented/102> ns4kge:hasDataset <dataset/wn18> .
+<configuration/typeaugmented/102> ns4kge:hasMetric  <metric/mrr> .
+<configuration/typeaugmented/102> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/typeaugmented/102> ns4kge:result "0.495"^^xsd:decimal .
+
+<configuration/typeaugmented/103> rdf:type ns4kge:Configuration .
+<configuration/typeaugmented/103> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeaugmented/103> ns4kge:hasDataset <dataset/wn18> .
+<configuration/typeaugmented/103> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/typeaugmented/103> ns4kge:hasKGEModel <kge-model/take-simple> .
+<configuration/typeaugmented/103> ns4kge:result "0.954"^^xsd:decimal .
+
+<configuration/typeaugmented/104> rdf:type ns4kge:Configuration .
+<configuration/typeaugmented/104> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeaugmented/104> ns4kge:hasDataset <dataset/wn18> .
+<configuration/typeaugmented/104> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/typeaugmented/104> ns4kge:hasKGEModel <kge-model/take-complex> .
+<configuration/typeaugmented/104> ns4kge:result "0.949"^^xsd:decimal .
+
+<configuration/typeaugmented/105> rdf:type ns4kge:Configuration .
+<configuration/typeaugmented/105> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeaugmented/105> ns4kge:hasDataset <dataset/wn18> .
+<configuration/typeaugmented/105> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/typeaugmented/105> ns4kge:hasKGEModel <kge-model/take-rotate> .
+<configuration/typeaugmented/105> ns4kge:result "0.949"^^xsd:decimal .
+
+<configuration/typeaugmented/106> rdf:type ns4kge:Configuration .
+<configuration/typeaugmented/106> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeaugmented/106> ns4kge:hasDataset <dataset/wn18> .
+<configuration/typeaugmented/106> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/typeaugmented/106> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/typeaugmented/106> ns4kge:result "0.944"^^xsd:decimal .
+
+<configuration/typeaugmented/107> rdf:type ns4kge:Configuration .
+<configuration/typeaugmented/107> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeaugmented/107> ns4kge:hasDataset <dataset/wn18> .
+<configuration/typeaugmented/107> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/typeaugmented/107> ns4kge:hasKGEModel <kge-model/simple> .
+<configuration/typeaugmented/107> ns4kge:result "0.939"^^xsd:decimal .
+
+<configuration/typeaugmented/108> rdf:type ns4kge:Configuration .
+<configuration/typeaugmented/108> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeaugmented/108> ns4kge:hasDataset <dataset/wn18> .
+<configuration/typeaugmented/108> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/typeaugmented/108> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/typeaugmented/108> ns4kge:result "0.936"^^xsd:decimal .
+
+<configuration/typeaugmented/109> rdf:type ns4kge:Configuration .
+<configuration/typeaugmented/109> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeaugmented/109> ns4kge:hasDataset <dataset/wn18> .
+<configuration/typeaugmented/109> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/typeaugmented/109> ns4kge:hasKGEModel <kge-model/typecomplex> .
+<configuration/typeaugmented/109> ns4kge:result "0.932"^^xsd:decimal .
+
+<configuration/typeaugmented/110> rdf:type ns4kge:Configuration .
+<configuration/typeaugmented/110> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeaugmented/110> ns4kge:hasDataset <dataset/wn18> .
+<configuration/typeaugmented/110> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/typeaugmented/110> ns4kge:hasKGEModel <kge-model/take-distmult> .
+<configuration/typeaugmented/110> ns4kge:result "0.826"^^xsd:decimal .
+
+<configuration/typeaugmented/111> rdf:type ns4kge:Configuration .
+<configuration/typeaugmented/111> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeaugmented/111> ns4kge:hasDataset <dataset/wn18> .
+<configuration/typeaugmented/111> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/typeaugmented/111> ns4kge:hasKGEModel <kge-model/typedm> .
+<configuration/typeaugmented/111> ns4kge:result "0.824"^^xsd:decimal .
+
+<configuration/typeaugmented/112> rdf:type ns4kge:Configuration .
+<configuration/typeaugmented/112> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeaugmented/112> ns4kge:hasDataset <dataset/wn18> .
+<configuration/typeaugmented/112> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/typeaugmented/112> ns4kge:hasKGEModel <kge-model/take-transe> .
+<configuration/typeaugmented/112> ns4kge:result "0.218"^^xsd:decimal .
+
+<configuration/typeaugmented/113> rdf:type ns4kge:Configuration .
+<configuration/typeaugmented/113> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeaugmented/113> ns4kge:hasDataset <dataset/wn18> .
+<configuration/typeaugmented/113> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/typeaugmented/113> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/typeaugmented/113> ns4kge:result "0.113"^^xsd:decimal .
+
+<configuration/typeaugmented/114> rdf:type ns4kge:Configuration .
+<configuration/typeaugmented/114> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeaugmented/114> ns4kge:hasDataset <dataset/wn18> .
+<configuration/typeaugmented/114> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/typeaugmented/114> ns4kge:hasKGEModel <kge-model/take-simple> .
+<configuration/typeaugmented/114> ns4kge:result "0.957"^^xsd:decimal .
+
+<configuration/typeaugmented/115> rdf:type ns4kge:Configuration .
+<configuration/typeaugmented/115> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeaugmented/115> ns4kge:hasDataset <dataset/wn18> .
+<configuration/typeaugmented/115> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/typeaugmented/115> ns4kge:hasKGEModel <kge-model/take-rotate> .
+<configuration/typeaugmented/115> ns4kge:result "0.955"^^xsd:decimal .
+
+<configuration/typeaugmented/116> rdf:type ns4kge:Configuration .
+<configuration/typeaugmented/116> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeaugmented/116> ns4kge:hasDataset <dataset/wn18> .
+<configuration/typeaugmented/116> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/typeaugmented/116> ns4kge:hasKGEModel <kge-model/take-complex> .
+<configuration/typeaugmented/116> ns4kge:result "0.954"^^xsd:decimal .
+
+<configuration/typeaugmented/117> rdf:type ns4kge:Configuration .
+<configuration/typeaugmented/117> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeaugmented/117> ns4kge:hasDataset <dataset/wn18> .
+<configuration/typeaugmented/117> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/typeaugmented/117> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/typeaugmented/117> ns4kge:result "0.952"^^xsd:decimal .
+
+<configuration/typeaugmented/118> rdf:type ns4kge:Configuration .
+<configuration/typeaugmented/118> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeaugmented/118> ns4kge:hasDataset <dataset/wn18> .
+<configuration/typeaugmented/118> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/typeaugmented/118> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/typeaugmented/118> ns4kge:result "0.945"^^xsd:decimal .
+
+<configuration/typeaugmented/119> rdf:type ns4kge:Configuration .
+<configuration/typeaugmented/119> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeaugmented/119> ns4kge:hasDataset <dataset/wn18> .
+<configuration/typeaugmented/119> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/typeaugmented/119> ns4kge:hasKGEModel <kge-model/simple> .
+<configuration/typeaugmented/119> ns4kge:result "0.944"^^xsd:decimal .
+
+<configuration/typeaugmented/120> rdf:type ns4kge:Configuration .
+<configuration/typeaugmented/120> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeaugmented/120> ns4kge:hasDataset <dataset/wn18> .
+<configuration/typeaugmented/120> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/typeaugmented/120> ns4kge:hasKGEModel <kge-model/take-transe> .
+<configuration/typeaugmented/120> ns4kge:result "0.93"^^xsd:decimal .
+
+<configuration/typeaugmented/121> rdf:type ns4kge:Configuration .
+<configuration/typeaugmented/121> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeaugmented/121> ns4kge:hasDataset <dataset/wn18> .
+<configuration/typeaugmented/121> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/typeaugmented/121> ns4kge:hasKGEModel <kge-model/take-distmult> .
+<configuration/typeaugmented/121> ns4kge:result "0.904"^^xsd:decimal .
+
+<configuration/typeaugmented/122> rdf:type ns4kge:Configuration .
+<configuration/typeaugmented/122> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeaugmented/122> ns4kge:hasDataset <dataset/wn18> .
+<configuration/typeaugmented/122> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/typeaugmented/122> ns4kge:hasKGEModel <kge-model/typedm> .
+<configuration/typeaugmented/122> ns4kge:result "0.9"^^xsd:decimal .
+
+<configuration/typeaugmented/123> rdf:type ns4kge:Configuration .
+<configuration/typeaugmented/123> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeaugmented/123> ns4kge:hasDataset <dataset/wn18> .
+<configuration/typeaugmented/123> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/typeaugmented/123> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/typeaugmented/123> ns4kge:result "0.888"^^xsd:decimal .
+
+<configuration/typeaugmented/124> rdf:type ns4kge:Configuration .
+<configuration/typeaugmented/124> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeaugmented/124> ns4kge:hasDataset <dataset/wn18> .
+<configuration/typeaugmented/124> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/typeaugmented/124> ns4kge:hasKGEModel <kge-model/take-simple> .
+<configuration/typeaugmented/124> ns4kge:result "0.961"^^xsd:decimal .
+
+<configuration/typeaugmented/125> rdf:type ns4kge:Configuration .
+<configuration/typeaugmented/125> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeaugmented/125> ns4kge:hasDataset <dataset/wn18> .
+<configuration/typeaugmented/125> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/typeaugmented/125> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/typeaugmented/125> ns4kge:result "0.959"^^xsd:decimal .
+
+<configuration/typeaugmented/126> rdf:type ns4kge:Configuration .
+<configuration/typeaugmented/126> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeaugmented/126> ns4kge:hasDataset <dataset/wn18> .
+<configuration/typeaugmented/126> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/typeaugmented/126> ns4kge:hasKGEModel <kge-model/take-rotate> .
+<configuration/typeaugmented/126> ns4kge:result "0.958"^^xsd:decimal .
+
+<configuration/typeaugmented/127> rdf:type ns4kge:Configuration .
+<configuration/typeaugmented/127> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeaugmented/127> ns4kge:hasDataset <dataset/wn18> .
+<configuration/typeaugmented/127> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/typeaugmented/127> ns4kge:hasKGEModel <kge-model/take-distmult> .
+<configuration/typeaugmented/127> ns4kge:result "0.952"^^xsd:decimal .
+
+<configuration/typeaugmented/128> rdf:type ns4kge:Configuration .
+<configuration/typeaugmented/128> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeaugmented/128> ns4kge:hasDataset <dataset/wn18> .
+<configuration/typeaugmented/128> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/typeaugmented/128> ns4kge:hasKGEModel <kge-model/take-complex> .
+<configuration/typeaugmented/128> ns4kge:result "0.951"^^xsd:decimal .
+
+<configuration/typeaugmented/129> rdf:type ns4kge:Configuration .
+<configuration/typeaugmented/129> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeaugmented/129> ns4kge:hasDataset <dataset/wn18> .
+<configuration/typeaugmented/129> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/typeaugmented/129> ns4kge:hasKGEModel <kge-model/typecomplex> .
+<configuration/typeaugmented/129> ns4kge:result "0.951"^^xsd:decimal .
+
+<configuration/typeaugmented/130> rdf:type ns4kge:Configuration .
+<configuration/typeaugmented/130> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeaugmented/130> ns4kge:hasDataset <dataset/wn18> .
+<configuration/typeaugmented/130> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/typeaugmented/130> ns4kge:hasKGEModel <kge-model/typedm> .
+<configuration/typeaugmented/130> ns4kge:result "0.948"^^xsd:decimal .
+
+<configuration/typeaugmented/131> rdf:type ns4kge:Configuration .
+<configuration/typeaugmented/131> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeaugmented/131> ns4kge:hasDataset <dataset/wn18> .
+<configuration/typeaugmented/131> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/typeaugmented/131> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/typeaugmented/131> ns4kge:result "0.947"^^xsd:decimal .
+
+<configuration/typeaugmented/132> rdf:type ns4kge:Configuration .
+<configuration/typeaugmented/132> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeaugmented/132> ns4kge:hasDataset <dataset/wn18> .
+<configuration/typeaugmented/132> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/typeaugmented/132> ns4kge:hasKGEModel <kge-model/simple> .
+<configuration/typeaugmented/132> ns4kge:result "0.947"^^xsd:decimal .
+
+<configuration/typeaugmented/133> rdf:type ns4kge:Configuration .
+<configuration/typeaugmented/133> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeaugmented/133> ns4kge:hasDataset <dataset/wn18> .
+<configuration/typeaugmented/133> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/typeaugmented/133> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/typeaugmented/133> ns4kge:result "0.946"^^xsd:decimal .
+
+<configuration/typeaugmented/134> rdf:type ns4kge:Configuration .
+<configuration/typeaugmented/134> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeaugmented/134> ns4kge:hasDataset <dataset/wn18> .
+<configuration/typeaugmented/134> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/typeaugmented/134> ns4kge:hasKGEModel <kge-model/take-transe> .
+<configuration/typeaugmented/134> ns4kge:result "0.951"^^xsd:decimal .
+
+<configuration/typeaugmented/135> rdf:type ns4kge:Configuration .
+<configuration/typeaugmented/135> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeaugmented/135> ns4kge:hasDataset <dataset/wn18> .
+<configuration/typeaugmented/135> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/typeaugmented/135> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/typeaugmented/135> ns4kge:result "0.943"^^xsd:decimal .
+
+<configuration/typeaugmented/136> rdf:type ns4kge:Configuration .
+<configuration/typeaugmented/136> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeaugmented/136> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/typeaugmented/136> ns4kge:hasMetric  <metric/mrr> .
+<configuration/typeaugmented/136> ns4kge:hasKGEModel <kge-model/take-simple> .
+<configuration/typeaugmented/136> ns4kge:result "0.556"^^xsd:decimal .
+
+<configuration/typeaugmented/137> rdf:type ns4kge:Configuration .
+<configuration/typeaugmented/137> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeaugmented/137> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/typeaugmented/137> ns4kge:hasMetric  <metric/mrr> .
+<configuration/typeaugmented/137> ns4kge:hasKGEModel <kge-model/take-rotate> .
+<configuration/typeaugmented/137> ns4kge:result "0.552"^^xsd:decimal .
+
+<configuration/typeaugmented/138> rdf:type ns4kge:Configuration .
+<configuration/typeaugmented/138> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeaugmented/138> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/typeaugmented/138> ns4kge:hasMetric  <metric/mrr> .
+<configuration/typeaugmented/138> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/typeaugmented/138> ns4kge:result "0.495"^^xsd:decimal .
+
+<configuration/typeaugmented/139> rdf:type ns4kge:Configuration .
+<configuration/typeaugmented/139> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeaugmented/139> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/typeaugmented/139> ns4kge:hasMetric  <metric/mrr> .
+<configuration/typeaugmented/139> ns4kge:hasKGEModel <kge-model/simple> .
+<configuration/typeaugmented/139> ns4kge:result "0.488"^^xsd:decimal .
+
+<configuration/typeaugmented/140> rdf:type ns4kge:Configuration .
+<configuration/typeaugmented/140> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeaugmented/140> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/typeaugmented/140> ns4kge:hasMetric  <metric/mrr> .
+<configuration/typeaugmented/140> ns4kge:hasKGEModel <kge-model/take-complex> .
+<configuration/typeaugmented/140> ns4kge:result "0.428"^^xsd:decimal .
+
+<configuration/typeaugmented/141> rdf:type ns4kge:Configuration .
+<configuration/typeaugmented/141> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeaugmented/141> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/typeaugmented/141> ns4kge:hasMetric  <metric/mrr> .
+<configuration/typeaugmented/141> ns4kge:hasKGEModel <kge-model/typecomplex> .
+<configuration/typeaugmented/141> ns4kge:result "0.411"^^xsd:decimal .
+
+<configuration/typeaugmented/142> rdf:type ns4kge:Configuration .
+<configuration/typeaugmented/142> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeaugmented/142> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/typeaugmented/142> ns4kge:hasMetric  <metric/mrr> .
+<configuration/typeaugmented/142> ns4kge:hasKGEModel <kge-model/take-distmult> .
+<configuration/typeaugmented/142> ns4kge:result "0.41"^^xsd:decimal .
+
+<configuration/typeaugmented/143> rdf:type ns4kge:Configuration .
+<configuration/typeaugmented/143> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeaugmented/143> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/typeaugmented/143> ns4kge:hasMetric  <metric/mrr> .
+<configuration/typeaugmented/143> ns4kge:hasKGEModel <kge-model/typedm> .
+<configuration/typeaugmented/143> ns4kge:result "0.406"^^xsd:decimal .
+
+<configuration/typeaugmented/144> rdf:type ns4kge:Configuration .
+<configuration/typeaugmented/144> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeaugmented/144> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/typeaugmented/144> ns4kge:hasMetric  <metric/mrr> .
+<configuration/typeaugmented/144> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/typeaugmented/144> ns4kge:result "0.36"^^xsd:decimal .
+
+<configuration/typeaugmented/145> rdf:type ns4kge:Configuration .
+<configuration/typeaugmented/145> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeaugmented/145> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/typeaugmented/145> ns4kge:hasMetric  <metric/mrr> .
+<configuration/typeaugmented/145> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/typeaugmented/145> ns4kge:result "0.34"^^xsd:decimal .
+
+<configuration/typeaugmented/146> rdf:type ns4kge:Configuration .
+<configuration/typeaugmented/146> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeaugmented/146> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/typeaugmented/146> ns4kge:hasMetric  <metric/mrr> .
+<configuration/typeaugmented/146> ns4kge:hasKGEModel <kge-model/take-transe> .
+<configuration/typeaugmented/146> ns4kge:result "0.327"^^xsd:decimal .
+
+<configuration/typeaugmented/147> rdf:type ns4kge:Configuration .
+<configuration/typeaugmented/147> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeaugmented/147> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/typeaugmented/147> ns4kge:hasMetric  <metric/mrr> .
+<configuration/typeaugmented/147> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/typeaugmented/147> ns4kge:result "0.18"^^xsd:decimal .
+
+<configuration/typeaugmented/148> rdf:type ns4kge:Configuration .
+<configuration/typeaugmented/148> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeaugmented/148> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/typeaugmented/148> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/typeaugmented/148> ns4kge:hasKGEModel <kge-model/take-simple> .
+<configuration/typeaugmented/148> ns4kge:result "0.472"^^xsd:decimal .
+
+<configuration/typeaugmented/149> rdf:type ns4kge:Configuration .
+<configuration/typeaugmented/149> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeaugmented/149> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/typeaugmented/149> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/typeaugmented/149> ns4kge:hasKGEModel <kge-model/take-rotate> .
+<configuration/typeaugmented/149> ns4kge:result "0.467"^^xsd:decimal .
+
+<configuration/typeaugmented/150> rdf:type ns4kge:Configuration .
+<configuration/typeaugmented/150> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeaugmented/150> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/typeaugmented/150> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/typeaugmented/150> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/typeaugmented/150> ns4kge:result "0.402"^^xsd:decimal .
+
+<configuration/typeaugmented/151> rdf:type ns4kge:Configuration .
+<configuration/typeaugmented/151> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeaugmented/151> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/typeaugmented/151> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/typeaugmented/151> ns4kge:hasKGEModel <kge-model/simple> .
+<configuration/typeaugmented/151> ns4kge:result "0.395"^^xsd:decimal .
+
+<configuration/typeaugmented/152> rdf:type ns4kge:Configuration .
+<configuration/typeaugmented/152> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeaugmented/152> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/typeaugmented/152> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/typeaugmented/152> ns4kge:hasKGEModel <kge-model/take-complex> .
+<configuration/typeaugmented/152> ns4kge:result "0.33"^^xsd:decimal .
+
+<configuration/typeaugmented/153> rdf:type ns4kge:Configuration .
+<configuration/typeaugmented/153> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeaugmented/153> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/typeaugmented/153> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/typeaugmented/153> ns4kge:hasKGEModel <kge-model/take-distmult> .
+<configuration/typeaugmented/153> ns4kge:result "0.321"^^xsd:decimal .
+
+<configuration/typeaugmented/154> rdf:type ns4kge:Configuration .
+<configuration/typeaugmented/154> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeaugmented/154> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/typeaugmented/154> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/typeaugmented/154> ns4kge:hasKGEModel <kge-model/typecomplex> .
+<configuration/typeaugmented/154> ns4kge:result "0.319"^^xsd:decimal .
+
+<configuration/typeaugmented/155> rdf:type ns4kge:Configuration .
+<configuration/typeaugmented/155> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeaugmented/155> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/typeaugmented/155> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/typeaugmented/155> ns4kge:hasKGEModel <kge-model/typedm> .
+<configuration/typeaugmented/155> ns4kge:result "0.311"^^xsd:decimal .
+
+<configuration/typeaugmented/156> rdf:type ns4kge:Configuration .
+<configuration/typeaugmented/156> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeaugmented/156> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/typeaugmented/156> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/typeaugmented/156> ns4kge:hasKGEModel <kge-model/take-transe> .
+<configuration/typeaugmented/156> ns4kge:result "0.279"^^xsd:decimal .
+
+<configuration/typeaugmented/157> rdf:type ns4kge:Configuration .
+<configuration/typeaugmented/157> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeaugmented/157> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/typeaugmented/157> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/typeaugmented/157> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/typeaugmented/157> ns4kge:result "0.26"^^xsd:decimal .
+
+<configuration/typeaugmented/158> rdf:type ns4kge:Configuration .
+<configuration/typeaugmented/158> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeaugmented/158> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/typeaugmented/158> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/typeaugmented/158> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/typeaugmented/158> ns4kge:result "0.24"^^xsd:decimal .
+
+<configuration/typeaugmented/159> rdf:type ns4kge:Configuration .
+<configuration/typeaugmented/159> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeaugmented/159> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/typeaugmented/159> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/typeaugmented/159> ns4kge:hasKGEModel <kge-model/take-rotate> .
+<configuration/typeaugmented/159> ns4kge:result "0.611"^^xsd:decimal .
+
+<configuration/typeaugmented/160> rdf:type ns4kge:Configuration .
+<configuration/typeaugmented/160> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeaugmented/160> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/typeaugmented/160> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/typeaugmented/160> ns4kge:hasKGEModel <kge-model/take-simple> .
+<configuration/typeaugmented/160> ns4kge:result "0.61"^^xsd:decimal .
+
+<configuration/typeaugmented/161> rdf:type ns4kge:Configuration .
+<configuration/typeaugmented/161> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeaugmented/161> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/typeaugmented/161> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/typeaugmented/161> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/typeaugmented/161> ns4kge:result "0.55"^^xsd:decimal .
+
+<configuration/typeaugmented/162> rdf:type ns4kge:Configuration .
+<configuration/typeaugmented/162> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeaugmented/162> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/typeaugmented/162> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/typeaugmented/162> ns4kge:hasKGEModel <kge-model/simple> .
+<configuration/typeaugmented/162> ns4kge:result "0.543"^^xsd:decimal .
+
+<configuration/typeaugmented/163> rdf:type ns4kge:Configuration .
+<configuration/typeaugmented/163> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeaugmented/163> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/typeaugmented/163> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/typeaugmented/163> ns4kge:hasKGEModel <kge-model/take-complex> .
+<configuration/typeaugmented/163> ns4kge:result "0.467"^^xsd:decimal .
+
+<configuration/typeaugmented/164> rdf:type ns4kge:Configuration .
+<configuration/typeaugmented/164> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeaugmented/164> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/typeaugmented/164> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/typeaugmented/164> ns4kge:hasKGEModel <kge-model/take-distmult> .
+<configuration/typeaugmented/164> ns4kge:result "0.45"^^xsd:decimal .
+
+<configuration/typeaugmented/165> rdf:type ns4kge:Configuration .
+<configuration/typeaugmented/165> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeaugmented/165> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/typeaugmented/165> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/typeaugmented/165> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/typeaugmented/165> ns4kge:result "0.4"^^xsd:decimal .
+
+<configuration/typeaugmented/166> rdf:type ns4kge:Configuration .
+<configuration/typeaugmented/166> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeaugmented/166> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/typeaugmented/166> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/typeaugmented/166> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/typeaugmented/166> ns4kge:result "0.38"^^xsd:decimal .
+
+<configuration/typeaugmented/167> rdf:type ns4kge:Configuration .
+<configuration/typeaugmented/167> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeaugmented/167> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/typeaugmented/167> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/typeaugmented/167> ns4kge:hasKGEModel <kge-model/take-transe> .
+<configuration/typeaugmented/167> ns4kge:result "0.375"^^xsd:decimal .
+
+<configuration/typeaugmented/168> rdf:type ns4kge:Configuration .
+<configuration/typeaugmented/168> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeaugmented/168> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/typeaugmented/168> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/typeaugmented/168> ns4kge:hasKGEModel <kge-model/take-simple> .
+<configuration/typeaugmented/168> ns4kge:result "0.705"^^xsd:decimal .
+
+<configuration/typeaugmented/169> rdf:type ns4kge:Configuration .
+<configuration/typeaugmented/169> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeaugmented/169> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/typeaugmented/169> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/typeaugmented/169> ns4kge:hasKGEModel <kge-model/take-rotate> .
+<configuration/typeaugmented/169> ns4kge:result "0.701"^^xsd:decimal .
+
+<configuration/typeaugmented/170> rdf:type ns4kge:Configuration .
+<configuration/typeaugmented/170> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeaugmented/170> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/typeaugmented/170> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/typeaugmented/170> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/typeaugmented/170> ns4kge:result "0.67"^^xsd:decimal .
+
+<configuration/typeaugmented/171> rdf:type ns4kge:Configuration .
+<configuration/typeaugmented/171> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeaugmented/171> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/typeaugmented/171> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/typeaugmented/171> ns4kge:hasKGEModel <kge-model/simple> .
+<configuration/typeaugmented/171> ns4kge:result "0.645"^^xsd:decimal .
+
+<configuration/typeaugmented/172> rdf:type ns4kge:Configuration .
+<configuration/typeaugmented/172> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeaugmented/172> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/typeaugmented/172> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/typeaugmented/172> ns4kge:hasKGEModel <kge-model/take-complex> .
+<configuration/typeaugmented/172> ns4kge:result "0.618"^^xsd:decimal .
+
+<configuration/typeaugmented/173> rdf:type ns4kge:Configuration .
+<configuration/typeaugmented/173> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeaugmented/173> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/typeaugmented/173> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/typeaugmented/173> ns4kge:hasKGEModel <kge-model/typecomplex> .
+<configuration/typeaugmented/173> ns4kge:result "0.609"^^xsd:decimal .
+
+<configuration/typeaugmented/174> rdf:type ns4kge:Configuration .
+<configuration/typeaugmented/174> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeaugmented/174> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/typeaugmented/174> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/typeaugmented/174> ns4kge:hasKGEModel <kge-model/take-distmult> .
+<configuration/typeaugmented/174> ns4kge:result "0.608"^^xsd:decimal .
+
+<configuration/typeaugmented/175> rdf:type ns4kge:Configuration .
+<configuration/typeaugmented/175> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeaugmented/175> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/typeaugmented/175> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/typeaugmented/175> ns4kge:hasKGEModel <kge-model/typedm> .
+<configuration/typeaugmented/175> ns4kge:result "0.606"^^xsd:decimal .
+
+<configuration/typeaugmented/176> rdf:type ns4kge:Configuration .
+<configuration/typeaugmented/176> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeaugmented/176> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/typeaugmented/176> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/typeaugmented/176> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/typeaugmented/176> ns4kge:result "0.55"^^xsd:decimal .
+
+<configuration/typeaugmented/177> rdf:type ns4kge:Configuration .
+<configuration/typeaugmented/177> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeaugmented/177> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/typeaugmented/177> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/typeaugmented/177> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/typeaugmented/177> ns4kge:result "0.54"^^xsd:decimal .
+
+<configuration/typeaugmented/178> rdf:type ns4kge:Configuration .
+<configuration/typeaugmented/178> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeaugmented/178> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/typeaugmented/178> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/typeaugmented/178> ns4kge:hasKGEModel <kge-model/take-transe> .
+<configuration/typeaugmented/178> ns4kge:result "0.488"^^xsd:decimal .
+
+<configuration/typeaugmented/179> rdf:type ns4kge:Configuration .
+<configuration/typeaugmented/179> ns4kge:hasTask    <task/link-prediction> .
+<configuration/typeaugmented/179> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/typeaugmented/179> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/typeaugmented/179> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/typeaugmented/179> ns4kge:result "0.37"^^xsd:decimal .

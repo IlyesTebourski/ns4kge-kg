@@ -1,0 +1,436 @@
+{
+  "Configurations": [
+    {
+      "Task": "Link Prediction",
+      "Dataset": "LUBM3U",
+      "Metric": "MRR",
+      "KGEModel": "TransE",
+      "NSMethod": "Random Negative Sampling",
+      "result": 0.119
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "LUBM3U",
+      "Metric": "Hits@1",
+      "KGEModel": "TransE",
+      "NSMethod": "Random Negative Sampling",
+      "result": 0.069
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "LUBM3U",
+      "Metric": "Hits@10",
+      "KGEModel": "TransE",
+      "NSMethod": "Random Negative Sampling",
+      "result": 0.214
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "LUBM3U",
+      "Metric": "MRR",
+      "KGEModel": "TransE",
+      "NSMethod": "Static Sampling",
+      "result": 0.125
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "LUBM3U",
+      "Metric": "Hits@1",
+      "KGEModel": "TransE",
+      "NSMethod": "Static Sampling",
+      "result": 0.082
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "LUBM3U",
+      "Metric": "Hits@10",
+      "KGEModel": "TransE",
+      "NSMethod": "Static Sampling",
+      "result": 0.213
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "LUBM3U",
+      "Metric": "MRR",
+      "KGEModel": "TransE",
+      "NSMethod": "ReasonKGE",
+      "result": 0.135
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "LUBM3U",
+      "Metric": "Hits@1",
+      "KGEModel": "TransE",
+      "NSMethod": "ReasonKGE",
+      "result": 0.079
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "LUBM3U",
+      "Metric": "Hits@10",
+      "KGEModel": "TransE",
+      "NSMethod": "ReasonKGE",
+      "result": 0.256
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Yago3-10",
+      "Metric": "MRR",
+      "KGEModel": "TransE",
+      "NSMethod": "Random Negative Sampling",
+      "result": 0.226
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Yago3-10",
+      "Metric": "Hits@1",
+      "KGEModel": "TransE",
+      "NSMethod": "Random Negative Sampling",
+      "result": 0.044
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Yago3-10",
+      "Metric": "Hits@10",
+      "KGEModel": "TransE",
+      "NSMethod": "Random Negative Sampling",
+      "result": 0.537
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Yago3-10",
+      "Metric": "MRR",
+      "KGEModel": "TransE",
+      "NSMethod": "Static Sampling",
+      "result": 0.351
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Yago3-10",
+      "Metric": "Hits@1",
+      "KGEModel": "TransE",
+      "NSMethod": "Static Sampling",
+      "result": 0.183
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Yago3-10",
+      "Metric": "Hits@10",
+      "KGEModel": "TransE",
+      "NSMethod": "Static Sampling",
+      "result": 0.621
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Yago3-10",
+      "Metric": "MRR",
+      "KGEModel": "TransE",
+      "NSMethod": "ReasonKGE",
+      "result": 0.367
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Yago3-10",
+      "Metric": "Hits@1",
+      "KGEModel": "TransE",
+      "NSMethod": "ReasonKGE",
+      "result": 0.197
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Yago3-10",
+      "Metric": "Hits@10",
+      "KGEModel": "TransE",
+      "NSMethod": "ReasonKGE",
+      "result": 0.629
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "DBPedia15K",
+      "Metric": "MRR",
+      "KGEModel": "TransE",
+      "NSMethod": "Random Negative Sampling",
+      "result": 0.109
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "DBPedia15K",
+      "Metric": "Hits@1",
+      "KGEModel": "TransE",
+      "NSMethod": "Random Negative Sampling",
+      "result": 0.061
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "DBPedia15K",
+      "Metric": "Hits@10",
+      "KGEModel": "TransE",
+      "NSMethod": "Random Negative Sampling",
+      "result": 0.206
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "DBPedia15K",
+      "Metric": "MRR",
+      "KGEModel": "TransE",
+      "NSMethod": "Static Sampling",
+      "result": 0.101
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "DBPedia15K",
+      "Metric": "Hits@1",
+      "KGEModel": "TransE",
+      "NSMethod": "Static Sampling",
+      "result": 0.073
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "DBPedia15K",
+      "Metric": "Hits@10",
+      "KGEModel": "TransE",
+      "NSMethod": "Static Sampling",
+      "result": 0.254
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "DBPedia15K",
+      "Metric": "MRR",
+      "KGEModel": "TransE",
+      "NSMethod": "ReasonKGE",
+      "result": 0.118
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "DBPedia15K",
+      "Metric": "Hits@1",
+      "KGEModel": "TransE",
+      "NSMethod": "ReasonKGE",
+      "result": 0.101
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "DBPedia15K",
+      "Metric": "Hits@10",
+      "KGEModel": "TransE",
+      "NSMethod": "ReasonKGE",
+      "result": 0.299
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "LUBM3U",
+      "Metric": "MRR",
+      "KGEModel": "ComplEx",
+      "NSMethod": "Random Negative Sampling",
+      "result": 0.159
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "LUBM3U",
+      "Metric": "Hits@1",
+      "KGEModel": "ComplEx",
+      "NSMethod": "Random Negative Sampling",
+      "result": 0.119
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "LUBM3U",
+      "Metric": "Hits@10",
+      "KGEModel": "ComplEx",
+      "NSMethod": "Random Negative Sampling",
+      "result": 0.242
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "LUBM3U",
+      "Metric": "MRR",
+      "KGEModel": "ComplEx",
+      "NSMethod": "Static Sampling",
+      "result": 0.181
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "LUBM3U",
+      "Metric": "Hits@1",
+      "KGEModel": "ComplEx",
+      "NSMethod": "Static Sampling",
+      "result": 0.136
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "LUBM3U",
+      "Metric": "Hits@10",
+      "KGEModel": "ComplEx",
+      "NSMethod": "Static Sampling",
+      "result": 0.276
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "LUBM3U",
+      "Metric": "MRR",
+      "KGEModel": "ComplEx",
+      "NSMethod": "ReasonKGE",
+      "result": 0.233
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "LUBM3U",
+      "Metric": "Hits@1",
+      "KGEModel": "ComplEx",
+      "NSMethod": "ReasonKGE",
+      "result": 0.195
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "LUBM3U",
+      "Metric": "Hits@10",
+      "KGEModel": "ComplEx",
+      "NSMethod": "ReasonKGE",
+      "result": 0.313
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Yago3-10",
+      "Metric": "MRR",
+      "KGEModel": "ComplEx",
+      "NSMethod": "Random Negative Sampling",
+      "result": 0.482
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Yago3-10",
+      "Metric": "Hits@1",
+      "KGEModel": "ComplEx",
+      "NSMethod": "Random Negative Sampling",
+      "result": 0.4
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Yago3-10",
+      "Metric": "Hits@10",
+      "KGEModel": "ComplEx",
+      "NSMethod": "Random Negative Sampling",
+      "result": 0.643
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Yago3-10",
+      "Metric": "MRR",
+      "KGEModel": "ComplEx",
+      "NSMethod": "Static Sampling",
+      "result": 0.515
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Yago3-10",
+      "Metric": "Hits@1",
+      "KGEModel": "ComplEx",
+      "NSMethod": "Static Sampling",
+      "result": 0.431
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Yago3-10",
+      "Metric": "Hits@10",
+      "KGEModel": "ComplEx",
+      "NSMethod": "Static Sampling",
+      "result": 0.665
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Yago3-10",
+      "Metric": "MRR",
+      "KGEModel": "ComplEx",
+      "NSMethod": "ReasonKGE",
+      "result": 0.53
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Yago3-10",
+      "Metric": "Hits@1",
+      "KGEModel": "ComplEx",
+      "NSMethod": "ReasonKGE",
+      "result": 0.453
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Yago3-10",
+      "Metric": "Hits@10",
+      "KGEModel": "ComplEx",
+      "NSMethod": "ReasonKGE",
+      "result": 0.668
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "DBPedia15K",
+      "Metric": "MRR",
+      "KGEModel": "ComplEx",
+      "NSMethod": "Random Negative Sampling",
+      "result": 0.099
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "DBPedia15K",
+      "Metric": "Hits@1",
+      "KGEModel": "ComplEx",
+      "NSMethod": "Random Negative Sampling",
+      "result": 0.061
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "DBPedia15K",
+      "Metric": "Hits@10",
+      "KGEModel": "ComplEx",
+      "NSMethod": "Random Negative Sampling",
+      "result": 0.174
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "DBPedia15K",
+      "Metric": "MRR",
+      "KGEModel": "ComplEx",
+      "NSMethod": "Static Sampling",
+      "result": 0.098
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "DBPedia15K",
+      "Metric": "Hits@1",
+      "KGEModel": "ComplEx",
+      "NSMethod": "Static Sampling",
+      "result": 0.107
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "DBPedia15K",
+      "Metric": "Hits@10",
+      "KGEModel": "ComplEx",
+      "NSMethod": "Static Sampling",
+      "result": 0.193
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "DBPedia15K",
+      "Metric": "MRR",
+      "KGEModel": "ComplEx",
+      "NSMethod": "ReasonKGE",
+      "result": 0.115
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "DBPedia15K",
+      "Metric": "Hits@1",
+      "KGEModel": "ComplEx",
+      "NSMethod": "ReasonKGE",
+      "result": 0.125
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "DBPedia15K",
+      "Metric": "Hits@10",
+      "KGEModel": "ComplEx",
+      "NSMethod": "ReasonKGE",
+      "result": 0.221
+    }
+  ]
+}

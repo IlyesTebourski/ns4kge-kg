@@ -1,0 +1,322 @@
+<article/batchns> rdf:type ns4kge:Article .
+<article/batchns> ns4kge:title "PyTorch-BigGraph: A Large-scale Graph Embedding System"^^xsd:string .
+<article/batchns> ns4kge:date "2019"^^xsd:gYear .
+<article/batchns> ns4kge:proposesNSMethod <ns-method/batched-negative-sampling> .
+<article/batchns> ns4kge:mentionsNSMethod <ns-method/uniform-negative-sampling> .
+<article/batchns> ns4kge:mentionsKGEModel <kge-model/pbg> .
+<article/batchns> ns4kge:mentionsKGEModel <kge-model/word2vec> .
+<article/batchns> ns4kge:mentionsKGEModel <kge-model/rescal> .
+<article/batchns> ns4kge:mentionsKGEModel <kge-model/mile-1-level> .
+<article/batchns> ns4kge:mentionsKGEModel <kge-model/pbg-complex> .
+<article/batchns> ns4kge:mentionsKGEModel <kge-model/pbg-transe> .
+<article/batchns> ns4kge:mentionsKGEModel <kge-model/starspace> .
+<article/batchns> ns4kge:mentionsKGEModel <kge-model/transe> .
+<article/batchns> ns4kge:mentionsKGEModel <kge-model/reciprocal-complex-n3> .
+<article/batchns> ns4kge:mentionsKGEModel <kge-model/distmult> .
+<article/batchns> ns4kge:mentionsKGEModel <kge-model/deepwalk> .
+<article/batchns> ns4kge:mentionsKGEModel <kge-model/complex> .
+<article/batchns> ns4kge:mentionsKGEModel <kge-model/mile-5-levels> .
+<article/batchns> ns4kge:mentionsKGEModel <kge-model/hole> .
+<article/batchns> ns4kge:mentionsKGEModel <kge-model/rgcn> .
+<article/batchns> ns4kge:hasExperimentation <experimentation/batchns> .
+
+<ns-method/batched-negative-sampling> rdf:type ns4kge:NSMethod .
+
+<ns-method/uniform-negative-sampling> rdf:type ns4kge:NSMethod .
+<category/static-ns> rdf:type ns4kge:Category .
+
+<ns-method/uniform-negative-sampling> ns4kge:hasCategory <category/static-ns> .
+<subcategory/random> rdf:type ns4kge:Subcategory .
+
+<ns-method/uniform-negative-sampling> ns4kge:hasSubcategory <subcategory/random> .
+
+<kge-model/pbg> rdf:type ns4kge:KGEModel .
+
+<kge-model/word2vec> rdf:type ns4kge:KGEModel .
+
+<kge-model/rescal> rdf:type ns4kge:KGEModel .
+
+<kge-model/mile-1-level> rdf:type ns4kge:KGEModel .
+
+<kge-model/pbg-complex> rdf:type ns4kge:KGEModel .
+
+<kge-model/pbg-transe> rdf:type ns4kge:KGEModel .
+
+<kge-model/starspace> rdf:type ns4kge:KGEModel .
+
+<kge-model/transe> rdf:type ns4kge:KGEModel .
+
+<kge-model/reciprocal-complex-n3> rdf:type ns4kge:KGEModel .
+
+<kge-model/distmult> rdf:type ns4kge:KGEModel .
+
+<kge-model/deepwalk> rdf:type ns4kge:KGEModel .
+
+<kge-model/complex> rdf:type ns4kge:KGEModel .
+
+<kge-model/mile-5-levels> rdf:type ns4kge:KGEModel .
+
+<kge-model/hole> rdf:type ns4kge:KGEModel .
+
+<kge-model/rgcn> rdf:type ns4kge:KGEModel .
+
+<dataset/livejournal> rdf:type ns4kge:Dataset .
+<task/link-prediction> rdf:type ns4kge:Task .
+<metric/mrr> rdf:type ns4kge:Metric .
+<metric/mr> rdf:type ns4kge:Metric .
+<metric/hits-10> rdf:type ns4kge:Metric .
+<dataset/fb15k> rdf:type ns4kge:Dataset .
+<loss-function/margin-based-ranking-loss> rdf:type ns4kge:LossFunction .
+<loss-function/softmax-loss> rdf:type ns4kge:LossFunction .
+<loss-function/logistic-loss> rdf:type ns4kge:LossFunction .
+<optimizer/adagrad> rdf:type ns4kge:Optimizer .
+<hardware/24-intel-xeon-cores-two-sockets-with-two-hyperthreads-per-core-48-virtual-cores-256-gb-ram> rdf:type ns4kge:Hardware .
+
+<experimentation/batchns> rdf:type ns4kge:Experimentation .
+<experimentation/batchns> ns4kge:hasTrainingProtocol <training-protocol/batchns> .
+<experimentation/batchns> ns4kge:hasConfiguration <configuration/batchns/1> .
+<experimentation/batchns> ns4kge:hasConfiguration <configuration/batchns/2> .
+<experimentation/batchns> ns4kge:hasConfiguration <configuration/batchns/3> .
+<experimentation/batchns> ns4kge:hasConfiguration <configuration/batchns/4> .
+<experimentation/batchns> ns4kge:hasConfiguration <configuration/batchns/5> .
+<experimentation/batchns> ns4kge:hasConfiguration <configuration/batchns/6> .
+<experimentation/batchns> ns4kge:hasConfiguration <configuration/batchns/7> .
+<experimentation/batchns> ns4kge:hasConfiguration <configuration/batchns/8> .
+<experimentation/batchns> ns4kge:hasConfiguration <configuration/batchns/9> .
+<experimentation/batchns> ns4kge:hasConfiguration <configuration/batchns/10> .
+<experimentation/batchns> ns4kge:hasConfiguration <configuration/batchns/11> .
+<experimentation/batchns> ns4kge:hasConfiguration <configuration/batchns/12> .
+<experimentation/batchns> ns4kge:hasConfiguration <configuration/batchns/13> .
+<experimentation/batchns> ns4kge:hasConfiguration <configuration/batchns/14> .
+<experimentation/batchns> ns4kge:hasConfiguration <configuration/batchns/15> .
+<experimentation/batchns> ns4kge:hasConfiguration <configuration/batchns/16> .
+<experimentation/batchns> ns4kge:hasConfiguration <configuration/batchns/17> .
+<experimentation/batchns> ns4kge:hasConfiguration <configuration/batchns/18> .
+<experimentation/batchns> ns4kge:hasConfiguration <configuration/batchns/19> .
+<experimentation/batchns> ns4kge:hasConfiguration <configuration/batchns/20> .
+<experimentation/batchns> ns4kge:hasConfiguration <configuration/batchns/21> .
+<experimentation/batchns> ns4kge:hasConfiguration <configuration/batchns/22> .
+<experimentation/batchns> ns4kge:hasConfiguration <configuration/batchns/23> .
+<experimentation/batchns> ns4kge:hasConfiguration <configuration/batchns/24> .
+<experimentation/batchns> ns4kge:hasConfiguration <configuration/batchns/25> .
+<experimentation/batchns> ns4kge:hasConfiguration <configuration/batchns/26> .
+<experimentation/batchns> ns4kge:hasConfiguration <configuration/batchns/27> .
+<experimentation/batchns> ns4kge:hasConfiguration <configuration/batchns/28> .
+<experimentation/batchns> ns4kge:hasConfiguration <configuration/batchns/29> .
+
+<training-protocol/batchns> rdf:type ns4kge:TrainingProtocol .
+<training-protocol/batchns> ns4kge:hasOptimizer    <optimizer/adagrad> .
+<training-protocol/batchns> ns4kge:hasLossFunction <loss-function/margin-based-ranking-loss> .
+<training-protocol/batchns> ns4kge:hasLossFunction <loss-function/softmax-loss> .
+<training-protocol/batchns> ns4kge:hasLossFunction <loss-function/logistic-loss> .
+<training-protocol/batchns> ns4kge:hasHardware     <hardware/24-intel-xeon-cores-two-sockets-with-two-hyperthreads-per-core-48-virtual-cores-256-gb-ram> .
+
+<configuration/batchns/1> rdf:type ns4kge:Configuration .
+<configuration/batchns/1> ns4kge:hasTask    <task/link-prediction> .
+<configuration/batchns/1> ns4kge:hasDataset <dataset/livejournal> .
+<configuration/batchns/1> ns4kge:hasMetric  <metric/mrr> .
+<configuration/batchns/1> ns4kge:hasKGEModel <kge-model/deepwalk> .
+<configuration/batchns/1> ns4kge:result "0.691"^^xsd:decimal .
+
+<configuration/batchns/2> rdf:type ns4kge:Configuration .
+<configuration/batchns/2> ns4kge:hasTask    <task/link-prediction> .
+<configuration/batchns/2> ns4kge:hasDataset <dataset/livejournal> .
+<configuration/batchns/2> ns4kge:hasMetric  <metric/mr> .
+<configuration/batchns/2> ns4kge:hasKGEModel <kge-model/deepwalk> .
+<configuration/batchns/2> ns4kge:result "234.6"^^xsd:decimal .
+
+<configuration/batchns/3> rdf:type ns4kge:Configuration .
+<configuration/batchns/3> ns4kge:hasTask    <task/link-prediction> .
+<configuration/batchns/3> ns4kge:hasDataset <dataset/livejournal> .
+<configuration/batchns/3> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/batchns/3> ns4kge:hasKGEModel <kge-model/deepwalk> .
+<configuration/batchns/3> ns4kge:result "0.842"^^xsd:decimal .
+
+<configuration/batchns/4> rdf:type ns4kge:Configuration .
+<configuration/batchns/4> ns4kge:hasTask    <task/link-prediction> .
+<configuration/batchns/4> ns4kge:hasDataset <dataset/livejournal> .
+<configuration/batchns/4> ns4kge:hasMetric  <metric/mrr> .
+<configuration/batchns/4> ns4kge:hasKGEModel <kge-model/mile-1-level> .
+<configuration/batchns/4> ns4kge:result "0.629"^^xsd:decimal .
+
+<configuration/batchns/5> rdf:type ns4kge:Configuration .
+<configuration/batchns/5> ns4kge:hasTask    <task/link-prediction> .
+<configuration/batchns/5> ns4kge:hasDataset <dataset/livejournal> .
+<configuration/batchns/5> ns4kge:hasMetric  <metric/mr> .
+<configuration/batchns/5> ns4kge:hasKGEModel <kge-model/mile-1-level> .
+<configuration/batchns/5> ns4kge:result "174.4"^^xsd:decimal .
+
+<configuration/batchns/6> rdf:type ns4kge:Configuration .
+<configuration/batchns/6> ns4kge:hasTask    <task/link-prediction> .
+<configuration/batchns/6> ns4kge:hasDataset <dataset/livejournal> .
+<configuration/batchns/6> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/batchns/6> ns4kge:hasKGEModel <kge-model/mile-1-level> .
+<configuration/batchns/6> ns4kge:result "0.785"^^xsd:decimal .
+
+<configuration/batchns/7> rdf:type ns4kge:Configuration .
+<configuration/batchns/7> ns4kge:hasTask    <task/link-prediction> .
+<configuration/batchns/7> ns4kge:hasDataset <dataset/livejournal> .
+<configuration/batchns/7> ns4kge:hasMetric  <metric/mrr> .
+<configuration/batchns/7> ns4kge:hasKGEModel <kge-model/mile-5-levels> .
+<configuration/batchns/7> ns4kge:result "0.505"^^xsd:decimal .
+
+<configuration/batchns/8> rdf:type ns4kge:Configuration .
+<configuration/batchns/8> ns4kge:hasTask    <task/link-prediction> .
+<configuration/batchns/8> ns4kge:hasDataset <dataset/livejournal> .
+<configuration/batchns/8> ns4kge:hasMetric  <metric/mr> .
+<configuration/batchns/8> ns4kge:hasKGEModel <kge-model/mile-5-levels> .
+<configuration/batchns/8> ns4kge:result "462.8"^^xsd:decimal .
+
+<configuration/batchns/9> rdf:type ns4kge:Configuration .
+<configuration/batchns/9> ns4kge:hasTask    <task/link-prediction> .
+<configuration/batchns/9> ns4kge:hasDataset <dataset/livejournal> .
+<configuration/batchns/9> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/batchns/9> ns4kge:hasKGEModel <kge-model/mile-5-levels> .
+<configuration/batchns/9> ns4kge:result "0.632"^^xsd:decimal .
+
+<configuration/batchns/10> rdf:type ns4kge:Configuration .
+<configuration/batchns/10> ns4kge:hasTask    <task/link-prediction> .
+<configuration/batchns/10> ns4kge:hasDataset <dataset/livejournal> .
+<configuration/batchns/10> ns4kge:hasMetric  <metric/mrr> .
+<configuration/batchns/10> ns4kge:hasKGEModel <kge-model/pbg> .
+<configuration/batchns/10> ns4kge:hasNSMethod <ns-method/batched-negative-sampling> .
+<configuration/batchns/10> ns4kge:result "0.749"^^xsd:decimal .
+
+<configuration/batchns/11> rdf:type ns4kge:Configuration .
+<configuration/batchns/11> ns4kge:hasTask    <task/link-prediction> .
+<configuration/batchns/11> ns4kge:hasDataset <dataset/livejournal> .
+<configuration/batchns/11> ns4kge:hasMetric  <metric/mr> .
+<configuration/batchns/11> ns4kge:hasKGEModel <kge-model/pbg> .
+<configuration/batchns/11> ns4kge:hasNSMethod <ns-method/batched-negative-sampling> .
+<configuration/batchns/11> ns4kge:result "245.9"^^xsd:decimal .
+
+<configuration/batchns/12> rdf:type ns4kge:Configuration .
+<configuration/batchns/12> ns4kge:hasTask    <task/link-prediction> .
+<configuration/batchns/12> ns4kge:hasDataset <dataset/livejournal> .
+<configuration/batchns/12> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/batchns/12> ns4kge:hasKGEModel <kge-model/pbg> .
+<configuration/batchns/12> ns4kge:hasNSMethod <ns-method/batched-negative-sampling> .
+<configuration/batchns/12> ns4kge:result "0.857"^^xsd:decimal .
+
+<configuration/batchns/13> rdf:type ns4kge:Configuration .
+<configuration/batchns/13> ns4kge:hasTask    <task/link-prediction> .
+<configuration/batchns/13> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/batchns/13> ns4kge:hasMetric  <metric/mrr> .
+<configuration/batchns/13> ns4kge:hasKGEModel <kge-model/rescal> .
+<configuration/batchns/13> ns4kge:result "0.354"^^xsd:decimal .
+
+<configuration/batchns/14> rdf:type ns4kge:Configuration .
+<configuration/batchns/14> ns4kge:hasTask    <task/link-prediction> .
+<configuration/batchns/14> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/batchns/14> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/batchns/14> ns4kge:hasKGEModel <kge-model/rescal> .
+<configuration/batchns/14> ns4kge:result "0.587"^^xsd:decimal .
+
+<configuration/batchns/15> rdf:type ns4kge:Configuration .
+<configuration/batchns/15> ns4kge:hasTask    <task/link-prediction> .
+<configuration/batchns/15> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/batchns/15> ns4kge:hasMetric  <metric/mrr> .
+<configuration/batchns/15> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/batchns/15> ns4kge:result "0.463"^^xsd:decimal .
+
+<configuration/batchns/16> rdf:type ns4kge:Configuration .
+<configuration/batchns/16> ns4kge:hasTask    <task/link-prediction> .
+<configuration/batchns/16> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/batchns/16> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/batchns/16> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/batchns/16> ns4kge:result "0.749"^^xsd:decimal .
+
+<configuration/batchns/17> rdf:type ns4kge:Configuration .
+<configuration/batchns/17> ns4kge:hasTask    <task/link-prediction> .
+<configuration/batchns/17> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/batchns/17> ns4kge:hasMetric  <metric/mrr> .
+<configuration/batchns/17> ns4kge:hasKGEModel <kge-model/hole> .
+<configuration/batchns/17> ns4kge:result "0.524"^^xsd:decimal .
+
+<configuration/batchns/18> rdf:type ns4kge:Configuration .
+<configuration/batchns/18> ns4kge:hasTask    <task/link-prediction> .
+<configuration/batchns/18> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/batchns/18> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/batchns/18> ns4kge:hasKGEModel <kge-model/hole> .
+<configuration/batchns/18> ns4kge:result "0.739"^^xsd:decimal .
+
+<configuration/batchns/19> rdf:type ns4kge:Configuration .
+<configuration/batchns/19> ns4kge:hasTask    <task/link-prediction> .
+<configuration/batchns/19> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/batchns/19> ns4kge:hasMetric  <metric/mrr> .
+<configuration/batchns/19> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/batchns/19> ns4kge:result "0.692"^^xsd:decimal .
+
+<configuration/batchns/20> rdf:type ns4kge:Configuration .
+<configuration/batchns/20> ns4kge:hasTask    <task/link-prediction> .
+<configuration/batchns/20> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/batchns/20> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/batchns/20> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/batchns/20> ns4kge:result "0.84"^^xsd:decimal .
+
+<configuration/batchns/21> rdf:type ns4kge:Configuration .
+<configuration/batchns/21> ns4kge:hasTask    <task/link-prediction> .
+<configuration/batchns/21> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/batchns/21> ns4kge:hasMetric  <metric/mrr> .
+<configuration/batchns/21> ns4kge:hasKGEModel <kge-model/rgcn> .
+<configuration/batchns/21> ns4kge:result "0.696"^^xsd:decimal .
+
+<configuration/batchns/22> rdf:type ns4kge:Configuration .
+<configuration/batchns/22> ns4kge:hasTask    <task/link-prediction> .
+<configuration/batchns/22> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/batchns/22> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/batchns/22> ns4kge:hasKGEModel <kge-model/rgcn> .
+<configuration/batchns/22> ns4kge:result "0.842"^^xsd:decimal .
+
+<configuration/batchns/23> rdf:type ns4kge:Configuration .
+<configuration/batchns/23> ns4kge:hasTask    <task/link-prediction> .
+<configuration/batchns/23> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/batchns/23> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/batchns/23> ns4kge:hasKGEModel <kge-model/starspace> .
+<configuration/batchns/23> ns4kge:result "0.838"^^xsd:decimal .
+
+<configuration/batchns/24> rdf:type ns4kge:Configuration .
+<configuration/batchns/24> ns4kge:hasTask    <task/link-prediction> .
+<configuration/batchns/24> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/batchns/24> ns4kge:hasMetric  <metric/mrr> .
+<configuration/batchns/24> ns4kge:hasKGEModel <kge-model/reciprocal-complex-n3> .
+<configuration/batchns/24> ns4kge:result "0.86"^^xsd:decimal .
+
+<configuration/batchns/25> rdf:type ns4kge:Configuration .
+<configuration/batchns/25> ns4kge:hasTask    <task/link-prediction> .
+<configuration/batchns/25> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/batchns/25> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/batchns/25> ns4kge:hasKGEModel <kge-model/reciprocal-complex-n3> .
+<configuration/batchns/25> ns4kge:result "0.91"^^xsd:decimal .
+
+<configuration/batchns/26> rdf:type ns4kge:Configuration .
+<configuration/batchns/26> ns4kge:hasTask    <task/link-prediction> .
+<configuration/batchns/26> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/batchns/26> ns4kge:hasMetric  <metric/mrr> .
+<configuration/batchns/26> ns4kge:hasKGEModel <kge-model/pbg-transe> .
+<configuration/batchns/26> ns4kge:hasNSMethod <ns-method/batched-negative-sampling> .
+<configuration/batchns/26> ns4kge:result "0.594"^^xsd:decimal .
+
+<configuration/batchns/27> rdf:type ns4kge:Configuration .
+<configuration/batchns/27> ns4kge:hasTask    <task/link-prediction> .
+<configuration/batchns/27> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/batchns/27> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/batchns/27> ns4kge:hasKGEModel <kge-model/pbg-transe> .
+<configuration/batchns/27> ns4kge:hasNSMethod <ns-method/batched-negative-sampling> .
+<configuration/batchns/27> ns4kge:result "0.785"^^xsd:decimal .
+
+<configuration/batchns/28> rdf:type ns4kge:Configuration .
+<configuration/batchns/28> ns4kge:hasTask    <task/link-prediction> .
+<configuration/batchns/28> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/batchns/28> ns4kge:hasMetric  <metric/mrr> .
+<configuration/batchns/28> ns4kge:hasKGEModel <kge-model/pbg-complex> .
+<configuration/batchns/28> ns4kge:hasNSMethod <ns-method/batched-negative-sampling> .
+<configuration/batchns/28> ns4kge:result "0.79"^^xsd:decimal .
+
+<configuration/batchns/29> rdf:type ns4kge:Configuration .
+<configuration/batchns/29> ns4kge:hasTask    <task/link-prediction> .
+<configuration/batchns/29> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/batchns/29> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/batchns/29> ns4kge:hasKGEModel <kge-model/pbg-complex> .
+<configuration/batchns/29> ns4kge:hasNSMethod <ns-method/batched-negative-sampling> .
+<configuration/batchns/29> ns4kge:result "0.872"^^xsd:decimal .

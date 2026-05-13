@@ -1,0 +1,38 @@
+{
+  "Article": {
+    "title": "Good negative sampling for triple classification",
+    "date": ""
+  },
+  "proposedNSMethod": "Good Negative Sampling",
+  "proposedKGEModel": "",
+  "mentionedNSMethods": [
+    "Uniform Negative Sampling",
+    "Bernoulli Negative Sampling",
+    "Pseudo Typed Negative Sampling",
+    "Typed Negative Sampling",
+    "Iterative Negative Sampling"
+  ],
+  "mentionedKGEModels": [
+    "KG-BERT",
+    "TransE",
+    "Rescal",
+    "ComplEx",
+    "DistMult",
+    "TransOWL",
+    "ReasonKGE",
+    "BERT"
+  ],
+  "Experimentation": {
+    "Hardware": [],
+    "TrainingProtocol": {
+      "LossFunction": [
+        "cross-entropy loss"
+      ],
+      "Optimizer": [
+        "Adam"
+      ],
+      "learningRate": 5e-05,
+      "nsRatio": 1.0
+    }
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "Article": {
+    "title": "NSCaching: Simple and Efficient Negative Sampling for Knowledge Graph Embedding",
+    "date": "2019"
+  },
+  "proposedNSMethod": "NSCaching",
+  "proposedKGEModel": "",
+  "mentionedNSMethods": [
+    "Uniform Negative Sampling",
+    "Bernoulli Negative Sampling",
+    "IGAN",
+    "KBGAN",
+    "Self-paced GAN"
+  ],
+  "mentionedKGEModels": [
+    "TransE",
+    "TransH",
+    "TransR",
+    "TransD",
+    "TranSparse",
+    "TransM",
+    "ManifoldE",
+    "RESCAL",
+    "DistMult",
+    "HolE",
+    "ComplEx",
+    "ANALOGY"
+  ],
+  "Experimentation": {
+    "Hardware": [
+      "TITAN Xp GPU"
+    ],
+    "TrainingProtocol": {
+      "LossFunction": [
+        "margin-based ranking loss",
+        "logistic loss"
+      ],
+      "Optimizer": [
+        "Adam"
+      ],
+      "learningRate": null,
+      "nsRatio": null
+    }
+  }
+}

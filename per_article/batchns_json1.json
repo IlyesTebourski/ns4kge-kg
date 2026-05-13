@@ -1,0 +1,36 @@
+{
+  "Article": {
+    "title": "PyTorch-BigGraph: A Large-scale Graph Embedding System",
+    "date": "2019"
+  },
+  "proposedNSMethod": "Batched Negative Sampling",
+  "proposedKGEModel": "",
+  "mentionedNSMethods": [
+    "Uniform Negative Sampling"
+  ],
+  "mentionedKGEModels": [
+    "RESCAL",
+    "DistMult",
+    "TransE",
+    "ComplEx",
+    "DeepWalk",
+    "word2vec"
+  ],
+  "Experimentation": {
+    "Hardware": [
+      "24 Intel Xeon cores (two sockets) with two hyperthreads per core (48 virtual cores), 256 GB RAM"
+    ],
+    "TrainingProtocol": {
+      "LossFunction": [
+        "margin-based ranking loss",
+        "softmax loss",
+        "logistic loss"
+      ],
+      "Optimizer": [
+        "AdaGrad"
+      ],
+      "learningRate": null,
+      "nsRatio": null
+    }
+  }
+}

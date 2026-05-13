@@ -1,0 +1,35 @@
+{
+  "Article": {
+    "title": "Simple negative sampling for link prediction in knowledge graphs",
+    "date": "2021"
+  },
+  "proposedNSMethod": "Simple Negative Sampling",
+  "proposedKGEModel": "",
+  "mentionedNSMethods": [
+    "Uniform Random Negative Sampling",
+    "KBGAN",
+    "IGAN",
+    "KSGAN",
+    "NSCaching",
+    "Structure Aware Negative Sampling"
+  ],
+  "mentionedKGEModels": [
+    "TransH",
+    "DistMult"
+  ],
+  "Experimentation": {
+    "Hardware": [
+      "NVIDIA A100-PCIE-40GB"
+    ],
+    "TrainingProtocol": {
+      "LossFunction": [
+        "margin-based ranking loss"
+      ],
+      "Optimizer": [
+        "Adam"
+      ],
+      "learningRate": 0.0001,
+      "nsRatio": null
+    }
+  }
+}

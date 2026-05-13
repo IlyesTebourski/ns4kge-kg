@@ -1,0 +1,40 @@
+{
+  "Article": {
+    "title": "A Novel Negative Sampling Based on Frequency of Relational Association Entities for Knowledge Graph Embedding",
+    "date": "2021"
+  },
+  "proposedNSMethod": "Negative Sampling Based on Frequency of Relational Association Entities",
+  "proposedKGEModel": "",
+  "mentionedNSMethods": [
+    "Bernoulli Negative Sampling"
+  ],
+  "mentionedKGEModels": [
+    "TransE",
+    "TransH",
+    "TransR",
+    "TransD",
+    "TransA",
+    "TransG",
+    "TranSparse",
+    "DistMult",
+    "ComplEx",
+    "ANALOGY",
+    "SE",
+    "SME",
+    "NTN",
+    "SSE"
+  ],
+  "Experimentation": {
+    "Hardware": [],
+    "TrainingProtocol": {
+      "LossFunction": [
+        "margin-based ranking loss"
+      ],
+      "Optimizer": [
+        "SGD"
+      ],
+      "learningRate": null,
+      "nsRatio": null
+    }
+  }
+}

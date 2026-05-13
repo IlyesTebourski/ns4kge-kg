@@ -1,0 +1,34 @@
+{
+  "Article": {
+    "title": "Relation-aware Graph Attention Model With Adaptive Self-adversarial Training",
+    "date": "2021"
+  },
+  "proposedNSMethod": "Adaptive Self-Adversarial Negative Sampling",
+  "proposedKGEModel": "RelGNN",
+  "mentionedNSMethods": [
+    "Random Negative Sampling",
+    "Self-adversarial Negative Sampling",
+    "NSCaching",
+    "GAN-based Negative Sampling"
+  ],
+  "mentionedKGEModels": [
+    "DistMult",
+    "ComplEx",
+    "ConvE",
+    "R-GCN",
+    "HAN",
+    "GATNE",
+    "metapath2vec"
+  ],
+  "Experimentation": {
+    "Hardware": [],
+    "TrainingProtocol": {
+      "LossFunction": [
+        "cross-entropy"
+      ],
+      "Optimizer": [],
+      "learningRate": null,
+      "nsRatio": null
+    }
+  }
+}

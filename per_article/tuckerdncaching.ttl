@@ -1,0 +1,2113 @@
+<article/tuckerdncaching> rdf:type ns4kge:Article .
+<article/tuckerdncaching> ns4kge:title "TuckerDNCaching: high-quality negative sampling with tucker decomposition"^^xsd:string .
+<article/tuckerdncaching> ns4kge:date "2023"^^xsd:gYear .
+<article/tuckerdncaching> ns4kge:proposesNSMethod <ns-method/tuckerdncaching> .
+<article/tuckerdncaching> ns4kge:mentionsNSMethod <ns-method/entity-similarity-based-negative-sampling> .
+<article/tuckerdncaching> ns4kge:mentionsNSMethod <ns-method/ksgan> .
+<article/tuckerdncaching> ns4kge:mentionsNSMethod <ns-method/bernoulli-negative-sampling> .
+<article/tuckerdncaching> ns4kge:mentionsNSMethod <ns-method/self-adversarial-negative-sampling> .
+<article/tuckerdncaching> ns4kge:mentionsNSMethod <ns-method/uniform-negative-sampling> .
+<article/tuckerdncaching> ns4kge:mentionsNSMethod <ns-method/kbgan> .
+<article/tuckerdncaching> ns4kge:mentionsNSMethod <ns-method/sans> .
+<article/tuckerdncaching> ns4kge:mentionsNSMethod <ns-method/mdncaching> .
+<article/tuckerdncaching> ns4kge:mentionsNSMethod <ns-method/extremeselectcaching> .
+<article/tuckerdncaching> ns4kge:mentionsNSMethod <ns-method/igan> .
+<article/tuckerdncaching> ns4kge:mentionsNSMethod <ns-method/nscaching> .
+<article/tuckerdncaching> ns4kge:mentionsKGEModel <kge-model/tucker> .
+<article/tuckerdncaching> ns4kge:mentionsKGEModel <kge-model/rotate> .
+<article/tuckerdncaching> ns4kge:mentionsKGEModel <kge-model/complex> .
+<article/tuckerdncaching> ns4kge:mentionsKGEModel <kge-model/distmult> .
+<article/tuckerdncaching> ns4kge:mentionsKGEModel <kge-model/transd> .
+<article/tuckerdncaching> ns4kge:mentionsKGEModel <kge-model/toruse> .
+<article/tuckerdncaching> ns4kge:mentionsKGEModel <kge-model/transe> .
+<article/tuckerdncaching> ns4kge:mentionsKGEModel <kge-model/rescal> .
+<article/tuckerdncaching> ns4kge:hasExperimentation <experimentation/tuckerdncaching> .
+
+<category/self-adversarial-ns> rdf:type ns4kge:Category .
+
+<subcategory/model-guided> rdf:type ns4kge:Subcategory .
+
+<ns-method/tuckerdncaching> rdf:type ns4kge:NSMethod .
+<ns-method/tuckerdncaching> ns4kge:hasCategory <category/self-adversarial-ns> .
+<ns-method/tuckerdncaching> ns4kge:hasSubcategory <subcategory/model-guided> .
+
+<ns-method/entity-similarity-based-negative-sampling> rdf:type ns4kge:NSMethod .
+
+<ns-method/ksgan> rdf:type ns4kge:NSMethod .
+<category/adversarial-ns> rdf:type ns4kge:Category .
+
+<ns-method/ksgan> ns4kge:hasCategory <category/adversarial-ns> .
+<subcategory/knowledge-constrained> rdf:type ns4kge:Subcategory .
+
+<ns-method/ksgan> ns4kge:hasSubcategory <subcategory/knowledge-constrained> .
+
+<ns-method/bernoulli-negative-sampling> rdf:type ns4kge:NSMethod .
+<category/static-ns> rdf:type ns4kge:Category .
+
+<ns-method/bernoulli-negative-sampling> ns4kge:hasCategory <category/static-ns> .
+<subcategory/probabilistic> rdf:type ns4kge:Subcategory .
+
+<ns-method/bernoulli-negative-sampling> ns4kge:hasSubcategory <subcategory/probabilistic> .
+
+<ns-method/self-adversarial-negative-sampling> rdf:type ns4kge:NSMethod .
+<ns-method/self-adversarial-negative-sampling> ns4kge:hasCategory <category/self-adversarial-ns> .
+<subcategory/direct> rdf:type ns4kge:Subcategory .
+
+<ns-method/self-adversarial-negative-sampling> ns4kge:hasSubcategory <subcategory/direct> .
+
+<ns-method/uniform-negative-sampling> rdf:type ns4kge:NSMethod .
+<ns-method/uniform-negative-sampling> ns4kge:hasCategory <category/static-ns> .
+<subcategory/random> rdf:type ns4kge:Subcategory .
+
+<ns-method/uniform-negative-sampling> ns4kge:hasSubcategory <subcategory/random> .
+
+<ns-method/kbgan> rdf:type ns4kge:NSMethod .
+<ns-method/kbgan> ns4kge:hasCategory <category/adversarial-ns> .
+<subcategory/standard> rdf:type ns4kge:Subcategory .
+
+<ns-method/kbgan> ns4kge:hasSubcategory <subcategory/standard> .
+
+<ns-method/sans> rdf:type ns4kge:NSMethod .
+<ns-method/sans> ns4kge:hasCategory <category/static-ns> .
+<ns-method/sans> ns4kge:hasSubcategory <subcategory/knowledge-constrained> .
+
+<ns-method/mdncaching> rdf:type ns4kge:NSMethod .
+<ns-method/mdncaching> ns4kge:hasCategory <category/self-adversarial-ns> .
+<ns-method/mdncaching> ns4kge:hasSubcategory <subcategory/model-guided> .
+
+<ns-method/extremeselectcaching> rdf:type ns4kge:NSMethod .
+
+<ns-method/igan> rdf:type ns4kge:NSMethod .
+<ns-method/igan> ns4kge:hasCategory <category/adversarial-ns> .
+<ns-method/igan> ns4kge:hasSubcategory <subcategory/standard> .
+
+<ns-method/nscaching> rdf:type ns4kge:NSMethod .
+<ns-method/nscaching> ns4kge:hasCategory <category/self-adversarial-ns> .
+<ns-method/nscaching> ns4kge:hasSubcategory <subcategory/direct> .
+
+<kge-model/tucker> rdf:type ns4kge:KGEModel .
+
+<kge-model/rotate> rdf:type ns4kge:KGEModel .
+
+<kge-model/complex> rdf:type ns4kge:KGEModel .
+
+<kge-model/distmult> rdf:type ns4kge:KGEModel .
+
+<kge-model/transd> rdf:type ns4kge:KGEModel .
+
+<kge-model/toruse> rdf:type ns4kge:KGEModel .
+
+<kge-model/transe> rdf:type ns4kge:KGEModel .
+
+<kge-model/rescal> rdf:type ns4kge:KGEModel .
+
+<dataset/wn18rr> rdf:type ns4kge:Dataset .
+<task/link-prediction> rdf:type ns4kge:Task .
+<metric/mrr> rdf:type ns4kge:Metric .
+<metric/hits-1> rdf:type ns4kge:Metric .
+<metric/hits-3> rdf:type ns4kge:Metric .
+<metric/hits-10> rdf:type ns4kge:Metric .
+<dataset/fb15k-237> rdf:type ns4kge:Dataset .
+<dataset/wn18> rdf:type ns4kge:Dataset .
+<metric/mr> rdf:type ns4kge:Metric .
+<dataset/fb15k> rdf:type ns4kge:Dataset .
+<loss-function/marginal-loss> rdf:type ns4kge:LossFunction .
+<optimizer/adam> rdf:type ns4kge:Optimizer .
+<hardware/nvidia-rtx-a6000> rdf:type ns4kge:Hardware .
+
+<experimentation/tuckerdncaching> rdf:type ns4kge:Experimentation .
+<experimentation/tuckerdncaching> ns4kge:hasTrainingProtocol <training-protocol/tuckerdncaching> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/1> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/2> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/3> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/4> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/5> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/6> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/7> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/8> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/9> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/10> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/11> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/12> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/13> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/14> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/15> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/16> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/17> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/18> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/19> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/20> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/21> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/22> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/23> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/24> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/25> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/26> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/27> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/28> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/29> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/30> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/31> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/32> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/33> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/34> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/35> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/36> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/37> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/38> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/39> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/40> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/41> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/42> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/43> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/44> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/45> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/46> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/47> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/48> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/49> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/50> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/51> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/52> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/53> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/54> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/55> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/56> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/57> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/58> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/59> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/60> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/61> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/62> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/63> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/64> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/65> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/66> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/67> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/68> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/69> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/70> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/71> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/72> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/73> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/74> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/75> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/76> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/77> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/78> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/79> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/80> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/81> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/82> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/83> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/84> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/85> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/86> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/87> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/88> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/89> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/90> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/91> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/92> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/93> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/94> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/95> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/96> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/97> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/98> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/99> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/100> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/101> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/102> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/103> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/104> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/105> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/106> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/107> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/108> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/109> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/110> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/111> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/112> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/113> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/114> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/115> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/116> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/117> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/118> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/119> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/120> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/121> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/122> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/123> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/124> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/125> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/126> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/127> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/128> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/129> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/130> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/131> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/132> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/133> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/134> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/135> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/136> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/137> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/138> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/139> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/140> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/141> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/142> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/143> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/144> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/145> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/146> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/147> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/148> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/149> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/150> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/151> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/152> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/153> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/154> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/155> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/156> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/157> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/158> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/159> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/160> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/161> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/162> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/163> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/164> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/165> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/166> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/167> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/168> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/169> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/170> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/171> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/172> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/173> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/174> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/175> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/176> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/177> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/178> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/179> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/180> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/181> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/182> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/183> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/184> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/185> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/186> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/187> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/188> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/189> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/190> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/191> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/192> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/193> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/194> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/195> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/196> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/197> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/198> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/199> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/200> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/201> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/202> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/203> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/204> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/205> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/206> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/207> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/208> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/209> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/210> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/211> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/212> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/213> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/214> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/215> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/216> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/217> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/218> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/219> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/220> .
+<experimentation/tuckerdncaching> ns4kge:hasConfiguration <configuration/tuckerdncaching/221> .
+
+<training-protocol/tuckerdncaching> rdf:type ns4kge:TrainingProtocol .
+<training-protocol/tuckerdncaching> ns4kge:hasOptimizer    <optimizer/adam> .
+<training-protocol/tuckerdncaching> ns4kge:hasLossFunction <loss-function/marginal-loss> .
+<training-protocol/tuckerdncaching> ns4kge:hasHardware     <hardware/nvidia-rtx-a6000> .
+
+<configuration/tuckerdncaching/1> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/1> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/1> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/tuckerdncaching/1> ns4kge:hasMetric  <metric/mrr> .
+<configuration/tuckerdncaching/1> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/tuckerdncaching/1> ns4kge:hasNSMethod <ns-method/mdncaching> .
+<configuration/tuckerdncaching/1> ns4kge:result "0.239"^^xsd:decimal .
+
+<configuration/tuckerdncaching/2> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/2> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/2> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/tuckerdncaching/2> ns4kge:hasMetric  <metric/mrr> .
+<configuration/tuckerdncaching/2> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/tuckerdncaching/2> ns4kge:hasNSMethod <ns-method/tuckerdncaching> .
+<configuration/tuckerdncaching/2> ns4kge:result "0.2563"^^xsd:decimal .
+
+<configuration/tuckerdncaching/3> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/3> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/3> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/tuckerdncaching/3> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/tuckerdncaching/3> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/tuckerdncaching/3> ns4kge:hasNSMethod <ns-method/mdncaching> .
+<configuration/tuckerdncaching/3> ns4kge:result "0.044"^^xsd:decimal .
+
+<configuration/tuckerdncaching/4> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/4> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/4> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/tuckerdncaching/4> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/tuckerdncaching/4> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/tuckerdncaching/4> ns4kge:hasNSMethod <ns-method/tuckerdncaching> .
+<configuration/tuckerdncaching/4> ns4kge:result "0.0571"^^xsd:decimal .
+
+<configuration/tuckerdncaching/5> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/5> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/5> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/tuckerdncaching/5> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/tuckerdncaching/5> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/tuckerdncaching/5> ns4kge:hasNSMethod <ns-method/mdncaching> .
+<configuration/tuckerdncaching/5> ns4kge:result "0.401"^^xsd:decimal .
+
+<configuration/tuckerdncaching/6> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/6> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/6> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/tuckerdncaching/6> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/tuckerdncaching/6> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/tuckerdncaching/6> ns4kge:hasNSMethod <ns-method/tuckerdncaching> .
+<configuration/tuckerdncaching/6> ns4kge:result "0.4314"^^xsd:decimal .
+
+<configuration/tuckerdncaching/7> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/7> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/7> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/tuckerdncaching/7> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/tuckerdncaching/7> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/tuckerdncaching/7> ns4kge:hasNSMethod <ns-method/mdncaching> .
+<configuration/tuckerdncaching/7> ns4kge:result "0.532"^^xsd:decimal .
+
+<configuration/tuckerdncaching/8> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/8> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/8> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/tuckerdncaching/8> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/tuckerdncaching/8> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/tuckerdncaching/8> ns4kge:hasNSMethod <ns-method/tuckerdncaching> .
+<configuration/tuckerdncaching/8> ns4kge:result "0.5383"^^xsd:decimal .
+
+<configuration/tuckerdncaching/9> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/9> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/9> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/tuckerdncaching/9> ns4kge:hasMetric  <metric/mrr> .
+<configuration/tuckerdncaching/9> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/tuckerdncaching/9> ns4kge:hasNSMethod <ns-method/mdncaching> .
+<configuration/tuckerdncaching/9> ns4kge:result "0.4575"^^xsd:decimal .
+
+<configuration/tuckerdncaching/10> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/10> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/10> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/tuckerdncaching/10> ns4kge:hasMetric  <metric/mrr> .
+<configuration/tuckerdncaching/10> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/tuckerdncaching/10> ns4kge:hasNSMethod <ns-method/tuckerdncaching> .
+<configuration/tuckerdncaching/10> ns4kge:result "0.5477"^^xsd:decimal .
+
+<configuration/tuckerdncaching/11> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/11> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/11> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/tuckerdncaching/11> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/tuckerdncaching/11> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/tuckerdncaching/11> ns4kge:hasNSMethod <ns-method/mdncaching> .
+<configuration/tuckerdncaching/11> ns4kge:result "0.369"^^xsd:decimal .
+
+<configuration/tuckerdncaching/12> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/12> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/12> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/tuckerdncaching/12> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/tuckerdncaching/12> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/tuckerdncaching/12> ns4kge:hasNSMethod <ns-method/tuckerdncaching> .
+<configuration/tuckerdncaching/12> ns4kge:result "0.4799"^^xsd:decimal .
+
+<configuration/tuckerdncaching/13> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/13> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/13> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/tuckerdncaching/13> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/tuckerdncaching/13> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/tuckerdncaching/13> ns4kge:hasNSMethod <ns-method/mdncaching> .
+<configuration/tuckerdncaching/13> ns4kge:result "0.4983"^^xsd:decimal .
+
+<configuration/tuckerdncaching/14> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/14> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/14> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/tuckerdncaching/14> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/tuckerdncaching/14> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/tuckerdncaching/14> ns4kge:hasNSMethod <ns-method/tuckerdncaching> .
+<configuration/tuckerdncaching/14> ns4kge:result "0.584"^^xsd:decimal .
+
+<configuration/tuckerdncaching/15> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/15> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/15> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/tuckerdncaching/15> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/tuckerdncaching/15> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/tuckerdncaching/15> ns4kge:hasNSMethod <ns-method/mdncaching> .
+<configuration/tuckerdncaching/15> ns4kge:result "0.6277"^^xsd:decimal .
+
+<configuration/tuckerdncaching/16> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/16> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/16> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/tuckerdncaching/16> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/tuckerdncaching/16> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/tuckerdncaching/16> ns4kge:hasNSMethod <ns-method/tuckerdncaching> .
+<configuration/tuckerdncaching/16> ns4kge:result "0.6677"^^xsd:decimal .
+
+<configuration/tuckerdncaching/17> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/17> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/17> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/tuckerdncaching/17> ns4kge:hasMetric  <metric/mrr> .
+<configuration/tuckerdncaching/17> ns4kge:hasKGEModel <kge-model/transd> .
+<configuration/tuckerdncaching/17> ns4kge:hasNSMethod <ns-method/mdncaching> .
+<configuration/tuckerdncaching/17> ns4kge:result "0.1737"^^xsd:decimal .
+
+<configuration/tuckerdncaching/18> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/18> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/18> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/tuckerdncaching/18> ns4kge:hasMetric  <metric/mrr> .
+<configuration/tuckerdncaching/18> ns4kge:hasKGEModel <kge-model/transd> .
+<configuration/tuckerdncaching/18> ns4kge:hasNSMethod <ns-method/tuckerdncaching> .
+<configuration/tuckerdncaching/18> ns4kge:result "0.1873"^^xsd:decimal .
+
+<configuration/tuckerdncaching/19> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/19> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/19> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/tuckerdncaching/19> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/tuckerdncaching/19> ns4kge:hasKGEModel <kge-model/transd> .
+<configuration/tuckerdncaching/19> ns4kge:hasNSMethod <ns-method/mdncaching> .
+<configuration/tuckerdncaching/19> ns4kge:result "0.37"^^xsd:decimal .
+
+<configuration/tuckerdncaching/20> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/20> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/20> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/tuckerdncaching/20> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/tuckerdncaching/20> ns4kge:hasKGEModel <kge-model/transd> .
+<configuration/tuckerdncaching/20> ns4kge:hasNSMethod <ns-method/tuckerdncaching> .
+<configuration/tuckerdncaching/20> ns4kge:result "0.29"^^xsd:decimal .
+
+<configuration/tuckerdncaching/21> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/21> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/21> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/tuckerdncaching/21> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/tuckerdncaching/21> ns4kge:hasKGEModel <kge-model/transd> .
+<configuration/tuckerdncaching/21> ns4kge:hasNSMethod <ns-method/mdncaching> .
+<configuration/tuckerdncaching/21> ns4kge:result "0.2948"^^xsd:decimal .
+
+<configuration/tuckerdncaching/22> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/22> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/22> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/tuckerdncaching/22> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/tuckerdncaching/22> ns4kge:hasKGEModel <kge-model/transd> .
+<configuration/tuckerdncaching/22> ns4kge:hasNSMethod <ns-method/tuckerdncaching> .
+<configuration/tuckerdncaching/22> ns4kge:result "0.2923"^^xsd:decimal .
+
+<configuration/tuckerdncaching/23> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/23> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/23> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/tuckerdncaching/23> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/tuckerdncaching/23> ns4kge:hasKGEModel <kge-model/transd> .
+<configuration/tuckerdncaching/23> ns4kge:hasNSMethod <ns-method/mdncaching> .
+<configuration/tuckerdncaching/23> ns4kge:result "0.4836"^^xsd:decimal .
+
+<configuration/tuckerdncaching/24> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/24> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/24> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/tuckerdncaching/24> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/tuckerdncaching/24> ns4kge:hasKGEModel <kge-model/transd> .
+<configuration/tuckerdncaching/24> ns4kge:hasNSMethod <ns-method/tuckerdncaching> .
+<configuration/tuckerdncaching/24> ns4kge:result "0.4876"^^xsd:decimal .
+
+<configuration/tuckerdncaching/25> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/25> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/25> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/tuckerdncaching/25> ns4kge:hasMetric  <metric/mrr> .
+<configuration/tuckerdncaching/25> ns4kge:hasKGEModel <kge-model/transd> .
+<configuration/tuckerdncaching/25> ns4kge:hasNSMethod <ns-method/mdncaching> .
+<configuration/tuckerdncaching/25> ns4kge:result "0.2683"^^xsd:decimal .
+
+<configuration/tuckerdncaching/26> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/26> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/26> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/tuckerdncaching/26> ns4kge:hasMetric  <metric/mrr> .
+<configuration/tuckerdncaching/26> ns4kge:hasKGEModel <kge-model/transd> .
+<configuration/tuckerdncaching/26> ns4kge:hasNSMethod <ns-method/tuckerdncaching> .
+<configuration/tuckerdncaching/26> ns4kge:result "0.2559"^^xsd:decimal .
+
+<configuration/tuckerdncaching/27> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/27> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/27> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/tuckerdncaching/27> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/tuckerdncaching/27> ns4kge:hasKGEModel <kge-model/transd> .
+<configuration/tuckerdncaching/27> ns4kge:hasNSMethod <ns-method/mdncaching> .
+<configuration/tuckerdncaching/27> ns4kge:result "0.1503"^^xsd:decimal .
+
+<configuration/tuckerdncaching/28> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/28> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/28> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/tuckerdncaching/28> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/tuckerdncaching/28> ns4kge:hasKGEModel <kge-model/transd> .
+<configuration/tuckerdncaching/28> ns4kge:hasNSMethod <ns-method/tuckerdncaching> .
+<configuration/tuckerdncaching/28> ns4kge:result "0.1405"^^xsd:decimal .
+
+<configuration/tuckerdncaching/29> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/29> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/29> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/tuckerdncaching/29> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/tuckerdncaching/29> ns4kge:hasKGEModel <kge-model/transd> .
+<configuration/tuckerdncaching/29> ns4kge:hasNSMethod <ns-method/mdncaching> .
+<configuration/tuckerdncaching/29> ns4kge:result "0.2995"^^xsd:decimal .
+
+<configuration/tuckerdncaching/30> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/30> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/30> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/tuckerdncaching/30> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/tuckerdncaching/30> ns4kge:hasKGEModel <kge-model/transd> .
+<configuration/tuckerdncaching/30> ns4kge:hasNSMethod <ns-method/tuckerdncaching> .
+<configuration/tuckerdncaching/30> ns4kge:result "0.3101"^^xsd:decimal .
+
+<configuration/tuckerdncaching/31> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/31> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/31> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/tuckerdncaching/31> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/tuckerdncaching/31> ns4kge:hasKGEModel <kge-model/transd> .
+<configuration/tuckerdncaching/31> ns4kge:hasNSMethod <ns-method/mdncaching> .
+<configuration/tuckerdncaching/31> ns4kge:result "0.4643"^^xsd:decimal .
+
+<configuration/tuckerdncaching/32> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/32> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/32> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/tuckerdncaching/32> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/tuckerdncaching/32> ns4kge:hasKGEModel <kge-model/transd> .
+<configuration/tuckerdncaching/32> ns4kge:hasNSMethod <ns-method/tuckerdncaching> .
+<configuration/tuckerdncaching/32> ns4kge:result "0.4734"^^xsd:decimal .
+
+<configuration/tuckerdncaching/33> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/33> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/33> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/tuckerdncaching/33> ns4kge:hasMetric  <metric/mrr> .
+<configuration/tuckerdncaching/33> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/tuckerdncaching/33> ns4kge:hasNSMethod <ns-method/mdncaching> .
+<configuration/tuckerdncaching/33> ns4kge:result "0.3921"^^xsd:decimal .
+
+<configuration/tuckerdncaching/34> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/34> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/34> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/tuckerdncaching/34> ns4kge:hasMetric  <metric/mrr> .
+<configuration/tuckerdncaching/34> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/tuckerdncaching/34> ns4kge:hasNSMethod <ns-method/tuckerdncaching> .
+<configuration/tuckerdncaching/34> ns4kge:result "0.4181"^^xsd:decimal .
+
+<configuration/tuckerdncaching/35> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/35> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/35> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/tuckerdncaching/35> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/tuckerdncaching/35> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/tuckerdncaching/35> ns4kge:hasNSMethod <ns-method/mdncaching> .
+<configuration/tuckerdncaching/35> ns4kge:result "0.3239"^^xsd:decimal .
+
+<configuration/tuckerdncaching/36> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/36> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/36> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/tuckerdncaching/36> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/tuckerdncaching/36> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/tuckerdncaching/36> ns4kge:hasNSMethod <ns-method/tuckerdncaching> .
+<configuration/tuckerdncaching/36> ns4kge:result "0.378"^^xsd:decimal .
+
+<configuration/tuckerdncaching/37> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/37> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/37> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/tuckerdncaching/37> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/tuckerdncaching/37> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/tuckerdncaching/37> ns4kge:hasNSMethod <ns-method/mdncaching> .
+<configuration/tuckerdncaching/37> ns4kge:result "0.4265"^^xsd:decimal .
+
+<configuration/tuckerdncaching/38> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/38> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/38> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/tuckerdncaching/38> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/tuckerdncaching/38> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/tuckerdncaching/38> ns4kge:hasNSMethod <ns-method/tuckerdncaching> .
+<configuration/tuckerdncaching/38> ns4kge:result "0.4349"^^xsd:decimal .
+
+<configuration/tuckerdncaching/39> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/39> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/39> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/tuckerdncaching/39> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/tuckerdncaching/39> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/tuckerdncaching/39> ns4kge:hasNSMethod <ns-method/mdncaching> .
+<configuration/tuckerdncaching/39> ns4kge:result "0.5137"^^xsd:decimal .
+
+<configuration/tuckerdncaching/40> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/40> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/40> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/tuckerdncaching/40> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/tuckerdncaching/40> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/tuckerdncaching/40> ns4kge:hasNSMethod <ns-method/tuckerdncaching> .
+<configuration/tuckerdncaching/40> ns4kge:result "0.4922"^^xsd:decimal .
+
+<configuration/tuckerdncaching/41> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/41> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/41> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/tuckerdncaching/41> ns4kge:hasMetric  <metric/mrr> .
+<configuration/tuckerdncaching/41> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/tuckerdncaching/41> ns4kge:hasNSMethod <ns-method/mdncaching> .
+<configuration/tuckerdncaching/41> ns4kge:result "0.2726"^^xsd:decimal .
+
+<configuration/tuckerdncaching/42> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/42> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/42> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/tuckerdncaching/42> ns4kge:hasMetric  <metric/mrr> .
+<configuration/tuckerdncaching/42> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/tuckerdncaching/42> ns4kge:hasNSMethod <ns-method/tuckerdncaching> .
+<configuration/tuckerdncaching/42> ns4kge:result "0.2881"^^xsd:decimal .
+
+<configuration/tuckerdncaching/43> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/43> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/43> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/tuckerdncaching/43> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/tuckerdncaching/43> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/tuckerdncaching/43> ns4kge:hasNSMethod <ns-method/mdncaching> .
+<configuration/tuckerdncaching/43> ns4kge:result "0.1875"^^xsd:decimal .
+
+<configuration/tuckerdncaching/44> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/44> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/44> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/tuckerdncaching/44> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/tuckerdncaching/44> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/tuckerdncaching/44> ns4kge:hasNSMethod <ns-method/tuckerdncaching> .
+<configuration/tuckerdncaching/44> ns4kge:result "0.2011"^^xsd:decimal .
+
+<configuration/tuckerdncaching/45> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/45> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/45> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/tuckerdncaching/45> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/tuckerdncaching/45> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/tuckerdncaching/45> ns4kge:hasNSMethod <ns-method/mdncaching> .
+<configuration/tuckerdncaching/45> ns4kge:result "0.3005"^^xsd:decimal .
+
+<configuration/tuckerdncaching/46> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/46> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/46> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/tuckerdncaching/46> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/tuckerdncaching/46> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/tuckerdncaching/46> ns4kge:hasNSMethod <ns-method/tuckerdncaching> .
+<configuration/tuckerdncaching/46> ns4kge:result "0.3185"^^xsd:decimal .
+
+<configuration/tuckerdncaching/47> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/47> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/47> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/tuckerdncaching/47> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/tuckerdncaching/47> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/tuckerdncaching/47> ns4kge:hasNSMethod <ns-method/mdncaching> .
+<configuration/tuckerdncaching/47> ns4kge:result "0.444"^^xsd:decimal .
+
+<configuration/tuckerdncaching/48> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/48> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/48> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/tuckerdncaching/48> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/tuckerdncaching/48> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/tuckerdncaching/48> ns4kge:hasNSMethod <ns-method/tuckerdncaching> .
+<configuration/tuckerdncaching/48> ns4kge:result "0.4625"^^xsd:decimal .
+
+<configuration/tuckerdncaching/49> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/49> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/49> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/tuckerdncaching/49> ns4kge:hasMetric  <metric/mrr> .
+<configuration/tuckerdncaching/49> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/tuckerdncaching/49> ns4kge:hasNSMethod <ns-method/mdncaching> .
+<configuration/tuckerdncaching/49> ns4kge:result "0.4729"^^xsd:decimal .
+
+<configuration/tuckerdncaching/50> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/50> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/50> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/tuckerdncaching/50> ns4kge:hasMetric  <metric/mrr> .
+<configuration/tuckerdncaching/50> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/tuckerdncaching/50> ns4kge:hasNSMethod <ns-method/tuckerdncaching> .
+<configuration/tuckerdncaching/50> ns4kge:result "0.4961"^^xsd:decimal .
+
+<configuration/tuckerdncaching/51> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/51> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/51> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/tuckerdncaching/51> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/tuckerdncaching/51> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/tuckerdncaching/51> ns4kge:hasNSMethod <ns-method/mdncaching> .
+<configuration/tuckerdncaching/51> ns4kge:result "0.4413"^^xsd:decimal .
+
+<configuration/tuckerdncaching/52> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/52> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/52> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/tuckerdncaching/52> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/tuckerdncaching/52> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/tuckerdncaching/52> ns4kge:hasNSMethod <ns-method/tuckerdncaching> .
+<configuration/tuckerdncaching/52> ns4kge:result "0.4817"^^xsd:decimal .
+
+<configuration/tuckerdncaching/53> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/53> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/53> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/tuckerdncaching/53> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/tuckerdncaching/53> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/tuckerdncaching/53> ns4kge:hasNSMethod <ns-method/mdncaching> .
+<configuration/tuckerdncaching/53> ns4kge:result "0.488"^^xsd:decimal .
+
+<configuration/tuckerdncaching/54> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/54> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/54> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/tuckerdncaching/54> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/tuckerdncaching/54> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/tuckerdncaching/54> ns4kge:hasNSMethod <ns-method/tuckerdncaching> .
+<configuration/tuckerdncaching/54> ns4kge:result "0.5034"^^xsd:decimal .
+
+<configuration/tuckerdncaching/55> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/55> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/55> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/tuckerdncaching/55> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/tuckerdncaching/55> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/tuckerdncaching/55> ns4kge:hasNSMethod <ns-method/mdncaching> .
+<configuration/tuckerdncaching/55> ns4kge:result "0.5405"^^xsd:decimal .
+
+<configuration/tuckerdncaching/56> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/56> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/56> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/tuckerdncaching/56> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/tuckerdncaching/56> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/tuckerdncaching/56> ns4kge:hasNSMethod <ns-method/tuckerdncaching> .
+<configuration/tuckerdncaching/56> ns4kge:result "0.5227"^^xsd:decimal .
+
+<configuration/tuckerdncaching/57> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/57> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/57> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/tuckerdncaching/57> ns4kge:hasMetric  <metric/mrr> .
+<configuration/tuckerdncaching/57> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/tuckerdncaching/57> ns4kge:hasNSMethod <ns-method/mdncaching> .
+<configuration/tuckerdncaching/57> ns4kge:result "0.5243"^^xsd:decimal .
+
+<configuration/tuckerdncaching/58> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/58> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/58> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/tuckerdncaching/58> ns4kge:hasMetric  <metric/mrr> .
+<configuration/tuckerdncaching/58> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/tuckerdncaching/58> ns4kge:hasNSMethod <ns-method/tuckerdncaching> .
+<configuration/tuckerdncaching/58> ns4kge:result "0.6191"^^xsd:decimal .
+
+<configuration/tuckerdncaching/59> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/59> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/59> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/tuckerdncaching/59> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/tuckerdncaching/59> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/tuckerdncaching/59> ns4kge:hasNSMethod <ns-method/mdncaching> .
+<configuration/tuckerdncaching/59> ns4kge:result "0.4539"^^xsd:decimal .
+
+<configuration/tuckerdncaching/60> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/60> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/60> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/tuckerdncaching/60> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/tuckerdncaching/60> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/tuckerdncaching/60> ns4kge:hasNSMethod <ns-method/tuckerdncaching> .
+<configuration/tuckerdncaching/60> ns4kge:result "0.5789"^^xsd:decimal .
+
+<configuration/tuckerdncaching/61> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/61> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/61> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/tuckerdncaching/61> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/tuckerdncaching/61> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/tuckerdncaching/61> ns4kge:hasNSMethod <ns-method/mdncaching> .
+<configuration/tuckerdncaching/61> ns4kge:result "0.561"^^xsd:decimal .
+
+<configuration/tuckerdncaching/62> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/62> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/62> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/tuckerdncaching/62> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/tuckerdncaching/62> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/tuckerdncaching/62> ns4kge:hasNSMethod <ns-method/tuckerdncaching> .
+<configuration/tuckerdncaching/62> ns4kge:result "0.6391"^^xsd:decimal .
+
+<configuration/tuckerdncaching/63> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/63> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/63> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/tuckerdncaching/63> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/tuckerdncaching/63> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/tuckerdncaching/63> ns4kge:hasNSMethod <ns-method/mdncaching> .
+<configuration/tuckerdncaching/63> ns4kge:result "0.6582"^^xsd:decimal .
+
+<configuration/tuckerdncaching/64> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/64> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/64> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/tuckerdncaching/64> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/tuckerdncaching/64> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/tuckerdncaching/64> ns4kge:hasNSMethod <ns-method/tuckerdncaching> .
+<configuration/tuckerdncaching/64> ns4kge:result "0.6925"^^xsd:decimal .
+
+<configuration/tuckerdncaching/65> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/65> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/65> ns4kge:hasDataset <dataset/wn18> .
+<configuration/tuckerdncaching/65> ns4kge:hasMetric  <metric/mrr> .
+<configuration/tuckerdncaching/65> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/tuckerdncaching/65> ns4kge:hasNSMethod <ns-method/bernoulli-negative-sampling> .
+<configuration/tuckerdncaching/65> ns4kge:result "0.5001"^^xsd:decimal .
+
+<configuration/tuckerdncaching/66> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/66> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/66> ns4kge:hasDataset <dataset/wn18> .
+<configuration/tuckerdncaching/66> ns4kge:hasMetric  <metric/mr> .
+<configuration/tuckerdncaching/66> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/tuckerdncaching/66> ns4kge:hasNSMethod <ns-method/bernoulli-negative-sampling> .
+<configuration/tuckerdncaching/66> ns4kge:result "249"^^xsd:decimal .
+
+<configuration/tuckerdncaching/67> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/67> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/67> ns4kge:hasDataset <dataset/wn18> .
+<configuration/tuckerdncaching/67> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/tuckerdncaching/67> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/tuckerdncaching/67> ns4kge:hasNSMethod <ns-method/bernoulli-negative-sampling> .
+<configuration/tuckerdncaching/67> ns4kge:result "0.9413"^^xsd:decimal .
+
+<configuration/tuckerdncaching/68> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/68> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/68> ns4kge:hasDataset <dataset/wn18> .
+<configuration/tuckerdncaching/68> ns4kge:hasMetric  <metric/mrr> .
+<configuration/tuckerdncaching/68> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/tuckerdncaching/68> ns4kge:hasNSMethod <ns-method/kbgan> .
+<configuration/tuckerdncaching/68> ns4kge:result "0.6606"^^xsd:decimal .
+
+<configuration/tuckerdncaching/69> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/69> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/69> ns4kge:hasDataset <dataset/wn18> .
+<configuration/tuckerdncaching/69> ns4kge:hasMetric  <metric/mrr> .
+<configuration/tuckerdncaching/69> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/tuckerdncaching/69> ns4kge:hasNSMethod <ns-method/ksgan> .
+<configuration/tuckerdncaching/69> ns4kge:result "0.791"^^xsd:decimal .
+
+<configuration/tuckerdncaching/70> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/70> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/70> ns4kge:hasDataset <dataset/wn18> .
+<configuration/tuckerdncaching/70> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/tuckerdncaching/70> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/tuckerdncaching/70> ns4kge:hasNSMethod <ns-method/ksgan> .
+<configuration/tuckerdncaching/70> ns4kge:result "0.954"^^xsd:decimal .
+
+<configuration/tuckerdncaching/71> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/71> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/71> ns4kge:hasDataset <dataset/wn18> .
+<configuration/tuckerdncaching/71> ns4kge:hasMetric  <metric/mrr> .
+<configuration/tuckerdncaching/71> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/tuckerdncaching/71> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/tuckerdncaching/71> ns4kge:result "0.7818"^^xsd:decimal .
+
+<configuration/tuckerdncaching/72> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/72> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/72> ns4kge:hasDataset <dataset/wn18> .
+<configuration/tuckerdncaching/72> ns4kge:hasMetric  <metric/mr> .
+<configuration/tuckerdncaching/72> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/tuckerdncaching/72> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/tuckerdncaching/72> ns4kge:result "249"^^xsd:decimal .
+
+<configuration/tuckerdncaching/73> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/73> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/73> ns4kge:hasDataset <dataset/wn18> .
+<configuration/tuckerdncaching/73> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/tuckerdncaching/73> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/tuckerdncaching/73> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/tuckerdncaching/73> ns4kge:result "0.9463"^^xsd:decimal .
+
+<configuration/tuckerdncaching/74> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/74> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/74> ns4kge:hasDataset <dataset/wn18> .
+<configuration/tuckerdncaching/74> ns4kge:hasMetric  <metric/mrr> .
+<configuration/tuckerdncaching/74> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/tuckerdncaching/74> ns4kge:hasNSMethod <ns-method/mdncaching> .
+<configuration/tuckerdncaching/74> ns4kge:result "0.8036"^^xsd:decimal .
+
+<configuration/tuckerdncaching/75> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/75> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/75> ns4kge:hasDataset <dataset/wn18> .
+<configuration/tuckerdncaching/75> ns4kge:hasMetric  <metric/mr> .
+<configuration/tuckerdncaching/75> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/tuckerdncaching/75> ns4kge:hasNSMethod <ns-method/mdncaching> .
+<configuration/tuckerdncaching/75> ns4kge:result "430"^^xsd:decimal .
+
+<configuration/tuckerdncaching/76> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/76> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/76> ns4kge:hasDataset <dataset/wn18> .
+<configuration/tuckerdncaching/76> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/tuckerdncaching/76> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/tuckerdncaching/76> ns4kge:hasNSMethod <ns-method/mdncaching> .
+<configuration/tuckerdncaching/76> ns4kge:result "0.9491"^^xsd:decimal .
+
+<configuration/tuckerdncaching/77> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/77> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/77> ns4kge:hasDataset <dataset/wn18> .
+<configuration/tuckerdncaching/77> ns4kge:hasMetric  <metric/mrr> .
+<configuration/tuckerdncaching/77> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/tuckerdncaching/77> ns4kge:hasNSMethod <ns-method/tuckerdncaching> .
+<configuration/tuckerdncaching/77> ns4kge:result "0.8084"^^xsd:decimal .
+
+<configuration/tuckerdncaching/78> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/78> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/78> ns4kge:hasDataset <dataset/wn18> .
+<configuration/tuckerdncaching/78> ns4kge:hasMetric  <metric/mr> .
+<configuration/tuckerdncaching/78> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/tuckerdncaching/78> ns4kge:hasNSMethod <ns-method/tuckerdncaching> .
+<configuration/tuckerdncaching/78> ns4kge:result "454"^^xsd:decimal .
+
+<configuration/tuckerdncaching/79> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/79> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/79> ns4kge:hasDataset <dataset/wn18> .
+<configuration/tuckerdncaching/79> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/tuckerdncaching/79> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/tuckerdncaching/79> ns4kge:hasNSMethod <ns-method/tuckerdncaching> .
+<configuration/tuckerdncaching/79> ns4kge:result "0.9506"^^xsd:decimal .
+
+<configuration/tuckerdncaching/80> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/80> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/80> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/tuckerdncaching/80> ns4kge:hasMetric  <metric/mrr> .
+<configuration/tuckerdncaching/80> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/tuckerdncaching/80> ns4kge:hasNSMethod <ns-method/bernoulli-negative-sampling> .
+<configuration/tuckerdncaching/80> ns4kge:result "0.1784"^^xsd:decimal .
+
+<configuration/tuckerdncaching/81> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/81> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/81> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/tuckerdncaching/81> ns4kge:hasMetric  <metric/mr> .
+<configuration/tuckerdncaching/81> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/tuckerdncaching/81> ns4kge:hasNSMethod <ns-method/bernoulli-negative-sampling> .
+<configuration/tuckerdncaching/81> ns4kge:result "3924"^^xsd:decimal .
+
+<configuration/tuckerdncaching/82> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/82> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/82> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/tuckerdncaching/82> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/tuckerdncaching/82> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/tuckerdncaching/82> ns4kge:hasNSMethod <ns-method/bernoulli-negative-sampling> .
+<configuration/tuckerdncaching/82> ns4kge:result "0.4509"^^xsd:decimal .
+
+<configuration/tuckerdncaching/83> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/83> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/83> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/tuckerdncaching/83> ns4kge:hasMetric  <metric/mrr> .
+<configuration/tuckerdncaching/83> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/tuckerdncaching/83> ns4kge:hasNSMethod <ns-method/kbgan> .
+<configuration/tuckerdncaching/83> ns4kge:result "0.1808"^^xsd:decimal .
+
+<configuration/tuckerdncaching/84> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/84> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/84> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/tuckerdncaching/84> ns4kge:hasMetric  <metric/mrr> .
+<configuration/tuckerdncaching/84> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/tuckerdncaching/84> ns4kge:hasNSMethod <ns-method/ksgan> .
+<configuration/tuckerdncaching/84> ns4kge:result "0.212"^^xsd:decimal .
+
+<configuration/tuckerdncaching/85> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/85> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/85> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/tuckerdncaching/85> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/tuckerdncaching/85> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/tuckerdncaching/85> ns4kge:hasNSMethod <ns-method/ksgan> .
+<configuration/tuckerdncaching/85> ns4kge:result "0.487"^^xsd:decimal .
+
+<configuration/tuckerdncaching/86> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/86> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/86> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/tuckerdncaching/86> ns4kge:hasMetric  <metric/mrr> .
+<configuration/tuckerdncaching/86> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/tuckerdncaching/86> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/tuckerdncaching/86> ns4kge:result "0.2002"^^xsd:decimal .
+
+<configuration/tuckerdncaching/87> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/87> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/87> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/tuckerdncaching/87> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/tuckerdncaching/87> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/tuckerdncaching/87> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/tuckerdncaching/87> ns4kge:result "0.4783"^^xsd:decimal .
+
+<configuration/tuckerdncaching/88> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/88> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/88> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/tuckerdncaching/88> ns4kge:hasMetric  <metric/mr> .
+<configuration/tuckerdncaching/88> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/tuckerdncaching/88> ns4kge:hasNSMethod <ns-method/mdncaching> .
+<configuration/tuckerdncaching/88> ns4kge:result "3054"^^xsd:decimal .
+
+<configuration/tuckerdncaching/89> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/89> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/89> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/tuckerdncaching/89> ns4kge:hasMetric  <metric/mr> .
+<configuration/tuckerdncaching/89> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/tuckerdncaching/89> ns4kge:hasNSMethod <ns-method/tuckerdncaching> .
+<configuration/tuckerdncaching/89> ns4kge:result "3062"^^xsd:decimal .
+
+<configuration/tuckerdncaching/90> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/90> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/90> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/tuckerdncaching/90> ns4kge:hasMetric  <metric/mrr> .
+<configuration/tuckerdncaching/90> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/tuckerdncaching/90> ns4kge:hasNSMethod <ns-method/bernoulli-negative-sampling> .
+<configuration/tuckerdncaching/90> ns4kge:result "0.4951"^^xsd:decimal .
+
+<configuration/tuckerdncaching/91> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/91> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/91> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/tuckerdncaching/91> ns4kge:hasMetric  <metric/mr> .
+<configuration/tuckerdncaching/91> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/tuckerdncaching/91> ns4kge:hasNSMethod <ns-method/bernoulli-negative-sampling> .
+<configuration/tuckerdncaching/91> ns4kge:result "65"^^xsd:decimal .
+
+<configuration/tuckerdncaching/92> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/92> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/92> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/tuckerdncaching/92> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/tuckerdncaching/92> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/tuckerdncaching/92> ns4kge:hasNSMethod <ns-method/bernoulli-negative-sampling> .
+<configuration/tuckerdncaching/92> ns4kge:result "0.7737"^^xsd:decimal .
+
+<configuration/tuckerdncaching/93> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/93> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/93> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/tuckerdncaching/93> ns4kge:hasMetric  <metric/mrr> .
+<configuration/tuckerdncaching/93> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/tuckerdncaching/93> ns4kge:hasNSMethod <ns-method/ksgan> .
+<configuration/tuckerdncaching/93> ns4kge:result "0.6391"^^xsd:decimal .
+
+<configuration/tuckerdncaching/94> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/94> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/94> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/tuckerdncaching/94> ns4kge:hasMetric  <metric/mrr> .
+<configuration/tuckerdncaching/94> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/tuckerdncaching/94> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/tuckerdncaching/94> ns4kge:result "0.8404"^^xsd:decimal .
+
+<configuration/tuckerdncaching/95> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/95> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/95> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/tuckerdncaching/95> ns4kge:hasMetric  <metric/mr> .
+<configuration/tuckerdncaching/95> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/tuckerdncaching/95> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/tuckerdncaching/95> ns4kge:result "51"^^xsd:decimal .
+
+<configuration/tuckerdncaching/96> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/96> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/96> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/tuckerdncaching/96> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/tuckerdncaching/96> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/tuckerdncaching/96> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/tuckerdncaching/96> ns4kge:result "0.9225"^^xsd:decimal .
+
+<configuration/tuckerdncaching/97> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/97> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/97> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/tuckerdncaching/97> ns4kge:hasMetric  <metric/mrr> .
+<configuration/tuckerdncaching/97> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/tuckerdncaching/97> ns4kge:hasNSMethod <ns-method/mdncaching> .
+<configuration/tuckerdncaching/97> ns4kge:result "0.8477"^^xsd:decimal .
+
+<configuration/tuckerdncaching/98> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/98> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/98> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/tuckerdncaching/98> ns4kge:hasMetric  <metric/mr> .
+<configuration/tuckerdncaching/98> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/tuckerdncaching/98> ns4kge:hasNSMethod <ns-method/mdncaching> .
+<configuration/tuckerdncaching/98> ns4kge:result "51"^^xsd:decimal .
+
+<configuration/tuckerdncaching/99> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/99> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/99> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/tuckerdncaching/99> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/tuckerdncaching/99> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/tuckerdncaching/99> ns4kge:hasNSMethod <ns-method/mdncaching> .
+<configuration/tuckerdncaching/99> ns4kge:result "0.9245"^^xsd:decimal .
+
+<configuration/tuckerdncaching/100> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/100> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/100> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/tuckerdncaching/100> ns4kge:hasMetric  <metric/mrr> .
+<configuration/tuckerdncaching/100> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/tuckerdncaching/100> ns4kge:hasNSMethod <ns-method/tuckerdncaching> .
+<configuration/tuckerdncaching/100> ns4kge:result "0.4529"^^xsd:decimal .
+
+<configuration/tuckerdncaching/101> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/101> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/101> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/tuckerdncaching/101> ns4kge:hasMetric  <metric/mr> .
+<configuration/tuckerdncaching/101> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/tuckerdncaching/101> ns4kge:hasNSMethod <ns-method/tuckerdncaching> .
+<configuration/tuckerdncaching/101> ns4kge:result "63"^^xsd:decimal .
+
+<configuration/tuckerdncaching/102> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/102> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/102> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/tuckerdncaching/102> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/tuckerdncaching/102> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/tuckerdncaching/102> ns4kge:hasNSMethod <ns-method/tuckerdncaching> .
+<configuration/tuckerdncaching/102> ns4kge:result "0.7655"^^xsd:decimal .
+
+<configuration/tuckerdncaching/103> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/103> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/103> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/tuckerdncaching/103> ns4kge:hasMetric  <metric/mrr> .
+<configuration/tuckerdncaching/103> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/tuckerdncaching/103> ns4kge:hasNSMethod <ns-method/bernoulli-negative-sampling> .
+<configuration/tuckerdncaching/103> ns4kge:result "0.2556"^^xsd:decimal .
+
+<configuration/tuckerdncaching/104> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/104> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/104> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/tuckerdncaching/104> ns4kge:hasMetric  <metric/mr> .
+<configuration/tuckerdncaching/104> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/tuckerdncaching/104> ns4kge:hasNSMethod <ns-method/bernoulli-negative-sampling> .
+<configuration/tuckerdncaching/104> ns4kge:result "197"^^xsd:decimal .
+
+<configuration/tuckerdncaching/105> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/105> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/105> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/tuckerdncaching/105> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/tuckerdncaching/105> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/tuckerdncaching/105> ns4kge:hasNSMethod <ns-method/bernoulli-negative-sampling> .
+<configuration/tuckerdncaching/105> ns4kge:result "0.4189"^^xsd:decimal .
+
+<configuration/tuckerdncaching/106> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/106> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/106> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/tuckerdncaching/106> ns4kge:hasMetric  <metric/mrr> .
+<configuration/tuckerdncaching/106> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/tuckerdncaching/106> ns4kge:hasNSMethod <ns-method/kbgan> .
+<configuration/tuckerdncaching/106> ns4kge:result "0.2926"^^xsd:decimal .
+
+<configuration/tuckerdncaching/107> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/107> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/107> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/tuckerdncaching/107> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/tuckerdncaching/107> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/tuckerdncaching/107> ns4kge:hasNSMethod <ns-method/kbgan> .
+<configuration/tuckerdncaching/107> ns4kge:result "0.4659"^^xsd:decimal .
+
+<configuration/tuckerdncaching/108> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/108> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/108> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/tuckerdncaching/108> ns4kge:hasMetric  <metric/mrr> .
+<configuration/tuckerdncaching/108> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/tuckerdncaching/108> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/tuckerdncaching/108> ns4kge:result "0.2993"^^xsd:decimal .
+
+<configuration/tuckerdncaching/109> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/109> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/109> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/tuckerdncaching/109> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/tuckerdncaching/109> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/tuckerdncaching/109> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/tuckerdncaching/109> ns4kge:result "0.4764"^^xsd:decimal .
+
+<configuration/tuckerdncaching/110> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/110> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/110> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/tuckerdncaching/110> ns4kge:hasMetric  <metric/mr> .
+<configuration/tuckerdncaching/110> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/tuckerdncaching/110> ns4kge:hasNSMethod <ns-method/mdncaching> .
+<configuration/tuckerdncaching/110> ns4kge:result "226"^^xsd:decimal .
+
+<configuration/tuckerdncaching/111> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/111> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/111> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/tuckerdncaching/111> ns4kge:hasMetric  <metric/mr> .
+<configuration/tuckerdncaching/111> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/tuckerdncaching/111> ns4kge:hasNSMethod <ns-method/tuckerdncaching> .
+<configuration/tuckerdncaching/111> ns4kge:result "223"^^xsd:decimal .
+
+<configuration/tuckerdncaching/112> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/112> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/112> ns4kge:hasDataset <dataset/wn18> .
+<configuration/tuckerdncaching/112> ns4kge:hasMetric  <metric/mrr> .
+<configuration/tuckerdncaching/112> ns4kge:hasKGEModel <kge-model/transd> .
+<configuration/tuckerdncaching/112> ns4kge:hasNSMethod <ns-method/bernoulli-negative-sampling> .
+<configuration/tuckerdncaching/112> ns4kge:result "0.5093"^^xsd:decimal .
+
+<configuration/tuckerdncaching/113> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/113> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/113> ns4kge:hasDataset <dataset/wn18> .
+<configuration/tuckerdncaching/113> ns4kge:hasMetric  <metric/mr> .
+<configuration/tuckerdncaching/113> ns4kge:hasKGEModel <kge-model/transd> .
+<configuration/tuckerdncaching/113> ns4kge:hasNSMethod <ns-method/bernoulli-negative-sampling> .
+<configuration/tuckerdncaching/113> ns4kge:result "256"^^xsd:decimal .
+
+<configuration/tuckerdncaching/114> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/114> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/114> ns4kge:hasDataset <dataset/wn18> .
+<configuration/tuckerdncaching/114> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/tuckerdncaching/114> ns4kge:hasKGEModel <kge-model/transd> .
+<configuration/tuckerdncaching/114> ns4kge:hasNSMethod <ns-method/bernoulli-negative-sampling> .
+<configuration/tuckerdncaching/114> ns4kge:result "0.9461"^^xsd:decimal .
+
+<configuration/tuckerdncaching/115> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/115> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/115> ns4kge:hasDataset <dataset/wn18> .
+<configuration/tuckerdncaching/115> ns4kge:hasMetric  <metric/mrr> .
+<configuration/tuckerdncaching/115> ns4kge:hasKGEModel <kge-model/transd> .
+<configuration/tuckerdncaching/115> ns4kge:hasNSMethod <ns-method/ksgan> .
+<configuration/tuckerdncaching/115> ns4kge:result "0.814"^^xsd:decimal .
+
+<configuration/tuckerdncaching/116> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/116> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/116> ns4kge:hasDataset <dataset/wn18> .
+<configuration/tuckerdncaching/116> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/tuckerdncaching/116> ns4kge:hasKGEModel <kge-model/transd> .
+<configuration/tuckerdncaching/116> ns4kge:hasNSMethod <ns-method/ksgan> .
+<configuration/tuckerdncaching/116> ns4kge:result "0.952"^^xsd:decimal .
+
+<configuration/tuckerdncaching/117> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/117> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/117> ns4kge:hasDataset <dataset/wn18> .
+<configuration/tuckerdncaching/117> ns4kge:hasMetric  <metric/mrr> .
+<configuration/tuckerdncaching/117> ns4kge:hasKGEModel <kge-model/transd> .
+<configuration/tuckerdncaching/117> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/tuckerdncaching/117> ns4kge:result "0.7994"^^xsd:decimal .
+
+<configuration/tuckerdncaching/118> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/118> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/118> ns4kge:hasDataset <dataset/wn18> .
+<configuration/tuckerdncaching/118> ns4kge:hasMetric  <metric/mr> .
+<configuration/tuckerdncaching/118> ns4kge:hasKGEModel <kge-model/transd> .
+<configuration/tuckerdncaching/118> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/tuckerdncaching/118> ns4kge:result "286"^^xsd:decimal .
+
+<configuration/tuckerdncaching/119> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/119> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/119> ns4kge:hasDataset <dataset/wn18> .
+<configuration/tuckerdncaching/119> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/tuckerdncaching/119> ns4kge:hasKGEModel <kge-model/transd> .
+<configuration/tuckerdncaching/119> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/tuckerdncaching/119> ns4kge:result "0.9516"^^xsd:decimal .
+
+<configuration/tuckerdncaching/120> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/120> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/120> ns4kge:hasDataset <dataset/wn18> .
+<configuration/tuckerdncaching/120> ns4kge:hasMetric  <metric/mrr> .
+<configuration/tuckerdncaching/120> ns4kge:hasKGEModel <kge-model/transd> .
+<configuration/tuckerdncaching/120> ns4kge:hasNSMethod <ns-method/mdncaching> .
+<configuration/tuckerdncaching/120> ns4kge:result "0.6535"^^xsd:decimal .
+
+<configuration/tuckerdncaching/121> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/121> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/121> ns4kge:hasDataset <dataset/wn18> .
+<configuration/tuckerdncaching/121> ns4kge:hasMetric  <metric/mrr> .
+<configuration/tuckerdncaching/121> ns4kge:hasKGEModel <kge-model/transd> .
+<configuration/tuckerdncaching/121> ns4kge:hasNSMethod <ns-method/tuckerdncaching> .
+<configuration/tuckerdncaching/121> ns4kge:result "0.6893"^^xsd:decimal .
+
+<configuration/tuckerdncaching/122> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/122> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/122> ns4kge:hasDataset <dataset/wn18> .
+<configuration/tuckerdncaching/122> ns4kge:hasMetric  <metric/mr> .
+<configuration/tuckerdncaching/122> ns4kge:hasKGEModel <kge-model/transd> .
+<configuration/tuckerdncaching/122> ns4kge:hasNSMethod <ns-method/tuckerdncaching> .
+<configuration/tuckerdncaching/122> ns4kge:result "328"^^xsd:decimal .
+
+<configuration/tuckerdncaching/123> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/123> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/123> ns4kge:hasDataset <dataset/wn18> .
+<configuration/tuckerdncaching/123> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/tuckerdncaching/123> ns4kge:hasKGEModel <kge-model/transd> .
+<configuration/tuckerdncaching/123> ns4kge:hasNSMethod <ns-method/tuckerdncaching> .
+<configuration/tuckerdncaching/123> ns4kge:result "0.947"^^xsd:decimal .
+
+<configuration/tuckerdncaching/124> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/124> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/124> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/tuckerdncaching/124> ns4kge:hasMetric  <metric/mrr> .
+<configuration/tuckerdncaching/124> ns4kge:hasKGEModel <kge-model/transd> .
+<configuration/tuckerdncaching/124> ns4kge:hasNSMethod <ns-method/bernoulli-negative-sampling> .
+<configuration/tuckerdncaching/124> ns4kge:result "0.1901"^^xsd:decimal .
+
+<configuration/tuckerdncaching/125> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/125> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/125> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/tuckerdncaching/125> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/tuckerdncaching/125> ns4kge:hasKGEModel <kge-model/transd> .
+<configuration/tuckerdncaching/125> ns4kge:hasNSMethod <ns-method/bernoulli-negative-sampling> .
+<configuration/tuckerdncaching/125> ns4kge:result "0.4641"^^xsd:decimal .
+
+<configuration/tuckerdncaching/126> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/126> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/126> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/tuckerdncaching/126> ns4kge:hasMetric  <metric/mrr> .
+<configuration/tuckerdncaching/126> ns4kge:hasKGEModel <kge-model/transd> .
+<configuration/tuckerdncaching/126> ns4kge:hasNSMethod <ns-method/ksgan> .
+<configuration/tuckerdncaching/126> ns4kge:result "0.22"^^xsd:decimal .
+
+<configuration/tuckerdncaching/127> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/127> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/127> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/tuckerdncaching/127> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/tuckerdncaching/127> ns4kge:hasKGEModel <kge-model/transd> .
+<configuration/tuckerdncaching/127> ns4kge:hasNSMethod <ns-method/ksgan> .
+<configuration/tuckerdncaching/127> ns4kge:result "0.479"^^xsd:decimal .
+
+<configuration/tuckerdncaching/128> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/128> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/128> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/tuckerdncaching/128> ns4kge:hasMetric  <metric/mrr> .
+<configuration/tuckerdncaching/128> ns4kge:hasKGEModel <kge-model/transd> .
+<configuration/tuckerdncaching/128> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/tuckerdncaching/128> ns4kge:result "0.2013"^^xsd:decimal .
+
+<configuration/tuckerdncaching/129> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/129> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/129> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/tuckerdncaching/129> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/tuckerdncaching/129> ns4kge:hasKGEModel <kge-model/transd> .
+<configuration/tuckerdncaching/129> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/tuckerdncaching/129> ns4kge:result "0.4839"^^xsd:decimal .
+
+<configuration/tuckerdncaching/130> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/130> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/130> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/tuckerdncaching/130> ns4kge:hasMetric  <metric/mr> .
+<configuration/tuckerdncaching/130> ns4kge:hasKGEModel <kge-model/transd> .
+<configuration/tuckerdncaching/130> ns4kge:hasNSMethod <ns-method/bernoulli-negative-sampling> .
+<configuration/tuckerdncaching/130> ns4kge:result "3555"^^xsd:decimal .
+
+<configuration/tuckerdncaching/131> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/131> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/131> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/tuckerdncaching/131> ns4kge:hasMetric  <metric/mr> .
+<configuration/tuckerdncaching/131> ns4kge:hasKGEModel <kge-model/transd> .
+<configuration/tuckerdncaching/131> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/tuckerdncaching/131> ns4kge:result "3104"^^xsd:decimal .
+
+<configuration/tuckerdncaching/132> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/132> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/132> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/tuckerdncaching/132> ns4kge:hasMetric  <metric/mr> .
+<configuration/tuckerdncaching/132> ns4kge:hasKGEModel <kge-model/transd> .
+<configuration/tuckerdncaching/132> ns4kge:hasNSMethod <ns-method/tuckerdncaching> .
+<configuration/tuckerdncaching/132> ns4kge:result "4225"^^xsd:decimal .
+
+<configuration/tuckerdncaching/133> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/133> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/133> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/tuckerdncaching/133> ns4kge:hasMetric  <metric/mrr> .
+<configuration/tuckerdncaching/133> ns4kge:hasKGEModel <kge-model/transd> .
+<configuration/tuckerdncaching/133> ns4kge:hasNSMethod <ns-method/bernoulli-negative-sampling> .
+<configuration/tuckerdncaching/133> ns4kge:result "0.3151"^^xsd:decimal .
+
+<configuration/tuckerdncaching/134> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/134> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/134> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/tuckerdncaching/134> ns4kge:hasMetric  <metric/mrr> .
+<configuration/tuckerdncaching/134> ns4kge:hasKGEModel <kge-model/transd> .
+<configuration/tuckerdncaching/134> ns4kge:hasNSMethod <ns-method/ksgan> .
+<configuration/tuckerdncaching/134> ns4kge:result "0.6415"^^xsd:decimal .
+
+<configuration/tuckerdncaching/135> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/135> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/135> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/tuckerdncaching/135> ns4kge:hasMetric  <metric/mr> .
+<configuration/tuckerdncaching/135> ns4kge:hasKGEModel <kge-model/transd> .
+<configuration/tuckerdncaching/135> ns4kge:hasNSMethod <ns-method/ksgan> .
+<configuration/tuckerdncaching/135> ns4kge:result "58"^^xsd:decimal .
+
+<configuration/tuckerdncaching/136> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/136> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/136> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/tuckerdncaching/136> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/tuckerdncaching/136> ns4kge:hasKGEModel <kge-model/transd> .
+<configuration/tuckerdncaching/136> ns4kge:hasNSMethod <ns-method/ksgan> .
+<configuration/tuckerdncaching/136> ns4kge:result "0.8132"^^xsd:decimal .
+
+<configuration/tuckerdncaching/137> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/137> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/137> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/tuckerdncaching/137> ns4kge:hasMetric  <metric/mrr> .
+<configuration/tuckerdncaching/137> ns4kge:hasKGEModel <kge-model/transd> .
+<configuration/tuckerdncaching/137> ns4kge:hasNSMethod <ns-method/mdncaching> .
+<configuration/tuckerdncaching/137> ns4kge:result "0.6192"^^xsd:decimal .
+
+<configuration/tuckerdncaching/138> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/138> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/138> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/tuckerdncaching/138> ns4kge:hasMetric  <metric/mr> .
+<configuration/tuckerdncaching/138> ns4kge:hasKGEModel <kge-model/transd> .
+<configuration/tuckerdncaching/138> ns4kge:hasNSMethod <ns-method/mdncaching> .
+<configuration/tuckerdncaching/138> ns4kge:result "75"^^xsd:decimal .
+
+<configuration/tuckerdncaching/139> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/139> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/139> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/tuckerdncaching/139> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/tuckerdncaching/139> ns4kge:hasKGEModel <kge-model/transd> .
+<configuration/tuckerdncaching/139> ns4kge:hasNSMethod <ns-method/mdncaching> .
+<configuration/tuckerdncaching/139> ns4kge:result "0.832"^^xsd:decimal .
+
+<configuration/tuckerdncaching/140> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/140> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/140> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/tuckerdncaching/140> ns4kge:hasMetric  <metric/mrr> .
+<configuration/tuckerdncaching/140> ns4kge:hasKGEModel <kge-model/transd> .
+<configuration/tuckerdncaching/140> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/tuckerdncaching/140> ns4kge:result "0.5387"^^xsd:decimal .
+
+<configuration/tuckerdncaching/141> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/141> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/141> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/tuckerdncaching/141> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/tuckerdncaching/141> ns4kge:hasKGEModel <kge-model/transd> .
+<configuration/tuckerdncaching/141> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/tuckerdncaching/141> ns4kge:result "0.8059"^^xsd:decimal .
+
+<configuration/tuckerdncaching/142> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/142> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/142> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/tuckerdncaching/142> ns4kge:hasMetric  <metric/mrr> .
+<configuration/tuckerdncaching/142> ns4kge:hasKGEModel <kge-model/transd> .
+<configuration/tuckerdncaching/142> ns4kge:hasNSMethod <ns-method/tuckerdncaching> .
+<configuration/tuckerdncaching/142> ns4kge:result "0.5376"^^xsd:decimal .
+
+<configuration/tuckerdncaching/143> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/143> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/143> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/tuckerdncaching/143> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/tuckerdncaching/143> ns4kge:hasKGEModel <kge-model/transd> .
+<configuration/tuckerdncaching/143> ns4kge:hasNSMethod <ns-method/tuckerdncaching> .
+<configuration/tuckerdncaching/143> ns4kge:result "0.7869"^^xsd:decimal .
+
+<configuration/tuckerdncaching/144> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/144> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/144> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/tuckerdncaching/144> ns4kge:hasMetric  <metric/mrr> .
+<configuration/tuckerdncaching/144> ns4kge:hasKGEModel <kge-model/transd> .
+<configuration/tuckerdncaching/144> ns4kge:hasNSMethod <ns-method/bernoulli-negative-sampling> .
+<configuration/tuckerdncaching/144> ns4kge:result "0.2451"^^xsd:decimal .
+
+<configuration/tuckerdncaching/145> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/145> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/145> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/tuckerdncaching/145> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/tuckerdncaching/145> ns4kge:hasKGEModel <kge-model/transd> .
+<configuration/tuckerdncaching/145> ns4kge:hasNSMethod <ns-method/bernoulli-negative-sampling> .
+<configuration/tuckerdncaching/145> ns4kge:result "0.4289"^^xsd:decimal .
+
+<configuration/tuckerdncaching/146> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/146> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/146> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/tuckerdncaching/146> ns4kge:hasMetric  <metric/mrr> .
+<configuration/tuckerdncaching/146> ns4kge:hasKGEModel <kge-model/transd> .
+<configuration/tuckerdncaching/146> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/tuckerdncaching/146> ns4kge:result "0.2863"^^xsd:decimal .
+
+<configuration/tuckerdncaching/147> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/147> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/147> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/tuckerdncaching/147> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/tuckerdncaching/147> ns4kge:hasKGEModel <kge-model/transd> .
+<configuration/tuckerdncaching/147> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/tuckerdncaching/147> ns4kge:result "0.4785"^^xsd:decimal .
+
+<configuration/tuckerdncaching/148> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/148> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/148> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/tuckerdncaching/148> ns4kge:hasMetric  <metric/mrr> .
+<configuration/tuckerdncaching/148> ns4kge:hasKGEModel <kge-model/transd> .
+<configuration/tuckerdncaching/148> ns4kge:hasNSMethod <ns-method/ksgan> .
+<configuration/tuckerdncaching/148> ns4kge:result "0.28"^^xsd:decimal .
+
+<configuration/tuckerdncaching/149> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/149> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/149> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/tuckerdncaching/149> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/tuckerdncaching/149> ns4kge:hasKGEModel <kge-model/transd> .
+<configuration/tuckerdncaching/149> ns4kge:hasNSMethod <ns-method/ksgan> .
+<configuration/tuckerdncaching/149> ns4kge:result "0.465"^^xsd:decimal .
+
+<configuration/tuckerdncaching/150> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/150> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/150> ns4kge:hasDataset <dataset/wn18> .
+<configuration/tuckerdncaching/150> ns4kge:hasMetric  <metric/mrr> .
+<configuration/tuckerdncaching/150> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/tuckerdncaching/150> ns4kge:hasNSMethod <ns-method/bernoulli-negative-sampling> .
+<configuration/tuckerdncaching/150> ns4kge:result "0.7918"^^xsd:decimal .
+
+<configuration/tuckerdncaching/151> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/151> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/151> ns4kge:hasDataset <dataset/wn18> .
+<configuration/tuckerdncaching/151> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/tuckerdncaching/151> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/tuckerdncaching/151> ns4kge:hasNSMethod <ns-method/bernoulli-negative-sampling> .
+<configuration/tuckerdncaching/151> ns4kge:result "0.9338"^^xsd:decimal .
+
+<configuration/tuckerdncaching/152> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/152> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/152> ns4kge:hasDataset <dataset/wn18> .
+<configuration/tuckerdncaching/152> ns4kge:hasMetric  <metric/mrr> .
+<configuration/tuckerdncaching/152> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/tuckerdncaching/152> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/tuckerdncaching/152> ns4kge:result "0.8306"^^xsd:decimal .
+
+<configuration/tuckerdncaching/153> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/153> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/153> ns4kge:hasDataset <dataset/wn18> .
+<configuration/tuckerdncaching/153> ns4kge:hasMetric  <metric/mr> .
+<configuration/tuckerdncaching/153> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/tuckerdncaching/153> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/tuckerdncaching/153> ns4kge:result "827"^^xsd:decimal .
+
+<configuration/tuckerdncaching/154> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/154> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/154> ns4kge:hasDataset <dataset/wn18> .
+<configuration/tuckerdncaching/154> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/tuckerdncaching/154> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/tuckerdncaching/154> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/tuckerdncaching/154> ns4kge:result "0.9374"^^xsd:decimal .
+
+<configuration/tuckerdncaching/155> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/155> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/155> ns4kge:hasDataset <dataset/wn18> .
+<configuration/tuckerdncaching/155> ns4kge:hasMetric  <metric/mrr> .
+<configuration/tuckerdncaching/155> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/tuckerdncaching/155> ns4kge:hasNSMethod <ns-method/mdncaching> .
+<configuration/tuckerdncaching/155> ns4kge:result "0.7928"^^xsd:decimal .
+
+<configuration/tuckerdncaching/156> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/156> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/156> ns4kge:hasDataset <dataset/wn18> .
+<configuration/tuckerdncaching/156> ns4kge:hasMetric  <metric/mr> .
+<configuration/tuckerdncaching/156> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/tuckerdncaching/156> ns4kge:hasNSMethod <ns-method/mdncaching> .
+<configuration/tuckerdncaching/156> ns4kge:result "368"^^xsd:decimal .
+
+<configuration/tuckerdncaching/157> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/157> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/157> ns4kge:hasDataset <dataset/wn18> .
+<configuration/tuckerdncaching/157> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/tuckerdncaching/157> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/tuckerdncaching/157> ns4kge:hasNSMethod <ns-method/mdncaching> .
+<configuration/tuckerdncaching/157> ns4kge:result "0.9524"^^xsd:decimal .
+
+<configuration/tuckerdncaching/158> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/158> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/158> ns4kge:hasDataset <dataset/wn18> .
+<configuration/tuckerdncaching/158> ns4kge:hasMetric  <metric/mrr> .
+<configuration/tuckerdncaching/158> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/tuckerdncaching/158> ns4kge:hasNSMethod <ns-method/tuckerdncaching> .
+<configuration/tuckerdncaching/158> ns4kge:result "0.8001"^^xsd:decimal .
+
+<configuration/tuckerdncaching/159> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/159> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/159> ns4kge:hasDataset <dataset/wn18> .
+<configuration/tuckerdncaching/159> ns4kge:hasMetric  <metric/mr> .
+<configuration/tuckerdncaching/159> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/tuckerdncaching/159> ns4kge:hasNSMethod <ns-method/tuckerdncaching> .
+<configuration/tuckerdncaching/159> ns4kge:result "380"^^xsd:decimal .
+
+<configuration/tuckerdncaching/160> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/160> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/160> ns4kge:hasDataset <dataset/wn18> .
+<configuration/tuckerdncaching/160> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/tuckerdncaching/160> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/tuckerdncaching/160> ns4kge:hasNSMethod <ns-method/tuckerdncaching> .
+<configuration/tuckerdncaching/160> ns4kge:result "0.9532"^^xsd:decimal .
+
+<configuration/tuckerdncaching/161> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/161> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/161> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/tuckerdncaching/161> ns4kge:hasMetric  <metric/mrr> .
+<configuration/tuckerdncaching/161> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/tuckerdncaching/161> ns4kge:hasNSMethod <ns-method/bernoulli-negative-sampling> .
+<configuration/tuckerdncaching/161> ns4kge:result "0.3964"^^xsd:decimal .
+
+<configuration/tuckerdncaching/162> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/162> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/162> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/tuckerdncaching/162> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/tuckerdncaching/162> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/tuckerdncaching/162> ns4kge:hasNSMethod <ns-method/bernoulli-negative-sampling> .
+<configuration/tuckerdncaching/162> ns4kge:result "0.4525"^^xsd:decimal .
+
+<configuration/tuckerdncaching/163> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/163> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/163> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/tuckerdncaching/163> ns4kge:hasMetric  <metric/mrr> .
+<configuration/tuckerdncaching/163> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/tuckerdncaching/163> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/tuckerdncaching/163> ns4kge:result "0.4128"^^xsd:decimal .
+
+<configuration/tuckerdncaching/164> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/164> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/164> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/tuckerdncaching/164> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/tuckerdncaching/164> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/tuckerdncaching/164> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/tuckerdncaching/164> ns4kge:result "0.4545"^^xsd:decimal .
+
+<configuration/tuckerdncaching/165> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/165> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/165> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/tuckerdncaching/165> ns4kge:hasMetric  <metric/mr> .
+<configuration/tuckerdncaching/165> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/tuckerdncaching/165> ns4kge:hasNSMethod <ns-method/mdncaching> .
+<configuration/tuckerdncaching/165> ns4kge:result "2946"^^xsd:decimal .
+
+<configuration/tuckerdncaching/166> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/166> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/166> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/tuckerdncaching/166> ns4kge:hasMetric  <metric/mr> .
+<configuration/tuckerdncaching/166> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/tuckerdncaching/166> ns4kge:hasNSMethod <ns-method/tuckerdncaching> .
+<configuration/tuckerdncaching/166> ns4kge:result "3910"^^xsd:decimal .
+
+<configuration/tuckerdncaching/167> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/167> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/167> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/tuckerdncaching/167> ns4kge:hasMetric  <metric/mrr> .
+<configuration/tuckerdncaching/167> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/tuckerdncaching/167> ns4kge:hasNSMethod <ns-method/ksgan> .
+<configuration/tuckerdncaching/167> ns4kge:result "0.7448"^^xsd:decimal .
+
+<configuration/tuckerdncaching/168> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/168> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/168> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/tuckerdncaching/168> ns4kge:hasMetric  <metric/mr> .
+<configuration/tuckerdncaching/168> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/tuckerdncaching/168> ns4kge:hasNSMethod <ns-method/ksgan> .
+<configuration/tuckerdncaching/168> ns4kge:result "81"^^xsd:decimal .
+
+<configuration/tuckerdncaching/169> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/169> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/169> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/tuckerdncaching/169> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/tuckerdncaching/169> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/tuckerdncaching/169> ns4kge:hasNSMethod <ns-method/ksgan> .
+<configuration/tuckerdncaching/169> ns4kge:result "0.8391"^^xsd:decimal .
+
+<configuration/tuckerdncaching/170> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/170> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/170> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/tuckerdncaching/170> ns4kge:hasMetric  <metric/mrr> .
+<configuration/tuckerdncaching/170> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/tuckerdncaching/170> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/tuckerdncaching/170> ns4kge:result "0.6097"^^xsd:decimal .
+
+<configuration/tuckerdncaching/171> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/171> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/171> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/tuckerdncaching/171> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/tuckerdncaching/171> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/tuckerdncaching/171> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/tuckerdncaching/171> ns4kge:result "0.8129"^^xsd:decimal .
+
+<configuration/tuckerdncaching/172> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/172> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/172> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/tuckerdncaching/172> ns4kge:hasMetric  <metric/mrr> .
+<configuration/tuckerdncaching/172> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/tuckerdncaching/172> ns4kge:hasNSMethod <ns-method/mdncaching> .
+<configuration/tuckerdncaching/172> ns4kge:result "0.6094"^^xsd:decimal .
+
+<configuration/tuckerdncaching/173> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/173> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/173> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/tuckerdncaching/173> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/tuckerdncaching/173> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/tuckerdncaching/173> ns4kge:hasNSMethod <ns-method/mdncaching> .
+<configuration/tuckerdncaching/173> ns4kge:result "0.8176"^^xsd:decimal .
+
+<configuration/tuckerdncaching/174> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/174> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/174> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/tuckerdncaching/174> ns4kge:hasMetric  <metric/mrr> .
+<configuration/tuckerdncaching/174> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/tuckerdncaching/174> ns4kge:hasNSMethod <ns-method/bernoulli-negative-sampling> .
+<configuration/tuckerdncaching/174> ns4kge:result "0.2491"^^xsd:decimal .
+
+<configuration/tuckerdncaching/175> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/175> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/175> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/tuckerdncaching/175> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/tuckerdncaching/175> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/tuckerdncaching/175> ns4kge:hasNSMethod <ns-method/bernoulli-negative-sampling> .
+<configuration/tuckerdncaching/175> ns4kge:result "0.4203"^^xsd:decimal .
+
+<configuration/tuckerdncaching/176> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/176> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/176> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/tuckerdncaching/176> ns4kge:hasMetric  <metric/mrr> .
+<configuration/tuckerdncaching/176> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/tuckerdncaching/176> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/tuckerdncaching/176> ns4kge:result "0.2834"^^xsd:decimal .
+
+<configuration/tuckerdncaching/177> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/177> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/177> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/tuckerdncaching/177> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/tuckerdncaching/177> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/tuckerdncaching/177> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/tuckerdncaching/177> ns4kge:result "0.4556"^^xsd:decimal .
+
+<configuration/tuckerdncaching/178> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/178> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/178> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/tuckerdncaching/178> ns4kge:hasMetric  <metric/mr> .
+<configuration/tuckerdncaching/178> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/tuckerdncaching/178> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/tuckerdncaching/178> ns4kge:result "273"^^xsd:decimal .
+
+<configuration/tuckerdncaching/179> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/179> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/179> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/tuckerdncaching/179> ns4kge:hasMetric  <metric/mr> .
+<configuration/tuckerdncaching/179> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/tuckerdncaching/179> ns4kge:hasNSMethod <ns-method/tuckerdncaching> .
+<configuration/tuckerdncaching/179> ns4kge:result "276"^^xsd:decimal .
+
+<configuration/tuckerdncaching/180> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/180> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/180> ns4kge:hasDataset <dataset/wn18> .
+<configuration/tuckerdncaching/180> ns4kge:hasMetric  <metric/mrr> .
+<configuration/tuckerdncaching/180> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/tuckerdncaching/180> ns4kge:hasNSMethod <ns-method/bernoulli-negative-sampling> .
+<configuration/tuckerdncaching/180> ns4kge:result "0.9115"^^xsd:decimal .
+
+<configuration/tuckerdncaching/181> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/181> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/181> ns4kge:hasDataset <dataset/wn18> .
+<configuration/tuckerdncaching/181> ns4kge:hasMetric  <metric/mr> .
+<configuration/tuckerdncaching/181> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/tuckerdncaching/181> ns4kge:hasNSMethod <ns-method/bernoulli-negative-sampling> .
+<configuration/tuckerdncaching/181> ns4kge:result "808"^^xsd:decimal .
+
+<configuration/tuckerdncaching/182> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/182> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/182> ns4kge:hasDataset <dataset/wn18> .
+<configuration/tuckerdncaching/182> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/tuckerdncaching/182> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/tuckerdncaching/182> ns4kge:hasNSMethod <ns-method/bernoulli-negative-sampling> .
+<configuration/tuckerdncaching/182> ns4kge:result "0.9439"^^xsd:decimal .
+
+<configuration/tuckerdncaching/183> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/183> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/183> ns4kge:hasDataset <dataset/wn18> .
+<configuration/tuckerdncaching/183> ns4kge:hasMetric  <metric/mrr> .
+<configuration/tuckerdncaching/183> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/tuckerdncaching/183> ns4kge:hasNSMethod <ns-method/ksgan> .
+<configuration/tuckerdncaching/183> ns4kge:result "0.928"^^xsd:decimal .
+
+<configuration/tuckerdncaching/184> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/184> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/184> ns4kge:hasDataset <dataset/wn18> .
+<configuration/tuckerdncaching/184> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/tuckerdncaching/184> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/tuckerdncaching/184> ns4kge:hasNSMethod <ns-method/ksgan> .
+<configuration/tuckerdncaching/184> ns4kge:result "0.95"^^xsd:decimal .
+
+<configuration/tuckerdncaching/185> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/185> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/185> ns4kge:hasDataset <dataset/wn18> .
+<configuration/tuckerdncaching/185> ns4kge:hasMetric  <metric/mrr> .
+<configuration/tuckerdncaching/185> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/tuckerdncaching/185> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/tuckerdncaching/185> ns4kge:result "0.9355"^^xsd:decimal .
+
+<configuration/tuckerdncaching/186> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/186> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/186> ns4kge:hasDataset <dataset/wn18> .
+<configuration/tuckerdncaching/186> ns4kge:hasMetric  <metric/mrr> .
+<configuration/tuckerdncaching/186> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/tuckerdncaching/186> ns4kge:hasNSMethod <ns-method/mdncaching> .
+<configuration/tuckerdncaching/186> ns4kge:result "0.9494"^^xsd:decimal .
+
+<configuration/tuckerdncaching/187> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/187> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/187> ns4kge:hasDataset <dataset/wn18> .
+<configuration/tuckerdncaching/187> ns4kge:hasMetric  <metric/mr> .
+<configuration/tuckerdncaching/187> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/tuckerdncaching/187> ns4kge:hasNSMethod <ns-method/mdncaching> .
+<configuration/tuckerdncaching/187> ns4kge:result "744"^^xsd:decimal .
+
+<configuration/tuckerdncaching/188> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/188> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/188> ns4kge:hasDataset <dataset/wn18> .
+<configuration/tuckerdncaching/188> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/tuckerdncaching/188> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/tuckerdncaching/188> ns4kge:hasNSMethod <ns-method/mdncaching> .
+<configuration/tuckerdncaching/188> ns4kge:result "0.9568"^^xsd:decimal .
+
+<configuration/tuckerdncaching/189> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/189> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/189> ns4kge:hasDataset <dataset/wn18> .
+<configuration/tuckerdncaching/189> ns4kge:hasMetric  <metric/mrr> .
+<configuration/tuckerdncaching/189> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/tuckerdncaching/189> ns4kge:hasNSMethod <ns-method/tuckerdncaching> .
+<configuration/tuckerdncaching/189> ns4kge:result "0.9551"^^xsd:decimal .
+
+<configuration/tuckerdncaching/190> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/190> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/190> ns4kge:hasDataset <dataset/wn18> .
+<configuration/tuckerdncaching/190> ns4kge:hasMetric  <metric/mr> .
+<configuration/tuckerdncaching/190> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/tuckerdncaching/190> ns4kge:hasNSMethod <ns-method/tuckerdncaching> .
+<configuration/tuckerdncaching/190> ns4kge:result "790"^^xsd:decimal .
+
+<configuration/tuckerdncaching/191> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/191> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/191> ns4kge:hasDataset <dataset/wn18> .
+<configuration/tuckerdncaching/191> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/tuckerdncaching/191> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/tuckerdncaching/191> ns4kge:hasNSMethod <ns-method/tuckerdncaching> .
+<configuration/tuckerdncaching/191> ns4kge:result "0.9575"^^xsd:decimal .
+
+<configuration/tuckerdncaching/192> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/192> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/192> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/tuckerdncaching/192> ns4kge:hasMetric  <metric/mrr> .
+<configuration/tuckerdncaching/192> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/tuckerdncaching/192> ns4kge:hasNSMethod <ns-method/bernoulli-negative-sampling> .
+<configuration/tuckerdncaching/192> ns4kge:result "0.4431"^^xsd:decimal .
+
+<configuration/tuckerdncaching/193> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/193> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/193> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/tuckerdncaching/193> ns4kge:hasMetric  <metric/mr> .
+<configuration/tuckerdncaching/193> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/tuckerdncaching/193> ns4kge:hasNSMethod <ns-method/bernoulli-negative-sampling> .
+<configuration/tuckerdncaching/193> ns4kge:result "4693"^^xsd:decimal .
+
+<configuration/tuckerdncaching/194> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/194> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/194> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/tuckerdncaching/194> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/tuckerdncaching/194> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/tuckerdncaching/194> ns4kge:hasNSMethod <ns-method/bernoulli-negative-sampling> .
+<configuration/tuckerdncaching/194> ns4kge:result "0.5177"^^xsd:decimal .
+
+<configuration/tuckerdncaching/195> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/195> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/195> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/tuckerdncaching/195> ns4kge:hasMetric  <metric/mrr> .
+<configuration/tuckerdncaching/195> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/tuckerdncaching/195> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/tuckerdncaching/195> ns4kge:result "0.4463"^^xsd:decimal .
+
+<configuration/tuckerdncaching/196> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/196> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/196> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/tuckerdncaching/196> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/tuckerdncaching/196> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/tuckerdncaching/196> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/tuckerdncaching/196> ns4kge:result "0.5089"^^xsd:decimal .
+
+<configuration/tuckerdncaching/197> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/197> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/197> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/tuckerdncaching/197> ns4kge:hasMetric  <metric/mr> .
+<configuration/tuckerdncaching/197> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/tuckerdncaching/197> ns4kge:hasNSMethod <ns-method/mdncaching> .
+<configuration/tuckerdncaching/197> ns4kge:result "5312"^^xsd:decimal .
+
+<configuration/tuckerdncaching/198> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/198> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/198> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/tuckerdncaching/198> ns4kge:hasMetric  <metric/mr> .
+<configuration/tuckerdncaching/198> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/tuckerdncaching/198> ns4kge:hasNSMethod <ns-method/tuckerdncaching> .
+<configuration/tuckerdncaching/198> ns4kge:result "8792"^^xsd:decimal .
+
+<configuration/tuckerdncaching/199> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/199> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/199> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/tuckerdncaching/199> ns4kge:hasMetric  <metric/mrr> .
+<configuration/tuckerdncaching/199> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/tuckerdncaching/199> ns4kge:hasNSMethod <ns-method/bernoulli-negative-sampling> .
+<configuration/tuckerdncaching/199> ns4kge:result "0.6253"^^xsd:decimal .
+
+<configuration/tuckerdncaching/200> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/200> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/200> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/tuckerdncaching/200> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/tuckerdncaching/200> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/tuckerdncaching/200> ns4kge:hasNSMethod <ns-method/bernoulli-negative-sampling> .
+<configuration/tuckerdncaching/200> ns4kge:result "0.8072"^^xsd:decimal .
+
+<configuration/tuckerdncaching/201> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/201> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/201> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/tuckerdncaching/201> ns4kge:hasMetric  <metric/mrr> .
+<configuration/tuckerdncaching/201> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/tuckerdncaching/201> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/tuckerdncaching/201> ns4kge:result "0.7995"^^xsd:decimal .
+
+<configuration/tuckerdncaching/202> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/202> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/202> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/tuckerdncaching/202> ns4kge:hasMetric  <metric/mr> .
+<configuration/tuckerdncaching/202> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/tuckerdncaching/202> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/tuckerdncaching/202> ns4kge:result "94"^^xsd:decimal .
+
+<configuration/tuckerdncaching/203> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/203> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/203> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/tuckerdncaching/203> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/tuckerdncaching/203> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/tuckerdncaching/203> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/tuckerdncaching/203> ns4kge:result "0.8628"^^xsd:decimal .
+
+<configuration/tuckerdncaching/204> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/204> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/204> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/tuckerdncaching/204> ns4kge:hasMetric  <metric/mrr> .
+<configuration/tuckerdncaching/204> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/tuckerdncaching/204> ns4kge:hasNSMethod <ns-method/mdncaching> .
+<configuration/tuckerdncaching/204> ns4kge:result "0.9201"^^xsd:decimal .
+
+<configuration/tuckerdncaching/205> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/205> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/205> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/tuckerdncaching/205> ns4kge:hasMetric  <metric/mr> .
+<configuration/tuckerdncaching/205> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/tuckerdncaching/205> ns4kge:hasNSMethod <ns-method/mdncaching> .
+<configuration/tuckerdncaching/205> ns4kge:result "80"^^xsd:decimal .
+
+<configuration/tuckerdncaching/206> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/206> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/206> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/tuckerdncaching/206> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/tuckerdncaching/206> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/tuckerdncaching/206> ns4kge:hasNSMethod <ns-method/mdncaching> .
+<configuration/tuckerdncaching/206> ns4kge:result "0.9494"^^xsd:decimal .
+
+<configuration/tuckerdncaching/207> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/207> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/207> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/tuckerdncaching/207> ns4kge:hasMetric  <metric/mrr> .
+<configuration/tuckerdncaching/207> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/tuckerdncaching/207> ns4kge:hasNSMethod <ns-method/tuckerdncaching> .
+<configuration/tuckerdncaching/207> ns4kge:result "0.9363"^^xsd:decimal .
+
+<configuration/tuckerdncaching/208> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/208> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/208> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/tuckerdncaching/208> ns4kge:hasMetric  <metric/mr> .
+<configuration/tuckerdncaching/208> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/tuckerdncaching/208> ns4kge:hasNSMethod <ns-method/tuckerdncaching> .
+<configuration/tuckerdncaching/208> ns4kge:result "121"^^xsd:decimal .
+
+<configuration/tuckerdncaching/209> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/209> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/209> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/tuckerdncaching/209> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/tuckerdncaching/209> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/tuckerdncaching/209> ns4kge:hasNSMethod <ns-method/tuckerdncaching> .
+<configuration/tuckerdncaching/209> ns4kge:result "0.9505"^^xsd:decimal .
+
+<configuration/tuckerdncaching/210> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/210> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/210> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/tuckerdncaching/210> ns4kge:hasMetric  <metric/mrr> .
+<configuration/tuckerdncaching/210> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/tuckerdncaching/210> ns4kge:hasNSMethod <ns-method/bernoulli-negative-sampling> .
+<configuration/tuckerdncaching/210> ns4kge:result "0.2596"^^xsd:decimal .
+
+<configuration/tuckerdncaching/211> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/211> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/211> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/tuckerdncaching/211> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/tuckerdncaching/211> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/tuckerdncaching/211> ns4kge:hasNSMethod <ns-method/bernoulli-negative-sampling> .
+<configuration/tuckerdncaching/211> ns4kge:result "0.4354"^^xsd:decimal .
+
+<configuration/tuckerdncaching/212> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/212> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/212> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/tuckerdncaching/212> ns4kge:hasMetric  <metric/mrr> .
+<configuration/tuckerdncaching/212> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/tuckerdncaching/212> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/tuckerdncaching/212> ns4kge:result "0.3021"^^xsd:decimal .
+
+<configuration/tuckerdncaching/213> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/213> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/213> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/tuckerdncaching/213> ns4kge:hasMetric  <metric/mr> .
+<configuration/tuckerdncaching/213> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/tuckerdncaching/213> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/tuckerdncaching/213> ns4kge:result "221"^^xsd:decimal .
+
+<configuration/tuckerdncaching/214> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/214> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/214> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/tuckerdncaching/214> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/tuckerdncaching/214> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/tuckerdncaching/214> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/tuckerdncaching/214> ns4kge:result "0.4805"^^xsd:decimal .
+
+<configuration/tuckerdncaching/215> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/215> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/215> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/tuckerdncaching/215> ns4kge:hasMetric  <metric/mr> .
+<configuration/tuckerdncaching/215> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/tuckerdncaching/215> ns4kge:hasNSMethod <ns-method/tuckerdncaching> .
+<configuration/tuckerdncaching/215> ns4kge:result "757"^^xsd:decimal .
+
+<configuration/tuckerdncaching/216> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/216> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/216> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/tuckerdncaching/216> ns4kge:hasMetric  <metric/mr> .
+<configuration/tuckerdncaching/216> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/tuckerdncaching/216> ns4kge:hasNSMethod <ns-method/mdncaching> .
+<configuration/tuckerdncaching/216> ns4kge:result "816"^^xsd:decimal .
+
+<configuration/tuckerdncaching/217> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/217> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/217> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/tuckerdncaching/217> ns4kge:hasMetric  <metric/mrr> .
+<configuration/tuckerdncaching/217> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/tuckerdncaching/217> ns4kge:hasNSMethod <ns-method/kbgan> .
+<configuration/tuckerdncaching/217> ns4kge:result "0.5002"^^xsd:decimal .
+
+<configuration/tuckerdncaching/218> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/218> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/218> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/tuckerdncaching/218> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/tuckerdncaching/218> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/tuckerdncaching/218> ns4kge:hasNSMethod <ns-method/kbgan> .
+<configuration/tuckerdncaching/218> ns4kge:result "0.761"^^xsd:decimal .
+
+<configuration/tuckerdncaching/219> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/219> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/219> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/tuckerdncaching/219> ns4kge:hasMetric  <metric/mrr> .
+<configuration/tuckerdncaching/219> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/tuckerdncaching/219> ns4kge:hasNSMethod <ns-method/kbgan> .
+<configuration/tuckerdncaching/219> ns4kge:result "0.3771"^^xsd:decimal .
+
+<configuration/tuckerdncaching/220> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/220> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/220> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/tuckerdncaching/220> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/tuckerdncaching/220> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/tuckerdncaching/220> ns4kge:hasNSMethod <ns-method/kbgan> .
+<configuration/tuckerdncaching/220> ns4kge:result "0.7267"^^xsd:decimal .
+
+<configuration/tuckerdncaching/221> rdf:type ns4kge:Configuration .
+<configuration/tuckerdncaching/221> ns4kge:hasTask    <task/link-prediction> .
+<configuration/tuckerdncaching/221> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/tuckerdncaching/221> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/tuckerdncaching/221> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/tuckerdncaching/221> ns4kge:hasNSMethod <ns-method/ksgan> .
+<configuration/tuckerdncaching/221> ns4kge:result "0.8095"^^xsd:decimal .

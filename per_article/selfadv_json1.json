@@ -1,0 +1,38 @@
+{
+  "Article": {
+    "title": "RotatE: Knowledge Graph Embedding by Relational Rotation in Complex Space",
+    "date": "2019"
+  },
+  "proposedNSMethod": "Self-Adversarial Negative Sampling",
+  "proposedKGEModel": "RotatE",
+  "mentionedNSMethods": [
+    "Uniform Negative Sampling",
+    "KBGAN"
+  ],
+  "mentionedKGEModels": [
+    "TransE",
+    "TransH",
+    "TransR",
+    "STransE",
+    "DistMult",
+    "ComplEx",
+    "HolE",
+    "ConvE",
+    "TorusE",
+    "KG2E",
+    "pRotatE"
+  ],
+  "Experimentation": {
+    "Hardware": [],
+    "TrainingProtocol": {
+      "LossFunction": [
+        "negative sampling loss"
+      ],
+      "Optimizer": [
+        "Adam"
+      ],
+      "learningRate": null,
+      "nsRatio": null
+    }
+  }
+}

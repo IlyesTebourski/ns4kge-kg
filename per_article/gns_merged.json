@@ -1,0 +1,64 @@
+{
+  "Article": {
+    "title": "Good negative sampling for triple classification",
+    "date": ""
+  },
+  "proposedNSMethod": "Good Negative Sampling",
+  "proposedKGEModel": "",
+  "mentionedNSMethods": [
+    "Bernoulli Negative Sampling",
+    "Iterative Negative Sampling",
+    "Uniform Negative Sampling",
+    "Typed Negative Sampling",
+    "Pseudo Typed Negative Sampling"
+  ],
+  "mentionedKGEModels": [
+    "ReasonKGE",
+    "TransE",
+    "ComplEx",
+    "BERT",
+    "DistMult",
+    "KG-BERT",
+    "Rescal",
+    "TransOWL"
+  ],
+  "Experimentation": {
+    "Hardware": [],
+    "TrainingProtocol": {
+      "LossFunction": [
+        "cross-entropy loss"
+      ],
+      "Optimizer": [
+        "Adam"
+      ],
+      "learningRate": 5e-05,
+      "nsRatio": 1.0
+    },
+    "Configurations": [
+      {
+        "Task": "Triple Classification",
+        "Dataset": "FB13 (FB13_reduced)",
+        "Metric": "Accuracy",
+        "KGEModel": "KG-BERT",
+        "NSMethod": "Uniform Negative Sampling",
+        "result": 0.5182
+      },
+      {
+        "Task": "Triple Classification",
+        "Dataset": "FB13 (FB13_reduced)",
+        "Metric": "Accuracy",
+        "KGEModel": "KG-BERT",
+        "NSMethod": "Pseudo Typed Negative Sampling",
+        "result": 0.8972
+      },
+      {
+        "Task": "Triple Classification",
+        "Dataset": "FB13 (FB13_reduced)",
+        "Metric": "Accuracy",
+        "KGEModel": "KG-BERT",
+        "NSMethod": "Good Negative Sampling",
+        "result": 0.9013
+      }
+    ]
+  }
+}

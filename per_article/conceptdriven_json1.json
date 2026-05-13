@@ -1,0 +1,37 @@
+{
+  "Article": {
+    "title": "A Novel Concept-Driven Negative Sampling Mechanism for Enhancing Semanticity and Interpretability of Knowledge Graph Completion Task",
+    "date": "2023"
+  },
+  "proposedNSMethod": "Concept-Driven Negative Sampling",
+  "proposedKGEModel": "",
+  "mentionedNSMethods": [
+    "Concept Domain Negative Sampling",
+    "Commonsense-Aware Negative Sampling",
+    "Uniform Negative Sampling",
+    "Entity-Aware Negative Sampling",
+    "Reinforcement Learning Negative Sampling"
+  ],
+  "mentionedKGEModels": [
+    "TransE",
+    "TransH",
+    "TransR",
+    "DKRL",
+    "RotatE",
+    "DistMult"
+  ],
+  "Experimentation": {
+    "Hardware": [],
+    "TrainingProtocol": {
+      "LossFunction": [
+        "margin-based ranking loss"
+      ],
+      "Optimizer": [
+        "SGD",
+        "Adam"
+      ],
+      "learningRate": null,
+      "nsRatio": null
+    }
+  }
+}

@@ -1,0 +1,668 @@
+<article/adaptativens> rdf:type ns4kge:Article .
+<article/adaptativens> ns4kge:title "Knowledge Graph Embedding via Adaptive Negative Subsampling"^^xsd:string .
+<article/adaptativens> ns4kge:date "2023"^^xsd:gYear .
+<article/adaptativens> ns4kge:proposesNSMethod <ns-method/adaptive-negative-sampling> .
+<article/adaptativens> ns4kge:mentionsNSMethod <ns-method/random-negative-sampling> .
+<article/adaptativens> ns4kge:mentionsNSMethod <ns-method/adversarial-negative-sampling> .
+<article/adaptativens> ns4kge:mentionsNSMethod <ns-method/frequency-based-negative-sampling> .
+<article/adaptativens> ns4kge:mentionsKGEModel <kge-model/transg> .
+<article/adaptativens> ns4kge:mentionsKGEModel <kge-model/rescal> .
+<article/adaptativens> ns4kge:mentionsKGEModel <kge-model/transd> .
+<article/adaptativens> ns4kge:mentionsKGEModel <kge-model/mei> .
+<article/adaptativens> ns4kge:mentionsKGEModel <kge-model/transe> .
+<article/adaptativens> ns4kge:mentionsKGEModel <kge-model/distmult> .
+<article/adaptativens> ns4kge:mentionsKGEModel <kge-model/meim> .
+<article/adaptativens> ns4kge:mentionsKGEModel <kge-model/transh> .
+<article/adaptativens> ns4kge:mentionsKGEModel <kge-model/murp> .
+<article/adaptativens> ns4kge:mentionsKGEModel <kge-model/rotate> .
+<article/adaptativens> ns4kge:mentionsKGEModel <kge-model/complex> .
+<article/adaptativens> ns4kge:mentionsKGEModel <kge-model/hake> .
+<article/adaptativens> ns4kge:mentionsKGEModel <kge-model/conve> .
+<article/adaptativens> ns4kge:mentionsKGEModel <kge-model/transr> .
+<article/adaptativens> ns4kge:hasExperimentation <experimentation/adaptativens> .
+
+<ns-method/adaptive-negative-sampling> rdf:type ns4kge:NSMethod .
+
+<ns-method/random-negative-sampling> rdf:type ns4kge:NSMethod .
+<category/static-ns> rdf:type ns4kge:Category .
+
+<ns-method/random-negative-sampling> ns4kge:hasCategory <category/static-ns> .
+<subcategory/random> rdf:type ns4kge:Subcategory .
+
+<ns-method/random-negative-sampling> ns4kge:hasSubcategory <subcategory/random> .
+
+<ns-method/adversarial-negative-sampling> rdf:type ns4kge:NSMethod .
+
+<ns-method/frequency-based-negative-sampling> rdf:type ns4kge:NSMethod .
+
+<kge-model/transg> rdf:type ns4kge:KGEModel .
+
+<kge-model/rescal> rdf:type ns4kge:KGEModel .
+
+<kge-model/transd> rdf:type ns4kge:KGEModel .
+
+<kge-model/mei> rdf:type ns4kge:KGEModel .
+
+<kge-model/transe> rdf:type ns4kge:KGEModel .
+
+<kge-model/distmult> rdf:type ns4kge:KGEModel .
+
+<kge-model/meim> rdf:type ns4kge:KGEModel .
+
+<kge-model/transh> rdf:type ns4kge:KGEModel .
+
+<kge-model/murp> rdf:type ns4kge:KGEModel .
+
+<kge-model/rotate> rdf:type ns4kge:KGEModel .
+
+<kge-model/complex> rdf:type ns4kge:KGEModel .
+
+<kge-model/hake> rdf:type ns4kge:KGEModel .
+
+<kge-model/conve> rdf:type ns4kge:KGEModel .
+
+<kge-model/transr> rdf:type ns4kge:KGEModel .
+
+<dataset/wn18rr> rdf:type ns4kge:Dataset .
+<task/link-prediction> rdf:type ns4kge:Task .
+<metric/mrr> rdf:type ns4kge:Metric .
+<metric/hits-1> rdf:type ns4kge:Metric .
+<metric/hits-3> rdf:type ns4kge:Metric .
+<metric/hits-10> rdf:type ns4kge:Metric .
+<dataset/fb15k-237> rdf:type ns4kge:Dataset .
+<dataset/yago3-10> rdf:type ns4kge:Dataset .
+<loss-function/margin-based-ranking-loss> rdf:type ns4kge:LossFunction .
+
+<experimentation/adaptativens> rdf:type ns4kge:Experimentation .
+<experimentation/adaptativens> ns4kge:hasTrainingProtocol <training-protocol/adaptativens> .
+<experimentation/adaptativens> ns4kge:hasConfiguration <configuration/adaptativens/1> .
+<experimentation/adaptativens> ns4kge:hasConfiguration <configuration/adaptativens/2> .
+<experimentation/adaptativens> ns4kge:hasConfiguration <configuration/adaptativens/3> .
+<experimentation/adaptativens> ns4kge:hasConfiguration <configuration/adaptativens/4> .
+<experimentation/adaptativens> ns4kge:hasConfiguration <configuration/adaptativens/5> .
+<experimentation/adaptativens> ns4kge:hasConfiguration <configuration/adaptativens/6> .
+<experimentation/adaptativens> ns4kge:hasConfiguration <configuration/adaptativens/7> .
+<experimentation/adaptativens> ns4kge:hasConfiguration <configuration/adaptativens/8> .
+<experimentation/adaptativens> ns4kge:hasConfiguration <configuration/adaptativens/9> .
+<experimentation/adaptativens> ns4kge:hasConfiguration <configuration/adaptativens/10> .
+<experimentation/adaptativens> ns4kge:hasConfiguration <configuration/adaptativens/11> .
+<experimentation/adaptativens> ns4kge:hasConfiguration <configuration/adaptativens/12> .
+<experimentation/adaptativens> ns4kge:hasConfiguration <configuration/adaptativens/13> .
+<experimentation/adaptativens> ns4kge:hasConfiguration <configuration/adaptativens/14> .
+<experimentation/adaptativens> ns4kge:hasConfiguration <configuration/adaptativens/15> .
+<experimentation/adaptativens> ns4kge:hasConfiguration <configuration/adaptativens/16> .
+<experimentation/adaptativens> ns4kge:hasConfiguration <configuration/adaptativens/17> .
+<experimentation/adaptativens> ns4kge:hasConfiguration <configuration/adaptativens/18> .
+<experimentation/adaptativens> ns4kge:hasConfiguration <configuration/adaptativens/19> .
+<experimentation/adaptativens> ns4kge:hasConfiguration <configuration/adaptativens/20> .
+<experimentation/adaptativens> ns4kge:hasConfiguration <configuration/adaptativens/21> .
+<experimentation/adaptativens> ns4kge:hasConfiguration <configuration/adaptativens/22> .
+<experimentation/adaptativens> ns4kge:hasConfiguration <configuration/adaptativens/23> .
+<experimentation/adaptativens> ns4kge:hasConfiguration <configuration/adaptativens/24> .
+<experimentation/adaptativens> ns4kge:hasConfiguration <configuration/adaptativens/25> .
+<experimentation/adaptativens> ns4kge:hasConfiguration <configuration/adaptativens/26> .
+<experimentation/adaptativens> ns4kge:hasConfiguration <configuration/adaptativens/27> .
+<experimentation/adaptativens> ns4kge:hasConfiguration <configuration/adaptativens/28> .
+<experimentation/adaptativens> ns4kge:hasConfiguration <configuration/adaptativens/29> .
+<experimentation/adaptativens> ns4kge:hasConfiguration <configuration/adaptativens/30> .
+<experimentation/adaptativens> ns4kge:hasConfiguration <configuration/adaptativens/31> .
+<experimentation/adaptativens> ns4kge:hasConfiguration <configuration/adaptativens/32> .
+<experimentation/adaptativens> ns4kge:hasConfiguration <configuration/adaptativens/33> .
+<experimentation/adaptativens> ns4kge:hasConfiguration <configuration/adaptativens/34> .
+<experimentation/adaptativens> ns4kge:hasConfiguration <configuration/adaptativens/35> .
+<experimentation/adaptativens> ns4kge:hasConfiguration <configuration/adaptativens/36> .
+<experimentation/adaptativens> ns4kge:hasConfiguration <configuration/adaptativens/37> .
+<experimentation/adaptativens> ns4kge:hasConfiguration <configuration/adaptativens/38> .
+<experimentation/adaptativens> ns4kge:hasConfiguration <configuration/adaptativens/39> .
+<experimentation/adaptativens> ns4kge:hasConfiguration <configuration/adaptativens/40> .
+<experimentation/adaptativens> ns4kge:hasConfiguration <configuration/adaptativens/41> .
+<experimentation/adaptativens> ns4kge:hasConfiguration <configuration/adaptativens/42> .
+<experimentation/adaptativens> ns4kge:hasConfiguration <configuration/adaptativens/43> .
+<experimentation/adaptativens> ns4kge:hasConfiguration <configuration/adaptativens/44> .
+<experimentation/adaptativens> ns4kge:hasConfiguration <configuration/adaptativens/45> .
+<experimentation/adaptativens> ns4kge:hasConfiguration <configuration/adaptativens/46> .
+<experimentation/adaptativens> ns4kge:hasConfiguration <configuration/adaptativens/47> .
+<experimentation/adaptativens> ns4kge:hasConfiguration <configuration/adaptativens/48> .
+<experimentation/adaptativens> ns4kge:hasConfiguration <configuration/adaptativens/49> .
+<experimentation/adaptativens> ns4kge:hasConfiguration <configuration/adaptativens/50> .
+<experimentation/adaptativens> ns4kge:hasConfiguration <configuration/adaptativens/51> .
+<experimentation/adaptativens> ns4kge:hasConfiguration <configuration/adaptativens/52> .
+<experimentation/adaptativens> ns4kge:hasConfiguration <configuration/adaptativens/53> .
+<experimentation/adaptativens> ns4kge:hasConfiguration <configuration/adaptativens/54> .
+<experimentation/adaptativens> ns4kge:hasConfiguration <configuration/adaptativens/55> .
+<experimentation/adaptativens> ns4kge:hasConfiguration <configuration/adaptativens/56> .
+<experimentation/adaptativens> ns4kge:hasConfiguration <configuration/adaptativens/57> .
+<experimentation/adaptativens> ns4kge:hasConfiguration <configuration/adaptativens/58> .
+<experimentation/adaptativens> ns4kge:hasConfiguration <configuration/adaptativens/59> .
+<experimentation/adaptativens> ns4kge:hasConfiguration <configuration/adaptativens/60> .
+<experimentation/adaptativens> ns4kge:hasConfiguration <configuration/adaptativens/61> .
+<experimentation/adaptativens> ns4kge:hasConfiguration <configuration/adaptativens/62> .
+<experimentation/adaptativens> ns4kge:hasConfiguration <configuration/adaptativens/63> .
+<experimentation/adaptativens> ns4kge:hasConfiguration <configuration/adaptativens/64> .
+<experimentation/adaptativens> ns4kge:hasConfiguration <configuration/adaptativens/65> .
+<experimentation/adaptativens> ns4kge:hasConfiguration <configuration/adaptativens/66> .
+<experimentation/adaptativens> ns4kge:hasConfiguration <configuration/adaptativens/67> .
+<experimentation/adaptativens> ns4kge:hasConfiguration <configuration/adaptativens/68> .
+<experimentation/adaptativens> ns4kge:hasConfiguration <configuration/adaptativens/69> .
+<experimentation/adaptativens> ns4kge:hasConfiguration <configuration/adaptativens/70> .
+<experimentation/adaptativens> ns4kge:hasConfiguration <configuration/adaptativens/71> .
+<experimentation/adaptativens> ns4kge:hasConfiguration <configuration/adaptativens/72> .
+
+<training-protocol/adaptativens> rdf:type ns4kge:TrainingProtocol .
+<training-protocol/adaptativens> ns4kge:hasLossFunction <loss-function/margin-based-ranking-loss> .
+
+<configuration/adaptativens/1> rdf:type ns4kge:Configuration .
+<configuration/adaptativens/1> ns4kge:hasTask    <task/link-prediction> .
+<configuration/adaptativens/1> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/adaptativens/1> ns4kge:hasMetric  <metric/mrr> .
+<configuration/adaptativens/1> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/adaptativens/1> ns4kge:result "0.476"^^xsd:decimal .
+
+<configuration/adaptativens/2> rdf:type ns4kge:Configuration .
+<configuration/adaptativens/2> ns4kge:hasTask    <task/link-prediction> .
+<configuration/adaptativens/2> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/adaptativens/2> ns4kge:hasMetric  <metric/mrr> .
+<configuration/adaptativens/2> ns4kge:hasKGEModel <kge-model/murp> .
+<configuration/adaptativens/2> ns4kge:result "0.477"^^xsd:decimal .
+
+<configuration/adaptativens/3> rdf:type ns4kge:Configuration .
+<configuration/adaptativens/3> ns4kge:hasTask    <task/link-prediction> .
+<configuration/adaptativens/3> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/adaptativens/3> ns4kge:hasMetric  <metric/mrr> .
+<configuration/adaptativens/3> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/adaptativens/3> ns4kge:result "0.44"^^xsd:decimal .
+
+<configuration/adaptativens/4> rdf:type ns4kge:Configuration .
+<configuration/adaptativens/4> ns4kge:hasTask    <task/link-prediction> .
+<configuration/adaptativens/4> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/adaptativens/4> ns4kge:hasMetric  <metric/mrr> .
+<configuration/adaptativens/4> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/adaptativens/4> ns4kge:result "0.43"^^xsd:decimal .
+
+<configuration/adaptativens/5> rdf:type ns4kge:Configuration .
+<configuration/adaptativens/5> ns4kge:hasTask    <task/link-prediction> .
+<configuration/adaptativens/5> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/adaptativens/5> ns4kge:hasMetric  <metric/mrr> .
+<configuration/adaptativens/5> ns4kge:hasKGEModel <kge-model/conve> .
+<configuration/adaptativens/5> ns4kge:result "0.43"^^xsd:decimal .
+
+<configuration/adaptativens/6> rdf:type ns4kge:Configuration .
+<configuration/adaptativens/6> ns4kge:hasTask    <task/link-prediction> .
+<configuration/adaptativens/6> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/adaptativens/6> ns4kge:hasMetric  <metric/mrr> .
+<configuration/adaptativens/6> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/adaptativens/6> ns4kge:result "0.226"^^xsd:decimal .
+
+<configuration/adaptativens/7> rdf:type ns4kge:Configuration .
+<configuration/adaptativens/7> ns4kge:hasTask    <task/link-prediction> .
+<configuration/adaptativens/7> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/adaptativens/7> ns4kge:hasMetric  <metric/mrr> .
+<configuration/adaptativens/7> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/adaptativens/7> ns4kge:hasNSMethod <ns-method/adaptive-negative-sampling> .
+<configuration/adaptativens/7> ns4kge:result "0.329"^^xsd:decimal .
+
+<configuration/adaptativens/8> rdf:type ns4kge:Configuration .
+<configuration/adaptativens/8> ns4kge:hasTask    <task/link-prediction> .
+<configuration/adaptativens/8> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/adaptativens/8> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/adaptativens/8> ns4kge:hasKGEModel <kge-model/murp> .
+<configuration/adaptativens/8> ns4kge:result "0.438"^^xsd:decimal .
+
+<configuration/adaptativens/9> rdf:type ns4kge:Configuration .
+<configuration/adaptativens/9> ns4kge:hasTask    <task/link-prediction> .
+<configuration/adaptativens/9> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/adaptativens/9> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/adaptativens/9> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/adaptativens/9> ns4kge:result "0.428"^^xsd:decimal .
+
+<configuration/adaptativens/10> rdf:type ns4kge:Configuration .
+<configuration/adaptativens/10> ns4kge:hasTask    <task/link-prediction> .
+<configuration/adaptativens/10> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/adaptativens/10> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/adaptativens/10> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/adaptativens/10> ns4kge:result "0.41"^^xsd:decimal .
+
+<configuration/adaptativens/11> rdf:type ns4kge:Configuration .
+<configuration/adaptativens/11> ns4kge:hasTask    <task/link-prediction> .
+<configuration/adaptativens/11> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/adaptativens/11> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/adaptativens/11> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/adaptativens/11> ns4kge:result "0.39"^^xsd:decimal .
+
+<configuration/adaptativens/12> rdf:type ns4kge:Configuration .
+<configuration/adaptativens/12> ns4kge:hasTask    <task/link-prediction> .
+<configuration/adaptativens/12> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/adaptativens/12> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/adaptativens/12> ns4kge:hasKGEModel <kge-model/conve> .
+<configuration/adaptativens/12> ns4kge:result "0.4"^^xsd:decimal .
+
+<configuration/adaptativens/13> rdf:type ns4kge:Configuration .
+<configuration/adaptativens/13> ns4kge:hasTask    <task/link-prediction> .
+<configuration/adaptativens/13> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/adaptativens/13> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/adaptativens/13> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/adaptativens/13> ns4kge:hasNSMethod <ns-method/adaptive-negative-sampling> .
+<configuration/adaptativens/13> ns4kge:result "0.23"^^xsd:decimal .
+
+<configuration/adaptativens/14> rdf:type ns4kge:Configuration .
+<configuration/adaptativens/14> ns4kge:hasTask    <task/link-prediction> .
+<configuration/adaptativens/14> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/adaptativens/14> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/adaptativens/14> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/adaptativens/14> ns4kge:result "0.492"^^xsd:decimal .
+
+<configuration/adaptativens/15> rdf:type ns4kge:Configuration .
+<configuration/adaptativens/15> ns4kge:hasTask    <task/link-prediction> .
+<configuration/adaptativens/15> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/adaptativens/15> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/adaptativens/15> ns4kge:hasKGEModel <kge-model/murp> .
+<configuration/adaptativens/15> ns4kge:result "0.489"^^xsd:decimal .
+
+<configuration/adaptativens/16> rdf:type ns4kge:Configuration .
+<configuration/adaptativens/16> ns4kge:hasTask    <task/link-prediction> .
+<configuration/adaptativens/16> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/adaptativens/16> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/adaptativens/16> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/adaptativens/16> ns4kge:result "0.46"^^xsd:decimal .
+
+<configuration/adaptativens/17> rdf:type ns4kge:Configuration .
+<configuration/adaptativens/17> ns4kge:hasTask    <task/link-prediction> .
+<configuration/adaptativens/17> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/adaptativens/17> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/adaptativens/17> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/adaptativens/17> ns4kge:result "0.44"^^xsd:decimal .
+
+<configuration/adaptativens/18> rdf:type ns4kge:Configuration .
+<configuration/adaptativens/18> ns4kge:hasTask    <task/link-prediction> .
+<configuration/adaptativens/18> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/adaptativens/18> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/adaptativens/18> ns4kge:hasKGEModel <kge-model/conve> .
+<configuration/adaptativens/18> ns4kge:result "0.44"^^xsd:decimal .
+
+<configuration/adaptativens/19> rdf:type ns4kge:Configuration .
+<configuration/adaptativens/19> ns4kge:hasTask    <task/link-prediction> .
+<configuration/adaptativens/19> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/adaptativens/19> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/adaptativens/19> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/adaptativens/19> ns4kge:hasNSMethod <ns-method/adaptive-negative-sampling> .
+<configuration/adaptativens/19> ns4kge:result "0.366"^^xsd:decimal .
+
+<configuration/adaptativens/20> rdf:type ns4kge:Configuration .
+<configuration/adaptativens/20> ns4kge:hasTask    <task/link-prediction> .
+<configuration/adaptativens/20> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/adaptativens/20> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/adaptativens/20> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/adaptativens/20> ns4kge:result "0.571"^^xsd:decimal .
+
+<configuration/adaptativens/21> rdf:type ns4kge:Configuration .
+<configuration/adaptativens/21> ns4kge:hasTask    <task/link-prediction> .
+<configuration/adaptativens/21> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/adaptativens/21> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/adaptativens/21> ns4kge:hasKGEModel <kge-model/murp> .
+<configuration/adaptativens/21> ns4kge:result "0.555"^^xsd:decimal .
+
+<configuration/adaptativens/22> rdf:type ns4kge:Configuration .
+<configuration/adaptativens/22> ns4kge:hasTask    <task/link-prediction> .
+<configuration/adaptativens/22> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/adaptativens/22> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/adaptativens/22> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/adaptativens/22> ns4kge:hasNSMethod <ns-method/adaptive-negative-sampling> .
+<configuration/adaptativens/22> ns4kge:result "0.527"^^xsd:decimal .
+
+<configuration/adaptativens/23> rdf:type ns4kge:Configuration .
+<configuration/adaptativens/23> ns4kge:hasTask    <task/link-prediction> .
+<configuration/adaptativens/23> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/adaptativens/23> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/adaptativens/23> ns4kge:hasKGEModel <kge-model/conve> .
+<configuration/adaptativens/23> ns4kge:result "0.52"^^xsd:decimal .
+
+<configuration/adaptativens/24> rdf:type ns4kge:Configuration .
+<configuration/adaptativens/24> ns4kge:hasTask    <task/link-prediction> .
+<configuration/adaptativens/24> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/adaptativens/24> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/adaptativens/24> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/adaptativens/24> ns4kge:result "0.51"^^xsd:decimal .
+
+<configuration/adaptativens/25> rdf:type ns4kge:Configuration .
+<configuration/adaptativens/25> ns4kge:hasTask    <task/link-prediction> .
+<configuration/adaptativens/25> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/adaptativens/25> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/adaptativens/25> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/adaptativens/25> ns4kge:result "0.505"^^xsd:decimal .
+
+<configuration/adaptativens/26> rdf:type ns4kge:Configuration .
+<configuration/adaptativens/26> ns4kge:hasTask    <task/link-prediction> .
+<configuration/adaptativens/26> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/adaptativens/26> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/adaptativens/26> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/adaptativens/26> ns4kge:result "0.49"^^xsd:decimal .
+
+<configuration/adaptativens/27> rdf:type ns4kge:Configuration .
+<configuration/adaptativens/27> ns4kge:hasTask    <task/link-prediction> .
+<configuration/adaptativens/27> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/adaptativens/27> ns4kge:hasMetric  <metric/mrr> .
+<configuration/adaptativens/27> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/adaptativens/27> ns4kge:result "0.338"^^xsd:decimal .
+
+<configuration/adaptativens/28> rdf:type ns4kge:Configuration .
+<configuration/adaptativens/28> ns4kge:hasTask    <task/link-prediction> .
+<configuration/adaptativens/28> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/adaptativens/28> ns4kge:hasMetric  <metric/mrr> .
+<configuration/adaptativens/28> ns4kge:hasKGEModel <kge-model/conve> .
+<configuration/adaptativens/28> ns4kge:result "0.325"^^xsd:decimal .
+
+<configuration/adaptativens/29> rdf:type ns4kge:Configuration .
+<configuration/adaptativens/29> ns4kge:hasTask    <task/link-prediction> .
+<configuration/adaptativens/29> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/adaptativens/29> ns4kge:hasMetric  <metric/mrr> .
+<configuration/adaptativens/29> ns4kge:hasKGEModel <kge-model/murp> .
+<configuration/adaptativens/29> ns4kge:result "0.324"^^xsd:decimal .
+
+<configuration/adaptativens/30> rdf:type ns4kge:Configuration .
+<configuration/adaptativens/30> ns4kge:hasTask    <task/link-prediction> .
+<configuration/adaptativens/30> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/adaptativens/30> ns4kge:hasMetric  <metric/mrr> .
+<configuration/adaptativens/30> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/adaptativens/30> ns4kge:result "0.294"^^xsd:decimal .
+
+<configuration/adaptativens/31> rdf:type ns4kge:Configuration .
+<configuration/adaptativens/31> ns4kge:hasTask    <task/link-prediction> .
+<configuration/adaptativens/31> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/adaptativens/31> ns4kge:hasMetric  <metric/mrr> .
+<configuration/adaptativens/31> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/adaptativens/31> ns4kge:result "0.247"^^xsd:decimal .
+
+<configuration/adaptativens/32> rdf:type ns4kge:Configuration .
+<configuration/adaptativens/32> ns4kge:hasTask    <task/link-prediction> .
+<configuration/adaptativens/32> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/adaptativens/32> ns4kge:hasMetric  <metric/mrr> .
+<configuration/adaptativens/32> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/adaptativens/32> ns4kge:result "0.241"^^xsd:decimal .
+
+<configuration/adaptativens/33> rdf:type ns4kge:Configuration .
+<configuration/adaptativens/33> ns4kge:hasTask    <task/link-prediction> .
+<configuration/adaptativens/33> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/adaptativens/33> ns4kge:hasMetric  <metric/mrr> .
+<configuration/adaptativens/33> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/adaptativens/33> ns4kge:hasNSMethod <ns-method/adaptive-negative-sampling> .
+<configuration/adaptativens/33> ns4kge:result "0.229"^^xsd:decimal .
+
+<configuration/adaptativens/34> rdf:type ns4kge:Configuration .
+<configuration/adaptativens/34> ns4kge:hasTask    <task/link-prediction> .
+<configuration/adaptativens/34> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/adaptativens/34> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/adaptativens/34> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/adaptativens/34> ns4kge:result "0.241"^^xsd:decimal .
+
+<configuration/adaptativens/35> rdf:type ns4kge:Configuration .
+<configuration/adaptativens/35> ns4kge:hasTask    <task/link-prediction> .
+<configuration/adaptativens/35> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/adaptativens/35> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/adaptativens/35> ns4kge:hasKGEModel <kge-model/conve> .
+<configuration/adaptativens/35> ns4kge:result "0.237"^^xsd:decimal .
+
+<configuration/adaptativens/36> rdf:type ns4kge:Configuration .
+<configuration/adaptativens/36> ns4kge:hasTask    <task/link-prediction> .
+<configuration/adaptativens/36> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/adaptativens/36> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/adaptativens/36> ns4kge:hasKGEModel <kge-model/murp> .
+<configuration/adaptativens/36> ns4kge:result "0.235"^^xsd:decimal .
+
+<configuration/adaptativens/37> rdf:type ns4kge:Configuration .
+<configuration/adaptativens/37> ns4kge:hasTask    <task/link-prediction> .
+<configuration/adaptativens/37> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/adaptativens/37> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/adaptativens/37> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/adaptativens/37> ns4kge:result "0.158"^^xsd:decimal .
+
+<configuration/adaptativens/38> rdf:type ns4kge:Configuration .
+<configuration/adaptativens/38> ns4kge:hasTask    <task/link-prediction> .
+<configuration/adaptativens/38> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/adaptativens/38> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/adaptativens/38> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/adaptativens/38> ns4kge:result "0.155"^^xsd:decimal .
+
+<configuration/adaptativens/39> rdf:type ns4kge:Configuration .
+<configuration/adaptativens/39> ns4kge:hasTask    <task/link-prediction> .
+<configuration/adaptativens/39> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/adaptativens/39> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/adaptativens/39> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/adaptativens/39> ns4kge:hasNSMethod <ns-method/adaptive-negative-sampling> .
+<configuration/adaptativens/39> ns4kge:result "0.019"^^xsd:decimal .
+
+<configuration/adaptativens/40> rdf:type ns4kge:Configuration .
+<configuration/adaptativens/40> ns4kge:hasTask    <task/link-prediction> .
+<configuration/adaptativens/40> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/adaptativens/40> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/adaptativens/40> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/adaptativens/40> ns4kge:hasNSMethod <ns-method/adaptive-negative-sampling> .
+<configuration/adaptativens/40> ns4kge:result "0.406"^^xsd:decimal .
+
+<configuration/adaptativens/41> rdf:type ns4kge:Configuration .
+<configuration/adaptativens/41> ns4kge:hasTask    <task/link-prediction> .
+<configuration/adaptativens/41> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/adaptativens/41> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/adaptativens/41> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/adaptativens/41> ns4kge:result "0.375"^^xsd:decimal .
+
+<configuration/adaptativens/42> rdf:type ns4kge:Configuration .
+<configuration/adaptativens/42> ns4kge:hasTask    <task/link-prediction> .
+<configuration/adaptativens/42> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/adaptativens/42> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/adaptativens/42> ns4kge:hasKGEModel <kge-model/conve> .
+<configuration/adaptativens/42> ns4kge:result "0.356"^^xsd:decimal .
+
+<configuration/adaptativens/43> rdf:type ns4kge:Configuration .
+<configuration/adaptativens/43> ns4kge:hasTask    <task/link-prediction> .
+<configuration/adaptativens/43> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/adaptativens/43> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/adaptativens/43> ns4kge:hasKGEModel <kge-model/murp> .
+<configuration/adaptativens/43> ns4kge:result "0.356"^^xsd:decimal .
+
+<configuration/adaptativens/44> rdf:type ns4kge:Configuration .
+<configuration/adaptativens/44> ns4kge:hasTask    <task/link-prediction> .
+<configuration/adaptativens/44> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/adaptativens/44> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/adaptativens/44> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/adaptativens/44> ns4kge:result "0.275"^^xsd:decimal .
+
+<configuration/adaptativens/45> rdf:type ns4kge:Configuration .
+<configuration/adaptativens/45> ns4kge:hasTask    <task/link-prediction> .
+<configuration/adaptativens/45> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/adaptativens/45> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/adaptativens/45> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/adaptativens/45> ns4kge:result "0.263"^^xsd:decimal .
+
+<configuration/adaptativens/46> rdf:type ns4kge:Configuration .
+<configuration/adaptativens/46> ns4kge:hasTask    <task/link-prediction> .
+<configuration/adaptativens/46> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/adaptativens/46> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/adaptativens/46> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/adaptativens/46> ns4kge:hasNSMethod <ns-method/adaptive-negative-sampling> .
+<configuration/adaptativens/46> ns4kge:result "0.535"^^xsd:decimal .
+
+<configuration/adaptativens/47> rdf:type ns4kge:Configuration .
+<configuration/adaptativens/47> ns4kge:hasTask    <task/link-prediction> .
+<configuration/adaptativens/47> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/adaptativens/47> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/adaptativens/47> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/adaptativens/47> ns4kge:result "0.533"^^xsd:decimal .
+
+<configuration/adaptativens/48> rdf:type ns4kge:Configuration .
+<configuration/adaptativens/48> ns4kge:hasTask    <task/link-prediction> .
+<configuration/adaptativens/48> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/adaptativens/48> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/adaptativens/48> ns4kge:hasKGEModel <kge-model/murp> .
+<configuration/adaptativens/48> ns4kge:result "0.506"^^xsd:decimal .
+
+<configuration/adaptativens/49> rdf:type ns4kge:Configuration .
+<configuration/adaptativens/49> ns4kge:hasTask    <task/link-prediction> .
+<configuration/adaptativens/49> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/adaptativens/49> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/adaptativens/49> ns4kge:hasKGEModel <kge-model/conve> .
+<configuration/adaptativens/49> ns4kge:result "0.501"^^xsd:decimal .
+
+<configuration/adaptativens/50> rdf:type ns4kge:Configuration .
+<configuration/adaptativens/50> ns4kge:hasTask    <task/link-prediction> .
+<configuration/adaptativens/50> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/adaptativens/50> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/adaptativens/50> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/adaptativens/50> ns4kge:result "0.465"^^xsd:decimal .
+
+<configuration/adaptativens/51> rdf:type ns4kge:Configuration .
+<configuration/adaptativens/51> ns4kge:hasTask    <task/link-prediction> .
+<configuration/adaptativens/51> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/adaptativens/51> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/adaptativens/51> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/adaptativens/51> ns4kge:result "0.428"^^xsd:decimal .
+
+<configuration/adaptativens/52> rdf:type ns4kge:Configuration .
+<configuration/adaptativens/52> ns4kge:hasTask    <task/link-prediction> .
+<configuration/adaptativens/52> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/adaptativens/52> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/adaptativens/52> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/adaptativens/52> ns4kge:result "0.419"^^xsd:decimal .
+
+<configuration/adaptativens/53> rdf:type ns4kge:Configuration .
+<configuration/adaptativens/53> ns4kge:hasTask    <task/link-prediction> .
+<configuration/adaptativens/53> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/adaptativens/53> ns4kge:hasMetric  <metric/mrr> .
+<configuration/adaptativens/53> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/adaptativens/53> ns4kge:hasNSMethod <ns-method/adaptive-negative-sampling> .
+<configuration/adaptativens/53> ns4kge:result "0.505"^^xsd:decimal .
+
+<configuration/adaptativens/54> rdf:type ns4kge:Configuration .
+<configuration/adaptativens/54> ns4kge:hasTask    <task/link-prediction> .
+<configuration/adaptativens/54> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/adaptativens/54> ns4kge:hasMetric  <metric/mrr> .
+<configuration/adaptativens/54> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/adaptativens/54> ns4kge:result "0.495"^^xsd:decimal .
+
+<configuration/adaptativens/55> rdf:type ns4kge:Configuration .
+<configuration/adaptativens/55> ns4kge:hasTask    <task/link-prediction> .
+<configuration/adaptativens/55> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/adaptativens/55> ns4kge:hasMetric  <metric/mrr> .
+<configuration/adaptativens/55> ns4kge:hasKGEModel <kge-model/conve> .
+<configuration/adaptativens/55> ns4kge:result "0.44"^^xsd:decimal .
+
+<configuration/adaptativens/56> rdf:type ns4kge:Configuration .
+<configuration/adaptativens/56> ns4kge:hasTask    <task/link-prediction> .
+<configuration/adaptativens/56> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/adaptativens/56> ns4kge:hasMetric  <metric/mrr> .
+<configuration/adaptativens/56> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/adaptativens/56> ns4kge:result "0.36"^^xsd:decimal .
+
+<configuration/adaptativens/57> rdf:type ns4kge:Configuration .
+<configuration/adaptativens/57> ns4kge:hasTask    <task/link-prediction> .
+<configuration/adaptativens/57> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/adaptativens/57> ns4kge:hasMetric  <metric/mrr> .
+<configuration/adaptativens/57> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/adaptativens/57> ns4kge:result "0.34"^^xsd:decimal .
+
+<configuration/adaptativens/58> rdf:type ns4kge:Configuration .
+<configuration/adaptativens/58> ns4kge:hasTask    <task/link-prediction> .
+<configuration/adaptativens/58> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/adaptativens/58> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/adaptativens/58> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/adaptativens/58> ns4kge:hasNSMethod <ns-method/adaptive-negative-sampling> .
+<configuration/adaptativens/58> ns4kge:result "0.406"^^xsd:decimal .
+
+<configuration/adaptativens/59> rdf:type ns4kge:Configuration .
+<configuration/adaptativens/59> ns4kge:hasTask    <task/link-prediction> .
+<configuration/adaptativens/59> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/adaptativens/59> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/adaptativens/59> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/adaptativens/59> ns4kge:result "0.402"^^xsd:decimal .
+
+<configuration/adaptativens/60> rdf:type ns4kge:Configuration .
+<configuration/adaptativens/60> ns4kge:hasTask    <task/link-prediction> .
+<configuration/adaptativens/60> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/adaptativens/60> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/adaptativens/60> ns4kge:hasKGEModel <kge-model/conve> .
+<configuration/adaptativens/60> ns4kge:result "0.35"^^xsd:decimal .
+
+<configuration/adaptativens/61> rdf:type ns4kge:Configuration .
+<configuration/adaptativens/61> ns4kge:hasTask    <task/link-prediction> .
+<configuration/adaptativens/61> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/adaptativens/61> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/adaptativens/61> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/adaptativens/61> ns4kge:result "0.26"^^xsd:decimal .
+
+<configuration/adaptativens/62> rdf:type ns4kge:Configuration .
+<configuration/adaptativens/62> ns4kge:hasTask    <task/link-prediction> .
+<configuration/adaptativens/62> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/adaptativens/62> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/adaptativens/62> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/adaptativens/62> ns4kge:result "0.24"^^xsd:decimal .
+
+<configuration/adaptativens/63> rdf:type ns4kge:Configuration .
+<configuration/adaptativens/63> ns4kge:hasTask    <task/link-prediction> .
+<configuration/adaptativens/63> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/adaptativens/63> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/adaptativens/63> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/adaptativens/63> ns4kge:hasNSMethod <ns-method/adaptive-negative-sampling> .
+<configuration/adaptativens/63> ns4kge:result "0.568"^^xsd:decimal .
+
+<configuration/adaptativens/64> rdf:type ns4kge:Configuration .
+<configuration/adaptativens/64> ns4kge:hasTask    <task/link-prediction> .
+<configuration/adaptativens/64> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/adaptativens/64> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/adaptativens/64> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/adaptativens/64> ns4kge:result "0.55"^^xsd:decimal .
+
+<configuration/adaptativens/65> rdf:type ns4kge:Configuration .
+<configuration/adaptativens/65> ns4kge:hasTask    <task/link-prediction> .
+<configuration/adaptativens/65> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/adaptativens/65> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/adaptativens/65> ns4kge:hasKGEModel <kge-model/conve> .
+<configuration/adaptativens/65> ns4kge:result "0.49"^^xsd:decimal .
+
+<configuration/adaptativens/66> rdf:type ns4kge:Configuration .
+<configuration/adaptativens/66> ns4kge:hasTask    <task/link-prediction> .
+<configuration/adaptativens/66> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/adaptativens/66> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/adaptativens/66> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/adaptativens/66> ns4kge:result "0.4"^^xsd:decimal .
+
+<configuration/adaptativens/67> rdf:type ns4kge:Configuration .
+<configuration/adaptativens/67> ns4kge:hasTask    <task/link-prediction> .
+<configuration/adaptativens/67> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/adaptativens/67> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/adaptativens/67> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/adaptativens/67> ns4kge:result "0.38"^^xsd:decimal .
+
+<configuration/adaptativens/68> rdf:type ns4kge:Configuration .
+<configuration/adaptativens/68> ns4kge:hasTask    <task/link-prediction> .
+<configuration/adaptativens/68> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/adaptativens/68> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/adaptativens/68> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/adaptativens/68> ns4kge:hasNSMethod <ns-method/adaptive-negative-sampling> .
+<configuration/adaptativens/68> ns4kge:result "0.683"^^xsd:decimal .
+
+<configuration/adaptativens/69> rdf:type ns4kge:Configuration .
+<configuration/adaptativens/69> ns4kge:hasTask    <task/link-prediction> .
+<configuration/adaptativens/69> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/adaptativens/69> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/adaptativens/69> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/adaptativens/69> ns4kge:result "0.67"^^xsd:decimal .
+
+<configuration/adaptativens/70> rdf:type ns4kge:Configuration .
+<configuration/adaptativens/70> ns4kge:hasTask    <task/link-prediction> .
+<configuration/adaptativens/70> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/adaptativens/70> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/adaptativens/70> ns4kge:hasKGEModel <kge-model/conve> .
+<configuration/adaptativens/70> ns4kge:result "0.62"^^xsd:decimal .
+
+<configuration/adaptativens/71> rdf:type ns4kge:Configuration .
+<configuration/adaptativens/71> ns4kge:hasTask    <task/link-prediction> .
+<configuration/adaptativens/71> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/adaptativens/71> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/adaptativens/71> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/adaptativens/71> ns4kge:result "0.55"^^xsd:decimal .
+
+<configuration/adaptativens/72> rdf:type ns4kge:Configuration .
+<configuration/adaptativens/72> ns4kge:hasTask    <task/link-prediction> .
+<configuration/adaptativens/72> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/adaptativens/72> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/adaptativens/72> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/adaptativens/72> ns4kge:result "0.54"^^xsd:decimal .

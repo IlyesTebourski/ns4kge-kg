@@ -1,0 +1,1426 @@
+<article/demix> rdf:type ns4kge:Article .
+<article/demix> ns4kge:title "Negative Sampling with Adaptive Denoising Mixup for Knowledge Graph Embedding"^^xsd:string .
+<article/demix> ns4kge:date "2023"^^xsd:gYear .
+<article/demix> ns4kge:proposesNSMethod <ns-method/adaptive-denoising-mixup> .
+<article/demix> ns4kge:mentionsNSMethod <ns-method/self-adversarial-negative-sampling> .
+<article/demix> ns4kge:mentionsNSMethod <ns-method/mixkg> .
+<article/demix> ns4kge:mentionsNSMethod <ns-method/uniform-negative-sampling> .
+<article/demix> ns4kge:mentionsNSMethod <ns-method/cans> .
+<article/demix> ns4kge:mentionsNSMethod <ns-method/bernoulli-negative-sampling> .
+<article/demix> ns4kge:mentionsNSMethod <ns-method/kbgan> .
+<article/demix> ns4kge:mentionsNSMethod <ns-method/rw-sans> .
+<article/demix> ns4kge:mentionsNSMethod <ns-method/esns> .
+<article/demix> ns4kge:mentionsNSMethod <ns-method/nscaching> .
+<article/demix> ns4kge:mentionsNSMethod <ns-method/igan> .
+<article/demix> ns4kge:mentionsKGEModel <kge-model/hake> .
+<article/demix> ns4kge:mentionsKGEModel <kge-model/transe> .
+<article/demix> ns4kge:mentionsKGEModel <kge-model/complex> .
+<article/demix> ns4kge:mentionsKGEModel <kge-model/distmult> .
+<article/demix> ns4kge:mentionsKGEModel <kge-model/transh> .
+<article/demix> ns4kge:mentionsKGEModel <kge-model/rotate> .
+<article/demix> ns4kge:hasExperimentation <experimentation/demix> .
+
+<category/mix-up-ns> rdf:type ns4kge:Category .
+
+<subcategory/standard> rdf:type ns4kge:Subcategory .
+
+<ns-method/adaptive-denoising-mixup> rdf:type ns4kge:NSMethod .
+<ns-method/adaptive-denoising-mixup> ns4kge:hasCategory <category/mix-up-ns> .
+<ns-method/adaptive-denoising-mixup> ns4kge:hasSubcategory <subcategory/standard> .
+
+<ns-method/self-adversarial-negative-sampling> rdf:type ns4kge:NSMethod .
+<category/self-adversarial-ns> rdf:type ns4kge:Category .
+
+<ns-method/self-adversarial-negative-sampling> ns4kge:hasCategory <category/self-adversarial-ns> .
+<subcategory/direct> rdf:type ns4kge:Subcategory .
+
+<ns-method/self-adversarial-negative-sampling> ns4kge:hasSubcategory <subcategory/direct> .
+
+<ns-method/mixkg> rdf:type ns4kge:NSMethod .
+<ns-method/mixkg> ns4kge:hasCategory <category/mix-up-ns> .
+<ns-method/mixkg> ns4kge:hasSubcategory <subcategory/standard> .
+
+<ns-method/uniform-negative-sampling> rdf:type ns4kge:NSMethod .
+<category/static-ns> rdf:type ns4kge:Category .
+
+<ns-method/uniform-negative-sampling> ns4kge:hasCategory <category/static-ns> .
+<subcategory/random> rdf:type ns4kge:Subcategory .
+
+<ns-method/uniform-negative-sampling> ns4kge:hasSubcategory <subcategory/random> .
+
+<ns-method/cans> rdf:type ns4kge:NSMethod .
+<ns-method/cans> ns4kge:hasCategory <category/self-adversarial-ns> .
+<ns-method/cans> ns4kge:hasSubcategory <subcategory/direct> .
+
+<ns-method/bernoulli-negative-sampling> rdf:type ns4kge:NSMethod .
+<ns-method/bernoulli-negative-sampling> ns4kge:hasCategory <category/static-ns> .
+<subcategory/probabilistic> rdf:type ns4kge:Subcategory .
+
+<ns-method/bernoulli-negative-sampling> ns4kge:hasSubcategory <subcategory/probabilistic> .
+
+<ns-method/kbgan> rdf:type ns4kge:NSMethod .
+<category/adversarial-ns> rdf:type ns4kge:Category .
+
+<ns-method/kbgan> ns4kge:hasCategory <category/adversarial-ns> .
+<ns-method/kbgan> ns4kge:hasSubcategory <subcategory/standard> .
+
+<ns-method/rw-sans> rdf:type ns4kge:NSMethod .
+<ns-method/rw-sans> ns4kge:hasCategory <category/static-ns> .
+<subcategory/knowledge-constrained> rdf:type ns4kge:Subcategory .
+
+<ns-method/rw-sans> ns4kge:hasSubcategory <subcategory/knowledge-constrained> .
+
+<ns-method/esns> rdf:type ns4kge:NSMethod .
+<ns-method/esns> ns4kge:hasCategory <category/self-adversarial-ns> .
+<ns-method/esns> ns4kge:hasSubcategory <subcategory/direct> .
+
+<ns-method/nscaching> rdf:type ns4kge:NSMethod .
+<ns-method/nscaching> ns4kge:hasCategory <category/self-adversarial-ns> .
+<ns-method/nscaching> ns4kge:hasSubcategory <subcategory/direct> .
+
+<ns-method/igan> rdf:type ns4kge:NSMethod .
+<ns-method/igan> ns4kge:hasCategory <category/adversarial-ns> .
+<ns-method/igan> ns4kge:hasSubcategory <subcategory/standard> .
+
+<kge-model/hake> rdf:type ns4kge:KGEModel .
+
+<kge-model/transe> rdf:type ns4kge:KGEModel .
+
+<kge-model/complex> rdf:type ns4kge:KGEModel .
+
+<kge-model/distmult> rdf:type ns4kge:KGEModel .
+
+<kge-model/transh> rdf:type ns4kge:KGEModel .
+
+<kge-model/rotate> rdf:type ns4kge:KGEModel .
+
+<dataset/wn18rr> rdf:type ns4kge:Dataset .
+<task/link-prediction> rdf:type ns4kge:Task .
+<metric/mrr> rdf:type ns4kge:Metric .
+<metric/hits-10> rdf:type ns4kge:Metric .
+<dataset/fb15k-237> rdf:type ns4kge:Dataset .
+<metric/hits-3> rdf:type ns4kge:Metric .
+<metric/hits-1> rdf:type ns4kge:Metric .
+<loss-function/cross-entropy-loss> rdf:type ns4kge:LossFunction .
+<optimizer/adam> rdf:type ns4kge:Optimizer .
+
+<experimentation/demix> rdf:type ns4kge:Experimentation .
+<experimentation/demix> ns4kge:hasTrainingProtocol <training-protocol/demix> .
+<experimentation/demix> ns4kge:hasConfiguration <configuration/demix/1> .
+<experimentation/demix> ns4kge:hasConfiguration <configuration/demix/2> .
+<experimentation/demix> ns4kge:hasConfiguration <configuration/demix/3> .
+<experimentation/demix> ns4kge:hasConfiguration <configuration/demix/4> .
+<experimentation/demix> ns4kge:hasConfiguration <configuration/demix/5> .
+<experimentation/demix> ns4kge:hasConfiguration <configuration/demix/6> .
+<experimentation/demix> ns4kge:hasConfiguration <configuration/demix/7> .
+<experimentation/demix> ns4kge:hasConfiguration <configuration/demix/8> .
+<experimentation/demix> ns4kge:hasConfiguration <configuration/demix/9> .
+<experimentation/demix> ns4kge:hasConfiguration <configuration/demix/10> .
+<experimentation/demix> ns4kge:hasConfiguration <configuration/demix/11> .
+<experimentation/demix> ns4kge:hasConfiguration <configuration/demix/12> .
+<experimentation/demix> ns4kge:hasConfiguration <configuration/demix/13> .
+<experimentation/demix> ns4kge:hasConfiguration <configuration/demix/14> .
+<experimentation/demix> ns4kge:hasConfiguration <configuration/demix/15> .
+<experimentation/demix> ns4kge:hasConfiguration <configuration/demix/16> .
+<experimentation/demix> ns4kge:hasConfiguration <configuration/demix/17> .
+<experimentation/demix> ns4kge:hasConfiguration <configuration/demix/18> .
+<experimentation/demix> ns4kge:hasConfiguration <configuration/demix/19> .
+<experimentation/demix> ns4kge:hasConfiguration <configuration/demix/20> .
+<experimentation/demix> ns4kge:hasConfiguration <configuration/demix/21> .
+<experimentation/demix> ns4kge:hasConfiguration <configuration/demix/22> .
+<experimentation/demix> ns4kge:hasConfiguration <configuration/demix/23> .
+<experimentation/demix> ns4kge:hasConfiguration <configuration/demix/24> .
+<experimentation/demix> ns4kge:hasConfiguration <configuration/demix/25> .
+<experimentation/demix> ns4kge:hasConfiguration <configuration/demix/26> .
+<experimentation/demix> ns4kge:hasConfiguration <configuration/demix/27> .
+<experimentation/demix> ns4kge:hasConfiguration <configuration/demix/28> .
+<experimentation/demix> ns4kge:hasConfiguration <configuration/demix/29> .
+<experimentation/demix> ns4kge:hasConfiguration <configuration/demix/30> .
+<experimentation/demix> ns4kge:hasConfiguration <configuration/demix/31> .
+<experimentation/demix> ns4kge:hasConfiguration <configuration/demix/32> .
+<experimentation/demix> ns4kge:hasConfiguration <configuration/demix/33> .
+<experimentation/demix> ns4kge:hasConfiguration <configuration/demix/34> .
+<experimentation/demix> ns4kge:hasConfiguration <configuration/demix/35> .
+<experimentation/demix> ns4kge:hasConfiguration <configuration/demix/36> .
+<experimentation/demix> ns4kge:hasConfiguration <configuration/demix/37> .
+<experimentation/demix> ns4kge:hasConfiguration <configuration/demix/38> .
+<experimentation/demix> ns4kge:hasConfiguration <configuration/demix/39> .
+<experimentation/demix> ns4kge:hasConfiguration <configuration/demix/40> .
+<experimentation/demix> ns4kge:hasConfiguration <configuration/demix/41> .
+<experimentation/demix> ns4kge:hasConfiguration <configuration/demix/42> .
+<experimentation/demix> ns4kge:hasConfiguration <configuration/demix/43> .
+<experimentation/demix> ns4kge:hasConfiguration <configuration/demix/44> .
+<experimentation/demix> ns4kge:hasConfiguration <configuration/demix/45> .
+<experimentation/demix> ns4kge:hasConfiguration <configuration/demix/46> .
+<experimentation/demix> ns4kge:hasConfiguration <configuration/demix/47> .
+<experimentation/demix> ns4kge:hasConfiguration <configuration/demix/48> .
+<experimentation/demix> ns4kge:hasConfiguration <configuration/demix/49> .
+<experimentation/demix> ns4kge:hasConfiguration <configuration/demix/50> .
+<experimentation/demix> ns4kge:hasConfiguration <configuration/demix/51> .
+<experimentation/demix> ns4kge:hasConfiguration <configuration/demix/52> .
+<experimentation/demix> ns4kge:hasConfiguration <configuration/demix/53> .
+<experimentation/demix> ns4kge:hasConfiguration <configuration/demix/54> .
+<experimentation/demix> ns4kge:hasConfiguration <configuration/demix/55> .
+<experimentation/demix> ns4kge:hasConfiguration <configuration/demix/56> .
+<experimentation/demix> ns4kge:hasConfiguration <configuration/demix/57> .
+<experimentation/demix> ns4kge:hasConfiguration <configuration/demix/58> .
+<experimentation/demix> ns4kge:hasConfiguration <configuration/demix/59> .
+<experimentation/demix> ns4kge:hasConfiguration <configuration/demix/60> .
+<experimentation/demix> ns4kge:hasConfiguration <configuration/demix/61> .
+<experimentation/demix> ns4kge:hasConfiguration <configuration/demix/62> .
+<experimentation/demix> ns4kge:hasConfiguration <configuration/demix/63> .
+<experimentation/demix> ns4kge:hasConfiguration <configuration/demix/64> .
+<experimentation/demix> ns4kge:hasConfiguration <configuration/demix/65> .
+<experimentation/demix> ns4kge:hasConfiguration <configuration/demix/66> .
+<experimentation/demix> ns4kge:hasConfiguration <configuration/demix/67> .
+<experimentation/demix> ns4kge:hasConfiguration <configuration/demix/68> .
+<experimentation/demix> ns4kge:hasConfiguration <configuration/demix/69> .
+<experimentation/demix> ns4kge:hasConfiguration <configuration/demix/70> .
+<experimentation/demix> ns4kge:hasConfiguration <configuration/demix/71> .
+<experimentation/demix> ns4kge:hasConfiguration <configuration/demix/72> .
+<experimentation/demix> ns4kge:hasConfiguration <configuration/demix/73> .
+<experimentation/demix> ns4kge:hasConfiguration <configuration/demix/74> .
+<experimentation/demix> ns4kge:hasConfiguration <configuration/demix/75> .
+<experimentation/demix> ns4kge:hasConfiguration <configuration/demix/76> .
+<experimentation/demix> ns4kge:hasConfiguration <configuration/demix/77> .
+<experimentation/demix> ns4kge:hasConfiguration <configuration/demix/78> .
+<experimentation/demix> ns4kge:hasConfiguration <configuration/demix/79> .
+<experimentation/demix> ns4kge:hasConfiguration <configuration/demix/80> .
+<experimentation/demix> ns4kge:hasConfiguration <configuration/demix/81> .
+<experimentation/demix> ns4kge:hasConfiguration <configuration/demix/82> .
+<experimentation/demix> ns4kge:hasConfiguration <configuration/demix/83> .
+<experimentation/demix> ns4kge:hasConfiguration <configuration/demix/84> .
+<experimentation/demix> ns4kge:hasConfiguration <configuration/demix/85> .
+<experimentation/demix> ns4kge:hasConfiguration <configuration/demix/86> .
+<experimentation/demix> ns4kge:hasConfiguration <configuration/demix/87> .
+<experimentation/demix> ns4kge:hasConfiguration <configuration/demix/88> .
+<experimentation/demix> ns4kge:hasConfiguration <configuration/demix/89> .
+<experimentation/demix> ns4kge:hasConfiguration <configuration/demix/90> .
+<experimentation/demix> ns4kge:hasConfiguration <configuration/demix/91> .
+<experimentation/demix> ns4kge:hasConfiguration <configuration/demix/92> .
+<experimentation/demix> ns4kge:hasConfiguration <configuration/demix/93> .
+<experimentation/demix> ns4kge:hasConfiguration <configuration/demix/94> .
+<experimentation/demix> ns4kge:hasConfiguration <configuration/demix/95> .
+<experimentation/demix> ns4kge:hasConfiguration <configuration/demix/96> .
+<experimentation/demix> ns4kge:hasConfiguration <configuration/demix/97> .
+<experimentation/demix> ns4kge:hasConfiguration <configuration/demix/98> .
+<experimentation/demix> ns4kge:hasConfiguration <configuration/demix/99> .
+<experimentation/demix> ns4kge:hasConfiguration <configuration/demix/100> .
+<experimentation/demix> ns4kge:hasConfiguration <configuration/demix/101> .
+<experimentation/demix> ns4kge:hasConfiguration <configuration/demix/102> .
+<experimentation/demix> ns4kge:hasConfiguration <configuration/demix/103> .
+<experimentation/demix> ns4kge:hasConfiguration <configuration/demix/104> .
+<experimentation/demix> ns4kge:hasConfiguration <configuration/demix/105> .
+<experimentation/demix> ns4kge:hasConfiguration <configuration/demix/106> .
+<experimentation/demix> ns4kge:hasConfiguration <configuration/demix/107> .
+<experimentation/demix> ns4kge:hasConfiguration <configuration/demix/108> .
+<experimentation/demix> ns4kge:hasConfiguration <configuration/demix/109> .
+<experimentation/demix> ns4kge:hasConfiguration <configuration/demix/110> .
+<experimentation/demix> ns4kge:hasConfiguration <configuration/demix/111> .
+<experimentation/demix> ns4kge:hasConfiguration <configuration/demix/112> .
+<experimentation/demix> ns4kge:hasConfiguration <configuration/demix/113> .
+<experimentation/demix> ns4kge:hasConfiguration <configuration/demix/114> .
+<experimentation/demix> ns4kge:hasConfiguration <configuration/demix/115> .
+<experimentation/demix> ns4kge:hasConfiguration <configuration/demix/116> .
+<experimentation/demix> ns4kge:hasConfiguration <configuration/demix/117> .
+<experimentation/demix> ns4kge:hasConfiguration <configuration/demix/118> .
+<experimentation/demix> ns4kge:hasConfiguration <configuration/demix/119> .
+<experimentation/demix> ns4kge:hasConfiguration <configuration/demix/120> .
+<experimentation/demix> ns4kge:hasConfiguration <configuration/demix/121> .
+<experimentation/demix> ns4kge:hasConfiguration <configuration/demix/122> .
+<experimentation/demix> ns4kge:hasConfiguration <configuration/demix/123> .
+<experimentation/demix> ns4kge:hasConfiguration <configuration/demix/124> .
+<experimentation/demix> ns4kge:hasConfiguration <configuration/demix/125> .
+<experimentation/demix> ns4kge:hasConfiguration <configuration/demix/126> .
+<experimentation/demix> ns4kge:hasConfiguration <configuration/demix/127> .
+<experimentation/demix> ns4kge:hasConfiguration <configuration/demix/128> .
+<experimentation/demix> ns4kge:hasConfiguration <configuration/demix/129> .
+<experimentation/demix> ns4kge:hasConfiguration <configuration/demix/130> .
+<experimentation/demix> ns4kge:hasConfiguration <configuration/demix/131> .
+<experimentation/demix> ns4kge:hasConfiguration <configuration/demix/132> .
+<experimentation/demix> ns4kge:hasConfiguration <configuration/demix/133> .
+<experimentation/demix> ns4kge:hasConfiguration <configuration/demix/134> .
+<experimentation/demix> ns4kge:hasConfiguration <configuration/demix/135> .
+<experimentation/demix> ns4kge:hasConfiguration <configuration/demix/136> .
+<experimentation/demix> ns4kge:hasConfiguration <configuration/demix/137> .
+<experimentation/demix> ns4kge:hasConfiguration <configuration/demix/138> .
+<experimentation/demix> ns4kge:hasConfiguration <configuration/demix/139> .
+<experimentation/demix> ns4kge:hasConfiguration <configuration/demix/140> .
+<experimentation/demix> ns4kge:hasConfiguration <configuration/demix/141> .
+<experimentation/demix> ns4kge:hasConfiguration <configuration/demix/142> .
+<experimentation/demix> ns4kge:hasConfiguration <configuration/demix/143> .
+<experimentation/demix> ns4kge:hasConfiguration <configuration/demix/144> .
+<experimentation/demix> ns4kge:hasConfiguration <configuration/demix/145> .
+<experimentation/demix> ns4kge:hasConfiguration <configuration/demix/146> .
+
+<training-protocol/demix> rdf:type ns4kge:TrainingProtocol .
+<training-protocol/demix> ns4kge:hasOptimizer    <optimizer/adam> .
+<training-protocol/demix> ns4kge:hasLossFunction <loss-function/cross-entropy-loss> .
+
+<configuration/demix/1> rdf:type ns4kge:Configuration .
+<configuration/demix/1> ns4kge:hasTask    <task/link-prediction> .
+<configuration/demix/1> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/demix/1> ns4kge:hasMetric  <metric/mrr> .
+<configuration/demix/1> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/demix/1> ns4kge:hasNSMethod <ns-method/uniform-negative-sampling> .
+<configuration/demix/1> ns4kge:result "0.175"^^xsd:decimal .
+
+<configuration/demix/2> rdf:type ns4kge:Configuration .
+<configuration/demix/2> ns4kge:hasTask    <task/link-prediction> .
+<configuration/demix/2> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/demix/2> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/demix/2> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/demix/2> ns4kge:hasNSMethod <ns-method/uniform-negative-sampling> .
+<configuration/demix/2> ns4kge:result "0.445"^^xsd:decimal .
+
+<configuration/demix/3> rdf:type ns4kge:Configuration .
+<configuration/demix/3> ns4kge:hasTask    <task/link-prediction> .
+<configuration/demix/3> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/demix/3> ns4kge:hasMetric  <metric/mrr> .
+<configuration/demix/3> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/demix/3> ns4kge:hasNSMethod <ns-method/uniform-negative-sampling> .
+<configuration/demix/3> ns4kge:result "0.171"^^xsd:decimal .
+
+<configuration/demix/4> rdf:type ns4kge:Configuration .
+<configuration/demix/4> ns4kge:hasTask    <task/link-prediction> .
+<configuration/demix/4> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/demix/4> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/demix/4> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/demix/4> ns4kge:hasNSMethod <ns-method/uniform-negative-sampling> .
+<configuration/demix/4> ns4kge:result "0.323"^^xsd:decimal .
+
+<configuration/demix/5> rdf:type ns4kge:Configuration .
+<configuration/demix/5> ns4kge:hasTask    <task/link-prediction> .
+<configuration/demix/5> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/demix/5> ns4kge:hasMetric  <metric/mrr> .
+<configuration/demix/5> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/demix/5> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/demix/5> ns4kge:result "0.2"^^xsd:decimal .
+
+<configuration/demix/6> rdf:type ns4kge:Configuration .
+<configuration/demix/6> ns4kge:hasTask    <task/link-prediction> .
+<configuration/demix/6> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/demix/6> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/demix/6> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/demix/6> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/demix/6> ns4kge:result "0.478"^^xsd:decimal .
+
+<configuration/demix/7> rdf:type ns4kge:Configuration .
+<configuration/demix/7> ns4kge:hasTask    <task/link-prediction> .
+<configuration/demix/7> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/demix/7> ns4kge:hasMetric  <metric/mrr> .
+<configuration/demix/7> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/demix/7> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/demix/7> ns4kge:result "0.205"^^xsd:decimal .
+
+<configuration/demix/8> rdf:type ns4kge:Configuration .
+<configuration/demix/8> ns4kge:hasTask    <task/link-prediction> .
+<configuration/demix/8> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/demix/8> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/demix/8> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/demix/8> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/demix/8> ns4kge:result "0.353"^^xsd:decimal .
+
+<configuration/demix/9> rdf:type ns4kge:Configuration .
+<configuration/demix/9> ns4kge:hasTask    <task/link-prediction> .
+<configuration/demix/9> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/demix/9> ns4kge:hasMetric  <metric/mrr> .
+<configuration/demix/9> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/demix/9> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/demix/9> ns4kge:result "0.215"^^xsd:decimal .
+
+<configuration/demix/10> rdf:type ns4kge:Configuration .
+<configuration/demix/10> ns4kge:hasTask    <task/link-prediction> .
+<configuration/demix/10> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/demix/10> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/demix/10> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/demix/10> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/demix/10> ns4kge:result "0.516"^^xsd:decimal .
+
+<configuration/demix/11> rdf:type ns4kge:Configuration .
+<configuration/demix/11> ns4kge:hasTask    <task/link-prediction> .
+<configuration/demix/11> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/demix/11> ns4kge:hasMetric  <metric/mrr> .
+<configuration/demix/11> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/demix/11> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/demix/11> ns4kge:result "0.268"^^xsd:decimal .
+
+<configuration/demix/12> rdf:type ns4kge:Configuration .
+<configuration/demix/12> ns4kge:hasTask    <task/link-prediction> .
+<configuration/demix/12> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/demix/12> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/demix/12> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/demix/12> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/demix/12> ns4kge:result "0.454"^^xsd:decimal .
+
+<configuration/demix/13> rdf:type ns4kge:Configuration .
+<configuration/demix/13> ns4kge:hasTask    <task/link-prediction> .
+<configuration/demix/13> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/demix/13> ns4kge:hasMetric  <metric/mrr> .
+<configuration/demix/13> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/demix/13> ns4kge:hasNSMethod <ns-method/rw-sans> .
+<configuration/demix/13> ns4kge:result "0.218"^^xsd:decimal .
+
+<configuration/demix/14> rdf:type ns4kge:Configuration .
+<configuration/demix/14> ns4kge:hasTask    <task/link-prediction> .
+<configuration/demix/14> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/demix/14> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/demix/14> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/demix/14> ns4kge:hasNSMethod <ns-method/rw-sans> .
+<configuration/demix/14> ns4kge:result "0.51"^^xsd:decimal .
+
+<configuration/demix/15> rdf:type ns4kge:Configuration .
+<configuration/demix/15> ns4kge:hasTask    <task/link-prediction> .
+<configuration/demix/15> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/demix/15> ns4kge:hasMetric  <metric/mrr> .
+<configuration/demix/15> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/demix/15> ns4kge:hasNSMethod <ns-method/rw-sans> .
+<configuration/demix/15> ns4kge:result "0.295"^^xsd:decimal .
+
+<configuration/demix/16> rdf:type ns4kge:Configuration .
+<configuration/demix/16> ns4kge:hasTask    <task/link-prediction> .
+<configuration/demix/16> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/demix/16> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/demix/16> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/demix/16> ns4kge:hasNSMethod <ns-method/rw-sans> .
+<configuration/demix/16> ns4kge:result "0.483"^^xsd:decimal .
+
+<configuration/demix/17> rdf:type ns4kge:Configuration .
+<configuration/demix/17> ns4kge:hasTask    <task/link-prediction> .
+<configuration/demix/17> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/demix/17> ns4kge:hasMetric  <metric/mrr> .
+<configuration/demix/17> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/demix/17> ns4kge:hasNSMethod <ns-method/bernoulli-negative-sampling> .
+<configuration/demix/17> ns4kge:result "0.178"^^xsd:decimal .
+
+<configuration/demix/18> rdf:type ns4kge:Configuration .
+<configuration/demix/18> ns4kge:hasTask    <task/link-prediction> .
+<configuration/demix/18> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/demix/18> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/demix/18> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/demix/18> ns4kge:hasNSMethod <ns-method/bernoulli-negative-sampling> .
+<configuration/demix/18> ns4kge:result "0.451"^^xsd:decimal .
+
+<configuration/demix/19> rdf:type ns4kge:Configuration .
+<configuration/demix/19> ns4kge:hasTask    <task/link-prediction> .
+<configuration/demix/19> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/demix/19> ns4kge:hasMetric  <metric/mrr> .
+<configuration/demix/19> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/demix/19> ns4kge:hasNSMethod <ns-method/bernoulli-negative-sampling> .
+<configuration/demix/19> ns4kge:result "0.256"^^xsd:decimal .
+
+<configuration/demix/20> rdf:type ns4kge:Configuration .
+<configuration/demix/20> ns4kge:hasTask    <task/link-prediction> .
+<configuration/demix/20> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/demix/20> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/demix/20> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/demix/20> ns4kge:hasNSMethod <ns-method/bernoulli-negative-sampling> .
+<configuration/demix/20> ns4kge:result "0.419"^^xsd:decimal .
+
+<configuration/demix/21> rdf:type ns4kge:Configuration .
+<configuration/demix/21> ns4kge:hasTask    <task/link-prediction> .
+<configuration/demix/21> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/demix/21> ns4kge:hasMetric  <metric/mrr> .
+<configuration/demix/21> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/demix/21> ns4kge:hasNSMethod <ns-method/cans> .
+<configuration/demix/21> ns4kge:result "0.298"^^xsd:decimal .
+
+<configuration/demix/22> rdf:type ns4kge:Configuration .
+<configuration/demix/22> ns4kge:hasTask    <task/link-prediction> .
+<configuration/demix/22> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/demix/22> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/demix/22> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/demix/22> ns4kge:hasNSMethod <ns-method/cans> .
+<configuration/demix/22> ns4kge:result "0.49"^^xsd:decimal .
+
+<configuration/demix/23> rdf:type ns4kge:Configuration .
+<configuration/demix/23> ns4kge:hasTask    <task/link-prediction> .
+<configuration/demix/23> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/demix/23> ns4kge:hasMetric  <metric/mrr> .
+<configuration/demix/23> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/demix/23> ns4kge:hasNSMethod <ns-method/adaptive-denoising-mixup> .
+<configuration/demix/23> ns4kge:result "0.22"^^xsd:decimal .
+
+<configuration/demix/24> rdf:type ns4kge:Configuration .
+<configuration/demix/24> ns4kge:hasTask    <task/link-prediction> .
+<configuration/demix/24> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/demix/24> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/demix/24> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/demix/24> ns4kge:hasNSMethod <ns-method/adaptive-denoising-mixup> .
+<configuration/demix/24> ns4kge:result "0.521"^^xsd:decimal .
+
+<configuration/demix/25> rdf:type ns4kge:Configuration .
+<configuration/demix/25> ns4kge:hasTask    <task/link-prediction> .
+<configuration/demix/25> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/demix/25> ns4kge:hasMetric  <metric/mrr> .
+<configuration/demix/25> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/demix/25> ns4kge:hasNSMethod <ns-method/adaptive-denoising-mixup> .
+<configuration/demix/25> ns4kge:result "0.318"^^xsd:decimal .
+
+<configuration/demix/26> rdf:type ns4kge:Configuration .
+<configuration/demix/26> ns4kge:hasTask    <task/link-prediction> .
+<configuration/demix/26> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/demix/26> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/demix/26> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/demix/26> ns4kge:hasNSMethod <ns-method/adaptive-denoising-mixup> .
+<configuration/demix/26> ns4kge:result "0.51"^^xsd:decimal .
+
+<configuration/demix/27> rdf:type ns4kge:Configuration .
+<configuration/demix/27> ns4kge:hasTask    <task/link-prediction> .
+<configuration/demix/27> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/demix/27> ns4kge:hasMetric  <metric/mrr> .
+<configuration/demix/27> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/demix/27> ns4kge:hasNSMethod <ns-method/uniform-negative-sampling> .
+<configuration/demix/27> ns4kge:result "0.471"^^xsd:decimal .
+
+<configuration/demix/28> rdf:type ns4kge:Configuration .
+<configuration/demix/28> ns4kge:hasTask    <task/link-prediction> .
+<configuration/demix/28> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/demix/28> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/demix/28> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/demix/28> ns4kge:hasNSMethod <ns-method/uniform-negative-sampling> .
+<configuration/demix/28> ns4kge:result "0.56"^^xsd:decimal .
+
+<configuration/demix/29> rdf:type ns4kge:Configuration .
+<configuration/demix/29> ns4kge:hasTask    <task/link-prediction> .
+<configuration/demix/29> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/demix/29> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/demix/29> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/demix/29> ns4kge:hasNSMethod <ns-method/uniform-negative-sampling> .
+<configuration/demix/29> ns4kge:result "0.488"^^xsd:decimal .
+
+<configuration/demix/30> rdf:type ns4kge:Configuration .
+<configuration/demix/30> ns4kge:hasTask    <task/link-prediction> .
+<configuration/demix/30> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/demix/30> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/demix/30> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/demix/30> ns4kge:hasNSMethod <ns-method/uniform-negative-sampling> .
+<configuration/demix/30> ns4kge:result "0.424"^^xsd:decimal .
+
+<configuration/demix/31> rdf:type ns4kge:Configuration .
+<configuration/demix/31> ns4kge:hasTask    <task/link-prediction> .
+<configuration/demix/31> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/demix/31> ns4kge:hasMetric  <metric/mrr> .
+<configuration/demix/31> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/demix/31> ns4kge:hasNSMethod <ns-method/uniform-negative-sampling> .
+<configuration/demix/31> ns4kge:result "0.282"^^xsd:decimal .
+
+<configuration/demix/32> rdf:type ns4kge:Configuration .
+<configuration/demix/32> ns4kge:hasTask    <task/link-prediction> .
+<configuration/demix/32> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/demix/32> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/demix/32> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/demix/32> ns4kge:hasNSMethod <ns-method/uniform-negative-sampling> .
+<configuration/demix/32> ns4kge:result "0.462"^^xsd:decimal .
+
+<configuration/demix/33> rdf:type ns4kge:Configuration .
+<configuration/demix/33> ns4kge:hasTask    <task/link-prediction> .
+<configuration/demix/33> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/demix/33> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/demix/33> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/demix/33> ns4kge:hasNSMethod <ns-method/uniform-negative-sampling> .
+<configuration/demix/33> ns4kge:result "0.314"^^xsd:decimal .
+
+<configuration/demix/34> rdf:type ns4kge:Configuration .
+<configuration/demix/34> ns4kge:hasTask    <task/link-prediction> .
+<configuration/demix/34> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/demix/34> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/demix/34> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/demix/34> ns4kge:hasNSMethod <ns-method/uniform-negative-sampling> .
+<configuration/demix/34> ns4kge:result "0.191"^^xsd:decimal .
+
+<configuration/demix/35> rdf:type ns4kge:Configuration .
+<configuration/demix/35> ns4kge:hasTask    <task/link-prediction> .
+<configuration/demix/35> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/demix/35> ns4kge:hasMetric  <metric/mrr> .
+<configuration/demix/35> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/demix/35> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/demix/35> ns4kge:result "0.476"^^xsd:decimal .
+
+<configuration/demix/36> rdf:type ns4kge:Configuration .
+<configuration/demix/36> ns4kge:hasTask    <task/link-prediction> .
+<configuration/demix/36> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/demix/36> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/demix/36> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/demix/36> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/demix/36> ns4kge:result "0.57"^^xsd:decimal .
+
+<configuration/demix/37> rdf:type ns4kge:Configuration .
+<configuration/demix/37> ns4kge:hasTask    <task/link-prediction> .
+<configuration/demix/37> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/demix/37> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/demix/37> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/demix/37> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/demix/37> ns4kge:result "0.49"^^xsd:decimal .
+
+<configuration/demix/38> rdf:type ns4kge:Configuration .
+<configuration/demix/38> ns4kge:hasTask    <task/link-prediction> .
+<configuration/demix/38> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/demix/38> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/demix/38> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/demix/38> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/demix/38> ns4kge:result "0.428"^^xsd:decimal .
+
+<configuration/demix/39> rdf:type ns4kge:Configuration .
+<configuration/demix/39> ns4kge:hasTask    <task/link-prediction> .
+<configuration/demix/39> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/demix/39> ns4kge:hasMetric  <metric/mrr> .
+<configuration/demix/39> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/demix/39> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/demix/39> ns4kge:result "0.269"^^xsd:decimal .
+
+<configuration/demix/40> rdf:type ns4kge:Configuration .
+<configuration/demix/40> ns4kge:hasTask    <task/link-prediction> .
+<configuration/demix/40> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/demix/40> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/demix/40> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/demix/40> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/demix/40> ns4kge:result "0.452"^^xsd:decimal .
+
+<configuration/demix/41> rdf:type ns4kge:Configuration .
+<configuration/demix/41> ns4kge:hasTask    <task/link-prediction> .
+<configuration/demix/41> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/demix/41> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/demix/41> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/demix/41> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/demix/41> ns4kge:result "0.298"^^xsd:decimal .
+
+<configuration/demix/42> rdf:type ns4kge:Configuration .
+<configuration/demix/42> ns4kge:hasTask    <task/link-prediction> .
+<configuration/demix/42> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/demix/42> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/demix/42> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/demix/42> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/demix/42> ns4kge:result "0.179"^^xsd:decimal .
+
+<configuration/demix/43> rdf:type ns4kge:Configuration .
+<configuration/demix/43> ns4kge:hasTask    <task/link-prediction> .
+<configuration/demix/43> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/demix/43> ns4kge:hasMetric  <metric/mrr> .
+<configuration/demix/43> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/demix/43> ns4kge:hasNSMethod <ns-method/rw-sans> .
+<configuration/demix/43> ns4kge:result "0.478"^^xsd:decimal .
+
+<configuration/demix/44> rdf:type ns4kge:Configuration .
+<configuration/demix/44> ns4kge:hasTask    <task/link-prediction> .
+<configuration/demix/44> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/demix/44> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/demix/44> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/demix/44> ns4kge:hasNSMethod <ns-method/rw-sans> .
+<configuration/demix/44> ns4kge:result "0.572"^^xsd:decimal .
+
+<configuration/demix/45> rdf:type ns4kge:Configuration .
+<configuration/demix/45> ns4kge:hasTask    <task/link-prediction> .
+<configuration/demix/45> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/demix/45> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/demix/45> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/demix/45> ns4kge:hasNSMethod <ns-method/rw-sans> .
+<configuration/demix/45> ns4kge:result "0.494"^^xsd:decimal .
+
+<configuration/demix/46> rdf:type ns4kge:Configuration .
+<configuration/demix/46> ns4kge:hasTask    <task/link-prediction> .
+<configuration/demix/46> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/demix/46> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/demix/46> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/demix/46> ns4kge:hasNSMethod <ns-method/rw-sans> .
+<configuration/demix/46> ns4kge:result "0.43"^^xsd:decimal .
+
+<configuration/demix/47> rdf:type ns4kge:Configuration .
+<configuration/demix/47> ns4kge:hasTask    <task/link-prediction> .
+<configuration/demix/47> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/demix/47> ns4kge:hasMetric  <metric/mrr> .
+<configuration/demix/47> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/demix/47> ns4kge:hasNSMethod <ns-method/rw-sans> .
+<configuration/demix/47> ns4kge:result "0.295"^^xsd:decimal .
+
+<configuration/demix/48> rdf:type ns4kge:Configuration .
+<configuration/demix/48> ns4kge:hasTask    <task/link-prediction> .
+<configuration/demix/48> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/demix/48> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/demix/48> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/demix/48> ns4kge:hasNSMethod <ns-method/rw-sans> .
+<configuration/demix/48> ns4kge:result "0.481"^^xsd:decimal .
+
+<configuration/demix/49> rdf:type ns4kge:Configuration .
+<configuration/demix/49> ns4kge:hasTask    <task/link-prediction> .
+<configuration/demix/49> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/demix/49> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/demix/49> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/demix/49> ns4kge:hasNSMethod <ns-method/rw-sans> .
+<configuration/demix/49> ns4kge:result "0.327"^^xsd:decimal .
+
+<configuration/demix/50> rdf:type ns4kge:Configuration .
+<configuration/demix/50> ns4kge:hasTask    <task/link-prediction> .
+<configuration/demix/50> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/demix/50> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/demix/50> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/demix/50> ns4kge:hasNSMethod <ns-method/rw-sans> .
+<configuration/demix/50> ns4kge:result "0.202"^^xsd:decimal .
+
+<configuration/demix/51> rdf:type ns4kge:Configuration .
+<configuration/demix/51> ns4kge:hasTask    <task/link-prediction> .
+<configuration/demix/51> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/demix/51> ns4kge:hasMetric  <metric/mrr> .
+<configuration/demix/51> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/demix/51> ns4kge:hasNSMethod <ns-method/cans> .
+<configuration/demix/51> ns4kge:result "0.296"^^xsd:decimal .
+
+<configuration/demix/52> rdf:type ns4kge:Configuration .
+<configuration/demix/52> ns4kge:hasTask    <task/link-prediction> .
+<configuration/demix/52> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/demix/52> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/demix/52> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/demix/52> ns4kge:hasNSMethod <ns-method/cans> .
+<configuration/demix/52> ns4kge:result "0.486"^^xsd:decimal .
+
+<configuration/demix/53> rdf:type ns4kge:Configuration .
+<configuration/demix/53> ns4kge:hasTask    <task/link-prediction> .
+<configuration/demix/53> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/demix/53> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/demix/53> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/demix/53> ns4kge:hasNSMethod <ns-method/cans> .
+<configuration/demix/53> ns4kge:result "0.329"^^xsd:decimal .
+
+<configuration/demix/54> rdf:type ns4kge:Configuration .
+<configuration/demix/54> ns4kge:hasTask    <task/link-prediction> .
+<configuration/demix/54> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/demix/54> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/demix/54> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/demix/54> ns4kge:hasNSMethod <ns-method/cans> .
+<configuration/demix/54> ns4kge:result "0.202"^^xsd:decimal .
+
+<configuration/demix/55> rdf:type ns4kge:Configuration .
+<configuration/demix/55> ns4kge:hasTask    <task/link-prediction> .
+<configuration/demix/55> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/demix/55> ns4kge:hasMetric  <metric/mrr> .
+<configuration/demix/55> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/demix/55> ns4kge:hasNSMethod <ns-method/adaptive-denoising-mixup> .
+<configuration/demix/55> ns4kge:result "0.479"^^xsd:decimal .
+
+<configuration/demix/56> rdf:type ns4kge:Configuration .
+<configuration/demix/56> ns4kge:hasTask    <task/link-prediction> .
+<configuration/demix/56> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/demix/56> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/demix/56> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/demix/56> ns4kge:hasNSMethod <ns-method/adaptive-denoising-mixup> .
+<configuration/demix/56> ns4kge:result "0.576"^^xsd:decimal .
+
+<configuration/demix/57> rdf:type ns4kge:Configuration .
+<configuration/demix/57> ns4kge:hasTask    <task/link-prediction> .
+<configuration/demix/57> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/demix/57> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/demix/57> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/demix/57> ns4kge:hasNSMethod <ns-method/adaptive-denoising-mixup> .
+<configuration/demix/57> ns4kge:result "0.492"^^xsd:decimal .
+
+<configuration/demix/58> rdf:type ns4kge:Configuration .
+<configuration/demix/58> ns4kge:hasTask    <task/link-prediction> .
+<configuration/demix/58> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/demix/58> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/demix/58> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/demix/58> ns4kge:hasNSMethod <ns-method/adaptive-denoising-mixup> .
+<configuration/demix/58> ns4kge:result "0.428"^^xsd:decimal .
+
+<configuration/demix/59> rdf:type ns4kge:Configuration .
+<configuration/demix/59> ns4kge:hasTask    <task/link-prediction> .
+<configuration/demix/59> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/demix/59> ns4kge:hasMetric  <metric/mrr> .
+<configuration/demix/59> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/demix/59> ns4kge:hasNSMethod <ns-method/adaptive-denoising-mixup> .
+<configuration/demix/59> ns4kge:result "0.329"^^xsd:decimal .
+
+<configuration/demix/60> rdf:type ns4kge:Configuration .
+<configuration/demix/60> ns4kge:hasTask    <task/link-prediction> .
+<configuration/demix/60> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/demix/60> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/demix/60> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/demix/60> ns4kge:hasNSMethod <ns-method/adaptive-denoising-mixup> .
+<configuration/demix/60> ns4kge:result "0.518"^^xsd:decimal .
+
+<configuration/demix/61> rdf:type ns4kge:Configuration .
+<configuration/demix/61> ns4kge:hasTask    <task/link-prediction> .
+<configuration/demix/61> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/demix/61> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/demix/61> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/demix/61> ns4kge:hasNSMethod <ns-method/adaptive-denoising-mixup> .
+<configuration/demix/61> ns4kge:result "0.366"^^xsd:decimal .
+
+<configuration/demix/62> rdf:type ns4kge:Configuration .
+<configuration/demix/62> ns4kge:hasTask    <task/link-prediction> .
+<configuration/demix/62> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/demix/62> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/demix/62> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/demix/62> ns4kge:hasNSMethod <ns-method/adaptive-denoising-mixup> .
+<configuration/demix/62> ns4kge:result "0.235"^^xsd:decimal .
+
+<configuration/demix/63> rdf:type ns4kge:Configuration .
+<configuration/demix/63> ns4kge:hasTask    <task/link-prediction> .
+<configuration/demix/63> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/demix/63> ns4kge:hasMetric  <metric/mrr> .
+<configuration/demix/63> ns4kge:hasKGEModel <kge-model/hake> .
+<configuration/demix/63> ns4kge:hasNSMethod <ns-method/uniform-negative-sampling> .
+<configuration/demix/63> ns4kge:result "0.493"^^xsd:decimal .
+
+<configuration/demix/64> rdf:type ns4kge:Configuration .
+<configuration/demix/64> ns4kge:hasTask    <task/link-prediction> .
+<configuration/demix/64> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/demix/64> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/demix/64> ns4kge:hasKGEModel <kge-model/hake> .
+<configuration/demix/64> ns4kge:hasNSMethod <ns-method/uniform-negative-sampling> .
+<configuration/demix/64> ns4kge:result "0.58"^^xsd:decimal .
+
+<configuration/demix/65> rdf:type ns4kge:Configuration .
+<configuration/demix/65> ns4kge:hasTask    <task/link-prediction> .
+<configuration/demix/65> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/demix/65> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/demix/65> ns4kge:hasKGEModel <kge-model/hake> .
+<configuration/demix/65> ns4kge:hasNSMethod <ns-method/uniform-negative-sampling> .
+<configuration/demix/65> ns4kge:result "0.51"^^xsd:decimal .
+
+<configuration/demix/66> rdf:type ns4kge:Configuration .
+<configuration/demix/66> ns4kge:hasTask    <task/link-prediction> .
+<configuration/demix/66> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/demix/66> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/demix/66> ns4kge:hasKGEModel <kge-model/hake> .
+<configuration/demix/66> ns4kge:hasNSMethod <ns-method/uniform-negative-sampling> .
+<configuration/demix/66> ns4kge:result "0.45"^^xsd:decimal .
+
+<configuration/demix/67> rdf:type ns4kge:Configuration .
+<configuration/demix/67> ns4kge:hasTask    <task/link-prediction> .
+<configuration/demix/67> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/demix/67> ns4kge:hasMetric  <metric/mrr> .
+<configuration/demix/67> ns4kge:hasKGEModel <kge-model/hake> .
+<configuration/demix/67> ns4kge:hasNSMethod <ns-method/uniform-negative-sampling> .
+<configuration/demix/67> ns4kge:result "0.304"^^xsd:decimal .
+
+<configuration/demix/68> rdf:type ns4kge:Configuration .
+<configuration/demix/68> ns4kge:hasTask    <task/link-prediction> .
+<configuration/demix/68> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/demix/68> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/demix/68> ns4kge:hasKGEModel <kge-model/hake> .
+<configuration/demix/68> ns4kge:hasNSMethod <ns-method/uniform-negative-sampling> .
+<configuration/demix/68> ns4kge:result "0.482"^^xsd:decimal .
+
+<configuration/demix/69> rdf:type ns4kge:Configuration .
+<configuration/demix/69> ns4kge:hasTask    <task/link-prediction> .
+<configuration/demix/69> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/demix/69> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/demix/69> ns4kge:hasKGEModel <kge-model/hake> .
+<configuration/demix/69> ns4kge:hasNSMethod <ns-method/uniform-negative-sampling> .
+<configuration/demix/69> ns4kge:result "0.333"^^xsd:decimal .
+
+<configuration/demix/70> rdf:type ns4kge:Configuration .
+<configuration/demix/70> ns4kge:hasTask    <task/link-prediction> .
+<configuration/demix/70> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/demix/70> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/demix/70> ns4kge:hasKGEModel <kge-model/hake> .
+<configuration/demix/70> ns4kge:hasNSMethod <ns-method/uniform-negative-sampling> .
+<configuration/demix/70> ns4kge:result "0.216"^^xsd:decimal .
+
+<configuration/demix/71> rdf:type ns4kge:Configuration .
+<configuration/demix/71> ns4kge:hasTask    <task/link-prediction> .
+<configuration/demix/71> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/demix/71> ns4kge:hasMetric  <metric/mrr> .
+<configuration/demix/71> ns4kge:hasKGEModel <kge-model/hake> .
+<configuration/demix/71> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/demix/71> ns4kge:result "0.495"^^xsd:decimal .
+
+<configuration/demix/72> rdf:type ns4kge:Configuration .
+<configuration/demix/72> ns4kge:hasTask    <task/link-prediction> .
+<configuration/demix/72> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/demix/72> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/demix/72> ns4kge:hasKGEModel <kge-model/hake> .
+<configuration/demix/72> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/demix/72> ns4kge:result "0.58"^^xsd:decimal .
+
+<configuration/demix/73> rdf:type ns4kge:Configuration .
+<configuration/demix/73> ns4kge:hasTask    <task/link-prediction> .
+<configuration/demix/73> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/demix/73> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/demix/73> ns4kge:hasKGEModel <kge-model/hake> .
+<configuration/demix/73> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/demix/73> ns4kge:result "0.513"^^xsd:decimal .
+
+<configuration/demix/74> rdf:type ns4kge:Configuration .
+<configuration/demix/74> ns4kge:hasTask    <task/link-prediction> .
+<configuration/demix/74> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/demix/74> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/demix/74> ns4kge:hasKGEModel <kge-model/hake> .
+<configuration/demix/74> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/demix/74> ns4kge:result "0.45"^^xsd:decimal .
+
+<configuration/demix/75> rdf:type ns4kge:Configuration .
+<configuration/demix/75> ns4kge:hasTask    <task/link-prediction> .
+<configuration/demix/75> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/demix/75> ns4kge:hasMetric  <metric/mrr> .
+<configuration/demix/75> ns4kge:hasKGEModel <kge-model/hake> .
+<configuration/demix/75> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/demix/75> ns4kge:result "0.306"^^xsd:decimal .
+
+<configuration/demix/76> rdf:type ns4kge:Configuration .
+<configuration/demix/76> ns4kge:hasTask    <task/link-prediction> .
+<configuration/demix/76> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/demix/76> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/demix/76> ns4kge:hasKGEModel <kge-model/hake> .
+<configuration/demix/76> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/demix/76> ns4kge:result "0.486"^^xsd:decimal .
+
+<configuration/demix/77> rdf:type ns4kge:Configuration .
+<configuration/demix/77> ns4kge:hasTask    <task/link-prediction> .
+<configuration/demix/77> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/demix/77> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/demix/77> ns4kge:hasKGEModel <kge-model/hake> .
+<configuration/demix/77> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/demix/77> ns4kge:result "0.337"^^xsd:decimal .
+
+<configuration/demix/78> rdf:type ns4kge:Configuration .
+<configuration/demix/78> ns4kge:hasTask    <task/link-prediction> .
+<configuration/demix/78> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/demix/78> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/demix/78> ns4kge:hasKGEModel <kge-model/hake> .
+<configuration/demix/78> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/demix/78> ns4kge:result "0.216"^^xsd:decimal .
+
+<configuration/demix/79> rdf:type ns4kge:Configuration .
+<configuration/demix/79> ns4kge:hasTask    <task/link-prediction> .
+<configuration/demix/79> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/demix/79> ns4kge:hasMetric  <metric/mrr> .
+<configuration/demix/79> ns4kge:hasKGEModel <kge-model/hake> .
+<configuration/demix/79> ns4kge:hasNSMethod <ns-method/rw-sans> .
+<configuration/demix/79> ns4kge:result "0.492"^^xsd:decimal .
+
+<configuration/demix/80> rdf:type ns4kge:Configuration .
+<configuration/demix/80> ns4kge:hasTask    <task/link-prediction> .
+<configuration/demix/80> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/demix/80> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/demix/80> ns4kge:hasKGEModel <kge-model/hake> .
+<configuration/demix/80> ns4kge:hasNSMethod <ns-method/rw-sans> .
+<configuration/demix/80> ns4kge:result "0.579"^^xsd:decimal .
+
+<configuration/demix/81> rdf:type ns4kge:Configuration .
+<configuration/demix/81> ns4kge:hasTask    <task/link-prediction> .
+<configuration/demix/81> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/demix/81> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/demix/81> ns4kge:hasKGEModel <kge-model/hake> .
+<configuration/demix/81> ns4kge:hasNSMethod <ns-method/rw-sans> .
+<configuration/demix/81> ns4kge:result "0.507"^^xsd:decimal .
+
+<configuration/demix/82> rdf:type ns4kge:Configuration .
+<configuration/demix/82> ns4kge:hasTask    <task/link-prediction> .
+<configuration/demix/82> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/demix/82> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/demix/82> ns4kge:hasKGEModel <kge-model/hake> .
+<configuration/demix/82> ns4kge:hasNSMethod <ns-method/rw-sans> .
+<configuration/demix/82> ns4kge:result "0.446"^^xsd:decimal .
+
+<configuration/demix/83> rdf:type ns4kge:Configuration .
+<configuration/demix/83> ns4kge:hasTask    <task/link-prediction> .
+<configuration/demix/83> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/demix/83> ns4kge:hasMetric  <metric/mrr> .
+<configuration/demix/83> ns4kge:hasKGEModel <kge-model/hake> .
+<configuration/demix/83> ns4kge:hasNSMethod <ns-method/rw-sans> .
+<configuration/demix/83> ns4kge:result "0.305"^^xsd:decimal .
+
+<configuration/demix/84> rdf:type ns4kge:Configuration .
+<configuration/demix/84> ns4kge:hasTask    <task/link-prediction> .
+<configuration/demix/84> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/demix/84> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/demix/84> ns4kge:hasKGEModel <kge-model/hake> .
+<configuration/demix/84> ns4kge:hasNSMethod <ns-method/rw-sans> .
+<configuration/demix/84> ns4kge:result "0.488"^^xsd:decimal .
+
+<configuration/demix/85> rdf:type ns4kge:Configuration .
+<configuration/demix/85> ns4kge:hasTask    <task/link-prediction> .
+<configuration/demix/85> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/demix/85> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/demix/85> ns4kge:hasKGEModel <kge-model/hake> .
+<configuration/demix/85> ns4kge:hasNSMethod <ns-method/rw-sans> .
+<configuration/demix/85> ns4kge:result "0.336"^^xsd:decimal .
+
+<configuration/demix/86> rdf:type ns4kge:Configuration .
+<configuration/demix/86> ns4kge:hasTask    <task/link-prediction> .
+<configuration/demix/86> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/demix/86> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/demix/86> ns4kge:hasKGEModel <kge-model/hake> .
+<configuration/demix/86> ns4kge:hasNSMethod <ns-method/rw-sans> .
+<configuration/demix/86> ns4kge:result "0.214"^^xsd:decimal .
+
+<configuration/demix/87> rdf:type ns4kge:Configuration .
+<configuration/demix/87> ns4kge:hasTask    <task/link-prediction> .
+<configuration/demix/87> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/demix/87> ns4kge:hasMetric  <metric/mrr> .
+<configuration/demix/87> ns4kge:hasKGEModel <kge-model/hake> .
+<configuration/demix/87> ns4kge:hasNSMethod <ns-method/cans> .
+<configuration/demix/87> ns4kge:result "0.315"^^xsd:decimal .
+
+<configuration/demix/88> rdf:type ns4kge:Configuration .
+<configuration/demix/88> ns4kge:hasTask    <task/link-prediction> .
+<configuration/demix/88> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/demix/88> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/demix/88> ns4kge:hasKGEModel <kge-model/hake> .
+<configuration/demix/88> ns4kge:hasNSMethod <ns-method/cans> .
+<configuration/demix/88> ns4kge:result "0.501"^^xsd:decimal .
+
+<configuration/demix/89> rdf:type ns4kge:Configuration .
+<configuration/demix/89> ns4kge:hasTask    <task/link-prediction> .
+<configuration/demix/89> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/demix/89> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/demix/89> ns4kge:hasKGEModel <kge-model/hake> .
+<configuration/demix/89> ns4kge:hasNSMethod <ns-method/cans> .
+<configuration/demix/89> ns4kge:result "0.344"^^xsd:decimal .
+
+<configuration/demix/90> rdf:type ns4kge:Configuration .
+<configuration/demix/90> ns4kge:hasTask    <task/link-prediction> .
+<configuration/demix/90> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/demix/90> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/demix/90> ns4kge:hasKGEModel <kge-model/hake> .
+<configuration/demix/90> ns4kge:hasNSMethod <ns-method/cans> .
+<configuration/demix/90> ns4kge:result "0.221"^^xsd:decimal .
+
+<configuration/demix/91> rdf:type ns4kge:Configuration .
+<configuration/demix/91> ns4kge:hasTask    <task/link-prediction> .
+<configuration/demix/91> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/demix/91> ns4kge:hasMetric  <metric/mrr> .
+<configuration/demix/91> ns4kge:hasKGEModel <kge-model/hake> .
+<configuration/demix/91> ns4kge:hasNSMethod <ns-method/adaptive-denoising-mixup> .
+<configuration/demix/91> ns4kge:result "0.498"^^xsd:decimal .
+
+<configuration/demix/92> rdf:type ns4kge:Configuration .
+<configuration/demix/92> ns4kge:hasTask    <task/link-prediction> .
+<configuration/demix/92> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/demix/92> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/demix/92> ns4kge:hasKGEModel <kge-model/hake> .
+<configuration/demix/92> ns4kge:hasNSMethod <ns-method/adaptive-denoising-mixup> .
+<configuration/demix/92> ns4kge:result "0.584"^^xsd:decimal .
+
+<configuration/demix/93> rdf:type ns4kge:Configuration .
+<configuration/demix/93> ns4kge:hasTask    <task/link-prediction> .
+<configuration/demix/93> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/demix/93> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/demix/93> ns4kge:hasKGEModel <kge-model/hake> .
+<configuration/demix/93> ns4kge:hasNSMethod <ns-method/adaptive-denoising-mixup> .
+<configuration/demix/93> ns4kge:result "0.514"^^xsd:decimal .
+
+<configuration/demix/94> rdf:type ns4kge:Configuration .
+<configuration/demix/94> ns4kge:hasTask    <task/link-prediction> .
+<configuration/demix/94> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/demix/94> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/demix/94> ns4kge:hasKGEModel <kge-model/hake> .
+<configuration/demix/94> ns4kge:hasNSMethod <ns-method/adaptive-denoising-mixup> .
+<configuration/demix/94> ns4kge:result "0.451"^^xsd:decimal .
+
+<configuration/demix/95> rdf:type ns4kge:Configuration .
+<configuration/demix/95> ns4kge:hasTask    <task/link-prediction> .
+<configuration/demix/95> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/demix/95> ns4kge:hasMetric  <metric/mrr> .
+<configuration/demix/95> ns4kge:hasKGEModel <kge-model/hake> .
+<configuration/demix/95> ns4kge:hasNSMethod <ns-method/adaptive-denoising-mixup> .
+<configuration/demix/95> ns4kge:result "0.337"^^xsd:decimal .
+
+<configuration/demix/96> rdf:type ns4kge:Configuration .
+<configuration/demix/96> ns4kge:hasTask    <task/link-prediction> .
+<configuration/demix/96> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/demix/96> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/demix/96> ns4kge:hasKGEModel <kge-model/hake> .
+<configuration/demix/96> ns4kge:hasNSMethod <ns-method/adaptive-denoising-mixup> .
+<configuration/demix/96> ns4kge:result "0.533"^^xsd:decimal .
+
+<configuration/demix/97> rdf:type ns4kge:Configuration .
+<configuration/demix/97> ns4kge:hasTask    <task/link-prediction> .
+<configuration/demix/97> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/demix/97> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/demix/97> ns4kge:hasKGEModel <kge-model/hake> .
+<configuration/demix/97> ns4kge:hasNSMethod <ns-method/adaptive-denoising-mixup> .
+<configuration/demix/97> ns4kge:result "0.374"^^xsd:decimal .
+
+<configuration/demix/98> rdf:type ns4kge:Configuration .
+<configuration/demix/98> ns4kge:hasTask    <task/link-prediction> .
+<configuration/demix/98> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/demix/98> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/demix/98> ns4kge:hasKGEModel <kge-model/hake> .
+<configuration/demix/98> ns4kge:hasNSMethod <ns-method/adaptive-denoising-mixup> .
+<configuration/demix/98> ns4kge:result "0.239"^^xsd:decimal .
+
+<configuration/demix/99> rdf:type ns4kge:Configuration .
+<configuration/demix/99> ns4kge:hasTask    <task/link-prediction> .
+<configuration/demix/99> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/demix/99> ns4kge:hasMetric  <metric/mrr> .
+<configuration/demix/99> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/demix/99> ns4kge:hasNSMethod <ns-method/uniform-negative-sampling> .
+<configuration/demix/99> ns4kge:result "0.412"^^xsd:decimal .
+
+<configuration/demix/100> rdf:type ns4kge:Configuration .
+<configuration/demix/100> ns4kge:hasTask    <task/link-prediction> .
+<configuration/demix/100> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/demix/100> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/demix/100> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/demix/100> ns4kge:hasNSMethod <ns-method/uniform-negative-sampling> .
+<configuration/demix/100> ns4kge:result "0.463"^^xsd:decimal .
+
+<configuration/demix/101> rdf:type ns4kge:Configuration .
+<configuration/demix/101> ns4kge:hasTask    <task/link-prediction> .
+<configuration/demix/101> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/demix/101> ns4kge:hasMetric  <metric/mrr> .
+<configuration/demix/101> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/demix/101> ns4kge:hasNSMethod <ns-method/uniform-negative-sampling> .
+<configuration/demix/101> ns4kge:result "0.213"^^xsd:decimal .
+
+<configuration/demix/102> rdf:type ns4kge:Configuration .
+<configuration/demix/102> ns4kge:hasTask    <task/link-prediction> .
+<configuration/demix/102> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/demix/102> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/demix/102> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/demix/102> ns4kge:hasNSMethod <ns-method/uniform-negative-sampling> .
+<configuration/demix/102> ns4kge:result "0.383"^^xsd:decimal .
+
+<configuration/demix/103> rdf:type ns4kge:Configuration .
+<configuration/demix/103> ns4kge:hasTask    <task/link-prediction> .
+<configuration/demix/103> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/demix/103> ns4kge:hasMetric  <metric/mrr> .
+<configuration/demix/103> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/demix/103> ns4kge:hasNSMethod <ns-method/bernoulli-negative-sampling> .
+<configuration/demix/103> ns4kge:result "0.396"^^xsd:decimal .
+
+<configuration/demix/104> rdf:type ns4kge:Configuration .
+<configuration/demix/104> ns4kge:hasTask    <task/link-prediction> .
+<configuration/demix/104> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/demix/104> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/demix/104> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/demix/104> ns4kge:hasNSMethod <ns-method/bernoulli-negative-sampling> .
+<configuration/demix/104> ns4kge:result "0.437"^^xsd:decimal .
+
+<configuration/demix/105> rdf:type ns4kge:Configuration .
+<configuration/demix/105> ns4kge:hasTask    <task/link-prediction> .
+<configuration/demix/105> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/demix/105> ns4kge:hasMetric  <metric/mrr> .
+<configuration/demix/105> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/demix/105> ns4kge:hasNSMethod <ns-method/bernoulli-negative-sampling> .
+<configuration/demix/105> ns4kge:result "0.262"^^xsd:decimal .
+
+<configuration/demix/106> rdf:type ns4kge:Configuration .
+<configuration/demix/106> ns4kge:hasTask    <task/link-prediction> .
+<configuration/demix/106> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/demix/106> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/demix/106> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/demix/106> ns4kge:hasNSMethod <ns-method/bernoulli-negative-sampling> .
+<configuration/demix/106> ns4kge:result "0.43"^^xsd:decimal .
+
+<configuration/demix/107> rdf:type ns4kge:Configuration .
+<configuration/demix/107> ns4kge:hasTask    <task/link-prediction> .
+<configuration/demix/107> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/demix/107> ns4kge:hasMetric  <metric/mrr> .
+<configuration/demix/107> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/demix/107> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/demix/107> ns4kge:result "0.413"^^xsd:decimal .
+
+<configuration/demix/108> rdf:type ns4kge:Configuration .
+<configuration/demix/108> ns4kge:hasTask    <task/link-prediction> .
+<configuration/demix/108> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/demix/108> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/demix/108> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/demix/108> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/demix/108> ns4kge:result "0.455"^^xsd:decimal .
+
+<configuration/demix/109> rdf:type ns4kge:Configuration .
+<configuration/demix/109> ns4kge:hasTask    <task/link-prediction> .
+<configuration/demix/109> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/demix/109> ns4kge:hasMetric  <metric/mrr> .
+<configuration/demix/109> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/demix/109> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/demix/109> ns4kge:result "0.288"^^xsd:decimal .
+
+<configuration/demix/110> rdf:type ns4kge:Configuration .
+<configuration/demix/110> ns4kge:hasTask    <task/link-prediction> .
+<configuration/demix/110> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/demix/110> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/demix/110> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/demix/110> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/demix/110> ns4kge:result "0.458"^^xsd:decimal .
+
+<configuration/demix/111> rdf:type ns4kge:Configuration .
+<configuration/demix/111> ns4kge:hasTask    <task/link-prediction> .
+<configuration/demix/111> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/demix/111> ns4kge:hasMetric  <metric/mrr> .
+<configuration/demix/111> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/demix/111> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/demix/111> ns4kge:result "0.416"^^xsd:decimal .
+
+<configuration/demix/112> rdf:type ns4kge:Configuration .
+<configuration/demix/112> ns4kge:hasTask    <task/link-prediction> .
+<configuration/demix/112> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/demix/112> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/demix/112> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/demix/112> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/demix/112> ns4kge:result "0.463"^^xsd:decimal .
+
+<configuration/demix/113> rdf:type ns4kge:Configuration .
+<configuration/demix/113> ns4kge:hasTask    <task/link-prediction> .
+<configuration/demix/113> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/demix/113> ns4kge:hasMetric  <metric/mrr> .
+<configuration/demix/113> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/demix/113> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/demix/113> ns4kge:result "0.215"^^xsd:decimal .
+
+<configuration/demix/114> rdf:type ns4kge:Configuration .
+<configuration/demix/114> ns4kge:hasTask    <task/link-prediction> .
+<configuration/demix/114> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/demix/114> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/demix/114> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/demix/114> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/demix/114> ns4kge:result "0.395"^^xsd:decimal .
+
+<configuration/demix/115> rdf:type ns4kge:Configuration .
+<configuration/demix/115> ns4kge:hasTask    <task/link-prediction> .
+<configuration/demix/115> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/demix/115> ns4kge:hasMetric  <metric/mrr> .
+<configuration/demix/115> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/demix/115> ns4kge:hasNSMethod <ns-method/esns> .
+<configuration/demix/115> ns4kge:result "0.424"^^xsd:decimal .
+
+<configuration/demix/116> rdf:type ns4kge:Configuration .
+<configuration/demix/116> ns4kge:hasTask    <task/link-prediction> .
+<configuration/demix/116> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/demix/116> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/demix/116> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/demix/116> ns4kge:hasNSMethod <ns-method/esns> .
+<configuration/demix/116> ns4kge:result "0.488"^^xsd:decimal .
+
+<configuration/demix/117> rdf:type ns4kge:Configuration .
+<configuration/demix/117> ns4kge:hasTask    <task/link-prediction> .
+<configuration/demix/117> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/demix/117> ns4kge:hasMetric  <metric/mrr> .
+<configuration/demix/117> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/demix/117> ns4kge:hasNSMethod <ns-method/esns> .
+<configuration/demix/117> ns4kge:result "0.296"^^xsd:decimal .
+
+<configuration/demix/118> rdf:type ns4kge:Configuration .
+<configuration/demix/118> ns4kge:hasTask    <task/link-prediction> .
+<configuration/demix/118> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/demix/118> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/demix/118> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/demix/118> ns4kge:hasNSMethod <ns-method/esns> .
+<configuration/demix/118> ns4kge:result "0.465"^^xsd:decimal .
+
+<configuration/demix/119> rdf:type ns4kge:Configuration .
+<configuration/demix/119> ns4kge:hasTask    <task/link-prediction> .
+<configuration/demix/119> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/demix/119> ns4kge:hasMetric  <metric/mrr> .
+<configuration/demix/119> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/demix/119> ns4kge:hasNSMethod <ns-method/adaptive-denoising-mixup> .
+<configuration/demix/119> ns4kge:result "0.439"^^xsd:decimal .
+
+<configuration/demix/120> rdf:type ns4kge:Configuration .
+<configuration/demix/120> ns4kge:hasTask    <task/link-prediction> .
+<configuration/demix/120> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/demix/120> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/demix/120> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/demix/120> ns4kge:hasNSMethod <ns-method/adaptive-denoising-mixup> .
+<configuration/demix/120> ns4kge:result "0.535"^^xsd:decimal .
+
+<configuration/demix/121> rdf:type ns4kge:Configuration .
+<configuration/demix/121> ns4kge:hasTask    <task/link-prediction> .
+<configuration/demix/121> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/demix/121> ns4kge:hasMetric  <metric/mrr> .
+<configuration/demix/121> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/demix/121> ns4kge:hasNSMethod <ns-method/adaptive-denoising-mixup> .
+<configuration/demix/121> ns4kge:result "0.301"^^xsd:decimal .
+
+<configuration/demix/122> rdf:type ns4kge:Configuration .
+<configuration/demix/122> ns4kge:hasTask    <task/link-prediction> .
+<configuration/demix/122> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/demix/122> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/demix/122> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/demix/122> ns4kge:hasNSMethod <ns-method/adaptive-denoising-mixup> .
+<configuration/demix/122> ns4kge:result "0.47"^^xsd:decimal .
+
+<configuration/demix/123> rdf:type ns4kge:Configuration .
+<configuration/demix/123> ns4kge:hasTask    <task/link-prediction> .
+<configuration/demix/123> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/demix/123> ns4kge:hasMetric  <metric/mrr> .
+<configuration/demix/123> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/demix/123> ns4kge:hasNSMethod <ns-method/uniform-negative-sampling> .
+<configuration/demix/123> ns4kge:result "0.429"^^xsd:decimal .
+
+<configuration/demix/124> rdf:type ns4kge:Configuration .
+<configuration/demix/124> ns4kge:hasTask    <task/link-prediction> .
+<configuration/demix/124> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/demix/124> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/demix/124> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/demix/124> ns4kge:hasNSMethod <ns-method/uniform-negative-sampling> .
+<configuration/demix/124> ns4kge:result "0.478"^^xsd:decimal .
+
+<configuration/demix/125> rdf:type ns4kge:Configuration .
+<configuration/demix/125> ns4kge:hasTask    <task/link-prediction> .
+<configuration/demix/125> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/demix/125> ns4kge:hasMetric  <metric/mrr> .
+<configuration/demix/125> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/demix/125> ns4kge:hasNSMethod <ns-method/uniform-negative-sampling> .
+<configuration/demix/125> ns4kge:result "0.214"^^xsd:decimal .
+
+<configuration/demix/126> rdf:type ns4kge:Configuration .
+<configuration/demix/126> ns4kge:hasTask    <task/link-prediction> .
+<configuration/demix/126> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/demix/126> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/demix/126> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/demix/126> ns4kge:hasNSMethod <ns-method/uniform-negative-sampling> .
+<configuration/demix/126> ns4kge:result "0.387"^^xsd:decimal .
+
+<configuration/demix/127> rdf:type ns4kge:Configuration .
+<configuration/demix/127> ns4kge:hasTask    <task/link-prediction> .
+<configuration/demix/127> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/demix/127> ns4kge:hasMetric  <metric/mrr> .
+<configuration/demix/127> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/demix/127> ns4kge:hasNSMethod <ns-method/bernoulli-negative-sampling> .
+<configuration/demix/127> ns4kge:result "0.405"^^xsd:decimal .
+
+<configuration/demix/128> rdf:type ns4kge:Configuration .
+<configuration/demix/128> ns4kge:hasTask    <task/link-prediction> .
+<configuration/demix/128> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/demix/128> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/demix/128> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/demix/128> ns4kge:hasNSMethod <ns-method/bernoulli-negative-sampling> .
+<configuration/demix/128> ns4kge:result "0.441"^^xsd:decimal .
+
+<configuration/demix/129> rdf:type ns4kge:Configuration .
+<configuration/demix/129> ns4kge:hasTask    <task/link-prediction> .
+<configuration/demix/129> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/demix/129> ns4kge:hasMetric  <metric/mrr> .
+<configuration/demix/129> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/demix/129> ns4kge:hasNSMethod <ns-method/bernoulli-negative-sampling> .
+<configuration/demix/129> ns4kge:result "0.268"^^xsd:decimal .
+
+<configuration/demix/130> rdf:type ns4kge:Configuration .
+<configuration/demix/130> ns4kge:hasTask    <task/link-prediction> .
+<configuration/demix/130> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/demix/130> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/demix/130> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/demix/130> ns4kge:hasNSMethod <ns-method/bernoulli-negative-sampling> .
+<configuration/demix/130> ns4kge:result "0.442"^^xsd:decimal .
+
+<configuration/demix/131> rdf:type ns4kge:Configuration .
+<configuration/demix/131> ns4kge:hasTask    <task/link-prediction> .
+<configuration/demix/131> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/demix/131> ns4kge:hasMetric  <metric/mrr> .
+<configuration/demix/131> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/demix/131> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/demix/131> ns4kge:result "0.446"^^xsd:decimal .
+
+<configuration/demix/132> rdf:type ns4kge:Configuration .
+<configuration/demix/132> ns4kge:hasTask    <task/link-prediction> .
+<configuration/demix/132> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/demix/132> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/demix/132> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/demix/132> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/demix/132> ns4kge:result "0.509"^^xsd:decimal .
+
+<configuration/demix/133> rdf:type ns4kge:Configuration .
+<configuration/demix/133> ns4kge:hasTask    <task/link-prediction> .
+<configuration/demix/133> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/demix/133> ns4kge:hasMetric  <metric/mrr> .
+<configuration/demix/133> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/demix/133> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/demix/133> ns4kge:result "0.302"^^xsd:decimal .
+
+<configuration/demix/134> rdf:type ns4kge:Configuration .
+<configuration/demix/134> ns4kge:hasTask    <task/link-prediction> .
+<configuration/demix/134> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/demix/134> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/demix/134> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/demix/134> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/demix/134> ns4kge:result "0.481"^^xsd:decimal .
+
+<configuration/demix/135> rdf:type ns4kge:Configuration .
+<configuration/demix/135> ns4kge:hasTask    <task/link-prediction> .
+<configuration/demix/135> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/demix/135> ns4kge:hasMetric  <metric/mrr> .
+<configuration/demix/135> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/demix/135> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/demix/135> ns4kge:result "0.435"^^xsd:decimal .
+
+<configuration/demix/136> rdf:type ns4kge:Configuration .
+<configuration/demix/136> ns4kge:hasTask    <task/link-prediction> .
+<configuration/demix/136> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/demix/136> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/demix/136> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/demix/136> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/demix/136> ns4kge:result "0.493"^^xsd:decimal .
+
+<configuration/demix/137> rdf:type ns4kge:Configuration .
+<configuration/demix/137> ns4kge:hasTask    <task/link-prediction> .
+<configuration/demix/137> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/demix/137> ns4kge:hasMetric  <metric/mrr> .
+<configuration/demix/137> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/demix/137> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/demix/137> ns4kge:result "0.211"^^xsd:decimal .
+
+<configuration/demix/138> rdf:type ns4kge:Configuration .
+<configuration/demix/138> ns4kge:hasTask    <task/link-prediction> .
+<configuration/demix/138> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/demix/138> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/demix/138> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/demix/138> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/demix/138> ns4kge:result "0.395"^^xsd:decimal .
+
+<configuration/demix/139> rdf:type ns4kge:Configuration .
+<configuration/demix/139> ns4kge:hasTask    <task/link-prediction> .
+<configuration/demix/139> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/demix/139> ns4kge:hasMetric  <metric/mrr> .
+<configuration/demix/139> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/demix/139> ns4kge:hasNSMethod <ns-method/esns> .
+<configuration/demix/139> ns4kge:result "0.45"^^xsd:decimal .
+
+<configuration/demix/140> rdf:type ns4kge:Configuration .
+<configuration/demix/140> ns4kge:hasTask    <task/link-prediction> .
+<configuration/demix/140> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/demix/140> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/demix/140> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/demix/140> ns4kge:hasNSMethod <ns-method/esns> .
+<configuration/demix/140> ns4kge:result "0.512"^^xsd:decimal .
+
+<configuration/demix/141> rdf:type ns4kge:Configuration .
+<configuration/demix/141> ns4kge:hasTask    <task/link-prediction> .
+<configuration/demix/141> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/demix/141> ns4kge:hasMetric  <metric/mrr> .
+<configuration/demix/141> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/demix/141> ns4kge:hasNSMethod <ns-method/esns> .
+<configuration/demix/141> ns4kge:result "0.303"^^xsd:decimal .
+
+<configuration/demix/142> rdf:type ns4kge:Configuration .
+<configuration/demix/142> ns4kge:hasTask    <task/link-prediction> .
+<configuration/demix/142> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/demix/142> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/demix/142> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/demix/142> ns4kge:hasNSMethod <ns-method/esns> .
+<configuration/demix/142> ns4kge:result "0.471"^^xsd:decimal .
+
+<configuration/demix/143> rdf:type ns4kge:Configuration .
+<configuration/demix/143> ns4kge:hasTask    <task/link-prediction> .
+<configuration/demix/143> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/demix/143> ns4kge:hasMetric  <metric/mrr> .
+<configuration/demix/143> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/demix/143> ns4kge:hasNSMethod <ns-method/adaptive-denoising-mixup> .
+<configuration/demix/143> ns4kge:result "0.468"^^xsd:decimal .
+
+<configuration/demix/144> rdf:type ns4kge:Configuration .
+<configuration/demix/144> ns4kge:hasTask    <task/link-prediction> .
+<configuration/demix/144> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/demix/144> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/demix/144> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/demix/144> ns4kge:hasNSMethod <ns-method/adaptive-denoising-mixup> .
+<configuration/demix/144> ns4kge:result "0.552"^^xsd:decimal .
+
+<configuration/demix/145> rdf:type ns4kge:Configuration .
+<configuration/demix/145> ns4kge:hasTask    <task/link-prediction> .
+<configuration/demix/145> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/demix/145> ns4kge:hasMetric  <metric/mrr> .
+<configuration/demix/145> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/demix/145> ns4kge:hasNSMethod <ns-method/adaptive-denoising-mixup> .
+<configuration/demix/145> ns4kge:result "0.307"^^xsd:decimal .
+
+<configuration/demix/146> rdf:type ns4kge:Configuration .
+<configuration/demix/146> ns4kge:hasTask    <task/link-prediction> .
+<configuration/demix/146> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/demix/146> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/demix/146> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/demix/146> ns4kge:hasNSMethod <ns-method/adaptive-denoising-mixup> .
+<configuration/demix/146> ns4kge:result "0.479"^^xsd:decimal .

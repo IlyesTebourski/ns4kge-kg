@@ -1,0 +1,36 @@
+{
+  "Article": {
+    "title": "Distributional Negative Sampling for Knowledge Base Completion",
+    "date": "2019"
+  },
+  "proposedNSMethod": "Distributional Negative Sampling",
+  "proposedKGEModel": "",
+  "mentionedNSMethods": [
+    "Random Negative Sampling",
+    "Bernoulli Sampling",
+    "Domain Sampling",
+    "Typed Sampling",
+    "Nearest Neighbor Sampling"
+  ],
+  "mentionedKGEModels": [
+    "TransE",
+    "RESCAL",
+    "TransH",
+    "Neural Tensor Network",
+    "HolE",
+    "ComplEx"
+  ],
+  "Experimentation": {
+    "Hardware": [],
+    "TrainingProtocol": {
+      "LossFunction": [
+        "pairwise ranking loss"
+      ],
+      "Optimizer": [
+        "Adam"
+      ],
+      "learningRate": null,
+      "nsRatio": null
+    }
+  }
+}

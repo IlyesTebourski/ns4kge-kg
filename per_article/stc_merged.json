@@ -1,0 +1,379 @@
+{
+  "Article": {
+    "title": "Representation Learning of Knowledge Graphs with Hierarchical Types",
+    "date": "2016"
+  },
+  "proposedNSMethod": "Soft Type Constraint",
+  "proposedKGEModel": "Type-embodied Knowledge Representation Learning",
+  "mentionedNSMethods": [
+    "Uniform Negative Sampling",
+    "Bernoulli Negative Sampling"
+  ],
+  "mentionedKGEModels": [
+    "TransR+STC+TCE",
+    "TKRL (WHE+STC)",
+    "TKRL (WHE)",
+    "TKRL (RHE)",
+    "TransE",
+    "DKRL",
+    "TransR",
+    "TransE+STC+TCE",
+    "TKRL (RHE+STC+TCE)",
+    "TransE+TCE",
+    "NTN",
+    "RESCAL",
+    "TKRL (WHE+STC+TCE)",
+    "SE",
+    "TransD",
+    "SME (linear)",
+    "LFM",
+    "SME",
+    "SME (bilinear)",
+    "TransH",
+    "TransR+TCE",
+    "TKRL (RHE+STC)"
+  ],
+  "Experimentation": {
+    "Hardware": [],
+    "TrainingProtocol": {
+      "LossFunction": [
+        "margin-based ranking loss"
+      ],
+      "Optimizer": [
+        "SGD"
+      ],
+      "learningRate": 0.0025,
+      "nsRatio": null
+    },
+    "Configurations": [
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K",
+        "Metric": "MR",
+        "KGEModel": "TKRL (WHE)",
+        "NSMethod": "Unknown",
+        "result": 68
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K",
+        "Metric": "MR",
+        "KGEModel": "TKRL (RHE)",
+        "NSMethod": "Unknown",
+        "result": 68
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K",
+        "Metric": "MR",
+        "KGEModel": "TransR",
+        "NSMethod": "Unknown",
+        "result": 77
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K",
+        "Metric": "MR",
+        "KGEModel": "TKRL (WHE+STC)",
+        "NSMethod": "Soft Type Constraint",
+        "result": 87
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K",
+        "Metric": "MR",
+        "KGEModel": "TransE",
+        "NSMethod": "Unknown",
+        "result": 143
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K",
+        "Metric": "Hits@10",
+        "KGEModel": "TKRL (WHE+STC)",
+        "NSMethod": "Soft Type Constraint",
+        "result": 73.4
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K",
+        "Metric": "Hits@10",
+        "KGEModel": "TKRL (RHE+STC)",
+        "NSMethod": "Soft Type Constraint",
+        "result": 73.1
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K",
+        "Metric": "Hits@10",
+        "KGEModel": "TKRL (WHE)",
+        "NSMethod": "Unknown",
+        "result": 69.6
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K",
+        "Metric": "Hits@10",
+        "KGEModel": "TKRL (RHE)",
+        "NSMethod": "Unknown",
+        "result": 69.4
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K",
+        "Metric": "Hits@10",
+        "KGEModel": "TransR",
+        "NSMethod": "Unknown",
+        "result": 67.2
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K",
+        "Metric": "Hits@10",
+        "KGEModel": "TransE",
+        "NSMethod": "Unknown",
+        "result": 62.1
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K",
+        "Metric": "Hits@10",
+        "KGEModel": "RESCAL",
+        "NSMethod": "Unknown",
+        "result": 44.1
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K",
+        "Metric": "Hits@10",
+        "KGEModel": "SME (bilinear)",
+        "NSMethod": "Unknown",
+        "result": 41.3
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K",
+        "Metric": "Hits@10",
+        "KGEModel": "SME (linear)",
+        "NSMethod": "Unknown",
+        "result": 40.8
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K",
+        "Metric": "Hits@10",
+        "KGEModel": "SE",
+        "NSMethod": "Unknown",
+        "result": 39.8
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K",
+        "Metric": "Hits@10",
+        "KGEModel": "LFM",
+        "NSMethod": "Unknown",
+        "result": 33.1
+      },
+      {
+        "Task": "Relation Prediction",
+        "Dataset": "FB15K",
+        "Metric": "MR",
+        "KGEModel": "TKRL (RHE)",
+        "NSMethod": "Unknown",
+        "result": 1.73
+      },
+      {
+        "Task": "Relation Prediction",
+        "Dataset": "FB15K",
+        "Metric": "MR",
+        "KGEModel": "TKRL (WHE)",
+        "NSMethod": "Unknown",
+        "result": 1.83
+      },
+      {
+        "Task": "Relation Prediction",
+        "Dataset": "FB15K",
+        "Metric": "MR",
+        "KGEModel": "TKRL (RHE+STC)",
+        "NSMethod": "Soft Type Constraint",
+        "result": 1.97
+      },
+      {
+        "Task": "Relation Prediction",
+        "Dataset": "FB15K",
+        "Metric": "MR",
+        "KGEModel": "TransR",
+        "NSMethod": "Unknown",
+        "result": 2.09
+      },
+      {
+        "Task": "Relation Prediction",
+        "Dataset": "FB15K",
+        "Metric": "MR",
+        "KGEModel": "TransE",
+        "NSMethod": "Unknown",
+        "result": 2.43
+      },
+      {
+        "Task": "Relation Prediction",
+        "Dataset": "FB15K",
+        "Metric": "Hits@1",
+        "KGEModel": "TKRL (RHE)",
+        "NSMethod": "Unknown",
+        "result": 92.8
+      },
+      {
+        "Task": "Relation Prediction",
+        "Dataset": "FB15K",
+        "Metric": "Hits@1",
+        "KGEModel": "TKRL (WHE)",
+        "NSMethod": "Unknown",
+        "result": 92.5
+      },
+      {
+        "Task": "Relation Prediction",
+        "Dataset": "FB15K",
+        "Metric": "Hits@1",
+        "KGEModel": "TransR",
+        "NSMethod": "Unknown",
+        "result": 91.6
+      },
+      {
+        "Task": "Relation Prediction",
+        "Dataset": "FB15K",
+        "Metric": "Hits@1",
+        "KGEModel": "TKRL (RHE+STC)",
+        "NSMethod": "Soft Type Constraint",
+        "result": 90.7
+      },
+      {
+        "Task": "Relation Prediction",
+        "Dataset": "FB15K",
+        "Metric": "Hits@1",
+        "KGEModel": "TransE",
+        "NSMethod": "Unknown",
+        "result": 87.2
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K",
+        "Metric": "Hits@10",
+        "KGEModel": "TKRL (WHE+STC+TCE)",
+        "NSMethod": "Soft Type Constraint",
+        "result": 75.6
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K",
+        "Metric": "Hits@10",
+        "KGEModel": "TKRL (RHE+STC+TCE)",
+        "NSMethod": "Soft Type Constraint",
+        "result": 75.4
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K",
+        "Metric": "Hits@10",
+        "KGEModel": "TransR+STC+TCE",
+        "NSMethod": "Soft Type Constraint",
+        "result": 71.7
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K",
+        "Metric": "Hits@10",
+        "KGEModel": "TransE+STC+TCE",
+        "NSMethod": "Soft Type Constraint",
+        "result": 69.9
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K",
+        "Metric": "Hits@10",
+        "KGEModel": "TransR+TCE",
+        "NSMethod": "Unknown",
+        "result": 68.6
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K",
+        "Metric": "Hits@10",
+        "KGEModel": "TransE+TCE",
+        "NSMethod": "Unknown",
+        "result": 63.4
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K",
+        "Metric": "MR",
+        "KGEModel": "TKRL (WHE+STC+TCE)",
+        "NSMethod": "Soft Type Constraint",
+        "result": 55
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K",
+        "Metric": "MR",
+        "KGEModel": "TKRL (RHE+STC+TCE)",
+        "NSMethod": "Soft Type Constraint",
+        "result": 56
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K",
+        "Metric": "MR",
+        "KGEModel": "TransR+TCE",
+        "NSMethod": "Unknown",
+        "result": 60
+      },
+      {
+        "Task": "Triple Classification",
+        "Dataset": "FB15K",
+        "Metric": "Accuracy",
+        "KGEModel": "TKRL (WHE+STC)",
+        "NSMethod": "Soft Type Constraint",
+        "result": 88.5
+      },
+      {
+        "Task": "Triple Classification",
+        "Dataset": "FB15K",
+        "Metric": "Accuracy",
+        "KGEModel": "TKRL (RHE+STC)",
+        "NSMethod": "Soft Type Constraint",
+        "result": 88.4
+      },
+      {
+        "Task": "Triple Classification",
+        "Dataset": "FB15K",
+        "Metric": "Accuracy",
+        "KGEModel": "TKRL (WHE)",
+        "NSMethod": "Unknown",
+        "result": 87.1
+      },
+      {
+        "Task": "Triple Classification",
+        "Dataset": "FB15K",
+        "Metric": "Accuracy",
+        "KGEModel": "TKRL (RHE)",
+        "NSMethod": "Unknown",
+        "result": 86.9
+      },
+      {
+        "Task": "Triple Classification",
+        "Dataset": "FB15K",
+        "Metric": "Accuracy",
+        "KGEModel": "TransR",
+        "NSMethod": "Unknown",
+        "result": 86.4
+      },
+      {
+        "Task": "Triple Classification",
+        "Dataset": "FB15K",
+        "Metric": "Accuracy",
+        "KGEModel": "TransE",
+        "NSMethod": "Unknown",
+        "result": 85.7
+      }
+    ]
+  }
+}

@@ -1,0 +1,924 @@
+{
+  "Configurations": [
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "MR",
+      "KGEModel": "sentence-BERT",
+      "NSMethod": "Simple InfoNCE",
+      "result": 100
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "MRR",
+      "KGEModel": "sentence-BERT",
+      "NSMethod": "Simple InfoNCE",
+      "result": 0.424
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "Hits@1",
+      "KGEModel": "sentence-BERT",
+      "NSMethod": "Simple InfoNCE",
+      "result": 0.303
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "Hits@3",
+      "KGEModel": "sentence-BERT",
+      "NSMethod": "Simple InfoNCE",
+      "result": 0.487
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "Hits@10",
+      "KGEModel": "sentence-BERT",
+      "NSMethod": "Simple InfoNCE",
+      "result": 0.656
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "MR",
+      "KGEModel": "sentence-BERT",
+      "NSMethod": "Simple InfoNCE",
+      "result": 151
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "MRR",
+      "KGEModel": "sentence-BERT",
+      "NSMethod": "Simple InfoNCE",
+      "result": 0.277
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "Hits@1",
+      "KGEModel": "sentence-BERT",
+      "NSMethod": "Simple InfoNCE",
+      "result": 0.186
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "Hits@3",
+      "KGEModel": "sentence-BERT",
+      "NSMethod": "Simple InfoNCE",
+      "result": 0.306
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "Hits@10",
+      "KGEModel": "sentence-BERT",
+      "NSMethod": "Simple InfoNCE",
+      "result": 0.466
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "MR",
+      "KGEModel": "sentence-BERT",
+      "NSMethod": "Hard InfoNCE",
+      "result": 123
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "MRR",
+      "KGEModel": "sentence-BERT",
+      "NSMethod": "Hard InfoNCE",
+      "result": 0.447
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "Hits@1",
+      "KGEModel": "sentence-BERT",
+      "NSMethod": "Hard InfoNCE",
+      "result": 0.341
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "Hits@3",
+      "KGEModel": "sentence-BERT",
+      "NSMethod": "Hard InfoNCE",
+      "result": 0.497
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "Hits@10",
+      "KGEModel": "sentence-BERT",
+      "NSMethod": "Hard InfoNCE",
+      "result": 0.656
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "MR",
+      "KGEModel": "sentence-BERT",
+      "NSMethod": "Hard InfoNCE",
+      "result": 165
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "MRR",
+      "KGEModel": "sentence-BERT",
+      "NSMethod": "Hard InfoNCE",
+      "result": 0.29
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "Hits@1",
+      "KGEModel": "sentence-BERT",
+      "NSMethod": "Hard InfoNCE",
+      "result": 0.209
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "Hits@3",
+      "KGEModel": "sentence-BERT",
+      "NSMethod": "Hard InfoNCE",
+      "result": 0.309
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "Hits@10",
+      "KGEModel": "sentence-BERT",
+      "NSMethod": "Hard InfoNCE",
+      "result": 0.465
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "MR",
+      "KGEModel": "sentence-BERT",
+      "NSMethod": "Hardness and Structure-Aware Contrastive Knowledge Graph Embedding",
+      "result": 123
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "MRR",
+      "KGEModel": "sentence-BERT",
+      "NSMethod": "Hardness and Structure-Aware Contrastive Knowledge Graph Embedding",
+      "result": 0.452
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "Hits@1",
+      "KGEModel": "sentence-BERT",
+      "NSMethod": "Hardness and Structure-Aware Contrastive Knowledge Graph Embedding",
+      "result": 0.351
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "Hits@3",
+      "KGEModel": "sentence-BERT",
+      "NSMethod": "Hardness and Structure-Aware Contrastive Knowledge Graph Embedding",
+      "result": 0.501
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "Hits@10",
+      "KGEModel": "sentence-BERT",
+      "NSMethod": "Hardness and Structure-Aware Contrastive Knowledge Graph Embedding",
+      "result": 0.65
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "MR",
+      "KGEModel": "sentence-BERT",
+      "NSMethod": "Hardness and Structure-Aware Contrastive Knowledge Graph Embedding",
+      "result": 163
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "MRR",
+      "KGEModel": "sentence-BERT",
+      "NSMethod": "Hardness and Structure-Aware Contrastive Knowledge Graph Embedding",
+      "result": 0.3
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "Hits@1",
+      "KGEModel": "sentence-BERT",
+      "NSMethod": "Hardness and Structure-Aware Contrastive Knowledge Graph Embedding",
+      "result": 0.22
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "Hits@3",
+      "KGEModel": "sentence-BERT",
+      "NSMethod": "Hardness and Structure-Aware Contrastive Knowledge Graph Embedding",
+      "result": 0.317
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "Hits@10",
+      "KGEModel": "sentence-BERT",
+      "NSMethod": "Hardness and Structure-Aware Contrastive Knowledge Graph Embedding",
+      "result": 0.468
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "MR",
+      "KGEModel": "TransE",
+      "NSMethod": "Unknown",
+      "result": 2300
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "MRR",
+      "KGEModel": "TransE",
+      "NSMethod": "Unknown",
+      "result": 0.243
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "Hits@1",
+      "KGEModel": "TransE",
+      "NSMethod": "Unknown",
+      "result": 0.043
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "Hits@3",
+      "KGEModel": "TransE",
+      "NSMethod": "Unknown",
+      "result": 0.441
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "Hits@10",
+      "KGEModel": "TransE",
+      "NSMethod": "Unknown",
+      "result": 0.532
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "MR",
+      "KGEModel": "TransE",
+      "NSMethod": "Unknown",
+      "result": 323
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "MRR",
+      "KGEModel": "TransE",
+      "NSMethod": "Unknown",
+      "result": 0.279
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "Hits@1",
+      "KGEModel": "TransE",
+      "NSMethod": "Unknown",
+      "result": 0.198
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "Hits@3",
+      "KGEModel": "TransE",
+      "NSMethod": "Unknown",
+      "result": 0.376
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "Hits@10",
+      "KGEModel": "TransE",
+      "NSMethod": "Unknown",
+      "result": 0.441
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "MR",
+      "KGEModel": "RotatE",
+      "NSMethod": "Self-adversarial negative sampling",
+      "result": 3340
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "MRR",
+      "KGEModel": "RotatE",
+      "NSMethod": "Self-adversarial negative sampling",
+      "result": 0.476
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "Hits@1",
+      "KGEModel": "RotatE",
+      "NSMethod": "Self-adversarial negative sampling",
+      "result": 0.428
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "Hits@3",
+      "KGEModel": "RotatE",
+      "NSMethod": "Self-adversarial negative sampling",
+      "result": 0.492
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "Hits@10",
+      "KGEModel": "RotatE",
+      "NSMethod": "Self-adversarial negative sampling",
+      "result": 0.571
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "MR",
+      "KGEModel": "RotatE",
+      "NSMethod": "Self-adversarial negative sampling",
+      "result": 177
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "MRR",
+      "KGEModel": "RotatE",
+      "NSMethod": "Self-adversarial negative sampling",
+      "result": 0.338
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "Hits@1",
+      "KGEModel": "RotatE",
+      "NSMethod": "Self-adversarial negative sampling",
+      "result": 0.241
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "Hits@3",
+      "KGEModel": "RotatE",
+      "NSMethod": "Self-adversarial negative sampling",
+      "result": 0.375
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "Hits@10",
+      "KGEModel": "RotatE",
+      "NSMethod": "Self-adversarial negative sampling",
+      "result": 0.533
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "MR",
+      "KGEModel": "DistMult",
+      "NSMethod": "Unknown",
+      "result": 7000
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "MRR",
+      "KGEModel": "DistMult",
+      "NSMethod": "Unknown",
+      "result": 0.444
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "Hits@1",
+      "KGEModel": "DistMult",
+      "NSMethod": "Unknown",
+      "result": 0.412
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "Hits@3",
+      "KGEModel": "DistMult",
+      "NSMethod": "Unknown",
+      "result": 0.47
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "Hits@10",
+      "KGEModel": "DistMult",
+      "NSMethod": "Unknown",
+      "result": 0.504
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "MR",
+      "KGEModel": "DistMult",
+      "NSMethod": "Unknown",
+      "result": 512
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "MRR",
+      "KGEModel": "DistMult",
+      "NSMethod": "Unknown",
+      "result": 0.281
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "Hits@1",
+      "KGEModel": "DistMult",
+      "NSMethod": "Unknown",
+      "result": 0.199
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "Hits@3",
+      "KGEModel": "DistMult",
+      "NSMethod": "Unknown",
+      "result": 0.301
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "Hits@10",
+      "KGEModel": "DistMult",
+      "NSMethod": "Unknown",
+      "result": 0.446
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "MR",
+      "KGEModel": "ComplEx",
+      "NSMethod": "Unknown",
+      "result": 5542
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "MRR",
+      "KGEModel": "ComplEx",
+      "NSMethod": "Unknown",
+      "result": 0.468
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "Hits@1",
+      "KGEModel": "ComplEx",
+      "NSMethod": "Unknown",
+      "result": 0.427
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "Hits@3",
+      "KGEModel": "ComplEx",
+      "NSMethod": "Unknown",
+      "result": 0.485
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "Hits@10",
+      "KGEModel": "ComplEx",
+      "NSMethod": "Unknown",
+      "result": 0.554
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "MR",
+      "KGEModel": "ComplEx",
+      "NSMethod": "Unknown",
+      "result": 546
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "MRR",
+      "KGEModel": "ComplEx",
+      "NSMethod": "Unknown",
+      "result": 0.278
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "Hits@1",
+      "KGEModel": "ComplEx",
+      "NSMethod": "Unknown",
+      "result": 0.194
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "Hits@3",
+      "KGEModel": "ComplEx",
+      "NSMethod": "Unknown",
+      "result": 0.297
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "Hits@10",
+      "KGEModel": "ComplEx",
+      "NSMethod": "Unknown",
+      "result": 0.45
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "MRR",
+      "KGEModel": "KBGAN",
+      "NSMethod": "KBGAN",
+      "result": 0.277
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "Hits@10",
+      "KGEModel": "KBGAN",
+      "NSMethod": "KBGAN",
+      "result": 0.458
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "MRR",
+      "KGEModel": "KBGAN",
+      "NSMethod": "KBGAN",
+      "result": 0.277
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "Hits@10",
+      "KGEModel": "KBGAN",
+      "NSMethod": "KBGAN",
+      "result": 0.458
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "MR",
+      "KGEModel": "KG-BERT",
+      "NSMethod": "Unknown",
+      "result": 97
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "MRR",
+      "KGEModel": "KG-BERT",
+      "NSMethod": "Unknown",
+      "result": 0.216
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "Hits@1",
+      "KGEModel": "KG-BERT",
+      "NSMethod": "Unknown",
+      "result": 0.041
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "Hits@3",
+      "KGEModel": "KG-BERT",
+      "NSMethod": "Unknown",
+      "result": 0.302
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "Hits@10",
+      "KGEModel": "KG-BERT",
+      "NSMethod": "Unknown",
+      "result": 0.524
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "MR",
+      "KGEModel": "KG-BERT",
+      "NSMethod": "Unknown",
+      "result": 153
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "Hits@10",
+      "KGEModel": "KG-BERT",
+      "NSMethod": "Unknown",
+      "result": 0.42
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "MR",
+      "KGEModel": "StAR",
+      "NSMethod": "Unknown",
+      "result": 51
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "MRR",
+      "KGEModel": "StAR",
+      "NSMethod": "Unknown",
+      "result": 0.401
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "Hits@1",
+      "KGEModel": "StAR",
+      "NSMethod": "Unknown",
+      "result": 0.243
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "Hits@3",
+      "KGEModel": "StAR",
+      "NSMethod": "Unknown",
+      "result": 0.491
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "Hits@10",
+      "KGEModel": "StAR",
+      "NSMethod": "Unknown",
+      "result": 0.709
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "MR",
+      "KGEModel": "StAR",
+      "NSMethod": "Unknown",
+      "result": 117
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "MRR",
+      "KGEModel": "StAR",
+      "NSMethod": "Unknown",
+      "result": 0.296
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "Hits@1",
+      "KGEModel": "StAR",
+      "NSMethod": "Unknown",
+      "result": 0.205
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "Hits@3",
+      "KGEModel": "StAR",
+      "NSMethod": "Unknown",
+      "result": 0.322
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "Hits@10",
+      "KGEModel": "StAR",
+      "NSMethod": "Unknown",
+      "result": 0.482
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "MR",
+      "KGEModel": "LASS",
+      "NSMethod": "Unknown",
+      "result": 55
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "Hits@10",
+      "KGEModel": "LASS",
+      "NSMethod": "Unknown",
+      "result": 0.725
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "MR",
+      "KGEModel": "LASS",
+      "NSMethod": "Unknown",
+      "result": 131
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "Hits@10",
+      "KGEModel": "LASS",
+      "NSMethod": "Unknown",
+      "result": 0.479
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "MR",
+      "KGEModel": "HaSa",
+      "NSMethod": "Hardness and Structure-Aware Contrastive Knowledge Graph Embedding",
+      "result": 135
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "MRR",
+      "KGEModel": "HaSa",
+      "NSMethod": "Hardness and Structure-Aware Contrastive Knowledge Graph Embedding",
+      "result": 0.489
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "Hits@1",
+      "KGEModel": "HaSa",
+      "NSMethod": "Hardness and Structure-Aware Contrastive Knowledge Graph Embedding",
+      "result": 0.4
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "Hits@3",
+      "KGEModel": "HaSa",
+      "NSMethod": "Hardness and Structure-Aware Contrastive Knowledge Graph Embedding",
+      "result": 0.535
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "Hits@10",
+      "KGEModel": "HaSa",
+      "NSMethod": "Hardness and Structure-Aware Contrastive Knowledge Graph Embedding",
+      "result": 0.666
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "MR",
+      "KGEModel": "HaSa",
+      "NSMethod": "Hardness and Structure-Aware Contrastive Knowledge Graph Embedding",
+      "result": 146
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "MRR",
+      "KGEModel": "HaSa",
+      "NSMethod": "Hardness and Structure-Aware Contrastive Knowledge Graph Embedding",
+      "result": 0.316
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "Hits@1",
+      "KGEModel": "HaSa",
+      "NSMethod": "Hardness and Structure-Aware Contrastive Knowledge Graph Embedding",
+      "result": 0.233
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "Hits@3",
+      "KGEModel": "HaSa",
+      "NSMethod": "Hardness and Structure-Aware Contrastive Knowledge Graph Embedding",
+      "result": 0.34
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "Hits@10",
+      "KGEModel": "HaSa",
+      "NSMethod": "Hardness and Structure-Aware Contrastive Knowledge Graph Embedding",
+      "result": 0.477
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "MR",
+      "KGEModel": "HaSa+",
+      "NSMethod": "Hardness and Structure-Aware Contrastive Knowledge Graph Embedding",
+      "result": 112
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "MRR",
+      "KGEModel": "HaSa+",
+      "NSMethod": "Hardness and Structure-Aware Contrastive Knowledge Graph Embedding",
+      "result": 0.538
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "Hits@1",
+      "KGEModel": "HaSa+",
+      "NSMethod": "Hardness and Structure-Aware Contrastive Knowledge Graph Embedding",
+      "result": 0.444
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "Hits@3",
+      "KGEModel": "HaSa+",
+      "NSMethod": "Hardness and Structure-Aware Contrastive Knowledge Graph Embedding",
+      "result": 0.588
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "Hits@10",
+      "KGEModel": "HaSa+",
+      "NSMethod": "Hardness and Structure-Aware Contrastive Knowledge Graph Embedding",
+      "result": 0.713
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "MR",
+      "KGEModel": "HaSa+",
+      "NSMethod": "Hardness and Structure-Aware Contrastive Knowledge Graph Embedding",
+      "result": 146
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "MRR",
+      "KGEModel": "HaSa+",
+      "NSMethod": "Hardness and Structure-Aware Contrastive Knowledge Graph Embedding",
+      "result": 0.304
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "Hits@1",
+      "KGEModel": "HaSa+",
+      "NSMethod": "Hardness and Structure-Aware Contrastive Knowledge Graph Embedding",
+      "result": 0.22
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "Hits@3",
+      "KGEModel": "HaSa+",
+      "NSMethod": "Hardness and Structure-Aware Contrastive Knowledge Graph Embedding",
+      "result": 0.325
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "Hits@10",
+      "KGEModel": "HaSa+",
+      "NSMethod": "Hardness and Structure-Aware Contrastive Knowledge Graph Embedding",
+      "result": 0.483
+    }
+  ]
+}

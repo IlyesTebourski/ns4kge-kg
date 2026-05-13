@@ -1,0 +1,1034 @@
+<article/asa> rdf:type ns4kge:Article .
+<article/asa> ns4kge:title "Relation-aware Graph Attention Model With Adaptive Self-adversarial Training"^^xsd:string .
+<article/asa> ns4kge:date "2021"^^xsd:gYear .
+<article/asa> ns4kge:proposesNSMethod <ns-method/adaptive-self-adversarial-negative-sampling> .
+<article/asa> ns4kge:mentionsNSMethod <ns-method/asa> .
+<article/asa> ns4kge:mentionsNSMethod <ns-method/self-adversarial-negative-sampling> .
+<article/asa> ns4kge:mentionsNSMethod <ns-method/gan-based-negative-sampling> .
+<article/asa> ns4kge:mentionsNSMethod <ns-method/random-negative-sampling> .
+<article/asa> ns4kge:mentionsNSMethod <ns-method/asa> .
+<article/asa> ns4kge:mentionsNSMethod <ns-method/nscaching> .
+<article/asa> ns4kge:mentionsKGEModel <kge-model/gatne> .
+<article/asa> ns4kge:mentionsKGEModel <kge-model/distmult> .
+<article/asa> ns4kge:mentionsKGEModel <kge-model/rgcn> .
+<article/asa> ns4kge:mentionsKGEModel <kge-model/complex> .
+<article/asa> ns4kge:mentionsKGEModel <kge-model/metapath2vec> .
+<article/asa> ns4kge:mentionsKGEModel <kge-model/conve> .
+<article/asa> ns4kge:mentionsKGEModel <kge-model/han> .
+<article/asa> ns4kge:hasExperimentation <experimentation/asa> .
+
+<category/self-adversarial-ns> rdf:type ns4kge:Category .
+
+<subcategory/direct> rdf:type ns4kge:Subcategory .
+
+<ns-method/adaptive-self-adversarial-negative-sampling> rdf:type ns4kge:NSMethod .
+<ns-method/adaptive-self-adversarial-negative-sampling> ns4kge:hasCategory <category/self-adversarial-ns> .
+<ns-method/adaptive-self-adversarial-negative-sampling> ns4kge:hasSubcategory <subcategory/direct> .
+
+<ns-method/asa> rdf:type ns4kge:NSMethod .
+<ns-method/asa> ns4kge:hasCategory <category/self-adversarial-ns> .
+<ns-method/asa> ns4kge:hasSubcategory <subcategory/direct> .
+
+<ns-method/self-adversarial-negative-sampling> rdf:type ns4kge:NSMethod .
+<ns-method/self-adversarial-negative-sampling> ns4kge:hasCategory <category/self-adversarial-ns> .
+<ns-method/self-adversarial-negative-sampling> ns4kge:hasSubcategory <subcategory/direct> .
+
+<ns-method/gan-based-negative-sampling> rdf:type ns4kge:NSMethod .
+<category/adversarial-ns> rdf:type ns4kge:Category .
+
+<ns-method/gan-based-negative-sampling> ns4kge:hasCategory <category/adversarial-ns> .
+<subcategory/standard> rdf:type ns4kge:Subcategory .
+
+<ns-method/gan-based-negative-sampling> ns4kge:hasSubcategory <subcategory/standard> .
+
+<ns-method/random-negative-sampling> rdf:type ns4kge:NSMethod .
+<category/static-ns> rdf:type ns4kge:Category .
+
+<ns-method/random-negative-sampling> ns4kge:hasCategory <category/static-ns> .
+<subcategory/random> rdf:type ns4kge:Subcategory .
+
+<ns-method/random-negative-sampling> ns4kge:hasSubcategory <subcategory/random> .
+
+<ns-method/nscaching> rdf:type ns4kge:NSMethod .
+<ns-method/nscaching> ns4kge:hasCategory <category/self-adversarial-ns> .
+<ns-method/nscaching> ns4kge:hasSubcategory <subcategory/direct> .
+
+<kge-model/relgnn> rdf:type ns4kge:KGEModel .
+
+<kge-model/gatne> rdf:type ns4kge:KGEModel .
+
+<kge-model/distmult> rdf:type ns4kge:KGEModel .
+
+<kge-model/rgcn> rdf:type ns4kge:KGEModel .
+
+<kge-model/complex> rdf:type ns4kge:KGEModel .
+
+<kge-model/metapath2vec> rdf:type ns4kge:KGEModel .
+
+<kge-model/conve> rdf:type ns4kge:KGEModel .
+
+<kge-model/han> rdf:type ns4kge:KGEModel .
+
+<dataset/amazon> rdf:type ns4kge:Dataset .
+<task/link-prediction> rdf:type ns4kge:Task .
+<metric/auc> rdf:type ns4kge:Metric .
+<metric/ap> rdf:type ns4kge:Metric .
+<metric/f1> rdf:type ns4kge:Metric .
+<dataset/youtube> rdf:type ns4kge:Dataset .
+<dataset/company> rdf:type ns4kge:Dataset .
+<metric/mrr> rdf:type ns4kge:Metric .
+<metric/hits-1> rdf:type ns4kge:Metric .
+<metric/hits-10> rdf:type ns4kge:Metric .
+<metric/hits-30> rdf:type ns4kge:Metric .
+<loss-function/cross-entropy> rdf:type ns4kge:LossFunction .
+
+<experimentation/asa> rdf:type ns4kge:Experimentation .
+<experimentation/asa> ns4kge:hasTrainingProtocol <training-protocol/asa> .
+<experimentation/asa> ns4kge:hasConfiguration <configuration/asa/1> .
+<experimentation/asa> ns4kge:hasConfiguration <configuration/asa/2> .
+<experimentation/asa> ns4kge:hasConfiguration <configuration/asa/3> .
+<experimentation/asa> ns4kge:hasConfiguration <configuration/asa/4> .
+<experimentation/asa> ns4kge:hasConfiguration <configuration/asa/5> .
+<experimentation/asa> ns4kge:hasConfiguration <configuration/asa/6> .
+<experimentation/asa> ns4kge:hasConfiguration <configuration/asa/7> .
+<experimentation/asa> ns4kge:hasConfiguration <configuration/asa/8> .
+<experimentation/asa> ns4kge:hasConfiguration <configuration/asa/9> .
+<experimentation/asa> ns4kge:hasConfiguration <configuration/asa/10> .
+<experimentation/asa> ns4kge:hasConfiguration <configuration/asa/11> .
+<experimentation/asa> ns4kge:hasConfiguration <configuration/asa/12> .
+<experimentation/asa> ns4kge:hasConfiguration <configuration/asa/13> .
+<experimentation/asa> ns4kge:hasConfiguration <configuration/asa/14> .
+<experimentation/asa> ns4kge:hasConfiguration <configuration/asa/15> .
+<experimentation/asa> ns4kge:hasConfiguration <configuration/asa/16> .
+<experimentation/asa> ns4kge:hasConfiguration <configuration/asa/17> .
+<experimentation/asa> ns4kge:hasConfiguration <configuration/asa/18> .
+<experimentation/asa> ns4kge:hasConfiguration <configuration/asa/19> .
+<experimentation/asa> ns4kge:hasConfiguration <configuration/asa/20> .
+<experimentation/asa> ns4kge:hasConfiguration <configuration/asa/21> .
+<experimentation/asa> ns4kge:hasConfiguration <configuration/asa/22> .
+<experimentation/asa> ns4kge:hasConfiguration <configuration/asa/23> .
+<experimentation/asa> ns4kge:hasConfiguration <configuration/asa/24> .
+<experimentation/asa> ns4kge:hasConfiguration <configuration/asa/25> .
+<experimentation/asa> ns4kge:hasConfiguration <configuration/asa/26> .
+<experimentation/asa> ns4kge:hasConfiguration <configuration/asa/27> .
+<experimentation/asa> ns4kge:hasConfiguration <configuration/asa/28> .
+<experimentation/asa> ns4kge:hasConfiguration <configuration/asa/29> .
+<experimentation/asa> ns4kge:hasConfiguration <configuration/asa/30> .
+<experimentation/asa> ns4kge:hasConfiguration <configuration/asa/31> .
+<experimentation/asa> ns4kge:hasConfiguration <configuration/asa/32> .
+<experimentation/asa> ns4kge:hasConfiguration <configuration/asa/33> .
+<experimentation/asa> ns4kge:hasConfiguration <configuration/asa/34> .
+<experimentation/asa> ns4kge:hasConfiguration <configuration/asa/35> .
+<experimentation/asa> ns4kge:hasConfiguration <configuration/asa/36> .
+<experimentation/asa> ns4kge:hasConfiguration <configuration/asa/37> .
+<experimentation/asa> ns4kge:hasConfiguration <configuration/asa/38> .
+<experimentation/asa> ns4kge:hasConfiguration <configuration/asa/39> .
+<experimentation/asa> ns4kge:hasConfiguration <configuration/asa/40> .
+<experimentation/asa> ns4kge:hasConfiguration <configuration/asa/41> .
+<experimentation/asa> ns4kge:hasConfiguration <configuration/asa/42> .
+<experimentation/asa> ns4kge:hasConfiguration <configuration/asa/43> .
+<experimentation/asa> ns4kge:hasConfiguration <configuration/asa/44> .
+<experimentation/asa> ns4kge:hasConfiguration <configuration/asa/45> .
+<experimentation/asa> ns4kge:hasConfiguration <configuration/asa/46> .
+<experimentation/asa> ns4kge:hasConfiguration <configuration/asa/47> .
+<experimentation/asa> ns4kge:hasConfiguration <configuration/asa/48> .
+<experimentation/asa> ns4kge:hasConfiguration <configuration/asa/49> .
+<experimentation/asa> ns4kge:hasConfiguration <configuration/asa/50> .
+<experimentation/asa> ns4kge:hasConfiguration <configuration/asa/51> .
+<experimentation/asa> ns4kge:hasConfiguration <configuration/asa/52> .
+<experimentation/asa> ns4kge:hasConfiguration <configuration/asa/53> .
+<experimentation/asa> ns4kge:hasConfiguration <configuration/asa/54> .
+<experimentation/asa> ns4kge:hasConfiguration <configuration/asa/55> .
+<experimentation/asa> ns4kge:hasConfiguration <configuration/asa/56> .
+<experimentation/asa> ns4kge:hasConfiguration <configuration/asa/57> .
+<experimentation/asa> ns4kge:hasConfiguration <configuration/asa/58> .
+<experimentation/asa> ns4kge:hasConfiguration <configuration/asa/59> .
+<experimentation/asa> ns4kge:hasConfiguration <configuration/asa/60> .
+<experimentation/asa> ns4kge:hasConfiguration <configuration/asa/61> .
+<experimentation/asa> ns4kge:hasConfiguration <configuration/asa/62> .
+<experimentation/asa> ns4kge:hasConfiguration <configuration/asa/63> .
+<experimentation/asa> ns4kge:hasConfiguration <configuration/asa/64> .
+<experimentation/asa> ns4kge:hasConfiguration <configuration/asa/65> .
+<experimentation/asa> ns4kge:hasConfiguration <configuration/asa/66> .
+<experimentation/asa> ns4kge:hasConfiguration <configuration/asa/67> .
+<experimentation/asa> ns4kge:hasConfiguration <configuration/asa/68> .
+<experimentation/asa> ns4kge:hasConfiguration <configuration/asa/69> .
+<experimentation/asa> ns4kge:hasConfiguration <configuration/asa/70> .
+<experimentation/asa> ns4kge:hasConfiguration <configuration/asa/71> .
+<experimentation/asa> ns4kge:hasConfiguration <configuration/asa/72> .
+<experimentation/asa> ns4kge:hasConfiguration <configuration/asa/73> .
+<experimentation/asa> ns4kge:hasConfiguration <configuration/asa/74> .
+<experimentation/asa> ns4kge:hasConfiguration <configuration/asa/75> .
+<experimentation/asa> ns4kge:hasConfiguration <configuration/asa/76> .
+<experimentation/asa> ns4kge:hasConfiguration <configuration/asa/77> .
+<experimentation/asa> ns4kge:hasConfiguration <configuration/asa/78> .
+<experimentation/asa> ns4kge:hasConfiguration <configuration/asa/79> .
+<experimentation/asa> ns4kge:hasConfiguration <configuration/asa/80> .
+<experimentation/asa> ns4kge:hasConfiguration <configuration/asa/81> .
+<experimentation/asa> ns4kge:hasConfiguration <configuration/asa/82> .
+<experimentation/asa> ns4kge:hasConfiguration <configuration/asa/83> .
+<experimentation/asa> ns4kge:hasConfiguration <configuration/asa/84> .
+<experimentation/asa> ns4kge:hasConfiguration <configuration/asa/85> .
+<experimentation/asa> ns4kge:hasConfiguration <configuration/asa/86> .
+<experimentation/asa> ns4kge:hasConfiguration <configuration/asa/87> .
+<experimentation/asa> ns4kge:hasConfiguration <configuration/asa/88> .
+<experimentation/asa> ns4kge:hasConfiguration <configuration/asa/89> .
+<experimentation/asa> ns4kge:hasConfiguration <configuration/asa/90> .
+<experimentation/asa> ns4kge:hasConfiguration <configuration/asa/91> .
+<experimentation/asa> ns4kge:hasConfiguration <configuration/asa/92> .
+<experimentation/asa> ns4kge:hasConfiguration <configuration/asa/93> .
+<experimentation/asa> ns4kge:hasConfiguration <configuration/asa/94> .
+<experimentation/asa> ns4kge:hasConfiguration <configuration/asa/95> .
+<experimentation/asa> ns4kge:hasConfiguration <configuration/asa/96> .
+<experimentation/asa> ns4kge:hasConfiguration <configuration/asa/97> .
+<experimentation/asa> ns4kge:hasConfiguration <configuration/asa/98> .
+<experimentation/asa> ns4kge:hasConfiguration <configuration/asa/99> .
+<experimentation/asa> ns4kge:hasConfiguration <configuration/asa/100> .
+<experimentation/asa> ns4kge:hasConfiguration <configuration/asa/101> .
+<experimentation/asa> ns4kge:hasConfiguration <configuration/asa/102> .
+<experimentation/asa> ns4kge:hasConfiguration <configuration/asa/103> .
+<experimentation/asa> ns4kge:hasConfiguration <configuration/asa/104> .
+<experimentation/asa> ns4kge:hasConfiguration <configuration/asa/105> .
+<experimentation/asa> ns4kge:hasConfiguration <configuration/asa/106> .
+<experimentation/asa> ns4kge:hasConfiguration <configuration/asa/107> .
+<experimentation/asa> ns4kge:hasConfiguration <configuration/asa/108> .
+<experimentation/asa> ns4kge:hasConfiguration <configuration/asa/109> .
+<experimentation/asa> ns4kge:hasConfiguration <configuration/asa/110> .
+<experimentation/asa> ns4kge:hasConfiguration <configuration/asa/111> .
+<experimentation/asa> ns4kge:hasConfiguration <configuration/asa/112> .
+<experimentation/asa> ns4kge:hasConfiguration <configuration/asa/113> .
+
+<training-protocol/asa> rdf:type ns4kge:TrainingProtocol .
+<training-protocol/asa> ns4kge:hasLossFunction <loss-function/cross-entropy> .
+
+<configuration/asa/1> rdf:type ns4kge:Configuration .
+<configuration/asa/1> ns4kge:hasTask    <task/link-prediction> .
+<configuration/asa/1> ns4kge:hasDataset <dataset/amazon> .
+<configuration/asa/1> ns4kge:hasMetric  <metric/auc> .
+<configuration/asa/1> ns4kge:hasKGEModel <kge-model/relgnn> .
+<configuration/asa/1> ns4kge:hasNSMethod <ns-method/adaptive-self-adversarial-negative-sampling> .
+<configuration/asa/1> ns4kge:result "0.9914"^^xsd:decimal .
+
+<configuration/asa/2> rdf:type ns4kge:Configuration .
+<configuration/asa/2> ns4kge:hasTask    <task/link-prediction> .
+<configuration/asa/2> ns4kge:hasDataset <dataset/amazon> .
+<configuration/asa/2> ns4kge:hasMetric  <metric/auc> .
+<configuration/asa/2> ns4kge:hasKGEModel <kge-model/relgnn> .
+<configuration/asa/2> ns4kge:result "0.9884"^^xsd:decimal .
+
+<configuration/asa/3> rdf:type ns4kge:Configuration .
+<configuration/asa/3> ns4kge:hasTask    <task/link-prediction> .
+<configuration/asa/3> ns4kge:hasDataset <dataset/amazon> .
+<configuration/asa/3> ns4kge:hasMetric  <metric/auc> .
+<configuration/asa/3> ns4kge:hasKGEModel <kge-model/rgcn> .
+<configuration/asa/3> ns4kge:hasNSMethod <ns-method/adaptive-self-adversarial-negative-sampling> .
+<configuration/asa/3> ns4kge:result "0.9837"^^xsd:decimal .
+
+<configuration/asa/4> rdf:type ns4kge:Configuration .
+<configuration/asa/4> ns4kge:hasTask    <task/link-prediction> .
+<configuration/asa/4> ns4kge:hasDataset <dataset/amazon> .
+<configuration/asa/4> ns4kge:hasMetric  <metric/auc> .
+<configuration/asa/4> ns4kge:hasKGEModel <kge-model/rgcn> .
+<configuration/asa/4> ns4kge:result "0.9716"^^xsd:decimal .
+
+<configuration/asa/5> rdf:type ns4kge:Configuration .
+<configuration/asa/5> ns4kge:hasTask    <task/link-prediction> .
+<configuration/asa/5> ns4kge:hasDataset <dataset/amazon> .
+<configuration/asa/5> ns4kge:hasMetric  <metric/auc> .
+<configuration/asa/5> ns4kge:hasKGEModel <kge-model/gatne> .
+<configuration/asa/5> ns4kge:result "0.9625"^^xsd:decimal .
+
+<configuration/asa/6> rdf:type ns4kge:Configuration .
+<configuration/asa/6> ns4kge:hasTask    <task/link-prediction> .
+<configuration/asa/6> ns4kge:hasDataset <dataset/amazon> .
+<configuration/asa/6> ns4kge:hasMetric  <metric/auc> .
+<configuration/asa/6> ns4kge:hasKGEModel <kge-model/metapath2vec> .
+<configuration/asa/6> ns4kge:result "0.9415"^^xsd:decimal .
+
+<configuration/asa/7> rdf:type ns4kge:Configuration .
+<configuration/asa/7> ns4kge:hasTask    <task/link-prediction> .
+<configuration/asa/7> ns4kge:hasDataset <dataset/amazon> .
+<configuration/asa/7> ns4kge:hasMetric  <metric/auc> .
+<configuration/asa/7> ns4kge:hasKGEModel <kge-model/han> .
+<configuration/asa/7> ns4kge:result "0.8757"^^xsd:decimal .
+
+<configuration/asa/8> rdf:type ns4kge:Configuration .
+<configuration/asa/8> ns4kge:hasTask    <task/link-prediction> .
+<configuration/asa/8> ns4kge:hasDataset <dataset/amazon> .
+<configuration/asa/8> ns4kge:hasMetric  <metric/auc> .
+<configuration/asa/8> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/asa/8> ns4kge:hasNSMethod <ns-method/adaptive-self-adversarial-negative-sampling> .
+<configuration/asa/8> ns4kge:result "0.6485"^^xsd:decimal .
+
+<configuration/asa/9> rdf:type ns4kge:Configuration .
+<configuration/asa/9> ns4kge:hasTask    <task/link-prediction> .
+<configuration/asa/9> ns4kge:hasDataset <dataset/amazon> .
+<configuration/asa/9> ns4kge:hasMetric  <metric/auc> .
+<configuration/asa/9> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/asa/9> ns4kge:result "0.5394"^^xsd:decimal .
+
+<configuration/asa/10> rdf:type ns4kge:Configuration .
+<configuration/asa/10> ns4kge:hasTask    <task/link-prediction> .
+<configuration/asa/10> ns4kge:hasDataset <dataset/amazon> .
+<configuration/asa/10> ns4kge:hasMetric  <metric/auc> .
+<configuration/asa/10> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/asa/10> ns4kge:result "0.5318"^^xsd:decimal .
+
+<configuration/asa/11> rdf:type ns4kge:Configuration .
+<configuration/asa/11> ns4kge:hasTask    <task/link-prediction> .
+<configuration/asa/11> ns4kge:hasDataset <dataset/amazon> .
+<configuration/asa/11> ns4kge:hasMetric  <metric/auc> .
+<configuration/asa/11> ns4kge:hasKGEModel <kge-model/conve> .
+<configuration/asa/11> ns4kge:result "0.4965"^^xsd:decimal .
+
+<configuration/asa/12> rdf:type ns4kge:Configuration .
+<configuration/asa/12> ns4kge:hasTask    <task/link-prediction> .
+<configuration/asa/12> ns4kge:hasDataset <dataset/amazon> .
+<configuration/asa/12> ns4kge:hasMetric  <metric/ap> .
+<configuration/asa/12> ns4kge:hasKGEModel <kge-model/relgnn> .
+<configuration/asa/12> ns4kge:hasNSMethod <ns-method/adaptive-self-adversarial-negative-sampling> .
+<configuration/asa/12> ns4kge:result "0.9901"^^xsd:decimal .
+
+<configuration/asa/13> rdf:type ns4kge:Configuration .
+<configuration/asa/13> ns4kge:hasTask    <task/link-prediction> .
+<configuration/asa/13> ns4kge:hasDataset <dataset/amazon> .
+<configuration/asa/13> ns4kge:hasMetric  <metric/ap> .
+<configuration/asa/13> ns4kge:hasKGEModel <kge-model/relgnn> .
+<configuration/asa/13> ns4kge:result "0.9855"^^xsd:decimal .
+
+<configuration/asa/14> rdf:type ns4kge:Configuration .
+<configuration/asa/14> ns4kge:hasTask    <task/link-prediction> .
+<configuration/asa/14> ns4kge:hasDataset <dataset/amazon> .
+<configuration/asa/14> ns4kge:hasMetric  <metric/ap> .
+<configuration/asa/14> ns4kge:hasKGEModel <kge-model/rgcn> .
+<configuration/asa/14> ns4kge:hasNSMethod <ns-method/adaptive-self-adversarial-negative-sampling> .
+<configuration/asa/14> ns4kge:result "0.9787"^^xsd:decimal .
+
+<configuration/asa/15> rdf:type ns4kge:Configuration .
+<configuration/asa/15> ns4kge:hasTask    <task/link-prediction> .
+<configuration/asa/15> ns4kge:hasDataset <dataset/amazon> .
+<configuration/asa/15> ns4kge:hasMetric  <metric/ap> .
+<configuration/asa/15> ns4kge:hasKGEModel <kge-model/rgcn> .
+<configuration/asa/15> ns4kge:result "0.9587"^^xsd:decimal .
+
+<configuration/asa/16> rdf:type ns4kge:Configuration .
+<configuration/asa/16> ns4kge:hasTask    <task/link-prediction> .
+<configuration/asa/16> ns4kge:hasDataset <dataset/amazon> .
+<configuration/asa/16> ns4kge:hasMetric  <metric/ap> .
+<configuration/asa/16> ns4kge:hasKGEModel <kge-model/gatne> .
+<configuration/asa/16> ns4kge:result "0.9477"^^xsd:decimal .
+
+<configuration/asa/17> rdf:type ns4kge:Configuration .
+<configuration/asa/17> ns4kge:hasTask    <task/link-prediction> .
+<configuration/asa/17> ns4kge:hasDataset <dataset/amazon> .
+<configuration/asa/17> ns4kge:hasMetric  <metric/ap> .
+<configuration/asa/17> ns4kge:hasKGEModel <kge-model/metapath2vec> .
+<configuration/asa/17> ns4kge:result "0.9401"^^xsd:decimal .
+
+<configuration/asa/18> rdf:type ns4kge:Configuration .
+<configuration/asa/18> ns4kge:hasTask    <task/link-prediction> .
+<configuration/asa/18> ns4kge:hasDataset <dataset/amazon> .
+<configuration/asa/18> ns4kge:hasMetric  <metric/ap> .
+<configuration/asa/18> ns4kge:hasKGEModel <kge-model/han> .
+<configuration/asa/18> ns4kge:result "0.8815"^^xsd:decimal .
+
+<configuration/asa/19> rdf:type ns4kge:Configuration .
+<configuration/asa/19> ns4kge:hasTask    <task/link-prediction> .
+<configuration/asa/19> ns4kge:hasDataset <dataset/amazon> .
+<configuration/asa/19> ns4kge:hasMetric  <metric/ap> .
+<configuration/asa/19> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/asa/19> ns4kge:hasNSMethod <ns-method/adaptive-self-adversarial-negative-sampling> .
+<configuration/asa/19> ns4kge:result "0.6729"^^xsd:decimal .
+
+<configuration/asa/20> rdf:type ns4kge:Configuration .
+<configuration/asa/20> ns4kge:hasTask    <task/link-prediction> .
+<configuration/asa/20> ns4kge:hasDataset <dataset/amazon> .
+<configuration/asa/20> ns4kge:hasMetric  <metric/ap> .
+<configuration/asa/20> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/asa/20> ns4kge:result "0.5351"^^xsd:decimal .
+
+<configuration/asa/21> rdf:type ns4kge:Configuration .
+<configuration/asa/21> ns4kge:hasTask    <task/link-prediction> .
+<configuration/asa/21> ns4kge:hasDataset <dataset/amazon> .
+<configuration/asa/21> ns4kge:hasMetric  <metric/ap> .
+<configuration/asa/21> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/asa/21> ns4kge:result "0.5318"^^xsd:decimal .
+
+<configuration/asa/22> rdf:type ns4kge:Configuration .
+<configuration/asa/22> ns4kge:hasTask    <task/link-prediction> .
+<configuration/asa/22> ns4kge:hasDataset <dataset/amazon> .
+<configuration/asa/22> ns4kge:hasMetric  <metric/ap> .
+<configuration/asa/22> ns4kge:hasKGEModel <kge-model/conve> .
+<configuration/asa/22> ns4kge:result "0.4979"^^xsd:decimal .
+
+<configuration/asa/23> rdf:type ns4kge:Configuration .
+<configuration/asa/23> ns4kge:hasTask    <task/link-prediction> .
+<configuration/asa/23> ns4kge:hasDataset <dataset/amazon> .
+<configuration/asa/23> ns4kge:hasMetric  <metric/f1> .
+<configuration/asa/23> ns4kge:hasKGEModel <kge-model/relgnn> .
+<configuration/asa/23> ns4kge:result "0.9517"^^xsd:decimal .
+
+<configuration/asa/24> rdf:type ns4kge:Configuration .
+<configuration/asa/24> ns4kge:hasTask    <task/link-prediction> .
+<configuration/asa/24> ns4kge:hasDataset <dataset/amazon> .
+<configuration/asa/24> ns4kge:hasMetric  <metric/f1> .
+<configuration/asa/24> ns4kge:hasKGEModel <kge-model/rgcn> .
+<configuration/asa/24> ns4kge:result "0.9452"^^xsd:decimal .
+
+<configuration/asa/25> rdf:type ns4kge:Configuration .
+<configuration/asa/25> ns4kge:hasTask    <task/link-prediction> .
+<configuration/asa/25> ns4kge:hasDataset <dataset/amazon> .
+<configuration/asa/25> ns4kge:hasMetric  <metric/f1> .
+<configuration/asa/25> ns4kge:hasKGEModel <kge-model/rgcn> .
+<configuration/asa/25> ns4kge:hasNSMethod <ns-method/adaptive-self-adversarial-negative-sampling> .
+<configuration/asa/25> ns4kge:result "0.9421"^^xsd:decimal .
+
+<configuration/asa/26> rdf:type ns4kge:Configuration .
+<configuration/asa/26> ns4kge:hasTask    <task/link-prediction> .
+<configuration/asa/26> ns4kge:hasDataset <dataset/amazon> .
+<configuration/asa/26> ns4kge:hasMetric  <metric/f1> .
+<configuration/asa/26> ns4kge:hasKGEModel <kge-model/gatne> .
+<configuration/asa/26> ns4kge:result "0.9136"^^xsd:decimal .
+
+<configuration/asa/27> rdf:type ns4kge:Configuration .
+<configuration/asa/27> ns4kge:hasTask    <task/link-prediction> .
+<configuration/asa/27> ns4kge:hasDataset <dataset/amazon> .
+<configuration/asa/27> ns4kge:hasMetric  <metric/f1> .
+<configuration/asa/27> ns4kge:hasKGEModel <kge-model/relgnn> .
+<configuration/asa/27> ns4kge:hasNSMethod <ns-method/adaptive-self-adversarial-negative-sampling> .
+<configuration/asa/27> ns4kge:result "0.9044"^^xsd:decimal .
+
+<configuration/asa/28> rdf:type ns4kge:Configuration .
+<configuration/asa/28> ns4kge:hasTask    <task/link-prediction> .
+<configuration/asa/28> ns4kge:hasDataset <dataset/amazon> .
+<configuration/asa/28> ns4kge:hasMetric  <metric/f1> .
+<configuration/asa/28> ns4kge:hasKGEModel <kge-model/metapath2vec> .
+<configuration/asa/28> ns4kge:result "0.8748"^^xsd:decimal .
+
+<configuration/asa/29> rdf:type ns4kge:Configuration .
+<configuration/asa/29> ns4kge:hasTask    <task/link-prediction> .
+<configuration/asa/29> ns4kge:hasDataset <dataset/amazon> .
+<configuration/asa/29> ns4kge:hasMetric  <metric/f1> .
+<configuration/asa/29> ns4kge:hasKGEModel <kge-model/han> .
+<configuration/asa/29> ns4kge:result "0.7735"^^xsd:decimal .
+
+<configuration/asa/30> rdf:type ns4kge:Configuration .
+<configuration/asa/30> ns4kge:hasTask    <task/link-prediction> .
+<configuration/asa/30> ns4kge:hasDataset <dataset/amazon> .
+<configuration/asa/30> ns4kge:hasMetric  <metric/f1> .
+<configuration/asa/30> ns4kge:hasKGEModel <kge-model/conve> .
+<configuration/asa/30> ns4kge:result "0.6638"^^xsd:decimal .
+
+<configuration/asa/31> rdf:type ns4kge:Configuration .
+<configuration/asa/31> ns4kge:hasTask    <task/link-prediction> .
+<configuration/asa/31> ns4kge:hasDataset <dataset/amazon> .
+<configuration/asa/31> ns4kge:hasMetric  <metric/f1> .
+<configuration/asa/31> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/asa/31> ns4kge:hasNSMethod <ns-method/adaptive-self-adversarial-negative-sampling> .
+<configuration/asa/31> ns4kge:result "0.643"^^xsd:decimal .
+
+<configuration/asa/32> rdf:type ns4kge:Configuration .
+<configuration/asa/32> ns4kge:hasTask    <task/link-prediction> .
+<configuration/asa/32> ns4kge:hasDataset <dataset/amazon> .
+<configuration/asa/32> ns4kge:hasMetric  <metric/f1> .
+<configuration/asa/32> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/asa/32> ns4kge:result "0.5439"^^xsd:decimal .
+
+<configuration/asa/33> rdf:type ns4kge:Configuration .
+<configuration/asa/33> ns4kge:hasTask    <task/link-prediction> .
+<configuration/asa/33> ns4kge:hasDataset <dataset/amazon> .
+<configuration/asa/33> ns4kge:hasMetric  <metric/f1> .
+<configuration/asa/33> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/asa/33> ns4kge:result "0.5371"^^xsd:decimal .
+
+<configuration/asa/34> rdf:type ns4kge:Configuration .
+<configuration/asa/34> ns4kge:hasTask    <task/link-prediction> .
+<configuration/asa/34> ns4kge:hasDataset <dataset/youtube> .
+<configuration/asa/34> ns4kge:hasMetric  <metric/auc> .
+<configuration/asa/34> ns4kge:hasKGEModel <kge-model/relgnn> .
+<configuration/asa/34> ns4kge:hasNSMethod <ns-method/adaptive-self-adversarial-negative-sampling> .
+<configuration/asa/34> ns4kge:result "0.9644"^^xsd:decimal .
+
+<configuration/asa/35> rdf:type ns4kge:Configuration .
+<configuration/asa/35> ns4kge:hasTask    <task/link-prediction> .
+<configuration/asa/35> ns4kge:hasDataset <dataset/youtube> .
+<configuration/asa/35> ns4kge:hasMetric  <metric/auc> .
+<configuration/asa/35> ns4kge:hasKGEModel <kge-model/relgnn> .
+<configuration/asa/35> ns4kge:result "0.9439"^^xsd:decimal .
+
+<configuration/asa/36> rdf:type ns4kge:Configuration .
+<configuration/asa/36> ns4kge:hasTask    <task/link-prediction> .
+<configuration/asa/36> ns4kge:hasDataset <dataset/youtube> .
+<configuration/asa/36> ns4kge:hasMetric  <metric/auc> .
+<configuration/asa/36> ns4kge:hasKGEModel <kge-model/rgcn> .
+<configuration/asa/36> ns4kge:hasNSMethod <ns-method/adaptive-self-adversarial-negative-sampling> .
+<configuration/asa/36> ns4kge:result "0.9319"^^xsd:decimal .
+
+<configuration/asa/37> rdf:type ns4kge:Configuration .
+<configuration/asa/37> ns4kge:hasTask    <task/link-prediction> .
+<configuration/asa/37> ns4kge:hasDataset <dataset/youtube> .
+<configuration/asa/37> ns4kge:hasMetric  <metric/auc> .
+<configuration/asa/37> ns4kge:hasKGEModel <kge-model/rgcn> .
+<configuration/asa/37> ns4kge:result "0.9238"^^xsd:decimal .
+
+<configuration/asa/38> rdf:type ns4kge:Configuration .
+<configuration/asa/38> ns4kge:hasTask    <task/link-prediction> .
+<configuration/asa/38> ns4kge:hasDataset <dataset/youtube> .
+<configuration/asa/38> ns4kge:hasMetric  <metric/auc> .
+<configuration/asa/38> ns4kge:hasKGEModel <kge-model/gatne> .
+<configuration/asa/38> ns4kge:result "0.8447"^^xsd:decimal .
+
+<configuration/asa/39> rdf:type ns4kge:Configuration .
+<configuration/asa/39> ns4kge:hasTask    <task/link-prediction> .
+<configuration/asa/39> ns4kge:hasDataset <dataset/youtube> .
+<configuration/asa/39> ns4kge:hasMetric  <metric/auc> .
+<configuration/asa/39> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/asa/39> ns4kge:hasNSMethod <ns-method/adaptive-self-adversarial-negative-sampling> .
+<configuration/asa/39> ns4kge:result "0.7645"^^xsd:decimal .
+
+<configuration/asa/40> rdf:type ns4kge:Configuration .
+<configuration/asa/40> ns4kge:hasTask    <task/link-prediction> .
+<configuration/asa/40> ns4kge:hasDataset <dataset/youtube> .
+<configuration/asa/40> ns4kge:hasMetric  <metric/auc> .
+<configuration/asa/40> ns4kge:hasKGEModel <kge-model/metapath2vec> .
+<configuration/asa/40> ns4kge:result "0.7098"^^xsd:decimal .
+
+<configuration/asa/41> rdf:type ns4kge:Configuration .
+<configuration/asa/41> ns4kge:hasTask    <task/link-prediction> .
+<configuration/asa/41> ns4kge:hasDataset <dataset/youtube> .
+<configuration/asa/41> ns4kge:hasMetric  <metric/auc> .
+<configuration/asa/41> ns4kge:hasKGEModel <kge-model/han> .
+<configuration/asa/41> ns4kge:result "0.6466"^^xsd:decimal .
+
+<configuration/asa/42> rdf:type ns4kge:Configuration .
+<configuration/asa/42> ns4kge:hasTask    <task/link-prediction> .
+<configuration/asa/42> ns4kge:hasDataset <dataset/youtube> .
+<configuration/asa/42> ns4kge:hasMetric  <metric/auc> .
+<configuration/asa/42> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/asa/42> ns4kge:result "0.5249"^^xsd:decimal .
+
+<configuration/asa/43> rdf:type ns4kge:Configuration .
+<configuration/asa/43> ns4kge:hasTask    <task/link-prediction> .
+<configuration/asa/43> ns4kge:hasDataset <dataset/youtube> .
+<configuration/asa/43> ns4kge:hasMetric  <metric/auc> .
+<configuration/asa/43> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/asa/43> ns4kge:result "0.5211"^^xsd:decimal .
+
+<configuration/asa/44> rdf:type ns4kge:Configuration .
+<configuration/asa/44> ns4kge:hasTask    <task/link-prediction> .
+<configuration/asa/44> ns4kge:hasDataset <dataset/youtube> .
+<configuration/asa/44> ns4kge:hasMetric  <metric/auc> .
+<configuration/asa/44> ns4kge:hasKGEModel <kge-model/conve> .
+<configuration/asa/44> ns4kge:result "0.5003"^^xsd:decimal .
+
+<configuration/asa/45> rdf:type ns4kge:Configuration .
+<configuration/asa/45> ns4kge:hasTask    <task/link-prediction> .
+<configuration/asa/45> ns4kge:hasDataset <dataset/youtube> .
+<configuration/asa/45> ns4kge:hasMetric  <metric/ap> .
+<configuration/asa/45> ns4kge:hasKGEModel <kge-model/relgnn> .
+<configuration/asa/45> ns4kge:hasNSMethod <ns-method/adaptive-self-adversarial-negative-sampling> .
+<configuration/asa/45> ns4kge:result "0.9608"^^xsd:decimal .
+
+<configuration/asa/46> rdf:type ns4kge:Configuration .
+<configuration/asa/46> ns4kge:hasTask    <task/link-prediction> .
+<configuration/asa/46> ns4kge:hasDataset <dataset/youtube> .
+<configuration/asa/46> ns4kge:hasMetric  <metric/ap> .
+<configuration/asa/46> ns4kge:hasKGEModel <kge-model/relgnn> .
+<configuration/asa/46> ns4kge:result "0.9341"^^xsd:decimal .
+
+<configuration/asa/47> rdf:type ns4kge:Configuration .
+<configuration/asa/47> ns4kge:hasTask    <task/link-prediction> .
+<configuration/asa/47> ns4kge:hasDataset <dataset/youtube> .
+<configuration/asa/47> ns4kge:hasMetric  <metric/ap> .
+<configuration/asa/47> ns4kge:hasKGEModel <kge-model/rgcn> .
+<configuration/asa/47> ns4kge:hasNSMethod <ns-method/adaptive-self-adversarial-negative-sampling> .
+<configuration/asa/47> ns4kge:result "0.9311"^^xsd:decimal .
+
+<configuration/asa/48> rdf:type ns4kge:Configuration .
+<configuration/asa/48> ns4kge:hasTask    <task/link-prediction> .
+<configuration/asa/48> ns4kge:hasDataset <dataset/youtube> .
+<configuration/asa/48> ns4kge:hasMetric  <metric/ap> .
+<configuration/asa/48> ns4kge:hasKGEModel <kge-model/rgcn> .
+<configuration/asa/48> ns4kge:result "0.9218"^^xsd:decimal .
+
+<configuration/asa/49> rdf:type ns4kge:Configuration .
+<configuration/asa/49> ns4kge:hasTask    <task/link-prediction> .
+<configuration/asa/49> ns4kge:hasDataset <dataset/youtube> .
+<configuration/asa/49> ns4kge:hasMetric  <metric/ap> .
+<configuration/asa/49> ns4kge:hasKGEModel <kge-model/gatne> .
+<configuration/asa/49> ns4kge:result "0.8232"^^xsd:decimal .
+
+<configuration/asa/50> rdf:type ns4kge:Configuration .
+<configuration/asa/50> ns4kge:hasTask    <task/link-prediction> .
+<configuration/asa/50> ns4kge:hasDataset <dataset/youtube> .
+<configuration/asa/50> ns4kge:hasMetric  <metric/ap> .
+<configuration/asa/50> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/asa/50> ns4kge:hasNSMethod <ns-method/adaptive-self-adversarial-negative-sampling> .
+<configuration/asa/50> ns4kge:result "0.7863"^^xsd:decimal .
+
+<configuration/asa/51> rdf:type ns4kge:Configuration .
+<configuration/asa/51> ns4kge:hasTask    <task/link-prediction> .
+<configuration/asa/51> ns4kge:hasDataset <dataset/youtube> .
+<configuration/asa/51> ns4kge:hasMetric  <metric/ap> .
+<configuration/asa/51> ns4kge:hasKGEModel <kge-model/metapath2vec> .
+<configuration/asa/51> ns4kge:result "0.7002"^^xsd:decimal .
+
+<configuration/asa/52> rdf:type ns4kge:Configuration .
+<configuration/asa/52> ns4kge:hasTask    <task/link-prediction> .
+<configuration/asa/52> ns4kge:hasDataset <dataset/youtube> .
+<configuration/asa/52> ns4kge:hasMetric  <metric/ap> .
+<configuration/asa/52> ns4kge:hasKGEModel <kge-model/han> .
+<configuration/asa/52> ns4kge:result "0.6124"^^xsd:decimal .
+
+<configuration/asa/53> rdf:type ns4kge:Configuration .
+<configuration/asa/53> ns4kge:hasTask    <task/link-prediction> .
+<configuration/asa/53> ns4kge:hasDataset <dataset/youtube> .
+<configuration/asa/53> ns4kge:hasMetric  <metric/ap> .
+<configuration/asa/53> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/asa/53> ns4kge:result "0.5212"^^xsd:decimal .
+
+<configuration/asa/54> rdf:type ns4kge:Configuration .
+<configuration/asa/54> ns4kge:hasTask    <task/link-prediction> .
+<configuration/asa/54> ns4kge:hasDataset <dataset/youtube> .
+<configuration/asa/54> ns4kge:hasMetric  <metric/ap> .
+<configuration/asa/54> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/asa/54> ns4kge:result "0.516"^^xsd:decimal .
+
+<configuration/asa/55> rdf:type ns4kge:Configuration .
+<configuration/asa/55> ns4kge:hasTask    <task/link-prediction> .
+<configuration/asa/55> ns4kge:hasDataset <dataset/youtube> .
+<configuration/asa/55> ns4kge:hasMetric  <metric/ap> .
+<configuration/asa/55> ns4kge:hasKGEModel <kge-model/conve> .
+<configuration/asa/55> ns4kge:result "0.5007"^^xsd:decimal .
+
+<configuration/asa/56> rdf:type ns4kge:Configuration .
+<configuration/asa/56> ns4kge:hasTask    <task/link-prediction> .
+<configuration/asa/56> ns4kge:hasDataset <dataset/youtube> .
+<configuration/asa/56> ns4kge:hasMetric  <metric/f1> .
+<configuration/asa/56> ns4kge:hasKGEModel <kge-model/relgnn> .
+<configuration/asa/56> ns4kge:result "0.8632"^^xsd:decimal .
+
+<configuration/asa/57> rdf:type ns4kge:Configuration .
+<configuration/asa/57> ns4kge:hasTask    <task/link-prediction> .
+<configuration/asa/57> ns4kge:hasDataset <dataset/youtube> .
+<configuration/asa/57> ns4kge:hasMetric  <metric/f1> .
+<configuration/asa/57> ns4kge:hasKGEModel <kge-model/relgnn> .
+<configuration/asa/57> ns4kge:hasNSMethod <ns-method/adaptive-self-adversarial-negative-sampling> .
+<configuration/asa/57> ns4kge:result "0.8389"^^xsd:decimal .
+
+<configuration/asa/58> rdf:type ns4kge:Configuration .
+<configuration/asa/58> ns4kge:hasTask    <task/link-prediction> .
+<configuration/asa/58> ns4kge:hasDataset <dataset/youtube> .
+<configuration/asa/58> ns4kge:hasMetric  <metric/f1> .
+<configuration/asa/58> ns4kge:hasKGEModel <kge-model/rgcn> .
+<configuration/asa/58> ns4kge:result "0.8335"^^xsd:decimal .
+
+<configuration/asa/59> rdf:type ns4kge:Configuration .
+<configuration/asa/59> ns4kge:hasTask    <task/link-prediction> .
+<configuration/asa/59> ns4kge:hasDataset <dataset/youtube> .
+<configuration/asa/59> ns4kge:hasMetric  <metric/f1> .
+<configuration/asa/59> ns4kge:hasKGEModel <kge-model/rgcn> .
+<configuration/asa/59> ns4kge:hasNSMethod <ns-method/adaptive-self-adversarial-negative-sampling> .
+<configuration/asa/59> ns4kge:result "0.7933"^^xsd:decimal .
+
+<configuration/asa/60> rdf:type ns4kge:Configuration .
+<configuration/asa/60> ns4kge:hasTask    <task/link-prediction> .
+<configuration/asa/60> ns4kge:hasDataset <dataset/youtube> .
+<configuration/asa/60> ns4kge:hasMetric  <metric/f1> .
+<configuration/asa/60> ns4kge:hasKGEModel <kge-model/gatne> .
+<configuration/asa/60> ns4kge:result "0.7683"^^xsd:decimal .
+
+<configuration/asa/61> rdf:type ns4kge:Configuration .
+<configuration/asa/61> ns4kge:hasTask    <task/link-prediction> .
+<configuration/asa/61> ns4kge:hasDataset <dataset/youtube> .
+<configuration/asa/61> ns4kge:hasMetric  <metric/f1> .
+<configuration/asa/61> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/asa/61> ns4kge:hasNSMethod <ns-method/adaptive-self-adversarial-negative-sampling> .
+<configuration/asa/61> ns4kge:result "0.6948"^^xsd:decimal .
+
+<configuration/asa/62> rdf:type ns4kge:Configuration .
+<configuration/asa/62> ns4kge:hasTask    <task/link-prediction> .
+<configuration/asa/62> ns4kge:hasDataset <dataset/youtube> .
+<configuration/asa/62> ns4kge:hasMetric  <metric/f1> .
+<configuration/asa/62> ns4kge:hasKGEModel <kge-model/metapath2vec> .
+<configuration/asa/62> ns4kge:result "0.6534"^^xsd:decimal .
+
+<configuration/asa/63> rdf:type ns4kge:Configuration .
+<configuration/asa/63> ns4kge:hasTask    <task/link-prediction> .
+<configuration/asa/63> ns4kge:hasDataset <dataset/youtube> .
+<configuration/asa/63> ns4kge:hasMetric  <metric/f1> .
+<configuration/asa/63> ns4kge:hasKGEModel <kge-model/han> .
+<configuration/asa/63> ns4kge:result "0.6545"^^xsd:decimal .
+
+<configuration/asa/64> rdf:type ns4kge:Configuration .
+<configuration/asa/64> ns4kge:hasTask    <task/link-prediction> .
+<configuration/asa/64> ns4kge:hasDataset <dataset/youtube> .
+<configuration/asa/64> ns4kge:hasMetric  <metric/f1> .
+<configuration/asa/64> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/asa/64> ns4kge:result "0.5097"^^xsd:decimal .
+
+<configuration/asa/65> rdf:type ns4kge:Configuration .
+<configuration/asa/65> ns4kge:hasTask    <task/link-prediction> .
+<configuration/asa/65> ns4kge:hasDataset <dataset/youtube> .
+<configuration/asa/65> ns4kge:hasMetric  <metric/f1> .
+<configuration/asa/65> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/asa/65> ns4kge:result "0.495"^^xsd:decimal .
+
+<configuration/asa/66> rdf:type ns4kge:Configuration .
+<configuration/asa/66> ns4kge:hasTask    <task/link-prediction> .
+<configuration/asa/66> ns4kge:hasDataset <dataset/youtube> .
+<configuration/asa/66> ns4kge:hasMetric  <metric/f1> .
+<configuration/asa/66> ns4kge:hasKGEModel <kge-model/conve> .
+<configuration/asa/66> ns4kge:result "0.2732"^^xsd:decimal .
+
+<configuration/asa/67> rdf:type ns4kge:Configuration .
+<configuration/asa/67> ns4kge:hasTask    <task/link-prediction> .
+<configuration/asa/67> ns4kge:hasDataset <dataset/company> .
+<configuration/asa/67> ns4kge:hasMetric  <metric/auc> .
+<configuration/asa/67> ns4kge:hasKGEModel <kge-model/relgnn> .
+<configuration/asa/67> ns4kge:hasNSMethod <ns-method/adaptive-self-adversarial-negative-sampling> .
+<configuration/asa/67> ns4kge:result "0.7768"^^xsd:decimal .
+
+<configuration/asa/68> rdf:type ns4kge:Configuration .
+<configuration/asa/68> ns4kge:hasTask    <task/link-prediction> .
+<configuration/asa/68> ns4kge:hasDataset <dataset/company> .
+<configuration/asa/68> ns4kge:hasMetric  <metric/auc> .
+<configuration/asa/68> ns4kge:hasKGEModel <kge-model/relgnn> .
+<configuration/asa/68> ns4kge:result "0.7494"^^xsd:decimal .
+
+<configuration/asa/69> rdf:type ns4kge:Configuration .
+<configuration/asa/69> ns4kge:hasTask    <task/link-prediction> .
+<configuration/asa/69> ns4kge:hasDataset <dataset/company> .
+<configuration/asa/69> ns4kge:hasMetric  <metric/auc> .
+<configuration/asa/69> ns4kge:hasKGEModel <kge-model/metapath2vec> .
+<configuration/asa/69> ns4kge:result "0.7347"^^xsd:decimal .
+
+<configuration/asa/70> rdf:type ns4kge:Configuration .
+<configuration/asa/70> ns4kge:hasTask    <task/link-prediction> .
+<configuration/asa/70> ns4kge:hasDataset <dataset/company> .
+<configuration/asa/70> ns4kge:hasMetric  <metric/auc> .
+<configuration/asa/70> ns4kge:hasKGEModel <kge-model/rgcn> .
+<configuration/asa/70> ns4kge:hasNSMethod <ns-method/adaptive-self-adversarial-negative-sampling> .
+<configuration/asa/70> ns4kge:result "0.6996"^^xsd:decimal .
+
+<configuration/asa/71> rdf:type ns4kge:Configuration .
+<configuration/asa/71> ns4kge:hasTask    <task/link-prediction> .
+<configuration/asa/71> ns4kge:hasDataset <dataset/company> .
+<configuration/asa/71> ns4kge:hasMetric  <metric/auc> .
+<configuration/asa/71> ns4kge:hasKGEModel <kge-model/gatne> .
+<configuration/asa/71> ns4kge:result "0.6972"^^xsd:decimal .
+
+<configuration/asa/72> rdf:type ns4kge:Configuration .
+<configuration/asa/72> ns4kge:hasTask    <task/link-prediction> .
+<configuration/asa/72> ns4kge:hasDataset <dataset/company> .
+<configuration/asa/72> ns4kge:hasMetric  <metric/auc> .
+<configuration/asa/72> ns4kge:hasKGEModel <kge-model/rgcn> .
+<configuration/asa/72> ns4kge:result "0.6869"^^xsd:decimal .
+
+<configuration/asa/73> rdf:type ns4kge:Configuration .
+<configuration/asa/73> ns4kge:hasTask    <task/link-prediction> .
+<configuration/asa/73> ns4kge:hasDataset <dataset/company> .
+<configuration/asa/73> ns4kge:hasMetric  <metric/auc> .
+<configuration/asa/73> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/asa/73> ns4kge:hasNSMethod <ns-method/adaptive-self-adversarial-negative-sampling> .
+<configuration/asa/73> ns4kge:result "0.6786"^^xsd:decimal .
+
+<configuration/asa/74> rdf:type ns4kge:Configuration .
+<configuration/asa/74> ns4kge:hasTask    <task/link-prediction> .
+<configuration/asa/74> ns4kge:hasDataset <dataset/company> .
+<configuration/asa/74> ns4kge:hasMetric  <metric/auc> .
+<configuration/asa/74> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/asa/74> ns4kge:result "0.5631"^^xsd:decimal .
+
+<configuration/asa/75> rdf:type ns4kge:Configuration .
+<configuration/asa/75> ns4kge:hasTask    <task/link-prediction> .
+<configuration/asa/75> ns4kge:hasDataset <dataset/company> .
+<configuration/asa/75> ns4kge:hasMetric  <metric/auc> .
+<configuration/asa/75> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/asa/75> ns4kge:result "0.5529"^^xsd:decimal .
+
+<configuration/asa/76> rdf:type ns4kge:Configuration .
+<configuration/asa/76> ns4kge:hasTask    <task/link-prediction> .
+<configuration/asa/76> ns4kge:hasDataset <dataset/company> .
+<configuration/asa/76> ns4kge:hasMetric  <metric/auc> .
+<configuration/asa/76> ns4kge:hasKGEModel <kge-model/conve> .
+<configuration/asa/76> ns4kge:result "0.5243"^^xsd:decimal .
+
+<configuration/asa/77> rdf:type ns4kge:Configuration .
+<configuration/asa/77> ns4kge:hasTask    <task/link-prediction> .
+<configuration/asa/77> ns4kge:hasDataset <dataset/company> .
+<configuration/asa/77> ns4kge:hasMetric  <metric/auc> .
+<configuration/asa/77> ns4kge:hasKGEModel <kge-model/han> .
+<configuration/asa/77> ns4kge:result "0.5233"^^xsd:decimal .
+
+<configuration/asa/78> rdf:type ns4kge:Configuration .
+<configuration/asa/78> ns4kge:hasTask    <task/link-prediction> .
+<configuration/asa/78> ns4kge:hasDataset <dataset/company> .
+<configuration/asa/78> ns4kge:hasMetric  <metric/ap> .
+<configuration/asa/78> ns4kge:hasKGEModel <kge-model/relgnn> .
+<configuration/asa/78> ns4kge:hasNSMethod <ns-method/adaptive-self-adversarial-negative-sampling> .
+<configuration/asa/78> ns4kge:result "0.7778"^^xsd:decimal .
+
+<configuration/asa/79> rdf:type ns4kge:Configuration .
+<configuration/asa/79> ns4kge:hasTask    <task/link-prediction> .
+<configuration/asa/79> ns4kge:hasDataset <dataset/company> .
+<configuration/asa/79> ns4kge:hasMetric  <metric/ap> .
+<configuration/asa/79> ns4kge:hasKGEModel <kge-model/relgnn> .
+<configuration/asa/79> ns4kge:result "0.7391"^^xsd:decimal .
+
+<configuration/asa/80> rdf:type ns4kge:Configuration .
+<configuration/asa/80> ns4kge:hasTask    <task/link-prediction> .
+<configuration/asa/80> ns4kge:hasDataset <dataset/company> .
+<configuration/asa/80> ns4kge:hasMetric  <metric/ap> .
+<configuration/asa/80> ns4kge:hasKGEModel <kge-model/rgcn> .
+<configuration/asa/80> ns4kge:hasNSMethod <ns-method/adaptive-self-adversarial-negative-sampling> .
+<configuration/asa/80> ns4kge:result "0.732"^^xsd:decimal .
+
+<configuration/asa/81> rdf:type ns4kge:Configuration .
+<configuration/asa/81> ns4kge:hasTask    <task/link-prediction> .
+<configuration/asa/81> ns4kge:hasDataset <dataset/company> .
+<configuration/asa/81> ns4kge:hasMetric  <metric/ap> .
+<configuration/asa/81> ns4kge:hasKGEModel <kge-model/metapath2vec> .
+<configuration/asa/81> ns4kge:result "0.7088"^^xsd:decimal .
+
+<configuration/asa/82> rdf:type ns4kge:Configuration .
+<configuration/asa/82> ns4kge:hasTask    <task/link-prediction> .
+<configuration/asa/82> ns4kge:hasDataset <dataset/company> .
+<configuration/asa/82> ns4kge:hasMetric  <metric/ap> .
+<configuration/asa/82> ns4kge:hasKGEModel <kge-model/rgcn> .
+<configuration/asa/82> ns4kge:result "0.6995"^^xsd:decimal .
+
+<configuration/asa/83> rdf:type ns4kge:Configuration .
+<configuration/asa/83> ns4kge:hasTask    <task/link-prediction> .
+<configuration/asa/83> ns4kge:hasDataset <dataset/company> .
+<configuration/asa/83> ns4kge:hasMetric  <metric/ap> .
+<configuration/asa/83> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/asa/83> ns4kge:hasNSMethod <ns-method/adaptive-self-adversarial-negative-sampling> .
+<configuration/asa/83> ns4kge:result "0.6872"^^xsd:decimal .
+
+<configuration/asa/84> rdf:type ns4kge:Configuration .
+<configuration/asa/84> ns4kge:hasTask    <task/link-prediction> .
+<configuration/asa/84> ns4kge:hasDataset <dataset/company> .
+<configuration/asa/84> ns4kge:hasMetric  <metric/ap> .
+<configuration/asa/84> ns4kge:hasKGEModel <kge-model/gatne> .
+<configuration/asa/84> ns4kge:result "0.6722"^^xsd:decimal .
+
+<configuration/asa/85> rdf:type ns4kge:Configuration .
+<configuration/asa/85> ns4kge:hasTask    <task/link-prediction> .
+<configuration/asa/85> ns4kge:hasDataset <dataset/company> .
+<configuration/asa/85> ns4kge:hasMetric  <metric/ap> .
+<configuration/asa/85> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/asa/85> ns4kge:result "0.5626"^^xsd:decimal .
+
+<configuration/asa/86> rdf:type ns4kge:Configuration .
+<configuration/asa/86> ns4kge:hasTask    <task/link-prediction> .
+<configuration/asa/86> ns4kge:hasDataset <dataset/company> .
+<configuration/asa/86> ns4kge:hasMetric  <metric/ap> .
+<configuration/asa/86> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/asa/86> ns4kge:result "0.553"^^xsd:decimal .
+
+<configuration/asa/87> rdf:type ns4kge:Configuration .
+<configuration/asa/87> ns4kge:hasTask    <task/link-prediction> .
+<configuration/asa/87> ns4kge:hasDataset <dataset/company> .
+<configuration/asa/87> ns4kge:hasMetric  <metric/ap> .
+<configuration/asa/87> ns4kge:hasKGEModel <kge-model/conve> .
+<configuration/asa/87> ns4kge:result "0.5317"^^xsd:decimal .
+
+<configuration/asa/88> rdf:type ns4kge:Configuration .
+<configuration/asa/88> ns4kge:hasTask    <task/link-prediction> .
+<configuration/asa/88> ns4kge:hasDataset <dataset/company> .
+<configuration/asa/88> ns4kge:hasMetric  <metric/ap> .
+<configuration/asa/88> ns4kge:hasKGEModel <kge-model/han> .
+<configuration/asa/88> ns4kge:result "0.5206"^^xsd:decimal .
+
+<configuration/asa/89> rdf:type ns4kge:Configuration .
+<configuration/asa/89> ns4kge:hasTask    <task/link-prediction> .
+<configuration/asa/89> ns4kge:hasDataset <dataset/company> .
+<configuration/asa/89> ns4kge:hasMetric  <metric/f1> .
+<configuration/asa/89> ns4kge:hasKGEModel <kge-model/relgnn> .
+<configuration/asa/89> ns4kge:hasNSMethod <ns-method/adaptive-self-adversarial-negative-sampling> .
+<configuration/asa/89> ns4kge:result "0.7443"^^xsd:decimal .
+
+<configuration/asa/90> rdf:type ns4kge:Configuration .
+<configuration/asa/90> ns4kge:hasTask    <task/link-prediction> .
+<configuration/asa/90> ns4kge:hasDataset <dataset/company> .
+<configuration/asa/90> ns4kge:hasMetric  <metric/f1> .
+<configuration/asa/90> ns4kge:hasKGEModel <kge-model/relgnn> .
+<configuration/asa/90> ns4kge:result "0.7045"^^xsd:decimal .
+
+<configuration/asa/91> rdf:type ns4kge:Configuration .
+<configuration/asa/91> ns4kge:hasTask    <task/link-prediction> .
+<configuration/asa/91> ns4kge:hasDataset <dataset/company> .
+<configuration/asa/91> ns4kge:hasMetric  <metric/f1> .
+<configuration/asa/91> ns4kge:hasKGEModel <kge-model/rgcn> .
+<configuration/asa/91> ns4kge:hasNSMethod <ns-method/adaptive-self-adversarial-negative-sampling> .
+<configuration/asa/91> ns4kge:result "0.679"^^xsd:decimal .
+
+<configuration/asa/92> rdf:type ns4kge:Configuration .
+<configuration/asa/92> ns4kge:hasTask    <task/link-prediction> .
+<configuration/asa/92> ns4kge:hasDataset <dataset/company> .
+<configuration/asa/92> ns4kge:hasMetric  <metric/f1> .
+<configuration/asa/92> ns4kge:hasKGEModel <kge-model/rgcn> .
+<configuration/asa/92> ns4kge:result "0.6675"^^xsd:decimal .
+
+<configuration/asa/93> rdf:type ns4kge:Configuration .
+<configuration/asa/93> ns4kge:hasTask    <task/link-prediction> .
+<configuration/asa/93> ns4kge:hasDataset <dataset/company> .
+<configuration/asa/93> ns4kge:hasMetric  <metric/f1> .
+<configuration/asa/93> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/asa/93> ns4kge:hasNSMethod <ns-method/adaptive-self-adversarial-negative-sampling> .
+<configuration/asa/93> ns4kge:result "0.6647"^^xsd:decimal .
+
+<configuration/asa/94> rdf:type ns4kge:Configuration .
+<configuration/asa/94> ns4kge:hasTask    <task/link-prediction> .
+<configuration/asa/94> ns4kge:hasDataset <dataset/company> .
+<configuration/asa/94> ns4kge:hasMetric  <metric/f1> .
+<configuration/asa/94> ns4kge:hasKGEModel <kge-model/gatne> .
+<configuration/asa/94> ns4kge:result "0.6187"^^xsd:decimal .
+
+<configuration/asa/95> rdf:type ns4kge:Configuration .
+<configuration/asa/95> ns4kge:hasTask    <task/link-prediction> .
+<configuration/asa/95> ns4kge:hasDataset <dataset/company> .
+<configuration/asa/95> ns4kge:hasMetric  <metric/f1> .
+<configuration/asa/95> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/asa/95> ns4kge:result "0.5651"^^xsd:decimal .
+
+<configuration/asa/96> rdf:type ns4kge:Configuration .
+<configuration/asa/96> ns4kge:hasTask    <task/link-prediction> .
+<configuration/asa/96> ns4kge:hasDataset <dataset/company> .
+<configuration/asa/96> ns4kge:hasMetric  <metric/f1> .
+<configuration/asa/96> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/asa/96> ns4kge:result "0.5533"^^xsd:decimal .
+
+<configuration/asa/97> rdf:type ns4kge:Configuration .
+<configuration/asa/97> ns4kge:hasTask    <task/link-prediction> .
+<configuration/asa/97> ns4kge:hasDataset <dataset/company> .
+<configuration/asa/97> ns4kge:hasMetric  <metric/f1> .
+<configuration/asa/97> ns4kge:hasKGEModel <kge-model/han> .
+<configuration/asa/97> ns4kge:result "0.4188"^^xsd:decimal .
+
+<configuration/asa/98> rdf:type ns4kge:Configuration .
+<configuration/asa/98> ns4kge:hasTask    <task/link-prediction> .
+<configuration/asa/98> ns4kge:hasDataset <dataset/company> .
+<configuration/asa/98> ns4kge:hasMetric  <metric/f1> .
+<configuration/asa/98> ns4kge:hasKGEModel <kge-model/conve> .
+<configuration/asa/98> ns4kge:result "0.2915"^^xsd:decimal .
+
+<configuration/asa/99> rdf:type ns4kge:Configuration .
+<configuration/asa/99> ns4kge:hasTask    <task/link-prediction> .
+<configuration/asa/99> ns4kge:hasDataset <dataset/company> .
+<configuration/asa/99> ns4kge:hasMetric  <metric/f1> .
+<configuration/asa/99> ns4kge:hasKGEModel <kge-model/metapath2vec> .
+<configuration/asa/99> ns4kge:result "0.1635"^^xsd:decimal .
+
+<configuration/asa/100> rdf:type ns4kge:Configuration .
+<configuration/asa/100> ns4kge:hasTask    <task/link-prediction> .
+<configuration/asa/100> ns4kge:hasDataset <dataset/company> .
+<configuration/asa/100> ns4kge:hasMetric  <metric/mrr> .
+<configuration/asa/100> ns4kge:hasKGEModel <kge-model/relgnn> .
+<configuration/asa/100> ns4kge:hasNSMethod <ns-method/adaptive-self-adversarial-negative-sampling> .
+<configuration/asa/100> ns4kge:result "0.0818"^^xsd:decimal .
+
+<configuration/asa/101> rdf:type ns4kge:Configuration .
+<configuration/asa/101> ns4kge:hasTask    <task/link-prediction> .
+<configuration/asa/101> ns4kge:hasDataset <dataset/company> .
+<configuration/asa/101> ns4kge:hasMetric  <metric/mrr> .
+<configuration/asa/101> ns4kge:hasKGEModel <kge-model/relgnn> .
+<configuration/asa/101> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/asa/101> ns4kge:result "0.0789"^^xsd:decimal .
+
+<configuration/asa/102> rdf:type ns4kge:Configuration .
+<configuration/asa/102> ns4kge:hasTask    <task/link-prediction> .
+<configuration/asa/102> ns4kge:hasDataset <dataset/company> .
+<configuration/asa/102> ns4kge:hasMetric  <metric/mrr> .
+<configuration/asa/102> ns4kge:hasKGEModel <kge-model/relgnn> .
+<configuration/asa/102> ns4kge:hasNSMethod <ns-method/asa> .
+<configuration/asa/102> ns4kge:result "0.0754"^^xsd:decimal .
+
+<configuration/asa/103> rdf:type ns4kge:Configuration .
+<configuration/asa/103> ns4kge:hasTask    <task/link-prediction> .
+<configuration/asa/103> ns4kge:hasDataset <dataset/company> .
+<configuration/asa/103> ns4kge:hasMetric  <metric/mrr> .
+<configuration/asa/103> ns4kge:hasKGEModel <kge-model/relgnn> .
+<configuration/asa/103> ns4kge:hasNSMethod <ns-method/random-negative-sampling> .
+<configuration/asa/103> ns4kge:result "0.0457"^^xsd:decimal .
+
+<configuration/asa/104> rdf:type ns4kge:Configuration .
+<configuration/asa/104> ns4kge:hasTask    <task/link-prediction> .
+<configuration/asa/104> ns4kge:hasDataset <dataset/company> .
+<configuration/asa/104> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/asa/104> ns4kge:hasKGEModel <kge-model/relgnn> .
+<configuration/asa/104> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/asa/104> ns4kge:result "0.0538"^^xsd:decimal .
+
+<configuration/asa/105> rdf:type ns4kge:Configuration .
+<configuration/asa/105> ns4kge:hasTask    <task/link-prediction> .
+<configuration/asa/105> ns4kge:hasDataset <dataset/company> .
+<configuration/asa/105> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/asa/105> ns4kge:hasKGEModel <kge-model/relgnn> .
+<configuration/asa/105> ns4kge:hasNSMethod <ns-method/adaptive-self-adversarial-negative-sampling> .
+<configuration/asa/105> ns4kge:result "0.0518"^^xsd:decimal .
+
+<configuration/asa/106> rdf:type ns4kge:Configuration .
+<configuration/asa/106> ns4kge:hasTask    <task/link-prediction> .
+<configuration/asa/106> ns4kge:hasDataset <dataset/company> .
+<configuration/asa/106> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/asa/106> ns4kge:hasKGEModel <kge-model/relgnn> .
+<configuration/asa/106> ns4kge:hasNSMethod <ns-method/asa> .
+<configuration/asa/106> ns4kge:result "0.0432"^^xsd:decimal .
+
+<configuration/asa/107> rdf:type ns4kge:Configuration .
+<configuration/asa/107> ns4kge:hasTask    <task/link-prediction> .
+<configuration/asa/107> ns4kge:hasDataset <dataset/company> .
+<configuration/asa/107> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/asa/107> ns4kge:hasKGEModel <kge-model/relgnn> .
+<configuration/asa/107> ns4kge:hasNSMethod <ns-method/random-negative-sampling> .
+<configuration/asa/107> ns4kge:result "0.0237"^^xsd:decimal .
+
+<configuration/asa/108> rdf:type ns4kge:Configuration .
+<configuration/asa/108> ns4kge:hasTask    <task/link-prediction> .
+<configuration/asa/108> ns4kge:hasDataset <dataset/company> .
+<configuration/asa/108> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/asa/108> ns4kge:hasKGEModel <kge-model/relgnn> .
+<configuration/asa/108> ns4kge:hasNSMethod <ns-method/asa> .
+<configuration/asa/108> ns4kge:result "0.1435"^^xsd:decimal .
+
+<configuration/asa/109> rdf:type ns4kge:Configuration .
+<configuration/asa/109> ns4kge:hasTask    <task/link-prediction> .
+<configuration/asa/109> ns4kge:hasDataset <dataset/company> .
+<configuration/asa/109> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/asa/109> ns4kge:hasKGEModel <kge-model/relgnn> .
+<configuration/asa/109> ns4kge:hasNSMethod <ns-method/adaptive-self-adversarial-negative-sampling> .
+<configuration/asa/109> ns4kge:result "0.1332"^^xsd:decimal .
+
+<configuration/asa/110> rdf:type ns4kge:Configuration .
+<configuration/asa/110> ns4kge:hasTask    <task/link-prediction> .
+<configuration/asa/110> ns4kge:hasDataset <dataset/company> .
+<configuration/asa/110> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/asa/110> ns4kge:hasKGEModel <kge-model/relgnn> .
+<configuration/asa/110> ns4kge:hasNSMethod <ns-method/random-negative-sampling> .
+<configuration/asa/110> ns4kge:result "0.0771"^^xsd:decimal .
+
+<configuration/asa/111> rdf:type ns4kge:Configuration .
+<configuration/asa/111> ns4kge:hasTask    <task/link-prediction> .
+<configuration/asa/111> ns4kge:hasDataset <dataset/company> .
+<configuration/asa/111> ns4kge:hasMetric  <metric/hits-30> .
+<configuration/asa/111> ns4kge:hasKGEModel <kge-model/relgnn> .
+<configuration/asa/111> ns4kge:hasNSMethod <ns-method/asa> .
+<configuration/asa/111> ns4kge:result "0.2371"^^xsd:decimal .
+
+<configuration/asa/112> rdf:type ns4kge:Configuration .
+<configuration/asa/112> ns4kge:hasTask    <task/link-prediction> .
+<configuration/asa/112> ns4kge:hasDataset <dataset/company> .
+<configuration/asa/112> ns4kge:hasMetric  <metric/hits-30> .
+<configuration/asa/112> ns4kge:hasKGEModel <kge-model/relgnn> .
+<configuration/asa/112> ns4kge:hasNSMethod <ns-method/adaptive-self-adversarial-negative-sampling> .
+<configuration/asa/112> ns4kge:result "0.2201"^^xsd:decimal .
+
+<configuration/asa/113> rdf:type ns4kge:Configuration .
+<configuration/asa/113> ns4kge:hasTask    <task/link-prediction> .
+<configuration/asa/113> ns4kge:hasDataset <dataset/company> .
+<configuration/asa/113> ns4kge:hasMetric  <metric/hits-30> .
+<configuration/asa/113> ns4kge:hasKGEModel <kge-model/relgnn> .
+<configuration/asa/113> ns4kge:hasNSMethod <ns-method/random-negative-sampling> .
+<configuration/asa/113> ns4kge:result "0.1494"^^xsd:decimal .

@@ -1,0 +1,60 @@
+{
+  "Article": {
+    "title": "Diffusion-based Hierarchical Negative Sampling for Multimodal Knowledge Graph Completion",
+    "date": "2025"
+  },
+  "proposedNSMethod": "Diffusion-based Hierarchical Negative Sampling",
+  "proposedKGEModel": "",
+  "mentionedNSMethods": [
+    "Uniform Negative Sampling",
+    "Bernoulli Negative Sampling",
+    "NSCaching",
+    "KBGAN",
+    "SANS",
+    "NS-KGE",
+    "MANS",
+    "MMRNS",
+    "IGAN",
+    "DMNS"
+  ],
+  "mentionedKGEModels": [
+    "TransE",
+    "DistMult",
+    "ComplEx",
+    "RotatE",
+    "QuatE",
+    "TransD",
+    "PairRE",
+    "GC-OTE",
+    "RESCAL",
+    "TransH",
+    "IKRL",
+    "TBKGC",
+    "TransAE",
+    "MMKRL",
+    "RSME",
+    "VBKGC",
+    "OTKGE",
+    "AdaMF",
+    "LAFA",
+    "VISTA",
+    "KGDM"
+  ],
+  "Experimentation": {
+    "Hardware": [
+      "NVIDIA GeForce 4090"
+    ],
+    "TrainingProtocol": {
+      "LossFunction": [
+        "Hardness-Adaptive Loss",
+        "denoising diffusion loss",
+        "mean squared error"
+      ],
+      "Optimizer": [
+        "Adam"
+      ],
+      "learningRate": null,
+      "nsRatio": null
+    }
+  }
+}

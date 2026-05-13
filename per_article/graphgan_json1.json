@@ -1,0 +1,30 @@
+{
+  "Article": {
+    "title": "GraphGAN: Graph Representation Learning with Generative Adversarial Nets",
+    "date": "2017"
+  },
+  "proposedNSMethod": "",
+  "proposedKGEModel": "GraphGAN",
+  "mentionedNSMethods": [
+    "Negative Sampling"
+  ],
+  "mentionedKGEModels": [
+    "DeepWalk",
+    "LINE",
+    "Node2vec",
+    "Struc2vec",
+    "SDNE",
+    "PPNE"
+  ],
+  "Experimentation": {
+    "Hardware": [],
+    "TrainingProtocol": {
+      "LossFunction": [],
+      "Optimizer": [
+        "SGD"
+      ],
+      "learningRate": 0.001,
+      "nsRatio": null
+    }
+  }
+}

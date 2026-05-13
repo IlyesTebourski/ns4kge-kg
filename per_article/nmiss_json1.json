@@ -1,0 +1,40 @@
+{
+  "Article": {
+    "title": "Analysis of the Impact of Negative Sampling on Link Prediction in Knowledge Graphs",
+    "date": "2018"
+  },
+  "proposedNSMethod": "Nearest Neighbor Sampling",
+  "proposedKGEModel": "",
+  "mentionedNSMethods": [
+    "Random Sampling",
+    "Corrupting Positive Instances",
+    "Typed Sampling",
+    "Relational Sampling",
+    "Near Miss Sampling",
+    "Importance Sampling",
+    "Noise Contrastive Estimation"
+  ],
+  "mentionedKGEModels": [
+    "RESCAL",
+    "TransE",
+    "DistMult",
+    "ComplEx",
+    "Neural Tensor Networks",
+    "HolE"
+  ],
+  "Experimentation": {
+    "Hardware": [],
+    "TrainingProtocol": {
+      "LossFunction": [
+        "max-margin loss",
+        "cross-entropy loss",
+        "binary negative log likelihood"
+      ],
+      "Optimizer": [
+        "Adam"
+      ],
+      "learningRate": null,
+      "nsRatio": null
+    }
+  }
+}

@@ -1,0 +1,268 @@
+{
+  "Configurations": [
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Table 1 Dataset",
+      "Metric": "MR",
+      "KGEModel": "TransE",
+      "NSMethod": "no constraints, neg_ratio=5",
+      "result": 653.403
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Table 1 Dataset",
+      "Metric": "MR",
+      "KGEModel": "TransE",
+      "NSMethod": "open world constraints, neg_ratio=1",
+      "result": 663.658
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Table 1 Dataset",
+      "Metric": "MR",
+      "KGEModel": "TransE",
+      "NSMethod": "no constraints, neg_ratio=1",
+      "result": 667.86
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Table 1 Dataset",
+      "Metric": "MR",
+      "KGEModel": "TransE",
+      "NSMethod": "closed world constraints, neg_ratio=1",
+      "result": 801.26
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Table 1 Dataset",
+      "Metric": "MR",
+      "KGEModel": "TransE",
+      "NSMethod": "closed world constraints, neg_ratio=5",
+      "result": 870.899
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Table 1 Dataset",
+      "Metric": "MRR",
+      "KGEModel": "TransE",
+      "NSMethod": "no constraints, neg_ratio=5",
+      "result": 0.34
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Table 1 Dataset",
+      "Metric": "MRR",
+      "KGEModel": "TransE",
+      "NSMethod": "closed world constraints, neg_ratio=1",
+      "result": 0.265
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Table 1 Dataset",
+      "Metric": "MRR",
+      "KGEModel": "TransE",
+      "NSMethod": "closed world constraints, neg_ratio=5",
+      "result": 0.25
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Table 1 Dataset",
+      "Metric": "MRR",
+      "KGEModel": "TransE",
+      "NSMethod": "no constraints, neg_ratio=1",
+      "result": 0.23
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Table 1 Dataset",
+      "Metric": "MRR",
+      "KGEModel": "TransE",
+      "NSMethod": "open world constraints, neg_ratio=1",
+      "result": 0.208
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Table 1 Dataset",
+      "Metric": "Hits@10",
+      "KGEModel": "TransE",
+      "NSMethod": "no constraints, neg_ratio=5",
+      "result": 0.572
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Table 1 Dataset",
+      "Metric": "Hits@10",
+      "KGEModel": "TransE",
+      "NSMethod": "closed world constraints, neg_ratio=1",
+      "result": 0.486
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Table 1 Dataset",
+      "Metric": "Hits@10",
+      "KGEModel": "TransE",
+      "NSMethod": "closed world constraints, neg_ratio=5",
+      "result": 0.468
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Table 1 Dataset",
+      "Metric": "Hits@10",
+      "KGEModel": "TransE",
+      "NSMethod": "no constraints, neg_ratio=1",
+      "result": 0.452
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Table 1 Dataset",
+      "Metric": "Hits@10",
+      "KGEModel": "TransE",
+      "NSMethod": "open world constraints, neg_ratio=1",
+      "result": 0.412
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "MUTAG",
+      "Metric": "MR",
+      "KGEModel": "TransE",
+      "NSMethod": "closed world constraints, neg_ratio=5",
+      "result": 1975.455
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "MUTAG",
+      "Metric": "MR",
+      "KGEModel": "TransE",
+      "NSMethod": "open world constraints, neg_ratio=5",
+      "result": 2170.18
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "MUTAG",
+      "Metric": "MR",
+      "KGEModel": "TransE",
+      "NSMethod": "no constraints, neg_ratio=5",
+      "result": 2341.297
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "MUTAG",
+      "Metric": "MR",
+      "KGEModel": "TransE",
+      "NSMethod": "open world constraints, neg_ratio=1",
+      "result": 3166.192
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "MUTAG",
+      "Metric": "MR",
+      "KGEModel": "TransE",
+      "NSMethod": "closed world constraints, neg_ratio=1",
+      "result": 3232.653
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "MUTAG",
+      "Metric": "MR",
+      "KGEModel": "TransE",
+      "NSMethod": "no constraints, neg_ratio=1",
+      "result": 3408.81
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "MUTAG",
+      "Metric": "MRR",
+      "KGEModel": "TransE",
+      "NSMethod": "closed world constraints, neg_ratio=5",
+      "result": 0.11
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "MUTAG",
+      "Metric": "MRR",
+      "KGEModel": "TransE",
+      "NSMethod": "open world constraints, neg_ratio=5",
+      "result": 0.1
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "MUTAG",
+      "Metric": "MRR",
+      "KGEModel": "TransE",
+      "NSMethod": "no constraints, neg_ratio=5",
+      "result": 0.093
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "MUTAG",
+      "Metric": "MRR",
+      "KGEModel": "TransE",
+      "NSMethod": "open world constraints, neg_ratio=1",
+      "result": 0.051
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "MUTAG",
+      "Metric": "MRR",
+      "KGEModel": "TransE",
+      "NSMethod": "no constraints, neg_ratio=1",
+      "result": 0.043
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "MUTAG",
+      "Metric": "MRR",
+      "KGEModel": "TransE",
+      "NSMethod": "closed world constraints, neg_ratio=1",
+      "result": 0.043
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "MUTAG",
+      "Metric": "Hits@10",
+      "KGEModel": "TransE",
+      "NSMethod": "closed world constraints, neg_ratio=5",
+      "result": 0.215
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "MUTAG",
+      "Metric": "Hits@10",
+      "KGEModel": "TransE",
+      "NSMethod": "no constraints, neg_ratio=5",
+      "result": 0.181
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "MUTAG",
+      "Metric": "Hits@10",
+      "KGEModel": "TransE",
+      "NSMethod": "open world constraints, neg_ratio=5",
+      "result": 0.18
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "MUTAG",
+      "Metric": "Hits@10",
+      "KGEModel": "TransE",
+      "NSMethod": "open world constraints, neg_ratio=1",
+      "result": 0.105
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "MUTAG",
+      "Metric": "Hits@10",
+      "KGEModel": "TransE",
+      "NSMethod": "closed world constraints, neg_ratio=1",
+      "result": 0.091
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "MUTAG",
+      "Metric": "Hits@10",
+      "KGEModel": "TransE",
+      "NSMethod": "no constraints, neg_ratio=1",
+      "result": 0.089
+    }
+  ]
+}

@@ -1,0 +1,604 @@
+{
+  "Configurations": [
+    {
+      "Task": "Entity Alignment",
+      "Dataset": "DBP_ZH-EN",
+      "Metric": "Hits@1",
+      "KGEModel": "BootEA",
+      "NSMethod": "Epsilon-Truncated Uniform Negative Sampling",
+      "result": 62.94
+    },
+    {
+      "Task": "Entity Alignment",
+      "Dataset": "DBP_ZH-EN",
+      "Metric": "Hits@10",
+      "KGEModel": "BootEA",
+      "NSMethod": "Epsilon-Truncated Uniform Negative Sampling",
+      "result": 84.75
+    },
+    {
+      "Task": "Entity Alignment",
+      "Dataset": "DBP_ZH-EN",
+      "Metric": "MRR",
+      "KGEModel": "BootEA",
+      "NSMethod": "Epsilon-Truncated Uniform Negative Sampling",
+      "result": 0.703
+    },
+    {
+      "Task": "Entity Alignment",
+      "Dataset": "DBP_ZH-EN",
+      "Metric": "Hits@1",
+      "KGEModel": "AlignE",
+      "NSMethod": "Epsilon-Truncated Uniform Negative Sampling",
+      "result": 47.18
+    },
+    {
+      "Task": "Entity Alignment",
+      "Dataset": "DBP_ZH-EN",
+      "Metric": "Hits@10",
+      "KGEModel": "AlignE",
+      "NSMethod": "Epsilon-Truncated Uniform Negative Sampling",
+      "result": 79.19
+    },
+    {
+      "Task": "Entity Alignment",
+      "Dataset": "DBP_ZH-EN",
+      "Metric": "MRR",
+      "KGEModel": "AlignE",
+      "NSMethod": "Epsilon-Truncated Uniform Negative Sampling",
+      "result": 0.581
+    },
+    {
+      "Task": "Entity Alignment",
+      "Dataset": "DBP_ZH-EN",
+      "Metric": "Hits@1",
+      "KGEModel": "JAPE",
+      "NSMethod": "Unknown",
+      "result": 41.18
+    },
+    {
+      "Task": "Entity Alignment",
+      "Dataset": "DBP_ZH-EN",
+      "Metric": "Hits@10",
+      "KGEModel": "JAPE",
+      "NSMethod": "Unknown",
+      "result": 74.46
+    },
+    {
+      "Task": "Entity Alignment",
+      "Dataset": "DBP_ZH-EN",
+      "Metric": "MRR",
+      "KGEModel": "JAPE",
+      "NSMethod": "Unknown",
+      "result": 0.49
+    },
+    {
+      "Task": "Entity Alignment",
+      "Dataset": "DBP_ZH-EN",
+      "Metric": "Hits@1",
+      "KGEModel": "IPTransE",
+      "NSMethod": "Unknown",
+      "result": 40.59
+    },
+    {
+      "Task": "Entity Alignment",
+      "Dataset": "DBP_ZH-EN",
+      "Metric": "Hits@10",
+      "KGEModel": "IPTransE",
+      "NSMethod": "Unknown",
+      "result": 73.47
+    },
+    {
+      "Task": "Entity Alignment",
+      "Dataset": "DBP_ZH-EN",
+      "Metric": "MRR",
+      "KGEModel": "IPTransE",
+      "NSMethod": "Unknown",
+      "result": 0.516
+    },
+    {
+      "Task": "Entity Alignment",
+      "Dataset": "DBP_ZH-EN",
+      "Metric": "Hits@1",
+      "KGEModel": "MTransE",
+      "NSMethod": "Unknown",
+      "result": 30.83
+    },
+    {
+      "Task": "Entity Alignment",
+      "Dataset": "DBP_ZH-EN",
+      "Metric": "Hits@10",
+      "KGEModel": "MTransE",
+      "NSMethod": "Unknown",
+      "result": 61.41
+    },
+    {
+      "Task": "Entity Alignment",
+      "Dataset": "DBP_ZH-EN",
+      "Metric": "MRR",
+      "KGEModel": "MTransE",
+      "NSMethod": "Unknown",
+      "result": 0.364
+    },
+    {
+      "Task": "Entity Alignment",
+      "Dataset": "DBP_JA-EN",
+      "Metric": "Hits@1",
+      "KGEModel": "BootEA",
+      "NSMethod": "Epsilon-Truncated Uniform Negative Sampling",
+      "result": 62.23
+    },
+    {
+      "Task": "Entity Alignment",
+      "Dataset": "DBP_JA-EN",
+      "Metric": "Hits@10",
+      "KGEModel": "BootEA",
+      "NSMethod": "Epsilon-Truncated Uniform Negative Sampling",
+      "result": 85.39
+    },
+    {
+      "Task": "Entity Alignment",
+      "Dataset": "DBP_JA-EN",
+      "Metric": "MRR",
+      "KGEModel": "BootEA",
+      "NSMethod": "Epsilon-Truncated Uniform Negative Sampling",
+      "result": 0.701
+    },
+    {
+      "Task": "Entity Alignment",
+      "Dataset": "DBP_JA-EN",
+      "Metric": "Hits@1",
+      "KGEModel": "AlignE",
+      "NSMethod": "Epsilon-Truncated Uniform Negative Sampling",
+      "result": 44.76
+    },
+    {
+      "Task": "Entity Alignment",
+      "Dataset": "DBP_JA-EN",
+      "Metric": "Hits@10",
+      "KGEModel": "AlignE",
+      "NSMethod": "Epsilon-Truncated Uniform Negative Sampling",
+      "result": 78.89
+    },
+    {
+      "Task": "Entity Alignment",
+      "Dataset": "DBP_JA-EN",
+      "Metric": "MRR",
+      "KGEModel": "AlignE",
+      "NSMethod": "Epsilon-Truncated Uniform Negative Sampling",
+      "result": 0.563
+    },
+    {
+      "Task": "Entity Alignment",
+      "Dataset": "DBP_JA-EN",
+      "Metric": "Hits@1",
+      "KGEModel": "JAPE",
+      "NSMethod": "Unknown",
+      "result": 36.25
+    },
+    {
+      "Task": "Entity Alignment",
+      "Dataset": "DBP_JA-EN",
+      "Metric": "Hits@10",
+      "KGEModel": "JAPE",
+      "NSMethod": "Unknown",
+      "result": 68.5
+    },
+    {
+      "Task": "Entity Alignment",
+      "Dataset": "DBP_JA-EN",
+      "Metric": "MRR",
+      "KGEModel": "JAPE",
+      "NSMethod": "Unknown",
+      "result": 0.476
+    },
+    {
+      "Task": "Entity Alignment",
+      "Dataset": "DBP_JA-EN",
+      "Metric": "Hits@1",
+      "KGEModel": "IPTransE",
+      "NSMethod": "Unknown",
+      "result": 36.69
+    },
+    {
+      "Task": "Entity Alignment",
+      "Dataset": "DBP_JA-EN",
+      "Metric": "Hits@10",
+      "KGEModel": "IPTransE",
+      "NSMethod": "Unknown",
+      "result": 69.26
+    },
+    {
+      "Task": "Entity Alignment",
+      "Dataset": "DBP_JA-EN",
+      "Metric": "MRR",
+      "KGEModel": "IPTransE",
+      "NSMethod": "Unknown",
+      "result": 0.474
+    },
+    {
+      "Task": "Entity Alignment",
+      "Dataset": "DBP_JA-EN",
+      "Metric": "Hits@1",
+      "KGEModel": "MTransE",
+      "NSMethod": "Unknown",
+      "result": 27.86
+    },
+    {
+      "Task": "Entity Alignment",
+      "Dataset": "DBP_JA-EN",
+      "Metric": "Hits@10",
+      "KGEModel": "MTransE",
+      "NSMethod": "Unknown",
+      "result": 57.45
+    },
+    {
+      "Task": "Entity Alignment",
+      "Dataset": "DBP_JA-EN",
+      "Metric": "MRR",
+      "KGEModel": "MTransE",
+      "NSMethod": "Unknown",
+      "result": 0.349
+    },
+    {
+      "Task": "Entity Alignment",
+      "Dataset": "DBP_FR-EN",
+      "Metric": "Hits@1",
+      "KGEModel": "BootEA",
+      "NSMethod": "Epsilon-Truncated Uniform Negative Sampling",
+      "result": 65.3
+    },
+    {
+      "Task": "Entity Alignment",
+      "Dataset": "DBP_FR-EN",
+      "Metric": "Hits@10",
+      "KGEModel": "BootEA",
+      "NSMethod": "Epsilon-Truncated Uniform Negative Sampling",
+      "result": 87.44
+    },
+    {
+      "Task": "Entity Alignment",
+      "Dataset": "DBP_FR-EN",
+      "Metric": "MRR",
+      "KGEModel": "BootEA",
+      "NSMethod": "Epsilon-Truncated Uniform Negative Sampling",
+      "result": 0.731
+    },
+    {
+      "Task": "Entity Alignment",
+      "Dataset": "DBP_FR-EN",
+      "Metric": "Hits@1",
+      "KGEModel": "AlignE",
+      "NSMethod": "Epsilon-Truncated Uniform Negative Sampling",
+      "result": 48.12
+    },
+    {
+      "Task": "Entity Alignment",
+      "Dataset": "DBP_FR-EN",
+      "Metric": "Hits@10",
+      "KGEModel": "AlignE",
+      "NSMethod": "Epsilon-Truncated Uniform Negative Sampling",
+      "result": 82.43
+    },
+    {
+      "Task": "Entity Alignment",
+      "Dataset": "DBP_FR-EN",
+      "Metric": "MRR",
+      "KGEModel": "AlignE",
+      "NSMethod": "Epsilon-Truncated Uniform Negative Sampling",
+      "result": 0.599
+    },
+    {
+      "Task": "Entity Alignment",
+      "Dataset": "DBP_FR-EN",
+      "Metric": "Hits@1",
+      "KGEModel": "IPTransE",
+      "NSMethod": "Unknown",
+      "result": 33.3
+    },
+    {
+      "Task": "Entity Alignment",
+      "Dataset": "DBP_FR-EN",
+      "Metric": "Hits@10",
+      "KGEModel": "IPTransE",
+      "NSMethod": "Unknown",
+      "result": 68.54
+    },
+    {
+      "Task": "Entity Alignment",
+      "Dataset": "DBP_FR-EN",
+      "Metric": "MRR",
+      "KGEModel": "IPTransE",
+      "NSMethod": "Unknown",
+      "result": 0.451
+    },
+    {
+      "Task": "Entity Alignment",
+      "Dataset": "DBP_FR-EN",
+      "Metric": "Hits@1",
+      "KGEModel": "JAPE",
+      "NSMethod": "Unknown",
+      "result": 32.39
+    },
+    {
+      "Task": "Entity Alignment",
+      "Dataset": "DBP_FR-EN",
+      "Metric": "Hits@10",
+      "KGEModel": "JAPE",
+      "NSMethod": "Unknown",
+      "result": 66.68
+    },
+    {
+      "Task": "Entity Alignment",
+      "Dataset": "DBP_FR-EN",
+      "Metric": "MRR",
+      "KGEModel": "JAPE",
+      "NSMethod": "Unknown",
+      "result": 0.43
+    },
+    {
+      "Task": "Entity Alignment",
+      "Dataset": "DBP_FR-EN",
+      "Metric": "Hits@1",
+      "KGEModel": "MTransE",
+      "NSMethod": "Unknown",
+      "result": 24.41
+    },
+    {
+      "Task": "Entity Alignment",
+      "Dataset": "DBP_FR-EN",
+      "Metric": "Hits@10",
+      "KGEModel": "MTransE",
+      "NSMethod": "Unknown",
+      "result": 55.55
+    },
+    {
+      "Task": "Entity Alignment",
+      "Dataset": "DBP_FR-EN",
+      "Metric": "MRR",
+      "KGEModel": "MTransE",
+      "NSMethod": "Unknown",
+      "result": 0.335
+    },
+    {
+      "Task": "Entity Alignment",
+      "Dataset": "DBP-WD",
+      "Metric": "Hits@1",
+      "KGEModel": "BootEA",
+      "NSMethod": "Epsilon-Truncated Uniform Negative Sampling",
+      "result": 74.79
+    },
+    {
+      "Task": "Entity Alignment",
+      "Dataset": "DBP-WD",
+      "Metric": "Hits@10",
+      "KGEModel": "BootEA",
+      "NSMethod": "Epsilon-Truncated Uniform Negative Sampling",
+      "result": 89.84
+    },
+    {
+      "Task": "Entity Alignment",
+      "Dataset": "DBP-WD",
+      "Metric": "MRR",
+      "KGEModel": "BootEA",
+      "NSMethod": "Epsilon-Truncated Uniform Negative Sampling",
+      "result": 0.801
+    },
+    {
+      "Task": "Entity Alignment",
+      "Dataset": "DBP-WD",
+      "Metric": "Hits@1",
+      "KGEModel": "AlignE",
+      "NSMethod": "Epsilon-Truncated Uniform Negative Sampling",
+      "result": 56.55
+    },
+    {
+      "Task": "Entity Alignment",
+      "Dataset": "DBP-WD",
+      "Metric": "Hits@10",
+      "KGEModel": "AlignE",
+      "NSMethod": "Epsilon-Truncated Uniform Negative Sampling",
+      "result": 82.7
+    },
+    {
+      "Task": "Entity Alignment",
+      "Dataset": "DBP-WD",
+      "Metric": "MRR",
+      "KGEModel": "AlignE",
+      "NSMethod": "Epsilon-Truncated Uniform Negative Sampling",
+      "result": 0.655
+    },
+    {
+      "Task": "Entity Alignment",
+      "Dataset": "DBP-WD",
+      "Metric": "Hits@1",
+      "KGEModel": "IPTransE",
+      "NSMethod": "Unknown",
+      "result": 34.85
+    },
+    {
+      "Task": "Entity Alignment",
+      "Dataset": "DBP-WD",
+      "Metric": "Hits@10",
+      "KGEModel": "IPTransE",
+      "NSMethod": "Unknown",
+      "result": 63.84
+    },
+    {
+      "Task": "Entity Alignment",
+      "Dataset": "DBP-WD",
+      "Metric": "MRR",
+      "KGEModel": "IPTransE",
+      "NSMethod": "Unknown",
+      "result": 0.447
+    },
+    {
+      "Task": "Entity Alignment",
+      "Dataset": "DBP-WD",
+      "Metric": "Hits@1",
+      "KGEModel": "JAPE",
+      "NSMethod": "Unknown",
+      "result": 31.84
+    },
+    {
+      "Task": "Entity Alignment",
+      "Dataset": "DBP-WD",
+      "Metric": "Hits@10",
+      "KGEModel": "JAPE",
+      "NSMethod": "Unknown",
+      "result": 58.88
+    },
+    {
+      "Task": "Entity Alignment",
+      "Dataset": "DBP-WD",
+      "Metric": "MRR",
+      "KGEModel": "JAPE",
+      "NSMethod": "Unknown",
+      "result": 0.411
+    },
+    {
+      "Task": "Entity Alignment",
+      "Dataset": "DBP-WD",
+      "Metric": "Hits@1",
+      "KGEModel": "MTransE",
+      "NSMethod": "Unknown",
+      "result": 28.12
+    },
+    {
+      "Task": "Entity Alignment",
+      "Dataset": "DBP-WD",
+      "Metric": "Hits@10",
+      "KGEModel": "MTransE",
+      "NSMethod": "Unknown",
+      "result": 51.95
+    },
+    {
+      "Task": "Entity Alignment",
+      "Dataset": "DBP-WD",
+      "Metric": "MRR",
+      "KGEModel": "MTransE",
+      "NSMethod": "Unknown",
+      "result": 0.363
+    },
+    {
+      "Task": "Entity Alignment",
+      "Dataset": "DBP-YG",
+      "Metric": "Hits@1",
+      "KGEModel": "BootEA",
+      "NSMethod": "Epsilon-Truncated Uniform Negative Sampling",
+      "result": 76.1
+    },
+    {
+      "Task": "Entity Alignment",
+      "Dataset": "DBP-YG",
+      "Metric": "Hits@10",
+      "KGEModel": "BootEA",
+      "NSMethod": "Epsilon-Truncated Uniform Negative Sampling",
+      "result": 89.44
+    },
+    {
+      "Task": "Entity Alignment",
+      "Dataset": "DBP-YG",
+      "Metric": "MRR",
+      "KGEModel": "BootEA",
+      "NSMethod": "Epsilon-Truncated Uniform Negative Sampling",
+      "result": 0.808
+    },
+    {
+      "Task": "Entity Alignment",
+      "Dataset": "DBP-YG",
+      "Metric": "Hits@1",
+      "KGEModel": "AlignE",
+      "NSMethod": "Epsilon-Truncated Uniform Negative Sampling",
+      "result": 63.29
+    },
+    {
+      "Task": "Entity Alignment",
+      "Dataset": "DBP-YG",
+      "Metric": "Hits@10",
+      "KGEModel": "AlignE",
+      "NSMethod": "Epsilon-Truncated Uniform Negative Sampling",
+      "result": 84.76
+    },
+    {
+      "Task": "Entity Alignment",
+      "Dataset": "DBP-YG",
+      "Metric": "MRR",
+      "KGEModel": "AlignE",
+      "NSMethod": "Epsilon-Truncated Uniform Negative Sampling",
+      "result": 0.707
+    },
+    {
+      "Task": "Entity Alignment",
+      "Dataset": "DBP-YG",
+      "Metric": "Hits@1",
+      "KGEModel": "IPTransE",
+      "NSMethod": "Unknown",
+      "result": 29.74
+    },
+    {
+      "Task": "Entity Alignment",
+      "Dataset": "DBP-YG",
+      "Metric": "Hits@10",
+      "KGEModel": "IPTransE",
+      "NSMethod": "Unknown",
+      "result": 55.76
+    },
+    {
+      "Task": "Entity Alignment",
+      "Dataset": "DBP-YG",
+      "Metric": "MRR",
+      "KGEModel": "IPTransE",
+      "NSMethod": "Unknown",
+      "result": 0.386
+    },
+    {
+      "Task": "Entity Alignment",
+      "Dataset": "DBP-YG",
+      "Metric": "Hits@1",
+      "KGEModel": "MTransE",
+      "NSMethod": "Unknown",
+      "result": 25.15
+    },
+    {
+      "Task": "Entity Alignment",
+      "Dataset": "DBP-YG",
+      "Metric": "Hits@10",
+      "KGEModel": "MTransE",
+      "NSMethod": "Unknown",
+      "result": 49.29
+    },
+    {
+      "Task": "Entity Alignment",
+      "Dataset": "DBP-YG",
+      "Metric": "MRR",
+      "KGEModel": "MTransE",
+      "NSMethod": "Unknown",
+      "result": 0.334
+    },
+    {
+      "Task": "Entity Alignment",
+      "Dataset": "DBP-YG",
+      "Metric": "Hits@1",
+      "KGEModel": "JAPE",
+      "NSMethod": "Unknown",
+      "result": 23.57
+    },
+    {
+      "Task": "Entity Alignment",
+      "Dataset": "DBP-YG",
+      "Metric": "Hits@10",
+      "KGEModel": "JAPE",
+      "NSMethod": "Unknown",
+      "result": 48.41
+    },
+    {
+      "Task": "Entity Alignment",
+      "Dataset": "DBP-YG",
+      "Metric": "MRR",
+      "KGEModel": "JAPE",
+      "NSMethod": "Unknown",
+      "result": 0.32
+    }
+  ]
+}

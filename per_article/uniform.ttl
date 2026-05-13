@@ -1,0 +1,268 @@
+<article/uniform> rdf:type ns4kge:Article .
+<article/uniform> ns4kge:title "Translating Embeddings for Modeling Multi-relational Data"^^xsd:string .
+<article/uniform> ns4kge:date "2013"^^xsd:gYear .
+<article/uniform> ns4kge:mentionsKGEModel <kge-model/unstructured> .
+<article/uniform> ns4kge:mentionsKGEModel <kge-model/se> .
+<article/uniform> ns4kge:mentionsKGEModel <kge-model/sme-linear> .
+<article/uniform> ns4kge:mentionsKGEModel <kge-model/ntn> .
+<article/uniform> ns4kge:mentionsKGEModel <kge-model/sme-bilinear> .
+<article/uniform> ns4kge:mentionsKGEModel <kge-model/lfm> .
+<article/uniform> ns4kge:mentionsKGEModel <kge-model/rescal> .
+<article/uniform> ns4kge:hasExperimentation <experimentation/uniform> .
+
+<kge-model/transe> rdf:type ns4kge:KGEModel .
+
+<kge-model/unstructured> rdf:type ns4kge:KGEModel .
+
+<kge-model/se> rdf:type ns4kge:KGEModel .
+
+<kge-model/sme-linear> rdf:type ns4kge:KGEModel .
+
+<kge-model/ntn> rdf:type ns4kge:KGEModel .
+
+<kge-model/sme-bilinear> rdf:type ns4kge:KGEModel .
+
+<kge-model/lfm> rdf:type ns4kge:KGEModel .
+
+<kge-model/rescal> rdf:type ns4kge:KGEModel .
+
+<dataset/wn> rdf:type ns4kge:Dataset .
+<task/link-prediction> rdf:type ns4kge:Task .
+<metric/mr> rdf:type ns4kge:Metric .
+<metric/hits-10> rdf:type ns4kge:Metric .
+<dataset/fb15k> rdf:type ns4kge:Dataset .
+<loss-function/margin-based-ranking-loss> rdf:type ns4kge:LossFunction .
+<optimizer/sgd> rdf:type ns4kge:Optimizer .
+
+<experimentation/uniform> rdf:type ns4kge:Experimentation .
+<experimentation/uniform> ns4kge:hasTrainingProtocol <training-protocol/uniform> .
+<experimentation/uniform> ns4kge:hasConfiguration <configuration/uniform/1> .
+<experimentation/uniform> ns4kge:hasConfiguration <configuration/uniform/2> .
+<experimentation/uniform> ns4kge:hasConfiguration <configuration/uniform/3> .
+<experimentation/uniform> ns4kge:hasConfiguration <configuration/uniform/4> .
+<experimentation/uniform> ns4kge:hasConfiguration <configuration/uniform/5> .
+<experimentation/uniform> ns4kge:hasConfiguration <configuration/uniform/6> .
+<experimentation/uniform> ns4kge:hasConfiguration <configuration/uniform/7> .
+<experimentation/uniform> ns4kge:hasConfiguration <configuration/uniform/8> .
+<experimentation/uniform> ns4kge:hasConfiguration <configuration/uniform/9> .
+<experimentation/uniform> ns4kge:hasConfiguration <configuration/uniform/10> .
+<experimentation/uniform> ns4kge:hasConfiguration <configuration/uniform/11> .
+<experimentation/uniform> ns4kge:hasConfiguration <configuration/uniform/12> .
+<experimentation/uniform> ns4kge:hasConfiguration <configuration/uniform/13> .
+<experimentation/uniform> ns4kge:hasConfiguration <configuration/uniform/14> .
+<experimentation/uniform> ns4kge:hasConfiguration <configuration/uniform/15> .
+<experimentation/uniform> ns4kge:hasConfiguration <configuration/uniform/16> .
+<experimentation/uniform> ns4kge:hasConfiguration <configuration/uniform/17> .
+<experimentation/uniform> ns4kge:hasConfiguration <configuration/uniform/18> .
+<experimentation/uniform> ns4kge:hasConfiguration <configuration/uniform/19> .
+<experimentation/uniform> ns4kge:hasConfiguration <configuration/uniform/20> .
+<experimentation/uniform> ns4kge:hasConfiguration <configuration/uniform/21> .
+<experimentation/uniform> ns4kge:hasConfiguration <configuration/uniform/22> .
+<experimentation/uniform> ns4kge:hasConfiguration <configuration/uniform/23> .
+<experimentation/uniform> ns4kge:hasConfiguration <configuration/uniform/24> .
+<experimentation/uniform> ns4kge:hasConfiguration <configuration/uniform/25> .
+<experimentation/uniform> ns4kge:hasConfiguration <configuration/uniform/26> .
+<experimentation/uniform> ns4kge:hasConfiguration <configuration/uniform/27> .
+<experimentation/uniform> ns4kge:hasConfiguration <configuration/uniform/28> .
+
+<training-protocol/uniform> rdf:type ns4kge:TrainingProtocol .
+<training-protocol/uniform> ns4kge:hasOptimizer    <optimizer/sgd> .
+<training-protocol/uniform> ns4kge:hasLossFunction <loss-function/margin-based-ranking-loss> .
+<training-protocol/uniform> ns4kge:learningRate "0.01"^^xsd:decimal .
+<training-protocol/uniform> ns4kge:nsRatio "1"^^xsd:decimal .
+
+<configuration/uniform/1> rdf:type ns4kge:Configuration .
+<configuration/uniform/1> ns4kge:hasTask    <task/link-prediction> .
+<configuration/uniform/1> ns4kge:hasDataset <dataset/wn> .
+<configuration/uniform/1> ns4kge:hasMetric  <metric/mr> .
+<configuration/uniform/1> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/uniform/1> ns4kge:result "251"^^xsd:decimal .
+
+<configuration/uniform/2> rdf:type ns4kge:Configuration .
+<configuration/uniform/2> ns4kge:hasTask    <task/link-prediction> .
+<configuration/uniform/2> ns4kge:hasDataset <dataset/wn> .
+<configuration/uniform/2> ns4kge:hasMetric  <metric/mr> .
+<configuration/uniform/2> ns4kge:hasKGEModel <kge-model/unstructured> .
+<configuration/uniform/2> ns4kge:result "304"^^xsd:decimal .
+
+<configuration/uniform/3> rdf:type ns4kge:Configuration .
+<configuration/uniform/3> ns4kge:hasTask    <task/link-prediction> .
+<configuration/uniform/3> ns4kge:hasDataset <dataset/wn> .
+<configuration/uniform/3> ns4kge:hasMetric  <metric/mr> .
+<configuration/uniform/3> ns4kge:hasKGEModel <kge-model/lfm> .
+<configuration/uniform/3> ns4kge:result "456"^^xsd:decimal .
+
+<configuration/uniform/4> rdf:type ns4kge:Configuration .
+<configuration/uniform/4> ns4kge:hasTask    <task/link-prediction> .
+<configuration/uniform/4> ns4kge:hasDataset <dataset/wn> .
+<configuration/uniform/4> ns4kge:hasMetric  <metric/mr> .
+<configuration/uniform/4> ns4kge:hasKGEModel <kge-model/sme-bilinear> .
+<configuration/uniform/4> ns4kge:result "509"^^xsd:decimal .
+
+<configuration/uniform/5> rdf:type ns4kge:Configuration .
+<configuration/uniform/5> ns4kge:hasTask    <task/link-prediction> .
+<configuration/uniform/5> ns4kge:hasDataset <dataset/wn> .
+<configuration/uniform/5> ns4kge:hasMetric  <metric/mr> .
+<configuration/uniform/5> ns4kge:hasKGEModel <kge-model/sme-linear> .
+<configuration/uniform/5> ns4kge:result "533"^^xsd:decimal .
+
+<configuration/uniform/6> rdf:type ns4kge:Configuration .
+<configuration/uniform/6> ns4kge:hasTask    <task/link-prediction> .
+<configuration/uniform/6> ns4kge:hasDataset <dataset/wn> .
+<configuration/uniform/6> ns4kge:hasMetric  <metric/mr> .
+<configuration/uniform/6> ns4kge:hasKGEModel <kge-model/se> .
+<configuration/uniform/6> ns4kge:result "985"^^xsd:decimal .
+
+<configuration/uniform/7> rdf:type ns4kge:Configuration .
+<configuration/uniform/7> ns4kge:hasTask    <task/link-prediction> .
+<configuration/uniform/7> ns4kge:hasDataset <dataset/wn> .
+<configuration/uniform/7> ns4kge:hasMetric  <metric/mr> .
+<configuration/uniform/7> ns4kge:hasKGEModel <kge-model/rescal> .
+<configuration/uniform/7> ns4kge:result "1163"^^xsd:decimal .
+
+<configuration/uniform/8> rdf:type ns4kge:Configuration .
+<configuration/uniform/8> ns4kge:hasTask    <task/link-prediction> .
+<configuration/uniform/8> ns4kge:hasDataset <dataset/wn> .
+<configuration/uniform/8> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/uniform/8> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/uniform/8> ns4kge:result "0.892"^^xsd:decimal .
+
+<configuration/uniform/9> rdf:type ns4kge:Configuration .
+<configuration/uniform/9> ns4kge:hasTask    <task/link-prediction> .
+<configuration/uniform/9> ns4kge:hasDataset <dataset/wn> .
+<configuration/uniform/9> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/uniform/9> ns4kge:hasKGEModel <kge-model/lfm> .
+<configuration/uniform/9> ns4kge:result "0.816"^^xsd:decimal .
+
+<configuration/uniform/10> rdf:type ns4kge:Configuration .
+<configuration/uniform/10> ns4kge:hasTask    <task/link-prediction> .
+<configuration/uniform/10> ns4kge:hasDataset <dataset/wn> .
+<configuration/uniform/10> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/uniform/10> ns4kge:hasKGEModel <kge-model/se> .
+<configuration/uniform/10> ns4kge:result "0.805"^^xsd:decimal .
+
+<configuration/uniform/11> rdf:type ns4kge:Configuration .
+<configuration/uniform/11> ns4kge:hasTask    <task/link-prediction> .
+<configuration/uniform/11> ns4kge:hasDataset <dataset/wn> .
+<configuration/uniform/11> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/uniform/11> ns4kge:hasKGEModel <kge-model/sme-linear> .
+<configuration/uniform/11> ns4kge:result "0.741"^^xsd:decimal .
+
+<configuration/uniform/12> rdf:type ns4kge:Configuration .
+<configuration/uniform/12> ns4kge:hasTask    <task/link-prediction> .
+<configuration/uniform/12> ns4kge:hasDataset <dataset/wn> .
+<configuration/uniform/12> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/uniform/12> ns4kge:hasKGEModel <kge-model/sme-bilinear> .
+<configuration/uniform/12> ns4kge:result "0.613"^^xsd:decimal .
+
+<configuration/uniform/13> rdf:type ns4kge:Configuration .
+<configuration/uniform/13> ns4kge:hasTask    <task/link-prediction> .
+<configuration/uniform/13> ns4kge:hasDataset <dataset/wn> .
+<configuration/uniform/13> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/uniform/13> ns4kge:hasKGEModel <kge-model/rescal> .
+<configuration/uniform/13> ns4kge:result "0.528"^^xsd:decimal .
+
+<configuration/uniform/14> rdf:type ns4kge:Configuration .
+<configuration/uniform/14> ns4kge:hasTask    <task/link-prediction> .
+<configuration/uniform/14> ns4kge:hasDataset <dataset/wn> .
+<configuration/uniform/14> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/uniform/14> ns4kge:hasKGEModel <kge-model/unstructured> .
+<configuration/uniform/14> ns4kge:result "0.382"^^xsd:decimal .
+
+<configuration/uniform/15> rdf:type ns4kge:Configuration .
+<configuration/uniform/15> ns4kge:hasTask    <task/link-prediction> .
+<configuration/uniform/15> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/uniform/15> ns4kge:hasMetric  <metric/mr> .
+<configuration/uniform/15> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/uniform/15> ns4kge:result "125"^^xsd:decimal .
+
+<configuration/uniform/16> rdf:type ns4kge:Configuration .
+<configuration/uniform/16> ns4kge:hasTask    <task/link-prediction> .
+<configuration/uniform/16> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/uniform/16> ns4kge:hasMetric  <metric/mr> .
+<configuration/uniform/16> ns4kge:hasKGEModel <kge-model/sme-linear> .
+<configuration/uniform/16> ns4kge:result "154"^^xsd:decimal .
+
+<configuration/uniform/17> rdf:type ns4kge:Configuration .
+<configuration/uniform/17> ns4kge:hasTask    <task/link-prediction> .
+<configuration/uniform/17> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/uniform/17> ns4kge:hasMetric  <metric/mr> .
+<configuration/uniform/17> ns4kge:hasKGEModel <kge-model/sme-bilinear> .
+<configuration/uniform/17> ns4kge:result "158"^^xsd:decimal .
+
+<configuration/uniform/18> rdf:type ns4kge:Configuration .
+<configuration/uniform/18> ns4kge:hasTask    <task/link-prediction> .
+<configuration/uniform/18> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/uniform/18> ns4kge:hasMetric  <metric/mr> .
+<configuration/uniform/18> ns4kge:hasKGEModel <kge-model/se> .
+<configuration/uniform/18> ns4kge:result "162"^^xsd:decimal .
+
+<configuration/uniform/19> rdf:type ns4kge:Configuration .
+<configuration/uniform/19> ns4kge:hasTask    <task/link-prediction> .
+<configuration/uniform/19> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/uniform/19> ns4kge:hasMetric  <metric/mr> .
+<configuration/uniform/19> ns4kge:hasKGEModel <kge-model/lfm> .
+<configuration/uniform/19> ns4kge:result "164"^^xsd:decimal .
+
+<configuration/uniform/20> rdf:type ns4kge:Configuration .
+<configuration/uniform/20> ns4kge:hasTask    <task/link-prediction> .
+<configuration/uniform/20> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/uniform/20> ns4kge:hasMetric  <metric/mr> .
+<configuration/uniform/20> ns4kge:hasKGEModel <kge-model/rescal> .
+<configuration/uniform/20> ns4kge:result "683"^^xsd:decimal .
+
+<configuration/uniform/21> rdf:type ns4kge:Configuration .
+<configuration/uniform/21> ns4kge:hasTask    <task/link-prediction> .
+<configuration/uniform/21> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/uniform/21> ns4kge:hasMetric  <metric/mr> .
+<configuration/uniform/21> ns4kge:hasKGEModel <kge-model/unstructured> .
+<configuration/uniform/21> ns4kge:result "979"^^xsd:decimal .
+
+<configuration/uniform/22> rdf:type ns4kge:Configuration .
+<configuration/uniform/22> ns4kge:hasTask    <task/link-prediction> .
+<configuration/uniform/22> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/uniform/22> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/uniform/22> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/uniform/22> ns4kge:result "0.471"^^xsd:decimal .
+
+<configuration/uniform/23> rdf:type ns4kge:Configuration .
+<configuration/uniform/23> ns4kge:hasTask    <task/link-prediction> .
+<configuration/uniform/23> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/uniform/23> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/uniform/23> ns4kge:hasKGEModel <kge-model/rescal> .
+<configuration/uniform/23> ns4kge:result "0.441"^^xsd:decimal .
+
+<configuration/uniform/24> rdf:type ns4kge:Configuration .
+<configuration/uniform/24> ns4kge:hasTask    <task/link-prediction> .
+<configuration/uniform/24> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/uniform/24> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/uniform/24> ns4kge:hasKGEModel <kge-model/sme-bilinear> .
+<configuration/uniform/24> ns4kge:result "0.413"^^xsd:decimal .
+
+<configuration/uniform/25> rdf:type ns4kge:Configuration .
+<configuration/uniform/25> ns4kge:hasTask    <task/link-prediction> .
+<configuration/uniform/25> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/uniform/25> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/uniform/25> ns4kge:hasKGEModel <kge-model/sme-linear> .
+<configuration/uniform/25> ns4kge:result "0.408"^^xsd:decimal .
+
+<configuration/uniform/26> rdf:type ns4kge:Configuration .
+<configuration/uniform/26> ns4kge:hasTask    <task/link-prediction> .
+<configuration/uniform/26> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/uniform/26> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/uniform/26> ns4kge:hasKGEModel <kge-model/se> .
+<configuration/uniform/26> ns4kge:result "0.398"^^xsd:decimal .
+
+<configuration/uniform/27> rdf:type ns4kge:Configuration .
+<configuration/uniform/27> ns4kge:hasTask    <task/link-prediction> .
+<configuration/uniform/27> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/uniform/27> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/uniform/27> ns4kge:hasKGEModel <kge-model/lfm> .
+<configuration/uniform/27> ns4kge:result "0.331"^^xsd:decimal .
+
+<configuration/uniform/28> rdf:type ns4kge:Configuration .
+<configuration/uniform/28> ns4kge:hasTask    <task/link-prediction> .
+<configuration/uniform/28> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/uniform/28> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/uniform/28> ns4kge:hasKGEModel <kge-model/unstructured> .
+<configuration/uniform/28> ns4kge:result "0.063"^^xsd:decimal .

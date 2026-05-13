@@ -1,0 +1,1636 @@
+{
+  "Configurations": [
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "MRR",
+      "KGEModel": "HousE",
+      "NSMethod": "Triplet Adaptive Negative Sampling",
+      "result": 35.6
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "Hits@1",
+      "KGEModel": "HousE",
+      "NSMethod": "Triplet Adaptive Negative Sampling",
+      "result": 26.1
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "Hits@3",
+      "KGEModel": "HousE",
+      "NSMethod": "Triplet Adaptive Negative Sampling",
+      "result": 39.4
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "Hits@10",
+      "KGEModel": "HousE",
+      "NSMethod": "Triplet Adaptive Negative Sampling",
+      "result": 54.5
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "MRR",
+      "KGEModel": "HousE",
+      "NSMethod": "Self-Adversarial Negative Sampling",
+      "result": 34.7
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "MRR",
+      "KGEModel": "HousE",
+      "NSMethod": "Uniform Negative Sampling",
+      "result": 29.1
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "MRR",
+      "KGEModel": "HousE",
+      "NSMethod": "Triplet Adaptive Negative Sampling w/ Uniq",
+      "result": 36.2
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "Hits@1",
+      "KGEModel": "HousE",
+      "NSMethod": "Triplet Adaptive Negative Sampling w/ Uniq",
+      "result": 26.7
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "Hits@3",
+      "KGEModel": "HousE",
+      "NSMethod": "Triplet Adaptive Negative Sampling w/ Uniq",
+      "result": 39.9
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "Hits@10",
+      "KGEModel": "HousE",
+      "NSMethod": "Triplet Adaptive Negative Sampling w/ Uniq",
+      "result": 54.8
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "MRR",
+      "KGEModel": "HousE",
+      "NSMethod": "Self-Adversarial Negative Sampling w/ Uniq",
+      "result": 36.1
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "MRR",
+      "KGEModel": "HousE",
+      "NSMethod": "Self-Adversarial Negative Sampling w/ Freq",
+      "result": 35.9
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "Hits@1",
+      "KGEModel": "HousE",
+      "NSMethod": "Self-Adversarial Negative Sampling w/ Freq",
+      "result": 26.4
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "Hits@3",
+      "KGEModel": "HousE",
+      "NSMethod": "Self-Adversarial Negative Sampling w/ Freq",
+      "result": 39.5
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "Hits@10",
+      "KGEModel": "HousE",
+      "NSMethod": "Self-Adversarial Negative Sampling w/ Freq",
+      "result": 54.7
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "MRR",
+      "KGEModel": "HAKE",
+      "NSMethod": "Triplet Adaptive Negative Sampling",
+      "result": 34.4
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "Hits@1",
+      "KGEModel": "HAKE",
+      "NSMethod": "Triplet Adaptive Negative Sampling",
+      "result": 24.9
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "Hits@3",
+      "KGEModel": "HAKE",
+      "NSMethod": "Triplet Adaptive Negative Sampling",
+      "result": 37.9
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "Hits@10",
+      "KGEModel": "HAKE",
+      "NSMethod": "Triplet Adaptive Negative Sampling",
+      "result": 53.6
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "MRR",
+      "KGEModel": "HAKE",
+      "NSMethod": "Triplet Adaptive Negative Sampling w/ Uniq",
+      "result": 34.9
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "Hits@1",
+      "KGEModel": "HAKE",
+      "NSMethod": "Triplet Adaptive Negative Sampling w/ Uniq",
+      "result": 25.4
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "Hits@3",
+      "KGEModel": "HAKE",
+      "NSMethod": "Triplet Adaptive Negative Sampling w/ Uniq",
+      "result": 38.6
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "Hits@10",
+      "KGEModel": "HAKE",
+      "NSMethod": "Triplet Adaptive Negative Sampling w/ Uniq",
+      "result": 54.0
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "MRR",
+      "KGEModel": "HAKE",
+      "NSMethod": "Self-Adversarial Negative Sampling w/ Freq",
+      "result": 34.7
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "MRR",
+      "KGEModel": "HAKE",
+      "NSMethod": "Self-Adversarial Negative Sampling w/ Uniq",
+      "result": 34.7
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "MRR",
+      "KGEModel": "HAKE",
+      "NSMethod": "Uniform Negative Sampling",
+      "result": 30.8
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "MRR",
+      "KGEModel": "HAKE",
+      "NSMethod": "Self-Adversarial Negative Sampling",
+      "result": 32.8
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "MRR",
+      "KGEModel": "RotatE",
+      "NSMethod": "Triplet Adaptive Negative Sampling",
+      "result": 34.1
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "Hits@1",
+      "KGEModel": "RotatE",
+      "NSMethod": "Triplet Adaptive Negative Sampling",
+      "result": 24.6
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "Hits@3",
+      "KGEModel": "RotatE",
+      "NSMethod": "Triplet Adaptive Negative Sampling",
+      "result": 37.7
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "Hits@10",
+      "KGEModel": "RotatE",
+      "NSMethod": "Triplet Adaptive Negative Sampling",
+      "result": 53.3
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "MRR",
+      "KGEModel": "RotatE",
+      "NSMethod": "Triplet Adaptive Negative Sampling w/ Uniq",
+      "result": 34.2
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "Hits@1",
+      "KGEModel": "RotatE",
+      "NSMethod": "Triplet Adaptive Negative Sampling w/ Uniq",
+      "result": 24.7
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "Hits@3",
+      "KGEModel": "RotatE",
+      "NSMethod": "Triplet Adaptive Negative Sampling w/ Uniq",
+      "result": 37.8
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "Hits@10",
+      "KGEModel": "RotatE",
+      "NSMethod": "Triplet Adaptive Negative Sampling w/ Uniq",
+      "result": 53.1
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "MRR",
+      "KGEModel": "RotatE",
+      "NSMethod": "Self-Adversarial Negative Sampling w/ Freq",
+      "result": 34.0
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "MRR",
+      "KGEModel": "RotatE",
+      "NSMethod": "Uniform Negative Sampling",
+      "result": 30.3
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "MRR",
+      "KGEModel": "RotatE",
+      "NSMethod": "Self-Adversarial Negative Sampling",
+      "result": 32.9
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "MRR",
+      "KGEModel": "ComplEx",
+      "NSMethod": "Triplet Adaptive Negative Sampling",
+      "result": 32.8
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "Hits@1",
+      "KGEModel": "ComplEx",
+      "NSMethod": "Triplet Adaptive Negative Sampling",
+      "result": 23.2
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "Hits@3",
+      "KGEModel": "ComplEx",
+      "NSMethod": "Triplet Adaptive Negative Sampling",
+      "result": 36.2
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "Hits@10",
+      "KGEModel": "ComplEx",
+      "NSMethod": "Triplet Adaptive Negative Sampling",
+      "result": 52.2
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "MRR",
+      "KGEModel": "ComplEx",
+      "NSMethod": "Triplet Adaptive Negative Sampling w/ Base",
+      "result": 33.3
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "Hits@1",
+      "KGEModel": "ComplEx",
+      "NSMethod": "Triplet Adaptive Negative Sampling w/ Base",
+      "result": 23.8
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "Hits@3",
+      "KGEModel": "ComplEx",
+      "NSMethod": "Triplet Adaptive Negative Sampling w/ Base",
+      "result": 36.9
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "Hits@10",
+      "KGEModel": "ComplEx",
+      "NSMethod": "Triplet Adaptive Negative Sampling w/ Base",
+      "result": 52.7
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "MRR",
+      "KGEModel": "ComplEx",
+      "NSMethod": "Triplet Adaptive Negative Sampling w/ Freq",
+      "result": 33.3
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "MRR",
+      "KGEModel": "ComplEx",
+      "NSMethod": "Self-Adversarial Negative Sampling",
+      "result": 22.3
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "MRR",
+      "KGEModel": "ComplEx",
+      "NSMethod": "Uniform Negative Sampling",
+      "result": 23.9
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "MRR",
+      "KGEModel": "ComplEx",
+      "NSMethod": "Self-Adversarial Negative Sampling w/ Freq",
+      "result": 32.7
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "MRR",
+      "KGEModel": "DistMult",
+      "NSMethod": "Triplet Adaptive Negative Sampling",
+      "result": 31.0
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "Hits@1",
+      "KGEModel": "DistMult",
+      "NSMethod": "Triplet Adaptive Negative Sampling",
+      "result": 21.7
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "Hits@3",
+      "KGEModel": "DistMult",
+      "NSMethod": "Triplet Adaptive Negative Sampling",
+      "result": 34.0
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "Hits@10",
+      "KGEModel": "DistMult",
+      "NSMethod": "Triplet Adaptive Negative Sampling",
+      "result": 49.6
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "MRR",
+      "KGEModel": "DistMult",
+      "NSMethod": "Triplet Adaptive Negative Sampling w/ Base",
+      "result": 31.5
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "MRR",
+      "KGEModel": "DistMult",
+      "NSMethod": "Self-Adversarial Negative Sampling w/ Base",
+      "result": 30.8
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "MRR",
+      "KGEModel": "DistMult",
+      "NSMethod": "Uniform Negative Sampling",
+      "result": 23.3
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "MRR",
+      "KGEModel": "DistMult",
+      "NSMethod": "Self-Adversarial Negative Sampling",
+      "result": 22.3
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "MRR",
+      "KGEModel": "TransE",
+      "NSMethod": "Triplet Adaptive Negative Sampling",
+      "result": 33.6
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "Hits@1",
+      "KGEModel": "TransE",
+      "NSMethod": "Triplet Adaptive Negative Sampling",
+      "result": 23.9
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "Hits@3",
+      "KGEModel": "TransE",
+      "NSMethod": "Triplet Adaptive Negative Sampling",
+      "result": 37.3
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "Hits@10",
+      "KGEModel": "TransE",
+      "NSMethod": "Triplet Adaptive Negative Sampling",
+      "result": 53.0
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "MRR",
+      "KGEModel": "TransE",
+      "NSMethod": "Triplet Adaptive Negative Sampling w/ Uniq",
+      "result": 34.0
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "Hits@1",
+      "KGEModel": "TransE",
+      "NSMethod": "Triplet Adaptive Negative Sampling w/ Uniq",
+      "result": 24.5
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "Hits@3",
+      "KGEModel": "TransE",
+      "NSMethod": "Triplet Adaptive Negative Sampling w/ Uniq",
+      "result": 37.7
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "Hits@10",
+      "KGEModel": "TransE",
+      "NSMethod": "Triplet Adaptive Negative Sampling w/ Uniq",
+      "result": 53.0
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "MRR",
+      "KGEModel": "TransE",
+      "NSMethod": "Self-Adversarial Negative Sampling w/ Freq",
+      "result": 33.5
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "MRR",
+      "KGEModel": "TransE",
+      "NSMethod": "Self-Adversarial Negative Sampling",
+      "result": 33.0
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237",
+      "Metric": "MRR",
+      "KGEModel": "TransE",
+      "NSMethod": "Uniform Negative Sampling",
+      "result": 30.4
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "MRR",
+      "KGEModel": "HousE",
+      "NSMethod": "Triplet Adaptive Negative Sampling",
+      "result": 50.2
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "Hits@1",
+      "KGEModel": "HousE",
+      "NSMethod": "Triplet Adaptive Negative Sampling",
+      "result": 45.3
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "Hits@3",
+      "KGEModel": "HousE",
+      "NSMethod": "Triplet Adaptive Negative Sampling",
+      "result": 52.0
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "Hits@10",
+      "KGEModel": "HousE",
+      "NSMethod": "Triplet Adaptive Negative Sampling",
+      "result": 60.0
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "MRR",
+      "KGEModel": "HousE",
+      "NSMethod": "Self-Adversarial Negative Sampling w/ Freq",
+      "result": 51.4
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "Hits@1",
+      "KGEModel": "HousE",
+      "NSMethod": "Self-Adversarial Negative Sampling w/ Freq",
+      "result": 46.8
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "Hits@3",
+      "KGEModel": "HousE",
+      "NSMethod": "Self-Adversarial Negative Sampling w/ Freq",
+      "result": 53.2
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "Hits@10",
+      "KGEModel": "HousE",
+      "NSMethod": "Self-Adversarial Negative Sampling w/ Freq",
+      "result": 60.5
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "MRR",
+      "KGEModel": "HousE",
+      "NSMethod": "Triplet Adaptive Negative Sampling w/ Base",
+      "result": 51.3
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "MRR",
+      "KGEModel": "HousE",
+      "NSMethod": "Uniform Negative Sampling",
+      "result": 47.4
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "MRR",
+      "KGEModel": "HousE",
+      "NSMethod": "Self-Adversarial Negative Sampling",
+      "result": 49.7
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "MRR",
+      "KGEModel": "HAKE",
+      "NSMethod": "Self-Adversarial Negative Sampling w/ Uniq",
+      "result": 49.9
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "Hits@1",
+      "KGEModel": "HAKE",
+      "NSMethod": "Triplet Adaptive Negative Sampling w/ Uniq",
+      "result": 45.4
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "Hits@3",
+      "KGEModel": "HAKE",
+      "NSMethod": "Self-Adversarial Negative Sampling w/ Uniq",
+      "result": 51.8
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "Hits@10",
+      "KGEModel": "HAKE",
+      "NSMethod": "Self-Adversarial Negative Sampling w/ Uniq",
+      "result": 58.6
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "MRR",
+      "KGEModel": "HAKE",
+      "NSMethod": "Triplet Adaptive Negative Sampling w/ Uniq",
+      "result": 49.9
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "MRR",
+      "KGEModel": "HAKE",
+      "NSMethod": "Self-Adversarial Negative Sampling w/ Freq",
+      "result": 49.7
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "MRR",
+      "KGEModel": "HAKE",
+      "NSMethod": "Triplet Adaptive Negative Sampling",
+      "result": 48.9
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "MRR",
+      "KGEModel": "HAKE",
+      "NSMethod": "Self-Adversarial Negative Sampling",
+      "result": 48.9
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "MRR",
+      "KGEModel": "HAKE",
+      "NSMethod": "Uniform Negative Sampling",
+      "result": 48.8
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "MRR",
+      "KGEModel": "RotatE",
+      "NSMethod": "Triplet Adaptive Negative Sampling w/ Uniq",
+      "result": 47.8
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "Hits@3",
+      "KGEModel": "RotatE",
+      "NSMethod": "Triplet Adaptive Negative Sampling w/ Uniq",
+      "result": 49.8
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "Hits@10",
+      "KGEModel": "RotatE",
+      "NSMethod": "Triplet Adaptive Negative Sampling w/ Uniq",
+      "result": 57.6
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "MRR",
+      "KGEModel": "RotatE",
+      "NSMethod": "Self-Adversarial Negative Sampling w/ Freq",
+      "result": 47.7
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "MRR",
+      "KGEModel": "RotatE",
+      "NSMethod": "Triplet Adaptive Negative Sampling",
+      "result": 47.3
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "MRR",
+      "KGEModel": "RotatE",
+      "NSMethod": "Self-Adversarial Negative Sampling",
+      "result": 47.2
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "MRR",
+      "KGEModel": "RotatE",
+      "NSMethod": "Uniform Negative Sampling",
+      "result": 47.0
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "MRR",
+      "KGEModel": "ComplEx",
+      "NSMethod": "Triplet Adaptive Negative Sampling w/ Uniq",
+      "result": 48.3
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "Hits@1",
+      "KGEModel": "ComplEx",
+      "NSMethod": "Triplet Adaptive Negative Sampling w/ Uniq",
+      "result": 44.4
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "Hits@10",
+      "KGEModel": "ComplEx",
+      "NSMethod": "Triplet Adaptive Negative Sampling w/ Uniq",
+      "result": 56.3
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "MRR",
+      "KGEModel": "ComplEx",
+      "NSMethod": "Triplet Adaptive Negative Sampling w/ Freq",
+      "result": 48.0
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "MRR",
+      "KGEModel": "ComplEx",
+      "NSMethod": "Triplet Adaptive Negative Sampling w/ Base",
+      "result": 47.7
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "MRR",
+      "KGEModel": "ComplEx",
+      "NSMethod": "Triplet Adaptive Negative Sampling",
+      "result": 47.3
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "MRR",
+      "KGEModel": "ComplEx",
+      "NSMethod": "Self-Adversarial Negative Sampling",
+      "result": 45.0
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "MRR",
+      "KGEModel": "ComplEx",
+      "NSMethod": "Uniform Negative Sampling",
+      "result": 44.5
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "MRR",
+      "KGEModel": "DistMult",
+      "NSMethod": "Triplet Adaptive Negative Sampling w/ Uniq",
+      "result": 45.0
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "Hits@1",
+      "KGEModel": "DistMult",
+      "NSMethod": "Triplet Adaptive Negative Sampling w/ Uniq",
+      "result": 40.7
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "Hits@10",
+      "KGEModel": "DistMult",
+      "NSMethod": "Triplet Adaptive Negative Sampling w/ Uniq",
+      "result": 54.5
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "MRR",
+      "KGEModel": "DistMult",
+      "NSMethod": "Self-Adversarial Negative Sampling w/ Uniq",
+      "result": 44.7
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "MRR",
+      "KGEModel": "DistMult",
+      "NSMethod": "Triplet Adaptive Negative Sampling w/ Freq",
+      "result": 44.7
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "MRR",
+      "KGEModel": "DistMult",
+      "NSMethod": "Triplet Adaptive Negative Sampling",
+      "result": 44.2
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "MRR",
+      "KGEModel": "DistMult",
+      "NSMethod": "Self-Adversarial Negative Sampling",
+      "result": 42.4
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "MRR",
+      "KGEModel": "DistMult",
+      "NSMethod": "Uniform Negative Sampling",
+      "result": 38.5
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "MRR",
+      "KGEModel": "TransE",
+      "NSMethod": "Triplet Adaptive Negative Sampling w/ Uniq",
+      "result": 23.3
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "Hits@1",
+      "KGEModel": "TransE",
+      "NSMethod": "Triplet Adaptive Negative Sampling w/ Uniq",
+      "result": 3.0
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "Hits@10",
+      "KGEModel": "TransE",
+      "NSMethod": "Triplet Adaptive Negative Sampling w/ Uniq",
+      "result": 54.4
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "MRR",
+      "KGEModel": "TransE",
+      "NSMethod": "Self-Adversarial Negative Sampling w/ Uniq",
+      "result": 23.2
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "MRR",
+      "KGEModel": "TransE",
+      "NSMethod": "Triplet Adaptive Negative Sampling w/ Freq",
+      "result": 23.1
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "MRR",
+      "KGEModel": "TransE",
+      "NSMethod": "Triplet Adaptive Negative Sampling",
+      "result": 22.7
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "MRR",
+      "KGEModel": "TransE",
+      "NSMethod": "Uniform Negative Sampling",
+      "result": 21.1
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "YAGO3-10",
+      "Metric": "MRR",
+      "KGEModel": "HousE",
+      "NSMethod": "Triplet Adaptive Negative Sampling w/ Uniq",
+      "result": 57.3
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "YAGO3-10",
+      "Metric": "Hits@1",
+      "KGEModel": "HousE",
+      "NSMethod": "Triplet Adaptive Negative Sampling w/ Uniq",
+      "result": 49.5
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "YAGO3-10",
+      "Metric": "Hits@3",
+      "KGEModel": "HousE",
+      "NSMethod": "Triplet Adaptive Negative Sampling w/ Uniq",
+      "result": 62.2
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "YAGO3-10",
+      "Metric": "Hits@10",
+      "KGEModel": "HousE",
+      "NSMethod": "Triplet Adaptive Negative Sampling w/ Uniq",
+      "result": 71.5
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "YAGO3-10",
+      "Metric": "MRR",
+      "KGEModel": "HousE",
+      "NSMethod": "Self-Adversarial Negative Sampling w/ Uniq",
+      "result": 57.2
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "YAGO3-10",
+      "Metric": "MRR",
+      "KGEModel": "HousE",
+      "NSMethod": "Triplet Adaptive Negative Sampling w/ Freq",
+      "result": 57.2
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "YAGO3-10",
+      "Metric": "MRR",
+      "KGEModel": "HousE",
+      "NSMethod": "Triplet Adaptive Negative Sampling w/ Base",
+      "result": 57.0
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "YAGO3-10",
+      "Metric": "MRR",
+      "KGEModel": "HousE",
+      "NSMethod": "Triplet Adaptive Negative Sampling",
+      "result": 54.8
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "YAGO3-10",
+      "Metric": "MRR",
+      "KGEModel": "HousE",
+      "NSMethod": "Self-Adversarial Negative Sampling",
+      "result": 54.8
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "YAGO3-10",
+      "Metric": "MRR",
+      "KGEModel": "HousE",
+      "NSMethod": "Uniform Negative Sampling",
+      "result": 29.2
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "YAGO3-10",
+      "Metric": "MRR",
+      "KGEModel": "HAKE",
+      "NSMethod": "Self-Adversarial Negative Sampling w/ Uniq",
+      "result": 55.2
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "YAGO3-10",
+      "Metric": "Hits@1",
+      "KGEModel": "HAKE",
+      "NSMethod": "Self-Adversarial Negative Sampling w/ Uniq",
+      "result": 46.8
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "YAGO3-10",
+      "Metric": "Hits@3",
+      "KGEModel": "HAKE",
+      "NSMethod": "Self-Adversarial Negative Sampling w/ Uniq",
+      "result": 60.5
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "YAGO3-10",
+      "Metric": "Hits@10",
+      "KGEModel": "HAKE",
+      "NSMethod": "Self-Adversarial Negative Sampling w/ Uniq",
+      "result": 70.0
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "YAGO3-10",
+      "Metric": "MRR",
+      "KGEModel": "HAKE",
+      "NSMethod": "Triplet Adaptive Negative Sampling w/ Uniq",
+      "result": 55.1
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "YAGO3-10",
+      "Metric": "MRR",
+      "KGEModel": "HAKE",
+      "NSMethod": "Triplet Adaptive Negative Sampling w/ Freq",
+      "result": 54.8
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "YAGO3-10",
+      "Metric": "MRR",
+      "KGEModel": "HAKE",
+      "NSMethod": "Triplet Adaptive Negative Sampling",
+      "result": 53.7
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "YAGO3-10",
+      "Metric": "MRR",
+      "KGEModel": "HAKE",
+      "NSMethod": "Uniform Negative Sampling",
+      "result": 47.4
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "YAGO3-10",
+      "Metric": "MRR",
+      "KGEModel": "RotatE",
+      "NSMethod": "Triplet Adaptive Negative Sampling w/ Uniq",
+      "result": 50.1
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "YAGO3-10",
+      "Metric": "Hits@1",
+      "KGEModel": "RotatE",
+      "NSMethod": "Triplet Adaptive Negative Sampling w/ Uniq",
+      "result": 40.7
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "YAGO3-10",
+      "Metric": "Hits@3",
+      "KGEModel": "RotatE",
+      "NSMethod": "Triplet Adaptive Negative Sampling w/ Uniq",
+      "result": 55.7
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "YAGO3-10",
+      "Metric": "Hits@10",
+      "KGEModel": "RotatE",
+      "NSMethod": "Triplet Adaptive Negative Sampling w/ Uniq",
+      "result": 67.6
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "YAGO3-10",
+      "Metric": "MRR",
+      "KGEModel": "RotatE",
+      "NSMethod": "Self-Adversarial Negative Sampling w/ Uniq",
+      "result": 50.0
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "YAGO3-10",
+      "Metric": "MRR",
+      "KGEModel": "RotatE",
+      "NSMethod": "Self-Adversarial Negative Sampling w/ Freq",
+      "result": 49.9
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "YAGO3-10",
+      "Metric": "MRR",
+      "KGEModel": "RotatE",
+      "NSMethod": "Triplet Adaptive Negative Sampling",
+      "result": 49.6
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "YAGO3-10",
+      "Metric": "MRR",
+      "KGEModel": "RotatE",
+      "NSMethod": "Uniform Negative Sampling",
+      "result": 43.5
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237-HL",
+      "Metric": "MRR",
+      "KGEModel": "HousE",
+      "NSMethod": "Triplet Adaptive Negative Sampling w/ Freq",
+      "result": 42.8
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237-HL",
+      "Metric": "Hits@1",
+      "KGEModel": "HousE",
+      "NSMethod": "Triplet Adaptive Negative Sampling w/ Freq",
+      "result": 34.8
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237-HL",
+      "Metric": "MRR",
+      "KGEModel": "HousE",
+      "NSMethod": "Triplet Adaptive Negative Sampling w/ Uniq",
+      "result": 42.5
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237-HL",
+      "Metric": "MRR",
+      "KGEModel": "HousE",
+      "NSMethod": "Self-Adversarial Negative Sampling w/ Uniq",
+      "result": 42.4
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237-HL",
+      "Metric": "MRR",
+      "KGEModel": "HousE",
+      "NSMethod": "Triplet Adaptive Negative Sampling",
+      "result": 42.3
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237-HL",
+      "Metric": "MRR",
+      "KGEModel": "HousE",
+      "NSMethod": "Uniform Negative Sampling",
+      "result": 39.1
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237-HL",
+      "Metric": "MRR",
+      "KGEModel": "HousE",
+      "NSMethod": "Self-Adversarial Negative Sampling",
+      "result": 37.0
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237-HL",
+      "Metric": "MRR",
+      "KGEModel": "HAKE",
+      "NSMethod": "Triplet Adaptive Negative Sampling w/ Freq",
+      "result": 42.0
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237-HL",
+      "Metric": "Hits@1",
+      "KGEModel": "HAKE",
+      "NSMethod": "Triplet Adaptive Negative Sampling w/ Freq",
+      "result": 33.7
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237-HL",
+      "Metric": "MRR",
+      "KGEModel": "HAKE",
+      "NSMethod": "Triplet Adaptive Negative Sampling w/ Uniq",
+      "result": 41.9
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237-HL",
+      "Metric": "MRR",
+      "KGEModel": "HAKE",
+      "NSMethod": "Triplet Adaptive Negative Sampling w/ Base",
+      "result": 41.8
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237-HL",
+      "Metric": "MRR",
+      "KGEModel": "HAKE",
+      "NSMethod": "Uniform Negative Sampling w/ Uniq",
+      "result": 41.5
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237-HL",
+      "Metric": "MRR",
+      "KGEModel": "HAKE",
+      "NSMethod": "Triplet Adaptive Negative Sampling",
+      "result": 41.1
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237-HL",
+      "Metric": "MRR",
+      "KGEModel": "HAKE",
+      "NSMethod": "Uniform Negative Sampling",
+      "result": 38.1
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237-HL",
+      "Metric": "MRR",
+      "KGEModel": "RotatE",
+      "NSMethod": "Triplet Adaptive Negative Sampling w/ Freq",
+      "result": 42.3
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237-HL",
+      "Metric": "Hits@1",
+      "KGEModel": "RotatE",
+      "NSMethod": "Triplet Adaptive Negative Sampling w/ Freq",
+      "result": 34.1
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237-HL",
+      "Metric": "MRR",
+      "KGEModel": "RotatE",
+      "NSMethod": "Self-Adversarial Negative Sampling w/ Uniq",
+      "result": 42.2
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237-HL",
+      "Metric": "MRR",
+      "KGEModel": "RotatE",
+      "NSMethod": "Triplet Adaptive Negative Sampling w/ Uniq",
+      "result": 42.1
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237-HL",
+      "Metric": "MRR",
+      "KGEModel": "RotatE",
+      "NSMethod": "Triplet Adaptive Negative Sampling",
+      "result": 41.5
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15k-237-HL",
+      "Metric": "MRR",
+      "KGEModel": "RotatE",
+      "NSMethod": "Uniform Negative Sampling",
+      "result": 40.0
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR-HL",
+      "Metric": "MRR",
+      "KGEModel": "RotatE",
+      "NSMethod": "Triplet Adaptive Negative Sampling w/ Freq",
+      "result": 15.1
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR-HL",
+      "Metric": "MRR",
+      "KGEModel": "RotatE",
+      "NSMethod": "Triplet Adaptive Negative Sampling w/ Uniq",
+      "result": 15.1
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR-HL",
+      "Metric": "Hits@1",
+      "KGEModel": "RotatE",
+      "NSMethod": "Triplet Adaptive Negative Sampling w/ Uniq",
+      "result": 12.3
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR-HL",
+      "Metric": "MRR",
+      "KGEModel": "RotatE",
+      "NSMethod": "Triplet Adaptive Negative Sampling w/ Base",
+      "result": 14.5
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR-HL",
+      "Metric": "MRR",
+      "KGEModel": "RotatE",
+      "NSMethod": "Triplet Adaptive Negative Sampling",
+      "result": 14.4
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR-HL",
+      "Metric": "MRR",
+      "KGEModel": "RotatE",
+      "NSMethod": "Uniform Negative Sampling",
+      "result": 14.2
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR-HL",
+      "Metric": "MRR",
+      "KGEModel": "HAKE",
+      "NSMethod": "Triplet Adaptive Negative Sampling w/ Freq",
+      "result": 14.2
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR-HL",
+      "Metric": "Hits@1",
+      "KGEModel": "HAKE",
+      "NSMethod": "Triplet Adaptive Negative Sampling",
+      "result": 12.1
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR-HL",
+      "Metric": "MRR",
+      "KGEModel": "HAKE",
+      "NSMethod": "Triplet Adaptive Negative Sampling w/ Uniq",
+      "result": 14.1
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR-HL",
+      "Metric": "MRR",
+      "KGEModel": "HAKE",
+      "NSMethod": "Triplet Adaptive Negative Sampling",
+      "result": 13.9
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR-HL",
+      "Metric": "MRR",
+      "KGEModel": "HAKE",
+      "NSMethod": "Triplet Adaptive Negative Sampling w/ Base",
+      "result": 13.7
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR-HL",
+      "Metric": "MRR",
+      "KGEModel": "HAKE",
+      "NSMethod": "Uniform Negative Sampling",
+      "result": 10.8
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR-HL",
+      "Metric": "MRR",
+      "KGEModel": "HousE",
+      "NSMethod": "Uniform Negative Sampling w/ Freq",
+      "result": 13.9
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR-HL",
+      "Metric": "MRR",
+      "KGEModel": "HousE",
+      "NSMethod": "Triplet Adaptive Negative Sampling w/ Freq",
+      "result": 13.9
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR-HL",
+      "Metric": "Hits@1",
+      "KGEModel": "HousE",
+      "NSMethod": "Triplet Adaptive Negative Sampling w/ Freq",
+      "result": 12.0
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR-HL",
+      "Metric": "MRR",
+      "KGEModel": "HousE",
+      "NSMethod": "Self-Adversarial Negative Sampling w/ Uniq",
+      "result": 13.8
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR-HL",
+      "Metric": "MRR",
+      "KGEModel": "HousE",
+      "NSMethod": "Triplet Adaptive Negative Sampling w/ Uniq",
+      "result": 13.8
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR-HL",
+      "Metric": "MRR",
+      "KGEModel": "HousE",
+      "NSMethod": "Triplet Adaptive Negative Sampling",
+      "result": 13.4
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR-HL",
+      "Metric": "MRR",
+      "KGEModel": "HousE",
+      "NSMethod": "Uniform Negative Sampling",
+      "result": 10.7
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "YAGO3-10-HL",
+      "Metric": "MRR",
+      "KGEModel": "HousE",
+      "NSMethod": "Triplet Adaptive Negative Sampling",
+      "result": 52.5
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "YAGO3-10-HL",
+      "Metric": "Hits@1",
+      "KGEModel": "HousE",
+      "NSMethod": "Triplet Adaptive Negative Sampling",
+      "result": 45.4
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "YAGO3-10-HL",
+      "Metric": "MRR",
+      "KGEModel": "HousE",
+      "NSMethod": "Triplet Adaptive Negative Sampling w/ Uniq",
+      "result": 52.2
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "YAGO3-10-HL",
+      "Metric": "MRR",
+      "KGEModel": "HousE",
+      "NSMethod": "Triplet Adaptive Negative Sampling w/ Freq",
+      "result": 52.0
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "YAGO3-10-HL",
+      "Metric": "MRR",
+      "KGEModel": "HousE",
+      "NSMethod": "Self-Adversarial Negative Sampling w/ Base",
+      "result": 51.9
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "YAGO3-10-HL",
+      "Metric": "MRR",
+      "KGEModel": "HousE",
+      "NSMethod": "Self-Adversarial Negative Sampling",
+      "result": 50.3
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "YAGO3-10-HL",
+      "Metric": "MRR",
+      "KGEModel": "HousE",
+      "NSMethod": "Uniform Negative Sampling",
+      "result": 37.8
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "YAGO3-10-HL",
+      "Metric": "MRR",
+      "KGEModel": "HAKE",
+      "NSMethod": "Uniform Negative Sampling w/ Freq",
+      "result": 50.8
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "YAGO3-10-HL",
+      "Metric": "Hits@1",
+      "KGEModel": "HAKE",
+      "NSMethod": "Uniform Negative Sampling w/ Freq",
+      "result": 43.3
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "YAGO3-10-HL",
+      "Metric": "MRR",
+      "KGEModel": "HAKE",
+      "NSMethod": "Uniform Negative Sampling w/ Base",
+      "result": 50.2
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "YAGO3-10-HL",
+      "Metric": "MRR",
+      "KGEModel": "HAKE",
+      "NSMethod": "Triplet Adaptive Negative Sampling w/ Base",
+      "result": 50.1
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "YAGO3-10-HL",
+      "Metric": "MRR",
+      "KGEModel": "HAKE",
+      "NSMethod": "Triplet Adaptive Negative Sampling w/ Freq",
+      "result": 49.7
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "YAGO3-10-HL",
+      "Metric": "MRR",
+      "KGEModel": "HAKE",
+      "NSMethod": "Triplet Adaptive Negative Sampling",
+      "result": 49.2
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "YAGO3-10-HL",
+      "Metric": "MRR",
+      "KGEModel": "HAKE",
+      "NSMethod": "Uniform Negative Sampling",
+      "result": 45.9
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "YAGO3-10-HL",
+      "Metric": "MRR",
+      "KGEModel": "RotatE",
+      "NSMethod": "Triplet Adaptive Negative Sampling w/ Uniq",
+      "result": 44.1
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "YAGO3-10-HL",
+      "Metric": "Hits@1",
+      "KGEModel": "RotatE",
+      "NSMethod": "Triplet Adaptive Negative Sampling w/ Uniq",
+      "result": 35.4
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "YAGO3-10-HL",
+      "Metric": "MRR",
+      "KGEModel": "RotatE",
+      "NSMethod": "Self-Adversarial Negative Sampling w/ Uniq",
+      "result": 43.9
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "YAGO3-10-HL",
+      "Metric": "MRR",
+      "KGEModel": "RotatE",
+      "NSMethod": "Self-Adversarial Negative Sampling w/ Base",
+      "result": 43.8
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "YAGO3-10-HL",
+      "Metric": "MRR",
+      "KGEModel": "RotatE",
+      "NSMethod": "Triplet Adaptive Negative Sampling",
+      "result": 43.5
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "YAGO3-10-HL",
+      "Metric": "MRR",
+      "KGEModel": "RotatE",
+      "NSMethod": "Uniform Negative Sampling",
+      "result": 38.0
+    }
+  ]
+}

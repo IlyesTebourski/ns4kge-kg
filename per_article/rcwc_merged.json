@@ -1,0 +1,867 @@
+{
+  "Article": {
+    "title": "KGBoost: A Classification-Based Knowledge Base Completion Method with Negative Sampling",
+    "date": "2021"
+  },
+  "proposedNSMethod": "Range-Constrained with Co-occurrence Negative Sampling",
+  "proposedKGEModel": "",
+  "mentionedNSMethods": [
+    "Bernoulli Negative Sampling",
+    "Local-Closed World Assumption Negative Sampling",
+    "Self-Adversarial Negative Sampling",
+    "GAN-based Negative Sampling",
+    "Naive Negative Sampling"
+  ],
+  "mentionedKGEModels": [
+    "DistMult",
+    "ConvE",
+    "InteractE",
+    "SACN",
+    "TransH",
+    "TransR",
+    "RotatE",
+    "TransE",
+    "KGBoost-R",
+    "KGBoost-T",
+    "ComplEx",
+    "RESCAL"
+  ],
+  "Experimentation": {
+    "Hardware": [],
+    "TrainingProtocol": {
+      "LossFunction": [
+        "negative log likelihood loss",
+        "binary cross entropy loss"
+      ],
+      "Optimizer": [],
+      "learningRate": null,
+      "nsRatio": null
+    },
+    "Configurations": [
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K",
+        "Metric": "MR",
+        "KGEModel": "KGBoost-T",
+        "NSMethod": "Range-Constrained with Co-occurrence Negative Sampling",
+        "result": 15
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K",
+        "Metric": "MR",
+        "KGEModel": "KGBoost-R",
+        "NSMethod": "Range-Constrained with Co-occurrence Negative Sampling",
+        "result": 16
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K",
+        "Metric": "MR",
+        "KGEModel": "RotatE",
+        "NSMethod": "Self-Adversarial Negative Sampling",
+        "result": 40
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K",
+        "Metric": "MR",
+        "KGEModel": "DistMult",
+        "NSMethod": "Unknown",
+        "result": 42
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K",
+        "Metric": "MRR",
+        "KGEModel": "KGBoost-R",
+        "NSMethod": "Range-Constrained with Co-occurrence Negative Sampling",
+        "result": 0.817
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K",
+        "Metric": "MRR",
+        "KGEModel": "KGBoost-T",
+        "NSMethod": "Range-Constrained with Co-occurrence Negative Sampling",
+        "result": 0.811
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K",
+        "Metric": "MRR",
+        "KGEModel": "DistMult",
+        "NSMethod": "Unknown",
+        "result": 0.798
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K",
+        "Metric": "MRR",
+        "KGEModel": "RotatE",
+        "NSMethod": "Self-Adversarial Negative Sampling",
+        "result": 0.797
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K",
+        "Metric": "MRR",
+        "KGEModel": "TransE",
+        "NSMethod": "Unknown",
+        "result": 0.463
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K",
+        "Metric": "Hits@1",
+        "KGEModel": "KGBoost-R",
+        "NSMethod": "Range-Constrained with Co-occurrence Negative Sampling",
+        "result": 0.751
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K",
+        "Metric": "Hits@1",
+        "KGEModel": "RotatE",
+        "NSMethod": "Self-Adversarial Negative Sampling",
+        "result": 0.746
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K",
+        "Metric": "Hits@1",
+        "KGEModel": "KGBoost-T",
+        "NSMethod": "Range-Constrained with Co-occurrence Negative Sampling",
+        "result": 0.739
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K",
+        "Metric": "Hits@1",
+        "KGEModel": "ComplEx",
+        "NSMethod": "Unknown",
+        "result": 0.599
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K",
+        "Metric": "Hits@1",
+        "KGEModel": "TransE",
+        "NSMethod": "Unknown",
+        "result": 0.297
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K",
+        "Metric": "Hits@3",
+        "KGEModel": "KGBoost-R",
+        "NSMethod": "Range-Constrained with Co-occurrence Negative Sampling",
+        "result": 0.868
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K",
+        "Metric": "Hits@3",
+        "KGEModel": "KGBoost-T",
+        "NSMethod": "Range-Constrained with Co-occurrence Negative Sampling",
+        "result": 0.867
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K",
+        "Metric": "Hits@3",
+        "KGEModel": "RotatE",
+        "NSMethod": "Self-Adversarial Negative Sampling",
+        "result": 0.83
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K",
+        "Metric": "Hits@10",
+        "KGEModel": "KGBoost-T",
+        "NSMethod": "Range-Constrained with Co-occurrence Negative Sampling",
+        "result": 0.915
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K",
+        "Metric": "Hits@10",
+        "KGEModel": "KGBoost-R",
+        "NSMethod": "Range-Constrained with Co-occurrence Negative Sampling",
+        "result": 0.914
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K",
+        "Metric": "Hits@10",
+        "KGEModel": "DistMult",
+        "NSMethod": "Unknown",
+        "result": 0.893
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K",
+        "Metric": "Hits@10",
+        "KGEModel": "RotatE",
+        "NSMethod": "Self-Adversarial Negative Sampling",
+        "result": 0.884
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K",
+        "Metric": "Hits@10",
+        "KGEModel": "TransE",
+        "NSMethod": "Unknown",
+        "result": 0.749
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18",
+        "Metric": "MR",
+        "KGEModel": "KGBoost-R",
+        "NSMethod": "Range-Constrained with Co-occurrence Negative Sampling",
+        "result": 131
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18",
+        "Metric": "MR",
+        "KGEModel": "KGBoost-T",
+        "NSMethod": "Range-Constrained with Co-occurrence Negative Sampling",
+        "result": 189
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18",
+        "Metric": "MR",
+        "KGEModel": "RotatE",
+        "NSMethod": "Self-Adversarial Negative Sampling",
+        "result": 309
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18",
+        "Metric": "MRR",
+        "KGEModel": "RotatE",
+        "NSMethod": "Self-Adversarial Negative Sampling",
+        "result": 0.949
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18",
+        "Metric": "MRR",
+        "KGEModel": "ConvE",
+        "NSMethod": "Unknown",
+        "result": 0.943
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18",
+        "Metric": "MRR",
+        "KGEModel": "ComplEx",
+        "NSMethod": "Unknown",
+        "result": 0.941
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18",
+        "Metric": "MRR",
+        "KGEModel": "KGBoost-R",
+        "NSMethod": "Range-Constrained with Co-occurrence Negative Sampling",
+        "result": 0.939
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18",
+        "Metric": "MRR",
+        "KGEModel": "KGBoost-T",
+        "NSMethod": "Range-Constrained with Co-occurrence Negative Sampling",
+        "result": 0.82
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18",
+        "Metric": "MRR",
+        "KGEModel": "TransE",
+        "NSMethod": "Unknown",
+        "result": 0.495
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18",
+        "Metric": "Hits@1",
+        "KGEModel": "RotatE",
+        "NSMethod": "Self-Adversarial Negative Sampling",
+        "result": 0.944
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18",
+        "Metric": "Hits@1",
+        "KGEModel": "ComplEx",
+        "NSMethod": "Unknown",
+        "result": 0.936
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18",
+        "Metric": "Hits@1",
+        "KGEModel": "ConvE",
+        "NSMethod": "Unknown",
+        "result": 0.935
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18",
+        "Metric": "Hits@1",
+        "KGEModel": "KGBoost-R",
+        "NSMethod": "Range-Constrained with Co-occurrence Negative Sampling",
+        "result": 0.929
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18",
+        "Metric": "Hits@1",
+        "KGEModel": "KGBoost-T",
+        "NSMethod": "Range-Constrained with Co-occurrence Negative Sampling",
+        "result": 0.703
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18",
+        "Metric": "Hits@3",
+        "KGEModel": "RotatE",
+        "NSMethod": "Self-Adversarial Negative Sampling",
+        "result": 0.952
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18",
+        "Metric": "Hits@3",
+        "KGEModel": "ConvE",
+        "NSMethod": "Unknown",
+        "result": 0.946
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18",
+        "Metric": "Hits@3",
+        "KGEModel": "KGBoost-R",
+        "NSMethod": "Range-Constrained with Co-occurrence Negative Sampling",
+        "result": 0.946
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18",
+        "Metric": "Hits@3",
+        "KGEModel": "ComplEx",
+        "NSMethod": "Unknown",
+        "result": 0.945
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18",
+        "Metric": "Hits@3",
+        "KGEModel": "KGBoost-T",
+        "NSMethod": "Range-Constrained with Co-occurrence Negative Sampling",
+        "result": 0.936
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18",
+        "Metric": "Hits@10",
+        "KGEModel": "RotatE",
+        "NSMethod": "Self-Adversarial Negative Sampling",
+        "result": 0.959
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18",
+        "Metric": "Hits@10",
+        "KGEModel": "ConvE",
+        "NSMethod": "Unknown",
+        "result": 0.956
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18",
+        "Metric": "Hits@10",
+        "KGEModel": "KGBoost-R",
+        "NSMethod": "Range-Constrained with Co-occurrence Negative Sampling",
+        "result": 0.955
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18",
+        "Metric": "Hits@10",
+        "KGEModel": "KGBoost-T",
+        "NSMethod": "Range-Constrained with Co-occurrence Negative Sampling",
+        "result": 0.951
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15k-237",
+        "Metric": "MR",
+        "KGEModel": "KGBoost-R",
+        "NSMethod": "Range-Constrained with Co-occurrence Negative Sampling",
+        "result": 77
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15k-237",
+        "Metric": "MR",
+        "KGEModel": "KGBoost-T",
+        "NSMethod": "Range-Constrained with Co-occurrence Negative Sampling",
+        "result": 78
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15k-237",
+        "Metric": "MR",
+        "KGEModel": "InteractE",
+        "NSMethod": "Unknown",
+        "result": 172
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15k-237",
+        "Metric": "MR",
+        "KGEModel": "RotatE",
+        "NSMethod": "Self-Adversarial Negative Sampling",
+        "result": 177
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15k-237",
+        "Metric": "MR",
+        "KGEModel": "TransE",
+        "NSMethod": "Unknown",
+        "result": 357
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15k-237",
+        "Metric": "MRR",
+        "KGEModel": "KGBoost-T",
+        "NSMethod": "Range-Constrained with Co-occurrence Negative Sampling",
+        "result": 0.426
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15k-237",
+        "Metric": "MRR",
+        "KGEModel": "KGBoost-R",
+        "NSMethod": "Range-Constrained with Co-occurrence Negative Sampling",
+        "result": 0.425
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15k-237",
+        "Metric": "MRR",
+        "KGEModel": "InteractE",
+        "NSMethod": "Unknown",
+        "result": 0.354
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15k-237",
+        "Metric": "MRR",
+        "KGEModel": "SACN",
+        "NSMethod": "Unknown",
+        "result": 0.35
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15k-237",
+        "Metric": "MRR",
+        "KGEModel": "RotatE",
+        "NSMethod": "Self-Adversarial Negative Sampling",
+        "result": 0.338
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15k-237",
+        "Metric": "MRR",
+        "KGEModel": "TransE",
+        "NSMethod": "Unknown",
+        "result": 0.294
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15k-237",
+        "Metric": "Hits@1",
+        "KGEModel": "KGBoost-R",
+        "NSMethod": "Range-Constrained with Co-occurrence Negative Sampling",
+        "result": 0.336
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15k-237",
+        "Metric": "Hits@1",
+        "KGEModel": "KGBoost-T",
+        "NSMethod": "Range-Constrained with Co-occurrence Negative Sampling",
+        "result": 0.335
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15k-237",
+        "Metric": "Hits@1",
+        "KGEModel": "InteractE",
+        "NSMethod": "Unknown",
+        "result": 0.263
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15k-237",
+        "Metric": "Hits@1",
+        "KGEModel": "SACN",
+        "NSMethod": "Unknown",
+        "result": 0.26
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15k-237",
+        "Metric": "Hits@1",
+        "KGEModel": "RotatE",
+        "NSMethod": "Self-Adversarial Negative Sampling",
+        "result": 0.241
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15k-237",
+        "Metric": "Hits@3",
+        "KGEModel": "KGBoost-T",
+        "NSMethod": "Range-Constrained with Co-occurrence Negative Sampling",
+        "result": 0.462
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15k-237",
+        "Metric": "Hits@3",
+        "KGEModel": "KGBoost-R",
+        "NSMethod": "Range-Constrained with Co-occurrence Negative Sampling",
+        "result": 0.46
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15k-237",
+        "Metric": "Hits@3",
+        "KGEModel": "SACN",
+        "NSMethod": "Unknown",
+        "result": 0.39
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15k-237",
+        "Metric": "Hits@3",
+        "KGEModel": "RotatE",
+        "NSMethod": "Self-Adversarial Negative Sampling",
+        "result": 0.375
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15k-237",
+        "Metric": "Hits@10",
+        "KGEModel": "KGBoost-T",
+        "NSMethod": "Range-Constrained with Co-occurrence Negative Sampling",
+        "result": 0.608
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15k-237",
+        "Metric": "Hits@10",
+        "KGEModel": "KGBoost-R",
+        "NSMethod": "Range-Constrained with Co-occurrence Negative Sampling",
+        "result": 0.606
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15k-237",
+        "Metric": "Hits@10",
+        "KGEModel": "SACN",
+        "NSMethod": "Unknown",
+        "result": 0.54
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15k-237",
+        "Metric": "Hits@10",
+        "KGEModel": "InteractE",
+        "NSMethod": "Unknown",
+        "result": 0.535
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15k-237",
+        "Metric": "Hits@10",
+        "KGEModel": "RotatE",
+        "NSMethod": "Self-Adversarial Negative Sampling",
+        "result": 0.533
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15k-237",
+        "Metric": "Hits@10",
+        "KGEModel": "TransE",
+        "NSMethod": "Unknown",
+        "result": 0.465
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18RR",
+        "Metric": "MR",
+        "KGEModel": "KGBoost-T",
+        "NSMethod": "Range-Constrained with Co-occurrence Negative Sampling",
+        "result": 2405
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18RR",
+        "Metric": "MR",
+        "KGEModel": "KGBoost-R",
+        "NSMethod": "Range-Constrained with Co-occurrence Negative Sampling",
+        "result": 2476
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18RR",
+        "Metric": "MR",
+        "KGEModel": "RotatE",
+        "NSMethod": "Self-Adversarial Negative Sampling",
+        "result": 3340
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18RR",
+        "Metric": "MRR",
+        "KGEModel": "KGBoost-R",
+        "NSMethod": "Range-Constrained with Co-occurrence Negative Sampling",
+        "result": 0.478
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18RR",
+        "Metric": "MRR",
+        "KGEModel": "RotatE",
+        "NSMethod": "Self-Adversarial Negative Sampling",
+        "result": 0.476
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18RR",
+        "Metric": "MRR",
+        "KGEModel": "SACN",
+        "NSMethod": "Unknown",
+        "result": 0.47
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18RR",
+        "Metric": "MRR",
+        "KGEModel": "InteractE",
+        "NSMethod": "Unknown",
+        "result": 0.463
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18RR",
+        "Metric": "MRR",
+        "KGEModel": "KGBoost-T",
+        "NSMethod": "Range-Constrained with Co-occurrence Negative Sampling",
+        "result": 0.265
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18RR",
+        "Metric": "MRR",
+        "KGEModel": "TransE",
+        "NSMethod": "Unknown",
+        "result": 0.226
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18RR",
+        "Metric": "Hits@1",
+        "KGEModel": "KGBoost-R",
+        "NSMethod": "Range-Constrained with Co-occurrence Negative Sampling",
+        "result": 0.436
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18RR",
+        "Metric": "Hits@1",
+        "KGEModel": "SACN",
+        "NSMethod": "Unknown",
+        "result": 0.43
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18RR",
+        "Metric": "Hits@1",
+        "KGEModel": "RotatE",
+        "NSMethod": "Self-Adversarial Negative Sampling",
+        "result": 0.428
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18RR",
+        "Metric": "Hits@1",
+        "KGEModel": "InteractE",
+        "NSMethod": "Unknown",
+        "result": 0.43
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18RR",
+        "Metric": "Hits@1",
+        "KGEModel": "KGBoost-T",
+        "NSMethod": "Range-Constrained with Co-occurrence Negative Sampling",
+        "result": 0.062
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18RR",
+        "Metric": "Hits@3",
+        "KGEModel": "KGBoost-R",
+        "NSMethod": "Range-Constrained with Co-occurrence Negative Sampling",
+        "result": 0.493
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18RR",
+        "Metric": "Hits@3",
+        "KGEModel": "RotatE",
+        "NSMethod": "Self-Adversarial Negative Sampling",
+        "result": 0.492
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18RR",
+        "Metric": "Hits@3",
+        "KGEModel": "SACN",
+        "NSMethod": "Unknown",
+        "result": 0.48
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18RR",
+        "Metric": "Hits@3",
+        "KGEModel": "KGBoost-T",
+        "NSMethod": "Range-Constrained with Co-occurrence Negative Sampling",
+        "result": 0.445
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18RR",
+        "Metric": "Hits@10",
+        "KGEModel": "RotatE",
+        "NSMethod": "Self-Adversarial Negative Sampling",
+        "result": 0.571
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18RR",
+        "Metric": "Hits@10",
+        "KGEModel": "KGBoost-R",
+        "NSMethod": "Range-Constrained with Co-occurrence Negative Sampling",
+        "result": 0.56
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18RR",
+        "Metric": "Hits@10",
+        "KGEModel": "KGBoost-T",
+        "NSMethod": "Range-Constrained with Co-occurrence Negative Sampling",
+        "result": 0.544
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18RR",
+        "Metric": "Hits@10",
+        "KGEModel": "SACN",
+        "NSMethod": "Unknown",
+        "result": 0.54
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15k-237",
+        "Metric": "MRR",
+        "KGEModel": "RotatE",
+        "NSMethod": "Naive Negative Sampling",
+        "result": 0.295
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15k-237",
+        "Metric": "Hits@10",
+        "KGEModel": "RotatE",
+        "NSMethod": "Naive Negative Sampling",
+        "result": 0.48
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15k-237",
+        "Metric": "MRR",
+        "KGEModel": "KGBoost-R",
+        "NSMethod": "Naive Negative Sampling",
+        "result": 0.307
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15k-237",
+        "Metric": "Hits@10",
+        "KGEModel": "KGBoost-R",
+        "NSMethod": "Naive Negative Sampling",
+        "result": 0.479
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15k-237",
+        "Metric": "MRR",
+        "KGEModel": "RotatE",
+        "NSMethod": "Self-Adversarial Negative Sampling",
+        "result": 0.338
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15k-237",
+        "Metric": "Hits@10",
+        "KGEModel": "RotatE",
+        "NSMethod": "Self-Adversarial Negative Sampling",
+        "result": 0.533
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15k-237",
+        "Metric": "MRR",
+        "KGEModel": "KGBoost-R",
+        "NSMethod": "Self-Adversarial Negative Sampling",
+        "result": 0.354
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15k-237",
+        "Metric": "Hits@10",
+        "KGEModel": "KGBoost-R",
+        "NSMethod": "Self-Adversarial Negative Sampling",
+        "result": 0.532
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15k-237",
+        "Metric": "MRR",
+        "KGEModel": "RotatE",
+        "NSMethod": "Range-Constrained with Co-occurrence Negative Sampling",
+        "result": 0.248
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15k-237",
+        "Metric": "Hits@10",
+        "KGEModel": "RotatE",
+        "NSMethod": "Range-Constrained with Co-occurrence Negative Sampling",
+        "result": 0.419
+      }
+    ]
+  }
+}

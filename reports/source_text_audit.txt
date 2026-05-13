@@ -6,7 +6,7 @@ Artifact version: v1.0.0-paper
 Scope
 - per_article/*.json
 - per_article/*.ttl
-- kg/NSArticles_populated.ttl
+- kg/ns4kge_populated.ttl
 
 Checks
 - Counted generated JSON string values longer than 180 characters.

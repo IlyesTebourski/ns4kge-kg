@@ -1,0 +1,48 @@
+{
+  "Article": {
+    "title": "Op-Trans: An Optimization Framework for Negative Sampling and Triplet-Mapping Properties in Knowledge Graph Embedding",
+    "date": "2023"
+  },
+  "proposedNSMethod": "Cluster-Cache Sampling",
+  "proposedKGEModel": "",
+  "mentionedNSMethods": [
+    "Uniform Random Sampling",
+    "Bernoulli Negative Sampling",
+    "Kbgan Sampling",
+    "NSCaching Sampling"
+  ],
+  "mentionedKGEModels": [
+    "TransE",
+    "TransH",
+    "TransR",
+    "TransD",
+    "TransM",
+    "TranSparse",
+    "STransE",
+    "TransA",
+    "TransAt",
+    "PTransE",
+    "RotatE",
+    "HAKE",
+    "OTE",
+    "SE",
+    "SME",
+    "NTN",
+    "RESCAL"
+  ],
+  "Experimentation": {
+    "Hardware": [
+      "Tesla P100 GPU 16GB RAM"
+    ],
+    "TrainingProtocol": {
+      "LossFunction": [
+        "margin-based ranking loss"
+      ],
+      "Optimizer": [
+        "Adam"
+      ],
+      "learningRate": null,
+      "nsRatio": null
+    }
+  }
+}

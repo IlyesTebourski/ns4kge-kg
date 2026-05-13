@@ -1,0 +1,40 @@
+{
+  "Article": {
+    "title": "CAKE: A Scalable Commonsense-Aware Framework For Multi-View Knowledge Graph Completion",
+    "date": "2022"
+  },
+  "proposedNSMethod": "Commonsense-Aware Negative Sampling",
+  "proposedKGEModel": "",
+  "mentionedNSMethods": [
+    "Uniform Negative Sampling",
+    "Self-Adversarial Negative Sampling",
+    "Domain-based Negative Sampling",
+    "Type-Constrained Negative Sampling",
+    "NSCaching",
+    "None Sampling"
+  ],
+  "mentionedKGEModels": [
+    "TransE",
+    "RotatE",
+    "HAKE",
+    "RESCAL",
+    "ComplEx",
+    "DistMult",
+    "TransH",
+    "KBGAN",
+    "JOIE"
+  ],
+  "Experimentation": {
+    "Hardware": [
+      "GeForce GTX 2080Ti"
+    ],
+    "TrainingProtocol": {
+      "LossFunction": [],
+      "Optimizer": [
+        "Adam"
+      ],
+      "learningRate": null,
+      "nsRatio": 2.0
+    }
+  }
+}

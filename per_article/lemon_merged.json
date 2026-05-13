@@ -1,0 +1,616 @@
+{
+  "Article": {
+    "title": "Language Model-driven Negative Sampling",
+    "date": "2022"
+  },
+  "proposedNSMethod": "Language Model-driven Negative Sampling",
+  "proposedKGEModel": "",
+  "mentionedNSMethods": [
+    "Bernoulli Negative Sampling",
+    "Adversarial Negative Sampling",
+    "Uniform SANS",
+    "Uniform Negative Sampling",
+    "Uniform RW-SANS",
+    "Structure-aware Negative Sampling",
+    "Self-Adv. SANS",
+    "Self-Adv. RW-SANS",
+    "Adversarial Language Model-driven Negative Sampling",
+    "NSCaching",
+    "Generative Adversarial Network-based Negative Sampling",
+    "Adversarial Uniform Negative Sampling",
+    "KBGAN"
+  ],
+  "mentionedKGEModels": [
+    "RotatE",
+    "TransE"
+  ],
+  "Experimentation": {
+    "Hardware": [],
+    "TrainingProtocol": {
+      "LossFunction": [
+        "margin-based ranking loss"
+      ],
+      "Optimizer": [],
+      "learningRate": null,
+      "nsRatio": null
+    },
+    "Configurations": [
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18",
+        "Metric": "MRR",
+        "KGEModel": "RotatE",
+        "NSMethod": "Uniform Negative Sampling",
+        "result": 0.9474
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18",
+        "Metric": "Hits@10",
+        "KGEModel": "RotatE",
+        "NSMethod": "Uniform Negative Sampling",
+        "result": 96.09
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18RR",
+        "Metric": "MRR",
+        "KGEModel": "RotatE",
+        "NSMethod": "Uniform Negative Sampling",
+        "result": 0.4711
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18RR",
+        "Metric": "Hits@10",
+        "KGEModel": "RotatE",
+        "NSMethod": "Uniform Negative Sampling",
+        "result": 56.51
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18",
+        "Metric": "MRR",
+        "KGEModel": "RotatE",
+        "NSMethod": "Uniform SANS",
+        "result": 0.9499
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18",
+        "Metric": "Hits@10",
+        "KGEModel": "RotatE",
+        "NSMethod": "Uniform SANS",
+        "result": 95.97
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18RR",
+        "Metric": "MRR",
+        "KGEModel": "RotatE",
+        "NSMethod": "Uniform SANS",
+        "result": 0.4769
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18RR",
+        "Metric": "Hits@10",
+        "KGEModel": "RotatE",
+        "NSMethod": "Uniform SANS",
+        "result": 55.76
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18",
+        "Metric": "MRR",
+        "KGEModel": "RotatE",
+        "NSMethod": "Uniform RW-SANS",
+        "result": 0.9489
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18",
+        "Metric": "Hits@10",
+        "KGEModel": "RotatE",
+        "NSMethod": "Uniform RW-SANS",
+        "result": 96.07
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18RR",
+        "Metric": "MRR",
+        "KGEModel": "RotatE",
+        "NSMethod": "Uniform RW-SANS",
+        "result": 0.4796
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18RR",
+        "Metric": "Hits@10",
+        "KGEModel": "RotatE",
+        "NSMethod": "Uniform RW-SANS",
+        "result": 57.12
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18",
+        "Metric": "MRR",
+        "KGEModel": "RotatE",
+        "NSMethod": "Language Model-driven Negative Sampling",
+        "result": 0.9481
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18",
+        "Metric": "Hits@10",
+        "KGEModel": "RotatE",
+        "NSMethod": "Language Model-driven Negative Sampling",
+        "result": 96.18
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18RR",
+        "Metric": "MRR",
+        "KGEModel": "RotatE",
+        "NSMethod": "Language Model-driven Negative Sampling",
+        "result": 0.4732
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18RR",
+        "Metric": "Hits@10",
+        "KGEModel": "RotatE",
+        "NSMethod": "Language Model-driven Negative Sampling",
+        "result": 57.33
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18",
+        "Metric": "MRR",
+        "KGEModel": "TransE",
+        "NSMethod": "Uniform Negative Sampling",
+        "result": 0.6085
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18",
+        "Metric": "Hits@10",
+        "KGEModel": "TransE",
+        "NSMethod": "Uniform Negative Sampling",
+        "result": 95.53
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18RR",
+        "Metric": "MRR",
+        "KGEModel": "TransE",
+        "NSMethod": "Uniform Negative Sampling",
+        "result": 0.2022
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18RR",
+        "Metric": "Hits@10",
+        "KGEModel": "TransE",
+        "NSMethod": "Uniform Negative Sampling",
+        "result": 49.63
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18",
+        "Metric": "MRR",
+        "KGEModel": "TransE",
+        "NSMethod": "KBGAN",
+        "result": 0.6606
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18",
+        "Metric": "Hits@10",
+        "KGEModel": "TransE",
+        "NSMethod": "KBGAN",
+        "result": 94.8
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18RR",
+        "Metric": "MRR",
+        "KGEModel": "TransE",
+        "NSMethod": "KBGAN",
+        "result": 0.1808
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18RR",
+        "Metric": "Hits@10",
+        "KGEModel": "TransE",
+        "NSMethod": "KBGAN",
+        "result": 43.24
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18",
+        "Metric": "MRR",
+        "KGEModel": "TransE",
+        "NSMethod": "NSCaching",
+        "result": 0.7818
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18",
+        "Metric": "Hits@10",
+        "KGEModel": "TransE",
+        "NSMethod": "NSCaching",
+        "result": 94.63
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18RR",
+        "Metric": "MRR",
+        "KGEModel": "TransE",
+        "NSMethod": "NSCaching",
+        "result": 0.2002
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18RR",
+        "Metric": "Hits@10",
+        "KGEModel": "TransE",
+        "NSMethod": "NSCaching",
+        "result": 47.83
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18",
+        "Metric": "MRR",
+        "KGEModel": "TransE",
+        "NSMethod": "Uniform SANS",
+        "result": 0.8228
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18",
+        "Metric": "Hits@10",
+        "KGEModel": "TransE",
+        "NSMethod": "Uniform SANS",
+        "result": 95.09
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18RR",
+        "Metric": "MRR",
+        "KGEModel": "TransE",
+        "NSMethod": "Uniform SANS",
+        "result": 0.2254
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18RR",
+        "Metric": "Hits@10",
+        "KGEModel": "TransE",
+        "NSMethod": "Uniform SANS",
+        "result": 51.15
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18",
+        "Metric": "MRR",
+        "KGEModel": "TransE",
+        "NSMethod": "Uniform RW-SANS",
+        "result": 0.8195
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18",
+        "Metric": "Hits@10",
+        "KGEModel": "TransE",
+        "NSMethod": "Uniform RW-SANS",
+        "result": 95.22
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18RR",
+        "Metric": "MRR",
+        "KGEModel": "TransE",
+        "NSMethod": "Uniform RW-SANS",
+        "result": 0.2317
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18RR",
+        "Metric": "Hits@10",
+        "KGEModel": "TransE",
+        "NSMethod": "Uniform RW-SANS",
+        "result": 53.41
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18",
+        "Metric": "MRR",
+        "KGEModel": "TransE",
+        "NSMethod": "Language Model-driven Negative Sampling",
+        "result": 0.7646
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18",
+        "Metric": "Hits@10",
+        "KGEModel": "TransE",
+        "NSMethod": "Language Model-driven Negative Sampling",
+        "result": 95.57
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18RR",
+        "Metric": "MRR",
+        "KGEModel": "TransE",
+        "NSMethod": "Language Model-driven Negative Sampling",
+        "result": 0.2145
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18RR",
+        "Metric": "Hits@10",
+        "KGEModel": "TransE",
+        "NSMethod": "Language Model-driven Negative Sampling",
+        "result": 51.22
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18",
+        "Metric": "MRR",
+        "KGEModel": "RotatE",
+        "NSMethod": "Adversarial Uniform Negative Sampling",
+        "result": 0.9498
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18",
+        "Metric": "Hits@10",
+        "KGEModel": "RotatE",
+        "NSMethod": "Adversarial Uniform Negative Sampling",
+        "result": 96.05
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18RR",
+        "Metric": "MRR",
+        "KGEModel": "RotatE",
+        "NSMethod": "Adversarial Uniform Negative Sampling",
+        "result": 0.476
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18RR",
+        "Metric": "Hits@10",
+        "KGEModel": "RotatE",
+        "NSMethod": "Adversarial Uniform Negative Sampling",
+        "result": 57.29
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18",
+        "Metric": "MRR",
+        "KGEModel": "RotatE",
+        "NSMethod": "Self-Adv. SANS",
+        "result": 0.9494
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18",
+        "Metric": "Hits@10",
+        "KGEModel": "RotatE",
+        "NSMethod": "Self-Adv. SANS",
+        "result": 95.85
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18RR",
+        "Metric": "MRR",
+        "KGEModel": "RotatE",
+        "NSMethod": "Self-Adv. SANS",
+        "result": 0.4745
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18RR",
+        "Metric": "Hits@10",
+        "KGEModel": "RotatE",
+        "NSMethod": "Self-Adv. SANS",
+        "result": 57.12
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18",
+        "Metric": "MRR",
+        "KGEModel": "RotatE",
+        "NSMethod": "Self-Adv. RW-SANS",
+        "result": 0.9496
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18",
+        "Metric": "Hits@10",
+        "KGEModel": "RotatE",
+        "NSMethod": "Self-Adv. RW-SANS",
+        "result": 96.09
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18RR",
+        "Metric": "MRR",
+        "KGEModel": "RotatE",
+        "NSMethod": "Self-Adv. RW-SANS",
+        "result": 0.4805
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18RR",
+        "Metric": "Hits@10",
+        "KGEModel": "RotatE",
+        "NSMethod": "Self-Adv. RW-SANS",
+        "result": 56.94
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18",
+        "Metric": "MRR",
+        "KGEModel": "RotatE",
+        "NSMethod": "Adversarial Language Model-driven Negative Sampling",
+        "result": 0.9469
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18",
+        "Metric": "Hits@10",
+        "KGEModel": "RotatE",
+        "NSMethod": "Adversarial Language Model-driven Negative Sampling",
+        "result": 95.93
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18RR",
+        "Metric": "MRR",
+        "KGEModel": "RotatE",
+        "NSMethod": "Adversarial Language Model-driven Negative Sampling",
+        "result": 0.477
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18RR",
+        "Metric": "Hits@10",
+        "KGEModel": "RotatE",
+        "NSMethod": "Adversarial Language Model-driven Negative Sampling",
+        "result": 57.35
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18",
+        "Metric": "MRR",
+        "KGEModel": "TransE",
+        "NSMethod": "Adversarial Uniform Negative Sampling",
+        "result": 0.7722
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18",
+        "Metric": "Hits@10",
+        "KGEModel": "TransE",
+        "NSMethod": "Adversarial Uniform Negative Sampling",
+        "result": 92.02
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18RR",
+        "Metric": "MRR",
+        "KGEModel": "TransE",
+        "NSMethod": "Adversarial Uniform Negative Sampling",
+        "result": 0.2232
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18RR",
+        "Metric": "Hits@10",
+        "KGEModel": "TransE",
+        "NSMethod": "Adversarial Uniform Negative Sampling",
+        "result": 52.78
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18",
+        "Metric": "MRR",
+        "KGEModel": "TransE",
+        "NSMethod": "Self-Adv. SANS",
+        "result": 0.7136
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18",
+        "Metric": "Hits@10",
+        "KGEModel": "TransE",
+        "NSMethod": "Self-Adv. SANS",
+        "result": 84.06
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18RR",
+        "Metric": "MRR",
+        "KGEModel": "TransE",
+        "NSMethod": "Self-Adv. SANS",
+        "result": 0.2249
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18RR",
+        "Metric": "Hits@10",
+        "KGEModel": "TransE",
+        "NSMethod": "Self-Adv. SANS",
+        "result": 53.21
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18",
+        "Metric": "MRR",
+        "KGEModel": "TransE",
+        "NSMethod": "Self-Adv. RW-SANS",
+        "result": 0.7429
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18",
+        "Metric": "Hits@10",
+        "KGEModel": "TransE",
+        "NSMethod": "Self-Adv. RW-SANS",
+        "result": 88.51
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18RR",
+        "Metric": "MRR",
+        "KGEModel": "TransE",
+        "NSMethod": "Self-Adv. RW-SANS",
+        "result": 0.2273
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18RR",
+        "Metric": "Hits@10",
+        "KGEModel": "TransE",
+        "NSMethod": "Self-Adv. RW-SANS",
+        "result": 53.81
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18",
+        "Metric": "MRR",
+        "KGEModel": "TransE",
+        "NSMethod": "Adversarial Language Model-driven Negative Sampling",
+        "result": 0.7947
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18",
+        "Metric": "Hits@10",
+        "KGEModel": "TransE",
+        "NSMethod": "Adversarial Language Model-driven Negative Sampling",
+        "result": 94.92
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18RR",
+        "Metric": "MRR",
+        "KGEModel": "TransE",
+        "NSMethod": "Adversarial Language Model-driven Negative Sampling",
+        "result": 0.2274
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18RR",
+        "Metric": "Hits@10",
+        "KGEModel": "TransE",
+        "NSMethod": "Adversarial Language Model-driven Negative Sampling",
+        "result": 53.2
+      }
+    ]
+  }
+}

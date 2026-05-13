@@ -1,0 +1,40 @@
+{
+  "Article": {
+    "title": "Knowledge Graph Embedding via Adaptive Negative Subsampling",
+    "date": "2023"
+  },
+  "proposedNSMethod": "Adaptive Negative Sampling",
+  "proposedKGEModel": "",
+  "mentionedNSMethods": [
+    "Random Negative Sampling",
+    "Frequency-based Negative Sampling",
+    "Adversarial Negative Sampling"
+  ],
+  "mentionedKGEModels": [
+    "TransE",
+    "TransH",
+    "TransR",
+    "TransD",
+    "TransG",
+    "RESCAL",
+    "DistMult",
+    "ComplEx",
+    "MEI",
+    "MEIM",
+    "ConvE",
+    "MuRP",
+    "RotatE",
+    "HAKE"
+  ],
+  "Experimentation": {
+    "Hardware": [],
+    "TrainingProtocol": {
+      "LossFunction": [
+        "margin-based ranking loss"
+      ],
+      "Optimizer": [],
+      "learningRate": null,
+      "nsRatio": null
+    }
+  }
+}

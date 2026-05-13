@@ -1,9 +1,56 @@
 slug,title,year,source_file,source_sha256,source_doi,source_url
-eans,"Entity Aware Negative Sampling with Auxiliary Loss of False Negative Prediction for Knowledge Graph Embedding",2022,EANS.md,08c9d676ce783951caa0f35614faaff56a51fccf8a37b1667007cb7428f76329,10.48550/arxiv.2210.06242,https://arxiv.org/abs/2210.06242
-ghn,"Improving Knowledge Graph Completion with Generative Hard Negative Mining",2023,GHN.md,c3ba2f3991d1f254cd2d5a44e28d75e613f63f6f6fe8b5deebc639e74b2e8db2,10.18653/v1/2023.findings-acl.362,https://doi.org/10.18653/v1/2023.findings-acl.362
-igan,"Incorporating GAN for Negative Sampling in Knowledge Representation Learning",2018,IGAN.md,0f1bf57c9f69ae19ddbd3e06718ae577366220149864b8dccd2fca2084546005,10.1609/aaai.v32i1.11536,https://doi.org/10.1609/aaai.v32i1.11536
-kbgan,"KBGAN: Adversarial Learning for Knowledge Graph Embeddings",2018,KBGAN.md,81ff94799e3a8739271b45d013d201fc3e737d3b692b5d1f527c1d02bb5d8588,10.18653/v1/n18-1133,https://doi.org/10.18653/v1/n18-1133
-las,"Adversarial Knowledge Representation Learning without External Model",2018,LAS.md,692e6b1586639f73d5f903749ff3a1501fddb3b1312a59c4b8c352e06b0c91d3,10.1109/access.2018.2889481,https://doi.org/10.1109/access.2018.2889481
-m2ixkg,"MixKG: Mixing for harder negative samples in knowledge graph",2022,M2ixKG.md,9cce41d62a5671f3042e811a7f4256552a2dcc16d99bae824e13d0fcc0a74e86,10.48550/arxiv.2202.09606,https://arxiv.org/abs/2202.09606
-pns,"Enhancing Knowledge Graph Embedding with Probabilistic Negative Sampling",2017,PNS.md,382e5f9811d3a52d122aa9cd2982d24961e1a2247464a1660ef1e0c7d7ecbae6,10.1145/3041021.3054238,https://doi.org/10.1145/3041021.3054238
-randomcorrupt,"Investigations on Knowledge Base Embedding for Relation Prediction and Extraction",2018,RandomCorrupt.md,c1e48cf7244d41c83584959c16b08c0415d25a6fd0aa5c28b7a5973237da7965,10.48550/arxiv.1802.02114,https://arxiv.org/abs/1802.02114
+adns,Affinity Dependent Negative Sampling for Knowledge Graph Embeddings,2020,ADNS.md,264caa6e95d8e97e06aaf0cb840334e3e8970fd5cfb4b15681d9740db416b61f,,
+adaptativens,Knowledge Graph Embedding via Adaptive Negative Subsampling,2023,AdaptativeNS.md,8522be3d08f873a15b0b333b755db3165d9ba23ad2c7d52b87d15b156c22137c,,
+asa,Relation-aware Graph Attention Model With Adaptive Self-adversarial Training,2021,ASA.md,ade66638c04dbe80ab7068a23cea1cf02fa58b5ca57185ac2126845062fb5e35,,
+batchns,PyTorch-BigGraph: A Large-scale Graph Embedding System,2019,BatchNS.md,9f6c277ec2f5234b81cd78b164c62879e5657221b69b6962db0394ea036b3664,,
+cake,CAKE: A Scalable Commonsense-Aware Framework For Multi-View Knowledge Graph Completion,2022,CAKE.md,b0b5a578fbda109d2d09853bd90edf949d876fe806b71f1f9da6ca42b5b9a940,,
+cans,Confidence-Aware Negative Sampling Method for Noisy Knowledge Graph Embedding,2018,CANS.md,fa8dafb0835a7ddb9c3d68ae064e05e481fb3a8477aada6aac258df14a95ba88,,
+ccs,Op-Trans: An Optimization Framework for Negative Sampling and Triplet-Mapping Properties in Knowledge Graph Embedding,2023,CCS.md,239569501c36404547ca596aa8100c1585ef49fcdfddaeceeb636d0c9809a4d5,,
+conceptdriven,A Novel Concept-Driven Negative Sampling Mechanism for Enhancing Semanticity and Interpretability of Knowledge Graph Completion Task,2023,ConceptDriven.md,a95dfe9bbd27b42012fa3a8076ff9ff7dba1e4e6649ab6f3cf6b9f5be35f65e6,,
+condconstraints,Conditional Constraints for Knowledge Graph Embeddings,2020,CondConstraints.md,8c59e4fcc8e4d6cc2c8e4d67336a696704257339dc1dc368b69a848f94dceddc,,
+dans,Diversified and Adaptive Negative Sampling on Knowledge Graphs,2025,dans.md,1ba1bc1c999cc0d0ecf20dfb8e82333d1391a673df2f9bd9b7f6717e2afa3a89,,
+demix,Negative Sampling with Adaptive Denoising Mixup for Knowledge Graph Embedding,2023,DeMix.md,2cad29cd62660b2c05393a7de377e225f8c4dd2865bc8c7585ae0e43c7c320c2,,
+dhns,Diffusion-based Hierarchical Negative Sampling for Multimodal Knowledge Graph Completion,2025,DHNS.md,69c5df8730734da2849c82440cac200c1781d45520147762e4a89f1ae8d4175b,,
+dmns,Diffusion-based Negative Sampling on Graphs for Link Prediction,2024,DMNS.md,a2c2b9a7f7fcf97b5b56f2ea29e173a1f10210e837304f832308a021393bf488,,
+dns,Distributional Negative Sampling for Knowledge Base Completion,2019,DNS.md,95be90f7552d5434f86a17f33b916904e3b5feb1d15c6d2cc5264d03279ec6e8,,
+domainns,An Interpretable Knowledge Transfer Model for Knowledge Base Completion,2017,DomainNS.md,0ccc25753db49bf9dd3574a8e7ee72bbd4cbe8dad6e7b9f6ff75494152d10177,,
+eans,Entity Aware Negative Sampling with Auxiliary Loss of False Negative Prediction for Knowledge Graph Embedding,2022,EANS.md,08c9d676ce783951caa0f35614faaff56a51fccf8a37b1667007cb7428f76329,10.48550/arxiv.2210.06242,https://arxiv.org/abs/2210.06242
+erdns,Entity-Relation Distribution-aware Negative Sampling for Knowledge Graph Embedding,2024,ERDNS.md,10173f357f5d584a328c166d80965eb980a77aedd5225e762fcca74a4a0e7274,,
+etruncateduns,Bootstrapping Entity Alignment with Knowledge Graph Embedding,2018,eTruncatedUNS.md,f2dedd0d87199ef93ca1b5a04a3775df015746013a3120b626d3f0c9c1751c89,,
+ghn,Improving Knowledge Graph Completion with Generative Hard Negative Mining,2023,GHN.md,c3ba2f3991d1f254cd2d5a44e28d75e613f63f6f6fe8b5deebc639e74b2e8db2,10.18653/v1/2023.findings-acl.362,https://doi.org/10.18653/v1/2023.findings-acl.362
+gibbsns,Link Prediction Based on Data Augmentation and Metric Learning Knowledge Graph Embedding,2024,GibbsNS.md,9e8c6df36a654ed2f1e506e268ea35373dde8365f7acccd0d2d6d06d59be3591,,
+gndn,A generative adversarial network for single and multi-hop distributional knowledge base completion,2021,GNDN.md,be8aea9d030d34e0e7a9ccc43fa6715aaf7ab512256c9416a81a6c75f199692c,,
+gns,Good negative sampling for triple classification,,GNS.md,6a7fef779030172b84b3d298bc2a7c6cc451dc5887b1c32a3b78419456841696,,
+graphgan,GraphGAN: Graph Representation Learning with Generative Adversarial Nets,2017,GraphGAN.md,33fd3bbcad850f96071bc12b63e0f9f378dff32a930ec69568a17196d6d49b6a,,
+hasa,HaSa: Hardness and Structure-Aware Contrastive Knowledge Graph Embedding,2024,HaSa.md,e0a3d457d1ba04b41caae0c8ab4d700c2191ce70630a9eb12e5070623d9d7b5b,,
+htens,Hierarchical Type Enhanced Negative Sampling for Knowledge Graph Embedding,2023,HTENS.md,b6d8a67fcb283621e248deadb21b2484311efb2bf8b1717f16298da8dc3f2bd8,,
+igan,Incorporating GAN for Negative Sampling in Knowledge Representation Learning,2018,IGAN.md,0f1bf57c9f69ae19ddbd3e06718ae577366220149864b8dccd2fca2084546005,10.1609/aaai.v32i1.11536,https://doi.org/10.1609/aaai.v32i1.11536
+kbgan,KBGAN: Adversarial Learning for Knowledge Graph Embeddings,2018,KBGAN.md,81ff94799e3a8739271b45d013d201fc3e737d3b692b5d1f527c1d02bb5d8588,10.18653/v1/n18-1133,https://doi.org/10.18653/v1/n18-1133
+ksgan,A Knowledge Selective Adversarial Network for Link Prediction in Knowledge Graph,2019,KSGAN.md,620192648549676db5926290af07d19b816d7920cfecd4e9efdd963517229be6,,
+las,Adversarial Knowledge Representation Learning without External Model,2018,LAS.md,692e6b1586639f73d5f903749ff3a1501fddb3b1312a59c4b8c352e06b0c91d3,10.1109/access.2018.2889481,https://doi.org/10.1109/access.2018.2889481
+lemon,Language Model-driven Negative Sampling,2022,LEMON.md,af5a708a85f129a3a9afbe0af9a9876335d59df33687515bbcb0c3fbb56a9fb4,,
+localcognitive,RatE: Relation-Adaptive Translating Embedding for Knowledge Graph Completion,2020,Localcognitive.md,0588e125c8bf58d0803d4855641d404e0e3d1b495ea02e708c168b7ab4154537,,
+lts,Knowledge Alignment Based on Negative Sampling of Potential Topic Similarities,2022,LTS.md,8c72d1383209eddd8de4a1363d8c2d74ff21b9b77f1bb42cc81177d3a25f29ea,,
+m2ixkg,MixKG: Mixing for harder negative samples in knowledge graph,2022,M2ixKG.md,9cce41d62a5671f3042e811a7f4256552a2dcc16d99bae824e13d0fcc0a74e86,10.48550/arxiv.2202.09606,https://arxiv.org/abs/2202.09606
+mcns,Understanding Negative Sampling in Graph Representation Learning,2020,MCNS.md,d0d26f19ade323d45b923a5826a3470a668eb591b130db803bb7f6ca8a1d7f64,,
+mdncaching,MDNCaching: A Strategy to Generate Quality Negatives for Knowledge Graph Embedding,2022,MDNCaching.md,8edc6355835aa746c5e3c17ed9315ad5dfa7ee244b58eabc9f9a31b58365cf17,,
+nmiss,Analysis of the Impact of Negative Sampling on Link Prediction in Knowledge Graphs,2018,NMiss.md,ed8576e48eeb92f5adc2d9973b32e92c6383cd403a5dd09acefe178663f21322,,
+noigan,NoiGAN: Noise Aware Knowledge Graph Embedding with GAN,2020,NoiGAN.md,f480b65cb42d843dc6110576ccd3667ef836c3f5b637c18452eeb2cde6d7d55a,,
+nscaching,NSCaching: Simple and Efficient Negative Sampling for Knowledge Graph Embedding,2019,NSCaching.md,9af2462b75ce5908ff1536365ad5f15871e64354d9267fef425035b3c63e0a35,,
+pns,Enhancing Knowledge Graph Embedding with Probabilistic Negative Sampling,2017,PNS.md,382e5f9811d3a52d122aa9cd2982d24961e1a2247464a1660ef1e0c7d7ecbae6,10.1145/3041021.3054238,https://doi.org/10.1145/3041021.3054238
+raakgc,Knowledge Graph Completion with Relation-Aware Anchor Enhancement,2025,RAAKGC.md,ddd9f30f005115c5f5a17ec04e905efb8ef1c1e3610e4bcd9fdd393199106d6d,,
+randomcorrupt,Investigations on Knowledge Base Embedding for Relation Prediction and Extraction,2018,RandomCorrupt.md,c1e48cf7244d41c83584959c16b08c0415d25a6fd0aa5c28b7a5973237da7965,10.48550/arxiv.1802.02114,https://arxiv.org/abs/1802.02114
+rcwc,KGBoost: A Classification-Based Knowledge Base Completion Method with Negative Sampling,2021,RCWC.md,76d620a12ebf65fdb9d9623dec26d5ed59113a53fbe26c6cb101415e5044e677,,
+reasonkge,Improving Knowledge Graph Embeddings with Ontological Reasoning,2022,ReasonKGE.md,f16ee145c8e954a151a386e412f33c9cdd4cd628f5bbb530dec5ec7f94c5c42b,,
+ruga,Improving Knowledge Graph Completion Using Soft Rules and Adversarial Learning,2021,RUGA.md,eaa1e15eaf4b06bc4c021058798f086048a7b118da81063f485585b94617bfba,,
+sans,Structure Aware Negative Sampling in Knowledge Graphs,2020,SANS.md,ad2ee3b009cd8269aecd04bdf575cd5956980fed6b68456aafef0eca5e2fabf3,,
+selfadv,RotatE: Knowledge Graph Embedding by Relational Rotation in Complex Space,2019,SelfAdv.md,1f609e8b99652ed15c25aa132d0734a645f8c8be4e3f3c2bf71af95b2c215608,,
+sns,Simple negative sampling for link prediction in knowledge graphs,2021,SNS.md,144f50c24634ae9d2f8aca04833c460af2855094e62d9e6faa8f83b17839088d,,
+sparsensg,A Novel Negative Sampling Based on Frequency of Relational Association Entities for Knowledge Graph Embedding,2021,SparseNSG.md,a67aea9dff0cddc0c1d2ffc1ed9d6f8d9a87eb5cb6e910537dc72f0ac345c26a,,
+stc,Representation Learning of Knowledge Graphs with Hierarchical Types,2016,STC.md,8c9f44119b6ac61f7a65fa27ffd8f0621fa9acda48de464a0acc337650b1b88c,,
+tans,Unified Interpretation of Smoothing Methods for Negative Sampling Loss Functions in Knowledge Graph Embedding,2024,TANS.md,a99387eae27bbacbb5cb86f8e1d466c72f8db4ee7ce03cbc3e86b81017d303d7,,
+truncatedns,Fusing Attribute Character Embeddings with Truncated Negative Sampling for Entity Alignment,2023,TruncatedNS.md,2197b0da9abca03e7a5e773d50adb588c3b974a6c9d17b97136725341c46917d,,
+tuckerdncaching,TuckerDNCaching: high-quality negative sampling with tucker decomposition,2023,TuckerDNCaching.md,336097c9e970a49329a7495f724f2b48c60ebf893f437a39763bb89d01bef4ed,,
+typeaugmented,A type-augmented knowledge graph embedding framework for knowledge graph completion,2023,TypeAugmented.md,23280c7dfde04bbeb3f73dbe71e8119c13ae667dd0d9a80ae17319d6d583c043,,
+typeconstraints,Type-Constrained Representation Learning in Knowledge Graphs,2015,TypeConstraints.md,ae60eb7074d351fdfe37f3c0e36c1edb96a128f604712cffb0baae0e9e5c3e25,,
+uniform,Translating Embeddings for Modeling Multi-relational Data,2013,Uniform.md,8877c5e92263b22364b26bab5bd661aa21e14ed6b19bcd122f948eb09329c011,,

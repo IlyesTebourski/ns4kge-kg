@@ -1,0 +1,2077 @@
+<article/nscaching> rdf:type ns4kge:Article .
+<article/nscaching> ns4kge:title "NSCaching: Simple and Efficient Negative Sampling for Knowledge Graph Embedding"^^xsd:string .
+<article/nscaching> ns4kge:date "2019"^^xsd:gYear .
+<article/nscaching> ns4kge:proposesNSMethod <ns-method/nscaching> .
+<article/nscaching> ns4kge:mentionsNSMethod <ns-method/nscaching-scratch> .
+<article/nscaching> ns4kge:mentionsNSMethod <ns-method/self-paced-gan> .
+<article/nscaching> ns4kge:mentionsNSMethod <ns-method/uniform-negative-sampling> .
+<article/nscaching> ns4kge:mentionsNSMethod <ns-method/bernoulli-negative-sampling> .
+<article/nscaching> ns4kge:mentionsNSMethod <ns-method/kbgan-scratch> .
+<article/nscaching> ns4kge:mentionsNSMethod <ns-method/kbgan> .
+<article/nscaching> ns4kge:mentionsNSMethod <ns-method/igan> .
+<article/nscaching> ns4kge:mentionsNSMethod <ns-method/igan-scratch> .
+<article/nscaching> ns4kge:mentionsKGEModel <kge-model/distmult> .
+<article/nscaching> ns4kge:mentionsKGEModel <kge-model/analogy> .
+<article/nscaching> ns4kge:mentionsKGEModel <kge-model/transm> .
+<article/nscaching> ns4kge:mentionsKGEModel <kge-model/transh> .
+<article/nscaching> ns4kge:mentionsKGEModel <kge-model/transd> .
+<article/nscaching> ns4kge:mentionsKGEModel <kge-model/hole> .
+<article/nscaching> ns4kge:mentionsKGEModel <kge-model/transr> .
+<article/nscaching> ns4kge:mentionsKGEModel <kge-model/transe> .
+<article/nscaching> ns4kge:mentionsKGEModel <kge-model/transparse> .
+<article/nscaching> ns4kge:mentionsKGEModel <kge-model/complex> .
+<article/nscaching> ns4kge:mentionsKGEModel <kge-model/manifolde> .
+<article/nscaching> ns4kge:mentionsKGEModel <kge-model/rescal> .
+<article/nscaching> ns4kge:hasExperimentation <experimentation/nscaching> .
+
+<category/self-adversarial-ns> rdf:type ns4kge:Category .
+
+<subcategory/direct> rdf:type ns4kge:Subcategory .
+
+<ns-method/nscaching> rdf:type ns4kge:NSMethod .
+<ns-method/nscaching> ns4kge:hasCategory <category/self-adversarial-ns> .
+<ns-method/nscaching> ns4kge:hasSubcategory <subcategory/direct> .
+
+<ns-method/nscaching-scratch> rdf:type ns4kge:NSMethod .
+
+<ns-method/self-paced-gan> rdf:type ns4kge:NSMethod .
+
+<ns-method/uniform-negative-sampling> rdf:type ns4kge:NSMethod .
+<category/static-ns> rdf:type ns4kge:Category .
+
+<ns-method/uniform-negative-sampling> ns4kge:hasCategory <category/static-ns> .
+<subcategory/random> rdf:type ns4kge:Subcategory .
+
+<ns-method/uniform-negative-sampling> ns4kge:hasSubcategory <subcategory/random> .
+
+<ns-method/bernoulli-negative-sampling> rdf:type ns4kge:NSMethod .
+<ns-method/bernoulli-negative-sampling> ns4kge:hasCategory <category/static-ns> .
+<subcategory/probabilistic> rdf:type ns4kge:Subcategory .
+
+<ns-method/bernoulli-negative-sampling> ns4kge:hasSubcategory <subcategory/probabilistic> .
+
+<ns-method/kbgan-scratch> rdf:type ns4kge:NSMethod .
+
+<ns-method/kbgan> rdf:type ns4kge:NSMethod .
+<category/adversarial-ns> rdf:type ns4kge:Category .
+
+<ns-method/kbgan> ns4kge:hasCategory <category/adversarial-ns> .
+<subcategory/standard> rdf:type ns4kge:Subcategory .
+
+<ns-method/kbgan> ns4kge:hasSubcategory <subcategory/standard> .
+
+<ns-method/igan> rdf:type ns4kge:NSMethod .
+<ns-method/igan> ns4kge:hasCategory <category/adversarial-ns> .
+<ns-method/igan> ns4kge:hasSubcategory <subcategory/standard> .
+
+<ns-method/igan-scratch> rdf:type ns4kge:NSMethod .
+
+<kge-model/distmult> rdf:type ns4kge:KGEModel .
+
+<kge-model/analogy> rdf:type ns4kge:KGEModel .
+
+<kge-model/transm> rdf:type ns4kge:KGEModel .
+
+<kge-model/transh> rdf:type ns4kge:KGEModel .
+
+<kge-model/transd> rdf:type ns4kge:KGEModel .
+
+<kge-model/hole> rdf:type ns4kge:KGEModel .
+
+<kge-model/transr> rdf:type ns4kge:KGEModel .
+
+<kge-model/transe> rdf:type ns4kge:KGEModel .
+
+<kge-model/transparse> rdf:type ns4kge:KGEModel .
+
+<kge-model/complex> rdf:type ns4kge:KGEModel .
+
+<kge-model/manifolde> rdf:type ns4kge:KGEModel .
+
+<kge-model/rescal> rdf:type ns4kge:KGEModel .
+
+<dataset/wn18> rdf:type ns4kge:Dataset .
+<task/link-prediction> rdf:type ns4kge:Task .
+<metric/mrr> rdf:type ns4kge:Metric .
+<metric/mr> rdf:type ns4kge:Metric .
+<metric/hits-10> rdf:type ns4kge:Metric .
+<dataset/wn18rr> rdf:type ns4kge:Dataset .
+<dataset/fb15k> rdf:type ns4kge:Dataset .
+<dataset/fb15k-237> rdf:type ns4kge:Dataset .
+<task/triple-classification> rdf:type ns4kge:Task .
+<metric/accuracy> rdf:type ns4kge:Metric .
+<loss-function/margin-based-ranking-loss> rdf:type ns4kge:LossFunction .
+<loss-function/logistic-loss> rdf:type ns4kge:LossFunction .
+<optimizer/adam> rdf:type ns4kge:Optimizer .
+<hardware/titan-xp-gpu> rdf:type ns4kge:Hardware .
+
+<experimentation/nscaching> rdf:type ns4kge:Experimentation .
+<experimentation/nscaching> ns4kge:hasTrainingProtocol <training-protocol/nscaching> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/1> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/2> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/3> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/4> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/5> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/6> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/7> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/8> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/9> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/10> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/11> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/12> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/13> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/14> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/15> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/16> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/17> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/18> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/19> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/20> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/21> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/22> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/23> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/24> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/25> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/26> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/27> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/28> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/29> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/30> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/31> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/32> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/33> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/34> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/35> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/36> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/37> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/38> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/39> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/40> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/41> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/42> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/43> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/44> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/45> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/46> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/47> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/48> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/49> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/50> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/51> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/52> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/53> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/54> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/55> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/56> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/57> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/58> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/59> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/60> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/61> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/62> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/63> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/64> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/65> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/66> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/67> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/68> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/69> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/70> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/71> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/72> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/73> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/74> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/75> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/76> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/77> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/78> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/79> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/80> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/81> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/82> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/83> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/84> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/85> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/86> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/87> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/88> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/89> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/90> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/91> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/92> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/93> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/94> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/95> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/96> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/97> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/98> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/99> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/100> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/101> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/102> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/103> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/104> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/105> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/106> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/107> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/108> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/109> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/110> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/111> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/112> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/113> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/114> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/115> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/116> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/117> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/118> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/119> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/120> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/121> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/122> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/123> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/124> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/125> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/126> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/127> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/128> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/129> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/130> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/131> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/132> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/133> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/134> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/135> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/136> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/137> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/138> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/139> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/140> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/141> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/142> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/143> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/144> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/145> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/146> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/147> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/148> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/149> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/150> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/151> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/152> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/153> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/154> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/155> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/156> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/157> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/158> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/159> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/160> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/161> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/162> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/163> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/164> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/165> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/166> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/167> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/168> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/169> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/170> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/171> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/172> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/173> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/174> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/175> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/176> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/177> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/178> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/179> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/180> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/181> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/182> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/183> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/184> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/185> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/186> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/187> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/188> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/189> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/190> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/191> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/192> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/193> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/194> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/195> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/196> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/197> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/198> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/199> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/200> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/201> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/202> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/203> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/204> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/205> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/206> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/207> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/208> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/209> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/210> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/211> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/212> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/213> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/214> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/215> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/216> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/217> .
+<experimentation/nscaching> ns4kge:hasConfiguration <configuration/nscaching/218> .
+
+<training-protocol/nscaching> rdf:type ns4kge:TrainingProtocol .
+<training-protocol/nscaching> ns4kge:hasOptimizer    <optimizer/adam> .
+<training-protocol/nscaching> ns4kge:hasLossFunction <loss-function/margin-based-ranking-loss> .
+<training-protocol/nscaching> ns4kge:hasLossFunction <loss-function/logistic-loss> .
+<training-protocol/nscaching> ns4kge:hasHardware     <hardware/titan-xp-gpu> .
+
+<configuration/nscaching/1> rdf:type ns4kge:Configuration .
+<configuration/nscaching/1> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nscaching/1> ns4kge:hasDataset <dataset/wn18> .
+<configuration/nscaching/1> ns4kge:hasMetric  <metric/mrr> .
+<configuration/nscaching/1> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/nscaching/1> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/nscaching/1> ns4kge:result "0.7867"^^xsd:decimal .
+
+<configuration/nscaching/2> rdf:type ns4kge:Configuration .
+<configuration/nscaching/2> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nscaching/2> ns4kge:hasDataset <dataset/wn18> .
+<configuration/nscaching/2> ns4kge:hasMetric  <metric/mrr> .
+<configuration/nscaching/2> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/nscaching/2> ns4kge:hasNSMethod <ns-method/nscaching-scratch> .
+<configuration/nscaching/2> ns4kge:result "0.7818"^^xsd:decimal .
+
+<configuration/nscaching/3> rdf:type ns4kge:Configuration .
+<configuration/nscaching/3> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nscaching/3> ns4kge:hasDataset <dataset/wn18> .
+<configuration/nscaching/3> ns4kge:hasMetric  <metric/mrr> .
+<configuration/nscaching/3> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/nscaching/3> ns4kge:hasNSMethod <ns-method/kbgan> .
+<configuration/nscaching/3> ns4kge:result "0.688"^^xsd:decimal .
+
+<configuration/nscaching/4> rdf:type ns4kge:Configuration .
+<configuration/nscaching/4> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nscaching/4> ns4kge:hasDataset <dataset/wn18> .
+<configuration/nscaching/4> ns4kge:hasMetric  <metric/mrr> .
+<configuration/nscaching/4> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/nscaching/4> ns4kge:hasNSMethod <ns-method/kbgan-scratch> .
+<configuration/nscaching/4> ns4kge:result "0.6606"^^xsd:decimal .
+
+<configuration/nscaching/5> rdf:type ns4kge:Configuration .
+<configuration/nscaching/5> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nscaching/5> ns4kge:hasDataset <dataset/wn18> .
+<configuration/nscaching/5> ns4kge:hasMetric  <metric/mrr> .
+<configuration/nscaching/5> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/nscaching/5> ns4kge:hasNSMethod <ns-method/bernoulli-negative-sampling> .
+<configuration/nscaching/5> ns4kge:result "0.5001"^^xsd:decimal .
+
+<configuration/nscaching/6> rdf:type ns4kge:Configuration .
+<configuration/nscaching/6> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nscaching/6> ns4kge:hasDataset <dataset/wn18> .
+<configuration/nscaching/6> ns4kge:hasMetric  <metric/mrr> .
+<configuration/nscaching/6> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/nscaching/6> ns4kge:hasNSMethod <ns-method/uniform-negative-sampling> .
+<configuration/nscaching/6> ns4kge:result "0.4213"^^xsd:decimal .
+
+<configuration/nscaching/7> rdf:type ns4kge:Configuration .
+<configuration/nscaching/7> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nscaching/7> ns4kge:hasDataset <dataset/wn18> .
+<configuration/nscaching/7> ns4kge:hasMetric  <metric/mr> .
+<configuration/nscaching/7> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/nscaching/7> ns4kge:hasNSMethod <ns-method/uniform-negative-sampling> .
+<configuration/nscaching/7> ns4kge:result "217"^^xsd:decimal .
+
+<configuration/nscaching/8> rdf:type ns4kge:Configuration .
+<configuration/nscaching/8> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nscaching/8> ns4kge:hasDataset <dataset/wn18> .
+<configuration/nscaching/8> ns4kge:hasMetric  <metric/mr> .
+<configuration/nscaching/8> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/nscaching/8> ns4kge:hasNSMethod <ns-method/igan> .
+<configuration/nscaching/8> ns4kge:result "240"^^xsd:decimal .
+
+<configuration/nscaching/9> rdf:type ns4kge:Configuration .
+<configuration/nscaching/9> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nscaching/9> ns4kge:hasDataset <dataset/wn18> .
+<configuration/nscaching/9> ns4kge:hasMetric  <metric/mr> .
+<configuration/nscaching/9> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/nscaching/9> ns4kge:hasNSMethod <ns-method/igan-scratch> .
+<configuration/nscaching/9> ns4kge:result "244"^^xsd:decimal .
+
+<configuration/nscaching/10> rdf:type ns4kge:Configuration .
+<configuration/nscaching/10> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nscaching/10> ns4kge:hasDataset <dataset/wn18> .
+<configuration/nscaching/10> ns4kge:hasMetric  <metric/mr> .
+<configuration/nscaching/10> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/nscaching/10> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/nscaching/10> ns4kge:result "271"^^xsd:decimal .
+
+<configuration/nscaching/11> rdf:type ns4kge:Configuration .
+<configuration/nscaching/11> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nscaching/11> ns4kge:hasDataset <dataset/wn18> .
+<configuration/nscaching/11> ns4kge:hasMetric  <metric/mr> .
+<configuration/nscaching/11> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/nscaching/11> ns4kge:hasNSMethod <ns-method/nscaching-scratch> .
+<configuration/nscaching/11> ns4kge:result "249"^^xsd:decimal .
+
+<configuration/nscaching/12> rdf:type ns4kge:Configuration .
+<configuration/nscaching/12> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nscaching/12> ns4kge:hasDataset <dataset/wn18> .
+<configuration/nscaching/12> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/nscaching/12> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/nscaching/12> ns4kge:hasNSMethod <ns-method/kbgan> .
+<configuration/nscaching/12> ns4kge:result "0.9492"^^xsd:decimal .
+
+<configuration/nscaching/13> rdf:type ns4kge:Configuration .
+<configuration/nscaching/13> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nscaching/13> ns4kge:hasDataset <dataset/wn18> .
+<configuration/nscaching/13> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/nscaching/13> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/nscaching/13> ns4kge:hasNSMethod <ns-method/kbgan-scratch> .
+<configuration/nscaching/13> ns4kge:result "0.948"^^xsd:decimal .
+
+<configuration/nscaching/14> rdf:type ns4kge:Configuration .
+<configuration/nscaching/14> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nscaching/14> ns4kge:hasDataset <dataset/wn18> .
+<configuration/nscaching/14> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/nscaching/14> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/nscaching/14> ns4kge:hasNSMethod <ns-method/nscaching-scratch> .
+<configuration/nscaching/14> ns4kge:result "0.9463"^^xsd:decimal .
+
+<configuration/nscaching/15> rdf:type ns4kge:Configuration .
+<configuration/nscaching/15> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nscaching/15> ns4kge:hasDataset <dataset/wn18> .
+<configuration/nscaching/15> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/nscaching/15> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/nscaching/15> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/nscaching/15> ns4kge:result "0.6662"^^xsd:decimal .
+
+<configuration/nscaching/16> rdf:type ns4kge:Configuration .
+<configuration/nscaching/16> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nscaching/16> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/nscaching/16> ns4kge:hasMetric  <metric/mrr> .
+<configuration/nscaching/16> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/nscaching/16> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/nscaching/16> ns4kge:result "0.2048"^^xsd:decimal .
+
+<configuration/nscaching/17> rdf:type ns4kge:Configuration .
+<configuration/nscaching/17> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nscaching/17> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/nscaching/17> ns4kge:hasMetric  <metric/mrr> .
+<configuration/nscaching/17> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/nscaching/17> ns4kge:hasNSMethod <ns-method/nscaching-scratch> .
+<configuration/nscaching/17> ns4kge:result "0.2002"^^xsd:decimal .
+
+<configuration/nscaching/18> rdf:type ns4kge:Configuration .
+<configuration/nscaching/18> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nscaching/18> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/nscaching/18> ns4kge:hasMetric  <metric/mrr> .
+<configuration/nscaching/18> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/nscaching/18> ns4kge:hasNSMethod <ns-method/kbgan> .
+<configuration/nscaching/18> ns4kge:result "0.1864"^^xsd:decimal .
+
+<configuration/nscaching/19> rdf:type ns4kge:Configuration .
+<configuration/nscaching/19> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nscaching/19> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/nscaching/19> ns4kge:hasMetric  <metric/mrr> .
+<configuration/nscaching/19> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/nscaching/19> ns4kge:hasNSMethod <ns-method/bernoulli-negative-sampling> .
+<configuration/nscaching/19> ns4kge:result "0.1784"^^xsd:decimal .
+
+<configuration/nscaching/20> rdf:type ns4kge:Configuration .
+<configuration/nscaching/20> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nscaching/20> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/nscaching/20> ns4kge:hasMetric  <metric/mr> .
+<configuration/nscaching/20> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/nscaching/20> ns4kge:hasNSMethod <ns-method/bernoulli-negative-sampling> .
+<configuration/nscaching/20> ns4kge:result "3924"^^xsd:decimal .
+
+<configuration/nscaching/21> rdf:type ns4kge:Configuration .
+<configuration/nscaching/21> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nscaching/21> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/nscaching/21> ns4kge:hasMetric  <metric/mr> .
+<configuration/nscaching/21> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/nscaching/21> ns4kge:hasNSMethod <ns-method/uniform-negative-sampling> .
+<configuration/nscaching/21> ns4kge:result "4038"^^xsd:decimal .
+
+<configuration/nscaching/22> rdf:type ns4kge:Configuration .
+<configuration/nscaching/22> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nscaching/22> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/nscaching/22> ns4kge:hasMetric  <metric/mr> .
+<configuration/nscaching/22> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/nscaching/22> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/nscaching/22> ns4kge:result "4404"^^xsd:decimal .
+
+<configuration/nscaching/23> rdf:type ns4kge:Configuration .
+<configuration/nscaching/23> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nscaching/23> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/nscaching/23> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/nscaching/23> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/nscaching/23> ns4kge:hasNSMethod <ns-method/nscaching-scratch> .
+<configuration/nscaching/23> ns4kge:result "0.4783"^^xsd:decimal .
+
+<configuration/nscaching/24> rdf:type ns4kge:Configuration .
+<configuration/nscaching/24> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nscaching/24> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/nscaching/24> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/nscaching/24> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/nscaching/24> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/nscaching/24> ns4kge:result "0.4738"^^xsd:decimal .
+
+<configuration/nscaching/25> rdf:type ns4kge:Configuration .
+<configuration/nscaching/25> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nscaching/25> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/nscaching/25> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/nscaching/25> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/nscaching/25> ns4kge:hasNSMethod <ns-method/kbgan> .
+<configuration/nscaching/25> ns4kge:result "0.4539"^^xsd:decimal .
+
+<configuration/nscaching/26> rdf:type ns4kge:Configuration .
+<configuration/nscaching/26> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nscaching/26> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/nscaching/26> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/nscaching/26> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/nscaching/26> ns4kge:hasNSMethod <ns-method/bernoulli-negative-sampling> .
+<configuration/nscaching/26> ns4kge:result "0.4509"^^xsd:decimal .
+
+<configuration/nscaching/27> rdf:type ns4kge:Configuration .
+<configuration/nscaching/27> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nscaching/27> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/nscaching/27> ns4kge:hasMetric  <metric/mrr> .
+<configuration/nscaching/27> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/nscaching/27> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/nscaching/27> ns4kge:result "0.6475"^^xsd:decimal .
+
+<configuration/nscaching/28> rdf:type ns4kge:Configuration .
+<configuration/nscaching/28> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nscaching/28> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/nscaching/28> ns4kge:hasMetric  <metric/mrr> .
+<configuration/nscaching/28> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/nscaching/28> ns4kge:hasNSMethod <ns-method/nscaching-scratch> .
+<configuration/nscaching/28> ns4kge:result "0.6391"^^xsd:decimal .
+
+<configuration/nscaching/29> rdf:type ns4kge:Configuration .
+<configuration/nscaching/29> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nscaching/29> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/nscaching/29> ns4kge:hasMetric  <metric/mrr> .
+<configuration/nscaching/29> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/nscaching/29> ns4kge:hasNSMethod <ns-method/bernoulli-negative-sampling> .
+<configuration/nscaching/29> ns4kge:result "0.4951"^^xsd:decimal .
+
+<configuration/nscaching/30> rdf:type ns4kge:Configuration .
+<configuration/nscaching/30> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nscaching/30> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/nscaching/30> ns4kge:hasMetric  <metric/mr> .
+<configuration/nscaching/30> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/nscaching/30> ns4kge:hasNSMethod <ns-method/uniform-negative-sampling> .
+<configuration/nscaching/30> ns4kge:result "60"^^xsd:decimal .
+
+<configuration/nscaching/31> rdf:type ns4kge:Configuration .
+<configuration/nscaching/31> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nscaching/31> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/nscaching/31> ns4kge:hasMetric  <metric/mr> .
+<configuration/nscaching/31> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/nscaching/31> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/nscaching/31> ns4kge:result "62"^^xsd:decimal .
+
+<configuration/nscaching/32> rdf:type ns4kge:Configuration .
+<configuration/nscaching/32> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nscaching/32> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/nscaching/32> ns4kge:hasMetric  <metric/mr> .
+<configuration/nscaching/32> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/nscaching/32> ns4kge:hasNSMethod <ns-method/nscaching-scratch> .
+<configuration/nscaching/32> ns4kge:result "62"^^xsd:decimal .
+
+<configuration/nscaching/33> rdf:type ns4kge:Configuration .
+<configuration/nscaching/33> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nscaching/33> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/nscaching/33> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/nscaching/33> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/nscaching/33> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/nscaching/33> ns4kge:result "0.8154"^^xsd:decimal .
+
+<configuration/nscaching/34> rdf:type ns4kge:Configuration .
+<configuration/nscaching/34> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nscaching/34> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/nscaching/34> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/nscaching/34> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/nscaching/34> ns4kge:hasNSMethod <ns-method/nscaching-scratch> .
+<configuration/nscaching/34> ns4kge:result "0.8095"^^xsd:decimal .
+
+<configuration/nscaching/35> rdf:type ns4kge:Configuration .
+<configuration/nscaching/35> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nscaching/35> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/nscaching/35> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/nscaching/35> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/nscaching/35> ns4kge:hasNSMethod <ns-method/bernoulli-negative-sampling> .
+<configuration/nscaching/35> ns4kge:result "0.7737"^^xsd:decimal .
+
+<configuration/nscaching/36> rdf:type ns4kge:Configuration .
+<configuration/nscaching/36> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nscaching/36> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/nscaching/36> ns4kge:hasMetric  <metric/mrr> .
+<configuration/nscaching/36> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/nscaching/36> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/nscaching/36> ns4kge:result "0.3004"^^xsd:decimal .
+
+<configuration/nscaching/37> rdf:type ns4kge:Configuration .
+<configuration/nscaching/37> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nscaching/37> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/nscaching/37> ns4kge:hasMetric  <metric/mrr> .
+<configuration/nscaching/37> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/nscaching/37> ns4kge:hasNSMethod <ns-method/nscaching-scratch> .
+<configuration/nscaching/37> ns4kge:result "0.2993"^^xsd:decimal .
+
+<configuration/nscaching/38> rdf:type ns4kge:Configuration .
+<configuration/nscaching/38> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nscaching/38> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/nscaching/38> ns4kge:hasMetric  <metric/mrr> .
+<configuration/nscaching/38> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/nscaching/38> ns4kge:hasNSMethod <ns-method/kbgan> .
+<configuration/nscaching/38> ns4kge:result "0.2938"^^xsd:decimal .
+
+<configuration/nscaching/39> rdf:type ns4kge:Configuration .
+<configuration/nscaching/39> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nscaching/39> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/nscaching/39> ns4kge:hasMetric  <metric/mrr> .
+<configuration/nscaching/39> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/nscaching/39> ns4kge:hasNSMethod <ns-method/bernoulli-negative-sampling> .
+<configuration/nscaching/39> ns4kge:result "0.2556"^^xsd:decimal .
+
+<configuration/nscaching/40> rdf:type ns4kge:Configuration .
+<configuration/nscaching/40> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nscaching/40> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/nscaching/40> ns4kge:hasMetric  <metric/mr> .
+<configuration/nscaching/40> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/nscaching/40> ns4kge:hasNSMethod <ns-method/nscaching-scratch> .
+<configuration/nscaching/40> ns4kge:result "186"^^xsd:decimal .
+
+<configuration/nscaching/41> rdf:type ns4kge:Configuration .
+<configuration/nscaching/41> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nscaching/41> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/nscaching/41> ns4kge:hasMetric  <metric/mr> .
+<configuration/nscaching/41> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/nscaching/41> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/nscaching/41> ns4kge:result "188"^^xsd:decimal .
+
+<configuration/nscaching/42> rdf:type ns4kge:Configuration .
+<configuration/nscaching/42> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nscaching/42> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/nscaching/42> ns4kge:hasMetric  <metric/mr> .
+<configuration/nscaching/42> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/nscaching/42> ns4kge:hasNSMethod <ns-method/bernoulli-negative-sampling> .
+<configuration/nscaching/42> ns4kge:result "197"^^xsd:decimal .
+
+<configuration/nscaching/43> rdf:type ns4kge:Configuration .
+<configuration/nscaching/43> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nscaching/43> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/nscaching/43> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/nscaching/43> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/nscaching/43> ns4kge:hasNSMethod <ns-method/nscaching-scratch> .
+<configuration/nscaching/43> ns4kge:result "0.4764"^^xsd:decimal .
+
+<configuration/nscaching/44> rdf:type ns4kge:Configuration .
+<configuration/nscaching/44> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nscaching/44> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/nscaching/44> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/nscaching/44> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/nscaching/44> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/nscaching/44> ns4kge:result "0.4736"^^xsd:decimal .
+
+<configuration/nscaching/45> rdf:type ns4kge:Configuration .
+<configuration/nscaching/45> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nscaching/45> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/nscaching/45> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/nscaching/45> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/nscaching/45> ns4kge:hasNSMethod <ns-method/kbgan> .
+<configuration/nscaching/45> ns4kge:result "0.4669"^^xsd:decimal .
+
+<configuration/nscaching/46> rdf:type ns4kge:Configuration .
+<configuration/nscaching/46> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nscaching/46> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/nscaching/46> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/nscaching/46> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/nscaching/46> ns4kge:hasNSMethod <ns-method/bernoulli-negative-sampling> .
+<configuration/nscaching/46> ns4kge:result "0.4189"^^xsd:decimal .
+
+<configuration/nscaching/47> rdf:type ns4kge:Configuration .
+<configuration/nscaching/47> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nscaching/47> ns4kge:hasDataset <dataset/wn18> .
+<configuration/nscaching/47> ns4kge:hasMetric  <metric/mrr> .
+<configuration/nscaching/47> ns4kge:hasKGEModel <kge-model/transh> .
+<configuration/nscaching/47> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/nscaching/47> ns4kge:result "0.8063"^^xsd:decimal .
+
+<configuration/nscaching/48> rdf:type ns4kge:Configuration .
+<configuration/nscaching/48> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nscaching/48> ns4kge:hasDataset <dataset/wn18> .
+<configuration/nscaching/48> ns4kge:hasMetric  <metric/mrr> .
+<configuration/nscaching/48> ns4kge:hasKGEModel <kge-model/transh> .
+<configuration/nscaching/48> ns4kge:hasNSMethod <ns-method/nscaching-scratch> .
+<configuration/nscaching/48> ns4kge:result "0.8038"^^xsd:decimal .
+
+<configuration/nscaching/49> rdf:type ns4kge:Configuration .
+<configuration/nscaching/49> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nscaching/49> ns4kge:hasDataset <dataset/wn18> .
+<configuration/nscaching/49> ns4kge:hasMetric  <metric/mrr> .
+<configuration/nscaching/49> ns4kge:hasKGEModel <kge-model/transh> .
+<configuration/nscaching/49> ns4kge:hasNSMethod <ns-method/kbgan> .
+<configuration/nscaching/49> ns4kge:result "0.6168"^^xsd:decimal .
+
+<configuration/nscaching/50> rdf:type ns4kge:Configuration .
+<configuration/nscaching/50> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nscaching/50> ns4kge:hasDataset <dataset/wn18> .
+<configuration/nscaching/50> ns4kge:hasMetric  <metric/mrr> .
+<configuration/nscaching/50> ns4kge:hasKGEModel <kge-model/transh> .
+<configuration/nscaching/50> ns4kge:hasNSMethod <ns-method/bernoulli-negative-sampling> .
+<configuration/nscaching/50> ns4kge:result "0.5206"^^xsd:decimal .
+
+<configuration/nscaching/51> rdf:type ns4kge:Configuration .
+<configuration/nscaching/51> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nscaching/51> ns4kge:hasDataset <dataset/wn18> .
+<configuration/nscaching/51> ns4kge:hasMetric  <metric/mr> .
+<configuration/nscaching/51> ns4kge:hasKGEModel <kge-model/transh> .
+<configuration/nscaching/51> ns4kge:hasNSMethod <ns-method/uniform-negative-sampling> .
+<configuration/nscaching/51> ns4kge:result "233"^^xsd:decimal .
+
+<configuration/nscaching/52> rdf:type ns4kge:Configuration .
+<configuration/nscaching/52> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nscaching/52> ns4kge:hasDataset <dataset/wn18> .
+<configuration/nscaching/52> ns4kge:hasMetric  <metric/mr> .
+<configuration/nscaching/52> ns4kge:hasKGEModel <kge-model/transh> .
+<configuration/nscaching/52> ns4kge:hasNSMethod <ns-method/igan> .
+<configuration/nscaching/52> ns4kge:result "258"^^xsd:decimal .
+
+<configuration/nscaching/53> rdf:type ns4kge:Configuration .
+<configuration/nscaching/53> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nscaching/53> ns4kge:hasDataset <dataset/wn18> .
+<configuration/nscaching/53> ns4kge:hasMetric  <metric/mr> .
+<configuration/nscaching/53> ns4kge:hasKGEModel <kge-model/transh> .
+<configuration/nscaching/53> ns4kge:hasNSMethod <ns-method/nscaching-scratch> .
+<configuration/nscaching/53> ns4kge:result "266"^^xsd:decimal .
+
+<configuration/nscaching/54> rdf:type ns4kge:Configuration .
+<configuration/nscaching/54> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nscaching/54> ns4kge:hasDataset <dataset/wn18> .
+<configuration/nscaching/54> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/nscaching/54> ns4kge:hasKGEModel <kge-model/transh> .
+<configuration/nscaching/54> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/nscaching/54> ns4kge:result "0.9532"^^xsd:decimal .
+
+<configuration/nscaching/55> rdf:type ns4kge:Configuration .
+<configuration/nscaching/55> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nscaching/55> ns4kge:hasDataset <dataset/wn18> .
+<configuration/nscaching/55> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/nscaching/55> ns4kge:hasKGEModel <kge-model/transh> .
+<configuration/nscaching/55> ns4kge:hasNSMethod <ns-method/nscaching-scratch> .
+<configuration/nscaching/55> ns4kge:result "0.9529"^^xsd:decimal .
+
+<configuration/nscaching/56> rdf:type ns4kge:Configuration .
+<configuration/nscaching/56> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nscaching/56> ns4kge:hasDataset <dataset/wn18> .
+<configuration/nscaching/56> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/nscaching/56> ns4kge:hasKGEModel <kge-model/transh> .
+<configuration/nscaching/56> ns4kge:hasNSMethod <ns-method/kbgan> .
+<configuration/nscaching/56> ns4kge:result "0.9484"^^xsd:decimal .
+
+<configuration/nscaching/57> rdf:type ns4kge:Configuration .
+<configuration/nscaching/57> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nscaching/57> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/nscaching/57> ns4kge:hasMetric  <metric/mrr> .
+<configuration/nscaching/57> ns4kge:hasKGEModel <kge-model/transh> .
+<configuration/nscaching/57> ns4kge:hasNSMethod <ns-method/nscaching-scratch> .
+<configuration/nscaching/57> ns4kge:result "0.2041"^^xsd:decimal .
+
+<configuration/nscaching/58> rdf:type ns4kge:Configuration .
+<configuration/nscaching/58> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nscaching/58> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/nscaching/58> ns4kge:hasMetric  <metric/mrr> .
+<configuration/nscaching/58> ns4kge:hasKGEModel <kge-model/transh> .
+<configuration/nscaching/58> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/nscaching/58> ns4kge:result "0.2038"^^xsd:decimal .
+
+<configuration/nscaching/59> rdf:type ns4kge:Configuration .
+<configuration/nscaching/59> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nscaching/59> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/nscaching/59> ns4kge:hasMetric  <metric/mrr> .
+<configuration/nscaching/59> ns4kge:hasKGEModel <kge-model/transh> .
+<configuration/nscaching/59> ns4kge:hasNSMethod <ns-method/kbgan> .
+<configuration/nscaching/59> ns4kge:result "0.1923"^^xsd:decimal .
+
+<configuration/nscaching/60> rdf:type ns4kge:Configuration .
+<configuration/nscaching/60> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nscaching/60> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/nscaching/60> ns4kge:hasMetric  <metric/mrr> .
+<configuration/nscaching/60> ns4kge:hasKGEModel <kge-model/transh> .
+<configuration/nscaching/60> ns4kge:hasNSMethod <ns-method/bernoulli-negative-sampling> .
+<configuration/nscaching/60> ns4kge:result "0.1862"^^xsd:decimal .
+
+<configuration/nscaching/61> rdf:type ns4kge:Configuration .
+<configuration/nscaching/61> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nscaching/61> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/nscaching/61> ns4kge:hasMetric  <metric/mr> .
+<configuration/nscaching/61> ns4kge:hasKGEModel <kge-model/transh> .
+<configuration/nscaching/61> ns4kge:hasNSMethod <ns-method/bernoulli-negative-sampling> .
+<configuration/nscaching/61> ns4kge:result "4113"^^xsd:decimal .
+
+<configuration/nscaching/62> rdf:type ns4kge:Configuration .
+<configuration/nscaching/62> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nscaching/62> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/nscaching/62> ns4kge:hasMetric  <metric/mr> .
+<configuration/nscaching/62> ns4kge:hasKGEModel <kge-model/transh> .
+<configuration/nscaching/62> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/nscaching/62> ns4kge:result "4425"^^xsd:decimal .
+
+<configuration/nscaching/63> rdf:type ns4kge:Configuration .
+<configuration/nscaching/63> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nscaching/63> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/nscaching/63> ns4kge:hasMetric  <metric/mr> .
+<configuration/nscaching/63> ns4kge:hasKGEModel <kge-model/transh> .
+<configuration/nscaching/63> ns4kge:hasNSMethod <ns-method/nscaching-scratch> .
+<configuration/nscaching/63> ns4kge:result "4491"^^xsd:decimal .
+
+<configuration/nscaching/64> rdf:type ns4kge:Configuration .
+<configuration/nscaching/64> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nscaching/64> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/nscaching/64> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/nscaching/64> ns4kge:hasKGEModel <kge-model/transh> .
+<configuration/nscaching/64> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/nscaching/64> ns4kge:result "0.4804"^^xsd:decimal .
+
+<configuration/nscaching/65> rdf:type ns4kge:Configuration .
+<configuration/nscaching/65> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nscaching/65> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/nscaching/65> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/nscaching/65> ns4kge:hasKGEModel <kge-model/transh> .
+<configuration/nscaching/65> ns4kge:hasNSMethod <ns-method/nscaching-scratch> .
+<configuration/nscaching/65> ns4kge:result "0.4804"^^xsd:decimal .
+
+<configuration/nscaching/66> rdf:type ns4kge:Configuration .
+<configuration/nscaching/66> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nscaching/66> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/nscaching/66> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/nscaching/66> ns4kge:hasKGEModel <kge-model/transh> .
+<configuration/nscaching/66> ns4kge:hasNSMethod <ns-method/kbgan> .
+<configuration/nscaching/66> ns4kge:result "0.4531"^^xsd:decimal .
+
+<configuration/nscaching/67> rdf:type ns4kge:Configuration .
+<configuration/nscaching/67> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nscaching/67> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/nscaching/67> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/nscaching/67> ns4kge:hasKGEModel <kge-model/transh> .
+<configuration/nscaching/67> ns4kge:hasNSMethod <ns-method/bernoulli-negative-sampling> .
+<configuration/nscaching/67> ns4kge:result "0.4509"^^xsd:decimal .
+
+<configuration/nscaching/68> rdf:type ns4kge:Configuration .
+<configuration/nscaching/68> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nscaching/68> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/nscaching/68> ns4kge:hasMetric  <metric/mrr> .
+<configuration/nscaching/68> ns4kge:hasKGEModel <kge-model/transh> .
+<configuration/nscaching/68> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/nscaching/68> ns4kge:result "0.652"^^xsd:decimal .
+
+<configuration/nscaching/69> rdf:type ns4kge:Configuration .
+<configuration/nscaching/69> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nscaching/69> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/nscaching/69> ns4kge:hasMetric  <metric/mrr> .
+<configuration/nscaching/69> ns4kge:hasKGEModel <kge-model/transh> .
+<configuration/nscaching/69> ns4kge:hasNSMethod <ns-method/nscaching-scratch> .
+<configuration/nscaching/69> ns4kge:result "0.6391"^^xsd:decimal .
+
+<configuration/nscaching/70> rdf:type ns4kge:Configuration .
+<configuration/nscaching/70> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nscaching/70> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/nscaching/70> ns4kge:hasMetric  <metric/mrr> .
+<configuration/nscaching/70> ns4kge:hasKGEModel <kge-model/transh> .
+<configuration/nscaching/70> ns4kge:hasNSMethod <ns-method/bernoulli-negative-sampling> .
+<configuration/nscaching/70> ns4kge:result "0.4518"^^xsd:decimal .
+
+<configuration/nscaching/71> rdf:type ns4kge:Configuration .
+<configuration/nscaching/71> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nscaching/71> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/nscaching/71> ns4kge:hasMetric  <metric/mr> .
+<configuration/nscaching/71> ns4kge:hasKGEModel <kge-model/transh> .
+<configuration/nscaching/71> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/nscaching/71> ns4kge:result "54"^^xsd:decimal .
+
+<configuration/nscaching/72> rdf:type ns4kge:Configuration .
+<configuration/nscaching/72> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nscaching/72> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/nscaching/72> ns4kge:hasMetric  <metric/mr> .
+<configuration/nscaching/72> ns4kge:hasKGEModel <kge-model/transh> .
+<configuration/nscaching/72> ns4kge:hasNSMethod <ns-method/nscaching-scratch> .
+<configuration/nscaching/72> ns4kge:result "54"^^xsd:decimal .
+
+<configuration/nscaching/73> rdf:type ns4kge:Configuration .
+<configuration/nscaching/73> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nscaching/73> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/nscaching/73> ns4kge:hasMetric  <metric/mr> .
+<configuration/nscaching/73> ns4kge:hasKGEModel <kge-model/transh> .
+<configuration/nscaching/73> ns4kge:hasNSMethod <ns-method/uniform-negative-sampling> .
+<configuration/nscaching/73> ns4kge:result "58"^^xsd:decimal .
+
+<configuration/nscaching/74> rdf:type ns4kge:Configuration .
+<configuration/nscaching/74> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nscaching/74> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/nscaching/74> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/nscaching/74> ns4kge:hasKGEModel <kge-model/transh> .
+<configuration/nscaching/74> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/nscaching/74> ns4kge:result "0.8196"^^xsd:decimal .
+
+<configuration/nscaching/75> rdf:type ns4kge:Configuration .
+<configuration/nscaching/75> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nscaching/75> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/nscaching/75> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/nscaching/75> ns4kge:hasKGEModel <kge-model/transh> .
+<configuration/nscaching/75> ns4kge:hasNSMethod <ns-method/nscaching-scratch> .
+<configuration/nscaching/75> ns4kge:result "0.8105"^^xsd:decimal .
+
+<configuration/nscaching/76> rdf:type ns4kge:Configuration .
+<configuration/nscaching/76> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nscaching/76> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/nscaching/76> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/nscaching/76> ns4kge:hasKGEModel <kge-model/transh> .
+<configuration/nscaching/76> ns4kge:hasNSMethod <ns-method/igan> .
+<configuration/nscaching/76> ns4kge:result "0.77"^^xsd:decimal .
+
+<configuration/nscaching/77> rdf:type ns4kge:Configuration .
+<configuration/nscaching/77> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nscaching/77> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/nscaching/77> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/nscaching/77> ns4kge:hasKGEModel <kge-model/transh> .
+<configuration/nscaching/77> ns4kge:hasNSMethod <ns-method/bernoulli-negative-sampling> .
+<configuration/nscaching/77> ns4kge:result "0.7655"^^xsd:decimal .
+
+<configuration/nscaching/78> rdf:type ns4kge:Configuration .
+<configuration/nscaching/78> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nscaching/78> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/nscaching/78> ns4kge:hasMetric  <metric/mrr> .
+<configuration/nscaching/78> ns4kge:hasKGEModel <kge-model/transh> .
+<configuration/nscaching/78> ns4kge:hasNSMethod <ns-method/nscaching-scratch> .
+<configuration/nscaching/78> ns4kge:result "0.2832"^^xsd:decimal .
+
+<configuration/nscaching/79> rdf:type ns4kge:Configuration .
+<configuration/nscaching/79> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nscaching/79> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/nscaching/79> ns4kge:hasMetric  <metric/mrr> .
+<configuration/nscaching/79> ns4kge:hasKGEModel <kge-model/transh> .
+<configuration/nscaching/79> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/nscaching/79> ns4kge:result "0.2812"^^xsd:decimal .
+
+<configuration/nscaching/80> rdf:type ns4kge:Configuration .
+<configuration/nscaching/80> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nscaching/80> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/nscaching/80> ns4kge:hasMetric  <metric/mrr> .
+<configuration/nscaching/80> ns4kge:hasKGEModel <kge-model/transh> .
+<configuration/nscaching/80> ns4kge:hasNSMethod <ns-method/kbgan> .
+<configuration/nscaching/80> ns4kge:result "0.2807"^^xsd:decimal .
+
+<configuration/nscaching/81> rdf:type ns4kge:Configuration .
+<configuration/nscaching/81> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nscaching/81> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/nscaching/81> ns4kge:hasMetric  <metric/mrr> .
+<configuration/nscaching/81> ns4kge:hasKGEModel <kge-model/transh> .
+<configuration/nscaching/81> ns4kge:hasNSMethod <ns-method/bernoulli-negative-sampling> .
+<configuration/nscaching/81> ns4kge:result "0.2329"^^xsd:decimal .
+
+<configuration/nscaching/82> rdf:type ns4kge:Configuration .
+<configuration/nscaching/82> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nscaching/82> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/nscaching/82> ns4kge:hasMetric  <metric/mr> .
+<configuration/nscaching/82> ns4kge:hasKGEModel <kge-model/transh> .
+<configuration/nscaching/82> ns4kge:hasNSMethod <ns-method/nscaching-scratch> .
+<configuration/nscaching/82> ns4kge:result "185"^^xsd:decimal .
+
+<configuration/nscaching/83> rdf:type ns4kge:Configuration .
+<configuration/nscaching/83> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nscaching/83> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/nscaching/83> ns4kge:hasMetric  <metric/mr> .
+<configuration/nscaching/83> ns4kge:hasKGEModel <kge-model/transh> .
+<configuration/nscaching/83> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/nscaching/83> ns4kge:result "187"^^xsd:decimal .
+
+<configuration/nscaching/84> rdf:type ns4kge:Configuration .
+<configuration/nscaching/84> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nscaching/84> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/nscaching/84> ns4kge:hasMetric  <metric/mr> .
+<configuration/nscaching/84> ns4kge:hasKGEModel <kge-model/transh> .
+<configuration/nscaching/84> ns4kge:hasNSMethod <ns-method/bernoulli-negative-sampling> .
+<configuration/nscaching/84> ns4kge:result "202"^^xsd:decimal .
+
+<configuration/nscaching/85> rdf:type ns4kge:Configuration .
+<configuration/nscaching/85> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nscaching/85> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/nscaching/85> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/nscaching/85> ns4kge:hasKGEModel <kge-model/transh> .
+<configuration/nscaching/85> ns4kge:hasNSMethod <ns-method/nscaching-scratch> .
+<configuration/nscaching/85> ns4kge:result "0.4659"^^xsd:decimal .
+
+<configuration/nscaching/86> rdf:type ns4kge:Configuration .
+<configuration/nscaching/86> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nscaching/86> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/nscaching/86> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/nscaching/86> ns4kge:hasKGEModel <kge-model/transh> .
+<configuration/nscaching/86> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/nscaching/86> ns4kge:result "0.4648"^^xsd:decimal .
+
+<configuration/nscaching/87> rdf:type ns4kge:Configuration .
+<configuration/nscaching/87> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nscaching/87> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/nscaching/87> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/nscaching/87> ns4kge:hasKGEModel <kge-model/transh> .
+<configuration/nscaching/87> ns4kge:hasNSMethod <ns-method/kbgan> .
+<configuration/nscaching/87> ns4kge:result "0.4639"^^xsd:decimal .
+
+<configuration/nscaching/88> rdf:type ns4kge:Configuration .
+<configuration/nscaching/88> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nscaching/88> ns4kge:hasDataset <dataset/wn18> .
+<configuration/nscaching/88> ns4kge:hasMetric  <metric/mrr> .
+<configuration/nscaching/88> ns4kge:hasKGEModel <kge-model/transd> .
+<configuration/nscaching/88> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/nscaching/88> ns4kge:result "0.8022"^^xsd:decimal .
+
+<configuration/nscaching/89> rdf:type ns4kge:Configuration .
+<configuration/nscaching/89> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nscaching/89> ns4kge:hasDataset <dataset/wn18> .
+<configuration/nscaching/89> ns4kge:hasMetric  <metric/mrr> .
+<configuration/nscaching/89> ns4kge:hasKGEModel <kge-model/transd> .
+<configuration/nscaching/89> ns4kge:hasNSMethod <ns-method/nscaching-scratch> .
+<configuration/nscaching/89> ns4kge:result "0.7994"^^xsd:decimal .
+
+<configuration/nscaching/90> rdf:type ns4kge:Configuration .
+<configuration/nscaching/90> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nscaching/90> ns4kge:hasDataset <dataset/wn18> .
+<configuration/nscaching/90> ns4kge:hasMetric  <metric/mrr> .
+<configuration/nscaching/90> ns4kge:hasKGEModel <kge-model/transd> .
+<configuration/nscaching/90> ns4kge:hasNSMethod <ns-method/kbgan> .
+<configuration/nscaching/90> ns4kge:result "0.613"^^xsd:decimal .
+
+<configuration/nscaching/91> rdf:type ns4kge:Configuration .
+<configuration/nscaching/91> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nscaching/91> ns4kge:hasDataset <dataset/wn18> .
+<configuration/nscaching/91> ns4kge:hasMetric  <metric/mrr> .
+<configuration/nscaching/91> ns4kge:hasKGEModel <kge-model/transd> .
+<configuration/nscaching/91> ns4kge:hasNSMethod <ns-method/bernoulli-negative-sampling> .
+<configuration/nscaching/91> ns4kge:result "0.5093"^^xsd:decimal .
+
+<configuration/nscaching/92> rdf:type ns4kge:Configuration .
+<configuration/nscaching/92> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nscaching/92> ns4kge:hasDataset <dataset/wn18> .
+<configuration/nscaching/92> ns4kge:hasMetric  <metric/mr> .
+<configuration/nscaching/92> ns4kge:hasKGEModel <kge-model/transd> .
+<configuration/nscaching/92> ns4kge:hasNSMethod <ns-method/igan-scratch> .
+<configuration/nscaching/92> ns4kge:result "221"^^xsd:decimal .
+
+<configuration/nscaching/93> rdf:type ns4kge:Configuration .
+<configuration/nscaching/93> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nscaching/93> ns4kge:hasDataset <dataset/wn18> .
+<configuration/nscaching/93> ns4kge:hasMetric  <metric/mr> .
+<configuration/nscaching/93> ns4kge:hasKGEModel <kge-model/transd> .
+<configuration/nscaching/93> ns4kge:hasNSMethod <ns-method/uniform-negative-sampling> .
+<configuration/nscaching/93> ns4kge:result "243"^^xsd:decimal .
+
+<configuration/nscaching/94> rdf:type ns4kge:Configuration .
+<configuration/nscaching/94> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nscaching/94> ns4kge:hasDataset <dataset/wn18> .
+<configuration/nscaching/94> ns4kge:hasMetric  <metric/mr> .
+<configuration/nscaching/94> ns4kge:hasKGEModel <kge-model/transd> .
+<configuration/nscaching/94> ns4kge:hasNSMethod <ns-method/igan> .
+<configuration/nscaching/94> ns4kge:result "248"^^xsd:decimal .
+
+<configuration/nscaching/95> rdf:type ns4kge:Configuration .
+<configuration/nscaching/95> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nscaching/95> ns4kge:hasDataset <dataset/wn18> .
+<configuration/nscaching/95> ns4kge:hasMetric  <metric/mr> .
+<configuration/nscaching/95> ns4kge:hasKGEModel <kge-model/transd> .
+<configuration/nscaching/95> ns4kge:hasNSMethod <ns-method/nscaching-scratch> .
+<configuration/nscaching/95> ns4kge:result "286"^^xsd:decimal .
+
+<configuration/nscaching/96> rdf:type ns4kge:Configuration .
+<configuration/nscaching/96> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nscaching/96> ns4kge:hasDataset <dataset/wn18> .
+<configuration/nscaching/96> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/nscaching/96> ns4kge:hasKGEModel <kge-model/transd> .
+<configuration/nscaching/96> ns4kge:hasNSMethod <ns-method/nscaching-scratch> .
+<configuration/nscaching/96> ns4kge:result "0.9516"^^xsd:decimal .
+
+<configuration/nscaching/97> rdf:type ns4kge:Configuration .
+<configuration/nscaching/97> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nscaching/97> ns4kge:hasDataset <dataset/wn18> .
+<configuration/nscaching/97> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/nscaching/97> ns4kge:hasKGEModel <kge-model/transd> .
+<configuration/nscaching/97> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/nscaching/97> ns4kge:result "0.9499"^^xsd:decimal .
+
+<configuration/nscaching/98> rdf:type ns4kge:Configuration .
+<configuration/nscaching/98> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nscaching/98> ns4kge:hasDataset <dataset/wn18> .
+<configuration/nscaching/98> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/nscaching/98> ns4kge:hasKGEModel <kge-model/transd> .
+<configuration/nscaching/98> ns4kge:hasNSMethod <ns-method/kbgan> .
+<configuration/nscaching/98> ns4kge:result "0.9492"^^xsd:decimal .
+
+<configuration/nscaching/99> rdf:type ns4kge:Configuration .
+<configuration/nscaching/99> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nscaching/99> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/nscaching/99> ns4kge:hasMetric  <metric/mrr> .
+<configuration/nscaching/99> ns4kge:hasKGEModel <kge-model/transd> .
+<configuration/nscaching/99> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/nscaching/99> ns4kge:result "0.2013"^^xsd:decimal .
+
+<configuration/nscaching/100> rdf:type ns4kge:Configuration .
+<configuration/nscaching/100> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nscaching/100> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/nscaching/100> ns4kge:hasMetric  <metric/mrr> .
+<configuration/nscaching/100> ns4kge:hasKGEModel <kge-model/transd> .
+<configuration/nscaching/100> ns4kge:hasNSMethod <ns-method/nscaching-scratch> .
+<configuration/nscaching/100> ns4kge:result "0.2013"^^xsd:decimal .
+
+<configuration/nscaching/101> rdf:type ns4kge:Configuration .
+<configuration/nscaching/101> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nscaching/101> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/nscaching/101> ns4kge:hasMetric  <metric/mrr> .
+<configuration/nscaching/101> ns4kge:hasKGEModel <kge-model/transd> .
+<configuration/nscaching/101> ns4kge:hasNSMethod <ns-method/kbgan> .
+<configuration/nscaching/101> ns4kge:result "0.1917"^^xsd:decimal .
+
+<configuration/nscaching/102> rdf:type ns4kge:Configuration .
+<configuration/nscaching/102> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nscaching/102> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/nscaching/102> ns4kge:hasMetric  <metric/mrr> .
+<configuration/nscaching/102> ns4kge:hasKGEModel <kge-model/transd> .
+<configuration/nscaching/102> ns4kge:hasNSMethod <ns-method/bernoulli-negative-sampling> .
+<configuration/nscaching/102> ns4kge:result "0.1901"^^xsd:decimal .
+
+<configuration/nscaching/103> rdf:type ns4kge:Configuration .
+<configuration/nscaching/103> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nscaching/103> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/nscaching/103> ns4kge:hasMetric  <metric/mr> .
+<configuration/nscaching/103> ns4kge:hasKGEModel <kge-model/transd> .
+<configuration/nscaching/103> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/nscaching/103> ns4kge:result "2952"^^xsd:decimal .
+
+<configuration/nscaching/104> rdf:type ns4kge:Configuration .
+<configuration/nscaching/104> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nscaching/104> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/nscaching/104> ns4kge:hasMetric  <metric/mr> .
+<configuration/nscaching/104> ns4kge:hasKGEModel <kge-model/transd> .
+<configuration/nscaching/104> ns4kge:hasNSMethod <ns-method/nscaching-scratch> .
+<configuration/nscaching/104> ns4kge:result "3104"^^xsd:decimal .
+
+<configuration/nscaching/105> rdf:type ns4kge:Configuration .
+<configuration/nscaching/105> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nscaching/105> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/nscaching/105> ns4kge:hasMetric  <metric/mr> .
+<configuration/nscaching/105> ns4kge:hasKGEModel <kge-model/transd> .
+<configuration/nscaching/105> ns4kge:hasNSMethod <ns-method/bernoulli-negative-sampling> .
+<configuration/nscaching/105> ns4kge:result "3555"^^xsd:decimal .
+
+<configuration/nscaching/106> rdf:type ns4kge:Configuration .
+<configuration/nscaching/106> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nscaching/106> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/nscaching/106> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/nscaching/106> ns4kge:hasKGEModel <kge-model/transd> .
+<configuration/nscaching/106> ns4kge:hasNSMethod <ns-method/nscaching-scratch> .
+<configuration/nscaching/106> ns4kge:result "0.4839"^^xsd:decimal .
+
+<configuration/nscaching/107> rdf:type ns4kge:Configuration .
+<configuration/nscaching/107> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nscaching/107> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/nscaching/107> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/nscaching/107> ns4kge:hasKGEModel <kge-model/transd> .
+<configuration/nscaching/107> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/nscaching/107> ns4kge:result "0.4836"^^xsd:decimal .
+
+<configuration/nscaching/108> rdf:type ns4kge:Configuration .
+<configuration/nscaching/108> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nscaching/108> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/nscaching/108> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/nscaching/108> ns4kge:hasKGEModel <kge-model/transd> .
+<configuration/nscaching/108> ns4kge:hasNSMethod <ns-method/kbgan> .
+<configuration/nscaching/108> ns4kge:result "0.4649"^^xsd:decimal .
+
+<configuration/nscaching/109> rdf:type ns4kge:Configuration .
+<configuration/nscaching/109> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nscaching/109> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/nscaching/109> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/nscaching/109> ns4kge:hasKGEModel <kge-model/transd> .
+<configuration/nscaching/109> ns4kge:hasNSMethod <ns-method/bernoulli-negative-sampling> .
+<configuration/nscaching/109> ns4kge:result "0.4641"^^xsd:decimal .
+
+<configuration/nscaching/110> rdf:type ns4kge:Configuration .
+<configuration/nscaching/110> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nscaching/110> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/nscaching/110> ns4kge:hasMetric  <metric/mrr> .
+<configuration/nscaching/110> ns4kge:hasKGEModel <kge-model/transd> .
+<configuration/nscaching/110> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/nscaching/110> ns4kge:result "0.6567"^^xsd:decimal .
+
+<configuration/nscaching/111> rdf:type ns4kge:Configuration .
+<configuration/nscaching/111> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nscaching/111> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/nscaching/111> ns4kge:hasMetric  <metric/mrr> .
+<configuration/nscaching/111> ns4kge:hasKGEModel <kge-model/transd> .
+<configuration/nscaching/111> ns4kge:hasNSMethod <ns-method/nscaching-scratch> .
+<configuration/nscaching/111> ns4kge:result "0.6415"^^xsd:decimal .
+
+<configuration/nscaching/112> rdf:type ns4kge:Configuration .
+<configuration/nscaching/112> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nscaching/112> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/nscaching/112> ns4kge:hasMetric  <metric/mrr> .
+<configuration/nscaching/112> ns4kge:hasKGEModel <kge-model/transd> .
+<configuration/nscaching/112> ns4kge:hasNSMethod <ns-method/bernoulli-negative-sampling> .
+<configuration/nscaching/112> ns4kge:result "0.4529"^^xsd:decimal .
+
+<configuration/nscaching/113> rdf:type ns4kge:Configuration .
+<configuration/nscaching/113> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nscaching/113> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/nscaching/113> ns4kge:hasMetric  <metric/mr> .
+<configuration/nscaching/113> ns4kge:hasKGEModel <kge-model/transd> .
+<configuration/nscaching/113> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/nscaching/113> ns4kge:result "54"^^xsd:decimal .
+
+<configuration/nscaching/114> rdf:type ns4kge:Configuration .
+<configuration/nscaching/114> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nscaching/114> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/nscaching/114> ns4kge:hasMetric  <metric/mr> .
+<configuration/nscaching/114> ns4kge:hasKGEModel <kge-model/transd> .
+<configuration/nscaching/114> ns4kge:hasNSMethod <ns-method/nscaching-scratch> .
+<configuration/nscaching/114> ns4kge:result "58"^^xsd:decimal .
+
+<configuration/nscaching/115> rdf:type ns4kge:Configuration .
+<configuration/nscaching/115> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nscaching/115> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/nscaching/115> ns4kge:hasMetric  <metric/mr> .
+<configuration/nscaching/115> ns4kge:hasKGEModel <kge-model/transd> .
+<configuration/nscaching/115> ns4kge:hasNSMethod <ns-method/uniform-negative-sampling> .
+<configuration/nscaching/115> ns4kge:result "59"^^xsd:decimal .
+
+<configuration/nscaching/116> rdf:type ns4kge:Configuration .
+<configuration/nscaching/116> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nscaching/116> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/nscaching/116> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/nscaching/116> ns4kge:hasKGEModel <kge-model/transd> .
+<configuration/nscaching/116> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/nscaching/116> ns4kge:result "0.8202"^^xsd:decimal .
+
+<configuration/nscaching/117> rdf:type ns4kge:Configuration .
+<configuration/nscaching/117> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nscaching/117> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/nscaching/117> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/nscaching/117> ns4kge:hasKGEModel <kge-model/transd> .
+<configuration/nscaching/117> ns4kge:hasNSMethod <ns-method/nscaching-scratch> .
+<configuration/nscaching/117> ns4kge:result "0.8132"^^xsd:decimal .
+
+<configuration/nscaching/118> rdf:type ns4kge:Configuration .
+<configuration/nscaching/118> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nscaching/118> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/nscaching/118> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/nscaching/118> ns4kge:hasKGEModel <kge-model/transd> .
+<configuration/nscaching/118> ns4kge:hasNSMethod <ns-method/igan> .
+<configuration/nscaching/118> ns4kge:result "0.776"^^xsd:decimal .
+
+<configuration/nscaching/119> rdf:type ns4kge:Configuration .
+<configuration/nscaching/119> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nscaching/119> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/nscaching/119> ns4kge:hasMetric  <metric/mrr> .
+<configuration/nscaching/119> ns4kge:hasKGEModel <kge-model/transd> .
+<configuration/nscaching/119> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/nscaching/119> ns4kge:result "0.2883"^^xsd:decimal .
+
+<configuration/nscaching/120> rdf:type ns4kge:Configuration .
+<configuration/nscaching/120> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nscaching/120> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/nscaching/120> ns4kge:hasMetric  <metric/mrr> .
+<configuration/nscaching/120> ns4kge:hasKGEModel <kge-model/transd> .
+<configuration/nscaching/120> ns4kge:hasNSMethod <ns-method/nscaching-scratch> .
+<configuration/nscaching/120> ns4kge:result "0.2863"^^xsd:decimal .
+
+<configuration/nscaching/121> rdf:type ns4kge:Configuration .
+<configuration/nscaching/121> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nscaching/121> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/nscaching/121> ns4kge:hasMetric  <metric/mrr> .
+<configuration/nscaching/121> ns4kge:hasKGEModel <kge-model/transd> .
+<configuration/nscaching/121> ns4kge:hasNSMethod <ns-method/kbgan> .
+<configuration/nscaching/121> ns4kge:result "0.2487"^^xsd:decimal .
+
+<configuration/nscaching/122> rdf:type ns4kge:Configuration .
+<configuration/nscaching/122> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nscaching/122> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/nscaching/122> ns4kge:hasMetric  <metric/mrr> .
+<configuration/nscaching/122> ns4kge:hasKGEModel <kge-model/transd> .
+<configuration/nscaching/122> ns4kge:hasNSMethod <ns-method/bernoulli-negative-sampling> .
+<configuration/nscaching/122> ns4kge:result "0.2451"^^xsd:decimal .
+
+<configuration/nscaching/123> rdf:type ns4kge:Configuration .
+<configuration/nscaching/123> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nscaching/123> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/nscaching/123> ns4kge:hasMetric  <metric/mr> .
+<configuration/nscaching/123> ns4kge:hasKGEModel <kge-model/transd> .
+<configuration/nscaching/123> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/nscaching/123> ns4kge:result "184"^^xsd:decimal .
+
+<configuration/nscaching/124> rdf:type ns4kge:Configuration .
+<configuration/nscaching/124> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nscaching/124> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/nscaching/124> ns4kge:hasMetric  <metric/mr> .
+<configuration/nscaching/124> ns4kge:hasKGEModel <kge-model/transd> .
+<configuration/nscaching/124> ns4kge:hasNSMethod <ns-method/bernoulli-negative-sampling> .
+<configuration/nscaching/124> ns4kge:result "188"^^xsd:decimal .
+
+<configuration/nscaching/125> rdf:type ns4kge:Configuration .
+<configuration/nscaching/125> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nscaching/125> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/nscaching/125> ns4kge:hasMetric  <metric/mr> .
+<configuration/nscaching/125> ns4kge:hasKGEModel <kge-model/transd> .
+<configuration/nscaching/125> ns4kge:hasNSMethod <ns-method/nscaching-scratch> .
+<configuration/nscaching/125> ns4kge:result "189"^^xsd:decimal .
+
+<configuration/nscaching/126> rdf:type ns4kge:Configuration .
+<configuration/nscaching/126> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nscaching/126> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/nscaching/126> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/nscaching/126> ns4kge:hasKGEModel <kge-model/transd> .
+<configuration/nscaching/126> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/nscaching/126> ns4kge:result "0.4833"^^xsd:decimal .
+
+<configuration/nscaching/127> rdf:type ns4kge:Configuration .
+<configuration/nscaching/127> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nscaching/127> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/nscaching/127> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/nscaching/127> ns4kge:hasKGEModel <kge-model/transd> .
+<configuration/nscaching/127> ns4kge:hasNSMethod <ns-method/nscaching-scratch> .
+<configuration/nscaching/127> ns4kge:result "0.4785"^^xsd:decimal .
+
+<configuration/nscaching/128> rdf:type ns4kge:Configuration .
+<configuration/nscaching/128> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nscaching/128> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/nscaching/128> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/nscaching/128> ns4kge:hasKGEModel <kge-model/transd> .
+<configuration/nscaching/128> ns4kge:hasNSMethod <ns-method/kbgan-scratch> .
+<configuration/nscaching/128> ns4kge:result "0.444"^^xsd:decimal .
+
+<configuration/nscaching/129> rdf:type ns4kge:Configuration .
+<configuration/nscaching/129> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nscaching/129> ns4kge:hasDataset <dataset/wn18> .
+<configuration/nscaching/129> ns4kge:hasMetric  <metric/mrr> .
+<configuration/nscaching/129> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/nscaching/129> ns4kge:hasNSMethod <ns-method/nscaching-scratch> .
+<configuration/nscaching/129> ns4kge:result "0.8306"^^xsd:decimal .
+
+<configuration/nscaching/130> rdf:type ns4kge:Configuration .
+<configuration/nscaching/130> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nscaching/130> ns4kge:hasDataset <dataset/wn18> .
+<configuration/nscaching/130> ns4kge:hasMetric  <metric/mrr> .
+<configuration/nscaching/130> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/nscaching/130> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/nscaching/130> ns4kge:result "0.8297"^^xsd:decimal .
+
+<configuration/nscaching/131> rdf:type ns4kge:Configuration .
+<configuration/nscaching/131> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nscaching/131> ns4kge:hasDataset <dataset/wn18> .
+<configuration/nscaching/131> ns4kge:hasMetric  <metric/mrr> .
+<configuration/nscaching/131> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/nscaching/131> ns4kge:hasNSMethod <ns-method/bernoulli-negative-sampling> .
+<configuration/nscaching/131> ns4kge:result "0.7918"^^xsd:decimal .
+
+<configuration/nscaching/132> rdf:type ns4kge:Configuration .
+<configuration/nscaching/132> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nscaching/132> ns4kge:hasDataset <dataset/wn18> .
+<configuration/nscaching/132> ns4kge:hasMetric  <metric/mr> .
+<configuration/nscaching/132> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/nscaching/132> ns4kge:hasNSMethod <ns-method/kbgan-scratch> .
+<configuration/nscaching/132> ns4kge:result "794"^^xsd:decimal .
+
+<configuration/nscaching/133> rdf:type ns4kge:Configuration .
+<configuration/nscaching/133> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nscaching/133> ns4kge:hasDataset <dataset/wn18> .
+<configuration/nscaching/133> ns4kge:hasMetric  <metric/mr> .
+<configuration/nscaching/133> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/nscaching/133> ns4kge:hasNSMethod <ns-method/nscaching-scratch> .
+<configuration/nscaching/133> ns4kge:result "827"^^xsd:decimal .
+
+<configuration/nscaching/134> rdf:type ns4kge:Configuration .
+<configuration/nscaching/134> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nscaching/134> ns4kge:hasDataset <dataset/wn18> .
+<configuration/nscaching/134> ns4kge:hasMetric  <metric/mr> .
+<configuration/nscaching/134> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/nscaching/134> ns4kge:hasNSMethod <ns-method/bernoulli-negative-sampling> .
+<configuration/nscaching/134> ns4kge:result "862"^^xsd:decimal .
+
+<configuration/nscaching/135> rdf:type ns4kge:Configuration .
+<configuration/nscaching/135> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nscaching/135> ns4kge:hasDataset <dataset/wn18> .
+<configuration/nscaching/135> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/nscaching/135> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/nscaching/135> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/nscaching/135> ns4kge:result "0.9383"^^xsd:decimal .
+
+<configuration/nscaching/136> rdf:type ns4kge:Configuration .
+<configuration/nscaching/136> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nscaching/136> ns4kge:hasDataset <dataset/wn18> .
+<configuration/nscaching/136> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/nscaching/136> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/nscaching/136> ns4kge:hasNSMethod <ns-method/nscaching-scratch> .
+<configuration/nscaching/136> ns4kge:result "0.9374"^^xsd:decimal .
+
+<configuration/nscaching/137> rdf:type ns4kge:Configuration .
+<configuration/nscaching/137> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nscaching/137> ns4kge:hasDataset <dataset/wn18> .
+<configuration/nscaching/137> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/nscaching/137> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/nscaching/137> ns4kge:hasNSMethod <ns-method/bernoulli-negative-sampling> .
+<configuration/nscaching/137> ns4kge:result "0.9338"^^xsd:decimal .
+
+<configuration/nscaching/138> rdf:type ns4kge:Configuration .
+<configuration/nscaching/138> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nscaching/138> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/nscaching/138> ns4kge:hasMetric  <metric/mrr> .
+<configuration/nscaching/138> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/nscaching/138> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/nscaching/138> ns4kge:result "0.4148"^^xsd:decimal .
+
+<configuration/nscaching/139> rdf:type ns4kge:Configuration .
+<configuration/nscaching/139> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nscaching/139> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/nscaching/139> ns4kge:hasMetric  <metric/mrr> .
+<configuration/nscaching/139> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/nscaching/139> ns4kge:hasNSMethod <ns-method/nscaching-scratch> .
+<configuration/nscaching/139> ns4kge:result "0.4128"^^xsd:decimal .
+
+<configuration/nscaching/140> rdf:type ns4kge:Configuration .
+<configuration/nscaching/140> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nscaching/140> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/nscaching/140> ns4kge:hasMetric  <metric/mrr> .
+<configuration/nscaching/140> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/nscaching/140> ns4kge:hasNSMethod <ns-method/bernoulli-negative-sampling> .
+<configuration/nscaching/140> ns4kge:result "0.3964"^^xsd:decimal .
+
+<configuration/nscaching/141> rdf:type ns4kge:Configuration .
+<configuration/nscaching/141> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nscaching/141> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/nscaching/141> ns4kge:hasMetric  <metric/mr> .
+<configuration/nscaching/141> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/nscaching/141> ns4kge:hasNSMethod <ns-method/uniform-negative-sampling> .
+<configuration/nscaching/141> ns4kge:result "7405"^^xsd:decimal .
+
+<configuration/nscaching/142> rdf:type ns4kge:Configuration .
+<configuration/nscaching/142> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nscaching/142> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/nscaching/142> ns4kge:hasMetric  <metric/mr> .
+<configuration/nscaching/142> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/nscaching/142> ns4kge:hasNSMethod <ns-method/bernoulli-negative-sampling> .
+<configuration/nscaching/142> ns4kge:result "7420"^^xsd:decimal .
+
+<configuration/nscaching/143> rdf:type ns4kge:Configuration .
+<configuration/nscaching/143> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nscaching/143> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/nscaching/143> ns4kge:hasMetric  <metric/mr> .
+<configuration/nscaching/143> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/nscaching/143> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/nscaching/143> ns4kge:result "7477"^^xsd:decimal .
+
+<configuration/nscaching/144> rdf:type ns4kge:Configuration .
+<configuration/nscaching/144> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nscaching/144> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/nscaching/144> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/nscaching/144> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/nscaching/144> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/nscaching/144> ns4kge:result "0.458"^^xsd:decimal .
+
+<configuration/nscaching/145> rdf:type ns4kge:Configuration .
+<configuration/nscaching/145> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nscaching/145> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/nscaching/145> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/nscaching/145> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/nscaching/145> ns4kge:hasNSMethod <ns-method/nscaching-scratch> .
+<configuration/nscaching/145> ns4kge:result "0.4545"^^xsd:decimal .
+
+<configuration/nscaching/146> rdf:type ns4kge:Configuration .
+<configuration/nscaching/146> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nscaching/146> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/nscaching/146> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/nscaching/146> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/nscaching/146> ns4kge:hasNSMethod <ns-method/bernoulli-negative-sampling> .
+<configuration/nscaching/146> ns4kge:result "0.4525"^^xsd:decimal .
+
+<configuration/nscaching/147> rdf:type ns4kge:Configuration .
+<configuration/nscaching/147> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nscaching/147> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/nscaching/147> ns4kge:hasMetric  <metric/mrr> .
+<configuration/nscaching/147> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/nscaching/147> ns4kge:hasNSMethod <ns-method/nscaching-scratch> .
+<configuration/nscaching/147> ns4kge:result "0.7501"^^xsd:decimal .
+
+<configuration/nscaching/148> rdf:type ns4kge:Configuration .
+<configuration/nscaching/148> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nscaching/148> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/nscaching/148> ns4kge:hasMetric  <metric/mrr> .
+<configuration/nscaching/148> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/nscaching/148> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/nscaching/148> ns4kge:result "0.7177"^^xsd:decimal .
+
+<configuration/nscaching/149> rdf:type ns4kge:Configuration .
+<configuration/nscaching/149> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nscaching/149> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/nscaching/149> ns4kge:hasMetric  <metric/mrr> .
+<configuration/nscaching/149> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/nscaching/149> ns4kge:hasNSMethod <ns-method/bernoulli-negative-sampling> .
+<configuration/nscaching/149> ns4kge:result "0.5698"^^xsd:decimal .
+
+<configuration/nscaching/150> rdf:type ns4kge:Configuration .
+<configuration/nscaching/150> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nscaching/150> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/nscaching/150> ns4kge:hasMetric  <metric/mr> .
+<configuration/nscaching/150> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/nscaching/150> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/nscaching/150> ns4kge:result "98"^^xsd:decimal .
+
+<configuration/nscaching/151> rdf:type ns4kge:Configuration .
+<configuration/nscaching/151> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nscaching/151> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/nscaching/151> ns4kge:hasMetric  <metric/mr> .
+<configuration/nscaching/151> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/nscaching/151> ns4kge:hasNSMethod <ns-method/nscaching-scratch> .
+<configuration/nscaching/151> ns4kge:result "132"^^xsd:decimal .
+
+<configuration/nscaching/152> rdf:type ns4kge:Configuration .
+<configuration/nscaching/152> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nscaching/152> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/nscaching/152> ns4kge:hasMetric  <metric/mr> .
+<configuration/nscaching/152> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/nscaching/152> ns4kge:hasNSMethod <ns-method/bernoulli-negative-sampling> .
+<configuration/nscaching/152> ns4kge:result "148"^^xsd:decimal .
+
+<configuration/nscaching/153> rdf:type ns4kge:Configuration .
+<configuration/nscaching/153> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nscaching/153> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/nscaching/153> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/nscaching/153> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/nscaching/153> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/nscaching/153> ns4kge:result "0.8456"^^xsd:decimal .
+
+<configuration/nscaching/154> rdf:type ns4kge:Configuration .
+<configuration/nscaching/154> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nscaching/154> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/nscaching/154> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/nscaching/154> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/nscaching/154> ns4kge:hasNSMethod <ns-method/nscaching-scratch> .
+<configuration/nscaching/154> ns4kge:result "0.8436"^^xsd:decimal .
+
+<configuration/nscaching/155> rdf:type ns4kge:Configuration .
+<configuration/nscaching/155> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nscaching/155> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/nscaching/155> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/nscaching/155> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/nscaching/155> ns4kge:hasNSMethod <ns-method/bernoulli-negative-sampling> .
+<configuration/nscaching/155> ns4kge:result "0.7632"^^xsd:decimal .
+
+<configuration/nscaching/156> rdf:type ns4kge:Configuration .
+<configuration/nscaching/156> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nscaching/156> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/nscaching/156> ns4kge:hasMetric  <metric/mrr> .
+<configuration/nscaching/156> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/nscaching/156> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/nscaching/156> ns4kge:result "0.2882"^^xsd:decimal .
+
+<configuration/nscaching/157> rdf:type ns4kge:Configuration .
+<configuration/nscaching/157> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nscaching/157> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/nscaching/157> ns4kge:hasMetric  <metric/mrr> .
+<configuration/nscaching/157> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/nscaching/157> ns4kge:hasNSMethod <ns-method/nscaching-scratch> .
+<configuration/nscaching/157> ns4kge:result "0.2834"^^xsd:decimal .
+
+<configuration/nscaching/158> rdf:type ns4kge:Configuration .
+<configuration/nscaching/158> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nscaching/158> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/nscaching/158> ns4kge:hasMetric  <metric/mrr> .
+<configuration/nscaching/158> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/nscaching/158> ns4kge:hasNSMethod <ns-method/kbgan> .
+<configuration/nscaching/158> ns4kge:result "0.267"^^xsd:decimal .
+
+<configuration/nscaching/159> rdf:type ns4kge:Configuration .
+<configuration/nscaching/159> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nscaching/159> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/nscaching/159> ns4kge:hasMetric  <metric/mrr> .
+<configuration/nscaching/159> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/nscaching/159> ns4kge:hasNSMethod <ns-method/bernoulli-negative-sampling> .
+<configuration/nscaching/159> ns4kge:result "0.2491"^^xsd:decimal .
+
+<configuration/nscaching/160> rdf:type ns4kge:Configuration .
+<configuration/nscaching/160> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nscaching/160> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/nscaching/160> ns4kge:hasMetric  <metric/mr> .
+<configuration/nscaching/160> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/nscaching/160> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/nscaching/160> ns4kge:result "265"^^xsd:decimal .
+
+<configuration/nscaching/161> rdf:type ns4kge:Configuration .
+<configuration/nscaching/161> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nscaching/161> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/nscaching/161> ns4kge:hasMetric  <metric/mr> .
+<configuration/nscaching/161> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/nscaching/161> ns4kge:hasNSMethod <ns-method/nscaching-scratch> .
+<configuration/nscaching/161> ns4kge:result "273"^^xsd:decimal .
+
+<configuration/nscaching/162> rdf:type ns4kge:Configuration .
+<configuration/nscaching/162> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nscaching/162> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/nscaching/162> ns4kge:hasMetric  <metric/mr> .
+<configuration/nscaching/162> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/nscaching/162> ns4kge:hasNSMethod <ns-method/kbgan-scratch> .
+<configuration/nscaching/162> ns4kge:result "276"^^xsd:decimal .
+
+<configuration/nscaching/163> rdf:type ns4kge:Configuration .
+<configuration/nscaching/163> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nscaching/163> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/nscaching/163> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/nscaching/163> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/nscaching/163> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/nscaching/163> ns4kge:result "0.4579"^^xsd:decimal .
+
+<configuration/nscaching/164> rdf:type ns4kge:Configuration .
+<configuration/nscaching/164> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nscaching/164> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/nscaching/164> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/nscaching/164> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/nscaching/164> ns4kge:hasNSMethod <ns-method/nscaching-scratch> .
+<configuration/nscaching/164> ns4kge:result "0.4556"^^xsd:decimal .
+
+<configuration/nscaching/165> rdf:type ns4kge:Configuration .
+<configuration/nscaching/165> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nscaching/165> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/nscaching/165> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/nscaching/165> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/nscaching/165> ns4kge:hasNSMethod <ns-method/kbgan> .
+<configuration/nscaching/165> ns4kge:result "0.4534"^^xsd:decimal .
+
+<configuration/nscaching/166> rdf:type ns4kge:Configuration .
+<configuration/nscaching/166> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nscaching/166> ns4kge:hasDataset <dataset/wn18> .
+<configuration/nscaching/166> ns4kge:hasMetric  <metric/mrr> .
+<configuration/nscaching/166> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/nscaching/166> ns4kge:hasNSMethod <ns-method/nscaching-scratch> .
+<configuration/nscaching/166> ns4kge:result "0.9355"^^xsd:decimal .
+
+<configuration/nscaching/167> rdf:type ns4kge:Configuration .
+<configuration/nscaching/167> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nscaching/167> ns4kge:hasDataset <dataset/wn18> .
+<configuration/nscaching/167> ns4kge:hasMetric  <metric/mrr> .
+<configuration/nscaching/167> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/nscaching/167> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/nscaching/167> ns4kge:result "0.9286"^^xsd:decimal .
+
+<configuration/nscaching/168> rdf:type ns4kge:Configuration .
+<configuration/nscaching/168> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nscaching/168> ns4kge:hasDataset <dataset/wn18> .
+<configuration/nscaching/168> ns4kge:hasMetric  <metric/mrr> .
+<configuration/nscaching/168> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/nscaching/168> ns4kge:hasNSMethod <ns-method/bernoulli-negative-sampling> .
+<configuration/nscaching/168> ns4kge:result "0.9115"^^xsd:decimal .
+
+<configuration/nscaching/169> rdf:type ns4kge:Configuration .
+<configuration/nscaching/169> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nscaching/169> ns4kge:hasDataset <dataset/wn18> .
+<configuration/nscaching/169> ns4kge:hasMetric  <metric/mr> .
+<configuration/nscaching/169> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/nscaching/169> ns4kge:hasNSMethod <ns-method/bernoulli-negative-sampling> .
+<configuration/nscaching/169> ns4kge:result "808"^^xsd:decimal .
+
+<configuration/nscaching/170> rdf:type ns4kge:Configuration .
+<configuration/nscaching/170> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nscaching/170> ns4kge:hasDataset <dataset/wn18> .
+<configuration/nscaching/170> ns4kge:hasMetric  <metric/mr> .
+<configuration/nscaching/170> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/nscaching/170> ns4kge:hasNSMethod <ns-method/kbgan-scratch> .
+<configuration/nscaching/170> ns4kge:result "966"^^xsd:decimal .
+
+<configuration/nscaching/171> rdf:type ns4kge:Configuration .
+<configuration/nscaching/171> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nscaching/171> ns4kge:hasDataset <dataset/wn18> .
+<configuration/nscaching/171> ns4kge:hasMetric  <metric/mr> .
+<configuration/nscaching/171> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/nscaching/171> ns4kge:hasNSMethod <ns-method/nscaching-scratch> .
+<configuration/nscaching/171> ns4kge:result "1072"^^xsd:decimal .
+
+<configuration/nscaching/172> rdf:type ns4kge:Configuration .
+<configuration/nscaching/172> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nscaching/172> ns4kge:hasDataset <dataset/wn18> .
+<configuration/nscaching/172> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/nscaching/172> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/nscaching/172> ns4kge:hasNSMethod <ns-method/bernoulli-negative-sampling> .
+<configuration/nscaching/172> ns4kge:result "0.9439"^^xsd:decimal .
+
+<configuration/nscaching/173> rdf:type ns4kge:Configuration .
+<configuration/nscaching/173> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nscaching/173> ns4kge:hasDataset <dataset/wn18> .
+<configuration/nscaching/173> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/nscaching/173> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/nscaching/173> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/nscaching/173> ns4kge:result "0.9403"^^xsd:decimal .
+
+<configuration/nscaching/174> rdf:type ns4kge:Configuration .
+<configuration/nscaching/174> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nscaching/174> ns4kge:hasDataset <dataset/wn18> .
+<configuration/nscaching/174> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/nscaching/174> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/nscaching/174> ns4kge:hasNSMethod <ns-method/nscaching-scratch> .
+<configuration/nscaching/174> ns4kge:result "0.9398"^^xsd:decimal .
+
+<configuration/nscaching/175> rdf:type ns4kge:Configuration .
+<configuration/nscaching/175> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nscaching/175> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/nscaching/175> ns4kge:hasMetric  <metric/mrr> .
+<configuration/nscaching/175> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/nscaching/175> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/nscaching/175> ns4kge:result "0.4487"^^xsd:decimal .
+
+<configuration/nscaching/176> rdf:type ns4kge:Configuration .
+<configuration/nscaching/176> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nscaching/176> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/nscaching/176> ns4kge:hasMetric  <metric/mrr> .
+<configuration/nscaching/176> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/nscaching/176> ns4kge:hasNSMethod <ns-method/nscaching-scratch> .
+<configuration/nscaching/176> ns4kge:result "0.4463"^^xsd:decimal .
+
+<configuration/nscaching/177> rdf:type ns4kge:Configuration .
+<configuration/nscaching/177> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nscaching/177> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/nscaching/177> ns4kge:hasMetric  <metric/mrr> .
+<configuration/nscaching/177> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/nscaching/177> ns4kge:hasNSMethod <ns-method/bernoulli-negative-sampling> .
+<configuration/nscaching/177> ns4kge:result "0.4431"^^xsd:decimal .
+
+<configuration/nscaching/178> rdf:type ns4kge:Configuration .
+<configuration/nscaching/178> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nscaching/178> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/nscaching/178> ns4kge:hasMetric  <metric/mr> .
+<configuration/nscaching/178> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/nscaching/178> ns4kge:hasNSMethod <ns-method/bernoulli-negative-sampling> .
+<configuration/nscaching/178> ns4kge:result "4693"^^xsd:decimal .
+
+<configuration/nscaching/179> rdf:type ns4kge:Configuration .
+<configuration/nscaching/179> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nscaching/179> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/nscaching/179> ns4kge:hasMetric  <metric/mr> .
+<configuration/nscaching/179> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/nscaching/179> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/nscaching/179> ns4kge:result "4861"^^xsd:decimal .
+
+<configuration/nscaching/180> rdf:type ns4kge:Configuration .
+<configuration/nscaching/180> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nscaching/180> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/nscaching/180> ns4kge:hasMetric  <metric/mr> .
+<configuration/nscaching/180> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/nscaching/180> ns4kge:hasNSMethod <ns-method/nscaching-scratch> .
+<configuration/nscaching/180> ns4kge:result "5365"^^xsd:decimal .
+
+<configuration/nscaching/181> rdf:type ns4kge:Configuration .
+<configuration/nscaching/181> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nscaching/181> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/nscaching/181> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/nscaching/181> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/nscaching/181> ns4kge:hasNSMethod <ns-method/bernoulli-negative-sampling> .
+<configuration/nscaching/181> ns4kge:result "0.5177"^^xsd:decimal .
+
+<configuration/nscaching/182> rdf:type ns4kge:Configuration .
+<configuration/nscaching/182> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nscaching/182> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/nscaching/182> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/nscaching/182> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/nscaching/182> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/nscaching/182> ns4kge:result "0.5176"^^xsd:decimal .
+
+<configuration/nscaching/183> rdf:type ns4kge:Configuration .
+<configuration/nscaching/183> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nscaching/183> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/nscaching/183> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/nscaching/183> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/nscaching/183> ns4kge:hasNSMethod <ns-method/nscaching-scratch> .
+<configuration/nscaching/183> ns4kge:result "0.5089"^^xsd:decimal .
+
+<configuration/nscaching/184> rdf:type ns4kge:Configuration .
+<configuration/nscaching/184> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nscaching/184> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/nscaching/184> ns4kge:hasMetric  <metric/mrr> .
+<configuration/nscaching/184> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/nscaching/184> ns4kge:hasNSMethod <ns-method/nscaching-scratch> .
+<configuration/nscaching/184> ns4kge:result "0.7721"^^xsd:decimal .
+
+<configuration/nscaching/185> rdf:type ns4kge:Configuration .
+<configuration/nscaching/185> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nscaching/185> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/nscaching/185> ns4kge:hasMetric  <metric/mrr> .
+<configuration/nscaching/185> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/nscaching/185> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/nscaching/185> ns4kge:result "0.7459"^^xsd:decimal .
+
+<configuration/nscaching/186> rdf:type ns4kge:Configuration .
+<configuration/nscaching/186> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nscaching/186> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/nscaching/186> ns4kge:hasMetric  <metric/mrr> .
+<configuration/nscaching/186> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/nscaching/186> ns4kge:hasNSMethod <ns-method/bernoulli-negative-sampling> .
+<configuration/nscaching/186> ns4kge:result "0.6713"^^xsd:decimal .
+
+<configuration/nscaching/187> rdf:type ns4kge:Configuration .
+<configuration/nscaching/187> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nscaching/187> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/nscaching/187> ns4kge:hasMetric  <metric/mr> .
+<configuration/nscaching/187> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/nscaching/187> ns4kge:hasNSMethod <ns-method/bernoulli-negative-sampling> .
+<configuration/nscaching/187> ns4kge:result "78"^^xsd:decimal .
+
+<configuration/nscaching/188> rdf:type ns4kge:Configuration .
+<configuration/nscaching/188> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nscaching/188> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/nscaching/188> ns4kge:hasMetric  <metric/mr> .
+<configuration/nscaching/188> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/nscaching/188> ns4kge:hasNSMethod <ns-method/nscaching-scratch> .
+<configuration/nscaching/188> ns4kge:result "82"^^xsd:decimal .
+
+<configuration/nscaching/189> rdf:type ns4kge:Configuration .
+<configuration/nscaching/189> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nscaching/189> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/nscaching/189> ns4kge:hasMetric  <metric/mr> .
+<configuration/nscaching/189> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/nscaching/189> ns4kge:hasNSMethod <ns-method/uniform-negative-sampling> .
+<configuration/nscaching/189> ns4kge:result "115"^^xsd:decimal .
+
+<configuration/nscaching/190> rdf:type ns4kge:Configuration .
+<configuration/nscaching/190> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nscaching/190> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/nscaching/190> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/nscaching/190> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/nscaching/190> ns4kge:hasNSMethod <ns-method/nscaching-scratch> .
+<configuration/nscaching/190> ns4kge:result "0.8682"^^xsd:decimal .
+
+<configuration/nscaching/191> rdf:type ns4kge:Configuration .
+<configuration/nscaching/191> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nscaching/191> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/nscaching/191> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/nscaching/191> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/nscaching/191> ns4kge:hasNSMethod <ns-method/bernoulli-negative-sampling> .
+<configuration/nscaching/191> ns4kge:result "0.8505"^^xsd:decimal .
+
+<configuration/nscaching/192> rdf:type ns4kge:Configuration .
+<configuration/nscaching/192> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nscaching/192> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/nscaching/192> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/nscaching/192> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/nscaching/192> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/nscaching/192> ns4kge:result "0.8417"^^xsd:decimal .
+
+<configuration/nscaching/193> rdf:type ns4kge:Configuration .
+<configuration/nscaching/193> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nscaching/193> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/nscaching/193> ns4kge:hasMetric  <metric/mrr> .
+<configuration/nscaching/193> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/nscaching/193> ns4kge:hasNSMethod <ns-method/nscaching-scratch> .
+<configuration/nscaching/193> ns4kge:result "0.3021"^^xsd:decimal .
+
+<configuration/nscaching/194> rdf:type ns4kge:Configuration .
+<configuration/nscaching/194> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nscaching/194> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/nscaching/194> ns4kge:hasMetric  <metric/mrr> .
+<configuration/nscaching/194> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/nscaching/194> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/nscaching/194> ns4kge:result "0.3017"^^xsd:decimal .
+
+<configuration/nscaching/195> rdf:type ns4kge:Configuration .
+<configuration/nscaching/195> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nscaching/195> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/nscaching/195> ns4kge:hasMetric  <metric/mrr> .
+<configuration/nscaching/195> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/nscaching/195> ns4kge:hasNSMethod <ns-method/kbgan> .
+<configuration/nscaching/195> ns4kge:result "0.2818"^^xsd:decimal .
+
+<configuration/nscaching/196> rdf:type ns4kge:Configuration .
+<configuration/nscaching/196> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nscaching/196> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/nscaching/196> ns4kge:hasMetric  <metric/mrr> .
+<configuration/nscaching/196> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/nscaching/196> ns4kge:hasNSMethod <ns-method/bernoulli-negative-sampling> .
+<configuration/nscaching/196> ns4kge:result "0.2596"^^xsd:decimal .
+
+<configuration/nscaching/197> rdf:type ns4kge:Configuration .
+<configuration/nscaching/197> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nscaching/197> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/nscaching/197> ns4kge:hasMetric  <metric/mr> .
+<configuration/nscaching/197> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/nscaching/197> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/nscaching/197> ns4kge:result "220"^^xsd:decimal .
+
+<configuration/nscaching/198> rdf:type ns4kge:Configuration .
+<configuration/nscaching/198> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nscaching/198> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/nscaching/198> ns4kge:hasMetric  <metric/mr> .
+<configuration/nscaching/198> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/nscaching/198> ns4kge:hasNSMethod <ns-method/nscaching-scratch> .
+<configuration/nscaching/198> ns4kge:result "221"^^xsd:decimal .
+
+<configuration/nscaching/199> rdf:type ns4kge:Configuration .
+<configuration/nscaching/199> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nscaching/199> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/nscaching/199> ns4kge:hasMetric  <metric/mr> .
+<configuration/nscaching/199> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/nscaching/199> ns4kge:hasNSMethod <ns-method/bernoulli-negative-sampling> .
+<configuration/nscaching/199> ns4kge:result "238"^^xsd:decimal .
+
+<configuration/nscaching/200> rdf:type ns4kge:Configuration .
+<configuration/nscaching/200> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nscaching/200> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/nscaching/200> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/nscaching/200> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/nscaching/200> ns4kge:hasNSMethod <ns-method/nscaching-scratch> .
+<configuration/nscaching/200> ns4kge:result "0.4805"^^xsd:decimal .
+
+<configuration/nscaching/201> rdf:type ns4kge:Configuration .
+<configuration/nscaching/201> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nscaching/201> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/nscaching/201> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/nscaching/201> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/nscaching/201> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/nscaching/201> ns4kge:result "0.4775"^^xsd:decimal .
+
+<configuration/nscaching/202> rdf:type ns4kge:Configuration .
+<configuration/nscaching/202> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nscaching/202> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/nscaching/202> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/nscaching/202> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/nscaching/202> ns4kge:hasNSMethod <ns-method/kbgan> .
+<configuration/nscaching/202> ns4kge:result "0.4537"^^xsd:decimal .
+
+<configuration/nscaching/203> rdf:type ns4kge:Configuration .
+<configuration/nscaching/203> ns4kge:hasTask    <task/triple-classification> .
+<configuration/nscaching/203> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/nscaching/203> ns4kge:hasMetric  <metric/accuracy> .
+<configuration/nscaching/203> ns4kge:hasKGEModel <kge-model/transd> .
+<configuration/nscaching/203> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/nscaching/203> ns4kge:result "0.8784"^^xsd:decimal .
+
+<configuration/nscaching/204> rdf:type ns4kge:Configuration .
+<configuration/nscaching/204> ns4kge:hasTask    <task/triple-classification> .
+<configuration/nscaching/204> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/nscaching/204> ns4kge:hasMetric  <metric/accuracy> .
+<configuration/nscaching/204> ns4kge:hasKGEModel <kge-model/transd> .
+<configuration/nscaching/204> ns4kge:hasNSMethod <ns-method/nscaching-scratch> .
+<configuration/nscaching/204> ns4kge:result "0.8764"^^xsd:decimal .
+
+<configuration/nscaching/205> rdf:type ns4kge:Configuration .
+<configuration/nscaching/205> ns4kge:hasTask    <task/triple-classification> .
+<configuration/nscaching/205> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/nscaching/205> ns4kge:hasMetric  <metric/accuracy> .
+<configuration/nscaching/205> ns4kge:hasKGEModel <kge-model/transd> .
+<configuration/nscaching/205> ns4kge:hasNSMethod <ns-method/bernoulli-negative-sampling> .
+<configuration/nscaching/205> ns4kge:result "0.8681"^^xsd:decimal .
+
+<configuration/nscaching/206> rdf:type ns4kge:Configuration .
+<configuration/nscaching/206> ns4kge:hasTask    <task/triple-classification> .
+<configuration/nscaching/206> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/nscaching/206> ns4kge:hasMetric  <metric/accuracy> .
+<configuration/nscaching/206> ns4kge:hasKGEModel <kge-model/transd> .
+<configuration/nscaching/206> ns4kge:hasNSMethod <ns-method/kbgan-scratch> .
+<configuration/nscaching/206> ns4kge:result "0.8601"^^xsd:decimal .
+
+<configuration/nscaching/207> rdf:type ns4kge:Configuration .
+<configuration/nscaching/207> ns4kge:hasTask    <task/triple-classification> .
+<configuration/nscaching/207> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/nscaching/207> ns4kge:hasMetric  <metric/accuracy> .
+<configuration/nscaching/207> ns4kge:hasKGEModel <kge-model/transd> .
+<configuration/nscaching/207> ns4kge:hasNSMethod <ns-method/kbgan> .
+<configuration/nscaching/207> ns4kge:result "0.8593"^^xsd:decimal .
+
+<configuration/nscaching/208> rdf:type ns4kge:Configuration .
+<configuration/nscaching/208> ns4kge:hasTask    <task/triple-classification> .
+<configuration/nscaching/208> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/nscaching/208> ns4kge:hasMetric  <metric/accuracy> .
+<configuration/nscaching/208> ns4kge:hasKGEModel <kge-model/transd> .
+<configuration/nscaching/208> ns4kge:hasNSMethod <ns-method/nscaching-scratch> .
+<configuration/nscaching/208> ns4kge:result "0.8069"^^xsd:decimal .
+
+<configuration/nscaching/209> rdf:type ns4kge:Configuration .
+<configuration/nscaching/209> ns4kge:hasTask    <task/triple-classification> .
+<configuration/nscaching/209> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/nscaching/209> ns4kge:hasMetric  <metric/accuracy> .
+<configuration/nscaching/209> ns4kge:hasKGEModel <kge-model/transd> .
+<configuration/nscaching/209> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/nscaching/209> ns4kge:result "0.8063"^^xsd:decimal .
+
+<configuration/nscaching/210> rdf:type ns4kge:Configuration .
+<configuration/nscaching/210> ns4kge:hasTask    <task/triple-classification> .
+<configuration/nscaching/210> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/nscaching/210> ns4kge:hasMetric  <metric/accuracy> .
+<configuration/nscaching/210> ns4kge:hasKGEModel <kge-model/transd> .
+<configuration/nscaching/210> ns4kge:hasNSMethod <ns-method/kbgan-scratch> .
+<configuration/nscaching/210> ns4kge:result "0.7905"^^xsd:decimal .
+
+<configuration/nscaching/211> rdf:type ns4kge:Configuration .
+<configuration/nscaching/211> ns4kge:hasTask    <task/triple-classification> .
+<configuration/nscaching/211> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/nscaching/211> ns4kge:hasMetric  <metric/accuracy> .
+<configuration/nscaching/211> ns4kge:hasKGEModel <kge-model/transd> .
+<configuration/nscaching/211> ns4kge:hasNSMethod <ns-method/bernoulli-negative-sampling> .
+<configuration/nscaching/211> ns4kge:result "0.7824"^^xsd:decimal .
+
+<configuration/nscaching/212> rdf:type ns4kge:Configuration .
+<configuration/nscaching/212> ns4kge:hasTask    <task/triple-classification> .
+<configuration/nscaching/212> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/nscaching/212> ns4kge:hasMetric  <metric/accuracy> .
+<configuration/nscaching/212> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/nscaching/212> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/nscaching/212> ns4kge:result "0.8496"^^xsd:decimal .
+
+<configuration/nscaching/213> rdf:type ns4kge:Configuration .
+<configuration/nscaching/213> ns4kge:hasTask    <task/triple-classification> .
+<configuration/nscaching/213> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/nscaching/213> ns4kge:hasMetric  <metric/accuracy> .
+<configuration/nscaching/213> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/nscaching/213> ns4kge:hasNSMethod <ns-method/nscaching-scratch> .
+<configuration/nscaching/213> ns4kge:result "0.8483"^^xsd:decimal .
+
+<configuration/nscaching/214> rdf:type ns4kge:Configuration .
+<configuration/nscaching/214> ns4kge:hasTask    <task/triple-classification> .
+<configuration/nscaching/214> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/nscaching/214> ns4kge:hasMetric  <metric/accuracy> .
+<configuration/nscaching/214> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/nscaching/214> ns4kge:hasNSMethod <ns-method/bernoulli-negative-sampling> .
+<configuration/nscaching/214> ns4kge:result "0.8448"^^xsd:decimal .
+
+<configuration/nscaching/215> rdf:type ns4kge:Configuration .
+<configuration/nscaching/215> ns4kge:hasTask    <task/triple-classification> .
+<configuration/nscaching/215> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/nscaching/215> ns4kge:hasMetric  <metric/accuracy> .
+<configuration/nscaching/215> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/nscaching/215> ns4kge:hasNSMethod <ns-method/kbgan> .
+<configuration/nscaching/215> ns4kge:result "0.7987"^^xsd:decimal .
+
+<configuration/nscaching/216> rdf:type ns4kge:Configuration .
+<configuration/nscaching/216> ns4kge:hasTask    <task/triple-classification> .
+<configuration/nscaching/216> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/nscaching/216> ns4kge:hasMetric  <metric/accuracy> .
+<configuration/nscaching/216> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/nscaching/216> ns4kge:hasNSMethod <ns-method/nscaching-scratch> .
+<configuration/nscaching/216> ns4kge:result "0.8021"^^xsd:decimal .
+
+<configuration/nscaching/217> rdf:type ns4kge:Configuration .
+<configuration/nscaching/217> ns4kge:hasTask    <task/triple-classification> .
+<configuration/nscaching/217> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/nscaching/217> ns4kge:hasMetric  <metric/accuracy> .
+<configuration/nscaching/217> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/nscaching/217> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/nscaching/217> ns4kge:result "0.7988"^^xsd:decimal .
+
+<configuration/nscaching/218> rdf:type ns4kge:Configuration .
+<configuration/nscaching/218> ns4kge:hasTask    <task/triple-classification> .
+<configuration/nscaching/218> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/nscaching/218> ns4kge:hasMetric  <metric/accuracy> .
+<configuration/nscaching/218> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/nscaching/218> ns4kge:hasNSMethod <ns-method/bernoulli-negative-sampling> .
+<configuration/nscaching/218> ns4kge:result "0.7764"^^xsd:decimal .

@@ -1,0 +1,36 @@
+{
+  "Article": {
+    "title": "A generative adversarial network for single and multi-hop distributional knowledge base completion",
+    "date": "2021"
+  },
+  "proposedNSMethod": "Knowledge Completion GAN",
+  "proposedKGEModel": "KCGAN",
+  "mentionedNSMethods": [
+    "Random Negative Sampling"
+  ],
+  "mentionedKGEModels": [
+    "TransE",
+    "NTN",
+    "TransG",
+    "ConvE",
+    "ConvKB",
+    "HypER",
+    "DistMult",
+    "PTransE",
+    "KBGAN",
+    "KG-BERT",
+    "ELECTRA"
+  ],
+  "Experimentation": {
+    "Hardware": [],
+    "TrainingProtocol": {
+      "LossFunction": [
+        "adversarial loss",
+        "policy gradient"
+      ],
+      "Optimizer": [],
+      "learningRate": null,
+      "nsRatio": null
+    }
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "Article": {
+    "title": "A Knowledge Selective Adversarial Network for Link Prediction in Knowledge Graph",
+    "date": "2019"
+  },
+  "proposedNSMethod": "Knowledge Selective Adversarial Network",
+  "proposedKGEModel": "",
+  "mentionedNSMethods": [
+    "Uniform Negative Sampling",
+    "Bernoulli Negative Sampling",
+    "KBGAN",
+    "IGAN"
+  ],
+  "mentionedKGEModels": [
+    "TransE",
+    "TransH",
+    "TransM",
+    "TransR",
+    "TransD",
+    "TransF",
+    "ManifoldE",
+    "GTrans",
+    "RESCAL",
+    "DistMult",
+    "ComplEx",
+    "SimplE",
+    "TuckER",
+    "NTN",
+    "MLP"
+  ],
+  "Experimentation": {
+    "Hardware": [],
+    "TrainingProtocol": {
+      "LossFunction": [
+        "margin-based ranking loss",
+        "logistic loss"
+      ],
+      "Optimizer": [
+        "Adam"
+      ],
+      "learningRate": 0.001,
+      "nsRatio": null
+    }
+  }
+}

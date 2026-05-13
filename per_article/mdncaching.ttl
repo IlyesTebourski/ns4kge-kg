@@ -1,0 +1,1019 @@
+<article/mdncaching> rdf:type ns4kge:Article .
+<article/mdncaching> ns4kge:title "MDNCaching: A Strategy to Generate Quality Negatives for Knowledge Graph Embedding"^^xsd:string .
+<article/mdncaching> ns4kge:date "2022"^^xsd:gYear .
+<article/mdncaching> ns4kge:proposesNSMethod <ns-method/matrix-decomposed-negative-caching> .
+<article/mdncaching> ns4kge:mentionsNSMethod <ns-method/sans> .
+<article/mdncaching> ns4kge:mentionsNSMethod <ns-method/uniform-negative-sampling> .
+<article/mdncaching> ns4kge:mentionsNSMethod <ns-method/bernoulli-negative-sampling> .
+<article/mdncaching> ns4kge:mentionsNSMethod <ns-method/kbgan> .
+<article/mdncaching> ns4kge:mentionsNSMethod <ns-method/nscaching> .
+<article/mdncaching> ns4kge:mentionsNSMethod <ns-method/igan> .
+<article/mdncaching> ns4kge:mentionsKGEModel <kge-model/distmult> .
+<article/mdncaching> ns4kge:mentionsKGEModel <kge-model/transd> .
+<article/mdncaching> ns4kge:mentionsKGEModel <kge-model/complex> .
+<article/mdncaching> ns4kge:mentionsKGEModel <kge-model/transe> .
+<article/mdncaching> ns4kge:hasExperimentation <experimentation/mdncaching> .
+
+<category/self-adversarial-ns> rdf:type ns4kge:Category .
+
+<subcategory/model-guided> rdf:type ns4kge:Subcategory .
+
+<ns-method/matrix-decomposed-negative-caching> rdf:type ns4kge:NSMethod .
+<ns-method/matrix-decomposed-negative-caching> ns4kge:hasCategory <category/self-adversarial-ns> .
+<ns-method/matrix-decomposed-negative-caching> ns4kge:hasSubcategory <subcategory/model-guided> .
+
+<ns-method/sans> rdf:type ns4kge:NSMethod .
+<category/static-ns> rdf:type ns4kge:Category .
+
+<ns-method/sans> ns4kge:hasCategory <category/static-ns> .
+<subcategory/knowledge-constrained> rdf:type ns4kge:Subcategory .
+
+<ns-method/sans> ns4kge:hasSubcategory <subcategory/knowledge-constrained> .
+
+<ns-method/uniform-negative-sampling> rdf:type ns4kge:NSMethod .
+<ns-method/uniform-negative-sampling> ns4kge:hasCategory <category/static-ns> .
+<subcategory/random> rdf:type ns4kge:Subcategory .
+
+<ns-method/uniform-negative-sampling> ns4kge:hasSubcategory <subcategory/random> .
+
+<ns-method/bernoulli-negative-sampling> rdf:type ns4kge:NSMethod .
+<ns-method/bernoulli-negative-sampling> ns4kge:hasCategory <category/static-ns> .
+<subcategory/probabilistic> rdf:type ns4kge:Subcategory .
+
+<ns-method/bernoulli-negative-sampling> ns4kge:hasSubcategory <subcategory/probabilistic> .
+
+<ns-method/kbgan> rdf:type ns4kge:NSMethod .
+<category/adversarial-ns> rdf:type ns4kge:Category .
+
+<ns-method/kbgan> ns4kge:hasCategory <category/adversarial-ns> .
+<subcategory/standard> rdf:type ns4kge:Subcategory .
+
+<ns-method/kbgan> ns4kge:hasSubcategory <subcategory/standard> .
+
+<ns-method/nscaching> rdf:type ns4kge:NSMethod .
+<ns-method/nscaching> ns4kge:hasCategory <category/self-adversarial-ns> .
+<subcategory/direct> rdf:type ns4kge:Subcategory .
+
+<ns-method/nscaching> ns4kge:hasSubcategory <subcategory/direct> .
+
+<ns-method/igan> rdf:type ns4kge:NSMethod .
+<ns-method/igan> ns4kge:hasCategory <category/adversarial-ns> .
+<ns-method/igan> ns4kge:hasSubcategory <subcategory/standard> .
+
+<kge-model/distmult> rdf:type ns4kge:KGEModel .
+
+<kge-model/transd> rdf:type ns4kge:KGEModel .
+
+<kge-model/complex> rdf:type ns4kge:KGEModel .
+
+<kge-model/transe> rdf:type ns4kge:KGEModel .
+
+<dataset/wn18rr> rdf:type ns4kge:Dataset .
+<task/link-prediction> rdf:type ns4kge:Task .
+<metric/mrr> rdf:type ns4kge:Metric .
+<metric/mr> rdf:type ns4kge:Metric .
+<metric/hits-10> rdf:type ns4kge:Metric .
+<dataset/fb15k-237> rdf:type ns4kge:Dataset .
+<optimizer/adam> rdf:type ns4kge:Optimizer .
+
+<experimentation/mdncaching> rdf:type ns4kge:Experimentation .
+<experimentation/mdncaching> ns4kge:hasTrainingProtocol <training-protocol/mdncaching> .
+<experimentation/mdncaching> ns4kge:hasConfiguration <configuration/mdncaching/1> .
+<experimentation/mdncaching> ns4kge:hasConfiguration <configuration/mdncaching/2> .
+<experimentation/mdncaching> ns4kge:hasConfiguration <configuration/mdncaching/3> .
+<experimentation/mdncaching> ns4kge:hasConfiguration <configuration/mdncaching/4> .
+<experimentation/mdncaching> ns4kge:hasConfiguration <configuration/mdncaching/5> .
+<experimentation/mdncaching> ns4kge:hasConfiguration <configuration/mdncaching/6> .
+<experimentation/mdncaching> ns4kge:hasConfiguration <configuration/mdncaching/7> .
+<experimentation/mdncaching> ns4kge:hasConfiguration <configuration/mdncaching/8> .
+<experimentation/mdncaching> ns4kge:hasConfiguration <configuration/mdncaching/9> .
+<experimentation/mdncaching> ns4kge:hasConfiguration <configuration/mdncaching/10> .
+<experimentation/mdncaching> ns4kge:hasConfiguration <configuration/mdncaching/11> .
+<experimentation/mdncaching> ns4kge:hasConfiguration <configuration/mdncaching/12> .
+<experimentation/mdncaching> ns4kge:hasConfiguration <configuration/mdncaching/13> .
+<experimentation/mdncaching> ns4kge:hasConfiguration <configuration/mdncaching/14> .
+<experimentation/mdncaching> ns4kge:hasConfiguration <configuration/mdncaching/15> .
+<experimentation/mdncaching> ns4kge:hasConfiguration <configuration/mdncaching/16> .
+<experimentation/mdncaching> ns4kge:hasConfiguration <configuration/mdncaching/17> .
+<experimentation/mdncaching> ns4kge:hasConfiguration <configuration/mdncaching/18> .
+<experimentation/mdncaching> ns4kge:hasConfiguration <configuration/mdncaching/19> .
+<experimentation/mdncaching> ns4kge:hasConfiguration <configuration/mdncaching/20> .
+<experimentation/mdncaching> ns4kge:hasConfiguration <configuration/mdncaching/21> .
+<experimentation/mdncaching> ns4kge:hasConfiguration <configuration/mdncaching/22> .
+<experimentation/mdncaching> ns4kge:hasConfiguration <configuration/mdncaching/23> .
+<experimentation/mdncaching> ns4kge:hasConfiguration <configuration/mdncaching/24> .
+<experimentation/mdncaching> ns4kge:hasConfiguration <configuration/mdncaching/25> .
+<experimentation/mdncaching> ns4kge:hasConfiguration <configuration/mdncaching/26> .
+<experimentation/mdncaching> ns4kge:hasConfiguration <configuration/mdncaching/27> .
+<experimentation/mdncaching> ns4kge:hasConfiguration <configuration/mdncaching/28> .
+<experimentation/mdncaching> ns4kge:hasConfiguration <configuration/mdncaching/29> .
+<experimentation/mdncaching> ns4kge:hasConfiguration <configuration/mdncaching/30> .
+<experimentation/mdncaching> ns4kge:hasConfiguration <configuration/mdncaching/31> .
+<experimentation/mdncaching> ns4kge:hasConfiguration <configuration/mdncaching/32> .
+<experimentation/mdncaching> ns4kge:hasConfiguration <configuration/mdncaching/33> .
+<experimentation/mdncaching> ns4kge:hasConfiguration <configuration/mdncaching/34> .
+<experimentation/mdncaching> ns4kge:hasConfiguration <configuration/mdncaching/35> .
+<experimentation/mdncaching> ns4kge:hasConfiguration <configuration/mdncaching/36> .
+<experimentation/mdncaching> ns4kge:hasConfiguration <configuration/mdncaching/37> .
+<experimentation/mdncaching> ns4kge:hasConfiguration <configuration/mdncaching/38> .
+<experimentation/mdncaching> ns4kge:hasConfiguration <configuration/mdncaching/39> .
+<experimentation/mdncaching> ns4kge:hasConfiguration <configuration/mdncaching/40> .
+<experimentation/mdncaching> ns4kge:hasConfiguration <configuration/mdncaching/41> .
+<experimentation/mdncaching> ns4kge:hasConfiguration <configuration/mdncaching/42> .
+<experimentation/mdncaching> ns4kge:hasConfiguration <configuration/mdncaching/43> .
+<experimentation/mdncaching> ns4kge:hasConfiguration <configuration/mdncaching/44> .
+<experimentation/mdncaching> ns4kge:hasConfiguration <configuration/mdncaching/45> .
+<experimentation/mdncaching> ns4kge:hasConfiguration <configuration/mdncaching/46> .
+<experimentation/mdncaching> ns4kge:hasConfiguration <configuration/mdncaching/47> .
+<experimentation/mdncaching> ns4kge:hasConfiguration <configuration/mdncaching/48> .
+<experimentation/mdncaching> ns4kge:hasConfiguration <configuration/mdncaching/49> .
+<experimentation/mdncaching> ns4kge:hasConfiguration <configuration/mdncaching/50> .
+<experimentation/mdncaching> ns4kge:hasConfiguration <configuration/mdncaching/51> .
+<experimentation/mdncaching> ns4kge:hasConfiguration <configuration/mdncaching/52> .
+<experimentation/mdncaching> ns4kge:hasConfiguration <configuration/mdncaching/53> .
+<experimentation/mdncaching> ns4kge:hasConfiguration <configuration/mdncaching/54> .
+<experimentation/mdncaching> ns4kge:hasConfiguration <configuration/mdncaching/55> .
+<experimentation/mdncaching> ns4kge:hasConfiguration <configuration/mdncaching/56> .
+<experimentation/mdncaching> ns4kge:hasConfiguration <configuration/mdncaching/57> .
+<experimentation/mdncaching> ns4kge:hasConfiguration <configuration/mdncaching/58> .
+<experimentation/mdncaching> ns4kge:hasConfiguration <configuration/mdncaching/59> .
+<experimentation/mdncaching> ns4kge:hasConfiguration <configuration/mdncaching/60> .
+<experimentation/mdncaching> ns4kge:hasConfiguration <configuration/mdncaching/61> .
+<experimentation/mdncaching> ns4kge:hasConfiguration <configuration/mdncaching/62> .
+<experimentation/mdncaching> ns4kge:hasConfiguration <configuration/mdncaching/63> .
+<experimentation/mdncaching> ns4kge:hasConfiguration <configuration/mdncaching/64> .
+<experimentation/mdncaching> ns4kge:hasConfiguration <configuration/mdncaching/65> .
+<experimentation/mdncaching> ns4kge:hasConfiguration <configuration/mdncaching/66> .
+<experimentation/mdncaching> ns4kge:hasConfiguration <configuration/mdncaching/67> .
+<experimentation/mdncaching> ns4kge:hasConfiguration <configuration/mdncaching/68> .
+<experimentation/mdncaching> ns4kge:hasConfiguration <configuration/mdncaching/69> .
+<experimentation/mdncaching> ns4kge:hasConfiguration <configuration/mdncaching/70> .
+<experimentation/mdncaching> ns4kge:hasConfiguration <configuration/mdncaching/71> .
+<experimentation/mdncaching> ns4kge:hasConfiguration <configuration/mdncaching/72> .
+<experimentation/mdncaching> ns4kge:hasConfiguration <configuration/mdncaching/73> .
+<experimentation/mdncaching> ns4kge:hasConfiguration <configuration/mdncaching/74> .
+<experimentation/mdncaching> ns4kge:hasConfiguration <configuration/mdncaching/75> .
+<experimentation/mdncaching> ns4kge:hasConfiguration <configuration/mdncaching/76> .
+<experimentation/mdncaching> ns4kge:hasConfiguration <configuration/mdncaching/77> .
+<experimentation/mdncaching> ns4kge:hasConfiguration <configuration/mdncaching/78> .
+<experimentation/mdncaching> ns4kge:hasConfiguration <configuration/mdncaching/79> .
+<experimentation/mdncaching> ns4kge:hasConfiguration <configuration/mdncaching/80> .
+<experimentation/mdncaching> ns4kge:hasConfiguration <configuration/mdncaching/81> .
+<experimentation/mdncaching> ns4kge:hasConfiguration <configuration/mdncaching/82> .
+<experimentation/mdncaching> ns4kge:hasConfiguration <configuration/mdncaching/83> .
+<experimentation/mdncaching> ns4kge:hasConfiguration <configuration/mdncaching/84> .
+<experimentation/mdncaching> ns4kge:hasConfiguration <configuration/mdncaching/85> .
+<experimentation/mdncaching> ns4kge:hasConfiguration <configuration/mdncaching/86> .
+<experimentation/mdncaching> ns4kge:hasConfiguration <configuration/mdncaching/87> .
+<experimentation/mdncaching> ns4kge:hasConfiguration <configuration/mdncaching/88> .
+<experimentation/mdncaching> ns4kge:hasConfiguration <configuration/mdncaching/89> .
+<experimentation/mdncaching> ns4kge:hasConfiguration <configuration/mdncaching/90> .
+<experimentation/mdncaching> ns4kge:hasConfiguration <configuration/mdncaching/91> .
+<experimentation/mdncaching> ns4kge:hasConfiguration <configuration/mdncaching/92> .
+<experimentation/mdncaching> ns4kge:hasConfiguration <configuration/mdncaching/93> .
+<experimentation/mdncaching> ns4kge:hasConfiguration <configuration/mdncaching/94> .
+<experimentation/mdncaching> ns4kge:hasConfiguration <configuration/mdncaching/95> .
+<experimentation/mdncaching> ns4kge:hasConfiguration <configuration/mdncaching/96> .
+<experimentation/mdncaching> ns4kge:hasConfiguration <configuration/mdncaching/97> .
+<experimentation/mdncaching> ns4kge:hasConfiguration <configuration/mdncaching/98> .
+<experimentation/mdncaching> ns4kge:hasConfiguration <configuration/mdncaching/99> .
+<experimentation/mdncaching> ns4kge:hasConfiguration <configuration/mdncaching/100> .
+<experimentation/mdncaching> ns4kge:hasConfiguration <configuration/mdncaching/101> .
+<experimentation/mdncaching> ns4kge:hasConfiguration <configuration/mdncaching/102> .
+<experimentation/mdncaching> ns4kge:hasConfiguration <configuration/mdncaching/103> .
+<experimentation/mdncaching> ns4kge:hasConfiguration <configuration/mdncaching/104> .
+
+<training-protocol/mdncaching> rdf:type ns4kge:TrainingProtocol .
+<training-protocol/mdncaching> ns4kge:hasOptimizer    <optimizer/adam> .
+
+<configuration/mdncaching/1> rdf:type ns4kge:Configuration .
+<configuration/mdncaching/1> ns4kge:hasTask    <task/link-prediction> .
+<configuration/mdncaching/1> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/mdncaching/1> ns4kge:hasMetric  <metric/mrr> .
+<configuration/mdncaching/1> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/mdncaching/1> ns4kge:hasNSMethod <ns-method/bernoulli-negative-sampling> .
+<configuration/mdncaching/1> ns4kge:result "0.1784"^^xsd:decimal .
+
+<configuration/mdncaching/2> rdf:type ns4kge:Configuration .
+<configuration/mdncaching/2> ns4kge:hasTask    <task/link-prediction> .
+<configuration/mdncaching/2> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/mdncaching/2> ns4kge:hasMetric  <metric/mr> .
+<configuration/mdncaching/2> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/mdncaching/2> ns4kge:hasNSMethod <ns-method/bernoulli-negative-sampling> .
+<configuration/mdncaching/2> ns4kge:result "3924"^^xsd:decimal .
+
+<configuration/mdncaching/3> rdf:type ns4kge:Configuration .
+<configuration/mdncaching/3> ns4kge:hasTask    <task/link-prediction> .
+<configuration/mdncaching/3> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/mdncaching/3> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/mdncaching/3> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/mdncaching/3> ns4kge:hasNSMethod <ns-method/bernoulli-negative-sampling> .
+<configuration/mdncaching/3> ns4kge:result "0.4509"^^xsd:decimal .
+
+<configuration/mdncaching/4> rdf:type ns4kge:Configuration .
+<configuration/mdncaching/4> ns4kge:hasTask    <task/link-prediction> .
+<configuration/mdncaching/4> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/mdncaching/4> ns4kge:hasMetric  <metric/mrr> .
+<configuration/mdncaching/4> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/mdncaching/4> ns4kge:hasNSMethod <ns-method/bernoulli-negative-sampling> .
+<configuration/mdncaching/4> ns4kge:result "0.2556"^^xsd:decimal .
+
+<configuration/mdncaching/5> rdf:type ns4kge:Configuration .
+<configuration/mdncaching/5> ns4kge:hasTask    <task/link-prediction> .
+<configuration/mdncaching/5> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/mdncaching/5> ns4kge:hasMetric  <metric/mr> .
+<configuration/mdncaching/5> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/mdncaching/5> ns4kge:hasNSMethod <ns-method/bernoulli-negative-sampling> .
+<configuration/mdncaching/5> ns4kge:result "197"^^xsd:decimal .
+
+<configuration/mdncaching/6> rdf:type ns4kge:Configuration .
+<configuration/mdncaching/6> ns4kge:hasTask    <task/link-prediction> .
+<configuration/mdncaching/6> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/mdncaching/6> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/mdncaching/6> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/mdncaching/6> ns4kge:hasNSMethod <ns-method/bernoulli-negative-sampling> .
+<configuration/mdncaching/6> ns4kge:result "0.4189"^^xsd:decimal .
+
+<configuration/mdncaching/7> rdf:type ns4kge:Configuration .
+<configuration/mdncaching/7> ns4kge:hasTask    <task/link-prediction> .
+<configuration/mdncaching/7> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/mdncaching/7> ns4kge:hasMetric  <metric/mrr> .
+<configuration/mdncaching/7> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/mdncaching/7> ns4kge:hasNSMethod <ns-method/kbgan> .
+<configuration/mdncaching/7> ns4kge:result "0.1808"^^xsd:decimal .
+
+<configuration/mdncaching/8> rdf:type ns4kge:Configuration .
+<configuration/mdncaching/8> ns4kge:hasTask    <task/link-prediction> .
+<configuration/mdncaching/8> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/mdncaching/8> ns4kge:hasMetric  <metric/mr> .
+<configuration/mdncaching/8> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/mdncaching/8> ns4kge:hasNSMethod <ns-method/kbgan> .
+<configuration/mdncaching/8> ns4kge:result "5356"^^xsd:decimal .
+
+<configuration/mdncaching/9> rdf:type ns4kge:Configuration .
+<configuration/mdncaching/9> ns4kge:hasTask    <task/link-prediction> .
+<configuration/mdncaching/9> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/mdncaching/9> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/mdncaching/9> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/mdncaching/9> ns4kge:hasNSMethod <ns-method/kbgan> .
+<configuration/mdncaching/9> ns4kge:result "0.4324"^^xsd:decimal .
+
+<configuration/mdncaching/10> rdf:type ns4kge:Configuration .
+<configuration/mdncaching/10> ns4kge:hasTask    <task/link-prediction> .
+<configuration/mdncaching/10> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/mdncaching/10> ns4kge:hasMetric  <metric/mrr> .
+<configuration/mdncaching/10> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/mdncaching/10> ns4kge:hasNSMethod <ns-method/kbgan> .
+<configuration/mdncaching/10> ns4kge:result "0.2926"^^xsd:decimal .
+
+<configuration/mdncaching/11> rdf:type ns4kge:Configuration .
+<configuration/mdncaching/11> ns4kge:hasTask    <task/link-prediction> .
+<configuration/mdncaching/11> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/mdncaching/11> ns4kge:hasMetric  <metric/mr> .
+<configuration/mdncaching/11> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/mdncaching/11> ns4kge:hasNSMethod <ns-method/kbgan> .
+<configuration/mdncaching/11> ns4kge:result "722"^^xsd:decimal .
+
+<configuration/mdncaching/12> rdf:type ns4kge:Configuration .
+<configuration/mdncaching/12> ns4kge:hasTask    <task/link-prediction> .
+<configuration/mdncaching/12> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/mdncaching/12> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/mdncaching/12> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/mdncaching/12> ns4kge:hasNSMethod <ns-method/kbgan> .
+<configuration/mdncaching/12> ns4kge:result "0.4659"^^xsd:decimal .
+
+<configuration/mdncaching/13> rdf:type ns4kge:Configuration .
+<configuration/mdncaching/13> ns4kge:hasTask    <task/link-prediction> .
+<configuration/mdncaching/13> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/mdncaching/13> ns4kge:hasMetric  <metric/mrr> .
+<configuration/mdncaching/13> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/mdncaching/13> ns4kge:hasNSMethod <ns-method/sans> .
+<configuration/mdncaching/13> ns4kge:result "0.2317"^^xsd:decimal .
+
+<configuration/mdncaching/14> rdf:type ns4kge:Configuration .
+<configuration/mdncaching/14> ns4kge:hasTask    <task/link-prediction> .
+<configuration/mdncaching/14> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/mdncaching/14> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/mdncaching/14> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/mdncaching/14> ns4kge:hasNSMethod <ns-method/sans> .
+<configuration/mdncaching/14> ns4kge:result "0.5341"^^xsd:decimal .
+
+<configuration/mdncaching/15> rdf:type ns4kge:Configuration .
+<configuration/mdncaching/15> ns4kge:hasTask    <task/link-prediction> .
+<configuration/mdncaching/15> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/mdncaching/15> ns4kge:hasMetric  <metric/mrr> .
+<configuration/mdncaching/15> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/mdncaching/15> ns4kge:hasNSMethod <ns-method/sans> .
+<configuration/mdncaching/15> ns4kge:result "0.2981"^^xsd:decimal .
+
+<configuration/mdncaching/16> rdf:type ns4kge:Configuration .
+<configuration/mdncaching/16> ns4kge:hasTask    <task/link-prediction> .
+<configuration/mdncaching/16> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/mdncaching/16> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/mdncaching/16> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/mdncaching/16> ns4kge:hasNSMethod <ns-method/sans> .
+<configuration/mdncaching/16> ns4kge:result "0.485"^^xsd:decimal .
+
+<configuration/mdncaching/17> rdf:type ns4kge:Configuration .
+<configuration/mdncaching/17> ns4kge:hasTask    <task/link-prediction> .
+<configuration/mdncaching/17> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/mdncaching/17> ns4kge:hasMetric  <metric/mrr> .
+<configuration/mdncaching/17> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/mdncaching/17> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/mdncaching/17> ns4kge:result "0.2002"^^xsd:decimal .
+
+<configuration/mdncaching/18> rdf:type ns4kge:Configuration .
+<configuration/mdncaching/18> ns4kge:hasTask    <task/link-prediction> .
+<configuration/mdncaching/18> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/mdncaching/18> ns4kge:hasMetric  <metric/mr> .
+<configuration/mdncaching/18> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/mdncaching/18> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/mdncaching/18> ns4kge:result "4472"^^xsd:decimal .
+
+<configuration/mdncaching/19> rdf:type ns4kge:Configuration .
+<configuration/mdncaching/19> ns4kge:hasTask    <task/link-prediction> .
+<configuration/mdncaching/19> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/mdncaching/19> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/mdncaching/19> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/mdncaching/19> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/mdncaching/19> ns4kge:result "0.4783"^^xsd:decimal .
+
+<configuration/mdncaching/20> rdf:type ns4kge:Configuration .
+<configuration/mdncaching/20> ns4kge:hasTask    <task/link-prediction> .
+<configuration/mdncaching/20> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/mdncaching/20> ns4kge:hasMetric  <metric/mrr> .
+<configuration/mdncaching/20> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/mdncaching/20> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/mdncaching/20> ns4kge:result "0.2993"^^xsd:decimal .
+
+<configuration/mdncaching/21> rdf:type ns4kge:Configuration .
+<configuration/mdncaching/21> ns4kge:hasTask    <task/link-prediction> .
+<configuration/mdncaching/21> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/mdncaching/21> ns4kge:hasMetric  <metric/mr> .
+<configuration/mdncaching/21> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/mdncaching/21> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/mdncaching/21> ns4kge:result "186"^^xsd:decimal .
+
+<configuration/mdncaching/22> rdf:type ns4kge:Configuration .
+<configuration/mdncaching/22> ns4kge:hasTask    <task/link-prediction> .
+<configuration/mdncaching/22> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/mdncaching/22> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/mdncaching/22> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/mdncaching/22> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/mdncaching/22> ns4kge:result "0.4764"^^xsd:decimal .
+
+<configuration/mdncaching/23> rdf:type ns4kge:Configuration .
+<configuration/mdncaching/23> ns4kge:hasTask    <task/link-prediction> .
+<configuration/mdncaching/23> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/mdncaching/23> ns4kge:hasMetric  <metric/mrr> .
+<configuration/mdncaching/23> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/mdncaching/23> ns4kge:hasNSMethod <ns-method/matrix-decomposed-negative-caching> .
+<configuration/mdncaching/23> ns4kge:result "0.239"^^xsd:decimal .
+
+<configuration/mdncaching/24> rdf:type ns4kge:Configuration .
+<configuration/mdncaching/24> ns4kge:hasTask    <task/link-prediction> .
+<configuration/mdncaching/24> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/mdncaching/24> ns4kge:hasMetric  <metric/mr> .
+<configuration/mdncaching/24> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/mdncaching/24> ns4kge:hasNSMethod <ns-method/matrix-decomposed-negative-caching> .
+<configuration/mdncaching/24> ns4kge:result "3054"^^xsd:decimal .
+
+<configuration/mdncaching/25> rdf:type ns4kge:Configuration .
+<configuration/mdncaching/25> ns4kge:hasTask    <task/link-prediction> .
+<configuration/mdncaching/25> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/mdncaching/25> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/mdncaching/25> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/mdncaching/25> ns4kge:hasNSMethod <ns-method/matrix-decomposed-negative-caching> .
+<configuration/mdncaching/25> ns4kge:result "0.532"^^xsd:decimal .
+
+<configuration/mdncaching/26> rdf:type ns4kge:Configuration .
+<configuration/mdncaching/26> ns4kge:hasTask    <task/link-prediction> .
+<configuration/mdncaching/26> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/mdncaching/26> ns4kge:hasMetric  <metric/mrr> .
+<configuration/mdncaching/26> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/mdncaching/26> ns4kge:hasNSMethod <ns-method/matrix-decomposed-negative-caching> .
+<configuration/mdncaching/26> ns4kge:result "0.333"^^xsd:decimal .
+
+<configuration/mdncaching/27> rdf:type ns4kge:Configuration .
+<configuration/mdncaching/27> ns4kge:hasTask    <task/link-prediction> .
+<configuration/mdncaching/27> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/mdncaching/27> ns4kge:hasMetric  <metric/mr> .
+<configuration/mdncaching/27> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/mdncaching/27> ns4kge:hasNSMethod <ns-method/matrix-decomposed-negative-caching> .
+<configuration/mdncaching/27> ns4kge:result "200"^^xsd:decimal .
+
+<configuration/mdncaching/28> rdf:type ns4kge:Configuration .
+<configuration/mdncaching/28> ns4kge:hasTask    <task/link-prediction> .
+<configuration/mdncaching/28> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/mdncaching/28> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/mdncaching/28> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/mdncaching/28> ns4kge:hasNSMethod <ns-method/matrix-decomposed-negative-caching> .
+<configuration/mdncaching/28> ns4kge:result "0.523"^^xsd:decimal .
+
+<configuration/mdncaching/29> rdf:type ns4kge:Configuration .
+<configuration/mdncaching/29> ns4kge:hasTask    <task/link-prediction> .
+<configuration/mdncaching/29> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/mdncaching/29> ns4kge:hasMetric  <metric/mrr> .
+<configuration/mdncaching/29> ns4kge:hasKGEModel <kge-model/transd> .
+<configuration/mdncaching/29> ns4kge:hasNSMethod <ns-method/bernoulli-negative-sampling> .
+<configuration/mdncaching/29> ns4kge:result "0.1901"^^xsd:decimal .
+
+<configuration/mdncaching/30> rdf:type ns4kge:Configuration .
+<configuration/mdncaching/30> ns4kge:hasTask    <task/link-prediction> .
+<configuration/mdncaching/30> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/mdncaching/30> ns4kge:hasMetric  <metric/mr> .
+<configuration/mdncaching/30> ns4kge:hasKGEModel <kge-model/transd> .
+<configuration/mdncaching/30> ns4kge:hasNSMethod <ns-method/bernoulli-negative-sampling> .
+<configuration/mdncaching/30> ns4kge:result "3555"^^xsd:decimal .
+
+<configuration/mdncaching/31> rdf:type ns4kge:Configuration .
+<configuration/mdncaching/31> ns4kge:hasTask    <task/link-prediction> .
+<configuration/mdncaching/31> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/mdncaching/31> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/mdncaching/31> ns4kge:hasKGEModel <kge-model/transd> .
+<configuration/mdncaching/31> ns4kge:hasNSMethod <ns-method/bernoulli-negative-sampling> .
+<configuration/mdncaching/31> ns4kge:result "0.4641"^^xsd:decimal .
+
+<configuration/mdncaching/32> rdf:type ns4kge:Configuration .
+<configuration/mdncaching/32> ns4kge:hasTask    <task/link-prediction> .
+<configuration/mdncaching/32> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/mdncaching/32> ns4kge:hasMetric  <metric/mrr> .
+<configuration/mdncaching/32> ns4kge:hasKGEModel <kge-model/transd> .
+<configuration/mdncaching/32> ns4kge:hasNSMethod <ns-method/bernoulli-negative-sampling> .
+<configuration/mdncaching/32> ns4kge:result "0.2451"^^xsd:decimal .
+
+<configuration/mdncaching/33> rdf:type ns4kge:Configuration .
+<configuration/mdncaching/33> ns4kge:hasTask    <task/link-prediction> .
+<configuration/mdncaching/33> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/mdncaching/33> ns4kge:hasMetric  <metric/mr> .
+<configuration/mdncaching/33> ns4kge:hasKGEModel <kge-model/transd> .
+<configuration/mdncaching/33> ns4kge:hasNSMethod <ns-method/bernoulli-negative-sampling> .
+<configuration/mdncaching/33> ns4kge:result "188"^^xsd:decimal .
+
+<configuration/mdncaching/34> rdf:type ns4kge:Configuration .
+<configuration/mdncaching/34> ns4kge:hasTask    <task/link-prediction> .
+<configuration/mdncaching/34> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/mdncaching/34> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/mdncaching/34> ns4kge:hasKGEModel <kge-model/transd> .
+<configuration/mdncaching/34> ns4kge:hasNSMethod <ns-method/bernoulli-negative-sampling> .
+<configuration/mdncaching/34> ns4kge:result "0.4289"^^xsd:decimal .
+
+<configuration/mdncaching/35> rdf:type ns4kge:Configuration .
+<configuration/mdncaching/35> ns4kge:hasTask    <task/link-prediction> .
+<configuration/mdncaching/35> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/mdncaching/35> ns4kge:hasMetric  <metric/mrr> .
+<configuration/mdncaching/35> ns4kge:hasKGEModel <kge-model/transd> .
+<configuration/mdncaching/35> ns4kge:hasNSMethod <ns-method/kbgan> .
+<configuration/mdncaching/35> ns4kge:result "0.1875"^^xsd:decimal .
+
+<configuration/mdncaching/36> rdf:type ns4kge:Configuration .
+<configuration/mdncaching/36> ns4kge:hasTask    <task/link-prediction> .
+<configuration/mdncaching/36> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/mdncaching/36> ns4kge:hasMetric  <metric/mr> .
+<configuration/mdncaching/36> ns4kge:hasKGEModel <kge-model/transd> .
+<configuration/mdncaching/36> ns4kge:hasNSMethod <ns-method/kbgan> .
+<configuration/mdncaching/36> ns4kge:result "4083"^^xsd:decimal .
+
+<configuration/mdncaching/37> rdf:type ns4kge:Configuration .
+<configuration/mdncaching/37> ns4kge:hasTask    <task/link-prediction> .
+<configuration/mdncaching/37> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/mdncaching/37> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/mdncaching/37> ns4kge:hasKGEModel <kge-model/transd> .
+<configuration/mdncaching/37> ns4kge:hasNSMethod <ns-method/kbgan> .
+<configuration/mdncaching/37> ns4kge:result "0.4641"^^xsd:decimal .
+
+<configuration/mdncaching/38> rdf:type ns4kge:Configuration .
+<configuration/mdncaching/38> ns4kge:hasTask    <task/link-prediction> .
+<configuration/mdncaching/38> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/mdncaching/38> ns4kge:hasMetric  <metric/mrr> .
+<configuration/mdncaching/38> ns4kge:hasKGEModel <kge-model/transd> .
+<configuration/mdncaching/38> ns4kge:hasNSMethod <ns-method/kbgan> .
+<configuration/mdncaching/38> ns4kge:result "0.2465"^^xsd:decimal .
+
+<configuration/mdncaching/39> rdf:type ns4kge:Configuration .
+<configuration/mdncaching/39> ns4kge:hasTask    <task/link-prediction> .
+<configuration/mdncaching/39> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/mdncaching/39> ns4kge:hasMetric  <metric/mr> .
+<configuration/mdncaching/39> ns4kge:hasKGEModel <kge-model/transd> .
+<configuration/mdncaching/39> ns4kge:hasNSMethod <ns-method/kbgan> .
+<configuration/mdncaching/39> ns4kge:result "825"^^xsd:decimal .
+
+<configuration/mdncaching/40> rdf:type ns4kge:Configuration .
+<configuration/mdncaching/40> ns4kge:hasTask    <task/link-prediction> .
+<configuration/mdncaching/40> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/mdncaching/40> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/mdncaching/40> ns4kge:hasKGEModel <kge-model/transd> .
+<configuration/mdncaching/40> ns4kge:hasNSMethod <ns-method/kbgan> .
+<configuration/mdncaching/40> ns4kge:result "0.444"^^xsd:decimal .
+
+<configuration/mdncaching/41> rdf:type ns4kge:Configuration .
+<configuration/mdncaching/41> ns4kge:hasTask    <task/link-prediction> .
+<configuration/mdncaching/41> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/mdncaching/41> ns4kge:hasMetric  <metric/mrr> .
+<configuration/mdncaching/41> ns4kge:hasKGEModel <kge-model/transd> .
+<configuration/mdncaching/41> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/mdncaching/41> ns4kge:result "0.2013"^^xsd:decimal .
+
+<configuration/mdncaching/42> rdf:type ns4kge:Configuration .
+<configuration/mdncaching/42> ns4kge:hasTask    <task/link-prediction> .
+<configuration/mdncaching/42> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/mdncaching/42> ns4kge:hasMetric  <metric/mr> .
+<configuration/mdncaching/42> ns4kge:hasKGEModel <kge-model/transd> .
+<configuration/mdncaching/42> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/mdncaching/42> ns4kge:result "3104"^^xsd:decimal .
+
+<configuration/mdncaching/43> rdf:type ns4kge:Configuration .
+<configuration/mdncaching/43> ns4kge:hasTask    <task/link-prediction> .
+<configuration/mdncaching/43> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/mdncaching/43> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/mdncaching/43> ns4kge:hasKGEModel <kge-model/transd> .
+<configuration/mdncaching/43> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/mdncaching/43> ns4kge:result "0.4839"^^xsd:decimal .
+
+<configuration/mdncaching/44> rdf:type ns4kge:Configuration .
+<configuration/mdncaching/44> ns4kge:hasTask    <task/link-prediction> .
+<configuration/mdncaching/44> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/mdncaching/44> ns4kge:hasMetric  <metric/mrr> .
+<configuration/mdncaching/44> ns4kge:hasKGEModel <kge-model/transd> .
+<configuration/mdncaching/44> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/mdncaching/44> ns4kge:result "0.2863"^^xsd:decimal .
+
+<configuration/mdncaching/45> rdf:type ns4kge:Configuration .
+<configuration/mdncaching/45> ns4kge:hasTask    <task/link-prediction> .
+<configuration/mdncaching/45> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/mdncaching/45> ns4kge:hasMetric  <metric/mr> .
+<configuration/mdncaching/45> ns4kge:hasKGEModel <kge-model/transd> .
+<configuration/mdncaching/45> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/mdncaching/45> ns4kge:result "189"^^xsd:decimal .
+
+<configuration/mdncaching/46> rdf:type ns4kge:Configuration .
+<configuration/mdncaching/46> ns4kge:hasTask    <task/link-prediction> .
+<configuration/mdncaching/46> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/mdncaching/46> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/mdncaching/46> ns4kge:hasKGEModel <kge-model/transd> .
+<configuration/mdncaching/46> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/mdncaching/46> ns4kge:result "0.4785"^^xsd:decimal .
+
+<configuration/mdncaching/47> rdf:type ns4kge:Configuration .
+<configuration/mdncaching/47> ns4kge:hasTask    <task/link-prediction> .
+<configuration/mdncaching/47> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/mdncaching/47> ns4kge:hasMetric  <metric/mrr> .
+<configuration/mdncaching/47> ns4kge:hasKGEModel <kge-model/transd> .
+<configuration/mdncaching/47> ns4kge:hasNSMethod <ns-method/matrix-decomposed-negative-caching> .
+<configuration/mdncaching/47> ns4kge:result "0.1737"^^xsd:decimal .
+
+<configuration/mdncaching/48> rdf:type ns4kge:Configuration .
+<configuration/mdncaching/48> ns4kge:hasTask    <task/link-prediction> .
+<configuration/mdncaching/48> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/mdncaching/48> ns4kge:hasMetric  <metric/mr> .
+<configuration/mdncaching/48> ns4kge:hasKGEModel <kge-model/transd> .
+<configuration/mdncaching/48> ns4kge:hasNSMethod <ns-method/matrix-decomposed-negative-caching> .
+<configuration/mdncaching/48> ns4kge:result "4477"^^xsd:decimal .
+
+<configuration/mdncaching/49> rdf:type ns4kge:Configuration .
+<configuration/mdncaching/49> ns4kge:hasTask    <task/link-prediction> .
+<configuration/mdncaching/49> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/mdncaching/49> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/mdncaching/49> ns4kge:hasKGEModel <kge-model/transd> .
+<configuration/mdncaching/49> ns4kge:hasNSMethod <ns-method/matrix-decomposed-negative-caching> .
+<configuration/mdncaching/49> ns4kge:result "0.4836"^^xsd:decimal .
+
+<configuration/mdncaching/50> rdf:type ns4kge:Configuration .
+<configuration/mdncaching/50> ns4kge:hasTask    <task/link-prediction> .
+<configuration/mdncaching/50> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/mdncaching/50> ns4kge:hasMetric  <metric/mrr> .
+<configuration/mdncaching/50> ns4kge:hasKGEModel <kge-model/transd> .
+<configuration/mdncaching/50> ns4kge:hasNSMethod <ns-method/matrix-decomposed-negative-caching> .
+<configuration/mdncaching/50> ns4kge:result "0.2683"^^xsd:decimal .
+
+<configuration/mdncaching/51> rdf:type ns4kge:Configuration .
+<configuration/mdncaching/51> ns4kge:hasTask    <task/link-prediction> .
+<configuration/mdncaching/51> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/mdncaching/51> ns4kge:hasMetric  <metric/mr> .
+<configuration/mdncaching/51> ns4kge:hasKGEModel <kge-model/transd> .
+<configuration/mdncaching/51> ns4kge:hasNSMethod <ns-method/matrix-decomposed-negative-caching> .
+<configuration/mdncaching/51> ns4kge:result "354"^^xsd:decimal .
+
+<configuration/mdncaching/52> rdf:type ns4kge:Configuration .
+<configuration/mdncaching/52> ns4kge:hasTask    <task/link-prediction> .
+<configuration/mdncaching/52> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/mdncaching/52> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/mdncaching/52> ns4kge:hasKGEModel <kge-model/transd> .
+<configuration/mdncaching/52> ns4kge:hasNSMethod <ns-method/matrix-decomposed-negative-caching> .
+<configuration/mdncaching/52> ns4kge:result "0.4643"^^xsd:decimal .
+
+<configuration/mdncaching/53> rdf:type ns4kge:Configuration .
+<configuration/mdncaching/53> ns4kge:hasTask    <task/link-prediction> .
+<configuration/mdncaching/53> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/mdncaching/53> ns4kge:hasMetric  <metric/mrr> .
+<configuration/mdncaching/53> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/mdncaching/53> ns4kge:hasNSMethod <ns-method/bernoulli-negative-sampling> .
+<configuration/mdncaching/53> ns4kge:result "0.3964"^^xsd:decimal .
+
+<configuration/mdncaching/54> rdf:type ns4kge:Configuration .
+<configuration/mdncaching/54> ns4kge:hasTask    <task/link-prediction> .
+<configuration/mdncaching/54> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/mdncaching/54> ns4kge:hasMetric  <metric/mr> .
+<configuration/mdncaching/54> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/mdncaching/54> ns4kge:hasNSMethod <ns-method/bernoulli-negative-sampling> .
+<configuration/mdncaching/54> ns4kge:result "7420"^^xsd:decimal .
+
+<configuration/mdncaching/55> rdf:type ns4kge:Configuration .
+<configuration/mdncaching/55> ns4kge:hasTask    <task/link-prediction> .
+<configuration/mdncaching/55> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/mdncaching/55> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/mdncaching/55> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/mdncaching/55> ns4kge:hasNSMethod <ns-method/bernoulli-negative-sampling> .
+<configuration/mdncaching/55> ns4kge:result "0.4525"^^xsd:decimal .
+
+<configuration/mdncaching/56> rdf:type ns4kge:Configuration .
+<configuration/mdncaching/56> ns4kge:hasTask    <task/link-prediction> .
+<configuration/mdncaching/56> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/mdncaching/56> ns4kge:hasMetric  <metric/mrr> .
+<configuration/mdncaching/56> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/mdncaching/56> ns4kge:hasNSMethod <ns-method/bernoulli-negative-sampling> .
+<configuration/mdncaching/56> ns4kge:result "0.2491"^^xsd:decimal .
+
+<configuration/mdncaching/57> rdf:type ns4kge:Configuration .
+<configuration/mdncaching/57> ns4kge:hasTask    <task/link-prediction> .
+<configuration/mdncaching/57> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/mdncaching/57> ns4kge:hasMetric  <metric/mr> .
+<configuration/mdncaching/57> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/mdncaching/57> ns4kge:hasNSMethod <ns-method/bernoulli-negative-sampling> .
+<configuration/mdncaching/57> ns4kge:result "280"^^xsd:decimal .
+
+<configuration/mdncaching/58> rdf:type ns4kge:Configuration .
+<configuration/mdncaching/58> ns4kge:hasTask    <task/link-prediction> .
+<configuration/mdncaching/58> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/mdncaching/58> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/mdncaching/58> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/mdncaching/58> ns4kge:hasNSMethod <ns-method/bernoulli-negative-sampling> .
+<configuration/mdncaching/58> ns4kge:result "0.4203"^^xsd:decimal .
+
+<configuration/mdncaching/59> rdf:type ns4kge:Configuration .
+<configuration/mdncaching/59> ns4kge:hasTask    <task/link-prediction> .
+<configuration/mdncaching/59> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/mdncaching/59> ns4kge:hasMetric  <metric/mrr> .
+<configuration/mdncaching/59> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/mdncaching/59> ns4kge:hasNSMethod <ns-method/kbgan> .
+<configuration/mdncaching/59> ns4kge:result "0.2039"^^xsd:decimal .
+
+<configuration/mdncaching/60> rdf:type ns4kge:Configuration .
+<configuration/mdncaching/60> ns4kge:hasTask    <task/link-prediction> .
+<configuration/mdncaching/60> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/mdncaching/60> ns4kge:hasMetric  <metric/mr> .
+<configuration/mdncaching/60> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/mdncaching/60> ns4kge:hasNSMethod <ns-method/kbgan> .
+<configuration/mdncaching/60> ns4kge:result "11351"^^xsd:decimal .
+
+<configuration/mdncaching/61> rdf:type ns4kge:Configuration .
+<configuration/mdncaching/61> ns4kge:hasTask    <task/link-prediction> .
+<configuration/mdncaching/61> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/mdncaching/61> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/mdncaching/61> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/mdncaching/61> ns4kge:hasNSMethod <ns-method/kbgan> .
+<configuration/mdncaching/61> ns4kge:result "0.2952"^^xsd:decimal .
+
+<configuration/mdncaching/62> rdf:type ns4kge:Configuration .
+<configuration/mdncaching/62> ns4kge:hasTask    <task/link-prediction> .
+<configuration/mdncaching/62> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/mdncaching/62> ns4kge:hasMetric  <metric/mrr> .
+<configuration/mdncaching/62> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/mdncaching/62> ns4kge:hasNSMethod <ns-method/kbgan> .
+<configuration/mdncaching/62> ns4kge:result "0.2272"^^xsd:decimal .
+
+<configuration/mdncaching/63> rdf:type ns4kge:Configuration .
+<configuration/mdncaching/63> ns4kge:hasTask    <task/link-prediction> .
+<configuration/mdncaching/63> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/mdncaching/63> ns4kge:hasMetric  <metric/mr> .
+<configuration/mdncaching/63> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/mdncaching/63> ns4kge:hasNSMethod <ns-method/kbgan> .
+<configuration/mdncaching/63> ns4kge:result "276"^^xsd:decimal .
+
+<configuration/mdncaching/64> rdf:type ns4kge:Configuration .
+<configuration/mdncaching/64> ns4kge:hasTask    <task/link-prediction> .
+<configuration/mdncaching/64> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/mdncaching/64> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/mdncaching/64> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/mdncaching/64> ns4kge:hasNSMethod <ns-method/kbgan> .
+<configuration/mdncaching/64> ns4kge:result "0.3991"^^xsd:decimal .
+
+<configuration/mdncaching/65> rdf:type ns4kge:Configuration .
+<configuration/mdncaching/65> ns4kge:hasTask    <task/link-prediction> .
+<configuration/mdncaching/65> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/mdncaching/65> ns4kge:hasMetric  <metric/mrr> .
+<configuration/mdncaching/65> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/mdncaching/65> ns4kge:hasNSMethod <ns-method/sans> .
+<configuration/mdncaching/65> ns4kge:result "0.4071"^^xsd:decimal .
+
+<configuration/mdncaching/66> rdf:type ns4kge:Configuration .
+<configuration/mdncaching/66> ns4kge:hasTask    <task/link-prediction> .
+<configuration/mdncaching/66> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/mdncaching/66> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/mdncaching/66> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/mdncaching/66> ns4kge:hasNSMethod <ns-method/sans> .
+<configuration/mdncaching/66> ns4kge:result "0.4909"^^xsd:decimal .
+
+<configuration/mdncaching/67> rdf:type ns4kge:Configuration .
+<configuration/mdncaching/67> ns4kge:hasTask    <task/link-prediction> .
+<configuration/mdncaching/67> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/mdncaching/67> ns4kge:hasMetric  <metric/mrr> .
+<configuration/mdncaching/67> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/mdncaching/67> ns4kge:hasNSMethod <ns-method/sans> .
+<configuration/mdncaching/67> ns4kge:result "0.2621"^^xsd:decimal .
+
+<configuration/mdncaching/68> rdf:type ns4kge:Configuration .
+<configuration/mdncaching/68> ns4kge:hasTask    <task/link-prediction> .
+<configuration/mdncaching/68> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/mdncaching/68> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/mdncaching/68> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/mdncaching/68> ns4kge:hasNSMethod <ns-method/sans> .
+<configuration/mdncaching/68> ns4kge:result "0.4146"^^xsd:decimal .
+
+<configuration/mdncaching/69> rdf:type ns4kge:Configuration .
+<configuration/mdncaching/69> ns4kge:hasTask    <task/link-prediction> .
+<configuration/mdncaching/69> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/mdncaching/69> ns4kge:hasMetric  <metric/mrr> .
+<configuration/mdncaching/69> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/mdncaching/69> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/mdncaching/69> ns4kge:result "0.4128"^^xsd:decimal .
+
+<configuration/mdncaching/70> rdf:type ns4kge:Configuration .
+<configuration/mdncaching/70> ns4kge:hasTask    <task/link-prediction> .
+<configuration/mdncaching/70> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/mdncaching/70> ns4kge:hasMetric  <metric/mr> .
+<configuration/mdncaching/70> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/mdncaching/70> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/mdncaching/70> ns4kge:result "7708"^^xsd:decimal .
+
+<configuration/mdncaching/71> rdf:type ns4kge:Configuration .
+<configuration/mdncaching/71> ns4kge:hasTask    <task/link-prediction> .
+<configuration/mdncaching/71> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/mdncaching/71> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/mdncaching/71> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/mdncaching/71> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/mdncaching/71> ns4kge:result "0.4545"^^xsd:decimal .
+
+<configuration/mdncaching/72> rdf:type ns4kge:Configuration .
+<configuration/mdncaching/72> ns4kge:hasTask    <task/link-prediction> .
+<configuration/mdncaching/72> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/mdncaching/72> ns4kge:hasMetric  <metric/mrr> .
+<configuration/mdncaching/72> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/mdncaching/72> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/mdncaching/72> ns4kge:result "0.2834"^^xsd:decimal .
+
+<configuration/mdncaching/73> rdf:type ns4kge:Configuration .
+<configuration/mdncaching/73> ns4kge:hasTask    <task/link-prediction> .
+<configuration/mdncaching/73> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/mdncaching/73> ns4kge:hasMetric  <metric/mr> .
+<configuration/mdncaching/73> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/mdncaching/73> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/mdncaching/73> ns4kge:result "273"^^xsd:decimal .
+
+<configuration/mdncaching/74> rdf:type ns4kge:Configuration .
+<configuration/mdncaching/74> ns4kge:hasTask    <task/link-prediction> .
+<configuration/mdncaching/74> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/mdncaching/74> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/mdncaching/74> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/mdncaching/74> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/mdncaching/74> ns4kge:result "0.4556"^^xsd:decimal .
+
+<configuration/mdncaching/75> rdf:type ns4kge:Configuration .
+<configuration/mdncaching/75> ns4kge:hasTask    <task/link-prediction> .
+<configuration/mdncaching/75> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/mdncaching/75> ns4kge:hasMetric  <metric/mrr> .
+<configuration/mdncaching/75> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/mdncaching/75> ns4kge:hasNSMethod <ns-method/matrix-decomposed-negative-caching> .
+<configuration/mdncaching/75> ns4kge:result "0.3921"^^xsd:decimal .
+
+<configuration/mdncaching/76> rdf:type ns4kge:Configuration .
+<configuration/mdncaching/76> ns4kge:hasTask    <task/link-prediction> .
+<configuration/mdncaching/76> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/mdncaching/76> ns4kge:hasMetric  <metric/mr> .
+<configuration/mdncaching/76> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/mdncaching/76> ns4kge:hasNSMethod <ns-method/matrix-decomposed-negative-caching> .
+<configuration/mdncaching/76> ns4kge:result "2946"^^xsd:decimal .
+
+<configuration/mdncaching/77> rdf:type ns4kge:Configuration .
+<configuration/mdncaching/77> ns4kge:hasTask    <task/link-prediction> .
+<configuration/mdncaching/77> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/mdncaching/77> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/mdncaching/77> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/mdncaching/77> ns4kge:hasNSMethod <ns-method/matrix-decomposed-negative-caching> .
+<configuration/mdncaching/77> ns4kge:result "0.5137"^^xsd:decimal .
+
+<configuration/mdncaching/78> rdf:type ns4kge:Configuration .
+<configuration/mdncaching/78> ns4kge:hasTask    <task/link-prediction> .
+<configuration/mdncaching/78> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/mdncaching/78> ns4kge:hasMetric  <metric/mrr> .
+<configuration/mdncaching/78> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/mdncaching/78> ns4kge:hasNSMethod <ns-method/matrix-decomposed-negative-caching> .
+<configuration/mdncaching/78> ns4kge:result "0.2694"^^xsd:decimal .
+
+<configuration/mdncaching/79> rdf:type ns4kge:Configuration .
+<configuration/mdncaching/79> ns4kge:hasTask    <task/link-prediction> .
+<configuration/mdncaching/79> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/mdncaching/79> ns4kge:hasMetric  <metric/mr> .
+<configuration/mdncaching/79> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/mdncaching/79> ns4kge:hasNSMethod <ns-method/matrix-decomposed-negative-caching> .
+<configuration/mdncaching/79> ns4kge:result "403"^^xsd:decimal .
+
+<configuration/mdncaching/80> rdf:type ns4kge:Configuration .
+<configuration/mdncaching/80> ns4kge:hasTask    <task/link-prediction> .
+<configuration/mdncaching/80> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/mdncaching/80> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/mdncaching/80> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/mdncaching/80> ns4kge:hasNSMethod <ns-method/matrix-decomposed-negative-caching> .
+<configuration/mdncaching/80> ns4kge:result "0.441"^^xsd:decimal .
+
+<configuration/mdncaching/81> rdf:type ns4kge:Configuration .
+<configuration/mdncaching/81> ns4kge:hasTask    <task/link-prediction> .
+<configuration/mdncaching/81> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/mdncaching/81> ns4kge:hasMetric  <metric/mrr> .
+<configuration/mdncaching/81> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/mdncaching/81> ns4kge:hasNSMethod <ns-method/bernoulli-negative-sampling> .
+<configuration/mdncaching/81> ns4kge:result "0.4431"^^xsd:decimal .
+
+<configuration/mdncaching/82> rdf:type ns4kge:Configuration .
+<configuration/mdncaching/82> ns4kge:hasTask    <task/link-prediction> .
+<configuration/mdncaching/82> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/mdncaching/82> ns4kge:hasMetric  <metric/mr> .
+<configuration/mdncaching/82> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/mdncaching/82> ns4kge:hasNSMethod <ns-method/bernoulli-negative-sampling> .
+<configuration/mdncaching/82> ns4kge:result "4693"^^xsd:decimal .
+
+<configuration/mdncaching/83> rdf:type ns4kge:Configuration .
+<configuration/mdncaching/83> ns4kge:hasTask    <task/link-prediction> .
+<configuration/mdncaching/83> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/mdncaching/83> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/mdncaching/83> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/mdncaching/83> ns4kge:hasNSMethod <ns-method/bernoulli-negative-sampling> .
+<configuration/mdncaching/83> ns4kge:result "0.5177"^^xsd:decimal .
+
+<configuration/mdncaching/84> rdf:type ns4kge:Configuration .
+<configuration/mdncaching/84> ns4kge:hasTask    <task/link-prediction> .
+<configuration/mdncaching/84> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/mdncaching/84> ns4kge:hasMetric  <metric/mrr> .
+<configuration/mdncaching/84> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/mdncaching/84> ns4kge:hasNSMethod <ns-method/bernoulli-negative-sampling> .
+<configuration/mdncaching/84> ns4kge:result "0.2596"^^xsd:decimal .
+
+<configuration/mdncaching/85> rdf:type ns4kge:Configuration .
+<configuration/mdncaching/85> ns4kge:hasTask    <task/link-prediction> .
+<configuration/mdncaching/85> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/mdncaching/85> ns4kge:hasMetric  <metric/mr> .
+<configuration/mdncaching/85> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/mdncaching/85> ns4kge:hasNSMethod <ns-method/bernoulli-negative-sampling> .
+<configuration/mdncaching/85> ns4kge:result "238"^^xsd:decimal .
+
+<configuration/mdncaching/86> rdf:type ns4kge:Configuration .
+<configuration/mdncaching/86> ns4kge:hasTask    <task/link-prediction> .
+<configuration/mdncaching/86> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/mdncaching/86> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/mdncaching/86> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/mdncaching/86> ns4kge:hasNSMethod <ns-method/bernoulli-negative-sampling> .
+<configuration/mdncaching/86> ns4kge:result "0.4354"^^xsd:decimal .
+
+<configuration/mdncaching/87> rdf:type ns4kge:Configuration .
+<configuration/mdncaching/87> ns4kge:hasTask    <task/link-prediction> .
+<configuration/mdncaching/87> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/mdncaching/87> ns4kge:hasMetric  <metric/mrr> .
+<configuration/mdncaching/87> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/mdncaching/87> ns4kge:hasNSMethod <ns-method/kbgan> .
+<configuration/mdncaching/87> ns4kge:result "0.318"^^xsd:decimal .
+
+<configuration/mdncaching/88> rdf:type ns4kge:Configuration .
+<configuration/mdncaching/88> ns4kge:hasTask    <task/link-prediction> .
+<configuration/mdncaching/88> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/mdncaching/88> ns4kge:hasMetric  <metric/mr> .
+<configuration/mdncaching/88> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/mdncaching/88> ns4kge:hasNSMethod <ns-method/kbgan> .
+<configuration/mdncaching/88> ns4kge:result "7528"^^xsd:decimal .
+
+<configuration/mdncaching/89> rdf:type ns4kge:Configuration .
+<configuration/mdncaching/89> ns4kge:hasTask    <task/link-prediction> .
+<configuration/mdncaching/89> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/mdncaching/89> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/mdncaching/89> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/mdncaching/89> ns4kge:hasNSMethod <ns-method/kbgan> .
+<configuration/mdncaching/89> ns4kge:result "0.3551"^^xsd:decimal .
+
+<configuration/mdncaching/90> rdf:type ns4kge:Configuration .
+<configuration/mdncaching/90> ns4kge:hasTask    <task/link-prediction> .
+<configuration/mdncaching/90> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/mdncaching/90> ns4kge:hasMetric  <metric/mrr> .
+<configuration/mdncaching/90> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/mdncaching/90> ns4kge:hasNSMethod <ns-method/kbgan> .
+<configuration/mdncaching/90> ns4kge:result "0.191"^^xsd:decimal .
+
+<configuration/mdncaching/91> rdf:type ns4kge:Configuration .
+<configuration/mdncaching/91> ns4kge:hasTask    <task/link-prediction> .
+<configuration/mdncaching/91> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/mdncaching/91> ns4kge:hasMetric  <metric/mr> .
+<configuration/mdncaching/91> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/mdncaching/91> ns4kge:hasNSMethod <ns-method/kbgan> .
+<configuration/mdncaching/91> ns4kge:result "881"^^xsd:decimal .
+
+<configuration/mdncaching/92> rdf:type ns4kge:Configuration .
+<configuration/mdncaching/92> ns4kge:hasTask    <task/link-prediction> .
+<configuration/mdncaching/92> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/mdncaching/92> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/mdncaching/92> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/mdncaching/92> ns4kge:hasNSMethod <ns-method/kbgan> .
+<configuration/mdncaching/92> ns4kge:result "0.3207"^^xsd:decimal .
+
+<configuration/mdncaching/93> rdf:type ns4kge:Configuration .
+<configuration/mdncaching/93> ns4kge:hasTask    <task/link-prediction> .
+<configuration/mdncaching/93> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/mdncaching/93> ns4kge:hasMetric  <metric/mrr> .
+<configuration/mdncaching/93> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/mdncaching/93> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/mdncaching/93> ns4kge:result "0.4463"^^xsd:decimal .
+
+<configuration/mdncaching/94> rdf:type ns4kge:Configuration .
+<configuration/mdncaching/94> ns4kge:hasTask    <task/link-prediction> .
+<configuration/mdncaching/94> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/mdncaching/94> ns4kge:hasMetric  <metric/mr> .
+<configuration/mdncaching/94> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/mdncaching/94> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/mdncaching/94> ns4kge:result "5365"^^xsd:decimal .
+
+<configuration/mdncaching/95> rdf:type ns4kge:Configuration .
+<configuration/mdncaching/95> ns4kge:hasTask    <task/link-prediction> .
+<configuration/mdncaching/95> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/mdncaching/95> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/mdncaching/95> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/mdncaching/95> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/mdncaching/95> ns4kge:result "0.5089"^^xsd:decimal .
+
+<configuration/mdncaching/96> rdf:type ns4kge:Configuration .
+<configuration/mdncaching/96> ns4kge:hasTask    <task/link-prediction> .
+<configuration/mdncaching/96> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/mdncaching/96> ns4kge:hasMetric  <metric/mrr> .
+<configuration/mdncaching/96> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/mdncaching/96> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/mdncaching/96> ns4kge:result "0.3021"^^xsd:decimal .
+
+<configuration/mdncaching/97> rdf:type ns4kge:Configuration .
+<configuration/mdncaching/97> ns4kge:hasTask    <task/link-prediction> .
+<configuration/mdncaching/97> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/mdncaching/97> ns4kge:hasMetric  <metric/mr> .
+<configuration/mdncaching/97> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/mdncaching/97> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/mdncaching/97> ns4kge:result "221"^^xsd:decimal .
+
+<configuration/mdncaching/98> rdf:type ns4kge:Configuration .
+<configuration/mdncaching/98> ns4kge:hasTask    <task/link-prediction> .
+<configuration/mdncaching/98> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/mdncaching/98> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/mdncaching/98> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/mdncaching/98> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/mdncaching/98> ns4kge:result "0.4805"^^xsd:decimal .
+
+<configuration/mdncaching/99> rdf:type ns4kge:Configuration .
+<configuration/mdncaching/99> ns4kge:hasTask    <task/link-prediction> .
+<configuration/mdncaching/99> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/mdncaching/99> ns4kge:hasMetric  <metric/mrr> .
+<configuration/mdncaching/99> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/mdncaching/99> ns4kge:hasNSMethod <ns-method/matrix-decomposed-negative-caching> .
+<configuration/mdncaching/99> ns4kge:result "0.4729"^^xsd:decimal .
+
+<configuration/mdncaching/100> rdf:type ns4kge:Configuration .
+<configuration/mdncaching/100> ns4kge:hasTask    <task/link-prediction> .
+<configuration/mdncaching/100> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/mdncaching/100> ns4kge:hasMetric  <metric/mr> .
+<configuration/mdncaching/100> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/mdncaching/100> ns4kge:hasNSMethod <ns-method/matrix-decomposed-negative-caching> .
+<configuration/mdncaching/100> ns4kge:result "5312"^^xsd:decimal .
+
+<configuration/mdncaching/101> rdf:type ns4kge:Configuration .
+<configuration/mdncaching/101> ns4kge:hasTask    <task/link-prediction> .
+<configuration/mdncaching/101> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/mdncaching/101> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/mdncaching/101> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/mdncaching/101> ns4kge:hasNSMethod <ns-method/matrix-decomposed-negative-caching> .
+<configuration/mdncaching/101> ns4kge:result "0.5405"^^xsd:decimal .
+
+<configuration/mdncaching/102> rdf:type ns4kge:Configuration .
+<configuration/mdncaching/102> ns4kge:hasTask    <task/link-prediction> .
+<configuration/mdncaching/102> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/mdncaching/102> ns4kge:hasMetric  <metric/mrr> .
+<configuration/mdncaching/102> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/mdncaching/102> ns4kge:hasNSMethod <ns-method/matrix-decomposed-negative-caching> .
+<configuration/mdncaching/102> ns4kge:result "0.3594"^^xsd:decimal .
+
+<configuration/mdncaching/103> rdf:type ns4kge:Configuration .
+<configuration/mdncaching/103> ns4kge:hasTask    <task/link-prediction> .
+<configuration/mdncaching/103> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/mdncaching/103> ns4kge:hasMetric  <metric/mr> .
+<configuration/mdncaching/103> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/mdncaching/103> ns4kge:hasNSMethod <ns-method/matrix-decomposed-negative-caching> .
+<configuration/mdncaching/103> ns4kge:result "415"^^xsd:decimal .
+
+<configuration/mdncaching/104> rdf:type ns4kge:Configuration .
+<configuration/mdncaching/104> ns4kge:hasTask    <task/link-prediction> .
+<configuration/mdncaching/104> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/mdncaching/104> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/mdncaching/104> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/mdncaching/104> ns4kge:hasNSMethod <ns-method/matrix-decomposed-negative-caching> .
+<configuration/mdncaching/104> ns4kge:result "0.5329"^^xsd:decimal .

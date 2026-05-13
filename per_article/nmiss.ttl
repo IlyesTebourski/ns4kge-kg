@@ -1,0 +1,281 @@
+<article/nmiss> rdf:type ns4kge:Article .
+<article/nmiss> ns4kge:title "Analysis of the Impact of Negative Sampling on Link Prediction in Knowledge Graphs"^^xsd:string .
+<article/nmiss> ns4kge:date "2018"^^xsd:gYear .
+<article/nmiss> ns4kge:proposesNSMethod <ns-method/nearest-neighbor-sampling> .
+<article/nmiss> ns4kge:mentionsNSMethod <ns-method/noise-contrastive-estimation> .
+<article/nmiss> ns4kge:mentionsNSMethod <ns-method/corrupting-positive-instances> .
+<article/nmiss> ns4kge:mentionsNSMethod <ns-method/relational-sampling> .
+<article/nmiss> ns4kge:mentionsNSMethod <ns-method/random-negative-sampling> .
+<article/nmiss> ns4kge:mentionsNSMethod <ns-method/near-miss-sampling> .
+<article/nmiss> ns4kge:mentionsNSMethod <ns-method/importance-sampling> .
+<article/nmiss> ns4kge:mentionsNSMethod <ns-method/typed-negative-sampling> .
+<article/nmiss> ns4kge:mentionsKGEModel <kge-model/distmult> .
+<article/nmiss> ns4kge:mentionsKGEModel <kge-model/ntn> .
+<article/nmiss> ns4kge:mentionsKGEModel <kge-model/hole> .
+<article/nmiss> ns4kge:mentionsKGEModel <kge-model/transe> .
+<article/nmiss> ns4kge:mentionsKGEModel <kge-model/complex> .
+<article/nmiss> ns4kge:mentionsKGEModel <kge-model/rescal> .
+<article/nmiss> ns4kge:hasExperimentation <experimentation/nmiss> .
+
+<category/static-ns> rdf:type ns4kge:Category .
+
+<subcategory/model-guided> rdf:type ns4kge:Subcategory .
+
+<ns-method/nearest-neighbor-sampling> rdf:type ns4kge:NSMethod .
+<ns-method/nearest-neighbor-sampling> ns4kge:hasCategory <category/static-ns> .
+<ns-method/nearest-neighbor-sampling> ns4kge:hasSubcategory <subcategory/model-guided> .
+
+<ns-method/noise-contrastive-estimation> rdf:type ns4kge:NSMethod .
+
+<ns-method/corrupting-positive-instances> rdf:type ns4kge:NSMethod .
+
+<ns-method/relational-sampling> rdf:type ns4kge:NSMethod .
+
+<ns-method/random-negative-sampling> rdf:type ns4kge:NSMethod .
+<ns-method/random-negative-sampling> ns4kge:hasCategory <category/static-ns> .
+<subcategory/random> rdf:type ns4kge:Subcategory .
+
+<ns-method/random-negative-sampling> ns4kge:hasSubcategory <subcategory/random> .
+
+<ns-method/near-miss-sampling> rdf:type ns4kge:NSMethod .
+<ns-method/near-miss-sampling> ns4kge:hasCategory <category/static-ns> .
+<ns-method/near-miss-sampling> ns4kge:hasSubcategory <subcategory/model-guided> .
+
+<ns-method/importance-sampling> rdf:type ns4kge:NSMethod .
+
+<ns-method/typed-negative-sampling> rdf:type ns4kge:NSMethod .
+
+<kge-model/distmult> rdf:type ns4kge:KGEModel .
+
+<kge-model/ntn> rdf:type ns4kge:KGEModel .
+
+<kge-model/hole> rdf:type ns4kge:KGEModel .
+
+<kge-model/transe> rdf:type ns4kge:KGEModel .
+
+<kge-model/complex> rdf:type ns4kge:KGEModel .
+
+<kge-model/rescal> rdf:type ns4kge:KGEModel .
+
+<dataset/fb15k> rdf:type ns4kge:Dataset .
+<task/link-prediction> rdf:type ns4kge:Task .
+<metric/mrr> rdf:type ns4kge:Metric .
+<metric/hits-10> rdf:type ns4kge:Metric .
+<dataset/wn18> rdf:type ns4kge:Dataset .
+<loss-function/max-margin-loss> rdf:type ns4kge:LossFunction .
+<loss-function/cross-entropy-loss> rdf:type ns4kge:LossFunction .
+<loss-function/binary-negative-log-likelihood> rdf:type ns4kge:LossFunction .
+<optimizer/adam> rdf:type ns4kge:Optimizer .
+
+<experimentation/nmiss> rdf:type ns4kge:Experimentation .
+<experimentation/nmiss> ns4kge:hasTrainingProtocol <training-protocol/nmiss> .
+<experimentation/nmiss> ns4kge:hasConfiguration <configuration/nmiss/1> .
+<experimentation/nmiss> ns4kge:hasConfiguration <configuration/nmiss/2> .
+<experimentation/nmiss> ns4kge:hasConfiguration <configuration/nmiss/3> .
+<experimentation/nmiss> ns4kge:hasConfiguration <configuration/nmiss/4> .
+<experimentation/nmiss> ns4kge:hasConfiguration <configuration/nmiss/5> .
+<experimentation/nmiss> ns4kge:hasConfiguration <configuration/nmiss/6> .
+<experimentation/nmiss> ns4kge:hasConfiguration <configuration/nmiss/7> .
+<experimentation/nmiss> ns4kge:hasConfiguration <configuration/nmiss/8> .
+<experimentation/nmiss> ns4kge:hasConfiguration <configuration/nmiss/9> .
+<experimentation/nmiss> ns4kge:hasConfiguration <configuration/nmiss/10> .
+<experimentation/nmiss> ns4kge:hasConfiguration <configuration/nmiss/11> .
+<experimentation/nmiss> ns4kge:hasConfiguration <configuration/nmiss/12> .
+<experimentation/nmiss> ns4kge:hasConfiguration <configuration/nmiss/13> .
+<experimentation/nmiss> ns4kge:hasConfiguration <configuration/nmiss/14> .
+<experimentation/nmiss> ns4kge:hasConfiguration <configuration/nmiss/15> .
+<experimentation/nmiss> ns4kge:hasConfiguration <configuration/nmiss/16> .
+<experimentation/nmiss> ns4kge:hasConfiguration <configuration/nmiss/17> .
+<experimentation/nmiss> ns4kge:hasConfiguration <configuration/nmiss/18> .
+<experimentation/nmiss> ns4kge:hasConfiguration <configuration/nmiss/19> .
+<experimentation/nmiss> ns4kge:hasConfiguration <configuration/nmiss/20> .
+<experimentation/nmiss> ns4kge:hasConfiguration <configuration/nmiss/21> .
+<experimentation/nmiss> ns4kge:hasConfiguration <configuration/nmiss/22> .
+<experimentation/nmiss> ns4kge:hasConfiguration <configuration/nmiss/23> .
+<experimentation/nmiss> ns4kge:hasConfiguration <configuration/nmiss/24> .
+
+<training-protocol/nmiss> rdf:type ns4kge:TrainingProtocol .
+<training-protocol/nmiss> ns4kge:hasOptimizer    <optimizer/adam> .
+<training-protocol/nmiss> ns4kge:hasLossFunction <loss-function/max-margin-loss> .
+<training-protocol/nmiss> ns4kge:hasLossFunction <loss-function/cross-entropy-loss> .
+<training-protocol/nmiss> ns4kge:hasLossFunction <loss-function/binary-negative-log-likelihood> .
+
+<configuration/nmiss/1> rdf:type ns4kge:Configuration .
+<configuration/nmiss/1> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nmiss/1> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/nmiss/1> ns4kge:hasMetric  <metric/mrr> .
+<configuration/nmiss/1> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/nmiss/1> ns4kge:hasNSMethod <ns-method/near-miss-sampling> .
+<configuration/nmiss/1> ns4kge:result "0.46"^^xsd:decimal .
+
+<configuration/nmiss/2> rdf:type ns4kge:Configuration .
+<configuration/nmiss/2> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nmiss/2> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/nmiss/2> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/nmiss/2> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/nmiss/2> ns4kge:hasNSMethod <ns-method/near-miss-sampling> .
+<configuration/nmiss/2> ns4kge:result "0.7064"^^xsd:decimal .
+
+<configuration/nmiss/3> rdf:type ns4kge:Configuration .
+<configuration/nmiss/3> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nmiss/3> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/nmiss/3> ns4kge:hasMetric  <metric/mrr> .
+<configuration/nmiss/3> ns4kge:hasKGEModel <kge-model/rescal> .
+<configuration/nmiss/3> ns4kge:hasNSMethod <ns-method/near-miss-sampling> .
+<configuration/nmiss/3> ns4kge:result "0.42"^^xsd:decimal .
+
+<configuration/nmiss/4> rdf:type ns4kge:Configuration .
+<configuration/nmiss/4> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nmiss/4> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/nmiss/4> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/nmiss/4> ns4kge:hasKGEModel <kge-model/rescal> .
+<configuration/nmiss/4> ns4kge:hasNSMethod <ns-method/near-miss-sampling> .
+<configuration/nmiss/4> ns4kge:result "0.6434"^^xsd:decimal .
+
+<configuration/nmiss/5> rdf:type ns4kge:Configuration .
+<configuration/nmiss/5> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nmiss/5> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/nmiss/5> ns4kge:hasMetric  <metric/mrr> .
+<configuration/nmiss/5> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/nmiss/5> ns4kge:hasNSMethod <ns-method/near-miss-sampling> .
+<configuration/nmiss/5> ns4kge:result "0.37"^^xsd:decimal .
+
+<configuration/nmiss/6> rdf:type ns4kge:Configuration .
+<configuration/nmiss/6> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nmiss/6> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/nmiss/6> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/nmiss/6> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/nmiss/6> ns4kge:hasNSMethod <ns-method/near-miss-sampling> .
+<configuration/nmiss/6> ns4kge:result "0.6297"^^xsd:decimal .
+
+<configuration/nmiss/7> rdf:type ns4kge:Configuration .
+<configuration/nmiss/7> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nmiss/7> ns4kge:hasDataset <dataset/wn18> .
+<configuration/nmiss/7> ns4kge:hasMetric  <metric/mrr> .
+<configuration/nmiss/7> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/nmiss/7> ns4kge:hasNSMethod <ns-method/corrupting-positive-instances> .
+<configuration/nmiss/7> ns4kge:result "0.82"^^xsd:decimal .
+
+<configuration/nmiss/8> rdf:type ns4kge:Configuration .
+<configuration/nmiss/8> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nmiss/8> ns4kge:hasDataset <dataset/wn18> .
+<configuration/nmiss/8> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/nmiss/8> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/nmiss/8> ns4kge:hasNSMethod <ns-method/corrupting-positive-instances> .
+<configuration/nmiss/8> ns4kge:result "0.9406"^^xsd:decimal .
+
+<configuration/nmiss/9> rdf:type ns4kge:Configuration .
+<configuration/nmiss/9> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nmiss/9> ns4kge:hasDataset <dataset/wn18> .
+<configuration/nmiss/9> ns4kge:hasMetric  <metric/mrr> .
+<configuration/nmiss/9> ns4kge:hasKGEModel <kge-model/rescal> .
+<configuration/nmiss/9> ns4kge:hasNSMethod <ns-method/corrupting-positive-instances> .
+<configuration/nmiss/9> ns4kge:result "0.92"^^xsd:decimal .
+
+<configuration/nmiss/10> rdf:type ns4kge:Configuration .
+<configuration/nmiss/10> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nmiss/10> ns4kge:hasDataset <dataset/wn18> .
+<configuration/nmiss/10> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/nmiss/10> ns4kge:hasKGEModel <kge-model/rescal> .
+<configuration/nmiss/10> ns4kge:hasNSMethod <ns-method/corrupting-positive-instances> .
+<configuration/nmiss/10> ns4kge:result "0.9391"^^xsd:decimal .
+
+<configuration/nmiss/11> rdf:type ns4kge:Configuration .
+<configuration/nmiss/11> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nmiss/11> ns4kge:hasDataset <dataset/wn18> .
+<configuration/nmiss/11> ns4kge:hasMetric  <metric/mrr> .
+<configuration/nmiss/11> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/nmiss/11> ns4kge:hasNSMethod <ns-method/corrupting-positive-instances> .
+<configuration/nmiss/11> ns4kge:result "0.4"^^xsd:decimal .
+
+<configuration/nmiss/12> rdf:type ns4kge:Configuration .
+<configuration/nmiss/12> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nmiss/12> ns4kge:hasDataset <dataset/wn18> .
+<configuration/nmiss/12> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/nmiss/12> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/nmiss/12> ns4kge:hasNSMethod <ns-method/corrupting-positive-instances> .
+<configuration/nmiss/12> ns4kge:result "0.8698"^^xsd:decimal .
+
+<configuration/nmiss/13> rdf:type ns4kge:Configuration .
+<configuration/nmiss/13> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nmiss/13> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/nmiss/13> ns4kge:hasMetric  <metric/mrr> .
+<configuration/nmiss/13> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/nmiss/13> ns4kge:result "0.35"^^xsd:decimal .
+
+<configuration/nmiss/14> rdf:type ns4kge:Configuration .
+<configuration/nmiss/14> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nmiss/14> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/nmiss/14> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/nmiss/14> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/nmiss/14> ns4kge:result "0.577"^^xsd:decimal .
+
+<configuration/nmiss/15> rdf:type ns4kge:Configuration .
+<configuration/nmiss/15> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nmiss/15> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/nmiss/15> ns4kge:hasMetric  <metric/mrr> .
+<configuration/nmiss/15> ns4kge:hasKGEModel <kge-model/rescal> .
+<configuration/nmiss/15> ns4kge:result "0.31"^^xsd:decimal .
+
+<configuration/nmiss/16> rdf:type ns4kge:Configuration .
+<configuration/nmiss/16> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nmiss/16> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/nmiss/16> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/nmiss/16> ns4kge:hasKGEModel <kge-model/rescal> .
+<configuration/nmiss/16> ns4kge:result "0.519"^^xsd:decimal .
+
+<configuration/nmiss/17> rdf:type ns4kge:Configuration .
+<configuration/nmiss/17> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nmiss/17> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/nmiss/17> ns4kge:hasMetric  <metric/mrr> .
+<configuration/nmiss/17> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/nmiss/17> ns4kge:result "0.32"^^xsd:decimal .
+
+<configuration/nmiss/18> rdf:type ns4kge:Configuration .
+<configuration/nmiss/18> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nmiss/18> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/nmiss/18> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/nmiss/18> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/nmiss/18> ns4kge:result "0.539"^^xsd:decimal .
+
+<configuration/nmiss/19> rdf:type ns4kge:Configuration .
+<configuration/nmiss/19> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nmiss/19> ns4kge:hasDataset <dataset/wn18> .
+<configuration/nmiss/19> ns4kge:hasMetric  <metric/mrr> .
+<configuration/nmiss/19> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/nmiss/19> ns4kge:result "0.83"^^xsd:decimal .
+
+<configuration/nmiss/20> rdf:type ns4kge:Configuration .
+<configuration/nmiss/20> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nmiss/20> ns4kge:hasDataset <dataset/wn18> .
+<configuration/nmiss/20> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/nmiss/20> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/nmiss/20> ns4kge:result "0.942"^^xsd:decimal .
+
+<configuration/nmiss/21> rdf:type ns4kge:Configuration .
+<configuration/nmiss/21> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nmiss/21> ns4kge:hasDataset <dataset/wn18> .
+<configuration/nmiss/21> ns4kge:hasMetric  <metric/mrr> .
+<configuration/nmiss/21> ns4kge:hasKGEModel <kge-model/rescal> .
+<configuration/nmiss/21> ns4kge:result "0.89"^^xsd:decimal .
+
+<configuration/nmiss/22> rdf:type ns4kge:Configuration .
+<configuration/nmiss/22> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nmiss/22> ns4kge:hasDataset <dataset/wn18> .
+<configuration/nmiss/22> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/nmiss/22> ns4kge:hasKGEModel <kge-model/rescal> .
+<configuration/nmiss/22> ns4kge:result "0.928"^^xsd:decimal .
+
+<configuration/nmiss/23> rdf:type ns4kge:Configuration .
+<configuration/nmiss/23> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nmiss/23> ns4kge:hasDataset <dataset/wn18> .
+<configuration/nmiss/23> ns4kge:hasMetric  <metric/mrr> .
+<configuration/nmiss/23> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/nmiss/23> ns4kge:result "0.38"^^xsd:decimal .
+
+<configuration/nmiss/24> rdf:type ns4kge:Configuration .
+<configuration/nmiss/24> ns4kge:hasTask    <task/link-prediction> .
+<configuration/nmiss/24> ns4kge:hasDataset <dataset/wn18> .
+<configuration/nmiss/24> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/nmiss/24> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/nmiss/24> ns4kge:result "0.909"^^xsd:decimal .

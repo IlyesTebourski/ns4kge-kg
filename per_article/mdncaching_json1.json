@@ -1,0 +1,33 @@
+{
+  "Article": {
+    "title": "MDNCaching: A Strategy to Generate Quality Negatives for Knowledge Graph Embedding",
+    "date": "2022"
+  },
+  "proposedNSMethod": "Matrix Decomposed Negative Caching",
+  "proposedKGEModel": "",
+  "mentionedNSMethods": [
+    "Uniform Negative Sampling",
+    "Bernoulli Negative Sampling",
+    "KBGAN",
+    "IGAN",
+    "Structure Aware Negative Sampling",
+    "NSCaching"
+  ],
+  "mentionedKGEModels": [
+    "TransE",
+    "TransD",
+    "DistMult",
+    "ComplEx"
+  ],
+  "Experimentation": {
+    "Hardware": [],
+    "TrainingProtocol": {
+      "LossFunction": [],
+      "Optimizer": [
+        "Adam"
+      ],
+      "learningRate": null,
+      "nsRatio": null
+    }
+  }
+}

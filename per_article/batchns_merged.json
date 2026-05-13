@@ -1,0 +1,279 @@
+{
+  "Article": {
+    "title": "PyTorch-BigGraph: A Large-scale Graph Embedding System",
+    "date": "2019"
+  },
+  "proposedNSMethod": "Batched Negative Sampling",
+  "proposedKGEModel": "",
+  "mentionedNSMethods": [
+    "Uniform Negative Sampling"
+  ],
+  "mentionedKGEModels": [
+    "PBG",
+    "word2vec",
+    "RESCAL",
+    "MILE (1 level)",
+    "PBG (ComplEx)",
+    "PBG (TransE)",
+    "StarSpace",
+    "TransE",
+    "Reciprocal ComplEx-N3",
+    "DistMult",
+    "DeepWalk",
+    "ComplEx",
+    "MILE (5 levels)",
+    "HolE",
+    "R-GCN+"
+  ],
+  "Experimentation": {
+    "Hardware": [
+      "24 Intel Xeon cores (two sockets) with two hyperthreads per core (48 virtual cores), 256 GB RAM"
+    ],
+    "TrainingProtocol": {
+      "LossFunction": [
+        "margin-based ranking loss",
+        "softmax loss",
+        "logistic loss"
+      ],
+      "Optimizer": [
+        "AdaGrad"
+      ],
+      "learningRate": null,
+      "nsRatio": null
+    },
+    "Configurations": [
+      {
+        "Task": "Link Prediction",
+        "Dataset": "LiveJournal",
+        "Metric": "MRR",
+        "KGEModel": "DeepWalk",
+        "NSMethod": "Unknown",
+        "result": 0.691
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "LiveJournal",
+        "Metric": "MR",
+        "KGEModel": "DeepWalk",
+        "NSMethod": "Unknown",
+        "result": 234.6
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "LiveJournal",
+        "Metric": "Hits@10",
+        "KGEModel": "DeepWalk",
+        "NSMethod": "Unknown",
+        "result": 0.842
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "LiveJournal",
+        "Metric": "MRR",
+        "KGEModel": "MILE (1 level)",
+        "NSMethod": "Unknown",
+        "result": 0.629
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "LiveJournal",
+        "Metric": "MR",
+        "KGEModel": "MILE (1 level)",
+        "NSMethod": "Unknown",
+        "result": 174.4
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "LiveJournal",
+        "Metric": "Hits@10",
+        "KGEModel": "MILE (1 level)",
+        "NSMethod": "Unknown",
+        "result": 0.785
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "LiveJournal",
+        "Metric": "MRR",
+        "KGEModel": "MILE (5 levels)",
+        "NSMethod": "Unknown",
+        "result": 0.505
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "LiveJournal",
+        "Metric": "MR",
+        "KGEModel": "MILE (5 levels)",
+        "NSMethod": "Unknown",
+        "result": 462.8
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "LiveJournal",
+        "Metric": "Hits@10",
+        "KGEModel": "MILE (5 levels)",
+        "NSMethod": "Unknown",
+        "result": 0.632
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "LiveJournal",
+        "Metric": "MRR",
+        "KGEModel": "PBG",
+        "NSMethod": "Batched Negative Sampling",
+        "result": 0.749
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "LiveJournal",
+        "Metric": "MR",
+        "KGEModel": "PBG",
+        "NSMethod": "Batched Negative Sampling",
+        "result": 245.9
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "LiveJournal",
+        "Metric": "Hits@10",
+        "KGEModel": "PBG",
+        "NSMethod": "Batched Negative Sampling",
+        "result": 0.857
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15k",
+        "Metric": "MRR",
+        "KGEModel": "RESCAL",
+        "NSMethod": "Unknown",
+        "result": 0.354
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15k",
+        "Metric": "Hits@10",
+        "KGEModel": "RESCAL",
+        "NSMethod": "Unknown",
+        "result": 0.587
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15k",
+        "Metric": "MRR",
+        "KGEModel": "TransE",
+        "NSMethod": "Unknown",
+        "result": 0.463
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15k",
+        "Metric": "Hits@10",
+        "KGEModel": "TransE",
+        "NSMethod": "Unknown",
+        "result": 0.749
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15k",
+        "Metric": "MRR",
+        "KGEModel": "HolE",
+        "NSMethod": "Unknown",
+        "result": 0.524
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15k",
+        "Metric": "Hits@10",
+        "KGEModel": "HolE",
+        "NSMethod": "Unknown",
+        "result": 0.739
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15k",
+        "Metric": "MRR",
+        "KGEModel": "ComplEx",
+        "NSMethod": "Unknown",
+        "result": 0.692
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15k",
+        "Metric": "Hits@10",
+        "KGEModel": "ComplEx",
+        "NSMethod": "Unknown",
+        "result": 0.84
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15k",
+        "Metric": "MRR",
+        "KGEModel": "R-GCN+",
+        "NSMethod": "Unknown",
+        "result": 0.696
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15k",
+        "Metric": "Hits@10",
+        "KGEModel": "R-GCN+",
+        "NSMethod": "Unknown",
+        "result": 0.842
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15k",
+        "Metric": "Hits@10",
+        "KGEModel": "StarSpace",
+        "NSMethod": "Unknown",
+        "result": 0.838
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15k",
+        "Metric": "MRR",
+        "KGEModel": "Reciprocal ComplEx-N3",
+        "NSMethod": "Unknown",
+        "result": 0.86
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15k",
+        "Metric": "Hits@10",
+        "KGEModel": "Reciprocal ComplEx-N3",
+        "NSMethod": "Unknown",
+        "result": 0.91
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15k",
+        "Metric": "MRR",
+        "KGEModel": "PBG (TransE)",
+        "NSMethod": "Batched Negative Sampling",
+        "result": 0.594
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15k",
+        "Metric": "Hits@10",
+        "KGEModel": "PBG (TransE)",
+        "NSMethod": "Batched Negative Sampling",
+        "result": 0.785
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15k",
+        "Metric": "MRR",
+        "KGEModel": "PBG (ComplEx)",
+        "NSMethod": "Batched Negative Sampling",
+        "result": 0.79
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15k",
+        "Metric": "Hits@10",
+        "KGEModel": "PBG (ComplEx)",
+        "NSMethod": "Batched Negative Sampling",
+        "result": 0.872
+      }
+    ]
+  }
+}

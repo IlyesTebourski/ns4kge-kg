@@ -1,0 +1,32 @@
+{
+  "Article": {
+    "title": "Knowledge Alignment Based on Negative Sampling of Potential Topic Similarities",
+    "date": "2022"
+  },
+  "proposedNSMethod": "Negative Sampling of Potential Topic Similarities",
+  "proposedKGEModel": "TransE-LTS",
+  "mentionedNSMethods": [
+    "Random Negative Sampling",
+    "Uniform Negative Sampling",
+    "Bernoulli Negative Sampling",
+    "Static Distribution Sampling",
+    "Dynamic Distribution Sampling",
+    "Custom Pooled Sampling"
+  ],
+  "mentionedKGEModels": [
+    "TransE",
+    "TransE-SNS",
+    "GAN"
+  ],
+  "Experimentation": {
+    "Hardware": [],
+    "TrainingProtocol": {
+      "LossFunction": [
+        "margin-based ranking loss"
+      ],
+      "Optimizer": [],
+      "learningRate": null,
+      "nsRatio": null
+    }
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "Article": {
+    "title": "HaSa: Hardness and Structure-Aware Contrastive Knowledge Graph Embedding",
+    "date": "2024"
+  },
+  "proposedNSMethod": "Hardness and Structure-Aware Contrastive Knowledge Graph Embedding",
+  "proposedKGEModel": "",
+  "mentionedNSMethods": [
+    "Simple InfoNCE",
+    "Hard InfoNCE",
+    "Self-adversarial negative sampling",
+    "Noise contrastive estimation"
+  ],
+  "mentionedKGEModels": [
+    "TransE",
+    "RotatE",
+    "DistMult",
+    "ComplEx",
+    "KBGAN",
+    "KG-BERT",
+    "StAR",
+    "LASS"
+  ],
+  "Experimentation": {
+    "Hardware": [
+      "NVIDIA Tesla V100"
+    ],
+    "TrainingProtocol": {
+      "LossFunction": [
+        "InfoNCE",
+        "HaSa loss",
+        "HaSa+ loss",
+        "Triplet loss",
+        "Negative log-likelihood",
+        "Cross-entropy loss",
+        "Negative sampling loss"
+      ],
+      "Optimizer": [
+        "AdamW"
+      ],
+      "learningRate": 2e-05,
+      "nsRatio": null
+    }
+  }
+}

@@ -1,0 +1,745 @@
+<article/lemon> rdf:type ns4kge:Article .
+<article/lemon> ns4kge:title "Language Model-driven Negative Sampling"^^xsd:string .
+<article/lemon> ns4kge:date "2022"^^xsd:gYear .
+<article/lemon> ns4kge:proposesNSMethod <ns-method/language-model-driven-negative-sampling> .
+<article/lemon> ns4kge:mentionsNSMethod <ns-method/bernoulli-negative-sampling> .
+<article/lemon> ns4kge:mentionsNSMethod <ns-method/adversarial-negative-sampling> .
+<article/lemon> ns4kge:mentionsNSMethod <ns-method/uniform-sans> .
+<article/lemon> ns4kge:mentionsNSMethod <ns-method/uniform-negative-sampling> .
+<article/lemon> ns4kge:mentionsNSMethod <ns-method/uniform-rw-sans> .
+<article/lemon> ns4kge:mentionsNSMethod <ns-method/sans> .
+<article/lemon> ns4kge:mentionsNSMethod <ns-method/self-adv-sans> .
+<article/lemon> ns4kge:mentionsNSMethod <ns-method/self-adv-rw-sans> .
+<article/lemon> ns4kge:mentionsNSMethod <ns-method/adversarial-language-model-driven-negative-sampling> .
+<article/lemon> ns4kge:mentionsNSMethod <ns-method/nscaching> .
+<article/lemon> ns4kge:mentionsNSMethod <ns-method/gan-based-negative-sampling> .
+<article/lemon> ns4kge:mentionsNSMethod <ns-method/adversarial-uniform-negative-sampling> .
+<article/lemon> ns4kge:mentionsNSMethod <ns-method/kbgan> .
+<article/lemon> ns4kge:mentionsKGEModel <kge-model/rotate> .
+<article/lemon> ns4kge:mentionsKGEModel <kge-model/transe> .
+<article/lemon> ns4kge:hasExperimentation <experimentation/lemon> .
+
+<category/static-ns> rdf:type ns4kge:Category .
+
+<subcategory/model-guided> rdf:type ns4kge:Subcategory .
+
+<ns-method/language-model-driven-negative-sampling> rdf:type ns4kge:NSMethod .
+<ns-method/language-model-driven-negative-sampling> ns4kge:hasCategory <category/static-ns> .
+<ns-method/language-model-driven-negative-sampling> ns4kge:hasSubcategory <subcategory/model-guided> .
+
+<ns-method/bernoulli-negative-sampling> rdf:type ns4kge:NSMethod .
+<ns-method/bernoulli-negative-sampling> ns4kge:hasCategory <category/static-ns> .
+<subcategory/probabilistic> rdf:type ns4kge:Subcategory .
+
+<ns-method/bernoulli-negative-sampling> ns4kge:hasSubcategory <subcategory/probabilistic> .
+
+<ns-method/adversarial-negative-sampling> rdf:type ns4kge:NSMethod .
+
+<ns-method/uniform-sans> rdf:type ns4kge:NSMethod .
+
+<ns-method/uniform-negative-sampling> rdf:type ns4kge:NSMethod .
+<ns-method/uniform-negative-sampling> ns4kge:hasCategory <category/static-ns> .
+<subcategory/random> rdf:type ns4kge:Subcategory .
+
+<ns-method/uniform-negative-sampling> ns4kge:hasSubcategory <subcategory/random> .
+
+<ns-method/uniform-rw-sans> rdf:type ns4kge:NSMethod .
+
+<ns-method/sans> rdf:type ns4kge:NSMethod .
+<ns-method/sans> ns4kge:hasCategory <category/static-ns> .
+<subcategory/knowledge-constrained> rdf:type ns4kge:Subcategory .
+
+<ns-method/sans> ns4kge:hasSubcategory <subcategory/knowledge-constrained> .
+
+<ns-method/self-adv-sans> rdf:type ns4kge:NSMethod .
+
+<ns-method/self-adv-rw-sans> rdf:type ns4kge:NSMethod .
+
+<ns-method/adversarial-language-model-driven-negative-sampling> rdf:type ns4kge:NSMethod .
+
+<ns-method/nscaching> rdf:type ns4kge:NSMethod .
+<category/self-adversarial-ns> rdf:type ns4kge:Category .
+
+<ns-method/nscaching> ns4kge:hasCategory <category/self-adversarial-ns> .
+<subcategory/direct> rdf:type ns4kge:Subcategory .
+
+<ns-method/nscaching> ns4kge:hasSubcategory <subcategory/direct> .
+
+<ns-method/gan-based-negative-sampling> rdf:type ns4kge:NSMethod .
+<category/adversarial-ns> rdf:type ns4kge:Category .
+
+<ns-method/gan-based-negative-sampling> ns4kge:hasCategory <category/adversarial-ns> .
+<subcategory/standard> rdf:type ns4kge:Subcategory .
+
+<ns-method/gan-based-negative-sampling> ns4kge:hasSubcategory <subcategory/standard> .
+
+<ns-method/adversarial-uniform-negative-sampling> rdf:type ns4kge:NSMethod .
+
+<ns-method/kbgan> rdf:type ns4kge:NSMethod .
+<ns-method/kbgan> ns4kge:hasCategory <category/adversarial-ns> .
+<ns-method/kbgan> ns4kge:hasSubcategory <subcategory/standard> .
+
+<kge-model/rotate> rdf:type ns4kge:KGEModel .
+
+<kge-model/transe> rdf:type ns4kge:KGEModel .
+
+<dataset/wn18> rdf:type ns4kge:Dataset .
+<task/link-prediction> rdf:type ns4kge:Task .
+<metric/mrr> rdf:type ns4kge:Metric .
+<metric/hits-10> rdf:type ns4kge:Metric .
+<dataset/wn18rr> rdf:type ns4kge:Dataset .
+<loss-function/margin-based-ranking-loss> rdf:type ns4kge:LossFunction .
+
+<experimentation/lemon> rdf:type ns4kge:Experimentation .
+<experimentation/lemon> ns4kge:hasTrainingProtocol <training-protocol/lemon> .
+<experimentation/lemon> ns4kge:hasConfiguration <configuration/lemon/1> .
+<experimentation/lemon> ns4kge:hasConfiguration <configuration/lemon/2> .
+<experimentation/lemon> ns4kge:hasConfiguration <configuration/lemon/3> .
+<experimentation/lemon> ns4kge:hasConfiguration <configuration/lemon/4> .
+<experimentation/lemon> ns4kge:hasConfiguration <configuration/lemon/5> .
+<experimentation/lemon> ns4kge:hasConfiguration <configuration/lemon/6> .
+<experimentation/lemon> ns4kge:hasConfiguration <configuration/lemon/7> .
+<experimentation/lemon> ns4kge:hasConfiguration <configuration/lemon/8> .
+<experimentation/lemon> ns4kge:hasConfiguration <configuration/lemon/9> .
+<experimentation/lemon> ns4kge:hasConfiguration <configuration/lemon/10> .
+<experimentation/lemon> ns4kge:hasConfiguration <configuration/lemon/11> .
+<experimentation/lemon> ns4kge:hasConfiguration <configuration/lemon/12> .
+<experimentation/lemon> ns4kge:hasConfiguration <configuration/lemon/13> .
+<experimentation/lemon> ns4kge:hasConfiguration <configuration/lemon/14> .
+<experimentation/lemon> ns4kge:hasConfiguration <configuration/lemon/15> .
+<experimentation/lemon> ns4kge:hasConfiguration <configuration/lemon/16> .
+<experimentation/lemon> ns4kge:hasConfiguration <configuration/lemon/17> .
+<experimentation/lemon> ns4kge:hasConfiguration <configuration/lemon/18> .
+<experimentation/lemon> ns4kge:hasConfiguration <configuration/lemon/19> .
+<experimentation/lemon> ns4kge:hasConfiguration <configuration/lemon/20> .
+<experimentation/lemon> ns4kge:hasConfiguration <configuration/lemon/21> .
+<experimentation/lemon> ns4kge:hasConfiguration <configuration/lemon/22> .
+<experimentation/lemon> ns4kge:hasConfiguration <configuration/lemon/23> .
+<experimentation/lemon> ns4kge:hasConfiguration <configuration/lemon/24> .
+<experimentation/lemon> ns4kge:hasConfiguration <configuration/lemon/25> .
+<experimentation/lemon> ns4kge:hasConfiguration <configuration/lemon/26> .
+<experimentation/lemon> ns4kge:hasConfiguration <configuration/lemon/27> .
+<experimentation/lemon> ns4kge:hasConfiguration <configuration/lemon/28> .
+<experimentation/lemon> ns4kge:hasConfiguration <configuration/lemon/29> .
+<experimentation/lemon> ns4kge:hasConfiguration <configuration/lemon/30> .
+<experimentation/lemon> ns4kge:hasConfiguration <configuration/lemon/31> .
+<experimentation/lemon> ns4kge:hasConfiguration <configuration/lemon/32> .
+<experimentation/lemon> ns4kge:hasConfiguration <configuration/lemon/33> .
+<experimentation/lemon> ns4kge:hasConfiguration <configuration/lemon/34> .
+<experimentation/lemon> ns4kge:hasConfiguration <configuration/lemon/35> .
+<experimentation/lemon> ns4kge:hasConfiguration <configuration/lemon/36> .
+<experimentation/lemon> ns4kge:hasConfiguration <configuration/lemon/37> .
+<experimentation/lemon> ns4kge:hasConfiguration <configuration/lemon/38> .
+<experimentation/lemon> ns4kge:hasConfiguration <configuration/lemon/39> .
+<experimentation/lemon> ns4kge:hasConfiguration <configuration/lemon/40> .
+<experimentation/lemon> ns4kge:hasConfiguration <configuration/lemon/41> .
+<experimentation/lemon> ns4kge:hasConfiguration <configuration/lemon/42> .
+<experimentation/lemon> ns4kge:hasConfiguration <configuration/lemon/43> .
+<experimentation/lemon> ns4kge:hasConfiguration <configuration/lemon/44> .
+<experimentation/lemon> ns4kge:hasConfiguration <configuration/lemon/45> .
+<experimentation/lemon> ns4kge:hasConfiguration <configuration/lemon/46> .
+<experimentation/lemon> ns4kge:hasConfiguration <configuration/lemon/47> .
+<experimentation/lemon> ns4kge:hasConfiguration <configuration/lemon/48> .
+<experimentation/lemon> ns4kge:hasConfiguration <configuration/lemon/49> .
+<experimentation/lemon> ns4kge:hasConfiguration <configuration/lemon/50> .
+<experimentation/lemon> ns4kge:hasConfiguration <configuration/lemon/51> .
+<experimentation/lemon> ns4kge:hasConfiguration <configuration/lemon/52> .
+<experimentation/lemon> ns4kge:hasConfiguration <configuration/lemon/53> .
+<experimentation/lemon> ns4kge:hasConfiguration <configuration/lemon/54> .
+<experimentation/lemon> ns4kge:hasConfiguration <configuration/lemon/55> .
+<experimentation/lemon> ns4kge:hasConfiguration <configuration/lemon/56> .
+<experimentation/lemon> ns4kge:hasConfiguration <configuration/lemon/57> .
+<experimentation/lemon> ns4kge:hasConfiguration <configuration/lemon/58> .
+<experimentation/lemon> ns4kge:hasConfiguration <configuration/lemon/59> .
+<experimentation/lemon> ns4kge:hasConfiguration <configuration/lemon/60> .
+<experimentation/lemon> ns4kge:hasConfiguration <configuration/lemon/61> .
+<experimentation/lemon> ns4kge:hasConfiguration <configuration/lemon/62> .
+<experimentation/lemon> ns4kge:hasConfiguration <configuration/lemon/63> .
+<experimentation/lemon> ns4kge:hasConfiguration <configuration/lemon/64> .
+<experimentation/lemon> ns4kge:hasConfiguration <configuration/lemon/65> .
+<experimentation/lemon> ns4kge:hasConfiguration <configuration/lemon/66> .
+<experimentation/lemon> ns4kge:hasConfiguration <configuration/lemon/67> .
+<experimentation/lemon> ns4kge:hasConfiguration <configuration/lemon/68> .
+<experimentation/lemon> ns4kge:hasConfiguration <configuration/lemon/69> .
+<experimentation/lemon> ns4kge:hasConfiguration <configuration/lemon/70> .
+<experimentation/lemon> ns4kge:hasConfiguration <configuration/lemon/71> .
+<experimentation/lemon> ns4kge:hasConfiguration <configuration/lemon/72> .
+
+<training-protocol/lemon> rdf:type ns4kge:TrainingProtocol .
+<training-protocol/lemon> ns4kge:hasLossFunction <loss-function/margin-based-ranking-loss> .
+
+<configuration/lemon/1> rdf:type ns4kge:Configuration .
+<configuration/lemon/1> ns4kge:hasTask    <task/link-prediction> .
+<configuration/lemon/1> ns4kge:hasDataset <dataset/wn18> .
+<configuration/lemon/1> ns4kge:hasMetric  <metric/mrr> .
+<configuration/lemon/1> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/lemon/1> ns4kge:hasNSMethod <ns-method/uniform-negative-sampling> .
+<configuration/lemon/1> ns4kge:result "0.9474"^^xsd:decimal .
+
+<configuration/lemon/2> rdf:type ns4kge:Configuration .
+<configuration/lemon/2> ns4kge:hasTask    <task/link-prediction> .
+<configuration/lemon/2> ns4kge:hasDataset <dataset/wn18> .
+<configuration/lemon/2> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/lemon/2> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/lemon/2> ns4kge:hasNSMethod <ns-method/uniform-negative-sampling> .
+<configuration/lemon/2> ns4kge:result "0.9609"^^xsd:decimal .
+
+<configuration/lemon/3> rdf:type ns4kge:Configuration .
+<configuration/lemon/3> ns4kge:hasTask    <task/link-prediction> .
+<configuration/lemon/3> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/lemon/3> ns4kge:hasMetric  <metric/mrr> .
+<configuration/lemon/3> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/lemon/3> ns4kge:hasNSMethod <ns-method/uniform-negative-sampling> .
+<configuration/lemon/3> ns4kge:result "0.4711"^^xsd:decimal .
+
+<configuration/lemon/4> rdf:type ns4kge:Configuration .
+<configuration/lemon/4> ns4kge:hasTask    <task/link-prediction> .
+<configuration/lemon/4> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/lemon/4> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/lemon/4> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/lemon/4> ns4kge:hasNSMethod <ns-method/uniform-negative-sampling> .
+<configuration/lemon/4> ns4kge:result "0.5651"^^xsd:decimal .
+
+<configuration/lemon/5> rdf:type ns4kge:Configuration .
+<configuration/lemon/5> ns4kge:hasTask    <task/link-prediction> .
+<configuration/lemon/5> ns4kge:hasDataset <dataset/wn18> .
+<configuration/lemon/5> ns4kge:hasMetric  <metric/mrr> .
+<configuration/lemon/5> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/lemon/5> ns4kge:hasNSMethod <ns-method/uniform-sans> .
+<configuration/lemon/5> ns4kge:result "0.9499"^^xsd:decimal .
+
+<configuration/lemon/6> rdf:type ns4kge:Configuration .
+<configuration/lemon/6> ns4kge:hasTask    <task/link-prediction> .
+<configuration/lemon/6> ns4kge:hasDataset <dataset/wn18> .
+<configuration/lemon/6> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/lemon/6> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/lemon/6> ns4kge:hasNSMethod <ns-method/uniform-sans> .
+<configuration/lemon/6> ns4kge:result "0.9597"^^xsd:decimal .
+
+<configuration/lemon/7> rdf:type ns4kge:Configuration .
+<configuration/lemon/7> ns4kge:hasTask    <task/link-prediction> .
+<configuration/lemon/7> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/lemon/7> ns4kge:hasMetric  <metric/mrr> .
+<configuration/lemon/7> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/lemon/7> ns4kge:hasNSMethod <ns-method/uniform-sans> .
+<configuration/lemon/7> ns4kge:result "0.4769"^^xsd:decimal .
+
+<configuration/lemon/8> rdf:type ns4kge:Configuration .
+<configuration/lemon/8> ns4kge:hasTask    <task/link-prediction> .
+<configuration/lemon/8> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/lemon/8> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/lemon/8> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/lemon/8> ns4kge:hasNSMethod <ns-method/uniform-sans> .
+<configuration/lemon/8> ns4kge:result "0.5576"^^xsd:decimal .
+
+<configuration/lemon/9> rdf:type ns4kge:Configuration .
+<configuration/lemon/9> ns4kge:hasTask    <task/link-prediction> .
+<configuration/lemon/9> ns4kge:hasDataset <dataset/wn18> .
+<configuration/lemon/9> ns4kge:hasMetric  <metric/mrr> .
+<configuration/lemon/9> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/lemon/9> ns4kge:hasNSMethod <ns-method/uniform-rw-sans> .
+<configuration/lemon/9> ns4kge:result "0.9489"^^xsd:decimal .
+
+<configuration/lemon/10> rdf:type ns4kge:Configuration .
+<configuration/lemon/10> ns4kge:hasTask    <task/link-prediction> .
+<configuration/lemon/10> ns4kge:hasDataset <dataset/wn18> .
+<configuration/lemon/10> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/lemon/10> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/lemon/10> ns4kge:hasNSMethod <ns-method/uniform-rw-sans> .
+<configuration/lemon/10> ns4kge:result "0.9607"^^xsd:decimal .
+
+<configuration/lemon/11> rdf:type ns4kge:Configuration .
+<configuration/lemon/11> ns4kge:hasTask    <task/link-prediction> .
+<configuration/lemon/11> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/lemon/11> ns4kge:hasMetric  <metric/mrr> .
+<configuration/lemon/11> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/lemon/11> ns4kge:hasNSMethod <ns-method/uniform-rw-sans> .
+<configuration/lemon/11> ns4kge:result "0.4796"^^xsd:decimal .
+
+<configuration/lemon/12> rdf:type ns4kge:Configuration .
+<configuration/lemon/12> ns4kge:hasTask    <task/link-prediction> .
+<configuration/lemon/12> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/lemon/12> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/lemon/12> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/lemon/12> ns4kge:hasNSMethod <ns-method/uniform-rw-sans> .
+<configuration/lemon/12> ns4kge:result "0.5712"^^xsd:decimal .
+
+<configuration/lemon/13> rdf:type ns4kge:Configuration .
+<configuration/lemon/13> ns4kge:hasTask    <task/link-prediction> .
+<configuration/lemon/13> ns4kge:hasDataset <dataset/wn18> .
+<configuration/lemon/13> ns4kge:hasMetric  <metric/mrr> .
+<configuration/lemon/13> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/lemon/13> ns4kge:hasNSMethod <ns-method/language-model-driven-negative-sampling> .
+<configuration/lemon/13> ns4kge:result "0.9481"^^xsd:decimal .
+
+<configuration/lemon/14> rdf:type ns4kge:Configuration .
+<configuration/lemon/14> ns4kge:hasTask    <task/link-prediction> .
+<configuration/lemon/14> ns4kge:hasDataset <dataset/wn18> .
+<configuration/lemon/14> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/lemon/14> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/lemon/14> ns4kge:hasNSMethod <ns-method/language-model-driven-negative-sampling> .
+<configuration/lemon/14> ns4kge:result "0.9618"^^xsd:decimal .
+
+<configuration/lemon/15> rdf:type ns4kge:Configuration .
+<configuration/lemon/15> ns4kge:hasTask    <task/link-prediction> .
+<configuration/lemon/15> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/lemon/15> ns4kge:hasMetric  <metric/mrr> .
+<configuration/lemon/15> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/lemon/15> ns4kge:hasNSMethod <ns-method/language-model-driven-negative-sampling> .
+<configuration/lemon/15> ns4kge:result "0.4732"^^xsd:decimal .
+
+<configuration/lemon/16> rdf:type ns4kge:Configuration .
+<configuration/lemon/16> ns4kge:hasTask    <task/link-prediction> .
+<configuration/lemon/16> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/lemon/16> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/lemon/16> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/lemon/16> ns4kge:hasNSMethod <ns-method/language-model-driven-negative-sampling> .
+<configuration/lemon/16> ns4kge:result "0.5733"^^xsd:decimal .
+
+<configuration/lemon/17> rdf:type ns4kge:Configuration .
+<configuration/lemon/17> ns4kge:hasTask    <task/link-prediction> .
+<configuration/lemon/17> ns4kge:hasDataset <dataset/wn18> .
+<configuration/lemon/17> ns4kge:hasMetric  <metric/mrr> .
+<configuration/lemon/17> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/lemon/17> ns4kge:hasNSMethod <ns-method/uniform-negative-sampling> .
+<configuration/lemon/17> ns4kge:result "0.6085"^^xsd:decimal .
+
+<configuration/lemon/18> rdf:type ns4kge:Configuration .
+<configuration/lemon/18> ns4kge:hasTask    <task/link-prediction> .
+<configuration/lemon/18> ns4kge:hasDataset <dataset/wn18> .
+<configuration/lemon/18> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/lemon/18> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/lemon/18> ns4kge:hasNSMethod <ns-method/uniform-negative-sampling> .
+<configuration/lemon/18> ns4kge:result "0.9553"^^xsd:decimal .
+
+<configuration/lemon/19> rdf:type ns4kge:Configuration .
+<configuration/lemon/19> ns4kge:hasTask    <task/link-prediction> .
+<configuration/lemon/19> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/lemon/19> ns4kge:hasMetric  <metric/mrr> .
+<configuration/lemon/19> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/lemon/19> ns4kge:hasNSMethod <ns-method/uniform-negative-sampling> .
+<configuration/lemon/19> ns4kge:result "0.2022"^^xsd:decimal .
+
+<configuration/lemon/20> rdf:type ns4kge:Configuration .
+<configuration/lemon/20> ns4kge:hasTask    <task/link-prediction> .
+<configuration/lemon/20> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/lemon/20> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/lemon/20> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/lemon/20> ns4kge:hasNSMethod <ns-method/uniform-negative-sampling> .
+<configuration/lemon/20> ns4kge:result "0.4963"^^xsd:decimal .
+
+<configuration/lemon/21> rdf:type ns4kge:Configuration .
+<configuration/lemon/21> ns4kge:hasTask    <task/link-prediction> .
+<configuration/lemon/21> ns4kge:hasDataset <dataset/wn18> .
+<configuration/lemon/21> ns4kge:hasMetric  <metric/mrr> .
+<configuration/lemon/21> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/lemon/21> ns4kge:hasNSMethod <ns-method/kbgan> .
+<configuration/lemon/21> ns4kge:result "0.6606"^^xsd:decimal .
+
+<configuration/lemon/22> rdf:type ns4kge:Configuration .
+<configuration/lemon/22> ns4kge:hasTask    <task/link-prediction> .
+<configuration/lemon/22> ns4kge:hasDataset <dataset/wn18> .
+<configuration/lemon/22> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/lemon/22> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/lemon/22> ns4kge:hasNSMethod <ns-method/kbgan> .
+<configuration/lemon/22> ns4kge:result "0.948"^^xsd:decimal .
+
+<configuration/lemon/23> rdf:type ns4kge:Configuration .
+<configuration/lemon/23> ns4kge:hasTask    <task/link-prediction> .
+<configuration/lemon/23> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/lemon/23> ns4kge:hasMetric  <metric/mrr> .
+<configuration/lemon/23> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/lemon/23> ns4kge:hasNSMethod <ns-method/kbgan> .
+<configuration/lemon/23> ns4kge:result "0.1808"^^xsd:decimal .
+
+<configuration/lemon/24> rdf:type ns4kge:Configuration .
+<configuration/lemon/24> ns4kge:hasTask    <task/link-prediction> .
+<configuration/lemon/24> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/lemon/24> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/lemon/24> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/lemon/24> ns4kge:hasNSMethod <ns-method/kbgan> .
+<configuration/lemon/24> ns4kge:result "0.4324"^^xsd:decimal .
+
+<configuration/lemon/25> rdf:type ns4kge:Configuration .
+<configuration/lemon/25> ns4kge:hasTask    <task/link-prediction> .
+<configuration/lemon/25> ns4kge:hasDataset <dataset/wn18> .
+<configuration/lemon/25> ns4kge:hasMetric  <metric/mrr> .
+<configuration/lemon/25> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/lemon/25> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/lemon/25> ns4kge:result "0.7818"^^xsd:decimal .
+
+<configuration/lemon/26> rdf:type ns4kge:Configuration .
+<configuration/lemon/26> ns4kge:hasTask    <task/link-prediction> .
+<configuration/lemon/26> ns4kge:hasDataset <dataset/wn18> .
+<configuration/lemon/26> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/lemon/26> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/lemon/26> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/lemon/26> ns4kge:result "0.9463"^^xsd:decimal .
+
+<configuration/lemon/27> rdf:type ns4kge:Configuration .
+<configuration/lemon/27> ns4kge:hasTask    <task/link-prediction> .
+<configuration/lemon/27> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/lemon/27> ns4kge:hasMetric  <metric/mrr> .
+<configuration/lemon/27> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/lemon/27> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/lemon/27> ns4kge:result "0.2002"^^xsd:decimal .
+
+<configuration/lemon/28> rdf:type ns4kge:Configuration .
+<configuration/lemon/28> ns4kge:hasTask    <task/link-prediction> .
+<configuration/lemon/28> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/lemon/28> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/lemon/28> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/lemon/28> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/lemon/28> ns4kge:result "0.4783"^^xsd:decimal .
+
+<configuration/lemon/29> rdf:type ns4kge:Configuration .
+<configuration/lemon/29> ns4kge:hasTask    <task/link-prediction> .
+<configuration/lemon/29> ns4kge:hasDataset <dataset/wn18> .
+<configuration/lemon/29> ns4kge:hasMetric  <metric/mrr> .
+<configuration/lemon/29> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/lemon/29> ns4kge:hasNSMethod <ns-method/uniform-sans> .
+<configuration/lemon/29> ns4kge:result "0.8228"^^xsd:decimal .
+
+<configuration/lemon/30> rdf:type ns4kge:Configuration .
+<configuration/lemon/30> ns4kge:hasTask    <task/link-prediction> .
+<configuration/lemon/30> ns4kge:hasDataset <dataset/wn18> .
+<configuration/lemon/30> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/lemon/30> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/lemon/30> ns4kge:hasNSMethod <ns-method/uniform-sans> .
+<configuration/lemon/30> ns4kge:result "0.9509"^^xsd:decimal .
+
+<configuration/lemon/31> rdf:type ns4kge:Configuration .
+<configuration/lemon/31> ns4kge:hasTask    <task/link-prediction> .
+<configuration/lemon/31> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/lemon/31> ns4kge:hasMetric  <metric/mrr> .
+<configuration/lemon/31> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/lemon/31> ns4kge:hasNSMethod <ns-method/uniform-sans> .
+<configuration/lemon/31> ns4kge:result "0.2254"^^xsd:decimal .
+
+<configuration/lemon/32> rdf:type ns4kge:Configuration .
+<configuration/lemon/32> ns4kge:hasTask    <task/link-prediction> .
+<configuration/lemon/32> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/lemon/32> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/lemon/32> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/lemon/32> ns4kge:hasNSMethod <ns-method/uniform-sans> .
+<configuration/lemon/32> ns4kge:result "0.5115"^^xsd:decimal .
+
+<configuration/lemon/33> rdf:type ns4kge:Configuration .
+<configuration/lemon/33> ns4kge:hasTask    <task/link-prediction> .
+<configuration/lemon/33> ns4kge:hasDataset <dataset/wn18> .
+<configuration/lemon/33> ns4kge:hasMetric  <metric/mrr> .
+<configuration/lemon/33> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/lemon/33> ns4kge:hasNSMethod <ns-method/uniform-rw-sans> .
+<configuration/lemon/33> ns4kge:result "0.8195"^^xsd:decimal .
+
+<configuration/lemon/34> rdf:type ns4kge:Configuration .
+<configuration/lemon/34> ns4kge:hasTask    <task/link-prediction> .
+<configuration/lemon/34> ns4kge:hasDataset <dataset/wn18> .
+<configuration/lemon/34> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/lemon/34> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/lemon/34> ns4kge:hasNSMethod <ns-method/uniform-rw-sans> .
+<configuration/lemon/34> ns4kge:result "0.9522"^^xsd:decimal .
+
+<configuration/lemon/35> rdf:type ns4kge:Configuration .
+<configuration/lemon/35> ns4kge:hasTask    <task/link-prediction> .
+<configuration/lemon/35> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/lemon/35> ns4kge:hasMetric  <metric/mrr> .
+<configuration/lemon/35> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/lemon/35> ns4kge:hasNSMethod <ns-method/uniform-rw-sans> .
+<configuration/lemon/35> ns4kge:result "0.2317"^^xsd:decimal .
+
+<configuration/lemon/36> rdf:type ns4kge:Configuration .
+<configuration/lemon/36> ns4kge:hasTask    <task/link-prediction> .
+<configuration/lemon/36> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/lemon/36> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/lemon/36> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/lemon/36> ns4kge:hasNSMethod <ns-method/uniform-rw-sans> .
+<configuration/lemon/36> ns4kge:result "0.5341"^^xsd:decimal .
+
+<configuration/lemon/37> rdf:type ns4kge:Configuration .
+<configuration/lemon/37> ns4kge:hasTask    <task/link-prediction> .
+<configuration/lemon/37> ns4kge:hasDataset <dataset/wn18> .
+<configuration/lemon/37> ns4kge:hasMetric  <metric/mrr> .
+<configuration/lemon/37> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/lemon/37> ns4kge:hasNSMethod <ns-method/language-model-driven-negative-sampling> .
+<configuration/lemon/37> ns4kge:result "0.7646"^^xsd:decimal .
+
+<configuration/lemon/38> rdf:type ns4kge:Configuration .
+<configuration/lemon/38> ns4kge:hasTask    <task/link-prediction> .
+<configuration/lemon/38> ns4kge:hasDataset <dataset/wn18> .
+<configuration/lemon/38> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/lemon/38> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/lemon/38> ns4kge:hasNSMethod <ns-method/language-model-driven-negative-sampling> .
+<configuration/lemon/38> ns4kge:result "0.9557"^^xsd:decimal .
+
+<configuration/lemon/39> rdf:type ns4kge:Configuration .
+<configuration/lemon/39> ns4kge:hasTask    <task/link-prediction> .
+<configuration/lemon/39> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/lemon/39> ns4kge:hasMetric  <metric/mrr> .
+<configuration/lemon/39> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/lemon/39> ns4kge:hasNSMethod <ns-method/language-model-driven-negative-sampling> .
+<configuration/lemon/39> ns4kge:result "0.2145"^^xsd:decimal .
+
+<configuration/lemon/40> rdf:type ns4kge:Configuration .
+<configuration/lemon/40> ns4kge:hasTask    <task/link-prediction> .
+<configuration/lemon/40> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/lemon/40> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/lemon/40> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/lemon/40> ns4kge:hasNSMethod <ns-method/language-model-driven-negative-sampling> .
+<configuration/lemon/40> ns4kge:result "0.5122"^^xsd:decimal .
+
+<configuration/lemon/41> rdf:type ns4kge:Configuration .
+<configuration/lemon/41> ns4kge:hasTask    <task/link-prediction> .
+<configuration/lemon/41> ns4kge:hasDataset <dataset/wn18> .
+<configuration/lemon/41> ns4kge:hasMetric  <metric/mrr> .
+<configuration/lemon/41> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/lemon/41> ns4kge:hasNSMethod <ns-method/adversarial-uniform-negative-sampling> .
+<configuration/lemon/41> ns4kge:result "0.9498"^^xsd:decimal .
+
+<configuration/lemon/42> rdf:type ns4kge:Configuration .
+<configuration/lemon/42> ns4kge:hasTask    <task/link-prediction> .
+<configuration/lemon/42> ns4kge:hasDataset <dataset/wn18> .
+<configuration/lemon/42> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/lemon/42> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/lemon/42> ns4kge:hasNSMethod <ns-method/adversarial-uniform-negative-sampling> .
+<configuration/lemon/42> ns4kge:result "0.9605"^^xsd:decimal .
+
+<configuration/lemon/43> rdf:type ns4kge:Configuration .
+<configuration/lemon/43> ns4kge:hasTask    <task/link-prediction> .
+<configuration/lemon/43> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/lemon/43> ns4kge:hasMetric  <metric/mrr> .
+<configuration/lemon/43> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/lemon/43> ns4kge:hasNSMethod <ns-method/adversarial-uniform-negative-sampling> .
+<configuration/lemon/43> ns4kge:result "0.476"^^xsd:decimal .
+
+<configuration/lemon/44> rdf:type ns4kge:Configuration .
+<configuration/lemon/44> ns4kge:hasTask    <task/link-prediction> .
+<configuration/lemon/44> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/lemon/44> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/lemon/44> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/lemon/44> ns4kge:hasNSMethod <ns-method/adversarial-uniform-negative-sampling> .
+<configuration/lemon/44> ns4kge:result "0.5729"^^xsd:decimal .
+
+<configuration/lemon/45> rdf:type ns4kge:Configuration .
+<configuration/lemon/45> ns4kge:hasTask    <task/link-prediction> .
+<configuration/lemon/45> ns4kge:hasDataset <dataset/wn18> .
+<configuration/lemon/45> ns4kge:hasMetric  <metric/mrr> .
+<configuration/lemon/45> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/lemon/45> ns4kge:hasNSMethod <ns-method/self-adv-sans> .
+<configuration/lemon/45> ns4kge:result "0.9494"^^xsd:decimal .
+
+<configuration/lemon/46> rdf:type ns4kge:Configuration .
+<configuration/lemon/46> ns4kge:hasTask    <task/link-prediction> .
+<configuration/lemon/46> ns4kge:hasDataset <dataset/wn18> .
+<configuration/lemon/46> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/lemon/46> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/lemon/46> ns4kge:hasNSMethod <ns-method/self-adv-sans> .
+<configuration/lemon/46> ns4kge:result "0.9585"^^xsd:decimal .
+
+<configuration/lemon/47> rdf:type ns4kge:Configuration .
+<configuration/lemon/47> ns4kge:hasTask    <task/link-prediction> .
+<configuration/lemon/47> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/lemon/47> ns4kge:hasMetric  <metric/mrr> .
+<configuration/lemon/47> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/lemon/47> ns4kge:hasNSMethod <ns-method/self-adv-sans> .
+<configuration/lemon/47> ns4kge:result "0.4745"^^xsd:decimal .
+
+<configuration/lemon/48> rdf:type ns4kge:Configuration .
+<configuration/lemon/48> ns4kge:hasTask    <task/link-prediction> .
+<configuration/lemon/48> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/lemon/48> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/lemon/48> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/lemon/48> ns4kge:hasNSMethod <ns-method/self-adv-sans> .
+<configuration/lemon/48> ns4kge:result "0.5712"^^xsd:decimal .
+
+<configuration/lemon/49> rdf:type ns4kge:Configuration .
+<configuration/lemon/49> ns4kge:hasTask    <task/link-prediction> .
+<configuration/lemon/49> ns4kge:hasDataset <dataset/wn18> .
+<configuration/lemon/49> ns4kge:hasMetric  <metric/mrr> .
+<configuration/lemon/49> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/lemon/49> ns4kge:hasNSMethod <ns-method/self-adv-rw-sans> .
+<configuration/lemon/49> ns4kge:result "0.9496"^^xsd:decimal .
+
+<configuration/lemon/50> rdf:type ns4kge:Configuration .
+<configuration/lemon/50> ns4kge:hasTask    <task/link-prediction> .
+<configuration/lemon/50> ns4kge:hasDataset <dataset/wn18> .
+<configuration/lemon/50> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/lemon/50> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/lemon/50> ns4kge:hasNSMethod <ns-method/self-adv-rw-sans> .
+<configuration/lemon/50> ns4kge:result "0.9609"^^xsd:decimal .
+
+<configuration/lemon/51> rdf:type ns4kge:Configuration .
+<configuration/lemon/51> ns4kge:hasTask    <task/link-prediction> .
+<configuration/lemon/51> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/lemon/51> ns4kge:hasMetric  <metric/mrr> .
+<configuration/lemon/51> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/lemon/51> ns4kge:hasNSMethod <ns-method/self-adv-rw-sans> .
+<configuration/lemon/51> ns4kge:result "0.4805"^^xsd:decimal .
+
+<configuration/lemon/52> rdf:type ns4kge:Configuration .
+<configuration/lemon/52> ns4kge:hasTask    <task/link-prediction> .
+<configuration/lemon/52> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/lemon/52> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/lemon/52> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/lemon/52> ns4kge:hasNSMethod <ns-method/self-adv-rw-sans> .
+<configuration/lemon/52> ns4kge:result "0.5694"^^xsd:decimal .
+
+<configuration/lemon/53> rdf:type ns4kge:Configuration .
+<configuration/lemon/53> ns4kge:hasTask    <task/link-prediction> .
+<configuration/lemon/53> ns4kge:hasDataset <dataset/wn18> .
+<configuration/lemon/53> ns4kge:hasMetric  <metric/mrr> .
+<configuration/lemon/53> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/lemon/53> ns4kge:hasNSMethod <ns-method/adversarial-language-model-driven-negative-sampling> .
+<configuration/lemon/53> ns4kge:result "0.9469"^^xsd:decimal .
+
+<configuration/lemon/54> rdf:type ns4kge:Configuration .
+<configuration/lemon/54> ns4kge:hasTask    <task/link-prediction> .
+<configuration/lemon/54> ns4kge:hasDataset <dataset/wn18> .
+<configuration/lemon/54> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/lemon/54> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/lemon/54> ns4kge:hasNSMethod <ns-method/adversarial-language-model-driven-negative-sampling> .
+<configuration/lemon/54> ns4kge:result "0.9593"^^xsd:decimal .
+
+<configuration/lemon/55> rdf:type ns4kge:Configuration .
+<configuration/lemon/55> ns4kge:hasTask    <task/link-prediction> .
+<configuration/lemon/55> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/lemon/55> ns4kge:hasMetric  <metric/mrr> .
+<configuration/lemon/55> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/lemon/55> ns4kge:hasNSMethod <ns-method/adversarial-language-model-driven-negative-sampling> .
+<configuration/lemon/55> ns4kge:result "0.477"^^xsd:decimal .
+
+<configuration/lemon/56> rdf:type ns4kge:Configuration .
+<configuration/lemon/56> ns4kge:hasTask    <task/link-prediction> .
+<configuration/lemon/56> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/lemon/56> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/lemon/56> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/lemon/56> ns4kge:hasNSMethod <ns-method/adversarial-language-model-driven-negative-sampling> .
+<configuration/lemon/56> ns4kge:result "0.5735"^^xsd:decimal .
+
+<configuration/lemon/57> rdf:type ns4kge:Configuration .
+<configuration/lemon/57> ns4kge:hasTask    <task/link-prediction> .
+<configuration/lemon/57> ns4kge:hasDataset <dataset/wn18> .
+<configuration/lemon/57> ns4kge:hasMetric  <metric/mrr> .
+<configuration/lemon/57> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/lemon/57> ns4kge:hasNSMethod <ns-method/adversarial-uniform-negative-sampling> .
+<configuration/lemon/57> ns4kge:result "0.7722"^^xsd:decimal .
+
+<configuration/lemon/58> rdf:type ns4kge:Configuration .
+<configuration/lemon/58> ns4kge:hasTask    <task/link-prediction> .
+<configuration/lemon/58> ns4kge:hasDataset <dataset/wn18> .
+<configuration/lemon/58> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/lemon/58> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/lemon/58> ns4kge:hasNSMethod <ns-method/adversarial-uniform-negative-sampling> .
+<configuration/lemon/58> ns4kge:result "0.9202"^^xsd:decimal .
+
+<configuration/lemon/59> rdf:type ns4kge:Configuration .
+<configuration/lemon/59> ns4kge:hasTask    <task/link-prediction> .
+<configuration/lemon/59> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/lemon/59> ns4kge:hasMetric  <metric/mrr> .
+<configuration/lemon/59> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/lemon/59> ns4kge:hasNSMethod <ns-method/adversarial-uniform-negative-sampling> .
+<configuration/lemon/59> ns4kge:result "0.2232"^^xsd:decimal .
+
+<configuration/lemon/60> rdf:type ns4kge:Configuration .
+<configuration/lemon/60> ns4kge:hasTask    <task/link-prediction> .
+<configuration/lemon/60> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/lemon/60> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/lemon/60> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/lemon/60> ns4kge:hasNSMethod <ns-method/adversarial-uniform-negative-sampling> .
+<configuration/lemon/60> ns4kge:result "0.5278"^^xsd:decimal .
+
+<configuration/lemon/61> rdf:type ns4kge:Configuration .
+<configuration/lemon/61> ns4kge:hasTask    <task/link-prediction> .
+<configuration/lemon/61> ns4kge:hasDataset <dataset/wn18> .
+<configuration/lemon/61> ns4kge:hasMetric  <metric/mrr> .
+<configuration/lemon/61> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/lemon/61> ns4kge:hasNSMethod <ns-method/self-adv-sans> .
+<configuration/lemon/61> ns4kge:result "0.7136"^^xsd:decimal .
+
+<configuration/lemon/62> rdf:type ns4kge:Configuration .
+<configuration/lemon/62> ns4kge:hasTask    <task/link-prediction> .
+<configuration/lemon/62> ns4kge:hasDataset <dataset/wn18> .
+<configuration/lemon/62> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/lemon/62> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/lemon/62> ns4kge:hasNSMethod <ns-method/self-adv-sans> .
+<configuration/lemon/62> ns4kge:result "0.8406"^^xsd:decimal .
+
+<configuration/lemon/63> rdf:type ns4kge:Configuration .
+<configuration/lemon/63> ns4kge:hasTask    <task/link-prediction> .
+<configuration/lemon/63> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/lemon/63> ns4kge:hasMetric  <metric/mrr> .
+<configuration/lemon/63> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/lemon/63> ns4kge:hasNSMethod <ns-method/self-adv-sans> .
+<configuration/lemon/63> ns4kge:result "0.2249"^^xsd:decimal .
+
+<configuration/lemon/64> rdf:type ns4kge:Configuration .
+<configuration/lemon/64> ns4kge:hasTask    <task/link-prediction> .
+<configuration/lemon/64> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/lemon/64> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/lemon/64> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/lemon/64> ns4kge:hasNSMethod <ns-method/self-adv-sans> .
+<configuration/lemon/64> ns4kge:result "0.5321"^^xsd:decimal .
+
+<configuration/lemon/65> rdf:type ns4kge:Configuration .
+<configuration/lemon/65> ns4kge:hasTask    <task/link-prediction> .
+<configuration/lemon/65> ns4kge:hasDataset <dataset/wn18> .
+<configuration/lemon/65> ns4kge:hasMetric  <metric/mrr> .
+<configuration/lemon/65> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/lemon/65> ns4kge:hasNSMethod <ns-method/self-adv-rw-sans> .
+<configuration/lemon/65> ns4kge:result "0.7429"^^xsd:decimal .
+
+<configuration/lemon/66> rdf:type ns4kge:Configuration .
+<configuration/lemon/66> ns4kge:hasTask    <task/link-prediction> .
+<configuration/lemon/66> ns4kge:hasDataset <dataset/wn18> .
+<configuration/lemon/66> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/lemon/66> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/lemon/66> ns4kge:hasNSMethod <ns-method/self-adv-rw-sans> .
+<configuration/lemon/66> ns4kge:result "0.8851"^^xsd:decimal .
+
+<configuration/lemon/67> rdf:type ns4kge:Configuration .
+<configuration/lemon/67> ns4kge:hasTask    <task/link-prediction> .
+<configuration/lemon/67> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/lemon/67> ns4kge:hasMetric  <metric/mrr> .
+<configuration/lemon/67> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/lemon/67> ns4kge:hasNSMethod <ns-method/self-adv-rw-sans> .
+<configuration/lemon/67> ns4kge:result "0.2273"^^xsd:decimal .
+
+<configuration/lemon/68> rdf:type ns4kge:Configuration .
+<configuration/lemon/68> ns4kge:hasTask    <task/link-prediction> .
+<configuration/lemon/68> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/lemon/68> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/lemon/68> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/lemon/68> ns4kge:hasNSMethod <ns-method/self-adv-rw-sans> .
+<configuration/lemon/68> ns4kge:result "0.5381"^^xsd:decimal .
+
+<configuration/lemon/69> rdf:type ns4kge:Configuration .
+<configuration/lemon/69> ns4kge:hasTask    <task/link-prediction> .
+<configuration/lemon/69> ns4kge:hasDataset <dataset/wn18> .
+<configuration/lemon/69> ns4kge:hasMetric  <metric/mrr> .
+<configuration/lemon/69> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/lemon/69> ns4kge:hasNSMethod <ns-method/adversarial-language-model-driven-negative-sampling> .
+<configuration/lemon/69> ns4kge:result "0.7947"^^xsd:decimal .
+
+<configuration/lemon/70> rdf:type ns4kge:Configuration .
+<configuration/lemon/70> ns4kge:hasTask    <task/link-prediction> .
+<configuration/lemon/70> ns4kge:hasDataset <dataset/wn18> .
+<configuration/lemon/70> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/lemon/70> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/lemon/70> ns4kge:hasNSMethod <ns-method/adversarial-language-model-driven-negative-sampling> .
+<configuration/lemon/70> ns4kge:result "0.9492"^^xsd:decimal .
+
+<configuration/lemon/71> rdf:type ns4kge:Configuration .
+<configuration/lemon/71> ns4kge:hasTask    <task/link-prediction> .
+<configuration/lemon/71> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/lemon/71> ns4kge:hasMetric  <metric/mrr> .
+<configuration/lemon/71> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/lemon/71> ns4kge:hasNSMethod <ns-method/adversarial-language-model-driven-negative-sampling> .
+<configuration/lemon/71> ns4kge:result "0.2274"^^xsd:decimal .
+
+<configuration/lemon/72> rdf:type ns4kge:Configuration .
+<configuration/lemon/72> ns4kge:hasTask    <task/link-prediction> .
+<configuration/lemon/72> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/lemon/72> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/lemon/72> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/lemon/72> ns4kge:hasNSMethod <ns-method/adversarial-language-model-driven-negative-sampling> .
+<configuration/lemon/72> ns4kge:result "0.532"^^xsd:decimal .

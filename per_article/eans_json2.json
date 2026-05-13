@@ -13,6 +13,14 @@
       "Dataset": "FB15K237",
       "Metric": "MR",
       "KGEModel": "TransE",
+      "NSMethod": "Self-Adversarial Negative Sampling",
+      "result": 172
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K237",
+      "Metric": "MR",
+      "KGEModel": "TransE",
       "NSMethod": "Entity Aware Negative Sampling + Self-Adversarial Negative Sampling",
       "result": 172
     },
@@ -21,8 +29,8 @@
       "Dataset": "FB15K237",
       "Metric": "MR",
       "KGEModel": "TransE",
-      "NSMethod": "Self-Adversarial Negative Sampling",
-      "result": 172
+      "NSMethod": "NS-Caching",
+      "result": 186
     },
     {
       "Task": "Link Prediction",
@@ -37,16 +45,8 @@
       "Dataset": "FB15K237",
       "Metric": "MR",
       "KGEModel": "TransE",
-      "NSMethod": "KBGAN",
+      "NSMethod": "KB-GAN",
       "result": 722
-    },
-    {
-      "Task": "Link Prediction",
-      "Dataset": "FB15K237",
-      "Metric": "MR",
-      "KGEModel": "TransE",
-      "NSMethod": "NSCaching",
-      "result": 186
     },
     {
       "Task": "Link Prediction",
@@ -77,6 +77,22 @@
       "Dataset": "FB15K237",
       "Metric": "MRR",
       "KGEModel": "TransE",
+      "NSMethod": "SANS + Self-Adversarial Negative Sampling",
+      "result": 0.327
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K237",
+      "Metric": "MRR",
+      "KGEModel": "TransE",
+      "NSMethod": "NS-Caching",
+      "result": 0.299
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K237",
+      "Metric": "MRR",
+      "KGEModel": "TransE",
       "NSMethod": "Uniform Negative Sampling",
       "result": 0.294
     },
@@ -85,24 +101,8 @@
       "Dataset": "FB15K237",
       "Metric": "MRR",
       "KGEModel": "TransE",
-      "NSMethod": "KBGAN",
+      "NSMethod": "KB-GAN",
       "result": 0.293
-    },
-    {
-      "Task": "Link Prediction",
-      "Dataset": "FB15K237",
-      "Metric": "MRR",
-      "KGEModel": "TransE",
-      "NSMethod": "NSCaching",
-      "result": 0.299
-    },
-    {
-      "Task": "Link Prediction",
-      "Dataset": "FB15K237",
-      "Metric": "MRR",
-      "KGEModel": "TransE",
-      "NSMethod": "Structure Aware Negative Sampling + Self-Adversarial Negative Sampling",
-      "result": 0.327
     },
     {
       "Task": "Link Prediction",
@@ -133,23 +133,15 @@
       "Dataset": "FB15K237",
       "Metric": "Hits@10",
       "KGEModel": "TransE",
-      "NSMethod": "Uniform Negative Sampling",
-      "result": 0.465
+      "NSMethod": "SANS + Self-Adversarial Negative Sampling",
+      "result": 0.52
     },
     {
       "Task": "Link Prediction",
       "Dataset": "FB15K237",
       "Metric": "Hits@10",
       "KGEModel": "TransE",
-      "NSMethod": "KBGAN",
-      "result": 0.466
-    },
-    {
-      "Task": "Link Prediction",
-      "Dataset": "FB15K237",
-      "Metric": "Hits@10",
-      "KGEModel": "TransE",
-      "NSMethod": "NSCaching",
+      "NSMethod": "NS-Caching",
       "result": 0.476
     },
     {
@@ -157,8 +149,16 @@
       "Dataset": "FB15K237",
       "Metric": "Hits@10",
       "KGEModel": "TransE",
-      "NSMethod": "Structure Aware Negative Sampling + Self-Adversarial Negative Sampling",
-      "result": 0.52
+      "NSMethod": "KB-GAN",
+      "result": 0.466
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K237",
+      "Metric": "Hits@10",
+      "KGEModel": "TransE",
+      "NSMethod": "Uniform Negative Sampling",
+      "result": 0.465
     },
     {
       "Task": "Link Prediction",
@@ -197,16 +197,16 @@
       "Dataset": "WN18RR",
       "Metric": "MR",
       "KGEModel": "TransE",
-      "NSMethod": "KBGAN",
-      "result": 5356
+      "NSMethod": "NS-Caching",
+      "result": 4472
     },
     {
       "Task": "Link Prediction",
       "Dataset": "WN18RR",
       "Metric": "MR",
       "KGEModel": "TransE",
-      "NSMethod": "NSCaching",
-      "result": 4472
+      "NSMethod": "KB-GAN",
+      "result": 5356
     },
     {
       "Task": "Link Prediction",
@@ -229,7 +229,7 @@
       "Dataset": "WN18RR",
       "Metric": "MRR",
       "KGEModel": "TransE",
-      "NSMethod": "Structure Aware Negative Sampling + Self-Adversarial Negative Sampling",
+      "NSMethod": "SANS + Self-Adversarial Negative Sampling",
       "result": 0.225
     },
     {
@@ -253,7 +253,7 @@
       "Dataset": "WN18RR",
       "Metric": "MRR",
       "KGEModel": "TransE",
-      "NSMethod": "NSCaching",
+      "NSMethod": "NS-Caching",
       "result": 0.2
     },
     {
@@ -261,7 +261,7 @@
       "Dataset": "WN18RR",
       "Metric": "MRR",
       "KGEModel": "TransE",
-      "NSMethod": "KBGAN",
+      "NSMethod": "KB-GAN",
       "result": 0.181
     },
     {
@@ -277,7 +277,7 @@
       "Dataset": "WN18RR",
       "Metric": "Hits@10",
       "KGEModel": "TransE",
-      "NSMethod": "Structure Aware Negative Sampling + Self-Adversarial Negative Sampling",
+      "NSMethod": "SANS + Self-Adversarial Negative Sampling",
       "result": 0.532
     },
     {
@@ -309,7 +309,7 @@
       "Dataset": "WN18RR",
       "Metric": "Hits@10",
       "KGEModel": "TransE",
-      "NSMethod": "NSCaching",
+      "NSMethod": "NS-Caching",
       "result": 0.478
     },
     {
@@ -317,7 +317,7 @@
       "Dataset": "WN18RR",
       "Metric": "Hits@10",
       "KGEModel": "TransE",
-      "NSMethod": "KBGAN",
+      "NSMethod": "KB-GAN",
       "result": 0.432
     },
     {
@@ -349,7 +349,7 @@
       "Dataset": "FB15K237",
       "Metric": "MR",
       "KGEModel": "TransD",
-      "NSMethod": "NSCaching",
+      "NSMethod": "NS-Caching",
       "result": 189
     },
     {
@@ -365,7 +365,7 @@
       "Dataset": "FB15K237",
       "Metric": "MR",
       "KGEModel": "TransD",
-      "NSMethod": "KBGAN",
+      "NSMethod": "KB-GAN",
       "result": 825
     },
     {
@@ -381,14 +381,6 @@
       "Dataset": "FB15K237",
       "Metric": "MRR",
       "KGEModel": "TransD",
-      "NSMethod": "Self-Adversarial Negative Sampling",
-      "result": 0.334
-    },
-    {
-      "Task": "Link Prediction",
-      "Dataset": "FB15K237",
-      "Metric": "MRR",
-      "KGEModel": "TransD",
       "NSMethod": "Entity Aware Negative Sampling",
       "result": 0.334
     },
@@ -397,7 +389,15 @@
       "Dataset": "FB15K237",
       "Metric": "MRR",
       "KGEModel": "TransD",
-      "NSMethod": "NSCaching",
+      "NSMethod": "Self-Adversarial Negative Sampling",
+      "result": 0.334
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K237",
+      "Metric": "MRR",
+      "KGEModel": "TransD",
+      "NSMethod": "NS-Caching",
       "result": 0.286
     },
     {
@@ -405,7 +405,7 @@
       "Dataset": "FB15K237",
       "Metric": "MRR",
       "KGEModel": "TransD",
-      "NSMethod": "KBGAN",
+      "NSMethod": "KB-GAN",
       "result": 0.247
     },
     {
@@ -445,7 +445,7 @@
       "Dataset": "FB15K237",
       "Metric": "Hits@10",
       "KGEModel": "TransD",
-      "NSMethod": "NSCaching",
+      "NSMethod": "NS-Caching",
       "result": 0.479
     },
     {
@@ -453,7 +453,7 @@
       "Dataset": "FB15K237",
       "Metric": "Hits@10",
       "KGEModel": "TransD",
-      "NSMethod": "KBGAN",
+      "NSMethod": "KB-GAN",
       "result": 0.444
     },
     {
@@ -469,7 +469,7 @@
       "Dataset": "WN18RR",
       "Metric": "MR",
       "KGEModel": "TransD",
-      "NSMethod": "NSCaching",
+      "NSMethod": "NS-Caching",
       "result": 3104
     },
     {
@@ -485,7 +485,7 @@
       "Dataset": "WN18RR",
       "Metric": "MR",
       "KGEModel": "TransD",
-      "NSMethod": "KBGAN",
+      "NSMethod": "KB-GAN",
       "result": 4083
     },
     {
@@ -541,7 +541,7 @@
       "Dataset": "WN18RR",
       "Metric": "MRR",
       "KGEModel": "TransD",
-      "NSMethod": "NSCaching",
+      "NSMethod": "NS-Caching",
       "result": 0.201
     },
     {
@@ -557,7 +557,7 @@
       "Dataset": "WN18RR",
       "Metric": "MRR",
       "KGEModel": "TransD",
-      "NSMethod": "KBGAN",
+      "NSMethod": "KB-GAN",
       "result": 0.188
     },
     {
@@ -573,7 +573,7 @@
       "Dataset": "WN18RR",
       "Metric": "Hits@10",
       "KGEModel": "TransD",
-      "NSMethod": "NSCaching",
+      "NSMethod": "NS-Caching",
       "result": 0.484
     },
     {
@@ -605,7 +605,7 @@
       "Dataset": "WN18RR",
       "Metric": "Hits@10",
       "KGEModel": "TransD",
-      "NSMethod": "KBGAN",
+      "NSMethod": "KB-GAN",
       "result": 0.464
     },
     {
@@ -629,7 +629,7 @@
       "Dataset": "FB15K237",
       "Metric": "MR",
       "KGEModel": "DistMult",
-      "NSMethod": "NSCaching",
+      "NSMethod": "NS-Caching",
       "result": 273
     },
     {
@@ -653,7 +653,7 @@
       "Dataset": "FB15K237",
       "Metric": "MR",
       "KGEModel": "DistMult",
-      "NSMethod": "KBGAN",
+      "NSMethod": "KB-GAN",
       "result": 276
     },
     {
@@ -661,7 +661,7 @@
       "Dataset": "FB15K237",
       "Metric": "MRR",
       "KGEModel": "DistMult",
-      "NSMethod": "Structure Aware Negative Sampling + Self-Adversarial Negative Sampling",
+      "NSMethod": "SANS + Self-Adversarial Negative Sampling",
       "result": 0.31
     },
     {
@@ -693,7 +693,7 @@
       "Dataset": "FB15K237",
       "Metric": "MRR",
       "KGEModel": "DistMult",
-      "NSMethod": "NSCaching",
+      "NSMethod": "NS-Caching",
       "result": 0.283
     },
     {
@@ -709,7 +709,7 @@
       "Dataset": "FB15K237",
       "Metric": "MRR",
       "KGEModel": "DistMult",
-      "NSMethod": "KBGAN",
+      "NSMethod": "KB-GAN",
       "result": 0.227
     },
     {
@@ -725,7 +725,7 @@
       "Dataset": "FB15K237",
       "Metric": "Hits@10",
       "KGEModel": "DistMult",
-      "NSMethod": "Structure Aware Negative Sampling + Self-Adversarial Negative Sampling",
+      "NSMethod": "SANS + Self-Adversarial Negative Sampling",
       "result": 0.487
     },
     {
@@ -749,7 +749,7 @@
       "Dataset": "FB15K237",
       "Metric": "Hits@10",
       "KGEModel": "DistMult",
-      "NSMethod": "NSCaching",
+      "NSMethod": "NS-Caching",
       "result": 0.456
     },
     {
@@ -765,7 +765,7 @@
       "Dataset": "FB15K237",
       "Metric": "Hits@10",
       "KGEModel": "DistMult",
-      "NSMethod": "KBGAN",
+      "NSMethod": "KB-GAN",
       "result": 0.4
     },
     {
@@ -805,7 +805,7 @@
       "Dataset": "WN18RR",
       "Metric": "MR",
       "KGEModel": "DistMult",
-      "NSMethod": "NSCaching",
+      "NSMethod": "NS-Caching",
       "result": 7708
     },
     {
@@ -813,7 +813,7 @@
       "Dataset": "WN18RR",
       "Metric": "MR",
       "KGEModel": "DistMult",
-      "NSMethod": "KBGAN",
+      "NSMethod": "KB-GAN",
       "result": 11351
     },
     {
@@ -853,7 +853,7 @@
       "Dataset": "WN18RR",
       "Metric": "MRR",
       "KGEModel": "DistMult",
-      "NSMethod": "NSCaching",
+      "NSMethod": "NS-Caching",
       "result": 0.413
     },
     {
@@ -861,16 +861,16 @@
       "Dataset": "WN18RR",
       "Metric": "MRR",
       "KGEModel": "DistMult",
-      "NSMethod": "KBGAN",
-      "result": 0.204
+      "NSMethod": "SANS + Self-Adversarial Negative Sampling",
+      "result": 0.368
     },
     {
       "Task": "Link Prediction",
       "Dataset": "WN18RR",
       "Metric": "MRR",
       "KGEModel": "DistMult",
-      "NSMethod": "Structure Aware Negative Sampling + Self-Adversarial Negative Sampling",
-      "result": 0.368
+      "NSMethod": "KB-GAN",
+      "result": 0.204
     },
     {
       "Task": "Link Prediction",
@@ -909,7 +909,7 @@
       "Dataset": "WN18RR",
       "Metric": "Hits@10",
       "KGEModel": "DistMult",
-      "NSMethod": "NSCaching",
+      "NSMethod": "NS-Caching",
       "result": 0.455
     },
     {
@@ -917,7 +917,7 @@
       "Dataset": "WN18RR",
       "Metric": "Hits@10",
       "KGEModel": "DistMult",
-      "NSMethod": "Structure Aware Negative Sampling + Self-Adversarial Negative Sampling",
+      "NSMethod": "SANS + Self-Adversarial Negative Sampling",
       "result": 0.387
     },
     {
@@ -925,7 +925,7 @@
       "Dataset": "WN18RR",
       "Metric": "Hits@10",
       "KGEModel": "DistMult",
-      "NSMethod": "KBGAN",
+      "NSMethod": "KB-GAN",
       "result": 0.295
     },
     {
@@ -941,7 +941,7 @@
       "Dataset": "FB15K237",
       "Metric": "MR",
       "KGEModel": "ComplEx",
-      "NSMethod": "NSCaching",
+      "NSMethod": "NS-Caching",
       "result": 221
     },
     {
@@ -973,7 +973,7 @@
       "Dataset": "FB15K237",
       "Metric": "MR",
       "KGEModel": "ComplEx",
-      "NSMethod": "KBGAN",
+      "NSMethod": "KB-GAN",
       "result": 881
     },
     {
@@ -997,7 +997,7 @@
       "Dataset": "FB15K237",
       "Metric": "MRR",
       "KGEModel": "ComplEx",
-      "NSMethod": "NSCaching",
+      "NSMethod": "NS-Caching",
       "result": 0.302
     },
     {
@@ -1021,7 +1021,7 @@
       "Dataset": "FB15K237",
       "Metric": "MRR",
       "KGEModel": "ComplEx",
-      "NSMethod": "KBGAN",
+      "NSMethod": "KB-GAN",
       "result": 0.191
     },
     {
@@ -1045,7 +1045,7 @@
       "Dataset": "FB15K237",
       "Metric": "Hits@10",
       "KGEModel": "ComplEx",
-      "NSMethod": "NSCaching",
+      "NSMethod": "NS-Caching",
       "result": 0.481
     },
     {
@@ -1069,7 +1069,7 @@
       "Dataset": "FB15K237",
       "Metric": "Hits@10",
       "KGEModel": "ComplEx",
-      "NSMethod": "KBGAN",
+      "NSMethod": "KB-GAN",
       "result": 0.321
     },
     {
@@ -1101,7 +1101,7 @@
       "Dataset": "WN18RR",
       "Metric": "MR",
       "KGEModel": "ComplEx",
-      "NSMethod": "NSCaching",
+      "NSMethod": "NS-Caching",
       "result": 5365
     },
     {
@@ -1117,7 +1117,7 @@
       "Dataset": "WN18RR",
       "Metric": "MR",
       "KGEModel": "ComplEx",
-      "NSMethod": "KBGAN",
+      "NSMethod": "KB-GAN",
       "result": 7528
     },
     {
@@ -1149,7 +1149,7 @@
       "Dataset": "WN18RR",
       "Metric": "MRR",
       "KGEModel": "ComplEx",
-      "NSMethod": "NSCaching",
+      "NSMethod": "NS-Caching",
       "result": 0.446
     },
     {
@@ -1165,7 +1165,7 @@
       "Dataset": "WN18RR",
       "Metric": "MRR",
       "KGEModel": "ComplEx",
-      "NSMethod": "KBGAN",
+      "NSMethod": "KB-GAN",
       "result": 0.318
     },
     {
@@ -1205,7 +1205,7 @@
       "Dataset": "WN18RR",
       "Metric": "Hits@10",
       "KGEModel": "ComplEx",
-      "NSMethod": "NSCaching",
+      "NSMethod": "NS-Caching",
       "result": 0.509
     },
     {
@@ -1213,7 +1213,7 @@
       "Dataset": "WN18RR",
       "Metric": "Hits@10",
       "KGEModel": "ComplEx",
-      "NSMethod": "KBGAN",
+      "NSMethod": "KB-GAN",
       "result": 0.355
     },
     {
@@ -1277,7 +1277,7 @@
       "Dataset": "FB15K237",
       "Metric": "MRR",
       "KGEModel": "RotatE",
-      "NSMethod": "Structure Aware Negative Sampling + Self-Adversarial Negative Sampling",
+      "NSMethod": "SANS + Self-Adversarial Negative Sampling",
       "result": 0.336
     },
     {
@@ -1309,7 +1309,7 @@
       "Dataset": "FB15K237",
       "Metric": "Hits@10",
       "KGEModel": "RotatE",
-      "NSMethod": "Structure Aware Negative Sampling + Self-Adversarial Negative Sampling",
+      "NSMethod": "SANS + Self-Adversarial Negative Sampling",
       "result": 0.531
     },
     {
@@ -1389,7 +1389,7 @@
       "Dataset": "WN18RR",
       "Metric": "MRR",
       "KGEModel": "RotatE",
-      "NSMethod": "Structure Aware Negative Sampling + Self-Adversarial Negative Sampling",
+      "NSMethod": "SANS + Self-Adversarial Negative Sampling",
       "result": 0.475
     },
     {
@@ -1429,7 +1429,7 @@
       "Dataset": "WN18RR",
       "Metric": "Hits@10",
       "KGEModel": "RotatE",
-      "NSMethod": "Structure Aware Negative Sampling + Self-Adversarial Negative Sampling",
+      "NSMethod": "SANS + Self-Adversarial Negative Sampling",
       "result": 0.571
     },
     {

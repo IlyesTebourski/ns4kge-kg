@@ -1,0 +1,38 @@
+{
+  "Article": {
+    "title": "Bootstrapping Entity Alignment with Knowledge Graph Embedding",
+    "date": "2018"
+  },
+  "proposedNSMethod": "Epsilon-Truncated Uniform Negative Sampling",
+  "proposedKGEModel": "BootEA",
+  "mentionedNSMethods": [
+    "Uniform Negative Sampling"
+  ],
+  "mentionedKGEModels": [
+    "TransE",
+    "TransH",
+    "TransR",
+    "PTransE",
+    "MTransE",
+    "IPTransE",
+    "JAPE",
+    "KR-EAR"
+  ],
+  "Experimentation": {
+    "Hardware": [
+      "Intel Xeon E3 3.3 GHz CPU",
+      "NVIDIA GeForce GTX 1080 Ti GPU"
+    ],
+    "TrainingProtocol": {
+      "LossFunction": [
+        "limit-based loss",
+        "negative log-likelihood"
+      ],
+      "Optimizer": [
+        "AdaGrad"
+      ],
+      "learningRate": 0.01,
+      "nsRatio": 10
+    }
+  }
+}

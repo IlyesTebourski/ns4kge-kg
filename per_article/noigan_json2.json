@@ -1,0 +1,2756 @@
+{
+  "Configurations": [
+    {
+      "Task": "Triple Classification",
+      "Dataset": "FB15K",
+      "Metric": "AUC",
+      "KGEModel": "TransE",
+      "NSMethod": "CKRL",
+      "result": 0.548
+    },
+    {
+      "Task": "Triple Classification",
+      "Dataset": "FB15K",
+      "Metric": "AUC",
+      "KGEModel": "TransE",
+      "NSMethod": "NoiGAN (soft)",
+      "result": 0.949
+    },
+    {
+      "Task": "Triple Classification",
+      "Dataset": "FB15K",
+      "Metric": "AUC",
+      "KGEModel": "TransE",
+      "NSMethod": "NoiGAN (hard)",
+      "result": 0.946
+    },
+    {
+      "Task": "Triple Classification",
+      "Dataset": "YAGO3-10",
+      "Metric": "AUC",
+      "KGEModel": "TransE",
+      "NSMethod": "CKRL",
+      "result": 0.455
+    },
+    {
+      "Task": "Triple Classification",
+      "Dataset": "YAGO3-10",
+      "Metric": "AUC",
+      "KGEModel": "TransE",
+      "NSMethod": "NoiGAN (soft)",
+      "result": 0.929
+    },
+    {
+      "Task": "Triple Classification",
+      "Dataset": "YAGO3-10",
+      "Metric": "AUC",
+      "KGEModel": "TransE",
+      "NSMethod": "NoiGAN (hard)",
+      "result": 0.942
+    },
+    {
+      "Task": "Triple Classification",
+      "Dataset": "WN18",
+      "Metric": "AUC",
+      "KGEModel": "TransE",
+      "NSMethod": "CKRL",
+      "result": 0.704
+    },
+    {
+      "Task": "Triple Classification",
+      "Dataset": "WN18",
+      "Metric": "AUC",
+      "KGEModel": "TransE",
+      "NSMethod": "NoiGAN (soft)",
+      "result": 0.794
+    },
+    {
+      "Task": "Triple Classification",
+      "Dataset": "WN18",
+      "Metric": "AUC",
+      "KGEModel": "TransE",
+      "NSMethod": "NoiGAN (hard)",
+      "result": 0.836
+    },
+    {
+      "Task": "Triple Classification",
+      "Dataset": "FB15K",
+      "Metric": "Spe",
+      "KGEModel": "TransE",
+      "NSMethod": "CKRL",
+      "result": 0.006
+    },
+    {
+      "Task": "Triple Classification",
+      "Dataset": "FB15K",
+      "Metric": "Spe",
+      "KGEModel": "TransE",
+      "NSMethod": "NoiGAN (soft)",
+      "result": 0.791
+    },
+    {
+      "Task": "Triple Classification",
+      "Dataset": "FB15K",
+      "Metric": "Spe",
+      "KGEModel": "TransE",
+      "NSMethod": "NoiGAN (hard)",
+      "result": 0.821
+    },
+    {
+      "Task": "Triple Classification",
+      "Dataset": "YAGO3-10",
+      "Metric": "Spe",
+      "KGEModel": "TransE",
+      "NSMethod": "CKRL",
+      "result": 0.018
+    },
+    {
+      "Task": "Triple Classification",
+      "Dataset": "YAGO3-10",
+      "Metric": "Spe",
+      "KGEModel": "TransE",
+      "NSMethod": "NoiGAN (soft)",
+      "result": 0.625
+    },
+    {
+      "Task": "Triple Classification",
+      "Dataset": "YAGO3-10",
+      "Metric": "Spe",
+      "KGEModel": "TransE",
+      "NSMethod": "NoiGAN (hard)",
+      "result": 0.73
+    },
+    {
+      "Task": "Triple Classification",
+      "Dataset": "WN18",
+      "Metric": "Spe",
+      "KGEModel": "TransE",
+      "NSMethod": "CKRL",
+      "result": 0.0
+    },
+    {
+      "Task": "Triple Classification",
+      "Dataset": "WN18",
+      "Metric": "Spe",
+      "KGEModel": "TransE",
+      "NSMethod": "NoiGAN (soft)",
+      "result": 0.452
+    },
+    {
+      "Task": "Triple Classification",
+      "Dataset": "WN18",
+      "Metric": "Spe",
+      "KGEModel": "TransE",
+      "NSMethod": "NoiGAN (hard)",
+      "result": 0.565
+    },
+    {
+      "Task": "Triple Classification",
+      "Dataset": "FB15K",
+      "Metric": "AUC",
+      "KGEModel": "TransE",
+      "NSMethod": "CKRL (20%)",
+      "result": 0.687
+    },
+    {
+      "Task": "Triple Classification",
+      "Dataset": "FB15K",
+      "Metric": "AUC",
+      "KGEModel": "TransE",
+      "NSMethod": "NoiGAN (soft) (20%)",
+      "result": 0.933
+    },
+    {
+      "Task": "Triple Classification",
+      "Dataset": "FB15K",
+      "Metric": "AUC",
+      "KGEModel": "TransE",
+      "NSMethod": "NoiGAN (hard) (20%)",
+      "result": 0.954
+    },
+    {
+      "Task": "Triple Classification",
+      "Dataset": "YAGO3-10",
+      "Metric": "AUC",
+      "KGEModel": "TransE",
+      "NSMethod": "CKRL (20%)",
+      "result": 0.521
+    },
+    {
+      "Task": "Triple Classification",
+      "Dataset": "YAGO3-10",
+      "Metric": "AUC",
+      "KGEModel": "TransE",
+      "NSMethod": "NoiGAN (soft) (20%)",
+      "result": 0.914
+    },
+    {
+      "Task": "Triple Classification",
+      "Dataset": "YAGO3-10",
+      "Metric": "AUC",
+      "KGEModel": "TransE",
+      "NSMethod": "NoiGAN (hard) (20%)",
+      "result": 0.934
+    },
+    {
+      "Task": "Triple Classification",
+      "Dataset": "WN18",
+      "Metric": "AUC",
+      "KGEModel": "TransE",
+      "NSMethod": "CKRL (20%)",
+      "result": 0.71
+    },
+    {
+      "Task": "Triple Classification",
+      "Dataset": "WN18",
+      "Metric": "AUC",
+      "KGEModel": "TransE",
+      "NSMethod": "NoiGAN (soft) (20%)",
+      "result": 0.756
+    },
+    {
+      "Task": "Triple Classification",
+      "Dataset": "WN18",
+      "Metric": "AUC",
+      "KGEModel": "TransE",
+      "NSMethod": "NoiGAN (hard) (20%)",
+      "result": 0.799
+    },
+    {
+      "Task": "Triple Classification",
+      "Dataset": "FB15K",
+      "Metric": "Spe",
+      "KGEModel": "TransE",
+      "NSMethod": "CKRL (20%)",
+      "result": 0.008
+    },
+    {
+      "Task": "Triple Classification",
+      "Dataset": "FB15K",
+      "Metric": "Spe",
+      "KGEModel": "TransE",
+      "NSMethod": "NoiGAN (soft) (20%)",
+      "result": 0.733
+    },
+    {
+      "Task": "Triple Classification",
+      "Dataset": "FB15K",
+      "Metric": "Spe",
+      "KGEModel": "TransE",
+      "NSMethod": "NoiGAN (hard) (20%)",
+      "result": 0.823
+    },
+    {
+      "Task": "Triple Classification",
+      "Dataset": "YAGO3-10",
+      "Metric": "Spe",
+      "KGEModel": "TransE",
+      "NSMethod": "CKRL (20%)",
+      "result": 0.0
+    },
+    {
+      "Task": "Triple Classification",
+      "Dataset": "YAGO3-10",
+      "Metric": "Spe",
+      "KGEModel": "TransE",
+      "NSMethod": "NoiGAN (soft) (20%)",
+      "result": 0.619
+    },
+    {
+      "Task": "Triple Classification",
+      "Dataset": "YAGO3-10",
+      "Metric": "Spe",
+      "KGEModel": "TransE",
+      "NSMethod": "NoiGAN (hard) (20%)",
+      "result": 0.711
+    },
+    {
+      "Task": "Triple Classification",
+      "Dataset": "WN18",
+      "Metric": "Spe",
+      "KGEModel": "TransE",
+      "NSMethod": "CKRL (20%)",
+      "result": 0.0
+    },
+    {
+      "Task": "Triple Classification",
+      "Dataset": "WN18",
+      "Metric": "Spe",
+      "KGEModel": "TransE",
+      "NSMethod": "NoiGAN (soft) (20%)",
+      "result": 0.336
+    },
+    {
+      "Task": "Triple Classification",
+      "Dataset": "WN18",
+      "Metric": "Spe",
+      "KGEModel": "TransE",
+      "NSMethod": "NoiGAN (hard) (20%)",
+      "result": 0.524
+    },
+    {
+      "Task": "Triple Classification",
+      "Dataset": "FB15K",
+      "Metric": "AUC",
+      "KGEModel": "TransE",
+      "NSMethod": "CKRL (40%)",
+      "result": 0.725
+    },
+    {
+      "Task": "Triple Classification",
+      "Dataset": "FB15K",
+      "Metric": "AUC",
+      "KGEModel": "TransE",
+      "NSMethod": "NoiGAN (soft) (40%)",
+      "result": 0.931
+    },
+    {
+      "Task": "Triple Classification",
+      "Dataset": "FB15K",
+      "Metric": "AUC",
+      "KGEModel": "TransE",
+      "NSMethod": "NoiGAN (hard) (40%)",
+      "result": 0.95
+    },
+    {
+      "Task": "Triple Classification",
+      "Dataset": "YAGO3-10",
+      "Metric": "AUC",
+      "KGEModel": "TransE",
+      "NSMethod": "CKRL (40%)",
+      "result": 0.577
+    },
+    {
+      "Task": "Triple Classification",
+      "Dataset": "YAGO3-10",
+      "Metric": "AUC",
+      "KGEModel": "TransE",
+      "NSMethod": "NoiGAN (soft) (40%)",
+      "result": 0.894
+    },
+    {
+      "Task": "Triple Classification",
+      "Dataset": "YAGO3-10",
+      "Metric": "AUC",
+      "KGEModel": "TransE",
+      "NSMethod": "NoiGAN (hard) (40%)",
+      "result": 0.929
+    },
+    {
+      "Task": "Triple Classification",
+      "Dataset": "WN18",
+      "Metric": "AUC",
+      "KGEModel": "TransE",
+      "NSMethod": "CKRL (40%)",
+      "result": 0.725
+    },
+    {
+      "Task": "Triple Classification",
+      "Dataset": "WN18",
+      "Metric": "AUC",
+      "KGEModel": "TransE",
+      "NSMethod": "NoiGAN (soft) (40%)",
+      "result": 0.682
+    },
+    {
+      "Task": "Triple Classification",
+      "Dataset": "WN18",
+      "Metric": "AUC",
+      "KGEModel": "TransE",
+      "NSMethod": "NoiGAN (hard) (40%)",
+      "result": 0.741
+    },
+    {
+      "Task": "Triple Classification",
+      "Dataset": "FB15K",
+      "Metric": "Spe",
+      "KGEModel": "TransE",
+      "NSMethod": "CKRL (40%)",
+      "result": 0.018
+    },
+    {
+      "Task": "Triple Classification",
+      "Dataset": "FB15K",
+      "Metric": "Spe",
+      "KGEModel": "TransE",
+      "NSMethod": "NoiGAN (soft) (40%)",
+      "result": 0.699
+    },
+    {
+      "Task": "Triple Classification",
+      "Dataset": "FB15K",
+      "Metric": "Spe",
+      "KGEModel": "TransE",
+      "NSMethod": "NoiGAN (hard) (40%)",
+      "result": 0.78
+    },
+    {
+      "Task": "Triple Classification",
+      "Dataset": "YAGO3-10",
+      "Metric": "Spe",
+      "KGEModel": "TransE",
+      "NSMethod": "CKRL (40%)",
+      "result": 1.0
+    },
+    {
+      "Task": "Triple Classification",
+      "Dataset": "YAGO3-10",
+      "Metric": "Spe",
+      "KGEModel": "TransE",
+      "NSMethod": "NoiGAN (soft) (40%)",
+      "result": 0.552
+    },
+    {
+      "Task": "Triple Classification",
+      "Dataset": "YAGO3-10",
+      "Metric": "Spe",
+      "KGEModel": "TransE",
+      "NSMethod": "NoiGAN (hard) (40%)",
+      "result": 0.711
+    },
+    {
+      "Task": "Triple Classification",
+      "Dataset": "WN18",
+      "Metric": "Spe",
+      "KGEModel": "TransE",
+      "NSMethod": "CKRL (40%)",
+      "result": 0.0
+    },
+    {
+      "Task": "Triple Classification",
+      "Dataset": "WN18",
+      "Metric": "Spe",
+      "KGEModel": "TransE",
+      "NSMethod": "NoiGAN (soft) (40%)",
+      "result": 0.345
+    },
+    {
+      "Task": "Triple Classification",
+      "Dataset": "WN18",
+      "Metric": "Spe",
+      "KGEModel": "TransE",
+      "NSMethod": "NoiGAN (hard) (40%)",
+      "result": 0.464
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K-237",
+      "Metric": "MRR",
+      "KGEModel": "DistMult",
+      "NSMethod": "Unknown",
+      "result": 0.218
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K-237",
+      "Metric": "Hits@1",
+      "KGEModel": "DistMult",
+      "NSMethod": "Unknown",
+      "result": 0.136
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K-237",
+      "Metric": "Hits@3",
+      "KGEModel": "DistMult",
+      "NSMethod": "Unknown",
+      "result": 0.236
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K-237",
+      "Metric": "Hits@10",
+      "KGEModel": "DistMult",
+      "NSMethod": "Unknown",
+      "result": 0.388
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "YAGO3-10",
+      "Metric": "MRR",
+      "KGEModel": "DistMult",
+      "NSMethod": "Unknown",
+      "result": 0.292
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "YAGO3-10",
+      "Metric": "Hits@1",
+      "KGEModel": "DistMult",
+      "NSMethod": "Unknown",
+      "result": 0.203
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "YAGO3-10",
+      "Metric": "Hits@3",
+      "KGEModel": "DistMult",
+      "NSMethod": "Unknown",
+      "result": 0.325
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "YAGO3-10",
+      "Metric": "Hits@10",
+      "KGEModel": "DistMult",
+      "NSMethod": "Unknown",
+      "result": 0.47
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "MRR",
+      "KGEModel": "DistMult",
+      "NSMethod": "Unknown",
+      "result": 0.424
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "Hits@1",
+      "KGEModel": "DistMult",
+      "NSMethod": "Unknown",
+      "result": 0.382
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "Hits@3",
+      "KGEModel": "DistMult",
+      "NSMethod": "Unknown",
+      "result": 0.437
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "Hits@10",
+      "KGEModel": "DistMult",
+      "NSMethod": "Unknown",
+      "result": 0.507
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K-237",
+      "Metric": "MRR",
+      "KGEModel": "KBGAN",
+      "NSMethod": "KBGAN",
+      "result": 0.266
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K-237",
+      "Metric": "Hits@1",
+      "KGEModel": "KBGAN",
+      "NSMethod": "KBGAN",
+      "result": 0.186
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K-237",
+      "Metric": "Hits@3",
+      "KGEModel": "KBGAN",
+      "NSMethod": "KBGAN",
+      "result": 0.29
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K-237",
+      "Metric": "Hits@10",
+      "KGEModel": "KBGAN",
+      "NSMethod": "KBGAN",
+      "result": 0.427
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "YAGO3-10",
+      "Metric": "MRR",
+      "KGEModel": "KBGAN",
+      "NSMethod": "KBGAN",
+      "result": 0.071
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "YAGO3-10",
+      "Metric": "Hits@1",
+      "KGEModel": "KBGAN",
+      "NSMethod": "KBGAN",
+      "result": 0.041
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "YAGO3-10",
+      "Metric": "Hits@3",
+      "KGEModel": "KBGAN",
+      "NSMethod": "KBGAN",
+      "result": 0.07
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "YAGO3-10",
+      "Metric": "Hits@10",
+      "KGEModel": "KBGAN",
+      "NSMethod": "KBGAN",
+      "result": 0.124
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "MRR",
+      "KGEModel": "KBGAN",
+      "NSMethod": "KBGAN",
+      "result": 0.215
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "Hits@1",
+      "KGEModel": "KBGAN",
+      "NSMethod": "KBGAN",
+      "result": 0.036
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "Hits@3",
+      "KGEModel": "KBGAN",
+      "NSMethod": "KBGAN",
+      "result": 0.356
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "Hits@10",
+      "KGEModel": "KBGAN",
+      "NSMethod": "KBGAN",
+      "result": 0.507
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K-237",
+      "Metric": "MRR",
+      "KGEModel": "Attention",
+      "NSMethod": "Unknown",
+      "result": 0.436
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K-237",
+      "Metric": "Hits@1",
+      "KGEModel": "Attention",
+      "NSMethod": "Unknown",
+      "result": 0.36
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K-237",
+      "Metric": "Hits@3",
+      "KGEModel": "Attention",
+      "NSMethod": "Unknown",
+      "result": 0.464
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K-237",
+      "Metric": "Hits@10",
+      "KGEModel": "Attention",
+      "NSMethod": "Unknown",
+      "result": 0.589
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "MRR",
+      "KGEModel": "Attention",
+      "NSMethod": "Unknown",
+      "result": 0.443
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "Hits@1",
+      "KGEModel": "Attention",
+      "NSMethod": "Unknown",
+      "result": 0.363
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "Hits@3",
+      "KGEModel": "Attention",
+      "NSMethod": "Unknown",
+      "result": 0.489
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "Hits@10",
+      "KGEModel": "Attention",
+      "NSMethod": "Unknown",
+      "result": 0.583
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K-237",
+      "Metric": "MRR",
+      "KGEModel": "TransE",
+      "NSMethod": "Unknown",
+      "result": 0.33
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K-237",
+      "Metric": "Hits@1",
+      "KGEModel": "TransE",
+      "NSMethod": "Unknown",
+      "result": 0.229
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K-237",
+      "Metric": "Hits@3",
+      "KGEModel": "TransE",
+      "NSMethod": "Unknown",
+      "result": 0.371
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K-237",
+      "Metric": "Hits@10",
+      "KGEModel": "TransE",
+      "NSMethod": "Unknown",
+      "result": 0.531
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "YAGO3-10",
+      "Metric": "MRR",
+      "KGEModel": "TransE",
+      "NSMethod": "Unknown",
+      "result": 0.41
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "YAGO3-10",
+      "Metric": "Hits@1",
+      "KGEModel": "TransE",
+      "NSMethod": "Unknown",
+      "result": 0.299
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "YAGO3-10",
+      "Metric": "Hits@3",
+      "KGEModel": "TransE",
+      "NSMethod": "Unknown",
+      "result": 0.469
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "YAGO3-10",
+      "Metric": "Hits@10",
+      "KGEModel": "TransE",
+      "NSMethod": "Unknown",
+      "result": 0.62
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "MRR",
+      "KGEModel": "TransE",
+      "NSMethod": "Unknown",
+      "result": 0.229
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "Hits@1",
+      "KGEModel": "TransE",
+      "NSMethod": "Unknown",
+      "result": 0.022
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "Hits@3",
+      "KGEModel": "TransE",
+      "NSMethod": "Unknown",
+      "result": 0.403
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "Hits@10",
+      "KGEModel": "TransE",
+      "NSMethod": "Unknown",
+      "result": 0.526
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K-237",
+      "Metric": "MRR",
+      "KGEModel": "TransE",
+      "NSMethod": "CKRL",
+      "result": 0.33
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K-237",
+      "Metric": "Hits@1",
+      "KGEModel": "TransE",
+      "NSMethod": "CKRL",
+      "result": 0.229
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K-237",
+      "Metric": "Hits@3",
+      "KGEModel": "TransE",
+      "NSMethod": "CKRL",
+      "result": 0.372
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K-237",
+      "Metric": "Hits@10",
+      "KGEModel": "TransE",
+      "NSMethod": "CKRL",
+      "result": 0.529
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "YAGO3-10",
+      "Metric": "MRR",
+      "KGEModel": "TransE",
+      "NSMethod": "CKRL",
+      "result": 0.377
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "YAGO3-10",
+      "Metric": "Hits@1",
+      "KGEModel": "TransE",
+      "NSMethod": "CKRL",
+      "result": 0.264
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "YAGO3-10",
+      "Metric": "Hits@3",
+      "KGEModel": "TransE",
+      "NSMethod": "CKRL",
+      "result": 0.438
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "YAGO3-10",
+      "Metric": "Hits@10",
+      "KGEModel": "TransE",
+      "NSMethod": "CKRL",
+      "result": 0.585
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "MRR",
+      "KGEModel": "TransE",
+      "NSMethod": "CKRL",
+      "result": 0.231
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "Hits@1",
+      "KGEModel": "TransE",
+      "NSMethod": "CKRL",
+      "result": 0.027
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "Hits@3",
+      "KGEModel": "TransE",
+      "NSMethod": "CKRL",
+      "result": 0.404
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "Hits@10",
+      "KGEModel": "TransE",
+      "NSMethod": "CKRL",
+      "result": 0.53
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K-237",
+      "Metric": "MRR",
+      "KGEModel": "TransE",
+      "NSMethod": "NoiGAN (soft)",
+      "result": 0.318
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K-237",
+      "Metric": "Hits@1",
+      "KGEModel": "TransE",
+      "NSMethod": "NoiGAN (soft)",
+      "result": 0.217
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K-237",
+      "Metric": "Hits@3",
+      "KGEModel": "TransE",
+      "NSMethod": "NoiGAN (soft)",
+      "result": 0.358
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K-237",
+      "Metric": "Hits@10",
+      "KGEModel": "TransE",
+      "NSMethod": "NoiGAN (soft)",
+      "result": 0.518
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "YAGO3-10",
+      "Metric": "MRR",
+      "KGEModel": "TransE",
+      "NSMethod": "NoiGAN (soft)",
+      "result": 0.37
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "YAGO3-10",
+      "Metric": "Hits@1",
+      "KGEModel": "TransE",
+      "NSMethod": "NoiGAN (soft)",
+      "result": 0.267
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "YAGO3-10",
+      "Metric": "Hits@3",
+      "KGEModel": "TransE",
+      "NSMethod": "NoiGAN (soft)",
+      "result": 0.42
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "YAGO3-10",
+      "Metric": "Hits@10",
+      "KGEModel": "TransE",
+      "NSMethod": "NoiGAN (soft)",
+      "result": 0.567
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "MRR",
+      "KGEModel": "TransE",
+      "NSMethod": "NoiGAN (soft)",
+      "result": 0.231
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "Hits@1",
+      "KGEModel": "TransE",
+      "NSMethod": "NoiGAN (soft)",
+      "result": 0.026
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "Hits@3",
+      "KGEModel": "TransE",
+      "NSMethod": "NoiGAN (soft)",
+      "result": 0.407
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "Hits@10",
+      "KGEModel": "TransE",
+      "NSMethod": "NoiGAN (soft)",
+      "result": 0.524
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K-237",
+      "Metric": "MRR",
+      "KGEModel": "TransE",
+      "NSMethod": "NoiGAN (hard)",
+      "result": 0.308
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K-237",
+      "Metric": "Hits@1",
+      "KGEModel": "TransE",
+      "NSMethod": "NoiGAN (hard)",
+      "result": 0.209
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K-237",
+      "Metric": "Hits@3",
+      "KGEModel": "TransE",
+      "NSMethod": "NoiGAN (hard)",
+      "result": 0.349
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K-237",
+      "Metric": "Hits@10",
+      "KGEModel": "TransE",
+      "NSMethod": "NoiGAN (hard)",
+      "result": 0.502
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "YAGO3-10",
+      "Metric": "MRR",
+      "KGEModel": "TransE",
+      "NSMethod": "NoiGAN (hard)",
+      "result": 0.345
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "YAGO3-10",
+      "Metric": "Hits@1",
+      "KGEModel": "TransE",
+      "NSMethod": "NoiGAN (hard)",
+      "result": 0.248
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "YAGO3-10",
+      "Metric": "Hits@3",
+      "KGEModel": "TransE",
+      "NSMethod": "NoiGAN (hard)",
+      "result": 0.393
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "YAGO3-10",
+      "Metric": "Hits@10",
+      "KGEModel": "TransE",
+      "NSMethod": "NoiGAN (hard)",
+      "result": 0.531
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "MRR",
+      "KGEModel": "TransE",
+      "NSMethod": "NoiGAN (hard)",
+      "result": 0.223
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "Hits@1",
+      "KGEModel": "TransE",
+      "NSMethod": "NoiGAN (hard)",
+      "result": 0.031
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "Hits@3",
+      "KGEModel": "TransE",
+      "NSMethod": "NoiGAN (hard)",
+      "result": 0.381
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "Hits@10",
+      "KGEModel": "TransE",
+      "NSMethod": "NoiGAN (hard)",
+      "result": 0.503
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K-237",
+      "Metric": "MRR",
+      "KGEModel": "RotatE",
+      "NSMethod": "Unknown",
+      "result": 0.326
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K-237",
+      "Metric": "Hits@1",
+      "KGEModel": "RotatE",
+      "NSMethod": "Unknown",
+      "result": 0.228
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K-237",
+      "Metric": "Hits@3",
+      "KGEModel": "RotatE",
+      "NSMethod": "Unknown",
+      "result": 0.363
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K-237",
+      "Metric": "Hits@10",
+      "KGEModel": "RotatE",
+      "NSMethod": "Unknown",
+      "result": 0.521
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "YAGO3-10",
+      "Metric": "MRR",
+      "KGEModel": "RotatE",
+      "NSMethod": "Unknown",
+      "result": 0.38
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "YAGO3-10",
+      "Metric": "Hits@1",
+      "KGEModel": "RotatE",
+      "NSMethod": "Unknown",
+      "result": 0.269
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "YAGO3-10",
+      "Metric": "Hits@3",
+      "KGEModel": "RotatE",
+      "NSMethod": "Unknown",
+      "result": 0.437
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "YAGO3-10",
+      "Metric": "Hits@10",
+      "KGEModel": "RotatE",
+      "NSMethod": "Unknown",
+      "result": 0.594
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "MRR",
+      "KGEModel": "RotatE",
+      "NSMethod": "Unknown",
+      "result": 0.472
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "Hits@1",
+      "KGEModel": "RotatE",
+      "NSMethod": "Unknown",
+      "result": 0.429
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "Hits@3",
+      "KGEModel": "RotatE",
+      "NSMethod": "Unknown",
+      "result": 0.488
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "Hits@10",
+      "KGEModel": "RotatE",
+      "NSMethod": "Unknown",
+      "result": 0.557
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K-237",
+      "Metric": "MRR",
+      "KGEModel": "RotatE",
+      "NSMethod": "NoiGAN (soft)",
+      "result": 0.326
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K-237",
+      "Metric": "Hits@1",
+      "KGEModel": "RotatE",
+      "NSMethod": "NoiGAN (soft)",
+      "result": 0.229
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K-237",
+      "Metric": "Hits@3",
+      "KGEModel": "RotatE",
+      "NSMethod": "NoiGAN (soft)",
+      "result": 0.363
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K-237",
+      "Metric": "Hits@10",
+      "KGEModel": "RotatE",
+      "NSMethod": "NoiGAN (soft)",
+      "result": 0.52
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "YAGO3-10",
+      "Metric": "MRR",
+      "KGEModel": "RotatE",
+      "NSMethod": "NoiGAN (soft)",
+      "result": 0.43
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "YAGO3-10",
+      "Metric": "Hits@1",
+      "KGEModel": "RotatE",
+      "NSMethod": "NoiGAN (soft)",
+      "result": 0.33
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "YAGO3-10",
+      "Metric": "Hits@3",
+      "KGEModel": "RotatE",
+      "NSMethod": "NoiGAN (soft)",
+      "result": 0.487
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "YAGO3-10",
+      "Metric": "Hits@10",
+      "KGEModel": "RotatE",
+      "NSMethod": "NoiGAN (soft)",
+      "result": 0.62
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "MRR",
+      "KGEModel": "RotatE",
+      "NSMethod": "NoiGAN (soft)",
+      "result": 0.466
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "Hits@1",
+      "KGEModel": "RotatE",
+      "NSMethod": "NoiGAN (soft)",
+      "result": 0.42
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "Hits@3",
+      "KGEModel": "RotatE",
+      "NSMethod": "NoiGAN (soft)",
+      "result": 0.485
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "Hits@10",
+      "KGEModel": "RotatE",
+      "NSMethod": "NoiGAN (soft)",
+      "result": 0.554
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K-237",
+      "Metric": "MRR",
+      "KGEModel": "RotatE",
+      "NSMethod": "NoiGAN (hard)",
+      "result": 0.325
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K-237",
+      "Metric": "Hits@1",
+      "KGEModel": "RotatE",
+      "NSMethod": "NoiGAN (hard)",
+      "result": 0.228
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K-237",
+      "Metric": "Hits@3",
+      "KGEModel": "RotatE",
+      "NSMethod": "NoiGAN (hard)",
+      "result": 0.363
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K-237",
+      "Metric": "Hits@10",
+      "KGEModel": "RotatE",
+      "NSMethod": "NoiGAN (hard)",
+      "result": 0.518
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "YAGO3-10",
+      "Metric": "MRR",
+      "KGEModel": "RotatE",
+      "NSMethod": "NoiGAN (hard)",
+      "result": 0.413
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "YAGO3-10",
+      "Metric": "Hits@1",
+      "KGEModel": "RotatE",
+      "NSMethod": "NoiGAN (hard)",
+      "result": 0.312
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "YAGO3-10",
+      "Metric": "Hits@3",
+      "KGEModel": "RotatE",
+      "NSMethod": "NoiGAN (hard)",
+      "result": 0.471
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "YAGO3-10",
+      "Metric": "Hits@10",
+      "KGEModel": "RotatE",
+      "NSMethod": "NoiGAN (hard)",
+      "result": 0.602
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "MRR",
+      "KGEModel": "RotatE",
+      "NSMethod": "NoiGAN (hard)",
+      "result": 0.465
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "Hits@1",
+      "KGEModel": "RotatE",
+      "NSMethod": "NoiGAN (hard)",
+      "result": 0.42
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "Hits@3",
+      "KGEModel": "RotatE",
+      "NSMethod": "NoiGAN (hard)",
+      "result": 0.483
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "Hits@10",
+      "KGEModel": "RotatE",
+      "NSMethod": "NoiGAN (hard)",
+      "result": 0.551
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K-237",
+      "Metric": "MRR",
+      "KGEModel": "DistMult",
+      "NSMethod": "Unknown (40%)",
+      "result": 0.207
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K-237",
+      "Metric": "Hits@1",
+      "KGEModel": "DistMult",
+      "NSMethod": "Unknown (40%)",
+      "result": 0.127
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K-237",
+      "Metric": "Hits@3",
+      "KGEModel": "DistMult",
+      "NSMethod": "Unknown (40%)",
+      "result": 0.229
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K-237",
+      "Metric": "Hits@10",
+      "KGEModel": "DistMult",
+      "NSMethod": "Unknown (40%)",
+      "result": 0.369
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "YAGO3-10",
+      "Metric": "MRR",
+      "KGEModel": "DistMult",
+      "NSMethod": "Unknown (40%)",
+      "result": 0.089
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "YAGO3-10",
+      "Metric": "Hits@1",
+      "KGEModel": "DistMult",
+      "NSMethod": "Unknown (40%)",
+      "result": 0.038
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "YAGO3-10",
+      "Metric": "Hits@3",
+      "KGEModel": "DistMult",
+      "NSMethod": "Unknown (40%)",
+      "result": 0.095
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "YAGO3-10",
+      "Metric": "Hits@10",
+      "KGEModel": "DistMult",
+      "NSMethod": "Unknown (40%)",
+      "result": 0.188
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "MRR",
+      "KGEModel": "DistMult",
+      "NSMethod": "Unknown (40%)",
+      "result": 0.364
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "Hits@1",
+      "KGEModel": "DistMult",
+      "NSMethod": "Unknown (40%)",
+      "result": 0.31
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "Hits@3",
+      "KGEModel": "DistMult",
+      "NSMethod": "Unknown (40%)",
+      "result": 0.4
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "Hits@10",
+      "KGEModel": "DistMult",
+      "NSMethod": "Unknown (40%)",
+      "result": 0.449
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K-237",
+      "Metric": "MRR",
+      "KGEModel": "KBGAN",
+      "NSMethod": "KBGAN (40%)",
+      "result": 0.177
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K-237",
+      "Metric": "Hits@1",
+      "KGEModel": "KBGAN",
+      "NSMethod": "KBGAN (40%)",
+      "result": 0.079
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K-237",
+      "Metric": "Hits@3",
+      "KGEModel": "KBGAN",
+      "NSMethod": "KBGAN (40%)",
+      "result": 0.214
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K-237",
+      "Metric": "Hits@10",
+      "KGEModel": "KBGAN",
+      "NSMethod": "KBGAN (40%)",
+      "result": 0.363
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K-237",
+      "Metric": "MRR",
+      "KGEModel": "Attention",
+      "NSMethod": "Unknown (40%)",
+      "result": 0.326
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K-237",
+      "Metric": "Hits@1",
+      "KGEModel": "Attention",
+      "NSMethod": "Unknown (40%)",
+      "result": 0.249
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K-237",
+      "Metric": "Hits@3",
+      "KGEModel": "Attention",
+      "NSMethod": "Unknown (40%)",
+      "result": 0.352
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K-237",
+      "Metric": "Hits@10",
+      "KGEModel": "Attention",
+      "NSMethod": "Unknown (40%)",
+      "result": 0.48
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "MRR",
+      "KGEModel": "Attention",
+      "NSMethod": "Unknown (40%)",
+      "result": 0.23
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "Hits@1",
+      "KGEModel": "Attention",
+      "NSMethod": "Unknown (40%)",
+      "result": 0.035
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "Hits@3",
+      "KGEModel": "Attention",
+      "NSMethod": "Unknown (40%)",
+      "result": 0.357
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "Hits@10",
+      "KGEModel": "Attention",
+      "NSMethod": "Unknown (40%)",
+      "result": 0.586
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K-237",
+      "Metric": "MRR",
+      "KGEModel": "TransE",
+      "NSMethod": "Unknown (40%)",
+      "result": 0.182
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K-237",
+      "Metric": "Hits@1",
+      "KGEModel": "TransE",
+      "NSMethod": "Unknown (40%)",
+      "result": 0.026
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K-237",
+      "Metric": "Hits@3",
+      "KGEModel": "TransE",
+      "NSMethod": "Unknown (40%)",
+      "result": 0.271
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K-237",
+      "Metric": "Hits@10",
+      "KGEModel": "TransE",
+      "NSMethod": "Unknown (40%)",
+      "result": 0.463
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "YAGO3-10",
+      "Metric": "MRR",
+      "KGEModel": "TransE",
+      "NSMethod": "Unknown (40%)",
+      "result": 0.15
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "YAGO3-10",
+      "Metric": "Hits@1",
+      "KGEModel": "TransE",
+      "NSMethod": "Unknown (40%)",
+      "result": 0.001
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "YAGO3-10",
+      "Metric": "Hits@3",
+      "KGEModel": "TransE",
+      "NSMethod": "Unknown (40%)",
+      "result": 0.231
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "YAGO3-10",
+      "Metric": "Hits@10",
+      "KGEModel": "TransE",
+      "NSMethod": "Unknown (40%)",
+      "result": 0.429
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "MRR",
+      "KGEModel": "TransE",
+      "NSMethod": "Unknown (40%)",
+      "result": 0.185
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "Hits@1",
+      "KGEModel": "TransE",
+      "NSMethod": "Unknown (40%)",
+      "result": 0.008
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "Hits@3",
+      "KGEModel": "TransE",
+      "NSMethod": "Unknown (40%)",
+      "result": 0.331
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "Hits@10",
+      "KGEModel": "TransE",
+      "NSMethod": "Unknown (40%)",
+      "result": 0.455
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K-237",
+      "Metric": "MRR",
+      "KGEModel": "TransE",
+      "NSMethod": "CKRL (40%)",
+      "result": 0.19
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K-237",
+      "Metric": "Hits@1",
+      "KGEModel": "TransE",
+      "NSMethod": "CKRL (40%)",
+      "result": 0.035
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K-237",
+      "Metric": "Hits@3",
+      "KGEModel": "TransE",
+      "NSMethod": "CKRL (40%)",
+      "result": 0.276
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K-237",
+      "Metric": "Hits@10",
+      "KGEModel": "TransE",
+      "NSMethod": "CKRL (40%)",
+      "result": 0.471
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "YAGO3-10",
+      "Metric": "MRR",
+      "KGEModel": "TransE",
+      "NSMethod": "CKRL (40%)",
+      "result": 0.122
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "YAGO3-10",
+      "Metric": "Hits@1",
+      "KGEModel": "TransE",
+      "NSMethod": "CKRL (40%)",
+      "result": 0.007
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "YAGO3-10",
+      "Metric": "Hits@3",
+      "KGEModel": "TransE",
+      "NSMethod": "CKRL (40%)",
+      "result": 0.175
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "YAGO3-10",
+      "Metric": "Hits@10",
+      "KGEModel": "TransE",
+      "NSMethod": "CKRL (40%)",
+      "result": 0.344
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "MRR",
+      "KGEModel": "TransE",
+      "NSMethod": "CKRL (40%)",
+      "result": 0.186
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "Hits@1",
+      "KGEModel": "TransE",
+      "NSMethod": "CKRL (40%)",
+      "result": 0.01
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "Hits@3",
+      "KGEModel": "TransE",
+      "NSMethod": "CKRL (40%)",
+      "result": 0.327
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "Hits@10",
+      "KGEModel": "TransE",
+      "NSMethod": "CKRL (40%)",
+      "result": 0.462
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K-237",
+      "Metric": "MRR",
+      "KGEModel": "TransE",
+      "NSMethod": "NoiGAN (soft) (40%)",
+      "result": 0.212
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K-237",
+      "Metric": "Hits@1",
+      "KGEModel": "TransE",
+      "NSMethod": "NoiGAN (soft) (40%)",
+      "result": 0.064
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K-237",
+      "Metric": "Hits@3",
+      "KGEModel": "TransE",
+      "NSMethod": "NoiGAN (soft) (40%)",
+      "result": 0.294
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K-237",
+      "Metric": "Hits@10",
+      "KGEModel": "TransE",
+      "NSMethod": "NoiGAN (soft) (40%)",
+      "result": 0.482
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "YAGO3-10",
+      "Metric": "MRR",
+      "KGEModel": "TransE",
+      "NSMethod": "NoiGAN (soft) (40%)",
+      "result": 0.109
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "YAGO3-10",
+      "Metric": "Hits@10",
+      "KGEModel": "TransE",
+      "NSMethod": "NoiGAN (soft) (40%)",
+      "result": 0.306
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "MRR",
+      "KGEModel": "TransE",
+      "NSMethod": "NoiGAN (soft) (40%)",
+      "result": 0.188
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "Hits@3",
+      "KGEModel": "TransE",
+      "NSMethod": "NoiGAN (soft) (40%)",
+      "result": 0.337
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "Hits@10",
+      "KGEModel": "TransE",
+      "NSMethod": "NoiGAN (soft) (40%)",
+      "result": 0.469
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K-237",
+      "Metric": "MRR",
+      "KGEModel": "TransE",
+      "NSMethod": "NoiGAN (hard) (40%)",
+      "result": 0.227
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K-237",
+      "Metric": "Hits@1",
+      "KGEModel": "TransE",
+      "NSMethod": "NoiGAN (hard) (40%)",
+      "result": 0.095
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K-237",
+      "Metric": "Hits@3",
+      "KGEModel": "TransE",
+      "NSMethod": "NoiGAN (hard) (40%)",
+      "result": 0.296
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K-237",
+      "Metric": "Hits@10",
+      "KGEModel": "TransE",
+      "NSMethod": "NoiGAN (hard) (40%)",
+      "result": 0.473
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "YAGO3-10",
+      "Metric": "MRR",
+      "KGEModel": "TransE",
+      "NSMethod": "NoiGAN (hard) (40%)",
+      "result": 0.321
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "YAGO3-10",
+      "Metric": "Hits@1",
+      "KGEModel": "TransE",
+      "NSMethod": "NoiGAN (hard) (40%)",
+      "result": 0.204
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "YAGO3-10",
+      "Metric": "Hits@3",
+      "KGEModel": "TransE",
+      "NSMethod": "NoiGAN (hard) (40%)",
+      "result": 0.383
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "YAGO3-10",
+      "Metric": "Hits@10",
+      "KGEModel": "TransE",
+      "NSMethod": "NoiGAN (hard) (40%)",
+      "result": 0.538
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "MRR",
+      "KGEModel": "TransE",
+      "NSMethod": "NoiGAN (hard) (40%)",
+      "result": 0.168
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "Hits@10",
+      "KGEModel": "TransE",
+      "NSMethod": "NoiGAN (hard) (40%)",
+      "result": 0.407
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K-237",
+      "Metric": "MRR",
+      "KGEModel": "RotatE",
+      "NSMethod": "Unknown (40%)",
+      "result": 0.284
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K-237",
+      "Metric": "Hits@1",
+      "KGEModel": "RotatE",
+      "NSMethod": "Unknown (40%)",
+      "result": 0.189
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K-237",
+      "Metric": "Hits@3",
+      "KGEModel": "RotatE",
+      "NSMethod": "Unknown (40%)",
+      "result": 0.322
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K-237",
+      "Metric": "Hits@10",
+      "KGEModel": "RotatE",
+      "NSMethod": "Unknown (40%)",
+      "result": 0.469
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "MRR",
+      "KGEModel": "RotatE",
+      "NSMethod": "Unknown (40%)",
+      "result": 0.399
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "Hits@1",
+      "KGEModel": "RotatE",
+      "NSMethod": "Unknown (40%)",
+      "result": 0.345
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "Hits@3",
+      "KGEModel": "RotatE",
+      "NSMethod": "Unknown (40%)",
+      "result": 0.438
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "Hits@10",
+      "KGEModel": "RotatE",
+      "NSMethod": "Unknown (40%)",
+      "result": 0.481
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K-237",
+      "Metric": "MRR",
+      "KGEModel": "RotatE",
+      "NSMethod": "NoiGAN (soft) (40%)",
+      "result": 0.294
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K-237",
+      "Metric": "Hits@1",
+      "KGEModel": "RotatE",
+      "NSMethod": "NoiGAN (soft) (40%)",
+      "result": 0.197
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K-237",
+      "Metric": "Hits@3",
+      "KGEModel": "RotatE",
+      "NSMethod": "NoiGAN (soft) (40%)",
+      "result": 0.331
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K-237",
+      "Metric": "Hits@10",
+      "KGEModel": "RotatE",
+      "NSMethod": "NoiGAN (soft) (40%)",
+      "result": 0.488
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "YAGO3-10",
+      "Metric": "MRR",
+      "KGEModel": "RotatE",
+      "NSMethod": "NoiGAN (soft) (40%)",
+      "result": 0.22
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "YAGO3-10",
+      "Metric": "Hits@1",
+      "KGEModel": "RotatE",
+      "NSMethod": "NoiGAN (soft) (40%)",
+      "result": 0.12
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "YAGO3-10",
+      "Metric": "Hits@3",
+      "KGEModel": "RotatE",
+      "NSMethod": "NoiGAN (soft) (40%)",
+      "result": 0.266
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "YAGO3-10",
+      "Metric": "Hits@10",
+      "KGEModel": "RotatE",
+      "NSMethod": "NoiGAN (soft) (40%)",
+      "result": 0.42
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "MRR",
+      "KGEModel": "RotatE",
+      "NSMethod": "NoiGAN (soft) (40%)",
+      "result": 0.403
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "Hits@1",
+      "KGEModel": "RotatE",
+      "NSMethod": "NoiGAN (soft) (40%)",
+      "result": 0.339
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "Hits@3",
+      "KGEModel": "RotatE",
+      "NSMethod": "NoiGAN (soft) (40%)",
+      "result": 0.447
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "Hits@10",
+      "KGEModel": "RotatE",
+      "NSMethod": "NoiGAN (soft) (40%)",
+      "result": 0.506
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K-237",
+      "Metric": "MRR",
+      "KGEModel": "RotatE",
+      "NSMethod": "NoiGAN (hard) (40%)",
+      "result": 0.296
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K-237",
+      "Metric": "Hits@1",
+      "KGEModel": "RotatE",
+      "NSMethod": "NoiGAN (hard) (40%)",
+      "result": 0.198
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K-237",
+      "Metric": "Hits@3",
+      "KGEModel": "RotatE",
+      "NSMethod": "NoiGAN (hard) (40%)",
+      "result": 0.336
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K-237",
+      "Metric": "Hits@10",
+      "KGEModel": "RotatE",
+      "NSMethod": "NoiGAN (hard) (40%)",
+      "result": 0.489
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "YAGO3-10",
+      "Metric": "MRR",
+      "KGEModel": "RotatE",
+      "NSMethod": "NoiGAN (hard) (40%)",
+      "result": 0.223
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "YAGO3-10",
+      "Metric": "Hits@1",
+      "KGEModel": "RotatE",
+      "NSMethod": "NoiGAN (hard) (40%)",
+      "result": 0.121
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "YAGO3-10",
+      "Metric": "Hits@3",
+      "KGEModel": "RotatE",
+      "NSMethod": "NoiGAN (hard) (40%)",
+      "result": 0.269
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "YAGO3-10",
+      "Metric": "Hits@10",
+      "KGEModel": "RotatE",
+      "NSMethod": "NoiGAN (hard) (40%)",
+      "result": 0.423
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "MRR",
+      "KGEModel": "RotatE",
+      "NSMethod": "NoiGAN (hard) (40%)",
+      "result": 0.403
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "Hits@1",
+      "KGEModel": "RotatE",
+      "NSMethod": "NoiGAN (hard) (40%)",
+      "result": 0.339
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "Hits@3",
+      "KGEModel": "RotatE",
+      "NSMethod": "NoiGAN (hard) (40%)",
+      "result": 0.445
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "Hits@10",
+      "KGEModel": "RotatE",
+      "NSMethod": "NoiGAN (hard) (40%)",
+      "result": 0.507
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K-237",
+      "Metric": "MRR",
+      "KGEModel": "DistMult",
+      "NSMethod": "Unknown (70%)",
+      "result": 0.196
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K-237",
+      "Metric": "Hits@10",
+      "KGEModel": "DistMult",
+      "NSMethod": "Unknown (70%)",
+      "result": 0.342
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "MRR",
+      "KGEModel": "DistMult",
+      "NSMethod": "Unknown (70%)",
+      "result": 0.328
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "Hits@10",
+      "KGEModel": "DistMult",
+      "NSMethod": "Unknown (70%)",
+      "result": 0.42
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K-237",
+      "Metric": "MRR",
+      "KGEModel": "Attention",
+      "NSMethod": "Unknown (70%)",
+      "result": 0.255
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K-237",
+      "Metric": "Hits@1",
+      "KGEModel": "Attention",
+      "NSMethod": "Unknown (70%)",
+      "result": 0.174
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K-237",
+      "Metric": "Hits@3",
+      "KGEModel": "Attention",
+      "NSMethod": "Unknown (70%)",
+      "result": 0.28
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K-237",
+      "Metric": "Hits@10",
+      "KGEModel": "Attention",
+      "NSMethod": "Unknown (70%)",
+      "result": 0.414
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K-237",
+      "Metric": "MRR",
+      "KGEModel": "TransE",
+      "NSMethod": "Unknown (70%)",
+      "result": 0.167
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K-237",
+      "Metric": "Hits@10",
+      "KGEModel": "TransE",
+      "NSMethod": "Unknown (70%)",
+      "result": 0.44
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K-237",
+      "Metric": "MRR",
+      "KGEModel": "TransE",
+      "NSMethod": "CKRL (70%)",
+      "result": 0.171
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K-237",
+      "Metric": "Hits@10",
+      "KGEModel": "TransE",
+      "NSMethod": "CKRL (70%)",
+      "result": 0.449
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K-237",
+      "Metric": "MRR",
+      "KGEModel": "TransE",
+      "NSMethod": "NoiGAN (soft) (70%)",
+      "result": 0.189
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K-237",
+      "Metric": "Hits@10",
+      "KGEModel": "TransE",
+      "NSMethod": "NoiGAN (soft) (70%)",
+      "result": 0.464
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K-237",
+      "Metric": "MRR",
+      "KGEModel": "TransE",
+      "NSMethod": "NoiGAN (hard) (70%)",
+      "result": 0.199
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K-237",
+      "Metric": "Hits@1",
+      "KGEModel": "TransE",
+      "NSMethod": "NoiGAN (hard) (70%)",
+      "result": 0.059
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K-237",
+      "Metric": "Hits@3",
+      "KGEModel": "TransE",
+      "NSMethod": "NoiGAN (hard) (70%)",
+      "result": 0.275
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K-237",
+      "Metric": "Hits@10",
+      "KGEModel": "TransE",
+      "NSMethod": "NoiGAN (hard) (70%)",
+      "result": 0.457
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "YAGO3-10",
+      "Metric": "MRR",
+      "KGEModel": "TransE",
+      "NSMethod": "NoiGAN (hard) (70%)",
+      "result": 0.21
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "YAGO3-10",
+      "Metric": "Hits@1",
+      "KGEModel": "TransE",
+      "NSMethod": "NoiGAN (hard) (70%)",
+      "result": 0.091
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "YAGO3-10",
+      "Metric": "Hits@3",
+      "KGEModel": "TransE",
+      "NSMethod": "NoiGAN (hard) (70%)",
+      "result": 0.268
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "YAGO3-10",
+      "Metric": "Hits@10",
+      "KGEModel": "TransE",
+      "NSMethod": "NoiGAN (hard) (70%)",
+      "result": 0.443
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K-237",
+      "Metric": "MRR",
+      "KGEModel": "RotatE",
+      "NSMethod": "Unknown (70%)",
+      "result": 0.254
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K-237",
+      "Metric": "Hits@10",
+      "KGEModel": "RotatE",
+      "NSMethod": "Unknown (70%)",
+      "result": 0.444
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "MRR",
+      "KGEModel": "RotatE",
+      "NSMethod": "Unknown (70%)",
+      "result": 0.357
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "Hits@10",
+      "KGEModel": "RotatE",
+      "NSMethod": "Unknown (70%)",
+      "result": 0.456
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K-237",
+      "Metric": "MRR",
+      "KGEModel": "RotatE",
+      "NSMethod": "NoiGAN (soft) (70%)",
+      "result": 0.279
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K-237",
+      "Metric": "Hits@1",
+      "KGEModel": "RotatE",
+      "NSMethod": "NoiGAN (soft) (70%)",
+      "result": 0.179
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K-237",
+      "Metric": "Hits@3",
+      "KGEModel": "RotatE",
+      "NSMethod": "NoiGAN (soft) (70%)",
+      "result": 0.321
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K-237",
+      "Metric": "Hits@10",
+      "KGEModel": "RotatE",
+      "NSMethod": "NoiGAN (soft) (70%)",
+      "result": 0.475
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "MRR",
+      "KGEModel": "RotatE",
+      "NSMethod": "NoiGAN (soft) (70%)",
+      "result": 0.366
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "Hits@10",
+      "KGEModel": "RotatE",
+      "NSMethod": "NoiGAN (soft) (70%)",
+      "result": 0.473
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K-237",
+      "Metric": "MRR",
+      "KGEModel": "RotatE",
+      "NSMethod": "NoiGAN (hard) (70%)",
+      "result": 0.282
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K-237",
+      "Metric": "Hits@1",
+      "KGEModel": "RotatE",
+      "NSMethod": "NoiGAN (hard) (70%)",
+      "result": 0.184
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K-237",
+      "Metric": "Hits@3",
+      "KGEModel": "RotatE",
+      "NSMethod": "NoiGAN (hard) (70%)",
+      "result": 0.321
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K-237",
+      "Metric": "Hits@10",
+      "KGEModel": "RotatE",
+      "NSMethod": "NoiGAN (hard) (70%)",
+      "result": 0.478
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "MRR",
+      "KGEModel": "RotatE",
+      "NSMethod": "NoiGAN (hard) (70%)",
+      "result": 0.368
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "Hits@1",
+      "KGEModel": "RotatE",
+      "NSMethod": "NoiGAN (hard) (70%)",
+      "result": 0.298
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "Hits@3",
+      "KGEModel": "RotatE",
+      "NSMethod": "NoiGAN (hard) (70%)",
+      "result": 0.424
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "Hits@10",
+      "KGEModel": "RotatE",
+      "NSMethod": "NoiGAN (hard) (70%)",
+      "result": 0.474
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K-237",
+      "Metric": "MRR",
+      "KGEModel": "RotatE",
+      "NSMethod": "NoiGAN (soft) (100%)",
+      "result": 0.283
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K-237",
+      "Metric": "Hits@1",
+      "KGEModel": "RotatE",
+      "NSMethod": "NoiGAN (soft) (100%)",
+      "result": 0.201
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K-237",
+      "Metric": "Hits@3",
+      "KGEModel": "RotatE",
+      "NSMethod": "NoiGAN (soft) (100%)",
+      "result": 0.312
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K-237",
+      "Metric": "Hits@10",
+      "KGEModel": "RotatE",
+      "NSMethod": "NoiGAN (soft) (100%)",
+      "result": 0.447
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "MRR",
+      "KGEModel": "RotatE",
+      "NSMethod": "NoiGAN (soft) (100%)",
+      "result": 0.327
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "Hits@3",
+      "KGEModel": "RotatE",
+      "NSMethod": "NoiGAN (soft) (100%)",
+      "result": 0.401
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "Hits@10",
+      "KGEModel": "RotatE",
+      "NSMethod": "NoiGAN (soft) (100%)",
+      "result": 0.453
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K-237",
+      "Metric": "MRR",
+      "KGEModel": "RotatE",
+      "NSMethod": "NoiGAN (hard) (100%)",
+      "result": 0.271
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K-237",
+      "Metric": "Hits@1",
+      "KGEModel": "RotatE",
+      "NSMethod": "NoiGAN (hard) (100%)",
+      "result": 0.175
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K-237",
+      "Metric": "Hits@3",
+      "KGEModel": "RotatE",
+      "NSMethod": "NoiGAN (hard) (100%)",
+      "result": 0.309
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K-237",
+      "Metric": "Hits@10",
+      "KGEModel": "RotatE",
+      "NSMethod": "NoiGAN (hard) (100%)",
+      "result": 0.461
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "MRR",
+      "KGEModel": "RotatE",
+      "NSMethod": "NoiGAN (hard) (100%)",
+      "result": 0.327
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "Hits@1",
+      "KGEModel": "RotatE",
+      "NSMethod": "NoiGAN (hard) (100%)",
+      "result": 0.244
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "Hits@3",
+      "KGEModel": "RotatE",
+      "NSMethod": "NoiGAN (hard) (100%)",
+      "result": 0.399
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "Hits@10",
+      "KGEModel": "RotatE",
+      "NSMethod": "NoiGAN (hard) (100%)",
+      "result": 0.452
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K-237",
+      "Metric": "MRR",
+      "KGEModel": "RotatE",
+      "NSMethod": "Unknown (100%)",
+      "result": 0.234
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K-237",
+      "Metric": "Hits@10",
+      "KGEModel": "RotatE",
+      "NSMethod": "Unknown (100%)",
+      "result": 0.418
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "MRR",
+      "KGEModel": "RotatE",
+      "NSMethod": "Unknown (100%)",
+      "result": 0.315
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "Hits@10",
+      "KGEModel": "RotatE",
+      "NSMethod": "Unknown (100%)",
+      "result": 0.429
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K-237",
+      "Metric": "MRR",
+      "KGEModel": "TransE",
+      "NSMethod": "NoiGAN (hard) (100%)",
+      "result": 0.185
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K-237",
+      "Metric": "Hits@10",
+      "KGEModel": "TransE",
+      "NSMethod": "NoiGAN (hard) (100%)",
+      "result": 0.446
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "YAGO3-10",
+      "Metric": "MRR",
+      "KGEModel": "TransE",
+      "NSMethod": "NoiGAN (hard) (100%)",
+      "result": 0.144
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "YAGO3-10",
+      "Metric": "Hits@1",
+      "KGEModel": "TransE",
+      "NSMethod": "NoiGAN (hard) (100%)",
+      "result": 0.016
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "YAGO3-10",
+      "Metric": "Hits@3",
+      "KGEModel": "TransE",
+      "NSMethod": "NoiGAN (hard) (100%)",
+      "result": 0.213
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "YAGO3-10",
+      "Metric": "Hits@10",
+      "KGEModel": "TransE",
+      "NSMethod": "NoiGAN (hard) (100%)",
+      "result": 0.384
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K-237",
+      "Metric": "MRR",
+      "KGEModel": "TransE",
+      "NSMethod": "NoiGAN (soft) (100%)",
+      "result": 0.173
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K-237",
+      "Metric": "Hits@10",
+      "KGEModel": "TransE",
+      "NSMethod": "NoiGAN (soft) (100%)",
+      "result": 0.454
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K-237",
+      "Metric": "MRR",
+      "KGEModel": "TransE",
+      "NSMethod": "CKRL (100%)",
+      "result": 0.161
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K-237",
+      "Metric": "Hits@10",
+      "KGEModel": "TransE",
+      "NSMethod": "CKRL (100%)",
+      "result": 0.43
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K-237",
+      "Metric": "MRR",
+      "KGEModel": "TransE",
+      "NSMethod": "Unknown (100%)",
+      "result": 0.157
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K-237",
+      "Metric": "Hits@10",
+      "KGEModel": "TransE",
+      "NSMethod": "Unknown (100%)",
+      "result": 0.422
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K-237",
+      "Metric": "MRR",
+      "KGEModel": "DistMult",
+      "NSMethod": "Unknown (100%)",
+      "result": 0.196
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "FB15K-237",
+      "Metric": "Hits@10",
+      "KGEModel": "DistMult",
+      "NSMethod": "Unknown (100%)",
+      "result": 0.342
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "MRR",
+      "KGEModel": "DistMult",
+      "NSMethod": "Unknown (100%)",
+      "result": 0.312
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "WN18RR",
+      "Metric": "Hits@10",
+      "KGEModel": "DistMult",
+      "NSMethod": "Unknown (100%)",
+      "result": 0.422
+    }
+  ]
+}

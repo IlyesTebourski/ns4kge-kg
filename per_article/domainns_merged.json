@@ -1,0 +1,362 @@
+{
+  "Article": {
+    "title": "An Interpretable Knowledge Transfer Model for Knowledge Base Completion",
+    "date": "2017"
+  },
+  "proposedNSMethod": "Domain Sampling",
+  "proposedKGEModel": "ITransF",
+  "mentionedNSMethods": [
+    "Uniform Negative Sampling",
+    "Bernoulli Negative Sampling"
+  ],
+  "mentionedKGEModels": [
+    "IRN",
+    "TATEC",
+    "PTransE",
+    "TransE",
+    "TransR",
+    "Random Walk",
+    "STransE",
+    "TransD",
+    "DISTMULT",
+    "CTransR",
+    "RTransE",
+    "TransH",
+    "NLFeat"
+  ],
+  "Experimentation": {
+    "Hardware": [],
+    "TrainingProtocol": {
+      "LossFunction": [
+        "margin-based ranking loss"
+      ],
+      "Optimizer": [
+        "SGD"
+      ],
+      "learningRate": null,
+      "nsRatio": null
+    },
+    "Configurations": [
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18",
+        "Metric": "MR",
+        "KGEModel": "ITransF",
+        "NSMethod": "Unknown",
+        "result": 205
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18",
+        "Metric": "MR",
+        "KGEModel": "STransE",
+        "NSMethod": "Unknown",
+        "result": 206
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18",
+        "Metric": "MR",
+        "KGEModel": "TransD",
+        "NSMethod": "Unknown",
+        "result": 212
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18",
+        "Metric": "MR",
+        "KGEModel": "ITransF",
+        "NSMethod": "Domain Sampling",
+        "result": 223
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18",
+        "Metric": "MR",
+        "KGEModel": "TransE",
+        "NSMethod": "Unknown",
+        "result": 251
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18",
+        "Metric": "MR",
+        "KGEModel": "TransR",
+        "NSMethod": "Unknown",
+        "result": 225
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18",
+        "Metric": "MR",
+        "KGEModel": "CTransR",
+        "NSMethod": "Unknown",
+        "result": 218
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18",
+        "Metric": "MR",
+        "KGEModel": "TransH",
+        "NSMethod": "Unknown",
+        "result": 303
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18",
+        "Metric": "MR",
+        "KGEModel": "IRN",
+        "NSMethod": "Unknown",
+        "result": 249
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18",
+        "Metric": "Hits@10",
+        "KGEModel": "ITransF",
+        "NSMethod": "Domain Sampling",
+        "result": 95.2
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18",
+        "Metric": "Hits@10",
+        "KGEModel": "IRN",
+        "NSMethod": "Unknown",
+        "result": 95.3
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18",
+        "Metric": "Hits@10",
+        "KGEModel": "Random Walk",
+        "NSMethod": "Unknown",
+        "result": 94.8
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18",
+        "Metric": "Hits@10",
+        "KGEModel": "ITransF",
+        "NSMethod": "Unknown",
+        "result": 94.2
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18",
+        "Metric": "Hits@10",
+        "KGEModel": "NLFeat",
+        "NSMethod": "Unknown",
+        "result": 94.3
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18",
+        "Metric": "Hits@10",
+        "KGEModel": "STransE",
+        "NSMethod": "Unknown",
+        "result": 93.4
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18",
+        "Metric": "Hits@10",
+        "KGEModel": "DISTMULT",
+        "NSMethod": "Unknown",
+        "result": 94.2
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18",
+        "Metric": "Hits@10",
+        "KGEModel": "TransE",
+        "NSMethod": "Unknown",
+        "result": 89.2
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18",
+        "Metric": "Hits@10",
+        "KGEModel": "TransR",
+        "NSMethod": "Unknown",
+        "result": 92.0
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18",
+        "Metric": "Hits@10",
+        "KGEModel": "CTransR",
+        "NSMethod": "Unknown",
+        "result": 92.3
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18",
+        "Metric": "Hits@10",
+        "KGEModel": "TransH",
+        "NSMethod": "Unknown",
+        "result": 86.7
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15k",
+        "Metric": "MR",
+        "KGEModel": "IRN",
+        "NSMethod": "Unknown",
+        "result": 38
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15k",
+        "Metric": "MR",
+        "KGEModel": "RTransE",
+        "NSMethod": "Unknown",
+        "result": 50
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15k",
+        "Metric": "MR",
+        "KGEModel": "TATEC",
+        "NSMethod": "Unknown",
+        "result": 58
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15k",
+        "Metric": "MR",
+        "KGEModel": "ITransF",
+        "NSMethod": "Unknown",
+        "result": 65
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15k",
+        "Metric": "MR",
+        "KGEModel": "ITransF",
+        "NSMethod": "Domain Sampling",
+        "result": 77
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15k",
+        "Metric": "MR",
+        "KGEModel": "STransE",
+        "NSMethod": "Unknown",
+        "result": 69
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15k",
+        "Metric": "MR",
+        "KGEModel": "TransE",
+        "NSMethod": "Unknown",
+        "result": 125
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15k",
+        "Metric": "MR",
+        "KGEModel": "TransR",
+        "NSMethod": "Unknown",
+        "result": 77
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15k",
+        "Metric": "MR",
+        "KGEModel": "CTransR",
+        "NSMethod": "Unknown",
+        "result": 75
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15k",
+        "Metric": "MR",
+        "KGEModel": "TransH",
+        "NSMethod": "Unknown",
+        "result": 87
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15k",
+        "Metric": "Hits@10",
+        "KGEModel": "IRN",
+        "NSMethod": "Unknown",
+        "result": 92.7
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15k",
+        "Metric": "Hits@10",
+        "KGEModel": "NLFeat",
+        "NSMethod": "Unknown",
+        "result": 87.0
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15k",
+        "Metric": "Hits@10",
+        "KGEModel": "PTransE",
+        "NSMethod": "Unknown",
+        "result": 84.6
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15k",
+        "Metric": "Hits@10",
+        "KGEModel": "ITransF",
+        "NSMethod": "Domain Sampling",
+        "result": 81.4
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15k",
+        "Metric": "Hits@10",
+        "KGEModel": "ITransF",
+        "NSMethod": "Unknown",
+        "result": 81.0
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15k",
+        "Metric": "Hits@10",
+        "KGEModel": "STransE",
+        "NSMethod": "Unknown",
+        "result": 79.7
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15k",
+        "Metric": "Hits@10",
+        "KGEModel": "TransE",
+        "NSMethod": "Unknown",
+        "result": 47.1
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15k",
+        "Metric": "Hits@10",
+        "KGEModel": "TransR",
+        "NSMethod": "Unknown",
+        "result": 68.7
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15k",
+        "Metric": "Hits@10",
+        "KGEModel": "CTransR",
+        "NSMethod": "Unknown",
+        "result": 70.2
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15k",
+        "Metric": "Hits@10",
+        "KGEModel": "TransH",
+        "NSMethod": "Unknown",
+        "result": 64.4
+      }
+    ]
+  }
+}

@@ -1,0 +1,569 @@
+<article/reasonkge> rdf:type ns4kge:Article .
+<article/reasonkge> ns4kge:title "Improving Knowledge Graph Embeddings with Ontological Reasoning"^^xsd:string .
+<article/reasonkge> ns4kge:date "2022"^^xsd:gYear .
+<article/reasonkge> ns4kge:proposesNSMethod <ns-method/reasonkge> .
+<article/reasonkge> ns4kge:mentionsNSMethod <ns-method/sans> .
+<article/reasonkge> ns4kge:mentionsNSMethod <ns-method/type-constrained-negative-sampling> .
+<article/reasonkge> ns4kge:mentionsNSMethod <ns-method/distributional-negative-sampling> .
+<article/reasonkge> ns4kge:mentionsNSMethod <ns-method/static-sampling> .
+<article/reasonkge> ns4kge:mentionsNSMethod <ns-method/near-miss-sampling> .
+<article/reasonkge> ns4kge:mentionsNSMethod <ns-method/nscaching> .
+<article/reasonkge> ns4kge:mentionsNSMethod <ns-method/random-negative-sampling> .
+<article/reasonkge> ns4kge:mentionsNSMethod <ns-method/nearest-neighbor-sampling> .
+<article/reasonkge> ns4kge:mentionsKGEModel <kge-model/embed2reason> .
+<article/reasonkge> ns4kge:mentionsKGEModel <kge-model/complex> .
+<article/reasonkge> ns4kge:mentionsKGEModel <kge-model/transe> .
+<article/reasonkge> ns4kge:hasExperimentation <experimentation/reasonkge> .
+
+<category/dynamic-ns> rdf:type ns4kge:Category .
+
+<subcategory/knowledge-constrained> rdf:type ns4kge:Subcategory .
+
+<ns-method/reasonkge> rdf:type ns4kge:NSMethod .
+<ns-method/reasonkge> ns4kge:hasCategory <category/dynamic-ns> .
+<ns-method/reasonkge> ns4kge:hasSubcategory <subcategory/knowledge-constrained> .
+
+<ns-method/sans> rdf:type ns4kge:NSMethod .
+<category/static-ns> rdf:type ns4kge:Category .
+
+<ns-method/sans> ns4kge:hasCategory <category/static-ns> .
+<ns-method/sans> ns4kge:hasSubcategory <subcategory/knowledge-constrained> .
+
+<ns-method/type-constrained-negative-sampling> rdf:type ns4kge:NSMethod .
+<ns-method/type-constrained-negative-sampling> ns4kge:hasCategory <category/static-ns> .
+<ns-method/type-constrained-negative-sampling> ns4kge:hasSubcategory <subcategory/knowledge-constrained> .
+
+<ns-method/distributional-negative-sampling> rdf:type ns4kge:NSMethod .
+
+<ns-method/static-sampling> rdf:type ns4kge:NSMethod .
+
+<ns-method/near-miss-sampling> rdf:type ns4kge:NSMethod .
+<ns-method/near-miss-sampling> ns4kge:hasCategory <category/static-ns> .
+<subcategory/model-guided> rdf:type ns4kge:Subcategory .
+
+<ns-method/near-miss-sampling> ns4kge:hasSubcategory <subcategory/model-guided> .
+
+<ns-method/nscaching> rdf:type ns4kge:NSMethod .
+<category/self-adversarial-ns> rdf:type ns4kge:Category .
+
+<ns-method/nscaching> ns4kge:hasCategory <category/self-adversarial-ns> .
+<subcategory/direct> rdf:type ns4kge:Subcategory .
+
+<ns-method/nscaching> ns4kge:hasSubcategory <subcategory/direct> .
+
+<ns-method/random-negative-sampling> rdf:type ns4kge:NSMethod .
+<ns-method/random-negative-sampling> ns4kge:hasCategory <category/static-ns> .
+<subcategory/random> rdf:type ns4kge:Subcategory .
+
+<ns-method/random-negative-sampling> ns4kge:hasSubcategory <subcategory/random> .
+
+<ns-method/nearest-neighbor-sampling> rdf:type ns4kge:NSMethod .
+
+<kge-model/embed2reason> rdf:type ns4kge:KGEModel .
+
+<kge-model/complex> rdf:type ns4kge:KGEModel .
+
+<kge-model/transe> rdf:type ns4kge:KGEModel .
+
+<dataset/lubm3u> rdf:type ns4kge:Dataset .
+<task/link-prediction> rdf:type ns4kge:Task .
+<metric/mrr> rdf:type ns4kge:Metric .
+<metric/hits-1> rdf:type ns4kge:Metric .
+<metric/hits-10> rdf:type ns4kge:Metric .
+<dataset/yago3-10> rdf:type ns4kge:Dataset .
+<dataset/dbpedia15k> rdf:type ns4kge:Dataset .
+<loss-function/margin-based-ranking-loss> rdf:type ns4kge:LossFunction .
+<loss-function/cross-entropy-loss> rdf:type ns4kge:LossFunction .
+
+<experimentation/reasonkge> rdf:type ns4kge:Experimentation .
+<experimentation/reasonkge> ns4kge:hasTrainingProtocol <training-protocol/reasonkge> .
+<experimentation/reasonkge> ns4kge:hasConfiguration <configuration/reasonkge/1> .
+<experimentation/reasonkge> ns4kge:hasConfiguration <configuration/reasonkge/2> .
+<experimentation/reasonkge> ns4kge:hasConfiguration <configuration/reasonkge/3> .
+<experimentation/reasonkge> ns4kge:hasConfiguration <configuration/reasonkge/4> .
+<experimentation/reasonkge> ns4kge:hasConfiguration <configuration/reasonkge/5> .
+<experimentation/reasonkge> ns4kge:hasConfiguration <configuration/reasonkge/6> .
+<experimentation/reasonkge> ns4kge:hasConfiguration <configuration/reasonkge/7> .
+<experimentation/reasonkge> ns4kge:hasConfiguration <configuration/reasonkge/8> .
+<experimentation/reasonkge> ns4kge:hasConfiguration <configuration/reasonkge/9> .
+<experimentation/reasonkge> ns4kge:hasConfiguration <configuration/reasonkge/10> .
+<experimentation/reasonkge> ns4kge:hasConfiguration <configuration/reasonkge/11> .
+<experimentation/reasonkge> ns4kge:hasConfiguration <configuration/reasonkge/12> .
+<experimentation/reasonkge> ns4kge:hasConfiguration <configuration/reasonkge/13> .
+<experimentation/reasonkge> ns4kge:hasConfiguration <configuration/reasonkge/14> .
+<experimentation/reasonkge> ns4kge:hasConfiguration <configuration/reasonkge/15> .
+<experimentation/reasonkge> ns4kge:hasConfiguration <configuration/reasonkge/16> .
+<experimentation/reasonkge> ns4kge:hasConfiguration <configuration/reasonkge/17> .
+<experimentation/reasonkge> ns4kge:hasConfiguration <configuration/reasonkge/18> .
+<experimentation/reasonkge> ns4kge:hasConfiguration <configuration/reasonkge/19> .
+<experimentation/reasonkge> ns4kge:hasConfiguration <configuration/reasonkge/20> .
+<experimentation/reasonkge> ns4kge:hasConfiguration <configuration/reasonkge/21> .
+<experimentation/reasonkge> ns4kge:hasConfiguration <configuration/reasonkge/22> .
+<experimentation/reasonkge> ns4kge:hasConfiguration <configuration/reasonkge/23> .
+<experimentation/reasonkge> ns4kge:hasConfiguration <configuration/reasonkge/24> .
+<experimentation/reasonkge> ns4kge:hasConfiguration <configuration/reasonkge/25> .
+<experimentation/reasonkge> ns4kge:hasConfiguration <configuration/reasonkge/26> .
+<experimentation/reasonkge> ns4kge:hasConfiguration <configuration/reasonkge/27> .
+<experimentation/reasonkge> ns4kge:hasConfiguration <configuration/reasonkge/28> .
+<experimentation/reasonkge> ns4kge:hasConfiguration <configuration/reasonkge/29> .
+<experimentation/reasonkge> ns4kge:hasConfiguration <configuration/reasonkge/30> .
+<experimentation/reasonkge> ns4kge:hasConfiguration <configuration/reasonkge/31> .
+<experimentation/reasonkge> ns4kge:hasConfiguration <configuration/reasonkge/32> .
+<experimentation/reasonkge> ns4kge:hasConfiguration <configuration/reasonkge/33> .
+<experimentation/reasonkge> ns4kge:hasConfiguration <configuration/reasonkge/34> .
+<experimentation/reasonkge> ns4kge:hasConfiguration <configuration/reasonkge/35> .
+<experimentation/reasonkge> ns4kge:hasConfiguration <configuration/reasonkge/36> .
+<experimentation/reasonkge> ns4kge:hasConfiguration <configuration/reasonkge/37> .
+<experimentation/reasonkge> ns4kge:hasConfiguration <configuration/reasonkge/38> .
+<experimentation/reasonkge> ns4kge:hasConfiguration <configuration/reasonkge/39> .
+<experimentation/reasonkge> ns4kge:hasConfiguration <configuration/reasonkge/40> .
+<experimentation/reasonkge> ns4kge:hasConfiguration <configuration/reasonkge/41> .
+<experimentation/reasonkge> ns4kge:hasConfiguration <configuration/reasonkge/42> .
+<experimentation/reasonkge> ns4kge:hasConfiguration <configuration/reasonkge/43> .
+<experimentation/reasonkge> ns4kge:hasConfiguration <configuration/reasonkge/44> .
+<experimentation/reasonkge> ns4kge:hasConfiguration <configuration/reasonkge/45> .
+<experimentation/reasonkge> ns4kge:hasConfiguration <configuration/reasonkge/46> .
+<experimentation/reasonkge> ns4kge:hasConfiguration <configuration/reasonkge/47> .
+<experimentation/reasonkge> ns4kge:hasConfiguration <configuration/reasonkge/48> .
+<experimentation/reasonkge> ns4kge:hasConfiguration <configuration/reasonkge/49> .
+<experimentation/reasonkge> ns4kge:hasConfiguration <configuration/reasonkge/50> .
+<experimentation/reasonkge> ns4kge:hasConfiguration <configuration/reasonkge/51> .
+<experimentation/reasonkge> ns4kge:hasConfiguration <configuration/reasonkge/52> .
+<experimentation/reasonkge> ns4kge:hasConfiguration <configuration/reasonkge/53> .
+<experimentation/reasonkge> ns4kge:hasConfiguration <configuration/reasonkge/54> .
+
+<training-protocol/reasonkge> rdf:type ns4kge:TrainingProtocol .
+<training-protocol/reasonkge> ns4kge:hasLossFunction <loss-function/margin-based-ranking-loss> .
+<training-protocol/reasonkge> ns4kge:hasLossFunction <loss-function/cross-entropy-loss> .
+
+<configuration/reasonkge/1> rdf:type ns4kge:Configuration .
+<configuration/reasonkge/1> ns4kge:hasTask    <task/link-prediction> .
+<configuration/reasonkge/1> ns4kge:hasDataset <dataset/lubm3u> .
+<configuration/reasonkge/1> ns4kge:hasMetric  <metric/mrr> .
+<configuration/reasonkge/1> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/reasonkge/1> ns4kge:hasNSMethod <ns-method/random-negative-sampling> .
+<configuration/reasonkge/1> ns4kge:result "0.119"^^xsd:decimal .
+
+<configuration/reasonkge/2> rdf:type ns4kge:Configuration .
+<configuration/reasonkge/2> ns4kge:hasTask    <task/link-prediction> .
+<configuration/reasonkge/2> ns4kge:hasDataset <dataset/lubm3u> .
+<configuration/reasonkge/2> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/reasonkge/2> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/reasonkge/2> ns4kge:hasNSMethod <ns-method/random-negative-sampling> .
+<configuration/reasonkge/2> ns4kge:result "0.069"^^xsd:decimal .
+
+<configuration/reasonkge/3> rdf:type ns4kge:Configuration .
+<configuration/reasonkge/3> ns4kge:hasTask    <task/link-prediction> .
+<configuration/reasonkge/3> ns4kge:hasDataset <dataset/lubm3u> .
+<configuration/reasonkge/3> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/reasonkge/3> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/reasonkge/3> ns4kge:hasNSMethod <ns-method/random-negative-sampling> .
+<configuration/reasonkge/3> ns4kge:result "0.214"^^xsd:decimal .
+
+<configuration/reasonkge/4> rdf:type ns4kge:Configuration .
+<configuration/reasonkge/4> ns4kge:hasTask    <task/link-prediction> .
+<configuration/reasonkge/4> ns4kge:hasDataset <dataset/lubm3u> .
+<configuration/reasonkge/4> ns4kge:hasMetric  <metric/mrr> .
+<configuration/reasonkge/4> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/reasonkge/4> ns4kge:hasNSMethod <ns-method/static-sampling> .
+<configuration/reasonkge/4> ns4kge:result "0.125"^^xsd:decimal .
+
+<configuration/reasonkge/5> rdf:type ns4kge:Configuration .
+<configuration/reasonkge/5> ns4kge:hasTask    <task/link-prediction> .
+<configuration/reasonkge/5> ns4kge:hasDataset <dataset/lubm3u> .
+<configuration/reasonkge/5> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/reasonkge/5> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/reasonkge/5> ns4kge:hasNSMethod <ns-method/static-sampling> .
+<configuration/reasonkge/5> ns4kge:result "0.082"^^xsd:decimal .
+
+<configuration/reasonkge/6> rdf:type ns4kge:Configuration .
+<configuration/reasonkge/6> ns4kge:hasTask    <task/link-prediction> .
+<configuration/reasonkge/6> ns4kge:hasDataset <dataset/lubm3u> .
+<configuration/reasonkge/6> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/reasonkge/6> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/reasonkge/6> ns4kge:hasNSMethod <ns-method/static-sampling> .
+<configuration/reasonkge/6> ns4kge:result "0.213"^^xsd:decimal .
+
+<configuration/reasonkge/7> rdf:type ns4kge:Configuration .
+<configuration/reasonkge/7> ns4kge:hasTask    <task/link-prediction> .
+<configuration/reasonkge/7> ns4kge:hasDataset <dataset/lubm3u> .
+<configuration/reasonkge/7> ns4kge:hasMetric  <metric/mrr> .
+<configuration/reasonkge/7> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/reasonkge/7> ns4kge:hasNSMethod <ns-method/reasonkge> .
+<configuration/reasonkge/7> ns4kge:result "0.135"^^xsd:decimal .
+
+<configuration/reasonkge/8> rdf:type ns4kge:Configuration .
+<configuration/reasonkge/8> ns4kge:hasTask    <task/link-prediction> .
+<configuration/reasonkge/8> ns4kge:hasDataset <dataset/lubm3u> .
+<configuration/reasonkge/8> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/reasonkge/8> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/reasonkge/8> ns4kge:hasNSMethod <ns-method/reasonkge> .
+<configuration/reasonkge/8> ns4kge:result "0.079"^^xsd:decimal .
+
+<configuration/reasonkge/9> rdf:type ns4kge:Configuration .
+<configuration/reasonkge/9> ns4kge:hasTask    <task/link-prediction> .
+<configuration/reasonkge/9> ns4kge:hasDataset <dataset/lubm3u> .
+<configuration/reasonkge/9> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/reasonkge/9> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/reasonkge/9> ns4kge:hasNSMethod <ns-method/reasonkge> .
+<configuration/reasonkge/9> ns4kge:result "0.256"^^xsd:decimal .
+
+<configuration/reasonkge/10> rdf:type ns4kge:Configuration .
+<configuration/reasonkge/10> ns4kge:hasTask    <task/link-prediction> .
+<configuration/reasonkge/10> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/reasonkge/10> ns4kge:hasMetric  <metric/mrr> .
+<configuration/reasonkge/10> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/reasonkge/10> ns4kge:hasNSMethod <ns-method/random-negative-sampling> .
+<configuration/reasonkge/10> ns4kge:result "0.226"^^xsd:decimal .
+
+<configuration/reasonkge/11> rdf:type ns4kge:Configuration .
+<configuration/reasonkge/11> ns4kge:hasTask    <task/link-prediction> .
+<configuration/reasonkge/11> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/reasonkge/11> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/reasonkge/11> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/reasonkge/11> ns4kge:hasNSMethod <ns-method/random-negative-sampling> .
+<configuration/reasonkge/11> ns4kge:result "0.044"^^xsd:decimal .
+
+<configuration/reasonkge/12> rdf:type ns4kge:Configuration .
+<configuration/reasonkge/12> ns4kge:hasTask    <task/link-prediction> .
+<configuration/reasonkge/12> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/reasonkge/12> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/reasonkge/12> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/reasonkge/12> ns4kge:hasNSMethod <ns-method/random-negative-sampling> .
+<configuration/reasonkge/12> ns4kge:result "0.537"^^xsd:decimal .
+
+<configuration/reasonkge/13> rdf:type ns4kge:Configuration .
+<configuration/reasonkge/13> ns4kge:hasTask    <task/link-prediction> .
+<configuration/reasonkge/13> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/reasonkge/13> ns4kge:hasMetric  <metric/mrr> .
+<configuration/reasonkge/13> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/reasonkge/13> ns4kge:hasNSMethod <ns-method/static-sampling> .
+<configuration/reasonkge/13> ns4kge:result "0.351"^^xsd:decimal .
+
+<configuration/reasonkge/14> rdf:type ns4kge:Configuration .
+<configuration/reasonkge/14> ns4kge:hasTask    <task/link-prediction> .
+<configuration/reasonkge/14> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/reasonkge/14> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/reasonkge/14> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/reasonkge/14> ns4kge:hasNSMethod <ns-method/static-sampling> .
+<configuration/reasonkge/14> ns4kge:result "0.183"^^xsd:decimal .
+
+<configuration/reasonkge/15> rdf:type ns4kge:Configuration .
+<configuration/reasonkge/15> ns4kge:hasTask    <task/link-prediction> .
+<configuration/reasonkge/15> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/reasonkge/15> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/reasonkge/15> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/reasonkge/15> ns4kge:hasNSMethod <ns-method/static-sampling> .
+<configuration/reasonkge/15> ns4kge:result "0.621"^^xsd:decimal .
+
+<configuration/reasonkge/16> rdf:type ns4kge:Configuration .
+<configuration/reasonkge/16> ns4kge:hasTask    <task/link-prediction> .
+<configuration/reasonkge/16> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/reasonkge/16> ns4kge:hasMetric  <metric/mrr> .
+<configuration/reasonkge/16> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/reasonkge/16> ns4kge:hasNSMethod <ns-method/reasonkge> .
+<configuration/reasonkge/16> ns4kge:result "0.367"^^xsd:decimal .
+
+<configuration/reasonkge/17> rdf:type ns4kge:Configuration .
+<configuration/reasonkge/17> ns4kge:hasTask    <task/link-prediction> .
+<configuration/reasonkge/17> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/reasonkge/17> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/reasonkge/17> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/reasonkge/17> ns4kge:hasNSMethod <ns-method/reasonkge> .
+<configuration/reasonkge/17> ns4kge:result "0.197"^^xsd:decimal .
+
+<configuration/reasonkge/18> rdf:type ns4kge:Configuration .
+<configuration/reasonkge/18> ns4kge:hasTask    <task/link-prediction> .
+<configuration/reasonkge/18> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/reasonkge/18> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/reasonkge/18> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/reasonkge/18> ns4kge:hasNSMethod <ns-method/reasonkge> .
+<configuration/reasonkge/18> ns4kge:result "0.629"^^xsd:decimal .
+
+<configuration/reasonkge/19> rdf:type ns4kge:Configuration .
+<configuration/reasonkge/19> ns4kge:hasTask    <task/link-prediction> .
+<configuration/reasonkge/19> ns4kge:hasDataset <dataset/dbpedia15k> .
+<configuration/reasonkge/19> ns4kge:hasMetric  <metric/mrr> .
+<configuration/reasonkge/19> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/reasonkge/19> ns4kge:hasNSMethod <ns-method/random-negative-sampling> .
+<configuration/reasonkge/19> ns4kge:result "0.109"^^xsd:decimal .
+
+<configuration/reasonkge/20> rdf:type ns4kge:Configuration .
+<configuration/reasonkge/20> ns4kge:hasTask    <task/link-prediction> .
+<configuration/reasonkge/20> ns4kge:hasDataset <dataset/dbpedia15k> .
+<configuration/reasonkge/20> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/reasonkge/20> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/reasonkge/20> ns4kge:hasNSMethod <ns-method/random-negative-sampling> .
+<configuration/reasonkge/20> ns4kge:result "0.061"^^xsd:decimal .
+
+<configuration/reasonkge/21> rdf:type ns4kge:Configuration .
+<configuration/reasonkge/21> ns4kge:hasTask    <task/link-prediction> .
+<configuration/reasonkge/21> ns4kge:hasDataset <dataset/dbpedia15k> .
+<configuration/reasonkge/21> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/reasonkge/21> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/reasonkge/21> ns4kge:hasNSMethod <ns-method/random-negative-sampling> .
+<configuration/reasonkge/21> ns4kge:result "0.206"^^xsd:decimal .
+
+<configuration/reasonkge/22> rdf:type ns4kge:Configuration .
+<configuration/reasonkge/22> ns4kge:hasTask    <task/link-prediction> .
+<configuration/reasonkge/22> ns4kge:hasDataset <dataset/dbpedia15k> .
+<configuration/reasonkge/22> ns4kge:hasMetric  <metric/mrr> .
+<configuration/reasonkge/22> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/reasonkge/22> ns4kge:hasNSMethod <ns-method/static-sampling> .
+<configuration/reasonkge/22> ns4kge:result "0.101"^^xsd:decimal .
+
+<configuration/reasonkge/23> rdf:type ns4kge:Configuration .
+<configuration/reasonkge/23> ns4kge:hasTask    <task/link-prediction> .
+<configuration/reasonkge/23> ns4kge:hasDataset <dataset/dbpedia15k> .
+<configuration/reasonkge/23> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/reasonkge/23> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/reasonkge/23> ns4kge:hasNSMethod <ns-method/static-sampling> .
+<configuration/reasonkge/23> ns4kge:result "0.073"^^xsd:decimal .
+
+<configuration/reasonkge/24> rdf:type ns4kge:Configuration .
+<configuration/reasonkge/24> ns4kge:hasTask    <task/link-prediction> .
+<configuration/reasonkge/24> ns4kge:hasDataset <dataset/dbpedia15k> .
+<configuration/reasonkge/24> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/reasonkge/24> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/reasonkge/24> ns4kge:hasNSMethod <ns-method/static-sampling> .
+<configuration/reasonkge/24> ns4kge:result "0.254"^^xsd:decimal .
+
+<configuration/reasonkge/25> rdf:type ns4kge:Configuration .
+<configuration/reasonkge/25> ns4kge:hasTask    <task/link-prediction> .
+<configuration/reasonkge/25> ns4kge:hasDataset <dataset/dbpedia15k> .
+<configuration/reasonkge/25> ns4kge:hasMetric  <metric/mrr> .
+<configuration/reasonkge/25> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/reasonkge/25> ns4kge:hasNSMethod <ns-method/reasonkge> .
+<configuration/reasonkge/25> ns4kge:result "0.118"^^xsd:decimal .
+
+<configuration/reasonkge/26> rdf:type ns4kge:Configuration .
+<configuration/reasonkge/26> ns4kge:hasTask    <task/link-prediction> .
+<configuration/reasonkge/26> ns4kge:hasDataset <dataset/dbpedia15k> .
+<configuration/reasonkge/26> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/reasonkge/26> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/reasonkge/26> ns4kge:hasNSMethod <ns-method/reasonkge> .
+<configuration/reasonkge/26> ns4kge:result "0.101"^^xsd:decimal .
+
+<configuration/reasonkge/27> rdf:type ns4kge:Configuration .
+<configuration/reasonkge/27> ns4kge:hasTask    <task/link-prediction> .
+<configuration/reasonkge/27> ns4kge:hasDataset <dataset/dbpedia15k> .
+<configuration/reasonkge/27> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/reasonkge/27> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/reasonkge/27> ns4kge:hasNSMethod <ns-method/reasonkge> .
+<configuration/reasonkge/27> ns4kge:result "0.299"^^xsd:decimal .
+
+<configuration/reasonkge/28> rdf:type ns4kge:Configuration .
+<configuration/reasonkge/28> ns4kge:hasTask    <task/link-prediction> .
+<configuration/reasonkge/28> ns4kge:hasDataset <dataset/lubm3u> .
+<configuration/reasonkge/28> ns4kge:hasMetric  <metric/mrr> .
+<configuration/reasonkge/28> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/reasonkge/28> ns4kge:hasNSMethod <ns-method/random-negative-sampling> .
+<configuration/reasonkge/28> ns4kge:result "0.159"^^xsd:decimal .
+
+<configuration/reasonkge/29> rdf:type ns4kge:Configuration .
+<configuration/reasonkge/29> ns4kge:hasTask    <task/link-prediction> .
+<configuration/reasonkge/29> ns4kge:hasDataset <dataset/lubm3u> .
+<configuration/reasonkge/29> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/reasonkge/29> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/reasonkge/29> ns4kge:hasNSMethod <ns-method/random-negative-sampling> .
+<configuration/reasonkge/29> ns4kge:result "0.119"^^xsd:decimal .
+
+<configuration/reasonkge/30> rdf:type ns4kge:Configuration .
+<configuration/reasonkge/30> ns4kge:hasTask    <task/link-prediction> .
+<configuration/reasonkge/30> ns4kge:hasDataset <dataset/lubm3u> .
+<configuration/reasonkge/30> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/reasonkge/30> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/reasonkge/30> ns4kge:hasNSMethod <ns-method/random-negative-sampling> .
+<configuration/reasonkge/30> ns4kge:result "0.242"^^xsd:decimal .
+
+<configuration/reasonkge/31> rdf:type ns4kge:Configuration .
+<configuration/reasonkge/31> ns4kge:hasTask    <task/link-prediction> .
+<configuration/reasonkge/31> ns4kge:hasDataset <dataset/lubm3u> .
+<configuration/reasonkge/31> ns4kge:hasMetric  <metric/mrr> .
+<configuration/reasonkge/31> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/reasonkge/31> ns4kge:hasNSMethod <ns-method/static-sampling> .
+<configuration/reasonkge/31> ns4kge:result "0.181"^^xsd:decimal .
+
+<configuration/reasonkge/32> rdf:type ns4kge:Configuration .
+<configuration/reasonkge/32> ns4kge:hasTask    <task/link-prediction> .
+<configuration/reasonkge/32> ns4kge:hasDataset <dataset/lubm3u> .
+<configuration/reasonkge/32> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/reasonkge/32> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/reasonkge/32> ns4kge:hasNSMethod <ns-method/static-sampling> .
+<configuration/reasonkge/32> ns4kge:result "0.136"^^xsd:decimal .
+
+<configuration/reasonkge/33> rdf:type ns4kge:Configuration .
+<configuration/reasonkge/33> ns4kge:hasTask    <task/link-prediction> .
+<configuration/reasonkge/33> ns4kge:hasDataset <dataset/lubm3u> .
+<configuration/reasonkge/33> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/reasonkge/33> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/reasonkge/33> ns4kge:hasNSMethod <ns-method/static-sampling> .
+<configuration/reasonkge/33> ns4kge:result "0.276"^^xsd:decimal .
+
+<configuration/reasonkge/34> rdf:type ns4kge:Configuration .
+<configuration/reasonkge/34> ns4kge:hasTask    <task/link-prediction> .
+<configuration/reasonkge/34> ns4kge:hasDataset <dataset/lubm3u> .
+<configuration/reasonkge/34> ns4kge:hasMetric  <metric/mrr> .
+<configuration/reasonkge/34> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/reasonkge/34> ns4kge:hasNSMethod <ns-method/reasonkge> .
+<configuration/reasonkge/34> ns4kge:result "0.233"^^xsd:decimal .
+
+<configuration/reasonkge/35> rdf:type ns4kge:Configuration .
+<configuration/reasonkge/35> ns4kge:hasTask    <task/link-prediction> .
+<configuration/reasonkge/35> ns4kge:hasDataset <dataset/lubm3u> .
+<configuration/reasonkge/35> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/reasonkge/35> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/reasonkge/35> ns4kge:hasNSMethod <ns-method/reasonkge> .
+<configuration/reasonkge/35> ns4kge:result "0.195"^^xsd:decimal .
+
+<configuration/reasonkge/36> rdf:type ns4kge:Configuration .
+<configuration/reasonkge/36> ns4kge:hasTask    <task/link-prediction> .
+<configuration/reasonkge/36> ns4kge:hasDataset <dataset/lubm3u> .
+<configuration/reasonkge/36> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/reasonkge/36> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/reasonkge/36> ns4kge:hasNSMethod <ns-method/reasonkge> .
+<configuration/reasonkge/36> ns4kge:result "0.313"^^xsd:decimal .
+
+<configuration/reasonkge/37> rdf:type ns4kge:Configuration .
+<configuration/reasonkge/37> ns4kge:hasTask    <task/link-prediction> .
+<configuration/reasonkge/37> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/reasonkge/37> ns4kge:hasMetric  <metric/mrr> .
+<configuration/reasonkge/37> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/reasonkge/37> ns4kge:hasNSMethod <ns-method/random-negative-sampling> .
+<configuration/reasonkge/37> ns4kge:result "0.482"^^xsd:decimal .
+
+<configuration/reasonkge/38> rdf:type ns4kge:Configuration .
+<configuration/reasonkge/38> ns4kge:hasTask    <task/link-prediction> .
+<configuration/reasonkge/38> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/reasonkge/38> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/reasonkge/38> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/reasonkge/38> ns4kge:hasNSMethod <ns-method/random-negative-sampling> .
+<configuration/reasonkge/38> ns4kge:result "0.4"^^xsd:decimal .
+
+<configuration/reasonkge/39> rdf:type ns4kge:Configuration .
+<configuration/reasonkge/39> ns4kge:hasTask    <task/link-prediction> .
+<configuration/reasonkge/39> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/reasonkge/39> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/reasonkge/39> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/reasonkge/39> ns4kge:hasNSMethod <ns-method/random-negative-sampling> .
+<configuration/reasonkge/39> ns4kge:result "0.643"^^xsd:decimal .
+
+<configuration/reasonkge/40> rdf:type ns4kge:Configuration .
+<configuration/reasonkge/40> ns4kge:hasTask    <task/link-prediction> .
+<configuration/reasonkge/40> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/reasonkge/40> ns4kge:hasMetric  <metric/mrr> .
+<configuration/reasonkge/40> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/reasonkge/40> ns4kge:hasNSMethod <ns-method/static-sampling> .
+<configuration/reasonkge/40> ns4kge:result "0.515"^^xsd:decimal .
+
+<configuration/reasonkge/41> rdf:type ns4kge:Configuration .
+<configuration/reasonkge/41> ns4kge:hasTask    <task/link-prediction> .
+<configuration/reasonkge/41> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/reasonkge/41> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/reasonkge/41> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/reasonkge/41> ns4kge:hasNSMethod <ns-method/static-sampling> .
+<configuration/reasonkge/41> ns4kge:result "0.431"^^xsd:decimal .
+
+<configuration/reasonkge/42> rdf:type ns4kge:Configuration .
+<configuration/reasonkge/42> ns4kge:hasTask    <task/link-prediction> .
+<configuration/reasonkge/42> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/reasonkge/42> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/reasonkge/42> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/reasonkge/42> ns4kge:hasNSMethod <ns-method/static-sampling> .
+<configuration/reasonkge/42> ns4kge:result "0.665"^^xsd:decimal .
+
+<configuration/reasonkge/43> rdf:type ns4kge:Configuration .
+<configuration/reasonkge/43> ns4kge:hasTask    <task/link-prediction> .
+<configuration/reasonkge/43> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/reasonkge/43> ns4kge:hasMetric  <metric/mrr> .
+<configuration/reasonkge/43> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/reasonkge/43> ns4kge:hasNSMethod <ns-method/reasonkge> .
+<configuration/reasonkge/43> ns4kge:result "0.53"^^xsd:decimal .
+
+<configuration/reasonkge/44> rdf:type ns4kge:Configuration .
+<configuration/reasonkge/44> ns4kge:hasTask    <task/link-prediction> .
+<configuration/reasonkge/44> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/reasonkge/44> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/reasonkge/44> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/reasonkge/44> ns4kge:hasNSMethod <ns-method/reasonkge> .
+<configuration/reasonkge/44> ns4kge:result "0.453"^^xsd:decimal .
+
+<configuration/reasonkge/45> rdf:type ns4kge:Configuration .
+<configuration/reasonkge/45> ns4kge:hasTask    <task/link-prediction> .
+<configuration/reasonkge/45> ns4kge:hasDataset <dataset/yago3-10> .
+<configuration/reasonkge/45> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/reasonkge/45> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/reasonkge/45> ns4kge:hasNSMethod <ns-method/reasonkge> .
+<configuration/reasonkge/45> ns4kge:result "0.668"^^xsd:decimal .
+
+<configuration/reasonkge/46> rdf:type ns4kge:Configuration .
+<configuration/reasonkge/46> ns4kge:hasTask    <task/link-prediction> .
+<configuration/reasonkge/46> ns4kge:hasDataset <dataset/dbpedia15k> .
+<configuration/reasonkge/46> ns4kge:hasMetric  <metric/mrr> .
+<configuration/reasonkge/46> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/reasonkge/46> ns4kge:hasNSMethod <ns-method/random-negative-sampling> .
+<configuration/reasonkge/46> ns4kge:result "0.099"^^xsd:decimal .
+
+<configuration/reasonkge/47> rdf:type ns4kge:Configuration .
+<configuration/reasonkge/47> ns4kge:hasTask    <task/link-prediction> .
+<configuration/reasonkge/47> ns4kge:hasDataset <dataset/dbpedia15k> .
+<configuration/reasonkge/47> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/reasonkge/47> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/reasonkge/47> ns4kge:hasNSMethod <ns-method/random-negative-sampling> .
+<configuration/reasonkge/47> ns4kge:result "0.061"^^xsd:decimal .
+
+<configuration/reasonkge/48> rdf:type ns4kge:Configuration .
+<configuration/reasonkge/48> ns4kge:hasTask    <task/link-prediction> .
+<configuration/reasonkge/48> ns4kge:hasDataset <dataset/dbpedia15k> .
+<configuration/reasonkge/48> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/reasonkge/48> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/reasonkge/48> ns4kge:hasNSMethod <ns-method/random-negative-sampling> .
+<configuration/reasonkge/48> ns4kge:result "0.174"^^xsd:decimal .
+
+<configuration/reasonkge/49> rdf:type ns4kge:Configuration .
+<configuration/reasonkge/49> ns4kge:hasTask    <task/link-prediction> .
+<configuration/reasonkge/49> ns4kge:hasDataset <dataset/dbpedia15k> .
+<configuration/reasonkge/49> ns4kge:hasMetric  <metric/mrr> .
+<configuration/reasonkge/49> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/reasonkge/49> ns4kge:hasNSMethod <ns-method/static-sampling> .
+<configuration/reasonkge/49> ns4kge:result "0.098"^^xsd:decimal .
+
+<configuration/reasonkge/50> rdf:type ns4kge:Configuration .
+<configuration/reasonkge/50> ns4kge:hasTask    <task/link-prediction> .
+<configuration/reasonkge/50> ns4kge:hasDataset <dataset/dbpedia15k> .
+<configuration/reasonkge/50> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/reasonkge/50> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/reasonkge/50> ns4kge:hasNSMethod <ns-method/static-sampling> .
+<configuration/reasonkge/50> ns4kge:result "0.107"^^xsd:decimal .
+
+<configuration/reasonkge/51> rdf:type ns4kge:Configuration .
+<configuration/reasonkge/51> ns4kge:hasTask    <task/link-prediction> .
+<configuration/reasonkge/51> ns4kge:hasDataset <dataset/dbpedia15k> .
+<configuration/reasonkge/51> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/reasonkge/51> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/reasonkge/51> ns4kge:hasNSMethod <ns-method/static-sampling> .
+<configuration/reasonkge/51> ns4kge:result "0.193"^^xsd:decimal .
+
+<configuration/reasonkge/52> rdf:type ns4kge:Configuration .
+<configuration/reasonkge/52> ns4kge:hasTask    <task/link-prediction> .
+<configuration/reasonkge/52> ns4kge:hasDataset <dataset/dbpedia15k> .
+<configuration/reasonkge/52> ns4kge:hasMetric  <metric/mrr> .
+<configuration/reasonkge/52> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/reasonkge/52> ns4kge:hasNSMethod <ns-method/reasonkge> .
+<configuration/reasonkge/52> ns4kge:result "0.115"^^xsd:decimal .
+
+<configuration/reasonkge/53> rdf:type ns4kge:Configuration .
+<configuration/reasonkge/53> ns4kge:hasTask    <task/link-prediction> .
+<configuration/reasonkge/53> ns4kge:hasDataset <dataset/dbpedia15k> .
+<configuration/reasonkge/53> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/reasonkge/53> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/reasonkge/53> ns4kge:hasNSMethod <ns-method/reasonkge> .
+<configuration/reasonkge/53> ns4kge:result "0.125"^^xsd:decimal .
+
+<configuration/reasonkge/54> rdf:type ns4kge:Configuration .
+<configuration/reasonkge/54> ns4kge:hasTask    <task/link-prediction> .
+<configuration/reasonkge/54> ns4kge:hasDataset <dataset/dbpedia15k> .
+<configuration/reasonkge/54> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/reasonkge/54> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/reasonkge/54> ns4kge:hasNSMethod <ns-method/reasonkge> .
+<configuration/reasonkge/54> ns4kge:result "0.221"^^xsd:decimal .

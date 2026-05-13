@@ -1,0 +1,45 @@
+{
+  "Article": {
+    "title": "Fusing Attribute Character Embeddings with Truncated Negative Sampling for Entity Alignment",
+    "date": "2023"
+  },
+  "proposedNSMethod": "Truncated Negative Sampling",
+  "proposedKGEModel": "",
+  "mentionedNSMethods": [
+    "Random Negative Sampling"
+  ],
+  "mentionedKGEModels": [
+    "TransE",
+    "MTransE",
+    "RESCAL",
+    "SimplE",
+    "CrossE",
+    "RotatE",
+    "MuRP",
+    "HAKE",
+    "TransD",
+    "TransR",
+    "TransH",
+    "IPTransE",
+    "DAT",
+    "TransEdge",
+    "MultiKE",
+    "BootEA",
+    "JAPE",
+    "KD-CoE"
+  ],
+  "Experimentation": {
+    "Hardware": [
+      "AMD Ryzen 7 4800H 2.9 GHz CPU",
+      "NVIDIA GeForce GTX 1650 Ti GPU"
+    ],
+    "TrainingProtocol": {
+      "LossFunction": [
+        "margin-based ranking loss"
+      ],
+      "Optimizer": [],
+      "learningRate": 0.01,
+      "nsRatio": 5
+    }
+  }
+}

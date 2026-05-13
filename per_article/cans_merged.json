@@ -1,0 +1,469 @@
+{
+  "Article": {
+    "title": "Confidence-Aware Negative Sampling Method for Noisy Knowledge Graph Embedding",
+    "date": "2018"
+  },
+  "proposedNSMethod": "Confidence-Aware Negative Sampling",
+  "proposedKGEModel": "",
+  "mentionedNSMethods": [
+    "Uniform Negative Sampling",
+    "Bernoulli Negative Sampling"
+  ],
+  "mentionedKGEModels": [
+    "TransD",
+    "TransE",
+    "CKRL",
+    "TransH",
+    "GTrans",
+    "puTransE",
+    "TransR",
+    "ManifoldE"
+  ],
+  "Experimentation": {
+    "Hardware": [],
+    "TrainingProtocol": {
+      "LossFunction": [
+        "pairwise ranking loss"
+      ],
+      "Optimizer": [
+        "SGD"
+      ],
+      "learningRate": 0.001,
+      "nsRatio": 20
+    },
+    "Configurations": [
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K-N1",
+        "Metric": "MR",
+        "KGEModel": "TransE",
+        "NSMethod": "Unknown",
+        "result": 155
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K-N1",
+        "Metric": "MR",
+        "KGEModel": "CKRL",
+        "NSMethod": "Unknown",
+        "result": 133
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K-N1",
+        "Metric": "MR",
+        "KGEModel": "TransE",
+        "NSMethod": "Confidence-Aware Negative Sampling",
+        "result": 178
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K-N1",
+        "Metric": "MRR",
+        "KGEModel": "TransE",
+        "NSMethod": "Unknown",
+        "result": 0.234
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K-N1",
+        "Metric": "MRR",
+        "KGEModel": "CKRL",
+        "NSMethod": "Unknown",
+        "result": 0.278
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K-N1",
+        "Metric": "MRR",
+        "KGEModel": "TransE",
+        "NSMethod": "Confidence-Aware Negative Sampling",
+        "result": 0.334
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K-N1",
+        "Metric": "Hits@10",
+        "KGEModel": "TransE",
+        "NSMethod": "Unknown",
+        "result": 59.9
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K-N1",
+        "Metric": "Hits@10",
+        "KGEModel": "CKRL",
+        "NSMethod": "Unknown",
+        "result": 62.5
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K-N1",
+        "Metric": "Hits@10",
+        "KGEModel": "TransE",
+        "NSMethod": "Confidence-Aware Negative Sampling",
+        "result": 68.3
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K-N2",
+        "Metric": "MR",
+        "KGEModel": "TransE",
+        "NSMethod": "Unknown",
+        "result": 157
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K-N2",
+        "Metric": "MR",
+        "KGEModel": "CKRL",
+        "NSMethod": "Unknown",
+        "result": 140
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K-N2",
+        "Metric": "MR",
+        "KGEModel": "TransE",
+        "NSMethod": "Confidence-Aware Negative Sampling",
+        "result": 188
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K-N2",
+        "Metric": "MRR",
+        "KGEModel": "TransE",
+        "NSMethod": "Unknown",
+        "result": 0.209
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K-N2",
+        "Metric": "MRR",
+        "KGEModel": "CKRL",
+        "NSMethod": "Unknown",
+        "result": 0.255
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K-N2",
+        "Metric": "MRR",
+        "KGEModel": "TransE",
+        "NSMethod": "Confidence-Aware Negative Sampling",
+        "result": 0.305
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K-N2",
+        "Metric": "Hits@10",
+        "KGEModel": "TransE",
+        "NSMethod": "Unknown",
+        "result": 56.6
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K-N2",
+        "Metric": "Hits@10",
+        "KGEModel": "CKRL",
+        "NSMethod": "Unknown",
+        "result": 60.4
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K-N2",
+        "Metric": "Hits@10",
+        "KGEModel": "TransE",
+        "NSMethod": "Confidence-Aware Negative Sampling",
+        "result": 65.9
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K-N3",
+        "Metric": "MR",
+        "KGEModel": "TransE",
+        "NSMethod": "Unknown",
+        "result": 175
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K-N3",
+        "Metric": "MR",
+        "KGEModel": "CKRL",
+        "NSMethod": "Unknown",
+        "result": 150
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K-N3",
+        "Metric": "MR",
+        "KGEModel": "TransE",
+        "NSMethod": "Confidence-Aware Negative Sampling",
+        "result": 206
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K-N3",
+        "Metric": "MRR",
+        "KGEModel": "TransE",
+        "NSMethod": "Unknown",
+        "result": 0.176
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K-N3",
+        "Metric": "MRR",
+        "KGEModel": "CKRL",
+        "NSMethod": "Unknown",
+        "result": 0.232
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K-N3",
+        "Metric": "MRR",
+        "KGEModel": "TransE",
+        "NSMethod": "Confidence-Aware Negative Sampling",
+        "result": 0.281
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K-N3",
+        "Metric": "Hits@10",
+        "KGEModel": "TransE",
+        "NSMethod": "Unknown",
+        "result": 51.9
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K-N3",
+        "Metric": "Hits@10",
+        "KGEModel": "CKRL",
+        "NSMethod": "Unknown",
+        "result": 57.4
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K-N3",
+        "Metric": "Hits@10",
+        "KGEModel": "TransE",
+        "NSMethod": "Confidence-Aware Negative Sampling",
+        "result": 63.1
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18-N1",
+        "Metric": "MR",
+        "KGEModel": "TransE",
+        "NSMethod": "Unknown",
+        "result": 590
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18-N1",
+        "Metric": "MR",
+        "KGEModel": "CKRL",
+        "NSMethod": "Unknown",
+        "result": 602
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18-N1",
+        "Metric": "MR",
+        "KGEModel": "TransE",
+        "NSMethod": "Confidence-Aware Negative Sampling",
+        "result": 635
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18-N1",
+        "Metric": "MRR",
+        "KGEModel": "TransE",
+        "NSMethod": "Unknown",
+        "result": 0.139
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18-N1",
+        "Metric": "MRR",
+        "KGEModel": "CKRL",
+        "NSMethod": "Unknown",
+        "result": 0.473
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18-N1",
+        "Metric": "MRR",
+        "KGEModel": "TransE",
+        "NSMethod": "Confidence-Aware Negative Sampling",
+        "result": 0.494
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18-N1",
+        "Metric": "Hits@10",
+        "KGEModel": "TransE",
+        "NSMethod": "Unknown",
+        "result": 87.2
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18-N1",
+        "Metric": "Hits@10",
+        "KGEModel": "CKRL",
+        "NSMethod": "Unknown",
+        "result": 85.1
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18-N1",
+        "Metric": "Hits@10",
+        "KGEModel": "TransE",
+        "NSMethod": "Confidence-Aware Negative Sampling",
+        "result": 88.1
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18-N2",
+        "Metric": "MR",
+        "KGEModel": "TransE",
+        "NSMethod": "Unknown",
+        "result": 583
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18-N2",
+        "Metric": "MR",
+        "KGEModel": "CKRL",
+        "NSMethod": "Unknown",
+        "result": 630
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18-N2",
+        "Metric": "MR",
+        "KGEModel": "TransE",
+        "NSMethod": "Confidence-Aware Negative Sampling",
+        "result": 646
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18-N2",
+        "Metric": "MRR",
+        "KGEModel": "TransE",
+        "NSMethod": "Unknown",
+        "result": 0.079
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18-N2",
+        "Metric": "MRR",
+        "KGEModel": "CKRL",
+        "NSMethod": "Unknown",
+        "result": 0.4
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18-N2",
+        "Metric": "MRR",
+        "KGEModel": "TransE",
+        "NSMethod": "Confidence-Aware Negative Sampling",
+        "result": 0.414
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18-N2",
+        "Metric": "Hits@10",
+        "KGEModel": "TransE",
+        "NSMethod": "Unknown",
+        "result": 82.8
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18-N2",
+        "Metric": "Hits@10",
+        "KGEModel": "CKRL",
+        "NSMethod": "Unknown",
+        "result": 81.0
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18-N2",
+        "Metric": "Hits@10",
+        "KGEModel": "TransE",
+        "NSMethod": "Confidence-Aware Negative Sampling",
+        "result": 84.6
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18-N3",
+        "Metric": "MR",
+        "KGEModel": "TransE",
+        "NSMethod": "Unknown",
+        "result": 633
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18-N3",
+        "Metric": "MR",
+        "KGEModel": "CKRL",
+        "NSMethod": "Unknown",
+        "result": 665
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18-N3",
+        "Metric": "MR",
+        "KGEModel": "TransE",
+        "NSMethod": "Confidence-Aware Negative Sampling",
+        "result": 725
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18-N3",
+        "Metric": "MRR",
+        "KGEModel": "CKRL",
+        "NSMethod": "Unknown",
+        "result": 0.259
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18-N3",
+        "Metric": "MRR",
+        "KGEModel": "TransE",
+        "NSMethod": "Confidence-Aware Negative Sampling",
+        "result": 0.227
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18-N3",
+        "Metric": "MRR",
+        "KGEModel": "TransE",
+        "NSMethod": "Unknown",
+        "result": 0.051
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18-N3",
+        "Metric": "Hits@10",
+        "KGEModel": "TransE",
+        "NSMethod": "Confidence-Aware Negative Sampling",
+        "result": 77.9
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18-N3",
+        "Metric": "Hits@10",
+        "KGEModel": "TransE",
+        "NSMethod": "Unknown",
+        "result": 73.6
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18-N3",
+        "Metric": "Hits@10",
+        "KGEModel": "CKRL",
+        "NSMethod": "Unknown",
+        "result": 73.3
+      }
+    ]
+  }
+}

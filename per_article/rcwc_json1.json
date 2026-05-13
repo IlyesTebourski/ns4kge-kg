@@ -1,0 +1,39 @@
+{
+  "Article": {
+    "title": "KGBoost: A Classification-Based Knowledge Base Completion Method with Negative Sampling",
+    "date": "2021"
+  },
+  "proposedNSMethod": "Range-Constrained with Co-occurrence Negative Sampling",
+  "proposedKGEModel": "",
+  "mentionedNSMethods": [
+    "Naive Negative Sampling",
+    "Bernoulli Negative Sampling",
+    "Self-Adversarial Negative Sampling",
+    "GAN-based Negative Sampling",
+    "Local-Closed World Assumption Negative Sampling"
+  ],
+  "mentionedKGEModels": [
+    "TransE",
+    "TransH",
+    "TransR",
+    "RotatE",
+    "RESCAL",
+    "DistMult",
+    "ComplEx",
+    "ConvE",
+    "InteractE",
+    "SACN"
+  ],
+  "Experimentation": {
+    "Hardware": [],
+    "TrainingProtocol": {
+      "LossFunction": [
+        "negative log likelihood loss",
+        "binary cross entropy loss"
+      ],
+      "Optimizer": [],
+      "learningRate": null,
+      "nsRatio": null
+    }
+  }
+}

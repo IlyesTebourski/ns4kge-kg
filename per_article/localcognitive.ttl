@@ -1,0 +1,1169 @@
+<article/localcognitive> rdf:type ns4kge:Article .
+<article/localcognitive> ns4kge:title "RatE: Relation-Adaptive Translating Embedding for Knowledge Graph Completion"^^xsd:string .
+<article/localcognitive> ns4kge:date "2020"^^xsd:gYear .
+<article/localcognitive> ns4kge:proposesNSMethod <ns-method/local-cognitive-negative-sampling> .
+<article/localcognitive> ns4kge:mentionsNSMethod <ns-method/type-constraint-training> .
+<article/localcognitive> ns4kge:mentionsNSMethod <ns-method/uniform-negative-sampling> .
+<article/localcognitive> ns4kge:mentionsNSMethod <ns-method/self-adversarial-negative-sampling> .
+<article/localcognitive> ns4kge:mentionsNSMethod <ns-method/kbgan> .
+<article/localcognitive> ns4kge:mentionsKGEModel <kge-model/distmult> .
+<article/localcognitive> ns4kge:mentionsKGEModel <kge-model/transe> .
+<article/localcognitive> ns4kge:mentionsKGEModel <kge-model/quate> .
+<article/localcognitive> ns4kge:mentionsKGEModel <kge-model/tucker> .
+<article/localcognitive> ns4kge:mentionsKGEModel <kge-model/rate> .
+<article/localcognitive> ns4kge:mentionsKGEModel <kge-model/hole> .
+<article/localcognitive> ns4kge:mentionsKGEModel <kge-model/transr> .
+<article/localcognitive> ns4kge:mentionsKGEModel <kge-model/conve> .
+<article/localcognitive> ns4kge:mentionsKGEModel <kge-model/transd> .
+<article/localcognitive> ns4kge:mentionsKGEModel <kge-model/complex> .
+<article/localcognitive> ns4kge:mentionsKGEModel <kge-model/toruse> .
+<article/localcognitive> ns4kge:mentionsKGEModel <kge-model/rotate> .
+<article/localcognitive> ns4kge:mentionsKGEModel <kge-model/transh> .
+<article/localcognitive> ns4kge:hasExperimentation <experimentation/localcognitive> .
+
+<category/self-adversarial-ns> rdf:type ns4kge:Category .
+
+<subcategory/knowledge-constrained> rdf:type ns4kge:Subcategory .
+
+<ns-method/local-cognitive-negative-sampling> rdf:type ns4kge:NSMethod .
+<ns-method/local-cognitive-negative-sampling> ns4kge:hasCategory <category/self-adversarial-ns> .
+<ns-method/local-cognitive-negative-sampling> ns4kge:hasSubcategory <subcategory/knowledge-constrained> .
+
+<ns-method/type-constraint-training> rdf:type ns4kge:NSMethod .
+
+<ns-method/uniform-negative-sampling> rdf:type ns4kge:NSMethod .
+<category/static-ns> rdf:type ns4kge:Category .
+
+<ns-method/uniform-negative-sampling> ns4kge:hasCategory <category/static-ns> .
+<subcategory/random> rdf:type ns4kge:Subcategory .
+
+<ns-method/uniform-negative-sampling> ns4kge:hasSubcategory <subcategory/random> .
+
+<ns-method/self-adversarial-negative-sampling> rdf:type ns4kge:NSMethod .
+<ns-method/self-adversarial-negative-sampling> ns4kge:hasCategory <category/self-adversarial-ns> .
+<subcategory/direct> rdf:type ns4kge:Subcategory .
+
+<ns-method/self-adversarial-negative-sampling> ns4kge:hasSubcategory <subcategory/direct> .
+
+<ns-method/kbgan> rdf:type ns4kge:NSMethod .
+<category/adversarial-ns> rdf:type ns4kge:Category .
+
+<ns-method/kbgan> ns4kge:hasCategory <category/adversarial-ns> .
+<subcategory/standard> rdf:type ns4kge:Subcategory .
+
+<ns-method/kbgan> ns4kge:hasSubcategory <subcategory/standard> .
+
+<kge-model/relation-adaptive-translating-embedding> rdf:type ns4kge:KGEModel .
+
+<kge-model/distmult> rdf:type ns4kge:KGEModel .
+
+<kge-model/transe> rdf:type ns4kge:KGEModel .
+
+<kge-model/quate> rdf:type ns4kge:KGEModel .
+
+<kge-model/tucker> rdf:type ns4kge:KGEModel .
+
+<kge-model/rate> rdf:type ns4kge:KGEModel .
+
+<kge-model/hole> rdf:type ns4kge:KGEModel .
+
+<kge-model/transr> rdf:type ns4kge:KGEModel .
+
+<kge-model/conve> rdf:type ns4kge:KGEModel .
+
+<kge-model/transd> rdf:type ns4kge:KGEModel .
+
+<kge-model/complex> rdf:type ns4kge:KGEModel .
+
+<kge-model/toruse> rdf:type ns4kge:KGEModel .
+
+<kge-model/rotate> rdf:type ns4kge:KGEModel .
+
+<kge-model/transh> rdf:type ns4kge:KGEModel .
+
+<dataset/wn18> rdf:type ns4kge:Dataset .
+<task/link-prediction> rdf:type ns4kge:Task .
+<metric/mr> rdf:type ns4kge:Metric .
+<metric/mrr> rdf:type ns4kge:Metric .
+<metric/hits-10> rdf:type ns4kge:Metric .
+<metric/hits-3> rdf:type ns4kge:Metric .
+<metric/hits-1> rdf:type ns4kge:Metric .
+<dataset/fb15k> rdf:type ns4kge:Dataset .
+<dataset/wn18rr> rdf:type ns4kge:Dataset .
+<dataset/fb15k-237> rdf:type ns4kge:Dataset .
+<loss-function/self-adversarial-negative-sampling-loss> rdf:type ns4kge:LossFunction .
+<optimizer/adam> rdf:type ns4kge:Optimizer .
+<hardware/titan-v-gpu> rdf:type ns4kge:Hardware .
+
+<experimentation/localcognitive> rdf:type ns4kge:Experimentation .
+<experimentation/localcognitive> ns4kge:hasTrainingProtocol <training-protocol/localcognitive> .
+<experimentation/localcognitive> ns4kge:hasConfiguration <configuration/localcognitive/1> .
+<experimentation/localcognitive> ns4kge:hasConfiguration <configuration/localcognitive/2> .
+<experimentation/localcognitive> ns4kge:hasConfiguration <configuration/localcognitive/3> .
+<experimentation/localcognitive> ns4kge:hasConfiguration <configuration/localcognitive/4> .
+<experimentation/localcognitive> ns4kge:hasConfiguration <configuration/localcognitive/5> .
+<experimentation/localcognitive> ns4kge:hasConfiguration <configuration/localcognitive/6> .
+<experimentation/localcognitive> ns4kge:hasConfiguration <configuration/localcognitive/7> .
+<experimentation/localcognitive> ns4kge:hasConfiguration <configuration/localcognitive/8> .
+<experimentation/localcognitive> ns4kge:hasConfiguration <configuration/localcognitive/9> .
+<experimentation/localcognitive> ns4kge:hasConfiguration <configuration/localcognitive/10> .
+<experimentation/localcognitive> ns4kge:hasConfiguration <configuration/localcognitive/11> .
+<experimentation/localcognitive> ns4kge:hasConfiguration <configuration/localcognitive/12> .
+<experimentation/localcognitive> ns4kge:hasConfiguration <configuration/localcognitive/13> .
+<experimentation/localcognitive> ns4kge:hasConfiguration <configuration/localcognitive/14> .
+<experimentation/localcognitive> ns4kge:hasConfiguration <configuration/localcognitive/15> .
+<experimentation/localcognitive> ns4kge:hasConfiguration <configuration/localcognitive/16> .
+<experimentation/localcognitive> ns4kge:hasConfiguration <configuration/localcognitive/17> .
+<experimentation/localcognitive> ns4kge:hasConfiguration <configuration/localcognitive/18> .
+<experimentation/localcognitive> ns4kge:hasConfiguration <configuration/localcognitive/19> .
+<experimentation/localcognitive> ns4kge:hasConfiguration <configuration/localcognitive/20> .
+<experimentation/localcognitive> ns4kge:hasConfiguration <configuration/localcognitive/21> .
+<experimentation/localcognitive> ns4kge:hasConfiguration <configuration/localcognitive/22> .
+<experimentation/localcognitive> ns4kge:hasConfiguration <configuration/localcognitive/23> .
+<experimentation/localcognitive> ns4kge:hasConfiguration <configuration/localcognitive/24> .
+<experimentation/localcognitive> ns4kge:hasConfiguration <configuration/localcognitive/25> .
+<experimentation/localcognitive> ns4kge:hasConfiguration <configuration/localcognitive/26> .
+<experimentation/localcognitive> ns4kge:hasConfiguration <configuration/localcognitive/27> .
+<experimentation/localcognitive> ns4kge:hasConfiguration <configuration/localcognitive/28> .
+<experimentation/localcognitive> ns4kge:hasConfiguration <configuration/localcognitive/29> .
+<experimentation/localcognitive> ns4kge:hasConfiguration <configuration/localcognitive/30> .
+<experimentation/localcognitive> ns4kge:hasConfiguration <configuration/localcognitive/31> .
+<experimentation/localcognitive> ns4kge:hasConfiguration <configuration/localcognitive/32> .
+<experimentation/localcognitive> ns4kge:hasConfiguration <configuration/localcognitive/33> .
+<experimentation/localcognitive> ns4kge:hasConfiguration <configuration/localcognitive/34> .
+<experimentation/localcognitive> ns4kge:hasConfiguration <configuration/localcognitive/35> .
+<experimentation/localcognitive> ns4kge:hasConfiguration <configuration/localcognitive/36> .
+<experimentation/localcognitive> ns4kge:hasConfiguration <configuration/localcognitive/37> .
+<experimentation/localcognitive> ns4kge:hasConfiguration <configuration/localcognitive/38> .
+<experimentation/localcognitive> ns4kge:hasConfiguration <configuration/localcognitive/39> .
+<experimentation/localcognitive> ns4kge:hasConfiguration <configuration/localcognitive/40> .
+<experimentation/localcognitive> ns4kge:hasConfiguration <configuration/localcognitive/41> .
+<experimentation/localcognitive> ns4kge:hasConfiguration <configuration/localcognitive/42> .
+<experimentation/localcognitive> ns4kge:hasConfiguration <configuration/localcognitive/43> .
+<experimentation/localcognitive> ns4kge:hasConfiguration <configuration/localcognitive/44> .
+<experimentation/localcognitive> ns4kge:hasConfiguration <configuration/localcognitive/45> .
+<experimentation/localcognitive> ns4kge:hasConfiguration <configuration/localcognitive/46> .
+<experimentation/localcognitive> ns4kge:hasConfiguration <configuration/localcognitive/47> .
+<experimentation/localcognitive> ns4kge:hasConfiguration <configuration/localcognitive/48> .
+<experimentation/localcognitive> ns4kge:hasConfiguration <configuration/localcognitive/49> .
+<experimentation/localcognitive> ns4kge:hasConfiguration <configuration/localcognitive/50> .
+<experimentation/localcognitive> ns4kge:hasConfiguration <configuration/localcognitive/51> .
+<experimentation/localcognitive> ns4kge:hasConfiguration <configuration/localcognitive/52> .
+<experimentation/localcognitive> ns4kge:hasConfiguration <configuration/localcognitive/53> .
+<experimentation/localcognitive> ns4kge:hasConfiguration <configuration/localcognitive/54> .
+<experimentation/localcognitive> ns4kge:hasConfiguration <configuration/localcognitive/55> .
+<experimentation/localcognitive> ns4kge:hasConfiguration <configuration/localcognitive/56> .
+<experimentation/localcognitive> ns4kge:hasConfiguration <configuration/localcognitive/57> .
+<experimentation/localcognitive> ns4kge:hasConfiguration <configuration/localcognitive/58> .
+<experimentation/localcognitive> ns4kge:hasConfiguration <configuration/localcognitive/59> .
+<experimentation/localcognitive> ns4kge:hasConfiguration <configuration/localcognitive/60> .
+<experimentation/localcognitive> ns4kge:hasConfiguration <configuration/localcognitive/61> .
+<experimentation/localcognitive> ns4kge:hasConfiguration <configuration/localcognitive/62> .
+<experimentation/localcognitive> ns4kge:hasConfiguration <configuration/localcognitive/63> .
+<experimentation/localcognitive> ns4kge:hasConfiguration <configuration/localcognitive/64> .
+<experimentation/localcognitive> ns4kge:hasConfiguration <configuration/localcognitive/65> .
+<experimentation/localcognitive> ns4kge:hasConfiguration <configuration/localcognitive/66> .
+<experimentation/localcognitive> ns4kge:hasConfiguration <configuration/localcognitive/67> .
+<experimentation/localcognitive> ns4kge:hasConfiguration <configuration/localcognitive/68> .
+<experimentation/localcognitive> ns4kge:hasConfiguration <configuration/localcognitive/69> .
+<experimentation/localcognitive> ns4kge:hasConfiguration <configuration/localcognitive/70> .
+<experimentation/localcognitive> ns4kge:hasConfiguration <configuration/localcognitive/71> .
+<experimentation/localcognitive> ns4kge:hasConfiguration <configuration/localcognitive/72> .
+<experimentation/localcognitive> ns4kge:hasConfiguration <configuration/localcognitive/73> .
+<experimentation/localcognitive> ns4kge:hasConfiguration <configuration/localcognitive/74> .
+<experimentation/localcognitive> ns4kge:hasConfiguration <configuration/localcognitive/75> .
+<experimentation/localcognitive> ns4kge:hasConfiguration <configuration/localcognitive/76> .
+<experimentation/localcognitive> ns4kge:hasConfiguration <configuration/localcognitive/77> .
+<experimentation/localcognitive> ns4kge:hasConfiguration <configuration/localcognitive/78> .
+<experimentation/localcognitive> ns4kge:hasConfiguration <configuration/localcognitive/79> .
+<experimentation/localcognitive> ns4kge:hasConfiguration <configuration/localcognitive/80> .
+<experimentation/localcognitive> ns4kge:hasConfiguration <configuration/localcognitive/81> .
+<experimentation/localcognitive> ns4kge:hasConfiguration <configuration/localcognitive/82> .
+<experimentation/localcognitive> ns4kge:hasConfiguration <configuration/localcognitive/83> .
+<experimentation/localcognitive> ns4kge:hasConfiguration <configuration/localcognitive/84> .
+<experimentation/localcognitive> ns4kge:hasConfiguration <configuration/localcognitive/85> .
+<experimentation/localcognitive> ns4kge:hasConfiguration <configuration/localcognitive/86> .
+<experimentation/localcognitive> ns4kge:hasConfiguration <configuration/localcognitive/87> .
+<experimentation/localcognitive> ns4kge:hasConfiguration <configuration/localcognitive/88> .
+<experimentation/localcognitive> ns4kge:hasConfiguration <configuration/localcognitive/89> .
+<experimentation/localcognitive> ns4kge:hasConfiguration <configuration/localcognitive/90> .
+<experimentation/localcognitive> ns4kge:hasConfiguration <configuration/localcognitive/91> .
+<experimentation/localcognitive> ns4kge:hasConfiguration <configuration/localcognitive/92> .
+<experimentation/localcognitive> ns4kge:hasConfiguration <configuration/localcognitive/93> .
+<experimentation/localcognitive> ns4kge:hasConfiguration <configuration/localcognitive/94> .
+<experimentation/localcognitive> ns4kge:hasConfiguration <configuration/localcognitive/95> .
+<experimentation/localcognitive> ns4kge:hasConfiguration <configuration/localcognitive/96> .
+<experimentation/localcognitive> ns4kge:hasConfiguration <configuration/localcognitive/97> .
+<experimentation/localcognitive> ns4kge:hasConfiguration <configuration/localcognitive/98> .
+<experimentation/localcognitive> ns4kge:hasConfiguration <configuration/localcognitive/99> .
+<experimentation/localcognitive> ns4kge:hasConfiguration <configuration/localcognitive/100> .
+<experimentation/localcognitive> ns4kge:hasConfiguration <configuration/localcognitive/101> .
+<experimentation/localcognitive> ns4kge:hasConfiguration <configuration/localcognitive/102> .
+<experimentation/localcognitive> ns4kge:hasConfiguration <configuration/localcognitive/103> .
+<experimentation/localcognitive> ns4kge:hasConfiguration <configuration/localcognitive/104> .
+<experimentation/localcognitive> ns4kge:hasConfiguration <configuration/localcognitive/105> .
+<experimentation/localcognitive> ns4kge:hasConfiguration <configuration/localcognitive/106> .
+<experimentation/localcognitive> ns4kge:hasConfiguration <configuration/localcognitive/107> .
+<experimentation/localcognitive> ns4kge:hasConfiguration <configuration/localcognitive/108> .
+<experimentation/localcognitive> ns4kge:hasConfiguration <configuration/localcognitive/109> .
+<experimentation/localcognitive> ns4kge:hasConfiguration <configuration/localcognitive/110> .
+<experimentation/localcognitive> ns4kge:hasConfiguration <configuration/localcognitive/111> .
+<experimentation/localcognitive> ns4kge:hasConfiguration <configuration/localcognitive/112> .
+<experimentation/localcognitive> ns4kge:hasConfiguration <configuration/localcognitive/113> .
+<experimentation/localcognitive> ns4kge:hasConfiguration <configuration/localcognitive/114> .
+<experimentation/localcognitive> ns4kge:hasConfiguration <configuration/localcognitive/115> .
+<experimentation/localcognitive> ns4kge:hasConfiguration <configuration/localcognitive/116> .
+<experimentation/localcognitive> ns4kge:hasConfiguration <configuration/localcognitive/117> .
+<experimentation/localcognitive> ns4kge:hasConfiguration <configuration/localcognitive/118> .
+<experimentation/localcognitive> ns4kge:hasConfiguration <configuration/localcognitive/119> .
+<experimentation/localcognitive> ns4kge:hasConfiguration <configuration/localcognitive/120> .
+<experimentation/localcognitive> ns4kge:hasConfiguration <configuration/localcognitive/121> .
+<experimentation/localcognitive> ns4kge:hasConfiguration <configuration/localcognitive/122> .
+<experimentation/localcognitive> ns4kge:hasConfiguration <configuration/localcognitive/123> .
+<experimentation/localcognitive> ns4kge:hasConfiguration <configuration/localcognitive/124> .
+<experimentation/localcognitive> ns4kge:hasConfiguration <configuration/localcognitive/125> .
+<experimentation/localcognitive> ns4kge:hasConfiguration <configuration/localcognitive/126> .
+<experimentation/localcognitive> ns4kge:hasConfiguration <configuration/localcognitive/127> .
+<experimentation/localcognitive> ns4kge:hasConfiguration <configuration/localcognitive/128> .
+
+<training-protocol/localcognitive> rdf:type ns4kge:TrainingProtocol .
+<training-protocol/localcognitive> ns4kge:hasOptimizer    <optimizer/adam> .
+<training-protocol/localcognitive> ns4kge:hasLossFunction <loss-function/self-adversarial-negative-sampling-loss> .
+<training-protocol/localcognitive> ns4kge:hasHardware     <hardware/titan-v-gpu> .
+<training-protocol/localcognitive> ns4kge:learningRate "0.00005"^^xsd:decimal .
+
+<configuration/localcognitive/1> rdf:type ns4kge:Configuration .
+<configuration/localcognitive/1> ns4kge:hasTask    <task/link-prediction> .
+<configuration/localcognitive/1> ns4kge:hasDataset <dataset/wn18> .
+<configuration/localcognitive/1> ns4kge:hasMetric  <metric/mr> .
+<configuration/localcognitive/1> ns4kge:hasKGEModel <kge-model/rate> .
+<configuration/localcognitive/1> ns4kge:hasNSMethod <ns-method/local-cognitive-negative-sampling> .
+<configuration/localcognitive/1> ns4kge:result "180"^^xsd:decimal .
+
+<configuration/localcognitive/2> rdf:type ns4kge:Configuration .
+<configuration/localcognitive/2> ns4kge:hasTask    <task/link-prediction> .
+<configuration/localcognitive/2> ns4kge:hasDataset <dataset/wn18> .
+<configuration/localcognitive/2> ns4kge:hasMetric  <metric/mr> .
+<configuration/localcognitive/2> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/localcognitive/2> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/localcognitive/2> ns4kge:result "309"^^xsd:decimal .
+
+<configuration/localcognitive/3> rdf:type ns4kge:Configuration .
+<configuration/localcognitive/3> ns4kge:hasTask    <task/link-prediction> .
+<configuration/localcognitive/3> ns4kge:hasDataset <dataset/wn18> .
+<configuration/localcognitive/3> ns4kge:hasMetric  <metric/mr> .
+<configuration/localcognitive/3> ns4kge:hasKGEModel <kge-model/conve> .
+<configuration/localcognitive/3> ns4kge:result "374"^^xsd:decimal .
+
+<configuration/localcognitive/4> rdf:type ns4kge:Configuration .
+<configuration/localcognitive/4> ns4kge:hasTask    <task/link-prediction> .
+<configuration/localcognitive/4> ns4kge:hasDataset <dataset/wn18> .
+<configuration/localcognitive/4> ns4kge:hasMetric  <metric/mr> .
+<configuration/localcognitive/4> ns4kge:hasKGEModel <kge-model/quate> .
+<configuration/localcognitive/4> ns4kge:result "388"^^xsd:decimal .
+
+<configuration/localcognitive/5> rdf:type ns4kge:Configuration .
+<configuration/localcognitive/5> ns4kge:hasTask    <task/link-prediction> .
+<configuration/localcognitive/5> ns4kge:hasDataset <dataset/wn18> .
+<configuration/localcognitive/5> ns4kge:hasMetric  <metric/mr> .
+<configuration/localcognitive/5> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/localcognitive/5> ns4kge:result "655"^^xsd:decimal .
+
+<configuration/localcognitive/6> rdf:type ns4kge:Configuration .
+<configuration/localcognitive/6> ns4kge:hasTask    <task/link-prediction> .
+<configuration/localcognitive/6> ns4kge:hasDataset <dataset/wn18> .
+<configuration/localcognitive/6> ns4kge:hasMetric  <metric/mrr> .
+<configuration/localcognitive/6> ns4kge:hasKGEModel <kge-model/rate> .
+<configuration/localcognitive/6> ns4kge:hasNSMethod <ns-method/local-cognitive-negative-sampling> .
+<configuration/localcognitive/6> ns4kge:result "0.95"^^xsd:decimal .
+
+<configuration/localcognitive/7> rdf:type ns4kge:Configuration .
+<configuration/localcognitive/7> ns4kge:hasTask    <task/link-prediction> .
+<configuration/localcognitive/7> ns4kge:hasDataset <dataset/wn18> .
+<configuration/localcognitive/7> ns4kge:hasMetric  <metric/mrr> .
+<configuration/localcognitive/7> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/localcognitive/7> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/localcognitive/7> ns4kge:result "0.949"^^xsd:decimal .
+
+<configuration/localcognitive/8> rdf:type ns4kge:Configuration .
+<configuration/localcognitive/8> ns4kge:hasTask    <task/link-prediction> .
+<configuration/localcognitive/8> ns4kge:hasDataset <dataset/wn18> .
+<configuration/localcognitive/8> ns4kge:hasMetric  <metric/mrr> .
+<configuration/localcognitive/8> ns4kge:hasKGEModel <kge-model/quate> .
+<configuration/localcognitive/8> ns4kge:result "0.949"^^xsd:decimal .
+
+<configuration/localcognitive/9> rdf:type ns4kge:Configuration .
+<configuration/localcognitive/9> ns4kge:hasTask    <task/link-prediction> .
+<configuration/localcognitive/9> ns4kge:hasDataset <dataset/wn18> .
+<configuration/localcognitive/9> ns4kge:hasMetric  <metric/mrr> .
+<configuration/localcognitive/9> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/localcognitive/9> ns4kge:result "0.495"^^xsd:decimal .
+
+<configuration/localcognitive/10> rdf:type ns4kge:Configuration .
+<configuration/localcognitive/10> ns4kge:hasTask    <task/link-prediction> .
+<configuration/localcognitive/10> ns4kge:hasDataset <dataset/wn18> .
+<configuration/localcognitive/10> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/localcognitive/10> ns4kge:hasKGEModel <kge-model/rate> .
+<configuration/localcognitive/10> ns4kge:hasNSMethod <ns-method/local-cognitive-negative-sampling> .
+<configuration/localcognitive/10> ns4kge:result "0.962"^^xsd:decimal .
+
+<configuration/localcognitive/11> rdf:type ns4kge:Configuration .
+<configuration/localcognitive/11> ns4kge:hasTask    <task/link-prediction> .
+<configuration/localcognitive/11> ns4kge:hasDataset <dataset/wn18> .
+<configuration/localcognitive/11> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/localcognitive/11> ns4kge:hasKGEModel <kge-model/quate> .
+<configuration/localcognitive/11> ns4kge:result "0.96"^^xsd:decimal .
+
+<configuration/localcognitive/12> rdf:type ns4kge:Configuration .
+<configuration/localcognitive/12> ns4kge:hasTask    <task/link-prediction> .
+<configuration/localcognitive/12> ns4kge:hasDataset <dataset/wn18> .
+<configuration/localcognitive/12> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/localcognitive/12> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/localcognitive/12> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/localcognitive/12> ns4kge:result "0.959"^^xsd:decimal .
+
+<configuration/localcognitive/13> rdf:type ns4kge:Configuration .
+<configuration/localcognitive/13> ns4kge:hasTask    <task/link-prediction> .
+<configuration/localcognitive/13> ns4kge:hasDataset <dataset/wn18> .
+<configuration/localcognitive/13> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/localcognitive/13> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/localcognitive/13> ns4kge:result "0.943"^^xsd:decimal .
+
+<configuration/localcognitive/14> rdf:type ns4kge:Configuration .
+<configuration/localcognitive/14> ns4kge:hasTask    <task/link-prediction> .
+<configuration/localcognitive/14> ns4kge:hasDataset <dataset/wn18> .
+<configuration/localcognitive/14> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/localcognitive/14> ns4kge:hasKGEModel <kge-model/quate> .
+<configuration/localcognitive/14> ns4kge:result "0.954"^^xsd:decimal .
+
+<configuration/localcognitive/15> rdf:type ns4kge:Configuration .
+<configuration/localcognitive/15> ns4kge:hasTask    <task/link-prediction> .
+<configuration/localcognitive/15> ns4kge:hasDataset <dataset/wn18> .
+<configuration/localcognitive/15> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/localcognitive/15> ns4kge:hasKGEModel <kge-model/rate> .
+<configuration/localcognitive/15> ns4kge:hasNSMethod <ns-method/local-cognitive-negative-sampling> .
+<configuration/localcognitive/15> ns4kge:result "0.953"^^xsd:decimal .
+
+<configuration/localcognitive/16> rdf:type ns4kge:Configuration .
+<configuration/localcognitive/16> ns4kge:hasTask    <task/link-prediction> .
+<configuration/localcognitive/16> ns4kge:hasDataset <dataset/wn18> .
+<configuration/localcognitive/16> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/localcognitive/16> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/localcognitive/16> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/localcognitive/16> ns4kge:result "0.952"^^xsd:decimal .
+
+<configuration/localcognitive/17> rdf:type ns4kge:Configuration .
+<configuration/localcognitive/17> ns4kge:hasTask    <task/link-prediction> .
+<configuration/localcognitive/17> ns4kge:hasDataset <dataset/wn18> .
+<configuration/localcognitive/17> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/localcognitive/17> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/localcognitive/17> ns4kge:result "0.888"^^xsd:decimal .
+
+<configuration/localcognitive/18> rdf:type ns4kge:Configuration .
+<configuration/localcognitive/18> ns4kge:hasTask    <task/link-prediction> .
+<configuration/localcognitive/18> ns4kge:hasDataset <dataset/wn18> .
+<configuration/localcognitive/18> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/localcognitive/18> ns4kge:hasKGEModel <kge-model/rate> .
+<configuration/localcognitive/18> ns4kge:hasNSMethod <ns-method/local-cognitive-negative-sampling> .
+<configuration/localcognitive/18> ns4kge:result "0.944"^^xsd:decimal .
+
+<configuration/localcognitive/19> rdf:type ns4kge:Configuration .
+<configuration/localcognitive/19> ns4kge:hasTask    <task/link-prediction> .
+<configuration/localcognitive/19> ns4kge:hasDataset <dataset/wn18> .
+<configuration/localcognitive/19> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/localcognitive/19> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/localcognitive/19> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/localcognitive/19> ns4kge:result "0.944"^^xsd:decimal .
+
+<configuration/localcognitive/20> rdf:type ns4kge:Configuration .
+<configuration/localcognitive/20> ns4kge:hasTask    <task/link-prediction> .
+<configuration/localcognitive/20> ns4kge:hasDataset <dataset/wn18> .
+<configuration/localcognitive/20> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/localcognitive/20> ns4kge:hasKGEModel <kge-model/quate> .
+<configuration/localcognitive/20> ns4kge:result "0.941"^^xsd:decimal .
+
+<configuration/localcognitive/21> rdf:type ns4kge:Configuration .
+<configuration/localcognitive/21> ns4kge:hasTask    <task/link-prediction> .
+<configuration/localcognitive/21> ns4kge:hasDataset <dataset/wn18> .
+<configuration/localcognitive/21> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/localcognitive/21> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/localcognitive/21> ns4kge:result "0.113"^^xsd:decimal .
+
+<configuration/localcognitive/22> rdf:type ns4kge:Configuration .
+<configuration/localcognitive/22> ns4kge:hasTask    <task/link-prediction> .
+<configuration/localcognitive/22> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/localcognitive/22> ns4kge:hasMetric  <metric/mr> .
+<configuration/localcognitive/22> ns4kge:hasKGEModel <kge-model/rate> .
+<configuration/localcognitive/22> ns4kge:hasNSMethod <ns-method/local-cognitive-negative-sampling> .
+<configuration/localcognitive/22> ns4kge:result "24"^^xsd:decimal .
+
+<configuration/localcognitive/23> rdf:type ns4kge:Configuration .
+<configuration/localcognitive/23> ns4kge:hasTask    <task/link-prediction> .
+<configuration/localcognitive/23> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/localcognitive/23> ns4kge:hasMetric  <metric/mr> .
+<configuration/localcognitive/23> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/localcognitive/23> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/localcognitive/23> ns4kge:result "40"^^xsd:decimal .
+
+<configuration/localcognitive/24> rdf:type ns4kge:Configuration .
+<configuration/localcognitive/24> ns4kge:hasTask    <task/link-prediction> .
+<configuration/localcognitive/24> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/localcognitive/24> ns4kge:hasMetric  <metric/mr> .
+<configuration/localcognitive/24> ns4kge:hasKGEModel <kge-model/quate> .
+<configuration/localcognitive/24> ns4kge:result "41"^^xsd:decimal .
+
+<configuration/localcognitive/25> rdf:type ns4kge:Configuration .
+<configuration/localcognitive/25> ns4kge:hasTask    <task/link-prediction> .
+<configuration/localcognitive/25> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/localcognitive/25> ns4kge:hasMetric  <metric/mr> .
+<configuration/localcognitive/25> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/localcognitive/25> ns4kge:result "42"^^xsd:decimal .
+
+<configuration/localcognitive/26> rdf:type ns4kge:Configuration .
+<configuration/localcognitive/26> ns4kge:hasTask    <task/link-prediction> .
+<configuration/localcognitive/26> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/localcognitive/26> ns4kge:hasMetric  <metric/mrr> .
+<configuration/localcognitive/26> ns4kge:hasKGEModel <kge-model/rate> .
+<configuration/localcognitive/26> ns4kge:hasNSMethod <ns-method/local-cognitive-negative-sampling> .
+<configuration/localcognitive/26> ns4kge:result "0.81"^^xsd:decimal .
+
+<configuration/localcognitive/27> rdf:type ns4kge:Configuration .
+<configuration/localcognitive/27> ns4kge:hasTask    <task/link-prediction> .
+<configuration/localcognitive/27> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/localcognitive/27> ns4kge:hasMetric  <metric/mrr> .
+<configuration/localcognitive/27> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/localcognitive/27> ns4kge:result "0.798"^^xsd:decimal .
+
+<configuration/localcognitive/28> rdf:type ns4kge:Configuration .
+<configuration/localcognitive/28> ns4kge:hasTask    <task/link-prediction> .
+<configuration/localcognitive/28> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/localcognitive/28> ns4kge:hasMetric  <metric/mrr> .
+<configuration/localcognitive/28> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/localcognitive/28> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/localcognitive/28> ns4kge:result "0.797"^^xsd:decimal .
+
+<configuration/localcognitive/29> rdf:type ns4kge:Configuration .
+<configuration/localcognitive/29> ns4kge:hasTask    <task/link-prediction> .
+<configuration/localcognitive/29> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/localcognitive/29> ns4kge:hasMetric  <metric/mrr> .
+<configuration/localcognitive/29> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/localcognitive/29> ns4kge:result "0.463"^^xsd:decimal .
+
+<configuration/localcognitive/30> rdf:type ns4kge:Configuration .
+<configuration/localcognitive/30> ns4kge:hasTask    <task/link-prediction> .
+<configuration/localcognitive/30> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/localcognitive/30> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/localcognitive/30> ns4kge:hasKGEModel <kge-model/rate> .
+<configuration/localcognitive/30> ns4kge:hasNSMethod <ns-method/local-cognitive-negative-sampling> .
+<configuration/localcognitive/30> ns4kge:result "0.898"^^xsd:decimal .
+
+<configuration/localcognitive/31> rdf:type ns4kge:Configuration .
+<configuration/localcognitive/31> ns4kge:hasTask    <task/link-prediction> .
+<configuration/localcognitive/31> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/localcognitive/31> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/localcognitive/31> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/localcognitive/31> ns4kge:result "0.893"^^xsd:decimal .
+
+<configuration/localcognitive/32> rdf:type ns4kge:Configuration .
+<configuration/localcognitive/32> ns4kge:hasTask    <task/link-prediction> .
+<configuration/localcognitive/32> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/localcognitive/32> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/localcognitive/32> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/localcognitive/32> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/localcognitive/32> ns4kge:result "0.884"^^xsd:decimal .
+
+<configuration/localcognitive/33> rdf:type ns4kge:Configuration .
+<configuration/localcognitive/33> ns4kge:hasTask    <task/link-prediction> .
+<configuration/localcognitive/33> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/localcognitive/33> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/localcognitive/33> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/localcognitive/33> ns4kge:result "0.749"^^xsd:decimal .
+
+<configuration/localcognitive/34> rdf:type ns4kge:Configuration .
+<configuration/localcognitive/34> ns4kge:hasTask    <task/link-prediction> .
+<configuration/localcognitive/34> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/localcognitive/34> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/localcognitive/34> ns4kge:hasKGEModel <kge-model/rate> .
+<configuration/localcognitive/34> ns4kge:hasNSMethod <ns-method/local-cognitive-negative-sampling> .
+<configuration/localcognitive/34> ns4kge:result "0.859"^^xsd:decimal .
+
+<configuration/localcognitive/35> rdf:type ns4kge:Configuration .
+<configuration/localcognitive/35> ns4kge:hasTask    <task/link-prediction> .
+<configuration/localcognitive/35> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/localcognitive/35> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/localcognitive/35> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/localcognitive/35> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/localcognitive/35> ns4kge:result "0.83"^^xsd:decimal .
+
+<configuration/localcognitive/36> rdf:type ns4kge:Configuration .
+<configuration/localcognitive/36> ns4kge:hasTask    <task/link-prediction> .
+<configuration/localcognitive/36> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/localcognitive/36> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/localcognitive/36> ns4kge:hasKGEModel <kge-model/quate> .
+<configuration/localcognitive/36> ns4kge:result "0.821"^^xsd:decimal .
+
+<configuration/localcognitive/37> rdf:type ns4kge:Configuration .
+<configuration/localcognitive/37> ns4kge:hasTask    <task/link-prediction> .
+<configuration/localcognitive/37> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/localcognitive/37> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/localcognitive/37> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/localcognitive/37> ns4kge:result "0.578"^^xsd:decimal .
+
+<configuration/localcognitive/38> rdf:type ns4kge:Configuration .
+<configuration/localcognitive/38> ns4kge:hasTask    <task/link-prediction> .
+<configuration/localcognitive/38> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/localcognitive/38> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/localcognitive/38> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/localcognitive/38> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/localcognitive/38> ns4kge:result "0.746"^^xsd:decimal .
+
+<configuration/localcognitive/39> rdf:type ns4kge:Configuration .
+<configuration/localcognitive/39> ns4kge:hasTask    <task/link-prediction> .
+<configuration/localcognitive/39> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/localcognitive/39> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/localcognitive/39> ns4kge:hasKGEModel <kge-model/rate> .
+<configuration/localcognitive/39> ns4kge:hasNSMethod <ns-method/local-cognitive-negative-sampling> .
+<configuration/localcognitive/39> ns4kge:result "0.724"^^xsd:decimal .
+
+<configuration/localcognitive/40> rdf:type ns4kge:Configuration .
+<configuration/localcognitive/40> ns4kge:hasTask    <task/link-prediction> .
+<configuration/localcognitive/40> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/localcognitive/40> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/localcognitive/40> ns4kge:hasKGEModel <kge-model/quate> .
+<configuration/localcognitive/40> ns4kge:result "0.7"^^xsd:decimal .
+
+<configuration/localcognitive/41> rdf:type ns4kge:Configuration .
+<configuration/localcognitive/41> ns4kge:hasTask    <task/link-prediction> .
+<configuration/localcognitive/41> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/localcognitive/41> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/localcognitive/41> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/localcognitive/41> ns4kge:result "0.297"^^xsd:decimal .
+
+<configuration/localcognitive/42> rdf:type ns4kge:Configuration .
+<configuration/localcognitive/42> ns4kge:hasTask    <task/link-prediction> .
+<configuration/localcognitive/42> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/localcognitive/42> ns4kge:hasMetric  <metric/mr> .
+<configuration/localcognitive/42> ns4kge:hasKGEModel <kge-model/rate> .
+<configuration/localcognitive/42> ns4kge:hasNSMethod <ns-method/local-cognitive-negative-sampling> .
+<configuration/localcognitive/42> ns4kge:result "2860"^^xsd:decimal .
+
+<configuration/localcognitive/43> rdf:type ns4kge:Configuration .
+<configuration/localcognitive/43> ns4kge:hasTask    <task/link-prediction> .
+<configuration/localcognitive/43> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/localcognitive/43> ns4kge:hasMetric  <metric/mr> .
+<configuration/localcognitive/43> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/localcognitive/43> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/localcognitive/43> ns4kge:result "3340"^^xsd:decimal .
+
+<configuration/localcognitive/44> rdf:type ns4kge:Configuration .
+<configuration/localcognitive/44> ns4kge:hasTask    <task/link-prediction> .
+<configuration/localcognitive/44> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/localcognitive/44> ns4kge:hasMetric  <metric/mr> .
+<configuration/localcognitive/44> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/localcognitive/44> ns4kge:result "3384"^^xsd:decimal .
+
+<configuration/localcognitive/45> rdf:type ns4kge:Configuration .
+<configuration/localcognitive/45> ns4kge:hasTask    <task/link-prediction> .
+<configuration/localcognitive/45> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/localcognitive/45> ns4kge:hasMetric  <metric/mr> .
+<configuration/localcognitive/45> ns4kge:hasKGEModel <kge-model/quate> .
+<configuration/localcognitive/45> ns4kge:result "3472"^^xsd:decimal .
+
+<configuration/localcognitive/46> rdf:type ns4kge:Configuration .
+<configuration/localcognitive/46> ns4kge:hasTask    <task/link-prediction> .
+<configuration/localcognitive/46> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/localcognitive/46> ns4kge:hasMetric  <metric/mr> .
+<configuration/localcognitive/46> ns4kge:hasKGEModel <kge-model/conve> .
+<configuration/localcognitive/46> ns4kge:result "4187"^^xsd:decimal .
+
+<configuration/localcognitive/47> rdf:type ns4kge:Configuration .
+<configuration/localcognitive/47> ns4kge:hasTask    <task/link-prediction> .
+<configuration/localcognitive/47> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/localcognitive/47> ns4kge:hasMetric  <metric/mrr> .
+<configuration/localcognitive/47> ns4kge:hasKGEModel <kge-model/rate> .
+<configuration/localcognitive/47> ns4kge:hasNSMethod <ns-method/local-cognitive-negative-sampling> .
+<configuration/localcognitive/47> ns4kge:result "0.488"^^xsd:decimal .
+
+<configuration/localcognitive/48> rdf:type ns4kge:Configuration .
+<configuration/localcognitive/48> ns4kge:hasTask    <task/link-prediction> .
+<configuration/localcognitive/48> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/localcognitive/48> ns4kge:hasMetric  <metric/mrr> .
+<configuration/localcognitive/48> ns4kge:hasKGEModel <kge-model/quate> .
+<configuration/localcognitive/48> ns4kge:result "0.481"^^xsd:decimal .
+
+<configuration/localcognitive/49> rdf:type ns4kge:Configuration .
+<configuration/localcognitive/49> ns4kge:hasTask    <task/link-prediction> .
+<configuration/localcognitive/49> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/localcognitive/49> ns4kge:hasMetric  <metric/mrr> .
+<configuration/localcognitive/49> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/localcognitive/49> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/localcognitive/49> ns4kge:result "0.476"^^xsd:decimal .
+
+<configuration/localcognitive/50> rdf:type ns4kge:Configuration .
+<configuration/localcognitive/50> ns4kge:hasTask    <task/link-prediction> .
+<configuration/localcognitive/50> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/localcognitive/50> ns4kge:hasMetric  <metric/mrr> .
+<configuration/localcognitive/50> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/localcognitive/50> ns4kge:result "0.226"^^xsd:decimal .
+
+<configuration/localcognitive/51> rdf:type ns4kge:Configuration .
+<configuration/localcognitive/51> ns4kge:hasTask    <task/link-prediction> .
+<configuration/localcognitive/51> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/localcognitive/51> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/localcognitive/51> ns4kge:hasKGEModel <kge-model/rate> .
+<configuration/localcognitive/51> ns4kge:hasNSMethod <ns-method/local-cognitive-negative-sampling> .
+<configuration/localcognitive/51> ns4kge:result "0.59"^^xsd:decimal .
+
+<configuration/localcognitive/52> rdf:type ns4kge:Configuration .
+<configuration/localcognitive/52> ns4kge:hasTask    <task/link-prediction> .
+<configuration/localcognitive/52> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/localcognitive/52> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/localcognitive/52> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/localcognitive/52> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/localcognitive/52> ns4kge:result "0.571"^^xsd:decimal .
+
+<configuration/localcognitive/53> rdf:type ns4kge:Configuration .
+<configuration/localcognitive/53> ns4kge:hasTask    <task/link-prediction> .
+<configuration/localcognitive/53> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/localcognitive/53> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/localcognitive/53> ns4kge:hasKGEModel <kge-model/quate> .
+<configuration/localcognitive/53> ns4kge:result "0.564"^^xsd:decimal .
+
+<configuration/localcognitive/54> rdf:type ns4kge:Configuration .
+<configuration/localcognitive/54> ns4kge:hasTask    <task/link-prediction> .
+<configuration/localcognitive/54> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/localcognitive/54> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/localcognitive/54> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/localcognitive/54> ns4kge:result "0.501"^^xsd:decimal .
+
+<configuration/localcognitive/55> rdf:type ns4kge:Configuration .
+<configuration/localcognitive/55> ns4kge:hasTask    <task/link-prediction> .
+<configuration/localcognitive/55> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/localcognitive/55> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/localcognitive/55> ns4kge:hasKGEModel <kge-model/rate> .
+<configuration/localcognitive/55> ns4kge:hasNSMethod <ns-method/local-cognitive-negative-sampling> .
+<configuration/localcognitive/55> ns4kge:result "0.506"^^xsd:decimal .
+
+<configuration/localcognitive/56> rdf:type ns4kge:Configuration .
+<configuration/localcognitive/56> ns4kge:hasTask    <task/link-prediction> .
+<configuration/localcognitive/56> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/localcognitive/56> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/localcognitive/56> ns4kge:hasKGEModel <kge-model/quate> .
+<configuration/localcognitive/56> ns4kge:result "0.5"^^xsd:decimal .
+
+<configuration/localcognitive/57> rdf:type ns4kge:Configuration .
+<configuration/localcognitive/57> ns4kge:hasTask    <task/link-prediction> .
+<configuration/localcognitive/57> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/localcognitive/57> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/localcognitive/57> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/localcognitive/57> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/localcognitive/57> ns4kge:result "0.492"^^xsd:decimal .
+
+<configuration/localcognitive/58> rdf:type ns4kge:Configuration .
+<configuration/localcognitive/58> ns4kge:hasTask    <task/link-prediction> .
+<configuration/localcognitive/58> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/localcognitive/58> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/localcognitive/58> ns4kge:hasKGEModel <kge-model/rate> .
+<configuration/localcognitive/58> ns4kge:hasNSMethod <ns-method/local-cognitive-negative-sampling> .
+<configuration/localcognitive/58> ns4kge:result "0.441"^^xsd:decimal .
+
+<configuration/localcognitive/59> rdf:type ns4kge:Configuration .
+<configuration/localcognitive/59> ns4kge:hasTask    <task/link-prediction> .
+<configuration/localcognitive/59> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/localcognitive/59> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/localcognitive/59> ns4kge:hasKGEModel <kge-model/quate> .
+<configuration/localcognitive/59> ns4kge:result "0.436"^^xsd:decimal .
+
+<configuration/localcognitive/60> rdf:type ns4kge:Configuration .
+<configuration/localcognitive/60> ns4kge:hasTask    <task/link-prediction> .
+<configuration/localcognitive/60> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/localcognitive/60> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/localcognitive/60> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/localcognitive/60> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/localcognitive/60> ns4kge:result "0.428"^^xsd:decimal .
+
+<configuration/localcognitive/61> rdf:type ns4kge:Configuration .
+<configuration/localcognitive/61> ns4kge:hasTask    <task/link-prediction> .
+<configuration/localcognitive/61> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/localcognitive/61> ns4kge:hasMetric  <metric/mr> .
+<configuration/localcognitive/61> ns4kge:hasKGEModel <kge-model/rate> .
+<configuration/localcognitive/61> ns4kge:hasNSMethod <ns-method/local-cognitive-negative-sampling> .
+<configuration/localcognitive/61> ns4kge:result "172"^^xsd:decimal .
+
+<configuration/localcognitive/62> rdf:type ns4kge:Configuration .
+<configuration/localcognitive/62> ns4kge:hasTask    <task/link-prediction> .
+<configuration/localcognitive/62> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/localcognitive/62> ns4kge:hasMetric  <metric/mr> .
+<configuration/localcognitive/62> ns4kge:hasKGEModel <kge-model/quate> .
+<configuration/localcognitive/62> ns4kge:result "176"^^xsd:decimal .
+
+<configuration/localcognitive/63> rdf:type ns4kge:Configuration .
+<configuration/localcognitive/63> ns4kge:hasTask    <task/link-prediction> .
+<configuration/localcognitive/63> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/localcognitive/63> ns4kge:hasMetric  <metric/mr> .
+<configuration/localcognitive/63> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/localcognitive/63> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/localcognitive/63> ns4kge:result "177"^^xsd:decimal .
+
+<configuration/localcognitive/64> rdf:type ns4kge:Configuration .
+<configuration/localcognitive/64> ns4kge:hasTask    <task/link-prediction> .
+<configuration/localcognitive/64> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/localcognitive/64> ns4kge:hasMetric  <metric/mr> .
+<configuration/localcognitive/64> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/localcognitive/64> ns4kge:result "357"^^xsd:decimal .
+
+<configuration/localcognitive/65> rdf:type ns4kge:Configuration .
+<configuration/localcognitive/65> ns4kge:hasTask    <task/link-prediction> .
+<configuration/localcognitive/65> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/localcognitive/65> ns4kge:hasMetric  <metric/mrr> .
+<configuration/localcognitive/65> ns4kge:hasKGEModel <kge-model/rate> .
+<configuration/localcognitive/65> ns4kge:hasNSMethod <ns-method/local-cognitive-negative-sampling> .
+<configuration/localcognitive/65> ns4kge:result "0.344"^^xsd:decimal .
+
+<configuration/localcognitive/66> rdf:type ns4kge:Configuration .
+<configuration/localcognitive/66> ns4kge:hasTask    <task/link-prediction> .
+<configuration/localcognitive/66> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/localcognitive/66> ns4kge:hasMetric  <metric/mrr> .
+<configuration/localcognitive/66> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/localcognitive/66> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/localcognitive/66> ns4kge:result "0.338"^^xsd:decimal .
+
+<configuration/localcognitive/67> rdf:type ns4kge:Configuration .
+<configuration/localcognitive/67> ns4kge:hasTask    <task/link-prediction> .
+<configuration/localcognitive/67> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/localcognitive/67> ns4kge:hasMetric  <metric/mrr> .
+<configuration/localcognitive/67> ns4kge:hasKGEModel <kge-model/conve> .
+<configuration/localcognitive/67> ns4kge:result "0.325"^^xsd:decimal .
+
+<configuration/localcognitive/68> rdf:type ns4kge:Configuration .
+<configuration/localcognitive/68> ns4kge:hasTask    <task/link-prediction> .
+<configuration/localcognitive/68> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/localcognitive/68> ns4kge:hasMetric  <metric/mrr> .
+<configuration/localcognitive/68> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/localcognitive/68> ns4kge:result "0.294"^^xsd:decimal .
+
+<configuration/localcognitive/69> rdf:type ns4kge:Configuration .
+<configuration/localcognitive/69> ns4kge:hasTask    <task/link-prediction> .
+<configuration/localcognitive/69> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/localcognitive/69> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/localcognitive/69> ns4kge:hasKGEModel <kge-model/rate> .
+<configuration/localcognitive/69> ns4kge:hasNSMethod <ns-method/local-cognitive-negative-sampling> .
+<configuration/localcognitive/69> ns4kge:result "0.541"^^xsd:decimal .
+
+<configuration/localcognitive/70> rdf:type ns4kge:Configuration .
+<configuration/localcognitive/70> ns4kge:hasTask    <task/link-prediction> .
+<configuration/localcognitive/70> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/localcognitive/70> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/localcognitive/70> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/localcognitive/70> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/localcognitive/70> ns4kge:result "0.533"^^xsd:decimal .
+
+<configuration/localcognitive/71> rdf:type ns4kge:Configuration .
+<configuration/localcognitive/71> ns4kge:hasTask    <task/link-prediction> .
+<configuration/localcognitive/71> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/localcognitive/71> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/localcognitive/71> ns4kge:hasKGEModel <kge-model/conve> .
+<configuration/localcognitive/71> ns4kge:result "0.501"^^xsd:decimal .
+
+<configuration/localcognitive/72> rdf:type ns4kge:Configuration .
+<configuration/localcognitive/72> ns4kge:hasTask    <task/link-prediction> .
+<configuration/localcognitive/72> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/localcognitive/72> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/localcognitive/72> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/localcognitive/72> ns4kge:result "0.465"^^xsd:decimal .
+
+<configuration/localcognitive/73> rdf:type ns4kge:Configuration .
+<configuration/localcognitive/73> ns4kge:hasTask    <task/link-prediction> .
+<configuration/localcognitive/73> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/localcognitive/73> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/localcognitive/73> ns4kge:hasKGEModel <kge-model/rate> .
+<configuration/localcognitive/73> ns4kge:hasNSMethod <ns-method/local-cognitive-negative-sampling> .
+<configuration/localcognitive/73> ns4kge:result "0.382"^^xsd:decimal .
+
+<configuration/localcognitive/74> rdf:type ns4kge:Configuration .
+<configuration/localcognitive/74> ns4kge:hasTask    <task/link-prediction> .
+<configuration/localcognitive/74> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/localcognitive/74> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/localcognitive/74> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/localcognitive/74> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/localcognitive/74> ns4kge:result "0.375"^^xsd:decimal .
+
+<configuration/localcognitive/75> rdf:type ns4kge:Configuration .
+<configuration/localcognitive/75> ns4kge:hasTask    <task/link-prediction> .
+<configuration/localcognitive/75> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/localcognitive/75> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/localcognitive/75> ns4kge:hasKGEModel <kge-model/conve> .
+<configuration/localcognitive/75> ns4kge:result "0.356"^^xsd:decimal .
+
+<configuration/localcognitive/76> rdf:type ns4kge:Configuration .
+<configuration/localcognitive/76> ns4kge:hasTask    <task/link-prediction> .
+<configuration/localcognitive/76> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/localcognitive/76> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/localcognitive/76> ns4kge:hasKGEModel <kge-model/rate> .
+<configuration/localcognitive/76> ns4kge:hasNSMethod <ns-method/local-cognitive-negative-sampling> .
+<configuration/localcognitive/76> ns4kge:result "0.261"^^xsd:decimal .
+
+<configuration/localcognitive/77> rdf:type ns4kge:Configuration .
+<configuration/localcognitive/77> ns4kge:hasTask    <task/link-prediction> .
+<configuration/localcognitive/77> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/localcognitive/77> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/localcognitive/77> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/localcognitive/77> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/localcognitive/77> ns4kge:result "0.241"^^xsd:decimal .
+
+<configuration/localcognitive/78> rdf:type ns4kge:Configuration .
+<configuration/localcognitive/78> ns4kge:hasTask    <task/link-prediction> .
+<configuration/localcognitive/78> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/localcognitive/78> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/localcognitive/78> ns4kge:hasKGEModel <kge-model/conve> .
+<configuration/localcognitive/78> ns4kge:result "0.237"^^xsd:decimal .
+
+<configuration/localcognitive/79> rdf:type ns4kge:Configuration .
+<configuration/localcognitive/79> ns4kge:hasTask    <task/link-prediction> .
+<configuration/localcognitive/79> ns4kge:hasDataset <dataset/wn18> .
+<configuration/localcognitive/79> ns4kge:hasMetric  <metric/mrr> .
+<configuration/localcognitive/79> ns4kge:hasKGEModel <kge-model/conve> .
+<configuration/localcognitive/79> ns4kge:result "0.943"^^xsd:decimal .
+
+<configuration/localcognitive/80> rdf:type ns4kge:Configuration .
+<configuration/localcognitive/80> ns4kge:hasTask    <task/link-prediction> .
+<configuration/localcognitive/80> ns4kge:hasDataset <dataset/wn18> .
+<configuration/localcognitive/80> ns4kge:hasMetric  <metric/mrr> .
+<configuration/localcognitive/80> ns4kge:hasKGEModel <kge-model/hole> .
+<configuration/localcognitive/80> ns4kge:result "0.938"^^xsd:decimal .
+
+<configuration/localcognitive/81> rdf:type ns4kge:Configuration .
+<configuration/localcognitive/81> ns4kge:hasTask    <task/link-prediction> .
+<configuration/localcognitive/81> ns4kge:hasDataset <dataset/wn18> .
+<configuration/localcognitive/81> ns4kge:hasMetric  <metric/mrr> .
+<configuration/localcognitive/81> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/localcognitive/81> ns4kge:result "0.941"^^xsd:decimal .
+
+<configuration/localcognitive/82> rdf:type ns4kge:Configuration .
+<configuration/localcognitive/82> ns4kge:hasTask    <task/link-prediction> .
+<configuration/localcognitive/82> ns4kge:hasDataset <dataset/wn18> .
+<configuration/localcognitive/82> ns4kge:hasMetric  <metric/mrr> .
+<configuration/localcognitive/82> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/localcognitive/82> ns4kge:result "0.797"^^xsd:decimal .
+
+<configuration/localcognitive/83> rdf:type ns4kge:Configuration .
+<configuration/localcognitive/83> ns4kge:hasTask    <task/link-prediction> .
+<configuration/localcognitive/83> ns4kge:hasDataset <dataset/wn18> .
+<configuration/localcognitive/83> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/localcognitive/83> ns4kge:hasKGEModel <kge-model/conve> .
+<configuration/localcognitive/83> ns4kge:result "0.956"^^xsd:decimal .
+
+<configuration/localcognitive/84> rdf:type ns4kge:Configuration .
+<configuration/localcognitive/84> ns4kge:hasTask    <task/link-prediction> .
+<configuration/localcognitive/84> ns4kge:hasDataset <dataset/wn18> .
+<configuration/localcognitive/84> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/localcognitive/84> ns4kge:hasKGEModel <kge-model/hole> .
+<configuration/localcognitive/84> ns4kge:result "0.949"^^xsd:decimal .
+
+<configuration/localcognitive/85> rdf:type ns4kge:Configuration .
+<configuration/localcognitive/85> ns4kge:hasTask    <task/link-prediction> .
+<configuration/localcognitive/85> ns4kge:hasDataset <dataset/wn18> .
+<configuration/localcognitive/85> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/localcognitive/85> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/localcognitive/85> ns4kge:result "0.947"^^xsd:decimal .
+
+<configuration/localcognitive/86> rdf:type ns4kge:Configuration .
+<configuration/localcognitive/86> ns4kge:hasTask    <task/link-prediction> .
+<configuration/localcognitive/86> ns4kge:hasDataset <dataset/wn18> .
+<configuration/localcognitive/86> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/localcognitive/86> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/localcognitive/86> ns4kge:result "0.946"^^xsd:decimal .
+
+<configuration/localcognitive/87> rdf:type ns4kge:Configuration .
+<configuration/localcognitive/87> ns4kge:hasTask    <task/link-prediction> .
+<configuration/localcognitive/87> ns4kge:hasDataset <dataset/wn18> .
+<configuration/localcognitive/87> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/localcognitive/87> ns4kge:hasKGEModel <kge-model/conve> .
+<configuration/localcognitive/87> ns4kge:result "0.946"^^xsd:decimal .
+
+<configuration/localcognitive/88> rdf:type ns4kge:Configuration .
+<configuration/localcognitive/88> ns4kge:hasTask    <task/link-prediction> .
+<configuration/localcognitive/88> ns4kge:hasDataset <dataset/wn18> .
+<configuration/localcognitive/88> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/localcognitive/88> ns4kge:hasKGEModel <kge-model/hole> .
+<configuration/localcognitive/88> ns4kge:result "0.945"^^xsd:decimal .
+
+<configuration/localcognitive/89> rdf:type ns4kge:Configuration .
+<configuration/localcognitive/89> ns4kge:hasTask    <task/link-prediction> .
+<configuration/localcognitive/89> ns4kge:hasDataset <dataset/wn18> .
+<configuration/localcognitive/89> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/localcognitive/89> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/localcognitive/89> ns4kge:result "0.945"^^xsd:decimal .
+
+<configuration/localcognitive/90> rdf:type ns4kge:Configuration .
+<configuration/localcognitive/90> ns4kge:hasTask    <task/link-prediction> .
+<configuration/localcognitive/90> ns4kge:hasDataset <dataset/wn18> .
+<configuration/localcognitive/90> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/localcognitive/90> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/localcognitive/90> ns4kge:result "0.936"^^xsd:decimal .
+
+<configuration/localcognitive/91> rdf:type ns4kge:Configuration .
+<configuration/localcognitive/91> ns4kge:hasTask    <task/link-prediction> .
+<configuration/localcognitive/91> ns4kge:hasDataset <dataset/wn18> .
+<configuration/localcognitive/91> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/localcognitive/91> ns4kge:hasKGEModel <kge-model/conve> .
+<configuration/localcognitive/91> ns4kge:result "0.935"^^xsd:decimal .
+
+<configuration/localcognitive/92> rdf:type ns4kge:Configuration .
+<configuration/localcognitive/92> ns4kge:hasTask    <task/link-prediction> .
+<configuration/localcognitive/92> ns4kge:hasDataset <dataset/wn18> .
+<configuration/localcognitive/92> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/localcognitive/92> ns4kge:hasKGEModel <kge-model/hole> .
+<configuration/localcognitive/92> ns4kge:result "0.93"^^xsd:decimal .
+
+<configuration/localcognitive/93> rdf:type ns4kge:Configuration .
+<configuration/localcognitive/93> ns4kge:hasTask    <task/link-prediction> .
+<configuration/localcognitive/93> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/localcognitive/93> ns4kge:hasMetric  <metric/mr> .
+<configuration/localcognitive/93> ns4kge:hasKGEModel <kge-model/conve> .
+<configuration/localcognitive/93> ns4kge:result "51"^^xsd:decimal .
+
+<configuration/localcognitive/94> rdf:type ns4kge:Configuration .
+<configuration/localcognitive/94> ns4kge:hasTask    <task/link-prediction> .
+<configuration/localcognitive/94> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/localcognitive/94> ns4kge:hasMetric  <metric/mrr> .
+<configuration/localcognitive/94> ns4kge:hasKGEModel <kge-model/quate> .
+<configuration/localcognitive/94> ns4kge:result "0.77"^^xsd:decimal .
+
+<configuration/localcognitive/95> rdf:type ns4kge:Configuration .
+<configuration/localcognitive/95> ns4kge:hasTask    <task/link-prediction> .
+<configuration/localcognitive/95> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/localcognitive/95> ns4kge:hasMetric  <metric/mrr> .
+<configuration/localcognitive/95> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/localcognitive/95> ns4kge:result "0.692"^^xsd:decimal .
+
+<configuration/localcognitive/96> rdf:type ns4kge:Configuration .
+<configuration/localcognitive/96> ns4kge:hasTask    <task/link-prediction> .
+<configuration/localcognitive/96> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/localcognitive/96> ns4kge:hasMetric  <metric/mrr> .
+<configuration/localcognitive/96> ns4kge:hasKGEModel <kge-model/conve> .
+<configuration/localcognitive/96> ns4kge:result "0.657"^^xsd:decimal .
+
+<configuration/localcognitive/97> rdf:type ns4kge:Configuration .
+<configuration/localcognitive/97> ns4kge:hasTask    <task/link-prediction> .
+<configuration/localcognitive/97> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/localcognitive/97> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/localcognitive/97> ns4kge:hasKGEModel <kge-model/quate> .
+<configuration/localcognitive/97> ns4kge:result "0.878"^^xsd:decimal .
+
+<configuration/localcognitive/98> rdf:type ns4kge:Configuration .
+<configuration/localcognitive/98> ns4kge:hasTask    <task/link-prediction> .
+<configuration/localcognitive/98> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/localcognitive/98> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/localcognitive/98> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/localcognitive/98> ns4kge:result "0.84"^^xsd:decimal .
+
+<configuration/localcognitive/99> rdf:type ns4kge:Configuration .
+<configuration/localcognitive/99> ns4kge:hasTask    <task/link-prediction> .
+<configuration/localcognitive/99> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/localcognitive/99> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/localcognitive/99> ns4kge:hasKGEModel <kge-model/conve> .
+<configuration/localcognitive/99> ns4kge:result "0.831"^^xsd:decimal .
+
+<configuration/localcognitive/100> rdf:type ns4kge:Configuration .
+<configuration/localcognitive/100> ns4kge:hasTask    <task/link-prediction> .
+<configuration/localcognitive/100> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/localcognitive/100> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/localcognitive/100> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/localcognitive/100> ns4kge:result "0.759"^^xsd:decimal .
+
+<configuration/localcognitive/101> rdf:type ns4kge:Configuration .
+<configuration/localcognitive/101> ns4kge:hasTask    <task/link-prediction> .
+<configuration/localcognitive/101> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/localcognitive/101> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/localcognitive/101> ns4kge:hasKGEModel <kge-model/conve> .
+<configuration/localcognitive/101> ns4kge:result "0.723"^^xsd:decimal .
+
+<configuration/localcognitive/102> rdf:type ns4kge:Configuration .
+<configuration/localcognitive/102> ns4kge:hasTask    <task/link-prediction> .
+<configuration/localcognitive/102> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/localcognitive/102> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/localcognitive/102> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/localcognitive/102> ns4kge:result "0.599"^^xsd:decimal .
+
+<configuration/localcognitive/103> rdf:type ns4kge:Configuration .
+<configuration/localcognitive/103> ns4kge:hasTask    <task/link-prediction> .
+<configuration/localcognitive/103> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/localcognitive/103> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/localcognitive/103> ns4kge:hasKGEModel <kge-model/conve> .
+<configuration/localcognitive/103> ns4kge:result "0.558"^^xsd:decimal .
+
+<configuration/localcognitive/104> rdf:type ns4kge:Configuration .
+<configuration/localcognitive/104> ns4kge:hasTask    <task/link-prediction> .
+<configuration/localcognitive/104> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/localcognitive/104> ns4kge:hasMetric  <metric/mrr> .
+<configuration/localcognitive/104> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/localcognitive/104> ns4kge:result "0.44"^^xsd:decimal .
+
+<configuration/localcognitive/105> rdf:type ns4kge:Configuration .
+<configuration/localcognitive/105> ns4kge:hasTask    <task/link-prediction> .
+<configuration/localcognitive/105> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/localcognitive/105> ns4kge:hasMetric  <metric/mrr> .
+<configuration/localcognitive/105> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/localcognitive/105> ns4kge:result "0.43"^^xsd:decimal .
+
+<configuration/localcognitive/106> rdf:type ns4kge:Configuration .
+<configuration/localcognitive/106> ns4kge:hasTask    <task/link-prediction> .
+<configuration/localcognitive/106> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/localcognitive/106> ns4kge:hasMetric  <metric/mrr> .
+<configuration/localcognitive/106> ns4kge:hasKGEModel <kge-model/conve> .
+<configuration/localcognitive/106> ns4kge:result "0.43"^^xsd:decimal .
+
+<configuration/localcognitive/107> rdf:type ns4kge:Configuration .
+<configuration/localcognitive/107> ns4kge:hasTask    <task/link-prediction> .
+<configuration/localcognitive/107> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/localcognitive/107> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/localcognitive/107> ns4kge:hasKGEModel <kge-model/conve> .
+<configuration/localcognitive/107> ns4kge:result "0.52"^^xsd:decimal .
+
+<configuration/localcognitive/108> rdf:type ns4kge:Configuration .
+<configuration/localcognitive/108> ns4kge:hasTask    <task/link-prediction> .
+<configuration/localcognitive/108> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/localcognitive/108> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/localcognitive/108> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/localcognitive/108> ns4kge:result "0.51"^^xsd:decimal .
+
+<configuration/localcognitive/109> rdf:type ns4kge:Configuration .
+<configuration/localcognitive/109> ns4kge:hasTask    <task/link-prediction> .
+<configuration/localcognitive/109> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/localcognitive/109> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/localcognitive/109> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/localcognitive/109> ns4kge:result "0.46"^^xsd:decimal .
+
+<configuration/localcognitive/110> rdf:type ns4kge:Configuration .
+<configuration/localcognitive/110> ns4kge:hasTask    <task/link-prediction> .
+<configuration/localcognitive/110> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/localcognitive/110> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/localcognitive/110> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/localcognitive/110> ns4kge:result "0.44"^^xsd:decimal .
+
+<configuration/localcognitive/111> rdf:type ns4kge:Configuration .
+<configuration/localcognitive/111> ns4kge:hasTask    <task/link-prediction> .
+<configuration/localcognitive/111> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/localcognitive/111> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/localcognitive/111> ns4kge:hasKGEModel <kge-model/conve> .
+<configuration/localcognitive/111> ns4kge:result "0.44"^^xsd:decimal .
+
+<configuration/localcognitive/112> rdf:type ns4kge:Configuration .
+<configuration/localcognitive/112> ns4kge:hasTask    <task/link-prediction> .
+<configuration/localcognitive/112> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/localcognitive/112> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/localcognitive/112> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/localcognitive/112> ns4kge:result "0.41"^^xsd:decimal .
+
+<configuration/localcognitive/113> rdf:type ns4kge:Configuration .
+<configuration/localcognitive/113> ns4kge:hasTask    <task/link-prediction> .
+<configuration/localcognitive/113> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/localcognitive/113> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/localcognitive/113> ns4kge:hasKGEModel <kge-model/conve> .
+<configuration/localcognitive/113> ns4kge:result "0.4"^^xsd:decimal .
+
+<configuration/localcognitive/114> rdf:type ns4kge:Configuration .
+<configuration/localcognitive/114> ns4kge:hasTask    <task/link-prediction> .
+<configuration/localcognitive/114> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/localcognitive/114> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/localcognitive/114> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/localcognitive/114> ns4kge:result "0.39"^^xsd:decimal .
+
+<configuration/localcognitive/115> rdf:type ns4kge:Configuration .
+<configuration/localcognitive/115> ns4kge:hasTask    <task/link-prediction> .
+<configuration/localcognitive/115> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/localcognitive/115> ns4kge:hasMetric  <metric/mr> .
+<configuration/localcognitive/115> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/localcognitive/115> ns4kge:result "5110"^^xsd:decimal .
+
+<configuration/localcognitive/116> rdf:type ns4kge:Configuration .
+<configuration/localcognitive/116> ns4kge:hasTask    <task/link-prediction> .
+<configuration/localcognitive/116> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/localcognitive/116> ns4kge:hasMetric  <metric/mr> .
+<configuration/localcognitive/116> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/localcognitive/116> ns4kge:result "5261"^^xsd:decimal .
+
+<configuration/localcognitive/117> rdf:type ns4kge:Configuration .
+<configuration/localcognitive/117> ns4kge:hasTask    <task/link-prediction> .
+<configuration/localcognitive/117> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/localcognitive/117> ns4kge:hasMetric  <metric/mrr> .
+<configuration/localcognitive/117> ns4kge:hasKGEModel <kge-model/quate> .
+<configuration/localcognitive/117> ns4kge:result "0.311"^^xsd:decimal .
+
+<configuration/localcognitive/118> rdf:type ns4kge:Configuration .
+<configuration/localcognitive/118> ns4kge:hasTask    <task/link-prediction> .
+<configuration/localcognitive/118> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/localcognitive/118> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/localcognitive/118> ns4kge:hasKGEModel <kge-model/quate> .
+<configuration/localcognitive/118> ns4kge:result "0.495"^^xsd:decimal .
+
+<configuration/localcognitive/119> rdf:type ns4kge:Configuration .
+<configuration/localcognitive/119> ns4kge:hasTask    <task/link-prediction> .
+<configuration/localcognitive/119> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/localcognitive/119> ns4kge:hasMetric  <metric/mr> .
+<configuration/localcognitive/119> ns4kge:hasKGEModel <kge-model/conve> .
+<configuration/localcognitive/119> ns4kge:result "244"^^xsd:decimal .
+
+<configuration/localcognitive/120> rdf:type ns4kge:Configuration .
+<configuration/localcognitive/120> ns4kge:hasTask    <task/link-prediction> .
+<configuration/localcognitive/120> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/localcognitive/120> ns4kge:hasMetric  <metric/mr> .
+<configuration/localcognitive/120> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/localcognitive/120> ns4kge:result "254"^^xsd:decimal .
+
+<configuration/localcognitive/121> rdf:type ns4kge:Configuration .
+<configuration/localcognitive/121> ns4kge:hasTask    <task/link-prediction> .
+<configuration/localcognitive/121> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/localcognitive/121> ns4kge:hasMetric  <metric/mrr> .
+<configuration/localcognitive/121> ns4kge:hasKGEModel <kge-model/tucker> .
+<configuration/localcognitive/121> ns4kge:result "0.47"^^xsd:decimal .
+
+<configuration/localcognitive/122> rdf:type ns4kge:Configuration .
+<configuration/localcognitive/122> ns4kge:hasTask    <task/link-prediction> .
+<configuration/localcognitive/122> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/localcognitive/122> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/localcognitive/122> ns4kge:hasKGEModel <kge-model/tucker> .
+<configuration/localcognitive/122> ns4kge:result "0.526"^^xsd:decimal .
+
+<configuration/localcognitive/123> rdf:type ns4kge:Configuration .
+<configuration/localcognitive/123> ns4kge:hasTask    <task/link-prediction> .
+<configuration/localcognitive/123> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/localcognitive/123> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/localcognitive/123> ns4kge:hasKGEModel <kge-model/tucker> .
+<configuration/localcognitive/123> ns4kge:result "0.482"^^xsd:decimal .
+
+<configuration/localcognitive/124> rdf:type ns4kge:Configuration .
+<configuration/localcognitive/124> ns4kge:hasTask    <task/link-prediction> .
+<configuration/localcognitive/124> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/localcognitive/124> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/localcognitive/124> ns4kge:hasKGEModel <kge-model/tucker> .
+<configuration/localcognitive/124> ns4kge:result "0.443"^^xsd:decimal .
+
+<configuration/localcognitive/125> rdf:type ns4kge:Configuration .
+<configuration/localcognitive/125> ns4kge:hasTask    <task/link-prediction> .
+<configuration/localcognitive/125> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/localcognitive/125> ns4kge:hasMetric  <metric/mrr> .
+<configuration/localcognitive/125> ns4kge:hasKGEModel <kge-model/tucker> .
+<configuration/localcognitive/125> ns4kge:result "0.358"^^xsd:decimal .
+
+<configuration/localcognitive/126> rdf:type ns4kge:Configuration .
+<configuration/localcognitive/126> ns4kge:hasTask    <task/link-prediction> .
+<configuration/localcognitive/126> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/localcognitive/126> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/localcognitive/126> ns4kge:hasKGEModel <kge-model/tucker> .
+<configuration/localcognitive/126> ns4kge:result "0.544"^^xsd:decimal .
+
+<configuration/localcognitive/127> rdf:type ns4kge:Configuration .
+<configuration/localcognitive/127> ns4kge:hasTask    <task/link-prediction> .
+<configuration/localcognitive/127> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/localcognitive/127> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/localcognitive/127> ns4kge:hasKGEModel <kge-model/tucker> .
+<configuration/localcognitive/127> ns4kge:result "0.394"^^xsd:decimal .
+
+<configuration/localcognitive/128> rdf:type ns4kge:Configuration .
+<configuration/localcognitive/128> ns4kge:hasTask    <task/link-prediction> .
+<configuration/localcognitive/128> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/localcognitive/128> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/localcognitive/128> ns4kge:hasKGEModel <kge-model/tucker> .
+<configuration/localcognitive/128> ns4kge:result "0.266"^^xsd:decimal .

@@ -1,0 +1,30 @@
+{
+  "Article": {
+    "title": "Conditional Constraints for Knowledge Graph Embeddings",
+    "date": "2020"
+  },
+  "proposedNSMethod": "Conditional Constraint-Based Negative Sampling",
+  "proposedKGEModel": "",
+  "mentionedNSMethods": [
+    "Filtered Negative Sampling",
+    "Bernoulli Negative Sampling",
+    "Locally Closed World Negative Sampling"
+  ],
+  "mentionedKGEModels": [
+    "TransE",
+    "TransH",
+    "RESCAL",
+    "TRESCAL"
+  ],
+  "Experimentation": {
+    "Hardware": [],
+    "TrainingProtocol": {
+      "LossFunction": [
+        "margin-based ranking loss"
+      ],
+      "Optimizer": [],
+      "learningRate": 0.001,
+      "nsRatio": null
+    }
+  }
+}

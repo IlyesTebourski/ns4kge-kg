@@ -1,0 +1,46 @@
+{
+  "Article": {
+    "title": "TuckerDNCaching: high-quality negative sampling with tucker decomposition",
+    "date": "2023"
+  },
+  "proposedNSMethod": "TuckerDNCaching",
+  "proposedKGEModel": "",
+  "mentionedNSMethods": [
+    "Uniform Negative Sampling",
+    "Bernoulli Negative Sampling",
+    "KBGAN",
+    "IGAN",
+    "KSGAN",
+    "Self-Adversarial Negative Sampling",
+    "Structure Aware Negative Sampling",
+    "NSCaching",
+    "Entity Similarity-based Negative Sampling",
+    "MDNCaching",
+    "ExtremeSelectCaching"
+  ],
+  "mentionedKGEModels": [
+    "TransE",
+    "TransD",
+    "DistMult",
+    "ComplEx",
+    "TorusE",
+    "RotatE",
+    "RESCAL",
+    "TuckER"
+  ],
+  "Experimentation": {
+    "Hardware": [
+      "NVIDIA RTX A6000"
+    ],
+    "TrainingProtocol": {
+      "LossFunction": [
+        "marginal loss"
+      ],
+      "Optimizer": [
+        "Adam"
+      ],
+      "learningRate": null,
+      "nsRatio": null
+    }
+  }
+}

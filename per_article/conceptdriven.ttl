@@ -1,0 +1,2450 @@
+<article/conceptdriven> rdf:type ns4kge:Article .
+<article/conceptdriven> ns4kge:title "A Novel Concept-Driven Negative Sampling Mechanism for Enhancing Semanticity and Interpretability of Knowledge Graph Completion Task"^^xsd:string .
+<article/conceptdriven> ns4kge:date "2023"^^xsd:gYear .
+<article/conceptdriven> ns4kge:proposesNSMethod <ns-method/concept-driven-negative-sampling> .
+<article/conceptdriven> ns4kge:mentionsNSMethod <ns-method/commonsense-aware-negative-sampling> .
+<article/conceptdriven> ns4kge:mentionsNSMethod <ns-method/entity-aware-negative-sampling> .
+<article/conceptdriven> ns4kge:mentionsNSMethod <ns-method/uniform-negative-sampling> .
+<article/conceptdriven> ns4kge:mentionsNSMethod <ns-method/concept-domain-negative-sampling> .
+<article/conceptdriven> ns4kge:mentionsNSMethod <ns-method/reinforcement-learning-negative-sampling> .
+<article/conceptdriven> ns4kge:mentionsKGEModel <kge-model/distmult> .
+<article/conceptdriven> ns4kge:mentionsKGEModel <kge-model/transe> .
+<article/conceptdriven> ns4kge:mentionsKGEModel <kge-model/transr> .
+<article/conceptdriven> ns4kge:mentionsKGEModel <kge-model/dkrl> .
+<article/conceptdriven> ns4kge:mentionsKGEModel <kge-model/rotate> .
+<article/conceptdriven> ns4kge:mentionsKGEModel <kge-model/transh> .
+<article/conceptdriven> ns4kge:hasExperimentation <experimentation/conceptdriven> .
+
+<ns-method/concept-driven-negative-sampling> rdf:type ns4kge:NSMethod .
+
+<ns-method/commonsense-aware-negative-sampling> rdf:type ns4kge:NSMethod .
+
+<ns-method/entity-aware-negative-sampling> rdf:type ns4kge:NSMethod .
+<category/dynamic-ns> rdf:type ns4kge:Category .
+
+<ns-method/entity-aware-negative-sampling> ns4kge:hasCategory <category/dynamic-ns> .
+<subcategory/model-guided> rdf:type ns4kge:Subcategory .
+
+<ns-method/entity-aware-negative-sampling> ns4kge:hasSubcategory <subcategory/model-guided> .
+
+<ns-method/uniform-negative-sampling> rdf:type ns4kge:NSMethod .
+<category/static-ns> rdf:type ns4kge:Category .
+
+<ns-method/uniform-negative-sampling> ns4kge:hasCategory <category/static-ns> .
+<subcategory/random> rdf:type ns4kge:Subcategory .
+
+<ns-method/uniform-negative-sampling> ns4kge:hasSubcategory <subcategory/random> .
+
+<ns-method/concept-domain-negative-sampling> rdf:type ns4kge:NSMethod .
+
+<ns-method/reinforcement-learning-negative-sampling> rdf:type ns4kge:NSMethod .
+
+<kge-model/distmult> rdf:type ns4kge:KGEModel .
+
+<kge-model/transe> rdf:type ns4kge:KGEModel .
+
+<kge-model/transr> rdf:type ns4kge:KGEModel .
+
+<kge-model/dkrl> rdf:type ns4kge:KGEModel .
+
+<kge-model/rotate> rdf:type ns4kge:KGEModel .
+
+<kge-model/transh> rdf:type ns4kge:KGEModel .
+
+<dataset/wn18rr> rdf:type ns4kge:Dataset .
+<task/link-prediction> rdf:type ns4kge:Task .
+<metric/mrr> rdf:type ns4kge:Metric .
+<metric/hits-1> rdf:type ns4kge:Metric .
+<metric/hits-3> rdf:type ns4kge:Metric .
+<metric/hits-10> rdf:type ns4kge:Metric .
+<dataset/fb15k-237> rdf:type ns4kge:Dataset .
+<task/triple-classification> rdf:type ns4kge:Task .
+<metric/accuracy> rdf:type ns4kge:Metric .
+<task/relation-prediction> rdf:type ns4kge:Task .
+<loss-function/margin-based-ranking-loss> rdf:type ns4kge:LossFunction .
+<optimizer/sgd> rdf:type ns4kge:Optimizer .
+<optimizer/adam> rdf:type ns4kge:Optimizer .
+
+<experimentation/conceptdriven> rdf:type ns4kge:Experimentation .
+<experimentation/conceptdriven> ns4kge:hasTrainingProtocol <training-protocol/conceptdriven> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/1> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/2> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/3> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/4> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/5> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/6> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/7> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/8> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/9> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/10> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/11> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/12> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/13> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/14> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/15> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/16> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/17> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/18> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/19> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/20> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/21> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/22> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/23> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/24> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/25> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/26> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/27> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/28> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/29> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/30> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/31> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/32> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/33> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/34> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/35> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/36> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/37> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/38> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/39> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/40> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/41> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/42> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/43> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/44> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/45> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/46> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/47> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/48> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/49> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/50> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/51> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/52> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/53> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/54> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/55> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/56> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/57> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/58> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/59> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/60> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/61> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/62> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/63> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/64> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/65> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/66> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/67> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/68> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/69> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/70> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/71> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/72> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/73> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/74> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/75> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/76> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/77> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/78> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/79> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/80> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/81> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/82> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/83> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/84> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/85> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/86> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/87> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/88> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/89> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/90> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/91> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/92> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/93> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/94> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/95> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/96> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/97> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/98> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/99> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/100> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/101> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/102> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/103> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/104> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/105> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/106> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/107> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/108> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/109> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/110> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/111> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/112> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/113> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/114> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/115> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/116> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/117> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/118> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/119> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/120> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/121> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/122> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/123> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/124> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/125> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/126> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/127> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/128> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/129> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/130> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/131> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/132> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/133> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/134> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/135> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/136> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/137> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/138> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/139> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/140> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/141> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/142> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/143> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/144> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/145> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/146> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/147> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/148> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/149> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/150> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/151> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/152> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/153> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/154> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/155> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/156> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/157> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/158> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/159> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/160> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/161> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/162> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/163> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/164> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/165> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/166> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/167> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/168> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/169> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/170> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/171> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/172> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/173> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/174> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/175> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/176> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/177> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/178> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/179> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/180> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/181> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/182> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/183> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/184> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/185> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/186> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/187> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/188> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/189> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/190> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/191> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/192> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/193> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/194> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/195> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/196> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/197> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/198> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/199> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/200> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/201> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/202> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/203> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/204> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/205> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/206> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/207> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/208> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/209> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/210> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/211> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/212> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/213> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/214> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/215> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/216> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/217> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/218> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/219> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/220> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/221> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/222> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/223> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/224> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/225> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/226> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/227> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/228> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/229> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/230> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/231> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/232> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/233> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/234> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/235> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/236> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/237> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/238> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/239> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/240> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/241> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/242> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/243> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/244> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/245> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/246> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/247> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/248> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/249> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/250> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/251> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/252> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/253> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/254> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/255> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/256> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/257> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/258> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/259> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/260> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/261> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/262> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/263> .
+<experimentation/conceptdriven> ns4kge:hasConfiguration <configuration/conceptdriven/264> .
+
+<training-protocol/conceptdriven> rdf:type ns4kge:TrainingProtocol .
+<training-protocol/conceptdriven> ns4kge:hasOptimizer    <optimizer/sgd> .
+<training-protocol/conceptdriven> ns4kge:hasOptimizer    <optimizer/adam> .
+<training-protocol/conceptdriven> ns4kge:hasLossFunction <loss-function/margin-based-ranking-loss> .
+
+<configuration/conceptdriven/1> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/1> ns4kge:hasTask    <task/link-prediction> .
+<configuration/conceptdriven/1> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/conceptdriven/1> ns4kge:hasMetric  <metric/mrr> .
+<configuration/conceptdriven/1> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/conceptdriven/1> ns4kge:hasNSMethod <ns-method/uniform-negative-sampling> .
+<configuration/conceptdriven/1> ns4kge:result "0.243"^^xsd:decimal .
+
+<configuration/conceptdriven/2> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/2> ns4kge:hasTask    <task/link-prediction> .
+<configuration/conceptdriven/2> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/conceptdriven/2> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/conceptdriven/2> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/conceptdriven/2> ns4kge:hasNSMethod <ns-method/uniform-negative-sampling> .
+<configuration/conceptdriven/2> ns4kge:result "0.043"^^xsd:decimal .
+
+<configuration/conceptdriven/3> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/3> ns4kge:hasTask    <task/link-prediction> .
+<configuration/conceptdriven/3> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/conceptdriven/3> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/conceptdriven/3> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/conceptdriven/3> ns4kge:hasNSMethod <ns-method/uniform-negative-sampling> .
+<configuration/conceptdriven/3> ns4kge:result "0.441"^^xsd:decimal .
+
+<configuration/conceptdriven/4> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/4> ns4kge:hasTask    <task/link-prediction> .
+<configuration/conceptdriven/4> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/conceptdriven/4> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/conceptdriven/4> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/conceptdriven/4> ns4kge:hasNSMethod <ns-method/uniform-negative-sampling> .
+<configuration/conceptdriven/4> ns4kge:result "0.532"^^xsd:decimal .
+
+<configuration/conceptdriven/5> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/5> ns4kge:hasTask    <task/link-prediction> .
+<configuration/conceptdriven/5> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/conceptdriven/5> ns4kge:hasMetric  <metric/mrr> .
+<configuration/conceptdriven/5> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/conceptdriven/5> ns4kge:hasNSMethod <ns-method/uniform-negative-sampling> .
+<configuration/conceptdriven/5> ns4kge:result "0.279"^^xsd:decimal .
+
+<configuration/conceptdriven/6> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/6> ns4kge:hasTask    <task/link-prediction> .
+<configuration/conceptdriven/6> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/conceptdriven/6> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/conceptdriven/6> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/conceptdriven/6> ns4kge:hasNSMethod <ns-method/uniform-negative-sampling> .
+<configuration/conceptdriven/6> ns4kge:result "0.198"^^xsd:decimal .
+
+<configuration/conceptdriven/7> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/7> ns4kge:hasTask    <task/link-prediction> .
+<configuration/conceptdriven/7> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/conceptdriven/7> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/conceptdriven/7> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/conceptdriven/7> ns4kge:hasNSMethod <ns-method/uniform-negative-sampling> .
+<configuration/conceptdriven/7> ns4kge:result "0.376"^^xsd:decimal .
+
+<configuration/conceptdriven/8> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/8> ns4kge:hasTask    <task/link-prediction> .
+<configuration/conceptdriven/8> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/conceptdriven/8> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/conceptdriven/8> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/conceptdriven/8> ns4kge:hasNSMethod <ns-method/uniform-negative-sampling> .
+<configuration/conceptdriven/8> ns4kge:result "0.441"^^xsd:decimal .
+
+<configuration/conceptdriven/9> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/9> ns4kge:hasTask    <task/link-prediction> .
+<configuration/conceptdriven/9> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/conceptdriven/9> ns4kge:hasMetric  <metric/mrr> .
+<configuration/conceptdriven/9> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/conceptdriven/9> ns4kge:hasNSMethod <ns-method/concept-driven-negative-sampling> .
+<configuration/conceptdriven/9> ns4kge:result "0.272"^^xsd:decimal .
+
+<configuration/conceptdriven/10> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/10> ns4kge:hasTask    <task/link-prediction> .
+<configuration/conceptdriven/10> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/conceptdriven/10> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/conceptdriven/10> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/conceptdriven/10> ns4kge:hasNSMethod <ns-method/concept-driven-negative-sampling> .
+<configuration/conceptdriven/10> ns4kge:result "0.046"^^xsd:decimal .
+
+<configuration/conceptdriven/11> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/11> ns4kge:hasTask    <task/link-prediction> .
+<configuration/conceptdriven/11> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/conceptdriven/11> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/conceptdriven/11> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/conceptdriven/11> ns4kge:hasNSMethod <ns-method/concept-driven-negative-sampling> .
+<configuration/conceptdriven/11> ns4kge:result "0.476"^^xsd:decimal .
+
+<configuration/conceptdriven/12> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/12> ns4kge:hasTask    <task/link-prediction> .
+<configuration/conceptdriven/12> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/conceptdriven/12> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/conceptdriven/12> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/conceptdriven/12> ns4kge:hasNSMethod <ns-method/concept-driven-negative-sampling> .
+<configuration/conceptdriven/12> ns4kge:result "0.574"^^xsd:decimal .
+
+<configuration/conceptdriven/13> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/13> ns4kge:hasTask    <task/link-prediction> .
+<configuration/conceptdriven/13> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/conceptdriven/13> ns4kge:hasMetric  <metric/mrr> .
+<configuration/conceptdriven/13> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/conceptdriven/13> ns4kge:hasNSMethod <ns-method/concept-driven-negative-sampling> .
+<configuration/conceptdriven/13> ns4kge:result "0.31"^^xsd:decimal .
+
+<configuration/conceptdriven/14> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/14> ns4kge:hasTask    <task/link-prediction> .
+<configuration/conceptdriven/14> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/conceptdriven/14> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/conceptdriven/14> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/conceptdriven/14> ns4kge:hasNSMethod <ns-method/concept-driven-negative-sampling> .
+<configuration/conceptdriven/14> ns4kge:result "0.214"^^xsd:decimal .
+
+<configuration/conceptdriven/15> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/15> ns4kge:hasTask    <task/link-prediction> .
+<configuration/conceptdriven/15> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/conceptdriven/15> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/conceptdriven/15> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/conceptdriven/15> ns4kge:hasNSMethod <ns-method/concept-driven-negative-sampling> .
+<configuration/conceptdriven/15> ns4kge:result "0.406"^^xsd:decimal .
+
+<configuration/conceptdriven/16> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/16> ns4kge:hasTask    <task/link-prediction> .
+<configuration/conceptdriven/16> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/conceptdriven/16> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/conceptdriven/16> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/conceptdriven/16> ns4kge:hasNSMethod <ns-method/concept-driven-negative-sampling> .
+<configuration/conceptdriven/16> ns4kge:result "0.476"^^xsd:decimal .
+
+<configuration/conceptdriven/17> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/17> ns4kge:hasTask    <task/link-prediction> .
+<configuration/conceptdriven/17> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/conceptdriven/17> ns4kge:hasMetric  <metric/mrr> .
+<configuration/conceptdriven/17> ns4kge:hasKGEModel <kge-model/transh> .
+<configuration/conceptdriven/17> ns4kge:hasNSMethod <ns-method/uniform-negative-sampling> .
+<configuration/conceptdriven/17> ns4kge:result "0.231"^^xsd:decimal .
+
+<configuration/conceptdriven/18> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/18> ns4kge:hasTask    <task/link-prediction> .
+<configuration/conceptdriven/18> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/conceptdriven/18> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/conceptdriven/18> ns4kge:hasKGEModel <kge-model/transh> .
+<configuration/conceptdriven/18> ns4kge:hasNSMethod <ns-method/uniform-negative-sampling> .
+<configuration/conceptdriven/18> ns4kge:result "0.041"^^xsd:decimal .
+
+<configuration/conceptdriven/19> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/19> ns4kge:hasTask    <task/link-prediction> .
+<configuration/conceptdriven/19> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/conceptdriven/19> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/conceptdriven/19> ns4kge:hasKGEModel <kge-model/transh> .
+<configuration/conceptdriven/19> ns4kge:hasNSMethod <ns-method/uniform-negative-sampling> .
+<configuration/conceptdriven/19> ns4kge:result "0.419"^^xsd:decimal .
+
+<configuration/conceptdriven/20> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/20> ns4kge:hasTask    <task/link-prediction> .
+<configuration/conceptdriven/20> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/conceptdriven/20> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/conceptdriven/20> ns4kge:hasKGEModel <kge-model/transh> .
+<configuration/conceptdriven/20> ns4kge:hasNSMethod <ns-method/uniform-negative-sampling> .
+<configuration/conceptdriven/20> ns4kge:result "0.505"^^xsd:decimal .
+
+<configuration/conceptdriven/21> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/21> ns4kge:hasTask    <task/link-prediction> .
+<configuration/conceptdriven/21> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/conceptdriven/21> ns4kge:hasMetric  <metric/mrr> .
+<configuration/conceptdriven/21> ns4kge:hasKGEModel <kge-model/transh> .
+<configuration/conceptdriven/21> ns4kge:hasNSMethod <ns-method/uniform-negative-sampling> .
+<configuration/conceptdriven/21> ns4kge:result "0.307"^^xsd:decimal .
+
+<configuration/conceptdriven/22> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/22> ns4kge:hasTask    <task/link-prediction> .
+<configuration/conceptdriven/22> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/conceptdriven/22> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/conceptdriven/22> ns4kge:hasKGEModel <kge-model/transh> .
+<configuration/conceptdriven/22> ns4kge:hasNSMethod <ns-method/uniform-negative-sampling> .
+<configuration/conceptdriven/22> ns4kge:result "0.218"^^xsd:decimal .
+
+<configuration/conceptdriven/23> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/23> ns4kge:hasTask    <task/link-prediction> .
+<configuration/conceptdriven/23> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/conceptdriven/23> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/conceptdriven/23> ns4kge:hasKGEModel <kge-model/transh> .
+<configuration/conceptdriven/23> ns4kge:hasNSMethod <ns-method/uniform-negative-sampling> .
+<configuration/conceptdriven/23> ns4kge:result "0.414"^^xsd:decimal .
+
+<configuration/conceptdriven/24> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/24> ns4kge:hasTask    <task/link-prediction> .
+<configuration/conceptdriven/24> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/conceptdriven/24> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/conceptdriven/24> ns4kge:hasKGEModel <kge-model/transh> .
+<configuration/conceptdriven/24> ns4kge:hasNSMethod <ns-method/uniform-negative-sampling> .
+<configuration/conceptdriven/24> ns4kge:result "0.486"^^xsd:decimal .
+
+<configuration/conceptdriven/25> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/25> ns4kge:hasTask    <task/link-prediction> .
+<configuration/conceptdriven/25> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/conceptdriven/25> ns4kge:hasMetric  <metric/mrr> .
+<configuration/conceptdriven/25> ns4kge:hasKGEModel <kge-model/transh> .
+<configuration/conceptdriven/25> ns4kge:hasNSMethod <ns-method/concept-driven-negative-sampling> .
+<configuration/conceptdriven/25> ns4kge:result "0.254"^^xsd:decimal .
+
+<configuration/conceptdriven/26> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/26> ns4kge:hasTask    <task/link-prediction> .
+<configuration/conceptdriven/26> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/conceptdriven/26> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/conceptdriven/26> ns4kge:hasKGEModel <kge-model/transh> .
+<configuration/conceptdriven/26> ns4kge:hasNSMethod <ns-method/concept-driven-negative-sampling> .
+<configuration/conceptdriven/26> ns4kge:result "0.044"^^xsd:decimal .
+
+<configuration/conceptdriven/27> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/27> ns4kge:hasTask    <task/link-prediction> .
+<configuration/conceptdriven/27> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/conceptdriven/27> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/conceptdriven/27> ns4kge:hasKGEModel <kge-model/transh> .
+<configuration/conceptdriven/27> ns4kge:hasNSMethod <ns-method/concept-driven-negative-sampling> .
+<configuration/conceptdriven/27> ns4kge:result "0.45"^^xsd:decimal .
+
+<configuration/conceptdriven/28> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/28> ns4kge:hasTask    <task/link-prediction> .
+<configuration/conceptdriven/28> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/conceptdriven/28> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/conceptdriven/28> ns4kge:hasKGEModel <kge-model/transh> .
+<configuration/conceptdriven/28> ns4kge:hasNSMethod <ns-method/concept-driven-negative-sampling> .
+<configuration/conceptdriven/28> ns4kge:result "0.543"^^xsd:decimal .
+
+<configuration/conceptdriven/29> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/29> ns4kge:hasTask    <task/link-prediction> .
+<configuration/conceptdriven/29> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/conceptdriven/29> ns4kge:hasMetric  <metric/mrr> .
+<configuration/conceptdriven/29> ns4kge:hasKGEModel <kge-model/transh> .
+<configuration/conceptdriven/29> ns4kge:hasNSMethod <ns-method/concept-driven-negative-sampling> .
+<configuration/conceptdriven/29> ns4kge:result "0.323"^^xsd:decimal .
+
+<configuration/conceptdriven/30> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/30> ns4kge:hasTask    <task/link-prediction> .
+<configuration/conceptdriven/30> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/conceptdriven/30> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/conceptdriven/30> ns4kge:hasKGEModel <kge-model/transh> .
+<configuration/conceptdriven/30> ns4kge:hasNSMethod <ns-method/concept-driven-negative-sampling> .
+<configuration/conceptdriven/30> ns4kge:result "0.235"^^xsd:decimal .
+
+<configuration/conceptdriven/31> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/31> ns4kge:hasTask    <task/link-prediction> .
+<configuration/conceptdriven/31> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/conceptdriven/31> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/conceptdriven/31> ns4kge:hasKGEModel <kge-model/transh> .
+<configuration/conceptdriven/31> ns4kge:hasNSMethod <ns-method/concept-driven-negative-sampling> .
+<configuration/conceptdriven/31> ns4kge:result "0.445"^^xsd:decimal .
+
+<configuration/conceptdriven/32> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/32> ns4kge:hasTask    <task/link-prediction> .
+<configuration/conceptdriven/32> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/conceptdriven/32> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/conceptdriven/32> ns4kge:hasKGEModel <kge-model/transh> .
+<configuration/conceptdriven/32> ns4kge:hasNSMethod <ns-method/concept-driven-negative-sampling> .
+<configuration/conceptdriven/32> ns4kge:result "0.522"^^xsd:decimal .
+
+<configuration/conceptdriven/33> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/33> ns4kge:hasTask    <task/link-prediction> .
+<configuration/conceptdriven/33> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/conceptdriven/33> ns4kge:hasMetric  <metric/mrr> .
+<configuration/conceptdriven/33> ns4kge:hasKGEModel <kge-model/transr> .
+<configuration/conceptdriven/33> ns4kge:hasNSMethod <ns-method/uniform-negative-sampling> .
+<configuration/conceptdriven/33> ns4kge:result "0.232"^^xsd:decimal .
+
+<configuration/conceptdriven/34> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/34> ns4kge:hasTask    <task/link-prediction> .
+<configuration/conceptdriven/34> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/conceptdriven/34> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/conceptdriven/34> ns4kge:hasKGEModel <kge-model/transr> .
+<configuration/conceptdriven/34> ns4kge:hasNSMethod <ns-method/uniform-negative-sampling> .
+<configuration/conceptdriven/34> ns4kge:result "0.041"^^xsd:decimal .
+
+<configuration/conceptdriven/35> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/35> ns4kge:hasTask    <task/link-prediction> .
+<configuration/conceptdriven/35> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/conceptdriven/35> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/conceptdriven/35> ns4kge:hasKGEModel <kge-model/transr> .
+<configuration/conceptdriven/35> ns4kge:hasNSMethod <ns-method/uniform-negative-sampling> .
+<configuration/conceptdriven/35> ns4kge:result "0.42"^^xsd:decimal .
+
+<configuration/conceptdriven/36> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/36> ns4kge:hasTask    <task/link-prediction> .
+<configuration/conceptdriven/36> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/conceptdriven/36> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/conceptdriven/36> ns4kge:hasKGEModel <kge-model/transr> .
+<configuration/conceptdriven/36> ns4kge:hasNSMethod <ns-method/uniform-negative-sampling> .
+<configuration/conceptdriven/36> ns4kge:result "0.507"^^xsd:decimal .
+
+<configuration/conceptdriven/37> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/37> ns4kge:hasTask    <task/link-prediction> .
+<configuration/conceptdriven/37> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/conceptdriven/37> ns4kge:hasMetric  <metric/mrr> .
+<configuration/conceptdriven/37> ns4kge:hasKGEModel <kge-model/transr> .
+<configuration/conceptdriven/37> ns4kge:hasNSMethod <ns-method/uniform-negative-sampling> .
+<configuration/conceptdriven/37> ns4kge:result "0.307"^^xsd:decimal .
+
+<configuration/conceptdriven/38> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/38> ns4kge:hasTask    <task/link-prediction> .
+<configuration/conceptdriven/38> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/conceptdriven/38> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/conceptdriven/38> ns4kge:hasKGEModel <kge-model/transr> .
+<configuration/conceptdriven/38> ns4kge:hasNSMethod <ns-method/uniform-negative-sampling> .
+<configuration/conceptdriven/38> ns4kge:result "0.218"^^xsd:decimal .
+
+<configuration/conceptdriven/39> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/39> ns4kge:hasTask    <task/link-prediction> .
+<configuration/conceptdriven/39> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/conceptdriven/39> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/conceptdriven/39> ns4kge:hasKGEModel <kge-model/transr> .
+<configuration/conceptdriven/39> ns4kge:hasNSMethod <ns-method/uniform-negative-sampling> .
+<configuration/conceptdriven/39> ns4kge:result "0.414"^^xsd:decimal .
+
+<configuration/conceptdriven/40> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/40> ns4kge:hasTask    <task/link-prediction> .
+<configuration/conceptdriven/40> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/conceptdriven/40> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/conceptdriven/40> ns4kge:hasKGEModel <kge-model/transr> .
+<configuration/conceptdriven/40> ns4kge:hasNSMethod <ns-method/uniform-negative-sampling> .
+<configuration/conceptdriven/40> ns4kge:result "0.486"^^xsd:decimal .
+
+<configuration/conceptdriven/41> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/41> ns4kge:hasTask    <task/link-prediction> .
+<configuration/conceptdriven/41> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/conceptdriven/41> ns4kge:hasMetric  <metric/mrr> .
+<configuration/conceptdriven/41> ns4kge:hasKGEModel <kge-model/transr> .
+<configuration/conceptdriven/41> ns4kge:hasNSMethod <ns-method/concept-driven-negative-sampling> .
+<configuration/conceptdriven/41> ns4kge:result "0.255"^^xsd:decimal .
+
+<configuration/conceptdriven/42> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/42> ns4kge:hasTask    <task/link-prediction> .
+<configuration/conceptdriven/42> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/conceptdriven/42> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/conceptdriven/42> ns4kge:hasKGEModel <kge-model/transr> .
+<configuration/conceptdriven/42> ns4kge:hasNSMethod <ns-method/concept-driven-negative-sampling> .
+<configuration/conceptdriven/42> ns4kge:result "0.044"^^xsd:decimal .
+
+<configuration/conceptdriven/43> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/43> ns4kge:hasTask    <task/link-prediction> .
+<configuration/conceptdriven/43> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/conceptdriven/43> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/conceptdriven/43> ns4kge:hasKGEModel <kge-model/transr> .
+<configuration/conceptdriven/43> ns4kge:hasNSMethod <ns-method/concept-driven-negative-sampling> .
+<configuration/conceptdriven/43> ns4kge:result "0.452"^^xsd:decimal .
+
+<configuration/conceptdriven/44> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/44> ns4kge:hasTask    <task/link-prediction> .
+<configuration/conceptdriven/44> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/conceptdriven/44> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/conceptdriven/44> ns4kge:hasKGEModel <kge-model/transr> .
+<configuration/conceptdriven/44> ns4kge:hasNSMethod <ns-method/concept-driven-negative-sampling> .
+<configuration/conceptdriven/44> ns4kge:result "0.545"^^xsd:decimal .
+
+<configuration/conceptdriven/45> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/45> ns4kge:hasTask    <task/link-prediction> .
+<configuration/conceptdriven/45> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/conceptdriven/45> ns4kge:hasMetric  <metric/mrr> .
+<configuration/conceptdriven/45> ns4kge:hasKGEModel <kge-model/transr> .
+<configuration/conceptdriven/45> ns4kge:hasNSMethod <ns-method/concept-driven-negative-sampling> .
+<configuration/conceptdriven/45> ns4kge:result "0.323"^^xsd:decimal .
+
+<configuration/conceptdriven/46> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/46> ns4kge:hasTask    <task/link-prediction> .
+<configuration/conceptdriven/46> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/conceptdriven/46> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/conceptdriven/46> ns4kge:hasKGEModel <kge-model/transr> .
+<configuration/conceptdriven/46> ns4kge:hasNSMethod <ns-method/concept-driven-negative-sampling> .
+<configuration/conceptdriven/46> ns4kge:result "0.235"^^xsd:decimal .
+
+<configuration/conceptdriven/47> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/47> ns4kge:hasTask    <task/link-prediction> .
+<configuration/conceptdriven/47> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/conceptdriven/47> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/conceptdriven/47> ns4kge:hasKGEModel <kge-model/transr> .
+<configuration/conceptdriven/47> ns4kge:hasNSMethod <ns-method/concept-driven-negative-sampling> .
+<configuration/conceptdriven/47> ns4kge:result "0.445"^^xsd:decimal .
+
+<configuration/conceptdriven/48> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/48> ns4kge:hasTask    <task/link-prediction> .
+<configuration/conceptdriven/48> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/conceptdriven/48> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/conceptdriven/48> ns4kge:hasKGEModel <kge-model/transr> .
+<configuration/conceptdriven/48> ns4kge:hasNSMethod <ns-method/concept-driven-negative-sampling> .
+<configuration/conceptdriven/48> ns4kge:result "0.522"^^xsd:decimal .
+
+<configuration/conceptdriven/49> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/49> ns4kge:hasTask    <task/link-prediction> .
+<configuration/conceptdriven/49> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/conceptdriven/49> ns4kge:hasMetric  <metric/mrr> .
+<configuration/conceptdriven/49> ns4kge:hasKGEModel <kge-model/dkrl> .
+<configuration/conceptdriven/49> ns4kge:hasNSMethod <ns-method/uniform-negative-sampling> .
+<configuration/conceptdriven/49> ns4kge:result "0.26"^^xsd:decimal .
+
+<configuration/conceptdriven/50> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/50> ns4kge:hasTask    <task/link-prediction> .
+<configuration/conceptdriven/50> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/conceptdriven/50> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/conceptdriven/50> ns4kge:hasKGEModel <kge-model/dkrl> .
+<configuration/conceptdriven/50> ns4kge:hasNSMethod <ns-method/uniform-negative-sampling> .
+<configuration/conceptdriven/50> ns4kge:result "0.304"^^xsd:decimal .
+
+<configuration/conceptdriven/51> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/51> ns4kge:hasTask    <task/link-prediction> .
+<configuration/conceptdriven/51> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/conceptdriven/51> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/conceptdriven/51> ns4kge:hasKGEModel <kge-model/dkrl> .
+<configuration/conceptdriven/51> ns4kge:hasNSMethod <ns-method/uniform-negative-sampling> .
+<configuration/conceptdriven/51> ns4kge:result "0.471"^^xsd:decimal .
+
+<configuration/conceptdriven/52> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/52> ns4kge:hasTask    <task/link-prediction> .
+<configuration/conceptdriven/52> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/conceptdriven/52> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/conceptdriven/52> ns4kge:hasKGEModel <kge-model/dkrl> .
+<configuration/conceptdriven/52> ns4kge:hasNSMethod <ns-method/uniform-negative-sampling> .
+<configuration/conceptdriven/52> ns4kge:result "0.569"^^xsd:decimal .
+
+<configuration/conceptdriven/53> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/53> ns4kge:hasTask    <task/link-prediction> .
+<configuration/conceptdriven/53> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/conceptdriven/53> ns4kge:hasMetric  <metric/mrr> .
+<configuration/conceptdriven/53> ns4kge:hasKGEModel <kge-model/dkrl> .
+<configuration/conceptdriven/53> ns4kge:hasNSMethod <ns-method/uniform-negative-sampling> .
+<configuration/conceptdriven/53> ns4kge:result "0.298"^^xsd:decimal .
+
+<configuration/conceptdriven/54> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/54> ns4kge:hasTask    <task/link-prediction> .
+<configuration/conceptdriven/54> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/conceptdriven/54> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/conceptdriven/54> ns4kge:hasKGEModel <kge-model/dkrl> .
+<configuration/conceptdriven/54> ns4kge:hasNSMethod <ns-method/uniform-negative-sampling> .
+<configuration/conceptdriven/54> ns4kge:result "0.212"^^xsd:decimal .
+
+<configuration/conceptdriven/55> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/55> ns4kge:hasTask    <task/link-prediction> .
+<configuration/conceptdriven/55> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/conceptdriven/55> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/conceptdriven/55> ns4kge:hasKGEModel <kge-model/dkrl> .
+<configuration/conceptdriven/55> ns4kge:hasNSMethod <ns-method/uniform-negative-sampling> .
+<configuration/conceptdriven/55> ns4kge:result "0.402"^^xsd:decimal .
+
+<configuration/conceptdriven/56> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/56> ns4kge:hasTask    <task/link-prediction> .
+<configuration/conceptdriven/56> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/conceptdriven/56> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/conceptdriven/56> ns4kge:hasKGEModel <kge-model/dkrl> .
+<configuration/conceptdriven/56> ns4kge:hasNSMethod <ns-method/uniform-negative-sampling> .
+<configuration/conceptdriven/56> ns4kge:result "0.471"^^xsd:decimal .
+
+<configuration/conceptdriven/57> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/57> ns4kge:hasTask    <task/link-prediction> .
+<configuration/conceptdriven/57> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/conceptdriven/57> ns4kge:hasMetric  <metric/mrr> .
+<configuration/conceptdriven/57> ns4kge:hasKGEModel <kge-model/dkrl> .
+<configuration/conceptdriven/57> ns4kge:hasNSMethod <ns-method/concept-driven-negative-sampling> .
+<configuration/conceptdriven/57> ns4kge:result "0.286"^^xsd:decimal .
+
+<configuration/conceptdriven/58> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/58> ns4kge:hasTask    <task/link-prediction> .
+<configuration/conceptdriven/58> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/conceptdriven/58> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/conceptdriven/58> ns4kge:hasKGEModel <kge-model/dkrl> .
+<configuration/conceptdriven/58> ns4kge:hasNSMethod <ns-method/concept-driven-negative-sampling> .
+<configuration/conceptdriven/58> ns4kge:result "0.327"^^xsd:decimal .
+
+<configuration/conceptdriven/59> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/59> ns4kge:hasTask    <task/link-prediction> .
+<configuration/conceptdriven/59> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/conceptdriven/59> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/conceptdriven/59> ns4kge:hasKGEModel <kge-model/dkrl> .
+<configuration/conceptdriven/59> ns4kge:hasNSMethod <ns-method/concept-driven-negative-sampling> .
+<configuration/conceptdriven/59> ns4kge:result "0.507"^^xsd:decimal .
+
+<configuration/conceptdriven/60> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/60> ns4kge:hasTask    <task/link-prediction> .
+<configuration/conceptdriven/60> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/conceptdriven/60> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/conceptdriven/60> ns4kge:hasKGEModel <kge-model/dkrl> .
+<configuration/conceptdriven/60> ns4kge:hasNSMethod <ns-method/concept-driven-negative-sampling> .
+<configuration/conceptdriven/60> ns4kge:result "0.611"^^xsd:decimal .
+
+<configuration/conceptdriven/61> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/61> ns4kge:hasTask    <task/link-prediction> .
+<configuration/conceptdriven/61> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/conceptdriven/61> ns4kge:hasMetric  <metric/mrr> .
+<configuration/conceptdriven/61> ns4kge:hasKGEModel <kge-model/dkrl> .
+<configuration/conceptdriven/61> ns4kge:hasNSMethod <ns-method/concept-driven-negative-sampling> .
+<configuration/conceptdriven/61> ns4kge:result "0.313"^^xsd:decimal .
+
+<configuration/conceptdriven/62> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/62> ns4kge:hasTask    <task/link-prediction> .
+<configuration/conceptdriven/62> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/conceptdriven/62> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/conceptdriven/62> ns4kge:hasKGEModel <kge-model/dkrl> .
+<configuration/conceptdriven/62> ns4kge:hasNSMethod <ns-method/concept-driven-negative-sampling> .
+<configuration/conceptdriven/62> ns4kge:result "0.228"^^xsd:decimal .
+
+<configuration/conceptdriven/63> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/63> ns4kge:hasTask    <task/link-prediction> .
+<configuration/conceptdriven/63> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/conceptdriven/63> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/conceptdriven/63> ns4kge:hasKGEModel <kge-model/dkrl> .
+<configuration/conceptdriven/63> ns4kge:hasNSMethod <ns-method/concept-driven-negative-sampling> .
+<configuration/conceptdriven/63> ns4kge:result "0.432"^^xsd:decimal .
+
+<configuration/conceptdriven/64> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/64> ns4kge:hasTask    <task/link-prediction> .
+<configuration/conceptdriven/64> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/conceptdriven/64> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/conceptdriven/64> ns4kge:hasKGEModel <kge-model/dkrl> .
+<configuration/conceptdriven/64> ns4kge:hasNSMethod <ns-method/concept-driven-negative-sampling> .
+<configuration/conceptdriven/64> ns4kge:result "0.507"^^xsd:decimal .
+
+<configuration/conceptdriven/65> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/65> ns4kge:hasTask    <task/link-prediction> .
+<configuration/conceptdriven/65> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/conceptdriven/65> ns4kge:hasMetric  <metric/mrr> .
+<configuration/conceptdriven/65> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/conceptdriven/65> ns4kge:hasNSMethod <ns-method/uniform-negative-sampling> .
+<configuration/conceptdriven/65> ns4kge:result "0.476"^^xsd:decimal .
+
+<configuration/conceptdriven/66> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/66> ns4kge:hasTask    <task/link-prediction> .
+<configuration/conceptdriven/66> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/conceptdriven/66> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/conceptdriven/66> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/conceptdriven/66> ns4kge:hasNSMethod <ns-method/uniform-negative-sampling> .
+<configuration/conceptdriven/66> ns4kge:result "0.428"^^xsd:decimal .
+
+<configuration/conceptdriven/67> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/67> ns4kge:hasTask    <task/link-prediction> .
+<configuration/conceptdriven/67> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/conceptdriven/67> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/conceptdriven/67> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/conceptdriven/67> ns4kge:hasNSMethod <ns-method/uniform-negative-sampling> .
+<configuration/conceptdriven/67> ns4kge:result "0.492"^^xsd:decimal .
+
+<configuration/conceptdriven/68> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/68> ns4kge:hasTask    <task/link-prediction> .
+<configuration/conceptdriven/68> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/conceptdriven/68> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/conceptdriven/68> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/conceptdriven/68> ns4kge:hasNSMethod <ns-method/uniform-negative-sampling> .
+<configuration/conceptdriven/68> ns4kge:result "0.571"^^xsd:decimal .
+
+<configuration/conceptdriven/69> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/69> ns4kge:hasTask    <task/link-prediction> .
+<configuration/conceptdriven/69> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/conceptdriven/69> ns4kge:hasMetric  <metric/mrr> .
+<configuration/conceptdriven/69> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/conceptdriven/69> ns4kge:hasNSMethod <ns-method/uniform-negative-sampling> .
+<configuration/conceptdriven/69> ns4kge:result "0.338"^^xsd:decimal .
+
+<configuration/conceptdriven/70> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/70> ns4kge:hasTask    <task/link-prediction> .
+<configuration/conceptdriven/70> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/conceptdriven/70> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/conceptdriven/70> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/conceptdriven/70> ns4kge:hasNSMethod <ns-method/uniform-negative-sampling> .
+<configuration/conceptdriven/70> ns4kge:result "0.241"^^xsd:decimal .
+
+<configuration/conceptdriven/71> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/71> ns4kge:hasTask    <task/link-prediction> .
+<configuration/conceptdriven/71> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/conceptdriven/71> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/conceptdriven/71> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/conceptdriven/71> ns4kge:hasNSMethod <ns-method/uniform-negative-sampling> .
+<configuration/conceptdriven/71> ns4kge:result "0.375"^^xsd:decimal .
+
+<configuration/conceptdriven/72> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/72> ns4kge:hasTask    <task/link-prediction> .
+<configuration/conceptdriven/72> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/conceptdriven/72> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/conceptdriven/72> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/conceptdriven/72> ns4kge:hasNSMethod <ns-method/uniform-negative-sampling> .
+<configuration/conceptdriven/72> ns4kge:result "0.533"^^xsd:decimal .
+
+<configuration/conceptdriven/73> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/73> ns4kge:hasTask    <task/link-prediction> .
+<configuration/conceptdriven/73> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/conceptdriven/73> ns4kge:hasMetric  <metric/mrr> .
+<configuration/conceptdriven/73> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/conceptdriven/73> ns4kge:hasNSMethod <ns-method/concept-driven-negative-sampling> .
+<configuration/conceptdriven/73> ns4kge:result "0.524"^^xsd:decimal .
+
+<configuration/conceptdriven/74> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/74> ns4kge:hasTask    <task/link-prediction> .
+<configuration/conceptdriven/74> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/conceptdriven/74> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/conceptdriven/74> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/conceptdriven/74> ns4kge:hasNSMethod <ns-method/concept-driven-negative-sampling> .
+<configuration/conceptdriven/74> ns4kge:result "0.46"^^xsd:decimal .
+
+<configuration/conceptdriven/75> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/75> ns4kge:hasTask    <task/link-prediction> .
+<configuration/conceptdriven/75> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/conceptdriven/75> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/conceptdriven/75> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/conceptdriven/75> ns4kge:hasNSMethod <ns-method/concept-driven-negative-sampling> .
+<configuration/conceptdriven/75> ns4kge:result "0.529"^^xsd:decimal .
+
+<configuration/conceptdriven/76> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/76> ns4kge:hasTask    <task/link-prediction> .
+<configuration/conceptdriven/76> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/conceptdriven/76> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/conceptdriven/76> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/conceptdriven/76> ns4kge:hasNSMethod <ns-method/concept-driven-negative-sampling> .
+<configuration/conceptdriven/76> ns4kge:result "0.614"^^xsd:decimal .
+
+<configuration/conceptdriven/77> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/77> ns4kge:hasTask    <task/link-prediction> .
+<configuration/conceptdriven/77> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/conceptdriven/77> ns4kge:hasMetric  <metric/mrr> .
+<configuration/conceptdriven/77> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/conceptdriven/77> ns4kge:hasNSMethod <ns-method/concept-driven-negative-sampling> .
+<configuration/conceptdriven/77> ns4kge:result "0.355"^^xsd:decimal .
+
+<configuration/conceptdriven/78> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/78> ns4kge:hasTask    <task/link-prediction> .
+<configuration/conceptdriven/78> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/conceptdriven/78> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/conceptdriven/78> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/conceptdriven/78> ns4kge:hasNSMethod <ns-method/concept-driven-negative-sampling> .
+<configuration/conceptdriven/78> ns4kge:result "0.259"^^xsd:decimal .
+
+<configuration/conceptdriven/79> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/79> ns4kge:hasTask    <task/link-prediction> .
+<configuration/conceptdriven/79> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/conceptdriven/79> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/conceptdriven/79> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/conceptdriven/79> ns4kge:hasNSMethod <ns-method/concept-driven-negative-sampling> .
+<configuration/conceptdriven/79> ns4kge:result "0.403"^^xsd:decimal .
+
+<configuration/conceptdriven/80> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/80> ns4kge:hasTask    <task/link-prediction> .
+<configuration/conceptdriven/80> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/conceptdriven/80> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/conceptdriven/80> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/conceptdriven/80> ns4kge:hasNSMethod <ns-method/concept-driven-negative-sampling> .
+<configuration/conceptdriven/80> ns4kge:result "0.573"^^xsd:decimal .
+
+<configuration/conceptdriven/81> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/81> ns4kge:hasTask    <task/link-prediction> .
+<configuration/conceptdriven/81> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/conceptdriven/81> ns4kge:hasMetric  <metric/mrr> .
+<configuration/conceptdriven/81> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/conceptdriven/81> ns4kge:hasNSMethod <ns-method/uniform-negative-sampling> .
+<configuration/conceptdriven/81> ns4kge:result "0.444"^^xsd:decimal .
+
+<configuration/conceptdriven/82> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/82> ns4kge:hasTask    <task/link-prediction> .
+<configuration/conceptdriven/82> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/conceptdriven/82> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/conceptdriven/82> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/conceptdriven/82> ns4kge:hasNSMethod <ns-method/uniform-negative-sampling> .
+<configuration/conceptdriven/82> ns4kge:result "0.412"^^xsd:decimal .
+
+<configuration/conceptdriven/83> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/83> ns4kge:hasTask    <task/link-prediction> .
+<configuration/conceptdriven/83> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/conceptdriven/83> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/conceptdriven/83> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/conceptdriven/83> ns4kge:hasNSMethod <ns-method/uniform-negative-sampling> .
+<configuration/conceptdriven/83> ns4kge:result "0.47"^^xsd:decimal .
+
+<configuration/conceptdriven/84> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/84> ns4kge:hasTask    <task/link-prediction> .
+<configuration/conceptdriven/84> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/conceptdriven/84> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/conceptdriven/84> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/conceptdriven/84> ns4kge:hasNSMethod <ns-method/uniform-negative-sampling> .
+<configuration/conceptdriven/84> ns4kge:result "0.571"^^xsd:decimal .
+
+<configuration/conceptdriven/85> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/85> ns4kge:hasTask    <task/link-prediction> .
+<configuration/conceptdriven/85> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/conceptdriven/85> ns4kge:hasMetric  <metric/mrr> .
+<configuration/conceptdriven/85> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/conceptdriven/85> ns4kge:hasNSMethod <ns-method/uniform-negative-sampling> .
+<configuration/conceptdriven/85> ns4kge:result "0.281"^^xsd:decimal .
+
+<configuration/conceptdriven/86> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/86> ns4kge:hasTask    <task/link-prediction> .
+<configuration/conceptdriven/86> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/conceptdriven/86> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/conceptdriven/86> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/conceptdriven/86> ns4kge:hasNSMethod <ns-method/uniform-negative-sampling> .
+<configuration/conceptdriven/86> ns4kge:result "0.199"^^xsd:decimal .
+
+<configuration/conceptdriven/87> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/87> ns4kge:hasTask    <task/link-prediction> .
+<configuration/conceptdriven/87> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/conceptdriven/87> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/conceptdriven/87> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/conceptdriven/87> ns4kge:hasNSMethod <ns-method/uniform-negative-sampling> .
+<configuration/conceptdriven/87> ns4kge:result "0.301"^^xsd:decimal .
+
+<configuration/conceptdriven/88> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/88> ns4kge:hasTask    <task/link-prediction> .
+<configuration/conceptdriven/88> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/conceptdriven/88> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/conceptdriven/88> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/conceptdriven/88> ns4kge:hasNSMethod <ns-method/uniform-negative-sampling> .
+<configuration/conceptdriven/88> ns4kge:result "0.446"^^xsd:decimal .
+
+<configuration/conceptdriven/89> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/89> ns4kge:hasTask    <task/link-prediction> .
+<configuration/conceptdriven/89> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/conceptdriven/89> ns4kge:hasMetric  <metric/mrr> .
+<configuration/conceptdriven/89> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/conceptdriven/89> ns4kge:hasNSMethod <ns-method/concept-driven-negative-sampling> .
+<configuration/conceptdriven/89> ns4kge:result "0.475"^^xsd:decimal .
+
+<configuration/conceptdriven/90> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/90> ns4kge:hasTask    <task/link-prediction> .
+<configuration/conceptdriven/90> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/conceptdriven/90> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/conceptdriven/90> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/conceptdriven/90> ns4kge:hasNSMethod <ns-method/concept-driven-negative-sampling> .
+<configuration/conceptdriven/90> ns4kge:result "0.461"^^xsd:decimal .
+
+<configuration/conceptdriven/91> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/91> ns4kge:hasTask    <task/link-prediction> .
+<configuration/conceptdriven/91> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/conceptdriven/91> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/conceptdriven/91> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/conceptdriven/91> ns4kge:hasNSMethod <ns-method/concept-driven-negative-sampling> .
+<configuration/conceptdriven/91> ns4kge:result "0.505"^^xsd:decimal .
+
+<configuration/conceptdriven/92> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/92> ns4kge:hasTask    <task/link-prediction> .
+<configuration/conceptdriven/92> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/conceptdriven/92> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/conceptdriven/92> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/conceptdriven/92> ns4kge:hasNSMethod <ns-method/concept-driven-negative-sampling> .
+<configuration/conceptdriven/92> ns4kge:result "0.614"^^xsd:decimal .
+
+<configuration/conceptdriven/93> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/93> ns4kge:hasTask    <task/link-prediction> .
+<configuration/conceptdriven/93> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/conceptdriven/93> ns4kge:hasMetric  <metric/mrr> .
+<configuration/conceptdriven/93> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/conceptdriven/93> ns4kge:hasNSMethod <ns-method/concept-driven-negative-sampling> .
+<configuration/conceptdriven/93> ns4kge:result "0.301"^^xsd:decimal .
+
+<configuration/conceptdriven/94> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/94> ns4kge:hasTask    <task/link-prediction> .
+<configuration/conceptdriven/94> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/conceptdriven/94> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/conceptdriven/94> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/conceptdriven/94> ns4kge:hasNSMethod <ns-method/concept-driven-negative-sampling> .
+<configuration/conceptdriven/94> ns4kge:result "0.223"^^xsd:decimal .
+
+<configuration/conceptdriven/95> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/95> ns4kge:hasTask    <task/link-prediction> .
+<configuration/conceptdriven/95> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/conceptdriven/95> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/conceptdriven/95> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/conceptdriven/95> ns4kge:hasNSMethod <ns-method/concept-driven-negative-sampling> .
+<configuration/conceptdriven/95> ns4kge:result "0.324"^^xsd:decimal .
+
+<configuration/conceptdriven/96> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/96> ns4kge:hasTask    <task/link-prediction> .
+<configuration/conceptdriven/96> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/conceptdriven/96> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/conceptdriven/96> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/conceptdriven/96> ns4kge:hasNSMethod <ns-method/concept-driven-negative-sampling> .
+<configuration/conceptdriven/96> ns4kge:result "0.479"^^xsd:decimal .
+
+<configuration/conceptdriven/97> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/97> ns4kge:hasTask    <task/triple-classification> .
+<configuration/conceptdriven/97> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/conceptdriven/97> ns4kge:hasMetric  <metric/accuracy> .
+<configuration/conceptdriven/97> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/conceptdriven/97> ns4kge:hasNSMethod <ns-method/uniform-negative-sampling> .
+<configuration/conceptdriven/97> ns4kge:result "0.709"^^xsd:decimal .
+
+<configuration/conceptdriven/98> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/98> ns4kge:hasTask    <task/triple-classification> .
+<configuration/conceptdriven/98> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/conceptdriven/98> ns4kge:hasMetric  <metric/accuracy> .
+<configuration/conceptdriven/98> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/conceptdriven/98> ns4kge:hasNSMethod <ns-method/uniform-negative-sampling> .
+<configuration/conceptdriven/98> ns4kge:result "0.814"^^xsd:decimal .
+
+<configuration/conceptdriven/99> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/99> ns4kge:hasTask    <task/triple-classification> .
+<configuration/conceptdriven/99> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/conceptdriven/99> ns4kge:hasMetric  <metric/accuracy> .
+<configuration/conceptdriven/99> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/conceptdriven/99> ns4kge:hasNSMethod <ns-method/concept-driven-negative-sampling> .
+<configuration/conceptdriven/99> ns4kge:result "0.745"^^xsd:decimal .
+
+<configuration/conceptdriven/100> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/100> ns4kge:hasTask    <task/triple-classification> .
+<configuration/conceptdriven/100> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/conceptdriven/100> ns4kge:hasMetric  <metric/accuracy> .
+<configuration/conceptdriven/100> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/conceptdriven/100> ns4kge:hasNSMethod <ns-method/concept-driven-negative-sampling> .
+<configuration/conceptdriven/100> ns4kge:result "0.863"^^xsd:decimal .
+
+<configuration/conceptdriven/101> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/101> ns4kge:hasTask    <task/triple-classification> .
+<configuration/conceptdriven/101> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/conceptdriven/101> ns4kge:hasMetric  <metric/accuracy> .
+<configuration/conceptdriven/101> ns4kge:hasKGEModel <kge-model/transh> .
+<configuration/conceptdriven/101> ns4kge:hasNSMethod <ns-method/uniform-negative-sampling> .
+<configuration/conceptdriven/101> ns4kge:result "0.626"^^xsd:decimal .
+
+<configuration/conceptdriven/102> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/102> ns4kge:hasTask    <task/triple-classification> .
+<configuration/conceptdriven/102> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/conceptdriven/102> ns4kge:hasMetric  <metric/accuracy> .
+<configuration/conceptdriven/102> ns4kge:hasKGEModel <kge-model/transh> .
+<configuration/conceptdriven/102> ns4kge:hasNSMethod <ns-method/uniform-negative-sampling> .
+<configuration/conceptdriven/102> ns4kge:result "0.835"^^xsd:decimal .
+
+<configuration/conceptdriven/103> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/103> ns4kge:hasTask    <task/triple-classification> .
+<configuration/conceptdriven/103> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/conceptdriven/103> ns4kge:hasMetric  <metric/accuracy> .
+<configuration/conceptdriven/103> ns4kge:hasKGEModel <kge-model/transh> .
+<configuration/conceptdriven/103> ns4kge:hasNSMethod <ns-method/concept-driven-negative-sampling> .
+<configuration/conceptdriven/103> ns4kge:result "0.658"^^xsd:decimal .
+
+<configuration/conceptdriven/104> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/104> ns4kge:hasTask    <task/triple-classification> .
+<configuration/conceptdriven/104> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/conceptdriven/104> ns4kge:hasMetric  <metric/accuracy> .
+<configuration/conceptdriven/104> ns4kge:hasKGEModel <kge-model/transh> .
+<configuration/conceptdriven/104> ns4kge:hasNSMethod <ns-method/concept-driven-negative-sampling> .
+<configuration/conceptdriven/104> ns4kge:result "0.886"^^xsd:decimal .
+
+<configuration/conceptdriven/105> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/105> ns4kge:hasTask    <task/triple-classification> .
+<configuration/conceptdriven/105> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/conceptdriven/105> ns4kge:hasMetric  <metric/accuracy> .
+<configuration/conceptdriven/105> ns4kge:hasKGEModel <kge-model/transr> .
+<configuration/conceptdriven/105> ns4kge:hasNSMethod <ns-method/uniform-negative-sampling> .
+<configuration/conceptdriven/105> ns4kge:result "0.621"^^xsd:decimal .
+
+<configuration/conceptdriven/106> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/106> ns4kge:hasTask    <task/triple-classification> .
+<configuration/conceptdriven/106> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/conceptdriven/106> ns4kge:hasMetric  <metric/accuracy> .
+<configuration/conceptdriven/106> ns4kge:hasKGEModel <kge-model/transr> .
+<configuration/conceptdriven/106> ns4kge:hasNSMethod <ns-method/uniform-negative-sampling> .
+<configuration/conceptdriven/106> ns4kge:result "0.824"^^xsd:decimal .
+
+<configuration/conceptdriven/107> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/107> ns4kge:hasTask    <task/triple-classification> .
+<configuration/conceptdriven/107> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/conceptdriven/107> ns4kge:hasMetric  <metric/accuracy> .
+<configuration/conceptdriven/107> ns4kge:hasKGEModel <kge-model/transr> .
+<configuration/conceptdriven/107> ns4kge:hasNSMethod <ns-method/concept-driven-negative-sampling> .
+<configuration/conceptdriven/107> ns4kge:result "0.652"^^xsd:decimal .
+
+<configuration/conceptdriven/108> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/108> ns4kge:hasTask    <task/triple-classification> .
+<configuration/conceptdriven/108> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/conceptdriven/108> ns4kge:hasMetric  <metric/accuracy> .
+<configuration/conceptdriven/108> ns4kge:hasKGEModel <kge-model/transr> .
+<configuration/conceptdriven/108> ns4kge:hasNSMethod <ns-method/concept-driven-negative-sampling> .
+<configuration/conceptdriven/108> ns4kge:result "0.863"^^xsd:decimal .
+
+<configuration/conceptdriven/109> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/109> ns4kge:hasTask    <task/triple-classification> .
+<configuration/conceptdriven/109> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/conceptdriven/109> ns4kge:hasMetric  <metric/accuracy> .
+<configuration/conceptdriven/109> ns4kge:hasKGEModel <kge-model/dkrl> .
+<configuration/conceptdriven/109> ns4kge:hasNSMethod <ns-method/uniform-negative-sampling> .
+<configuration/conceptdriven/109> ns4kge:result "0.727"^^xsd:decimal .
+
+<configuration/conceptdriven/110> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/110> ns4kge:hasTask    <task/triple-classification> .
+<configuration/conceptdriven/110> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/conceptdriven/110> ns4kge:hasMetric  <metric/accuracy> .
+<configuration/conceptdriven/110> ns4kge:hasKGEModel <kge-model/dkrl> .
+<configuration/conceptdriven/110> ns4kge:hasNSMethod <ns-method/uniform-negative-sampling> .
+<configuration/conceptdriven/110> ns4kge:result "0.835"^^xsd:decimal .
+
+<configuration/conceptdriven/111> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/111> ns4kge:hasTask    <task/triple-classification> .
+<configuration/conceptdriven/111> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/conceptdriven/111> ns4kge:hasMetric  <metric/accuracy> .
+<configuration/conceptdriven/111> ns4kge:hasKGEModel <kge-model/dkrl> .
+<configuration/conceptdriven/111> ns4kge:hasNSMethod <ns-method/concept-driven-negative-sampling> .
+<configuration/conceptdriven/111> ns4kge:result "0.764"^^xsd:decimal .
+
+<configuration/conceptdriven/112> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/112> ns4kge:hasTask    <task/triple-classification> .
+<configuration/conceptdriven/112> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/conceptdriven/112> ns4kge:hasMetric  <metric/accuracy> .
+<configuration/conceptdriven/112> ns4kge:hasKGEModel <kge-model/dkrl> .
+<configuration/conceptdriven/112> ns4kge:hasNSMethod <ns-method/concept-driven-negative-sampling> .
+<configuration/conceptdriven/112> ns4kge:result "0.863"^^xsd:decimal .
+
+<configuration/conceptdriven/113> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/113> ns4kge:hasTask    <task/triple-classification> .
+<configuration/conceptdriven/113> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/conceptdriven/113> ns4kge:hasMetric  <metric/accuracy> .
+<configuration/conceptdriven/113> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/conceptdriven/113> ns4kge:hasNSMethod <ns-method/uniform-negative-sampling> .
+<configuration/conceptdriven/113> ns4kge:result "0.884"^^xsd:decimal .
+
+<configuration/conceptdriven/114> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/114> ns4kge:hasTask    <task/triple-classification> .
+<configuration/conceptdriven/114> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/conceptdriven/114> ns4kge:hasMetric  <metric/accuracy> .
+<configuration/conceptdriven/114> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/conceptdriven/114> ns4kge:hasNSMethod <ns-method/uniform-negative-sampling> .
+<configuration/conceptdriven/114> ns4kge:result "0.861"^^xsd:decimal .
+
+<configuration/conceptdriven/115> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/115> ns4kge:hasTask    <task/triple-classification> .
+<configuration/conceptdriven/115> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/conceptdriven/115> ns4kge:hasMetric  <metric/accuracy> .
+<configuration/conceptdriven/115> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/conceptdriven/115> ns4kge:hasNSMethod <ns-method/concept-driven-negative-sampling> .
+<configuration/conceptdriven/115> ns4kge:result "0.902"^^xsd:decimal .
+
+<configuration/conceptdriven/116> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/116> ns4kge:hasTask    <task/triple-classification> .
+<configuration/conceptdriven/116> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/conceptdriven/116> ns4kge:hasMetric  <metric/accuracy> .
+<configuration/conceptdriven/116> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/conceptdriven/116> ns4kge:hasNSMethod <ns-method/concept-driven-negative-sampling> .
+<configuration/conceptdriven/116> ns4kge:result "0.863"^^xsd:decimal .
+
+<configuration/conceptdriven/117> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/117> ns4kge:hasTask    <task/triple-classification> .
+<configuration/conceptdriven/117> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/conceptdriven/117> ns4kge:hasMetric  <metric/accuracy> .
+<configuration/conceptdriven/117> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/conceptdriven/117> ns4kge:hasNSMethod <ns-method/uniform-negative-sampling> .
+<configuration/conceptdriven/117> ns4kge:result "0.758"^^xsd:decimal .
+
+<configuration/conceptdriven/118> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/118> ns4kge:hasTask    <task/triple-classification> .
+<configuration/conceptdriven/118> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/conceptdriven/118> ns4kge:hasMetric  <metric/accuracy> .
+<configuration/conceptdriven/118> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/conceptdriven/118> ns4kge:hasNSMethod <ns-method/uniform-negative-sampling> .
+<configuration/conceptdriven/118> ns4kge:result "0.829"^^xsd:decimal .
+
+<configuration/conceptdriven/119> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/119> ns4kge:hasTask    <task/triple-classification> .
+<configuration/conceptdriven/119> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/conceptdriven/119> ns4kge:hasMetric  <metric/accuracy> .
+<configuration/conceptdriven/119> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/conceptdriven/119> ns4kge:hasNSMethod <ns-method/concept-driven-negative-sampling> .
+<configuration/conceptdriven/119> ns4kge:result "0.797"^^xsd:decimal .
+
+<configuration/conceptdriven/120> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/120> ns4kge:hasTask    <task/triple-classification> .
+<configuration/conceptdriven/120> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/conceptdriven/120> ns4kge:hasMetric  <metric/accuracy> .
+<configuration/conceptdriven/120> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/conceptdriven/120> ns4kge:hasNSMethod <ns-method/concept-driven-negative-sampling> .
+<configuration/conceptdriven/120> ns4kge:result "0.863"^^xsd:decimal .
+
+<configuration/conceptdriven/121> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/121> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/conceptdriven/121> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/conceptdriven/121> ns4kge:hasMetric  <metric/mrr> .
+<configuration/conceptdriven/121> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/conceptdriven/121> ns4kge:hasNSMethod <ns-method/uniform-negative-sampling> .
+<configuration/conceptdriven/121> ns4kge:result "0.4656"^^xsd:decimal .
+
+<configuration/conceptdriven/122> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/122> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/conceptdriven/122> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/conceptdriven/122> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/conceptdriven/122> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/conceptdriven/122> ns4kge:hasNSMethod <ns-method/uniform-negative-sampling> .
+<configuration/conceptdriven/122> ns4kge:result "0.1831"^^xsd:decimal .
+
+<configuration/conceptdriven/123> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/123> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/conceptdriven/123> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/conceptdriven/123> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/conceptdriven/123> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/conceptdriven/123> ns4kge:hasNSMethod <ns-method/uniform-negative-sampling> .
+<configuration/conceptdriven/123> ns4kge:result "0.2236"^^xsd:decimal .
+
+<configuration/conceptdriven/124> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/124> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/conceptdriven/124> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/conceptdriven/124> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/conceptdriven/124> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/conceptdriven/124> ns4kge:hasNSMethod <ns-method/uniform-negative-sampling> .
+<configuration/conceptdriven/124> ns4kge:result "0.2495"^^xsd:decimal .
+
+<configuration/conceptdriven/125> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/125> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/conceptdriven/125> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/conceptdriven/125> ns4kge:hasMetric  <metric/mrr> .
+<configuration/conceptdriven/125> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/conceptdriven/125> ns4kge:hasNSMethod <ns-method/uniform-negative-sampling> .
+<configuration/conceptdriven/125> ns4kge:result "0.6379"^^xsd:decimal .
+
+<configuration/conceptdriven/126> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/126> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/conceptdriven/126> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/conceptdriven/126> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/conceptdriven/126> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/conceptdriven/126> ns4kge:hasNSMethod <ns-method/uniform-negative-sampling> .
+<configuration/conceptdriven/126> ns4kge:result "0.693"^^xsd:decimal .
+
+<configuration/conceptdriven/127> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/127> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/conceptdriven/127> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/conceptdriven/127> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/conceptdriven/127> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/conceptdriven/127> ns4kge:hasNSMethod <ns-method/uniform-negative-sampling> .
+<configuration/conceptdriven/127> ns4kge:result "0.6999"^^xsd:decimal .
+
+<configuration/conceptdriven/128> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/128> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/conceptdriven/128> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/conceptdriven/128> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/conceptdriven/128> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/conceptdriven/128> ns4kge:hasNSMethod <ns-method/uniform-negative-sampling> .
+<configuration/conceptdriven/128> ns4kge:result "0.856"^^xsd:decimal .
+
+<configuration/conceptdriven/129> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/129> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/conceptdriven/129> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/conceptdriven/129> ns4kge:hasMetric  <metric/mrr> .
+<configuration/conceptdriven/129> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/conceptdriven/129> ns4kge:hasNSMethod <ns-method/concept-driven-negative-sampling> .
+<configuration/conceptdriven/129> ns4kge:result "0.521"^^xsd:decimal .
+
+<configuration/conceptdriven/130> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/130> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/conceptdriven/130> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/conceptdriven/130> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/conceptdriven/130> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/conceptdriven/130> ns4kge:hasNSMethod <ns-method/concept-driven-negative-sampling> .
+<configuration/conceptdriven/130> ns4kge:result "0.384"^^xsd:decimal .
+
+<configuration/conceptdriven/131> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/131> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/conceptdriven/131> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/conceptdriven/131> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/conceptdriven/131> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/conceptdriven/131> ns4kge:hasNSMethod <ns-method/concept-driven-negative-sampling> .
+<configuration/conceptdriven/131> ns4kge:result "0.469"^^xsd:decimal .
+
+<configuration/conceptdriven/132> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/132> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/conceptdriven/132> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/conceptdriven/132> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/conceptdriven/132> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/conceptdriven/132> ns4kge:hasNSMethod <ns-method/concept-driven-negative-sampling> .
+<configuration/conceptdriven/132> ns4kge:result "0.523"^^xsd:decimal .
+
+<configuration/conceptdriven/133> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/133> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/conceptdriven/133> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/conceptdriven/133> ns4kge:hasMetric  <metric/mrr> .
+<configuration/conceptdriven/133> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/conceptdriven/133> ns4kge:hasNSMethod <ns-method/concept-driven-negative-sampling> .
+<configuration/conceptdriven/133> ns4kge:result "0.714"^^xsd:decimal .
+
+<configuration/conceptdriven/134> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/134> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/conceptdriven/134> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/conceptdriven/134> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/conceptdriven/134> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/conceptdriven/134> ns4kge:hasNSMethod <ns-method/concept-driven-negative-sampling> .
+<configuration/conceptdriven/134> ns4kge:result "0.714"^^xsd:decimal .
+
+<configuration/conceptdriven/135> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/135> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/conceptdriven/135> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/conceptdriven/135> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/conceptdriven/135> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/conceptdriven/135> ns4kge:hasNSMethod <ns-method/concept-driven-negative-sampling> .
+<configuration/conceptdriven/135> ns4kge:result "0.721"^^xsd:decimal .
+
+<configuration/conceptdriven/136> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/136> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/conceptdriven/136> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/conceptdriven/136> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/conceptdriven/136> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/conceptdriven/136> ns4kge:hasNSMethod <ns-method/concept-driven-negative-sampling> .
+<configuration/conceptdriven/136> ns4kge:result "0.882"^^xsd:decimal .
+
+<configuration/conceptdriven/137> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/137> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/conceptdriven/137> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/conceptdriven/137> ns4kge:hasMetric  <metric/mrr> .
+<configuration/conceptdriven/137> ns4kge:hasKGEModel <kge-model/transh> .
+<configuration/conceptdriven/137> ns4kge:hasNSMethod <ns-method/uniform-negative-sampling> .
+<configuration/conceptdriven/137> ns4kge:result "0.4426"^^xsd:decimal .
+
+<configuration/conceptdriven/138> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/138> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/conceptdriven/138> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/conceptdriven/138> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/conceptdriven/138> ns4kge:hasKGEModel <kge-model/transh> .
+<configuration/conceptdriven/138> ns4kge:hasNSMethod <ns-method/uniform-negative-sampling> .
+<configuration/conceptdriven/138> ns4kge:result "0.1746"^^xsd:decimal .
+
+<configuration/conceptdriven/139> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/139> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/conceptdriven/139> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/conceptdriven/139> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/conceptdriven/139> ns4kge:hasKGEModel <kge-model/transh> .
+<configuration/conceptdriven/139> ns4kge:hasNSMethod <ns-method/uniform-negative-sampling> .
+<configuration/conceptdriven/139> ns4kge:result "0.2132"^^xsd:decimal .
+
+<configuration/conceptdriven/140> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/140> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/conceptdriven/140> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/conceptdriven/140> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/conceptdriven/140> ns4kge:hasKGEModel <kge-model/transh> .
+<configuration/conceptdriven/140> ns4kge:hasNSMethod <ns-method/uniform-negative-sampling> .
+<configuration/conceptdriven/140> ns4kge:result "0.2379"^^xsd:decimal .
+
+<configuration/conceptdriven/141> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/141> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/conceptdriven/141> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/conceptdriven/141> ns4kge:hasMetric  <metric/mrr> .
+<configuration/conceptdriven/141> ns4kge:hasKGEModel <kge-model/transh> .
+<configuration/conceptdriven/141> ns4kge:hasNSMethod <ns-method/uniform-negative-sampling> .
+<configuration/conceptdriven/141> ns4kge:result "0.7571"^^xsd:decimal .
+
+<configuration/conceptdriven/142> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/142> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/conceptdriven/142> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/conceptdriven/142> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/conceptdriven/142> ns4kge:hasKGEModel <kge-model/transh> .
+<configuration/conceptdriven/142> ns4kge:hasNSMethod <ns-method/uniform-negative-sampling> .
+<configuration/conceptdriven/142> ns4kge:result "0.8282"^^xsd:decimal .
+
+<configuration/conceptdriven/143> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/143> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/conceptdriven/143> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/conceptdriven/143> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/conceptdriven/143> ns4kge:hasKGEModel <kge-model/transh> .
+<configuration/conceptdriven/143> ns4kge:hasNSMethod <ns-method/uniform-negative-sampling> .
+<configuration/conceptdriven/143> ns4kge:result "0.8364"^^xsd:decimal .
+
+<configuration/conceptdriven/144> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/144> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/conceptdriven/144> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/conceptdriven/144> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/conceptdriven/144> ns4kge:hasKGEModel <kge-model/transh> .
+<configuration/conceptdriven/144> ns4kge:hasNSMethod <ns-method/uniform-negative-sampling> .
+<configuration/conceptdriven/144> ns4kge:result "0.8373"^^xsd:decimal .
+
+<configuration/conceptdriven/145> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/145> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/conceptdriven/145> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/conceptdriven/145> ns4kge:hasMetric  <metric/mrr> .
+<configuration/conceptdriven/145> ns4kge:hasKGEModel <kge-model/transh> .
+<configuration/conceptdriven/145> ns4kge:hasNSMethod <ns-method/concept-driven-negative-sampling> .
+<configuration/conceptdriven/145> ns4kge:result "0.456"^^xsd:decimal .
+
+<configuration/conceptdriven/146> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/146> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/conceptdriven/146> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/conceptdriven/146> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/conceptdriven/146> ns4kge:hasKGEModel <kge-model/transh> .
+<configuration/conceptdriven/146> ns4kge:hasNSMethod <ns-method/concept-driven-negative-sampling> .
+<configuration/conceptdriven/146> ns4kge:result "0.178"^^xsd:decimal .
+
+<configuration/conceptdriven/147> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/147> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/conceptdriven/147> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/conceptdriven/147> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/conceptdriven/147> ns4kge:hasKGEModel <kge-model/transh> .
+<configuration/conceptdriven/147> ns4kge:hasNSMethod <ns-method/concept-driven-negative-sampling> .
+<configuration/conceptdriven/147> ns4kge:result "0.217"^^xsd:decimal .
+
+<configuration/conceptdriven/148> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/148> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/conceptdriven/148> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/conceptdriven/148> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/conceptdriven/148> ns4kge:hasKGEModel <kge-model/transh> .
+<configuration/conceptdriven/148> ns4kge:hasNSMethod <ns-method/concept-driven-negative-sampling> .
+<configuration/conceptdriven/148> ns4kge:result "0.243"^^xsd:decimal .
+
+<configuration/conceptdriven/149> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/149> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/conceptdriven/149> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/conceptdriven/149> ns4kge:hasMetric  <metric/mrr> .
+<configuration/conceptdriven/149> ns4kge:hasKGEModel <kge-model/transh> .
+<configuration/conceptdriven/149> ns4kge:hasNSMethod <ns-method/concept-driven-negative-sampling> .
+<configuration/conceptdriven/149> ns4kge:result "0.811"^^xsd:decimal .
+
+<configuration/conceptdriven/150> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/150> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/conceptdriven/150> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/conceptdriven/150> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/conceptdriven/150> ns4kge:hasKGEModel <kge-model/transh> .
+<configuration/conceptdriven/150> ns4kge:hasNSMethod <ns-method/concept-driven-negative-sampling> .
+<configuration/conceptdriven/150> ns4kge:result "0.853"^^xsd:decimal .
+
+<configuration/conceptdriven/151> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/151> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/conceptdriven/151> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/conceptdriven/151> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/conceptdriven/151> ns4kge:hasKGEModel <kge-model/transh> .
+<configuration/conceptdriven/151> ns4kge:hasNSMethod <ns-method/concept-driven-negative-sampling> .
+<configuration/conceptdriven/151> ns4kge:result "0.862"^^xsd:decimal .
+
+<configuration/conceptdriven/152> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/152> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/conceptdriven/152> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/conceptdriven/152> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/conceptdriven/152> ns4kge:hasKGEModel <kge-model/transh> .
+<configuration/conceptdriven/152> ns4kge:hasNSMethod <ns-method/concept-driven-negative-sampling> .
+<configuration/conceptdriven/152> ns4kge:result "0.862"^^xsd:decimal .
+
+<configuration/conceptdriven/153> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/153> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/conceptdriven/153> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/conceptdriven/153> ns4kge:hasMetric  <metric/mrr> .
+<configuration/conceptdriven/153> ns4kge:hasKGEModel <kge-model/transr> .
+<configuration/conceptdriven/153> ns4kge:hasNSMethod <ns-method/uniform-negative-sampling> .
+<configuration/conceptdriven/153> ns4kge:result "0.4387"^^xsd:decimal .
+
+<configuration/conceptdriven/154> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/154> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/conceptdriven/154> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/conceptdriven/154> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/conceptdriven/154> ns4kge:hasKGEModel <kge-model/transr> .
+<configuration/conceptdriven/154> ns4kge:hasNSMethod <ns-method/uniform-negative-sampling> .
+<configuration/conceptdriven/154> ns4kge:result "0.1723"^^xsd:decimal .
+
+<configuration/conceptdriven/155> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/155> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/conceptdriven/155> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/conceptdriven/155> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/conceptdriven/155> ns4kge:hasKGEModel <kge-model/transr> .
+<configuration/conceptdriven/155> ns4kge:hasNSMethod <ns-method/uniform-negative-sampling> .
+<configuration/conceptdriven/155> ns4kge:result "0.2104"^^xsd:decimal .
+
+<configuration/conceptdriven/156> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/156> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/conceptdriven/156> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/conceptdriven/156> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/conceptdriven/156> ns4kge:hasKGEModel <kge-model/transr> .
+<configuration/conceptdriven/156> ns4kge:hasNSMethod <ns-method/uniform-negative-sampling> .
+<configuration/conceptdriven/156> ns4kge:result "0.2348"^^xsd:decimal .
+
+<configuration/conceptdriven/157> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/157> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/conceptdriven/157> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/conceptdriven/157> ns4kge:hasMetric  <metric/mrr> .
+<configuration/conceptdriven/157> ns4kge:hasKGEModel <kge-model/transr> .
+<configuration/conceptdriven/157> ns4kge:hasNSMethod <ns-method/uniform-negative-sampling> .
+<configuration/conceptdriven/157> ns4kge:result "0.74"^^xsd:decimal .
+
+<configuration/conceptdriven/158> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/158> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/conceptdriven/158> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/conceptdriven/158> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/conceptdriven/158> ns4kge:hasKGEModel <kge-model/transr> .
+<configuration/conceptdriven/158> ns4kge:hasNSMethod <ns-method/uniform-negative-sampling> .
+<configuration/conceptdriven/158> ns4kge:result "0.816"^^xsd:decimal .
+
+<configuration/conceptdriven/159> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/159> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/conceptdriven/159> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/conceptdriven/159> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/conceptdriven/159> ns4kge:hasKGEModel <kge-model/transr> .
+<configuration/conceptdriven/159> ns4kge:hasNSMethod <ns-method/uniform-negative-sampling> .
+<configuration/conceptdriven/159> ns4kge:result "0.8242"^^xsd:decimal .
+
+<configuration/conceptdriven/160> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/160> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/conceptdriven/160> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/conceptdriven/160> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/conceptdriven/160> ns4kge:hasKGEModel <kge-model/transr> .
+<configuration/conceptdriven/160> ns4kge:hasNSMethod <ns-method/uniform-negative-sampling> .
+<configuration/conceptdriven/160> ns4kge:result "0.825"^^xsd:decimal .
+
+<configuration/conceptdriven/161> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/161> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/conceptdriven/161> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/conceptdriven/161> ns4kge:hasMetric  <metric/mrr> .
+<configuration/conceptdriven/161> ns4kge:hasKGEModel <kge-model/transr> .
+<configuration/conceptdriven/161> ns4kge:hasNSMethod <ns-method/concept-driven-negative-sampling> .
+<configuration/conceptdriven/161> ns4kge:result "0.452"^^xsd:decimal .
+
+<configuration/conceptdriven/162> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/162> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/conceptdriven/162> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/conceptdriven/162> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/conceptdriven/162> ns4kge:hasKGEModel <kge-model/transr> .
+<configuration/conceptdriven/162> ns4kge:hasNSMethod <ns-method/concept-driven-negative-sampling> .
+<configuration/conceptdriven/162> ns4kge:result "0.176"^^xsd:decimal .
+
+<configuration/conceptdriven/163> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/163> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/conceptdriven/163> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/conceptdriven/163> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/conceptdriven/163> ns4kge:hasKGEModel <kge-model/transr> .
+<configuration/conceptdriven/163> ns4kge:hasNSMethod <ns-method/concept-driven-negative-sampling> .
+<configuration/conceptdriven/163> ns4kge:result "0.215"^^xsd:decimal .
+
+<configuration/conceptdriven/164> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/164> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/conceptdriven/164> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/conceptdriven/164> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/conceptdriven/164> ns4kge:hasKGEModel <kge-model/transr> .
+<configuration/conceptdriven/164> ns4kge:hasNSMethod <ns-method/concept-driven-negative-sampling> .
+<configuration/conceptdriven/164> ns4kge:result "0.239"^^xsd:decimal .
+
+<configuration/conceptdriven/165> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/165> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/conceptdriven/165> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/conceptdriven/165> ns4kge:hasMetric  <metric/mrr> .
+<configuration/conceptdriven/165> ns4kge:hasKGEModel <kge-model/transr> .
+<configuration/conceptdriven/165> ns4kge:hasNSMethod <ns-method/concept-driven-negative-sampling> .
+<configuration/conceptdriven/165> ns4kge:result "0.793"^^xsd:decimal .
+
+<configuration/conceptdriven/166> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/166> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/conceptdriven/166> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/conceptdriven/166> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/conceptdriven/166> ns4kge:hasKGEModel <kge-model/transr> .
+<configuration/conceptdriven/166> ns4kge:hasNSMethod <ns-method/concept-driven-negative-sampling> .
+<configuration/conceptdriven/166> ns4kge:result "0.84"^^xsd:decimal .
+
+<configuration/conceptdriven/167> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/167> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/conceptdriven/167> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/conceptdriven/167> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/conceptdriven/167> ns4kge:hasKGEModel <kge-model/transr> .
+<configuration/conceptdriven/167> ns4kge:hasNSMethod <ns-method/concept-driven-negative-sampling> .
+<configuration/conceptdriven/167> ns4kge:result "0.849"^^xsd:decimal .
+
+<configuration/conceptdriven/168> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/168> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/conceptdriven/168> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/conceptdriven/168> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/conceptdriven/168> ns4kge:hasKGEModel <kge-model/transr> .
+<configuration/conceptdriven/168> ns4kge:hasNSMethod <ns-method/concept-driven-negative-sampling> .
+<configuration/conceptdriven/168> ns4kge:result "0.85"^^xsd:decimal .
+
+<configuration/conceptdriven/169> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/169> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/conceptdriven/169> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/conceptdriven/169> ns4kge:hasMetric  <metric/mrr> .
+<configuration/conceptdriven/169> ns4kge:hasKGEModel <kge-model/dkrl> .
+<configuration/conceptdriven/169> ns4kge:hasNSMethod <ns-method/uniform-negative-sampling> .
+<configuration/conceptdriven/169> ns4kge:result "0.5011"^^xsd:decimal .
+
+<configuration/conceptdriven/170> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/170> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/conceptdriven/170> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/conceptdriven/170> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/conceptdriven/170> ns4kge:hasKGEModel <kge-model/dkrl> .
+<configuration/conceptdriven/170> ns4kge:hasNSMethod <ns-method/uniform-negative-sampling> .
+<configuration/conceptdriven/170> ns4kge:result "0.5208"^^xsd:decimal .
+
+<configuration/conceptdriven/171> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/171> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/conceptdriven/171> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/conceptdriven/171> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/conceptdriven/171> ns4kge:hasKGEModel <kge-model/dkrl> .
+<configuration/conceptdriven/171> ns4kge:hasNSMethod <ns-method/uniform-negative-sampling> .
+<configuration/conceptdriven/171> ns4kge:result "0.6362"^^xsd:decimal .
+
+<configuration/conceptdriven/172> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/172> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/conceptdriven/172> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/conceptdriven/172> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/conceptdriven/172> ns4kge:hasKGEModel <kge-model/dkrl> .
+<configuration/conceptdriven/172> ns4kge:hasNSMethod <ns-method/uniform-negative-sampling> .
+<configuration/conceptdriven/172> ns4kge:result "0.7098"^^xsd:decimal .
+
+<configuration/conceptdriven/173> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/173> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/conceptdriven/173> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/conceptdriven/173> ns4kge:hasMetric  <metric/mrr> .
+<configuration/conceptdriven/173> ns4kge:hasKGEModel <kge-model/dkrl> .
+<configuration/conceptdriven/173> ns4kge:hasNSMethod <ns-method/uniform-negative-sampling> .
+<configuration/conceptdriven/173> ns4kge:result "0.7263"^^xsd:decimal .
+
+<configuration/conceptdriven/174> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/174> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/conceptdriven/174> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/conceptdriven/174> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/conceptdriven/174> ns4kge:hasKGEModel <kge-model/dkrl> .
+<configuration/conceptdriven/174> ns4kge:hasNSMethod <ns-method/uniform-negative-sampling> .
+<configuration/conceptdriven/174> ns4kge:result "0.808"^^xsd:decimal .
+
+<configuration/conceptdriven/175> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/175> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/conceptdriven/175> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/conceptdriven/175> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/conceptdriven/175> ns4kge:hasKGEModel <kge-model/dkrl> .
+<configuration/conceptdriven/175> ns4kge:hasNSMethod <ns-method/uniform-negative-sampling> .
+<configuration/conceptdriven/175> ns4kge:result "0.816"^^xsd:decimal .
+
+<configuration/conceptdriven/176> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/176> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/conceptdriven/176> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/conceptdriven/176> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/conceptdriven/176> ns4kge:hasKGEModel <kge-model/dkrl> .
+<configuration/conceptdriven/176> ns4kge:hasNSMethod <ns-method/uniform-negative-sampling> .
+<configuration/conceptdriven/176> ns4kge:result "0.901"^^xsd:decimal .
+
+<configuration/conceptdriven/177> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/177> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/conceptdriven/177> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/conceptdriven/177> ns4kge:hasMetric  <metric/mrr> .
+<configuration/conceptdriven/177> ns4kge:hasKGEModel <kge-model/dkrl> .
+<configuration/conceptdriven/177> ns4kge:hasNSMethod <ns-method/concept-driven-negative-sampling> .
+<configuration/conceptdriven/177> ns4kge:result "0.516"^^xsd:decimal .
+
+<configuration/conceptdriven/178> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/178> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/conceptdriven/178> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/conceptdriven/178> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/conceptdriven/178> ns4kge:hasKGEModel <kge-model/dkrl> .
+<configuration/conceptdriven/178> ns4kge:hasNSMethod <ns-method/concept-driven-negative-sampling> .
+<configuration/conceptdriven/178> ns4kge:result "0.531"^^xsd:decimal .
+
+<configuration/conceptdriven/179> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/179> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/conceptdriven/179> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/conceptdriven/179> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/conceptdriven/179> ns4kge:hasKGEModel <kge-model/dkrl> .
+<configuration/conceptdriven/179> ns4kge:hasNSMethod <ns-method/concept-driven-negative-sampling> .
+<configuration/conceptdriven/179> ns4kge:result "0.649"^^xsd:decimal .
+
+<configuration/conceptdriven/180> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/180> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/conceptdriven/180> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/conceptdriven/180> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/conceptdriven/180> ns4kge:hasKGEModel <kge-model/dkrl> .
+<configuration/conceptdriven/180> ns4kge:hasNSMethod <ns-method/concept-driven-negative-sampling> .
+<configuration/conceptdriven/180> ns4kge:result "0.724"^^xsd:decimal .
+
+<configuration/conceptdriven/181> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/181> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/conceptdriven/181> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/conceptdriven/181> ns4kge:hasMetric  <metric/mrr> .
+<configuration/conceptdriven/181> ns4kge:hasKGEModel <kge-model/dkrl> .
+<configuration/conceptdriven/181> ns4kge:hasNSMethod <ns-method/concept-driven-negative-sampling> .
+<configuration/conceptdriven/181> ns4kge:result "0.778"^^xsd:decimal .
+
+<configuration/conceptdriven/182> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/182> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/conceptdriven/182> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/conceptdriven/182> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/conceptdriven/182> ns4kge:hasKGEModel <kge-model/dkrl> .
+<configuration/conceptdriven/182> ns4kge:hasNSMethod <ns-method/concept-driven-negative-sampling> .
+<configuration/conceptdriven/182> ns4kge:result "0.832"^^xsd:decimal .
+
+<configuration/conceptdriven/183> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/183> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/conceptdriven/183> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/conceptdriven/183> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/conceptdriven/183> ns4kge:hasKGEModel <kge-model/dkrl> .
+<configuration/conceptdriven/183> ns4kge:hasNSMethod <ns-method/concept-driven-negative-sampling> .
+<configuration/conceptdriven/183> ns4kge:result "0.841"^^xsd:decimal .
+
+<configuration/conceptdriven/184> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/184> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/conceptdriven/184> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/conceptdriven/184> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/conceptdriven/184> ns4kge:hasKGEModel <kge-model/dkrl> .
+<configuration/conceptdriven/184> ns4kge:hasNSMethod <ns-method/concept-driven-negative-sampling> .
+<configuration/conceptdriven/184> ns4kge:result "0.928"^^xsd:decimal .
+
+<configuration/conceptdriven/185> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/185> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/conceptdriven/185> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/conceptdriven/185> ns4kge:hasMetric  <metric/mrr> .
+<configuration/conceptdriven/185> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/conceptdriven/185> ns4kge:hasNSMethod <ns-method/uniform-negative-sampling> .
+<configuration/conceptdriven/185> ns4kge:result "0.912"^^xsd:decimal .
+
+<configuration/conceptdriven/186> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/186> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/conceptdriven/186> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/conceptdriven/186> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/conceptdriven/186> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/conceptdriven/186> ns4kge:hasNSMethod <ns-method/uniform-negative-sampling> .
+<configuration/conceptdriven/186> ns4kge:result "0.7289"^^xsd:decimal .
+
+<configuration/conceptdriven/187> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/187> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/conceptdriven/187> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/conceptdriven/187> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/conceptdriven/187> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/conceptdriven/187> ns4kge:hasNSMethod <ns-method/uniform-negative-sampling> .
+<configuration/conceptdriven/187> ns4kge:result "0.8903"^^xsd:decimal .
+
+<configuration/conceptdriven/188> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/188> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/conceptdriven/188> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/conceptdriven/188> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/conceptdriven/188> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/conceptdriven/188> ns4kge:hasNSMethod <ns-method/uniform-negative-sampling> .
+<configuration/conceptdriven/188> ns4kge:result "0.905"^^xsd:decimal .
+
+<configuration/conceptdriven/189> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/189> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/conceptdriven/189> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/conceptdriven/189> ns4kge:hasMetric  <metric/mrr> .
+<configuration/conceptdriven/189> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/conceptdriven/189> ns4kge:hasNSMethod <ns-method/uniform-negative-sampling> .
+<configuration/conceptdriven/189> ns4kge:result "0.8891"^^xsd:decimal .
+
+<configuration/conceptdriven/190> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/190> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/conceptdriven/190> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/conceptdriven/190> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/conceptdriven/190> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/conceptdriven/190> ns4kge:hasNSMethod <ns-method/uniform-negative-sampling> .
+<configuration/conceptdriven/190> ns4kge:result "0.826"^^xsd:decimal .
+
+<configuration/conceptdriven/191> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/191> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/conceptdriven/191> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/conceptdriven/191> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/conceptdriven/191> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/conceptdriven/191> ns4kge:hasNSMethod <ns-method/uniform-negative-sampling> .
+<configuration/conceptdriven/191> ns4kge:result "0.8343"^^xsd:decimal .
+
+<configuration/conceptdriven/192> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/192> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/conceptdriven/192> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/conceptdriven/192> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/conceptdriven/192> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/conceptdriven/192> ns4kge:hasNSMethod <ns-method/uniform-negative-sampling> .
+<configuration/conceptdriven/192> ns4kge:result "0.8351"^^xsd:decimal .
+
+<configuration/conceptdriven/193> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/193> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/conceptdriven/193> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/conceptdriven/193> ns4kge:hasMetric  <metric/mrr> .
+<configuration/conceptdriven/193> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/conceptdriven/193> ns4kge:hasNSMethod <ns-method/concept-driven-negative-sampling> .
+<configuration/conceptdriven/193> ns4kge:result "0.939"^^xsd:decimal .
+
+<configuration/conceptdriven/194> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/194> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/conceptdriven/194> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/conceptdriven/194> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/conceptdriven/194> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/conceptdriven/194> ns4kge:hasNSMethod <ns-method/concept-driven-negative-sampling> .
+<configuration/conceptdriven/194> ns4kge:result "0.743"^^xsd:decimal .
+
+<configuration/conceptdriven/195> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/195> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/conceptdriven/195> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/conceptdriven/195> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/conceptdriven/195> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/conceptdriven/195> ns4kge:hasNSMethod <ns-method/concept-driven-negative-sampling> .
+<configuration/conceptdriven/195> ns4kge:result "0.908"^^xsd:decimal .
+
+<configuration/conceptdriven/196> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/196> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/conceptdriven/196> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/conceptdriven/196> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/conceptdriven/196> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/conceptdriven/196> ns4kge:hasNSMethod <ns-method/concept-driven-negative-sampling> .
+<configuration/conceptdriven/196> ns4kge:result "0.923"^^xsd:decimal .
+
+<configuration/conceptdriven/197> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/197> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/conceptdriven/197> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/conceptdriven/197> ns4kge:hasMetric  <metric/mrr> .
+<configuration/conceptdriven/197> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/conceptdriven/197> ns4kge:hasNSMethod <ns-method/concept-driven-negative-sampling> .
+<configuration/conceptdriven/197> ns4kge:result "0.952"^^xsd:decimal .
+
+<configuration/conceptdriven/198> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/198> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/conceptdriven/198> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/conceptdriven/198> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/conceptdriven/198> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/conceptdriven/198> ns4kge:hasNSMethod <ns-method/concept-driven-negative-sampling> .
+<configuration/conceptdriven/198> ns4kge:result "0.851"^^xsd:decimal .
+
+<configuration/conceptdriven/199> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/199> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/conceptdriven/199> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/conceptdriven/199> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/conceptdriven/199> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/conceptdriven/199> ns4kge:hasNSMethod <ns-method/concept-driven-negative-sampling> .
+<configuration/conceptdriven/199> ns4kge:result "0.859"^^xsd:decimal .
+
+<configuration/conceptdriven/200> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/200> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/conceptdriven/200> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/conceptdriven/200> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/conceptdriven/200> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/conceptdriven/200> ns4kge:hasNSMethod <ns-method/concept-driven-negative-sampling> .
+<configuration/conceptdriven/200> ns4kge:result "0.86"^^xsd:decimal .
+
+<configuration/conceptdriven/201> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/201> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/conceptdriven/201> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/conceptdriven/201> ns4kge:hasMetric  <metric/mrr> .
+<configuration/conceptdriven/201> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/conceptdriven/201> ns4kge:hasNSMethod <ns-method/uniform-negative-sampling> .
+<configuration/conceptdriven/201> ns4kge:result "0.851"^^xsd:decimal .
+
+<configuration/conceptdriven/202> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/202> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/conceptdriven/202> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/conceptdriven/202> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/conceptdriven/202> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/conceptdriven/202> ns4kge:hasNSMethod <ns-method/uniform-negative-sampling> .
+<configuration/conceptdriven/202> ns4kge:result "0.702"^^xsd:decimal .
+
+<configuration/conceptdriven/203> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/203> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/conceptdriven/203> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/conceptdriven/203> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/conceptdriven/203> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/conceptdriven/203> ns4kge:hasNSMethod <ns-method/uniform-negative-sampling> .
+<configuration/conceptdriven/203> ns4kge:result "0.857"^^xsd:decimal .
+
+<configuration/conceptdriven/204> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/204> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/conceptdriven/204> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/conceptdriven/204> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/conceptdriven/204> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/conceptdriven/204> ns4kge:hasNSMethod <ns-method/uniform-negative-sampling> .
+<configuration/conceptdriven/204> ns4kge:result "0.927"^^xsd:decimal .
+
+<configuration/conceptdriven/205> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/205> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/conceptdriven/205> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/conceptdriven/205> ns4kge:hasMetric  <metric/mrr> .
+<configuration/conceptdriven/205> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/conceptdriven/205> ns4kge:hasNSMethod <ns-method/uniform-negative-sampling> .
+<configuration/conceptdriven/205> ns4kge:result "0.646"^^xsd:decimal .
+
+<configuration/conceptdriven/206> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/206> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/conceptdriven/206> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/conceptdriven/206> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/conceptdriven/206> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/conceptdriven/206> ns4kge:hasNSMethod <ns-method/uniform-negative-sampling> .
+<configuration/conceptdriven/206> ns4kge:result "0.747"^^xsd:decimal .
+
+<configuration/conceptdriven/207> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/207> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/conceptdriven/207> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/conceptdriven/207> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/conceptdriven/207> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/conceptdriven/207> ns4kge:hasNSMethod <ns-method/uniform-negative-sampling> .
+<configuration/conceptdriven/207> ns4kge:result "0.755"^^xsd:decimal .
+
+<configuration/conceptdriven/208> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/208> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/conceptdriven/208> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/conceptdriven/208> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/conceptdriven/208> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/conceptdriven/208> ns4kge:hasNSMethod <ns-method/uniform-negative-sampling> .
+<configuration/conceptdriven/208> ns4kge:result "0.755"^^xsd:decimal .
+
+<configuration/conceptdriven/209> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/209> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/conceptdriven/209> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/conceptdriven/209> ns4kge:hasMetric  <metric/mrr> .
+<configuration/conceptdriven/209> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/conceptdriven/209> ns4kge:hasNSMethod <ns-method/concept-driven-negative-sampling> .
+<configuration/conceptdriven/209> ns4kge:result "0.911"^^xsd:decimal .
+
+<configuration/conceptdriven/210> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/210> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/conceptdriven/210> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/conceptdriven/210> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/conceptdriven/210> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/conceptdriven/210> ns4kge:hasNSMethod <ns-method/concept-driven-negative-sampling> .
+<configuration/conceptdriven/210> ns4kge:result "0.706"^^xsd:decimal .
+
+<configuration/conceptdriven/211> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/211> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/conceptdriven/211> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/conceptdriven/211> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/conceptdriven/211> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/conceptdriven/211> ns4kge:hasNSMethod <ns-method/concept-driven-negative-sampling> .
+<configuration/conceptdriven/211> ns4kge:result "0.861"^^xsd:decimal .
+
+<configuration/conceptdriven/212> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/212> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/conceptdriven/212> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/conceptdriven/212> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/conceptdriven/212> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/conceptdriven/212> ns4kge:hasNSMethod <ns-method/concept-driven-negative-sampling> .
+<configuration/conceptdriven/212> ns4kge:result "0.932"^^xsd:decimal .
+
+<configuration/conceptdriven/213> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/213> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/conceptdriven/213> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/conceptdriven/213> ns4kge:hasMetric  <metric/mrr> .
+<configuration/conceptdriven/213> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/conceptdriven/213> ns4kge:hasNSMethod <ns-method/concept-driven-negative-sampling> .
+<configuration/conceptdriven/213> ns4kge:result "0.691"^^xsd:decimal .
+
+<configuration/conceptdriven/214> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/214> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/conceptdriven/214> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/conceptdriven/214> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/conceptdriven/214> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/conceptdriven/214> ns4kge:hasNSMethod <ns-method/concept-driven-negative-sampling> .
+<configuration/conceptdriven/214> ns4kge:result "0.814"^^xsd:decimal .
+
+<configuration/conceptdriven/215> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/215> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/conceptdriven/215> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/conceptdriven/215> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/conceptdriven/215> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/conceptdriven/215> ns4kge:hasNSMethod <ns-method/concept-driven-negative-sampling> .
+<configuration/conceptdriven/215> ns4kge:result "0.823"^^xsd:decimal .
+
+<configuration/conceptdriven/216> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/216> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/conceptdriven/216> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/conceptdriven/216> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/conceptdriven/216> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/conceptdriven/216> ns4kge:hasNSMethod <ns-method/concept-driven-negative-sampling> .
+<configuration/conceptdriven/216> ns4kge:result "0.823"^^xsd:decimal .
+
+<configuration/conceptdriven/217> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/217> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/conceptdriven/217> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/conceptdriven/217> ns4kge:hasMetric  <metric/mrr> .
+<configuration/conceptdriven/217> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/conceptdriven/217> ns4kge:hasNSMethod <ns-method/concept-domain-negative-sampling> .
+<configuration/conceptdriven/217> ns4kge:result "0.694"^^xsd:decimal .
+
+<configuration/conceptdriven/218> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/218> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/conceptdriven/218> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/conceptdriven/218> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/conceptdriven/218> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/conceptdriven/218> ns4kge:hasNSMethod <ns-method/concept-domain-negative-sampling> .
+<configuration/conceptdriven/218> ns4kge:result "0.665"^^xsd:decimal .
+
+<configuration/conceptdriven/219> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/219> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/conceptdriven/219> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/conceptdriven/219> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/conceptdriven/219> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/conceptdriven/219> ns4kge:hasNSMethod <ns-method/concept-domain-negative-sampling> .
+<configuration/conceptdriven/219> ns4kge:result "0.686"^^xsd:decimal .
+
+<configuration/conceptdriven/220> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/220> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/conceptdriven/220> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/conceptdriven/220> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/conceptdriven/220> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/conceptdriven/220> ns4kge:hasNSMethod <ns-method/concept-domain-negative-sampling> .
+<configuration/conceptdriven/220> ns4kge:result "0.856"^^xsd:decimal .
+
+<configuration/conceptdriven/221> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/221> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/conceptdriven/221> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/conceptdriven/221> ns4kge:hasMetric  <metric/mrr> .
+<configuration/conceptdriven/221> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/conceptdriven/221> ns4kge:hasNSMethod <ns-method/commonsense-aware-negative-sampling> .
+<configuration/conceptdriven/221> ns4kge:result "0.701"^^xsd:decimal .
+
+<configuration/conceptdriven/222> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/222> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/conceptdriven/222> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/conceptdriven/222> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/conceptdriven/222> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/conceptdriven/222> ns4kge:hasNSMethod <ns-method/commonsense-aware-negative-sampling> .
+<configuration/conceptdriven/222> ns4kge:result "0.679"^^xsd:decimal .
+
+<configuration/conceptdriven/223> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/223> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/conceptdriven/223> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/conceptdriven/223> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/conceptdriven/223> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/conceptdriven/223> ns4kge:hasNSMethod <ns-method/commonsense-aware-negative-sampling> .
+<configuration/conceptdriven/223> ns4kge:result "0.693"^^xsd:decimal .
+
+<configuration/conceptdriven/224> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/224> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/conceptdriven/224> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/conceptdriven/224> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/conceptdriven/224> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/conceptdriven/224> ns4kge:hasNSMethod <ns-method/commonsense-aware-negative-sampling> .
+<configuration/conceptdriven/224> ns4kge:result "0.865"^^xsd:decimal .
+
+<configuration/conceptdriven/225> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/225> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/conceptdriven/225> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/conceptdriven/225> ns4kge:hasMetric  <metric/mrr> .
+<configuration/conceptdriven/225> ns4kge:hasKGEModel <kge-model/transh> .
+<configuration/conceptdriven/225> ns4kge:hasNSMethod <ns-method/concept-domain-negative-sampling> .
+<configuration/conceptdriven/225> ns4kge:result "0.796"^^xsd:decimal .
+
+<configuration/conceptdriven/226> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/226> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/conceptdriven/226> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/conceptdriven/226> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/conceptdriven/226> ns4kge:hasKGEModel <kge-model/transh> .
+<configuration/conceptdriven/226> ns4kge:hasNSMethod <ns-method/concept-domain-negative-sampling> .
+<configuration/conceptdriven/226> ns4kge:result "0.795"^^xsd:decimal .
+
+<configuration/conceptdriven/227> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/227> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/conceptdriven/227> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/conceptdriven/227> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/conceptdriven/227> ns4kge:hasKGEModel <kge-model/transh> .
+<configuration/conceptdriven/227> ns4kge:hasNSMethod <ns-method/concept-domain-negative-sampling> .
+<configuration/conceptdriven/227> ns4kge:result "0.82"^^xsd:decimal .
+
+<configuration/conceptdriven/228> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/228> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/conceptdriven/228> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/conceptdriven/228> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/conceptdriven/228> ns4kge:hasKGEModel <kge-model/transh> .
+<configuration/conceptdriven/228> ns4kge:hasNSMethod <ns-method/concept-domain-negative-sampling> .
+<configuration/conceptdriven/228> ns4kge:result "0.838"^^xsd:decimal .
+
+<configuration/conceptdriven/229> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/229> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/conceptdriven/229> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/conceptdriven/229> ns4kge:hasMetric  <metric/mrr> .
+<configuration/conceptdriven/229> ns4kge:hasKGEModel <kge-model/transh> .
+<configuration/conceptdriven/229> ns4kge:hasNSMethod <ns-method/commonsense-aware-negative-sampling> .
+<configuration/conceptdriven/229> ns4kge:result "0.803"^^xsd:decimal .
+
+<configuration/conceptdriven/230> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/230> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/conceptdriven/230> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/conceptdriven/230> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/conceptdriven/230> ns4kge:hasKGEModel <kge-model/transh> .
+<configuration/conceptdriven/230> ns4kge:hasNSMethod <ns-method/commonsense-aware-negative-sampling> .
+<configuration/conceptdriven/230> ns4kge:result "0.811"^^xsd:decimal .
+
+<configuration/conceptdriven/231> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/231> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/conceptdriven/231> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/conceptdriven/231> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/conceptdriven/231> ns4kge:hasKGEModel <kge-model/transh> .
+<configuration/conceptdriven/231> ns4kge:hasNSMethod <ns-method/commonsense-aware-negative-sampling> .
+<configuration/conceptdriven/231> ns4kge:result "0.828"^^xsd:decimal .
+
+<configuration/conceptdriven/232> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/232> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/conceptdriven/232> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/conceptdriven/232> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/conceptdriven/232> ns4kge:hasKGEModel <kge-model/transh> .
+<configuration/conceptdriven/232> ns4kge:hasNSMethod <ns-method/commonsense-aware-negative-sampling> .
+<configuration/conceptdriven/232> ns4kge:result "0.846"^^xsd:decimal .
+
+<configuration/conceptdriven/233> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/233> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/conceptdriven/233> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/conceptdriven/233> ns4kge:hasMetric  <metric/mrr> .
+<configuration/conceptdriven/233> ns4kge:hasKGEModel <kge-model/transr> .
+<configuration/conceptdriven/233> ns4kge:hasNSMethod <ns-method/concept-domain-negative-sampling> .
+<configuration/conceptdriven/233> ns4kge:result "0.778"^^xsd:decimal .
+
+<configuration/conceptdriven/234> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/234> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/conceptdriven/234> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/conceptdriven/234> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/conceptdriven/234> ns4kge:hasKGEModel <kge-model/transr> .
+<configuration/conceptdriven/234> ns4kge:hasNSMethod <ns-method/concept-domain-negative-sampling> .
+<configuration/conceptdriven/234> ns4kge:result "0.783"^^xsd:decimal .
+
+<configuration/conceptdriven/235> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/235> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/conceptdriven/235> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/conceptdriven/235> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/conceptdriven/235> ns4kge:hasKGEModel <kge-model/transr> .
+<configuration/conceptdriven/235> ns4kge:hasNSMethod <ns-method/concept-domain-negative-sampling> .
+<configuration/conceptdriven/235> ns4kge:result "0.808"^^xsd:decimal .
+
+<configuration/conceptdriven/236> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/236> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/conceptdriven/236> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/conceptdriven/236> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/conceptdriven/236> ns4kge:hasKGEModel <kge-model/transr> .
+<configuration/conceptdriven/236> ns4kge:hasNSMethod <ns-method/concept-domain-negative-sampling> .
+<configuration/conceptdriven/236> ns4kge:result "0.825"^^xsd:decimal .
+
+<configuration/conceptdriven/237> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/237> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/conceptdriven/237> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/conceptdriven/237> ns4kge:hasMetric  <metric/mrr> .
+<configuration/conceptdriven/237> ns4kge:hasKGEModel <kge-model/transr> .
+<configuration/conceptdriven/237> ns4kge:hasNSMethod <ns-method/commonsense-aware-negative-sampling> .
+<configuration/conceptdriven/237> ns4kge:result "0.785"^^xsd:decimal .
+
+<configuration/conceptdriven/238> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/238> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/conceptdriven/238> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/conceptdriven/238> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/conceptdriven/238> ns4kge:hasKGEModel <kge-model/transr> .
+<configuration/conceptdriven/238> ns4kge:hasNSMethod <ns-method/commonsense-aware-negative-sampling> .
+<configuration/conceptdriven/238> ns4kge:result "0.799"^^xsd:decimal .
+
+<configuration/conceptdriven/239> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/239> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/conceptdriven/239> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/conceptdriven/239> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/conceptdriven/239> ns4kge:hasKGEModel <kge-model/transr> .
+<configuration/conceptdriven/239> ns4kge:hasNSMethod <ns-method/commonsense-aware-negative-sampling> .
+<configuration/conceptdriven/239> ns4kge:result "0.815"^^xsd:decimal .
+
+<configuration/conceptdriven/240> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/240> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/conceptdriven/240> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/conceptdriven/240> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/conceptdriven/240> ns4kge:hasKGEModel <kge-model/transr> .
+<configuration/conceptdriven/240> ns4kge:hasNSMethod <ns-method/commonsense-aware-negative-sampling> .
+<configuration/conceptdriven/240> ns4kge:result "0.833"^^xsd:decimal .
+
+<configuration/conceptdriven/241> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/241> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/conceptdriven/241> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/conceptdriven/241> ns4kge:hasMetric  <metric/mrr> .
+<configuration/conceptdriven/241> ns4kge:hasKGEModel <kge-model/dkrl> .
+<configuration/conceptdriven/241> ns4kge:hasNSMethod <ns-method/concept-domain-negative-sampling> .
+<configuration/conceptdriven/241> ns4kge:result "0.763"^^xsd:decimal .
+
+<configuration/conceptdriven/242> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/242> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/conceptdriven/242> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/conceptdriven/242> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/conceptdriven/242> ns4kge:hasKGEModel <kge-model/dkrl> .
+<configuration/conceptdriven/242> ns4kge:hasNSMethod <ns-method/concept-domain-negative-sampling> .
+<configuration/conceptdriven/242> ns4kge:result "0.776"^^xsd:decimal .
+
+<configuration/conceptdriven/243> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/243> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/conceptdriven/243> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/conceptdriven/243> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/conceptdriven/243> ns4kge:hasKGEModel <kge-model/dkrl> .
+<configuration/conceptdriven/243> ns4kge:hasNSMethod <ns-method/concept-domain-negative-sampling> .
+<configuration/conceptdriven/243> ns4kge:result "0.8"^^xsd:decimal .
+
+<configuration/conceptdriven/244> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/244> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/conceptdriven/244> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/conceptdriven/244> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/conceptdriven/244> ns4kge:hasKGEModel <kge-model/dkrl> .
+<configuration/conceptdriven/244> ns4kge:hasNSMethod <ns-method/concept-domain-negative-sampling> .
+<configuration/conceptdriven/244> ns4kge:result "0.901"^^xsd:decimal .
+
+<configuration/conceptdriven/245> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/245> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/conceptdriven/245> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/conceptdriven/245> ns4kge:hasMetric  <metric/mrr> .
+<configuration/conceptdriven/245> ns4kge:hasKGEModel <kge-model/dkrl> .
+<configuration/conceptdriven/245> ns4kge:hasNSMethod <ns-method/commonsense-aware-negative-sampling> .
+<configuration/conceptdriven/245> ns4kge:result "0.771"^^xsd:decimal .
+
+<configuration/conceptdriven/246> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/246> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/conceptdriven/246> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/conceptdriven/246> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/conceptdriven/246> ns4kge:hasKGEModel <kge-model/dkrl> .
+<configuration/conceptdriven/246> ns4kge:hasNSMethod <ns-method/commonsense-aware-negative-sampling> .
+<configuration/conceptdriven/246> ns4kge:result "0.791"^^xsd:decimal .
+
+<configuration/conceptdriven/247> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/247> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/conceptdriven/247> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/conceptdriven/247> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/conceptdriven/247> ns4kge:hasKGEModel <kge-model/dkrl> .
+<configuration/conceptdriven/247> ns4kge:hasNSMethod <ns-method/commonsense-aware-negative-sampling> .
+<configuration/conceptdriven/247> ns4kge:result "0.807"^^xsd:decimal .
+
+<configuration/conceptdriven/248> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/248> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/conceptdriven/248> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/conceptdriven/248> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/conceptdriven/248> ns4kge:hasKGEModel <kge-model/dkrl> .
+<configuration/conceptdriven/248> ns4kge:hasNSMethod <ns-method/commonsense-aware-negative-sampling> .
+<configuration/conceptdriven/248> ns4kge:result "0.91"^^xsd:decimal .
+
+<configuration/conceptdriven/249> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/249> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/conceptdriven/249> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/conceptdriven/249> ns4kge:hasMetric  <metric/mrr> .
+<configuration/conceptdriven/249> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/conceptdriven/249> ns4kge:hasNSMethod <ns-method/concept-domain-negative-sampling> .
+<configuration/conceptdriven/249> ns4kge:result "0.934"^^xsd:decimal .
+
+<configuration/conceptdriven/250> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/250> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/conceptdriven/250> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/conceptdriven/250> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/conceptdriven/250> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/conceptdriven/250> ns4kge:hasNSMethod <ns-method/concept-domain-negative-sampling> .
+<configuration/conceptdriven/250> ns4kge:result "0.793"^^xsd:decimal .
+
+<configuration/conceptdriven/251> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/251> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/conceptdriven/251> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/conceptdriven/251> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/conceptdriven/251> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/conceptdriven/251> ns4kge:hasNSMethod <ns-method/concept-domain-negative-sampling> .
+<configuration/conceptdriven/251> ns4kge:result "0.818"^^xsd:decimal .
+
+<configuration/conceptdriven/252> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/252> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/conceptdriven/252> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/conceptdriven/252> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/conceptdriven/252> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/conceptdriven/252> ns4kge:hasNSMethod <ns-method/concept-domain-negative-sampling> .
+<configuration/conceptdriven/252> ns4kge:result "0.835"^^xsd:decimal .
+
+<configuration/conceptdriven/253> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/253> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/conceptdriven/253> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/conceptdriven/253> ns4kge:hasMetric  <metric/mrr> .
+<configuration/conceptdriven/253> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/conceptdriven/253> ns4kge:hasNSMethod <ns-method/commonsense-aware-negative-sampling> .
+<configuration/conceptdriven/253> ns4kge:result "0.943"^^xsd:decimal .
+
+<configuration/conceptdriven/254> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/254> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/conceptdriven/254> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/conceptdriven/254> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/conceptdriven/254> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/conceptdriven/254> ns4kge:hasNSMethod <ns-method/commonsense-aware-negative-sampling> .
+<configuration/conceptdriven/254> ns4kge:result "0.809"^^xsd:decimal .
+
+<configuration/conceptdriven/255> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/255> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/conceptdriven/255> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/conceptdriven/255> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/conceptdriven/255> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/conceptdriven/255> ns4kge:hasNSMethod <ns-method/commonsense-aware-negative-sampling> .
+<configuration/conceptdriven/255> ns4kge:result "0.825"^^xsd:decimal .
+
+<configuration/conceptdriven/256> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/256> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/conceptdriven/256> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/conceptdriven/256> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/conceptdriven/256> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/conceptdriven/256> ns4kge:hasNSMethod <ns-method/commonsense-aware-negative-sampling> .
+<configuration/conceptdriven/256> ns4kge:result "0.843"^^xsd:decimal .
+
+<configuration/conceptdriven/257> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/257> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/conceptdriven/257> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/conceptdriven/257> ns4kge:hasMetric  <metric/mrr> .
+<configuration/conceptdriven/257> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/conceptdriven/257> ns4kge:hasNSMethod <ns-method/concept-domain-negative-sampling> .
+<configuration/conceptdriven/257> ns4kge:result "0.678"^^xsd:decimal .
+
+<configuration/conceptdriven/258> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/258> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/conceptdriven/258> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/conceptdriven/258> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/conceptdriven/258> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/conceptdriven/258> ns4kge:hasNSMethod <ns-method/concept-domain-negative-sampling> .
+<configuration/conceptdriven/258> ns4kge:result "0.759"^^xsd:decimal .
+
+<configuration/conceptdriven/259> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/259> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/conceptdriven/259> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/conceptdriven/259> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/conceptdriven/259> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/conceptdriven/259> ns4kge:hasNSMethod <ns-method/concept-domain-negative-sampling> .
+<configuration/conceptdriven/259> ns4kge:result "0.783"^^xsd:decimal .
+
+<configuration/conceptdriven/260> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/260> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/conceptdriven/260> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/conceptdriven/260> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/conceptdriven/260> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/conceptdriven/260> ns4kge:hasNSMethod <ns-method/concept-domain-negative-sampling> .
+<configuration/conceptdriven/260> ns4kge:result "0.799"^^xsd:decimal .
+
+<configuration/conceptdriven/261> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/261> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/conceptdriven/261> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/conceptdriven/261> ns4kge:hasMetric  <metric/mrr> .
+<configuration/conceptdriven/261> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/conceptdriven/261> ns4kge:hasNSMethod <ns-method/commonsense-aware-negative-sampling> .
+<configuration/conceptdriven/261> ns4kge:result "0.685"^^xsd:decimal .
+
+<configuration/conceptdriven/262> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/262> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/conceptdriven/262> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/conceptdriven/262> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/conceptdriven/262> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/conceptdriven/262> ns4kge:hasNSMethod <ns-method/commonsense-aware-negative-sampling> .
+<configuration/conceptdriven/262> ns4kge:result "0.774"^^xsd:decimal .
+
+<configuration/conceptdriven/263> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/263> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/conceptdriven/263> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/conceptdriven/263> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/conceptdriven/263> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/conceptdriven/263> ns4kge:hasNSMethod <ns-method/commonsense-aware-negative-sampling> .
+<configuration/conceptdriven/263> ns4kge:result "0.791"^^xsd:decimal .
+
+<configuration/conceptdriven/264> rdf:type ns4kge:Configuration .
+<configuration/conceptdriven/264> ns4kge:hasTask    <task/relation-prediction> .
+<configuration/conceptdriven/264> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/conceptdriven/264> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/conceptdriven/264> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/conceptdriven/264> ns4kge:hasNSMethod <ns-method/commonsense-aware-negative-sampling> .
+<configuration/conceptdriven/264> ns4kge:result "0.807"^^xsd:decimal .

@@ -1,0 +1,33 @@
+{
+  "Article": {
+    "title": "An Interpretable Knowledge Transfer Model for Knowledge Base Completion",
+    "date": "2017"
+  },
+  "proposedNSMethod": "Domain Sampling",
+  "proposedKGEModel": "ITransF",
+  "mentionedNSMethods": [
+    "Bernoulli Negative Sampling",
+    "Uniform Negative Sampling"
+  ],
+  "mentionedKGEModels": [
+    "TransE",
+    "TransR",
+    "STransE",
+    "CTransR",
+    "TransH",
+    "IRN"
+  ],
+  "Experimentation": {
+    "Hardware": [],
+    "TrainingProtocol": {
+      "LossFunction": [
+        "margin-based ranking loss"
+      ],
+      "Optimizer": [
+        "SGD"
+      ],
+      "learningRate": null,
+      "nsRatio": null
+    }
+  }
+}

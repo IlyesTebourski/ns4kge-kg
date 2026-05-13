@@ -1,0 +1,481 @@
+{
+  "Article": {
+    "title": "A Knowledge Selective Adversarial Network for Link Prediction in Knowledge Graph",
+    "date": "2019"
+  },
+  "proposedNSMethod": "Knowledge Selective Adversarial Network",
+  "proposedKGEModel": "",
+  "mentionedNSMethods": [
+    "Bernoulli Negative Sampling",
+    "IGAN",
+    "Uniform Negative Sampling",
+    "KSGAN(ComplEx+TransE)",
+    "KBGAN",
+    "KSGAN(ComplEx+TransD)"
+  ],
+  "mentionedKGEModels": [
+    "GTrans",
+    "DistMult",
+    "TransE",
+    "TuckER",
+    "TransR",
+    "TransD",
+    "RESCAL",
+    "SimplE",
+    "ComplEx",
+    "NTN",
+    "MLP",
+    "TransM",
+    "ManifoldE",
+    "TransF",
+    "TransH"
+  ],
+  "Experimentation": {
+    "Hardware": [],
+    "TrainingProtocol": {
+      "LossFunction": [
+        "margin-based ranking loss",
+        "logistic loss"
+      ],
+      "Optimizer": [
+        "Adam"
+      ],
+      "learningRate": 0.001,
+      "nsRatio": null
+    },
+    "Configurations": [
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15k-237",
+        "Metric": "MRR",
+        "KGEModel": "TransE",
+        "NSMethod": "Unknown",
+        "result": 24.2
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15k-237",
+        "Metric": "Hits@10",
+        "KGEModel": "TransE",
+        "NSMethod": "Unknown",
+        "result": 42.2
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18",
+        "Metric": "MRR",
+        "KGEModel": "TransE",
+        "NSMethod": "Unknown",
+        "result": 43.3
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18",
+        "Metric": "Hits@10",
+        "KGEModel": "TransE",
+        "NSMethod": "Unknown",
+        "result": 91.5
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18RR",
+        "Metric": "MRR",
+        "KGEModel": "TransE",
+        "NSMethod": "Unknown",
+        "result": 18.6
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18RR",
+        "Metric": "Hits@10",
+        "KGEModel": "TransE",
+        "NSMethod": "Unknown",
+        "result": 45.9
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15k-237",
+        "Metric": "MRR",
+        "KGEModel": "TransE",
+        "NSMethod": "KBGAN",
+        "result": 27.8
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15k-237",
+        "Metric": "Hits@10",
+        "KGEModel": "TransE",
+        "NSMethod": "KBGAN",
+        "result": 45.3
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18",
+        "Metric": "MRR",
+        "KGEModel": "TransE",
+        "NSMethod": "KBGAN",
+        "result": 70.5
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18",
+        "Metric": "Hits@10",
+        "KGEModel": "TransE",
+        "NSMethod": "KBGAN",
+        "result": 94.9
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18RR",
+        "Metric": "MRR",
+        "KGEModel": "TransE",
+        "NSMethod": "KBGAN",
+        "result": 21.0
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18RR",
+        "Metric": "Hits@10",
+        "KGEModel": "TransE",
+        "NSMethod": "KBGAN",
+        "result": 47.9
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15k-237",
+        "Metric": "MRR",
+        "KGEModel": "TransE",
+        "NSMethod": "Knowledge Selective Adversarial Network",
+        "result": 27.9
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15k-237",
+        "Metric": "Hits@10",
+        "KGEModel": "TransE",
+        "NSMethod": "Knowledge Selective Adversarial Network",
+        "result": 46.2
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18",
+        "Metric": "MRR",
+        "KGEModel": "TransE",
+        "NSMethod": "Knowledge Selective Adversarial Network",
+        "result": 79.1
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18",
+        "Metric": "Hits@10",
+        "KGEModel": "TransE",
+        "NSMethod": "Knowledge Selective Adversarial Network",
+        "result": 95.4
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18RR",
+        "Metric": "MRR",
+        "KGEModel": "TransE",
+        "NSMethod": "Knowledge Selective Adversarial Network",
+        "result": 21.2
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18RR",
+        "Metric": "Hits@10",
+        "KGEModel": "TransE",
+        "NSMethod": "Knowledge Selective Adversarial Network",
+        "result": 48.7
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15k-237",
+        "Metric": "MRR",
+        "KGEModel": "TransD",
+        "NSMethod": "Unknown",
+        "result": 24.5
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15k-237",
+        "Metric": "Hits@10",
+        "KGEModel": "TransD",
+        "NSMethod": "Unknown",
+        "result": 42.7
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18",
+        "Metric": "MRR",
+        "KGEModel": "TransD",
+        "NSMethod": "Unknown",
+        "result": 49.4
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18",
+        "Metric": "Hits@10",
+        "KGEModel": "TransD",
+        "NSMethod": "Unknown",
+        "result": 92.8
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18RR",
+        "Metric": "MRR",
+        "KGEModel": "TransD",
+        "NSMethod": "Unknown",
+        "result": 19.2
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18RR",
+        "Metric": "Hits@10",
+        "KGEModel": "TransD",
+        "NSMethod": "Unknown",
+        "result": 46.5
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15k-237",
+        "Metric": "MRR",
+        "KGEModel": "TransD",
+        "NSMethod": "KBGAN",
+        "result": 27.7
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15k-237",
+        "Metric": "Hits@10",
+        "KGEModel": "TransD",
+        "NSMethod": "KBGAN",
+        "result": 45.8
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18",
+        "Metric": "MRR",
+        "KGEModel": "TransD",
+        "NSMethod": "KBGAN",
+        "result": 77.9
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18",
+        "Metric": "Hits@10",
+        "KGEModel": "TransD",
+        "NSMethod": "KBGAN",
+        "result": 94.8
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18RR",
+        "Metric": "MRR",
+        "KGEModel": "TransD",
+        "NSMethod": "KBGAN",
+        "result": 21.5
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18RR",
+        "Metric": "Hits@10",
+        "KGEModel": "TransD",
+        "NSMethod": "KBGAN",
+        "result": 46.9
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15k-237",
+        "Metric": "MRR",
+        "KGEModel": "TransD",
+        "NSMethod": "Knowledge Selective Adversarial Network",
+        "result": 28.0
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15k-237",
+        "Metric": "Hits@10",
+        "KGEModel": "TransD",
+        "NSMethod": "Knowledge Selective Adversarial Network",
+        "result": 46.5
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18",
+        "Metric": "MRR",
+        "KGEModel": "TransD",
+        "NSMethod": "Knowledge Selective Adversarial Network",
+        "result": 81.4
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18",
+        "Metric": "Hits@10",
+        "KGEModel": "TransD",
+        "NSMethod": "Knowledge Selective Adversarial Network",
+        "result": 95.2
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18RR",
+        "Metric": "MRR",
+        "KGEModel": "TransD",
+        "NSMethod": "Knowledge Selective Adversarial Network",
+        "result": 22.0
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18RR",
+        "Metric": "Hits@10",
+        "KGEModel": "TransD",
+        "NSMethod": "Knowledge Selective Adversarial Network",
+        "result": 47.9
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15k-237",
+        "Metric": "MRR",
+        "KGEModel": "ComplEx",
+        "NSMethod": "Unknown",
+        "result": 26.4
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15k-237",
+        "Metric": "Hits@10",
+        "KGEModel": "ComplEx",
+        "NSMethod": "Unknown",
+        "result": 43.6
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18",
+        "Metric": "MRR",
+        "KGEModel": "ComplEx",
+        "NSMethod": "Unknown",
+        "result": 76.1
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18",
+        "Metric": "Hits@10",
+        "KGEModel": "ComplEx",
+        "NSMethod": "Unknown",
+        "result": 92.3
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18RR",
+        "Metric": "MRR",
+        "KGEModel": "ComplEx",
+        "NSMethod": "Unknown",
+        "result": 37.2
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18RR",
+        "Metric": "Hits@10",
+        "KGEModel": "ComplEx",
+        "NSMethod": "Unknown",
+        "result": 45.3
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15k-237",
+        "Metric": "MRR",
+        "KGEModel": "ComplEx",
+        "NSMethod": "KSGAN(ComplEx+TransE)",
+        "result": 26.7
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15k-237",
+        "Metric": "Hits@10",
+        "KGEModel": "ComplEx",
+        "NSMethod": "KSGAN(ComplEx+TransE)",
+        "result": 44.0
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18",
+        "Metric": "MRR",
+        "KGEModel": "ComplEx",
+        "NSMethod": "KSGAN(ComplEx+TransE)",
+        "result": 92.8
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18",
+        "Metric": "Hits@10",
+        "KGEModel": "ComplEx",
+        "NSMethod": "KSGAN(ComplEx+TransE)",
+        "result": 95.0
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18RR",
+        "Metric": "MRR",
+        "KGEModel": "ComplEx",
+        "NSMethod": "KSGAN(ComplEx+TransE)",
+        "result": 40.5
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18RR",
+        "Metric": "Hits@10",
+        "KGEModel": "ComplEx",
+        "NSMethod": "KSGAN(ComplEx+TransE)",
+        "result": 45.5
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15k-237",
+        "Metric": "MRR",
+        "KGEModel": "ComplEx",
+        "NSMethod": "KSGAN(ComplEx+TransD)",
+        "result": 26.8
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15k-237",
+        "Metric": "Hits@10",
+        "KGEModel": "ComplEx",
+        "NSMethod": "KSGAN(ComplEx+TransD)",
+        "result": 44.0
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18",
+        "Metric": "MRR",
+        "KGEModel": "ComplEx",
+        "NSMethod": "KSGAN(ComplEx+TransD)",
+        "result": 92.8
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18",
+        "Metric": "Hits@10",
+        "KGEModel": "ComplEx",
+        "NSMethod": "KSGAN(ComplEx+TransD)",
+        "result": 95.0
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18RR",
+        "Metric": "MRR",
+        "KGEModel": "ComplEx",
+        "NSMethod": "KSGAN(ComplEx+TransD)",
+        "result": 40.6
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18RR",
+        "Metric": "Hits@10",
+        "KGEModel": "ComplEx",
+        "NSMethod": "KSGAN(ComplEx+TransD)",
+        "result": 45.6
+      }
+    ]
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "Article": {
+    "title": "Type-Constrained Representation Learning in Knowledge Graphs",
+    "date": "2015"
+  },
+  "proposedNSMethod": "Type-Constrained Negative Sampling",
+  "proposedKGEModel": "",
+  "mentionedNSMethods": [
+    "Local Closed-World Assumption"
+  ],
+  "mentionedKGEModels": [
+    "RESCAL",
+    "TransE",
+    "TransH",
+    "TransR",
+    "Neural Tensor Network"
+  ],
+  "Experimentation": {
+    "Hardware": [],
+    "TrainingProtocol": {
+      "LossFunction": [
+        "regularized least-squares",
+        "max-margin-based ranking loss",
+        "Bernoulli cross-entropy loss"
+      ],
+      "Optimizer": [
+        "SGD",
+        "ALS"
+      ],
+      "learningRate": null,
+      "nsRatio": 5.0
+    }
+  }
+}

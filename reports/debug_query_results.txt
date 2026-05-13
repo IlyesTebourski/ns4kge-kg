@@ -1,16 +1,29 @@
-Graph loaded: 6400 triples
+Graph loaded: 52977 triples
 
 ============================================================
 DEBUG: Number of experimentations per article
 ============================================================
+  article/adaptativens | 1
+  article/adns | 1
+  article/asa | 1
+  article/batchns | 1
+  article/cake | 1
+  article/cans | 1
+  article/ccs | 1
+  article/conceptdriven | 1
+  article/condconstraints | 1
+  article/dans | 1
+  article/demix | 1
+  article/dhns | 1
+  article/dmns | 1
+  article/dns | 1
+  article/domainns | 1
   article/eans | 1
+  article/erdns | 1
+  article/etruncateduns | 1
   article/ghn | 1
-  article/igan | 1
-  article/kbgan | 1
-  article/las | 1
-  article/m2ixkg | 1
-  article/pns | 1
-  article/randomcorrupt | 1
+  article/gibbsns | 1
+  ... (35 more rows)
 
 ============================================================
 DEBUG: Articles with more than one experimentation
@@ -20,73 +33,130 @@ DEBUG: Articles with more than one experimentation
 ============================================================
 DEBUG: Number of configurations per article
 ============================================================
+  article/dhns | 390
+  article/erdns | 386
+  article/noigan | 344
+  article/cake | 320
+  article/conceptdriven | 264
+  article/tuckerdncaching | 221
+  article/nscaching | 218
+  article/raakgc | 217
+  article/tans | 204
+  article/sns | 192
   article/eans | 180
+  article/mcns | 180
+  article/typeaugmented | 179
+  article/gibbsns | 161
+  article/ccs | 150
+  article/demix | 146
+  article/selfadv | 140
   article/igan | 138
-  article/las | 107
-  article/ghn | 105
-  article/m2ixkg | 104
-  article/kbgan | 54
-  article/randomcorrupt | 30
-  article/pns | 16
+  article/dans | 135
+  article/sans | 132
+  ... (35 more rows)
 
 ============================================================
 DEBUG: Loss functions per article
 ============================================================
+  article/hasa | training-protocol/hasa | 6 | loss-function/infonce, loss-function/hasa-loss, loss-function/triplet-loss, loss-function/negative-log-likelihood, loss-function/cross-entropy-loss, loss-function/negative-sampling-loss
+  article/ruga | training-protocol/ruga | 4 | loss-function/margin-based-ranking-loss, loss-function/log-softmax-loss, loss-function/cross-entropy-loss, loss-function/negative-sampling-loss
+  article/batchns | training-protocol/batchns | 3 | loss-function/margin-based-ranking-loss, loss-function/softmax-loss, loss-function/logistic-loss
+  article/dhns | training-protocol/dhns | 3 | loss-function/hardness-adaptive-loss, loss-function/denoising-diffusion-loss, loss-function/mean-squared-error
+  article/htens | training-protocol/htens | 3 | loss-function/marginal-loss, loss-function/log-softmax-loss, loss-function/kullback-leibler-divergence-loss
+  article/nmiss | training-protocol/nmiss | 3 | loss-function/max-margin-loss, loss-function/cross-entropy-loss, loss-function/binary-negative-log-likelihood
+  article/tans | training-protocol/tans | 3 | loss-function/negative-sampling-loss, loss-function/self-adversarial-negative-sampling-loss, loss-function/triplet-adaptive-negative-sampling-loss
+  article/typeconstraints | training-protocol/typeconstraints | 3 | loss-function/regularized-least-squares, loss-function/max-margin-based-ranking-loss, loss-function/bernoulli-cross-entropy-loss
+  article/adns | training-protocol/adns | 2 | loss-function/self-adversarial-loss, loss-function/margin-based-ranking-loss
+  article/dmns | training-protocol/dmns | 2 | loss-function/log-sigmoid-loss, loss-function/mean-squared-error
+  article/etruncateduns | training-protocol/etruncateduns | 2 | loss-function/limit-based-loss, loss-function/negative-log-likelihood
   article/ghn | training-protocol/ghn | 2 | loss-function/cross-entropy-loss, loss-function/infonce
+  article/gibbsns | training-protocol/gibbsns | 2 | loss-function/binary-cross-entropy-loss, loss-function/contrastive-loss
+  article/gndn | training-protocol/gndn | 2 | loss-function/adversarial-loss, loss-function/policy-gradient
   article/kbgan | training-protocol/kbgan | 2 | loss-function/marginal-loss-function, loss-function/log-softmax-loss-function
-  article/eans | training-protocol/eans | 1 | loss-function/logsigmoid-loss
-  article/igan | training-protocol/igan | 1 | loss-function/margin-based-ranking-loss
-  article/las | training-protocol/las | 1 | loss-function/margin-based-ranking-loss
-  article/pns | training-protocol/pns | 1 | loss-function/margin-based-ranking-loss
-  article/randomcorrupt | training-protocol/randomcorrupt | 1 | loss-function/margin-based-ranking-loss
+  article/ksgan | training-protocol/ksgan | 2 | loss-function/margin-based-ranking-loss, loss-function/logistic-loss
+  article/mcns | training-protocol/mcns | 2 | loss-function/cross-entropy-loss, loss-function/skewed-hinge-loss
+  article/noigan | training-protocol/noigan | 2 | loss-function/negative-sampling-loss, loss-function/cross-entropy-loss
+  article/nscaching | training-protocol/nscaching | 2 | loss-function/margin-based-ranking-loss, loss-function/logistic-loss
+  article/rcwc | training-protocol/rcwc | 2 | loss-function/negative-log-likelihood-loss, loss-function/binary-cross-entropy-loss
+  ... (30 more rows)
 
 ============================================================
 DEBUG: Learning rates per article
 ============================================================
+  article/adns | training-protocol/adns | 1 | 0.1
+  article/cans | training-protocol/cans | 1 | 0.001
+  article/condconstraints | training-protocol/condconstraints | 1 | 0.001
+  article/dans | training-protocol/dans | 1 | 0.001
+  article/etruncateduns | training-protocol/etruncateduns | 1 | 0.01
   article/ghn | training-protocol/ghn | 1 | 0.00003
+  article/gns | training-protocol/gns | 1 | 0.00005
+  article/graphgan | training-protocol/graphgan | 1 | 0.001
+  article/hasa | training-protocol/hasa | 1 | 0.00002
   article/kbgan | training-protocol/kbgan | 1 | 0.001
+  article/ksgan | training-protocol/ksgan | 1 | 0.001
+  article/localcognitive | training-protocol/localcognitive | 1 | 0.00005
   article/pns | training-protocol/pns | 1 | 0.001
+  article/sns | training-protocol/sns | 1 | 0.0001
+  article/stc | training-protocol/stc | 1 | 0.0025
+  article/truncatedns | training-protocol/truncatedns | 1 | 0.01
+  article/uniform | training-protocol/uniform | 1 | 0.01
 
 ============================================================
 DEBUG: Optimizers per article
 ============================================================
+  article/conceptdriven | training-protocol/conceptdriven | 2 | optimizer/sgd, optimizer/adam
+  article/typeconstraints | training-protocol/typeconstraints | 2 | optimizer/sgd, optimizer/als
+  article/adns | training-protocol/adns | 1 | optimizer/adagrad
+  article/batchns | training-protocol/batchns | 1 | optimizer/adagrad
+  article/cake | training-protocol/cake | 1 | optimizer/adam
+  article/cans | training-protocol/cans | 1 | optimizer/sgd
+  article/ccs | training-protocol/ccs | 1 | optimizer/adam
+  article/demix | training-protocol/demix | 1 | optimizer/adam
+  article/dhns | training-protocol/dhns | 1 | optimizer/adam
+  article/dns | training-protocol/dns | 1 | optimizer/adam
+  article/domainns | training-protocol/domainns | 1 | optimizer/sgd
   article/eans | training-protocol/eans | 1 | optimizer/adam
+  article/erdns | training-protocol/erdns | 1 | optimizer/adam
+  article/etruncateduns | training-protocol/etruncateduns | 1 | optimizer/adagrad
   article/ghn | training-protocol/ghn | 1 | optimizer/adamw
+  article/gns | training-protocol/gns | 1 | optimizer/adam
+  article/graphgan | training-protocol/graphgan | 1 | optimizer/sgd
+  article/hasa | training-protocol/hasa | 1 | optimizer/adamw
+  article/htens | training-protocol/htens | 1 | optimizer/adam
   article/igan | training-protocol/igan | 1 | optimizer/adam
-  article/kbgan | training-protocol/kbgan | 1 | optimizer/adam
-  article/las | training-protocol/las | 1 | optimizer/adam
-  article/m2ixkg | training-protocol/m2ixkg | 1 | optimizer/adam
-  article/pns | training-protocol/pns | 1 | optimizer/adam
+  ... (17 more rows)
 
 ============================================================
 DEBUG: Configurations without an NSMethod
 ============================================================
-  article/ghn | configuration/ghn/25 | dataset/wn18rr | kge-model/transe
-  article/ghn | configuration/ghn/26 | dataset/wn18rr | kge-model/transe
-  article/ghn | configuration/ghn/27 | dataset/wn18rr | kge-model/transe
-  article/ghn | configuration/ghn/28 | dataset/wn18rr | kge-model/transe
-  article/ghn | configuration/ghn/29 | dataset/fb15k-237 | kge-model/transe
-  article/ghn | configuration/ghn/30 | dataset/fb15k-237 | kge-model/transe
-  article/ghn | configuration/ghn/31 | dataset/fb15k-237 | kge-model/transe
-  article/ghn | configuration/ghn/32 | dataset/fb15k-237 | kge-model/transe
-  article/ghn | configuration/ghn/33 | dataset/wn18rr | kge-model/distmult
-  article/ghn | configuration/ghn/34 | dataset/wn18rr | kge-model/distmult
-  article/ghn | configuration/ghn/35 | dataset/wn18rr | kge-model/distmult
-  article/ghn | configuration/ghn/36 | dataset/wn18rr | kge-model/distmult
-  article/ghn | configuration/ghn/37 | dataset/fb15k-237 | kge-model/distmult
-  article/ghn | configuration/ghn/38 | dataset/fb15k-237 | kge-model/distmult
-  article/ghn | configuration/ghn/39 | dataset/fb15k-237 | kge-model/distmult
-  article/ghn | configuration/ghn/40 | dataset/fb15k-237 | kge-model/distmult
-  article/ghn | configuration/ghn/41 | dataset/wn18rr | kge-model/rotate
-  article/ghn | configuration/ghn/42 | dataset/wn18rr | kge-model/rotate
-  article/ghn | configuration/ghn/43 | dataset/wn18rr | kge-model/rotate
-  article/ghn | configuration/ghn/44 | dataset/wn18rr | kge-model/rotate
-  ... (167 more rows)
+  article/adaptativens | configuration/adaptativens/1 | dataset/wn18rr | kge-model/rotate
+  article/adaptativens | configuration/adaptativens/2 | dataset/wn18rr | kge-model/murp
+  article/adaptativens | configuration/adaptativens/3 | dataset/wn18rr | kge-model/complex
+  article/adaptativens | configuration/adaptativens/4 | dataset/wn18rr | kge-model/distmult
+  article/adaptativens | configuration/adaptativens/5 | dataset/wn18rr | kge-model/conve
+  article/adaptativens | configuration/adaptativens/6 | dataset/wn18rr | kge-model/transe
+  article/adaptativens | configuration/adaptativens/8 | dataset/wn18rr | kge-model/murp
+  article/adaptativens | configuration/adaptativens/9 | dataset/wn18rr | kge-model/rotate
+  article/adaptativens | configuration/adaptativens/10 | dataset/wn18rr | kge-model/complex
+  article/adaptativens | configuration/adaptativens/11 | dataset/wn18rr | kge-model/distmult
+  article/adaptativens | configuration/adaptativens/12 | dataset/wn18rr | kge-model/conve
+  article/adaptativens | configuration/adaptativens/14 | dataset/wn18rr | kge-model/rotate
+  article/adaptativens | configuration/adaptativens/15 | dataset/wn18rr | kge-model/murp
+  article/adaptativens | configuration/adaptativens/16 | dataset/wn18rr | kge-model/complex
+  article/adaptativens | configuration/adaptativens/17 | dataset/wn18rr | kge-model/distmult
+  article/adaptativens | configuration/adaptativens/18 | dataset/wn18rr | kge-model/conve
+  article/adaptativens | configuration/adaptativens/20 | dataset/wn18rr | kge-model/rotate
+  article/adaptativens | configuration/adaptativens/21 | dataset/wn18rr | kge-model/murp
+  article/adaptativens | configuration/adaptativens/23 | dataset/wn18rr | kge-model/conve
+  article/adaptativens | configuration/adaptativens/24 | dataset/wn18rr | kge-model/complex
+  ... (1661 more rows)
 
 ============================================================
 DEBUG: Articles without proposesNSMethod
 ============================================================
+  article/graphgan
   article/randomcorrupt
+  article/uniform
 
 ============================================================
 DEBUG: Configurations without result
@@ -96,85 +166,100 @@ DEBUG: Configurations without result
 ============================================================
 DEBUG: Outlier results greater than 10000 or below 0
 ============================================================
+  article/cake | configuration/cake/311 | 13967
   article/eans | configuration/eans/102 | 11351
+  article/mdncaching | configuration/mdncaching/60 | 11351
 
 ============================================================
 DEBUG: Dataset variants that may need normalization
 ============================================================
-  dataset/fb13 | 21
-  dataset/fb15k | 62
-  dataset/fb15k-237 | 244
-  dataset/fb3m | 6
-  dataset/wikidata5m | 28
-  dataset/wn11 | 21
-  dataset/wn18 | 107
-  dataset/wn18rr | 245
+  dataset/actor | 30
+  dataset/alibaba | 36
+  dataset/amazon | 69
+  dataset/arxiv | 27
+  dataset/arxiv-astroph | 10
+  dataset/arxiv-grqc | 10
+  dataset/blogcatalog | 37
+  dataset/citeseer | 30
+  dataset/coauthor-cs | 30
+  dataset/company | 47
+  dataset/cora | 30
+  dataset/countries-s1 | 3
+  dataset/countries-s2 | 3
+  dataset/countries-s3 | 3
+  dataset/d-w15k | 20
+  dataset/db15k | 130
+  dataset/dbp-fr-en | 15
+  dataset/dbp-geo | 2
+  dataset/dbp-ja-en | 15
+  dataset/dbp-lgd | 2
+  ... (53 more rows)
 
 ============================================================
 DEBUG: NSMethod variants that may need normalization
 ============================================================
-  ns-method/bernoulli-negative-sampling | 8
-  ns-method/entity-aware-negative-sampling | 30
-  ns-method/entity-aware-negative-sampling-self-adversarial-negative-sampling | 30
-  ns-method/gan-pretrain | 46
-  ns-method/gan-scratch | 46
-  ns-method/generative-hard-negative-mining | 12
-  ns-method/ghn-sl | 12
-  ns-method/in-batch-negative-sampling | 12
-  ns-method/kbgan | 54
-  ns-method/kbgan-complex | 12
-  ns-method/kbgan-distmult | 12
-  ns-method/loss-adaptive-sampling | 42
-  ns-method/mixkg-hnm-ces | 16
-  ns-method/mixkg-hnm-sf | 16
-  ns-method/nscaching | 36
-  ns-method/probabilistic-negative-sampling | 4
-  ns-method/rw-sans | 16
-  ns-method/sans | 16
-  ns-method/self-adversarial-negative-sampling | 30
-  ns-method/structure-aware-negative-sampling-self-adversarial-negative-sampling | 12
-  ... (2 more rows)
+  ns-method/adaptive-denoising-mixup | 28
+  ns-method/adaptive-negative-sampling | 12
+  ns-method/adaptive-self-adversarial-negative-sampling | 31
+  ns-method/adversarial-language-model-driven-negative-sampling | 8
+  ns-method/adversarial-uniform-negative-sampling | 8
+  ns-method/affinity-dependent-negative-sampling | 36
+  ns-method/asa | 4
+  ns-method/batched-negative-sampling | 7
+  ns-method/bernoulli-negative-sampling | 249
+  ns-method/cake | 69
+  ns-method/cans | 10
+  ns-method/ckrl | 18
+  ns-method/ckrl-100-percent | 2
+  ns-method/ckrl-20-percent | 6
+  ns-method/ckrl-40-percent | 18
+  ns-method/ckrl-70-percent | 2
+  ns-method/closed-world-constraints-neg-ratio-1 | 6
+  ns-method/closed-world-constraints-neg-ratio-5 | 6
+  ns-method/cluster-cache-sampling | 68
+  ns-method/commonsense-aware-negative-sampling | 84
+  ... (122 more rows)
 
 ============================================================
 DEBUG: Explicit class type counts
 ============================================================
-  Configuration | 734
-  KGEModel | 41
-  NSMethod | 37
-  Article | 8
+  Configuration | 6522
+  KGEModel | 196
+  NSMethod | 181
+  Dataset | 73
+  Article | 55
+  Experimentation | 55
+  TrainingProtocol | 55
+  LossFunction | 36
+  Metric | 18
+  Hardware | 17
   Subcategory | 8
-  Dataset | 8
-  Experimentation | 8
-  TrainingProtocol | 8
   Category | 6
-  Metric | 6
-  LossFunction | 6
-  Task | 3
-  Optimizer | 2
-  Hardware | 2
+  Optimizer | 5
+  Task | 4
 
 ============================================================
 DEBUG: Category and subcategory by NSMethod
 ============================================================
+  ns-method/adaptive-denoising-mixup | category/mix-up-ns | subcategory/standard
+  ns-method/adaptive-negative-sampling | None | None
+  ns-method/adaptive-self-adversarial-negative-sampling | category/self-adversarial-ns | subcategory/direct
   ns-method/adversarial-contrast | category/adversarial-ns | subcategory/standard
+  ns-method/adversarial-language-model-driven-negative-sampling | None | None
+  ns-method/adversarial-negative-sampling | None | None
+  ns-method/adversarial-uniform-negative-sampling | None | None
+  ns-method/affinity-dependent-negative-sampling | category/dynamic-ns | subcategory/self-adaptive
   ns-method/approximate-nearest-neighbor-negative-sampling | category/static-ns | subcategory/model-guided
+  ns-method/asa | category/self-adversarial-ns | subcategory/direct
+  ns-method/base-subsampling | None | None
+  ns-method/batched-negative-sampling | None | None
+  ns-method/bayesian-personalized-ranking | None | None
   ns-method/bernoulli-negative-sampling | category/static-ns | subcategory/probabilistic
-  ns-method/domain-sampling | category/static-ns | subcategory/probabilistic
-  ns-method/entity-aware-negative-sampling | category/dynamic-ns | subcategory/model-guided
-  ns-method/entity-aware-negative-sampling-self-adversarial-negative-sampling | category/dynamic-ns | subcategory/model-guided
-  ns-method/gan-based-negative-sampling | category/adversarial-ns | subcategory/standard
-  ns-method/gan-pretrain | category/adversarial-ns | subcategory/standard
-  ns-method/gan-scratch | category/adversarial-ns | subcategory/standard
-  ns-method/generative-hard-negative-mining | category/text-based-ns | subcategory/generative
-  ns-method/ghn-sl | category/text-based-ns | subcategory/generative
-  ns-method/hard-negative-mixing | category/mix-up-ns | subcategory/standard
-  ns-method/igan | category/adversarial-ns | subcategory/standard
-  ns-method/in-batch-negative-sampling | category/static-ns | subcategory/random
-  ns-method/kbgan | category/adversarial-ns | subcategory/standard
-  ns-method/kbgan-complex | category/adversarial-ns | subcategory/standard
-  ns-method/kbgan-distmult | category/adversarial-ns | subcategory/standard
-  ns-method/loss-adaptive-sampling | category/self-adversarial-ns | subcategory/direct
-  ns-method/mixkg | category/mix-up-ns | subcategory/standard
-  ns-method/mixkg-hnm-ces | category/mix-up-ns | subcategory/standard
-  ... (17 more rows)
+  ns-method/cache-based-negative-sampling | None | None
+  ns-method/cake | category/self-adversarial-ns | subcategory/knowledge-constrained
+  ns-method/cans | category/self-adversarial-ns | subcategory/direct
+  ns-method/ckrl | None | None
+  ns-method/ckrl-100-percent | None | None
+  ns-method/ckrl-20-percent | None | None
+  ... (161 more rows)
 

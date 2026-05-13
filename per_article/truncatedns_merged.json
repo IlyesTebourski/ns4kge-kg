@@ -1,0 +1,368 @@
+{
+  "Article": {
+    "title": "Fusing Attribute Character Embeddings with Truncated Negative Sampling for Entity Alignment",
+    "date": "2023"
+  },
+  "proposedNSMethod": "Truncated Negative Sampling",
+  "proposedKGEModel": "",
+  "mentionedNSMethods": [
+    "Random Negative Sampling"
+  ],
+  "mentionedKGEModels": [
+    "BootEA",
+    "Truncated Negative Sampling",
+    "TransE",
+    "TransR",
+    "SimplE",
+    "MTransE",
+    "RotatE",
+    "DAT",
+    "HAKE",
+    "RESCAL",
+    "MultiKE",
+    "KD-CoE",
+    "TransD",
+    "CrossE",
+    "IPTransE",
+    "TransEdge",
+    "TransH",
+    "JAPE",
+    "MuRP"
+  ],
+  "Experimentation": {
+    "Hardware": [
+      "AMD Ryzen 7 4800H 2.9 GHz CPU",
+      "NVIDIA GeForce GTX 1650 Ti GPU"
+    ],
+    "TrainingProtocol": {
+      "LossFunction": [
+        "margin-based ranking loss"
+      ],
+      "Optimizer": [],
+      "learningRate": 0.01,
+      "nsRatio": 5
+    },
+    "Configurations": [
+      {
+        "Task": "Entity Alignment",
+        "Dataset": "D-W15K",
+        "Metric": "Hits@1",
+        "KGEModel": "IPTransE",
+        "NSMethod": "Unknown",
+        "result": 32.73
+      },
+      {
+        "Task": "Entity Alignment",
+        "Dataset": "D-W15K",
+        "Metric": "Hits@1",
+        "KGEModel": "Truncated Negative Sampling",
+        "NSMethod": "Truncated Negative Sampling",
+        "result": 32.41
+      },
+      {
+        "Task": "Entity Alignment",
+        "Dataset": "D-W15K",
+        "Metric": "Hits@1",
+        "KGEModel": "MTransE",
+        "NSMethod": "Unknown",
+        "result": 16.51
+      },
+      {
+        "Task": "Entity Alignment",
+        "Dataset": "D-W15K",
+        "Metric": "Hits@5",
+        "KGEModel": "Truncated Negative Sampling",
+        "NSMethod": "Truncated Negative Sampling",
+        "result": 49.02
+      },
+      {
+        "Task": "Entity Alignment",
+        "Dataset": "D-W15K",
+        "Metric": "Hits@5",
+        "KGEModel": "IPTransE",
+        "NSMethod": "Unknown",
+        "result": 43.56
+      },
+      {
+        "Task": "Entity Alignment",
+        "Dataset": "D-W15K",
+        "Metric": "Hits@5",
+        "KGEModel": "MTransE",
+        "NSMethod": "Unknown",
+        "result": 32.47
+      },
+      {
+        "Task": "Entity Alignment",
+        "Dataset": "D-W15K",
+        "Metric": "Hits@10",
+        "KGEModel": "Truncated Negative Sampling",
+        "NSMethod": "Truncated Negative Sampling",
+        "result": 56.16
+      },
+      {
+        "Task": "Entity Alignment",
+        "Dataset": "D-W15K",
+        "Metric": "Hits@10",
+        "KGEModel": "IPTransE",
+        "NSMethod": "Unknown",
+        "result": 54.37
+      },
+      {
+        "Task": "Entity Alignment",
+        "Dataset": "D-W15K",
+        "Metric": "Hits@10",
+        "KGEModel": "MTransE",
+        "NSMethod": "Unknown",
+        "result": 39.51
+      },
+      {
+        "Task": "Entity Alignment",
+        "Dataset": "D-W15K",
+        "Metric": "Hits@50",
+        "KGEModel": "Truncated Negative Sampling",
+        "NSMethod": "Truncated Negative Sampling",
+        "result": 79.92
+      },
+      {
+        "Task": "Entity Alignment",
+        "Dataset": "D-W15K",
+        "Metric": "Hits@50",
+        "KGEModel": "IPTransE",
+        "NSMethod": "Unknown",
+        "result": 69.38
+      },
+      {
+        "Task": "Entity Alignment",
+        "Dataset": "D-W15K",
+        "Metric": "Hits@50",
+        "KGEModel": "MTransE",
+        "NSMethod": "Unknown",
+        "result": 57.84
+      },
+      {
+        "Task": "Entity Alignment",
+        "Dataset": "D-W15K",
+        "Metric": "MRR",
+        "KGEModel": "Truncated Negative Sampling",
+        "NSMethod": "Truncated Negative Sampling",
+        "result": 0.41
+      },
+      {
+        "Task": "Entity Alignment",
+        "Dataset": "D-W15K",
+        "Metric": "MRR",
+        "KGEModel": "IPTransE",
+        "NSMethod": "Unknown",
+        "result": 0.37
+      },
+      {
+        "Task": "Entity Alignment",
+        "Dataset": "D-W15K",
+        "Metric": "MRR",
+        "KGEModel": "MTransE",
+        "NSMethod": "Unknown",
+        "result": 0.24
+      },
+      {
+        "Task": "Entity Alignment",
+        "Dataset": "D-W15K",
+        "Metric": "MR",
+        "KGEModel": "Truncated Negative Sampling",
+        "NSMethod": "Truncated Negative Sampling",
+        "result": 235
+      },
+      {
+        "Task": "Entity Alignment",
+        "Dataset": "D-W15K",
+        "Metric": "MR",
+        "KGEModel": "IPTransE",
+        "NSMethod": "Unknown",
+        "result": 240
+      },
+      {
+        "Task": "Entity Alignment",
+        "Dataset": "D-W15K",
+        "Metric": "MR",
+        "KGEModel": "JAPE",
+        "NSMethod": "Unknown",
+        "result": 258
+      },
+      {
+        "Task": "Entity Alignment",
+        "Dataset": "D-W15K",
+        "Metric": "Hits@1",
+        "KGEModel": "JAPE",
+        "NSMethod": "Unknown",
+        "result": 14.45
+      },
+      {
+        "Task": "Entity Alignment",
+        "Dataset": "D-W15K",
+        "Metric": "Hits@1",
+        "KGEModel": "TransE",
+        "NSMethod": "Unknown",
+        "result": 8.35
+      },
+      {
+        "Task": "Entity Alignment",
+        "Dataset": "EN-DE15K",
+        "Metric": "Hits@1",
+        "KGEModel": "Truncated Negative Sampling",
+        "NSMethod": "Truncated Negative Sampling",
+        "result": 65.9
+      },
+      {
+        "Task": "Entity Alignment",
+        "Dataset": "EN-DE15K",
+        "Metric": "Hits@1",
+        "KGEModel": "IPTransE",
+        "NSMethod": "Unknown",
+        "result": 35.22
+      },
+      {
+        "Task": "Entity Alignment",
+        "Dataset": "EN-DE15K",
+        "Metric": "Hits@1",
+        "KGEModel": "JAPE",
+        "NSMethod": "Unknown",
+        "result": 12.24
+      },
+      {
+        "Task": "Entity Alignment",
+        "Dataset": "EN-DE15K",
+        "Metric": "Hits@5",
+        "KGEModel": "Truncated Negative Sampling",
+        "NSMethod": "Truncated Negative Sampling",
+        "result": 79.52
+      },
+      {
+        "Task": "Entity Alignment",
+        "Dataset": "EN-DE15K",
+        "Metric": "Hits@5",
+        "KGEModel": "IPTransE",
+        "NSMethod": "Unknown",
+        "result": 51.36
+      },
+      {
+        "Task": "Entity Alignment",
+        "Dataset": "EN-DE15K",
+        "Metric": "Hits@5",
+        "KGEModel": "JAPE",
+        "NSMethod": "Unknown",
+        "result": 26.26
+      },
+      {
+        "Task": "Entity Alignment",
+        "Dataset": "EN-DE15K",
+        "Metric": "Hits@10",
+        "KGEModel": "Truncated Negative Sampling",
+        "NSMethod": "Truncated Negative Sampling",
+        "result": 83.87
+      },
+      {
+        "Task": "Entity Alignment",
+        "Dataset": "EN-DE15K",
+        "Metric": "Hits@10",
+        "KGEModel": "IPTransE",
+        "NSMethod": "Unknown",
+        "result": 79.52
+      },
+      {
+        "Task": "Entity Alignment",
+        "Dataset": "EN-DE15K",
+        "Metric": "Hits@10",
+        "KGEModel": "JAPE",
+        "NSMethod": "Unknown",
+        "result": 34.38
+      },
+      {
+        "Task": "Entity Alignment",
+        "Dataset": "EN-DE15K",
+        "Metric": "Hits@50",
+        "KGEModel": "Truncated Negative Sampling",
+        "NSMethod": "Truncated Negative Sampling",
+        "result": 91.67
+      },
+      {
+        "Task": "Entity Alignment",
+        "Dataset": "EN-DE15K",
+        "Metric": "Hits@50",
+        "KGEModel": "IPTransE",
+        "NSMethod": "Unknown",
+        "result": 88.27
+      },
+      {
+        "Task": "Entity Alignment",
+        "Dataset": "EN-DE15K",
+        "Metric": "Hits@50",
+        "KGEModel": "JAPE",
+        "NSMethod": "Unknown",
+        "result": 51.95
+      },
+      {
+        "Task": "Entity Alignment",
+        "Dataset": "EN-DE15K",
+        "Metric": "MRR",
+        "KGEModel": "Truncated Negative Sampling",
+        "NSMethod": "Truncated Negative Sampling",
+        "result": 0.72
+      },
+      {
+        "Task": "Entity Alignment",
+        "Dataset": "EN-DE15K",
+        "Metric": "MRR",
+        "KGEModel": "IPTransE",
+        "NSMethod": "Unknown",
+        "result": 0.68
+      },
+      {
+        "Task": "Entity Alignment",
+        "Dataset": "EN-DE15K",
+        "Metric": "MRR",
+        "KGEModel": "JAPE",
+        "NSMethod": "Unknown",
+        "result": 0.2
+      },
+      {
+        "Task": "Entity Alignment",
+        "Dataset": "EN-DE15K",
+        "Metric": "MR",
+        "KGEModel": "Truncated Negative Sampling",
+        "NSMethod": "Truncated Negative Sampling",
+        "result": 48
+      },
+      {
+        "Task": "Entity Alignment",
+        "Dataset": "EN-DE15K",
+        "Metric": "MR",
+        "KGEModel": "IPTransE",
+        "NSMethod": "Unknown",
+        "result": 117
+      },
+      {
+        "Task": "Entity Alignment",
+        "Dataset": "EN-DE15K",
+        "Metric": "MR",
+        "KGEModel": "JAPE",
+        "NSMethod": "Unknown",
+        "result": 357
+      },
+      {
+        "Task": "Entity Alignment",
+        "Dataset": "EN-DE15K",
+        "Metric": "Hits@1",
+        "KGEModel": "MTransE",
+        "NSMethod": "Unknown",
+        "result": 11.9
+      },
+      {
+        "Task": "Entity Alignment",
+        "Dataset": "EN-DE15K",
+        "Metric": "Hits@1",
+        "KGEModel": "TransE",
+        "NSMethod": "Unknown",
+        "result": 6.42
+      }
+    ]
+  }
+}

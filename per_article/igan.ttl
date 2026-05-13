@@ -8,7 +8,7 @@
 <article/igan> ns4kge:mentionsNSMethod <ns-method/uniform-negative-sampling> .
 <article/igan> ns4kge:mentionsNSMethod <ns-method/gan-scratch> .
 <article/igan> ns4kge:mentionsKGEModel <kge-model/transr> .
-<article/igan> ns4kge:mentionsKGEModel <kge-model/structured-embedding> .
+<article/igan> ns4kge:mentionsKGEModel <kge-model/se> .
 <article/igan> ns4kge:mentionsKGEModel <kge-model/transh> .
 <article/igan> ns4kge:mentionsKGEModel <kge-model/transe> .
 <article/igan> ns4kge:mentionsKGEModel <kge-model/transe-a-lstm> .
@@ -16,7 +16,7 @@
 <article/igan> ns4kge:mentionsKGEModel <kge-model/sme-bilinear> .
 <article/igan> ns4kge:mentionsKGEModel <kge-model/transd> .
 <article/igan> ns4kge:mentionsKGEModel <kge-model/unstructured-model> .
-<article/igan> ns4kge:mentionsKGEModel <kge-model/neural-tensor-network> .
+<article/igan> ns4kge:mentionsKGEModel <kge-model/ntn> .
 <article/igan> ns4kge:hasExperimentation <experimentation/igan> .
 
 <category/adversarial-ns> rdf:type ns4kge:Category .
@@ -55,7 +55,7 @@
 
 <kge-model/transr> rdf:type ns4kge:KGEModel .
 
-<kge-model/structured-embedding> rdf:type ns4kge:KGEModel .
+<kge-model/se> rdf:type ns4kge:KGEModel .
 
 <kge-model/transh> rdf:type ns4kge:KGEModel .
 
@@ -71,7 +71,7 @@
 
 <kge-model/unstructured-model> rdf:type ns4kge:KGEModel .
 
-<kge-model/neural-tensor-network> rdf:type ns4kge:KGEModel .
+<kge-model/ntn> rdf:type ns4kge:KGEModel .
 
 <dataset/fb15k> rdf:type ns4kge:Dataset .
 <task/link-prediction> rdf:type ns4kge:Task .
@@ -280,7 +280,7 @@
 <configuration/igan/7> ns4kge:hasTask    <task/link-prediction> .
 <configuration/igan/7> ns4kge:hasDataset <dataset/fb15k> .
 <configuration/igan/7> ns4kge:hasMetric  <metric/mr> .
-<configuration/igan/7> ns4kge:hasKGEModel <kge-model/structured-embedding> .
+<configuration/igan/7> ns4kge:hasKGEModel <kge-model/se> .
 <configuration/igan/7> ns4kge:result "162"^^xsd:decimal .
 
 <configuration/igan/8> rdf:type ns4kge:Configuration .
@@ -387,7 +387,7 @@
 <configuration/igan/21> ns4kge:hasTask    <task/link-prediction> .
 <configuration/igan/21> ns4kge:hasDataset <dataset/fb15k> .
 <configuration/igan/21> ns4kge:hasMetric  <metric/mr> .
-<configuration/igan/21> ns4kge:hasKGEModel <kge-model/structured-embedding> .
+<configuration/igan/21> ns4kge:hasKGEModel <kge-model/se> .
 <configuration/igan/21> ns4kge:hasNSMethod <ns-method/gan-scratch> .
 <configuration/igan/21> ns4kge:result "207"^^xsd:decimal .
 
@@ -395,7 +395,7 @@
 <configuration/igan/22> ns4kge:hasTask    <task/link-prediction> .
 <configuration/igan/22> ns4kge:hasDataset <dataset/fb15k> .
 <configuration/igan/22> ns4kge:hasMetric  <metric/mr> .
-<configuration/igan/22> ns4kge:hasKGEModel <kge-model/structured-embedding> .
+<configuration/igan/22> ns4kge:hasKGEModel <kge-model/se> .
 <configuration/igan/22> ns4kge:hasNSMethod <ns-method/gan-pretrain> .
 <configuration/igan/22> ns4kge:result "220"^^xsd:decimal .
 
@@ -420,7 +420,7 @@
 <configuration/igan/25> ns4kge:hasMetric  <metric/hits-10> .
 <configuration/igan/25> ns4kge:hasKGEModel <kge-model/transd> .
 <configuration/igan/25> ns4kge:hasNSMethod <ns-method/gan-pretrain> .
-<configuration/igan/25> ns4kge:result "77.6"^^xsd:decimal .
+<configuration/igan/25> ns4kge:result "0.776"^^xsd:decimal .
 
 <configuration/igan/26> rdf:type ns4kge:Configuration .
 <configuration/igan/26> ns4kge:hasTask    <task/link-prediction> .
@@ -428,7 +428,7 @@
 <configuration/igan/26> ns4kge:hasMetric  <metric/hits-10> .
 <configuration/igan/26> ns4kge:hasKGEModel <kge-model/transh> .
 <configuration/igan/26> ns4kge:hasNSMethod <ns-method/gan-pretrain> .
-<configuration/igan/26> ns4kge:result "77.0"^^xsd:decimal .
+<configuration/igan/26> ns4kge:result "0.77"^^xsd:decimal .
 
 <configuration/igan/27> rdf:type ns4kge:Configuration .
 <configuration/igan/27> ns4kge:hasTask    <task/link-prediction> .
@@ -436,7 +436,7 @@
 <configuration/igan/27> ns4kge:hasMetric  <metric/hits-10> .
 <configuration/igan/27> ns4kge:hasKGEModel <kge-model/transe-a-lstm> .
 <configuration/igan/27> ns4kge:hasNSMethod <ns-method/gan-pretrain> .
-<configuration/igan/27> ns4kge:result "76.3"^^xsd:decimal .
+<configuration/igan/27> ns4kge:result "0.763"^^xsd:decimal .
 
 <configuration/igan/28> rdf:type ns4kge:Configuration .
 <configuration/igan/28> ns4kge:hasTask    <task/link-prediction> .
@@ -444,14 +444,14 @@
 <configuration/igan/28> ns4kge:hasMetric  <metric/hits-10> .
 <configuration/igan/28> ns4kge:hasKGEModel <kge-model/transr> .
 <configuration/igan/28> ns4kge:hasNSMethod <ns-method/gan-pretrain> .
-<configuration/igan/28> ns4kge:result "76.0"^^xsd:decimal .
+<configuration/igan/28> ns4kge:result "0.76"^^xsd:decimal .
 
 <configuration/igan/29> rdf:type ns4kge:Configuration .
 <configuration/igan/29> ns4kge:hasTask    <task/link-prediction> .
 <configuration/igan/29> ns4kge:hasDataset <dataset/fb15k> .
 <configuration/igan/29> ns4kge:hasMetric  <metric/hits-10> .
 <configuration/igan/29> ns4kge:hasKGEModel <kge-model/unstructured-model> .
-<configuration/igan/29> ns4kge:result "6.3"^^xsd:decimal .
+<configuration/igan/29> ns4kge:result "0.063"^^xsd:decimal .
 
 <configuration/igan/30> rdf:type ns4kge:Configuration .
 <configuration/igan/30> ns4kge:hasTask    <task/link-prediction> .
@@ -459,7 +459,7 @@
 <configuration/igan/30> ns4kge:hasMetric  <metric/hits-10> .
 <configuration/igan/30> ns4kge:hasKGEModel <kge-model/unstructured-model> .
 <configuration/igan/30> ns4kge:hasNSMethod <ns-method/gan-scratch> .
-<configuration/igan/30> ns4kge:result "24.5"^^xsd:decimal .
+<configuration/igan/30> ns4kge:result "0.245"^^xsd:decimal .
 
 <configuration/igan/31> rdf:type ns4kge:Configuration .
 <configuration/igan/31> ns4kge:hasTask    <task/link-prediction> .
@@ -467,37 +467,37 @@
 <configuration/igan/31> ns4kge:hasMetric  <metric/hits-10> .
 <configuration/igan/31> ns4kge:hasKGEModel <kge-model/unstructured-model> .
 <configuration/igan/31> ns4kge:hasNSMethod <ns-method/gan-pretrain> .
-<configuration/igan/31> ns4kge:result "28.7"^^xsd:decimal .
+<configuration/igan/31> ns4kge:result "0.287"^^xsd:decimal .
 
 <configuration/igan/32> rdf:type ns4kge:Configuration .
 <configuration/igan/32> ns4kge:hasTask    <task/link-prediction> .
 <configuration/igan/32> ns4kge:hasDataset <dataset/fb15k> .
 <configuration/igan/32> ns4kge:hasMetric  <metric/hits-10> .
-<configuration/igan/32> ns4kge:hasKGEModel <kge-model/structured-embedding> .
-<configuration/igan/32> ns4kge:result "39.8"^^xsd:decimal .
+<configuration/igan/32> ns4kge:hasKGEModel <kge-model/se> .
+<configuration/igan/32> ns4kge:result "0.398"^^xsd:decimal .
 
 <configuration/igan/33> rdf:type ns4kge:Configuration .
 <configuration/igan/33> ns4kge:hasTask    <task/link-prediction> .
 <configuration/igan/33> ns4kge:hasDataset <dataset/fb15k> .
 <configuration/igan/33> ns4kge:hasMetric  <metric/hits-10> .
-<configuration/igan/33> ns4kge:hasKGEModel <kge-model/structured-embedding> .
+<configuration/igan/33> ns4kge:hasKGEModel <kge-model/se> .
 <configuration/igan/33> ns4kge:hasNSMethod <ns-method/gan-scratch> .
-<configuration/igan/33> ns4kge:result "53.3"^^xsd:decimal .
+<configuration/igan/33> ns4kge:result "0.533"^^xsd:decimal .
 
 <configuration/igan/34> rdf:type ns4kge:Configuration .
 <configuration/igan/34> ns4kge:hasTask    <task/link-prediction> .
 <configuration/igan/34> ns4kge:hasDataset <dataset/fb15k> .
 <configuration/igan/34> ns4kge:hasMetric  <metric/hits-10> .
-<configuration/igan/34> ns4kge:hasKGEModel <kge-model/structured-embedding> .
+<configuration/igan/34> ns4kge:hasKGEModel <kge-model/se> .
 <configuration/igan/34> ns4kge:hasNSMethod <ns-method/gan-pretrain> .
-<configuration/igan/34> ns4kge:result "53.8"^^xsd:decimal .
+<configuration/igan/34> ns4kge:result "0.538"^^xsd:decimal .
 
 <configuration/igan/35> rdf:type ns4kge:Configuration .
 <configuration/igan/35> ns4kge:hasTask    <task/link-prediction> .
 <configuration/igan/35> ns4kge:hasDataset <dataset/fb15k> .
 <configuration/igan/35> ns4kge:hasMetric  <metric/hits-10> .
 <configuration/igan/35> ns4kge:hasKGEModel <kge-model/sme-bilinear> .
-<configuration/igan/35> ns4kge:result "41.3"^^xsd:decimal .
+<configuration/igan/35> ns4kge:result "0.413"^^xsd:decimal .
 
 <configuration/igan/36> rdf:type ns4kge:Configuration .
 <configuration/igan/36> ns4kge:hasTask    <task/link-prediction> .
@@ -505,7 +505,7 @@
 <configuration/igan/36> ns4kge:hasMetric  <metric/hits-10> .
 <configuration/igan/36> ns4kge:hasKGEModel <kge-model/sme-bilinear> .
 <configuration/igan/36> ns4kge:hasNSMethod <ns-method/gan-scratch> .
-<configuration/igan/36> ns4kge:result "45.8"^^xsd:decimal .
+<configuration/igan/36> ns4kge:result "0.458"^^xsd:decimal .
 
 <configuration/igan/37> rdf:type ns4kge:Configuration .
 <configuration/igan/37> ns4kge:hasTask    <task/link-prediction> .
@@ -513,14 +513,14 @@
 <configuration/igan/37> ns4kge:hasMetric  <metric/hits-10> .
 <configuration/igan/37> ns4kge:hasKGEModel <kge-model/sme-bilinear> .
 <configuration/igan/37> ns4kge:hasNSMethod <ns-method/gan-pretrain> .
-<configuration/igan/37> ns4kge:result "45.7"^^xsd:decimal .
+<configuration/igan/37> ns4kge:result "0.457"^^xsd:decimal .
 
 <configuration/igan/38> rdf:type ns4kge:Configuration .
 <configuration/igan/38> ns4kge:hasTask    <task/link-prediction> .
 <configuration/igan/38> ns4kge:hasDataset <dataset/fb15k> .
 <configuration/igan/38> ns4kge:hasMetric  <metric/hits-10> .
 <configuration/igan/38> ns4kge:hasKGEModel <kge-model/transe> .
-<configuration/igan/38> ns4kge:result "69.6"^^xsd:decimal .
+<configuration/igan/38> ns4kge:result "0.696"^^xsd:decimal .
 
 <configuration/igan/39> rdf:type ns4kge:Configuration .
 <configuration/igan/39> ns4kge:hasTask    <task/link-prediction> .
@@ -528,7 +528,7 @@
 <configuration/igan/39> ns4kge:hasMetric  <metric/hits-10> .
 <configuration/igan/39> ns4kge:hasKGEModel <kge-model/transe> .
 <configuration/igan/39> ns4kge:hasNSMethod <ns-method/gan-scratch> .
-<configuration/igan/39> ns4kge:result "73.1"^^xsd:decimal .
+<configuration/igan/39> ns4kge:result "0.731"^^xsd:decimal .
 
 <configuration/igan/40> rdf:type ns4kge:Configuration .
 <configuration/igan/40> ns4kge:hasTask    <task/link-prediction> .
@@ -536,14 +536,14 @@
 <configuration/igan/40> ns4kge:hasMetric  <metric/hits-10> .
 <configuration/igan/40> ns4kge:hasKGEModel <kge-model/transe> .
 <configuration/igan/40> ns4kge:hasNSMethod <ns-method/gan-pretrain> .
-<configuration/igan/40> ns4kge:result "74.0"^^xsd:decimal .
+<configuration/igan/40> ns4kge:result "0.74"^^xsd:decimal .
 
 <configuration/igan/41> rdf:type ns4kge:Configuration .
 <configuration/igan/41> ns4kge:hasTask    <task/link-prediction> .
 <configuration/igan/41> ns4kge:hasDataset <dataset/fb15k> .
 <configuration/igan/41> ns4kge:hasMetric  <metric/hits-10> .
 <configuration/igan/41> ns4kge:hasKGEModel <kge-model/transh> .
-<configuration/igan/41> ns4kge:result "64.4"^^xsd:decimal .
+<configuration/igan/41> ns4kge:result "0.644"^^xsd:decimal .
 
 <configuration/igan/42> rdf:type ns4kge:Configuration .
 <configuration/igan/42> ns4kge:hasTask    <task/link-prediction> .
@@ -551,14 +551,14 @@
 <configuration/igan/42> ns4kge:hasMetric  <metric/hits-10> .
 <configuration/igan/42> ns4kge:hasKGEModel <kge-model/transh> .
 <configuration/igan/42> ns4kge:hasNSMethod <ns-method/gan-scratch> .
-<configuration/igan/42> ns4kge:result "73.3"^^xsd:decimal .
+<configuration/igan/42> ns4kge:result "0.733"^^xsd:decimal .
 
 <configuration/igan/43> rdf:type ns4kge:Configuration .
 <configuration/igan/43> ns4kge:hasTask    <task/link-prediction> .
 <configuration/igan/43> ns4kge:hasDataset <dataset/fb15k> .
 <configuration/igan/43> ns4kge:hasMetric  <metric/hits-10> .
 <configuration/igan/43> ns4kge:hasKGEModel <kge-model/transr> .
-<configuration/igan/43> ns4kge:result "68.7"^^xsd:decimal .
+<configuration/igan/43> ns4kge:result "0.687"^^xsd:decimal .
 
 <configuration/igan/44> rdf:type ns4kge:Configuration .
 <configuration/igan/44> ns4kge:hasTask    <task/link-prediction> .
@@ -566,14 +566,14 @@
 <configuration/igan/44> ns4kge:hasMetric  <metric/hits-10> .
 <configuration/igan/44> ns4kge:hasKGEModel <kge-model/transr> .
 <configuration/igan/44> ns4kge:hasNSMethod <ns-method/gan-scratch> .
-<configuration/igan/44> ns4kge:result "58.3"^^xsd:decimal .
+<configuration/igan/44> ns4kge:result "0.583"^^xsd:decimal .
 
 <configuration/igan/45> rdf:type ns4kge:Configuration .
 <configuration/igan/45> ns4kge:hasTask    <task/link-prediction> .
 <configuration/igan/45> ns4kge:hasDataset <dataset/fb15k> .
 <configuration/igan/45> ns4kge:hasMetric  <metric/hits-10> .
 <configuration/igan/45> ns4kge:hasKGEModel <kge-model/transd> .
-<configuration/igan/45> ns4kge:result "77.3"^^xsd:decimal .
+<configuration/igan/45> ns4kge:result "0.773"^^xsd:decimal .
 
 <configuration/igan/46> rdf:type ns4kge:Configuration .
 <configuration/igan/46> ns4kge:hasTask    <task/link-prediction> .
@@ -581,14 +581,14 @@
 <configuration/igan/46> ns4kge:hasMetric  <metric/hits-10> .
 <configuration/igan/46> ns4kge:hasKGEModel <kge-model/transd> .
 <configuration/igan/46> ns4kge:hasNSMethod <ns-method/gan-scratch> .
-<configuration/igan/46> ns4kge:result "74.0"^^xsd:decimal .
+<configuration/igan/46> ns4kge:result "0.74"^^xsd:decimal .
 
 <configuration/igan/47> rdf:type ns4kge:Configuration .
 <configuration/igan/47> ns4kge:hasTask    <task/link-prediction> .
 <configuration/igan/47> ns4kge:hasDataset <dataset/fb15k> .
 <configuration/igan/47> ns4kge:hasMetric  <metric/hits-10> .
 <configuration/igan/47> ns4kge:hasKGEModel <kge-model/transe-a-lstm> .
-<configuration/igan/47> ns4kge:result "75.5"^^xsd:decimal .
+<configuration/igan/47> ns4kge:result "0.755"^^xsd:decimal .
 
 <configuration/igan/48> rdf:type ns4kge:Configuration .
 <configuration/igan/48> ns4kge:hasTask    <task/link-prediction> .
@@ -596,7 +596,7 @@
 <configuration/igan/48> ns4kge:hasMetric  <metric/hits-10> .
 <configuration/igan/48> ns4kge:hasKGEModel <kge-model/transe-a-lstm> .
 <configuration/igan/48> ns4kge:hasNSMethod <ns-method/gan-scratch> .
-<configuration/igan/48> ns4kge:result "75.8"^^xsd:decimal .
+<configuration/igan/48> ns4kge:result "0.758"^^xsd:decimal .
 
 <configuration/igan/49> rdf:type ns4kge:Configuration .
 <configuration/igan/49> ns4kge:hasTask    <task/link-prediction> .
@@ -664,14 +664,14 @@
 <configuration/igan/57> ns4kge:hasTask    <task/link-prediction> .
 <configuration/igan/57> ns4kge:hasDataset <dataset/wn18> .
 <configuration/igan/57> ns4kge:hasMetric  <metric/mr> .
-<configuration/igan/57> ns4kge:hasKGEModel <kge-model/structured-embedding> .
+<configuration/igan/57> ns4kge:hasKGEModel <kge-model/se> .
 <configuration/igan/57> ns4kge:result "985"^^xsd:decimal .
 
 <configuration/igan/58> rdf:type ns4kge:Configuration .
 <configuration/igan/58> ns4kge:hasTask    <task/link-prediction> .
 <configuration/igan/58> ns4kge:hasDataset <dataset/wn18> .
 <configuration/igan/58> ns4kge:hasMetric  <metric/mr> .
-<configuration/igan/58> ns4kge:hasKGEModel <kge-model/structured-embedding> .
+<configuration/igan/58> ns4kge:hasKGEModel <kge-model/se> .
 <configuration/igan/58> ns4kge:hasNSMethod <ns-method/gan-scratch> .
 <configuration/igan/58> ns4kge:result "773"^^xsd:decimal .
 
@@ -679,7 +679,7 @@
 <configuration/igan/59> ns4kge:hasTask    <task/link-prediction> .
 <configuration/igan/59> ns4kge:hasDataset <dataset/wn18> .
 <configuration/igan/59> ns4kge:hasMetric  <metric/mr> .
-<configuration/igan/59> ns4kge:hasKGEModel <kge-model/structured-embedding> .
+<configuration/igan/59> ns4kge:hasKGEModel <kge-model/se> .
 <configuration/igan/59> ns4kge:hasNSMethod <ns-method/gan-pretrain> .
 <configuration/igan/59> ns4kge:result "762"^^xsd:decimal .
 
@@ -788,7 +788,7 @@
 <configuration/igan/73> ns4kge:hasMetric  <metric/hits-10> .
 <configuration/igan/73> ns4kge:hasKGEModel <kge-model/transh> .
 <configuration/igan/73> ns4kge:hasNSMethod <ns-method/gan-pretrain> .
-<configuration/igan/73> ns4kge:result "94.0"^^xsd:decimal .
+<configuration/igan/73> ns4kge:result "0.94"^^xsd:decimal .
 
 <configuration/igan/74> rdf:type ns4kge:Configuration .
 <configuration/igan/74> ns4kge:hasTask    <task/link-prediction> .
@@ -796,7 +796,7 @@
 <configuration/igan/74> ns4kge:hasMetric  <metric/hits-10> .
 <configuration/igan/74> ns4kge:hasKGEModel <kge-model/transr> .
 <configuration/igan/74> ns4kge:hasNSMethod <ns-method/gan-pretrain> .
-<configuration/igan/74> ns4kge:result "93.7"^^xsd:decimal .
+<configuration/igan/74> ns4kge:result "0.937"^^xsd:decimal .
 
 <configuration/igan/75> rdf:type ns4kge:Configuration .
 <configuration/igan/75> ns4kge:hasTask    <task/link-prediction> .
@@ -804,14 +804,14 @@
 <configuration/igan/75> ns4kge:hasMetric  <metric/hits-10> .
 <configuration/igan/75> ns4kge:hasKGEModel <kge-model/transd> .
 <configuration/igan/75> ns4kge:hasNSMethod <ns-method/gan-pretrain> .
-<configuration/igan/75> ns4kge:result "93.3"^^xsd:decimal .
+<configuration/igan/75> ns4kge:result "0.933"^^xsd:decimal .
 
 <configuration/igan/76> rdf:type ns4kge:Configuration .
 <configuration/igan/76> ns4kge:hasTask    <task/link-prediction> .
 <configuration/igan/76> ns4kge:hasDataset <dataset/wn18> .
 <configuration/igan/76> ns4kge:hasMetric  <metric/hits-10> .
 <configuration/igan/76> ns4kge:hasKGEModel <kge-model/unstructured-model> .
-<configuration/igan/76> ns4kge:result "38.2"^^xsd:decimal .
+<configuration/igan/76> ns4kge:result "0.382"^^xsd:decimal .
 
 <configuration/igan/77> rdf:type ns4kge:Configuration .
 <configuration/igan/77> ns4kge:hasTask    <task/link-prediction> .
@@ -819,7 +819,7 @@
 <configuration/igan/77> ns4kge:hasMetric  <metric/hits-10> .
 <configuration/igan/77> ns4kge:hasKGEModel <kge-model/unstructured-model> .
 <configuration/igan/77> ns4kge:hasNSMethod <ns-method/gan-scratch> .
-<configuration/igan/77> ns4kge:result "80.5"^^xsd:decimal .
+<configuration/igan/77> ns4kge:result "0.805"^^xsd:decimal .
 
 <configuration/igan/78> rdf:type ns4kge:Configuration .
 <configuration/igan/78> ns4kge:hasTask    <task/link-prediction> .
@@ -827,37 +827,37 @@
 <configuration/igan/78> ns4kge:hasMetric  <metric/hits-10> .
 <configuration/igan/78> ns4kge:hasKGEModel <kge-model/unstructured-model> .
 <configuration/igan/78> ns4kge:hasNSMethod <ns-method/gan-pretrain> .
-<configuration/igan/78> ns4kge:result "82.9"^^xsd:decimal .
+<configuration/igan/78> ns4kge:result "0.829"^^xsd:decimal .
 
 <configuration/igan/79> rdf:type ns4kge:Configuration .
 <configuration/igan/79> ns4kge:hasTask    <task/link-prediction> .
 <configuration/igan/79> ns4kge:hasDataset <dataset/wn18> .
 <configuration/igan/79> ns4kge:hasMetric  <metric/hits-10> .
-<configuration/igan/79> ns4kge:hasKGEModel <kge-model/structured-embedding> .
-<configuration/igan/79> ns4kge:result "80.5"^^xsd:decimal .
+<configuration/igan/79> ns4kge:hasKGEModel <kge-model/se> .
+<configuration/igan/79> ns4kge:result "0.805"^^xsd:decimal .
 
 <configuration/igan/80> rdf:type ns4kge:Configuration .
 <configuration/igan/80> ns4kge:hasTask    <task/link-prediction> .
 <configuration/igan/80> ns4kge:hasDataset <dataset/wn18> .
 <configuration/igan/80> ns4kge:hasMetric  <metric/hits-10> .
-<configuration/igan/80> ns4kge:hasKGEModel <kge-model/structured-embedding> .
+<configuration/igan/80> ns4kge:hasKGEModel <kge-model/se> .
 <configuration/igan/80> ns4kge:hasNSMethod <ns-method/gan-scratch> .
-<configuration/igan/80> ns4kge:result "86.1"^^xsd:decimal .
+<configuration/igan/80> ns4kge:result "0.861"^^xsd:decimal .
 
 <configuration/igan/81> rdf:type ns4kge:Configuration .
 <configuration/igan/81> ns4kge:hasTask    <task/link-prediction> .
 <configuration/igan/81> ns4kge:hasDataset <dataset/wn18> .
 <configuration/igan/81> ns4kge:hasMetric  <metric/hits-10> .
-<configuration/igan/81> ns4kge:hasKGEModel <kge-model/structured-embedding> .
+<configuration/igan/81> ns4kge:hasKGEModel <kge-model/se> .
 <configuration/igan/81> ns4kge:hasNSMethod <ns-method/gan-pretrain> .
-<configuration/igan/81> ns4kge:result "87.4"^^xsd:decimal .
+<configuration/igan/81> ns4kge:result "0.874"^^xsd:decimal .
 
 <configuration/igan/82> rdf:type ns4kge:Configuration .
 <configuration/igan/82> ns4kge:hasTask    <task/link-prediction> .
 <configuration/igan/82> ns4kge:hasDataset <dataset/wn18> .
 <configuration/igan/82> ns4kge:hasMetric  <metric/hits-10> .
 <configuration/igan/82> ns4kge:hasKGEModel <kge-model/sme-bilinear> .
-<configuration/igan/82> ns4kge:result "61.3"^^xsd:decimal .
+<configuration/igan/82> ns4kge:result "0.613"^^xsd:decimal .
 
 <configuration/igan/83> rdf:type ns4kge:Configuration .
 <configuration/igan/83> ns4kge:hasTask    <task/link-prediction> .
@@ -865,7 +865,7 @@
 <configuration/igan/83> ns4kge:hasMetric  <metric/hits-10> .
 <configuration/igan/83> ns4kge:hasKGEModel <kge-model/sme-bilinear> .
 <configuration/igan/83> ns4kge:hasNSMethod <ns-method/gan-scratch> .
-<configuration/igan/83> ns4kge:result "74.6"^^xsd:decimal .
+<configuration/igan/83> ns4kge:result "0.746"^^xsd:decimal .
 
 <configuration/igan/84> rdf:type ns4kge:Configuration .
 <configuration/igan/84> ns4kge:hasTask    <task/link-prediction> .
@@ -873,14 +873,14 @@
 <configuration/igan/84> ns4kge:hasMetric  <metric/hits-10> .
 <configuration/igan/84> ns4kge:hasKGEModel <kge-model/sme-bilinear> .
 <configuration/igan/84> ns4kge:hasNSMethod <ns-method/gan-pretrain> .
-<configuration/igan/84> ns4kge:result "78.9"^^xsd:decimal .
+<configuration/igan/84> ns4kge:result "0.789"^^xsd:decimal .
 
 <configuration/igan/85> rdf:type ns4kge:Configuration .
 <configuration/igan/85> ns4kge:hasTask    <task/link-prediction> .
 <configuration/igan/85> ns4kge:hasDataset <dataset/wn18> .
 <configuration/igan/85> ns4kge:hasMetric  <metric/hits-10> .
 <configuration/igan/85> ns4kge:hasKGEModel <kge-model/transe> .
-<configuration/igan/85> ns4kge:result "89.2"^^xsd:decimal .
+<configuration/igan/85> ns4kge:result "0.892"^^xsd:decimal .
 
 <configuration/igan/86> rdf:type ns4kge:Configuration .
 <configuration/igan/86> ns4kge:hasTask    <task/link-prediction> .
@@ -888,7 +888,7 @@
 <configuration/igan/86> ns4kge:hasMetric  <metric/hits-10> .
 <configuration/igan/86> ns4kge:hasKGEModel <kge-model/transe> .
 <configuration/igan/86> ns4kge:hasNSMethod <ns-method/gan-scratch> .
-<configuration/igan/86> ns4kge:result "92.7"^^xsd:decimal .
+<configuration/igan/86> ns4kge:result "0.927"^^xsd:decimal .
 
 <configuration/igan/87> rdf:type ns4kge:Configuration .
 <configuration/igan/87> ns4kge:hasTask    <task/link-prediction> .
@@ -896,14 +896,14 @@
 <configuration/igan/87> ns4kge:hasMetric  <metric/hits-10> .
 <configuration/igan/87> ns4kge:hasKGEModel <kge-model/transe> .
 <configuration/igan/87> ns4kge:hasNSMethod <ns-method/gan-pretrain> .
-<configuration/igan/87> ns4kge:result "91.3"^^xsd:decimal .
+<configuration/igan/87> ns4kge:result "0.913"^^xsd:decimal .
 
 <configuration/igan/88> rdf:type ns4kge:Configuration .
 <configuration/igan/88> ns4kge:hasTask    <task/link-prediction> .
 <configuration/igan/88> ns4kge:hasDataset <dataset/wn18> .
 <configuration/igan/88> ns4kge:hasMetric  <metric/hits-10> .
 <configuration/igan/88> ns4kge:hasKGEModel <kge-model/transh> .
-<configuration/igan/88> ns4kge:result "86.7"^^xsd:decimal .
+<configuration/igan/88> ns4kge:result "0.867"^^xsd:decimal .
 
 <configuration/igan/89> rdf:type ns4kge:Configuration .
 <configuration/igan/89> ns4kge:hasTask    <task/link-prediction> .
@@ -911,14 +911,14 @@
 <configuration/igan/89> ns4kge:hasMetric  <metric/hits-10> .
 <configuration/igan/89> ns4kge:hasKGEModel <kge-model/transh> .
 <configuration/igan/89> ns4kge:hasNSMethod <ns-method/gan-scratch> .
-<configuration/igan/89> ns4kge:result "86.9"^^xsd:decimal .
+<configuration/igan/89> ns4kge:result "0.869"^^xsd:decimal .
 
 <configuration/igan/90> rdf:type ns4kge:Configuration .
 <configuration/igan/90> ns4kge:hasTask    <task/link-prediction> .
 <configuration/igan/90> ns4kge:hasDataset <dataset/wn18> .
 <configuration/igan/90> ns4kge:hasMetric  <metric/hits-10> .
 <configuration/igan/90> ns4kge:hasKGEModel <kge-model/transr> .
-<configuration/igan/90> ns4kge:result "92.0"^^xsd:decimal .
+<configuration/igan/90> ns4kge:result "0.92"^^xsd:decimal .
 
 <configuration/igan/91> rdf:type ns4kge:Configuration .
 <configuration/igan/91> ns4kge:hasTask    <task/link-prediction> .
@@ -926,14 +926,14 @@
 <configuration/igan/91> ns4kge:hasMetric  <metric/hits-10> .
 <configuration/igan/91> ns4kge:hasKGEModel <kge-model/transr> .
 <configuration/igan/91> ns4kge:hasNSMethod <ns-method/gan-scratch> .
-<configuration/igan/91> ns4kge:result "87.3"^^xsd:decimal .
+<configuration/igan/91> ns4kge:result "0.873"^^xsd:decimal .
 
 <configuration/igan/92> rdf:type ns4kge:Configuration .
 <configuration/igan/92> ns4kge:hasTask    <task/link-prediction> .
 <configuration/igan/92> ns4kge:hasDataset <dataset/wn18> .
 <configuration/igan/92> ns4kge:hasMetric  <metric/hits-10> .
 <configuration/igan/92> ns4kge:hasKGEModel <kge-model/transd> .
-<configuration/igan/92> ns4kge:result "92.5"^^xsd:decimal .
+<configuration/igan/92> ns4kge:result "0.925"^^xsd:decimal .
 
 <configuration/igan/93> rdf:type ns4kge:Configuration .
 <configuration/igan/93> ns4kge:hasTask    <task/link-prediction> .
@@ -941,14 +941,14 @@
 <configuration/igan/93> ns4kge:hasMetric  <metric/hits-10> .
 <configuration/igan/93> ns4kge:hasKGEModel <kge-model/transd> .
 <configuration/igan/93> ns4kge:hasNSMethod <ns-method/gan-scratch> .
-<configuration/igan/93> ns4kge:result "93.0"^^xsd:decimal .
+<configuration/igan/93> ns4kge:result "0.93"^^xsd:decimal .
 
 <configuration/igan/94> rdf:type ns4kge:Configuration .
 <configuration/igan/94> ns4kge:hasTask    <task/link-prediction> .
 <configuration/igan/94> ns4kge:hasDataset <dataset/wn18> .
 <configuration/igan/94> ns4kge:hasMetric  <metric/hits-10> .
 <configuration/igan/94> ns4kge:hasKGEModel <kge-model/transe-a-lstm> .
-<configuration/igan/94> ns4kge:result "90.9"^^xsd:decimal .
+<configuration/igan/94> ns4kge:result "0.909"^^xsd:decimal .
 
 <configuration/igan/95> rdf:type ns4kge:Configuration .
 <configuration/igan/95> ns4kge:hasTask    <task/link-prediction> .
@@ -956,7 +956,7 @@
 <configuration/igan/95> ns4kge:hasMetric  <metric/hits-10> .
 <configuration/igan/95> ns4kge:hasKGEModel <kge-model/transe-a-lstm> .
 <configuration/igan/95> ns4kge:hasNSMethod <ns-method/gan-scratch> .
-<configuration/igan/95> ns4kge:result "92.3"^^xsd:decimal .
+<configuration/igan/95> ns4kge:result "0.923"^^xsd:decimal .
 
 <configuration/igan/96> rdf:type ns4kge:Configuration .
 <configuration/igan/96> ns4kge:hasTask    <task/link-prediction> .
@@ -964,7 +964,7 @@
 <configuration/igan/96> ns4kge:hasMetric  <metric/hits-10> .
 <configuration/igan/96> ns4kge:hasKGEModel <kge-model/transe-a-lstm> .
 <configuration/igan/96> ns4kge:hasNSMethod <ns-method/gan-pretrain> .
-<configuration/igan/96> ns4kge:result "92.7"^^xsd:decimal .
+<configuration/igan/96> ns4kge:result "0.927"^^xsd:decimal .
 
 <configuration/igan/97> rdf:type ns4kge:Configuration .
 <configuration/igan/97> ns4kge:hasTask    <task/triple-classification> .
@@ -972,14 +972,14 @@
 <configuration/igan/97> ns4kge:hasMetric  <metric/accuracy> .
 <configuration/igan/97> ns4kge:hasKGEModel <kge-model/transd> .
 <configuration/igan/97> ns4kge:hasNSMethod <ns-method/gan-pretrain> .
-<configuration/igan/97> ns4kge:result "89.7"^^xsd:decimal .
+<configuration/igan/97> ns4kge:result "0.897"^^xsd:decimal .
 
 <configuration/igan/98> rdf:type ns4kge:Configuration .
 <configuration/igan/98> ns4kge:hasTask    <task/triple-classification> .
 <configuration/igan/98> ns4kge:hasDataset <dataset/fb13> .
 <configuration/igan/98> ns4kge:hasMetric  <metric/accuracy> .
 <configuration/igan/98> ns4kge:hasKGEModel <kge-model/transd> .
-<configuration/igan/98> ns4kge:result "89.1"^^xsd:decimal .
+<configuration/igan/98> ns4kge:result "0.891"^^xsd:decimal .
 
 <configuration/igan/99> rdf:type ns4kge:Configuration .
 <configuration/igan/99> ns4kge:hasTask    <task/triple-classification> .
@@ -987,37 +987,37 @@
 <configuration/igan/99> ns4kge:hasMetric  <metric/accuracy> .
 <configuration/igan/99> ns4kge:hasKGEModel <kge-model/transr> .
 <configuration/igan/99> ns4kge:hasNSMethod <ns-method/gan-pretrain> .
-<configuration/igan/99> ns4kge:result "86.6"^^xsd:decimal .
+<configuration/igan/99> ns4kge:result "0.866"^^xsd:decimal .
 
 <configuration/igan/100> rdf:type ns4kge:Configuration .
 <configuration/igan/100> ns4kge:hasTask    <task/triple-classification> .
 <configuration/igan/100> ns4kge:hasDataset <dataset/fb13> .
 <configuration/igan/100> ns4kge:hasMetric  <metric/accuracy> .
-<configuration/igan/100> ns4kge:hasKGEModel <kge-model/structured-embedding> .
-<configuration/igan/100> ns4kge:result "75.2"^^xsd:decimal .
+<configuration/igan/100> ns4kge:hasKGEModel <kge-model/se> .
+<configuration/igan/100> ns4kge:result "0.752"^^xsd:decimal .
 
 <configuration/igan/101> rdf:type ns4kge:Configuration .
 <configuration/igan/101> ns4kge:hasTask    <task/triple-classification> .
 <configuration/igan/101> ns4kge:hasDataset <dataset/fb13> .
 <configuration/igan/101> ns4kge:hasMetric  <metric/accuracy> .
-<configuration/igan/101> ns4kge:hasKGEModel <kge-model/structured-embedding> .
+<configuration/igan/101> ns4kge:hasKGEModel <kge-model/se> .
 <configuration/igan/101> ns4kge:hasNSMethod <ns-method/gan-scratch> .
-<configuration/igan/101> ns4kge:result "84.2"^^xsd:decimal .
+<configuration/igan/101> ns4kge:result "0.842"^^xsd:decimal .
 
 <configuration/igan/102> rdf:type ns4kge:Configuration .
 <configuration/igan/102> ns4kge:hasTask    <task/triple-classification> .
 <configuration/igan/102> ns4kge:hasDataset <dataset/fb13> .
 <configuration/igan/102> ns4kge:hasMetric  <metric/accuracy> .
-<configuration/igan/102> ns4kge:hasKGEModel <kge-model/structured-embedding> .
+<configuration/igan/102> ns4kge:hasKGEModel <kge-model/se> .
 <configuration/igan/102> ns4kge:hasNSMethod <ns-method/gan-pretrain> .
-<configuration/igan/102> ns4kge:result "84.7"^^xsd:decimal .
+<configuration/igan/102> ns4kge:result "0.847"^^xsd:decimal .
 
 <configuration/igan/103> rdf:type ns4kge:Configuration .
 <configuration/igan/103> ns4kge:hasTask    <task/triple-classification> .
 <configuration/igan/103> ns4kge:hasDataset <dataset/fb13> .
 <configuration/igan/103> ns4kge:hasMetric  <metric/accuracy> .
 <configuration/igan/103> ns4kge:hasKGEModel <kge-model/sme-bilinear> .
-<configuration/igan/103> ns4kge:result "63.7"^^xsd:decimal .
+<configuration/igan/103> ns4kge:result "0.637"^^xsd:decimal .
 
 <configuration/igan/104> rdf:type ns4kge:Configuration .
 <configuration/igan/104> ns4kge:hasTask    <task/triple-classification> .
@@ -1025,7 +1025,7 @@
 <configuration/igan/104> ns4kge:hasMetric  <metric/accuracy> .
 <configuration/igan/104> ns4kge:hasKGEModel <kge-model/sme-bilinear> .
 <configuration/igan/104> ns4kge:hasNSMethod <ns-method/gan-scratch> .
-<configuration/igan/104> ns4kge:result "77.0"^^xsd:decimal .
+<configuration/igan/104> ns4kge:result "0.77"^^xsd:decimal .
 
 <configuration/igan/105> rdf:type ns4kge:Configuration .
 <configuration/igan/105> ns4kge:hasTask    <task/triple-classification> .
@@ -1033,14 +1033,14 @@
 <configuration/igan/105> ns4kge:hasMetric  <metric/accuracy> .
 <configuration/igan/105> ns4kge:hasKGEModel <kge-model/sme-bilinear> .
 <configuration/igan/105> ns4kge:hasNSMethod <ns-method/gan-pretrain> .
-<configuration/igan/105> ns4kge:result "79.6"^^xsd:decimal .
+<configuration/igan/105> ns4kge:result "0.796"^^xsd:decimal .
 
 <configuration/igan/106> rdf:type ns4kge:Configuration .
 <configuration/igan/106> ns4kge:hasTask    <task/triple-classification> .
 <configuration/igan/106> ns4kge:hasDataset <dataset/fb13> .
 <configuration/igan/106> ns4kge:hasMetric  <metric/accuracy> .
 <configuration/igan/106> ns4kge:hasKGEModel <kge-model/single-layer-model> .
-<configuration/igan/106> ns4kge:result "85.3"^^xsd:decimal .
+<configuration/igan/106> ns4kge:result "0.853"^^xsd:decimal .
 
 <configuration/igan/107> rdf:type ns4kge:Configuration .
 <configuration/igan/107> ns4kge:hasTask    <task/triple-classification> .
@@ -1048,7 +1048,7 @@
 <configuration/igan/107> ns4kge:hasMetric  <metric/accuracy> .
 <configuration/igan/107> ns4kge:hasKGEModel <kge-model/single-layer-model> .
 <configuration/igan/107> ns4kge:hasNSMethod <ns-method/gan-scratch> .
-<configuration/igan/107> ns4kge:result "85.6"^^xsd:decimal .
+<configuration/igan/107> ns4kge:result "0.856"^^xsd:decimal .
 
 <configuration/igan/108> rdf:type ns4kge:Configuration .
 <configuration/igan/108> ns4kge:hasTask    <task/triple-classification> .
@@ -1056,14 +1056,14 @@
 <configuration/igan/108> ns4kge:hasMetric  <metric/accuracy> .
 <configuration/igan/108> ns4kge:hasKGEModel <kge-model/single-layer-model> .
 <configuration/igan/108> ns4kge:hasNSMethod <ns-method/gan-pretrain> .
-<configuration/igan/108> ns4kge:result "83.8"^^xsd:decimal .
+<configuration/igan/108> ns4kge:result "0.838"^^xsd:decimal .
 
 <configuration/igan/109> rdf:type ns4kge:Configuration .
 <configuration/igan/109> ns4kge:hasTask    <task/triple-classification> .
 <configuration/igan/109> ns4kge:hasDataset <dataset/fb13> .
 <configuration/igan/109> ns4kge:hasMetric  <metric/accuracy> .
 <configuration/igan/109> ns4kge:hasKGEModel <kge-model/transe> .
-<configuration/igan/109> ns4kge:result "81.5"^^xsd:decimal .
+<configuration/igan/109> ns4kge:result "0.815"^^xsd:decimal .
 
 <configuration/igan/110> rdf:type ns4kge:Configuration .
 <configuration/igan/110> ns4kge:hasTask    <task/triple-classification> .
@@ -1071,7 +1071,7 @@
 <configuration/igan/110> ns4kge:hasMetric  <metric/accuracy> .
 <configuration/igan/110> ns4kge:hasKGEModel <kge-model/transe> .
 <configuration/igan/110> ns4kge:hasNSMethod <ns-method/gan-scratch> .
-<configuration/igan/110> ns4kge:result "83.1"^^xsd:decimal .
+<configuration/igan/110> ns4kge:result "0.831"^^xsd:decimal .
 
 <configuration/igan/111> rdf:type ns4kge:Configuration .
 <configuration/igan/111> ns4kge:hasTask    <task/triple-classification> .
@@ -1079,14 +1079,14 @@
 <configuration/igan/111> ns4kge:hasMetric  <metric/accuracy> .
 <configuration/igan/111> ns4kge:hasKGEModel <kge-model/transe> .
 <configuration/igan/111> ns4kge:hasNSMethod <ns-method/gan-pretrain> .
-<configuration/igan/111> ns4kge:result "85.2"^^xsd:decimal .
+<configuration/igan/111> ns4kge:result "0.852"^^xsd:decimal .
 
 <configuration/igan/112> rdf:type ns4kge:Configuration .
 <configuration/igan/112> ns4kge:hasTask    <task/triple-classification> .
 <configuration/igan/112> ns4kge:hasDataset <dataset/fb13> .
 <configuration/igan/112> ns4kge:hasMetric  <metric/accuracy> .
 <configuration/igan/112> ns4kge:hasKGEModel <kge-model/transh> .
-<configuration/igan/112> ns4kge:result "83.3"^^xsd:decimal .
+<configuration/igan/112> ns4kge:result "0.833"^^xsd:decimal .
 
 <configuration/igan/113> rdf:type ns4kge:Configuration .
 <configuration/igan/113> ns4kge:hasTask    <task/triple-classification> .
@@ -1094,7 +1094,7 @@
 <configuration/igan/113> ns4kge:hasMetric  <metric/accuracy> .
 <configuration/igan/113> ns4kge:hasKGEModel <kge-model/transh> .
 <configuration/igan/113> ns4kge:hasNSMethod <ns-method/gan-scratch> .
-<configuration/igan/113> ns4kge:result "85.0"^^xsd:decimal .
+<configuration/igan/113> ns4kge:result "0.85"^^xsd:decimal .
 
 <configuration/igan/114> rdf:type ns4kge:Configuration .
 <configuration/igan/114> ns4kge:hasTask    <task/triple-classification> .
@@ -1102,14 +1102,14 @@
 <configuration/igan/114> ns4kge:hasMetric  <metric/accuracy> .
 <configuration/igan/114> ns4kge:hasKGEModel <kge-model/transh> .
 <configuration/igan/114> ns4kge:hasNSMethod <ns-method/gan-pretrain> .
-<configuration/igan/114> ns4kge:result "86.3"^^xsd:decimal .
+<configuration/igan/114> ns4kge:result "0.863"^^xsd:decimal .
 
 <configuration/igan/115> rdf:type ns4kge:Configuration .
 <configuration/igan/115> ns4kge:hasTask    <task/triple-classification> .
 <configuration/igan/115> ns4kge:hasDataset <dataset/fb13> .
 <configuration/igan/115> ns4kge:hasMetric  <metric/accuracy> .
 <configuration/igan/115> ns4kge:hasKGEModel <kge-model/transr> .
-<configuration/igan/115> ns4kge:result "82.5"^^xsd:decimal .
+<configuration/igan/115> ns4kge:result "0.825"^^xsd:decimal .
 
 <configuration/igan/116> rdf:type ns4kge:Configuration .
 <configuration/igan/116> ns4kge:hasTask    <task/triple-classification> .
@@ -1117,7 +1117,7 @@
 <configuration/igan/116> ns4kge:hasMetric  <metric/accuracy> .
 <configuration/igan/116> ns4kge:hasKGEModel <kge-model/transr> .
 <configuration/igan/116> ns4kge:hasNSMethod <ns-method/gan-scratch> .
-<configuration/igan/116> ns4kge:result "85.4"^^xsd:decimal .
+<configuration/igan/116> ns4kge:result "0.854"^^xsd:decimal .
 
 <configuration/igan/117> rdf:type ns4kge:Configuration .
 <configuration/igan/117> ns4kge:hasTask    <task/triple-classification> .
@@ -1125,7 +1125,7 @@
 <configuration/igan/117> ns4kge:hasMetric  <metric/accuracy> .
 <configuration/igan/117> ns4kge:hasKGEModel <kge-model/transd> .
 <configuration/igan/117> ns4kge:hasNSMethod <ns-method/gan-scratch> .
-<configuration/igan/117> ns4kge:result "85.3"^^xsd:decimal .
+<configuration/igan/117> ns4kge:result "0.853"^^xsd:decimal .
 
 <configuration/igan/118> rdf:type ns4kge:Configuration .
 <configuration/igan/118> ns4kge:hasTask    <task/triple-classification> .
@@ -1133,51 +1133,51 @@
 <configuration/igan/118> ns4kge:hasMetric  <metric/accuracy> .
 <configuration/igan/118> ns4kge:hasKGEModel <kge-model/transr> .
 <configuration/igan/118> ns4kge:hasNSMethod <ns-method/gan-pretrain> .
-<configuration/igan/118> ns4kge:result "86.3"^^xsd:decimal .
+<configuration/igan/118> ns4kge:result "0.863"^^xsd:decimal .
 
 <configuration/igan/119> rdf:type ns4kge:Configuration .
 <configuration/igan/119> ns4kge:hasTask    <task/triple-classification> .
 <configuration/igan/119> ns4kge:hasDataset <dataset/wn11> .
 <configuration/igan/119> ns4kge:hasMetric  <metric/accuracy> .
 <configuration/igan/119> ns4kge:hasKGEModel <kge-model/transd> .
-<configuration/igan/119> ns4kge:result "86.4"^^xsd:decimal .
+<configuration/igan/119> ns4kge:result "0.864"^^xsd:decimal .
 
 <configuration/igan/120> rdf:type ns4kge:Configuration .
 <configuration/igan/120> ns4kge:hasTask    <task/triple-classification> .
 <configuration/igan/120> ns4kge:hasDataset <dataset/wn11> .
 <configuration/igan/120> ns4kge:hasMetric  <metric/accuracy> .
 <configuration/igan/120> ns4kge:hasKGEModel <kge-model/transr> .
-<configuration/igan/120> ns4kge:result "85.9"^^xsd:decimal .
+<configuration/igan/120> ns4kge:result "0.859"^^xsd:decimal .
 
 <configuration/igan/121> rdf:type ns4kge:Configuration .
 <configuration/igan/121> ns4kge:hasTask    <task/triple-classification> .
 <configuration/igan/121> ns4kge:hasDataset <dataset/wn11> .
 <configuration/igan/121> ns4kge:hasMetric  <metric/accuracy> .
-<configuration/igan/121> ns4kge:hasKGEModel <kge-model/structured-embedding> .
-<configuration/igan/121> ns4kge:result "53.0"^^xsd:decimal .
+<configuration/igan/121> ns4kge:hasKGEModel <kge-model/se> .
+<configuration/igan/121> ns4kge:result "0.53"^^xsd:decimal .
 
 <configuration/igan/122> rdf:type ns4kge:Configuration .
 <configuration/igan/122> ns4kge:hasTask    <task/triple-classification> .
 <configuration/igan/122> ns4kge:hasDataset <dataset/wn11> .
 <configuration/igan/122> ns4kge:hasMetric  <metric/accuracy> .
-<configuration/igan/122> ns4kge:hasKGEModel <kge-model/structured-embedding> .
+<configuration/igan/122> ns4kge:hasKGEModel <kge-model/se> .
 <configuration/igan/122> ns4kge:hasNSMethod <ns-method/gan-scratch> .
-<configuration/igan/122> ns4kge:result "60.1"^^xsd:decimal .
+<configuration/igan/122> ns4kge:result "0.601"^^xsd:decimal .
 
 <configuration/igan/123> rdf:type ns4kge:Configuration .
 <configuration/igan/123> ns4kge:hasTask    <task/triple-classification> .
 <configuration/igan/123> ns4kge:hasDataset <dataset/wn11> .
 <configuration/igan/123> ns4kge:hasMetric  <metric/accuracy> .
-<configuration/igan/123> ns4kge:hasKGEModel <kge-model/structured-embedding> .
+<configuration/igan/123> ns4kge:hasKGEModel <kge-model/se> .
 <configuration/igan/123> ns4kge:hasNSMethod <ns-method/gan-pretrain> .
-<configuration/igan/123> ns4kge:result "63.2"^^xsd:decimal .
+<configuration/igan/123> ns4kge:result "0.632"^^xsd:decimal .
 
 <configuration/igan/124> rdf:type ns4kge:Configuration .
 <configuration/igan/124> ns4kge:hasTask    <task/triple-classification> .
 <configuration/igan/124> ns4kge:hasDataset <dataset/wn11> .
 <configuration/igan/124> ns4kge:hasMetric  <metric/accuracy> .
 <configuration/igan/124> ns4kge:hasKGEModel <kge-model/sme-bilinear> .
-<configuration/igan/124> ns4kge:result "70.0"^^xsd:decimal .
+<configuration/igan/124> ns4kge:result "0.7"^^xsd:decimal .
 
 <configuration/igan/125> rdf:type ns4kge:Configuration .
 <configuration/igan/125> ns4kge:hasTask    <task/triple-classification> .
@@ -1185,7 +1185,7 @@
 <configuration/igan/125> ns4kge:hasMetric  <metric/accuracy> .
 <configuration/igan/125> ns4kge:hasKGEModel <kge-model/sme-bilinear> .
 <configuration/igan/125> ns4kge:hasNSMethod <ns-method/gan-scratch> .
-<configuration/igan/125> ns4kge:result "72.1"^^xsd:decimal .
+<configuration/igan/125> ns4kge:result "0.721"^^xsd:decimal .
 
 <configuration/igan/126> rdf:type ns4kge:Configuration .
 <configuration/igan/126> ns4kge:hasTask    <task/triple-classification> .
@@ -1193,14 +1193,14 @@
 <configuration/igan/126> ns4kge:hasMetric  <metric/accuracy> .
 <configuration/igan/126> ns4kge:hasKGEModel <kge-model/sme-bilinear> .
 <configuration/igan/126> ns4kge:hasNSMethod <ns-method/gan-pretrain> .
-<configuration/igan/126> ns4kge:result "74.3"^^xsd:decimal .
+<configuration/igan/126> ns4kge:result "0.743"^^xsd:decimal .
 
 <configuration/igan/127> rdf:type ns4kge:Configuration .
 <configuration/igan/127> ns4kge:hasTask    <task/triple-classification> .
 <configuration/igan/127> ns4kge:hasDataset <dataset/wn11> .
 <configuration/igan/127> ns4kge:hasMetric  <metric/accuracy> .
 <configuration/igan/127> ns4kge:hasKGEModel <kge-model/single-layer-model> .
-<configuration/igan/127> ns4kge:result "69.9"^^xsd:decimal .
+<configuration/igan/127> ns4kge:result "0.699"^^xsd:decimal .
 
 <configuration/igan/128> rdf:type ns4kge:Configuration .
 <configuration/igan/128> ns4kge:hasTask    <task/triple-classification> .
@@ -1208,7 +1208,7 @@
 <configuration/igan/128> ns4kge:hasMetric  <metric/accuracy> .
 <configuration/igan/128> ns4kge:hasKGEModel <kge-model/single-layer-model> .
 <configuration/igan/128> ns4kge:hasNSMethod <ns-method/gan-scratch> .
-<configuration/igan/128> ns4kge:result "72.7"^^xsd:decimal .
+<configuration/igan/128> ns4kge:result "0.727"^^xsd:decimal .
 
 <configuration/igan/129> rdf:type ns4kge:Configuration .
 <configuration/igan/129> ns4kge:hasTask    <task/triple-classification> .
@@ -1216,14 +1216,14 @@
 <configuration/igan/129> ns4kge:hasMetric  <metric/accuracy> .
 <configuration/igan/129> ns4kge:hasKGEModel <kge-model/single-layer-model> .
 <configuration/igan/129> ns4kge:hasNSMethod <ns-method/gan-pretrain> .
-<configuration/igan/129> ns4kge:result "75.3"^^xsd:decimal .
+<configuration/igan/129> ns4kge:result "0.753"^^xsd:decimal .
 
 <configuration/igan/130> rdf:type ns4kge:Configuration .
 <configuration/igan/130> ns4kge:hasTask    <task/triple-classification> .
 <configuration/igan/130> ns4kge:hasDataset <dataset/wn11> .
 <configuration/igan/130> ns4kge:hasMetric  <metric/accuracy> .
 <configuration/igan/130> ns4kge:hasKGEModel <kge-model/transe> .
-<configuration/igan/130> ns4kge:result "75.9"^^xsd:decimal .
+<configuration/igan/130> ns4kge:result "0.759"^^xsd:decimal .
 
 <configuration/igan/131> rdf:type ns4kge:Configuration .
 <configuration/igan/131> ns4kge:hasTask    <task/triple-classification> .
@@ -1231,7 +1231,7 @@
 <configuration/igan/131> ns4kge:hasMetric  <metric/accuracy> .
 <configuration/igan/131> ns4kge:hasKGEModel <kge-model/transe> .
 <configuration/igan/131> ns4kge:hasNSMethod <ns-method/gan-scratch> .
-<configuration/igan/131> ns4kge:result "85.1"^^xsd:decimal .
+<configuration/igan/131> ns4kge:result "0.851"^^xsd:decimal .
 
 <configuration/igan/132> rdf:type ns4kge:Configuration .
 <configuration/igan/132> ns4kge:hasTask    <task/triple-classification> .
@@ -1239,14 +1239,14 @@
 <configuration/igan/132> ns4kge:hasMetric  <metric/accuracy> .
 <configuration/igan/132> ns4kge:hasKGEModel <kge-model/transe> .
 <configuration/igan/132> ns4kge:hasNSMethod <ns-method/gan-pretrain> .
-<configuration/igan/132> ns4kge:result "85.4"^^xsd:decimal .
+<configuration/igan/132> ns4kge:result "0.854"^^xsd:decimal .
 
 <configuration/igan/133> rdf:type ns4kge:Configuration .
 <configuration/igan/133> ns4kge:hasTask    <task/triple-classification> .
 <configuration/igan/133> ns4kge:hasDataset <dataset/wn11> .
 <configuration/igan/133> ns4kge:hasMetric  <metric/accuracy> .
 <configuration/igan/133> ns4kge:hasKGEModel <kge-model/transh> .
-<configuration/igan/133> ns4kge:result "78.8"^^xsd:decimal .
+<configuration/igan/133> ns4kge:result "0.788"^^xsd:decimal .
 
 <configuration/igan/134> rdf:type ns4kge:Configuration .
 <configuration/igan/134> ns4kge:hasTask    <task/triple-classification> .
@@ -1254,7 +1254,7 @@
 <configuration/igan/134> ns4kge:hasMetric  <metric/accuracy> .
 <configuration/igan/134> ns4kge:hasKGEModel <kge-model/transh> .
 <configuration/igan/134> ns4kge:hasNSMethod <ns-method/gan-scratch> .
-<configuration/igan/134> ns4kge:result "85.5"^^xsd:decimal .
+<configuration/igan/134> ns4kge:result "0.855"^^xsd:decimal .
 
 <configuration/igan/135> rdf:type ns4kge:Configuration .
 <configuration/igan/135> ns4kge:hasTask    <task/triple-classification> .
@@ -1262,7 +1262,7 @@
 <configuration/igan/135> ns4kge:hasMetric  <metric/accuracy> .
 <configuration/igan/135> ns4kge:hasKGEModel <kge-model/transh> .
 <configuration/igan/135> ns4kge:hasNSMethod <ns-method/gan-pretrain> .
-<configuration/igan/135> ns4kge:result "85.9"^^xsd:decimal .
+<configuration/igan/135> ns4kge:result "0.859"^^xsd:decimal .
 
 <configuration/igan/136> rdf:type ns4kge:Configuration .
 <configuration/igan/136> ns4kge:hasTask    <task/triple-classification> .
@@ -1270,7 +1270,7 @@
 <configuration/igan/136> ns4kge:hasMetric  <metric/accuracy> .
 <configuration/igan/136> ns4kge:hasKGEModel <kge-model/transr> .
 <configuration/igan/136> ns4kge:hasNSMethod <ns-method/gan-scratch> .
-<configuration/igan/136> ns4kge:result "85.2"^^xsd:decimal .
+<configuration/igan/136> ns4kge:result "0.852"^^xsd:decimal .
 
 <configuration/igan/137> rdf:type ns4kge:Configuration .
 <configuration/igan/137> ns4kge:hasTask    <task/triple-classification> .
@@ -1278,7 +1278,7 @@
 <configuration/igan/137> ns4kge:hasMetric  <metric/accuracy> .
 <configuration/igan/137> ns4kge:hasKGEModel <kge-model/transd> .
 <configuration/igan/137> ns4kge:hasNSMethod <ns-method/gan-scratch> .
-<configuration/igan/137> ns4kge:result "82.6"^^xsd:decimal .
+<configuration/igan/137> ns4kge:result "0.826"^^xsd:decimal .
 
 <configuration/igan/138> rdf:type ns4kge:Configuration .
 <configuration/igan/138> ns4kge:hasTask    <task/triple-classification> .
@@ -1286,4 +1286,4 @@
 <configuration/igan/138> ns4kge:hasMetric  <metric/accuracy> .
 <configuration/igan/138> ns4kge:hasKGEModel <kge-model/transd> .
 <configuration/igan/138> ns4kge:hasNSMethod <ns-method/gan-pretrain> .
-<configuration/igan/138> ns4kge:result "84.0"^^xsd:decimal .
+<configuration/igan/138> ns4kge:result "0.84"^^xsd:decimal .

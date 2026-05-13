@@ -1,0 +1,1944 @@
+<article/raakgc> rdf:type ns4kge:Article .
+<article/raakgc> ns4kge:title "Knowledge Graph Completion with Relation-Aware Anchor Enhancement"^^xsd:string .
+<article/raakgc> ns4kge:date "2025"^^xsd:gYear .
+<article/raakgc> ns4kge:proposesNSMethod <ns-method/relation-aware-anchor-enhancement> .
+<article/raakgc> ns4kge:mentionsNSMethod <ns-method/in-batch-relation-negative-sampling> .
+<article/raakgc> ns4kge:mentionsNSMethod <ns-method/self-negative-sampling> .
+<article/raakgc> ns4kge:mentionsNSMethod <ns-method/in-batch-negative-sampling> .
+<article/raakgc> ns4kge:mentionsKGEModel <kge-model/transe> .
+<article/raakgc> ns4kge:mentionsKGEModel <kge-model/hasa> .
+<article/raakgc> ns4kge:mentionsKGEModel <kge-model/distmult> .
+<article/raakgc> ns4kge:mentionsKGEModel <kge-model/quate> .
+<article/raakgc> ns4kge:mentionsKGEModel <kge-model/inskgc> .
+<article/raakgc> ns4kge:mentionsKGEModel <kge-model/kicgpt> .
+<article/raakgc> ns4kge:mentionsKGEModel <kge-model/conve> .
+<article/raakgc> ns4kge:mentionsKGEModel <kge-model/conkgc> .
+<article/raakgc> ns4kge:mentionsKGEModel <kge-model/kgt5-context> .
+<article/raakgc> ns4kge:mentionsKGEModel <kge-model/bertrl> .
+<article/raakgc> ns4kge:mentionsKGEModel <kge-model/simkgc> .
+<article/raakgc> ns4kge:mentionsKGEModel <kge-model/mtl-kgc> .
+<article/raakgc> ns4kge:mentionsKGEModel <kge-model/complex> .
+<article/raakgc> ns4kge:mentionsKGEModel <kge-model/star> .
+<article/raakgc> ns4kge:mentionsKGEModel <kge-model/rgcn> .
+<article/raakgc> ns4kge:mentionsKGEModel <kge-model/kepler> .
+<article/raakgc> ns4kge:mentionsKGEModel <kge-model/kg-s2s> .
+<article/raakgc> ns4kge:mentionsKGEModel <kge-model/dkrl> .
+<article/raakgc> ns4kge:mentionsKGEModel <kge-model/lmke> .
+<article/raakgc> ns4kge:mentionsKGEModel <kge-model/kg-bert> .
+<article/raakgc> ns4kge:mentionsKGEModel <kge-model/genkgc> .
+<article/raakgc> ns4kge:mentionsKGEModel <kge-model/rotate> .
+<article/raakgc> ns4kge:hasExperimentation <experimentation/raakgc> .
+
+<ns-method/relation-aware-anchor-enhancement> rdf:type ns4kge:NSMethod .
+
+<ns-method/in-batch-relation-negative-sampling> rdf:type ns4kge:NSMethod .
+
+<ns-method/self-negative-sampling> rdf:type ns4kge:NSMethod .
+<category/dynamic-ns> rdf:type ns4kge:Category .
+
+<ns-method/self-negative-sampling> ns4kge:hasCategory <category/dynamic-ns> .
+<subcategory/self-adaptive> rdf:type ns4kge:Subcategory .
+
+<ns-method/self-negative-sampling> ns4kge:hasSubcategory <subcategory/self-adaptive> .
+
+<ns-method/in-batch-negative-sampling> rdf:type ns4kge:NSMethod .
+<category/static-ns> rdf:type ns4kge:Category .
+
+<ns-method/in-batch-negative-sampling> ns4kge:hasCategory <category/static-ns> .
+<subcategory/random> rdf:type ns4kge:Subcategory .
+
+<ns-method/in-batch-negative-sampling> ns4kge:hasSubcategory <subcategory/random> .
+
+<kge-model/raa-kgc> rdf:type ns4kge:KGEModel .
+
+<kge-model/transe> rdf:type ns4kge:KGEModel .
+
+<kge-model/hasa> rdf:type ns4kge:KGEModel .
+
+<kge-model/distmult> rdf:type ns4kge:KGEModel .
+
+<kge-model/quate> rdf:type ns4kge:KGEModel .
+
+<kge-model/inskgc> rdf:type ns4kge:KGEModel .
+
+<kge-model/kicgpt> rdf:type ns4kge:KGEModel .
+
+<kge-model/conve> rdf:type ns4kge:KGEModel .
+
+<kge-model/conkgc> rdf:type ns4kge:KGEModel .
+
+<kge-model/kgt5-context> rdf:type ns4kge:KGEModel .
+
+<kge-model/bertrl> rdf:type ns4kge:KGEModel .
+
+<kge-model/simkgc> rdf:type ns4kge:KGEModel .
+
+<kge-model/mtl-kgc> rdf:type ns4kge:KGEModel .
+
+<kge-model/complex> rdf:type ns4kge:KGEModel .
+
+<kge-model/star> rdf:type ns4kge:KGEModel .
+
+<kge-model/rgcn> rdf:type ns4kge:KGEModel .
+
+<kge-model/kepler> rdf:type ns4kge:KGEModel .
+
+<kge-model/kg-s2s> rdf:type ns4kge:KGEModel .
+
+<kge-model/dkrl> rdf:type ns4kge:KGEModel .
+
+<kge-model/lmke> rdf:type ns4kge:KGEModel .
+
+<kge-model/kg-bert> rdf:type ns4kge:KGEModel .
+
+<kge-model/genkgc> rdf:type ns4kge:KGEModel .
+
+<kge-model/rotate> rdf:type ns4kge:KGEModel .
+
+<dataset/wn18rr> rdf:type ns4kge:Dataset .
+<task/link-prediction> rdf:type ns4kge:Task .
+<metric/mrr> rdf:type ns4kge:Metric .
+<metric/hits-1> rdf:type ns4kge:Metric .
+<metric/hits-3> rdf:type ns4kge:Metric .
+<metric/hits-10> rdf:type ns4kge:Metric .
+<dataset/fb15k-237> rdf:type ns4kge:Dataset .
+<dataset/wikidata5m-trans> rdf:type ns4kge:Dataset .
+<dataset/wn18rr-v1> rdf:type ns4kge:Dataset .
+<dataset/fb15k-237-v1> rdf:type ns4kge:Dataset .
+<dataset/wn18rr-v2> rdf:type ns4kge:Dataset .
+<dataset/wn18rr-v3> rdf:type ns4kge:Dataset .
+<dataset/wn18rr-v4> rdf:type ns4kge:Dataset .
+<dataset/fb15k-237-v2> rdf:type ns4kge:Dataset .
+<dataset/fb15k-237-v3> rdf:type ns4kge:Dataset .
+<dataset/fb15k-237-v4> rdf:type ns4kge:Dataset .
+<loss-function/infonce> rdf:type ns4kge:LossFunction .
+
+<experimentation/raakgc> rdf:type ns4kge:Experimentation .
+<experimentation/raakgc> ns4kge:hasTrainingProtocol <training-protocol/raakgc> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/1> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/2> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/3> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/4> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/5> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/6> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/7> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/8> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/9> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/10> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/11> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/12> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/13> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/14> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/15> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/16> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/17> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/18> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/19> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/20> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/21> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/22> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/23> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/24> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/25> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/26> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/27> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/28> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/29> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/30> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/31> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/32> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/33> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/34> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/35> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/36> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/37> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/38> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/39> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/40> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/41> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/42> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/43> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/44> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/45> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/46> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/47> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/48> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/49> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/50> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/51> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/52> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/53> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/54> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/55> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/56> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/57> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/58> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/59> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/60> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/61> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/62> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/63> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/64> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/65> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/66> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/67> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/68> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/69> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/70> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/71> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/72> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/73> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/74> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/75> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/76> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/77> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/78> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/79> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/80> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/81> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/82> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/83> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/84> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/85> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/86> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/87> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/88> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/89> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/90> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/91> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/92> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/93> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/94> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/95> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/96> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/97> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/98> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/99> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/100> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/101> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/102> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/103> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/104> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/105> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/106> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/107> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/108> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/109> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/110> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/111> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/112> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/113> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/114> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/115> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/116> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/117> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/118> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/119> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/120> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/121> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/122> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/123> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/124> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/125> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/126> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/127> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/128> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/129> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/130> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/131> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/132> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/133> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/134> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/135> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/136> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/137> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/138> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/139> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/140> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/141> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/142> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/143> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/144> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/145> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/146> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/147> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/148> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/149> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/150> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/151> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/152> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/153> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/154> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/155> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/156> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/157> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/158> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/159> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/160> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/161> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/162> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/163> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/164> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/165> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/166> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/167> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/168> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/169> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/170> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/171> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/172> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/173> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/174> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/175> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/176> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/177> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/178> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/179> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/180> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/181> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/182> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/183> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/184> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/185> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/186> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/187> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/188> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/189> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/190> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/191> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/192> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/193> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/194> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/195> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/196> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/197> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/198> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/199> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/200> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/201> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/202> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/203> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/204> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/205> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/206> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/207> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/208> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/209> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/210> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/211> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/212> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/213> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/214> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/215> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/216> .
+<experimentation/raakgc> ns4kge:hasConfiguration <configuration/raakgc/217> .
+
+<training-protocol/raakgc> rdf:type ns4kge:TrainingProtocol .
+<training-protocol/raakgc> ns4kge:hasLossFunction <loss-function/infonce> .
+
+<configuration/raakgc/1> rdf:type ns4kge:Configuration .
+<configuration/raakgc/1> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/1> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/raakgc/1> ns4kge:hasMetric  <metric/mrr> .
+<configuration/raakgc/1> ns4kge:hasKGEModel <kge-model/raa-kgc> .
+<configuration/raakgc/1> ns4kge:hasNSMethod <ns-method/relation-aware-anchor-enhancement> .
+<configuration/raakgc/1> ns4kge:result "0.5974"^^xsd:decimal .
+
+<configuration/raakgc/2> rdf:type ns4kge:Configuration .
+<configuration/raakgc/2> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/2> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/raakgc/2> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/raakgc/2> ns4kge:hasKGEModel <kge-model/raa-kgc> .
+<configuration/raakgc/2> ns4kge:hasNSMethod <ns-method/relation-aware-anchor-enhancement> .
+<configuration/raakgc/2> ns4kge:result "0.5064"^^xsd:decimal .
+
+<configuration/raakgc/3> rdf:type ns4kge:Configuration .
+<configuration/raakgc/3> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/3> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/raakgc/3> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/raakgc/3> ns4kge:hasKGEModel <kge-model/raa-kgc> .
+<configuration/raakgc/3> ns4kge:hasNSMethod <ns-method/relation-aware-anchor-enhancement> .
+<configuration/raakgc/3> ns4kge:result "0.6498"^^xsd:decimal .
+
+<configuration/raakgc/4> rdf:type ns4kge:Configuration .
+<configuration/raakgc/4> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/4> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/raakgc/4> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/raakgc/4> ns4kge:hasKGEModel <kge-model/raa-kgc> .
+<configuration/raakgc/4> ns4kge:hasNSMethod <ns-method/relation-aware-anchor-enhancement> .
+<configuration/raakgc/4> ns4kge:result "0.7601"^^xsd:decimal .
+
+<configuration/raakgc/5> rdf:type ns4kge:Configuration .
+<configuration/raakgc/5> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/5> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/raakgc/5> ns4kge:hasMetric  <metric/mrr> .
+<configuration/raakgc/5> ns4kge:hasKGEModel <kge-model/raa-kgc> .
+<configuration/raakgc/5> ns4kge:hasNSMethod <ns-method/relation-aware-anchor-enhancement> .
+<configuration/raakgc/5> ns4kge:result "0.3146"^^xsd:decimal .
+
+<configuration/raakgc/6> rdf:type ns4kge:Configuration .
+<configuration/raakgc/6> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/6> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/raakgc/6> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/raakgc/6> ns4kge:hasKGEModel <kge-model/raa-kgc> .
+<configuration/raakgc/6> ns4kge:hasNSMethod <ns-method/relation-aware-anchor-enhancement> .
+<configuration/raakgc/6> ns4kge:result "0.2238"^^xsd:decimal .
+
+<configuration/raakgc/7> rdf:type ns4kge:Configuration .
+<configuration/raakgc/7> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/7> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/raakgc/7> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/raakgc/7> ns4kge:hasKGEModel <kge-model/raa-kgc> .
+<configuration/raakgc/7> ns4kge:hasNSMethod <ns-method/relation-aware-anchor-enhancement> .
+<configuration/raakgc/7> ns4kge:result "0.3406"^^xsd:decimal .
+
+<configuration/raakgc/8> rdf:type ns4kge:Configuration .
+<configuration/raakgc/8> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/8> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/raakgc/8> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/raakgc/8> ns4kge:hasKGEModel <kge-model/raa-kgc> .
+<configuration/raakgc/8> ns4kge:hasNSMethod <ns-method/relation-aware-anchor-enhancement> .
+<configuration/raakgc/8> ns4kge:result "0.4926"^^xsd:decimal .
+
+<configuration/raakgc/9> rdf:type ns4kge:Configuration .
+<configuration/raakgc/9> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/9> ns4kge:hasDataset <dataset/wikidata5m-trans> .
+<configuration/raakgc/9> ns4kge:hasMetric  <metric/mrr> .
+<configuration/raakgc/9> ns4kge:hasKGEModel <kge-model/raa-kgc> .
+<configuration/raakgc/9> ns4kge:hasNSMethod <ns-method/relation-aware-anchor-enhancement> .
+<configuration/raakgc/9> ns4kge:result "0.3415"^^xsd:decimal .
+
+<configuration/raakgc/10> rdf:type ns4kge:Configuration .
+<configuration/raakgc/10> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/10> ns4kge:hasDataset <dataset/wikidata5m-trans> .
+<configuration/raakgc/10> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/raakgc/10> ns4kge:hasKGEModel <kge-model/raa-kgc> .
+<configuration/raakgc/10> ns4kge:hasNSMethod <ns-method/relation-aware-anchor-enhancement> .
+<configuration/raakgc/10> ns4kge:result "0.2924"^^xsd:decimal .
+
+<configuration/raakgc/11> rdf:type ns4kge:Configuration .
+<configuration/raakgc/11> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/11> ns4kge:hasDataset <dataset/wikidata5m-trans> .
+<configuration/raakgc/11> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/raakgc/11> ns4kge:hasKGEModel <kge-model/raa-kgc> .
+<configuration/raakgc/11> ns4kge:hasNSMethod <ns-method/relation-aware-anchor-enhancement> .
+<configuration/raakgc/11> ns4kge:result "0.3447"^^xsd:decimal .
+
+<configuration/raakgc/12> rdf:type ns4kge:Configuration .
+<configuration/raakgc/12> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/12> ns4kge:hasDataset <dataset/wikidata5m-trans> .
+<configuration/raakgc/12> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/raakgc/12> ns4kge:hasKGEModel <kge-model/raa-kgc> .
+<configuration/raakgc/12> ns4kge:hasNSMethod <ns-method/relation-aware-anchor-enhancement> .
+<configuration/raakgc/12> ns4kge:result "0.4782"^^xsd:decimal .
+
+<configuration/raakgc/13> rdf:type ns4kge:Configuration .
+<configuration/raakgc/13> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/13> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/raakgc/13> ns4kge:hasMetric  <metric/mrr> .
+<configuration/raakgc/13> ns4kge:hasKGEModel <kge-model/simkgc> .
+<configuration/raakgc/13> ns4kge:hasNSMethod <ns-method/in-batch-negative-sampling> .
+<configuration/raakgc/13> ns4kge:result "0.5531"^^xsd:decimal .
+
+<configuration/raakgc/14> rdf:type ns4kge:Configuration .
+<configuration/raakgc/14> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/14> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/raakgc/14> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/raakgc/14> ns4kge:hasKGEModel <kge-model/simkgc> .
+<configuration/raakgc/14> ns4kge:hasNSMethod <ns-method/in-batch-negative-sampling> .
+<configuration/raakgc/14> ns4kge:result "0.4503"^^xsd:decimal .
+
+<configuration/raakgc/15> rdf:type ns4kge:Configuration .
+<configuration/raakgc/15> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/15> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/raakgc/15> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/raakgc/15> ns4kge:hasKGEModel <kge-model/simkgc> .
+<configuration/raakgc/15> ns4kge:hasNSMethod <ns-method/in-batch-negative-sampling> .
+<configuration/raakgc/15> ns4kge:result "0.6154"^^xsd:decimal .
+
+<configuration/raakgc/16> rdf:type ns4kge:Configuration .
+<configuration/raakgc/16> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/16> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/raakgc/16> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/raakgc/16> ns4kge:hasKGEModel <kge-model/simkgc> .
+<configuration/raakgc/16> ns4kge:hasNSMethod <ns-method/in-batch-negative-sampling> .
+<configuration/raakgc/16> ns4kge:result "0.7365"^^xsd:decimal .
+
+<configuration/raakgc/17> rdf:type ns4kge:Configuration .
+<configuration/raakgc/17> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/17> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/raakgc/17> ns4kge:hasMetric  <metric/mrr> .
+<configuration/raakgc/17> ns4kge:hasKGEModel <kge-model/simkgc> .
+<configuration/raakgc/17> ns4kge:hasNSMethod <ns-method/in-batch-negative-sampling> .
+<configuration/raakgc/17> ns4kge:result "0.2989"^^xsd:decimal .
+
+<configuration/raakgc/18> rdf:type ns4kge:Configuration .
+<configuration/raakgc/18> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/18> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/raakgc/18> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/raakgc/18> ns4kge:hasKGEModel <kge-model/simkgc> .
+<configuration/raakgc/18> ns4kge:hasNSMethod <ns-method/in-batch-negative-sampling> .
+<configuration/raakgc/18> ns4kge:result "0.2127"^^xsd:decimal .
+
+<configuration/raakgc/19> rdf:type ns4kge:Configuration .
+<configuration/raakgc/19> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/19> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/raakgc/19> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/raakgc/19> ns4kge:hasKGEModel <kge-model/simkgc> .
+<configuration/raakgc/19> ns4kge:hasNSMethod <ns-method/in-batch-negative-sampling> .
+<configuration/raakgc/19> ns4kge:result "0.3218"^^xsd:decimal .
+
+<configuration/raakgc/20> rdf:type ns4kge:Configuration .
+<configuration/raakgc/20> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/20> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/raakgc/20> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/raakgc/20> ns4kge:hasKGEModel <kge-model/simkgc> .
+<configuration/raakgc/20> ns4kge:hasNSMethod <ns-method/in-batch-negative-sampling> .
+<configuration/raakgc/20> ns4kge:result "0.4768"^^xsd:decimal .
+
+<configuration/raakgc/21> rdf:type ns4kge:Configuration .
+<configuration/raakgc/21> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/21> ns4kge:hasDataset <dataset/wikidata5m-trans> .
+<configuration/raakgc/21> ns4kge:hasMetric  <metric/mrr> .
+<configuration/raakgc/21> ns4kge:hasKGEModel <kge-model/simkgc> .
+<configuration/raakgc/21> ns4kge:hasNSMethod <ns-method/in-batch-negative-sampling> .
+<configuration/raakgc/21> ns4kge:result "0.2918"^^xsd:decimal .
+
+<configuration/raakgc/22> rdf:type ns4kge:Configuration .
+<configuration/raakgc/22> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/22> ns4kge:hasDataset <dataset/wikidata5m-trans> .
+<configuration/raakgc/22> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/raakgc/22> ns4kge:hasKGEModel <kge-model/simkgc> .
+<configuration/raakgc/22> ns4kge:hasNSMethod <ns-method/in-batch-negative-sampling> .
+<configuration/raakgc/22> ns4kge:result "0.2537"^^xsd:decimal .
+
+<configuration/raakgc/23> rdf:type ns4kge:Configuration .
+<configuration/raakgc/23> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/23> ns4kge:hasDataset <dataset/wikidata5m-trans> .
+<configuration/raakgc/23> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/raakgc/23> ns4kge:hasKGEModel <kge-model/simkgc> .
+<configuration/raakgc/23> ns4kge:hasNSMethod <ns-method/in-batch-negative-sampling> .
+<configuration/raakgc/23> ns4kge:result "0.3058"^^xsd:decimal .
+
+<configuration/raakgc/24> rdf:type ns4kge:Configuration .
+<configuration/raakgc/24> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/24> ns4kge:hasDataset <dataset/wikidata5m-trans> .
+<configuration/raakgc/24> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/raakgc/24> ns4kge:hasKGEModel <kge-model/simkgc> .
+<configuration/raakgc/24> ns4kge:hasNSMethod <ns-method/in-batch-negative-sampling> .
+<configuration/raakgc/24> ns4kge:result "0.449"^^xsd:decimal .
+
+<configuration/raakgc/25> rdf:type ns4kge:Configuration .
+<configuration/raakgc/25> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/25> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/raakgc/25> ns4kge:hasMetric  <metric/mrr> .
+<configuration/raakgc/25> ns4kge:hasKGEModel <kge-model/hasa> .
+<configuration/raakgc/25> ns4kge:result "0.538"^^xsd:decimal .
+
+<configuration/raakgc/26> rdf:type ns4kge:Configuration .
+<configuration/raakgc/26> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/26> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/raakgc/26> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/raakgc/26> ns4kge:hasKGEModel <kge-model/hasa> .
+<configuration/raakgc/26> ns4kge:result "0.444"^^xsd:decimal .
+
+<configuration/raakgc/27> rdf:type ns4kge:Configuration .
+<configuration/raakgc/27> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/27> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/raakgc/27> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/raakgc/27> ns4kge:hasKGEModel <kge-model/hasa> .
+<configuration/raakgc/27> ns4kge:result "0.588"^^xsd:decimal .
+
+<configuration/raakgc/28> rdf:type ns4kge:Configuration .
+<configuration/raakgc/28> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/28> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/raakgc/28> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/raakgc/28> ns4kge:hasKGEModel <kge-model/hasa> .
+<configuration/raakgc/28> ns4kge:result "0.713"^^xsd:decimal .
+
+<configuration/raakgc/29> rdf:type ns4kge:Configuration .
+<configuration/raakgc/29> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/29> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/raakgc/29> ns4kge:hasMetric  <metric/mrr> .
+<configuration/raakgc/29> ns4kge:hasKGEModel <kge-model/hasa> .
+<configuration/raakgc/29> ns4kge:result "0.304"^^xsd:decimal .
+
+<configuration/raakgc/30> rdf:type ns4kge:Configuration .
+<configuration/raakgc/30> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/30> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/raakgc/30> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/raakgc/30> ns4kge:hasKGEModel <kge-model/hasa> .
+<configuration/raakgc/30> ns4kge:result "0.22"^^xsd:decimal .
+
+<configuration/raakgc/31> rdf:type ns4kge:Configuration .
+<configuration/raakgc/31> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/31> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/raakgc/31> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/raakgc/31> ns4kge:hasKGEModel <kge-model/hasa> .
+<configuration/raakgc/31> ns4kge:result "0.325"^^xsd:decimal .
+
+<configuration/raakgc/32> rdf:type ns4kge:Configuration .
+<configuration/raakgc/32> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/32> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/raakgc/32> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/raakgc/32> ns4kge:hasKGEModel <kge-model/hasa> .
+<configuration/raakgc/32> ns4kge:result "0.483"^^xsd:decimal .
+
+<configuration/raakgc/33> rdf:type ns4kge:Configuration .
+<configuration/raakgc/33> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/33> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/raakgc/33> ns4kge:hasMetric  <metric/mrr> .
+<configuration/raakgc/33> ns4kge:hasKGEModel <kge-model/quate> .
+<configuration/raakgc/33> ns4kge:result "0.481"^^xsd:decimal .
+
+<configuration/raakgc/34> rdf:type ns4kge:Configuration .
+<configuration/raakgc/34> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/34> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/raakgc/34> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/raakgc/34> ns4kge:hasKGEModel <kge-model/quate> .
+<configuration/raakgc/34> ns4kge:result "0.436"^^xsd:decimal .
+
+<configuration/raakgc/35> rdf:type ns4kge:Configuration .
+<configuration/raakgc/35> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/35> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/raakgc/35> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/raakgc/35> ns4kge:hasKGEModel <kge-model/quate> .
+<configuration/raakgc/35> ns4kge:result "0.564"^^xsd:decimal .
+
+<configuration/raakgc/36> rdf:type ns4kge:Configuration .
+<configuration/raakgc/36> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/36> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/raakgc/36> ns4kge:hasMetric  <metric/mrr> .
+<configuration/raakgc/36> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/raakgc/36> ns4kge:result "0.476"^^xsd:decimal .
+
+<configuration/raakgc/37> rdf:type ns4kge:Configuration .
+<configuration/raakgc/37> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/37> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/raakgc/37> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/raakgc/37> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/raakgc/37> ns4kge:result "0.428"^^xsd:decimal .
+
+<configuration/raakgc/38> rdf:type ns4kge:Configuration .
+<configuration/raakgc/38> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/38> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/raakgc/38> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/raakgc/38> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/raakgc/38> ns4kge:result "0.492"^^xsd:decimal .
+
+<configuration/raakgc/39> rdf:type ns4kge:Configuration .
+<configuration/raakgc/39> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/39> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/raakgc/39> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/raakgc/39> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/raakgc/39> ns4kge:result "0.571"^^xsd:decimal .
+
+<configuration/raakgc/40> rdf:type ns4kge:Configuration .
+<configuration/raakgc/40> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/40> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/raakgc/40> ns4kge:hasMetric  <metric/mrr> .
+<configuration/raakgc/40> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/raakgc/40> ns4kge:result "0.338"^^xsd:decimal .
+
+<configuration/raakgc/41> rdf:type ns4kge:Configuration .
+<configuration/raakgc/41> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/41> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/raakgc/41> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/raakgc/41> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/raakgc/41> ns4kge:result "0.241"^^xsd:decimal .
+
+<configuration/raakgc/42> rdf:type ns4kge:Configuration .
+<configuration/raakgc/42> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/42> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/raakgc/42> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/raakgc/42> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/raakgc/42> ns4kge:result "0.375"^^xsd:decimal .
+
+<configuration/raakgc/43> rdf:type ns4kge:Configuration .
+<configuration/raakgc/43> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/43> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/raakgc/43> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/raakgc/43> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/raakgc/43> ns4kge:result "0.533"^^xsd:decimal .
+
+<configuration/raakgc/44> rdf:type ns4kge:Configuration .
+<configuration/raakgc/44> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/44> ns4kge:hasDataset <dataset/wikidata5m-trans> .
+<configuration/raakgc/44> ns4kge:hasMetric  <metric/mrr> .
+<configuration/raakgc/44> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/raakgc/44> ns4kge:result "0.339"^^xsd:decimal .
+
+<configuration/raakgc/45> rdf:type ns4kge:Configuration .
+<configuration/raakgc/45> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/45> ns4kge:hasDataset <dataset/wikidata5m-trans> .
+<configuration/raakgc/45> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/raakgc/45> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/raakgc/45> ns4kge:result "0.271"^^xsd:decimal .
+
+<configuration/raakgc/46> rdf:type ns4kge:Configuration .
+<configuration/raakgc/46> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/46> ns4kge:hasDataset <dataset/wikidata5m-trans> .
+<configuration/raakgc/46> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/raakgc/46> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/raakgc/46> ns4kge:result "0.459"^^xsd:decimal .
+
+<configuration/raakgc/47> rdf:type ns4kge:Configuration .
+<configuration/raakgc/47> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/47> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/raakgc/47> ns4kge:hasMetric  <metric/mrr> .
+<configuration/raakgc/47> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/raakgc/47> ns4kge:result "0.243"^^xsd:decimal .
+
+<configuration/raakgc/48> rdf:type ns4kge:Configuration .
+<configuration/raakgc/48> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/48> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/raakgc/48> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/raakgc/48> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/raakgc/48> ns4kge:result "0.043"^^xsd:decimal .
+
+<configuration/raakgc/49> rdf:type ns4kge:Configuration .
+<configuration/raakgc/49> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/49> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/raakgc/49> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/raakgc/49> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/raakgc/49> ns4kge:result "0.441"^^xsd:decimal .
+
+<configuration/raakgc/50> rdf:type ns4kge:Configuration .
+<configuration/raakgc/50> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/50> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/raakgc/50> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/raakgc/50> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/raakgc/50> ns4kge:result "0.532"^^xsd:decimal .
+
+<configuration/raakgc/51> rdf:type ns4kge:Configuration .
+<configuration/raakgc/51> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/51> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/raakgc/51> ns4kge:hasMetric  <metric/mrr> .
+<configuration/raakgc/51> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/raakgc/51> ns4kge:result "0.279"^^xsd:decimal .
+
+<configuration/raakgc/52> rdf:type ns4kge:Configuration .
+<configuration/raakgc/52> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/52> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/raakgc/52> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/raakgc/52> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/raakgc/52> ns4kge:result "0.198"^^xsd:decimal .
+
+<configuration/raakgc/53> rdf:type ns4kge:Configuration .
+<configuration/raakgc/53> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/53> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/raakgc/53> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/raakgc/53> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/raakgc/53> ns4kge:result "0.376"^^xsd:decimal .
+
+<configuration/raakgc/54> rdf:type ns4kge:Configuration .
+<configuration/raakgc/54> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/54> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/raakgc/54> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/raakgc/54> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/raakgc/54> ns4kge:result "0.441"^^xsd:decimal .
+
+<configuration/raakgc/55> rdf:type ns4kge:Configuration .
+<configuration/raakgc/55> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/55> ns4kge:hasDataset <dataset/wikidata5m-trans> .
+<configuration/raakgc/55> ns4kge:hasMetric  <metric/mrr> .
+<configuration/raakgc/55> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/raakgc/55> ns4kge:result "0.253"^^xsd:decimal .
+
+<configuration/raakgc/56> rdf:type ns4kge:Configuration .
+<configuration/raakgc/56> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/56> ns4kge:hasDataset <dataset/wikidata5m-trans> .
+<configuration/raakgc/56> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/raakgc/56> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/raakgc/56> ns4kge:result "0.17"^^xsd:decimal .
+
+<configuration/raakgc/57> rdf:type ns4kge:Configuration .
+<configuration/raakgc/57> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/57> ns4kge:hasDataset <dataset/wikidata5m-trans> .
+<configuration/raakgc/57> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/raakgc/57> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/raakgc/57> ns4kge:result "0.311"^^xsd:decimal .
+
+<configuration/raakgc/58> rdf:type ns4kge:Configuration .
+<configuration/raakgc/58> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/58> ns4kge:hasDataset <dataset/wikidata5m-trans> .
+<configuration/raakgc/58> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/raakgc/58> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/raakgc/58> ns4kge:result "0.392"^^xsd:decimal .
+
+<configuration/raakgc/59> rdf:type ns4kge:Configuration .
+<configuration/raakgc/59> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/59> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/raakgc/59> ns4kge:hasMetric  <metric/mrr> .
+<configuration/raakgc/59> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/raakgc/59> ns4kge:result "0.468"^^xsd:decimal .
+
+<configuration/raakgc/60> rdf:type ns4kge:Configuration .
+<configuration/raakgc/60> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/60> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/raakgc/60> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/raakgc/60> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/raakgc/60> ns4kge:result "0.427"^^xsd:decimal .
+
+<configuration/raakgc/61> rdf:type ns4kge:Configuration .
+<configuration/raakgc/61> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/61> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/raakgc/61> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/raakgc/61> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/raakgc/61> ns4kge:result "0.485"^^xsd:decimal .
+
+<configuration/raakgc/62> rdf:type ns4kge:Configuration .
+<configuration/raakgc/62> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/62> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/raakgc/62> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/raakgc/62> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/raakgc/62> ns4kge:result "0.554"^^xsd:decimal .
+
+<configuration/raakgc/63> rdf:type ns4kge:Configuration .
+<configuration/raakgc/63> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/63> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/raakgc/63> ns4kge:hasMetric  <metric/mrr> .
+<configuration/raakgc/63> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/raakgc/63> ns4kge:result "0.278"^^xsd:decimal .
+
+<configuration/raakgc/64> rdf:type ns4kge:Configuration .
+<configuration/raakgc/64> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/64> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/raakgc/64> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/raakgc/64> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/raakgc/64> ns4kge:result "0.194"^^xsd:decimal .
+
+<configuration/raakgc/65> rdf:type ns4kge:Configuration .
+<configuration/raakgc/65> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/65> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/raakgc/65> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/raakgc/65> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/raakgc/65> ns4kge:result "0.297"^^xsd:decimal .
+
+<configuration/raakgc/66> rdf:type ns4kge:Configuration .
+<configuration/raakgc/66> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/66> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/raakgc/66> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/raakgc/66> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/raakgc/66> ns4kge:result "0.45"^^xsd:decimal .
+
+<configuration/raakgc/67> rdf:type ns4kge:Configuration .
+<configuration/raakgc/67> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/67> ns4kge:hasDataset <dataset/wikidata5m-trans> .
+<configuration/raakgc/67> ns4kge:hasMetric  <metric/mrr> .
+<configuration/raakgc/67> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/raakgc/67> ns4kge:result "0.282"^^xsd:decimal .
+
+<configuration/raakgc/68> rdf:type ns4kge:Configuration .
+<configuration/raakgc/68> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/68> ns4kge:hasDataset <dataset/wikidata5m-trans> .
+<configuration/raakgc/68> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/raakgc/68> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/raakgc/68> ns4kge:result "0.226"^^xsd:decimal .
+
+<configuration/raakgc/69> rdf:type ns4kge:Configuration .
+<configuration/raakgc/69> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/69> ns4kge:hasDataset <dataset/wikidata5m-trans> .
+<configuration/raakgc/69> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/raakgc/69> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/raakgc/69> ns4kge:result "0.397"^^xsd:decimal .
+
+<configuration/raakgc/70> rdf:type ns4kge:Configuration .
+<configuration/raakgc/70> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/70> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/raakgc/70> ns4kge:hasMetric  <metric/mrr> .
+<configuration/raakgc/70> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/raakgc/70> ns4kge:result "0.444"^^xsd:decimal .
+
+<configuration/raakgc/71> rdf:type ns4kge:Configuration .
+<configuration/raakgc/71> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/71> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/raakgc/71> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/raakgc/71> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/raakgc/71> ns4kge:result "0.412"^^xsd:decimal .
+
+<configuration/raakgc/72> rdf:type ns4kge:Configuration .
+<configuration/raakgc/72> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/72> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/raakgc/72> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/raakgc/72> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/raakgc/72> ns4kge:result "0.47"^^xsd:decimal .
+
+<configuration/raakgc/73> rdf:type ns4kge:Configuration .
+<configuration/raakgc/73> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/73> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/raakgc/73> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/raakgc/73> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/raakgc/73> ns4kge:result "0.504"^^xsd:decimal .
+
+<configuration/raakgc/74> rdf:type ns4kge:Configuration .
+<configuration/raakgc/74> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/74> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/raakgc/74> ns4kge:hasMetric  <metric/mrr> .
+<configuration/raakgc/74> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/raakgc/74> ns4kge:result "0.281"^^xsd:decimal .
+
+<configuration/raakgc/75> rdf:type ns4kge:Configuration .
+<configuration/raakgc/75> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/75> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/raakgc/75> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/raakgc/75> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/raakgc/75> ns4kge:result "0.199"^^xsd:decimal .
+
+<configuration/raakgc/76> rdf:type ns4kge:Configuration .
+<configuration/raakgc/76> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/76> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/raakgc/76> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/raakgc/76> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/raakgc/76> ns4kge:result "0.301"^^xsd:decimal .
+
+<configuration/raakgc/77> rdf:type ns4kge:Configuration .
+<configuration/raakgc/77> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/77> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/raakgc/77> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/raakgc/77> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/raakgc/77> ns4kge:result "0.446"^^xsd:decimal .
+
+<configuration/raakgc/78> rdf:type ns4kge:Configuration .
+<configuration/raakgc/78> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/78> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/raakgc/78> ns4kge:hasMetric  <metric/mrr> .
+<configuration/raakgc/78> ns4kge:hasKGEModel <kge-model/conve> .
+<configuration/raakgc/78> ns4kge:result "0.456"^^xsd:decimal .
+
+<configuration/raakgc/79> rdf:type ns4kge:Configuration .
+<configuration/raakgc/79> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/79> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/raakgc/79> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/raakgc/79> ns4kge:hasKGEModel <kge-model/conve> .
+<configuration/raakgc/79> ns4kge:result "0.419"^^xsd:decimal .
+
+<configuration/raakgc/80> rdf:type ns4kge:Configuration .
+<configuration/raakgc/80> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/80> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/raakgc/80> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/raakgc/80> ns4kge:hasKGEModel <kge-model/conve> .
+<configuration/raakgc/80> ns4kge:result "0.47"^^xsd:decimal .
+
+<configuration/raakgc/81> rdf:type ns4kge:Configuration .
+<configuration/raakgc/81> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/81> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/raakgc/81> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/raakgc/81> ns4kge:hasKGEModel <kge-model/conve> .
+<configuration/raakgc/81> ns4kge:result "0.531"^^xsd:decimal .
+
+<configuration/raakgc/82> rdf:type ns4kge:Configuration .
+<configuration/raakgc/82> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/82> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/raakgc/82> ns4kge:hasMetric  <metric/mrr> .
+<configuration/raakgc/82> ns4kge:hasKGEModel <kge-model/conve> .
+<configuration/raakgc/82> ns4kge:result "0.312"^^xsd:decimal .
+
+<configuration/raakgc/83> rdf:type ns4kge:Configuration .
+<configuration/raakgc/83> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/83> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/raakgc/83> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/raakgc/83> ns4kge:hasKGEModel <kge-model/conve> .
+<configuration/raakgc/83> ns4kge:result "0.225"^^xsd:decimal .
+
+<configuration/raakgc/84> rdf:type ns4kge:Configuration .
+<configuration/raakgc/84> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/84> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/raakgc/84> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/raakgc/84> ns4kge:hasKGEModel <kge-model/conve> .
+<configuration/raakgc/84> ns4kge:result "0.341"^^xsd:decimal .
+
+<configuration/raakgc/85> rdf:type ns4kge:Configuration .
+<configuration/raakgc/85> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/85> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/raakgc/85> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/raakgc/85> ns4kge:hasKGEModel <kge-model/conve> .
+<configuration/raakgc/85> ns4kge:result "0.497"^^xsd:decimal .
+
+<configuration/raakgc/86> rdf:type ns4kge:Configuration .
+<configuration/raakgc/86> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/86> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/raakgc/86> ns4kge:hasMetric  <metric/mrr> .
+<configuration/raakgc/86> ns4kge:hasKGEModel <kge-model/rgcn> .
+<configuration/raakgc/86> ns4kge:result "0.427"^^xsd:decimal .
+
+<configuration/raakgc/87> rdf:type ns4kge:Configuration .
+<configuration/raakgc/87> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/87> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/raakgc/87> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/raakgc/87> ns4kge:hasKGEModel <kge-model/rgcn> .
+<configuration/raakgc/87> ns4kge:result "0.382"^^xsd:decimal .
+
+<configuration/raakgc/88> rdf:type ns4kge:Configuration .
+<configuration/raakgc/88> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/88> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/raakgc/88> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/raakgc/88> ns4kge:hasKGEModel <kge-model/rgcn> .
+<configuration/raakgc/88> ns4kge:result "0.446"^^xsd:decimal .
+
+<configuration/raakgc/89> rdf:type ns4kge:Configuration .
+<configuration/raakgc/89> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/89> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/raakgc/89> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/raakgc/89> ns4kge:hasKGEModel <kge-model/rgcn> .
+<configuration/raakgc/89> ns4kge:result "0.51"^^xsd:decimal .
+
+<configuration/raakgc/90> rdf:type ns4kge:Configuration .
+<configuration/raakgc/90> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/90> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/raakgc/90> ns4kge:hasMetric  <metric/mrr> .
+<configuration/raakgc/90> ns4kge:hasKGEModel <kge-model/rgcn> .
+<configuration/raakgc/90> ns4kge:result "0.248"^^xsd:decimal .
+
+<configuration/raakgc/91> rdf:type ns4kge:Configuration .
+<configuration/raakgc/91> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/91> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/raakgc/91> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/raakgc/91> ns4kge:hasKGEModel <kge-model/rgcn> .
+<configuration/raakgc/91> ns4kge:result "0.153"^^xsd:decimal .
+
+<configuration/raakgc/92> rdf:type ns4kge:Configuration .
+<configuration/raakgc/92> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/92> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/raakgc/92> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/raakgc/92> ns4kge:hasKGEModel <kge-model/rgcn> .
+<configuration/raakgc/92> ns4kge:result "0.258"^^xsd:decimal .
+
+<configuration/raakgc/93> rdf:type ns4kge:Configuration .
+<configuration/raakgc/93> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/93> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/raakgc/93> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/raakgc/93> ns4kge:hasKGEModel <kge-model/rgcn> .
+<configuration/raakgc/93> ns4kge:result "0.414"^^xsd:decimal .
+
+<configuration/raakgc/94> rdf:type ns4kge:Configuration .
+<configuration/raakgc/94> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/94> ns4kge:hasDataset <dataset/wikidata5m-trans> .
+<configuration/raakgc/94> ns4kge:hasMetric  <metric/mrr> .
+<configuration/raakgc/94> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/raakgc/94> ns4kge:result "0.29"^^xsd:decimal .
+
+<configuration/raakgc/95> rdf:type ns4kge:Configuration .
+<configuration/raakgc/95> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/95> ns4kge:hasDataset <dataset/wikidata5m-trans> .
+<configuration/raakgc/95> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/raakgc/95> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/raakgc/95> ns4kge:result "0.234"^^xsd:decimal .
+
+<configuration/raakgc/96> rdf:type ns4kge:Configuration .
+<configuration/raakgc/96> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/96> ns4kge:hasDataset <dataset/wikidata5m-trans> .
+<configuration/raakgc/96> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/raakgc/96> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/raakgc/96> ns4kge:result "0.322"^^xsd:decimal .
+
+<configuration/raakgc/97> rdf:type ns4kge:Configuration .
+<configuration/raakgc/97> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/97> ns4kge:hasDataset <dataset/wikidata5m-trans> .
+<configuration/raakgc/97> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/raakgc/97> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/raakgc/97> ns4kge:result "0.39"^^xsd:decimal .
+
+<configuration/raakgc/98> rdf:type ns4kge:Configuration .
+<configuration/raakgc/98> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/98> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/raakgc/98> ns4kge:hasMetric  <metric/mrr> .
+<configuration/raakgc/98> ns4kge:hasKGEModel <kge-model/quate> .
+<configuration/raakgc/98> ns4kge:result "0.311"^^xsd:decimal .
+
+<configuration/raakgc/99> rdf:type ns4kge:Configuration .
+<configuration/raakgc/99> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/99> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/raakgc/99> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/raakgc/99> ns4kge:hasKGEModel <kge-model/quate> .
+<configuration/raakgc/99> ns4kge:result "0.221"^^xsd:decimal .
+
+<configuration/raakgc/100> rdf:type ns4kge:Configuration .
+<configuration/raakgc/100> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/100> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/raakgc/100> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/raakgc/100> ns4kge:hasKGEModel <kge-model/quate> .
+<configuration/raakgc/100> ns4kge:result "0.495"^^xsd:decimal .
+
+<configuration/raakgc/101> rdf:type ns4kge:Configuration .
+<configuration/raakgc/101> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/101> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/raakgc/101> ns4kge:hasMetric  <metric/mrr> .
+<configuration/raakgc/101> ns4kge:hasKGEModel <kge-model/kg-bert> .
+<configuration/raakgc/101> ns4kge:result "0.216"^^xsd:decimal .
+
+<configuration/raakgc/102> rdf:type ns4kge:Configuration .
+<configuration/raakgc/102> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/102> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/raakgc/102> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/raakgc/102> ns4kge:hasKGEModel <kge-model/kg-bert> .
+<configuration/raakgc/102> ns4kge:result "0.041"^^xsd:decimal .
+
+<configuration/raakgc/103> rdf:type ns4kge:Configuration .
+<configuration/raakgc/103> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/103> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/raakgc/103> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/raakgc/103> ns4kge:hasKGEModel <kge-model/kg-bert> .
+<configuration/raakgc/103> ns4kge:result "0.302"^^xsd:decimal .
+
+<configuration/raakgc/104> rdf:type ns4kge:Configuration .
+<configuration/raakgc/104> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/104> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/raakgc/104> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/raakgc/104> ns4kge:hasKGEModel <kge-model/kg-bert> .
+<configuration/raakgc/104> ns4kge:result "0.524"^^xsd:decimal .
+
+<configuration/raakgc/105> rdf:type ns4kge:Configuration .
+<configuration/raakgc/105> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/105> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/raakgc/105> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/raakgc/105> ns4kge:hasKGEModel <kge-model/kg-bert> .
+<configuration/raakgc/105> ns4kge:result "0.42"^^xsd:decimal .
+
+<configuration/raakgc/106> rdf:type ns4kge:Configuration .
+<configuration/raakgc/106> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/106> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/raakgc/106> ns4kge:hasMetric  <metric/mrr> .
+<configuration/raakgc/106> ns4kge:hasKGEModel <kge-model/mtl-kgc> .
+<configuration/raakgc/106> ns4kge:result "0.331"^^xsd:decimal .
+
+<configuration/raakgc/107> rdf:type ns4kge:Configuration .
+<configuration/raakgc/107> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/107> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/raakgc/107> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/raakgc/107> ns4kge:hasKGEModel <kge-model/mtl-kgc> .
+<configuration/raakgc/107> ns4kge:result "0.203"^^xsd:decimal .
+
+<configuration/raakgc/108> rdf:type ns4kge:Configuration .
+<configuration/raakgc/108> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/108> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/raakgc/108> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/raakgc/108> ns4kge:hasKGEModel <kge-model/mtl-kgc> .
+<configuration/raakgc/108> ns4kge:result "0.383"^^xsd:decimal .
+
+<configuration/raakgc/109> rdf:type ns4kge:Configuration .
+<configuration/raakgc/109> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/109> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/raakgc/109> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/raakgc/109> ns4kge:hasKGEModel <kge-model/mtl-kgc> .
+<configuration/raakgc/109> ns4kge:result "0.597"^^xsd:decimal .
+
+<configuration/raakgc/110> rdf:type ns4kge:Configuration .
+<configuration/raakgc/110> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/110> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/raakgc/110> ns4kge:hasMetric  <metric/mrr> .
+<configuration/raakgc/110> ns4kge:hasKGEModel <kge-model/mtl-kgc> .
+<configuration/raakgc/110> ns4kge:result "0.267"^^xsd:decimal .
+
+<configuration/raakgc/111> rdf:type ns4kge:Configuration .
+<configuration/raakgc/111> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/111> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/raakgc/111> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/raakgc/111> ns4kge:hasKGEModel <kge-model/mtl-kgc> .
+<configuration/raakgc/111> ns4kge:result "0.172"^^xsd:decimal .
+
+<configuration/raakgc/112> rdf:type ns4kge:Configuration .
+<configuration/raakgc/112> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/112> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/raakgc/112> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/raakgc/112> ns4kge:hasKGEModel <kge-model/mtl-kgc> .
+<configuration/raakgc/112> ns4kge:result "0.298"^^xsd:decimal .
+
+<configuration/raakgc/113> rdf:type ns4kge:Configuration .
+<configuration/raakgc/113> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/113> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/raakgc/113> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/raakgc/113> ns4kge:hasKGEModel <kge-model/mtl-kgc> .
+<configuration/raakgc/113> ns4kge:result "0.458"^^xsd:decimal .
+
+<configuration/raakgc/114> rdf:type ns4kge:Configuration .
+<configuration/raakgc/114> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/114> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/raakgc/114> ns4kge:hasMetric  <metric/mrr> .
+<configuration/raakgc/114> ns4kge:hasKGEModel <kge-model/star> .
+<configuration/raakgc/114> ns4kge:result "0.401"^^xsd:decimal .
+
+<configuration/raakgc/115> rdf:type ns4kge:Configuration .
+<configuration/raakgc/115> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/115> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/raakgc/115> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/raakgc/115> ns4kge:hasKGEModel <kge-model/star> .
+<configuration/raakgc/115> ns4kge:result "0.243"^^xsd:decimal .
+
+<configuration/raakgc/116> rdf:type ns4kge:Configuration .
+<configuration/raakgc/116> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/116> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/raakgc/116> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/raakgc/116> ns4kge:hasKGEModel <kge-model/star> .
+<configuration/raakgc/116> ns4kge:result "0.491"^^xsd:decimal .
+
+<configuration/raakgc/117> rdf:type ns4kge:Configuration .
+<configuration/raakgc/117> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/117> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/raakgc/117> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/raakgc/117> ns4kge:hasKGEModel <kge-model/star> .
+<configuration/raakgc/117> ns4kge:result "0.709"^^xsd:decimal .
+
+<configuration/raakgc/118> rdf:type ns4kge:Configuration .
+<configuration/raakgc/118> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/118> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/raakgc/118> ns4kge:hasMetric  <metric/mrr> .
+<configuration/raakgc/118> ns4kge:hasKGEModel <kge-model/star> .
+<configuration/raakgc/118> ns4kge:result "0.296"^^xsd:decimal .
+
+<configuration/raakgc/119> rdf:type ns4kge:Configuration .
+<configuration/raakgc/119> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/119> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/raakgc/119> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/raakgc/119> ns4kge:hasKGEModel <kge-model/star> .
+<configuration/raakgc/119> ns4kge:result "0.205"^^xsd:decimal .
+
+<configuration/raakgc/120> rdf:type ns4kge:Configuration .
+<configuration/raakgc/120> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/120> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/raakgc/120> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/raakgc/120> ns4kge:hasKGEModel <kge-model/star> .
+<configuration/raakgc/120> ns4kge:result "0.322"^^xsd:decimal .
+
+<configuration/raakgc/121> rdf:type ns4kge:Configuration .
+<configuration/raakgc/121> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/121> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/raakgc/121> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/raakgc/121> ns4kge:hasKGEModel <kge-model/star> .
+<configuration/raakgc/121> ns4kge:result "0.482"^^xsd:decimal .
+
+<configuration/raakgc/122> rdf:type ns4kge:Configuration .
+<configuration/raakgc/122> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/122> ns4kge:hasDataset <dataset/wn18rr-v1> .
+<configuration/raakgc/122> ns4kge:hasMetric  <metric/mrr> .
+<configuration/raakgc/122> ns4kge:hasKGEModel <kge-model/raa-kgc> .
+<configuration/raakgc/122> ns4kge:hasNSMethod <ns-method/relation-aware-anchor-enhancement> .
+<configuration/raakgc/122> ns4kge:result "0.5012"^^xsd:decimal .
+
+<configuration/raakgc/123> rdf:type ns4kge:Configuration .
+<configuration/raakgc/123> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/123> ns4kge:hasDataset <dataset/wn18rr-v1> .
+<configuration/raakgc/123> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/raakgc/123> ns4kge:hasKGEModel <kge-model/raa-kgc> .
+<configuration/raakgc/123> ns4kge:hasNSMethod <ns-method/relation-aware-anchor-enhancement> .
+<configuration/raakgc/123> ns4kge:result "0.8404"^^xsd:decimal .
+
+<configuration/raakgc/124> rdf:type ns4kge:Configuration .
+<configuration/raakgc/124> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/124> ns4kge:hasDataset <dataset/fb15k-237-v1> .
+<configuration/raakgc/124> ns4kge:hasMetric  <metric/mrr> .
+<configuration/raakgc/124> ns4kge:hasKGEModel <kge-model/raa-kgc> .
+<configuration/raakgc/124> ns4kge:hasNSMethod <ns-method/relation-aware-anchor-enhancement> .
+<configuration/raakgc/124> ns4kge:result "0.2911"^^xsd:decimal .
+
+<configuration/raakgc/125> rdf:type ns4kge:Configuration .
+<configuration/raakgc/125> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/125> ns4kge:hasDataset <dataset/fb15k-237-v1> .
+<configuration/raakgc/125> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/raakgc/125> ns4kge:hasKGEModel <kge-model/raa-kgc> .
+<configuration/raakgc/125> ns4kge:hasNSMethod <ns-method/relation-aware-anchor-enhancement> .
+<configuration/raakgc/125> ns4kge:result "0.5536"^^xsd:decimal .
+
+<configuration/raakgc/126> rdf:type ns4kge:Configuration .
+<configuration/raakgc/126> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/126> ns4kge:hasDataset <dataset/wn18rr-v1> .
+<configuration/raakgc/126> ns4kge:hasMetric  <metric/mrr> .
+<configuration/raakgc/126> ns4kge:hasKGEModel <kge-model/simkgc> .
+<configuration/raakgc/126> ns4kge:hasNSMethod <ns-method/in-batch-negative-sampling> .
+<configuration/raakgc/126> ns4kge:result "0.4177"^^xsd:decimal .
+
+<configuration/raakgc/127> rdf:type ns4kge:Configuration .
+<configuration/raakgc/127> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/127> ns4kge:hasDataset <dataset/wn18rr-v1> .
+<configuration/raakgc/127> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/raakgc/127> ns4kge:hasKGEModel <kge-model/simkgc> .
+<configuration/raakgc/127> ns4kge:hasNSMethod <ns-method/in-batch-negative-sampling> .
+<configuration/raakgc/127> ns4kge:result "0.6649"^^xsd:decimal .
+
+<configuration/raakgc/128> rdf:type ns4kge:Configuration .
+<configuration/raakgc/128> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/128> ns4kge:hasDataset <dataset/fb15k-237-v1> .
+<configuration/raakgc/128> ns4kge:hasMetric  <metric/mrr> .
+<configuration/raakgc/128> ns4kge:hasKGEModel <kge-model/simkgc> .
+<configuration/raakgc/128> ns4kge:hasNSMethod <ns-method/in-batch-negative-sampling> .
+<configuration/raakgc/128> ns4kge:result "0.2098"^^xsd:decimal .
+
+<configuration/raakgc/129> rdf:type ns4kge:Configuration .
+<configuration/raakgc/129> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/129> ns4kge:hasDataset <dataset/fb15k-237-v1> .
+<configuration/raakgc/129> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/raakgc/129> ns4kge:hasKGEModel <kge-model/simkgc> .
+<configuration/raakgc/129> ns4kge:hasNSMethod <ns-method/in-batch-negative-sampling> .
+<configuration/raakgc/129> ns4kge:result "0.4098"^^xsd:decimal .
+
+<configuration/raakgc/130> rdf:type ns4kge:Configuration .
+<configuration/raakgc/130> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/130> ns4kge:hasDataset <dataset/wn18rr-v1> .
+<configuration/raakgc/130> ns4kge:hasMetric  <metric/mrr> .
+<configuration/raakgc/130> ns4kge:hasKGEModel <kge-model/inskgc> .
+<configuration/raakgc/130> ns4kge:result "0.4012"^^xsd:decimal .
+
+<configuration/raakgc/131> rdf:type ns4kge:Configuration .
+<configuration/raakgc/131> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/131> ns4kge:hasDataset <dataset/wn18rr-v1> .
+<configuration/raakgc/131> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/raakgc/131> ns4kge:hasKGEModel <kge-model/inskgc> .
+<configuration/raakgc/131> ns4kge:result "0.6915"^^xsd:decimal .
+
+<configuration/raakgc/132> rdf:type ns4kge:Configuration .
+<configuration/raakgc/132> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/132> ns4kge:hasDataset <dataset/fb15k-237-v1> .
+<configuration/raakgc/132> ns4kge:hasMetric  <metric/mrr> .
+<configuration/raakgc/132> ns4kge:hasKGEModel <kge-model/inskgc> .
+<configuration/raakgc/132> ns4kge:result "0.235"^^xsd:decimal .
+
+<configuration/raakgc/133> rdf:type ns4kge:Configuration .
+<configuration/raakgc/133> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/133> ns4kge:hasDataset <dataset/fb15k-237-v1> .
+<configuration/raakgc/133> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/raakgc/133> ns4kge:hasKGEModel <kge-model/inskgc> .
+<configuration/raakgc/133> ns4kge:result "0.4829"^^xsd:decimal .
+
+<configuration/raakgc/134> rdf:type ns4kge:Configuration .
+<configuration/raakgc/134> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/134> ns4kge:hasDataset <dataset/wn18rr-v1> .
+<configuration/raakgc/134> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/raakgc/134> ns4kge:hasKGEModel <kge-model/raa-kgc> .
+<configuration/raakgc/134> ns4kge:hasNSMethod <ns-method/relation-aware-anchor-enhancement> .
+<configuration/raakgc/134> ns4kge:result "0.3325"^^xsd:decimal .
+
+<configuration/raakgc/135> rdf:type ns4kge:Configuration .
+<configuration/raakgc/135> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/135> ns4kge:hasDataset <dataset/wn18rr-v1> .
+<configuration/raakgc/135> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/raakgc/135> ns4kge:hasKGEModel <kge-model/raa-kgc> .
+<configuration/raakgc/135> ns4kge:hasNSMethod <ns-method/relation-aware-anchor-enhancement> .
+<configuration/raakgc/135> ns4kge:result "0.6197"^^xsd:decimal .
+
+<configuration/raakgc/136> rdf:type ns4kge:Configuration .
+<configuration/raakgc/136> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/136> ns4kge:hasDataset <dataset/wn18rr-v1> .
+<configuration/raakgc/136> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/raakgc/136> ns4kge:hasKGEModel <kge-model/simkgc> .
+<configuration/raakgc/136> ns4kge:hasNSMethod <ns-method/in-batch-negative-sampling> .
+<configuration/raakgc/136> ns4kge:result "0.2873"^^xsd:decimal .
+
+<configuration/raakgc/137> rdf:type ns4kge:Configuration .
+<configuration/raakgc/137> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/137> ns4kge:hasDataset <dataset/wn18rr-v1> .
+<configuration/raakgc/137> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/raakgc/137> ns4kge:hasKGEModel <kge-model/simkgc> .
+<configuration/raakgc/137> ns4kge:hasNSMethod <ns-method/in-batch-negative-sampling> .
+<configuration/raakgc/137> ns4kge:result "0.4761"^^xsd:decimal .
+
+<configuration/raakgc/138> rdf:type ns4kge:Configuration .
+<configuration/raakgc/138> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/138> ns4kge:hasDataset <dataset/wn18rr-v1> .
+<configuration/raakgc/138> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/raakgc/138> ns4kge:hasKGEModel <kge-model/inskgc> .
+<configuration/raakgc/138> ns4kge:result "0.2526"^^xsd:decimal .
+
+<configuration/raakgc/139> rdf:type ns4kge:Configuration .
+<configuration/raakgc/139> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/139> ns4kge:hasDataset <dataset/wn18rr-v1> .
+<configuration/raakgc/139> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/raakgc/139> ns4kge:hasKGEModel <kge-model/inskgc> .
+<configuration/raakgc/139> ns4kge:result "0.4814"^^xsd:decimal .
+
+<configuration/raakgc/140> rdf:type ns4kge:Configuration .
+<configuration/raakgc/140> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/140> ns4kge:hasDataset <dataset/wn18rr-v2> .
+<configuration/raakgc/140> ns4kge:hasMetric  <metric/mrr> .
+<configuration/raakgc/140> ns4kge:hasKGEModel <kge-model/raa-kgc> .
+<configuration/raakgc/140> ns4kge:hasNSMethod <ns-method/relation-aware-anchor-enhancement> .
+<configuration/raakgc/140> ns4kge:result "0.5574"^^xsd:decimal .
+
+<configuration/raakgc/141> rdf:type ns4kge:Configuration .
+<configuration/raakgc/141> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/141> ns4kge:hasDataset <dataset/wn18rr-v2> .
+<configuration/raakgc/141> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/raakgc/141> ns4kge:hasKGEModel <kge-model/raa-kgc> .
+<configuration/raakgc/141> ns4kge:hasNSMethod <ns-method/relation-aware-anchor-enhancement> .
+<configuration/raakgc/141> ns4kge:result "0.4138"^^xsd:decimal .
+
+<configuration/raakgc/142> rdf:type ns4kge:Configuration .
+<configuration/raakgc/142> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/142> ns4kge:hasDataset <dataset/wn18rr-v2> .
+<configuration/raakgc/142> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/raakgc/142> ns4kge:hasKGEModel <kge-model/raa-kgc> .
+<configuration/raakgc/142> ns4kge:hasNSMethod <ns-method/relation-aware-anchor-enhancement> .
+<configuration/raakgc/142> ns4kge:result "0.6371"^^xsd:decimal .
+
+<configuration/raakgc/143> rdf:type ns4kge:Configuration .
+<configuration/raakgc/143> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/143> ns4kge:hasDataset <dataset/wn18rr-v2> .
+<configuration/raakgc/143> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/raakgc/143> ns4kge:hasKGEModel <kge-model/raa-kgc> .
+<configuration/raakgc/143> ns4kge:hasNSMethod <ns-method/relation-aware-anchor-enhancement> .
+<configuration/raakgc/143> ns4kge:result "0.8515"^^xsd:decimal .
+
+<configuration/raakgc/144> rdf:type ns4kge:Configuration .
+<configuration/raakgc/144> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/144> ns4kge:hasDataset <dataset/wn18rr-v2> .
+<configuration/raakgc/144> ns4kge:hasMetric  <metric/mrr> .
+<configuration/raakgc/144> ns4kge:hasKGEModel <kge-model/simkgc> .
+<configuration/raakgc/144> ns4kge:hasNSMethod <ns-method/in-batch-negative-sampling> .
+<configuration/raakgc/144> ns4kge:result "0.2863"^^xsd:decimal .
+
+<configuration/raakgc/145> rdf:type ns4kge:Configuration .
+<configuration/raakgc/145> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/145> ns4kge:hasDataset <dataset/wn18rr-v2> .
+<configuration/raakgc/145> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/raakgc/145> ns4kge:hasKGEModel <kge-model/simkgc> .
+<configuration/raakgc/145> ns4kge:hasNSMethod <ns-method/in-batch-negative-sampling> .
+<configuration/raakgc/145> ns4kge:result "0.1134"^^xsd:decimal .
+
+<configuration/raakgc/146> rdf:type ns4kge:Configuration .
+<configuration/raakgc/146> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/146> ns4kge:hasDataset <dataset/wn18rr-v2> .
+<configuration/raakgc/146> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/raakgc/146> ns4kge:hasKGEModel <kge-model/simkgc> .
+<configuration/raakgc/146> ns4kge:hasNSMethod <ns-method/in-batch-negative-sampling> .
+<configuration/raakgc/146> ns4kge:result "0.3901"^^xsd:decimal .
+
+<configuration/raakgc/147> rdf:type ns4kge:Configuration .
+<configuration/raakgc/147> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/147> ns4kge:hasDataset <dataset/wn18rr-v2> .
+<configuration/raakgc/147> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/raakgc/147> ns4kge:hasKGEModel <kge-model/simkgc> .
+<configuration/raakgc/147> ns4kge:hasNSMethod <ns-method/in-batch-negative-sampling> .
+<configuration/raakgc/147> ns4kge:result "0.6055"^^xsd:decimal .
+
+<configuration/raakgc/148> rdf:type ns4kge:Configuration .
+<configuration/raakgc/148> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/148> ns4kge:hasDataset <dataset/wn18rr-v2> .
+<configuration/raakgc/148> ns4kge:hasMetric  <metric/mrr> .
+<configuration/raakgc/148> ns4kge:hasKGEModel <kge-model/inskgc> .
+<configuration/raakgc/148> ns4kge:result "0.4573"^^xsd:decimal .
+
+<configuration/raakgc/149> rdf:type ns4kge:Configuration .
+<configuration/raakgc/149> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/149> ns4kge:hasDataset <dataset/wn18rr-v2> .
+<configuration/raakgc/149> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/raakgc/149> ns4kge:hasKGEModel <kge-model/inskgc> .
+<configuration/raakgc/149> ns4kge:result "0.3402"^^xsd:decimal .
+
+<configuration/raakgc/150> rdf:type ns4kge:Configuration .
+<configuration/raakgc/150> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/150> ns4kge:hasDataset <dataset/wn18rr-v2> .
+<configuration/raakgc/150> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/raakgc/150> ns4kge:hasKGEModel <kge-model/inskgc> .
+<configuration/raakgc/150> ns4kge:result "0.3402"^^xsd:decimal .
+
+<configuration/raakgc/151> rdf:type ns4kge:Configuration .
+<configuration/raakgc/151> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/151> ns4kge:hasDataset <dataset/wn18rr-v2> .
+<configuration/raakgc/151> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/raakgc/151> ns4kge:hasKGEModel <kge-model/inskgc> .
+<configuration/raakgc/151> ns4kge:result "0.695"^^xsd:decimal .
+
+<configuration/raakgc/152> rdf:type ns4kge:Configuration .
+<configuration/raakgc/152> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/152> ns4kge:hasDataset <dataset/wn18rr-v3> .
+<configuration/raakgc/152> ns4kge:hasMetric  <metric/mrr> .
+<configuration/raakgc/152> ns4kge:hasKGEModel <kge-model/raa-kgc> .
+<configuration/raakgc/152> ns4kge:hasNSMethod <ns-method/relation-aware-anchor-enhancement> .
+<configuration/raakgc/152> ns4kge:result "0.3241"^^xsd:decimal .
+
+<configuration/raakgc/153> rdf:type ns4kge:Configuration .
+<configuration/raakgc/153> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/153> ns4kge:hasDataset <dataset/wn18rr-v3> .
+<configuration/raakgc/153> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/raakgc/153> ns4kge:hasKGEModel <kge-model/raa-kgc> .
+<configuration/raakgc/153> ns4kge:hasNSMethod <ns-method/relation-aware-anchor-enhancement> .
+<configuration/raakgc/153> ns4kge:result "0.2306"^^xsd:decimal .
+
+<configuration/raakgc/154> rdf:type ns4kge:Configuration .
+<configuration/raakgc/154> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/154> ns4kge:hasDataset <dataset/wn18rr-v3> .
+<configuration/raakgc/154> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/raakgc/154> ns4kge:hasKGEModel <kge-model/raa-kgc> .
+<configuration/raakgc/154> ns4kge:hasNSMethod <ns-method/relation-aware-anchor-enhancement> .
+<configuration/raakgc/154> ns4kge:result "0.377"^^xsd:decimal .
+
+<configuration/raakgc/155> rdf:type ns4kge:Configuration .
+<configuration/raakgc/155> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/155> ns4kge:hasDataset <dataset/wn18rr-v3> .
+<configuration/raakgc/155> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/raakgc/155> ns4kge:hasKGEModel <kge-model/raa-kgc> .
+<configuration/raakgc/155> ns4kge:hasNSMethod <ns-method/relation-aware-anchor-enhancement> .
+<configuration/raakgc/155> ns4kge:result "0.5415"^^xsd:decimal .
+
+<configuration/raakgc/156> rdf:type ns4kge:Configuration .
+<configuration/raakgc/156> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/156> ns4kge:hasDataset <dataset/wn18rr-v3> .
+<configuration/raakgc/156> ns4kge:hasMetric  <metric/mrr> .
+<configuration/raakgc/156> ns4kge:hasKGEModel <kge-model/simkgc> .
+<configuration/raakgc/156> ns4kge:hasNSMethod <ns-method/in-batch-negative-sampling> .
+<configuration/raakgc/156> ns4kge:result "0.2757"^^xsd:decimal .
+
+<configuration/raakgc/157> rdf:type ns4kge:Configuration .
+<configuration/raakgc/157> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/157> ns4kge:hasDataset <dataset/wn18rr-v3> .
+<configuration/raakgc/157> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/raakgc/157> ns4kge:hasKGEModel <kge-model/simkgc> .
+<configuration/raakgc/157> ns4kge:hasNSMethod <ns-method/in-batch-negative-sampling> .
+<configuration/raakgc/157> ns4kge:result "0.1794"^^xsd:decimal .
+
+<configuration/raakgc/158> rdf:type ns4kge:Configuration .
+<configuration/raakgc/158> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/158> ns4kge:hasDataset <dataset/wn18rr-v3> .
+<configuration/raakgc/158> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/raakgc/158> ns4kge:hasKGEModel <kge-model/simkgc> .
+<configuration/raakgc/158> ns4kge:hasNSMethod <ns-method/in-batch-negative-sampling> .
+<configuration/raakgc/158> ns4kge:result "0.3074"^^xsd:decimal .
+
+<configuration/raakgc/159> rdf:type ns4kge:Configuration .
+<configuration/raakgc/159> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/159> ns4kge:hasDataset <dataset/wn18rr-v3> .
+<configuration/raakgc/159> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/raakgc/159> ns4kge:hasKGEModel <kge-model/simkgc> .
+<configuration/raakgc/159> ns4kge:hasNSMethod <ns-method/in-batch-negative-sampling> .
+<configuration/raakgc/159> ns4kge:result "0.476"^^xsd:decimal .
+
+<configuration/raakgc/160> rdf:type ns4kge:Configuration .
+<configuration/raakgc/160> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/160> ns4kge:hasDataset <dataset/wn18rr-v3> .
+<configuration/raakgc/160> ns4kge:hasMetric  <metric/mrr> .
+<configuration/raakgc/160> ns4kge:hasKGEModel <kge-model/inskgc> .
+<configuration/raakgc/160> ns4kge:result "0.321"^^xsd:decimal .
+
+<configuration/raakgc/161> rdf:type ns4kge:Configuration .
+<configuration/raakgc/161> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/161> ns4kge:hasDataset <dataset/wn18rr-v3> .
+<configuration/raakgc/161> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/raakgc/161> ns4kge:hasKGEModel <kge-model/inskgc> .
+<configuration/raakgc/161> ns4kge:result "0.2248"^^xsd:decimal .
+
+<configuration/raakgc/162> rdf:type ns4kge:Configuration .
+<configuration/raakgc/162> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/162> ns4kge:hasDataset <dataset/wn18rr-v3> .
+<configuration/raakgc/162> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/raakgc/162> ns4kge:hasKGEModel <kge-model/inskgc> .
+<configuration/raakgc/162> ns4kge:result "0.3678"^^xsd:decimal .
+
+<configuration/raakgc/163> rdf:type ns4kge:Configuration .
+<configuration/raakgc/163> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/163> ns4kge:hasDataset <dataset/wn18rr-v3> .
+<configuration/raakgc/163> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/raakgc/163> ns4kge:hasKGEModel <kge-model/inskgc> .
+<configuration/raakgc/163> ns4kge:result "0.5016"^^xsd:decimal .
+
+<configuration/raakgc/164> rdf:type ns4kge:Configuration .
+<configuration/raakgc/164> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/164> ns4kge:hasDataset <dataset/wn18rr-v4> .
+<configuration/raakgc/164> ns4kge:hasMetric  <metric/mrr> .
+<configuration/raakgc/164> ns4kge:hasKGEModel <kge-model/raa-kgc> .
+<configuration/raakgc/164> ns4kge:hasNSMethod <ns-method/relation-aware-anchor-enhancement> .
+<configuration/raakgc/164> ns4kge:result "0.5026"^^xsd:decimal .
+
+<configuration/raakgc/165> rdf:type ns4kge:Configuration .
+<configuration/raakgc/165> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/165> ns4kge:hasDataset <dataset/wn18rr-v4> .
+<configuration/raakgc/165> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/raakgc/165> ns4kge:hasKGEModel <kge-model/raa-kgc> .
+<configuration/raakgc/165> ns4kge:hasNSMethod <ns-method/relation-aware-anchor-enhancement> .
+<configuration/raakgc/165> ns4kge:result "0.3597"^^xsd:decimal .
+
+<configuration/raakgc/166> rdf:type ns4kge:Configuration .
+<configuration/raakgc/166> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/166> ns4kge:hasDataset <dataset/wn18rr-v4> .
+<configuration/raakgc/166> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/raakgc/166> ns4kge:hasKGEModel <kge-model/raa-kgc> .
+<configuration/raakgc/166> ns4kge:hasNSMethod <ns-method/relation-aware-anchor-enhancement> .
+<configuration/raakgc/166> ns4kge:result "0.5979"^^xsd:decimal .
+
+<configuration/raakgc/167> rdf:type ns4kge:Configuration .
+<configuration/raakgc/167> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/167> ns4kge:hasDataset <dataset/wn18rr-v4> .
+<configuration/raakgc/167> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/raakgc/167> ns4kge:hasKGEModel <kge-model/raa-kgc> .
+<configuration/raakgc/167> ns4kge:hasNSMethod <ns-method/relation-aware-anchor-enhancement> .
+<configuration/raakgc/167> ns4kge:result "0.7631"^^xsd:decimal .
+
+<configuration/raakgc/168> rdf:type ns4kge:Configuration .
+<configuration/raakgc/168> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/168> ns4kge:hasDataset <dataset/wn18rr-v4> .
+<configuration/raakgc/168> ns4kge:hasMetric  <metric/mrr> .
+<configuration/raakgc/168> ns4kge:hasKGEModel <kge-model/simkgc> .
+<configuration/raakgc/168> ns4kge:hasNSMethod <ns-method/in-batch-negative-sampling> .
+<configuration/raakgc/168> ns4kge:result "0.3133"^^xsd:decimal .
+
+<configuration/raakgc/169> rdf:type ns4kge:Configuration .
+<configuration/raakgc/169> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/169> ns4kge:hasDataset <dataset/wn18rr-v4> .
+<configuration/raakgc/169> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/raakgc/169> ns4kge:hasKGEModel <kge-model/simkgc> .
+<configuration/raakgc/169> ns4kge:hasNSMethod <ns-method/in-batch-negative-sampling> .
+<configuration/raakgc/169> ns4kge:result "0.1582"^^xsd:decimal .
+
+<configuration/raakgc/170> rdf:type ns4kge:Configuration .
+<configuration/raakgc/170> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/170> ns4kge:hasDataset <dataset/wn18rr-v4> .
+<configuration/raakgc/170> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/raakgc/170> ns4kge:hasKGEModel <kge-model/simkgc> .
+<configuration/raakgc/170> ns4kge:hasNSMethod <ns-method/in-batch-negative-sampling> .
+<configuration/raakgc/170> ns4kge:result "0.3954"^^xsd:decimal .
+
+<configuration/raakgc/171> rdf:type ns4kge:Configuration .
+<configuration/raakgc/171> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/171> ns4kge:hasDataset <dataset/wn18rr-v4> .
+<configuration/raakgc/171> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/raakgc/171> ns4kge:hasKGEModel <kge-model/simkgc> .
+<configuration/raakgc/171> ns4kge:hasNSMethod <ns-method/in-batch-negative-sampling> .
+<configuration/raakgc/171> ns4kge:result "0.6158"^^xsd:decimal .
+
+<configuration/raakgc/172> rdf:type ns4kge:Configuration .
+<configuration/raakgc/172> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/172> ns4kge:hasDataset <dataset/wn18rr-v4> .
+<configuration/raakgc/172> ns4kge:hasMetric  <metric/mrr> .
+<configuration/raakgc/172> ns4kge:hasKGEModel <kge-model/inskgc> .
+<configuration/raakgc/172> ns4kge:result "0.3864"^^xsd:decimal .
+
+<configuration/raakgc/173> rdf:type ns4kge:Configuration .
+<configuration/raakgc/173> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/173> ns4kge:hasDataset <dataset/wn18rr-v4> .
+<configuration/raakgc/173> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/raakgc/173> ns4kge:hasKGEModel <kge-model/inskgc> .
+<configuration/raakgc/173> ns4kge:result "0.2722"^^xsd:decimal .
+
+<configuration/raakgc/174> rdf:type ns4kge:Configuration .
+<configuration/raakgc/174> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/174> ns4kge:hasDataset <dataset/wn18rr-v4> .
+<configuration/raakgc/174> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/raakgc/174> ns4kge:hasKGEModel <kge-model/inskgc> .
+<configuration/raakgc/174> ns4kge:result "0.4458"^^xsd:decimal .
+
+<configuration/raakgc/175> rdf:type ns4kge:Configuration .
+<configuration/raakgc/175> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/175> ns4kge:hasDataset <dataset/wn18rr-v4> .
+<configuration/raakgc/175> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/raakgc/175> ns4kge:hasKGEModel <kge-model/inskgc> .
+<configuration/raakgc/175> ns4kge:result "0.5997"^^xsd:decimal .
+
+<configuration/raakgc/176> rdf:type ns4kge:Configuration .
+<configuration/raakgc/176> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/176> ns4kge:hasDataset <dataset/fb15k-237-v1> .
+<configuration/raakgc/176> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/raakgc/176> ns4kge:hasKGEModel <kge-model/raa-kgc> .
+<configuration/raakgc/176> ns4kge:hasNSMethod <ns-method/relation-aware-anchor-enhancement> .
+<configuration/raakgc/176> ns4kge:result "0.1658"^^xsd:decimal .
+
+<configuration/raakgc/177> rdf:type ns4kge:Configuration .
+<configuration/raakgc/177> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/177> ns4kge:hasDataset <dataset/fb15k-237-v1> .
+<configuration/raakgc/177> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/raakgc/177> ns4kge:hasKGEModel <kge-model/raa-kgc> .
+<configuration/raakgc/177> ns4kge:hasNSMethod <ns-method/relation-aware-anchor-enhancement> .
+<configuration/raakgc/177> ns4kge:result "0.3537"^^xsd:decimal .
+
+<configuration/raakgc/178> rdf:type ns4kge:Configuration .
+<configuration/raakgc/178> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/178> ns4kge:hasDataset <dataset/fb15k-237-v1> .
+<configuration/raakgc/178> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/raakgc/178> ns4kge:hasKGEModel <kge-model/simkgc> .
+<configuration/raakgc/178> ns4kge:hasNSMethod <ns-method/in-batch-negative-sampling> .
+<configuration/raakgc/178> ns4kge:result "0.1"^^xsd:decimal .
+
+<configuration/raakgc/179> rdf:type ns4kge:Configuration .
+<configuration/raakgc/179> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/179> ns4kge:hasDataset <dataset/fb15k-237-v1> .
+<configuration/raakgc/179> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/raakgc/179> ns4kge:hasKGEModel <kge-model/simkgc> .
+<configuration/raakgc/179> ns4kge:hasNSMethod <ns-method/in-batch-negative-sampling> .
+<configuration/raakgc/179> ns4kge:result "0.2537"^^xsd:decimal .
+
+<configuration/raakgc/180> rdf:type ns4kge:Configuration .
+<configuration/raakgc/180> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/180> ns4kge:hasDataset <dataset/fb15k-237-v1> .
+<configuration/raakgc/180> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/raakgc/180> ns4kge:hasKGEModel <kge-model/inskgc> .
+<configuration/raakgc/180> ns4kge:result "0.1195"^^xsd:decimal .
+
+<configuration/raakgc/181> rdf:type ns4kge:Configuration .
+<configuration/raakgc/181> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/181> ns4kge:hasDataset <dataset/fb15k-237-v1> .
+<configuration/raakgc/181> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/raakgc/181> ns4kge:hasKGEModel <kge-model/inskgc> .
+<configuration/raakgc/181> ns4kge:result "0.2732"^^xsd:decimal .
+
+<configuration/raakgc/182> rdf:type ns4kge:Configuration .
+<configuration/raakgc/182> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/182> ns4kge:hasDataset <dataset/fb15k-237-v2> .
+<configuration/raakgc/182> ns4kge:hasMetric  <metric/mrr> .
+<configuration/raakgc/182> ns4kge:hasKGEModel <kge-model/raa-kgc> .
+<configuration/raakgc/182> ns4kge:hasNSMethod <ns-method/relation-aware-anchor-enhancement> .
+<configuration/raakgc/182> ns4kge:result "0.3364"^^xsd:decimal .
+
+<configuration/raakgc/183> rdf:type ns4kge:Configuration .
+<configuration/raakgc/183> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/183> ns4kge:hasDataset <dataset/fb15k-237-v2> .
+<configuration/raakgc/183> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/raakgc/183> ns4kge:hasKGEModel <kge-model/raa-kgc> .
+<configuration/raakgc/183> ns4kge:hasNSMethod <ns-method/relation-aware-anchor-enhancement> .
+<configuration/raakgc/183> ns4kge:result "0.2176"^^xsd:decimal .
+
+<configuration/raakgc/184> rdf:type ns4kge:Configuration .
+<configuration/raakgc/184> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/184> ns4kge:hasDataset <dataset/fb15k-237-v2> .
+<configuration/raakgc/184> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/raakgc/184> ns4kge:hasKGEModel <kge-model/raa-kgc> .
+<configuration/raakgc/184> ns4kge:hasNSMethod <ns-method/relation-aware-anchor-enhancement> .
+<configuration/raakgc/184> ns4kge:result "0.3797"^^xsd:decimal .
+
+<configuration/raakgc/185> rdf:type ns4kge:Configuration .
+<configuration/raakgc/185> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/185> ns4kge:hasDataset <dataset/fb15k-237-v2> .
+<configuration/raakgc/185> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/raakgc/185> ns4kge:hasKGEModel <kge-model/raa-kgc> .
+<configuration/raakgc/185> ns4kge:hasNSMethod <ns-method/relation-aware-anchor-enhancement> .
+<configuration/raakgc/185> ns4kge:result "0.5941"^^xsd:decimal .
+
+<configuration/raakgc/186> rdf:type ns4kge:Configuration .
+<configuration/raakgc/186> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/186> ns4kge:hasDataset <dataset/fb15k-237-v2> .
+<configuration/raakgc/186> ns4kge:hasMetric  <metric/mrr> .
+<configuration/raakgc/186> ns4kge:hasKGEModel <kge-model/simkgc> .
+<configuration/raakgc/186> ns4kge:hasNSMethod <ns-method/in-batch-negative-sampling> .
+<configuration/raakgc/186> ns4kge:result "0.2177"^^xsd:decimal .
+
+<configuration/raakgc/187> rdf:type ns4kge:Configuration .
+<configuration/raakgc/187> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/187> ns4kge:hasDataset <dataset/fb15k-237-v2> .
+<configuration/raakgc/187> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/raakgc/187> ns4kge:hasKGEModel <kge-model/simkgc> .
+<configuration/raakgc/187> ns4kge:hasNSMethod <ns-method/in-batch-negative-sampling> .
+<configuration/raakgc/187> ns4kge:result "0.115"^^xsd:decimal .
+
+<configuration/raakgc/188> rdf:type ns4kge:Configuration .
+<configuration/raakgc/188> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/188> ns4kge:hasDataset <dataset/fb15k-237-v2> .
+<configuration/raakgc/188> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/raakgc/188> ns4kge:hasKGEModel <kge-model/simkgc> .
+<configuration/raakgc/188> ns4kge:hasNSMethod <ns-method/in-batch-negative-sampling> .
+<configuration/raakgc/188> ns4kge:result "0.2479"^^xsd:decimal .
+
+<configuration/raakgc/189> rdf:type ns4kge:Configuration .
+<configuration/raakgc/189> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/189> ns4kge:hasDataset <dataset/fb15k-237-v2> .
+<configuration/raakgc/189> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/raakgc/189> ns4kge:hasKGEModel <kge-model/simkgc> .
+<configuration/raakgc/189> ns4kge:hasNSMethod <ns-method/in-batch-negative-sampling> .
+<configuration/raakgc/189> ns4kge:result "0.4184"^^xsd:decimal .
+
+<configuration/raakgc/190> rdf:type ns4kge:Configuration .
+<configuration/raakgc/190> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/190> ns4kge:hasDataset <dataset/fb15k-237-v2> .
+<configuration/raakgc/190> ns4kge:hasMetric  <metric/mrr> .
+<configuration/raakgc/190> ns4kge:hasKGEModel <kge-model/inskgc> .
+<configuration/raakgc/190> ns4kge:result "0.2213"^^xsd:decimal .
+
+<configuration/raakgc/191> rdf:type ns4kge:Configuration .
+<configuration/raakgc/191> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/191> ns4kge:hasDataset <dataset/fb15k-237-v2> .
+<configuration/raakgc/191> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/raakgc/191> ns4kge:hasKGEModel <kge-model/inskgc> .
+<configuration/raakgc/191> ns4kge:result "0.1172"^^xsd:decimal .
+
+<configuration/raakgc/192> rdf:type ns4kge:Configuration .
+<configuration/raakgc/192> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/192> ns4kge:hasDataset <dataset/fb15k-237-v2> .
+<configuration/raakgc/192> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/raakgc/192> ns4kge:hasKGEModel <kge-model/inskgc> .
+<configuration/raakgc/192> ns4kge:result "0.2458"^^xsd:decimal .
+
+<configuration/raakgc/193> rdf:type ns4kge:Configuration .
+<configuration/raakgc/193> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/193> ns4kge:hasDataset <dataset/fb15k-237-v2> .
+<configuration/raakgc/193> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/raakgc/193> ns4kge:hasKGEModel <kge-model/inskgc> .
+<configuration/raakgc/193> ns4kge:result "0.4425"^^xsd:decimal .
+
+<configuration/raakgc/194> rdf:type ns4kge:Configuration .
+<configuration/raakgc/194> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/194> ns4kge:hasDataset <dataset/fb15k-237-v3> .
+<configuration/raakgc/194> ns4kge:hasMetric  <metric/mrr> .
+<configuration/raakgc/194> ns4kge:hasKGEModel <kge-model/raa-kgc> .
+<configuration/raakgc/194> ns4kge:hasNSMethod <ns-method/relation-aware-anchor-enhancement> .
+<configuration/raakgc/194> ns4kge:result "0.2663"^^xsd:decimal .
+
+<configuration/raakgc/195> rdf:type ns4kge:Configuration .
+<configuration/raakgc/195> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/195> ns4kge:hasDataset <dataset/fb15k-237-v3> .
+<configuration/raakgc/195> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/raakgc/195> ns4kge:hasKGEModel <kge-model/raa-kgc> .
+<configuration/raakgc/195> ns4kge:hasNSMethod <ns-method/relation-aware-anchor-enhancement> .
+<configuration/raakgc/195> ns4kge:result "0.163"^^xsd:decimal .
+
+<configuration/raakgc/196> rdf:type ns4kge:Configuration .
+<configuration/raakgc/196> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/196> ns4kge:hasDataset <dataset/fb15k-237-v3> .
+<configuration/raakgc/196> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/raakgc/196> ns4kge:hasKGEModel <kge-model/raa-kgc> .
+<configuration/raakgc/196> ns4kge:hasNSMethod <ns-method/relation-aware-anchor-enhancement> .
+<configuration/raakgc/196> ns4kge:result "0.3081"^^xsd:decimal .
+
+<configuration/raakgc/197> rdf:type ns4kge:Configuration .
+<configuration/raakgc/197> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/197> ns4kge:hasDataset <dataset/fb15k-237-v3> .
+<configuration/raakgc/197> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/raakgc/197> ns4kge:hasKGEModel <kge-model/raa-kgc> .
+<configuration/raakgc/197> ns4kge:hasNSMethod <ns-method/relation-aware-anchor-enhancement> .
+<configuration/raakgc/197> ns4kge:result "0.463"^^xsd:decimal .
+
+<configuration/raakgc/198> rdf:type ns4kge:Configuration .
+<configuration/raakgc/198> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/198> ns4kge:hasDataset <dataset/fb15k-237-v3> .
+<configuration/raakgc/198> ns4kge:hasMetric  <metric/mrr> .
+<configuration/raakgc/198> ns4kge:hasKGEModel <kge-model/simkgc> .
+<configuration/raakgc/198> ns4kge:hasNSMethod <ns-method/in-batch-negative-sampling> .
+<configuration/raakgc/198> ns4kge:result "0.1892"^^xsd:decimal .
+
+<configuration/raakgc/199> rdf:type ns4kge:Configuration .
+<configuration/raakgc/199> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/199> ns4kge:hasDataset <dataset/fb15k-237-v3> .
+<configuration/raakgc/199> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/raakgc/199> ns4kge:hasKGEModel <kge-model/simkgc> .
+<configuration/raakgc/199> ns4kge:hasNSMethod <ns-method/in-batch-negative-sampling> .
+<configuration/raakgc/199> ns4kge:result "0.0994"^^xsd:decimal .
+
+<configuration/raakgc/200> rdf:type ns4kge:Configuration .
+<configuration/raakgc/200> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/200> ns4kge:hasDataset <dataset/fb15k-237-v3> .
+<configuration/raakgc/200> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/raakgc/200> ns4kge:hasKGEModel <kge-model/simkgc> .
+<configuration/raakgc/200> ns4kge:hasNSMethod <ns-method/in-batch-negative-sampling> .
+<configuration/raakgc/200> ns4kge:result "0.2057"^^xsd:decimal .
+
+<configuration/raakgc/201> rdf:type ns4kge:Configuration .
+<configuration/raakgc/201> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/201> ns4kge:hasDataset <dataset/fb15k-237-v3> .
+<configuration/raakgc/201> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/raakgc/201> ns4kge:hasKGEModel <kge-model/simkgc> .
+<configuration/raakgc/201> ns4kge:hasNSMethod <ns-method/in-batch-negative-sampling> .
+<configuration/raakgc/201> ns4kge:result "0.3624"^^xsd:decimal .
+
+<configuration/raakgc/202> rdf:type ns4kge:Configuration .
+<configuration/raakgc/202> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/202> ns4kge:hasDataset <dataset/fb15k-237-v3> .
+<configuration/raakgc/202> ns4kge:hasMetric  <metric/mrr> .
+<configuration/raakgc/202> ns4kge:hasKGEModel <kge-model/inskgc> .
+<configuration/raakgc/202> ns4kge:result "0.1822"^^xsd:decimal .
+
+<configuration/raakgc/203> rdf:type ns4kge:Configuration .
+<configuration/raakgc/203> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/203> ns4kge:hasDataset <dataset/fb15k-237-v3> .
+<configuration/raakgc/203> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/raakgc/203> ns4kge:hasKGEModel <kge-model/inskgc> .
+<configuration/raakgc/203> ns4kge:result "0.0862"^^xsd:decimal .
+
+<configuration/raakgc/204> rdf:type ns4kge:Configuration .
+<configuration/raakgc/204> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/204> ns4kge:hasDataset <dataset/fb15k-237-v3> .
+<configuration/raakgc/204> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/raakgc/204> ns4kge:hasKGEModel <kge-model/inskgc> .
+<configuration/raakgc/204> ns4kge:result "0.1977"^^xsd:decimal .
+
+<configuration/raakgc/205> rdf:type ns4kge:Configuration .
+<configuration/raakgc/205> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/205> ns4kge:hasDataset <dataset/fb15k-237-v3> .
+<configuration/raakgc/205> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/raakgc/205> ns4kge:hasKGEModel <kge-model/inskgc> .
+<configuration/raakgc/205> ns4kge:result "0.3873"^^xsd:decimal .
+
+<configuration/raakgc/206> rdf:type ns4kge:Configuration .
+<configuration/raakgc/206> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/206> ns4kge:hasDataset <dataset/fb15k-237-v4> .
+<configuration/raakgc/206> ns4kge:hasMetric  <metric/mrr> .
+<configuration/raakgc/206> ns4kge:hasKGEModel <kge-model/raa-kgc> .
+<configuration/raakgc/206> ns4kge:hasNSMethod <ns-method/relation-aware-anchor-enhancement> .
+<configuration/raakgc/206> ns4kge:result "0.2649"^^xsd:decimal .
+
+<configuration/raakgc/207> rdf:type ns4kge:Configuration .
+<configuration/raakgc/207> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/207> ns4kge:hasDataset <dataset/fb15k-237-v4> .
+<configuration/raakgc/207> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/raakgc/207> ns4kge:hasKGEModel <kge-model/raa-kgc> .
+<configuration/raakgc/207> ns4kge:hasNSMethod <ns-method/relation-aware-anchor-enhancement> .
+<configuration/raakgc/207> ns4kge:result "0.1619"^^xsd:decimal .
+
+<configuration/raakgc/208> rdf:type ns4kge:Configuration .
+<configuration/raakgc/208> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/208> ns4kge:hasDataset <dataset/fb15k-237-v4> .
+<configuration/raakgc/208> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/raakgc/208> ns4kge:hasKGEModel <kge-model/raa-kgc> .
+<configuration/raakgc/208> ns4kge:hasNSMethod <ns-method/relation-aware-anchor-enhancement> .
+<configuration/raakgc/208> ns4kge:result "0.2956"^^xsd:decimal .
+
+<configuration/raakgc/209> rdf:type ns4kge:Configuration .
+<configuration/raakgc/209> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/209> ns4kge:hasDataset <dataset/fb15k-237-v4> .
+<configuration/raakgc/209> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/raakgc/209> ns4kge:hasKGEModel <kge-model/raa-kgc> .
+<configuration/raakgc/209> ns4kge:hasNSMethod <ns-method/relation-aware-anchor-enhancement> .
+<configuration/raakgc/209> ns4kge:result "0.487"^^xsd:decimal .
+
+<configuration/raakgc/210> rdf:type ns4kge:Configuration .
+<configuration/raakgc/210> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/210> ns4kge:hasDataset <dataset/fb15k-237-v4> .
+<configuration/raakgc/210> ns4kge:hasMetric  <metric/mrr> .
+<configuration/raakgc/210> ns4kge:hasKGEModel <kge-model/simkgc> .
+<configuration/raakgc/210> ns4kge:hasNSMethod <ns-method/in-batch-negative-sampling> .
+<configuration/raakgc/210> ns4kge:result "0.1982"^^xsd:decimal .
+
+<configuration/raakgc/211> rdf:type ns4kge:Configuration .
+<configuration/raakgc/211> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/211> ns4kge:hasDataset <dataset/fb15k-237-v4> .
+<configuration/raakgc/211> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/raakgc/211> ns4kge:hasKGEModel <kge-model/simkgc> .
+<configuration/raakgc/211> ns4kge:hasNSMethod <ns-method/in-batch-negative-sampling> .
+<configuration/raakgc/211> ns4kge:result "0.113"^^xsd:decimal .
+
+<configuration/raakgc/212> rdf:type ns4kge:Configuration .
+<configuration/raakgc/212> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/212> ns4kge:hasDataset <dataset/fb15k-237-v4> .
+<configuration/raakgc/212> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/raakgc/212> ns4kge:hasKGEModel <kge-model/simkgc> .
+<configuration/raakgc/212> ns4kge:hasNSMethod <ns-method/in-batch-negative-sampling> .
+<configuration/raakgc/212> ns4kge:result "0.2092"^^xsd:decimal .
+
+<configuration/raakgc/213> rdf:type ns4kge:Configuration .
+<configuration/raakgc/213> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/213> ns4kge:hasDataset <dataset/fb15k-237-v4> .
+<configuration/raakgc/213> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/raakgc/213> ns4kge:hasKGEModel <kge-model/simkgc> .
+<configuration/raakgc/213> ns4kge:hasNSMethod <ns-method/in-batch-negative-sampling> .
+<configuration/raakgc/213> ns4kge:result "0.3764"^^xsd:decimal .
+
+<configuration/raakgc/214> rdf:type ns4kge:Configuration .
+<configuration/raakgc/214> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/214> ns4kge:hasDataset <dataset/fb15k-237-v4> .
+<configuration/raakgc/214> ns4kge:hasMetric  <metric/mrr> .
+<configuration/raakgc/214> ns4kge:hasKGEModel <kge-model/inskgc> .
+<configuration/raakgc/214> ns4kge:result "0.2001"^^xsd:decimal .
+
+<configuration/raakgc/215> rdf:type ns4kge:Configuration .
+<configuration/raakgc/215> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/215> ns4kge:hasDataset <dataset/fb15k-237-v4> .
+<configuration/raakgc/215> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/raakgc/215> ns4kge:hasKGEModel <kge-model/inskgc> .
+<configuration/raakgc/215> ns4kge:result "0.1036"^^xsd:decimal .
+
+<configuration/raakgc/216> rdf:type ns4kge:Configuration .
+<configuration/raakgc/216> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/216> ns4kge:hasDataset <dataset/fb15k-237-v4> .
+<configuration/raakgc/216> ns4kge:hasMetric  <metric/hits-3> .
+<configuration/raakgc/216> ns4kge:hasKGEModel <kge-model/inskgc> .
+<configuration/raakgc/216> ns4kge:result "0.2328"^^xsd:decimal .
+
+<configuration/raakgc/217> rdf:type ns4kge:Configuration .
+<configuration/raakgc/217> ns4kge:hasTask    <task/link-prediction> .
+<configuration/raakgc/217> ns4kge:hasDataset <dataset/fb15k-237-v4> .
+<configuration/raakgc/217> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/raakgc/217> ns4kge:hasKGEModel <kge-model/inskgc> .
+<configuration/raakgc/217> ns4kge:result "0.3992"^^xsd:decimal .

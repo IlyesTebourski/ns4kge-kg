@@ -1,0 +1,43 @@
+{
+  "Article": {
+    "title": "Unified Interpretation of Smoothing Methods for Negative Sampling Loss Functions in Knowledge Graph Embedding",
+    "date": "2024"
+  },
+  "proposedNSMethod": "Triplet Adaptive Negative Sampling",
+  "proposedKGEModel": "",
+  "mentionedNSMethods": [
+    "Self-Adversarial Negative Sampling",
+    "Uniform Negative Sampling",
+    "Base subsampling",
+    "Frequency-based subsampling",
+    "Unique-based subsampling"
+  ],
+  "mentionedKGEModels": [
+    "TransE",
+    "DistMult",
+    "ComplEx",
+    "RotatE",
+    "HAKE",
+    "HousE",
+    "KEPLER",
+    "SimKGC",
+    "KGT5",
+    "GenKGC",
+    "ELECTRA",
+    "BERT",
+    "word2vec"
+  ],
+  "Experimentation": {
+    "Hardware": [],
+    "TrainingProtocol": {
+      "LossFunction": [
+        "Negative Sampling loss",
+        "Self-Adversarial Negative Sampling loss",
+        "Triplet Adaptive Negative Sampling loss"
+      ],
+      "Optimizer": [],
+      "learningRate": null,
+      "nsRatio": null
+    }
+  }
+}

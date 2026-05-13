@@ -1,0 +1,469 @@
+{
+  "Article": {
+    "title": "Type-Constrained Representation Learning in Knowledge Graphs",
+    "date": "2015"
+  },
+  "proposedNSMethod": "Type-Constrained Negative Sampling",
+  "proposedKGEModel": "",
+  "mentionedNSMethods": [
+    "Local Closed-World Assumption"
+  ],
+  "mentionedKGEModels": [
+    "mwNN",
+    "TransH",
+    "Neural Tensor Network",
+    "TransE",
+    "TransR",
+    "RESCAL"
+  ],
+  "Experimentation": {
+    "Hardware": [],
+    "TrainingProtocol": {
+      "LossFunction": [
+        "regularized least-squares",
+        "max-margin-based ranking loss",
+        "Bernoulli cross-entropy loss"
+      ],
+      "Optimizer": [
+        "SGD",
+        "ALS"
+      ],
+      "learningRate": null,
+      "nsRatio": 5.0
+    },
+    "Configurations": [
+      {
+        "Task": "Link Prediction",
+        "Dataset": "Freebase-150k",
+        "Metric": "AUPRC",
+        "KGEModel": "RESCAL",
+        "NSMethod": "Unknown",
+        "result": 0.514
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "Freebase-150k",
+        "Metric": "AUPRC",
+        "KGEModel": "RESCAL",
+        "NSMethod": "Type-Constrained Negative Sampling",
+        "result": 0.654
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "Freebase-150k",
+        "Metric": "AUPRC",
+        "KGEModel": "RESCAL",
+        "NSMethod": "Local Closed-World Assumption",
+        "result": 0.699
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "Freebase-150k",
+        "Metric": "AUROC",
+        "KGEModel": "RESCAL",
+        "NSMethod": "Unknown",
+        "result": 0.753
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "Freebase-150k",
+        "Metric": "AUROC",
+        "KGEModel": "RESCAL",
+        "NSMethod": "Type-Constrained Negative Sampling",
+        "result": 0.877
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "Freebase-150k",
+        "Metric": "AUROC",
+        "KGEModel": "RESCAL",
+        "NSMethod": "Local Closed-World Assumption",
+        "result": 0.896
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "DBpedia-Music",
+        "Metric": "AUPRC",
+        "KGEModel": "RESCAL",
+        "NSMethod": "Unknown",
+        "result": 0.416
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "DBpedia-Music",
+        "Metric": "AUPRC",
+        "KGEModel": "RESCAL",
+        "NSMethod": "Type-Constrained Negative Sampling",
+        "result": 0.545
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "DBpedia-Music",
+        "Metric": "AUPRC",
+        "KGEModel": "RESCAL",
+        "NSMethod": "Local Closed-World Assumption",
+        "result": 0.571
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "DBpedia-Music",
+        "Metric": "AUROC",
+        "KGEModel": "RESCAL",
+        "NSMethod": "Unknown",
+        "result": 0.653
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "DBpedia-Music",
+        "Metric": "AUROC",
+        "KGEModel": "RESCAL",
+        "NSMethod": "Type-Constrained Negative Sampling",
+        "result": 0.755
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "DBpedia-Music",
+        "Metric": "AUROC",
+        "KGEModel": "RESCAL",
+        "NSMethod": "Local Closed-World Assumption",
+        "result": 0.8
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "YAGOc-195k",
+        "Metric": "AUPRC",
+        "KGEModel": "RESCAL",
+        "NSMethod": "Unknown",
+        "result": 0.721
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "YAGOc-195k",
+        "Metric": "AUPRC",
+        "KGEModel": "RESCAL",
+        "NSMethod": "Type-Constrained Negative Sampling",
+        "result": 0.739
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "YAGOc-195k",
+        "Metric": "AUPRC",
+        "KGEModel": "RESCAL",
+        "NSMethod": "Local Closed-World Assumption",
+        "result": 0.68
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "YAGOc-195k",
+        "Metric": "AUROC",
+        "KGEModel": "RESCAL",
+        "NSMethod": "Unknown",
+        "result": 0.8
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "YAGOc-195k",
+        "Metric": "AUROC",
+        "KGEModel": "RESCAL",
+        "NSMethod": "Type-Constrained Negative Sampling",
+        "result": 0.833
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "YAGOc-195k",
+        "Metric": "AUROC",
+        "KGEModel": "RESCAL",
+        "NSMethod": "Local Closed-World Assumption",
+        "result": 0.849
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "Freebase-150k",
+        "Metric": "AUPRC",
+        "KGEModel": "TransE",
+        "NSMethod": "Unknown",
+        "result": 0.743
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "Freebase-150k",
+        "Metric": "AUPRC",
+        "KGEModel": "TransE",
+        "NSMethod": "Type-Constrained Negative Sampling",
+        "result": 0.808
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "Freebase-150k",
+        "Metric": "AUPRC",
+        "KGEModel": "TransE",
+        "NSMethod": "Local Closed-World Assumption",
+        "result": 0.831
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "Freebase-150k",
+        "Metric": "AUROC",
+        "KGEModel": "TransE",
+        "NSMethod": "Unknown",
+        "result": 0.892
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "Freebase-150k",
+        "Metric": "AUROC",
+        "KGEModel": "TransE",
+        "NSMethod": "Type-Constrained Negative Sampling",
+        "result": 0.918
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "Freebase-150k",
+        "Metric": "AUROC",
+        "KGEModel": "TransE",
+        "NSMethod": "Local Closed-World Assumption",
+        "result": 0.932
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "DBpedia-Music",
+        "Metric": "AUPRC",
+        "KGEModel": "TransE",
+        "NSMethod": "Unknown",
+        "result": 0.748
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "DBpedia-Music",
+        "Metric": "AUPRC",
+        "KGEModel": "TransE",
+        "NSMethod": "Type-Constrained Negative Sampling",
+        "result": 0.826
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "DBpedia-Music",
+        "Metric": "AUPRC",
+        "KGEModel": "TransE",
+        "NSMethod": "Local Closed-World Assumption",
+        "result": 0.848
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "DBpedia-Music",
+        "Metric": "AUROC",
+        "KGEModel": "TransE",
+        "NSMethod": "Unknown",
+        "result": 0.911
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "DBpedia-Music",
+        "Metric": "AUROC",
+        "KGEModel": "TransE",
+        "NSMethod": "Type-Constrained Negative Sampling",
+        "result": 0.942
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "DBpedia-Music",
+        "Metric": "AUROC",
+        "KGEModel": "TransE",
+        "NSMethod": "Local Closed-World Assumption",
+        "result": 0.953
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "YAGOc-195k",
+        "Metric": "AUPRC",
+        "KGEModel": "TransE",
+        "NSMethod": "Unknown",
+        "result": 0.849
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "YAGOc-195k",
+        "Metric": "AUPRC",
+        "KGEModel": "TransE",
+        "NSMethod": "Type-Constrained Negative Sampling",
+        "result": 0.896
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "YAGOc-195k",
+        "Metric": "AUPRC",
+        "KGEModel": "TransE",
+        "NSMethod": "Local Closed-World Assumption",
+        "result": 0.872
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "YAGOc-195k",
+        "Metric": "AUROC",
+        "KGEModel": "TransE",
+        "NSMethod": "Unknown",
+        "result": 0.96
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "YAGOc-195k",
+        "Metric": "AUROC",
+        "KGEModel": "TransE",
+        "NSMethod": "Type-Constrained Negative Sampling",
+        "result": 0.974
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "YAGOc-195k",
+        "Metric": "AUROC",
+        "KGEModel": "TransE",
+        "NSMethod": "Local Closed-World Assumption",
+        "result": 0.962
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "Freebase-150k",
+        "Metric": "AUPRC",
+        "KGEModel": "mwNN",
+        "NSMethod": "Unknown",
+        "result": 0.512
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "Freebase-150k",
+        "Metric": "AUPRC",
+        "KGEModel": "mwNN",
+        "NSMethod": "Type-Constrained Negative Sampling",
+        "result": 0.837
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "Freebase-150k",
+        "Metric": "AUPRC",
+        "KGEModel": "mwNN",
+        "NSMethod": "Local Closed-World Assumption",
+        "result": 0.776
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "Freebase-150k",
+        "Metric": "AUROC",
+        "KGEModel": "mwNN",
+        "NSMethod": "Unknown",
+        "result": 0.879
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "Freebase-150k",
+        "Metric": "AUROC",
+        "KGEModel": "mwNN",
+        "NSMethod": "Type-Constrained Negative Sampling",
+        "result": 0.967
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "Freebase-150k",
+        "Metric": "AUROC",
+        "KGEModel": "mwNN",
+        "NSMethod": "Local Closed-World Assumption",
+        "result": 0.956
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "DBpedia-Music",
+        "Metric": "AUPRC",
+        "KGEModel": "mwNN",
+        "NSMethod": "Unknown",
+        "result": 0.538
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "DBpedia-Music",
+        "Metric": "AUPRC",
+        "KGEModel": "mwNN",
+        "NSMethod": "Type-Constrained Negative Sampling",
+        "result": 0.754
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "DBpedia-Music",
+        "Metric": "AUPRC",
+        "KGEModel": "mwNN",
+        "NSMethod": "Local Closed-World Assumption",
+        "result": 0.723
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "DBpedia-Music",
+        "Metric": "AUROC",
+        "KGEModel": "mwNN",
+        "NSMethod": "Unknown",
+        "result": 0.865
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "DBpedia-Music",
+        "Metric": "AUROC",
+        "KGEModel": "mwNN",
+        "NSMethod": "Type-Constrained Negative Sampling",
+        "result": 0.913
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "DBpedia-Music",
+        "Metric": "AUROC",
+        "KGEModel": "mwNN",
+        "NSMethod": "Local Closed-World Assumption",
+        "result": 0.9
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "YAGOc-195k",
+        "Metric": "AUPRC",
+        "KGEModel": "mwNN",
+        "NSMethod": "Unknown",
+        "result": 0.684
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "YAGOc-195k",
+        "Metric": "AUPRC",
+        "KGEModel": "mwNN",
+        "NSMethod": "Type-Constrained Negative Sampling",
+        "result": 0.84
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "YAGOc-195k",
+        "Metric": "AUPRC",
+        "KGEModel": "mwNN",
+        "NSMethod": "Local Closed-World Assumption",
+        "result": 0.836
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "YAGOc-195k",
+        "Metric": "AUROC",
+        "KGEModel": "mwNN",
+        "NSMethod": "Unknown",
+        "result": 0.957
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "YAGOc-195k",
+        "Metric": "AUROC",
+        "KGEModel": "mwNN",
+        "NSMethod": "Type-Constrained Negative Sampling",
+        "result": 0.96
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "YAGOc-195k",
+        "Metric": "AUROC",
+        "KGEModel": "mwNN",
+        "NSMethod": "Local Closed-World Assumption",
+        "result": 0.943
+      }
+    ]
+  }
+}

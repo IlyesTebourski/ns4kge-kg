@@ -1,0 +1,868 @@
+{
+  "Configurations": [
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Nations",
+      "Metric": "MR",
+      "KGEModel": "TransE",
+      "NSMethod": "Random Negative Sampling",
+      "result": 5
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Nations",
+      "Metric": "MR",
+      "KGEModel": "TransE",
+      "NSMethod": "Distributional Negative Sampling",
+      "result": 5
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Nations",
+      "Metric": "MR",
+      "KGEModel": "TransE",
+      "NSMethod": "Affinity Dependent Negative Sampling",
+      "result": 4
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Nations",
+      "Metric": "MRR",
+      "KGEModel": "TransE",
+      "NSMethod": "Random Negative Sampling",
+      "result": 26.96
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Nations",
+      "Metric": "MRR",
+      "KGEModel": "TransE",
+      "NSMethod": "Distributional Negative Sampling",
+      "result": 33.79
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Nations",
+      "Metric": "MRR",
+      "KGEModel": "TransE",
+      "NSMethod": "Affinity Dependent Negative Sampling",
+      "result": 42.42
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Nations",
+      "Metric": "Hits@1",
+      "KGEModel": "TransE",
+      "NSMethod": "Random Negative Sampling",
+      "result": 0
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Nations",
+      "Metric": "Hits@1",
+      "KGEModel": "TransE",
+      "NSMethod": "Distributional Negative Sampling",
+      "result": 13.68
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Nations",
+      "Metric": "Hits@1",
+      "KGEModel": "TransE",
+      "NSMethod": "Affinity Dependent Negative Sampling",
+      "result": 20.15
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Nations",
+      "Metric": "Hits@3",
+      "KGEModel": "TransE",
+      "NSMethod": "Random Negative Sampling",
+      "result": 40.05
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Nations",
+      "Metric": "Hits@3",
+      "KGEModel": "TransE",
+      "NSMethod": "Distributional Negative Sampling",
+      "result": 37.31
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Nations",
+      "Metric": "Hits@3",
+      "KGEModel": "TransE",
+      "NSMethod": "Affinity Dependent Negative Sampling",
+      "result": 53.98
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Nations",
+      "Metric": "Hits@5",
+      "KGEModel": "TransE",
+      "NSMethod": "Random Negative Sampling",
+      "result": 60.95
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Nations",
+      "Metric": "Hits@5",
+      "KGEModel": "TransE",
+      "NSMethod": "Distributional Negative Sampling",
+      "result": 59.95
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Nations",
+      "Metric": "Hits@5",
+      "KGEModel": "TransE",
+      "NSMethod": "Affinity Dependent Negative Sampling",
+      "result": 73.88
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Nations",
+      "Metric": "Hits@10",
+      "KGEModel": "TransE",
+      "NSMethod": "Random Negative Sampling",
+      "result": 93.53
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Nations",
+      "Metric": "Hits@10",
+      "KGEModel": "TransE",
+      "NSMethod": "Distributional Negative Sampling",
+      "result": 94.53
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Nations",
+      "Metric": "Hits@10",
+      "KGEModel": "TransE",
+      "NSMethod": "Affinity Dependent Negative Sampling",
+      "result": 98.01
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Kinship",
+      "Metric": "MR",
+      "KGEModel": "TransE",
+      "NSMethod": "Random Negative Sampling",
+      "result": 9
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Kinship",
+      "Metric": "MR",
+      "KGEModel": "TransE",
+      "NSMethod": "Distributional Negative Sampling",
+      "result": 13
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Kinship",
+      "Metric": "MR",
+      "KGEModel": "TransE",
+      "NSMethod": "Affinity Dependent Negative Sampling",
+      "result": 8
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Kinship",
+      "Metric": "MRR",
+      "KGEModel": "TransE",
+      "NSMethod": "Random Negative Sampling",
+      "result": 25.66
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Kinship",
+      "Metric": "MRR",
+      "KGEModel": "TransE",
+      "NSMethod": "Distributional Negative Sampling",
+      "result": 24.89
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Kinship",
+      "Metric": "MRR",
+      "KGEModel": "TransE",
+      "NSMethod": "Affinity Dependent Negative Sampling",
+      "result": 28.47
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Kinship",
+      "Metric": "Hits@1",
+      "KGEModel": "TransE",
+      "NSMethod": "Random Negative Sampling",
+      "result": 0.009
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Kinship",
+      "Metric": "Hits@1",
+      "KGEModel": "TransE",
+      "NSMethod": "Distributional Negative Sampling",
+      "result": 0.03
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Kinship",
+      "Metric": "Hits@1",
+      "KGEModel": "TransE",
+      "NSMethod": "Affinity Dependent Negative Sampling",
+      "result": 0.28
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Kinship",
+      "Metric": "Hits@3",
+      "KGEModel": "TransE",
+      "NSMethod": "Random Negative Sampling",
+      "result": 39.8
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Kinship",
+      "Metric": "Hits@3",
+      "KGEModel": "TransE",
+      "NSMethod": "Distributional Negative Sampling",
+      "result": 38.13
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Kinship",
+      "Metric": "Hits@3",
+      "KGEModel": "TransE",
+      "NSMethod": "Affinity Dependent Negative Sampling",
+      "result": 47.77
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Kinship",
+      "Metric": "Hits@5",
+      "KGEModel": "TransE",
+      "NSMethod": "Random Negative Sampling",
+      "result": 56.28
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Kinship",
+      "Metric": "Hits@5",
+      "KGEModel": "TransE",
+      "NSMethod": "Distributional Negative Sampling",
+      "result": 49.3
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Kinship",
+      "Metric": "Hits@5",
+      "KGEModel": "TransE",
+      "NSMethod": "Affinity Dependent Negative Sampling",
+      "result": 62.38
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Kinship",
+      "Metric": "Hits@10",
+      "KGEModel": "TransE",
+      "NSMethod": "Random Negative Sampling",
+      "result": 76.44
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Kinship",
+      "Metric": "Hits@10",
+      "KGEModel": "TransE",
+      "NSMethod": "Distributional Negative Sampling",
+      "result": 64.2
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Kinship",
+      "Metric": "Hits@10",
+      "KGEModel": "TransE",
+      "NSMethod": "Affinity Dependent Negative Sampling",
+      "result": 78.91
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "UMLS",
+      "Metric": "MR",
+      "KGEModel": "TransE",
+      "NSMethod": "Random Negative Sampling",
+      "result": 3
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "UMLS",
+      "Metric": "MR",
+      "KGEModel": "TransE",
+      "NSMethod": "Distributional Negative Sampling",
+      "result": 3
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "UMLS",
+      "Metric": "MR",
+      "KGEModel": "TransE",
+      "NSMethod": "Affinity Dependent Negative Sampling",
+      "result": 2
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "UMLS",
+      "Metric": "MRR",
+      "KGEModel": "TransE",
+      "NSMethod": "Random Negative Sampling",
+      "result": 64.47
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "UMLS",
+      "Metric": "MRR",
+      "KGEModel": "TransE",
+      "NSMethod": "Distributional Negative Sampling",
+      "result": 72.9
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "UMLS",
+      "Metric": "MRR",
+      "KGEModel": "TransE",
+      "NSMethod": "Affinity Dependent Negative Sampling",
+      "result": 80.21
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "UMLS",
+      "Metric": "Hits@1",
+      "KGEModel": "TransE",
+      "NSMethod": "Random Negative Sampling",
+      "result": 39.86
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "UMLS",
+      "Metric": "Hits@1",
+      "KGEModel": "TransE",
+      "NSMethod": "Distributional Negative Sampling",
+      "result": 56.81
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "UMLS",
+      "Metric": "Hits@1",
+      "KGEModel": "TransE",
+      "NSMethod": "Affinity Dependent Negative Sampling",
+      "result": 64.45
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "UMLS",
+      "Metric": "Hits@3",
+      "KGEModel": "TransE",
+      "NSMethod": "Random Negative Sampling",
+      "result": 88.12
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "UMLS",
+      "Metric": "Hits@3",
+      "KGEModel": "TransE",
+      "NSMethod": "Distributional Negative Sampling",
+      "result": 86.76
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "UMLS",
+      "Metric": "Hits@3",
+      "KGEModel": "TransE",
+      "NSMethod": "Affinity Dependent Negative Sampling",
+      "result": 95.54
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "UMLS",
+      "Metric": "Hits@5",
+      "KGEModel": "TransE",
+      "NSMethod": "Random Negative Sampling",
+      "result": 93.95
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "UMLS",
+      "Metric": "Hits@5",
+      "KGEModel": "TransE",
+      "NSMethod": "Distributional Negative Sampling",
+      "result": 92.06
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "UMLS",
+      "Metric": "Hits@5",
+      "KGEModel": "TransE",
+      "NSMethod": "Affinity Dependent Negative Sampling",
+      "result": 97.05
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "UMLS",
+      "Metric": "Hits@10",
+      "KGEModel": "TransE",
+      "NSMethod": "Random Negative Sampling",
+      "result": 97.13
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "UMLS",
+      "Metric": "Hits@10",
+      "KGEModel": "TransE",
+      "NSMethod": "Distributional Negative Sampling",
+      "result": 96.44
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "UMLS",
+      "Metric": "Hits@10",
+      "KGEModel": "TransE",
+      "NSMethod": "Affinity Dependent Negative Sampling",
+      "result": 98.03
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Nations",
+      "Metric": "MR",
+      "KGEModel": "DistMult",
+      "NSMethod": "Random Negative Sampling",
+      "result": 3
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Nations",
+      "Metric": "MR",
+      "KGEModel": "DistMult",
+      "NSMethod": "Distributional Negative Sampling",
+      "result": 2
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Nations",
+      "Metric": "MR",
+      "KGEModel": "DistMult",
+      "NSMethod": "Affinity Dependent Negative Sampling",
+      "result": 2
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Nations",
+      "Metric": "MRR",
+      "KGEModel": "DistMult",
+      "NSMethod": "Random Negative Sampling",
+      "result": 65.34
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Nations",
+      "Metric": "MRR",
+      "KGEModel": "DistMult",
+      "NSMethod": "Distributional Negative Sampling",
+      "result": 82.32
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Nations",
+      "Metric": "MRR",
+      "KGEModel": "DistMult",
+      "NSMethod": "Affinity Dependent Negative Sampling",
+      "result": 79.48
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Nations",
+      "Metric": "Hits@1",
+      "KGEModel": "DistMult",
+      "NSMethod": "Random Negative Sampling",
+      "result": 49.5
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Nations",
+      "Metric": "Hits@1",
+      "KGEModel": "DistMult",
+      "NSMethod": "Distributional Negative Sampling",
+      "result": 73.63
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Nations",
+      "Metric": "Hits@1",
+      "KGEModel": "DistMult",
+      "NSMethod": "Affinity Dependent Negative Sampling",
+      "result": 68.91
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Nations",
+      "Metric": "Hits@3",
+      "KGEModel": "DistMult",
+      "NSMethod": "Random Negative Sampling",
+      "result": 76.12
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Nations",
+      "Metric": "Hits@3",
+      "KGEModel": "DistMult",
+      "NSMethod": "Distributional Negative Sampling",
+      "result": 88.06
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Nations",
+      "Metric": "Hits@3",
+      "KGEModel": "DistMult",
+      "NSMethod": "Affinity Dependent Negative Sampling",
+      "result": 86.32
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Nations",
+      "Metric": "Hits@5",
+      "KGEModel": "DistMult",
+      "NSMethod": "Random Negative Sampling",
+      "result": 88.31
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Nations",
+      "Metric": "Hits@5",
+      "KGEModel": "DistMult",
+      "NSMethod": "Distributional Negative Sampling",
+      "result": 94.53
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Nations",
+      "Metric": "Hits@5",
+      "KGEModel": "DistMult",
+      "NSMethod": "Affinity Dependent Negative Sampling",
+      "result": 93.78
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Nations",
+      "Metric": "Hits@10",
+      "KGEModel": "DistMult",
+      "NSMethod": "Random Negative Sampling",
+      "result": 99.52
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Nations",
+      "Metric": "Hits@10",
+      "KGEModel": "DistMult",
+      "NSMethod": "Distributional Negative Sampling",
+      "result": 99.75
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Nations",
+      "Metric": "Hits@10",
+      "KGEModel": "DistMult",
+      "NSMethod": "Affinity Dependent Negative Sampling",
+      "result": 100.0
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Kinship",
+      "Metric": "MR",
+      "KGEModel": "DistMult",
+      "NSMethod": "Random Negative Sampling",
+      "result": 6
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Kinship",
+      "Metric": "MR",
+      "KGEModel": "DistMult",
+      "NSMethod": "Distributional Negative Sampling",
+      "result": 5
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Kinship",
+      "Metric": "MR",
+      "KGEModel": "DistMult",
+      "NSMethod": "Affinity Dependent Negative Sampling",
+      "result": 5
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Kinship",
+      "Metric": "MRR",
+      "KGEModel": "DistMult",
+      "NSMethod": "Random Negative Sampling",
+      "result": 48.45
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Kinship",
+      "Metric": "MRR",
+      "KGEModel": "DistMult",
+      "NSMethod": "Distributional Negative Sampling",
+      "result": 57.19
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Kinship",
+      "Metric": "MRR",
+      "KGEModel": "DistMult",
+      "NSMethod": "Affinity Dependent Negative Sampling",
+      "result": 58.74
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Kinship",
+      "Metric": "Hits@1",
+      "KGEModel": "DistMult",
+      "NSMethod": "Random Negative Sampling",
+      "result": 33.43
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Kinship",
+      "Metric": "Hits@1",
+      "KGEModel": "DistMult",
+      "NSMethod": "Distributional Negative Sampling",
+      "result": 44.88
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Kinship",
+      "Metric": "Hits@1",
+      "KGEModel": "DistMult",
+      "NSMethod": "Affinity Dependent Negative Sampling",
+      "result": 47.63
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Kinship",
+      "Metric": "Hits@3",
+      "KGEModel": "DistMult",
+      "NSMethod": "Random Negative Sampling",
+      "result": 54.24
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Kinship",
+      "Metric": "Hits@3",
+      "KGEModel": "DistMult",
+      "NSMethod": "Distributional Negative Sampling",
+      "result": 61.78
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Kinship",
+      "Metric": "Hits@3",
+      "KGEModel": "DistMult",
+      "NSMethod": "Affinity Dependent Negative Sampling",
+      "result": 61.87
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Kinship",
+      "Metric": "Hits@5",
+      "KGEModel": "DistMult",
+      "NSMethod": "Random Negative Sampling",
+      "result": 65.27
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Kinship",
+      "Metric": "Hits@5",
+      "KGEModel": "DistMult",
+      "NSMethod": "Distributional Negative Sampling",
+      "result": 71.09
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Kinship",
+      "Metric": "Hits@5",
+      "KGEModel": "DistMult",
+      "NSMethod": "Affinity Dependent Negative Sampling",
+      "result": 71.09
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Kinship",
+      "Metric": "Hits@10",
+      "KGEModel": "DistMult",
+      "NSMethod": "Random Negative Sampling",
+      "result": 85.38
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Kinship",
+      "Metric": "Hits@10",
+      "KGEModel": "DistMult",
+      "NSMethod": "Distributional Negative Sampling",
+      "result": 83.8
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Kinship",
+      "Metric": "Hits@10",
+      "KGEModel": "DistMult",
+      "NSMethod": "Affinity Dependent Negative Sampling",
+      "result": 85.94
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "UMLS",
+      "Metric": "MR",
+      "KGEModel": "DistMult",
+      "NSMethod": "Random Negative Sampling",
+      "result": 8
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "UMLS",
+      "Metric": "MR",
+      "KGEModel": "DistMult",
+      "NSMethod": "Distributional Negative Sampling",
+      "result": 5
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "UMLS",
+      "Metric": "MR",
+      "KGEModel": "DistMult",
+      "NSMethod": "Affinity Dependent Negative Sampling",
+      "result": 6
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "UMLS",
+      "Metric": "MRR",
+      "KGEModel": "DistMult",
+      "NSMethod": "Random Negative Sampling",
+      "result": 48.03
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "UMLS",
+      "Metric": "MRR",
+      "KGEModel": "DistMult",
+      "NSMethod": "Distributional Negative Sampling",
+      "result": 71.15
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "UMLS",
+      "Metric": "MRR",
+      "KGEModel": "DistMult",
+      "NSMethod": "Affinity Dependent Negative Sampling",
+      "result": 60.72
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "UMLS",
+      "Metric": "Hits@1",
+      "KGEModel": "DistMult",
+      "NSMethod": "Random Negative Sampling",
+      "result": 34.72
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "UMLS",
+      "Metric": "Hits@1",
+      "KGEModel": "DistMult",
+      "NSMethod": "Distributional Negative Sampling",
+      "result": 63.69
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "UMLS",
+      "Metric": "Hits@1",
+      "KGEModel": "DistMult",
+      "NSMethod": "Affinity Dependent Negative Sampling",
+      "result": 49.24
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "UMLS",
+      "Metric": "Hits@3",
+      "KGEModel": "DistMult",
+      "NSMethod": "Random Negative Sampling",
+      "result": 54.84
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "UMLS",
+      "Metric": "Hits@3",
+      "KGEModel": "DistMult",
+      "NSMethod": "Distributional Negative Sampling",
+      "result": 74.21
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "UMLS",
+      "Metric": "Hits@3",
+      "KGEModel": "DistMult",
+      "NSMethod": "Affinity Dependent Negative Sampling",
+      "result": 67.96
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "UMLS",
+      "Metric": "Hits@5",
+      "KGEModel": "DistMult",
+      "NSMethod": "Random Negative Sampling",
+      "result": 64.07
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "UMLS",
+      "Metric": "Hits@5",
+      "KGEModel": "DistMult",
+      "NSMethod": "Distributional Negative Sampling",
+      "result": 78.97
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "UMLS",
+      "Metric": "Hits@5",
+      "KGEModel": "DistMult",
+      "NSMethod": "Affinity Dependent Negative Sampling",
+      "result": 74.96
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "UMLS",
+      "Metric": "Hits@10",
+      "KGEModel": "DistMult",
+      "NSMethod": "Random Negative Sampling",
+      "result": 76.48
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "UMLS",
+      "Metric": "Hits@10",
+      "KGEModel": "DistMult",
+      "NSMethod": "Distributional Negative Sampling",
+      "result": 86.16
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "UMLS",
+      "Metric": "Hits@10",
+      "KGEModel": "DistMult",
+      "NSMethod": "Affinity Dependent Negative Sampling",
+      "result": 84.87
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "Article": {
+    "title": "NoiGAN: Noise Aware Knowledge Graph Embedding with GAN",
+    "date": "2020"
+  },
+  "proposedNSMethod": "NoiGAN",
+  "proposedKGEModel": "",
+  "mentionedNSMethods": [
+    "Random Negative Sampling"
+  ],
+  "mentionedKGEModels": [
+    "TransE",
+    "TransH",
+    "TransR",
+    "RESCAL",
+    "DistMult",
+    "ComplEx",
+    "RotatE",
+    "CKRL",
+    "KBGAN"
+  ],
+  "Experimentation": {
+    "Hardware": [],
+    "TrainingProtocol": {
+      "LossFunction": [
+        "negative sampling loss",
+        "cross-entropy loss"
+      ],
+      "Optimizer": [
+        "Adam"
+      ],
+      "learningRate": null,
+      "nsRatio": null
+    }
+  }
+}

@@ -1,0 +1,1122 @@
+{
+  "Article": {
+    "title": "Diversified and Adaptive Negative Sampling on Knowledge Graphs",
+    "date": "2025"
+  },
+  "proposedNSMethod": "Diversified and Adaptive Negative Sampling",
+  "proposedKGEModel": "",
+  "mentionedNSMethods": [
+    "CAKE",
+    "Markov Chain Monte Carlo Negative Sampling",
+    "IGAN",
+    "Popularity-weighted Negative Sampling",
+    "Random Negative Sampling",
+    "SMiLE",
+    "Self-adversarial Negative Sampling",
+    "KBGAN",
+    "NSCaching",
+    "HeGAN",
+    "Structure-Aware Negative Sampling",
+    "GNDN"
+  ],
+  "mentionedKGEModels": [
+    "ComplEx",
+    "TransE",
+    "DistMult",
+    "RGCN",
+    "RotatE"
+  ],
+  "Experimentation": {
+    "Hardware": [],
+    "TrainingProtocol": {
+      "LossFunction": [
+        "cross-entropy loss"
+      ],
+      "Optimizer": [],
+      "learningRate": 0.001,
+      "nsRatio": 20
+    },
+    "Configurations": [
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18RR",
+        "Metric": "MRR",
+        "KGEModel": "DistMult",
+        "NSMethod": "Diversified and Adaptive Negative Sampling",
+        "result": 0.381
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18RR",
+        "Metric": "Hits@1",
+        "KGEModel": "DistMult",
+        "NSMethod": "Diversified and Adaptive Negative Sampling",
+        "result": 0.352
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18RR",
+        "Metric": "NDCG@5",
+        "KGEModel": "DistMult",
+        "NSMethod": "Diversified and Adaptive Negative Sampling",
+        "result": 0.386
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18RR",
+        "Metric": "MRR",
+        "KGEModel": "DistMult",
+        "NSMethod": "Markov Chain Monte Carlo Negative Sampling",
+        "result": 0.376
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18RR",
+        "Metric": "Hits@1",
+        "KGEModel": "DistMult",
+        "NSMethod": "Random Negative Sampling",
+        "result": 0.343
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18RR",
+        "Metric": "NDCG@5",
+        "KGEModel": "DistMult",
+        "NSMethod": "Popularity-weighted Negative Sampling",
+        "result": 0.376
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18RR",
+        "Metric": "MRR",
+        "KGEModel": "DistMult",
+        "NSMethod": "Popularity-weighted Negative Sampling",
+        "result": 0.374
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18RR",
+        "Metric": "Hits@1",
+        "KGEModel": "DistMult",
+        "NSMethod": "Popularity-weighted Negative Sampling",
+        "result": 0.342
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18RR",
+        "Metric": "MRR",
+        "KGEModel": "DistMult",
+        "NSMethod": "Random Negative Sampling",
+        "result": 0.372
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18RR",
+        "Metric": "NDCG@5",
+        "KGEModel": "DistMult",
+        "NSMethod": "Random Negative Sampling",
+        "result": 0.369
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18RR",
+        "Metric": "MRR",
+        "KGEModel": "DistMult",
+        "NSMethod": "Self-adversarial Negative Sampling",
+        "result": 0.37
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18RR",
+        "Metric": "Hits@1",
+        "KGEModel": "DistMult",
+        "NSMethod": "Self-adversarial Negative Sampling",
+        "result": 0.332
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18RR",
+        "Metric": "NDCG@5",
+        "KGEModel": "DistMult",
+        "NSMethod": "Self-adversarial Negative Sampling",
+        "result": 0.373
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18RR",
+        "Metric": "Hits@1",
+        "KGEModel": "DistMult",
+        "NSMethod": "Markov Chain Monte Carlo Negative Sampling",
+        "result": 0.34
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18RR",
+        "Metric": "NDCG@5",
+        "KGEModel": "DistMult",
+        "NSMethod": "Markov Chain Monte Carlo Negative Sampling",
+        "result": 0.374
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "NELL-995",
+        "Metric": "MRR",
+        "KGEModel": "DistMult",
+        "NSMethod": "Self-adversarial Negative Sampling",
+        "result": 0.238
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "NELL-995",
+        "Metric": "Hits@1",
+        "KGEModel": "DistMult",
+        "NSMethod": "Diversified and Adaptive Negative Sampling",
+        "result": 0.162
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "NELL-995",
+        "Metric": "NDCG@5",
+        "KGEModel": "DistMult",
+        "NSMethod": "Self-adversarial Negative Sampling",
+        "result": 0.241
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "NELL-995",
+        "Metric": "MRR",
+        "KGEModel": "DistMult",
+        "NSMethod": "Diversified and Adaptive Negative Sampling",
+        "result": 0.227
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "NELL-995",
+        "Metric": "NDCG@5",
+        "KGEModel": "DistMult",
+        "NSMethod": "Diversified and Adaptive Negative Sampling",
+        "result": 0.22
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "NELL-995",
+        "Metric": "MRR",
+        "KGEModel": "DistMult",
+        "NSMethod": "Markov Chain Monte Carlo Negative Sampling",
+        "result": 0.226
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "NELL-995",
+        "Metric": "Hits@1",
+        "KGEModel": "DistMult",
+        "NSMethod": "Self-adversarial Negative Sampling",
+        "result": 0.156
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "NELL-995",
+        "Metric": "Hits@1",
+        "KGEModel": "DistMult",
+        "NSMethod": "Random Negative Sampling",
+        "result": 0.146
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "NELL-995",
+        "Metric": "NDCG@5",
+        "KGEModel": "DistMult",
+        "NSMethod": "Markov Chain Monte Carlo Negative Sampling",
+        "result": 0.221
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "NELL-995",
+        "Metric": "MRR",
+        "KGEModel": "DistMult",
+        "NSMethod": "Random Negative Sampling",
+        "result": 0.218
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "NELL-995",
+        "Metric": "NDCG@5",
+        "KGEModel": "DistMult",
+        "NSMethod": "Random Negative Sampling",
+        "result": 0.219
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "UMLS",
+        "Metric": "MRR",
+        "KGEModel": "DistMult",
+        "NSMethod": "Diversified and Adaptive Negative Sampling",
+        "result": 0.724
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "UMLS",
+        "Metric": "Hits@1",
+        "KGEModel": "DistMult",
+        "NSMethod": "Diversified and Adaptive Negative Sampling",
+        "result": 0.641
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "UMLS",
+        "Metric": "NDCG@5",
+        "KGEModel": "DistMult",
+        "NSMethod": "Self-adversarial Negative Sampling",
+        "result": 0.733
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "UMLS",
+        "Metric": "MRR",
+        "KGEModel": "DistMult",
+        "NSMethod": "Self-adversarial Negative Sampling",
+        "result": 0.717
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "UMLS",
+        "Metric": "Hits@1",
+        "KGEModel": "DistMult",
+        "NSMethod": "Self-adversarial Negative Sampling",
+        "result": 0.624
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "UMLS",
+        "Metric": "NDCG@5",
+        "KGEModel": "DistMult",
+        "NSMethod": "Diversified and Adaptive Negative Sampling",
+        "result": 0.725
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "UMLS",
+        "Metric": "MRR",
+        "KGEModel": "DistMult",
+        "NSMethod": "Markov Chain Monte Carlo Negative Sampling",
+        "result": 0.7
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "UMLS",
+        "Metric": "NDCG@5",
+        "KGEModel": "DistMult",
+        "NSMethod": "Markov Chain Monte Carlo Negative Sampling",
+        "result": 0.717
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "UMLS",
+        "Metric": "Hits@1",
+        "KGEModel": "DistMult",
+        "NSMethod": "Random Negative Sampling",
+        "result": 0.607
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18RR",
+        "Metric": "MRR",
+        "KGEModel": "RotatE",
+        "NSMethod": "Diversified and Adaptive Negative Sampling",
+        "result": 0.249
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18RR",
+        "Metric": "Hits@1",
+        "KGEModel": "RotatE",
+        "NSMethod": "Diversified and Adaptive Negative Sampling",
+        "result": 0.154
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18RR",
+        "Metric": "NDCG@5",
+        "KGEModel": "RotatE",
+        "NSMethod": "Markov Chain Monte Carlo Negative Sampling",
+        "result": 0.288
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18RR",
+        "Metric": "MRR",
+        "KGEModel": "RotatE",
+        "NSMethod": "Markov Chain Monte Carlo Negative Sampling",
+        "result": 0.242
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18RR",
+        "Metric": "Hits@1",
+        "KGEModel": "RotatE",
+        "NSMethod": "Markov Chain Monte Carlo Negative Sampling",
+        "result": 0.132
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18RR",
+        "Metric": "NDCG@5",
+        "KGEModel": "RotatE",
+        "NSMethod": "Diversified and Adaptive Negative Sampling",
+        "result": 0.274
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18RR",
+        "Metric": "MRR",
+        "KGEModel": "RotatE",
+        "NSMethod": "Popularity-weighted Negative Sampling",
+        "result": 0.235
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18RR",
+        "Metric": "NDCG@5",
+        "KGEModel": "RotatE",
+        "NSMethod": "Popularity-weighted Negative Sampling",
+        "result": 0.268
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18RR",
+        "Metric": "Hits@1",
+        "KGEModel": "RotatE",
+        "NSMethod": "Random Negative Sampling",
+        "result": 0.11
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "NELL-995",
+        "Metric": "MRR",
+        "KGEModel": "RotatE",
+        "NSMethod": "Diversified and Adaptive Negative Sampling",
+        "result": 0.195
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "NELL-995",
+        "Metric": "Hits@1",
+        "KGEModel": "RotatE",
+        "NSMethod": "Diversified and Adaptive Negative Sampling",
+        "result": 0.135
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "NELL-995",
+        "Metric": "NDCG@5",
+        "KGEModel": "RotatE",
+        "NSMethod": "Diversified and Adaptive Negative Sampling",
+        "result": 0.208
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "NELL-995",
+        "Metric": "MRR",
+        "KGEModel": "RotatE",
+        "NSMethod": "Markov Chain Monte Carlo Negative Sampling",
+        "result": 0.194
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "NELL-995",
+        "Metric": "Hits@1",
+        "KGEModel": "RotatE",
+        "NSMethod": "Popularity-weighted Negative Sampling",
+        "result": 0.131
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "NELL-995",
+        "Metric": "NDCG@5",
+        "KGEModel": "RotatE",
+        "NSMethod": "Popularity-weighted Negative Sampling",
+        "result": 0.2
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "NELL-995",
+        "Metric": "NDCG@5",
+        "KGEModel": "RotatE",
+        "NSMethod": "Markov Chain Monte Carlo Negative Sampling",
+        "result": 0.2
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "NELL-995",
+        "Metric": "MRR",
+        "KGEModel": "RotatE",
+        "NSMethod": "Self-adversarial Negative Sampling",
+        "result": 0.186
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "NELL-995",
+        "Metric": "Hits@1",
+        "KGEModel": "RotatE",
+        "NSMethod": "Markov Chain Monte Carlo Negative Sampling",
+        "result": 0.122
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "UMLS",
+        "Metric": "MRR",
+        "KGEModel": "RotatE",
+        "NSMethod": "Diversified and Adaptive Negative Sampling",
+        "result": 0.833
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "UMLS",
+        "Metric": "Hits@1",
+        "KGEModel": "RotatE",
+        "NSMethod": "Diversified and Adaptive Negative Sampling",
+        "result": 0.716
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "UMLS",
+        "Metric": "NDCG@5",
+        "KGEModel": "RotatE",
+        "NSMethod": "Markov Chain Monte Carlo Negative Sampling",
+        "result": 0.884
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "UMLS",
+        "Metric": "MRR",
+        "KGEModel": "RotatE",
+        "NSMethod": "Markov Chain Monte Carlo Negative Sampling",
+        "result": 0.822
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "UMLS",
+        "Metric": "NDCG@5",
+        "KGEModel": "RotatE",
+        "NSMethod": "Diversified and Adaptive Negative Sampling",
+        "result": 0.866
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "UMLS",
+        "Metric": "MRR",
+        "KGEModel": "RotatE",
+        "NSMethod": "Random Negative Sampling",
+        "result": 0.817
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "UMLS",
+        "Metric": "Hits@1",
+        "KGEModel": "RotatE",
+        "NSMethod": "Random Negative Sampling",
+        "result": 0.683
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "UMLS",
+        "Metric": "NDCG@5",
+        "KGEModel": "RotatE",
+        "NSMethod": "Random Negative Sampling",
+        "result": 0.855
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "UMLS",
+        "Metric": "Hits@1",
+        "KGEModel": "RotatE",
+        "NSMethod": "Markov Chain Monte Carlo Negative Sampling",
+        "result": 0.682
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18RR",
+        "Metric": "MRR",
+        "KGEModel": "ComplEx",
+        "NSMethod": "Diversified and Adaptive Negative Sampling",
+        "result": 0.404
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18RR",
+        "Metric": "Hits@1",
+        "KGEModel": "ComplEx",
+        "NSMethod": "Diversified and Adaptive Negative Sampling",
+        "result": 0.347
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18RR",
+        "Metric": "NDCG@5",
+        "KGEModel": "ComplEx",
+        "NSMethod": "Markov Chain Monte Carlo Negative Sampling",
+        "result": 0.394
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18RR",
+        "Metric": "MRR",
+        "KGEModel": "ComplEx",
+        "NSMethod": "Markov Chain Monte Carlo Negative Sampling",
+        "result": 0.392
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18RR",
+        "Metric": "NDCG@5",
+        "KGEModel": "ComplEx",
+        "NSMethod": "Diversified and Adaptive Negative Sampling",
+        "result": 0.392
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18RR",
+        "Metric": "MRR",
+        "KGEModel": "ComplEx",
+        "NSMethod": "Random Negative Sampling",
+        "result": 0.386
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18RR",
+        "Metric": "Hits@1",
+        "KGEModel": "ComplEx",
+        "NSMethod": "Random Negative Sampling",
+        "result": 0.346
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18RR",
+        "Metric": "NDCG@5",
+        "KGEModel": "ComplEx",
+        "NSMethod": "Random Negative Sampling",
+        "result": 0.39
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18RR",
+        "Metric": "Hits@1",
+        "KGEModel": "ComplEx",
+        "NSMethod": "Markov Chain Monte Carlo Negative Sampling",
+        "result": 0.343
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "NELL-995",
+        "Metric": "MRR",
+        "KGEModel": "ComplEx",
+        "NSMethod": "Diversified and Adaptive Negative Sampling",
+        "result": 0.257
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "NELL-995",
+        "Metric": "Hits@1",
+        "KGEModel": "ComplEx",
+        "NSMethod": "Diversified and Adaptive Negative Sampling",
+        "result": 0.186
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "NELL-995",
+        "Metric": "NDCG@5",
+        "KGEModel": "ComplEx",
+        "NSMethod": "Self-adversarial Negative Sampling",
+        "result": 0.277
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "NELL-995",
+        "Metric": "MRR",
+        "KGEModel": "ComplEx",
+        "NSMethod": "Self-adversarial Negative Sampling",
+        "result": 0.25
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "NELL-995",
+        "Metric": "Hits@1",
+        "KGEModel": "ComplEx",
+        "NSMethod": "Self-adversarial Negative Sampling",
+        "result": 0.181
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "NELL-995",
+        "Metric": "NDCG@5",
+        "KGEModel": "ComplEx",
+        "NSMethod": "Markov Chain Monte Carlo Negative Sampling",
+        "result": 0.264
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "NELL-995",
+        "Metric": "MRR",
+        "KGEModel": "ComplEx",
+        "NSMethod": "Markov Chain Monte Carlo Negative Sampling",
+        "result": 0.248
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "NELL-995",
+        "Metric": "NDCG@5",
+        "KGEModel": "ComplEx",
+        "NSMethod": "Diversified and Adaptive Negative Sampling",
+        "result": 0.255
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "NELL-995",
+        "Metric": "Hits@1",
+        "KGEModel": "ComplEx",
+        "NSMethod": "Popularity-weighted Negative Sampling",
+        "result": 0.179
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "UMLS",
+        "Metric": "MRR",
+        "KGEModel": "ComplEx",
+        "NSMethod": "Diversified and Adaptive Negative Sampling",
+        "result": 0.92
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "UMLS",
+        "Metric": "Hits@1",
+        "KGEModel": "ComplEx",
+        "NSMethod": "Diversified and Adaptive Negative Sampling",
+        "result": 0.857
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "UMLS",
+        "Metric": "NDCG@5",
+        "KGEModel": "ComplEx",
+        "NSMethod": "Diversified and Adaptive Negative Sampling",
+        "result": 0.927
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "UMLS",
+        "Metric": "MRR",
+        "KGEModel": "ComplEx",
+        "NSMethod": "Self-adversarial Negative Sampling",
+        "result": 0.908
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "UMLS",
+        "Metric": "Hits@1",
+        "KGEModel": "ComplEx",
+        "NSMethod": "Self-adversarial Negative Sampling",
+        "result": 0.844
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "UMLS",
+        "Metric": "NDCG@5",
+        "KGEModel": "ComplEx",
+        "NSMethod": "Self-adversarial Negative Sampling",
+        "result": 0.925
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "UMLS",
+        "Metric": "MRR",
+        "KGEModel": "ComplEx",
+        "NSMethod": "Random Negative Sampling",
+        "result": 0.898
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "UMLS",
+        "Metric": "Hits@1",
+        "KGEModel": "ComplEx",
+        "NSMethod": "Markov Chain Monte Carlo Negative Sampling",
+        "result": 0.835
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "UMLS",
+        "Metric": "NDCG@5",
+        "KGEModel": "ComplEx",
+        "NSMethod": "Random Negative Sampling",
+        "result": 0.92
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "UMLS",
+        "Metric": "Hits@1",
+        "KGEModel": "ComplEx",
+        "NSMethod": "Random Negative Sampling",
+        "result": 0.822
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18RR",
+        "Metric": "MRR",
+        "KGEModel": "DistMult",
+        "NSMethod": "Structure-Aware Negative Sampling",
+        "result": 0.349
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18RR",
+        "Metric": "Hits@1",
+        "KGEModel": "DistMult",
+        "NSMethod": "Structure-Aware Negative Sampling",
+        "result": 0.34
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18RR",
+        "Metric": "NDCG@5",
+        "KGEModel": "DistMult",
+        "NSMethod": "Structure-Aware Negative Sampling",
+        "result": 0.334
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18RR",
+        "Metric": "MRR",
+        "KGEModel": "DistMult",
+        "NSMethod": "NSCaching",
+        "result": 0.374
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18RR",
+        "Metric": "Hits@1",
+        "KGEModel": "DistMult",
+        "NSMethod": "NSCaching",
+        "result": 0.337
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18RR",
+        "Metric": "NDCG@5",
+        "KGEModel": "DistMult",
+        "NSMethod": "NSCaching",
+        "result": 0.374
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18RR",
+        "Metric": "MRR",
+        "KGEModel": "DistMult",
+        "NSMethod": "KBGAN",
+        "result": 0.172
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18RR",
+        "Metric": "Hits@1",
+        "KGEModel": "DistMult",
+        "NSMethod": "KBGAN",
+        "result": 0.07
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18RR",
+        "Metric": "NDCG@5",
+        "KGEModel": "DistMult",
+        "NSMethod": "KBGAN",
+        "result": 0.155
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18RR",
+        "Metric": "MRR",
+        "KGEModel": "DistMult",
+        "NSMethod": "CAKE",
+        "result": 0.353
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18RR",
+        "Metric": "Hits@1",
+        "KGEModel": "DistMult",
+        "NSMethod": "CAKE",
+        "result": 0.345
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18RR",
+        "Metric": "NDCG@5",
+        "KGEModel": "DistMult",
+        "NSMethod": "CAKE",
+        "result": 0.351
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18RR",
+        "Metric": "MRR",
+        "KGEModel": "DistMult",
+        "NSMethod": "SMiLE",
+        "result": 0.315
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18RR",
+        "Metric": "Hits@1",
+        "KGEModel": "DistMult",
+        "NSMethod": "SMiLE",
+        "result": 0.291
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18RR",
+        "Metric": "NDCG@5",
+        "KGEModel": "DistMult",
+        "NSMethod": "SMiLE",
+        "result": 0.294
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "NELL-995",
+        "Metric": "MRR",
+        "KGEModel": "DistMult",
+        "NSMethod": "Structure-Aware Negative Sampling",
+        "result": 0.135
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "NELL-995",
+        "Metric": "Hits@1",
+        "KGEModel": "DistMult",
+        "NSMethod": "Structure-Aware Negative Sampling",
+        "result": 0.109
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "NELL-995",
+        "Metric": "NDCG@5",
+        "KGEModel": "DistMult",
+        "NSMethod": "Structure-Aware Negative Sampling",
+        "result": 0.11
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "NELL-995",
+        "Metric": "MRR",
+        "KGEModel": "DistMult",
+        "NSMethod": "NSCaching",
+        "result": 0.177
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "NELL-995",
+        "Metric": "Hits@1",
+        "KGEModel": "DistMult",
+        "NSMethod": "NSCaching",
+        "result": 0.15
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "NELL-995",
+        "Metric": "NDCG@5",
+        "KGEModel": "DistMult",
+        "NSMethod": "NSCaching",
+        "result": 0.14
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "NELL-995",
+        "Metric": "MRR",
+        "KGEModel": "DistMult",
+        "NSMethod": "KBGAN",
+        "result": 0.17
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "NELL-995",
+        "Metric": "Hits@1",
+        "KGEModel": "DistMult",
+        "NSMethod": "KBGAN",
+        "result": 0.077
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "NELL-995",
+        "Metric": "NDCG@5",
+        "KGEModel": "DistMult",
+        "NSMethod": "KBGAN",
+        "result": 0.195
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "NELL-995",
+        "Metric": "MRR",
+        "KGEModel": "DistMult",
+        "NSMethod": "CAKE",
+        "result": 0.204
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "NELL-995",
+        "Metric": "Hits@1",
+        "KGEModel": "DistMult",
+        "NSMethod": "CAKE",
+        "result": 0.13
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "NELL-995",
+        "Metric": "NDCG@5",
+        "KGEModel": "DistMult",
+        "NSMethod": "CAKE",
+        "result": 0.175
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "NELL-995",
+        "Metric": "MRR",
+        "KGEModel": "DistMult",
+        "NSMethod": "SMiLE",
+        "result": 0.131
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "NELL-995",
+        "Metric": "Hits@1",
+        "KGEModel": "DistMult",
+        "NSMethod": "SMiLE",
+        "result": 0.127
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "NELL-995",
+        "Metric": "NDCG@5",
+        "KGEModel": "DistMult",
+        "NSMethod": "SMiLE",
+        "result": 0.105
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "UMLS",
+        "Metric": "MRR",
+        "KGEModel": "DistMult",
+        "NSMethod": "Structure-Aware Negative Sampling",
+        "result": 0.51
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "UMLS",
+        "Metric": "Hits@1",
+        "KGEModel": "DistMult",
+        "NSMethod": "Structure-Aware Negative Sampling",
+        "result": 0.369
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "UMLS",
+        "Metric": "NDCG@5",
+        "KGEModel": "DistMult",
+        "NSMethod": "Structure-Aware Negative Sampling",
+        "result": 0.478
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "UMLS",
+        "Metric": "MRR",
+        "KGEModel": "DistMult",
+        "NSMethod": "NSCaching",
+        "result": 0.625
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "UMLS",
+        "Metric": "Hits@1",
+        "KGEModel": "DistMult",
+        "NSMethod": "NSCaching",
+        "result": 0.508
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "UMLS",
+        "Metric": "NDCG@5",
+        "KGEModel": "DistMult",
+        "NSMethod": "NSCaching",
+        "result": 0.607
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "UMLS",
+        "Metric": "MRR",
+        "KGEModel": "DistMult",
+        "NSMethod": "KBGAN",
+        "result": 0.68
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "UMLS",
+        "Metric": "Hits@1",
+        "KGEModel": "DistMult",
+        "NSMethod": "KBGAN",
+        "result": 0.556
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "UMLS",
+        "Metric": "NDCG@5",
+        "KGEModel": "DistMult",
+        "NSMethod": "KBGAN",
+        "result": 0.654
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "UMLS",
+        "Metric": "MRR",
+        "KGEModel": "DistMult",
+        "NSMethod": "CAKE",
+        "result": 0.441
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "UMLS",
+        "Metric": "Hits@1",
+        "KGEModel": "DistMult",
+        "NSMethod": "CAKE",
+        "result": 0.365
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "UMLS",
+        "Metric": "NDCG@5",
+        "KGEModel": "DistMult",
+        "NSMethod": "CAKE",
+        "result": 0.383
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "UMLS",
+        "Metric": "MRR",
+        "KGEModel": "DistMult",
+        "NSMethod": "SMiLE",
+        "result": 0.414
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "UMLS",
+        "Metric": "Hits@1",
+        "KGEModel": "DistMult",
+        "NSMethod": "SMiLE",
+        "result": 0.345
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "UMLS",
+        "Metric": "NDCG@5",
+        "KGEModel": "DistMult",
+        "NSMethod": "SMiLE",
+        "result": 0.372
+      }
+    ]
+  }
+}

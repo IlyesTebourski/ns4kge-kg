@@ -1,4 +1,4 @@
-Data graph:   6400 triples
+Data graph:   52977 triples
 Shapes graph: 94 triples
 
 Validation Report

@@ -1,0 +1,41 @@
+{
+  "Article": {
+    "title": "Affinity Dependent Negative Sampling for Knowledge Graph Embeddings",
+    "date": "2020"
+  },
+  "proposedNSMethod": "Affinity Dependent Negative Sampling",
+  "proposedKGEModel": "",
+  "mentionedNSMethods": [
+    "Random Negative Sampling",
+    "Distributional Negative Sampling",
+    "Bernoulli Negative Sampling",
+    "Typed Sampling",
+    "Relational Sampling",
+    "Nearest Neighbor Sampling",
+    "Near Miss Sampling"
+  ],
+  "mentionedKGEModels": [
+    "TransE",
+    "DistMult",
+    "ComplEx",
+    "TransH",
+    "RotatE"
+  ],
+  "Experimentation": {
+    "Hardware": [
+      "Nvidia RTX 2060",
+      "i7 4770"
+    ],
+    "TrainingProtocol": {
+      "LossFunction": [
+        "self adversarial loss",
+        "margin-based ranking loss"
+      ],
+      "Optimizer": [
+        "AdaGrad"
+      ],
+      "learningRate": 0.1,
+      "nsRatio": 3
+    }
+  }
+}

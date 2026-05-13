@@ -1,0 +1,379 @@
+<article/dns> rdf:type ns4kge:Article .
+<article/dns> ns4kge:title "Distributional Negative Sampling for Knowledge Base Completion"^^xsd:string .
+<article/dns> ns4kge:date "2019"^^xsd:gYear .
+<article/dns> ns4kge:proposesNSMethod <ns-method/distributional-negative-sampling> .
+<article/dns> ns4kge:mentionsNSMethod <ns-method/bernoulli-negative-sampling> .
+<article/dns> ns4kge:mentionsNSMethod <ns-method/random-negative-sampling> .
+<article/dns> ns4kge:mentionsNSMethod <ns-method/domain-based-negative-sampling> .
+<article/dns> ns4kge:mentionsNSMethod <ns-method/typed-negative-sampling> .
+<article/dns> ns4kge:mentionsNSMethod <ns-method/nearest-neighbor-sampling> .
+<article/dns> ns4kge:mentionsKGEModel <kge-model/rescal> .
+<article/dns> ns4kge:mentionsKGEModel <kge-model/transe> .
+<article/dns> ns4kge:mentionsKGEModel <kge-model/hole> .
+<article/dns> ns4kge:mentionsKGEModel <kge-model/ntn> .
+<article/dns> ns4kge:mentionsKGEModel <kge-model/complex> .
+<article/dns> ns4kge:mentionsKGEModel <kge-model/transh> .
+<article/dns> ns4kge:hasExperimentation <experimentation/dns> .
+
+<category/dynamic-ns> rdf:type ns4kge:Category .
+
+<subcategory/self-adaptive> rdf:type ns4kge:Subcategory .
+
+<ns-method/distributional-negative-sampling> rdf:type ns4kge:NSMethod .
+<ns-method/distributional-negative-sampling> ns4kge:hasCategory <category/dynamic-ns> .
+<ns-method/distributional-negative-sampling> ns4kge:hasSubcategory <subcategory/self-adaptive> .
+
+<ns-method/bernoulli-negative-sampling> rdf:type ns4kge:NSMethod .
+<category/static-ns> rdf:type ns4kge:Category .
+
+<ns-method/bernoulli-negative-sampling> ns4kge:hasCategory <category/static-ns> .
+<subcategory/probabilistic> rdf:type ns4kge:Subcategory .
+
+<ns-method/bernoulli-negative-sampling> ns4kge:hasSubcategory <subcategory/probabilistic> .
+
+<ns-method/random-negative-sampling> rdf:type ns4kge:NSMethod .
+<ns-method/random-negative-sampling> ns4kge:hasCategory <category/static-ns> .
+<subcategory/random> rdf:type ns4kge:Subcategory .
+
+<ns-method/random-negative-sampling> ns4kge:hasSubcategory <subcategory/random> .
+
+<ns-method/domain-based-negative-sampling> rdf:type ns4kge:NSMethod .
+
+<ns-method/typed-negative-sampling> rdf:type ns4kge:NSMethod .
+
+<ns-method/nearest-neighbor-sampling> rdf:type ns4kge:NSMethod .
+
+<kge-model/rescal> rdf:type ns4kge:KGEModel .
+
+<kge-model/transe> rdf:type ns4kge:KGEModel .
+
+<kge-model/hole> rdf:type ns4kge:KGEModel .
+
+<kge-model/ntn> rdf:type ns4kge:KGEModel .
+
+<kge-model/complex> rdf:type ns4kge:KGEModel .
+
+<kge-model/transh> rdf:type ns4kge:KGEModel .
+
+<dataset/fb15k> rdf:type ns4kge:Dataset .
+<task/link-prediction> rdf:type ns4kge:Task .
+<metric/mrr> rdf:type ns4kge:Metric .
+<metric/hits-10> rdf:type ns4kge:Metric .
+<metric/hits-1> rdf:type ns4kge:Metric .
+<dataset/fb15k-237> rdf:type ns4kge:Dataset .
+<dataset/wn18rr> rdf:type ns4kge:Dataset .
+<loss-function/pairwise-ranking-loss> rdf:type ns4kge:LossFunction .
+<optimizer/adam> rdf:type ns4kge:Optimizer .
+
+<experimentation/dns> rdf:type ns4kge:Experimentation .
+<experimentation/dns> ns4kge:hasTrainingProtocol <training-protocol/dns> .
+<experimentation/dns> ns4kge:hasConfiguration <configuration/dns/1> .
+<experimentation/dns> ns4kge:hasConfiguration <configuration/dns/2> .
+<experimentation/dns> ns4kge:hasConfiguration <configuration/dns/3> .
+<experimentation/dns> ns4kge:hasConfiguration <configuration/dns/4> .
+<experimentation/dns> ns4kge:hasConfiguration <configuration/dns/5> .
+<experimentation/dns> ns4kge:hasConfiguration <configuration/dns/6> .
+<experimentation/dns> ns4kge:hasConfiguration <configuration/dns/7> .
+<experimentation/dns> ns4kge:hasConfiguration <configuration/dns/8> .
+<experimentation/dns> ns4kge:hasConfiguration <configuration/dns/9> .
+<experimentation/dns> ns4kge:hasConfiguration <configuration/dns/10> .
+<experimentation/dns> ns4kge:hasConfiguration <configuration/dns/11> .
+<experimentation/dns> ns4kge:hasConfiguration <configuration/dns/12> .
+<experimentation/dns> ns4kge:hasConfiguration <configuration/dns/13> .
+<experimentation/dns> ns4kge:hasConfiguration <configuration/dns/14> .
+<experimentation/dns> ns4kge:hasConfiguration <configuration/dns/15> .
+<experimentation/dns> ns4kge:hasConfiguration <configuration/dns/16> .
+<experimentation/dns> ns4kge:hasConfiguration <configuration/dns/17> .
+<experimentation/dns> ns4kge:hasConfiguration <configuration/dns/18> .
+<experimentation/dns> ns4kge:hasConfiguration <configuration/dns/19> .
+<experimentation/dns> ns4kge:hasConfiguration <configuration/dns/20> .
+<experimentation/dns> ns4kge:hasConfiguration <configuration/dns/21> .
+<experimentation/dns> ns4kge:hasConfiguration <configuration/dns/22> .
+<experimentation/dns> ns4kge:hasConfiguration <configuration/dns/23> .
+<experimentation/dns> ns4kge:hasConfiguration <configuration/dns/24> .
+<experimentation/dns> ns4kge:hasConfiguration <configuration/dns/25> .
+<experimentation/dns> ns4kge:hasConfiguration <configuration/dns/26> .
+<experimentation/dns> ns4kge:hasConfiguration <configuration/dns/27> .
+<experimentation/dns> ns4kge:hasConfiguration <configuration/dns/28> .
+<experimentation/dns> ns4kge:hasConfiguration <configuration/dns/29> .
+<experimentation/dns> ns4kge:hasConfiguration <configuration/dns/30> .
+<experimentation/dns> ns4kge:hasConfiguration <configuration/dns/31> .
+<experimentation/dns> ns4kge:hasConfiguration <configuration/dns/32> .
+<experimentation/dns> ns4kge:hasConfiguration <configuration/dns/33> .
+<experimentation/dns> ns4kge:hasConfiguration <configuration/dns/34> .
+
+<training-protocol/dns> rdf:type ns4kge:TrainingProtocol .
+<training-protocol/dns> ns4kge:hasOptimizer    <optimizer/adam> .
+<training-protocol/dns> ns4kge:hasLossFunction <loss-function/pairwise-ranking-loss> .
+
+<configuration/dns/1> rdf:type ns4kge:Configuration .
+<configuration/dns/1> ns4kge:hasTask    <task/link-prediction> .
+<configuration/dns/1> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/dns/1> ns4kge:hasMetric  <metric/mrr> .
+<configuration/dns/1> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/dns/1> ns4kge:hasNSMethod <ns-method/random-negative-sampling> .
+<configuration/dns/1> ns4kge:result "0.463"^^xsd:decimal .
+
+<configuration/dns/2> rdf:type ns4kge:Configuration .
+<configuration/dns/2> ns4kge:hasTask    <task/link-prediction> .
+<configuration/dns/2> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/dns/2> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/dns/2> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/dns/2> ns4kge:hasNSMethod <ns-method/random-negative-sampling> .
+<configuration/dns/2> ns4kge:result "0.749"^^xsd:decimal .
+
+<configuration/dns/3> rdf:type ns4kge:Configuration .
+<configuration/dns/3> ns4kge:hasTask    <task/link-prediction> .
+<configuration/dns/3> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/dns/3> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/dns/3> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/dns/3> ns4kge:hasNSMethod <ns-method/random-negative-sampling> .
+<configuration/dns/3> ns4kge:result "0.297"^^xsd:decimal .
+
+<configuration/dns/4> rdf:type ns4kge:Configuration .
+<configuration/dns/4> ns4kge:hasTask    <task/link-prediction> .
+<configuration/dns/4> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/dns/4> ns4kge:hasMetric  <metric/mrr> .
+<configuration/dns/4> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/dns/4> ns4kge:hasNSMethod <ns-method/random-negative-sampling> .
+<configuration/dns/4> ns4kge:result "0.25"^^xsd:decimal .
+
+<configuration/dns/5> rdf:type ns4kge:Configuration .
+<configuration/dns/5> ns4kge:hasTask    <task/link-prediction> .
+<configuration/dns/5> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/dns/5> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/dns/5> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/dns/5> ns4kge:hasNSMethod <ns-method/random-negative-sampling> .
+<configuration/dns/5> ns4kge:result "0.428"^^xsd:decimal .
+
+<configuration/dns/6> rdf:type ns4kge:Configuration .
+<configuration/dns/6> ns4kge:hasTask    <task/link-prediction> .
+<configuration/dns/6> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/dns/6> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/dns/6> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/dns/6> ns4kge:hasNSMethod <ns-method/random-negative-sampling> .
+<configuration/dns/6> ns4kge:result "0.169"^^xsd:decimal .
+
+<configuration/dns/7> rdf:type ns4kge:Configuration .
+<configuration/dns/7> ns4kge:hasTask    <task/link-prediction> .
+<configuration/dns/7> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/dns/7> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/dns/7> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/dns/7> ns4kge:hasNSMethod <ns-method/random-negative-sampling> .
+<configuration/dns/7> ns4kge:result "0.432"^^xsd:decimal .
+
+<configuration/dns/8> rdf:type ns4kge:Configuration .
+<configuration/dns/8> ns4kge:hasTask    <task/link-prediction> .
+<configuration/dns/8> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/dns/8> ns4kge:hasMetric  <metric/mrr> .
+<configuration/dns/8> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/dns/8> ns4kge:hasNSMethod <ns-method/distributional-negative-sampling> .
+<configuration/dns/8> ns4kge:result "0.43"^^xsd:decimal .
+
+<configuration/dns/9> rdf:type ns4kge:Configuration .
+<configuration/dns/9> ns4kge:hasTask    <task/link-prediction> .
+<configuration/dns/9> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/dns/9> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/dns/9> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/dns/9> ns4kge:hasNSMethod <ns-method/distributional-negative-sampling> .
+<configuration/dns/9> ns4kge:result "0.639"^^xsd:decimal .
+
+<configuration/dns/10> rdf:type ns4kge:Configuration .
+<configuration/dns/10> ns4kge:hasTask    <task/link-prediction> .
+<configuration/dns/10> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/dns/10> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/dns/10> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/dns/10> ns4kge:hasNSMethod <ns-method/distributional-negative-sampling> .
+<configuration/dns/10> ns4kge:result "0.311"^^xsd:decimal .
+
+<configuration/dns/11> rdf:type ns4kge:Configuration .
+<configuration/dns/11> ns4kge:hasTask    <task/link-prediction> .
+<configuration/dns/11> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/dns/11> ns4kge:hasMetric  <metric/mrr> .
+<configuration/dns/11> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/dns/11> ns4kge:hasNSMethod <ns-method/distributional-negative-sampling> .
+<configuration/dns/11> ns4kge:result "0.292"^^xsd:decimal .
+
+<configuration/dns/12> rdf:type ns4kge:Configuration .
+<configuration/dns/12> ns4kge:hasTask    <task/link-prediction> .
+<configuration/dns/12> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/dns/12> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/dns/12> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/dns/12> ns4kge:hasNSMethod <ns-method/distributional-negative-sampling> .
+<configuration/dns/12> ns4kge:result "0.457"^^xsd:decimal .
+
+<configuration/dns/13> rdf:type ns4kge:Configuration .
+<configuration/dns/13> ns4kge:hasTask    <task/link-prediction> .
+<configuration/dns/13> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/dns/13> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/dns/13> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/dns/13> ns4kge:hasNSMethod <ns-method/distributional-negative-sampling> .
+<configuration/dns/13> ns4kge:result "0.209"^^xsd:decimal .
+
+<configuration/dns/14> rdf:type ns4kge:Configuration .
+<configuration/dns/14> ns4kge:hasTask    <task/link-prediction> .
+<configuration/dns/14> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/dns/14> ns4kge:hasMetric  <metric/mrr> .
+<configuration/dns/14> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/dns/14> ns4kge:hasNSMethod <ns-method/distributional-negative-sampling> .
+<configuration/dns/14> ns4kge:result "0.184"^^xsd:decimal .
+
+<configuration/dns/15> rdf:type ns4kge:Configuration .
+<configuration/dns/15> ns4kge:hasTask    <task/link-prediction> .
+<configuration/dns/15> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/dns/15> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/dns/15> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/dns/15> ns4kge:hasNSMethod <ns-method/distributional-negative-sampling> .
+<configuration/dns/15> ns4kge:result "0.444"^^xsd:decimal .
+
+<configuration/dns/16> rdf:type ns4kge:Configuration .
+<configuration/dns/16> ns4kge:hasTask    <task/link-prediction> .
+<configuration/dns/16> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/dns/16> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/dns/16> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/dns/16> ns4kge:hasNSMethod <ns-method/distributional-negative-sampling> .
+<configuration/dns/16> ns4kge:result "0.043"^^xsd:decimal .
+
+<configuration/dns/17> rdf:type ns4kge:Configuration .
+<configuration/dns/17> ns4kge:hasTask    <task/link-prediction> .
+<configuration/dns/17> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/dns/17> ns4kge:hasMetric  <metric/mrr> .
+<configuration/dns/17> ns4kge:hasKGEModel <kge-model/rescal> .
+<configuration/dns/17> ns4kge:hasNSMethod <ns-method/random-negative-sampling> .
+<configuration/dns/17> ns4kge:result "0.354"^^xsd:decimal .
+
+<configuration/dns/18> rdf:type ns4kge:Configuration .
+<configuration/dns/18> ns4kge:hasTask    <task/link-prediction> .
+<configuration/dns/18> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/dns/18> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/dns/18> ns4kge:hasKGEModel <kge-model/rescal> .
+<configuration/dns/18> ns4kge:hasNSMethod <ns-method/random-negative-sampling> .
+<configuration/dns/18> ns4kge:result "0.587"^^xsd:decimal .
+
+<configuration/dns/19> rdf:type ns4kge:Configuration .
+<configuration/dns/19> ns4kge:hasTask    <task/link-prediction> .
+<configuration/dns/19> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/dns/19> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/dns/19> ns4kge:hasKGEModel <kge-model/rescal> .
+<configuration/dns/19> ns4kge:hasNSMethod <ns-method/random-negative-sampling> .
+<configuration/dns/19> ns4kge:result "0.235"^^xsd:decimal .
+
+<configuration/dns/20> rdf:type ns4kge:Configuration .
+<configuration/dns/20> ns4kge:hasTask    <task/link-prediction> .
+<configuration/dns/20> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/dns/20> ns4kge:hasMetric  <metric/mrr> .
+<configuration/dns/20> ns4kge:hasKGEModel <kge-model/rescal> .
+<configuration/dns/20> ns4kge:hasNSMethod <ns-method/random-negative-sampling> .
+<configuration/dns/20> ns4kge:result "0.226"^^xsd:decimal .
+
+<configuration/dns/21> rdf:type ns4kge:Configuration .
+<configuration/dns/21> ns4kge:hasTask    <task/link-prediction> .
+<configuration/dns/21> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/dns/21> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/dns/21> ns4kge:hasKGEModel <kge-model/rescal> .
+<configuration/dns/21> ns4kge:hasNSMethod <ns-method/random-negative-sampling> .
+<configuration/dns/21> ns4kge:result "0.344"^^xsd:decimal .
+
+<configuration/dns/22> rdf:type ns4kge:Configuration .
+<configuration/dns/22> ns4kge:hasTask    <task/link-prediction> .
+<configuration/dns/22> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/dns/22> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/dns/22> ns4kge:hasKGEModel <kge-model/rescal> .
+<configuration/dns/22> ns4kge:hasNSMethod <ns-method/random-negative-sampling> .
+<configuration/dns/22> ns4kge:result "0.163"^^xsd:decimal .
+
+<configuration/dns/23> rdf:type ns4kge:Configuration .
+<configuration/dns/23> ns4kge:hasTask    <task/link-prediction> .
+<configuration/dns/23> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/dns/23> ns4kge:hasMetric  <metric/mrr> .
+<configuration/dns/23> ns4kge:hasKGEModel <kge-model/rescal> .
+<configuration/dns/23> ns4kge:hasNSMethod <ns-method/random-negative-sampling> .
+<configuration/dns/23> ns4kge:result "0.399"^^xsd:decimal .
+
+<configuration/dns/24> rdf:type ns4kge:Configuration .
+<configuration/dns/24> ns4kge:hasTask    <task/link-prediction> .
+<configuration/dns/24> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/dns/24> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/dns/24> ns4kge:hasKGEModel <kge-model/rescal> .
+<configuration/dns/24> ns4kge:hasNSMethod <ns-method/random-negative-sampling> .
+<configuration/dns/24> ns4kge:result "0.421"^^xsd:decimal .
+
+<configuration/dns/25> rdf:type ns4kge:Configuration .
+<configuration/dns/25> ns4kge:hasTask    <task/link-prediction> .
+<configuration/dns/25> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/dns/25> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/dns/25> ns4kge:hasKGEModel <kge-model/rescal> .
+<configuration/dns/25> ns4kge:hasNSMethod <ns-method/random-negative-sampling> .
+<configuration/dns/25> ns4kge:result "0.386"^^xsd:decimal .
+
+<configuration/dns/26> rdf:type ns4kge:Configuration .
+<configuration/dns/26> ns4kge:hasTask    <task/link-prediction> .
+<configuration/dns/26> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/dns/26> ns4kge:hasMetric  <metric/mrr> .
+<configuration/dns/26> ns4kge:hasKGEModel <kge-model/rescal> .
+<configuration/dns/26> ns4kge:hasNSMethod <ns-method/distributional-negative-sampling> .
+<configuration/dns/26> ns4kge:result "0.412"^^xsd:decimal .
+
+<configuration/dns/27> rdf:type ns4kge:Configuration .
+<configuration/dns/27> ns4kge:hasTask    <task/link-prediction> .
+<configuration/dns/27> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/dns/27> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/dns/27> ns4kge:hasKGEModel <kge-model/rescal> .
+<configuration/dns/27> ns4kge:hasNSMethod <ns-method/distributional-negative-sampling> .
+<configuration/dns/27> ns4kge:result "0.627"^^xsd:decimal .
+
+<configuration/dns/28> rdf:type ns4kge:Configuration .
+<configuration/dns/28> ns4kge:hasTask    <task/link-prediction> .
+<configuration/dns/28> ns4kge:hasDataset <dataset/fb15k> .
+<configuration/dns/28> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/dns/28> ns4kge:hasKGEModel <kge-model/rescal> .
+<configuration/dns/28> ns4kge:hasNSMethod <ns-method/distributional-negative-sampling> .
+<configuration/dns/28> ns4kge:result "0.296"^^xsd:decimal .
+
+<configuration/dns/29> rdf:type ns4kge:Configuration .
+<configuration/dns/29> ns4kge:hasTask    <task/link-prediction> .
+<configuration/dns/29> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/dns/29> ns4kge:hasMetric  <metric/mrr> .
+<configuration/dns/29> ns4kge:hasKGEModel <kge-model/rescal> .
+<configuration/dns/29> ns4kge:hasNSMethod <ns-method/distributional-negative-sampling> .
+<configuration/dns/29> ns4kge:result "0.275"^^xsd:decimal .
+
+<configuration/dns/30> rdf:type ns4kge:Configuration .
+<configuration/dns/30> ns4kge:hasTask    <task/link-prediction> .
+<configuration/dns/30> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/dns/30> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/dns/30> ns4kge:hasKGEModel <kge-model/rescal> .
+<configuration/dns/30> ns4kge:hasNSMethod <ns-method/distributional-negative-sampling> .
+<configuration/dns/30> ns4kge:result "0.441"^^xsd:decimal .
+
+<configuration/dns/31> rdf:type ns4kge:Configuration .
+<configuration/dns/31> ns4kge:hasTask    <task/link-prediction> .
+<configuration/dns/31> ns4kge:hasDataset <dataset/fb15k-237> .
+<configuration/dns/31> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/dns/31> ns4kge:hasKGEModel <kge-model/rescal> .
+<configuration/dns/31> ns4kge:hasNSMethod <ns-method/distributional-negative-sampling> .
+<configuration/dns/31> ns4kge:result "0.192"^^xsd:decimal .
+
+<configuration/dns/32> rdf:type ns4kge:Configuration .
+<configuration/dns/32> ns4kge:hasTask    <task/link-prediction> .
+<configuration/dns/32> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/dns/32> ns4kge:hasMetric  <metric/mrr> .
+<configuration/dns/32> ns4kge:hasKGEModel <kge-model/rescal> .
+<configuration/dns/32> ns4kge:hasNSMethod <ns-method/distributional-negative-sampling> .
+<configuration/dns/32> ns4kge:result "0.428"^^xsd:decimal .
+
+<configuration/dns/33> rdf:type ns4kge:Configuration .
+<configuration/dns/33> ns4kge:hasTask    <task/link-prediction> .
+<configuration/dns/33> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/dns/33> ns4kge:hasMetric  <metric/hits-10> .
+<configuration/dns/33> ns4kge:hasKGEModel <kge-model/rescal> .
+<configuration/dns/33> ns4kge:hasNSMethod <ns-method/distributional-negative-sampling> .
+<configuration/dns/33> ns4kge:result "0.441"^^xsd:decimal .
+
+<configuration/dns/34> rdf:type ns4kge:Configuration .
+<configuration/dns/34> ns4kge:hasTask    <task/link-prediction> .
+<configuration/dns/34> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/dns/34> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/dns/34> ns4kge:hasKGEModel <kge-model/rescal> .
+<configuration/dns/34> ns4kge:hasNSMethod <ns-method/distributional-negative-sampling> .
+<configuration/dns/34> ns4kge:result "0.421"^^xsd:decimal .

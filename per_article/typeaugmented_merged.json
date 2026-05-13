@@ -1,0 +1,1486 @@
+{
+  "Article": {
+    "title": "A type-augmented knowledge graph embedding framework for knowledge graph completion",
+    "date": "2023"
+  },
+  "proposedNSMethod": "Type-constrained negative sampling",
+  "proposedKGEModel": "TaKE",
+  "mentionedNSMethods": [
+    "Type-constrained negative sampling",
+    "Bernoulli negative sampling",
+    "Soft Type Constraint",
+    "Uniform negative sampling",
+    "Self-adversarial negative sampling"
+  ],
+  "mentionedKGEModels": [
+    "RatE",
+    "ComplEx",
+    "TaKE-SimplE",
+    "TransE",
+    "TransR",
+    "SimplE",
+    "TaKE-RotatE",
+    "TransC",
+    "RotatE",
+    "HAKE",
+    "TransT",
+    "TaKE-DistMult",
+    "TaKE-TransE",
+    "TKRL",
+    "JOIE",
+    "DistMult",
+    "CAKE",
+    "TypeDM",
+    "TaRP",
+    "TransH",
+    "TaKE-ComplEx",
+    "TypeComplex"
+  ],
+  "Experimentation": {
+    "Hardware": [],
+    "TrainingProtocol": {
+      "LossFunction": [
+        "cross-entropy loss"
+      ],
+      "Optimizer": [
+        "Adam"
+      ],
+      "learningRate": null,
+      "nsRatio": null
+    },
+    "Configurations": [
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K",
+        "Metric": "MRR",
+        "KGEModel": "SimplE",
+        "NSMethod": "Unknown",
+        "result": 0.727
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K",
+        "Metric": "MRR",
+        "KGEModel": "TaKE-SimplE",
+        "NSMethod": "Unknown",
+        "result": 0.806
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K",
+        "Metric": "MRR",
+        "KGEModel": "TaKE-RotatE",
+        "NSMethod": "Unknown",
+        "result": 0.804
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K",
+        "Metric": "MRR",
+        "KGEModel": "RotatE",
+        "NSMethod": "Unknown",
+        "result": 0.797
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K",
+        "Metric": "MRR",
+        "KGEModel": "TaKE-ComplEx",
+        "NSMethod": "Unknown",
+        "result": 0.778
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K",
+        "Metric": "MRR",
+        "KGEModel": "TypeComplex",
+        "NSMethod": "Unknown",
+        "result": 0.761
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K",
+        "Metric": "MRR",
+        "KGEModel": "TaKE-DistMult",
+        "NSMethod": "Unknown",
+        "result": 0.757
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K",
+        "Metric": "MRR",
+        "KGEModel": "TypeDM",
+        "NSMethod": "Unknown",
+        "result": 0.75
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K",
+        "Metric": "MRR",
+        "KGEModel": "ComplEx",
+        "NSMethod": "Unknown",
+        "result": 0.692
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K",
+        "Metric": "MRR",
+        "KGEModel": "DistMult",
+        "NSMethod": "Unknown",
+        "result": 0.654
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K",
+        "Metric": "MRR",
+        "KGEModel": "TaKE-TransE",
+        "NSMethod": "Unknown",
+        "result": 0.49
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K",
+        "Metric": "MRR",
+        "KGEModel": "TransE",
+        "NSMethod": "Unknown",
+        "result": 0.38
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K",
+        "Metric": "Hits@1",
+        "KGEModel": "TaKE-RotatE",
+        "NSMethod": "Unknown",
+        "result": 0.752
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K",
+        "Metric": "Hits@1",
+        "KGEModel": "TaKE-SimplE",
+        "NSMethod": "Unknown",
+        "result": 0.751
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K",
+        "Metric": "Hits@1",
+        "KGEModel": "RotatE",
+        "NSMethod": "Unknown",
+        "result": 0.746
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K",
+        "Metric": "Hits@1",
+        "KGEModel": "TaKE-ComplEx",
+        "NSMethod": "Unknown",
+        "result": 0.701
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K",
+        "Metric": "Hits@1",
+        "KGEModel": "TypeComplex",
+        "NSMethod": "Unknown",
+        "result": 0.688
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K",
+        "Metric": "Hits@1",
+        "KGEModel": "TaKE-DistMult",
+        "NSMethod": "Unknown",
+        "result": 0.674
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K",
+        "Metric": "Hits@1",
+        "KGEModel": "TypeDM",
+        "NSMethod": "Unknown",
+        "result": 0.673
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K",
+        "Metric": "Hits@1",
+        "KGEModel": "SimplE",
+        "NSMethod": "Unknown",
+        "result": 0.66
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K",
+        "Metric": "Hits@1",
+        "KGEModel": "ComplEx",
+        "NSMethod": "Unknown",
+        "result": 0.599
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K",
+        "Metric": "Hits@1",
+        "KGEModel": "DistMult",
+        "NSMethod": "Unknown",
+        "result": 0.546
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K",
+        "Metric": "Hits@1",
+        "KGEModel": "TaKE-TransE",
+        "NSMethod": "Unknown",
+        "result": 0.365
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K",
+        "Metric": "Hits@1",
+        "KGEModel": "TransE",
+        "NSMethod": "Unknown",
+        "result": 0.231
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K",
+        "Metric": "Hits@3",
+        "KGEModel": "TaKE-SimplE",
+        "NSMethod": "Unknown",
+        "result": 0.842
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K",
+        "Metric": "Hits@3",
+        "KGEModel": "TaKE-ComplEx",
+        "NSMethod": "Unknown",
+        "result": 0.839
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K",
+        "Metric": "Hits@3",
+        "KGEModel": "TaKE-RotatE",
+        "NSMethod": "Unknown",
+        "result": 0.838
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K",
+        "Metric": "Hits@3",
+        "KGEModel": "RotatE",
+        "NSMethod": "Unknown",
+        "result": 0.83
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K",
+        "Metric": "Hits@3",
+        "KGEModel": "TaKE-DistMult",
+        "NSMethod": "Unknown",
+        "result": 0.823
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K",
+        "Metric": "Hits@3",
+        "KGEModel": "SimplE",
+        "NSMethod": "Unknown",
+        "result": 0.773
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K",
+        "Metric": "Hits@3",
+        "KGEModel": "ComplEx",
+        "NSMethod": "Unknown",
+        "result": 0.759
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K",
+        "Metric": "Hits@3",
+        "KGEModel": "DistMult",
+        "NSMethod": "Unknown",
+        "result": 0.733
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K",
+        "Metric": "Hits@3",
+        "KGEModel": "TaKE-TransE",
+        "NSMethod": "Unknown",
+        "result": 0.574
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K",
+        "Metric": "Hits@3",
+        "KGEModel": "TransE",
+        "NSMethod": "Unknown",
+        "result": 0.478
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K",
+        "Metric": "Hits@10",
+        "KGEModel": "TaKE-RotatE",
+        "NSMethod": "Unknown",
+        "result": 0.902
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K",
+        "Metric": "Hits@10",
+        "KGEModel": "TaKE-SimplE",
+        "NSMethod": "Unknown",
+        "result": 0.897
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K",
+        "Metric": "Hits@10",
+        "KGEModel": "TaKE-ComplEx",
+        "NSMethod": "Unknown",
+        "result": 0.895
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K",
+        "Metric": "Hits@10",
+        "KGEModel": "TaKE-DistMult",
+        "NSMethod": "Unknown",
+        "result": 0.89
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K",
+        "Metric": "Hits@10",
+        "KGEModel": "RotatE",
+        "NSMethod": "Unknown",
+        "result": 0.884
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K",
+        "Metric": "Hits@10",
+        "KGEModel": "TypeComplex",
+        "NSMethod": "Unknown",
+        "result": 0.867
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K",
+        "Metric": "Hits@10",
+        "KGEModel": "TypeDM",
+        "NSMethod": "Unknown",
+        "result": 0.861
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K",
+        "Metric": "Hits@10",
+        "KGEModel": "ComplEx",
+        "NSMethod": "Unknown",
+        "result": 0.84
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K",
+        "Metric": "Hits@10",
+        "KGEModel": "SimplE",
+        "NSMethod": "Unknown",
+        "result": 0.838
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K",
+        "Metric": "Hits@10",
+        "KGEModel": "DistMult",
+        "NSMethod": "Unknown",
+        "result": 0.824
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K",
+        "Metric": "Hits@10",
+        "KGEModel": "TaKE-TransE",
+        "NSMethod": "Unknown",
+        "result": 0.699
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K",
+        "Metric": "Hits@10",
+        "KGEModel": "TransE",
+        "NSMethod": "Unknown",
+        "result": 0.649
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K-237",
+        "Metric": "MRR",
+        "KGEModel": "TaKE-SimplE",
+        "NSMethod": "Unknown",
+        "result": 0.352
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K-237",
+        "Metric": "MRR",
+        "KGEModel": "TaKE-RotatE",
+        "NSMethod": "Unknown",
+        "result": 0.347
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K-237",
+        "Metric": "MRR",
+        "KGEModel": "RotatE",
+        "NSMethod": "Unknown",
+        "result": 0.338
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K-237",
+        "Metric": "MRR",
+        "KGEModel": "SimplE",
+        "NSMethod": "Unknown",
+        "result": 0.309
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K-237",
+        "Metric": "MRR",
+        "KGEModel": "TaKE-TransE",
+        "NSMethod": "Unknown",
+        "result": 0.301
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K-237",
+        "Metric": "MRR",
+        "KGEModel": "TransE",
+        "NSMethod": "Unknown",
+        "result": 0.294
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K-237",
+        "Metric": "MRR",
+        "KGEModel": "TaKE-ComplEx",
+        "NSMethod": "Unknown",
+        "result": 0.267
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K-237",
+        "Metric": "MRR",
+        "KGEModel": "TypeComplex",
+        "NSMethod": "Unknown",
+        "result": 0.259
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K-237",
+        "Metric": "MRR",
+        "KGEModel": "TaKE-DistMult",
+        "NSMethod": "Unknown",
+        "result": 0.259
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K-237",
+        "Metric": "MRR",
+        "KGEModel": "TypeDM",
+        "NSMethod": "Unknown",
+        "result": 0.252
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K-237",
+        "Metric": "MRR",
+        "KGEModel": "ComplEx",
+        "NSMethod": "Unknown",
+        "result": 0.247
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K-237",
+        "Metric": "MRR",
+        "KGEModel": "DistMult",
+        "NSMethod": "Unknown",
+        "result": 0.241
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K-237",
+        "Metric": "Hits@1",
+        "KGEModel": "TaKE-SimplE",
+        "NSMethod": "Unknown",
+        "result": 0.255
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K-237",
+        "Metric": "Hits@1",
+        "KGEModel": "TaKE-RotatE",
+        "NSMethod": "Unknown",
+        "result": 0.252
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K-237",
+        "Metric": "Hits@1",
+        "KGEModel": "RotatE",
+        "NSMethod": "Unknown",
+        "result": 0.241
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K-237",
+        "Metric": "Hits@1",
+        "KGEModel": "SimplE",
+        "NSMethod": "Unknown",
+        "result": 0.228
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K-237",
+        "Metric": "Hits@1",
+        "KGEModel": "TaKE-TransE",
+        "NSMethod": "Unknown",
+        "result": 0.199
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K-237",
+        "Metric": "Hits@1",
+        "KGEModel": "TaKE-ComplEx",
+        "NSMethod": "Unknown",
+        "result": 0.189
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K-237",
+        "Metric": "Hits@1",
+        "KGEModel": "TypeComplex",
+        "NSMethod": "Unknown",
+        "result": 0.186
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K-237",
+        "Metric": "Hits@1",
+        "KGEModel": "TaKE-DistMult",
+        "NSMethod": "Unknown",
+        "result": 0.178
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K-237",
+        "Metric": "Hits@1",
+        "KGEModel": "TypeDM",
+        "NSMethod": "Unknown",
+        "result": 0.178
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K-237",
+        "Metric": "Hits@1",
+        "KGEModel": "ComplEx",
+        "NSMethod": "Unknown",
+        "result": 0.158
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K-237",
+        "Metric": "Hits@1",
+        "KGEModel": "DistMult",
+        "NSMethod": "Unknown",
+        "result": 0.155
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K-237",
+        "Metric": "Hits@3",
+        "KGEModel": "TaKE-SimplE",
+        "NSMethod": "Unknown",
+        "result": 0.39
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K-237",
+        "Metric": "Hits@3",
+        "KGEModel": "TaKE-RotatE",
+        "NSMethod": "Unknown",
+        "result": 0.386
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K-237",
+        "Metric": "Hits@3",
+        "KGEModel": "RotatE",
+        "NSMethod": "Unknown",
+        "result": 0.375
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K-237",
+        "Metric": "Hits@3",
+        "KGEModel": "SimplE",
+        "NSMethod": "Unknown",
+        "result": 0.34
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K-237",
+        "Metric": "Hits@3",
+        "KGEModel": "TaKE-TransE",
+        "NSMethod": "Unknown",
+        "result": 0.337
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K-237",
+        "Metric": "Hits@3",
+        "KGEModel": "TaKE-DistMult",
+        "NSMethod": "Unknown",
+        "result": 0.287
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K-237",
+        "Metric": "Hits@3",
+        "KGEModel": "ComplEx",
+        "NSMethod": "Unknown",
+        "result": 0.275
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K-237",
+        "Metric": "Hits@3",
+        "KGEModel": "DistMult",
+        "NSMethod": "Unknown",
+        "result": 0.263
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K-237",
+        "Metric": "Hits@3",
+        "KGEModel": "TaKE-ComplEx",
+        "NSMethod": "Unknown",
+        "result": 0.206
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K-237",
+        "Metric": "Hits@10",
+        "KGEModel": "TaKE-SimplE",
+        "NSMethod": "Unknown",
+        "result": 0.549
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K-237",
+        "Metric": "Hits@10",
+        "KGEModel": "TaKE-RotatE",
+        "NSMethod": "Unknown",
+        "result": 0.541
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K-237",
+        "Metric": "Hits@10",
+        "KGEModel": "RotatE",
+        "NSMethod": "Unknown",
+        "result": 0.533
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K-237",
+        "Metric": "Hits@10",
+        "KGEModel": "TaKE-TransE",
+        "NSMethod": "Unknown",
+        "result": 0.486
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K-237",
+        "Metric": "Hits@10",
+        "KGEModel": "SimplE",
+        "NSMethod": "Unknown",
+        "result": 0.476
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K-237",
+        "Metric": "Hits@10",
+        "KGEModel": "TransE",
+        "NSMethod": "Unknown",
+        "result": 0.465
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K-237",
+        "Metric": "Hits@10",
+        "KGEModel": "TaKE-ComplEx",
+        "NSMethod": "Unknown",
+        "result": 0.442
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K-237",
+        "Metric": "Hits@10",
+        "KGEModel": "TaKE-DistMult",
+        "NSMethod": "Unknown",
+        "result": 0.432
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K-237",
+        "Metric": "Hits@10",
+        "KGEModel": "TypeComplex",
+        "NSMethod": "Unknown",
+        "result": 0.431
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K-237",
+        "Metric": "Hits@10",
+        "KGEModel": "ComplEx",
+        "NSMethod": "Unknown",
+        "result": 0.428
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K-237",
+        "Metric": "Hits@10",
+        "KGEModel": "TypeDM",
+        "NSMethod": "Unknown",
+        "result": 0.425
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K-237",
+        "Metric": "Hits@10",
+        "KGEModel": "DistMult",
+        "NSMethod": "Unknown",
+        "result": 0.419
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18",
+        "Metric": "MRR",
+        "KGEModel": "TaKE-SimplE",
+        "NSMethod": "Unknown",
+        "result": 0.956
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18",
+        "Metric": "MRR",
+        "KGEModel": "TaKE-RotatE",
+        "NSMethod": "Unknown",
+        "result": 0.953
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18",
+        "Metric": "MRR",
+        "KGEModel": "TaKE-ComplEx",
+        "NSMethod": "Unknown",
+        "result": 0.95
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18",
+        "Metric": "MRR",
+        "KGEModel": "RotatE",
+        "NSMethod": "Unknown",
+        "result": 0.949
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18",
+        "Metric": "MRR",
+        "KGEModel": "SimplE",
+        "NSMethod": "Unknown",
+        "result": 0.942
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18",
+        "Metric": "MRR",
+        "KGEModel": "ComplEx",
+        "NSMethod": "Unknown",
+        "result": 0.941
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18",
+        "Metric": "MRR",
+        "KGEModel": "TypeComplex",
+        "NSMethod": "Unknown",
+        "result": 0.939
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18",
+        "Metric": "MRR",
+        "KGEModel": "TaKE-DistMult",
+        "NSMethod": "Unknown",
+        "result": 0.93
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18",
+        "Metric": "MRR",
+        "KGEModel": "TypeDM",
+        "NSMethod": "Unknown",
+        "result": 0.926
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18",
+        "Metric": "MRR",
+        "KGEModel": "DistMult",
+        "NSMethod": "Unknown",
+        "result": 0.797
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18",
+        "Metric": "MRR",
+        "KGEModel": "TaKE-TransE",
+        "NSMethod": "Unknown",
+        "result": 0.565
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18",
+        "Metric": "MRR",
+        "KGEModel": "TransE",
+        "NSMethod": "Unknown",
+        "result": 0.495
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18",
+        "Metric": "Hits@1",
+        "KGEModel": "TaKE-SimplE",
+        "NSMethod": "Unknown",
+        "result": 0.954
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18",
+        "Metric": "Hits@1",
+        "KGEModel": "TaKE-ComplEx",
+        "NSMethod": "Unknown",
+        "result": 0.949
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18",
+        "Metric": "Hits@1",
+        "KGEModel": "TaKE-RotatE",
+        "NSMethod": "Unknown",
+        "result": 0.949
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18",
+        "Metric": "Hits@1",
+        "KGEModel": "RotatE",
+        "NSMethod": "Unknown",
+        "result": 0.944
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18",
+        "Metric": "Hits@1",
+        "KGEModel": "SimplE",
+        "NSMethod": "Unknown",
+        "result": 0.939
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18",
+        "Metric": "Hits@1",
+        "KGEModel": "ComplEx",
+        "NSMethod": "Unknown",
+        "result": 0.936
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18",
+        "Metric": "Hits@1",
+        "KGEModel": "TypeComplex",
+        "NSMethod": "Unknown",
+        "result": 0.932
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18",
+        "Metric": "Hits@1",
+        "KGEModel": "TaKE-DistMult",
+        "NSMethod": "Unknown",
+        "result": 0.826
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18",
+        "Metric": "Hits@1",
+        "KGEModel": "TypeDM",
+        "NSMethod": "Unknown",
+        "result": 0.824
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18",
+        "Metric": "Hits@1",
+        "KGEModel": "TaKE-TransE",
+        "NSMethod": "Unknown",
+        "result": 0.218
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18",
+        "Metric": "Hits@1",
+        "KGEModel": "TransE",
+        "NSMethod": "Unknown",
+        "result": 0.113
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18",
+        "Metric": "Hits@3",
+        "KGEModel": "TaKE-SimplE",
+        "NSMethod": "Unknown",
+        "result": 0.957
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18",
+        "Metric": "Hits@3",
+        "KGEModel": "TaKE-RotatE",
+        "NSMethod": "Unknown",
+        "result": 0.955
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18",
+        "Metric": "Hits@3",
+        "KGEModel": "TaKE-ComplEx",
+        "NSMethod": "Unknown",
+        "result": 0.954
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18",
+        "Metric": "Hits@3",
+        "KGEModel": "RotatE",
+        "NSMethod": "Unknown",
+        "result": 0.952
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18",
+        "Metric": "Hits@3",
+        "KGEModel": "ComplEx",
+        "NSMethod": "Unknown",
+        "result": 0.945
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18",
+        "Metric": "Hits@3",
+        "KGEModel": "SimplE",
+        "NSMethod": "Unknown",
+        "result": 0.944
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18",
+        "Metric": "Hits@3",
+        "KGEModel": "TaKE-TransE",
+        "NSMethod": "Unknown",
+        "result": 0.93
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18",
+        "Metric": "Hits@3",
+        "KGEModel": "TaKE-DistMult",
+        "NSMethod": "Unknown",
+        "result": 0.904
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18",
+        "Metric": "Hits@3",
+        "KGEModel": "TypeDM",
+        "NSMethod": "Unknown",
+        "result": 0.9
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18",
+        "Metric": "Hits@3",
+        "KGEModel": "TransE",
+        "NSMethod": "Unknown",
+        "result": 0.888
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18",
+        "Metric": "Hits@10",
+        "KGEModel": "TaKE-SimplE",
+        "NSMethod": "Unknown",
+        "result": 0.961
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18",
+        "Metric": "Hits@10",
+        "KGEModel": "RotatE",
+        "NSMethod": "Unknown",
+        "result": 0.959
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18",
+        "Metric": "Hits@10",
+        "KGEModel": "TaKE-RotatE",
+        "NSMethod": "Unknown",
+        "result": 0.958
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18",
+        "Metric": "Hits@10",
+        "KGEModel": "TaKE-DistMult",
+        "NSMethod": "Unknown",
+        "result": 0.952
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18",
+        "Metric": "Hits@10",
+        "KGEModel": "TaKE-ComplEx",
+        "NSMethod": "Unknown",
+        "result": 0.951
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18",
+        "Metric": "Hits@10",
+        "KGEModel": "TypeComplex",
+        "NSMethod": "Unknown",
+        "result": 0.951
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18",
+        "Metric": "Hits@10",
+        "KGEModel": "TypeDM",
+        "NSMethod": "Unknown",
+        "result": 0.948
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18",
+        "Metric": "Hits@10",
+        "KGEModel": "ComplEx",
+        "NSMethod": "Unknown",
+        "result": 0.947
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18",
+        "Metric": "Hits@10",
+        "KGEModel": "SimplE",
+        "NSMethod": "Unknown",
+        "result": 0.947
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18",
+        "Metric": "Hits@10",
+        "KGEModel": "DistMult",
+        "NSMethod": "Unknown",
+        "result": 0.946
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18",
+        "Metric": "Hits@10",
+        "KGEModel": "TaKE-TransE",
+        "NSMethod": "Unknown",
+        "result": 0.951
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "WN18",
+        "Metric": "Hits@10",
+        "KGEModel": "TransE",
+        "NSMethod": "Unknown",
+        "result": 0.943
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "YAGO3-10",
+        "Metric": "MRR",
+        "KGEModel": "TaKE-SimplE",
+        "NSMethod": "Unknown",
+        "result": 0.556
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "YAGO3-10",
+        "Metric": "MRR",
+        "KGEModel": "TaKE-RotatE",
+        "NSMethod": "Unknown",
+        "result": 0.552
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "YAGO3-10",
+        "Metric": "MRR",
+        "KGEModel": "RotatE",
+        "NSMethod": "Unknown",
+        "result": 0.495
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "YAGO3-10",
+        "Metric": "MRR",
+        "KGEModel": "SimplE",
+        "NSMethod": "Unknown",
+        "result": 0.488
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "YAGO3-10",
+        "Metric": "MRR",
+        "KGEModel": "TaKE-ComplEx",
+        "NSMethod": "Unknown",
+        "result": 0.428
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "YAGO3-10",
+        "Metric": "MRR",
+        "KGEModel": "TypeComplex",
+        "NSMethod": "Unknown",
+        "result": 0.411
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "YAGO3-10",
+        "Metric": "MRR",
+        "KGEModel": "TaKE-DistMult",
+        "NSMethod": "Unknown",
+        "result": 0.41
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "YAGO3-10",
+        "Metric": "MRR",
+        "KGEModel": "TypeDM",
+        "NSMethod": "Unknown",
+        "result": 0.406
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "YAGO3-10",
+        "Metric": "MRR",
+        "KGEModel": "ComplEx",
+        "NSMethod": "Unknown",
+        "result": 0.36
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "YAGO3-10",
+        "Metric": "MRR",
+        "KGEModel": "DistMult",
+        "NSMethod": "Unknown",
+        "result": 0.34
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "YAGO3-10",
+        "Metric": "MRR",
+        "KGEModel": "TaKE-TransE",
+        "NSMethod": "Unknown",
+        "result": 0.327
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "YAGO3-10",
+        "Metric": "MRR",
+        "KGEModel": "TransE",
+        "NSMethod": "Unknown",
+        "result": 0.18
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "YAGO3-10",
+        "Metric": "Hits@1",
+        "KGEModel": "TaKE-SimplE",
+        "NSMethod": "Unknown",
+        "result": 0.472
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "YAGO3-10",
+        "Metric": "Hits@1",
+        "KGEModel": "TaKE-RotatE",
+        "NSMethod": "Unknown",
+        "result": 0.467
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "YAGO3-10",
+        "Metric": "Hits@1",
+        "KGEModel": "RotatE",
+        "NSMethod": "Unknown",
+        "result": 0.402
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "YAGO3-10",
+        "Metric": "Hits@1",
+        "KGEModel": "SimplE",
+        "NSMethod": "Unknown",
+        "result": 0.395
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "YAGO3-10",
+        "Metric": "Hits@1",
+        "KGEModel": "TaKE-ComplEx",
+        "NSMethod": "Unknown",
+        "result": 0.33
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "YAGO3-10",
+        "Metric": "Hits@1",
+        "KGEModel": "TaKE-DistMult",
+        "NSMethod": "Unknown",
+        "result": 0.321
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "YAGO3-10",
+        "Metric": "Hits@1",
+        "KGEModel": "TypeComplex",
+        "NSMethod": "Unknown",
+        "result": 0.319
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "YAGO3-10",
+        "Metric": "Hits@1",
+        "KGEModel": "TypeDM",
+        "NSMethod": "Unknown",
+        "result": 0.311
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "YAGO3-10",
+        "Metric": "Hits@1",
+        "KGEModel": "TaKE-TransE",
+        "NSMethod": "Unknown",
+        "result": 0.279
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "YAGO3-10",
+        "Metric": "Hits@1",
+        "KGEModel": "ComplEx",
+        "NSMethod": "Unknown",
+        "result": 0.26
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "YAGO3-10",
+        "Metric": "Hits@1",
+        "KGEModel": "DistMult",
+        "NSMethod": "Unknown",
+        "result": 0.24
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "YAGO3-10",
+        "Metric": "Hits@3",
+        "KGEModel": "TaKE-RotatE",
+        "NSMethod": "Unknown",
+        "result": 0.611
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "YAGO3-10",
+        "Metric": "Hits@3",
+        "KGEModel": "TaKE-SimplE",
+        "NSMethod": "Unknown",
+        "result": 0.61
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "YAGO3-10",
+        "Metric": "Hits@3",
+        "KGEModel": "RotatE",
+        "NSMethod": "Unknown",
+        "result": 0.55
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "YAGO3-10",
+        "Metric": "Hits@3",
+        "KGEModel": "SimplE",
+        "NSMethod": "Unknown",
+        "result": 0.543
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "YAGO3-10",
+        "Metric": "Hits@3",
+        "KGEModel": "TaKE-ComplEx",
+        "NSMethod": "Unknown",
+        "result": 0.467
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "YAGO3-10",
+        "Metric": "Hits@3",
+        "KGEModel": "TaKE-DistMult",
+        "NSMethod": "Unknown",
+        "result": 0.45
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "YAGO3-10",
+        "Metric": "Hits@3",
+        "KGEModel": "ComplEx",
+        "NSMethod": "Unknown",
+        "result": 0.4
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "YAGO3-10",
+        "Metric": "Hits@3",
+        "KGEModel": "DistMult",
+        "NSMethod": "Unknown",
+        "result": 0.38
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "YAGO3-10",
+        "Metric": "Hits@3",
+        "KGEModel": "TaKE-TransE",
+        "NSMethod": "Unknown",
+        "result": 0.375
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "YAGO3-10",
+        "Metric": "Hits@10",
+        "KGEModel": "TaKE-SimplE",
+        "NSMethod": "Unknown",
+        "result": 0.705
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "YAGO3-10",
+        "Metric": "Hits@10",
+        "KGEModel": "TaKE-RotatE",
+        "NSMethod": "Unknown",
+        "result": 0.701
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "YAGO3-10",
+        "Metric": "Hits@10",
+        "KGEModel": "RotatE",
+        "NSMethod": "Unknown",
+        "result": 0.67
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "YAGO3-10",
+        "Metric": "Hits@10",
+        "KGEModel": "SimplE",
+        "NSMethod": "Unknown",
+        "result": 0.645
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "YAGO3-10",
+        "Metric": "Hits@10",
+        "KGEModel": "TaKE-ComplEx",
+        "NSMethod": "Unknown",
+        "result": 0.618
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "YAGO3-10",
+        "Metric": "Hits@10",
+        "KGEModel": "TypeComplex",
+        "NSMethod": "Unknown",
+        "result": 0.609
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "YAGO3-10",
+        "Metric": "Hits@10",
+        "KGEModel": "TaKE-DistMult",
+        "NSMethod": "Unknown",
+        "result": 0.608
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "YAGO3-10",
+        "Metric": "Hits@10",
+        "KGEModel": "TypeDM",
+        "NSMethod": "Unknown",
+        "result": 0.606
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "YAGO3-10",
+        "Metric": "Hits@10",
+        "KGEModel": "ComplEx",
+        "NSMethod": "Unknown",
+        "result": 0.55
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "YAGO3-10",
+        "Metric": "Hits@10",
+        "KGEModel": "DistMult",
+        "NSMethod": "Unknown",
+        "result": 0.54
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "YAGO3-10",
+        "Metric": "Hits@10",
+        "KGEModel": "TaKE-TransE",
+        "NSMethod": "Unknown",
+        "result": 0.488
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "YAGO3-10",
+        "Metric": "Hits@10",
+        "KGEModel": "TransE",
+        "NSMethod": "Unknown",
+        "result": 0.37
+      }
+    ]
+  }
+}

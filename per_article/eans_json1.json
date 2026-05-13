@@ -8,9 +8,9 @@
   "mentionedNSMethods": [
     "Uniform Negative Sampling",
     "Self-Adversarial Negative Sampling",
-    "KBGAN",
-    "NSCaching",
-    "Structure Aware Negative Sampling"
+    "NS-Caching",
+    "KB-GAN",
+    "SANS"
   ],
   "mentionedKGEModels": [
     "TransE",
@@ -20,8 +20,7 @@
     "RESCAL",
     "DistMult",
     "ComplEx",
-    "RotatE",
-    "ConvE"
+    "RotatE"
   ],
   "Experimentation": {
     "Hardware": [
@@ -35,8 +34,7 @@
         "Adam"
       ],
       "learningRate": null,
-      "nsRatio": null,
-      "batchSize": null
+      "nsRatio": null
     }
   }
 }

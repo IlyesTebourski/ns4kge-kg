@@ -1,0 +1,480 @@
+{
+  "Article": {
+    "title": "Improving Knowledge Graph Completion Using Soft Rules and Adversarial Learning",
+    "date": "2021"
+  },
+  "proposedNSMethod": "soft Rules and graph adversarial learning",
+  "proposedKGEModel": "",
+  "mentionedNSMethods": [
+    "KBGAN",
+    "Uniform Negative Sampling"
+  ],
+  "mentionedKGEModels": [
+    "DistMult",
+    "TransH",
+    "RUGE",
+    "TransD",
+    "RUGA",
+    "HolE",
+    "TransR",
+    "TransE",
+    "ComplEx",
+    "RESCAL"
+  ],
+  "Experimentation": {
+    "Hardware": [],
+    "TrainingProtocol": {
+      "LossFunction": [
+        "margin-based ranking loss",
+        "log-softmax loss",
+        "cross-entropy loss",
+        "negative sampling loss"
+      ],
+      "Optimizer": [],
+      "learningRate": null,
+      "nsRatio": 10.0
+    },
+    "Configurations": [
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K",
+        "Metric": "MRR",
+        "KGEModel": "RUGA",
+        "NSMethod": "soft Rules and graph adversarial learning",
+        "result": 0.779
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K",
+        "Metric": "MRR",
+        "KGEModel": "RUGE",
+        "NSMethod": "Unknown",
+        "result": 0.767
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K",
+        "Metric": "MRR",
+        "KGEModel": "ComplEx",
+        "NSMethod": "Unknown",
+        "result": 0.69
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K",
+        "Metric": "MR",
+        "KGEModel": "RUGA",
+        "NSMethod": "soft Rules and graph adversarial learning",
+        "result": 1.0
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K",
+        "Metric": "MR",
+        "KGEModel": "RUGE",
+        "NSMethod": "Unknown",
+        "result": 1.0
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K",
+        "Metric": "MR",
+        "KGEModel": "DistMult",
+        "NSMethod": "Unknown",
+        "result": 1.0
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K",
+        "Metric": "MR",
+        "KGEModel": "ComplEx",
+        "NSMethod": "Unknown",
+        "result": 1.0
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K",
+        "Metric": "Hits@1",
+        "KGEModel": "RUGA",
+        "NSMethod": "soft Rules and graph adversarial learning",
+        "result": 0.708
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K",
+        "Metric": "Hits@1",
+        "KGEModel": "RUGE",
+        "NSMethod": "Unknown",
+        "result": 0.701
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K",
+        "Metric": "Hits@1",
+        "KGEModel": "ComplEx",
+        "NSMethod": "Unknown",
+        "result": 0.593
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K",
+        "Metric": "Hits@3",
+        "KGEModel": "RUGA",
+        "NSMethod": "soft Rules and graph adversarial learning",
+        "result": 0.826
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K",
+        "Metric": "Hits@3",
+        "KGEModel": "RUGE",
+        "NSMethod": "Unknown",
+        "result": 0.817
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K",
+        "Metric": "Hits@3",
+        "KGEModel": "ComplEx",
+        "NSMethod": "Unknown",
+        "result": 0.747
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K",
+        "Metric": "Hits@5",
+        "KGEModel": "RUGA",
+        "NSMethod": "soft Rules and graph adversarial learning",
+        "result": 0.846
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K",
+        "Metric": "Hits@5",
+        "KGEModel": "RUGE",
+        "NSMethod": "Unknown",
+        "result": 0.834
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K",
+        "Metric": "Hits@5",
+        "KGEModel": "ComplEx",
+        "NSMethod": "Unknown",
+        "result": 0.786
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K",
+        "Metric": "Hits@10",
+        "KGEModel": "RUGA",
+        "NSMethod": "soft Rules and graph adversarial learning",
+        "result": 0.875
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K",
+        "Metric": "Hits@10",
+        "KGEModel": "RUGE",
+        "NSMethod": "Unknown",
+        "result": 0.861
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K",
+        "Metric": "Hits@10",
+        "KGEModel": "ComplEx",
+        "NSMethod": "Unknown",
+        "result": 0.83
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "YAGO37",
+        "Metric": "MRR",
+        "KGEModel": "RUGA",
+        "NSMethod": "soft Rules and graph adversarial learning",
+        "result": 0.432
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "YAGO37",
+        "Metric": "MRR",
+        "KGEModel": "RUGE",
+        "NSMethod": "Unknown",
+        "result": 0.429
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "YAGO37",
+        "Metric": "MRR",
+        "KGEModel": "ComplEx",
+        "NSMethod": "Unknown",
+        "result": 0.415
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "YAGO37",
+        "Metric": "MR",
+        "KGEModel": "RUGA",
+        "NSMethod": "soft Rules and graph adversarial learning",
+        "result": 4.0
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "YAGO37",
+        "Metric": "MR",
+        "KGEModel": "RUGE",
+        "NSMethod": "Unknown",
+        "result": 4.0
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "YAGO37",
+        "Metric": "MR",
+        "KGEModel": "ComplEx",
+        "NSMethod": "Unknown",
+        "result": 4.0
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "YAGO37",
+        "Metric": "Hits@1",
+        "KGEModel": "RUGA",
+        "NSMethod": "soft Rules and graph adversarial learning",
+        "result": 0.345
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "YAGO37",
+        "Metric": "Hits@1",
+        "KGEModel": "RUGE",
+        "NSMethod": "Unknown",
+        "result": 0.338
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "YAGO37",
+        "Metric": "Hits@1",
+        "KGEModel": "ComplEx",
+        "NSMethod": "Unknown",
+        "result": 0.32
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "YAGO37",
+        "Metric": "Hits@3",
+        "KGEModel": "RUGA",
+        "NSMethod": "soft Rules and graph adversarial learning",
+        "result": 0.49
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "YAGO37",
+        "Metric": "Hits@3",
+        "KGEModel": "RUGE",
+        "NSMethod": "Unknown",
+        "result": 0.481
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "YAGO37",
+        "Metric": "Hits@3",
+        "KGEModel": "ComplEx",
+        "NSMethod": "Unknown",
+        "result": 0.465
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "YAGO37",
+        "Metric": "Hits@5",
+        "KGEModel": "RUGA",
+        "NSMethod": "soft Rules and graph adversarial learning",
+        "result": 0.548
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "YAGO37",
+        "Metric": "Hits@5",
+        "KGEModel": "RUGE",
+        "NSMethod": "Unknown",
+        "result": 0.54
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "YAGO37",
+        "Metric": "Hits@5",
+        "KGEModel": "ComplEx",
+        "NSMethod": "Unknown",
+        "result": 0.53
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "YAGO37",
+        "Metric": "Hits@10",
+        "KGEModel": "RUGA",
+        "NSMethod": "soft Rules and graph adversarial learning",
+        "result": 0.611
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "YAGO37",
+        "Metric": "Hits@10",
+        "KGEModel": "RUGE",
+        "NSMethod": "Unknown",
+        "result": 0.602
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "YAGO37",
+        "Metric": "Hits@10",
+        "KGEModel": "ComplEx",
+        "NSMethod": "Unknown",
+        "result": 0.601
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K",
+        "Metric": "MRR",
+        "KGEModel": "TransE",
+        "NSMethod": "Unknown",
+        "result": 0.392
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K",
+        "Metric": "MRR",
+        "KGEModel": "DistMult",
+        "NSMethod": "Unknown",
+        "result": 0.634
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "FB15K",
+        "Metric": "MRR",
+        "KGEModel": "HolE",
+        "NSMethod": "Unknown",
+        "result": 0.608
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "YAGO37",
+        "Metric": "MRR",
+        "KGEModel": "TransE",
+        "NSMethod": "Unknown",
+        "result": 0.302
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "YAGO37",
+        "Metric": "MRR",
+        "KGEModel": "DistMult",
+        "NSMethod": "Unknown",
+        "result": 0.358
+      },
+      {
+        "Task": "Link Prediction",
+        "Dataset": "YAGO37",
+        "Metric": "MRR",
+        "KGEModel": "HolE",
+        "NSMethod": "Unknown",
+        "result": 0.378
+      },
+      {
+        "Task": "Triple Classification",
+        "Dataset": "FB15K",
+        "Metric": "Accuracy",
+        "KGEModel": "RUGA",
+        "NSMethod": "soft Rules and graph adversarial learning",
+        "result": 0.763
+      },
+      {
+        "Task": "Triple Classification",
+        "Dataset": "FB15K",
+        "Metric": "Accuracy",
+        "KGEModel": "RUGE",
+        "NSMethod": "Unknown",
+        "result": 0.741
+      },
+      {
+        "Task": "Triple Classification",
+        "Dataset": "FB15K",
+        "Metric": "Accuracy",
+        "KGEModel": "ComplEx",
+        "NSMethod": "Unknown",
+        "result": 0.735
+      },
+      {
+        "Task": "Triple Classification",
+        "Dataset": "FB15K",
+        "Metric": "Accuracy",
+        "KGEModel": "HolE",
+        "NSMethod": "Unknown",
+        "result": 0.714
+      },
+      {
+        "Task": "Triple Classification",
+        "Dataset": "FB15K",
+        "Metric": "Accuracy",
+        "KGEModel": "DistMult",
+        "NSMethod": "Unknown",
+        "result": 0.702
+      },
+      {
+        "Task": "Triple Classification",
+        "Dataset": "FB15K",
+        "Metric": "Accuracy",
+        "KGEModel": "TransE",
+        "NSMethod": "Unknown",
+        "result": 0.695
+      },
+      {
+        "Task": "Triple Classification",
+        "Dataset": "YAGO37",
+        "Metric": "Accuracy",
+        "KGEModel": "RUGA",
+        "NSMethod": "soft Rules and graph adversarial learning",
+        "result": 0.814
+      },
+      {
+        "Task": "Triple Classification",
+        "Dataset": "YAGO37",
+        "Metric": "Accuracy",
+        "KGEModel": "RUGE",
+        "NSMethod": "Unknown",
+        "result": 0.81
+      },
+      {
+        "Task": "Triple Classification",
+        "Dataset": "YAGO37",
+        "Metric": "Accuracy",
+        "KGEModel": "ComplEx",
+        "NSMethod": "Unknown",
+        "result": 0.801
+      },
+      {
+        "Task": "Triple Classification",
+        "Dataset": "YAGO37",
+        "Metric": "Accuracy",
+        "KGEModel": "HolE",
+        "NSMethod": "Unknown",
+        "result": 0.778
+      },
+      {
+        "Task": "Triple Classification",
+        "Dataset": "YAGO37",
+        "Metric": "Accuracy",
+        "KGEModel": "DistMult",
+        "NSMethod": "Unknown",
+        "result": 0.725
+      },
+      {
+        "Task": "Triple Classification",
+        "Dataset": "YAGO37",
+        "Metric": "Accuracy",
+        "KGEModel": "TransE",
+        "NSMethod": "Unknown",
+        "result": 0.703
+      }
+    ]
+  }
+}

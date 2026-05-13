@@ -1,0 +1,41 @@
+{
+  "Article": {
+    "title": "Negative Sampling with Adaptive Denoising Mixup for Knowledge Graph Embedding",
+    "date": "2023"
+  },
+  "proposedNSMethod": "Adaptive Denoising Mixup",
+  "proposedKGEModel": "",
+  "mentionedNSMethods": [
+    "Uniform Sampling",
+    "Bernoulli Sampling",
+    "NSCaching",
+    "Self-adversarial Sampling",
+    "KBGAN",
+    "IGAN",
+    "RW-SANS",
+    "CANS",
+    "ESNS",
+    "MixKG"
+  ],
+  "mentionedKGEModels": [
+    "TransE",
+    "RotatE",
+    "HAKE",
+    "DistMult",
+    "ComplEx",
+    "TransH"
+  ],
+  "Experimentation": {
+    "Hardware": [],
+    "TrainingProtocol": {
+      "LossFunction": [
+        "cross-entropy loss"
+      ],
+      "Optimizer": [
+        "Adam"
+      ],
+      "learningRate": null,
+      "nsRatio": null
+    }
+  }
+}

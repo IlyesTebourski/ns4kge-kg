@@ -1,0 +1,40 @@
+{
+  "Article": {
+    "title": "Diversified and Adaptive Negative Sampling on Knowledge Graphs",
+    "date": "2025"
+  },
+  "proposedNSMethod": "Diversified and Adaptive Negative Sampling",
+  "proposedKGEModel": "",
+  "mentionedNSMethods": [
+    "Random Negative Sampling",
+    "Popularity-weighted Negative Sampling",
+    "Self-adversarial Negative Sampling",
+    "Markov Chain Monte Carlo Negative Sampling",
+    "Structure-Aware Negative Sampling",
+    "NSCaching",
+    "KBGAN",
+    "CAKE",
+    "SMiLE",
+    "IGAN",
+    "HeGAN",
+    "GNDN"
+  ],
+  "mentionedKGEModels": [
+    "TransE",
+    "DistMult",
+    "ComplEx",
+    "RotatE",
+    "RGCN"
+  ],
+  "Experimentation": {
+    "Hardware": [],
+    "TrainingProtocol": {
+      "LossFunction": [
+        "cross-entropy loss"
+      ],
+      "Optimizer": [],
+      "learningRate": 0.001,
+      "nsRatio": 20
+    }
+  }
+}

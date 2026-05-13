@@ -1,0 +1,324 @@
+{
+  "Configurations": [
+    {
+      "Task": "Link Prediction",
+      "Dataset": "arXiv-AstroPh",
+      "Metric": "Accuracy",
+      "KGEModel": "GraphGAN",
+      "NSMethod": "Unknown",
+      "result": 0.855
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "arXiv-AstroPh",
+      "Metric": "F1",
+      "KGEModel": "GraphGAN",
+      "NSMethod": "Unknown",
+      "result": 0.859
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "arXiv-AstroPh",
+      "Metric": "Accuracy",
+      "KGEModel": "Node2vec",
+      "NSMethod": "Negative Sampling",
+      "result": 0.845
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "arXiv-AstroPh",
+      "Metric": "F1",
+      "KGEModel": "Node2vec",
+      "NSMethod": "Negative Sampling",
+      "result": 0.854
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "arXiv-AstroPh",
+      "Metric": "Accuracy",
+      "KGEModel": "DeepWalk",
+      "NSMethod": "Negative Sampling",
+      "result": 0.841
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "arXiv-AstroPh",
+      "Metric": "F1",
+      "KGEModel": "DeepWalk",
+      "NSMethod": "Negative Sampling",
+      "result": 0.839
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "arXiv-AstroPh",
+      "Metric": "Accuracy",
+      "KGEModel": "LINE",
+      "NSMethod": "Negative Sampling",
+      "result": 0.82
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "arXiv-AstroPh",
+      "Metric": "F1",
+      "KGEModel": "LINE",
+      "NSMethod": "Negative Sampling",
+      "result": 0.814
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "arXiv-AstroPh",
+      "Metric": "Accuracy",
+      "KGEModel": "Struc2vec",
+      "NSMethod": "Negative Sampling",
+      "result": 0.821
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "arXiv-AstroPh",
+      "Metric": "F1",
+      "KGEModel": "Struc2vec",
+      "NSMethod": "Negative Sampling",
+      "result": 0.81
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "arXiv-GrQc",
+      "Metric": "Accuracy",
+      "KGEModel": "GraphGAN",
+      "NSMethod": "Unknown",
+      "result": 0.849
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "arXiv-GrQc",
+      "Metric": "F1",
+      "KGEModel": "GraphGAN",
+      "NSMethod": "Unknown",
+      "result": 0.853
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "arXiv-GrQc",
+      "Metric": "Accuracy",
+      "KGEModel": "Node2vec",
+      "NSMethod": "Negative Sampling",
+      "result": 0.844
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "arXiv-GrQc",
+      "Metric": "F1",
+      "KGEModel": "Node2vec",
+      "NSMethod": "Negative Sampling",
+      "result": 0.842
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "arXiv-GrQc",
+      "Metric": "Accuracy",
+      "KGEModel": "DeepWalk",
+      "NSMethod": "Negative Sampling",
+      "result": 0.803
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "arXiv-GrQc",
+      "Metric": "F1",
+      "KGEModel": "DeepWalk",
+      "NSMethod": "Negative Sampling",
+      "result": 0.812
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "arXiv-GrQc",
+      "Metric": "Accuracy",
+      "KGEModel": "LINE",
+      "NSMethod": "Negative Sampling",
+      "result": 0.764
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "arXiv-GrQc",
+      "Metric": "F1",
+      "KGEModel": "LINE",
+      "NSMethod": "Negative Sampling",
+      "result": 0.761
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "arXiv-GrQc",
+      "Metric": "Accuracy",
+      "KGEModel": "Struc2vec",
+      "NSMethod": "Negative Sampling",
+      "result": 0.78
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "arXiv-GrQc",
+      "Metric": "F1",
+      "KGEModel": "Struc2vec",
+      "NSMethod": "Negative Sampling",
+      "result": 0.776
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "BlogCatalog",
+      "Metric": "Accuracy",
+      "KGEModel": "GraphGAN",
+      "NSMethod": "Unknown",
+      "result": 0.232
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "BlogCatalog",
+      "Metric": "F1",
+      "KGEModel": "GraphGAN",
+      "NSMethod": "Unknown",
+      "result": 0.221
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "BlogCatalog",
+      "Metric": "Accuracy",
+      "KGEModel": "Struc2vec",
+      "NSMethod": "Negative Sampling",
+      "result": 0.228
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "BlogCatalog",
+      "Metric": "F1",
+      "KGEModel": "Struc2vec",
+      "NSMethod": "Negative Sampling",
+      "result": 0.216
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "BlogCatalog",
+      "Metric": "Accuracy",
+      "KGEModel": "DeepWalk",
+      "NSMethod": "Negative Sampling",
+      "result": 0.225
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "BlogCatalog",
+      "Metric": "F1",
+      "KGEModel": "DeepWalk",
+      "NSMethod": "Negative Sampling",
+      "result": 0.214
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "BlogCatalog",
+      "Metric": "Accuracy",
+      "KGEModel": "Node2vec",
+      "NSMethod": "Negative Sampling",
+      "result": 0.215
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "BlogCatalog",
+      "Metric": "F1",
+      "KGEModel": "Node2vec",
+      "NSMethod": "Negative Sampling",
+      "result": 0.206
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "BlogCatalog",
+      "Metric": "Accuracy",
+      "KGEModel": "LINE",
+      "NSMethod": "Negative Sampling",
+      "result": 0.205
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "BlogCatalog",
+      "Metric": "F1",
+      "KGEModel": "LINE",
+      "NSMethod": "Negative Sampling",
+      "result": 0.192
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Wikipedia",
+      "Metric": "Accuracy",
+      "KGEModel": "GraphGAN",
+      "NSMethod": "Unknown",
+      "result": 0.213
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Wikipedia",
+      "Metric": "F1",
+      "KGEModel": "GraphGAN",
+      "NSMethod": "Unknown",
+      "result": 0.194
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Wikipedia",
+      "Metric": "Accuracy",
+      "KGEModel": "Struc2vec",
+      "NSMethod": "Negative Sampling",
+      "result": 0.211
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Wikipedia",
+      "Metric": "F1",
+      "KGEModel": "Struc2vec",
+      "NSMethod": "Negative Sampling",
+      "result": 0.19
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Wikipedia",
+      "Metric": "Accuracy",
+      "KGEModel": "DeepWalk",
+      "NSMethod": "Negative Sampling",
+      "result": 0.194
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Wikipedia",
+      "Metric": "F1",
+      "KGEModel": "DeepWalk",
+      "NSMethod": "Negative Sampling",
+      "result": 0.183
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Wikipedia",
+      "Metric": "Accuracy",
+      "KGEModel": "Node2vec",
+      "NSMethod": "Negative Sampling",
+      "result": 0.191
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Wikipedia",
+      "Metric": "F1",
+      "KGEModel": "Node2vec",
+      "NSMethod": "Negative Sampling",
+      "result": 0.179
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Wikipedia",
+      "Metric": "Accuracy",
+      "KGEModel": "LINE",
+      "NSMethod": "Negative Sampling",
+      "result": 0.175
+    },
+    {
+      "Task": "Link Prediction",
+      "Dataset": "Wikipedia",
+      "Metric": "F1",
+      "KGEModel": "LINE",
+      "NSMethod": "Negative Sampling",
+      "result": 0.164
+    }
+  ]
+}

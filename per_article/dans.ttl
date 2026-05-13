@@ -1,0 +1,1320 @@
+<article/dans> rdf:type ns4kge:Article .
+<article/dans> ns4kge:title "Diversified and Adaptive Negative Sampling on Knowledge Graphs"^^xsd:string .
+<article/dans> ns4kge:date "2025"^^xsd:gYear .
+<article/dans> ns4kge:proposesNSMethod <ns-method/diversified-and-adaptive-negative-sampling> .
+<article/dans> ns4kge:mentionsNSMethod <ns-method/cake> .
+<article/dans> ns4kge:mentionsNSMethod <ns-method/markov-chain-monte-carlo-negative-sampling> .
+<article/dans> ns4kge:mentionsNSMethod <ns-method/igan> .
+<article/dans> ns4kge:mentionsNSMethod <ns-method/popularity-weighted-negative-sampling> .
+<article/dans> ns4kge:mentionsNSMethod <ns-method/random-negative-sampling> .
+<article/dans> ns4kge:mentionsNSMethod <ns-method/smile> .
+<article/dans> ns4kge:mentionsNSMethod <ns-method/self-adversarial-negative-sampling> .
+<article/dans> ns4kge:mentionsNSMethod <ns-method/kbgan> .
+<article/dans> ns4kge:mentionsNSMethod <ns-method/nscaching> .
+<article/dans> ns4kge:mentionsNSMethod <ns-method/hegan> .
+<article/dans> ns4kge:mentionsNSMethod <ns-method/sans> .
+<article/dans> ns4kge:mentionsNSMethod <ns-method/gndn> .
+<article/dans> ns4kge:mentionsKGEModel <kge-model/complex> .
+<article/dans> ns4kge:mentionsKGEModel <kge-model/transe> .
+<article/dans> ns4kge:mentionsKGEModel <kge-model/distmult> .
+<article/dans> ns4kge:mentionsKGEModel <kge-model/rgcn> .
+<article/dans> ns4kge:mentionsKGEModel <kge-model/rotate> .
+<article/dans> ns4kge:hasExperimentation <experimentation/dans> .
+
+<ns-method/diversified-and-adaptive-negative-sampling> rdf:type ns4kge:NSMethod .
+
+<ns-method/cake> rdf:type ns4kge:NSMethod .
+<category/self-adversarial-ns> rdf:type ns4kge:Category .
+
+<ns-method/cake> ns4kge:hasCategory <category/self-adversarial-ns> .
+<subcategory/knowledge-constrained> rdf:type ns4kge:Subcategory .
+
+<ns-method/cake> ns4kge:hasSubcategory <subcategory/knowledge-constrained> .
+
+<ns-method/markov-chain-monte-carlo-negative-sampling> rdf:type ns4kge:NSMethod .
+
+<ns-method/igan> rdf:type ns4kge:NSMethod .
+<category/adversarial-ns> rdf:type ns4kge:Category .
+
+<ns-method/igan> ns4kge:hasCategory <category/adversarial-ns> .
+<subcategory/standard> rdf:type ns4kge:Subcategory .
+
+<ns-method/igan> ns4kge:hasSubcategory <subcategory/standard> .
+
+<ns-method/popularity-weighted-negative-sampling> rdf:type ns4kge:NSMethod .
+
+<ns-method/random-negative-sampling> rdf:type ns4kge:NSMethod .
+<category/static-ns> rdf:type ns4kge:Category .
+
+<ns-method/random-negative-sampling> ns4kge:hasCategory <category/static-ns> .
+<subcategory/random> rdf:type ns4kge:Subcategory .
+
+<ns-method/random-negative-sampling> ns4kge:hasSubcategory <subcategory/random> .
+
+<ns-method/smile> rdf:type ns4kge:NSMethod .
+
+<ns-method/self-adversarial-negative-sampling> rdf:type ns4kge:NSMethod .
+<ns-method/self-adversarial-negative-sampling> ns4kge:hasCategory <category/self-adversarial-ns> .
+<subcategory/direct> rdf:type ns4kge:Subcategory .
+
+<ns-method/self-adversarial-negative-sampling> ns4kge:hasSubcategory <subcategory/direct> .
+
+<ns-method/kbgan> rdf:type ns4kge:NSMethod .
+<ns-method/kbgan> ns4kge:hasCategory <category/adversarial-ns> .
+<ns-method/kbgan> ns4kge:hasSubcategory <subcategory/standard> .
+
+<ns-method/nscaching> rdf:type ns4kge:NSMethod .
+<ns-method/nscaching> ns4kge:hasCategory <category/self-adversarial-ns> .
+<ns-method/nscaching> ns4kge:hasSubcategory <subcategory/direct> .
+
+<ns-method/hegan> rdf:type ns4kge:NSMethod .
+
+<ns-method/sans> rdf:type ns4kge:NSMethod .
+<ns-method/sans> ns4kge:hasCategory <category/static-ns> .
+<ns-method/sans> ns4kge:hasSubcategory <subcategory/knowledge-constrained> .
+
+<ns-method/gndn> rdf:type ns4kge:NSMethod .
+<ns-method/gndn> ns4kge:hasCategory <category/adversarial-ns> .
+<ns-method/gndn> ns4kge:hasSubcategory <subcategory/standard> .
+
+<kge-model/complex> rdf:type ns4kge:KGEModel .
+
+<kge-model/transe> rdf:type ns4kge:KGEModel .
+
+<kge-model/distmult> rdf:type ns4kge:KGEModel .
+
+<kge-model/rgcn> rdf:type ns4kge:KGEModel .
+
+<kge-model/rotate> rdf:type ns4kge:KGEModel .
+
+<dataset/wn18rr> rdf:type ns4kge:Dataset .
+<task/link-prediction> rdf:type ns4kge:Task .
+<metric/mrr> rdf:type ns4kge:Metric .
+<metric/hits-1> rdf:type ns4kge:Metric .
+<metric/ndcg-5> rdf:type ns4kge:Metric .
+<dataset/nell-995> rdf:type ns4kge:Dataset .
+<dataset/umls> rdf:type ns4kge:Dataset .
+<loss-function/cross-entropy-loss> rdf:type ns4kge:LossFunction .
+
+<experimentation/dans> rdf:type ns4kge:Experimentation .
+<experimentation/dans> ns4kge:hasTrainingProtocol <training-protocol/dans> .
+<experimentation/dans> ns4kge:hasConfiguration <configuration/dans/1> .
+<experimentation/dans> ns4kge:hasConfiguration <configuration/dans/2> .
+<experimentation/dans> ns4kge:hasConfiguration <configuration/dans/3> .
+<experimentation/dans> ns4kge:hasConfiguration <configuration/dans/4> .
+<experimentation/dans> ns4kge:hasConfiguration <configuration/dans/5> .
+<experimentation/dans> ns4kge:hasConfiguration <configuration/dans/6> .
+<experimentation/dans> ns4kge:hasConfiguration <configuration/dans/7> .
+<experimentation/dans> ns4kge:hasConfiguration <configuration/dans/8> .
+<experimentation/dans> ns4kge:hasConfiguration <configuration/dans/9> .
+<experimentation/dans> ns4kge:hasConfiguration <configuration/dans/10> .
+<experimentation/dans> ns4kge:hasConfiguration <configuration/dans/11> .
+<experimentation/dans> ns4kge:hasConfiguration <configuration/dans/12> .
+<experimentation/dans> ns4kge:hasConfiguration <configuration/dans/13> .
+<experimentation/dans> ns4kge:hasConfiguration <configuration/dans/14> .
+<experimentation/dans> ns4kge:hasConfiguration <configuration/dans/15> .
+<experimentation/dans> ns4kge:hasConfiguration <configuration/dans/16> .
+<experimentation/dans> ns4kge:hasConfiguration <configuration/dans/17> .
+<experimentation/dans> ns4kge:hasConfiguration <configuration/dans/18> .
+<experimentation/dans> ns4kge:hasConfiguration <configuration/dans/19> .
+<experimentation/dans> ns4kge:hasConfiguration <configuration/dans/20> .
+<experimentation/dans> ns4kge:hasConfiguration <configuration/dans/21> .
+<experimentation/dans> ns4kge:hasConfiguration <configuration/dans/22> .
+<experimentation/dans> ns4kge:hasConfiguration <configuration/dans/23> .
+<experimentation/dans> ns4kge:hasConfiguration <configuration/dans/24> .
+<experimentation/dans> ns4kge:hasConfiguration <configuration/dans/25> .
+<experimentation/dans> ns4kge:hasConfiguration <configuration/dans/26> .
+<experimentation/dans> ns4kge:hasConfiguration <configuration/dans/27> .
+<experimentation/dans> ns4kge:hasConfiguration <configuration/dans/28> .
+<experimentation/dans> ns4kge:hasConfiguration <configuration/dans/29> .
+<experimentation/dans> ns4kge:hasConfiguration <configuration/dans/30> .
+<experimentation/dans> ns4kge:hasConfiguration <configuration/dans/31> .
+<experimentation/dans> ns4kge:hasConfiguration <configuration/dans/32> .
+<experimentation/dans> ns4kge:hasConfiguration <configuration/dans/33> .
+<experimentation/dans> ns4kge:hasConfiguration <configuration/dans/34> .
+<experimentation/dans> ns4kge:hasConfiguration <configuration/dans/35> .
+<experimentation/dans> ns4kge:hasConfiguration <configuration/dans/36> .
+<experimentation/dans> ns4kge:hasConfiguration <configuration/dans/37> .
+<experimentation/dans> ns4kge:hasConfiguration <configuration/dans/38> .
+<experimentation/dans> ns4kge:hasConfiguration <configuration/dans/39> .
+<experimentation/dans> ns4kge:hasConfiguration <configuration/dans/40> .
+<experimentation/dans> ns4kge:hasConfiguration <configuration/dans/41> .
+<experimentation/dans> ns4kge:hasConfiguration <configuration/dans/42> .
+<experimentation/dans> ns4kge:hasConfiguration <configuration/dans/43> .
+<experimentation/dans> ns4kge:hasConfiguration <configuration/dans/44> .
+<experimentation/dans> ns4kge:hasConfiguration <configuration/dans/45> .
+<experimentation/dans> ns4kge:hasConfiguration <configuration/dans/46> .
+<experimentation/dans> ns4kge:hasConfiguration <configuration/dans/47> .
+<experimentation/dans> ns4kge:hasConfiguration <configuration/dans/48> .
+<experimentation/dans> ns4kge:hasConfiguration <configuration/dans/49> .
+<experimentation/dans> ns4kge:hasConfiguration <configuration/dans/50> .
+<experimentation/dans> ns4kge:hasConfiguration <configuration/dans/51> .
+<experimentation/dans> ns4kge:hasConfiguration <configuration/dans/52> .
+<experimentation/dans> ns4kge:hasConfiguration <configuration/dans/53> .
+<experimentation/dans> ns4kge:hasConfiguration <configuration/dans/54> .
+<experimentation/dans> ns4kge:hasConfiguration <configuration/dans/55> .
+<experimentation/dans> ns4kge:hasConfiguration <configuration/dans/56> .
+<experimentation/dans> ns4kge:hasConfiguration <configuration/dans/57> .
+<experimentation/dans> ns4kge:hasConfiguration <configuration/dans/58> .
+<experimentation/dans> ns4kge:hasConfiguration <configuration/dans/59> .
+<experimentation/dans> ns4kge:hasConfiguration <configuration/dans/60> .
+<experimentation/dans> ns4kge:hasConfiguration <configuration/dans/61> .
+<experimentation/dans> ns4kge:hasConfiguration <configuration/dans/62> .
+<experimentation/dans> ns4kge:hasConfiguration <configuration/dans/63> .
+<experimentation/dans> ns4kge:hasConfiguration <configuration/dans/64> .
+<experimentation/dans> ns4kge:hasConfiguration <configuration/dans/65> .
+<experimentation/dans> ns4kge:hasConfiguration <configuration/dans/66> .
+<experimentation/dans> ns4kge:hasConfiguration <configuration/dans/67> .
+<experimentation/dans> ns4kge:hasConfiguration <configuration/dans/68> .
+<experimentation/dans> ns4kge:hasConfiguration <configuration/dans/69> .
+<experimentation/dans> ns4kge:hasConfiguration <configuration/dans/70> .
+<experimentation/dans> ns4kge:hasConfiguration <configuration/dans/71> .
+<experimentation/dans> ns4kge:hasConfiguration <configuration/dans/72> .
+<experimentation/dans> ns4kge:hasConfiguration <configuration/dans/73> .
+<experimentation/dans> ns4kge:hasConfiguration <configuration/dans/74> .
+<experimentation/dans> ns4kge:hasConfiguration <configuration/dans/75> .
+<experimentation/dans> ns4kge:hasConfiguration <configuration/dans/76> .
+<experimentation/dans> ns4kge:hasConfiguration <configuration/dans/77> .
+<experimentation/dans> ns4kge:hasConfiguration <configuration/dans/78> .
+<experimentation/dans> ns4kge:hasConfiguration <configuration/dans/79> .
+<experimentation/dans> ns4kge:hasConfiguration <configuration/dans/80> .
+<experimentation/dans> ns4kge:hasConfiguration <configuration/dans/81> .
+<experimentation/dans> ns4kge:hasConfiguration <configuration/dans/82> .
+<experimentation/dans> ns4kge:hasConfiguration <configuration/dans/83> .
+<experimentation/dans> ns4kge:hasConfiguration <configuration/dans/84> .
+<experimentation/dans> ns4kge:hasConfiguration <configuration/dans/85> .
+<experimentation/dans> ns4kge:hasConfiguration <configuration/dans/86> .
+<experimentation/dans> ns4kge:hasConfiguration <configuration/dans/87> .
+<experimentation/dans> ns4kge:hasConfiguration <configuration/dans/88> .
+<experimentation/dans> ns4kge:hasConfiguration <configuration/dans/89> .
+<experimentation/dans> ns4kge:hasConfiguration <configuration/dans/90> .
+<experimentation/dans> ns4kge:hasConfiguration <configuration/dans/91> .
+<experimentation/dans> ns4kge:hasConfiguration <configuration/dans/92> .
+<experimentation/dans> ns4kge:hasConfiguration <configuration/dans/93> .
+<experimentation/dans> ns4kge:hasConfiguration <configuration/dans/94> .
+<experimentation/dans> ns4kge:hasConfiguration <configuration/dans/95> .
+<experimentation/dans> ns4kge:hasConfiguration <configuration/dans/96> .
+<experimentation/dans> ns4kge:hasConfiguration <configuration/dans/97> .
+<experimentation/dans> ns4kge:hasConfiguration <configuration/dans/98> .
+<experimentation/dans> ns4kge:hasConfiguration <configuration/dans/99> .
+<experimentation/dans> ns4kge:hasConfiguration <configuration/dans/100> .
+<experimentation/dans> ns4kge:hasConfiguration <configuration/dans/101> .
+<experimentation/dans> ns4kge:hasConfiguration <configuration/dans/102> .
+<experimentation/dans> ns4kge:hasConfiguration <configuration/dans/103> .
+<experimentation/dans> ns4kge:hasConfiguration <configuration/dans/104> .
+<experimentation/dans> ns4kge:hasConfiguration <configuration/dans/105> .
+<experimentation/dans> ns4kge:hasConfiguration <configuration/dans/106> .
+<experimentation/dans> ns4kge:hasConfiguration <configuration/dans/107> .
+<experimentation/dans> ns4kge:hasConfiguration <configuration/dans/108> .
+<experimentation/dans> ns4kge:hasConfiguration <configuration/dans/109> .
+<experimentation/dans> ns4kge:hasConfiguration <configuration/dans/110> .
+<experimentation/dans> ns4kge:hasConfiguration <configuration/dans/111> .
+<experimentation/dans> ns4kge:hasConfiguration <configuration/dans/112> .
+<experimentation/dans> ns4kge:hasConfiguration <configuration/dans/113> .
+<experimentation/dans> ns4kge:hasConfiguration <configuration/dans/114> .
+<experimentation/dans> ns4kge:hasConfiguration <configuration/dans/115> .
+<experimentation/dans> ns4kge:hasConfiguration <configuration/dans/116> .
+<experimentation/dans> ns4kge:hasConfiguration <configuration/dans/117> .
+<experimentation/dans> ns4kge:hasConfiguration <configuration/dans/118> .
+<experimentation/dans> ns4kge:hasConfiguration <configuration/dans/119> .
+<experimentation/dans> ns4kge:hasConfiguration <configuration/dans/120> .
+<experimentation/dans> ns4kge:hasConfiguration <configuration/dans/121> .
+<experimentation/dans> ns4kge:hasConfiguration <configuration/dans/122> .
+<experimentation/dans> ns4kge:hasConfiguration <configuration/dans/123> .
+<experimentation/dans> ns4kge:hasConfiguration <configuration/dans/124> .
+<experimentation/dans> ns4kge:hasConfiguration <configuration/dans/125> .
+<experimentation/dans> ns4kge:hasConfiguration <configuration/dans/126> .
+<experimentation/dans> ns4kge:hasConfiguration <configuration/dans/127> .
+<experimentation/dans> ns4kge:hasConfiguration <configuration/dans/128> .
+<experimentation/dans> ns4kge:hasConfiguration <configuration/dans/129> .
+<experimentation/dans> ns4kge:hasConfiguration <configuration/dans/130> .
+<experimentation/dans> ns4kge:hasConfiguration <configuration/dans/131> .
+<experimentation/dans> ns4kge:hasConfiguration <configuration/dans/132> .
+<experimentation/dans> ns4kge:hasConfiguration <configuration/dans/133> .
+<experimentation/dans> ns4kge:hasConfiguration <configuration/dans/134> .
+<experimentation/dans> ns4kge:hasConfiguration <configuration/dans/135> .
+
+<training-protocol/dans> rdf:type ns4kge:TrainingProtocol .
+<training-protocol/dans> ns4kge:hasLossFunction <loss-function/cross-entropy-loss> .
+<training-protocol/dans> ns4kge:learningRate "0.001"^^xsd:decimal .
+<training-protocol/dans> ns4kge:nsRatio "20"^^xsd:decimal .
+
+<configuration/dans/1> rdf:type ns4kge:Configuration .
+<configuration/dans/1> ns4kge:hasTask    <task/link-prediction> .
+<configuration/dans/1> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/dans/1> ns4kge:hasMetric  <metric/mrr> .
+<configuration/dans/1> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/dans/1> ns4kge:hasNSMethod <ns-method/diversified-and-adaptive-negative-sampling> .
+<configuration/dans/1> ns4kge:result "0.381"^^xsd:decimal .
+
+<configuration/dans/2> rdf:type ns4kge:Configuration .
+<configuration/dans/2> ns4kge:hasTask    <task/link-prediction> .
+<configuration/dans/2> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/dans/2> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/dans/2> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/dans/2> ns4kge:hasNSMethod <ns-method/diversified-and-adaptive-negative-sampling> .
+<configuration/dans/2> ns4kge:result "0.352"^^xsd:decimal .
+
+<configuration/dans/3> rdf:type ns4kge:Configuration .
+<configuration/dans/3> ns4kge:hasTask    <task/link-prediction> .
+<configuration/dans/3> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/dans/3> ns4kge:hasMetric  <metric/ndcg-5> .
+<configuration/dans/3> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/dans/3> ns4kge:hasNSMethod <ns-method/diversified-and-adaptive-negative-sampling> .
+<configuration/dans/3> ns4kge:result "0.386"^^xsd:decimal .
+
+<configuration/dans/4> rdf:type ns4kge:Configuration .
+<configuration/dans/4> ns4kge:hasTask    <task/link-prediction> .
+<configuration/dans/4> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/dans/4> ns4kge:hasMetric  <metric/mrr> .
+<configuration/dans/4> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/dans/4> ns4kge:hasNSMethod <ns-method/markov-chain-monte-carlo-negative-sampling> .
+<configuration/dans/4> ns4kge:result "0.376"^^xsd:decimal .
+
+<configuration/dans/5> rdf:type ns4kge:Configuration .
+<configuration/dans/5> ns4kge:hasTask    <task/link-prediction> .
+<configuration/dans/5> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/dans/5> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/dans/5> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/dans/5> ns4kge:hasNSMethod <ns-method/random-negative-sampling> .
+<configuration/dans/5> ns4kge:result "0.343"^^xsd:decimal .
+
+<configuration/dans/6> rdf:type ns4kge:Configuration .
+<configuration/dans/6> ns4kge:hasTask    <task/link-prediction> .
+<configuration/dans/6> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/dans/6> ns4kge:hasMetric  <metric/ndcg-5> .
+<configuration/dans/6> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/dans/6> ns4kge:hasNSMethod <ns-method/popularity-weighted-negative-sampling> .
+<configuration/dans/6> ns4kge:result "0.376"^^xsd:decimal .
+
+<configuration/dans/7> rdf:type ns4kge:Configuration .
+<configuration/dans/7> ns4kge:hasTask    <task/link-prediction> .
+<configuration/dans/7> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/dans/7> ns4kge:hasMetric  <metric/mrr> .
+<configuration/dans/7> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/dans/7> ns4kge:hasNSMethod <ns-method/popularity-weighted-negative-sampling> .
+<configuration/dans/7> ns4kge:result "0.374"^^xsd:decimal .
+
+<configuration/dans/8> rdf:type ns4kge:Configuration .
+<configuration/dans/8> ns4kge:hasTask    <task/link-prediction> .
+<configuration/dans/8> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/dans/8> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/dans/8> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/dans/8> ns4kge:hasNSMethod <ns-method/popularity-weighted-negative-sampling> .
+<configuration/dans/8> ns4kge:result "0.342"^^xsd:decimal .
+
+<configuration/dans/9> rdf:type ns4kge:Configuration .
+<configuration/dans/9> ns4kge:hasTask    <task/link-prediction> .
+<configuration/dans/9> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/dans/9> ns4kge:hasMetric  <metric/mrr> .
+<configuration/dans/9> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/dans/9> ns4kge:hasNSMethod <ns-method/random-negative-sampling> .
+<configuration/dans/9> ns4kge:result "0.372"^^xsd:decimal .
+
+<configuration/dans/10> rdf:type ns4kge:Configuration .
+<configuration/dans/10> ns4kge:hasTask    <task/link-prediction> .
+<configuration/dans/10> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/dans/10> ns4kge:hasMetric  <metric/ndcg-5> .
+<configuration/dans/10> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/dans/10> ns4kge:hasNSMethod <ns-method/random-negative-sampling> .
+<configuration/dans/10> ns4kge:result "0.369"^^xsd:decimal .
+
+<configuration/dans/11> rdf:type ns4kge:Configuration .
+<configuration/dans/11> ns4kge:hasTask    <task/link-prediction> .
+<configuration/dans/11> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/dans/11> ns4kge:hasMetric  <metric/mrr> .
+<configuration/dans/11> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/dans/11> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/dans/11> ns4kge:result "0.37"^^xsd:decimal .
+
+<configuration/dans/12> rdf:type ns4kge:Configuration .
+<configuration/dans/12> ns4kge:hasTask    <task/link-prediction> .
+<configuration/dans/12> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/dans/12> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/dans/12> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/dans/12> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/dans/12> ns4kge:result "0.332"^^xsd:decimal .
+
+<configuration/dans/13> rdf:type ns4kge:Configuration .
+<configuration/dans/13> ns4kge:hasTask    <task/link-prediction> .
+<configuration/dans/13> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/dans/13> ns4kge:hasMetric  <metric/ndcg-5> .
+<configuration/dans/13> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/dans/13> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/dans/13> ns4kge:result "0.373"^^xsd:decimal .
+
+<configuration/dans/14> rdf:type ns4kge:Configuration .
+<configuration/dans/14> ns4kge:hasTask    <task/link-prediction> .
+<configuration/dans/14> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/dans/14> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/dans/14> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/dans/14> ns4kge:hasNSMethod <ns-method/markov-chain-monte-carlo-negative-sampling> .
+<configuration/dans/14> ns4kge:result "0.34"^^xsd:decimal .
+
+<configuration/dans/15> rdf:type ns4kge:Configuration .
+<configuration/dans/15> ns4kge:hasTask    <task/link-prediction> .
+<configuration/dans/15> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/dans/15> ns4kge:hasMetric  <metric/ndcg-5> .
+<configuration/dans/15> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/dans/15> ns4kge:hasNSMethod <ns-method/markov-chain-monte-carlo-negative-sampling> .
+<configuration/dans/15> ns4kge:result "0.374"^^xsd:decimal .
+
+<configuration/dans/16> rdf:type ns4kge:Configuration .
+<configuration/dans/16> ns4kge:hasTask    <task/link-prediction> .
+<configuration/dans/16> ns4kge:hasDataset <dataset/nell-995> .
+<configuration/dans/16> ns4kge:hasMetric  <metric/mrr> .
+<configuration/dans/16> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/dans/16> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/dans/16> ns4kge:result "0.238"^^xsd:decimal .
+
+<configuration/dans/17> rdf:type ns4kge:Configuration .
+<configuration/dans/17> ns4kge:hasTask    <task/link-prediction> .
+<configuration/dans/17> ns4kge:hasDataset <dataset/nell-995> .
+<configuration/dans/17> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/dans/17> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/dans/17> ns4kge:hasNSMethod <ns-method/diversified-and-adaptive-negative-sampling> .
+<configuration/dans/17> ns4kge:result "0.162"^^xsd:decimal .
+
+<configuration/dans/18> rdf:type ns4kge:Configuration .
+<configuration/dans/18> ns4kge:hasTask    <task/link-prediction> .
+<configuration/dans/18> ns4kge:hasDataset <dataset/nell-995> .
+<configuration/dans/18> ns4kge:hasMetric  <metric/ndcg-5> .
+<configuration/dans/18> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/dans/18> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/dans/18> ns4kge:result "0.241"^^xsd:decimal .
+
+<configuration/dans/19> rdf:type ns4kge:Configuration .
+<configuration/dans/19> ns4kge:hasTask    <task/link-prediction> .
+<configuration/dans/19> ns4kge:hasDataset <dataset/nell-995> .
+<configuration/dans/19> ns4kge:hasMetric  <metric/mrr> .
+<configuration/dans/19> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/dans/19> ns4kge:hasNSMethod <ns-method/diversified-and-adaptive-negative-sampling> .
+<configuration/dans/19> ns4kge:result "0.227"^^xsd:decimal .
+
+<configuration/dans/20> rdf:type ns4kge:Configuration .
+<configuration/dans/20> ns4kge:hasTask    <task/link-prediction> .
+<configuration/dans/20> ns4kge:hasDataset <dataset/nell-995> .
+<configuration/dans/20> ns4kge:hasMetric  <metric/ndcg-5> .
+<configuration/dans/20> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/dans/20> ns4kge:hasNSMethod <ns-method/diversified-and-adaptive-negative-sampling> .
+<configuration/dans/20> ns4kge:result "0.22"^^xsd:decimal .
+
+<configuration/dans/21> rdf:type ns4kge:Configuration .
+<configuration/dans/21> ns4kge:hasTask    <task/link-prediction> .
+<configuration/dans/21> ns4kge:hasDataset <dataset/nell-995> .
+<configuration/dans/21> ns4kge:hasMetric  <metric/mrr> .
+<configuration/dans/21> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/dans/21> ns4kge:hasNSMethod <ns-method/markov-chain-monte-carlo-negative-sampling> .
+<configuration/dans/21> ns4kge:result "0.226"^^xsd:decimal .
+
+<configuration/dans/22> rdf:type ns4kge:Configuration .
+<configuration/dans/22> ns4kge:hasTask    <task/link-prediction> .
+<configuration/dans/22> ns4kge:hasDataset <dataset/nell-995> .
+<configuration/dans/22> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/dans/22> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/dans/22> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/dans/22> ns4kge:result "0.156"^^xsd:decimal .
+
+<configuration/dans/23> rdf:type ns4kge:Configuration .
+<configuration/dans/23> ns4kge:hasTask    <task/link-prediction> .
+<configuration/dans/23> ns4kge:hasDataset <dataset/nell-995> .
+<configuration/dans/23> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/dans/23> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/dans/23> ns4kge:hasNSMethod <ns-method/random-negative-sampling> .
+<configuration/dans/23> ns4kge:result "0.146"^^xsd:decimal .
+
+<configuration/dans/24> rdf:type ns4kge:Configuration .
+<configuration/dans/24> ns4kge:hasTask    <task/link-prediction> .
+<configuration/dans/24> ns4kge:hasDataset <dataset/nell-995> .
+<configuration/dans/24> ns4kge:hasMetric  <metric/ndcg-5> .
+<configuration/dans/24> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/dans/24> ns4kge:hasNSMethod <ns-method/markov-chain-monte-carlo-negative-sampling> .
+<configuration/dans/24> ns4kge:result "0.221"^^xsd:decimal .
+
+<configuration/dans/25> rdf:type ns4kge:Configuration .
+<configuration/dans/25> ns4kge:hasTask    <task/link-prediction> .
+<configuration/dans/25> ns4kge:hasDataset <dataset/nell-995> .
+<configuration/dans/25> ns4kge:hasMetric  <metric/mrr> .
+<configuration/dans/25> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/dans/25> ns4kge:hasNSMethod <ns-method/random-negative-sampling> .
+<configuration/dans/25> ns4kge:result "0.218"^^xsd:decimal .
+
+<configuration/dans/26> rdf:type ns4kge:Configuration .
+<configuration/dans/26> ns4kge:hasTask    <task/link-prediction> .
+<configuration/dans/26> ns4kge:hasDataset <dataset/nell-995> .
+<configuration/dans/26> ns4kge:hasMetric  <metric/ndcg-5> .
+<configuration/dans/26> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/dans/26> ns4kge:hasNSMethod <ns-method/random-negative-sampling> .
+<configuration/dans/26> ns4kge:result "0.219"^^xsd:decimal .
+
+<configuration/dans/27> rdf:type ns4kge:Configuration .
+<configuration/dans/27> ns4kge:hasTask    <task/link-prediction> .
+<configuration/dans/27> ns4kge:hasDataset <dataset/umls> .
+<configuration/dans/27> ns4kge:hasMetric  <metric/mrr> .
+<configuration/dans/27> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/dans/27> ns4kge:hasNSMethod <ns-method/diversified-and-adaptive-negative-sampling> .
+<configuration/dans/27> ns4kge:result "0.724"^^xsd:decimal .
+
+<configuration/dans/28> rdf:type ns4kge:Configuration .
+<configuration/dans/28> ns4kge:hasTask    <task/link-prediction> .
+<configuration/dans/28> ns4kge:hasDataset <dataset/umls> .
+<configuration/dans/28> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/dans/28> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/dans/28> ns4kge:hasNSMethod <ns-method/diversified-and-adaptive-negative-sampling> .
+<configuration/dans/28> ns4kge:result "0.641"^^xsd:decimal .
+
+<configuration/dans/29> rdf:type ns4kge:Configuration .
+<configuration/dans/29> ns4kge:hasTask    <task/link-prediction> .
+<configuration/dans/29> ns4kge:hasDataset <dataset/umls> .
+<configuration/dans/29> ns4kge:hasMetric  <metric/ndcg-5> .
+<configuration/dans/29> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/dans/29> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/dans/29> ns4kge:result "0.733"^^xsd:decimal .
+
+<configuration/dans/30> rdf:type ns4kge:Configuration .
+<configuration/dans/30> ns4kge:hasTask    <task/link-prediction> .
+<configuration/dans/30> ns4kge:hasDataset <dataset/umls> .
+<configuration/dans/30> ns4kge:hasMetric  <metric/mrr> .
+<configuration/dans/30> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/dans/30> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/dans/30> ns4kge:result "0.717"^^xsd:decimal .
+
+<configuration/dans/31> rdf:type ns4kge:Configuration .
+<configuration/dans/31> ns4kge:hasTask    <task/link-prediction> .
+<configuration/dans/31> ns4kge:hasDataset <dataset/umls> .
+<configuration/dans/31> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/dans/31> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/dans/31> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/dans/31> ns4kge:result "0.624"^^xsd:decimal .
+
+<configuration/dans/32> rdf:type ns4kge:Configuration .
+<configuration/dans/32> ns4kge:hasTask    <task/link-prediction> .
+<configuration/dans/32> ns4kge:hasDataset <dataset/umls> .
+<configuration/dans/32> ns4kge:hasMetric  <metric/ndcg-5> .
+<configuration/dans/32> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/dans/32> ns4kge:hasNSMethod <ns-method/diversified-and-adaptive-negative-sampling> .
+<configuration/dans/32> ns4kge:result "0.725"^^xsd:decimal .
+
+<configuration/dans/33> rdf:type ns4kge:Configuration .
+<configuration/dans/33> ns4kge:hasTask    <task/link-prediction> .
+<configuration/dans/33> ns4kge:hasDataset <dataset/umls> .
+<configuration/dans/33> ns4kge:hasMetric  <metric/mrr> .
+<configuration/dans/33> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/dans/33> ns4kge:hasNSMethod <ns-method/markov-chain-monte-carlo-negative-sampling> .
+<configuration/dans/33> ns4kge:result "0.7"^^xsd:decimal .
+
+<configuration/dans/34> rdf:type ns4kge:Configuration .
+<configuration/dans/34> ns4kge:hasTask    <task/link-prediction> .
+<configuration/dans/34> ns4kge:hasDataset <dataset/umls> .
+<configuration/dans/34> ns4kge:hasMetric  <metric/ndcg-5> .
+<configuration/dans/34> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/dans/34> ns4kge:hasNSMethod <ns-method/markov-chain-monte-carlo-negative-sampling> .
+<configuration/dans/34> ns4kge:result "0.717"^^xsd:decimal .
+
+<configuration/dans/35> rdf:type ns4kge:Configuration .
+<configuration/dans/35> ns4kge:hasTask    <task/link-prediction> .
+<configuration/dans/35> ns4kge:hasDataset <dataset/umls> .
+<configuration/dans/35> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/dans/35> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/dans/35> ns4kge:hasNSMethod <ns-method/random-negative-sampling> .
+<configuration/dans/35> ns4kge:result "0.607"^^xsd:decimal .
+
+<configuration/dans/36> rdf:type ns4kge:Configuration .
+<configuration/dans/36> ns4kge:hasTask    <task/link-prediction> .
+<configuration/dans/36> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/dans/36> ns4kge:hasMetric  <metric/mrr> .
+<configuration/dans/36> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/dans/36> ns4kge:hasNSMethod <ns-method/diversified-and-adaptive-negative-sampling> .
+<configuration/dans/36> ns4kge:result "0.249"^^xsd:decimal .
+
+<configuration/dans/37> rdf:type ns4kge:Configuration .
+<configuration/dans/37> ns4kge:hasTask    <task/link-prediction> .
+<configuration/dans/37> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/dans/37> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/dans/37> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/dans/37> ns4kge:hasNSMethod <ns-method/diversified-and-adaptive-negative-sampling> .
+<configuration/dans/37> ns4kge:result "0.154"^^xsd:decimal .
+
+<configuration/dans/38> rdf:type ns4kge:Configuration .
+<configuration/dans/38> ns4kge:hasTask    <task/link-prediction> .
+<configuration/dans/38> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/dans/38> ns4kge:hasMetric  <metric/ndcg-5> .
+<configuration/dans/38> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/dans/38> ns4kge:hasNSMethod <ns-method/markov-chain-monte-carlo-negative-sampling> .
+<configuration/dans/38> ns4kge:result "0.288"^^xsd:decimal .
+
+<configuration/dans/39> rdf:type ns4kge:Configuration .
+<configuration/dans/39> ns4kge:hasTask    <task/link-prediction> .
+<configuration/dans/39> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/dans/39> ns4kge:hasMetric  <metric/mrr> .
+<configuration/dans/39> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/dans/39> ns4kge:hasNSMethod <ns-method/markov-chain-monte-carlo-negative-sampling> .
+<configuration/dans/39> ns4kge:result "0.242"^^xsd:decimal .
+
+<configuration/dans/40> rdf:type ns4kge:Configuration .
+<configuration/dans/40> ns4kge:hasTask    <task/link-prediction> .
+<configuration/dans/40> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/dans/40> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/dans/40> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/dans/40> ns4kge:hasNSMethod <ns-method/markov-chain-monte-carlo-negative-sampling> .
+<configuration/dans/40> ns4kge:result "0.132"^^xsd:decimal .
+
+<configuration/dans/41> rdf:type ns4kge:Configuration .
+<configuration/dans/41> ns4kge:hasTask    <task/link-prediction> .
+<configuration/dans/41> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/dans/41> ns4kge:hasMetric  <metric/ndcg-5> .
+<configuration/dans/41> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/dans/41> ns4kge:hasNSMethod <ns-method/diversified-and-adaptive-negative-sampling> .
+<configuration/dans/41> ns4kge:result "0.274"^^xsd:decimal .
+
+<configuration/dans/42> rdf:type ns4kge:Configuration .
+<configuration/dans/42> ns4kge:hasTask    <task/link-prediction> .
+<configuration/dans/42> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/dans/42> ns4kge:hasMetric  <metric/mrr> .
+<configuration/dans/42> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/dans/42> ns4kge:hasNSMethod <ns-method/popularity-weighted-negative-sampling> .
+<configuration/dans/42> ns4kge:result "0.235"^^xsd:decimal .
+
+<configuration/dans/43> rdf:type ns4kge:Configuration .
+<configuration/dans/43> ns4kge:hasTask    <task/link-prediction> .
+<configuration/dans/43> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/dans/43> ns4kge:hasMetric  <metric/ndcg-5> .
+<configuration/dans/43> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/dans/43> ns4kge:hasNSMethod <ns-method/popularity-weighted-negative-sampling> .
+<configuration/dans/43> ns4kge:result "0.268"^^xsd:decimal .
+
+<configuration/dans/44> rdf:type ns4kge:Configuration .
+<configuration/dans/44> ns4kge:hasTask    <task/link-prediction> .
+<configuration/dans/44> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/dans/44> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/dans/44> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/dans/44> ns4kge:hasNSMethod <ns-method/random-negative-sampling> .
+<configuration/dans/44> ns4kge:result "0.11"^^xsd:decimal .
+
+<configuration/dans/45> rdf:type ns4kge:Configuration .
+<configuration/dans/45> ns4kge:hasTask    <task/link-prediction> .
+<configuration/dans/45> ns4kge:hasDataset <dataset/nell-995> .
+<configuration/dans/45> ns4kge:hasMetric  <metric/mrr> .
+<configuration/dans/45> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/dans/45> ns4kge:hasNSMethod <ns-method/diversified-and-adaptive-negative-sampling> .
+<configuration/dans/45> ns4kge:result "0.195"^^xsd:decimal .
+
+<configuration/dans/46> rdf:type ns4kge:Configuration .
+<configuration/dans/46> ns4kge:hasTask    <task/link-prediction> .
+<configuration/dans/46> ns4kge:hasDataset <dataset/nell-995> .
+<configuration/dans/46> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/dans/46> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/dans/46> ns4kge:hasNSMethod <ns-method/diversified-and-adaptive-negative-sampling> .
+<configuration/dans/46> ns4kge:result "0.135"^^xsd:decimal .
+
+<configuration/dans/47> rdf:type ns4kge:Configuration .
+<configuration/dans/47> ns4kge:hasTask    <task/link-prediction> .
+<configuration/dans/47> ns4kge:hasDataset <dataset/nell-995> .
+<configuration/dans/47> ns4kge:hasMetric  <metric/ndcg-5> .
+<configuration/dans/47> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/dans/47> ns4kge:hasNSMethod <ns-method/diversified-and-adaptive-negative-sampling> .
+<configuration/dans/47> ns4kge:result "0.208"^^xsd:decimal .
+
+<configuration/dans/48> rdf:type ns4kge:Configuration .
+<configuration/dans/48> ns4kge:hasTask    <task/link-prediction> .
+<configuration/dans/48> ns4kge:hasDataset <dataset/nell-995> .
+<configuration/dans/48> ns4kge:hasMetric  <metric/mrr> .
+<configuration/dans/48> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/dans/48> ns4kge:hasNSMethod <ns-method/markov-chain-monte-carlo-negative-sampling> .
+<configuration/dans/48> ns4kge:result "0.194"^^xsd:decimal .
+
+<configuration/dans/49> rdf:type ns4kge:Configuration .
+<configuration/dans/49> ns4kge:hasTask    <task/link-prediction> .
+<configuration/dans/49> ns4kge:hasDataset <dataset/nell-995> .
+<configuration/dans/49> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/dans/49> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/dans/49> ns4kge:hasNSMethod <ns-method/popularity-weighted-negative-sampling> .
+<configuration/dans/49> ns4kge:result "0.131"^^xsd:decimal .
+
+<configuration/dans/50> rdf:type ns4kge:Configuration .
+<configuration/dans/50> ns4kge:hasTask    <task/link-prediction> .
+<configuration/dans/50> ns4kge:hasDataset <dataset/nell-995> .
+<configuration/dans/50> ns4kge:hasMetric  <metric/ndcg-5> .
+<configuration/dans/50> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/dans/50> ns4kge:hasNSMethod <ns-method/popularity-weighted-negative-sampling> .
+<configuration/dans/50> ns4kge:result "0.2"^^xsd:decimal .
+
+<configuration/dans/51> rdf:type ns4kge:Configuration .
+<configuration/dans/51> ns4kge:hasTask    <task/link-prediction> .
+<configuration/dans/51> ns4kge:hasDataset <dataset/nell-995> .
+<configuration/dans/51> ns4kge:hasMetric  <metric/ndcg-5> .
+<configuration/dans/51> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/dans/51> ns4kge:hasNSMethod <ns-method/markov-chain-monte-carlo-negative-sampling> .
+<configuration/dans/51> ns4kge:result "0.2"^^xsd:decimal .
+
+<configuration/dans/52> rdf:type ns4kge:Configuration .
+<configuration/dans/52> ns4kge:hasTask    <task/link-prediction> .
+<configuration/dans/52> ns4kge:hasDataset <dataset/nell-995> .
+<configuration/dans/52> ns4kge:hasMetric  <metric/mrr> .
+<configuration/dans/52> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/dans/52> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/dans/52> ns4kge:result "0.186"^^xsd:decimal .
+
+<configuration/dans/53> rdf:type ns4kge:Configuration .
+<configuration/dans/53> ns4kge:hasTask    <task/link-prediction> .
+<configuration/dans/53> ns4kge:hasDataset <dataset/nell-995> .
+<configuration/dans/53> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/dans/53> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/dans/53> ns4kge:hasNSMethod <ns-method/markov-chain-monte-carlo-negative-sampling> .
+<configuration/dans/53> ns4kge:result "0.122"^^xsd:decimal .
+
+<configuration/dans/54> rdf:type ns4kge:Configuration .
+<configuration/dans/54> ns4kge:hasTask    <task/link-prediction> .
+<configuration/dans/54> ns4kge:hasDataset <dataset/umls> .
+<configuration/dans/54> ns4kge:hasMetric  <metric/mrr> .
+<configuration/dans/54> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/dans/54> ns4kge:hasNSMethod <ns-method/diversified-and-adaptive-negative-sampling> .
+<configuration/dans/54> ns4kge:result "0.833"^^xsd:decimal .
+
+<configuration/dans/55> rdf:type ns4kge:Configuration .
+<configuration/dans/55> ns4kge:hasTask    <task/link-prediction> .
+<configuration/dans/55> ns4kge:hasDataset <dataset/umls> .
+<configuration/dans/55> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/dans/55> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/dans/55> ns4kge:hasNSMethod <ns-method/diversified-and-adaptive-negative-sampling> .
+<configuration/dans/55> ns4kge:result "0.716"^^xsd:decimal .
+
+<configuration/dans/56> rdf:type ns4kge:Configuration .
+<configuration/dans/56> ns4kge:hasTask    <task/link-prediction> .
+<configuration/dans/56> ns4kge:hasDataset <dataset/umls> .
+<configuration/dans/56> ns4kge:hasMetric  <metric/ndcg-5> .
+<configuration/dans/56> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/dans/56> ns4kge:hasNSMethod <ns-method/markov-chain-monte-carlo-negative-sampling> .
+<configuration/dans/56> ns4kge:result "0.884"^^xsd:decimal .
+
+<configuration/dans/57> rdf:type ns4kge:Configuration .
+<configuration/dans/57> ns4kge:hasTask    <task/link-prediction> .
+<configuration/dans/57> ns4kge:hasDataset <dataset/umls> .
+<configuration/dans/57> ns4kge:hasMetric  <metric/mrr> .
+<configuration/dans/57> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/dans/57> ns4kge:hasNSMethod <ns-method/markov-chain-monte-carlo-negative-sampling> .
+<configuration/dans/57> ns4kge:result "0.822"^^xsd:decimal .
+
+<configuration/dans/58> rdf:type ns4kge:Configuration .
+<configuration/dans/58> ns4kge:hasTask    <task/link-prediction> .
+<configuration/dans/58> ns4kge:hasDataset <dataset/umls> .
+<configuration/dans/58> ns4kge:hasMetric  <metric/ndcg-5> .
+<configuration/dans/58> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/dans/58> ns4kge:hasNSMethod <ns-method/diversified-and-adaptive-negative-sampling> .
+<configuration/dans/58> ns4kge:result "0.866"^^xsd:decimal .
+
+<configuration/dans/59> rdf:type ns4kge:Configuration .
+<configuration/dans/59> ns4kge:hasTask    <task/link-prediction> .
+<configuration/dans/59> ns4kge:hasDataset <dataset/umls> .
+<configuration/dans/59> ns4kge:hasMetric  <metric/mrr> .
+<configuration/dans/59> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/dans/59> ns4kge:hasNSMethod <ns-method/random-negative-sampling> .
+<configuration/dans/59> ns4kge:result "0.817"^^xsd:decimal .
+
+<configuration/dans/60> rdf:type ns4kge:Configuration .
+<configuration/dans/60> ns4kge:hasTask    <task/link-prediction> .
+<configuration/dans/60> ns4kge:hasDataset <dataset/umls> .
+<configuration/dans/60> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/dans/60> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/dans/60> ns4kge:hasNSMethod <ns-method/random-negative-sampling> .
+<configuration/dans/60> ns4kge:result "0.683"^^xsd:decimal .
+
+<configuration/dans/61> rdf:type ns4kge:Configuration .
+<configuration/dans/61> ns4kge:hasTask    <task/link-prediction> .
+<configuration/dans/61> ns4kge:hasDataset <dataset/umls> .
+<configuration/dans/61> ns4kge:hasMetric  <metric/ndcg-5> .
+<configuration/dans/61> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/dans/61> ns4kge:hasNSMethod <ns-method/random-negative-sampling> .
+<configuration/dans/61> ns4kge:result "0.855"^^xsd:decimal .
+
+<configuration/dans/62> rdf:type ns4kge:Configuration .
+<configuration/dans/62> ns4kge:hasTask    <task/link-prediction> .
+<configuration/dans/62> ns4kge:hasDataset <dataset/umls> .
+<configuration/dans/62> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/dans/62> ns4kge:hasKGEModel <kge-model/rotate> .
+<configuration/dans/62> ns4kge:hasNSMethod <ns-method/markov-chain-monte-carlo-negative-sampling> .
+<configuration/dans/62> ns4kge:result "0.682"^^xsd:decimal .
+
+<configuration/dans/63> rdf:type ns4kge:Configuration .
+<configuration/dans/63> ns4kge:hasTask    <task/link-prediction> .
+<configuration/dans/63> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/dans/63> ns4kge:hasMetric  <metric/mrr> .
+<configuration/dans/63> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/dans/63> ns4kge:hasNSMethod <ns-method/diversified-and-adaptive-negative-sampling> .
+<configuration/dans/63> ns4kge:result "0.404"^^xsd:decimal .
+
+<configuration/dans/64> rdf:type ns4kge:Configuration .
+<configuration/dans/64> ns4kge:hasTask    <task/link-prediction> .
+<configuration/dans/64> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/dans/64> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/dans/64> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/dans/64> ns4kge:hasNSMethod <ns-method/diversified-and-adaptive-negative-sampling> .
+<configuration/dans/64> ns4kge:result "0.347"^^xsd:decimal .
+
+<configuration/dans/65> rdf:type ns4kge:Configuration .
+<configuration/dans/65> ns4kge:hasTask    <task/link-prediction> .
+<configuration/dans/65> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/dans/65> ns4kge:hasMetric  <metric/ndcg-5> .
+<configuration/dans/65> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/dans/65> ns4kge:hasNSMethod <ns-method/markov-chain-monte-carlo-negative-sampling> .
+<configuration/dans/65> ns4kge:result "0.394"^^xsd:decimal .
+
+<configuration/dans/66> rdf:type ns4kge:Configuration .
+<configuration/dans/66> ns4kge:hasTask    <task/link-prediction> .
+<configuration/dans/66> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/dans/66> ns4kge:hasMetric  <metric/mrr> .
+<configuration/dans/66> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/dans/66> ns4kge:hasNSMethod <ns-method/markov-chain-monte-carlo-negative-sampling> .
+<configuration/dans/66> ns4kge:result "0.392"^^xsd:decimal .
+
+<configuration/dans/67> rdf:type ns4kge:Configuration .
+<configuration/dans/67> ns4kge:hasTask    <task/link-prediction> .
+<configuration/dans/67> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/dans/67> ns4kge:hasMetric  <metric/ndcg-5> .
+<configuration/dans/67> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/dans/67> ns4kge:hasNSMethod <ns-method/diversified-and-adaptive-negative-sampling> .
+<configuration/dans/67> ns4kge:result "0.392"^^xsd:decimal .
+
+<configuration/dans/68> rdf:type ns4kge:Configuration .
+<configuration/dans/68> ns4kge:hasTask    <task/link-prediction> .
+<configuration/dans/68> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/dans/68> ns4kge:hasMetric  <metric/mrr> .
+<configuration/dans/68> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/dans/68> ns4kge:hasNSMethod <ns-method/random-negative-sampling> .
+<configuration/dans/68> ns4kge:result "0.386"^^xsd:decimal .
+
+<configuration/dans/69> rdf:type ns4kge:Configuration .
+<configuration/dans/69> ns4kge:hasTask    <task/link-prediction> .
+<configuration/dans/69> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/dans/69> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/dans/69> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/dans/69> ns4kge:hasNSMethod <ns-method/random-negative-sampling> .
+<configuration/dans/69> ns4kge:result "0.346"^^xsd:decimal .
+
+<configuration/dans/70> rdf:type ns4kge:Configuration .
+<configuration/dans/70> ns4kge:hasTask    <task/link-prediction> .
+<configuration/dans/70> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/dans/70> ns4kge:hasMetric  <metric/ndcg-5> .
+<configuration/dans/70> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/dans/70> ns4kge:hasNSMethod <ns-method/random-negative-sampling> .
+<configuration/dans/70> ns4kge:result "0.39"^^xsd:decimal .
+
+<configuration/dans/71> rdf:type ns4kge:Configuration .
+<configuration/dans/71> ns4kge:hasTask    <task/link-prediction> .
+<configuration/dans/71> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/dans/71> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/dans/71> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/dans/71> ns4kge:hasNSMethod <ns-method/markov-chain-monte-carlo-negative-sampling> .
+<configuration/dans/71> ns4kge:result "0.343"^^xsd:decimal .
+
+<configuration/dans/72> rdf:type ns4kge:Configuration .
+<configuration/dans/72> ns4kge:hasTask    <task/link-prediction> .
+<configuration/dans/72> ns4kge:hasDataset <dataset/nell-995> .
+<configuration/dans/72> ns4kge:hasMetric  <metric/mrr> .
+<configuration/dans/72> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/dans/72> ns4kge:hasNSMethod <ns-method/diversified-and-adaptive-negative-sampling> .
+<configuration/dans/72> ns4kge:result "0.257"^^xsd:decimal .
+
+<configuration/dans/73> rdf:type ns4kge:Configuration .
+<configuration/dans/73> ns4kge:hasTask    <task/link-prediction> .
+<configuration/dans/73> ns4kge:hasDataset <dataset/nell-995> .
+<configuration/dans/73> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/dans/73> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/dans/73> ns4kge:hasNSMethod <ns-method/diversified-and-adaptive-negative-sampling> .
+<configuration/dans/73> ns4kge:result "0.186"^^xsd:decimal .
+
+<configuration/dans/74> rdf:type ns4kge:Configuration .
+<configuration/dans/74> ns4kge:hasTask    <task/link-prediction> .
+<configuration/dans/74> ns4kge:hasDataset <dataset/nell-995> .
+<configuration/dans/74> ns4kge:hasMetric  <metric/ndcg-5> .
+<configuration/dans/74> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/dans/74> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/dans/74> ns4kge:result "0.277"^^xsd:decimal .
+
+<configuration/dans/75> rdf:type ns4kge:Configuration .
+<configuration/dans/75> ns4kge:hasTask    <task/link-prediction> .
+<configuration/dans/75> ns4kge:hasDataset <dataset/nell-995> .
+<configuration/dans/75> ns4kge:hasMetric  <metric/mrr> .
+<configuration/dans/75> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/dans/75> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/dans/75> ns4kge:result "0.25"^^xsd:decimal .
+
+<configuration/dans/76> rdf:type ns4kge:Configuration .
+<configuration/dans/76> ns4kge:hasTask    <task/link-prediction> .
+<configuration/dans/76> ns4kge:hasDataset <dataset/nell-995> .
+<configuration/dans/76> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/dans/76> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/dans/76> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/dans/76> ns4kge:result "0.181"^^xsd:decimal .
+
+<configuration/dans/77> rdf:type ns4kge:Configuration .
+<configuration/dans/77> ns4kge:hasTask    <task/link-prediction> .
+<configuration/dans/77> ns4kge:hasDataset <dataset/nell-995> .
+<configuration/dans/77> ns4kge:hasMetric  <metric/ndcg-5> .
+<configuration/dans/77> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/dans/77> ns4kge:hasNSMethod <ns-method/markov-chain-monte-carlo-negative-sampling> .
+<configuration/dans/77> ns4kge:result "0.264"^^xsd:decimal .
+
+<configuration/dans/78> rdf:type ns4kge:Configuration .
+<configuration/dans/78> ns4kge:hasTask    <task/link-prediction> .
+<configuration/dans/78> ns4kge:hasDataset <dataset/nell-995> .
+<configuration/dans/78> ns4kge:hasMetric  <metric/mrr> .
+<configuration/dans/78> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/dans/78> ns4kge:hasNSMethod <ns-method/markov-chain-monte-carlo-negative-sampling> .
+<configuration/dans/78> ns4kge:result "0.248"^^xsd:decimal .
+
+<configuration/dans/79> rdf:type ns4kge:Configuration .
+<configuration/dans/79> ns4kge:hasTask    <task/link-prediction> .
+<configuration/dans/79> ns4kge:hasDataset <dataset/nell-995> .
+<configuration/dans/79> ns4kge:hasMetric  <metric/ndcg-5> .
+<configuration/dans/79> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/dans/79> ns4kge:hasNSMethod <ns-method/diversified-and-adaptive-negative-sampling> .
+<configuration/dans/79> ns4kge:result "0.255"^^xsd:decimal .
+
+<configuration/dans/80> rdf:type ns4kge:Configuration .
+<configuration/dans/80> ns4kge:hasTask    <task/link-prediction> .
+<configuration/dans/80> ns4kge:hasDataset <dataset/nell-995> .
+<configuration/dans/80> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/dans/80> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/dans/80> ns4kge:hasNSMethod <ns-method/popularity-weighted-negative-sampling> .
+<configuration/dans/80> ns4kge:result "0.179"^^xsd:decimal .
+
+<configuration/dans/81> rdf:type ns4kge:Configuration .
+<configuration/dans/81> ns4kge:hasTask    <task/link-prediction> .
+<configuration/dans/81> ns4kge:hasDataset <dataset/umls> .
+<configuration/dans/81> ns4kge:hasMetric  <metric/mrr> .
+<configuration/dans/81> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/dans/81> ns4kge:hasNSMethod <ns-method/diversified-and-adaptive-negative-sampling> .
+<configuration/dans/81> ns4kge:result "0.92"^^xsd:decimal .
+
+<configuration/dans/82> rdf:type ns4kge:Configuration .
+<configuration/dans/82> ns4kge:hasTask    <task/link-prediction> .
+<configuration/dans/82> ns4kge:hasDataset <dataset/umls> .
+<configuration/dans/82> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/dans/82> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/dans/82> ns4kge:hasNSMethod <ns-method/diversified-and-adaptive-negative-sampling> .
+<configuration/dans/82> ns4kge:result "0.857"^^xsd:decimal .
+
+<configuration/dans/83> rdf:type ns4kge:Configuration .
+<configuration/dans/83> ns4kge:hasTask    <task/link-prediction> .
+<configuration/dans/83> ns4kge:hasDataset <dataset/umls> .
+<configuration/dans/83> ns4kge:hasMetric  <metric/ndcg-5> .
+<configuration/dans/83> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/dans/83> ns4kge:hasNSMethod <ns-method/diversified-and-adaptive-negative-sampling> .
+<configuration/dans/83> ns4kge:result "0.927"^^xsd:decimal .
+
+<configuration/dans/84> rdf:type ns4kge:Configuration .
+<configuration/dans/84> ns4kge:hasTask    <task/link-prediction> .
+<configuration/dans/84> ns4kge:hasDataset <dataset/umls> .
+<configuration/dans/84> ns4kge:hasMetric  <metric/mrr> .
+<configuration/dans/84> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/dans/84> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/dans/84> ns4kge:result "0.908"^^xsd:decimal .
+
+<configuration/dans/85> rdf:type ns4kge:Configuration .
+<configuration/dans/85> ns4kge:hasTask    <task/link-prediction> .
+<configuration/dans/85> ns4kge:hasDataset <dataset/umls> .
+<configuration/dans/85> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/dans/85> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/dans/85> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/dans/85> ns4kge:result "0.844"^^xsd:decimal .
+
+<configuration/dans/86> rdf:type ns4kge:Configuration .
+<configuration/dans/86> ns4kge:hasTask    <task/link-prediction> .
+<configuration/dans/86> ns4kge:hasDataset <dataset/umls> .
+<configuration/dans/86> ns4kge:hasMetric  <metric/ndcg-5> .
+<configuration/dans/86> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/dans/86> ns4kge:hasNSMethod <ns-method/self-adversarial-negative-sampling> .
+<configuration/dans/86> ns4kge:result "0.925"^^xsd:decimal .
+
+<configuration/dans/87> rdf:type ns4kge:Configuration .
+<configuration/dans/87> ns4kge:hasTask    <task/link-prediction> .
+<configuration/dans/87> ns4kge:hasDataset <dataset/umls> .
+<configuration/dans/87> ns4kge:hasMetric  <metric/mrr> .
+<configuration/dans/87> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/dans/87> ns4kge:hasNSMethod <ns-method/random-negative-sampling> .
+<configuration/dans/87> ns4kge:result "0.898"^^xsd:decimal .
+
+<configuration/dans/88> rdf:type ns4kge:Configuration .
+<configuration/dans/88> ns4kge:hasTask    <task/link-prediction> .
+<configuration/dans/88> ns4kge:hasDataset <dataset/umls> .
+<configuration/dans/88> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/dans/88> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/dans/88> ns4kge:hasNSMethod <ns-method/markov-chain-monte-carlo-negative-sampling> .
+<configuration/dans/88> ns4kge:result "0.835"^^xsd:decimal .
+
+<configuration/dans/89> rdf:type ns4kge:Configuration .
+<configuration/dans/89> ns4kge:hasTask    <task/link-prediction> .
+<configuration/dans/89> ns4kge:hasDataset <dataset/umls> .
+<configuration/dans/89> ns4kge:hasMetric  <metric/ndcg-5> .
+<configuration/dans/89> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/dans/89> ns4kge:hasNSMethod <ns-method/random-negative-sampling> .
+<configuration/dans/89> ns4kge:result "0.92"^^xsd:decimal .
+
+<configuration/dans/90> rdf:type ns4kge:Configuration .
+<configuration/dans/90> ns4kge:hasTask    <task/link-prediction> .
+<configuration/dans/90> ns4kge:hasDataset <dataset/umls> .
+<configuration/dans/90> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/dans/90> ns4kge:hasKGEModel <kge-model/complex> .
+<configuration/dans/90> ns4kge:hasNSMethod <ns-method/random-negative-sampling> .
+<configuration/dans/90> ns4kge:result "0.822"^^xsd:decimal .
+
+<configuration/dans/91> rdf:type ns4kge:Configuration .
+<configuration/dans/91> ns4kge:hasTask    <task/link-prediction> .
+<configuration/dans/91> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/dans/91> ns4kge:hasMetric  <metric/mrr> .
+<configuration/dans/91> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/dans/91> ns4kge:hasNSMethod <ns-method/sans> .
+<configuration/dans/91> ns4kge:result "0.349"^^xsd:decimal .
+
+<configuration/dans/92> rdf:type ns4kge:Configuration .
+<configuration/dans/92> ns4kge:hasTask    <task/link-prediction> .
+<configuration/dans/92> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/dans/92> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/dans/92> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/dans/92> ns4kge:hasNSMethod <ns-method/sans> .
+<configuration/dans/92> ns4kge:result "0.34"^^xsd:decimal .
+
+<configuration/dans/93> rdf:type ns4kge:Configuration .
+<configuration/dans/93> ns4kge:hasTask    <task/link-prediction> .
+<configuration/dans/93> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/dans/93> ns4kge:hasMetric  <metric/ndcg-5> .
+<configuration/dans/93> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/dans/93> ns4kge:hasNSMethod <ns-method/sans> .
+<configuration/dans/93> ns4kge:result "0.334"^^xsd:decimal .
+
+<configuration/dans/94> rdf:type ns4kge:Configuration .
+<configuration/dans/94> ns4kge:hasTask    <task/link-prediction> .
+<configuration/dans/94> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/dans/94> ns4kge:hasMetric  <metric/mrr> .
+<configuration/dans/94> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/dans/94> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/dans/94> ns4kge:result "0.374"^^xsd:decimal .
+
+<configuration/dans/95> rdf:type ns4kge:Configuration .
+<configuration/dans/95> ns4kge:hasTask    <task/link-prediction> .
+<configuration/dans/95> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/dans/95> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/dans/95> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/dans/95> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/dans/95> ns4kge:result "0.337"^^xsd:decimal .
+
+<configuration/dans/96> rdf:type ns4kge:Configuration .
+<configuration/dans/96> ns4kge:hasTask    <task/link-prediction> .
+<configuration/dans/96> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/dans/96> ns4kge:hasMetric  <metric/ndcg-5> .
+<configuration/dans/96> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/dans/96> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/dans/96> ns4kge:result "0.374"^^xsd:decimal .
+
+<configuration/dans/97> rdf:type ns4kge:Configuration .
+<configuration/dans/97> ns4kge:hasTask    <task/link-prediction> .
+<configuration/dans/97> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/dans/97> ns4kge:hasMetric  <metric/mrr> .
+<configuration/dans/97> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/dans/97> ns4kge:hasNSMethod <ns-method/kbgan> .
+<configuration/dans/97> ns4kge:result "0.172"^^xsd:decimal .
+
+<configuration/dans/98> rdf:type ns4kge:Configuration .
+<configuration/dans/98> ns4kge:hasTask    <task/link-prediction> .
+<configuration/dans/98> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/dans/98> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/dans/98> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/dans/98> ns4kge:hasNSMethod <ns-method/kbgan> .
+<configuration/dans/98> ns4kge:result "0.07"^^xsd:decimal .
+
+<configuration/dans/99> rdf:type ns4kge:Configuration .
+<configuration/dans/99> ns4kge:hasTask    <task/link-prediction> .
+<configuration/dans/99> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/dans/99> ns4kge:hasMetric  <metric/ndcg-5> .
+<configuration/dans/99> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/dans/99> ns4kge:hasNSMethod <ns-method/kbgan> .
+<configuration/dans/99> ns4kge:result "0.155"^^xsd:decimal .
+
+<configuration/dans/100> rdf:type ns4kge:Configuration .
+<configuration/dans/100> ns4kge:hasTask    <task/link-prediction> .
+<configuration/dans/100> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/dans/100> ns4kge:hasMetric  <metric/mrr> .
+<configuration/dans/100> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/dans/100> ns4kge:hasNSMethod <ns-method/cake> .
+<configuration/dans/100> ns4kge:result "0.353"^^xsd:decimal .
+
+<configuration/dans/101> rdf:type ns4kge:Configuration .
+<configuration/dans/101> ns4kge:hasTask    <task/link-prediction> .
+<configuration/dans/101> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/dans/101> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/dans/101> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/dans/101> ns4kge:hasNSMethod <ns-method/cake> .
+<configuration/dans/101> ns4kge:result "0.345"^^xsd:decimal .
+
+<configuration/dans/102> rdf:type ns4kge:Configuration .
+<configuration/dans/102> ns4kge:hasTask    <task/link-prediction> .
+<configuration/dans/102> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/dans/102> ns4kge:hasMetric  <metric/ndcg-5> .
+<configuration/dans/102> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/dans/102> ns4kge:hasNSMethod <ns-method/cake> .
+<configuration/dans/102> ns4kge:result "0.351"^^xsd:decimal .
+
+<configuration/dans/103> rdf:type ns4kge:Configuration .
+<configuration/dans/103> ns4kge:hasTask    <task/link-prediction> .
+<configuration/dans/103> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/dans/103> ns4kge:hasMetric  <metric/mrr> .
+<configuration/dans/103> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/dans/103> ns4kge:hasNSMethod <ns-method/smile> .
+<configuration/dans/103> ns4kge:result "0.315"^^xsd:decimal .
+
+<configuration/dans/104> rdf:type ns4kge:Configuration .
+<configuration/dans/104> ns4kge:hasTask    <task/link-prediction> .
+<configuration/dans/104> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/dans/104> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/dans/104> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/dans/104> ns4kge:hasNSMethod <ns-method/smile> .
+<configuration/dans/104> ns4kge:result "0.291"^^xsd:decimal .
+
+<configuration/dans/105> rdf:type ns4kge:Configuration .
+<configuration/dans/105> ns4kge:hasTask    <task/link-prediction> .
+<configuration/dans/105> ns4kge:hasDataset <dataset/wn18rr> .
+<configuration/dans/105> ns4kge:hasMetric  <metric/ndcg-5> .
+<configuration/dans/105> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/dans/105> ns4kge:hasNSMethod <ns-method/smile> .
+<configuration/dans/105> ns4kge:result "0.294"^^xsd:decimal .
+
+<configuration/dans/106> rdf:type ns4kge:Configuration .
+<configuration/dans/106> ns4kge:hasTask    <task/link-prediction> .
+<configuration/dans/106> ns4kge:hasDataset <dataset/nell-995> .
+<configuration/dans/106> ns4kge:hasMetric  <metric/mrr> .
+<configuration/dans/106> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/dans/106> ns4kge:hasNSMethod <ns-method/sans> .
+<configuration/dans/106> ns4kge:result "0.135"^^xsd:decimal .
+
+<configuration/dans/107> rdf:type ns4kge:Configuration .
+<configuration/dans/107> ns4kge:hasTask    <task/link-prediction> .
+<configuration/dans/107> ns4kge:hasDataset <dataset/nell-995> .
+<configuration/dans/107> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/dans/107> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/dans/107> ns4kge:hasNSMethod <ns-method/sans> .
+<configuration/dans/107> ns4kge:result "0.109"^^xsd:decimal .
+
+<configuration/dans/108> rdf:type ns4kge:Configuration .
+<configuration/dans/108> ns4kge:hasTask    <task/link-prediction> .
+<configuration/dans/108> ns4kge:hasDataset <dataset/nell-995> .
+<configuration/dans/108> ns4kge:hasMetric  <metric/ndcg-5> .
+<configuration/dans/108> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/dans/108> ns4kge:hasNSMethod <ns-method/sans> .
+<configuration/dans/108> ns4kge:result "0.11"^^xsd:decimal .
+
+<configuration/dans/109> rdf:type ns4kge:Configuration .
+<configuration/dans/109> ns4kge:hasTask    <task/link-prediction> .
+<configuration/dans/109> ns4kge:hasDataset <dataset/nell-995> .
+<configuration/dans/109> ns4kge:hasMetric  <metric/mrr> .
+<configuration/dans/109> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/dans/109> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/dans/109> ns4kge:result "0.177"^^xsd:decimal .
+
+<configuration/dans/110> rdf:type ns4kge:Configuration .
+<configuration/dans/110> ns4kge:hasTask    <task/link-prediction> .
+<configuration/dans/110> ns4kge:hasDataset <dataset/nell-995> .
+<configuration/dans/110> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/dans/110> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/dans/110> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/dans/110> ns4kge:result "0.15"^^xsd:decimal .
+
+<configuration/dans/111> rdf:type ns4kge:Configuration .
+<configuration/dans/111> ns4kge:hasTask    <task/link-prediction> .
+<configuration/dans/111> ns4kge:hasDataset <dataset/nell-995> .
+<configuration/dans/111> ns4kge:hasMetric  <metric/ndcg-5> .
+<configuration/dans/111> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/dans/111> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/dans/111> ns4kge:result "0.14"^^xsd:decimal .
+
+<configuration/dans/112> rdf:type ns4kge:Configuration .
+<configuration/dans/112> ns4kge:hasTask    <task/link-prediction> .
+<configuration/dans/112> ns4kge:hasDataset <dataset/nell-995> .
+<configuration/dans/112> ns4kge:hasMetric  <metric/mrr> .
+<configuration/dans/112> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/dans/112> ns4kge:hasNSMethod <ns-method/kbgan> .
+<configuration/dans/112> ns4kge:result "0.17"^^xsd:decimal .
+
+<configuration/dans/113> rdf:type ns4kge:Configuration .
+<configuration/dans/113> ns4kge:hasTask    <task/link-prediction> .
+<configuration/dans/113> ns4kge:hasDataset <dataset/nell-995> .
+<configuration/dans/113> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/dans/113> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/dans/113> ns4kge:hasNSMethod <ns-method/kbgan> .
+<configuration/dans/113> ns4kge:result "0.077"^^xsd:decimal .
+
+<configuration/dans/114> rdf:type ns4kge:Configuration .
+<configuration/dans/114> ns4kge:hasTask    <task/link-prediction> .
+<configuration/dans/114> ns4kge:hasDataset <dataset/nell-995> .
+<configuration/dans/114> ns4kge:hasMetric  <metric/ndcg-5> .
+<configuration/dans/114> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/dans/114> ns4kge:hasNSMethod <ns-method/kbgan> .
+<configuration/dans/114> ns4kge:result "0.195"^^xsd:decimal .
+
+<configuration/dans/115> rdf:type ns4kge:Configuration .
+<configuration/dans/115> ns4kge:hasTask    <task/link-prediction> .
+<configuration/dans/115> ns4kge:hasDataset <dataset/nell-995> .
+<configuration/dans/115> ns4kge:hasMetric  <metric/mrr> .
+<configuration/dans/115> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/dans/115> ns4kge:hasNSMethod <ns-method/cake> .
+<configuration/dans/115> ns4kge:result "0.204"^^xsd:decimal .
+
+<configuration/dans/116> rdf:type ns4kge:Configuration .
+<configuration/dans/116> ns4kge:hasTask    <task/link-prediction> .
+<configuration/dans/116> ns4kge:hasDataset <dataset/nell-995> .
+<configuration/dans/116> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/dans/116> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/dans/116> ns4kge:hasNSMethod <ns-method/cake> .
+<configuration/dans/116> ns4kge:result "0.13"^^xsd:decimal .
+
+<configuration/dans/117> rdf:type ns4kge:Configuration .
+<configuration/dans/117> ns4kge:hasTask    <task/link-prediction> .
+<configuration/dans/117> ns4kge:hasDataset <dataset/nell-995> .
+<configuration/dans/117> ns4kge:hasMetric  <metric/ndcg-5> .
+<configuration/dans/117> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/dans/117> ns4kge:hasNSMethod <ns-method/cake> .
+<configuration/dans/117> ns4kge:result "0.175"^^xsd:decimal .
+
+<configuration/dans/118> rdf:type ns4kge:Configuration .
+<configuration/dans/118> ns4kge:hasTask    <task/link-prediction> .
+<configuration/dans/118> ns4kge:hasDataset <dataset/nell-995> .
+<configuration/dans/118> ns4kge:hasMetric  <metric/mrr> .
+<configuration/dans/118> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/dans/118> ns4kge:hasNSMethod <ns-method/smile> .
+<configuration/dans/118> ns4kge:result "0.131"^^xsd:decimal .
+
+<configuration/dans/119> rdf:type ns4kge:Configuration .
+<configuration/dans/119> ns4kge:hasTask    <task/link-prediction> .
+<configuration/dans/119> ns4kge:hasDataset <dataset/nell-995> .
+<configuration/dans/119> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/dans/119> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/dans/119> ns4kge:hasNSMethod <ns-method/smile> .
+<configuration/dans/119> ns4kge:result "0.127"^^xsd:decimal .
+
+<configuration/dans/120> rdf:type ns4kge:Configuration .
+<configuration/dans/120> ns4kge:hasTask    <task/link-prediction> .
+<configuration/dans/120> ns4kge:hasDataset <dataset/nell-995> .
+<configuration/dans/120> ns4kge:hasMetric  <metric/ndcg-5> .
+<configuration/dans/120> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/dans/120> ns4kge:hasNSMethod <ns-method/smile> .
+<configuration/dans/120> ns4kge:result "0.105"^^xsd:decimal .
+
+<configuration/dans/121> rdf:type ns4kge:Configuration .
+<configuration/dans/121> ns4kge:hasTask    <task/link-prediction> .
+<configuration/dans/121> ns4kge:hasDataset <dataset/umls> .
+<configuration/dans/121> ns4kge:hasMetric  <metric/mrr> .
+<configuration/dans/121> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/dans/121> ns4kge:hasNSMethod <ns-method/sans> .
+<configuration/dans/121> ns4kge:result "0.51"^^xsd:decimal .
+
+<configuration/dans/122> rdf:type ns4kge:Configuration .
+<configuration/dans/122> ns4kge:hasTask    <task/link-prediction> .
+<configuration/dans/122> ns4kge:hasDataset <dataset/umls> .
+<configuration/dans/122> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/dans/122> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/dans/122> ns4kge:hasNSMethod <ns-method/sans> .
+<configuration/dans/122> ns4kge:result "0.369"^^xsd:decimal .
+
+<configuration/dans/123> rdf:type ns4kge:Configuration .
+<configuration/dans/123> ns4kge:hasTask    <task/link-prediction> .
+<configuration/dans/123> ns4kge:hasDataset <dataset/umls> .
+<configuration/dans/123> ns4kge:hasMetric  <metric/ndcg-5> .
+<configuration/dans/123> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/dans/123> ns4kge:hasNSMethod <ns-method/sans> .
+<configuration/dans/123> ns4kge:result "0.478"^^xsd:decimal .
+
+<configuration/dans/124> rdf:type ns4kge:Configuration .
+<configuration/dans/124> ns4kge:hasTask    <task/link-prediction> .
+<configuration/dans/124> ns4kge:hasDataset <dataset/umls> .
+<configuration/dans/124> ns4kge:hasMetric  <metric/mrr> .
+<configuration/dans/124> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/dans/124> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/dans/124> ns4kge:result "0.625"^^xsd:decimal .
+
+<configuration/dans/125> rdf:type ns4kge:Configuration .
+<configuration/dans/125> ns4kge:hasTask    <task/link-prediction> .
+<configuration/dans/125> ns4kge:hasDataset <dataset/umls> .
+<configuration/dans/125> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/dans/125> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/dans/125> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/dans/125> ns4kge:result "0.508"^^xsd:decimal .
+
+<configuration/dans/126> rdf:type ns4kge:Configuration .
+<configuration/dans/126> ns4kge:hasTask    <task/link-prediction> .
+<configuration/dans/126> ns4kge:hasDataset <dataset/umls> .
+<configuration/dans/126> ns4kge:hasMetric  <metric/ndcg-5> .
+<configuration/dans/126> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/dans/126> ns4kge:hasNSMethod <ns-method/nscaching> .
+<configuration/dans/126> ns4kge:result "0.607"^^xsd:decimal .
+
+<configuration/dans/127> rdf:type ns4kge:Configuration .
+<configuration/dans/127> ns4kge:hasTask    <task/link-prediction> .
+<configuration/dans/127> ns4kge:hasDataset <dataset/umls> .
+<configuration/dans/127> ns4kge:hasMetric  <metric/mrr> .
+<configuration/dans/127> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/dans/127> ns4kge:hasNSMethod <ns-method/kbgan> .
+<configuration/dans/127> ns4kge:result "0.68"^^xsd:decimal .
+
+<configuration/dans/128> rdf:type ns4kge:Configuration .
+<configuration/dans/128> ns4kge:hasTask    <task/link-prediction> .
+<configuration/dans/128> ns4kge:hasDataset <dataset/umls> .
+<configuration/dans/128> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/dans/128> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/dans/128> ns4kge:hasNSMethod <ns-method/kbgan> .
+<configuration/dans/128> ns4kge:result "0.556"^^xsd:decimal .
+
+<configuration/dans/129> rdf:type ns4kge:Configuration .
+<configuration/dans/129> ns4kge:hasTask    <task/link-prediction> .
+<configuration/dans/129> ns4kge:hasDataset <dataset/umls> .
+<configuration/dans/129> ns4kge:hasMetric  <metric/ndcg-5> .
+<configuration/dans/129> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/dans/129> ns4kge:hasNSMethod <ns-method/kbgan> .
+<configuration/dans/129> ns4kge:result "0.654"^^xsd:decimal .
+
+<configuration/dans/130> rdf:type ns4kge:Configuration .
+<configuration/dans/130> ns4kge:hasTask    <task/link-prediction> .
+<configuration/dans/130> ns4kge:hasDataset <dataset/umls> .
+<configuration/dans/130> ns4kge:hasMetric  <metric/mrr> .
+<configuration/dans/130> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/dans/130> ns4kge:hasNSMethod <ns-method/cake> .
+<configuration/dans/130> ns4kge:result "0.441"^^xsd:decimal .
+
+<configuration/dans/131> rdf:type ns4kge:Configuration .
+<configuration/dans/131> ns4kge:hasTask    <task/link-prediction> .
+<configuration/dans/131> ns4kge:hasDataset <dataset/umls> .
+<configuration/dans/131> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/dans/131> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/dans/131> ns4kge:hasNSMethod <ns-method/cake> .
+<configuration/dans/131> ns4kge:result "0.365"^^xsd:decimal .
+
+<configuration/dans/132> rdf:type ns4kge:Configuration .
+<configuration/dans/132> ns4kge:hasTask    <task/link-prediction> .
+<configuration/dans/132> ns4kge:hasDataset <dataset/umls> .
+<configuration/dans/132> ns4kge:hasMetric  <metric/ndcg-5> .
+<configuration/dans/132> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/dans/132> ns4kge:hasNSMethod <ns-method/cake> .
+<configuration/dans/132> ns4kge:result "0.383"^^xsd:decimal .
+
+<configuration/dans/133> rdf:type ns4kge:Configuration .
+<configuration/dans/133> ns4kge:hasTask    <task/link-prediction> .
+<configuration/dans/133> ns4kge:hasDataset <dataset/umls> .
+<configuration/dans/133> ns4kge:hasMetric  <metric/mrr> .
+<configuration/dans/133> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/dans/133> ns4kge:hasNSMethod <ns-method/smile> .
+<configuration/dans/133> ns4kge:result "0.414"^^xsd:decimal .
+
+<configuration/dans/134> rdf:type ns4kge:Configuration .
+<configuration/dans/134> ns4kge:hasTask    <task/link-prediction> .
+<configuration/dans/134> ns4kge:hasDataset <dataset/umls> .
+<configuration/dans/134> ns4kge:hasMetric  <metric/hits-1> .
+<configuration/dans/134> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/dans/134> ns4kge:hasNSMethod <ns-method/smile> .
+<configuration/dans/134> ns4kge:result "0.345"^^xsd:decimal .
+
+<configuration/dans/135> rdf:type ns4kge:Configuration .
+<configuration/dans/135> ns4kge:hasTask    <task/link-prediction> .
+<configuration/dans/135> ns4kge:hasDataset <dataset/umls> .
+<configuration/dans/135> ns4kge:hasMetric  <metric/ndcg-5> .
+<configuration/dans/135> ns4kge:hasKGEModel <kge-model/distmult> .
+<configuration/dans/135> ns4kge:hasNSMethod <ns-method/smile> .
+<configuration/dans/135> ns4kge:result "0.372"^^xsd:decimal .
