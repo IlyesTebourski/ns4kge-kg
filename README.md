@@ -10,12 +10,11 @@ Instantiated knowledge graph built from the NS4KGE ontology and the NS4KGE extra
 - `reports/` contains validation, query, source-audit, and data-quality outputs used by the paper.
 
 ## Version
-- Current artifact version: `v1.0.0-paper`.
-- For the first public GitHub release, create the release/tag as `v1.0.0-paper`.
+- Current artifact version: `v1.0.2-paper`.
 
 ## Persistent Identifiers
 - KG dataset IRI: `https://w3id.org/ns4kge/kg`.
-- KG version IRI: `https://w3id.org/ns4kge/kg/1.0.0`.
+- KG version IRI: `https://w3id.org/ns4kge/kg/1.0.2`.
 - KG instance base: `https://w3id.org/ns4kge/id/`.
 - Article example: `https://w3id.org/ns4kge/id/article/eans`.
 - Method example: `https://w3id.org/ns4kge/id/ns-method/entity-aware-negative-sampling`.
@@ -24,10 +23,10 @@ Instantiated knowledge graph built from the NS4KGE ontology and the NS4KGE extra
 
 ## Resource Availability
 - Repository: `https://github.com/IlyesTebourski/ns4kge-kg`.
-- Release target: `v1.0.0-paper`.
-- Release date: 2026-05-06.
+- Release: `v1.0.2-paper`.
+- Release date: 2026-05-13.
 - License: CC BY 4.0.
-- Zenodo DOI: `https://doi.org/10.5281/zenodo.20058972`.
+- Zenodo DOI: `https://doi.org/10.5281/zenodo.20160636`.
 - Dereferenceable KG landing IRI: `https://w3id.org/ns4kge/kg`.
 - Ontology artifact: `https://doi.org/10.5281/zenodo.20058306` and `https://github.com/IlyesTebourski/ns4kge-ontology`.
 - Extraction pipeline artifact: `https://github.com/IlyesTebourski/ns4kge-extraction-pipeline`.
@@ -54,7 +53,7 @@ The repository contains only generated structured outputs, assembled RDF, proven
 - Category and subcategory enrichment for `NSMethod` individuals is curated by the extraction pipeline taxonomy and is best-effort.
 
 ## Sustainability And Maintenance
-- The first intended public release is `v1.0.0-paper`.
+- Current release is `v1.0.2-paper`.
 - KG dataset and instance IRIs are intended to remain stable under `https://w3id.org/ns4kge/kg` and `https://w3id.org/ns4kge/id/`.
 - Future graph releases should use a new release tag, update `provenance/manifest.json`, refresh reports, and publish an archival DOI.
 - Rebuilds should be performed with the companion extraction pipeline so that generated per-article TTL, assembled KG, validation report, and query reports stay synchronized.
