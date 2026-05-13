@@ -1,8 +1,8 @@
 {
   "artifact_name": "ns4kge-kg",
   "title": "NS4KGE Knowledge Graph",
-  "kg_version": "v1.0.0-paper",
-  "release_target": "v1.0.0-paper",
+  "kg_version": "v1.0.2-paper",
+  "release": "v1.0.2-paper",
   "repository": "https://github.com/IlyesTebourski/ns4kge-kg",
   "license": "CC-BY-4.0",
   "creators": [
@@ -11,24 +11,24 @@
     "Nicoleta Preda",
     "Fatiha Sais"
   ],
-  "doi": "10.5281/zenodo.20058972",
-  "doi_url": "https://doi.org/10.5281/zenodo.20058972",
+  "doi": "10.5281/zenodo.20160636",
+  "doi_url": "https://doi.org/10.5281/zenodo.20160636",
   "ontology": {
     "artifact": "ns4kge-ontology",
-    "version": "v1.0.0",
-    "doi": "10.5281/zenodo.20058306",
+    "version": "v1.0.1",
+    "doi": "10.5281/zenodo.20160705",
     "iri": "https://w3id.org/ns4kge/ontology",
     "namespace": "https://w3id.org/ns4kge/ontology#",
     "path": "../ns4kge-ontology/ontology/ns4kge_ontology.ttl"
   },
   "pipeline": {
     "artifact": "ns4kge-extraction-pipeline",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "path": "../ns4kge-extraction-pipeline",
     "repository": "https://github.com/IlyesTebourski/ns4kge-extraction-pipeline",
     "commit": "33565fa",
-    "doi": null,
-    "doi_status": "To be added after the pipeline release is archived on Zenodo."
+    "doi": "10.5281/zenodo.20160460",
+    "doi_url": "https://doi.org/10.5281/zenodo.20160460"
   },
   "generation": {
     "models_available_in_pipeline": [
