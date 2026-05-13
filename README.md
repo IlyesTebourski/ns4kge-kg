@@ -28,7 +28,7 @@ Instantiated knowledge graph built from the NS4KGE ontology and the NS4KGE extra
 - License: CC BY 4.0.
 - Zenodo DOI: `https://doi.org/10.5281/zenodo.20160636`.
 - Dereferenceable KG landing IRI: `https://w3id.org/ns4kge/kg`.
-- Ontology artifact: `https://doi.org/10.5281/zenodo.20058306` and `https://github.com/IlyesTebourski/ns4kge-ontology`.
+- Ontology artifact: `https://doi.org/10.5281/zenodo.20160705` and `https://github.com/IlyesTebourski/ns4kge-ontology`.
 - Extraction pipeline artifact: `https://github.com/IlyesTebourski/ns4kge-extraction-pipeline`.
 
 The repository contains only generated structured outputs, assembled RDF, provenance metadata, validation reports, and query reports. It does not redistribute full source article text.
