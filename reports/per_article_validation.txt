@@ -1,0 +1,130 @@
+Per-Article Extraction Validation
+
+Manual validation performed on 6 articles against ground truth annotations.
+Metrics: Precision (P), Recall (R), F1.
+
+==============================================================
+GHN
+==============================================================
+Class                    TP   FP   FN   P      R      F1
+Dataset                   3    0    0   1.00   1.00   1.00
+KGEModel (mentions)      12    0    0   1.00   1.00   1.00
+KGEModel (proposes)       0    0    0      -      -      -
+NSMethod (mentions)       9    0    0   1.00   1.00   1.00
+NSMethod (proposes)       1    0    0   1.00   1.00   1.00
+Metric                    4    0    0   1.00   1.00   1.00
+Task                      1    0    0   1.00   1.00   1.00
+Optimizer                 1    0    0   1.00   1.00   1.00
+LossFunction              2    0    0   1.00   1.00   1.00
+Hardware                  1    0    0   1.00   1.00   1.00
+nsRatio                   -    -    -      -      -      -
+learningRate              1    0    0   1.00   1.00   1.00
+Numerical results       105    0    0   1.00   1.00   1.00
+Full configurations     105    0    0   1.00   1.00   1.00
+Top-3 rule                3    0    0   1.00   1.00   1.00
+Min-1 per KGE/NS rule     3    0    0   1.00   1.00   1.00
+
+==============================================================
+LAS
+==============================================================
+Class                    TP   FP   FN   P      R      F1
+Dataset                   3    0    0   1.00   1.00   1.00
+KGEModel (mentions)      29    0    0   1.00   1.00   1.00
+KGEModel (proposes)       0    0    0      -      -      -
+NSMethod (mentions)       9    0    0   1.00   1.00   1.00
+NSMethod (proposes)       1    0    0   1.00   1.00   1.00
+Metric                    3    0    0   1.00   1.00   1.00
+Task                      1    0    0   1.00   1.00   1.00
+Optimizer                 1    0    0   1.00   1.00   1.00
+LossFunction              1    0    0   1.00   1.00   1.00
+Hardware                  0    0    0      -      -      -
+nsRatio                   -    -    -      -      -      -
+learningRate              0    0    0      -      -      -
+Numerical results       112    0    0   1.00   1.00   1.00
+Full configurations     112    0    0   1.00   1.00   1.00
+Top-3 rule                4    0    0   1.00   1.00   1.00
+Min-1 per KGE/NS rule     4    0    0   1.00   1.00   1.00
+
+==============================================================
+IGAN
+==============================================================
+Class                    TP   FP   FN   P      R      F1
+Dataset                   4    0    0   1.00   1.00   1.00
+KGEModel (mentions)      10    0    0   1.00   1.00   1.00
+KGEModel (proposes)       0    0    0      -      -      -
+NSMethod (mentions)       5    0    0   1.00   1.00   1.00
+NSMethod (proposes)       1    0    0   1.00   1.00   1.00
+Metric                    3    0    0   1.00   1.00   1.00
+Task                      2    0    0   1.00   1.00   1.00
+Optimizer                 1    0    0   1.00   1.00   1.00
+LossFunction              1    0    0   1.00   1.00   1.00
+Hardware                  0    0    0      -      -      -
+nsRatio                   -    -    -      -      -      -
+learningRate              0    0    0      -      -      -
+Numerical results       155    0    0   1.00   1.00   1.00
+Full configurations     155    0    0   1.00   1.00   1.00
+Top-3 rule                4    0    0   1.00   1.00   1.00
+Min-1 per KGE/NS rule     4    0    0   1.00   1.00   1.00
+
+==============================================================
+M2ixKG
+==============================================================
+Class                    TP   FP   FN   P      R      F1
+Dataset                   2    0    0   1.00   1.00   1.00
+KGEModel (mentions)       4    0    0   1.00   1.00   1.00
+KGEModel (proposes)       0    0    0      -      -      -
+NSMethod (mentions)       9    0    0   1.00   1.00   1.00
+NSMethod (proposes)       1    0    0   1.00   1.00   1.00
+Metric                    2    0    0   1.00   1.00   1.00
+Task                      1    0    0   1.00   1.00   1.00
+Optimizer                 1    0    0   1.00   1.00   1.00
+LossFunction              0    0    2   0.00   0.00   0.00
+Hardware                  0    0    0      -      -      -
+nsRatio                   -    -    -      -      -      -
+learningRate              0    0    0      -      -      -
+Numerical results       104    0    0   1.00   1.00   1.00
+Full configurations     104    0    0   1.00   1.00   1.00
+Top-3 rule                1    0    0   1.00   1.00   1.00
+Min-1 per KGE/NS rule     1    0    0   1.00   1.00   1.00
+
+==============================================================
+RandomCorrupt
+==============================================================
+Class                    TP   FP   FN   P      R      F1
+Dataset                   5    0    0   1.00   1.00   1.00
+KGEModel (mentions)      11    0    0   1.00   1.00   1.00
+KGEModel (proposes)       0    0    0      -      -      -
+NSMethod (mentions)       0    0    0   1.00   0.00   0.00
+NSMethod (proposes)       0    0    1      -      -      -
+Metric                    2    0    0   1.00   1.00   1.00
+Task                      1    0    0   1.00   1.00   1.00
+Optimizer                 0    0    0      -      -      -
+LossFunction              1    0    0   1.00   1.00   1.00
+Hardware                  0    0    0      -      -      -
+nsRatio                   -    -    -      -      -      -
+learningRate              0    0    0      -      -      -
+Numerical results        30    0    0   1.00   1.00   1.00
+Full configurations       0   30   30   0.00   0.00   0.00
+Top-3 rule                1    0    0   1.00   1.00   1.00
+Min-1 per KGE/NS rule     1    0    0   1.00   1.00   1.00
+
+==============================================================
+EANS
+==============================================================
+Class                    TP   FP   FN   P      R      F1
+Dataset                   2    0    0   1.00   1.00   1.00
+KGEModel (mentions)       9    0    0   1.00   1.00   1.00
+KGEModel (proposes)       0    0    0      -      -      -
+NSMethod (mentions)       7    0    0   1.00   1.00   1.00
+NSMethod (proposes)       1    0    0   1.00   1.00   1.00
+Metric                    3    0    0   1.00   1.00   1.00
+Task                      1    0    0   1.00   1.00   1.00
+Optimizer                 1    0    0   1.00   1.00   1.00
+LossFunction              1    0    0   1.00   1.00   1.00
+Hardware                  1    0    0   1.00   1.00   1.00
+nsRatio                   0    0    0      -      -      -
+learningRate              1    0    0   1.00   1.00   1.00
+Numerical results       180    0    0   1.00   1.00   1.00
+Full configurations     180    0    0   1.00   1.00   1.00
+Top-3 rule                1    0    0   1.00   1.00   1.00
+Min-1 per KGE/NS rule     1    0    0   1.00   1.00   1.00

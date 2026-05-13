@@ -54,3 +54,16 @@ tuckerdncaching,TuckerDNCaching: high-quality negative sampling with tucker deco
 typeaugmented,A type-augmented knowledge graph embedding framework for knowledge graph completion,2023,TypeAugmented.md,23280c7dfde04bbeb3f73dbe71e8119c13ae667dd0d9a80ae17319d6d583c043,,
 typeconstraints,Type-Constrained Representation Learning in Knowledge Graphs,2015,TypeConstraints.md,ae60eb7074d351fdfe37f3c0e36c1edb96a128f604712cffb0baae0e9e5c3e25,,
 uniform,Translating Embeddings for Modeling Multi-relational Data,2013,Uniform.md,8877c5e92263b22364b26bab5bd661aa21e14ed6b19bcd122f948eb09329c011,,
+
+# Articles not freely available online - not included in the KG
+slug,title,year,acronym
+abns,New Attention Strategy for Negative Sampling in Knowledge Graph Embedding,2023,ABNS
+adaptivens,Knowledge Graph Embedding Based on Adaptive Negative Sampling,2019,Adaptive NS
+ans,A Novel Negative Sample Generating Method for Knowledge Graph Embedding,2019,ANS
+cdns,Leveraging Lexical Semantic Information for Learning Concept-Based Multiple Embedding Representations for Knowledge Graph Completion,2019,CDNS
+dcns,DCNS: A Double-Cache Negative Sampling Method for Improving Knowledge Graph Embedding,2024,DCNS
+dss,Correlation Embedding Learning with Dynamic Semantic Enhanced Sampling for Knowledge Graph Completion,2023,DSS
+esns,Entity Similarity-Based Negative Sampling for Knowledge Graph Embedding,2022,ESNS
+frr,Flexible Relation Replacement for Knowledge Graph Embedding,2019,FRR
+nksgan,Aggregating Neighborhood Information for Negative Sampling for Knowledge Graph Embedding,2020,NKSGAN
+transxc,Incorporating Domain and Range of Relations for Knowledge Graph Completion,2019,TransXc
