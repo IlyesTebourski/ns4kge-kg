@@ -1,0 +1,11 @@
+slug,title,year,acronym
+abns,New Attention Strategy for Negative Sampling in Knowledge Graph Embedding,2023,ABNS
+adaptivens,Knowledge Graph Embedding Based on Adaptive Negative Sampling,2019,Adaptive NS
+ans,A Novel Negative Sample Generating Method for Knowledge Graph Embedding,2019,ANS
+cdns,Leveraging Lexical Semantic Information for Learning Concept-Based Multiple Embedding Representations for Knowledge Graph Completion,2019,CDNS
+dcns,DCNS: A Double-Cache Negative Sampling Method for Improving Knowledge Graph Embedding,2024,DCNS
+dss,Correlation Embedding Learning with Dynamic Semantic Enhanced Sampling for Knowledge Graph Completion,2023,DSS
+esns,Entity Similarity-Based Negative Sampling for Knowledge Graph Embedding,2022,ESNS
+frr,Flexible Relation Replacement for Knowledge Graph Embedding,2019,FRR
+nksgan,Aggregating Neighborhood Information for Negative Sampling for Knowledge Graph Embedding,2020,NKSGAN
+transxc,Incorporating Domain and Range of Relations for Knowledge Graph Completion,2019,TransXc
