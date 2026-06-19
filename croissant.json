@@ -1,0 +1,47 @@
+{
+  "@context": {
+    "@language": "en",
+    "@vocab": "https://schema.org/",
+    "cr": "http://mlcommons.org/croissant/",
+    "dct": "http://purl.org/dc/terms/",
+    "sc": "https://schema.org/",
+    "conformsTo": "dct:conformsTo",
+    "sha256": "cr:sha256",
+    "encodingFormat": "sc:encodingFormat",
+    "contentUrl": "sc:contentUrl",
+    "citeAs": "cr:citeAs"
+  },
+  "@type": "sc:Dataset",
+  "conformsTo": "http://mlcommons.org/croissant/1.0",
+  "name": "NS4KGE-KG",
+  "description": "Knowledge graph of configuration-level experimental results for negative sampling in KGE, populated from 55 scientific articles (2013–2025). 53,057 RDF triples; 6,563 experimental configurations.",
+  "url": "https://w3id.org/ns4kge/kg",
+  "version": "1.0.2",
+  "datePublished": "2026-05-13",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "citeAs": "Tebourski, Paris, Preda, Saïs. An Ontology for Analyzing Negative Sampling in Knowledge Graph Embedding Literature.",
+  "creator": [
+    { "@type": "sc:Person", "name": "Ilyes Tebourski" },
+    { "@type": "sc:Person", "name": "Pierre-Henri Paris" },
+    { "@type": "sc:Person", "name": "Nicoleta Preda" },
+    { "@type": "sc:Person", "name": "Fatiha Saïs" }
+  ],
+  "distribution": [
+    {
+      "@type": "cr:FileObject",
+      "@id": "ns4kge_populated.ttl",
+      "name": "ns4kge_populated.ttl",
+      "description": "Assembled RDF/Turtle knowledge graph.",
+      "contentUrl": "https://raw.githubusercontent.com/IlyesTebourski/ns4kge-kg/v1.0.2-paper/kg/ns4kge_populated.ttl",
+      "encodingFormat": "text/turtle"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "sources.csv",
+      "name": "sources.csv",
+      "description": "Article-level source metadata (titles, years, source DOIs/URLs, checksums).",
+      "contentUrl": "https://raw.githubusercontent.com/IlyesTebourski/ns4kge-kg/v1.0.2-paper/provenance/sources.csv",
+      "encodingFormat": "text/csv"
+    }
+  ]
+}
