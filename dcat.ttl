@@ -1,0 +1,32 @@
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix dct:   <http://purl.org/dc/terms/> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/ns4kge/kg>
+    a dcat:Dataset ;
+    dct:title "NS4KGE Knowledge Graph"@en ;
+    dct:description "Knowledge graph of configuration-level experimental results for negative sampling in knowledge graph embedding (KGE), populated from 55 scientific articles (2013–2025) via an LLM-assisted extraction pipeline. 53,057 RDF triples and 6,563 experimental configurations linking datasets, KGE models, negative sampling methods, tasks, metrics, and reported scores."@en ;
+    dct:issued "2026-05-13"^^xsd:date ;
+    owl:versionInfo "1.0.2" ;
+    dct:identifier <https://doi.org/10.5281/zenodo.20160636> ;
+    dct:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcat:landingPage <https://w3id.org/ns4kge/kg> ;
+    dct:conformsTo <https://w3id.org/ns4kge/ontology> ;
+    dcat:keyword "negative sampling"@en, "knowledge graph embeddings"@en,
+                 "experimental configurations"@en, "scientific knowledge graph"@en,
+                 "RDF"@en, "SHACL"@en ;
+    dct:creator [ a foaf:Person ; foaf:name "Ilyes Tebourski" ] ,
+                [ a foaf:Person ; foaf:name "Pierre-Henri Paris" ] ,
+                [ a foaf:Person ; foaf:name "Nicoleta Preda" ] ,
+                [ a foaf:Person ; foaf:name "Fatiha Saïs" ] ;
+    dcat:distribution <https://w3id.org/ns4kge/kg/distribution/ttl> .
+
+<https://w3id.org/ns4kge/kg/distribution/ttl>
+    a dcat:Distribution ;
+    dct:title "NS4KGE assembled RDF/Turtle graph"@en ;
+    dcat:mediaType "text/turtle" ;
+    dcat:downloadURL <https://raw.githubusercontent.com/IlyesTebourski/ns4kge-kg/v1.0.2-paper/kg/ns4kge_populated.ttl> ;
+    dcat:accessURL <https://doi.org/10.5281/zenodo.20160636> ;
+    dct:license <https://creativecommons.org/licenses/by/4.0/> .
