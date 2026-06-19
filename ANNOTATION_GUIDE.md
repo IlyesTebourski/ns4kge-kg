@@ -6,7 +6,7 @@
 
 NS4KGE automatically extracts information from research papers about negative sampling for knowledge graph embeddings.
 
-Your task is to check whether the extracted information matches what is written in the original PDF.
+Your task is to annotate research papers independently and then verify the information extracted by NS4KGE against the original PDF.
 
 You do not need to understand RDF, OWL, SHACL, TTL files, or ontology engineering. You only need to be able to read an experimental machine-learning paper and identify elements such as datasets, models, methods, metrics, and reported results.
 
@@ -14,14 +14,19 @@ When a case is unclear, do not guess. Mark it as `AMB` and briefly explain why i
 
 ## 2. What will you do?
 
-For each assigned paper:
+You annotate in two phases. Complete Phase 1 fully before starting Phase 2.
 
-1. Open the paper PDF.
-2. Open the CSV containing the items extracted by NS4KGE.
-3. For each row, find the corresponding information in the PDF.
-4. Record the exact wording and its location in the paper.
-5. Decide whether the extracted item is correct.
-6. Record any eligible item that appears in the paper but is missing from the extraction.
+**Phase 1 — Blind annotation (PDF only).** For each assigned paper:
+
+1. Open the paper PDF. Do **not** open the NS4KGE extraction yet.
+2. Read the paper and list every eligible item within the defined scope (datasets, KGE models, NS methods, tasks, metrics, and the numerical configurations).
+3. For each item, record the exact wording and its location in the paper.
+
+**Phase 2 — Verification against the extraction.** Once Phase 1 is complete:
+
+4. Open the CSV containing the items extracted by NS4KGE.
+5. Compare each extracted item against your Phase 1 annotation and the PDF.
+6. Decide whether the extracted item is correct (`TP`/`FP`), and record any eligible item present in the paper but missing from the extraction (`FN`).
 
 You will work independently. Do not look at another annotator's decisions before completing your own work.
 
@@ -36,13 +41,13 @@ You should understand the basic structure of an experimental machine-learning pa
 - training information, such as optimizer, loss function, hardware, or learning rate;
 - a numerical result reported in an experimental table.
 
-You do not need to know the canonical NS4KGE identifiers in advance. They are already provided in the CSV. For example, the paper may write `GHN`, while the CSV contains `method_generative_hard_negative_mining`.
+You do not need to know the canonical NS4KGE identifiers in advance. They are provided in the CSV used in Phase 2. For example, the paper may write `GHN`, while the CSV contains `method_generative_hard_negative_mining`.
 
 ## 4. Files to use
 
 ### 4.1 `NS4KGE_entity_annotation_skeleton.csv`
 
-Use this file to check information already extracted by NS4KGE.
+Use this file in Phase 2 to verify information already extracted by NS4KGE, after completing your blind Phase 1 annotation.
 
 For each pre-filled row, add:
 
@@ -140,7 +145,7 @@ For each configuration:
 
 NS4KGE intentionally keeps only a selection of values from some large tables. Therefore, a result that appears in the paper but is absent from NS4KGE is **not** counted as an FN.
 
-Configuration validation therefore measures precision rather than complete table coverage.
+Because NS4KGE keeps only a selection of values, configuration validation reports precision only. Recall and F1 are reported at the entity level (Sections 7–8), where exhaustive identification within scope is expected.
 
 ## 10. Worked example
 
