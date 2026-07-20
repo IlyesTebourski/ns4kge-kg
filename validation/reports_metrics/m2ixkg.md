@@ -1,0 +1,23 @@
+# Metrics — M2ixKG.md
+
+**Titre :** MixKG: Mixing for harder negative samples in knowledge graph
+
+| Metrique | Valeur |
+|---|---|
+| Metrics extraites trouvees dans les tables (TP) | 2 |
+| Extraites NON trouvees (FP) | 0 |
+| **Precision** | **100%** |
+| Candidats faux negatifs (table resultats) | 0 |
+| Candidats en table de stats (priorite basse) | 0 |
+| **Recall relatif (indicatif)** | **100%** |
+
+## Precision — metrics extraites par le KG
+
+| Metric extraite | Dans les tables ? | Table | Extrait |
+|---|:---:|---|---|
+| Hits@10 | ✅ oui | (sans caption) | s</th> <th>MRR</th> <th>Hits@10(%)</th> <th>MRR</th> <t |
+| MRR | ✅ oui | (sans caption) | r> <th>Metrics</th> <th>MRR</th> <th>Hits@10(%)</th> |
+
+## Recall — metrics dans les tables mais NON extraites
+
+_Aucun candidat en table de resultats._
