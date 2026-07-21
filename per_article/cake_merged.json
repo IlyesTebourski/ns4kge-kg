@@ -13,7 +13,8 @@
     "Uniform Negative Sampling",
     "Type-Constrained Negative Sampling",
     "Self-Adversarial Negative Sampling",
-    "NSCaching"
+    "NSCaching",
+    "KBGAN"
   ],
   "mentionedKGEModels": [
     "DistMult",
@@ -21,7 +22,6 @@
     "RESCAL",
     "JOIE",
     "ComplEx",
-    "KBGAN",
     "HAKE",
     "RotatE",
     "TransH"

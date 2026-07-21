@@ -9,7 +9,7 @@
 | Precision evalues | 100% | 
 | Precision mentionnes | 100% |
 | Recall evalues | 67% |
-| Recall mentionnes | 0% |
+| Recall mentionnes | 100% |
 
 ## A. Methodes EVALUEES (valides vs `tables_only`)
 
@@ -30,6 +30,4 @@ _Aucune._
 
 ## C2. Recall MENTIONNES — en prose seulement mais non extrait
 
-| Methode | Ou | Via | Extrait |
-|---|---|:---:|---|
-| Bernoulli Negative Sampling | prose | name | The model is trained by minimizing the Bernoulli cost-function $$ \mathcal{L}_{mwNN} = |
+_Aucun._

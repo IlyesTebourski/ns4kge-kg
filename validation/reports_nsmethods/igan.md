@@ -7,7 +7,7 @@
 | Methodes EVALUEES (tableaux) | 0 |
 | Methodes MENTIONNEES seulement (prose) | 3 |
 | Precision evalues | 100% | 
-| Precision mentionnes | 67% |
+| Precision mentionnes | 100% |
 | Recall evalues | 100% |
 | Recall mentionnes | 100% |
 
@@ -20,9 +20,9 @@
 
 | Methode | Trouvee ? | Via | Extrait |
 |---|:---:|:---:|---|
-| Bernoulli Negative Sampling | ✅ | name | hich replaces head or tail according to Bernoulli distribution. **Zero loss problem.** T |
+| Bernoulli Negative Sampling | ✅ | name | or tail with equal probability; (2) **“bern”** method from (Wang et al. 2014) which |
 | Random Negative Sampling | ✅ | name | ks construct negative samples through a random mode, by which the samples are often to |
-| Uniform Negative Sampling | ❌ |  | _(absent)_ |
+| Uniform Negative Sampling | ✅ | name | to replace head or tail entity, (1) **“unif”** method which replaces head or tail w |
 
 ## C1. Recall EVALUES — dans un tableau mais non extrait
 

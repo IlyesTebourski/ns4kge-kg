@@ -4,7 +4,7 @@
 
 | Metrique | Valeur |
 |---|---|
-| Modeles EVALUES (dans les tableaux) | 5 |
+| Modeles EVALUES (dans les tableaux) | 4 |
 | Modeles MENTIONNES seulement (hors tableaux) | 5 |
 | **Precision globale** | **100%** |
 | Precision (evalues, vs tableaux) | 100% |
@@ -20,7 +20,6 @@
 |---|:---:|---|
 | Attention | ✅ oui | 507</td> </tr> <tr> <td>Attention</td> <td><strong>436</strong></ |
 | DistMult | ✅ oui | <td rowspan="10">0%</td> <td>DistMult</td> <td>.218</td> <td> |
-| KBGAN | ✅ oui | 507</td> </tr> <tr> <td>KBGAN</td> <td>.266</td> <td> |
 | RotatE | ✅ oui | 503</td> </tr> <tr> <td>RotatE</td> <td>.326</td> <td> |
 | TransE | ✅ oui | > </tr> <tr> <td>NoiGAN-TransE (soft)</td> <td><strong>.949</s |
 

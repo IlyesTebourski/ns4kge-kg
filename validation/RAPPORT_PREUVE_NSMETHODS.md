@@ -6,13 +6,13 @@ Corpus : **55 articles**. Évalués validés vs `tables_only`, mentionnés vs `n
 
 | Score | Valeur |
 |---|---|
-| Précision évalués | **89.0%** |
-| Précision mentionnés | **87.0%** |
-| Recall évalués (indicatif) | **80.9%** |
-| Recall mentionnés (indicatif) | **71.2%** |
-| Évalués vérifiés / mentionnés vérifiés | 200 / 131 |
+| Précision évalués | **93.1%** |
+| Précision mentionnés | **91.8%** |
+| Recall évalués (indicatif) | **81.4%** |
+| Recall mentionnés (indicatif) | **80.4%** |
+| Évalués vérifiés / mentionnés vérifiés | 202 / 134 |
 
-## A. Preuve — modèles/méthodes ÉVALUÉS (200)
+## A. Preuve — modèles/méthodes ÉVALUÉS (202)
 
 | Article | Entité | Trouvé | Extrait (tableau) |
 |---|---|:---:|---|
@@ -41,7 +41,7 @@ Corpus : **55 articles**. Évalués validés vs `tables_only`, mentionnés vs `n
 | ConceptDriven.md | Commonsense-Aware Negative Sampling | oui | ^*$. Similarly, [2] proposes a scalable commonsense-aware NS framework, to extract commonsense fr |
 | ConceptDriven.md | Concept Domain Negative Sampling | oui | ctive constraints. E.g., [4] proposes a concept domain negative sampling (CDNS) strategy, whic |
 | ConceptDriven.md | Concept-Driven Negative Sampling | oui | 10.1109/DSC59305.2023.00047 # A Novel Concept-Driven Negative Sampling Mechanism for Enhanci |
-| ConceptDriven.md | Uniform Negative Sampling | **NON** | — |
+| ConceptDriven.md | Uniform Negative Sampling | oui | hten the best configuration. Under the "unif." sampling strategy [14], the optimal c |
 | CondConstraints.md | closed world constraints, neg_ratio=1 | oui | N/A</td> </tr> <tr> <td>closed world constraints</td> <td>1</td> <td>801 |
 | CondConstraints.md | no constraints, neg_ratio=1 | oui | </thead> <tbody> <tr> <td>no constraints</td> <td>1</td> <td>667 |
 | CondConstraints.md | open world constraints, neg_ratio=1 | oui | 647</td> </tr> <tr> <td>open world constraints</td> <td>1</td> <td>663 |
@@ -73,6 +73,7 @@ Corpus : **55 articles**. Évalués validés vs `tables_only`, mentionnés vs `n
 | DHNS.md | Uniform Negative Sampling | oui | th MMKGC and NS performances, including uniform sampling (Uniform) [3], Bernoulli sampl |
 | DMNS.md | Conditional Diffusion-based Multi-level Negative Sampling | oui | om the latent space. Our method, called Conditional Diffusion-based Multi-level Negative Sampling (DMNS), leverages the |
 | DMNS.md | Dynamic Negative Sampling | oui | egative nodes, such as popularity [30], dynamic selections based on current predictions |
+| DMNS.md | KBGAN | oui | sampling. Among them, GraphGAN [46] and KBGAN [5] learns a distribution over negative |
 | DMNS.md | Markov Chain Monte Carlo Negative Sampling | **NON** | — |
 | DMNS.md | Popularity-based Negative Sampling | oui | to select hard negative nodes, such as popularity [30], dynamic selections based on curre |
 | DMNS.md | Uniform Negative Sampling | oui | ol the quality of negative nodes. While uniform negative sampling [14, 44] is simple, i |
@@ -101,7 +102,8 @@ Corpus : **55 articles**. Évalués validés vs `tables_only`, mentionnés vs `n
 | GibbsNS.md | KBGAN | oui | is of static negative sampling methods, KBGAN [17] found that the majority of negativ |
 | GibbsNS.md | NSCaching | oui | e samples across various relationships. NSCaching [21] designed two modules: head entity |
 | GibbsNS.md | Uniform Random Negative Sampling | oui | Four negative sampling methods, namely, uniform random negative sampling, KBGAN, NSCaching, an |
-| GNDN.md | Knowledge Completion GAN | oui | ed by the GAN concept, we thus propose *Knowledge Completion GAN* (KCGAN), a novel framework leveraging |
+| GNDN.md | KBGAN | oui | ce a significant difference between the KBGAN model of [19] and KCGAN as proposed her |
+| GNDN.md | Knowledge Completion GAN | oui | s (GANs), we propose a novel framework, Knowledge Completion GANs (KCGANs), for competitively training ge |
 | GNS.md | Good Negative Sampling | oui | # Good negative sampling for triple classifica |
 | GNS.md | Pseudo Typed Negative Sampling | oui | ernoulli Negative Sampling (BNS) and 3) Pseudo Typed Negative Sampling (PTNS). UNS generates |
 | GNS.md | Uniform Negative Sampling | oui | mpling is composed of three methods: 1) Uniform Negative Sampling (UNS), 2) Bernoulli N |
@@ -167,7 +169,7 @@ Corpus : **55 articles**. Évalués validés vs `tables_only`, mentionnés vs `n
 | NSCaching.md | KBGAN + scratch | oui | wo pioneered works, i.e., IGAN [39] and KBGAN [9], attempting to address these challe |
 | NSCaching.md | NSCaching | oui | Xiv:1812.06410v2 [cs.AI] 18 Jan 2019 # NSCaching: Simple and Efficient Negative Sampling |
 | NSCaching.md | Uniform Negative Sampling | oui | Due to its simplicity and efficiency, uniform sampling is broadly used in KG embeddin |
-| PNS.md | Bernoulli Negative Sampling | **NON** | — |
+| PNS.md | Bernoulli Negative Sampling | oui | > </tr> <tr> <td>TransH(bern)</td> <td>401</td> <td> |
 | PNS.md | Probabilistic Negative Sampling | oui | nhancing Knowledge Graph Embedding with Probabilistic Negative Sampling Citation in BibTeX f |
 | RAAKGC.md | In-Batch Negative Sampling | oui | are the self-negative samples (SN) and in-batch negative samples (IBN) (Wang et al. 202 |
 | RAAKGC.md | Relation-Aware Anchor Enhancement | oui | 2025 # Knowledge Graph Completion with Relation-Aware Anchor Enhancement Duanyang Yuan¹\*, Sihang Zhou¹\*, Xiao |
@@ -196,13 +198,13 @@ Corpus : **55 articles**. Évalués validés vs `tables_only`, mentionnés vs `n
 | SparseNSG.md | Negative Sampling Based on Frequency of Relational Association Entities | oui | # A Novel Negative Sampling Based on Frequency of Relational Association Entities for Knowledge Graph Embedding Yi Zhang |
 | STC.md | Soft Type Constraint | oui | se a method for negative sampling named Soft Type Constraint (STC). STC improves the probability of |
 | TANS.md | Self-Adversarial Negative Sampling | oui | in KGE relies on smoothing methods like Self-Adversarial Negative Sampling (SANS) and subsamplin |
-| TANS.md | Self-Adversarial Negative Sampling w/ Base | **NON** | — |
-| TANS.md | Self-Adversarial Negative Sampling w/ Freq | **NON** | — |
-| TANS.md | Self-Adversarial Negative Sampling w/ Uniq | **NON** | — |
+| TANS.md | Self-Adversarial Negative Sampling w/ Base | oui | </th> <th>SANS</th> <th>SANS w/ Base</th> <th>SANS w/ Freq</th> |
+| TANS.md | Self-Adversarial Negative Sampling w/ Freq | oui | <th>SANS w/ Base</th> <th>SANS w/ Freq</th> <th>SANS w/ Uniq</th> |
+| TANS.md | Self-Adversarial Negative Sampling w/ Uniq | oui | <th>SANS w/ Freq</th> <th>SANS w/ Uniq</th> </tr> <tr> <th col |
 | TANS.md | Triplet Adaptive Negative Sampling | oui | loss in KGE and induces a new NS loss, Triplet Adaptive Negative Sampling (TANS), that can cove |
-| TANS.md | Triplet Adaptive Negative Sampling w/ Base | **NON** | — |
-| TANS.md | Triplet Adaptive Negative Sampling w/ Freq | **NON** | — |
-| TANS.md | Triplet Adaptive Negative Sampling w/ Uniq | **NON** | — |
+| TANS.md | Triplet Adaptive Negative Sampling w/ Base | oui | </th> <th>TANS</th> <th>TANS w/ Base</th> <th>TANS w/ Freq</th> |
+| TANS.md | Triplet Adaptive Negative Sampling w/ Freq | oui | <th>TANS w/ Base</th> <th>TANS w/ Freq</th> <th>TANS w/ Uniq</th> |
+| TANS.md | Triplet Adaptive Negative Sampling w/ Uniq | oui | <th>TANS w/ Freq</th> <th>TANS w/ Uniq</th> </tr> </thead> <tbody> |
 | TANS.md | Uniform Negative Sampling | oui | om word embedding to KGE with utilizing uniform distribution as its noise distribution. |
 | TANS.md | Uniform Negative Sampling w/ Base | **NON** | — |
 | TANS.md | Uniform Negative Sampling w/ Freq | **NON** | — |
@@ -217,7 +219,7 @@ Corpus : **55 articles**. Évalués validés vs `tables_only`, mentionnés vs `n
 | TypeConstraints.md | Local Closed-World Assumption | oui | cases, it can be beneficial to apply a local closed-world assumption that approximates the semantics of rela |
 | TypeConstraints.md | Type-Constrained Negative Sampling | oui | Xiv:1508.02593v2 [cs.AI] 28 Aug 2015 # Type-Constrained Representation Learning in Knowledge Gr |
 
-## B. Preuve — MENTIONNÉS seulement (131)
+## B. Preuve — MENTIONNÉS seulement (134)
 
 | Article | Entité | Trouvé | Extrait (prose) |
 |---|---|:---:|---|
@@ -231,14 +233,15 @@ Corpus : **55 articles**. Évalués validés vs `tables_only`, mentionnés vs `n
 | ADNS.md | Typed Sampling | oui | pool to corrupt positive instances [7]. Typed Sampling is the negative sampling based |
 | ASA.md | Self-adversarial Negative Sampling | oui | are Graph Attention Model With Adaptive Self-adversarial Training **Xiao Qin¹\*, Nasrullah Shei |
 | BatchNS.md | Uniform Negative Sampling | oui | lion users vs. 1 million products. With uniform negative sampling over all nodes, the l |
+| CAKE.md | KBGAN | oui | 2014). (2) Adversarial-based sampling: KBGAN (Cai and Wang, 2018) integrates the KGE |
 | CAKE.md | Type-Constrained Negative Sampling | oui | omain-based NS (Wang et al., 2019b) and type-constrained NS (Denis et al., 2015) both leverage d |
-| CANS.md | Bernoulli Negative Sampling | **NON** | — |
+| CANS.md | Bernoulli Negative Sampling | oui | ion, the L1 norm was employed, and the "bern" [10] strategy was adopted, to decide w |
 | CANS.md | Uniform Negative Sampling | oui | ugh effective at detecting noises, with uniform negative sampling methods, and a harsh |
 | CCS.md | Uniform Random Sampling | oui | works, such as the TransE model, use a uniform random sampling method to generate negative sa |
 | ConceptDriven.md | Entity-Aware Negative Sampling | oui | high-quality negatives. [21] proposes a entity-aware NS method, which tries to sample negati |
 | ConceptDriven.md | Reinforcement Learning Negative Sampling | oui | lops a novel NS model, which works as a reinforcement learning (RL) agent to explore high-quality nega |
 | CondConstraints.md | Bernoulli Negative Sampling | oui | for TransH and is sometimes called the Bernoulli trick [15]. The Bernoulli trick involve |
-| CondConstraints.md | Conditional Constraint-Based Negative Sampling | **NON** | — |
+| CondConstraints.md | Conditional Constraint-Based Negative Sampling | oui | CEUR-WS.org/Vol-2635/paper3.pdf # Conditional Constraints for Knowledge Graph Embeddings Michael |
 | CondConstraints.md | Filtered Negative Sampling | oui | ransE embedding model: using so-called *filtered* negative samples [1]. Filtered negativ |
 | CondConstraints.md | Locally Closed World Negative Sampling | oui | ail with another entity) or to assume a locally closed world in which any valid triple entails a who |
 | dans.md | GNDN | oui | as KBGAN [3], IGAN [30], HeGAN [11] and GNDN [38], which learn the underlying sample |
@@ -251,7 +254,7 @@ Corpus : **55 articles**. Évalués validés vs `tables_only`, mentionnés vs `n
 | DHNS.md | IGAN | oui | quality negative triples. KBGAN [4] and IGAN [30] use Generative Adversarial Network |
 | DHNS.md | NS-KGE | oui | ing (NSCach) [40], KBGAN [4], SANS [1], NS-KGE [13], MANS [37] and MMRNS [34]. **Impl |
 | DMNS.md | MixGCF | oui | ve examples from $k$-hop neighborhoods. MixGCF [20] synthesizes hard negative examples |
-| DMNS.md | Subgraph-based Negative Sampling | oui | . On the other hand, BUDDY [6] proposes subgraph sketches to approximate essential featu |
+| DMNS.md | Subgraph-based Negative Sampling | oui | ts the representations of the enclosing subgraphs. For example, SEAL [53] proposes the us |
 | DNS.md | Bernoulli Sampling | oui | tance. For each triple $\psi_j$, we use bernoulli sampling (as introduced by Wang et al. |
 | DNS.md | Domain Sampling | oui | s to RNS. Xie et al. [2017] introduce a domain sampling approach, where for each relat |
 | DNS.md | Nearest Neighbor Sampling | oui | tandard KBC model is trained which uses nearest neighbor sampling (on the frozen model in the fi |
@@ -272,6 +275,7 @@ Corpus : **55 articles**. Évalués validés vs `tables_only`, mentionnés vs `n
 | GNDN.md | Random Negative Sampling | oui | rator is used to generate an image from random noise and the discriminator is employed |
 | GNS.md | Bernoulli Negative Sampling | oui | ound ontological knowledge; 2) in turn, Bernoulli's distribution is used for decreasing t |
 | GNS.md | Iterative Negative Sampling | oui | ity to corrupt. ReasonKGE [9] with its Iterative Negative Sampling (INS) identifies dyna |
+| GNS.md | ReasonKGE | oui | o pick head or tail entity to corrupt. ReasonKGE [9] with its Iterative Negative Samplin |
 | GNS.md | Typed Negative Sampling | oui | f ontologies in the negative sampling. Typed Negative Sampling (TNS) [10] which is s |
 | HaSa.md | Noise contrastive estimation | oui | s proposed by [20], which is similar to noise contrastive estimation (NCE) [11]. More recently, InfoNCE loss |
 | HTENS.md | Bernoulli Negative Sampling | oui | ethods, such as Uniform sampling[2] and Bernoulli sampling[14], assign fixed sampling pro |
@@ -279,10 +283,10 @@ Corpus : **55 articles**. Évalués validés vs `tables_only`, mentionnés vs `n
 | HTENS.md | Hard Type Constraint | oui | es that are more difficult to classify, Hard Type Constraint[9] and Soft Type Constraint[15] are pro |
 | HTENS.md | IGAN | oui | sampling methods, such as KBGAN[3] and IGAN[13], set the KGE model to be trained as |
 | HTENS.md | Soft Type Constraint | oui | o classify, Hard Type Constraint[9] and Soft Type Constraint[15] are proposed. However, as the train |
-| IGAN.md | Bernoulli Negative Sampling | oui | hich replaces head or tail according to Bernoulli distribution. **Zero loss problem.** T |
+| IGAN.md | Bernoulli Negative Sampling | oui | or tail with equal probability; (2) **“bern”** method from (Wang et al. 2014) which |
 | IGAN.md | Random Negative Sampling | oui | ks construct negative samples through a random mode, by which the samples are often to |
-| IGAN.md | Uniform Negative Sampling | **NON** | — |
-| KBGAN.md | Bernoulli Negative Sampling | **NON** | — |
+| IGAN.md | Uniform Negative Sampling | oui | to replace head or tail entity, (1) **“unif”** method which replaces head or tail w |
+| KBGAN.md | Bernoulli Negative Sampling | oui | nal complexity. Besides, we adopt the “bern” sampling technique (Wang et al., 2014) |
 | KBGAN.md | Type-constrained Negative Sampling | **NON** | — |
 | KSGAN.md | Bernoulli Negative Sampling | oui | om a given true triple $(h, r, t)$ with Bernoulli distribution. The aforementioned negati |
 | KSGAN.md | IGAN | oui | ediction task. In contrast to KBGAN and IGAN [11], KSGAN leverages a knowledge selec |
@@ -335,8 +339,8 @@ Corpus : **55 articles**. Évalués validés vs `tables_only`, mentionnés vs `n
 | SNS.md | KSGAN | oui | learn embeddings. IGAN [8], KBGAN [3], KSGAN [7] are three existing GAN-based sampli |
 | SNS.md | Structure Aware Negative Sampling | oui | rial network(GAN)-based, and NSCaching, structure aware negative sampling(SANS) are four negati |
 | SparseNSG.md | Bernoulli Negative Sampling | **NON** | — |
-| STC.md | Bernoulli Negative Sampling | **NON** | — |
-| STC.md | Uniform Negative Sampling | **NON** | — |
+| STC.md | Bernoulli Negative Sampling | oui | lement two strategies (i.e. "unif" and "bern") for replacing head or tail with equal |
+| STC.md | Uniform Negative Sampling | oui | 4b], we implement two strategies (i.e. "unif" and "bern") for replacing head or tail |
 | TANS.md | Base subsampling | **NON** | — |
 | TANS.md | Frequency-based subsampling | oui | ling of Sun et al. (2019) (Base), their frequency-based subsampling (Freq) and unique-based subsampling (Un |
 | TANS.md | Unique-based subsampling | oui | frequency-based subsampling (Freq) and unique-based subsampling (Uniq) for KGE. Kamigaito and Hayashi ( |
@@ -348,12 +352,13 @@ Corpus : **55 articles**. Évalués validés vs `tables_only`, mentionnés vs `n
 | TuckerDNCaching.md | Structure Aware Negative Sampling | oui | ignores non-semantic similar neighbors, Structure Aware Negative Sampling (SANS) (Ahrabian et a |
 | TuckerDNCaching.md | Uniform Negative Sampling | oui | simplicity and efficiency. For example, Uniform negative sampling (Bordes et al., 2013) |
 | TypeAugmented.md | Bernoulli negative sampling | oui | ples, Wang et al.<sup>13</sup> define a Bernoulli distribution to replace the head and ta |
+| TypeAugmented.md | CAKE | oui | esides, Niu et al.<sup>33</sup> propose CAKE which automatically extract commonsense |
 | TypeAugmented.md | Self-adversarial negative sampling | oui | ntly, Sun et al.<sup>15</sup> propose a self-adversarial negative sampling strategy and design a |
 | TypeAugmented.md | Soft Type Constraint | oui | proved negative sampling strategy named Soft Type Constraint (STC). It selects entities in the same |
 | TypeAugmented.md | Type-constrained negative sampling | oui | istinct relations. We also design a new type-constrained negative sampling strategy to construct |
 | TypeAugmented.md | Uniform negative sampling | oui | f the existing KEG models carry out the uniform sampling scheme as in<sup>12</sup>. To |
 
-## C1. Candidats faux négatifs — ÉVALUÉS (42)
+## C1. Candidats faux négatifs — ÉVALUÉS (43)
 
 | Article | Entité | Où | Extrait |
 |---|---|:---:|---|
@@ -391,29 +396,27 @@ Corpus : **55 articles**. Évalués validés vs `tables_only`, mentionnés vs `n
 | SANS.md | Self-Adv. RW-SANS | prose+table | ted in Table 2 under Self-Adv. SANS and Self-Adv. RW-SANS, both of which reweigh the negative tri |
 | SANS.md | Self-Adv. SANS | table | ng></td> </tr> <tr> <td>Self-Adv. SANS (ours)</td> <td><strong>52.03</ |
 | SANS.md | Uniform SANS | prose+table | the former approach is referred to as *Uniform SANS*. **Algorithm 1** Approximating the $k |
+| SelfAdv.md | Bernoulli Negative Sampling | table | 0</td> </tr> <tr> <td>TransH (bern)</td> <td>.668</td> <td>.87 |
 | SNS.md | Random Negative Sampling | table | <td rowspan="4">TransH</td> <td>Random</td> <td>0.1520</td> <t |
 | STC.md | Frequency-based Negative Sampling | table | <thead> <tr> <th>Relation Frequency</th> <th>Test Number</th> |
 | TANS.md | Frequency-based Negative Sampling | table | <th>Index</th> <th>Query Frequency</th> <th>Answer Frequency</th> |
 | TANS.md | None Sampling | table | 2">ComplEx</td> <td rowspan="3">None</td> <td>NS</td> <td>23 |
 | TANS.md | SANS | prose+table | ike Self-Adversarial Negative Sampling (SANS) and subsampling. However, it is uncert |
-| TANS.md | Subsampling | prose+table | word2vec (Mikolov et al., 2013) to KGE. Subsampling can smooth the appearance frequency of |
+| TANS.md | Subsampling | table | tbody> <tr> <td rowspan="3">Subsampling</td> <td>Base</td> <td> |
 | TypeAugmented.md | Frequency-based Negative Sampling | table | Bin Center</td> <td>TaKE-SimplE Frequency</td> <td>SimplE Frequency</td> |
 | TypeConstraints.md | None Sampling | table | Freebase-150k</strong></td> <td>None</td> <td>0.327</td> <td |
 
-## C2. Candidats faux négatifs — MENTIONNÉS (46)
+## C2. Candidats faux négatifs — MENTIONNÉS (30)
 
 | Article | Entité | Où | Extrait |
 |---|---|:---:|---|
-| AdaptativeNS.md | Subsampling | prose | e Graph Embedding via Adaptive Negative Subsampling Dong Zhu\*, Haonan Tan\*, Le Wang\*\u2 |
 | CAKE.md | NS-KGE | prose | iciency of sampling. (5) None-sampling: NS-KGE (Li et al., 2021) eliminates the NS pro |
-| CCS.md | Cache-based Negative Sampling | prose | ] Pos_triplet["(h, r, t)"] --> Cache["{(h', r, t')}"] Neg_triplet_h --> |
 | CCS.md | IGAN | prose | sing an adversarial training framework. IGAN [40] and Kbgan [41] both introduce GAN |
 | ConceptDriven.md | CAKE | prose | Commonsense-Aware Knowledge Embedding (CAKE) framework, which consists of automatic |
 | ConceptDriven.md | MVLP | prose | ule and the multi-view link prediction (MVLP) module, wherein CANS is comparable wit |
 | dans.md | Self-Adv | prose | d other negative samplers (Random, Pop, Self-Adv and MCNS) employ RGCN [26] as the backb |
 | DeMix.md | CAKE | prose | *CANS* [16]. The CANS is a component of CAKE [16] responsible for solving the invali |
 | DeMix.md | MixGCF | prose | eneralization and robustness of models. MixGCF [13] integrates multiple negative sampl |
-| DHNS.md | Probabilistic Negative Sampling | prose | s, particularly the Denoising Diffusion Probabilistic Model (DDPM) [9], have become pivotal i |
 | DMNS.md | SANS | prose | g high-variance samples [9]. On graphs, SANS [2] select negative examples from $k$-h |
 | DNS.md | Approximate Nearest Neighbor Negative Sampling | prose | an open source library that implements Approximate Nearest Neighbor functionality using Locality-Sensitive |
 | DNS.md | Local-Closed World Assumption Negative Sampling | prose | ve samples, which are created under the Local Closed World Assumption (LCWA). Leveraging this assumption, one |
@@ -421,32 +424,19 @@ Corpus : **55 articles**. Évalués validés vs `tables_only`, mentionnés vs `n
 | eTruncatedUNS.md | Truncated Negative Sampling | prose | argin-based ranking loss. **$\epsilon$-Truncated Uniform Negative Sampling** A widely-u |
 | GibbsNS.md | IGAN | prose | distributions in the training process. IGAN [19] designed a generator and performed |
 | GibbsNS.md | Nearest Neighbor Sampling | prose | e original feature space, such as the K-Nearest Neighbor (KNN) algorithm [30], which calculates |
-| GNDN.md | Bernoulli Negative Sampling | prose | ach entry corresponds to a predicate; a Bernoulli likelihood function is postulated in or |
-| GNDN.md | Relational Sampling | prose | ve adversarial networks Link prediction Relational reasoning ## ABSTRACT Knowledge bases |
 | GNS.md | Local-Closed World Assumption Negative Sampling | prose | e inconsistent triples. In addition, a Local-Closed World Assumption (LCWA) approach [10] assumes a KG to be |
-| GNS.md | ReasonKGE | prose | o pick head or tail entity to corrupt. ReasonKGE [9] with its Iterative Negative Samplin |
 | GraphGAN.md | IRGAN | prose | he result suggests that, different with IRGAN (Wang et al. 2017a), the design of grap |
 | HaSa.md | Structure-Aware Negative Sampling | prose | rXiv:2305.10563v2 # HaSa: Hardness and Structure-Aware Contrastive Knowledge Graph Embedding |
 | KBGAN.md | IRGAN | prose | using policy gradient and other tricks. IRGAN (Wang et al., 2017) is a recent work wh |
-| LTS.md | Gibbs Negative Sampling | prose | distribution. The LDA topic model uses Gibbs sampling to sample the implicit topic o |
 | M2ixKG.md | Entity Similarity-based Negative Sampling | prose | nition of hard negative samples Correct Entity Similarity based Hard Negative Samples (HNS-CES). |
 | M2ixKG.md | MixGCF | prose | use mixing for harder negative mining. MixGCF [Huang et al., 2021] uses positive mixi |
 | M2ixKG.md | Self-adversarial Negative Sampling | prose | -quality negative samples. Differently, SANS [Ahrabian et al., 2020] absorbs graph s |
-| MCNS.md | Bernoulli Negative Sampling | prose | or each $(u, v)$ pair, if we define two Bernoulli distributions $P_{u,v}(x)$ where $P_{u, |
-| MCNS.md | Gibbs Negative Sampling | prose | between two distributions. According to Gibbs Inequality, the maximizer of $L^{(v)}$ |
-| NSCaching.md | Cache-based Negative Sampling | prose | used here. **Algorithm 2** NSCaching: Cache-based KG embedding. **Input:** trainin |
-| RCWC.md | Kbgan Sampling | prose | 2014. Liwei Cai and William Yang Wang. Kbgan: Adversarial learning for knowledge gra |
-| RCWC.md | Relational Sampling | prose | ng [Sun et al., 2019]. ## 3.3 Training Relational Classifiers Given a relation, there ar |
 | ReasonKGE.md | SANS | prose | ents structure-aware negative sampling (SANS), which utilizes the graph structure by |
 | ReasonKGE.md | Local-Closed World Assumption Negative Sampling | prose | on the (local) closed world assumption (LCWA). Based on CWA all triples not present |
 | SANS.md | Uniform RW-SANS | prose | heme. Figure 2: The performance of Uniform RW-SANS with TransE on FB15K-237 using differen |
 | SNS.md | SANS | prose | hing, structure aware negative sampling(SANS) are four negative sampling methods in |
 | SparseNSG.md | Frequency-based Negative Sampling | prose | # A Novel Negative Sampling Based on Frequency of Relational Association Entities for |
-| SparseNSG.md | Relational Sampling | prose | Negative Sampling Based on Frequency of Relational Association Entities for Knowledge Grap |
 | STC.md | Local-Closed World Assumption Negative Sampling | prose | low the local closed-world assumptions (LCWA) proposed in [Krompaß et al., 2015] as |
-| TuckerDNCaching.md | Cache-based Negative Sampling | prose | s (2023) 61:739–763 749 # Algorithm 2: Cache update. **Input**: Knowledge graph $\m |
 | TuckerDNCaching.md | ESNS | prose | ity Similarity-based Negative Sampling (ESNS) (Yao et al., 2022) considers semantic |
 | TuckerDNCaching.md | SANS | prose | ors, Structure Aware Negative Sampling (SANS) (Ahrabian et al., 2020) shows better p |
 | TuckerDNCaching.md | Self-Adv | prose | ., 2019) introduced a self-adversarial *Self-Adv* sampling approach based on a self-scor |
-| TypeAugmented.md | CAKE | prose | esides, Niu et al.<sup>33</sup> propose CAKE which automatically extract commonsense |
-| TypeConstraints.md | Bernoulli Negative Sampling | prose | The model is trained by minimizing the Bernoulli cost-function $$ \mathcal{L}_{mwNN} = |

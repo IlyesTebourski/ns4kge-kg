@@ -73,8 +73,8 @@ cited?"* — impossible on raw text.
 |---|:---:|:---:|:---:|:---:|
 | **Datasets** | 98.9% | — | 97.3% | — |
 | **Metrics** | 96.5% | — | 96.0% | — |
-| **KGE Models** | 94.5% | 97.9% | 89.5% | 95.5% |
-| **NS Methods** | 89.0% | 87.0% | 80.9% | 71.2% |
+| **KGE Models** | 94.4% | 97.9% | 95.0% | 97.5% |
+| **NS Methods** | 93.1% | 91.8% | 81.4% | 80.4% |
 
 *(Datasets and Metrics come only from tables → 2 scores each; KGE Models and NS Methods → 4 scores each.)*
 
@@ -135,14 +135,14 @@ difficulty is that the prompt **rewrites** them (`Mean Rank`→`MR`, `Hit@10`→
 Notably, the 7 FPs are **genuine KG errors** (the `Accuracy` metric hallucinated in 5 articles where the word
 appears nowhere) — correctly caught by the validation.
 
-### 5.3 KGE Models (94.5%–97.9% / 89.5%–95.5%) — proper, well-known, reused names
+### 5.3 KGE Models (94.4%–97.9% / 95.0%–97.5%) — proper, well-known, reused names
 KGE models are **famous, published methods reused across articles**: `TransE`, `DistMult`, `ComplEx`,
 `RotatE`, `ConvE`… Their name is a **stable proper noun**, written the same way everywhere (up to case). An
 article using `TransE` writes `TransE`. Hence reliable matching and high scores. The only real difficulties are
 stylized casing (`ComplEx`, `SimplE`) and a few unsplit compounds (`TransE+STC+TCE`) that the KG should have
 separated — genuine defects, correctly flagged.
 
-### 5.4 NS Methods (89.0%–87.0% / 80.9%–71.2%) — the weak link, **by nature**
+### 5.4 NS Methods (93.1%–91.8% / 81.4%–80.4%) — the weak link, **by nature**
 This is where everything becomes harder, and it is **expected and explainable**:
 
 - **Negative-sampling methods are NOT standardized.** Unlike KGE models, there is no shared catalogue of
@@ -166,7 +166,7 @@ This is where everything becomes harder, and it is **expected and explainable**:
   cases weigh on *measured* precision (counted as strict FPs) without necessarily being real errors. This is a
   **fundamental limitation** of any search-based validation, specific to NS methods.
 
-- **Mention recall (71.2%) reflects a real KG behavior**: it misses ~1/3 of the methods cited in related work
+- **Mention recall (80.4%) reflects a real KG behavior**: it misses ~1/5 of the methods cited in related work
   (`CAKE`, `IGAN`, `IRGAN`, `MixGCF`, `Gibbs NS`…). These are not spurious candidates — they are **genuine
   omissions**, hence an actionable result, not a measurement artifact.
 
@@ -228,5 +228,5 @@ Each script reads `liste_mds/*.md` and `ns4kge-kg/per_article/*_merged.json`, re
 |---|---:|---:|---:|---:|
 | Datasets | 73 | 184 | 2 | 5 (results) + 1 (stats) |
 | Metrics | 18 | 199 | 7 | 8 |
-| KGE Models | 201 | 582 (344 eval + 238 ment) | ~24 | 38 eval + 11 ment |
-| NS Methods | 154 (excl. `Unknown`) | 331 (200 eval + 131 ment) | ~43 | 42 eval + 46 ment |
+| KGE Models | 198 | 575 (340 eval + 235 ment) | 24 | 17 eval + 6 ment |
+| NS Methods | 154 (excl. `Unknown`) | 336 (202 eval + 134 ment) | 25 | 43 eval + 30 ment |

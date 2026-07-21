@@ -4,11 +4,11 @@
 
 | Metrique | Valeur |
 |---|---|
-| Methodes EVALUEES (tableaux) | 5 |
+| Methodes EVALUEES (tableaux) | 6 |
 | Methodes MENTIONNEES seulement (prose) | 2 |
-| Precision evalues | 80% | 
+| Precision evalues | 83% | 
 | Precision mentionnes | 100% |
-| Recall evalues | 80% |
+| Recall evalues | 83% |
 | Recall mentionnes | 67% |
 
 ## A. Methodes EVALUEES (valides vs `tables_only`)
@@ -17,6 +17,7 @@
 |---|:---:|:---:|---|
 | Conditional Diffusion-based Multi-level Negative Sampling | ✅ | name | om the latent space. Our method, called Conditional Diffusion-based Multi-level Negative Sampling (DMNS), leverages the |
 | Dynamic Negative Sampling | ✅ | name | egative nodes, such as popularity [30], dynamic selections based on current predictions |
+| KBGAN | ✅ | name | sampling. Among them, GraphGAN [46] and KBGAN [5] learns a distribution over negative |
 | Markov Chain Monte Carlo Negative Sampling | ❌ |  | _(absent)_ |
 | Popularity-based Negative Sampling | ✅ | name | to select hard negative nodes, such as popularity [30], dynamic selections based on curre |
 | Uniform Negative Sampling | ✅ | name | ol the quality of negative nodes. While uniform negative sampling [14, 44] is simple, i |
@@ -26,7 +27,7 @@
 | Methode | Trouvee ? | Via | Extrait |
 |---|:---:|:---:|---|
 | MixGCF | ✅ | name | ve examples from $k$-hop neighborhoods. MixGCF [20] synthesizes hard negative examples |
-| Subgraph-based Negative Sampling | ✅ | name | . On the other hand, BUDDY [6] proposes subgraph sketches to approximate essential featu |
+| Subgraph-based Negative Sampling | ✅ | name | ts the representations of the enclosing subgraphs. For example, SEAL [53] proposes the us |
 
 ## C1. Recall EVALUES — dans un tableau mais non extrait
 

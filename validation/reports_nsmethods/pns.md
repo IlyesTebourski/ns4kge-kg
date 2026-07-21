@@ -6,16 +6,16 @@
 |---|---|
 | Methodes EVALUEES (tableaux) | 2 |
 | Methodes MENTIONNEES seulement (prose) | 0 |
-| Precision evalues | 50% | 
+| Precision evalues | 100% | 
 | Precision mentionnes | 100% |
-| Recall evalues | 50% |
+| Recall evalues | 67% |
 | Recall mentionnes | 100% |
 
 ## A. Methodes EVALUEES (valides vs `tables_only`)
 
 | Methode | Trouvee ? | Via | Extrait |
 |---|:---:|:---:|---|
-| Bernoulli Negative Sampling | ❌ |  | _(absent)_ |
+| Bernoulli Negative Sampling | ✅ | name | > </tr> <tr> <td>TransH(bern)</td> <td>401</td> <td> |
 | Probabilistic Negative Sampling | ✅ | name | nhancing Knowledge Graph Embedding with Probabilistic Negative Sampling Citation in BibTeX f |
 
 ## B. Methodes MENTIONNEES seulement (valides vs prose)

@@ -5,7 +5,7 @@
 | Metrique | Valeur |
 |---|---|
 | Modeles EVALUES (dans les tableaux) | 12 |
-| Modeles MENTIONNES seulement (hors tableaux) | 11 |
+| Modeles MENTIONNES seulement (hors tableaux) | 10 |
 | **Precision globale** | **100%** |
 | Precision (evalues, vs tableaux) | 100% |
 | Precision (mentionnes, vs prose) | 100% |
@@ -35,7 +35,6 @@
 
 | Modele | Trouve dans la prose ? | Extrait |
 |---|:---:|---|
-| CAKE | ✅ oui | esides, Niu et al.<sup>33</sup> propose CAKE which automatically extract commonsense |
 | HAKE | ✅ oui | g to tail embedding. Soon after RotatE, HAKE<sup>16</sup> and RatE<sup>17</sup> make |
 | JOIE | ✅ oui | ons to model the semantic transitivity. JOIE<sup>24</sup> directly represents a KG a |
 | RatE | ✅ oui | oon after RotatE, HAKE<sup>16</sup> and RatE<sup>17</sup> make slight improvements t |

@@ -10,7 +10,8 @@
     "Bernoulli negative sampling",
     "Soft Type Constraint",
     "Uniform negative sampling",
-    "Self-adversarial negative sampling"
+    "Self-adversarial negative sampling",
+    "CAKE"
   ],
   "mentionedKGEModels": [
     "RatE",
@@ -29,7 +30,6 @@
     "TKRL",
     "JOIE",
     "DistMult",
-    "CAKE",
     "TypeDM",
     "TaRP",
     "TransH",

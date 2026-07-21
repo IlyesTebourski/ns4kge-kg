@@ -9,9 +9,9 @@
 | **Precision globale** | **100%** |
 | Precision (evalues, vs tableaux) | 100% |
 | Precision (mentionnes, vs prose) | 100% |
-| Candidats evaluations ratees (en tableau, non extrait) | 2 |
+| Candidats evaluations ratees (en tableau, non extrait) | 1 |
 | Candidats mentions ratees (en prose, non extrait) | 0 |
-| Recall relatif *evalues* | 88% |
+| Recall relatif *evalues* | 94% |
 | Recall relatif *mentionnes* | 100% |
 
 ## A. Modeles EVALUES — extraits des tableaux (valides vs `tables_only`)
@@ -49,7 +49,6 @@
 
 | Modele | Ou | Extrait |
 |---|---|---|
-| KBGAN | prose+table | nerate higher-quality negative triples. KBGAN [4] and IGAN [30] use Generative Advers |
 | OTE | prose+table | x [27], RotatE [25], PairRE [7], and GC-OTE [26]. (2) **Multimodal KGC models:** w |
 
 ## C2. Recall MENTIONNES — modeles en prose seulement mais NON extraits

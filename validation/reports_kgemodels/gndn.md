@@ -4,9 +4,9 @@
 
 | Metrique | Valeur |
 |---|---|
-| Modeles EVALUES (dans les tableaux) | 13 |
+| Modeles EVALUES (dans les tableaux) | 12 |
 | Modeles MENTIONNES seulement (hors tableaux) | 6 |
-| **Precision globale** | **95%** |
+| **Precision globale** | **94%** |
 | Precision (evalues, vs tableaux) | 92% |
 | Precision (mentionnes, vs prose) | 100% |
 | Candidats evaluations ratees (en tableau, non extrait) | 0 |
@@ -20,7 +20,6 @@
 |---|:---:|---|
 | ConvE | ✅ oui | 5.8</td> </tr> <tr> <td>ConvE [19]*</td> <td>0.46</td> |
 | ConvKB | ✅ oui | 9.1</td> </tr> <tr> <td>ConvKB [20]</td> <td>0.248</td> |
-| KBGAN | ✅ oui | </thead> <tbody> <tr> <td>KBGAN [19]*</td> <td>0.213</td> |
 | Knowledge Completion GAN | ❌ NON | _(absent des tableaux)_ |
 | NTN | ✅ oui | 5.2</td> </tr> <tr> <td>NTN [8]*</td> <td>70.6</td> |
 | Path-KCGAN [2 hop] | ✅ oui | 4.6</td> </tr> <tr> <td>Path-KCGAN[2 hop]</td> <td>0.58</td> <td |

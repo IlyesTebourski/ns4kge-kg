@@ -8,7 +8,7 @@
 | Methodes MENTIONNEES seulement (prose) | 0 |
 | Precision evalues | 100% | 
 | Precision mentionnes | 100% |
-| Recall evalues | 100% |
+| Recall evalues | 75% |
 | Recall mentionnes | 100% |
 
 ## A. Methodes EVALUEES (valides vs `tables_only`)
@@ -25,7 +25,9 @@ _Aucune._
 
 ## C1. Recall EVALUES — dans un tableau mais non extrait
 
-_Aucun._
+| Methode | Ou | Via | Extrait |
+|---|---|:---:|---|
+| Bernoulli Negative Sampling | table | name | 0</td> </tr> <tr> <td>TransH (bern)</td> <td>.668</td> <td>.87 |
 
 ## C2. Recall MENTIONNES — en prose seulement mais non extrait
 

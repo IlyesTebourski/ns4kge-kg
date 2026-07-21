@@ -4,7 +4,7 @@
 
 | Metrique | Valeur |
 |---|---|
-| Modeles EVALUES (dans les tableaux) | 9 |
+| Modeles EVALUES (dans les tableaux) | 8 |
 | Modeles MENTIONNES seulement (hors tableaux) | 0 |
 | **Precision globale** | **100%** |
 | Precision (evalues, vs tableaux) | 100% |
@@ -23,7 +23,6 @@
 | GCN | ✅ oui | link prediction against baselines using GCN as the base encoder. <table> <thead> |
 | GraphGAN | ✅ oui | 004</td> </tr> <tr> <td>GraphGAN</td> <td>.739 ± .003</td> |
 | GVAE | ✅ oui | 003</td> </tr> <tr> <td>GVAE</td> <td><u>.783 ± .003</u></td |
-| KBGAN | ✅ oui | 009</td> </tr> <tr> <td>KBGAN</td> <td>.615 ± .004</td> |
 | SAGE | ✅ oui | ng></td> </tr> <tr> <td>SAGE</td> <td>.598 ± .014</td> |
 | ScaLed | ✅ oui | 001</td> </tr> <tr> <td>ScaLed</td> <td>.676 ± .004</td> |
 | SEAL | ✅ oui | 002</td> </tr> <tr> <td>SEAL</td> <td>.751 ± .007</td> |

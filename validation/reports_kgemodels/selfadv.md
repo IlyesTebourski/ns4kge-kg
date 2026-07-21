@@ -9,9 +9,9 @@
 | **Precision globale** | **100%** |
 | Precision (evalues, vs tableaux) | 100% |
 | Precision (mentionnes, vs prose) | 100% |
-| Candidats evaluations ratees (en tableau, non extrait) | 2 |
+| Candidats evaluations ratees (en tableau, non extrait) | 1 |
 | Candidats mentions ratees (en prose, non extrait) | 0 |
-| Recall relatif *evalues* | 78% |
+| Recall relatif *evalues* | 88% |
 | Recall relatif *mentionnes* | 100% |
 
 ## A. Modeles EVALUES — extraits des tableaux (valides vs `tables_only`)
@@ -40,7 +40,6 @@
 
 | Modele | Ou | Extrait |
 |---|---|---|
-| KBGAN | prose+table | en from (Cai (Cai & Wang, 2017), where KBGAN uses a ComplEx negative sample generato |
 | SE | table | </thead> <tbody> <tr> <td>SE (Bordes et al., 2011)</td> <td>$- |
 
 ## C2. Recall MENTIONNES — modeles en prose seulement mais NON extraits

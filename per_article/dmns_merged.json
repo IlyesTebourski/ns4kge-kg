@@ -11,14 +11,14 @@
     "MixGCF",
     "Popularity-based Negative Sampling",
     "Dynamic Negative Sampling",
-    "Subgraph-based Negative Sampling"
+    "Subgraph-based Negative Sampling",
+    "KBGAN"
   ],
   "mentionedKGEModels": [
     "ARVGA",
     "ScaLed",
     "GAT",
     "SEAL",
-    "KBGAN",
     "GVAE",
     "GCN",
     "SAGE",
@@ -168,16 +168,16 @@
         "Task": "Link Prediction",
         "Dataset": "Cora",
         "Metric": "MAP",
-        "KGEModel": "KBGAN",
-        "NSMethod": "Unknown",
+        "KGEModel": "",
+        "NSMethod": "KBGAN",
         "result": 0.615
       },
       {
         "Task": "Link Prediction",
         "Dataset": "Cora",
         "Metric": "NDCG",
-        "KGEModel": "KBGAN",
-        "NSMethod": "Unknown",
+        "KGEModel": "",
+        "NSMethod": "KBGAN",
         "result": 0.705
       },
       {
@@ -344,16 +344,16 @@
         "Task": "Link Prediction",
         "Dataset": "Citeseer",
         "Metric": "MAP",
-        "KGEModel": "KBGAN",
-        "NSMethod": "Unknown",
+        "KGEModel": "",
+        "NSMethod": "KBGAN",
         "result": 0.568
       },
       {
         "Task": "Link Prediction",
         "Dataset": "Citeseer",
         "Metric": "NDCG",
-        "KGEModel": "KBGAN",
-        "NSMethod": "Unknown",
+        "KGEModel": "",
+        "NSMethod": "KBGAN",
         "result": 0.668
       },
       {
@@ -408,16 +408,16 @@
         "Task": "Link Prediction",
         "Dataset": "Coauthor-CS",
         "Metric": "MAP",
-        "KGEModel": "KBGAN",
-        "NSMethod": "Unknown",
+        "KGEModel": "",
+        "NSMethod": "KBGAN",
         "result": 0.852
       },
       {
         "Task": "Link Prediction",
         "Dataset": "Coauthor-CS",
         "Metric": "NDCG",
-        "KGEModel": "KBGAN",
-        "NSMethod": "Unknown",
+        "KGEModel": "",
+        "NSMethod": "KBGAN",
         "result": 0.888
       },
       {
@@ -696,16 +696,16 @@
         "Task": "Link Prediction",
         "Dataset": "Actor",
         "Metric": "MAP",
-        "KGEModel": "KBGAN",
-        "NSMethod": "Unknown",
+        "KGEModel": "",
+        "NSMethod": "KBGAN",
         "result": 0.472
       },
       {
         "Task": "Link Prediction",
         "Dataset": "Actor",
         "Metric": "NDCG",
-        "KGEModel": "KBGAN",
-        "NSMethod": "Unknown",
+        "KGEModel": "",
+        "NSMethod": "KBGAN",
         "result": 0.596
       },
       {

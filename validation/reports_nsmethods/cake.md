@@ -5,11 +5,11 @@
 | Metrique | Valeur |
 |---|---|
 | Methodes EVALUEES (tableaux) | 8 |
-| Methodes MENTIONNEES seulement (prose) | 1 |
+| Methodes MENTIONNEES seulement (prose) | 2 |
 | Precision evalues | 100% | 
 | Precision mentionnes | 100% |
 | Recall evalues | 89% |
-| Recall mentionnes | 50% |
+| Recall mentionnes | 67% |
 
 ## A. Methodes EVALUEES (valides vs `tables_only`)
 
@@ -28,6 +28,7 @@
 
 | Methode | Trouvee ? | Via | Extrait |
 |---|:---:|:---:|---|
+| KBGAN | ✅ | name | 2014). (2) Adversarial-based sampling: KBGAN (Cai and Wang, 2018) integrates the KGE |
 | Type-Constrained Negative Sampling | ✅ | name | omain-based NS (Wang et al., 2019b) and type-constrained NS (Denis et al., 2015) both leverage d |
 
 ## C1. Recall EVALUES — dans un tableau mais non extrait

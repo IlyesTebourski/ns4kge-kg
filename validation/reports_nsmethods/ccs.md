@@ -9,7 +9,7 @@
 | Precision evalues | 100% | 
 | Precision mentionnes | 100% |
 | Recall evalues | 100% |
-| Recall mentionnes | 33% |
+| Recall mentionnes | 50% |
 
 ## A. Methodes EVALUEES (valides vs `tables_only`)
 
@@ -34,5 +34,4 @@ _Aucun._
 
 | Methode | Ou | Via | Extrait |
 |---|---|:---:|---|
-| Cache-based Negative Sampling | prose | name | ] Pos_triplet["(h, r, t)"] --> Cache["{(h', r, t')}"] Neg_triplet_h --> |
 | IGAN | prose | name | sing an adversarial training framework. IGAN [40] and Kbgan [41] both introduce GAN |

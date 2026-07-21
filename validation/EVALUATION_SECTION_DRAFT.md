@@ -53,8 +53,8 @@ requiring type-specific handling:
 |---|:---:|:---:|:---:|:---:|
 | Datasets | 98.9% | — | 97.3% | — |
 | Metrics | 96.5% | — | 96.0% | — |
-| KGE Models | 94.5% | 97.9% | 89.5% | 95.5% |
-| NS Methods | 89.0% | 87.0% | 80.9% | 71.2% |
+| KGE Models | 94.4% | 97.9% | 95.0% | 97.5% |
+| NS Methods | 93.1% | 91.8% | 81.4% | 80.4% |
 
 Precision is high across all four types (≥ 87%), and the few precision errors are genuine extraction defects
 that the evaluation localizes (e.g. a hallucinated `Accuracy` metric, unsplit model+method compounds).

@@ -6,7 +6,7 @@
 <article/gns> ns4kge:mentionsNSMethod <ns-method/uniform-negative-sampling> .
 <article/gns> ns4kge:mentionsNSMethod <ns-method/typed-negative-sampling> .
 <article/gns> ns4kge:mentionsNSMethod <ns-method/pseudo-typed-negative-sampling> .
-<article/gns> ns4kge:mentionsKGEModel <kge-model/reasonkge> .
+<article/gns> ns4kge:mentionsNSMethod <ns-method/reasonkge> .
 <article/gns> ns4kge:mentionsKGEModel <kge-model/transe> .
 <article/gns> ns4kge:mentionsKGEModel <kge-model/complex> .
 <article/gns> ns4kge:mentionsKGEModel <kge-model/bert> .
@@ -42,7 +42,11 @@
 
 <ns-method/pseudo-typed-negative-sampling> rdf:type ns4kge:NSMethod .
 
-<kge-model/reasonkge> rdf:type ns4kge:KGEModel .
+<ns-method/reasonkge> rdf:type ns4kge:NSMethod .
+<category/dynamic-ns> rdf:type ns4kge:Category .
+
+<ns-method/reasonkge> ns4kge:hasCategory <category/dynamic-ns> .
+<ns-method/reasonkge> ns4kge:hasSubcategory <subcategory/knowledge-constrained> .
 
 <kge-model/transe> rdf:type ns4kge:KGEModel .
 

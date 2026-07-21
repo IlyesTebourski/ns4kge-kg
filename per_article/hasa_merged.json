@@ -22,8 +22,7 @@
     "LASS",
     "StAR",
     "HaSa",
-    "RotatE",
-    "KBGAN"
+    "RotatE"
   ],
   "Experimentation": {
     "Hardware": [
@@ -610,7 +609,7 @@
         "Task": "Link Prediction",
         "Dataset": "WN18RR",
         "Metric": "MRR",
-        "KGEModel": "KBGAN",
+        "KGEModel": "",
         "NSMethod": "KBGAN",
         "result": 0.277
       },
@@ -618,7 +617,7 @@
         "Task": "Link Prediction",
         "Dataset": "WN18RR",
         "Metric": "Hits@10",
-        "KGEModel": "KBGAN",
+        "KGEModel": "",
         "NSMethod": "KBGAN",
         "result": 0.458
       },
@@ -626,7 +625,7 @@
         "Task": "Link Prediction",
         "Dataset": "FB15k-237",
         "Metric": "MRR",
-        "KGEModel": "KBGAN",
+        "KGEModel": "",
         "NSMethod": "KBGAN",
         "result": 0.277
       },
@@ -634,7 +633,7 @@
         "Task": "Link Prediction",
         "Dataset": "FB15k-237",
         "Metric": "Hits@10",
-        "KGEModel": "KBGAN",
+        "KGEModel": "",
         "NSMethod": "KBGAN",
         "result": 0.458
       },

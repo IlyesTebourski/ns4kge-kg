@@ -7,6 +7,7 @@
 <article/typeaugmented> ns4kge:mentionsNSMethod <ns-method/soft-type-constraint> .
 <article/typeaugmented> ns4kge:mentionsNSMethod <ns-method/uniform-negative-sampling> .
 <article/typeaugmented> ns4kge:mentionsNSMethod <ns-method/self-adversarial-negative-sampling> .
+<article/typeaugmented> ns4kge:mentionsNSMethod <ns-method/cake> .
 <article/typeaugmented> ns4kge:mentionsKGEModel <kge-model/rate> .
 <article/typeaugmented> ns4kge:mentionsKGEModel <kge-model/complex> .
 <article/typeaugmented> ns4kge:mentionsKGEModel <kge-model/take-simple> .
@@ -23,7 +24,6 @@
 <article/typeaugmented> ns4kge:mentionsKGEModel <kge-model/tkrl> .
 <article/typeaugmented> ns4kge:mentionsKGEModel <kge-model/joie> .
 <article/typeaugmented> ns4kge:mentionsKGEModel <kge-model/distmult> .
-<article/typeaugmented> ns4kge:mentionsKGEModel <kge-model/cake> .
 <article/typeaugmented> ns4kge:mentionsKGEModel <kge-model/typedm> .
 <article/typeaugmented> ns4kge:mentionsKGEModel <kge-model/tarp> .
 <article/typeaugmented> ns4kge:mentionsKGEModel <kge-model/transh> .
@@ -61,6 +61,10 @@
 
 <ns-method/self-adversarial-negative-sampling> ns4kge:hasSubcategory <subcategory/direct> .
 
+<ns-method/cake> rdf:type ns4kge:NSMethod .
+<ns-method/cake> ns4kge:hasCategory <category/self-adversarial-ns> .
+<ns-method/cake> ns4kge:hasSubcategory <subcategory/knowledge-constrained> .
+
 <kge-model/take> rdf:type ns4kge:KGEModel .
 
 <kge-model/rate> rdf:type ns4kge:KGEModel .
@@ -94,8 +98,6 @@
 <kge-model/joie> rdf:type ns4kge:KGEModel .
 
 <kge-model/distmult> rdf:type ns4kge:KGEModel .
-
-<kge-model/cake> rdf:type ns4kge:KGEModel .
 
 <kge-model/typedm> rdf:type ns4kge:KGEModel .
 

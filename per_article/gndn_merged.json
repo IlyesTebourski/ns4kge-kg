@@ -6,7 +6,8 @@
   "proposedNSMethod": "Knowledge Completion GAN",
   "proposedKGEModel": "KCGAN",
   "mentionedNSMethods": [
-    "Random Negative Sampling"
+    "Random Negative Sampling",
+    "KBGAN"
   ],
   "mentionedKGEModels": [
     "PTransE",
@@ -17,7 +18,6 @@
     "NTN",
     "TransG",
     "DistMult",
-    "KBGAN",
     "Knowledge Completion GAN",
     "Path-KCGAN [2 hop]",
     "ConvE",
@@ -44,32 +44,32 @@
         "Task": "Link Prediction",
         "Dataset": "WN18",
         "Metric": "MRR",
-        "KGEModel": "KBGAN",
-        "NSMethod": "Unknown",
+        "KGEModel": "",
+        "NSMethod": "KBGAN",
         "result": 0.213
       },
       {
         "Task": "Link Prediction",
         "Dataset": "WN18",
         "Metric": "Hits@10",
-        "KGEModel": "KBGAN",
-        "NSMethod": "Unknown",
+        "KGEModel": "",
+        "NSMethod": "KBGAN",
         "result": 48.1
       },
       {
         "Task": "Link Prediction",
         "Dataset": "FB15K",
         "Metric": "MRR",
-        "KGEModel": "KBGAN",
-        "NSMethod": "Unknown",
+        "KGEModel": "",
+        "NSMethod": "KBGAN",
         "result": 0.278
       },
       {
         "Task": "Link Prediction",
         "Dataset": "FB15K",
         "Metric": "Hits@10",
-        "KGEModel": "KBGAN",
-        "NSMethod": "Unknown",
+        "KGEModel": "",
+        "NSMethod": "KBGAN",
         "result": 45.8
       },
       {

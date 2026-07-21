@@ -9,7 +9,7 @@
 | Precision evalues | 100% | 
 | Precision mentionnes | 100% |
 | Recall evalues | 100% |
-| Recall mentionnes | 80% |
+| Recall mentionnes | 100% |
 
 ## A. Methodes EVALUEES (valides vs `tables_only`)
 
@@ -34,6 +34,4 @@ _Aucun._
 
 ## C2. Recall MENTIONNES — en prose seulement mais non extrait
 
-| Methode | Ou | Via | Extrait |
-|---|---|:---:|---|
-| Gibbs Negative Sampling | prose | name | distribution. The LDA topic model uses Gibbs sampling to sample the implicit topic o |
+_Aucun._

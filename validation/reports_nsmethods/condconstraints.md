@@ -7,7 +7,7 @@
 | Methodes EVALUEES (tableaux) | 3 |
 | Methodes MENTIONNEES seulement (prose) | 4 |
 | Precision evalues | 100% | 
-| Precision mentionnes | 75% |
+| Precision mentionnes | 100% |
 | Recall evalues | 100% |
 | Recall mentionnes | 100% |
 
@@ -24,7 +24,7 @@
 | Methode | Trouvee ? | Via | Extrait |
 |---|:---:|:---:|---|
 | Bernoulli Negative Sampling | ✅ | name | for TransH and is sometimes called the Bernoulli trick [15]. The Bernoulli trick involve |
-| Conditional Constraint-Based Negative Sampling | ❌ |  | _(absent)_ |
+| Conditional Constraint-Based Negative Sampling | ✅ | name | CEUR-WS.org/Vol-2635/paper3.pdf # Conditional Constraints for Knowledge Graph Embeddings Michael |
 | Filtered Negative Sampling | ✅ | name | ransE embedding model: using so-called *filtered* negative samples [1]. Filtered negativ |
 | Locally Closed World Negative Sampling | ✅ | name | ail with another entity) or to assume a locally closed world in which any valid triple entails a who |
 

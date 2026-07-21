@@ -10,10 +10,10 @@
     "Iterative Negative Sampling",
     "Uniform Negative Sampling",
     "Typed Negative Sampling",
-    "Pseudo Typed Negative Sampling"
+    "Pseudo Typed Negative Sampling",
+    "ReasonKGE"
   ],
   "mentionedKGEModels": [
-    "ReasonKGE",
     "TransE",
     "ComplEx",
     "BERT",

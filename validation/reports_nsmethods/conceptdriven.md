@@ -6,9 +6,9 @@
 |---|---|
 | Methodes EVALUEES (tableaux) | 4 |
 | Methodes MENTIONNEES seulement (prose) | 2 |
-| Precision evalues | 75% | 
+| Precision evalues | 100% | 
 | Precision mentionnes | 100% |
-| Recall evalues | 75% |
+| Recall evalues | 80% |
 | Recall mentionnes | 50% |
 
 ## A. Methodes EVALUEES (valides vs `tables_only`)
@@ -18,7 +18,7 @@
 | Commonsense-Aware Negative Sampling | ✅ | name | ^*$. Similarly, [2] proposes a scalable commonsense-aware NS framework, to extract commonsense fr |
 | Concept Domain Negative Sampling | ✅ | name | ctive constraints. E.g., [4] proposes a concept domain negative sampling (CDNS) strategy, whic |
 | Concept-Driven Negative Sampling | ✅ | name | 10.1109/DSC59305.2023.00047 # A Novel Concept-Driven Negative Sampling Mechanism for Enhanci |
-| Uniform Negative Sampling | ❌ |  | _(absent)_ |
+| Uniform Negative Sampling | ✅ | name | hten the best configuration. Under the "unif." sampling strategy [14], the optimal c |
 
 ## B. Methodes MENTIONNEES seulement (valides vs prose)
 

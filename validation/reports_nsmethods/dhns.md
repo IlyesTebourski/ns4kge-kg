@@ -9,7 +9,7 @@
 | Precision evalues | 100% | 
 | Precision mentionnes | 100% |
 | Recall evalues | 89% |
-| Recall mentionnes | 75% |
+| Recall mentionnes | 100% |
 
 ## A. Methodes EVALUEES (valides vs `tables_only`)
 
@@ -40,6 +40,4 @@
 
 ## C2. Recall MENTIONNES — en prose seulement mais non extrait
 
-| Methode | Ou | Via | Extrait |
-|---|---|:---:|---|
-| Probabilistic Negative Sampling | prose | name | s, particularly the Denoising Diffusion Probabilistic Model (DDPM) [9], have become pivotal i |
+_Aucun._

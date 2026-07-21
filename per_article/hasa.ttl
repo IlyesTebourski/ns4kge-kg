@@ -17,7 +17,6 @@
 <article/hasa> ns4kge:mentionsKGEModel <kge-model/star> .
 <article/hasa> ns4kge:mentionsKGEModel <kge-model/hasa> .
 <article/hasa> ns4kge:mentionsKGEModel <kge-model/rotate> .
-<article/hasa> ns4kge:mentionsKGEModel <kge-model/kbgan> .
 <article/hasa> ns4kge:hasExperimentation <experimentation/hasa> .
 
 <category/self-adversarial-ns> rdf:type ns4kge:Category .
@@ -65,8 +64,6 @@
 <kge-model/star> rdf:type ns4kge:KGEModel .
 
 <kge-model/rotate> rdf:type ns4kge:KGEModel .
-
-<kge-model/kbgan> rdf:type ns4kge:KGEModel .
 
 <dataset/wn18rr> rdf:type ns4kge:Dataset .
 <task/link-prediction> rdf:type ns4kge:Task .
@@ -739,7 +736,6 @@
 <configuration/hasa/71> ns4kge:hasTask    <task/link-prediction> .
 <configuration/hasa/71> ns4kge:hasDataset <dataset/wn18rr> .
 <configuration/hasa/71> ns4kge:hasMetric  <metric/mrr> .
-<configuration/hasa/71> ns4kge:hasKGEModel <kge-model/kbgan> .
 <configuration/hasa/71> ns4kge:hasNSMethod <ns-method/kbgan> .
 <configuration/hasa/71> ns4kge:result "0.277"^^xsd:decimal .
 
@@ -747,7 +743,6 @@
 <configuration/hasa/72> ns4kge:hasTask    <task/link-prediction> .
 <configuration/hasa/72> ns4kge:hasDataset <dataset/wn18rr> .
 <configuration/hasa/72> ns4kge:hasMetric  <metric/hits-10> .
-<configuration/hasa/72> ns4kge:hasKGEModel <kge-model/kbgan> .
 <configuration/hasa/72> ns4kge:hasNSMethod <ns-method/kbgan> .
 <configuration/hasa/72> ns4kge:result "0.458"^^xsd:decimal .
 
@@ -755,7 +750,6 @@
 <configuration/hasa/73> ns4kge:hasTask    <task/link-prediction> .
 <configuration/hasa/73> ns4kge:hasDataset <dataset/fb15k-237> .
 <configuration/hasa/73> ns4kge:hasMetric  <metric/mrr> .
-<configuration/hasa/73> ns4kge:hasKGEModel <kge-model/kbgan> .
 <configuration/hasa/73> ns4kge:hasNSMethod <ns-method/kbgan> .
 <configuration/hasa/73> ns4kge:result "0.277"^^xsd:decimal .
 
@@ -763,7 +757,6 @@
 <configuration/hasa/74> ns4kge:hasTask    <task/link-prediction> .
 <configuration/hasa/74> ns4kge:hasDataset <dataset/fb15k-237> .
 <configuration/hasa/74> ns4kge:hasMetric  <metric/hits-10> .
-<configuration/hasa/74> ns4kge:hasKGEModel <kge-model/kbgan> .
 <configuration/hasa/74> ns4kge:hasNSMethod <ns-method/kbgan> .
 <configuration/hasa/74> ns4kge:result "0.458"^^xsd:decimal .
 

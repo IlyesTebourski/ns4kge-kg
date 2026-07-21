@@ -9,9 +9,9 @@
 | **Precision globale** | **100%** |
 | Precision (evalues, vs tableaux) | 100% |
 | Precision (mentionnes, vs prose) | 100% |
-| Candidats evaluations ratees (en tableau, non extrait) | 2 |
+| Candidats evaluations ratees (en tableau, non extrait) | 1 |
 | Candidats mentions ratees (en prose, non extrait) | 0 |
-| Recall relatif *evalues* | 75% |
+| Recall relatif *evalues* | 86% |
 | Recall relatif *mentionnes* | 100% |
 
 ## A. Modeles EVALUES — extraits des tableaux (valides vs `tables_only`)
@@ -56,7 +56,6 @@
 | Modele | Ou | Extrait |
 |---|---|---|
 | GCN | prose+table | ls, e.g. ProjE [21], ANALOGY [22] and R-GCN [28], also achieve good results for lin |
-| KBGAN | prose+table | h outperforms GAN-based sampling method KBGAN. **INDEX TERMS** Knowledge graph, know |
 
 ## C2. Recall MENTIONNES — modeles en prose seulement mais NON extraits
 

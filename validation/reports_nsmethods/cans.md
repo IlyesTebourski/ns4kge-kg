@@ -7,7 +7,7 @@
 | Methodes EVALUEES (tableaux) | 1 |
 | Methodes MENTIONNEES seulement (prose) | 2 |
 | Precision evalues | 100% | 
-| Precision mentionnes | 50% |
+| Precision mentionnes | 100% |
 | Recall evalues | 50% |
 | Recall mentionnes | 100% |
 
@@ -21,7 +21,7 @@
 
 | Methode | Trouvee ? | Via | Extrait |
 |---|:---:|:---:|---|
-| Bernoulli Negative Sampling | ❌ |  | _(absent)_ |
+| Bernoulli Negative Sampling | ✅ | name | ion, the L1 norm was employed, and the "bern" [10] strategy was adopted, to decide w |
 | Uniform Negative Sampling | ✅ | name | ugh effective at detecting noises, with uniform negative sampling methods, and a harsh |
 
 ## C1. Recall EVALUES — dans un tableau mais non extrait

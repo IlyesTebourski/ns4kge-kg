@@ -9,9 +9,9 @@
 | **Precision globale** | **100%** |
 | Precision (evalues, vs tableaux) | 100% |
 | Precision (mentionnes, vs prose) | 100% |
-| Candidats evaluations ratees (en tableau, non extrait) | 1 |
+| Candidats evaluations ratees (en tableau, non extrait) | 0 |
 | Candidats mentions ratees (en prose, non extrait) | 0 |
-| Recall relatif *evalues* | 80% |
+| Recall relatif *evalues* | 100% |
 | Recall relatif *mentionnes* | 100% |
 
 ## A. Modeles EVALUES — extraits des tableaux (valides vs `tables_only`)
@@ -29,9 +29,7 @@ _Aucun modele mentionne hors tableaux._
 
 ## C1. Recall EVALUES — modeles dans un tableau mais NON extraits
 
-| Modele | Ou | Extrait |
-|---|---|---|
-| KBGAN | prose+table | tribution. IGAN [Wang et al., 2018] and KBGAN [Cai and Wang, 2018] introduce generati |
+_Aucun._
 
 ## C2. Recall MENTIONNES — modeles en prose seulement mais NON extraits
 

@@ -6,13 +6,13 @@ Corpus : **55 articles**. Évalués validés vs `tables_only`, mentionnés vs `n
 
 | Score | Valeur |
 |---|---|
-| Précision évalués | **94.5%** |
+| Précision évalués | **94.4%** |
 | Précision mentionnés | **97.9%** |
-| Recall évalués (indicatif) | **89.5%** |
-| Recall mentionnés (indicatif) | **95.5%** |
-| Évalués vérifiés / mentionnés vérifiés | 344 / 238 |
+| Recall évalués (indicatif) | **95.0%** |
+| Recall mentionnés (indicatif) | **97.5%** |
+| Évalués vérifiés / mentionnés vérifiés | 340 / 235 |
 
-## A. Preuve — modèles/méthodes ÉVALUÉS (344)
+## A. Preuve — modèles/méthodes ÉVALUÉS (340)
 
 | Article | Entité | Trouvé | Extrait (tableau) |
 |---|---|:---:|---|
@@ -93,7 +93,6 @@ Corpus : **55 articles**. Évalués validés vs `tables_only`, mentionnés vs `n
 | DMNS.md | GCN | oui | link prediction against baselines using GCN as the base encoder. <table> <thead> |
 | DMNS.md | GraphGAN | oui | 004</td> </tr> <tr> <td>GraphGAN</td> <td>.739 ± .003</td> |
 | DMNS.md | GVAE | oui | 003</td> </tr> <tr> <td>GVAE</td> <td><u>.783 ± .003</u></td |
-| DMNS.md | KBGAN | oui | 009</td> </tr> <tr> <td>KBGAN</td> <td>.615 ± .004</td> |
 | DMNS.md | SAGE | oui | ng></td> </tr> <tr> <td>SAGE</td> <td>.598 ± .014</td> |
 | DMNS.md | ScaLed | oui | 001</td> </tr> <tr> <td>ScaLed</td> <td>.676 ± .004</td> |
 | DMNS.md | SEAL | oui | 002</td> </tr> <tr> <td>SEAL</td> <td>.751 ± .007</td> |
@@ -155,7 +154,6 @@ Corpus : **55 articles**. Évalués validés vs `tables_only`, mentionnés vs `n
 | GibbsNS.md | TuckER | oui | 554</td> </tr> <tr> <td>TuckER</td> <td>0.358</td> <td |
 | GNDN.md | ConvE | oui | 5.8</td> </tr> <tr> <td>ConvE [19]*</td> <td>0.46</td> |
 | GNDN.md | ConvKB | oui | 9.1</td> </tr> <tr> <td>ConvKB [20]</td> <td>0.248</td> |
-| GNDN.md | KBGAN | oui | </thead> <tbody> <tr> <td>KBGAN [19]*</td> <td>0.213</td> |
 | GNDN.md | Knowledge Completion GAN | **NON** | — |
 | GNDN.md | NTN | oui | 5.2</td> </tr> <tr> <td>NTN [8]*</td> <td>70.6</td> |
 | GNDN.md | Path-KCGAN [2 hop] | oui | 4.6</td> </tr> <tr> <td>Path-KCGAN[2 hop]</td> <td>0.58</td> <td |
@@ -175,7 +173,6 @@ Corpus : **55 articles**. Évalués validés vs `tables_only`, mentionnés vs `n
 | HaSa.md | ComplEx | **NON** | — |
 | HaSa.md | DistMult | oui | ng></td> </tr> <tr> <td>DistMult [36]</td> <td>7,000</td> |
 | HaSa.md | HaSa+ | oui | /tr> <tr> <td>$\mathcal{L}_{HaSa}$ (6)</td> <td><u>123</u></td> |
-| HaSa.md | KBGAN | oui | 450</td> </tr> <tr> <td>KBGAN [4]</td> <td>-</td> <td |
 | HaSa.md | KG-BERT | oui | KGE</td> </tr> <tr> <td>KGBERT [38]</td> <td>97</td> < |
 | HaSa.md | LASS | oui | 482</td> </tr> <tr> <td>LASS [25]</td> <td>55</td> < |
 | HaSa.md | RotatE | oui | 441</td> </tr> <tr> <td>RotatE [26]</td> <td>3,340</td> |
@@ -244,7 +241,6 @@ Corpus : **55 articles**. Évalués validés vs `tables_only`, mentionnés vs `n
 | NMiss.md | TransE | oui | 084</td> </tr> <tr> <td>TransE</td> <td>0.001</td> <td |
 | NoiGAN.md | Attention | oui | 507</td> </tr> <tr> <td>Attention</td> <td><strong>436</strong></ |
 | NoiGAN.md | DistMult | oui | <td rowspan="10">0%</td> <td>DistMult</td> <td>.218</td> <td> |
-| NoiGAN.md | KBGAN | oui | 507</td> </tr> <tr> <td>KBGAN</td> <td>.266</td> <td> |
 | NoiGAN.md | RotatE | oui | 503</td> </tr> <tr> <td>RotatE</td> <td>.326</td> <td> |
 | NoiGAN.md | TransE | oui | > </tr> <tr> <td>NoiGAN-TransE (soft)</td> <td><strong>.949</s |
 | NSCaching.md | ComplEx | oui | op$</td> </tr> <tr> <td>ComplEx [38]</td> <td>$\text{Re}(\mathb |
@@ -361,7 +357,7 @@ Corpus : **55 articles**. Évalués validés vs `tables_only`, mentionnés vs `n
 | Uniform.md | TransE | oui | .84</td> </tr> <tr> <td>TransE</td> <td>$O(n_e k + n_r k)$</td |
 | Uniform.md | Unstructured | oui | </thead> <tbody> <tr> <td>Unstructured [2]</td> <td>$O(n_e k)$</td> |
 
-## B. Preuve — MENTIONNÉS seulement (238)
+## B. Preuve — MENTIONNÉS seulement (235)
 
 | Article | Entité | Trouvé | Extrait (prose) |
 |---|---|:---:|---|
@@ -381,7 +377,6 @@ Corpus : **55 articles**. Évalués validés vs `tables_only`, mentionnés vs `n
 | CAKE.md | ComplEx | oui | se together with the characteristics of complex relations. Furthermore, a multi-view li |
 | CAKE.md | DistMult | oui | osition-based** score function, such as DistMult (Yang et al., 2015): $$E(h, r, t) = \m |
 | CAKE.md | JOIE | oui | hand, although some KGE models such as JOIE (Hao et al., 2019) employ the ontology |
-| CAKE.md | KBGAN | oui | 2014). (2) Adversarial-based sampling: KBGAN (Cai and Wang, 2018) integrates the KGE |
 | CAKE.md | RESCAL | oui | s such as TransE (Bordes et al., 2013), RESCAL (Nickel et al., 2011), ComplEx (Trouill |
 | CAKE.md | TransH | oui | amely 1-1, 1-N, N-1, and N-N defined in TransH (Wang et al., 2014) for negative sampli |
 | CANS.md | GTrans | oui | iple as a manifold rather than a point. GTrans [20] used dynamic and static weighting |
@@ -447,7 +442,6 @@ Corpus : **55 articles**. Évalués validés vs `tables_only`, mentionnés vs `n
 | GNS.md | BERT | oui | state-of-the-art embedding method - KG-BERT for triple classification task - on a b |
 | GNS.md | ComplEx | oui | n KGs such as: TransE [5], Rescal [12], ComplEx [16], DistMult [20] and KG-BERT [21], a |
 | GNS.md | DistMult | oui | TransE [5], Rescal [12], ComplEx [16], DistMult [20] and KG-BERT [21], and all these me |
-| GNS.md | ReasonKGE | oui | o pick head or tail entity to corrupt. ReasonKGE [9] with its Iterative Negative Samplin |
 | GNS.md | Rescal | oui | embeddings in KGs such as: TransE [5], Rescal [12], ComplEx [16], DistMult [20] and K |
 | GNS.md | TransE | oui | and relation embeddings in KGs such as: TransE [5], Rescal [12], ComplEx [16], DistMul |
 | GNS.md | TransOWL | oui | e sampling for triple classification 5 TransOWL [7] leverages ontology axioms in order |
@@ -588,7 +582,6 @@ Corpus : **55 articles**. Évalués validés vs `tables_only`, mentionnés vs `n
 | TuckerDNCaching.md | RotatE | oui | ich has an impact on efficiency. Later, RotatE (Sun et al., 2019) introduced a self-ad |
 | TuckerDNCaching.md | TorusE | oui | lational distance-based models, such as TorusE (Ebisu et al., 2018), by addressing the |
 | TuckerDNCaching.md | TuckER | oui | ng: high-quality negative sampling with tucker decomposition Tiroshan Madushanka<sup> |
-| TypeAugmented.md | CAKE | oui | esides, Niu et al.<sup>33</sup> propose CAKE which automatically extract commonsense |
 | TypeAugmented.md | HAKE | oui | g to tail embedding. Soon after RotatE, HAKE<sup>16</sup> and RatE<sup>17</sup> make |
 | TypeAugmented.md | JOIE | oui | ons to model the semantic transitivity. JOIE<sup>24</sup> directly represents a KG a |
 | TypeAugmented.md | RatE | oui | oon after RotatE, HAKE<sup>16</sup> and RatE<sup>17</sup> make slight improvements t |
@@ -604,61 +597,35 @@ Corpus : **55 articles**. Évalués validés vs `tables_only`, mentionnés vs `n
 | TypeConstraints.md | TransR | oui | further extended in [14] by introducing TransR which separates representations of enti |
 | Uniform.md | Neural Tensor Model | oui | point. Another related approach is the Neural Tensor Model [14]. A special case of this model corr |
 
-## C1. Candidats faux négatifs — ÉVALUÉS (38)
+## C1. Candidats faux négatifs — ÉVALUÉS (17)
 
 | Article | Entité | Où | Extrait |
 |---|---|:---:|---|
 | ASA.md | GCN | prose+table | egating the neighbors' information. **R-GCN** (Schlichtkrull et al. 2018) considers |
 | BatchNS.md | GCN | prose+table | al., 2018). The problem studied by the GCN is different than the one solved by PBG |
-| CAKE.md | CAKE | prose+table | Xiv:2202.13785v3 [cs.AI] 17 Apr 2022 # CAKE: A Scalable Commonsense-Aware Framework |
-| dans.md | CAKE | prose+table | nerate informative negative triplets; **CAKE** [19]: a framework which leverages ext |
-| dans.md | KBGAN | prose+table | ous state-of-the-art approaches such as KBGAN [3], we adopt a generative adversarial |
-| DHNS.md | KBGAN | prose+table | nerate higher-quality negative triples. KBGAN [4] and IGAN [30] use Generative Advers |
 | DHNS.md | OTE | prose+table | x [27], RotatE [25], PairRE [7], and GC-OTE [26]. (2) **Multimodal KGC models:** w |
 | DomainNS.md | KG2E | table | 0.2</td> </tr> <tr> <td>KG2E (He et al., 2015)</td> <td>No</ |
 | DomainNS.md | NTN | table | 6.7</td> </tr> <tr> <td>NTN (Socher et al., 2013)</td> <td> |
 | DomainNS.md | SE | table | </thead> <tbody> <tr> <td>SE (Bordes et al., 2011)</td> <td> |
 | DomainNS.md | Unstructured | table | 9.8</td> </tr> <tr> <td>Unstructured (Bordes et al., 2014)</td> <td> |
-| EANS.md | KBGAN | table | 501</td> </tr> <tr> <td>KBGAN(Cai and Wang, 2017)<sup>††</sup></td> |
-| ERDNS.md | KBGAN | prose+table | natural language processing (NLP) [7]. KBGAN [3], IGAN [26], and NSCaching [34] crea |
-| GibbsNS.md | KBGAN | prose+table | is of static negative sampling methods, KBGAN [17] found that the majority of negativ |
-| HTENS.md | KBGAN | prose+table | The GAN-based sampling methods, such as KBGAN[3] and IGAN[13], set the KGE model to b |
 | IGAN.md | SE | prose+table | results show that 1. Models including SE, SME(bilinear), TransE and TransH are f |
 | IGAN.md | SME | prose+table | ults show that 1. Models including SE, SME(bilinear), TransE and TransH are furthe |
 | IGAN.md | Unstructured | prose+table | ages (Xie et al. 2016a) of entities. **Unstructured Model** (Bordes et al. 2012; Bordes et |
-| KBGAN.md | KBGAN | prose+table | Xiv:1711.04071v3 [cs.CL] 16 Apr 2018 # KBGAN: Adversarial Learning for Knowledge Gra |
-| KSGAN.md | KBGAN | prose+table | ed by an adversarial learning framework KBGAN, this paper proposes a new knowledge se |
 | LAS.md | GCN | prose+table | ls, e.g. ProjE [21], ANALOGY [22] and R-GCN [28], also achieve good results for lin |
-| LAS.md | KBGAN | prose+table | h outperforms GAN-based sampling method KBGAN. **INDEX TERMS** Knowledge graph, know |
-| LEMON.md | KBGAN | table | 1)$</td> </tr> <tr> <td>KBGAN [6]</td> <td>$\mathcal{O}(t)$</ |
 | LTS.md | LFM | table | 1.3</td> </tr> <tr> <td>LFM</td> <td>469</td> <td>4 |
 | LTS.md | SME | table | 9.8</td> </tr> <tr> <td>SME</td> <td>542/526</td> < |
-| M2ixKG.md | KBGAN | prose+table | tribution. IGAN [Wang et al., 2018] and KBGAN [Cai and Wang, 2018] introduce generati |
-| MCNS.md | KBGAN | prose+table | ptively generate hard negative samples. KBGAN [3] employs a sampling-based adaptation |
-| MDNCaching.md | KBGAN | prose+table | ative sampling strategies IGAN [12] and KBGAN [3] were introduced to generate negativ |
-| NSCaching.md | KBGAN | prose+table | wo pioneered works, i.e., IGAN [39] and KBGAN [9], attempting to address these challe |
-| ReasonKGE.md | ReasonKGE | prose+table | we present a novel iterative approach *ReasonKGE* that identifies dynamically via symbol |
-| SANS.md | KBGAN | prose+table | egative sampling (Bordes et al., 2013), KBGAN (Cai and Wang, 2018), and NSCaching (Zh |
-| SelfAdv.md | KBGAN | prose+table | en from (Cai (Cai & Wang, 2017), where KBGAN uses a ComplEx negative sample generato |
 | SelfAdv.md | SE | table | </thead> <tbody> <tr> <td>SE (Bordes et al., 2011)</td> <td>$- |
-| SNS.md | KBGAN | prose+table | trained to learn embeddings. IGAN [8], KBGAN [3], KSGAN [7] are three existing GAN-b |
 | STC.md | TKRL | prose+table | died Knowledge Representation Learning (TKRL) to take advantages of hierarchical ent |
-| TuckerDNCaching.md | KBGAN | prose+table | ributions, IGAN (Wang et al., 2018) and KBGAN (Cai et al., 2018) were introduced as n |
 | Uniform.md | SE | prose+table | those of [3] (Structured Embeddings or SE) and [14]. 3 Table 1: **Numbers of pa |
 | Uniform.md | SME | prose+table | 2], and the energy-based models SE [3], SME(linear)/SME(bilinear) [2] and LFM [6]. |
 
-## C2. Candidats faux négatifs — MENTIONNÉS (11)
+## C2. Candidats faux négatifs — MENTIONNÉS (6)
 
 | Article | Entité | Où | Extrait |
 |---|---|:---:|---|
-| ConceptDriven.md | CAKE | prose | Commonsense-Aware Knowledge Embedding (CAKE) framework, which consists of automatic |
-| DeMix.md | CAKE | prose | *CANS* [16]. The CANS is a component of CAKE [16] responsible for solving the invali |
-| DeMix.md | KBGAN | prose | triples with high scores. For example, KBGAN[6] and IGAN[23] introduce a generative |
 | DMNS.md | GraphSAGE | prose | conduct experiments using GAT [45] and GraphSAGE (SAGE) [14]. For GCN, we employ two lay |
 | GNDN.md | GCN | prose | sists of a Convolutional Graph Network (GCN) [39] based encoder for learning repres |
 | HTENS.md | TKRL | prose | <sup>1</sup>https://github.com/thunlp/TKRL SIGIR ’23, July 23–27, 2023, Taipei, T |
-| Localcognitive.md | KBGAN | prose | effectively learn structured knowledge. KBGAN (Cai and Wang, 2018) uses knowledge gra |
 | NSCaching.md | LINE | prose | EGATIVE ENTITIES IN CACHE ON FB13. EACH LINE DISPLAYS 5 RANDOM SAMPLED NEGATIVE ENTI |
 | RAAKGC.md | KGT5 | prose | r encoding text descriptions. Moreover, KGT5-context (Kochsiek et al. 2023) and KG-S |
-| RUGA.md | KBGAN | prose | herefore, Liwei Cai et al.[16] proposed KBGAN to solve the problem that negative samp |
 | TypeConstraints.md | SME | prose | sup>9</sup> https://github.com/glorotxa/SME <sup>10</sup> Mainly caused by the rank |

@@ -9,7 +9,7 @@
 | Precision evalues | 100% | 
 | Precision mentionnes | 100% |
 | Recall evalues | 100% |
-| Recall mentionnes | 60% |
+| Recall mentionnes | 67% |
 
 ## A. Methodes EVALUEES (valides vs `tables_only`)
 
@@ -41,7 +41,6 @@ _Aucun._
 
 | Methode | Ou | Via | Extrait |
 |---|---|:---:|---|
-| Cache-based Negative Sampling | prose | name | s (2023) 61:739–763 749 # Algorithm 2: Cache update. **Input**: Knowledge graph $\m |
 | ESNS | prose | name | ity Similarity-based Negative Sampling (ESNS) (Yao et al., 2022) considers semantic |
 | SANS | prose | name | ors, Structure Aware Negative Sampling (SANS) (Ahrabian et al., 2020) shows better p |
 | Self-Adv | prose | name | ., 2019) introduced a self-adversarial *Self-Adv* sampling approach based on a self-scor |

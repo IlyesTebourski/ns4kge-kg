@@ -9,7 +9,7 @@
 | Precision evalues | 67% | 
 | Precision mentionnes | 100% |
 | Recall evalues | 100% |
-| Recall mentionnes | 50% |
+| Recall mentionnes | 100% |
 
 ## A. Methodes EVALUEES (valides vs `tables_only`)
 
@@ -32,7 +32,4 @@ _Aucun._
 
 ## C2. Recall MENTIONNES — en prose seulement mais non extrait
 
-| Methode | Ou | Via | Extrait |
-|---|---|:---:|---|
-| Kbgan Sampling | prose | name | 2014. Liwei Cai and William Yang Wang. Kbgan: Adversarial learning for knowledge gra |
-| Relational Sampling | prose | name | ng [Sun et al., 2019]. ## 3.3 Training Relational Classifiers Given a relation, there ar |
+_Aucun._

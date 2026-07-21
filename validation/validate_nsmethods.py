@@ -80,6 +80,21 @@ def is_excluded(label):
     return is_unknown(label) or k == "" or k in GENERIC_METHODS
 
 
+# Abreviations canoniques de la litterature (Wang et al., TransH) : le texte ecrit
+# souvent la forme abregee entre guillemets ("bern"/"unif") plutot que le nom
+# complet. On les reconnait comme alias pour ne pas rater la mention/evaluation.
+ALIASES = {
+    "bernoulli": ["Bernoulli", "bern"],
+    "uniform":   ["Uniform", "unif"],
+}
+
+
+def _tok_re(t):
+    """Regex d'un token : alias canoniques si connus, + pluriel optionnel ('s?')."""
+    alts = ALIASES.get(t.lower(), [t])
+    return r"(?:" + "|".join(re.escape(a) for a in alts) + r")s?"
+
+
 def name_pattern(label, ci):
     """Regex du nom complet, avec mots de liaison optionnels entre tokens."""
     toks = tokens_cs(label)
@@ -90,7 +105,7 @@ def name_pattern(label, ci):
         required = toks[:]
     filler_alt = "|".join(sorted(FILLER, key=len, reverse=True))
     gap = SEP + r"(?:(?:" + filler_alt + r")" + SEP + r")*"
-    core = gap.join(re.escape(t) for t in required)
+    core = gap.join(_tok_re(t) for t in required)
     return re.compile(r"(?<![A-Za-z0-9])" + core + r"(?![A-Za-z0-9])", re.I if ci else 0)
 
 
@@ -102,7 +117,13 @@ WEAK_BOTH = {"adversarial", "self", "adaptive", "simple", "dynamic", "filtered",
              "importance", "iterative", "good", "naive", "domain", "generative"}
 #  - WEAK_PROSE : vraies baselines (colonnes de tableau reelles) -> on filtre le
 #    mot nu en PROSE, mais on garde les occurrences en TABLEAU (vraie colonne).
-WEAK_PROSE = {"random", "uniform", "none", "non", "static"}
+#    On y ajoute des noms reduits a UN mot polysemique : en prose le mot nu tombe
+#    massivement sur un autre sens (Bernoulli *distribution*/*cost*, Gibbs
+#    *sampling pour LDA*/*inequality*, *Relational* reasoning, *Probabilistic*
+#    diffusion, *Subsampling* dans un titre) -> faux positifs de recall.
+WEAK_PROSE = {"random", "uniform", "none", "non", "static",
+              "bernoulli", "gibbs", "relational", "probabilistic", "subsampling",
+              "cache"}
 
 
 def acronyms_of(label, min_len=3):
@@ -129,8 +150,30 @@ def acr_pattern(label, min_len=3):
     return re.compile(r"(?<![A-Za-z0-9])(?:" + alt + r")(?![A-Za-z0-9])")
 
 
+def variant_find(label, text):
+    """Match d'une variante '<base> w/ <suffixe>' via l'ACRONYME de la base +
+    le suffixe, tel que les tableaux l'ecrivent reellement :
+    'Self-Adversarial Negative Sampling w/ Base' -> entete 'SANS w/ Base'.
+    Sans ca, le nom complet extrait par le KG ne matche jamais l'acronyme du
+    tableau (faux negatif de precision). Acronyme sensible a la casse (bruit)."""
+    parts = re.split(r"\s*\bw/\s*|\s+with\s+", label, maxsplit=1)
+    if len(parts) != 2:
+        return None, None
+    base, suffix = parts
+    acrs = acronyms_of(base)
+    suf_toks = re.findall(r"[A-Za-z0-9]+", suffix)
+    if not acrs or not suf_toks:
+        return None, None
+    alt = "|".join(re.escape(a) for a in sorted(acrs, key=len, reverse=True))
+    suf = SEP.join(re.escape(t) for t in suf_toks)
+    pat = re.compile(r"(?<![A-Za-z0-9])(?:" + alt + r")" + SEP + r"w/?" + SEP
+                     + suf + r"(?![A-Za-z0-9])")
+    m = pat.search(text)
+    return (m, "variant") if m else (None, None)
+
+
 def find(label, text, ci, min_acr=3):
-    """Retourne (match, via) ou (None, None). via in {name, acro}."""
+    """Retourne (match, via) ou (None, None). via in {name, acro, variant}."""
     p = name_pattern(label, ci)
     if p:
         m = p.search(text)
@@ -141,7 +184,7 @@ def find(label, text, ci, min_acr=3):
         m = pa.search(text)
         if m:
             return m, "acro"
-    return None, None
+    return variant_find(label, text)
 
 
 # --------------------------------------------------------------------------

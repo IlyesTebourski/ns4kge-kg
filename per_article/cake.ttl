@@ -9,12 +9,12 @@
 <article/cake> ns4kge:mentionsNSMethod <ns-method/type-constrained-negative-sampling> .
 <article/cake> ns4kge:mentionsNSMethod <ns-method/self-adversarial-negative-sampling> .
 <article/cake> ns4kge:mentionsNSMethod <ns-method/nscaching> .
+<article/cake> ns4kge:mentionsNSMethod <ns-method/kbgan> .
 <article/cake> ns4kge:mentionsKGEModel <kge-model/distmult> .
 <article/cake> ns4kge:mentionsKGEModel <kge-model/transe> .
 <article/cake> ns4kge:mentionsKGEModel <kge-model/rescal> .
 <article/cake> ns4kge:mentionsKGEModel <kge-model/joie> .
 <article/cake> ns4kge:mentionsKGEModel <kge-model/complex> .
-<article/cake> ns4kge:mentionsKGEModel <kge-model/kbgan> .
 <article/cake> ns4kge:mentionsKGEModel <kge-model/hake> .
 <article/cake> ns4kge:mentionsKGEModel <kge-model/rotate> .
 <article/cake> ns4kge:mentionsKGEModel <kge-model/transh> .
@@ -58,6 +58,14 @@
 <ns-method/nscaching> ns4kge:hasCategory <category/self-adversarial-ns> .
 <ns-method/nscaching> ns4kge:hasSubcategory <subcategory/direct> .
 
+<ns-method/kbgan> rdf:type ns4kge:NSMethod .
+<category/adversarial-ns> rdf:type ns4kge:Category .
+
+<ns-method/kbgan> ns4kge:hasCategory <category/adversarial-ns> .
+<subcategory/standard> rdf:type ns4kge:Subcategory .
+
+<ns-method/kbgan> ns4kge:hasSubcategory <subcategory/standard> .
+
 <kge-model/distmult> rdf:type ns4kge:KGEModel .
 
 <kge-model/transe> rdf:type ns4kge:KGEModel .
@@ -67,8 +75,6 @@
 <kge-model/joie> rdf:type ns4kge:KGEModel .
 
 <kge-model/complex> rdf:type ns4kge:KGEModel .
-
-<kge-model/kbgan> rdf:type ns4kge:KGEModel .
 
 <kge-model/hake> rdf:type ns4kge:KGEModel .
 

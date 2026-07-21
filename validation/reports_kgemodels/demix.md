@@ -10,9 +10,9 @@
 | Precision (evalues, vs tableaux) | 100% |
 | Precision (mentionnes, vs prose) | 100% |
 | Candidats evaluations ratees (en tableau, non extrait) | 0 |
-| Candidats mentions ratees (en prose, non extrait) | 2 |
+| Candidats mentions ratees (en prose, non extrait) | 0 |
 | Recall relatif *evalues* | 100% |
-| Recall relatif *mentionnes* | 33% |
+| Recall relatif *mentionnes* | 100% |
 
 ## A. Modeles EVALUES — extraits des tableaux (valides vs `tables_only`)
 
@@ -36,7 +36,4 @@ _Aucun._
 
 ## C2. Recall MENTIONNES — modeles en prose seulement mais NON extraits
 
-| Modele | Ou | Extrait |
-|---|---|---|
-| CAKE | prose | *CANS* [16]. The CANS is a component of CAKE [16] responsible for solving the invali |
-| KBGAN | prose | triples with high scores. For example, KBGAN[6] and IGAN[23] introduce a generative |
+_Aucun._

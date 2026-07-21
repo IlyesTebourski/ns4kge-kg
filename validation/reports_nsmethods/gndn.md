@@ -4,18 +4,19 @@
 
 | Metrique | Valeur |
 |---|---|
-| Methodes EVALUEES (tableaux) | 1 |
+| Methodes EVALUEES (tableaux) | 2 |
 | Methodes MENTIONNEES seulement (prose) | 1 |
 | Precision evalues | 100% | 
 | Precision mentionnes | 100% |
-| Recall evalues | 50% |
-| Recall mentionnes | 33% |
+| Recall evalues | 67% |
+| Recall mentionnes | 100% |
 
 ## A. Methodes EVALUEES (valides vs `tables_only`)
 
 | Methode | Trouvee ? | Via | Extrait |
 |---|:---:|:---:|---|
-| Knowledge Completion GAN | ✅ | name | ed by the GAN concept, we thus propose *Knowledge Completion GAN* (KCGAN), a novel framework leveraging |
+| KBGAN | ✅ | name | ce a significant difference between the KBGAN model of [19] and KCGAN as proposed her |
+| Knowledge Completion GAN | ✅ | name | s (GANs), we propose a novel framework, Knowledge Completion GANs (KCGANs), for competitively training ge |
 
 ## B. Methodes MENTIONNEES seulement (valides vs prose)
 
@@ -31,7 +32,4 @@
 
 ## C2. Recall MENTIONNES — en prose seulement mais non extrait
 
-| Methode | Ou | Via | Extrait |
-|---|---|:---:|---|
-| Bernoulli Negative Sampling | prose | name | ach entry corresponds to a predicate; a Bernoulli likelihood function is postulated in or |
-| Relational Sampling | prose | name | ve adversarial networks Link prediction Relational reasoning ## ABSTRACT Knowledge bases |
+_Aucun._

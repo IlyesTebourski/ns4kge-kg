@@ -7,9 +7,9 @@
 | Methodes EVALUEES (tableaux) | 1 |
 | Methodes MENTIONNEES seulement (prose) | 2 |
 | Precision evalues | 100% | 
-| Precision mentionnes | 0% |
+| Precision mentionnes | 100% |
 | Recall evalues | 50% |
-| Recall mentionnes | 0% |
+| Recall mentionnes | 67% |
 
 ## A. Methodes EVALUEES (valides vs `tables_only`)
 
@@ -21,8 +21,8 @@
 
 | Methode | Trouvee ? | Via | Extrait |
 |---|:---:|:---:|---|
-| Bernoulli Negative Sampling | ❌ |  | _(absent)_ |
-| Uniform Negative Sampling | ❌ |  | _(absent)_ |
+| Bernoulli Negative Sampling | ✅ | name | lement two strategies (i.e. "unif" and "bern") for replacing head or tail with equal |
+| Uniform Negative Sampling | ✅ | name | 4b], we implement two strategies (i.e. "unif" and "bern") for replacing head or tail |
 
 ## C1. Recall EVALUES — dans un tableau mais non extrait
 

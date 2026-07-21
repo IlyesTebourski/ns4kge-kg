@@ -7,9 +7,9 @@
 | Methodes EVALUEES (tableaux) | 2 |
 | Methodes MENTIONNEES seulement (prose) | 2 |
 | Precision evalues | 100% | 
-| Precision mentionnes | 0% |
+| Precision mentionnes | 50% |
 | Recall evalues | 100% |
-| Recall mentionnes | 0% |
+| Recall mentionnes | 50% |
 
 ## A. Methodes EVALUEES (valides vs `tables_only`)
 
@@ -22,7 +22,7 @@
 
 | Methode | Trouvee ? | Via | Extrait |
 |---|:---:|:---:|---|
-| Bernoulli Negative Sampling | ❌ |  | _(absent)_ |
+| Bernoulli Negative Sampling | ✅ | name | nal complexity. Besides, we adopt the “bern” sampling technique (Wang et al., 2014) |
 | Type-constrained Negative Sampling | ❌ |  | _(absent)_ |
 
 ## C1. Recall EVALUES — dans un tableau mais non extrait
