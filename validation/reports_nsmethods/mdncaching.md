@@ -9,7 +9,7 @@
 | Precision evalues | 100% | 
 | Precision mentionnes | 100% |
 | Recall evalues | 71% |
-| Recall mentionnes | 100% |
+| Recall mentionnes | 50% |
 
 ## A. Methodes EVALUEES (valides vs `tables_only`)
 
@@ -37,4 +37,7 @@
 
 ## C2. Recall MENTIONNES — en prose seulement mais non extrait
 
-_Aucun._
+| Methode | Ou | Via | Extrait |
+|---|---|:---:|---|
+| Filtered Negative Sampling | prose | name | ormance Measurement.** We consider the “Filtered” setting with performance evaluation so |
+| GAN-based Negative Sampling | prose | name | Hence, Generative adversarial networks (GAN) based negative sampling strategies IGA |

@@ -9,7 +9,7 @@
 | Precision evalues | 100% | 
 | Precision mentionnes | 100% |
 | Recall evalues | 100% |
-| Recall mentionnes | 100% |
+| Recall mentionnes | 80% |
 
 ## A. Methodes EVALUEES (valides vs `tables_only`)
 
@@ -34,4 +34,6 @@ _Aucun._
 
 ## C2. Recall MENTIONNES — en prose seulement mais non extrait
 
-_Aucun._
+| Methode | Ou | Via | Extrait |
+|---|---|:---:|---|
+| None Sampling | prose | name | tended to translation-based approaches. None of these investigate the possibility of |

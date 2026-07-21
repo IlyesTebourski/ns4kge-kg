@@ -27,7 +27,7 @@ _Aucune._
 
 | Methode | Ou | Via | Extrait |
 |---|---|:---:|---|
-| Bernoulli Negative Sampling | table | name | 0</td> </tr> <tr> <td>TransH (bern)</td> <td>.668</td> <td>.87 |
+| Bernoulli Negative Sampling | prose+table | name | hat the probabilistic framework KG2E_KL(bern) (He et al., 2015) is quite powerful, w |
 
 ## C2. Recall MENTIONNES — en prose seulement mais non extrait
 

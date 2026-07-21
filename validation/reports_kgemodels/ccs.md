@@ -10,9 +10,9 @@
 | Precision (evalues, vs tableaux) | 100% |
 | Precision (mentionnes, vs prose) | 100% |
 | Candidats evaluations ratees (en tableau, non extrait) | 0 |
-| Candidats mentions ratees (en prose, non extrait) | 0 |
+| Candidats mentions ratees (en prose, non extrait) | 2 |
 | Recall relatif *evalues* | 100% |
-| Recall relatif *mentionnes* | 100% |
+| Recall relatif *mentionnes* | 87% |
 
 ## A. Modeles EVALUES — extraits des tableaux (valides vs `tables_only`)
 
@@ -51,4 +51,7 @@ _Aucun._
 
 ## C2. Recall MENTIONNES — modeles en prose seulement mais NON extraits
 
-_Aucun._
+| Modele | Ou | Extrait |
+|---|---|---|
+| GAN | prose | by the generative adversarial network (GAN) [39], some works have attempted to gen |
+| word2vec | prose | ng vector translation invariance of the word2vec model, Borders et al. proposed the firs |

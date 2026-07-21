@@ -9,7 +9,7 @@
 | Precision evalues | 83% | 
 | Precision mentionnes | 100% |
 | Recall evalues | 83% |
-| Recall mentionnes | 67% |
+| Recall mentionnes | 50% |
 
 ## A. Methodes EVALUEES (valides vs `tables_only`)
 
@@ -39,4 +39,5 @@
 
 | Methode | Ou | Via | Extrait |
 |---|---|:---:|---|
+| GAN-based Negative Sampling | prose | name | raging generative adversarial networks (GANs) [5, 46] are also popular. They aim to |
 | SANS | prose | name | g high-variance samples [9]. On graphs, SANS [2] select negative examples from $k$-h |

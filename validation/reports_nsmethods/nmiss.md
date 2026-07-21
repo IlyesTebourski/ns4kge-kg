@@ -9,7 +9,7 @@
 | Precision evalues | 100% | 
 | Precision mentionnes | 100% |
 | Recall evalues | 67% |
-| Recall mentionnes | 100% |
+| Recall mentionnes | 86% |
 
 ## A. Methodes EVALUEES (valides vs `tables_only`)
 
@@ -37,4 +37,6 @@
 
 ## C2. Recall MENTIONNES — en prose seulement mais non extrait
 
-_Aucun._
+| Methode | Ou | Via | Extrait |
+|---|---|:---:|---|
+| Domain-based Negative Sampling | prose | name | tage to produce typed negative samples. Domain and range types for Freebase relations |

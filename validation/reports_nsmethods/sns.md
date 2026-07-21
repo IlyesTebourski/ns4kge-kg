@@ -9,7 +9,7 @@
 | Precision evalues | 100% | 
 | Precision mentionnes | 100% |
 | Recall evalues | 80% |
-| Recall mentionnes | 75% |
+| Recall mentionnes | 43% |
 
 ## A. Methodes EVALUEES (valides vs `tables_only`)
 
@@ -32,10 +32,13 @@
 
 | Methode | Ou | Via | Extrait |
 |---|---|:---:|---|
-| Random Negative Sampling | table | name | <td rowspan="4">TransH</td> <td>Random</td> <td>0.1520</td> <t |
+| Random Negative Sampling | prose+table | name | ratch for each of the sampling methods, Random-uniform, KBGAN, NSCaching, SNS. Simple |
 
 ## C2. Recall MENTIONNES — en prose seulement mais non extrait
 
 | Methode | Ou | Via | Extrait |
 |---|---|:---:|---|
+| GAN-based Negative Sampling | prose | name | -random, generative adversarial network(GAN)-based, and NSCaching, structure aware |
+| Good Negative Sampling | prose | name | t or second best in almost all metrics. Good balance between exploration and exploit |
 | SANS | prose | name | hing, structure aware negative sampling(SANS) are four negative sampling methods in |
+| Uniform Negative Sampling | prose | name | samples negative triples from the set. 'Uniform-random' is the mostly used negative sam |

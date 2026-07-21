@@ -10,9 +10,9 @@
 | Precision (evalues, vs tableaux) | 100% |
 | Precision (mentionnes, vs prose) | 100% |
 | Candidats evaluations ratees (en tableau, non extrait) | 1 |
-| Candidats mentions ratees (en prose, non extrait) | 0 |
+| Candidats mentions ratees (en prose, non extrait) | 3 |
 | Recall relatif *evalues* | 89% |
-| Recall relatif *mentionnes* | 100% |
+| Recall relatif *mentionnes* | 0% |
 
 ## A. Modeles EVALUES — extraits des tableaux (valides vs `tables_only`)
 
@@ -39,4 +39,8 @@ _Aucun modele mentionne hors tableaux._
 
 ## C2. Recall MENTIONNES — modeles en prose seulement mais NON extraits
 
-_Aucun._
+| Modele | Ou | Extrait |
+|---|---|---|
+| Attention | prose | iv:2102.07186v1 # Relation-aware Graph Attention Model With Adaptive Self-adversarial Tr |
+| GAN | prose | 2019b). Generative adversarial network (GAN) based solutions (Cai and Wang 2018; Wa |
+| MLP | prose | 1) consists of a multilayer perceptron (MLP) network to process categorical attribu |

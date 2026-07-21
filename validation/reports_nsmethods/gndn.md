@@ -9,7 +9,7 @@
 | Precision evalues | 100% | 
 | Precision mentionnes | 100% |
 | Recall evalues | 67% |
-| Recall mentionnes | 100% |
+| Recall mentionnes | 20% |
 
 ## A. Methodes EVALUEES (valides vs `tables_only`)
 
@@ -32,4 +32,9 @@
 
 ## C2. Recall MENTIONNES — en prose seulement mais non extrait
 
-_Aucun._
+| Methode | Ou | Via | Extrait |
+|---|---|:---:|---|
+| Adversarial Negative Sampling | prose | name | ed by recent developments in Generative Adversarial Networks (GANs), we propose a novel fra |
+| Bernoulli Negative Sampling | prose | name | ach entry corresponds to a predicate; a Bernoulli likelihood function is postulated in or |
+| GAN-based Negative Sampling | prose | name | nts in Generative Adversarial Networks (GANs), we propose a novel framework, Knowled |
+| Relational Sampling | prose | name | ve adversarial networks Link prediction Relational reasoning ## ABSTRACT Knowledge bases |

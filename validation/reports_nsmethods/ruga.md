@@ -9,7 +9,7 @@
 | Precision evalues | 100% | 
 | Precision mentionnes | 100% |
 | Recall evalues | 50% |
-| Recall mentionnes | 100% |
+| Recall mentionnes | 40% |
 
 ## A. Methodes EVALUEES (valides vs `tables_only`)
 
@@ -32,4 +32,8 @@
 
 ## C2. Recall MENTIONNES — en prose seulement mais non extrait
 
-_Aucun._
+| Methode | Ou | Via | Extrait |
+|---|---|:---:|---|
+| Adversarial Negative Sampling | prose | name | e Graph Completion Using Soft Rules and Adversarial Learning TANG Caifang<sup>1,2</sup>, R |
+| GAN-based Negative Sampling | prose | name | the Generation of adversarial networks (GANs[17]), the authors use a knowledge graph |
+| Random Negative Sampling | prose | name | ] D -- Reward --> G RS((Random samling)) --> Triples Triples - |

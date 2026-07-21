@@ -10,9 +10,9 @@
 | Precision (evalues, vs tableaux) | 92% |
 | Precision (mentionnes, vs prose) | 100% |
 | Candidats evaluations ratees (en tableau, non extrait) | 0 |
-| Candidats mentions ratees (en prose, non extrait) | 1 |
+| Candidats mentions ratees (en prose, non extrait) | 3 |
 | Recall relatif *evalues* | 100% |
-| Recall relatif *mentionnes* | 86% |
+| Recall relatif *mentionnes* | 67% |
 
 ## A. Modeles EVALUES — extraits des tableaux (valides vs `tables_only`)
 
@@ -50,4 +50,6 @@ _Aucun._
 
 | Modele | Ou | Extrait |
 |---|---|---|
+| BERT | prose | former-based encoding models such as KG-BERT [35] are inspired by transformer-based |
+| GAN | prose | challenges are addressed: 1) Classical GAN architectures’ inability to easily gene |
 | GCN | prose | sists of a Convolutional Graph Network (GCN) [39] based encoder for learning repres |

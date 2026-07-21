@@ -8,8 +8,8 @@
 | Methodes MENTIONNEES seulement (prose) | 3 |
 | Precision evalues | 50% | 
 | Precision mentionnes | 67% |
-| Recall evalues | 40% |
-| Recall mentionnes | 67% |
+| Recall evalues | 31% |
+| Recall mentionnes | 33% |
 
 ## A. Methodes EVALUEES (valides vs `tables_only`)
 
@@ -36,8 +36,11 @@
 
 | Methode | Ou | Via | Extrait |
 |---|---|:---:|---|
+| Adversarial Negative Sampling | prose+table | name | m sampling and sophisticated Generative Adversarial Network (Goodfellow et al., 2014) (GAN) |
+| GAN-based Negative Sampling | prose+table | name | rial Network (Goodfellow et al., 2014) (GAN) based approaches at a fraction of the |
 | RW-SANS | prose+table | name | combat this inefficiency, we introduce RW-SANS in Alg. 1, which uses $\omega$ random w |
 | SANS | prose+table | name | pose Structure Aware Negative Sampling (SANS), an inexpensive negative sampling stra |
+| Self Negative Sampling | prose+table | name | sy negatives, Sun et al. (2019) propose Self-Adversarial negative sampling, which we |
 | Self-Adv | prose+table | name | to this technique as *Self-Adversarial (Self-Adv.) SANS*, whereas the former approach is |
 | Self-Adv. RW-SANS | prose+table | name | ted in Table 2 under Self-Adv. SANS and Self-Adv. RW-SANS, both of which reweigh the negative tri |
 | Self-Adv. SANS | table | name | ng></td> </tr> <tr> <td>Self-Adv. SANS (ours)</td> <td><strong>52.03</ |
@@ -47,4 +50,7 @@
 
 | Methode | Ou | Via | Extrait |
 |---|---|:---:|---|
+| Importance Sampling | prose | name | ation of the partition function used in Importance Sampling (IS) (Bengio et al., 2003). ** |
+| Non-Sampling | prose | name | Sampling (IS) (Bengio et al., 2003). **Non-Fixed Negative Sampling.** As proposed |
+| Random Negative Sampling | prose | name | ximating the $k$-hop Neighborhood Using Random Walks **Input:** $A, R, k, \omega$ $\{ |
 | Uniform RW-SANS | prose | name | heme. Figure 2: The performance of Uniform RW-SANS with TransE on FB15K-237 using differen |

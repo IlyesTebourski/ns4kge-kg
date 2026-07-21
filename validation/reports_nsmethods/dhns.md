@@ -9,7 +9,7 @@
 | Precision evalues | 100% | 
 | Precision mentionnes | 100% |
 | Recall evalues | 89% |
-| Recall mentionnes | 100% |
+| Recall mentionnes | 43% |
 
 ## A. Methodes EVALUEES (valides vs `tables_only`)
 
@@ -40,4 +40,9 @@
 
 ## C2. Recall MENTIONNES — en prose seulement mais non extrait
 
-_Aucun._
+| Methode | Ou | Via | Extrait |
+|---|---|:---:|---|
+| Adaptive Negative Sampling | prose | name | rthermore, we develop a Negative Triple-Adaptive Training (NTAT) strategy that dynamical |
+| Adversarial Negative Sampling | prose | name | KBGAN [4] and IGAN [30] use Generative Adversarial Networks (GANs) to select harder negati |
+| GAN-based Negative Sampling | prose | name | sed on generative adversarial networks (GANs) [4] or self-adversarial strategies [25 |
+| Probabilistic Negative Sampling | prose | name | s, particularly the Denoising Diffusion Probabilistic Model (DDPM) [9], have become pivotal i |

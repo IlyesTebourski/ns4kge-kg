@@ -8,8 +8,8 @@
 | Methodes MENTIONNEES seulement (prose) | 3 |
 | Precision evalues | 100% | 
 | Precision mentionnes | 100% |
-| Recall evalues | 100% |
-| Recall mentionnes | 100% |
+| Recall evalues | 67% |
+| Recall mentionnes | 50% |
 
 ## A. Methodes EVALUEES (valides vs `tables_only`)
 
@@ -28,8 +28,14 @@
 
 ## C1. Recall EVALUES — dans un tableau mais non extrait
 
-_Aucun._
+| Methode | Ou | Via | Extrait |
+|---|---|:---:|---|
+| Self Negative Sampling | table | name | 220</td> </tr> <tr> <td>Self-adversarial (Sun et al., 2019)</td> |
 
 ## C2. Recall MENTIONNES — en prose seulement mais non extrait
 
-_Aucun._
+| Methode | Ou | Via | Extrait |
+|---|---|:---:|---|
+| Adaptive Negative Sampling | prose | name | 1 [cs.CL] 10 Oct 2020 # RatE: Relation-Adaptive Translating Embedding for Knowledge Gra |
+| GAN-based Negative Sampling | prose | name | dding model (i.e., the discriminator in GANs). In contrast, self-adversarial learnin |
+| Non-Sampling | prose | name | on “*hypernym*”. ## 3.5 Performance on Non-Injective Relations By following Sun e |

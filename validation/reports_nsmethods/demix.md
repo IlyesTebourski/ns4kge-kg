@@ -9,7 +9,7 @@
 | Precision evalues | 100% | 
 | Precision mentionnes | 100% |
 | Recall evalues | 73% |
-| Recall mentionnes | 60% |
+| Recall mentionnes | 43% |
 
 ## A. Methodes EVALUEES (valides vs `tables_only`)
 
@@ -37,12 +37,14 @@
 | Methode | Ou | Via | Extrait |
 |---|---|:---:|---|
 | SANS | prose+table | name | to the current embedding model. - *RW-SANS* [1]. It samples negative triples from |
-| Self-Adv | table | name | > </tr> <tr> <td>TransE+Self-Adv</td> <td>0.215<sup>Δ</sup></td> |
+| Self Negative Sampling | prose+table | name | a general negative sampling scheme. - *Self-adversarial Sampling* [18]. It utilizes |
 | Commonsense-Aware Negative Sampling | prose+table | acro | d by utilizing the graph structure. - *CANS* [16]. The CANS is a component of CAKE |
 
 ## C2. Recall MENTIONNES — en prose seulement mais non extrait
 
 | Methode | Ou | Via | Extrait |
 |---|---|:---:|---|
+| Adaptive Negative Sampling | prose | name | ] 15 Oct 2023 # Negative Sampling with Adaptive Denoising Mixup for Knowledge Graph Emb |
 | CAKE | prose | name | *CANS* [16]. The CANS is a component of CAKE [16] responsible for solving the invali |
+| GAN-based Negative Sampling | prose | name | oduce a generative adversarial network (GAN)[11] to generate negative triples with |
 | MixGCF | prose | name | eneralization and robustness of models. MixGCF [13] integrates multiple negative sampl |

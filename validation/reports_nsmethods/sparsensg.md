@@ -32,3 +32,4 @@ _Aucun._
 | Methode | Ou | Via | Extrait |
 |---|---|:---:|---|
 | Frequency-based Negative Sampling | prose | name | # A Novel Negative Sampling Based on Frequency of Relational Association Entities for |
+| Relational Sampling | prose | name | Negative Sampling Based on Frequency of Relational Association Entities for Knowledge Grap |

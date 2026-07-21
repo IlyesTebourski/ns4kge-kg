@@ -34,12 +34,19 @@ OUT_DIR = os.path.join(VD.HERE, "reports_kgemodels")
 # (mais PAS '+' : "TransE+STC+TCE" doit rester non-matche = compound non splitte.)
 SEP = r"[\s\-_/.@()\[\]]*"
 
-# Termes que le LLM a parfois extraits comme "KGE model" mais qui n'en sont pas
-# (frameworks / composants / techniques generiques). On les exclut du RECALL :
-# la question "a-t-on rate un modele KGE ?" ne doit pas les considerer. Leur
-# presence dans le vocab revele d'ailleurs une incoherence d'extraction (KG).
-NON_KGE = {"gan", "mlp", "attention", "bert", "word2vec",
-           "cnn", "rnn", "lstm", "transformer", "tucker"}
+# NB : plus de liste noire NON_KGE (gan/mlp/...). C'etait de l'overfit — on
+# excluait a la main des termes juges "pas des KGE" pour nettoyer le recall.
+# Desormais, honnete : (1) un terme mal type (ex. GAN extrait comme KGEModel)
+# baisse la precision quand il sera condamne en verif manuelle, et (2) le VOCAB
+# DE RECALL n'est bati que sur les items VERIFIES CORRECTS (voir main), donc un
+# faux item ne contamine pas le recall des autres articles. Les faux candidats
+# restants sont tranches a la main, pas etouffes par une stoplist.
+
+# Verdicts de verification MANUELLE (remplis apres coup ; vides = baseline honnete).
+#   prec  : (slug, label) -> ("valid"|"error", why)
+#   recall: (slug, label) -> ("miss"|"fp", why)
+PREC_VERDICTS = {}
+RECALL_VERDICTS = {}
 
 
 def toks_cs(label):
@@ -109,29 +116,39 @@ def build_global_vocab(arts):
     return vocab
 
 
-def validate(article, vocab):
-    prose, tables = article["prose"], article["tables"]
-    evaluated, mentioned = [], []   # (label, found, snippet)
+def precision_pass(article):
+    """Precision (insensible casse) + collecte des items VERIFIES CORRECTS pour le
+    vocab. verified = items trouves dans leur source (ou reclasses valides a la main)
+    et non condamnes. Renvoie (evaluated, mentioned, verified, counts)."""
+    slug, prose, tables = article["slug"], article["prose"], article["tables"]
+    evaluated, mentioned = [], []
+    verified = {}          # norm_key -> label
     te = fe = tm = fm = 0
-
     for k, e in sorted(article["models"].items(), key=lambda kv: kv[1]["label"].lower()):
         label, src = e["label"], e["src"]
-        if "table" in src:                      # EVALUE -> valider vs tables
-            m = found(label, tables, ci=True)
-            evaluated.append((label, bool(m), VD.snippet_around(tables, m) if m else ""))
-            te += bool(m); fe += (not m)
-        else:                                   # MENTIONNE seul -> valider vs prose
-            m = found(label, prose, ci=True)
-            mentioned.append((label, bool(m), VD.snippet_around(prose, m) if m else ""))
-            tm += bool(m); fm += (not m)
+        text = tables if "table" in src else prose
+        m = found(label, text, ci=True)
+        v = PREC_VERDICTS.get((slug, label))
+        ok = bool(m) if not v else (v[0] == "valid" or (bool(m) and v[0] != "error"))
+        snip = VD.snippet_around(text, m) if m else ""
+        row = (label, bool(m), snip)
+        if "table" in src:
+            evaluated.append(row); te += bool(m); fe += (not m)
+        else:
+            mentioned.append(row); tm += bool(m); fm += (not m)
+        if ok:
+            verified[k] = label            # -> vocab (seulement les corrects)
+    return evaluated, mentioned, verified, (te, fe, tm, fm)
 
-    # RECALL (sensible a la casse) : modele du vocab mentionne dans l'article
-    # (prose OU tables) mais non extrait. On exclut les non-modeles KGE
-    # (GAN/MLP/...) : ne pas les extraire est correct, ce ne sont pas des
-    # instances de KGEModel -> sinon la mesure de recall serait biaisee.
+
+def recall_pass(article, vocab):
+    """RECALL (sensible a la casse) : modele du vocab VERIFIE present dans l'article
+    (prose OU tables) mais non extrait. Plus de stoplist NON_KGE : les faux
+    candidats sont tranches en verif manuelle (RECALL_VERDICTS)."""
+    slug, prose, tables = article["slug"], article["prose"], article["tables"]
     suspects = []
     for k, label in sorted(vocab.items(), key=lambda kv: kv[1].lower()):
-        if k in article["models"] or k in NON_KGE:
+        if k in article["models"]:
             continue
         mp = found(label, prose, ci=False)
         mt = found(label, tables, ci=False)
@@ -140,7 +157,7 @@ def validate(article, vocab):
             m = mp or mt
             src_txt = prose if mp else tables
             suspects.append((label, where, VD.snippet_around(src_txt, m)))
-    return evaluated, mentioned, suspects, (te, fe, tm, fm)
+    return suspects
 
 
 # --------------------------------------------------------------------------
@@ -240,15 +257,26 @@ def render_summary(rows, TE, FE, TM, FM, SUS_E, SUS_M):
 def main():
     os.makedirs(OUT_DIR, exist_ok=True)
     arts = load_articles()
-    vocab = build_global_vocab(arts)
-    print(f"Vocab global KGE models = {len(vocab)}")
+
+    # Phase 1 : precision -> vocab construit UNIQUEMENT sur les items verifies corrects
+    prec = {}
+    vocab = {}
+    for a in arts:
+        ev, me, verified, counts = precision_pass(a)
+        prec[a["slug"]] = (ev, me, counts)
+        for k, lab in verified.items():
+            vocab.setdefault(k, lab)
+    print(f"Vocab global KGE models (items verifies corrects) = {len(vocab)}")
+
+    # Phase 2 : recall contre le vocab verifie
     rows = []
     TE = FE = TM = FM = SUS_E = SUS_M = 0
     for a in arts:
-        ev, me, sus, counts = validate(a, vocab)
-        report, (te, fe, tm, fm, nse, nsm, prec, r_e, r_m) = render_article(a, ev, me, sus, counts)
+        ev, me, counts = prec[a["slug"]]
+        sus = recall_pass(a, vocab)
+        report, (te, fe, tm, fm, nse, nsm, prec_, r_e, r_m) = render_article(a, ev, me, sus, counts)
         open(os.path.join(OUT_DIR, f"{a['slug']}.md"), "w", encoding="utf-8").write(report)
-        rows.append((a["md_name"], te, fe, tm, fm, nse, nsm, prec, r_e, r_m))
+        rows.append((a["md_name"], te, fe, tm, fm, nse, nsm, prec_, r_e, r_m))
         TE += te; FE += fe; TM += tm; FM += fm; SUS_E += nse; SUS_M += nsm
     open(os.path.join(OUT_DIR, "_SUMMARY.md"), "w", encoding="utf-8").write(
         render_summary(rows, TE, FE, TM, FM, SUS_E, SUS_M))

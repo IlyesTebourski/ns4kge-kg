@@ -129,13 +129,22 @@ def build_global_vocab(arts):
 # Validation
 # --------------------------------------------------------------------------
 
-def validate(article, vocab):
-    tt = article["tables_text"]
+# Verdicts de verification MANUELLE (remplis apres coup ; vides = baseline honnete).
+PREC_VERDICTS = {}
+RECALL_VERDICTS = {}
+
+
+def precision_pass(article):
+    """Precision + collecte des metrics VERIFIEES CORRECTES (pour le vocab)."""
+    slug, tt = article["slug"], article["tables_text"]
     prec_rows = []
+    verified = set()
     tp = fp = 0
     for lab in sorted(article["metrics"]):
         pat = metric_pattern(lab)
         m = pat.search(tt)
+        v = PREC_VERDICTS.get((slug, lab))
+        ok = bool(m) if not v else (v[0] == "valid" or (bool(m) and v[0] != "error"))
         if m:
             cap, _ = VD.which_table(m.start(), tt, article["tables"])
             prec_rows.append((lab, True, cap, VD.snippet_around(tt, m)))
@@ -143,7 +152,14 @@ def validate(article, vocab):
         else:
             prec_rows.append((lab, False, "", ""))
             fp += 1
+        if ok:
+            verified.add(lab)
+    return prec_rows, verified, tp, fp
 
+
+def recall_pass(article, vocab):
+    """Recall : metric du vocab VERIFIE (N litteral exige) dans une cellule de table
+    mais non extraite."""
     suspects = []
     for lab in sorted(vocab):
         if lab in article["metrics"]:
@@ -155,7 +171,7 @@ def validate(article, vocab):
                 suspects.append((lab, caption or "(sans caption)", is_stats,
                                  VD.snippet_around(table, m)))
                 break
-    return prec_rows, suspects, tp, fp
+    return suspects
 
 
 # --------------------------------------------------------------------------
@@ -221,15 +237,25 @@ def render_summary(rows, TP, FP, REAL, STATS):
 def main():
     os.makedirs(OUT_DIR, exist_ok=True)
     arts = load_articles()
-    vocab = build_global_vocab(arts)
-    print(f"Vocab global metrics = {len(vocab)} : {sorted(vocab)}")
+
+    # Phase 1 : precision -> vocab bati sur les metrics verifiees correctes
+    prec = {}
+    vocab = set()
+    for a in arts:
+        prec_rows, verified, tp, fp = precision_pass(a)
+        prec[a["slug"]] = (prec_rows, tp, fp)
+        vocab |= verified
+    print(f"Vocab global metrics (items verifies corrects) = {len(vocab)} : {sorted(vocab)}")
+
+    # Phase 2 : recall contre le vocab verifie
     rows = []
     TP = FP = REAL = STATS = 0
     for a in arts:
-        prec_rows, suspects, tp, fp = validate(a, vocab)
-        report, (tp, fp, real, stats, prec, rec) = render_article(a, prec_rows, suspects, tp, fp)
+        prec_rows, tp, fp = prec[a["slug"]]
+        suspects = recall_pass(a, vocab)
+        report, (tp, fp, real, stats, prec_, rec) = render_article(a, prec_rows, suspects, tp, fp)
         open(os.path.join(OUT_DIR, f"{a['slug']}.md"), "w", encoding="utf-8").write(report)
-        rows.append((a["md_name"], tp, fp, real, stats, prec, rec))
+        rows.append((a["md_name"], tp, fp, real, stats, prec_, rec))
         TP += tp; FP += fp; REAL += real; STATS += stats
     open(os.path.join(OUT_DIR, "_SUMMARY.md"), "w", encoding="utf-8").write(
         render_summary(rows, TP, FP, REAL, STATS))

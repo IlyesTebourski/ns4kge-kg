@@ -29,12 +29,15 @@ _Aucune._
 
 | Methode | Ou | Via | Extrait |
 |---|---|:---:|---|
-| Uniform Negative Sampling | table | name | <td rowspan="5">TransE</td> <td>Uniform</td> <td>357</td> <td>0 |
+| Uniform Negative Sampling | prose+table | name | ults are shown in Table 4. In Table 4, Uniform, KBGAN, NSCaching, and EANS [40] repres |
 | Entity-Aware Negative Sampling | prose+table | acro | egative sampling, KBGAN, NSCaching, and EANS [40], were used to make comparisons wit |
 
 ## C2. Recall MENTIONNES — en prose seulement mais non extrait
 
 | Methode | Ou | Via | Extrait |
 |---|---|:---:|---|
+| Adversarial Negative Sampling | prose | name | and negative samples. GANs (Generative Adversarial Networks) have also been introduced for |
+| GAN-based Negative Sampling | prose | name | between positive and negative samples. GANs (Generative Adversarial Networks) have |
 | IGAN | prose | name | distributions in the training process. IGAN [19] designed a generator and performed |
 | Nearest Neighbor Sampling | prose | name | e original feature space, such as the K-Nearest Neighbor (KNN) algorithm [30], which calculates |
+| Random Negative Sampling | prose | name | number of negative samples n2 Require: Random initialization state values x1(0), x2(0 |

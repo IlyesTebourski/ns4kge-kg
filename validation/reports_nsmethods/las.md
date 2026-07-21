@@ -5,11 +5,11 @@
 | Metrique | Valeur |
 |---|---|
 | Methodes EVALUEES (tableaux) | 3 |
-| Methodes MENTIONNEES seulement (prose) | 5 |
+| Methodes MENTIONNEES seulement (prose) | 6 |
 | Precision evalues | 100% | 
-| Precision mentionnes | 80% |
+| Precision mentionnes | 83% |
 | Recall evalues | 100% |
-| Recall mentionnes | 100% |
+| Recall mentionnes | 83% |
 
 ## A. Methodes EVALUEES (valides vs `tables_only`)
 
@@ -25,6 +25,7 @@
 |---|:---:|:---:|---|
 | Bernoulli Negative Sampling | ✅ | name | f $((h, r, t), (h'_s, r, t'_s))$ with a Bernoulli distribution $B(1, p_{up})$. We conside |
 | Domain Sampling | ✅ | name | e, corrupted triplets which violate the domain/range restriction of its relation is de |
+| GAN-pretrain | ✅ | name | plets. Generative adversarial networks (GANs) inspired approaches are proposed to re |
 | Near-miss Sampling | ✅ | name | iminator, and it can be regarded as the near miss sampling in [26]. In this part of exper |
 | Nearest-neighbour Sampling | ✅ | name | ], the static negative sampling models, nearest-neighbour sampling and near-miss sampling, are pr |
 | Type-constrained Negative Sampling | ❌ |  | _(absent)_ |
@@ -35,4 +36,6 @@ _Aucun._
 
 ## C2. Recall MENTIONNES — en prose seulement mais non extrait
 
-_Aucun._
+| Methode | Ou | Via | Extrait |
+|---|---|:---:|---|
+| Adversarial Negative Sampling | prose | name | t Identifier 10.1109/ACCESS.2017.DOI # Adversarial Knowledge Representation Learning witho |

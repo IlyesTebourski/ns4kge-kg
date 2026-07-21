@@ -65,10 +65,15 @@ def method_key(label):
     return "".join(t.lower() for t in content_tokens(label))
 
 
-# noms trop generiques -> ni precision ni recall (pas des methodes specifiques)
-GENERIC_METHODS = {"gan", "ns", "generativeadversarialnetwork"}
-# acronymes trop generiques -> ne pas s'en servir pour matcher
+# acronymes trop generiques -> ne pas DERIVER de pattern de matching dessus
+# (robustesse du matcher : "GAN"/"KG" matcheraient partout ; ce n'est PAS une
+# stoplist d'entites qui etouffe le recall, c'est le meme principe que "loss"
+# exige pour lossfunction — on ne matche pas sur un acronyme non distinctif).
 GENERIC_ACR = {"GAN", "NS", "KG", "LP", "KGE"}
+
+# Verdicts de verification MANUELLE (remplis apres coup ; vides = baseline honnete).
+PREC_VERDICTS = {}
+RECALL_VERDICTS = {}
 
 
 def is_unknown(label):
@@ -76,8 +81,12 @@ def is_unknown(label):
 
 
 def is_excluded(label):
+    # Seuls "Unknown" (placeholder du prompt pour baseline non identifiee) et une
+    # cle vide sont exclus. Plus de GENERIC_METHODS (gan/ns...) : un terme trop
+    # generique extrait comme NS method est une question de PRECISION (a condamner
+    # en verif manuelle), pas a masquer d'office.
     k = method_key(label)
-    return is_unknown(label) or k == "" or k in GENERIC_METHODS
+    return is_unknown(label) or k == ""
 
 
 # Abreviations canoniques de la litterature (Wang et al., TransH) : le texte ecrit
@@ -109,21 +118,11 @@ def name_pattern(label, ci):
     return re.compile(r"(?<![A-Za-z0-9])" + core + r"(?![A-Za-z0-9])", re.I if ci else 0)
 
 
-# Noms reduits a un seul mot generique -> le match tombe sur le mot courant.
-# Deux familles :
-#  - WEAK_BOTH : fragments d'adjectif jamais utilises seuls comme baseline ->
-#    bruit en prose ET en tableau.
-WEAK_BOTH = {"adversarial", "self", "adaptive", "simple", "dynamic", "filtered",
-             "importance", "iterative", "good", "naive", "domain", "generative"}
-#  - WEAK_PROSE : vraies baselines (colonnes de tableau reelles) -> on filtre le
-#    mot nu en PROSE, mais on garde les occurrences en TABLEAU (vraie colonne).
-#    On y ajoute des noms reduits a UN mot polysemique : en prose le mot nu tombe
-#    massivement sur un autre sens (Bernoulli *distribution*/*cost*, Gibbs
-#    *sampling pour LDA*/*inequality*, *Relational* reasoning, *Probabilistic*
-#    diffusion, *Subsampling* dans un titre) -> faux positifs de recall.
-WEAK_PROSE = {"random", "uniform", "none", "non", "static",
-              "bernoulli", "gibbs", "relational", "probabilistic", "subsampling",
-              "cache"}
+# NB : plus de stoplists WEAK_BOTH / WEAK_PROSE. C'etait l'overfit principal —
+# on retirait a la main "random"/"uniform"/"bernoulli"/... du recall pour tuer le
+# bruit. Desormais, honnete : le recall sur-genere ces candidats, et on les tranche
+# a la main (RECALL_VERDICTS : "fp" si la chaine matche un usage non-NS). Le vocab
+# n'etant bati que sur les items VERIFIES CORRECTS, un faux item ne contamine rien.
 
 
 def acronyms_of(label, min_len=3):
@@ -233,9 +232,11 @@ def build_global_vocab(arts):
     return vocab
 
 
-def validate(article, vocab):
-    prose, tables = article["prose"], article["tables"]
+def precision_pass(article):
+    """Precision (insensible casse) + collecte des items VERIFIES CORRECTS (vocab)."""
+    slug, prose, tables = article["slug"], article["prose"], article["tables"]
     evaluated, mentioned = [], []
+    verified = {}          # method_key -> label
     te = fe = tm = fm = 0
     for k, e in sorted(article["methods"].items(), key=lambda kv: kv[1]["label"].lower()):
         label, src = e["label"], e["src"]
@@ -243,29 +244,28 @@ def validate(article, vocab):
         text = "\n".join(([prose] if "prose" in src else []) +
                          ([tables] if "table" in src else []))
         m, via = find(label, text, ci=True)
+        v = PREC_VERDICTS.get((slug, label))
+        ok = bool(m) if not v else (v[0] == "valid" or (bool(m) and v[0] != "error"))
         row = (label, bool(m), (via or ""), VD.snippet_around(text, m) if m else "")
         if "table" in src:
             evaluated.append(row); te += bool(m); fe += (not m)
         else:
             mentioned.append(row); tm += bool(m); fm += (not m)
+        if ok:
+            verified[k] = label
+    return evaluated, mentioned, verified, (te, fe, tm, fm)
 
-    # --- Recall : collecte des matches, puis DEDUP par position ---------------
-    # Une meme occurrence de texte (ex. "SANS") peut etre matchee par plusieurs
-    # entrees du vocab (SANS, Self-adversarial NS, Structure-Aware NS -> meme
-    # acronyme). On ne compte qu'UN candidat par span (nom prioritaire sur acro).
+
+def recall_pass(article, vocab):
+    """RECALL (sensible casse) : methode du vocab VERIFIE presente dans l'article mais
+    non extraite. Plus de stoplists WEAK_* : on sur-genere honnetement, dedup par
+    position (une occurrence = un seul candidat), puis on tranche a la main."""
+    prose, tables = article["prose"], article["tables"]
     raw = []   # (label, src, via, start, end, snippet)
     for k, label in sorted(vocab.items(), key=lambda kv: kv[1].lower()):
         if k in article["methods"]:
             continue
-        ct = content_tokens(label)
-        one = ct[0].lower() if len(ct) == 1 else None
-        weak_both = one in WEAK_BOTH
-        weak_prose = one in WEAK_PROSE
         for src, txt in (("prose", prose), ("table", tables)):
-            if weak_both:
-                continue                      # fragment d'adjectif -> bruit partout
-            if weak_prose and src == "prose":
-                continue                      # baseline: mot nu en prose = bruit
             m, via = find(label, txt, ci=False, min_acr=4)
             if m:
                 raw.append((label, src, via, m.start(), m.end(), VD.snippet_around(txt, m)))
@@ -278,9 +278,8 @@ def validate(article, vocab):
         claimed[src].append((s, e))
         d = survivors.setdefault(label, {"where": set(), "via": via, "snip": snip})
         d["where"].add(src)
-    suspects = [(label, "+".join(sorted(d["where"])), d["via"], d["snip"])
-                for label, d in survivors.items()]
-    return evaluated, mentioned, suspects, (te, fe, tm, fm)
+    return [(label, "+".join(sorted(d["where"])), d["via"], d["snip"])
+            for label, d in survivors.items()]
 
 
 def split_suspects(suspects):
@@ -368,12 +367,23 @@ def render_summary(rows, TE, FE, TM, FM, SE, SM):
 def main():
     os.makedirs(OUT_DIR, exist_ok=True)
     arts = load_articles()
-    vocab = build_global_vocab(arts)
-    print(f"Vocab global NS methods (hors Unknown) = {len(vocab)}")
+
+    # Phase 1 : precision -> vocab bati UNIQUEMENT sur les items verifies corrects
+    prec = {}
+    vocab = {}
+    for a in arts:
+        ev, me, verified, counts = precision_pass(a)
+        prec[a["slug"]] = (ev, me, counts)
+        for k, lab in verified.items():
+            vocab.setdefault(k, lab)
+    print(f"Vocab global NS methods (items verifies corrects) = {len(vocab)}")
+
+    # Phase 2 : recall contre le vocab verifie
     rows = []
     TE = FE = TM = FM = SE = SM = 0
     for a in arts:
-        ev, me, sus, counts = validate(a, vocab)
+        ev, me, counts = prec[a["slug"]]
+        sus = recall_pass(a, vocab)
         report, (te, fe, tm, fm, se, sm) = render_article(a, ev, me, sus, counts)
         open(os.path.join(OUT_DIR, f"{a['slug']}.md"), "w", encoding="utf-8").write(report)
         rows.append((a["md_name"], te, fe, tm, fm, se, sm))

@@ -5,11 +5,11 @@
 | Metrique | Valeur |
 |---|---|
 | Methodes EVALUEES (tableaux) | 10 |
-| Methodes MENTIONNEES seulement (prose) | 3 |
+| Methodes MENTIONNEES seulement (prose) | 4 |
 | Precision evalues | 90% | 
 | Precision mentionnes | 100% |
 | Recall evalues | 75% |
-| Recall mentionnes | 100% |
+| Recall mentionnes | 67% |
 
 ## A. Methodes EVALUEES (valides vs `tables_only`)
 
@@ -32,6 +32,7 @@
 |---|:---:|:---:|---|
 | Adversarial Negative Sampling | ✅ | name | ed distribution [7]. In [9], Generative Adversarial networks (GANs) are used for generating |
 | Bernoulli Negative Sampling | ✅ | name | ties to be corrupted [12, 14]. In [20], Bernoulli distribution is considered to limit the |
+| Generative Adversarial Network-based Negative Sampling | ✅ | name | ulation-based distribution [7]. In [9], Generative Adversarial networks (GANs) are used for generating negative |
 | Structure-aware Negative Sampling | ✅ | name | nerative Adversarial Network-based, and Structure-aware Approaches. **Uniform Distribution-bas |
 
 ## C1. Recall EVALUES — dans un tableau mais non extrait
@@ -40,8 +41,11 @@
 |---|---|:---:|---|
 | RW-SANS | table | name | </tr> <tr> <td>Uniform RW-SANS [2]</td> <td>$\mathcal{O}(r\mat |
 | SANS | prose+table | name | ture-aware negative sampling technique (SANS) was proposed [2] to consider the neigh |
-| Self-Adv | table | name | \|)$</td> </tr> <tr> <td>Self-Adv. [15]</td> <td>$\mathcal{O}(\|\m |
+| Self Negative Sampling | table | name | \|)$</td> </tr> <tr> <td>Self-Adv. [15]</td> <td>$\mathcal{O} |
 
 ## C2. Recall MENTIONNES — en prose seulement mais non extrait
 
-_Aucun._
+| Methode | Ou | Via | Extrait |
+|---|---|:---:|---|
+| GAN-based Negative Sampling | prose | name | n [9], Generative Adversarial networks (GANs) are used for generating negative sampl |
+| Random Negative Sampling | prose | name | not clustered in the expected group for Random (Uniform Table 5: Example set of ca |

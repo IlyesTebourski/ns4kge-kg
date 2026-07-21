@@ -9,7 +9,7 @@
 | Precision evalues | 100% | 
 | Precision mentionnes | 100% |
 | Recall evalues | 100% |
-| Recall mentionnes | 100% |
+| Recall mentionnes | 75% |
 
 ## A. Methodes EVALUEES (valides vs `tables_only`)
 
@@ -31,4 +31,6 @@ _Aucun._
 
 ## C2. Recall MENTIONNES — en prose seulement mais non extrait
 
-_Aucun._
+| Methode | Ou | Via | Extrait |
+|---|---|:---:|---|
+| Subsampling | prose | name | e Graph Embedding via Adaptive Negative Subsampling Dong Zhu\*, Haonan Tan\*, Le Wang\*\u2 |

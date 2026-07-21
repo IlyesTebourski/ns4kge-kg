@@ -9,7 +9,7 @@
 | Precision evalues | 100% | 
 | Precision mentionnes | 100% |
 | Recall evalues | 0% |
-| Recall mentionnes | 100% |
+| Recall mentionnes | 86% |
 
 ## A. Methodes EVALUEES (valides vs `tables_only`)
 
@@ -35,4 +35,6 @@
 
 ## C2. Recall MENTIONNES — en prose seulement mais non extrait
 
-_Aucun._
+| Methode | Ou | Via | Extrait |
+|---|---|:---:|---|
+| Dynamic Negative Sampling | prose | name | didate set of non-homogeneous entities. Dynamic sampling is performed respectively from |

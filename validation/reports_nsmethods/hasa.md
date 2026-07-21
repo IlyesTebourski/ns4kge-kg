@@ -8,7 +8,7 @@
 | Methodes MENTIONNEES seulement (prose) | 1 |
 | Precision evalues | 100% | 
 | Precision mentionnes | 100% |
-| Recall evalues | 100% |
+| Recall evalues | 83% |
 | Recall mentionnes | 50% |
 
 ## A. Methodes EVALUEES (valides vs `tables_only`)
@@ -29,7 +29,9 @@
 
 ## C1. Recall EVALUES — dans un tableau mais non extrait
 
-_Aucun._
+| Methode | Ou | Via | Extrait |
+|---|---|:---:|---|
+| Simple Negative Sampling | prose+table | name | d, we only generate $K$ negative tails. Simple InfoNCE[22] samples negative tails from |
 
 ## C2. Recall MENTIONNES — en prose seulement mais non extrait
 

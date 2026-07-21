@@ -171,12 +171,21 @@ def which_table(m_start, tables_text, tables):
     return "(hors table)", False
 
 
-def validate(article, vocab):
-    tt = article["tables_text"]
+# Verdicts de verification MANUELLE (remplis apres coup ; vides = baseline honnete).
+PREC_VERDICTS = {}
+RECALL_VERDICTS = {}
+
+
+def precision_pass(article):
+    """Precision + collecte des datasets VERIFIES CORRECTS (pour le vocab)."""
+    slug, tt = article["slug"], article["tables_text"]
     prec_rows = []      # (label, found, caption, snippet)
+    verified = {}
     tp = fp = 0
     for k, lab in sorted(article["datasets"].items(), key=lambda kv: kv[1].lower()):
         m = find_first(lab, tt)
+        v = PREC_VERDICTS.get((slug, lab))
+        ok = bool(m) if not v else (v[0] == "valid" or (bool(m) and v[0] != "error"))
         if m:
             cap, _ = which_table(m.start(), tt, article["tables"])
             prec_rows.append((lab, True, cap, snippet_around(tt, m)))
@@ -184,10 +193,14 @@ def validate(article, vocab):
         else:
             prec_rows.append((lab, False, "", ""))
             fp += 1
+        if ok:
+            verified[k] = lab
+    return prec_rows, verified, tp, fp
 
-    # Recall : datasets du vocab global presents dans une CELLULE de tableau
-    # (bloc <table>) mais non extraits. On ignore les captions/prose : un
-    # dataset doit apparaitre dans une ligne de tableau pour etre une config.
+
+def recall_pass(article, vocab):
+    """Recall : datasets du vocab VERIFIE presents dans une CELLULE de tableau mais
+    non extraits. Vocab = items verifies corrects (un faux extrait ne contamine pas)."""
     suspects = []       # (label, caption, is_stats, snippet)
     for k, lab in sorted(vocab.items(), key=lambda kv: kv[1].lower()):
         if k in article["datasets"]:
@@ -201,7 +214,7 @@ def validate(article, vocab):
                 suspects.append((lab, caption or "(sans caption)", is_stats,
                                  snippet_around(table, m)))
                 break
-    return prec_rows, suspects, tp, fp
+    return suspects
 
 
 # --------------------------------------------------------------------------
@@ -284,16 +297,26 @@ def render_summary(rows, TP, FP, REAL, STATS):
 def main():
     os.makedirs(OUT_DIR, exist_ok=True)
     arts = load_articles()
-    vocab = build_global_vocab(arts)
-    print(f"Vocab global datasets = {len(vocab)}")
 
+    # Phase 1 : precision -> vocab bati sur les datasets verifies corrects
+    prec = {}
+    vocab = {}
+    for a in arts:
+        prec_rows, verified, tp, fp = precision_pass(a)
+        prec[a["slug"]] = (prec_rows, tp, fp)
+        for k, lab in verified.items():
+            vocab.setdefault(k, lab)
+    print(f"Vocab global datasets (items verifies corrects) = {len(vocab)}")
+
+    # Phase 2 : recall contre le vocab verifie
     rows = []
     TP = FP = REAL = STATS = 0
     for a in arts:
-        prec_rows, suspects, tp, fp = validate(a, vocab)
-        report, (tp, fp, real, stats, prec, rec) = render_article(a, prec_rows, suspects, tp, fp)
+        prec_rows, tp, fp = prec[a["slug"]]
+        suspects = recall_pass(a, vocab)
+        report, (tp, fp, real, stats, prec_, rec) = render_article(a, prec_rows, suspects, tp, fp)
         open(os.path.join(OUT_DIR, f"{a['slug']}.md"), "w", encoding="utf-8").write(report)
-        rows.append((a["md_name"], tp, fp, real, stats, prec, rec))
+        rows.append((a["md_name"], tp, fp, real, stats, prec_, rec))
         TP += tp; FP += fp; REAL += real; STATS += stats
 
     open(os.path.join(OUT_DIR, "_SUMMARY.md"), "w", encoding="utf-8").write(

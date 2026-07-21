@@ -10,9 +10,9 @@
 | Precision (evalues, vs tableaux) | 100% |
 | Precision (mentionnes, vs prose) | 100% |
 | Candidats evaluations ratees (en tableau, non extrait) | 1 |
-| Candidats mentions ratees (en prose, non extrait) | 0 |
+| Candidats mentions ratees (en prose, non extrait) | 1 |
 | Recall relatif *evalues* | 86% |
-| Recall relatif *mentionnes* | 100% |
+| Recall relatif *mentionnes* | 95% |
 
 ## A. Modeles EVALUES — extraits des tableaux (valides vs `tables_only`)
 
@@ -59,4 +59,6 @@
 
 ## C2. Recall MENTIONNES — modeles en prose seulement mais NON extraits
 
-_Aucun._
+| Modele | Ou | Extrait |
+|---|---|---|
+| GAN | prose | sentation learning approach outperforms GAN-based sampling method KBGAN. **INDEX T |

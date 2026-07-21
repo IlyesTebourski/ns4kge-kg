@@ -9,7 +9,7 @@
 | Precision evalues | 75% | 
 | Precision mentionnes | 67% |
 | Recall evalues | 69% |
-| Recall mentionnes | 100% |
+| Recall mentionnes | 40% |
 
 ## A. Methodes EVALUEES (valides vs `tables_only`)
 
@@ -43,8 +43,12 @@
 | Frequency-based Negative Sampling | table | name | <th>Index</th> <th>Query Frequency</th> <th>Answer Frequency</th> |
 | None Sampling | table | name | 2">ComplEx</td> <td rowspan="3">None</td> <td>NS</td> <td>23 |
 | SANS | prose+table | name | ike Self-Adversarial Negative Sampling (SANS) and subsampling. However, it is uncert |
-| Subsampling | table | name | tbody> <tr> <td rowspan="3">Subsampling</td> <td>Base</td> <td> |
+| Subsampling | prose+table | name | word2vec (Mikolov et al., 2013) to KGE. Subsampling can smooth the appearance frequency of |
 
 ## C2. Recall MENTIONNES — en prose seulement mais non extrait
 
-_Aucun._
+| Methode | Ou | Via | Extrait |
+|---|---|:---:|---|
+| Adaptive Negative Sampling | prose | name | KGE and induces a new NS loss, Triplet Adaptive Negative Sampling (TANS), that can cove |
+| Adversarial Negative Sampling | prose | name | E relies on smoothing methods like Self-Adversarial Negative Sampling (SANS) and subsamplin |
+| Self Negative Sampling | prose | name | in KGE relies on smoothing methods like Self-Adversarial Negative Sampling (SANS) an |

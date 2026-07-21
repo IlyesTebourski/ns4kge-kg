@@ -9,9 +9,9 @@
 | **Precision globale** | **100%** |
 | Precision (evalues, vs tableaux) | 100% |
 | Precision (mentionnes, vs prose) | 100% |
-| Candidats evaluations ratees (en tableau, non extrait) | 0 |
+| Candidats evaluations ratees (en tableau, non extrait) | 1 |
 | Candidats mentions ratees (en prose, non extrait) | 0 |
-| Recall relatif *evalues* | 100% |
+| Recall relatif *evalues* | 91% |
 | Recall relatif *mentionnes* | 100% |
 
 ## A. Modeles EVALUES — extraits des tableaux (valides vs `tables_only`)
@@ -38,7 +38,9 @@
 
 ## C1. Recall EVALUES — modeles dans un tableau mais NON extraits
 
-_Aucun._
+| Modele | Ou | Extrait |
+|---|---|---|
+| BERT | prose+table | ual mentions we used are provided by KG-BERT (Yao et al., 2019). Then we formally de |
 
 ## C2. Recall MENTIONNES — modeles en prose seulement mais NON extraits
 

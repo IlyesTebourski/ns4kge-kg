@@ -10,9 +10,9 @@
 | Precision (evalues, vs tableaux) | 92% |
 | Precision (mentionnes, vs prose) | 100% |
 | Candidats evaluations ratees (en tableau, non extrait) | 0 |
-| Candidats mentions ratees (en prose, non extrait) | 0 |
+| Candidats mentions ratees (en prose, non extrait) | 1 |
 | Recall relatif *evalues* | 100% |
-| Recall relatif *mentionnes* | 100% |
+| Recall relatif *mentionnes* | 75% |
 
 ## A. Modeles EVALUES — extraits des tableaux (valides vs `tables_only`)
 
@@ -45,4 +45,6 @@ _Aucun._
 
 ## C2. Recall MENTIONNES — modeles en prose seulement mais NON extraits
 
-_Aucun._
+| Modele | Ou | Extrait |
+|---|---|---|
+| BERT | prose | pre-trained models to tackle issues. KG-BERT [14], for instance, is a BERT-based kno |

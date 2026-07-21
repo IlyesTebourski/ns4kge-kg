@@ -28,4 +28,6 @@ _Aucun._
 
 | Methode | Ou | Via | Extrait |
 |---|---|:---:|---|
+| Adversarial Negative Sampling | prose | name | Representation Learning with Generative Adversarial Nets **Hongwei Wang<sup>1,2</sup>, Jia |
+| GAN-based Negative Sampling | prose | name | ecently, *Generative Adversarial Nets* (GAN) (Goodfellow et al. 2014) have received |
 | IRGAN | prose | name | he result suggests that, different with IRGAN (Wang et al. 2017a), the design of grap |

@@ -10,9 +10,9 @@
 | Precision (evalues, vs tableaux) | 100% |
 | Precision (mentionnes, vs prose) | 100% |
 | Candidats evaluations ratees (en tableau, non extrait) | 0 |
-| Candidats mentions ratees (en prose, non extrait) | 0 |
+| Candidats mentions ratees (en prose, non extrait) | 1 |
 | Recall relatif *evalues* | 100% |
-| Recall relatif *mentionnes* | 100% |
+| Recall relatif *mentionnes* | 80% |
 
 ## A. Modeles EVALUES — extraits des tableaux (valides vs `tables_only`)
 
@@ -40,4 +40,6 @@ _Aucun._
 
 ## C2. Recall MENTIONNES — modeles en prose seulement mais NON extraits
 
-_Aucun._
+| Modele | Ou | Extrait |
+|---|---|---|
+| word2vec | prose | variance exists in vector space through word2vec. Thus, Bordes et al. proposed a represe |

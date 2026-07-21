@@ -10,7 +10,7 @@
 | Precision (evalues, vs tableaux) | 100% |
 | Precision (mentionnes, vs prose) | 100% |
 | Candidats evaluations ratees (en tableau, non extrait) | 0 |
-| Candidats mentions ratees (en prose, non extrait) | 1 |
+| Candidats mentions ratees (en prose, non extrait) | 3 |
 | Recall relatif *evalues* | 100% |
 | Recall relatif *mentionnes* | 0% |
 
@@ -39,4 +39,6 @@ _Aucun._
 
 | Modele | Ou | Extrait |
 |---|---|---|
+| GAN | prose | y in visual applications [8, 17]. While GAN-based models are successful in generati |
 | GraphSAGE | prose | conduct experiments using GAT [45] and GraphSAGE (SAGE) [14]. For GCN, we employ two lay |
+| MLP | prose | $, followed by a multilayer perceptron (MLP). $\tau(\cdot; \theta)$ is a learnable |

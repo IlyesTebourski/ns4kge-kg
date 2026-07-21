@@ -8,8 +8,8 @@
 | Methodes MENTIONNEES seulement (prose) | 0 |
 | Precision evalues | 100% | 
 | Precision mentionnes | 100% |
-| Recall evalues | 75% |
-| Recall mentionnes | 100% |
+| Recall evalues | 67% |
+| Recall mentionnes | 0% |
 
 ## A. Methodes EVALUEES (valides vs `tables_only`)
 
@@ -31,8 +31,12 @@ _Aucune._
 | Methode | Ou | Via | Extrait |
 |---|---|:---:|---|
 | EANS | prose+table | name | called Entity Aware Negative Sampling (EANS), which is able to sample negative enti |
+| Self Negative Sampling | table | name | 478</td> </tr> <tr> <td>Self-adv.(Sun et al., 2019)</td> <td |
 | Structure-Aware Negative Sampling | prose+table | acro | adversarial sampling(Sun et al., 2019), SANS(Ahrabian et al., 2020) and our EANS met |
 
 ## C2. Recall MENTIONNES — en prose seulement mais non extrait
 
-_Aucun._
+| Methode | Ou | Via | Extrait |
+|---|---|:---:|---|
+| Adversarial Negative Sampling | prose | name | Cai and Wang, 2017) proposed Generative Adversarial Network(GAN) (Goodfellow et al., 2014) |
+| GAN-based Negative Sampling | prose | name | proposed Generative Adversarial Network(GAN) (Goodfellow et al., 2014) based archit |

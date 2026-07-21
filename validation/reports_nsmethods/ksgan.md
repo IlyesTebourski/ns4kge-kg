@@ -9,7 +9,7 @@
 | Precision evalues | 100% | 
 | Precision mentionnes | 67% |
 | Recall evalues | 100% |
-| Recall mentionnes | 100% |
+| Recall mentionnes | 50% |
 
 ## A. Methodes EVALUEES (valides vs `tables_only`)
 
@@ -33,4 +33,7 @@ _Aucun._
 
 ## C2. Recall MENTIONNES — en prose seulement mais non extrait
 
-_Aucun._
+| Methode | Ou | Via | Extrait |
+|---|---|:---:|---|
+| Adversarial Negative Sampling | prose | name | # A Knowledge Selective Adversarial Network for Link Prediction in Knowledg |
+| GAN-based Negative Sampling | prose | name | ult [8], ComplEx [9]) as a generator in GAN and translational distance models (e.g. |

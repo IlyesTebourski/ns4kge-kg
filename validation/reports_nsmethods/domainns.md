@@ -9,7 +9,7 @@
 | Precision evalues | 100% | 
 | Precision mentionnes | 50% |
 | Recall evalues | 33% |
-| Recall mentionnes | 100% |
+| Recall mentionnes | 50% |
 
 ## A. Methodes EVALUEES (valides vs `tables_only`)
 
@@ -33,4 +33,6 @@
 
 ## C2. Recall MENTIONNES — en prose seulement mais non extrait
 
-_Aucun._
+| Methode | Ou | Via | Extrait |
+|---|---|:---:|---|
+| Iterative Negative Sampling | prose | name | ction defined in Eq. (2). ## 3.2 Block Iterative Optimization Though sparseness is favo |

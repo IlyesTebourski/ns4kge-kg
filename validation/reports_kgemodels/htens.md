@@ -10,7 +10,7 @@
 | Precision (evalues, vs tableaux) | 100% |
 | Precision (mentionnes, vs prose) | 100% |
 | Candidats evaluations ratees (en tableau, non extrait) | 0 |
-| Candidats mentions ratees (en prose, non extrait) | 1 |
+| Candidats mentions ratees (en prose, non extrait) | 2 |
 | Recall relatif *evalues* | 100% |
 | Recall relatif *mentionnes* | 0% |
 
@@ -35,4 +35,5 @@ _Aucun._
 
 | Modele | Ou | Extrait |
 |---|---|---|
+| GAN | prose | ntities as the training progresses. The GAN-based sampling methods, such as KBGAN[3 |
 | TKRL | prose | <sup>1</sup>https://github.com/thunlp/TKRL SIGIR ’23, July 23–27, 2023, Taipei, T |

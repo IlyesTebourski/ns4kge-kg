@@ -5,11 +5,11 @@
 | Metrique | Valeur |
 |---|---|
 | Methodes EVALUEES (tableaux) | 3 |
-| Methodes MENTIONNEES seulement (prose) | 2 |
+| Methodes MENTIONNEES seulement (prose) | 3 |
 | Precision evalues | 67% | 
 | Precision mentionnes | 100% |
 | Recall evalues | 100% |
-| Recall mentionnes | 100% |
+| Recall mentionnes | 50% |
 
 ## A. Methodes EVALUEES (valides vs `tables_only`)
 
@@ -24,6 +24,7 @@
 | Methode | Trouvee ? | Via | Extrait |
 |---|:---:|:---:|---|
 | Bernoulli Negative Sampling | ✅ | name | ility of corrupting heads or tails as a Bernoulli distribution to avoid false negatives. |
+| GAN-based Negative Sampling | ✅ | name | ing with generative adversary networks (GANs) for the generation of negative samples |
 | Local-Closed World Assumption Negative Sampling | ✅ | name | et al. [2015], where it was called the local-closed world assumption (LCWA). LCWA assumes that head and tail |
 
 ## C1. Recall EVALUES — dans un tableau mais non extrait
@@ -32,4 +33,8 @@ _Aucun._
 
 ## C2. Recall MENTIONNES — en prose seulement mais non extrait
 
-_Aucun._
+| Methode | Ou | Via | Extrait |
+|---|---|:---:|---|
+| Adversarial Negative Sampling | prose | name | distribution to avoid false negatives. Adversarial learning with generative adversary netw |
+| Relational Sampling | prose | name | ng [Sun et al., 2019]. ## 3.3 Training Relational Classifiers Given a relation, there ar |
+| Self Negative Sampling | prose | name | f{h}_i; \mathbf{t}_i])). \eqno(11)$$ **Self-Adversarial Negative Sampling.** We inv |
