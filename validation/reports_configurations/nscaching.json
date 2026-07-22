@@ -1,0 +1,21 @@
+{
+  "slug": "nscaching",
+  "stats": {
+    "n": 218,
+    "combo_ok": 218,
+    "val_exists_ok": 218,
+    "acc_combo": 1.0,
+    "acc_val_exists": 1.0,
+    "canary_caught": 1,
+    "canary_total": 1
+  },
+  "anomalies": [],
+  "canary": {
+    "caught": [
+      218
+    ],
+    "ids": [
+      218
+    ]
+  }
+}

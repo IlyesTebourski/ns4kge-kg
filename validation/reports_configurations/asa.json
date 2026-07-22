@@ -1,0 +1,21 @@
+{
+  "slug": "asa",
+  "stats": {
+    "n": 115,
+    "combo_ok": 115,
+    "val_exists_ok": 115,
+    "acc_combo": 1.0,
+    "acc_val_exists": 1.0,
+    "canary_caught": 1,
+    "canary_total": 1
+  },
+  "anomalies": [],
+  "canary": {
+    "caught": [
+      115
+    ],
+    "ids": [
+      115
+    ]
+  }
+}

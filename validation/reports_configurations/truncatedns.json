@@ -1,0 +1,21 @@
+{
+  "slug": "truncatedns",
+  "stats": {
+    "n": 40,
+    "combo_ok": 40,
+    "val_exists_ok": 40,
+    "acc_combo": 1.0,
+    "acc_val_exists": 1.0,
+    "canary_caught": 1,
+    "canary_total": 1
+  },
+  "anomalies": [],
+  "canary": {
+    "caught": [
+      40
+    ],
+    "ids": [
+      40
+    ]
+  }
+}

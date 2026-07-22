@@ -1,0 +1,21 @@
+{
+  "slug": "kbgan",
+  "stats": {
+    "n": 54,
+    "combo_ok": 54,
+    "val_exists_ok": 54,
+    "acc_combo": 1.0,
+    "acc_val_exists": 1.0,
+    "canary_caught": 1,
+    "canary_total": 1
+  },
+  "anomalies": [],
+  "canary": {
+    "caught": [
+      54
+    ],
+    "ids": [
+      54
+    ]
+  }
+}

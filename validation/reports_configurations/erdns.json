@@ -1,0 +1,21 @@
+{
+  "slug": "erdns",
+  "stats": {
+    "n": 386,
+    "combo_ok": 386,
+    "val_exists_ok": 386,
+    "acc_combo": 1.0,
+    "acc_val_exists": 1.0,
+    "canary_caught": 1,
+    "canary_total": 1
+  },
+  "anomalies": [],
+  "canary": {
+    "caught": [
+      386
+    ],
+    "ids": [
+      386
+    ]
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "slug": "ccs",
+  "stats": {
+    "n": 150,
+    "combo_ok": 144,
+    "val_exists_ok": 150,
+    "acc_combo": 0.96,
+    "acc_val_exists": 1.0,
+    "canary_caught": 1,
+    "canary_total": 1
+  },
+  "anomalies": [
+    {
+      "id": 60,
+      "exists": true
+    },
+    {
+      "id": 61,
+      "exists": true
+    },
+    {
+      "id": 62,
+      "exists": true
+    },
+    {
+      "id": 63,
+      "exists": true
+    },
+    {
+      "id": 64,
+      "exists": true
+    },
+    {
+      "id": 65,
+      "exists": true
+    }
+  ],
+  "canary": {
+    "caught": [
+      150
+    ],
+    "ids": [
+      150
+    ]
+  }
+}

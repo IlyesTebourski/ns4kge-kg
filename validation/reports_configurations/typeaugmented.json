@@ -1,0 +1,21 @@
+{
+  "slug": "typeaugmented",
+  "stats": {
+    "n": 179,
+    "combo_ok": 179,
+    "val_exists_ok": 179,
+    "acc_combo": 1.0,
+    "acc_val_exists": 1.0,
+    "canary_caught": 1,
+    "canary_total": 1
+  },
+  "anomalies": [],
+  "canary": {
+    "caught": [
+      179
+    ],
+    "ids": [
+      179
+    ]
+  }
+}

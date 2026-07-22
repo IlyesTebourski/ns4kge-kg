@@ -1,0 +1,38 @@
+{
+  "slug": "localcognitive",
+  "stats": {
+    "n": 133,
+    "combo_ok": 129,
+    "val_exists_ok": 129,
+    "acc_combo": 0.9699248120300752,
+    "acc_val_exists": 0.9699248120300752,
+    "canary_caught": 1,
+    "canary_total": 1
+  },
+  "anomalies": [
+    {
+      "id": 57,
+      "exists": false
+    },
+    {
+      "id": 61,
+      "exists": false
+    },
+    {
+      "id": 77,
+      "exists": false
+    },
+    {
+      "id": 81,
+      "exists": false
+    }
+  ],
+  "canary": {
+    "caught": [
+      133
+    ],
+    "ids": [
+      133
+    ]
+  }
+}

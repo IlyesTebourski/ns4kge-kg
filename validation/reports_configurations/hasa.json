@@ -1,0 +1,38 @@
+{
+  "slug": "hasa",
+  "stats": {
+    "n": 115,
+    "combo_ok": 111,
+    "val_exists_ok": 115,
+    "acc_combo": 0.9652173913043478,
+    "acc_val_exists": 1.0,
+    "canary_caught": 1,
+    "canary_total": 1
+  },
+  "anomalies": [
+    {
+      "id": 70,
+      "exists": true
+    },
+    {
+      "id": 71,
+      "exists": true
+    },
+    {
+      "id": 72,
+      "exists": true
+    },
+    {
+      "id": 73,
+      "exists": true
+    }
+  ],
+  "canary": {
+    "caught": [
+      115
+    ],
+    "ids": [
+      115
+    ]
+  }
+}

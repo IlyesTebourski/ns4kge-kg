@@ -1,0 +1,90 @@
+{
+  "slug": "noigan",
+  "stats": {
+    "n": 344,
+    "combo_ok": 327,
+    "val_exists_ok": 343,
+    "acc_combo": 0.9505813953488372,
+    "acc_val_exists": 0.997093023255814,
+    "canary_caught": 1,
+    "canary_total": 1
+  },
+  "anomalies": [
+    {
+      "id": 66,
+      "exists": true
+    },
+    {
+      "id": 67,
+      "exists": true
+    },
+    {
+      "id": 68,
+      "exists": true
+    },
+    {
+      "id": 69,
+      "exists": true
+    },
+    {
+      "id": 70,
+      "exists": true
+    },
+    {
+      "id": 71,
+      "exists": true
+    },
+    {
+      "id": 72,
+      "exists": true
+    },
+    {
+      "id": 73,
+      "exists": true
+    },
+    {
+      "id": 74,
+      "exists": true
+    },
+    {
+      "id": 75,
+      "exists": true
+    },
+    {
+      "id": 76,
+      "exists": true
+    },
+    {
+      "id": 77,
+      "exists": true
+    },
+    {
+      "id": 78,
+      "exists": false
+    },
+    {
+      "id": 182,
+      "exists": true
+    },
+    {
+      "id": 183,
+      "exists": true
+    },
+    {
+      "id": 184,
+      "exists": true
+    },
+    {
+      "id": 185,
+      "exists": true
+    }
+  ],
+  "canary": {
+    "caught": [
+      344
+    ],
+    "ids": [
+      344
+    ]
+  }
+}
