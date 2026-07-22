@@ -9,7 +9,7 @@
 | Precision evalues | 100% | 
 | Precision mentionnes | 100% |
 | Recall evalues | 100% |
-| Recall mentionnes | 57% |
+| Recall mentionnes | 100% |
 
 ## A. Methodes EVALUEES (valides vs `tables_only`)
 
@@ -35,8 +35,4 @@ _Aucun._
 
 ## C2. Recall MENTIONNES — en prose seulement mais non extrait
 
-| Methode | Ou | Via | Extrait |
-|---|---|:---:|---|
-| Dynamic Negative Sampling | prose | name | These are Static Distribution Sampling, Dynamic Distribution Sampling and Custom Pooled |
-| Gibbs Negative Sampling | prose | name | distribution. The LDA topic model uses Gibbs sampling to sample the implicit topic o |
-| Static Sampling | prose | name | igh quality negative triplet. These are Static Distribution Sampling, Dynamic Distribu |
+_Aucun._

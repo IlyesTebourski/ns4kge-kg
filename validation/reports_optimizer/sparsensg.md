@@ -11,9 +11,11 @@
 | Condamnes (trouves mais faux) | 0 |
 | Vraies erreurs / non verifies | 1 |
 | **Precision verifiee** | **0%** |
+| Recall — candidats bruts (script) | 0 |
+| Recall BRUT (avant adjudication) | 100% |
 | Recall — vrais oublis | 0 |
 | Recall — faux positifs ecartes | 0 |
-| **Recall relatif (indicatif)** | **100%** |
+| **Recall relatif (adjuge)** | **100%** |
 
 ## Precision automatique — Optimizer extrait vs source
 

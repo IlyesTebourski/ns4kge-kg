@@ -9,7 +9,7 @@
 | Precision evalues | 100% | 
 | Precision mentionnes | 100% |
 | Recall evalues | 100% |
-| Recall mentionnes | 43% |
+| Recall mentionnes | 100% |
 
 ## A. Methodes EVALUEES (valides vs `tables_only`)
 
@@ -41,11 +41,8 @@ _Aucun._
 
 | Methode | Ou | Via | Extrait |
 |---|---|:---:|---|
-| Adversarial Negative Sampling | prose | name | successful adaptation of the Generative Adversarial Network (GAN) (Goodfellow et al., 2014) |
-| Cache-based Negative Sampling | prose | name | s (2023) 61:739–763 749 # Algorithm 2: Cache update. **Input**: Knowledge graph $\m |
-| Dynamic Negative Sampling | prose | name | oblems (Zhang et al., 2019). ### 2.1.2 Dynamic distribution-based sampling To address |
+| Dynamic Distribution Sampling | prose | name | he false negatives suffered in previous dynamic distribution-based negative sampling methods. (2) The Tucker decomposition t |
+| Dynamic Negative Sampling | prose | name | tch with fewer parameters than previous dynamic negative sampling methods IGAN, KBGAN, and KSGAN. Even th |
 | ESNS | prose | name | ity Similarity-based Negative Sampling (ESNS) (Yao et al., 2022) considers semantic |
-| GAN-based Negative Sampling | prose | name | ining. Generative adversarial networks (GAN) and self-adversarial methods have rece |
-| Importance Sampling | prose | name | tion Model, Latent Relation Filtration, Importance Evaluation, and Selection.](page_8_imag |
 | SANS | prose | name | ors, Structure Aware Negative Sampling (SANS) (Ahrabian et al., 2020) shows better p |
-| Self Negative Sampling | prose | name | ., 2019) introduced a self-adversarial *Self-Adv* sampling approach based on a self- |
+| Self-Adv | prose | name | ., 2019) introduced a self-adversarial *Self-Adv* sampling approach based on a self-scor |

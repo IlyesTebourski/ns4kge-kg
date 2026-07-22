@@ -9,10 +9,12 @@
 | **Precision globale** | **60%** |
 | Precision (evalues, vs tableaux) | 56% |
 | Precision (mentionnes, vs prose) | 100% |
-| Candidats evaluations ratees (en tableau, non extrait) | 4 |
-| Candidats mentions ratees (en prose, non extrait) | 0 |
-| Recall relatif *evalues* | 56% |
-| Recall relatif *mentionnes* | 100% |
+| Candidats evaluations ratees (bruts) | 3 |
+| Candidats mentions ratees (bruts) | 0 |
+| Recall BRUT evalues / mentionnes | 62% / 100% |
+| Vrais oublis (adjuges) evalues / mentionnes | 3 / 0 |
+| Recall ADJUGE *evalues* | 62% |
+| Recall ADJUGE *mentionnes* | 100% |
 
 ## A. Modeles EVALUES — extraits des tableaux (valides vs `tables_only`)
 
@@ -38,7 +40,6 @@
 
 | Modele | Ou | Extrait |
 |---|---|---|
-| GAN | prose+table | AI] arXiv:1809.11017v1 # Incorporating GAN for Negative Sampling in Knowledge Repr |
 | SE | prose+table | results show that 1. Models including SE, SME(bilinear), TransE and TransH are f |
 | SME | prose+table | ults show that 1. Models including SE, SME(bilinear), TransE and TransH are furthe |
 | Unstructured | prose+table | ages (Xie et al. 2016a) of entities. **Unstructured Model** (Bordes et al. 2012; Bordes et |

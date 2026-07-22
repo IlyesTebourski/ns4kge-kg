@@ -82,6 +82,14 @@ class Entity:
     def is_distinctive(self, label):
         return True
 
+    def family_key(self, label):
+        """(recall) Cle d'EQUIVALENCE de famille — la meme que la precision utilise
+        via ses alias (ex. margin-based ranking = marginal = pairwise ranking loss).
+        Une famille = UN candidat par article : sinon un seul passage de prose
+        genere autant de lignes que le vocab a de graphies de la meme loss.
+        Defaut : la cle normalisee (pas de regroupement)."""
+        return VD.norm_key(label)
+
 
 # --------------------------------------------------------------------------
 # Chargement
@@ -149,8 +157,14 @@ def recall_pass(ent, article, vocab, spans):
     [(label, snippet, kind, why)] avec kind in {miss, fp, unreviewed}."""
     slug, text = article["slug"], article["text"]
     out = []
+    # familles deja couvertes par les extractions de l'article (meme equivalence
+    # que la precision) + familles deja candidates : 1 famille = 1 candidat max.
+    seen_fams = {ent.family_key(lab) for lab in article["items"].values()}
     for k, lab in sorted(vocab.items(), key=lambda kv: kv[1].lower()):
         if k in article["items"] or not ent.is_distinctive(lab):
+            continue
+        fam = ent.family_key(lab)
+        if fam in seen_fams:
             continue
         m = ent.match(lab, text, "recall")
         if not m:
@@ -161,6 +175,7 @@ def recall_pass(ent, article, vocab, spans):
         v = ent.recall_verdicts.get((slug, lab))
         kind = v[0] if v else "unreviewed"
         out.append((lab, VD.snippet_around(text, m), kind, v[1] if v else ""))
+        seen_fams.add(fam)
     return out
 
 
@@ -191,7 +206,14 @@ def render_article(ent, article, rows, recall_rows):
     real_miss = sum(1 for r in recall_rows if r[2] == "miss")
     fp_rec = sum(1 for r in recall_rows if r[2] == "fp")
     todo_rec = sum(1 for r in recall_rows if r[2] == "unreviewed")
-    rec = correct / (correct + real_miss) if (correct + real_miss) else 1.0
+    # CONVENTION UNIQUE (tous validateurs) : un candidat non adjuge compte comme
+    # un oubli -> le recall est un PLANCHER qui remonte avec les verdicts "fp".
+    den = correct + real_miss + todo_rec
+    rec = correct / den if den else 1.0
+    # Recall BRUT (script seul, avant toute adjudication) : TOUS les candidats
+    # comptes comme oublis. Toujours affiche pour ne jamais etre perdu.
+    den_brut = correct + len(recall_rows)
+    rec_brut = correct / den_brut if den_brut else 1.0
 
     L = [f"# {ent.name} — {article['md_name']}", "",
          f"**Titre :** {article['title']}", "",
@@ -203,9 +225,11 @@ def render_article(ent, article, rows, recall_rows):
          f"| Condamnes (trouves mais faux) | {condemned} |",
          f"| Vraies erreurs / non verifies | {wrong} |",
          f"| **Precision verifiee** | **{pv:.0%}** |",
+         f"| Recall — candidats bruts (script) | {len(recall_rows)} |",
+         f"| Recall BRUT (avant adjudication) | {rec_brut:.0%} |",
          f"| Recall — vrais oublis | {real_miss} |",
          f"| Recall — faux positifs ecartes | {fp_rec} |",
-         f"| **Recall relatif (indicatif)** | **{rec:.0%}** |", ""]
+         f"| **Recall relatif (adjuge)** | **{rec:.0%}** |", ""]
 
     L += [f"## Precision automatique — {ent.name} extrait vs source", "",
           "| Extrait | Trouve (algo) ? | Extrait de la source |", "|---|:---:|---|"]
@@ -252,7 +276,11 @@ def render_summary(ent, rows):
     UNREVP = T("unrev_p"); MISS, FPR, TODOR = T("real_miss"), T("fp_rec"), T("todo_rec")
     pa = TP / N if N else 1.0
     pv = COR / N if N else 1.0
-    rec = COR / (COR + MISS) if (COR + MISS) else 1.0
+    den = COR + MISS + TODOR                 # candidats non adjuges = oublis (plancher)
+    rec = COR / den if den else 1.0
+    CAND = MISS + FPR + TODOR                # tous les candidats bruts du script
+    den_brut = COR + CAND
+    rec_brut = COR / den_brut if den_brut else 1.0
     L = [f"# Recap validation {ent.name.upper()} (source unique, verif manuelle)", "",
          f"Articles avec extraction : **{sum(1 for r in rows if r[1]['n'])}**", "",
          "| Article | Extr | TP auto | Prec.auto | Valid | Condamn | Prec.verif | Oublis | FP recall |",
@@ -270,10 +298,12 @@ def render_summary(ent, rows):
           f"| Condamnes (trouves mais faux) | {CON} |",
           f"| Precision — ratés encore a verifier | {UNREVP} |",
           f"| **Precision verifiee (micro)** | **{pv:.1%}** |",
+          f"| Recall — candidats bruts (script) | {CAND} |",
+          f"| **Recall BRUT (avant adjudication, micro)** | **{rec_brut:.1%}** |",
           f"| Recall — vrais oublis | {MISS} |",
           f"| Recall — faux positifs ecartes | {FPR} |",
           f"| Recall — candidats encore a verifier | {TODOR} |",
-          f"| **Recall relatif (indicatif, micro)** | **{rec:.1%}** |", "",
+          f"| **Recall relatif ADJUGE (micro)** | **{rec:.1%}** |", "",
           "> Vocab de recall = uniquement les items VERIFIES CORRECTS : une extraction "
           "fausse (hallucination / mauvais type) ne contamine pas le vocab et ne genere "
           "pas de faux candidats ailleurs. Precision auto = matcher deterministe non taille "
@@ -321,6 +351,11 @@ def run(ent):
     print(f"Precision AUTO     = {TP/N if N else 1.0:.1%} (trouves {TP})")
     print(f"Precision VERIFIEE = {COR/N if N else 1.0:.1%} "
           f"(a verifier precision={TODO})")
-    print(f"Recall relatif     = {COR/(COR+MISS) if (COR+MISS) else 1.0:.1%} "
-          f"(oublis={MISS}, candidats a verifier={TODOR})")
+    FPR = sum(s["fp_rec"] for _, s in summary_rows)
+    CAND = MISS + FPR + TODOR
+    DENB = COR + CAND
+    DEN = COR + MISS + TODOR
+    print(f"Recall BRUT        = {COR/DENB if DENB else 1.0:.1%} (candidats bruts={CAND})")
+    print(f"Recall ADJUGE      = {COR/DEN if DEN else 1.0:.1%} "
+          f"(vrais FN={MISS}, FP ecartes={FPR}, a verifier={TODOR})")
     return summary_rows

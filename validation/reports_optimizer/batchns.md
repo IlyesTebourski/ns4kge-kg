@@ -11,9 +11,11 @@
 | Condamnes (trouves mais faux) | 0 |
 | Vraies erreurs / non verifies | 0 |
 | **Precision verifiee** | **100%** |
+| Recall — candidats bruts (script) | 2 |
+| Recall BRUT (avant adjudication) | 33% |
 | Recall — vrais oublis | 0 |
-| Recall — faux positifs ecartes | 0 |
-| **Recall relatif (indicatif)** | **100%** |
+| Recall — faux positifs ecartes | 2 |
+| **Recall relatif (adjuge)** | **100%** |
 
 ## Precision automatique — Optimizer extrait vs source
 
@@ -25,5 +27,5 @@
 
 | Item | Verdict | Extrait / justification |
 |---|:---:|---|
-| Adam | ⚠️ A VERIFIER | : A LARGE-SCALE GRAPH EMBEDDING SYSTEM Adam Lerer <sup>1</sup> Ledell Wu <sup>1</su |
-| SGD | ⚠️ A VERIFIER | parameters are performed via minibatch stochastic gradient descent (SGD). We use the Adagrad optimizer, an |
+| Adam | ✅ faux positif (ignore) | 'Adam Lerer'/'Adam Fisch' = prenoms d'auteurs. |
+| SGD | ✅ faux positif (ignore) | SGD = cadre ; l'optimizer concret AdaGrad est extrait. |

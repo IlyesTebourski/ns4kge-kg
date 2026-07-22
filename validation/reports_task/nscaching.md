@@ -11,9 +11,11 @@
 | Condamnes (trouves mais faux) | 0 |
 | Vraies erreurs / non verifies | 0 |
 | **Precision verifiee** | **100%** |
-| Recall — vrais oublis | 0 |
+| Recall — candidats bruts (script) | 1 |
+| Recall BRUT (avant adjudication) | 67% |
+| Recall — vrais oublis | 1 |
 | Recall — faux positifs ecartes | 0 |
-| **Recall relatif (indicatif)** | **100%** |
+| **Recall relatif (adjuge)** | **67%** |
 
 ## Precision automatique — Task extrait vs source
 
@@ -26,4 +28,4 @@
 
 | Item | Verdict | Extrait / justification |
 |---|:---:|---|
-| Relation Prediction | ⚠️ A VERIFIER | RISON OF VARIOUS ALGORITHMS ON TASKS OF RELATION PREDICTION AND TRIPLET CLASSIFICATION. ### C. |
+| Relation Prediction | ❌ vrai oubli | TABLE V COMPARISON ... ON TASKS OF RELATION PREDICTION AND TRIPLET CLASSIFICATION : vraie experience d'appendice non extraite. |

@@ -9,7 +9,7 @@
 | Precision evalues | 100% | 
 | Precision mentionnes | 100% |
 | Recall evalues | 100% |
-| Recall mentionnes | 60% |
+| Recall mentionnes | 100% |
 
 ## A. Methodes EVALUEES (valides vs `tables_only`)
 
@@ -31,7 +31,4 @@ _Aucun._
 
 ## C2. Recall MENTIONNES — en prose seulement mais non extrait
 
-| Methode | Ou | Via | Extrait |
-|---|---|:---:|---|
-| Adversarial Negative Sampling | prose | name | learning framework based on Generative Adversarial Networks (GAN). In this GAN-based frame |
-| Simple Negative Sampling | prose | name | iveness of our method on simple models. Simple models generalize well to test set, and |
+_Aucun._

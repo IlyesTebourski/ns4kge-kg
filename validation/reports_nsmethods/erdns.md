@@ -8,8 +8,8 @@
 | Methodes MENTIONNEES seulement (prose) | 3 |
 | Precision evalues | 100% | 
 | Precision mentionnes | 100% |
-| Recall evalues | 78% |
-| Recall mentionnes | 60% |
+| Recall evalues | 100% |
+| Recall mentionnes | 100% |
 
 ## A. Methodes EVALUEES (valides vs `tables_only`)
 
@@ -33,14 +33,11 @@
 
 ## C1. Recall EVALUES — dans un tableau mais non extrait
 
-| Methode | Ou | Via | Extrait |
-|---|---|:---:|---|
-| Frequency-based Negative Sampling | table | name | <th>Sorted ER ID</th> <th>Frequency</th> </tr> </thead> <tbody> |
-| Self Negative Sampling | prose+table | name | egative samples in the loss function in Self-Adv [21] and SANS [1]. However, these a |
+_Aucun._
 
 ## C2. Recall MENTIONNES — en prose seulement mais non extrait
 
 | Methode | Ou | Via | Extrait |
 |---|---|:---:|---|
-| Simple Negative Sampling | prose | name | ples and lower scores to negative ones. Simple negative sampling methods like uniform |
+| Simple Negative Sampling | prose | name | ples and lower scores to negative ones. Simple negative sampling methods like uniform sampling [2] gener |
 | Self-adversarial Negative Sampling | prose | acro | the loss function in Self-Adv [21] and SANS [1]. However, these approaches primaril |

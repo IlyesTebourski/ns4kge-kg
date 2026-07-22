@@ -9,10 +9,12 @@
 | **Precision globale** | **93%** |
 | Precision (evalues, vs tableaux) | 92% |
 | Precision (mentionnes, vs prose) | 100% |
-| Candidats evaluations ratees (en tableau, non extrait) | 0 |
-| Candidats mentions ratees (en prose, non extrait) | 1 |
-| Recall relatif *evalues* | 100% |
-| Recall relatif *mentionnes* | 75% |
+| Candidats evaluations ratees (bruts) | 0 |
+| Candidats mentions ratees (bruts) | 2 |
+| Recall BRUT evalues / mentionnes | 100% / 60% |
+| Vrais oublis (adjuges) evalues / mentionnes | 0 / 0 |
+| Recall ADJUGE *evalues* | 100% |
+| Recall ADJUGE *mentionnes* | 100% |
 
 ## A. Modeles EVALUES — extraits des tableaux (valides vs `tables_only`)
 
@@ -47,4 +49,5 @@ _Aucun._
 
 | Modele | Ou | Extrait |
 |---|---|---|
+| Attention | prose | inal embedded model. A knowledge-guided attention mechanism was introduced by [20], and t |
 | BERT | prose | pre-trained models to tackle issues. KG-BERT [14], for instance, is a BERT-based kno |

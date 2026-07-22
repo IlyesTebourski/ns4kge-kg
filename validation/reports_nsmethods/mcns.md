@@ -9,7 +9,7 @@
 | Precision evalues | 100% | 
 | Precision mentionnes | 100% |
 | Recall evalues | 100% |
-| Recall mentionnes | 25% |
+| Recall mentionnes | 50% |
 
 ## A. Methodes EVALUEES (valides vs `tables_only`)
 
@@ -39,6 +39,6 @@ _Aucun._
 
 | Methode | Ou | Via | Extrait |
 |---|---|:---:|---|
-| Bernoulli Negative Sampling | prose | name | or each $(u, v)$ pair, if we define two Bernoulli distributions $P_{u,v}(x)$ where $P_{u, |
-| GAN-based Negative Sampling | prose | name | on layers [17] to attention-based [34], GAN-based [8], sampled aggregator [13] and |
-| Gibbs Negative Sampling | prose | name | between two distributions. According to Gibbs Inequality, the maximizer of $L^{(v)}$ |
+| GAN-based Negative Sampling | prose | name | rsonalized PageRank (PinSAGE [40]). * **GAN-based Negative Sampling.** IRGAN [35] trains generative adversa |
+| Importance Sampling | prose | name | ive field expansion. FastGCN [5] adopts importance sampling in each layer. **Negative Sampling.** |
+| Noise contrastive estimation | prose | name | arning can be unified within a *Sampled Noise Contrastive Estimation* (SampledNCE) framework (§ 2), comprisi |

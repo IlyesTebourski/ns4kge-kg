@@ -11,9 +11,11 @@
 | Condamnes (trouves mais faux) | 0 |
 | Vraies erreurs / non verifies | 0 |
 | **Precision verifiee** | **100%** |
+| Recall — candidats bruts (script) | 2 |
+| Recall BRUT (avant adjudication) | 60% |
 | Recall — vrais oublis | 0 |
-| Recall — faux positifs ecartes | 0 |
-| **Recall relatif (indicatif)** | **100%** |
+| Recall — faux positifs ecartes | 2 |
+| **Recall relatif (adjuge)** | **100%** |
 
 ## Precision automatique — LossFunction extrait vs source
 
@@ -27,5 +29,5 @@
 
 | Item | Verdict | Extrait / justification |
 |---|:---:|---|
-| cross-entropy | ⚠️ A VERIFIER | loss is proposed to approximate softmax cross-entropy loss to reduce computational costs by s |
-| cross-entropy loss | ⚠️ A VERIFIER | loss is proposed to approximate softmax cross-entropy loss to reduce computational costs by sampli |
+| cross-entropy | ✅ faux positif (ignore) | Historique de la NS loss (Mikolov). |
+| cross-entropy loss | ✅ faux positif (ignore) | Meme passage historique. |

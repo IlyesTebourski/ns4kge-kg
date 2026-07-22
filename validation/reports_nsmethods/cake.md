@@ -8,8 +8,8 @@
 | Methodes MENTIONNEES seulement (prose) | 2 |
 | Precision evalues | 100% | 
 | Precision mentionnes | 100% |
-| Recall evalues | 89% |
-| Recall mentionnes | 33% |
+| Recall evalues | 100% |
+| Recall mentionnes | 100% |
 
 ## A. Methodes EVALUEES (valides vs `tables_only`)
 
@@ -41,7 +41,4 @@
 
 | Methode | Ou | Via | Extrait |
 |---|---|:---:|---|
-| Adversarial Negative Sampling | prose | name | m distribution (Wang et al., 2014). (2) Adversarial-based sampling: KBGAN (Cai and Wang, 20 |
-| GAN-based Negative Sampling | prose | name | oduces generative adversarial networks (GAN) in the NS framework, making the origin |
 | NS-KGE | prose | name | iciency of sampling. (5) None-sampling: NS-KGE (Li et al., 2021) eliminates the NS pro |
-| Self Negative Sampling | prose | name | s in an adversarial training framework. Self-adversarial sampling (Sun et al., 2019) |

@@ -11,9 +11,11 @@
 | Condamnes (trouves mais faux) | 0 |
 | Vraies erreurs / non verifies | 0 |
 | **Precision verifiee** | **100%** |
+| Recall — candidats bruts (script) | 3 |
+| Recall BRUT (avant adjudication) | 40% |
 | Recall — vrais oublis | 0 |
-| Recall — faux positifs ecartes | 0 |
-| **Recall relatif (indicatif)** | **100%** |
+| Recall — faux positifs ecartes | 3 |
+| **Recall relatif (adjuge)** | **100%** |
 
 ## Precision automatique — LossFunction extrait vs source
 
@@ -26,8 +28,6 @@
 
 | Item | Verdict | Extrait / justification |
 |---|:---:|---|
-| binary cross-entropy loss | ⚠️ A VERIFIER | defined margin. Thus, we substitute the binary cross-entropy loss as a γ-skewed hinge loss, $$L = \max(0 |
-| margin-based ranking loss | ⚠️ A VERIFIER | k nodes with 1/2 probability each. The hinge loss pulls positive node pairs closer and pu |
-| marginal loss | ⚠️ A VERIFIER | k nodes with 1/2 probability each. The hinge loss pulls positive node pairs closer and pu |
-| mean squared error | ⚠️ A VERIFIER | $\square$ According to Theorem 2, the mean squared error, aka risk, of $\vec{u}^\top \vec{v}$ is |
-| pairwise ranking loss | ⚠️ A VERIFIER | k nodes with 1/2 probability each. The hinge loss pulls positive node pairs closer and pu |
+| binary cross-entropy loss | ✅ faux positif (ignore) | Loss substituee ('we substitute the BCE as a gamma-skewed hinge loss'). |
+| margin-based ranking loss | ✅ faux positif (ignore) | Matche la hinge deja extraite sous 'skewed hinge loss'. |
+| mean squared error | ✅ faux positif (ignore) | Borne theorique ('aka risk'), pas une loss. |

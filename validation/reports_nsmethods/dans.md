@@ -8,8 +8,8 @@
 | Methodes MENTIONNEES seulement (prose) | 3 |
 | Precision evalues | 90% | 
 | Precision mentionnes | 100% |
-| Recall evalues | 82% |
-| Recall mentionnes | 43% |
+| Recall evalues | 100% |
+| Recall mentionnes | 100% |
 
 ## A. Methodes EVALUEES (valides vs `tables_only`)
 
@@ -39,13 +39,14 @@
 | Methode | Ou | Via | Extrait |
 |---|---|:---:|---|
 | SANS | prose+table | name | hood of positive examples. For example, SANS [1] hypothesizes that entities that are |
-| Self Negative Sampling | prose+table | name | ng with popularity-weighted sampling; **Self-adv** [28]: a self-adversarial negative |
+| Self-Adv | prose+table | name | ng with popularity-weighted sampling; **Self-adv** [28]: a self-adversarial negative sam |
 
 ## C2. Recall MENTIONNES — en prose seulement mais non extrait
 
 | Methode | Ou | Via | Extrait |
 |---|---|:---:|---|
-| Adaptive Negative Sampling | prose | name | [cs.AI] 26 Oct 2025 # Diversified and Adaptive Negative Sampling on Knowledge Graphs |
-| Adversarial Negative Sampling | prose | name | }}, \Theta_{D_{\text{Aux}}}\}$. ## 3.4 Adversarial training Lastly, we train the generato |
-| GAN-based Negative Sampling | prose | name | adopt a generative adversarial network (GAN) [30] for the generation of negative sa |
-| Self-Adv | prose | name | d other negative samplers (Random, Pop, Self-Adv and MCNS) employ RGCN [26] as the backb |
+| Adaptive Negative Sampling | prose | name | [cs.AI] 26 Oct 2025 # Diversified and Adaptive Negative Sampling on Knowledge Graphs Ran Liu¹, Zhongzho |
+| Adversarial Negative Sampling | prose | name | ted sampling; **Self-adv** [28]: a self-adversarial negative sampling methodology; **MCNS** [36]: a model whi |
+| GAN-based Negative Sampling | prose | name | o significant differences from previous GAN-based negative sampling on the knowledge graph. First, we desig |
+| Importance Sampling | prose | name | 0], reinforcement learn- ing [31], and importance sampling [39]. These methods provide a more expl |
+| Uniform Random Sampling | prose | name | ten negative triplets are obtained via uniform random sampling to further increase the diversity. In a |

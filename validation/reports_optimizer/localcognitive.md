@@ -11,9 +11,11 @@
 | Condamnes (trouves mais faux) | 0 |
 | Vraies erreurs / non verifies | 0 |
 | **Precision verifiee** | **100%** |
+| Recall — candidats bruts (script) | 1 |
+| Recall BRUT (avant adjudication) | 50% |
 | Recall — vrais oublis | 0 |
-| Recall — faux positifs ecartes | 0 |
-| **Recall relatif (indicatif)** | **100%** |
+| Recall — faux positifs ecartes | 1 |
+| **Recall relatif (adjuge)** | **100%** |
 
 ## Precision automatique — Optimizer extrait vs source
 
@@ -25,4 +27,4 @@
 
 | Item | Verdict | Extrait / justification |
 |---|:---:|---|
-| SGD | ⚠️ A VERIFIER | a single Titan V GPU. We use minibatch SGD with Adam optimizer, where the learning |
+| SGD | ✅ faux positif (ignore) | 'minibatch SGD with Adam optimizer' : Adam extrait. |

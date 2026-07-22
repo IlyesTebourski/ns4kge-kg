@@ -1,0 +1,105 @@
+entite,article,candidat,verdict,justification
+NS-mentionnes,adaptativens,Subsampling,FP,"Titre 'Adaptive Negative Subsampling' = methode propre extraite ('Adaptive NS'), granularite."
+NS-mentionnes,asa,Adversarial Negative Sampling,FP,Partiel de 'adaptive self-adversarial negative sampling' (methode propre extraite).
+NS-mentionnes,asa,Noise contrastive estimation,FN,"'unified within a sampled noise contrastive estimation framework (Yang et al.)' : approche NS citee, non extraite."
+NS-evalues,cake,CANS,FP,Ligne 'TransE+CANS' = 'Commonsense-Aware Negative Sampling' extraite (acronyme vs nom complet).
+NS-mentionnes,cake,NS-KGE,FP,"'None-sampling: NS-KGE (Li et al., 2021)' : concept capture par 'None Sampling' extrait du meme passage."
+NS-evalues,cans,CKRL (40%),FN,Lignes de resultats 'CKRL(LT)'/'CKRL' avec scores : baseline evaluee non extraite (extraits: Bernoulli/Confidence-Aware/Uniform).
+NS-mentionnes,ccs,Dynamic Distribution Sampling,FP,'divided into... fixed distribution sampling and dynamic distribution sampling' = categorie.
+NS-mentionnes,ccs,IGAN,FN,'IGAN [40] and Kbgan [41] both introduce GAN for negative sampling' : Kbgan extrait mais PAS IGAN.
+NS-mentionnes,conceptdriven,CAKE,FN,'[2] proposes a detachable Commonsense-Aware Knowledge Embedding (CAKE) framework' : framework cite ; CANS extraite mais pas CAKE.
+NS-evalues,conceptdriven,CANS,FP,Ligne '+CANS' = 'Commonsense-Aware Negative Sampling' extraite.
+NS-mentionnes,conceptdriven,Domain-based Negative Sampling,FP,'concept domain negative sampling (CDNS)' : 'Concept Domain NS' extraite.
+NS-mentionnes,conceptdriven,MVLP,FP,"'multi-view link prediction (MVLP) module' = module de LINK PREDICTION, pas une methode NS."
+NS-mentionnes,dans,Adaptive Negative Sampling,FP,Titre/methode propre 'Diversified and Adaptive NS' extraite (partiel).
+NS-mentionnes,dans,Adversarial Negative Sampling,FP,Partiel de 'self-adversarial negative sampling' ('Self-adversarial NS' extraite).
+NS-mentionnes,dans,GAN-based Negative Sampling,FP,'previous GAN-based negative sampling' = categorie (KBGAN/IGAN/HeGAN extraits).
+NS-mentionnes,dans,Importance Sampling,FP,"'learning strategies including GANs, RL, and importance sampling [39]' = categorie de techniques."
+NS-evalues,dans,SANS,FP,Ligne 'SANS-RW' : SANS extraite sous 'Structure-Aware Negative Sampling' (variante RW = granularite).
+NS-evalues,dans,Self-Adv,FP,Ligne 'Self-adv' = 'Self-adversarial Negative Sampling' extraite.
+NS-mentionnes,dans,Uniform Random Sampling,FP,'via uniform random sampling' : 'Random Negative Sampling' extraite.
+NS-mentionnes,demix,Adversarial Negative Sampling,FP,Partiel de 'self-adversarial negative sampling' ('Self-adversarial Sampling' extraite).
+NS-mentionnes,demix,CAKE,FN,'The CANS is a component of CAKE [16]' : CANS extraite mais pas CAKE.
+NS-mentionnes,demix,MixGCF,FN,"'MixGCF [13] integrates multiple negative samples...' : mention reelle (MixKG extrait, PAS MixGCF)."
+NS-evalues,demix,SANS,FP,Ligne 'TransE+RW-SANS' : 'RW-SANS' extraite.
+NS-evalues,demix,Self-Adv,FP,Ligne 'TransE+Self-Adv' = 'Self-adversarial Sampling' extraite.
+NS-evalues,demix,Commonsense-Aware Negative Sampling,FP,Ligne 'TransE+CANS' : 'CANS' extraite (nom complet vs acronyme).
+NS-evalues,dhns,Self-adversarial Negative Sampling,FP,Ligne 'SANS' du tableau = la methode SANS extraite ; collision d'acronyme avec Self-adversarial.
+NS-evalues,dmns,DMNS,FP,Ligne 'DMNS' = methode propre extraite sous 'Conditional Diffusion-based Multi-level Negative Sampling'.
+NS-mentionnes,dmns,Noise contrastive estimation,FN,"'many methods follow the noise contrastive estimation approach [13]' : approche citee, non extraite."
+NS-mentionnes,dmns,SANS,FN,"'On graphs, SANS [2] select negative examples from k-hop neighborhoods' : mention reelle, non extraite."
+NS-mentionnes,dns,Local-Closed World Assumption Negative Sampling,FP,Assomption LCWA fondant la corruption aleatoire ; methode operationnelle ('Random NS') extraite.
+NS-mentionnes,eans,Adversarial Negative Sampling,FP,Partiel ('Self-Adversarial NS' extraite).
+NS-evalues,eans,EANS,FP,Ligne 'EANS (ours)' = 'Entity Aware Negative Sampling' extraite.
+NS-mentionnes,eans,Random Negative Sampling,FP,'uniform random negative sampling method' : 'Uniform NS' extraite.
+NS-evalues,eans,Self-Adv,FP,Ligne 'Self-adv.(Sun et al.)' = 'Self-Adversarial Negative Sampling' extraite.
+NS-mentionnes,eans,Uniform Random Sampling,FP,'a uniform random sampling method' : 'Uniform NS' extraite.
+NS-evalues,eans,Structure-Aware Negative Sampling,FP,Ligne 'SANS + Self-adv.' : 'SANS' extraite (acronyme).
+NS-mentionnes,erdns,Simple Negative Sampling,FP,'Simple negative sampling methods like uniform sampling' = adjectif.
+NS-mentionnes,erdns,Self-adversarial Negative Sampling,FP,"Extraite sous 'Self-Adv' (acronymes [21],[1] du texte)."
+NS-evalues,ghn,Nearest Neighbor Sampling,FP,Ablation 'NN' = 'Approximate Nearest Neighbor Negative Sampling' extraite.
+NS-mentionnes,gibbsns,Entity Similarity-based Negative Sampling,FN,"'semantic related NS models, such as..., entity similarity-based negative sampling' : methode citee (ESNS, Yao et al.), non extraite."
+NS-mentionnes,gibbsns,IGAN,FN,"'IGAN [19] designed a generator and performed advanced negative sampling' : mention reelle, non extraite."
+NS-mentionnes,gibbsns,Random Negative Sampling,FP,'uniform random negative sampling' : 'Uniform Random NS' extraite.
+NS-mentionnes,gibbsns,Static Sampling,FP,'static negative sampling methods' = categorie.
+NS-evalues,gibbsns,Entity-Aware Negative Sampling,FP,Ligne 'EANS' : 'EANS' extraite (acronyme) ; le vocab nom-complet collisionne.
+NS-mentionnes,gns,Corrupting Positive Instances,FP,Description de la meme approche [10] deja comptee via le FN LCWA (pas de double compte).
+NS-mentionnes,gns,Local-Closed World Assumption Negative Sampling,FN,"'a Local-Closed World Assumption (LCWA) approach [10] assumes...' : approche NS citee et discutee, non extraite."
+NS-mentionnes,graphgan,IRGAN,FN,"'different with IRGAN (Wang et al. 2017a), the design of graph softmax...' : comparaison reelle, extraits vides."
+NS-mentionnes,hasa,Importance Sampling,FP,'approximated via importance sampling' = technique mathematique de leur derivation.
+NS-mentionnes,htens,Dynamic Distribution Sampling,FP,'dynamic distribution based sampling methods' = categorie.
+NS-mentionnes,kbgan,IRGAN,FN,"'IRGAN (Wang et al., 2017) is a recent work which combines...' : related work reel, non extrait."
+NS-mentionnes,las,Adaptive Negative Sampling,FP,'the loss adaptive negative sampling approach' = LAS extraite ('Loss Adaptive Sampling').
+NS-mentionnes,las,Adversarial Negative Sampling,FP,'LAS is a... adversarial negative sampling approach' = descripteur de LAS extraite ('Loss Adaptive Sampling').
+NS-mentionnes,las,Random Negative Sampling,FP,'random negative sampling would cause...' : 'Uniform Random NS' extraite.
+NS-mentionnes,las,Static Sampling,FP,"'the static negative sampling models, nearest-neighbour and near-miss' = categorie ; les methodes citees sont extraites."
+NS-evalues,lemon,RW-SANS,FP,'Uniform RW-SANS [2]' en table de COMPLEXITE ; 'Uniform RW-SANS' extraite.
+NS-evalues,lemon,SANS,FP,Table de complexite ; SANS extraite sous 'Structure-aware Negative Sampling'.
+NS-evalues,lemon,Self-Adv,FP,'Self-Adv. [15]' en table de complexite (ni resultats ni prose) ; variantes Self-Adv. SANS extraites.
+NS-mentionnes,localcognitive,Adversarial Negative Sampling,FP,Partiel ('Self-adversarial negative sampling' extraite).
+NS-evalues,localcognitive,Self-Adv,FP,Ablation 'w/o self-adv' : 'Self-adversarial negative sampling' extraite.
+NS-mentionnes,m2ixkg,Dynamic Negative Sampling,FP,'fixed negative sampling and dynamic negative sampling' = categorie.
+NS-mentionnes,m2ixkg,MixGCF,FN,"'MixGCF [Huang et al., 2021] uses positive mixing and hop mixing' : mention reelle, non extraite."
+NS-mentionnes,m2ixkg,Simple Negative Sampling,FP,'rely on simple negative sampling methods' = adjectif.
+NS-evalues,m2ixkg,Uniform RW-SANS,FP,"Ligne couverte par 'RW-SANS' extraite (prefixe Uniform = base NS, granularite)."
+NS-evalues,m2ixkg,Uniform SANS,FP,Ligne couverte par 'SANS' extraite (granularite).
+NS-mentionnes,m2ixkg,Self-adversarial Negative Sampling,FP,"Collision d'acronyme : 'SANS [Ahrabian]' = Structure-Aware, extraite sous 'SANS'."
+NS-mentionnes,mcns,GAN-based Negative Sampling,FP,En-tete de categorie ; IRGAN/KBGAN extraits.
+NS-mentionnes,mcns,Importance Sampling,FP,"'FastGCN adopts importance sampling in each layer' = technique GNN, pas une NS de KGE."
+NS-mentionnes,mcns,Noise contrastive estimation,FN,"'unified within a Sampled Noise Contrastive Estimation (SampledNCE) framework' : cadre CENTRAL du papier, non extrait."
+NS-mentionnes,mdncaching,Dynamic Distribution Sampling,FP,'MDNCaching is a dynamic distribution-based NS strategy' = descripteur de la methode propre extraite.
+NS-mentionnes,mdncaching,Dynamic Negative Sampling,FP,'the dynamic negative sampling techniques were introduced' = categorie.
+NS-mentionnes,mdncaching,GAN-based Negative Sampling,FP,'GAN based NS strategies IGAN and KBGAN' = categorie ; methodes extraites.
+NS-mentionnes,mdncaching,Importance Sampling,FP,'updating the cache using importance sampling' = composant de NSCaching (extraite).
+NS-evalues,mdncaching,MDNCaching,FP,Ligne 'MDNCaching' = methode propre extraite sous 'Matrix Decomposed Negative Caching'.
+NS-evalues,mdncaching,SANS,FP,'SANS [1]' : extraite sous 'Structure Aware Negative Sampling'.
+NS-mentionnes,nmiss,Nearest-neighbour Sampling,FP,'nearest neighbour sampling' : extraite sous 'Nearest Neighbor Sampling' (orthographe).
+NS-mentionnes,nscaching,Cache-based Negative Sampling,FP,'our cache-based negative sampling scheme' = descripteur de NSCaching (extraite).
+NS-mentionnes,nscaching,Importance Sampling,FP,'we design importance sampling (IS) strategy to update the cache' = composant de NSCaching (extraite).
+NS-mentionnes,rcwc,Adversarial Negative Sampling,FP,Partiel ('Self-Adversarial NS' extraite).
+NS-mentionnes,reasonkge,Iterative Negative Sampling,FP,Titre de section de LEUR methode (ReasonKGE extraite).
+NS-mentionnes,reasonkge,SANS,FP,'structure-aware negative sampling (SANS)' : extraite sous le nom complet.
+NS-mentionnes,reasonkge,Local-Closed World Assumption Negative Sampling,FP,Discussion definitionnelle CWA/LCWA (assomption).
+NS-evalues,sans,Adversarial Negative Sampling,FP,Match partiel dans 'Self-Adversarial negative sampling' ('Self-Adversarial NS' extraite).
+NS-mentionnes,sans,Importance Sampling,FP,'partition function used in Importance Sampling (Bengio et al. 2003)' = historique NCE en LM.
+NS-evalues,sans,RW-SANS,FP,'Uniform RW-SANS (ours)' : extraite sous 'Uniform Random Walk Structure Aware NS'.
+NS-evalues,sans,SANS,FP,Extraite sous 'Structure Aware Negative Sampling' (acronyme du tableau).
+NS-evalues,sans,Self-Adv,FP,'Self-Adv. (Sun et al.)' : 'Self-Adversarial Negative Sampling' extraite.
+NS-evalues,sans,Self-Adv. RW-SANS,FP,Extraite sous 'Self-Adversarial Random Walk Structure Aware NS'.
+NS-evalues,sans,Self-Adv. SANS,FP,Extraite sous 'Self-Adversarial Structure Aware NS'.
+NS-evalues,sans,Uniform SANS,FP,Extraite sous 'Uniform Structure Aware NS'.
+NS-evalues,selfadv,Adversarial Negative Sampling,FP,Match partiel dans 'self-adversarial negative sampling technique' (extraite).
+NS-mentionnes,sns,Good Negative Sampling,FP,'still lacks a good negative sampling method' = adjectif anglais.
+NS-mentionnes,sns,SANS,FP,'structure aware negative sampling(SANS)' : extraite sous le nom complet.
+NS-mentionnes,stc,Local-Closed World Assumption Negative Sampling,FN,"'we also FOLLOW the LCWA proposed in [Krompass] as a supplementary method' : methode UTILISEE par le papier, non extraite."
+NS-mentionnes,tans,Adaptive Negative Sampling,FP,Partiel de 'Triplet Adaptive Negative Sampling' extraite.
+NS-mentionnes,tans,Adversarial Negative Sampling,FP,Partiel de 'Self-Adversarial Negative Sampling (SANS)' extraite.
+NS-evalues,tans,SANS,FP,Colonne 'SANS' = abreviation du papier pour 'Self-Adversarial Negative Sampling' extraite.
+NS-evalues,tans,Subsampling,FP,Table analytique ; variantes 'Base/Frequency/Unique-based subsampling' extraites.
+NS-mentionnes,tuckerdncaching,Dynamic Distribution Sampling,FP,'previous dynamic distribution-based NS methods' = categorie.
+NS-mentionnes,tuckerdncaching,Dynamic Negative Sampling,FP,"'previous dynamic NS methods IGAN, KBGAN, KSGAN' = categorie (methodes extraites)."
+NS-mentionnes,tuckerdncaching,ESNS,FP,'Entity Similarity-based NS (ESNS)' : extraite sous le nom complet.
+NS-mentionnes,tuckerdncaching,SANS,FP,'Structure Aware Negative Sampling (SANS)' : extraite sous le nom complet.
+NS-mentionnes,tuckerdncaching,Self-Adv,FP,'self-adversarial Self-Adv sampling (RotatE)' : 'Self-Adversarial NS' extraite.
+NS-mentionnes,typeaugmented,Adversarial Negative Sampling,FP,Partiel ('Self-adversarial negative sampling' extraite).
+NS-mentionnes,sans,Uniform RW-SANS,FP,Figure 2 'Uniform RW-SANS with TransE' : extraite sous 'Uniform Random Walk Structure Aware Negative Sampling'.

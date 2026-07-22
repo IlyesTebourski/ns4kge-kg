@@ -11,9 +11,11 @@
 | Condamnes (trouves mais faux) | 0 |
 | Vraies erreurs / non verifies | 1 |
 | **Precision verifiee** | **0%** |
-| Recall — vrais oublis | 0 |
+| Recall — candidats bruts (script) | 1 |
+| Recall BRUT (avant adjudication) | 0% |
+| Recall — vrais oublis | 1 |
 | Recall — faux positifs ecartes | 0 |
-| **Recall relatif (indicatif)** | **100%** |
+| **Recall relatif (adjuge)** | **0%** |
 
 ## Precision automatique — Task extrait vs source
 
@@ -33,4 +35,4 @@ Chaque ecart avec la source est verifie a la main. Un item non imputable au KG e
 
 | Item | Verdict | Extrait / justification |
 |---|:---:|---|
-| Relation Prediction | ⚠️ A VERIFIER | escribes an end-to-end solution for the relationship prediction task in heterogeneous, multi-relational |
+| Relation Prediction | ❌ vrai oubli | Task PRINCIPALE du papier ('end-to-end solution for the relationship prediction task', resultats SOTA dessus) ; configs = Link Prediction. |

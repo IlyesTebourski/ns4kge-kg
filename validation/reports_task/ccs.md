@@ -11,9 +11,11 @@
 | Condamnes (trouves mais faux) | 0 |
 | Vraies erreurs / non verifies | 0 |
 | **Precision verifiee** | **100%** |
+| Recall — candidats bruts (script) | 1 |
+| Recall BRUT (avant adjudication) | 50% |
 | Recall — vrais oublis | 0 |
-| Recall — faux positifs ecartes | 0 |
-| **Recall relatif (indicatif)** | **100%** |
+| Recall — faux positifs ecartes | 1 |
+| **Recall relatif (adjuge)** | **100%** |
 
 ## Precision automatique — Task extrait vs source
 
@@ -25,4 +27,4 @@
 
 | Item | Verdict | Extrait / justification |
 |---|:---:|---|
-| Relation Prediction | ⚠️ A VERIFIER | ompared with the TransE. For the 1-to-1 relation prediction, the head-entity forecast improved the |
+| Relation Prediction | ✅ faux positif (ignore) | Decoupage 1-to-1/1-to-N des resultats de LINK prediction. |

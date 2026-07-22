@@ -9,10 +9,12 @@
 | **Precision globale** | **100%** |
 | Precision (evalues, vs tableaux) | 100% |
 | Precision (mentionnes, vs prose) | 100% |
-| Candidats evaluations ratees (en tableau, non extrait) | 0 |
-| Candidats mentions ratees (en prose, non extrait) | 3 |
-| Recall relatif *evalues* | 100% |
-| Recall relatif *mentionnes* | 0% |
+| Candidats evaluations ratees (bruts) | 0 |
+| Candidats mentions ratees (bruts) | 3 |
+| Recall BRUT evalues / mentionnes | 100% / 0% |
+| Vrais oublis (adjuges) evalues / mentionnes | 0 / 1 |
+| Recall ADJUGE *evalues* | 100% |
+| Recall ADJUGE *mentionnes* | 0% |
 
 ## A. Modeles EVALUES — extraits des tableaux (valides vs `tables_only`)
 
@@ -39,6 +41,6 @@ _Aucun._
 
 | Modele | Ou | Extrait |
 |---|---|---|
-| GAN | prose | y in visual applications [8, 17]. While GAN-based models are successful in generati |
+| Attention | prose | unction such as mean-pooling [23], self-attention [45] or concatenation [14], $\sigma$ is |
 | GraphSAGE | prose | conduct experiments using GAT [45] and GraphSAGE (SAGE) [14]. For GCN, we employ two lay |
 | MLP | prose | $, followed by a multilayer perceptron (MLP). $\tau(\cdot; \theta)$ is a learnable |

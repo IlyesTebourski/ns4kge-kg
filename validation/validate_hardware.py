@@ -104,15 +104,16 @@ def is_distinctive(label):
 def name_pattern(label, ci=True):
     """Regex : tokens de contenu dans l'ordre, separateurs souples, avec les mots
     de specs generiques (GPU/RAM/cores...) TOLERES en liaison optionnelle. Matcher
-    GENERIQUE : aucune regle taillee pour un article donne."""
+    GENERIQUE : aucune regle taillee pour un article donne.
+    ci=True (precision) : tout insensible (inchange). ci=False (recall) : regle de
+    casse homogene VD.tok_regex — token stylise (V100, RTX) = casse exacte."""
     required = content_tokens(label) or tokens_cs(label)
     if not required:
         return None
     filler_alt = "|".join(sorted(GENERIC, key=len, reverse=True))
-    gap = SEP + r"(?:(?:" + filler_alt + r")" + SEP + r")*"
-    core = gap.join(re.escape(t) for t in required)
-    return re.compile(r"(?<![A-Za-z0-9])" + core + r"(?![A-Za-z0-9])",
-                      re.I if ci else 0)
+    gap = SEP + r"(?:(?i:" + filler_alt + r")" + SEP + r")*"
+    core = gap.join(VD.tok_regex(t, strict_case=not ci) for t in required)
+    return re.compile(r"(?<![A-Za-z0-9])" + core + r"(?![A-Za-z0-9])")
 
 
 def find(label, text, ci=True):
@@ -189,7 +190,7 @@ def load_articles():
             "slug": slug,
             "md_name": os.path.basename(md),
             "title": (data.get("Article", {}) or {}).get("title", slug),
-            "prose": load_md_no_tables(md),
+            "prose": VD.strip_references(load_md_no_tables(md)),
             "hardware": extracted_hardware(data),
         })
     return arts
@@ -228,14 +229,14 @@ def validate(article, vocab):
             fp += 1
 
     # RECALL : hardware du vocab global present dans la prose mais non extrait.
-    # Case-insensitive ; restreint aux entrees distinctives ; on ignore un candidat
-    # deja couvert par un hardware extrait plus detaille (ex. 'NVIDIA A100' tombant
-    # sur la prose 'NVIDIA A100-PCIE-40GB' que l'article A BIEN extraite).
+    # Regle de casse homogene (stylise = exact) ; restreint aux entrees distinctives ;
+    # on ignore un candidat deja couvert par un hardware extrait plus detaille (ex.
+    # 'NVIDIA A100' tombant sur la prose 'NVIDIA A100-PCIE-40GB' BIEN extraite).
     suspects = []
     for k, lab in sorted(vocab.items(), key=lambda kv: kv[1].lower()):
         if k in article["hardware"] or not is_distinctive(lab):
             continue
-        m = find(lab, prose, ci=True)
+        m = find(lab, prose, ci=False)
         if not m:
             continue
         if any(not (m.end() <= s or m.start() >= e) for s, e in extracted_spans):

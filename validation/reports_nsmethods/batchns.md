@@ -8,7 +8,7 @@
 | Methodes MENTIONNEES seulement (prose) | 1 |
 | Precision evalues | 100% | 
 | Precision mentionnes | 100% |
-| Recall evalues | 50% |
+| Recall evalues | 100% |
 | Recall mentionnes | 100% |
 
 ## A. Methodes EVALUEES (valides vs `tables_only`)
@@ -25,9 +25,7 @@
 
 ## C1. Recall EVALUES — dans un tableau mais non extrait
 
-| Methode | Ou | Via | Extrait |
-|---|---|:---:|---|
-| Filtered Negative Sampling | table | name | d</th> <th>Raw</th> <th>Filtered</th> <th>Hit@10</th> </tr> |
+_Aucun._
 
 ## C2. Recall MENTIONNES — en prose seulement mais non extrait
 

@@ -1,0 +1,6 @@
+entite,article,candidat,localisation,verdict,justification
+Datasets,cans,WN18,table sans caption (stats),FP,"Ligne 'WN18 | 18 | 40...' = table de STATISTIQUES du dataset source (nb relations/entites) dont derivent les variantes WN18-N1/N2/N3 evaluees et extraites. Caption absente -> classee resultats a tort."
+Datasets,conceptdriven,WN,en-tete de colonne,FP,"'WN.↑' = abreviation de colonne du dataset WN18RR deja extrait (le papier abrege WN18RR en 'WN.'). Pas un dataset distinct."
+Datasets,gns,FB13,table de stats,FP,"Meme cellule que l'extraction plus detaillee 'FB13 (FB13_reduced)' (deja extraite) ; table de statistiques que le prompt ignore."
+Datasets,noigan,Actor,contenu d'exemple,FP,"'(voice actor (filmmaking occupation)...' = contenu d'un triplet d'exemple dans une table de cas, pas un dataset."
+Datasets,uniform,Actor,contenu d'exemple,FP,"'Screen Actors Guild Award for Best Actor' = contenu de triplet d'exemple, pas un dataset."

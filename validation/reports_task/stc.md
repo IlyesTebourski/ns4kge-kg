@@ -11,9 +11,11 @@
 | Condamnes (trouves mais faux) | 0 |
 | Vraies erreurs / non verifies | 0 |
 | **Precision verifiee** | **100%** |
+| Recall — candidats bruts (script) | 1 |
+| Recall BRUT (avant adjudication) | 75% |
 | Recall — vrais oublis | 0 |
-| Recall — faux positifs ecartes | 0 |
-| **Recall relatif (indicatif)** | **100%** |
+| Recall — faux positifs ecartes | 1 |
+| **Recall relatif (adjuge)** | **100%** |
 
 ## Precision automatique — Task extrait vs source
 
@@ -27,4 +29,4 @@
 
 | Item | Verdict | Extrait / justification |
 |---|:---:|---|
-| Entity Alignment | ⚠️ A VERIFIER | ge encyclopedias like Wikipedia through entity alignment. These types are usually constructed wi |
+| Entity Alignment | ✅ faux positif (ignore) | Contexte sur la construction des infos de type via Wikipedia. |

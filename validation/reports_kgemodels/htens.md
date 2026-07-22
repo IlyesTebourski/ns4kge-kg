@@ -9,10 +9,12 @@
 | **Precision globale** | **100%** |
 | Precision (evalues, vs tableaux) | 100% |
 | Precision (mentionnes, vs prose) | 100% |
-| Candidats evaluations ratees (en tableau, non extrait) | 0 |
-| Candidats mentions ratees (en prose, non extrait) | 2 |
-| Recall relatif *evalues* | 100% |
-| Recall relatif *mentionnes* | 0% |
+| Candidats evaluations ratees (bruts) | 0 |
+| Candidats mentions ratees (bruts) | 1 |
+| Recall BRUT evalues / mentionnes | 100% / 0% |
+| Vrais oublis (adjuges) evalues / mentionnes | 0 / 1 |
+| Recall ADJUGE *evalues* | 100% |
+| Recall ADJUGE *mentionnes* | 0% |
 
 ## A. Modeles EVALUES — extraits des tableaux (valides vs `tables_only`)
 
@@ -35,5 +37,4 @@ _Aucun._
 
 | Modele | Ou | Extrait |
 |---|---|---|
-| GAN | prose | ntities as the training progresses. The GAN-based sampling methods, such as KBGAN[3 |
 | TKRL | prose | <sup>1</sup>https://github.com/thunlp/TKRL SIGIR ’23, July 23–27, 2023, Taipei, T |

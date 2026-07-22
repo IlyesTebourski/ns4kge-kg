@@ -8,8 +8,8 @@
 | Methodes MENTIONNEES seulement (prose) | 0 |
 | Precision evalues | 100% | 
 | Precision mentionnes | 100% |
-| Recall evalues | 67% |
-| Recall mentionnes | 0% |
+| Recall evalues | 100% |
+| Recall mentionnes | 100% |
 
 ## A. Methodes EVALUEES (valides vs `tables_only`)
 
@@ -24,14 +24,8 @@ _Aucune._
 
 ## C1. Recall EVALUES — dans un tableau mais non extrait
 
-| Methode | Ou | Via | Extrait |
-|---|---|:---:|---|
-| None Sampling | prose+table | name | tion-types was exploited by the model. *None* denotes in this case the original mode |
+_Aucun._
 
 ## C2. Recall MENTIONNES — en prose seulement mais non extrait
 
-| Methode | Ou | Via | Extrait |
-|---|---|:---:|---|
-| Bernoulli Negative Sampling | prose | name | The model is trained by minimizing the Bernoulli cost-function $$ \mathcal{L}_{mwNN} = |
-| Domain-based Negative Sampling | prose | name | earning with KGs can be found in [17]. Domain and range constraints as given by the K |
-| Simple Negative Sampling | prose | name | ## 5.2 Local Closed-World Assumption – Simple but Powerful From Tables 2, 3 and 4, i |
+_Aucun._

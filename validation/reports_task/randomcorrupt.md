@@ -11,9 +11,11 @@
 | Condamnes (trouves mais faux) | 0 |
 | Vraies erreurs / non verifies | 0 |
 | **Precision verifiee** | **100%** |
+| Recall — candidats bruts (script) | 1 |
+| Recall BRUT (avant adjudication) | 50% |
 | Recall — vrais oublis | 0 |
-| Recall — faux positifs ecartes | 0 |
-| **Recall relatif (indicatif)** | **100%** |
+| Recall — faux positifs ecartes | 1 |
+| **Recall relatif (adjuge)** | **100%** |
 
 ## Precision automatique — Task extrait vs source
 
@@ -25,4 +27,4 @@
 
 | Item | Verdict | Extrait / justification |
 |---|:---:|---|
-| Link Prediction | ⚠️ A VERIFIER | city. In addition, their performance on link prediction are already competitive compared to mor |
+| Link Prediction | ✅ faux positif (ignore) | Papier de RELATION prediction (extraite) ; LP cite pour comparer aux observations de la litterature. |

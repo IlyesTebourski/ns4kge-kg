@@ -11,9 +11,11 @@
 | Condamnes (trouves mais faux) | 0 |
 | Vraies erreurs / non verifies | 0 |
 | **Precision verifiee** | **100%** |
-| Recall — vrais oublis | 0 |
-| Recall — faux positifs ecartes | 0 |
-| **Recall relatif (indicatif)** | **100%** |
+| Recall — candidats bruts (script) | 3 |
+| Recall BRUT (avant adjudication) | 40% |
+| Recall — vrais oublis | 1 |
+| Recall — faux positifs ecartes | 2 |
+| **Recall relatif (adjuge)** | **67%** |
 
 ## Precision automatique — LossFunction extrait vs source
 
@@ -26,8 +28,6 @@
 
 | Item | Verdict | Extrait / justification |
 |---|:---:|---|
-| margin-based ranking loss | ⚠️ A VERIFIER | ative examples, and use distance-based, margin-loss embedding models as the discriminator t |
-| marginal loss | ⚠️ A VERIFIER | ative examples, and use distance-based, margin-loss embedding models as the discriminator t |
-| negative log-likelihood | ⚠️ A VERIFIER | f(h',r,t')}$. The loss function is the negative log-likelihood of this probabilistic model: $$L_l = \ |
-| pairwise ranking loss | ⚠️ A VERIFIER | ative examples, and use distance-based, margin-loss embedding models as the discriminator t |
-| policy gradient | ⚠️ A VERIFIER | learning—It trains the generator using policy gradient and other tricks. IRGAN (Wang et al., 2 |
+| margin-based ranking loss | ✅ faux positif (ignore) | Deja extraite sous 'Marginal loss function' (graphie hors alias famille). |
+| negative log-likelihood | ✅ faux positif (ignore) | Definition de la loss log-softmax deja extraite. |
+| policy gradient | ❌ vrai oubli | 'our framework relies on policy gradient to train the generator' : non extrait. |

@@ -9,7 +9,7 @@
 | Precision evalues | 100% | 
 | Precision mentionnes | 100% |
 | Recall evalues | 100% |
-| Recall mentionnes | 67% |
+| Recall mentionnes | 80% |
 
 ## A. Methodes EVALUEES (valides vs `tables_only`)
 
@@ -36,5 +36,5 @@ _Aucun._
 
 | Methode | Ou | Via | Extrait |
 |---|---|:---:|---|
-| Domain-based Negative Sampling | prose | name | ple)$ 8: $Dom\_R_i \leftarrow$ **Get** $Domain\_of\_Relation(R_i)$ 9: $Ran\_R_i \lefta |
-| Local-Closed World Assumption Negative Sampling | prose | name | e inconsistent triples. In addition, a Local-Closed World Assumption (LCWA) approach [10] assumes a KG to be |
+| Corrupting Positive Instances | prose | name | lse. It generates negative instances by corrupting positive instances: for every relation r, they collect the |
+| Local-Closed World Assumption Negative Sampling | prose | acro | ition, a Local-Closed World Assumption (LCWA) approach [10] assumes a KG to be only |

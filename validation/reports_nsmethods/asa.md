@@ -9,7 +9,7 @@
 | Precision evalues | 100% | 
 | Precision mentionnes | 100% |
 | Recall evalues | 100% |
-| Recall mentionnes | 40% |
+| Recall mentionnes | 67% |
 
 ## A. Methodes EVALUEES (valides vs `tables_only`)
 
@@ -35,6 +35,5 @@ _Aucun._
 
 | Methode | Ou | Via | Extrait |
 |---|---|:---:|---|
-| Adaptive Negative Sampling | prose | name | lation-aware Graph Attention Model With Adaptive Self-adversarial Training **Xiao Qin¹\ |
-| Adversarial Negative Sampling | prose | name | different heads. ## 3.2 Adaptive Self-Adversarial Negative Sampling Negative sampling (M |
-| Self Negative Sampling | prose | name | are Graph Attention Model With Adaptive Self-adversarial Training **Xiao Qin¹\*, Na |
+| Adversarial Negative Sampling | prose | name | ion-aware attention* and *adaptive self-adversarial negative sampling* for model training. ## 1 Introduction |
+| Noise contrastive estimation | prose | name | ethods can be unified within a *sampled noise contrastive estimation* framework (Yang et al. 2020b), especia |

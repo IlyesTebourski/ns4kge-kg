@@ -9,7 +9,8 @@
 | **Precision** | **0%** |
 | Candidats faux negatifs (table de resultats) | 0 |
 | Candidats en table de stats seulement (priorite basse) | 1 |
-| **Recall relatif (indicatif)** | **100%** |
+| Recall BRUT (avant adjudication) | 100% |
+| **Recall relatif (adjuge)** | **100%** |
 
 ## Precision — datasets extraits par le KG
 

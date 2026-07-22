@@ -11,9 +11,11 @@
 | Condamnes (trouves mais faux) | 0 |
 | Vraies erreurs / non verifies | 0 |
 | **Precision verifiee** | **100%** |
+| Recall — candidats bruts (script) | 1 |
+| Recall BRUT (avant adjudication) | 86% |
 | Recall — vrais oublis | 0 |
-| Recall — faux positifs ecartes | 0 |
-| **Recall relatif (indicatif)** | **100%** |
+| Recall — faux positifs ecartes | 1 |
+| **Recall relatif (adjuge)** | **100%** |
 
 ## Precision automatique — LossFunction extrait vs source
 
@@ -30,4 +32,4 @@
 
 | Item | Verdict | Extrait / justification |
 |---|:---:|---|
-| contrastive loss | ⚠️ A VERIFIER | ntroduced a temperature constant in the contrastive loss to control the hardness of negative tri |
+| contrastive loss | ✅ faux positif (ignore) | Related work ; loss propres extraites (InfoNCE...). |

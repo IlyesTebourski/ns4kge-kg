@@ -9,10 +9,12 @@
 | **Precision globale** | **100%** |
 | Precision (evalues, vs tableaux) | 100% |
 | Precision (mentionnes, vs prose) | 100% |
-| Candidats evaluations ratees (en tableau, non extrait) | 1 |
-| Candidats mentions ratees (en prose, non extrait) | 1 |
-| Recall relatif *evalues* | 83% |
-| Recall relatif *mentionnes* | 88% |
+| Candidats evaluations ratees (bruts) | 0 |
+| Candidats mentions ratees (bruts) | 1 |
+| Recall BRUT evalues / mentionnes | 100% / 88% |
+| Vrais oublis (adjuges) evalues / mentionnes | 0 / 0 |
+| Recall ADJUGE *evalues* | 100% |
+| Recall ADJUGE *mentionnes* | 100% |
 
 ## A. Modeles EVALUES — extraits des tableaux (valides vs `tables_only`)
 
@@ -38,9 +40,7 @@
 
 ## C1. Recall EVALUES — modeles dans un tableau mais NON extraits
 
-| Modele | Ou | Extrait |
-|---|---|---|
-| GAN | prose+table | cently, generative adversarial network (GAN), has been introduced in negative sampl |
+_Aucun._
 
 ## C2. Recall MENTIONNES — modeles en prose seulement mais NON extraits
 

@@ -1,0 +1,11 @@
+entite,article,candidat,localisation,verdict,justification
+Optimizer,asa,SGD,background methodo,FP,"'when using the stochastic gradient descent algorithm for optimization, a negative sample with a high gradient...' = description generale du principe des hard negatives (Sun/Zhang cites), pas le protocole d'entrainement du papier."
+Optimizer,batchns,Adam,auteurs/remerciements,FP,"3 occurrences = 'Adam Lerer' (auteur), 'Adam Fisch' + 'Keith Adams' (remerciements). Prenoms, pas l'optimizer."
+Optimizer,batchns,SGD,protocole,FP,"'updates performed via minibatch stochastic gradient descent (SGD). We use the Adagrad optimizer' : SGD = cadre generique, l'optimizer concret (AdaGrad) est bien extrait."
+Optimizer,igan,SGD,protocole,FP,"'We use Adam SGD for optimization' : Adam (extrait) est l'optimizer, SGD = terme-parapluie."
+Optimizer,localcognitive,SGD,protocole,FP,"'minibatch SGD with Adam optimizer' : Adam extrait, SGD = cadre."
+Optimizer,nmiss,AdaGrad,motivation,FP,"'We use the Adam SGD optimizer... because it addresses the problem of decreasing learning rate in AdaGrad' : AdaGrad cite comme repoussoir, PAS utilise."
+Optimizer,nmiss,SGD,protocole,FP,"'Adam [13] SGD optimizer' : Adam extrait, SGD = cadre."
+Optimizer,nscaching,SGD,protocole/convergence,FP,"'optimized by using stochastic gradient descent in a unified framework' + discussion de convergence SGD : cadre generique, Adam (extrait) est l'optimizer des experiences."
+Optimizer,typeaugmented,SGD,grid search hyperparams,FN,"'learning rate used for SGD lr in {0.1, 0.5, 1.0}. The best configurations for all TaKE-augmented models: lr = 0.5' : les modeles du papier sont entraines par SGD (lr 0.5 = SGD vanilla, incompatible Adam). Optimizer reellement utilise, non extrait."
+Optimizer,typeconstraints,AdaGrad,protocole (modele neuronal),FN,"'optimized the cost function using mini-batch adaptive gradient descent' : entrainement du modele neuronal du papier par AdaGrad ; le KG n'a que ALS (RESCAL) et SGD (TransE). Troisieme optimizer reellement utilise, non extrait."

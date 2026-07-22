@@ -11,9 +11,11 @@
 | Condamnes (trouves mais faux) | 0 |
 | Vraies erreurs / non verifies | 0 |
 | **Precision verifiee** | **100%** |
-| Recall — vrais oublis | 0 |
+| Recall — candidats bruts (script) | 1 |
+| Recall BRUT (avant adjudication) | 67% |
+| Recall — vrais oublis | 1 |
 | Recall — faux positifs ecartes | 0 |
-| **Recall relatif (indicatif)** | **100%** |
+| **Recall relatif (adjuge)** | **67%** |
 
 ## Precision automatique — Task extrait vs source
 
@@ -26,4 +28,4 @@
 
 | Item | Verdict | Extrait / justification |
 |---|:---:|---|
-| Triple Classification | ⚠️ A VERIFIER | y alignment tasks, link prediction, and triplet classification. The experimental results show that the |
+| Triple Classification | ❌ vrai oubli | TABLE V. TERNARY CLASSIFICATION EXPERIMENTAL RESULT + conclusion revendiquant des gains en triplet classification. |

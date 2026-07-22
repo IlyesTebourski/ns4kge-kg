@@ -9,10 +9,12 @@
 | **Precision globale** | **100%** |
 | Precision (evalues, vs tableaux) | 100% |
 | Precision (mentionnes, vs prose) | 100% |
-| Candidats evaluations ratees (en tableau, non extrait) | 0 |
-| Candidats mentions ratees (en prose, non extrait) | 2 |
-| Recall relatif *evalues* | 100% |
-| Recall relatif *mentionnes* | 60% |
+| Candidats evaluations ratees (bruts) | 0 |
+| Candidats mentions ratees (bruts) | 3 |
+| Recall BRUT evalues / mentionnes | 100% / 50% |
+| Vrais oublis (adjuges) evalues / mentionnes | 0 / 0 |
+| Recall ADJUGE *evalues* | 100% |
+| Recall ADJUGE *mentionnes* | 100% |
 
 ## A. Modeles EVALUES — extraits des tableaux (valides vs `tables_only`)
 
@@ -38,5 +40,6 @@ _Aucun._
 
 | Modele | Ou | Extrait |
 |---|---|---|
-| GAN | prose | on layers [17] to attention-based [34], GAN-based [8], sampled aggregator [13] and |
+| Attention | prose | basic graph convolution layers [17] to attention-based [34], GAN-based [8], sampled aggr |
+| Random Walk | prose | sample positive node pairs, such as by random walk [27], the second-order proximity [32], |
 | word2vec | prose | tribution to accelerate the training of word2vec. Mikolov et al. [24] set the negative s |

@@ -8,8 +8,8 @@
 | Methodes MENTIONNEES seulement (prose) | 4 |
 | Precision evalues | 90% | 
 | Precision mentionnes | 100% |
-| Recall evalues | 75% |
-| Recall mentionnes | 67% |
+| Recall evalues | 100% |
+| Recall mentionnes | 100% |
 
 ## A. Methodes EVALUEES (valides vs `tables_only`)
 
@@ -41,11 +41,8 @@
 |---|---|:---:|---|
 | RW-SANS | table | name | </tr> <tr> <td>Uniform RW-SANS [2]</td> <td>$\mathcal{O}(r\mat |
 | SANS | prose+table | name | ture-aware negative sampling technique (SANS) was proposed [2] to consider the neigh |
-| Self Negative Sampling | table | name | \|)$</td> </tr> <tr> <td>Self-Adv. [15]</td> <td>$\mathcal{O} |
+| Self-Adv | table | name | \|)$</td> </tr> <tr> <td>Self-Adv. [15]</td> <td>$\mathcal{O}(\|\m |
 
 ## C2. Recall MENTIONNES — en prose seulement mais non extrait
 
-| Methode | Ou | Via | Extrait |
-|---|---|:---:|---|
-| GAN-based Negative Sampling | prose | name | n [9], Generative Adversarial networks (GANs) are used for generating negative sampl |
-| Random Negative Sampling | prose | name | not clustered in the expected group for Random (Uniform Table 5: Example set of ca |
+_Aucun._

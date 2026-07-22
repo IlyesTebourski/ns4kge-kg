@@ -8,7 +8,7 @@
 | Methodes MENTIONNEES seulement (prose) | 2 |
 | Precision evalues | 100% | 
 | Precision mentionnes | 100% |
-| Recall evalues | 50% |
+| Recall evalues | 100% |
 | Recall mentionnes | 67% |
 
 ## A. Methodes EVALUEES (valides vs `tables_only`)
@@ -26,9 +26,7 @@
 
 ## C1. Recall EVALUES — dans un tableau mais non extrait
 
-| Methode | Ou | Via | Extrait |
-|---|---|:---:|---|
-| Frequency-based Negative Sampling | table | name | <thead> <tr> <th>Relation Frequency</th> <th>Test Number</th> |
+_Aucun._
 
 ## C2. Recall MENTIONNES — en prose seulement mais non extrait
 

@@ -9,10 +9,12 @@
 | **Precision globale** | **100%** |
 | Precision (evalues, vs tableaux) | 100% |
 | Precision (mentionnes, vs prose) | 100% |
-| Candidats evaluations ratees (en tableau, non extrait) | 0 |
-| Candidats mentions ratees (en prose, non extrait) | 1 |
-| Recall relatif *evalues* | 100% |
-| Recall relatif *mentionnes* | 89% |
+| Candidats evaluations ratees (bruts) | 0 |
+| Candidats mentions ratees (bruts) | 2 |
+| Recall BRUT evalues / mentionnes | 100% / 80% |
+| Vrais oublis (adjuges) evalues / mentionnes | 0 / 0 |
+| Recall ADJUGE *evalues* | 100% |
+| Recall ADJUGE *mentionnes* | 100% |
 
 ## A. Modeles EVALUES — extraits des tableaux (valides vs `tables_only`)
 
@@ -46,4 +48,5 @@ _Aucun._
 
 | Modele | Ou | Extrait |
 |---|---|---|
+| Attention | prose | ompletion, which has received extensive attention and research in recent years. However, |
 | Tucker | prose | ocal interactions are modeled using the Tucker tensor format, while the complete inter |

@@ -9,10 +9,12 @@
 | **Precision globale** | **88%** |
 | Precision (evalues, vs tableaux) | 100% |
 | Precision (mentionnes, vs prose) | 75% |
-| Candidats evaluations ratees (en tableau, non extrait) | 0 |
-| Candidats mentions ratees (en prose, non extrait) | 1 |
-| Recall relatif *evalues* | 100% |
-| Recall relatif *mentionnes* | 75% |
+| Candidats evaluations ratees (bruts) | 0 |
+| Candidats mentions ratees (bruts) | 2 |
+| Recall BRUT evalues / mentionnes | 100% / 60% |
+| Vrais oublis (adjuges) evalues / mentionnes | 0 / 0 |
+| Recall ADJUGE *evalues* | 100% |
+| Recall ADJUGE *mentionnes* | 100% |
 
 ## A. Modeles EVALUES — extraits des tableaux (valides vs `tables_only`)
 
@@ -40,4 +42,5 @@ _Aucun._
 
 | Modele | Ou | Extrait |
 |---|---|---|
-| GAN | prose | ining. Generative adversarial networks (GAN) and self-adversarial methods have rece |
+| Attention | prose | nchen et al., 2019) and the use of self-attention and position-aware embeddings (Siheng e |
+| Random Walk | prose | models. By selecting negatives using a random walk approach that ignores non-semantic simi |

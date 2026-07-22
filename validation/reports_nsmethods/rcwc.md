@@ -9,7 +9,7 @@
 | Precision evalues | 67% | 
 | Precision mentionnes | 100% |
 | Recall evalues | 100% |
-| Recall mentionnes | 50% |
+| Recall mentionnes | 100% |
 
 ## A. Methodes EVALUEES (valides vs `tables_only`)
 
@@ -35,6 +35,4 @@ _Aucun._
 
 | Methode | Ou | Via | Extrait |
 |---|---|:---:|---|
-| Adversarial Negative Sampling | prose | name | distribution to avoid false negatives. Adversarial learning with generative adversary netw |
-| Relational Sampling | prose | name | ng [Sun et al., 2019]. ## 3.3 Training Relational Classifiers Given a relation, there ar |
-| Self Negative Sampling | prose | name | f{h}_i; \mathbf{t}_i])). \eqno(11)$$ **Self-Adversarial Negative Sampling.** We inv |
+| Adversarial Negative Sampling | prose | name | i, r, t'_i)$ is the coefficient in self-adversarial negative sampling [Sun et al., 2019]. ## 3.3 Training Re |

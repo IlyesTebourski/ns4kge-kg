@@ -14,8 +14,11 @@ Cette validation EXPLICITE cette distinction : on valide separement
 
 Matching (hybride, deterministe) :
 - PRECISION : insensible a la casse (ne pas rater ComplEx vs "Complex").
-- RECALL    : sensible a la casse (les noms KGE sont stylises comme des mots
-              anglais : RatE/SimplE/TaKE/LINE -> sinon bruit massif).
+- RECALL    : regle de casse HOMOGENE (VD.tok_regex, commune a tous les
+              validateurs) — un token STYLISE (majuscule interne ou tout-caps :
+              RatE/SimplE/TaKE/LINE/GAN) exige sa casse exacte (sinon chaque
+              "learning rate" devient un candidat RatE : bruit massif, mesure
+              64 -> 265 candidats) ; un token banal reste insensible.
 
 Sorties : validation/reports_kgemodels/<slug>.md + _SUMMARY.md
 """
@@ -45,8 +48,58 @@ SEP = r"[\s\-_/.@()\[\]]*"
 # Verdicts de verification MANUELLE (remplis apres coup ; vides = baseline honnete).
 #   prec  : (slug, label) -> ("valid"|"error", why)
 #   recall: (slug, label) -> ("miss"|"fp", why)
-PREC_VERDICTS = {}
-RECALL_VERDICTS = {}
+# Un verdict "error" sur un item TROUVE = CONDAMNE : il compte FAUX dans la
+# precision VERIFIEE (l'auto reste inchangee) et SORT du vocab de recall.
+PREC_VERDICTS = {
+    ("lts", "GAN"): ("error",
+        "Mauvais type : la prose dit 'Dynamic distribution sampling, represented by "
+        "GAN[2], is used to provide high quality negative example triples' — GAN y est "
+        "le cadre adversarial de NEGATIVE SAMPLING (famille KBGAN), pas un modele KGE."),
+}
+# Adjudication manuelle recall (2026-07-22). Justifications completes par candidat :
+# recall_checks/kgemodels_recall_check.csv. Vrais oublis ("miss") detailles ici ;
+# faux flags ("fp") listes compacts (mot anglais 'attention', matchs partiels
+# R-GCN/KG-BERT/GC-OTE, composants MLP/word2vec, tables de complexite...).
+_RECALL_MISS = {
+    ("domainns", "KG2E"): "Ligne de resultats 'KG2E (He et al., 2015)' (MR/Hits@10) non extraite.",
+    ("domainns", "NTN"): "Ligne de resultats 'NTN (Socher et al., 2013)' non extraite.",
+    ("domainns", "SE"): "Ligne de resultats 'SE (Bordes et al., 2011)' non extraite.",
+    ("domainns", "Unstructured"): "Ligne de resultats 'Unstructured (Bordes et al., 2014)' non extraite.",
+    ("igan", "SE"): "Ligne de resultats 'SE (Bordes et al. 2011) | 162 | 39.8...' non extraite.",
+    ("igan", "SME"): "Ligne de resultats 'SME(Bilinear) | 158...' non extraite.",
+    ("igan", "Unstructured"): "Ligne de resultats 'Unstructured | 979 | 6.3...' non extraite.",
+    ("lts", "LFM"): "Ligne de resultats 'LFM | 469...' non extraite.",
+    ("lts", "SME"): "Ligne de resultats 'SME | 542/526...' non extraite.",
+    ("selfadv", "SE"): "Ligne 'SE (Bordes et al., 2011)' de la table comparative non extraite.",
+    ("stc", "TKRL"): "Ligne de resultats 'TKRL (RHE) | 184...' non extraite.",
+    ("ccs", "Neural Tensor Network"): "NTN cite comme modele KGE en related work (SE/SME extraits, pas NTN).",
+    ("gndn", "Neural Tensor Network"): "'A seminal approach... is the neural tensor network (NTN)' non extrait.",
+    ("dmns", "GraphSAGE"): "'we also conduct experiments using GAT and GraphSAGE' : encodeur experimente non extrait.",
+    ("htens", "TKRL"): "TKRL baseline du papier (footnote repo thunlp/TKRL + tables adjacentes) non extrait.",
+}
+_RECALL_FP = [
+    ("asa", "GCN"), ("batchns", "GCN"), ("dhns", "OTE"), ("domainns", "Attention"),
+    ("ghn", "BERT"), ("hasa", "BERT"), ("las", "GCN"), ("mdncaching", "Random Walk"),
+    ("raakgc", "BERT"), ("uniform", "SE"), ("uniform", "SME"),
+    ("adaptativens", "Attention"), ("adaptativens", "Tucker"), ("asa", "Attention"),
+    ("asa", "MLP"), ("asa", "Random Walk"), ("cans", "Attention"), ("ccs", "Attention"),
+    ("ccs", "word2vec"), ("dans", "MLP"), ("dhns", "Attention"), ("dhns", "MLP"),
+    ("dmns", "Attention"), ("dmns", "MLP"), ("gibbsns", "Attention"), ("gibbsns", "BERT"),
+    ("gndn", "Attention"), ("gndn", "BERT"), ("gndn", "GCN"), ("gns", "Attention"),
+    ("graphgan", "Attention"), ("graphgan", "Random Walk"), ("las", "Attention"),
+    ("lemon", "BERT"), ("lemon", "sentence-BERT"), ("m2ixkg", "Attention"),
+    ("mcns", "Attention"), ("mcns", "Random Walk"), ("mcns", "word2vec"),
+    ("mdncaching", "Attention"), ("nmiss", "Attention"), ("noigan", "MLP"),
+    ("noigan", "Unstructured"), ("nscaching", "LINE"), ("raakgc", "Attention"),
+    ("raakgc", "KGT5"), ("ruga", "Attention"), ("ruga", "word2vec"),
+    ("sans", "Random Walk"), ("stc", "Attention"), ("truncatedns", "Attention"),
+    ("tuckerdncaching", "Attention"), ("tuckerdncaching", "Random Walk"),
+    ("typeaugmented", "Attention"), ("typeconstraints", "Attention"),
+    ("typeconstraints", "SME"), ("typeconstraints", "Unstructured"),
+]
+RECALL_VERDICTS = {k: ("miss", why) for k, why in _RECALL_MISS.items()}
+RECALL_VERDICTS.update({k: ("fp", "voir recall_checks/kgemodels_recall_check.csv")
+                        for k in _RECALL_FP})
 
 
 def toks_cs(label):
@@ -55,12 +108,13 @@ def toks_cs(label):
 
 
 def build_pattern(label, ci):
+    """ci=True (precision) : tout insensible (inchange). ci=False (recall) :
+    regle de casse homogene — token stylise = casse exacte, token banal = (?i:)."""
     toks = toks_cs(label)
     if not toks:
         return None
-    core = SEP.join(re.escape(t) for t in toks)
-    return re.compile(r"(?<![A-Za-z0-9])" + core + r"(?![A-Za-z0-9])",
-                      re.I if ci else 0)
+    core = SEP.join(VD.tok_regex(t, strict_case=not ci) for t in toks)
+    return re.compile(r"(?<![A-Za-z0-9])" + core + r"(?![A-Za-z0-9])")
 
 
 def found(label, text, ci):
@@ -102,7 +156,7 @@ def load_articles():
         arts.append({
             "slug": slug, "md_name": os.path.basename(md),
             "title": (data.get("Article", {}) or {}).get("title", slug),
-            "prose": load_md_no_tables(md), "tables": load_md_tables_only(md),
+            "prose": VD.strip_references(load_md_no_tables(md)), "tables": load_md_tables_only(md),
             "models": models,
         })
     return arts
@@ -180,8 +234,15 @@ def render_article(a, evaluated, mentioned, suspects, counts):
     pe = te / (te + fe) if (te + fe) else 1.0
     pm = tm / (tm + fm) if (tm + fm) else 1.0
     miss_e, miss_m = split_suspects(suspects)
-    re_e = te / (te + len(miss_e)) if (te + len(miss_e)) else 1.0
-    re_m = tm / (tm + len(miss_m)) if (tm + len(miss_m)) else 1.0
+    # ADJUGE : les candidats juges "fp" en verif manuelle sont ecartes ; un candidat
+    # non adjuge compte comme oubli (convention plancher unique).
+    slug = a["slug"]
+    adj_e = [x for x in miss_e if RECALL_VERDICTS.get((slug, x[0]), ("", ""))[0] != "fp"]
+    adj_m = [x for x in miss_m if RECALL_VERDICTS.get((slug, x[0]), ("", ""))[0] != "fp"]
+    re_e_brut = te / (te + len(miss_e)) if (te + len(miss_e)) else 1.0
+    re_m_brut = tm / (tm + len(miss_m)) if (tm + len(miss_m)) else 1.0
+    re_e = te / (te + len(adj_e)) if (te + len(adj_e)) else 1.0
+    re_m = tm / (tm + len(adj_m)) if (tm + len(adj_m)) else 1.0
 
     L = [f"# KGE Models — {a['md_name']}", "", f"**Titre :** {a['title']}", "",
          "| Metrique | Valeur |", "|---|---|",
@@ -190,10 +251,12 @@ def render_article(a, evaluated, mentioned, suspects, counts):
          f"| **Precision globale** | **{prec:.0%}** |",
          f"| Precision (evalues, vs tableaux) | {pe:.0%} |",
          f"| Precision (mentionnes, vs prose) | {pm:.0%} |",
-         f"| Candidats evaluations ratees (en tableau, non extrait) | {len(miss_e)} |",
-         f"| Candidats mentions ratees (en prose, non extrait) | {len(miss_m)} |",
-         f"| Recall relatif *evalues* | {re_e:.0%} |",
-         f"| Recall relatif *mentionnes* | {re_m:.0%} |", "",
+         f"| Candidats evaluations ratees (bruts) | {len(miss_e)} |",
+         f"| Candidats mentions ratees (bruts) | {len(miss_m)} |",
+         f"| Recall BRUT evalues / mentionnes | {re_e_brut:.0%} / {re_m_brut:.0%} |",
+         f"| Vrais oublis (adjuges) evalues / mentionnes | {len(adj_e)} / {len(adj_m)} |",
+         f"| Recall ADJUGE *evalues* | {re_e:.0%} |",
+         f"| Recall ADJUGE *mentionnes* | {re_m:.0%} |", "",
          "## A. Modeles EVALUES — extraits des tableaux (valides vs `tables_only`)", "",
          "| Modele | Trouve dans les tableaux ? | Extrait |", "|---|:---:|---|"]
     for label, ok, snip in evaluated:
@@ -218,7 +281,8 @@ def render_article(a, evaluated, mentioned, suspects, counts):
         L += [f"| {esc(l)} | {w} | {esc(s)} |" for l, w, s in miss_m]
     else:
         L.append("_Aucun._")
-    return "\n".join(L), (te, fe, tm, fm, len(miss_e), len(miss_m), prec, re_e, re_m)
+    return "\n".join(L), (te, fe, tm, fm, len(miss_e), len(miss_m), prec, re_e, re_m,
+                          len(adj_e), len(adj_m))
 
 
 def render_summary(rows, TE, FE, TM, FM, SUS_E, SUS_M):
@@ -270,22 +334,25 @@ def main():
 
     # Phase 2 : recall contre le vocab verifie
     rows = []
-    TE = FE = TM = FM = SUS_E = SUS_M = 0
+    TE = FE = TM = FM = SUS_E = SUS_M = ADJ_E = ADJ_M = 0
     for a in arts:
         ev, me, counts = prec[a["slug"]]
         sus = recall_pass(a, vocab)
-        report, (te, fe, tm, fm, nse, nsm, prec_, r_e, r_m) = render_article(a, ev, me, sus, counts)
+        report, (te, fe, tm, fm, nse, nsm, prec_, r_e, r_m, ae, am) = render_article(a, ev, me, sus, counts)
         open(os.path.join(OUT_DIR, f"{a['slug']}.md"), "w", encoding="utf-8").write(report)
         rows.append((a["md_name"], te, fe, tm, fm, nse, nsm, prec_, r_e, r_m))
-        TE += te; FE += fe; TM += tm; FM += fm; SUS_E += nse; SUS_M += nsm
+        TE += te; FE += fe; TM += tm; FM += fm
+        SUS_E += nse; SUS_M += nsm; ADJ_E += ae; ADJ_M += am
     open(os.path.join(OUT_DIR, "_SUMMARY.md"), "w", encoding="utf-8").write(
         render_summary(rows, TE, FE, TM, FM, SUS_E, SUS_M))
     TP, FP = TE + TM, FE + FM
     print(f"{len(arts)} rapports -> {OUT_DIR}/")
     print(f"Evalues={TE+FE} (prec {TE/(TE+FE):.1%})   Mentionnes={TM+FM} (prec {TM/(TM+FM):.1%})")
     print(f"Precision globale = {TP/(TP+FP):.1%}")
-    print(f"Recall evalues = {TE/(TE+SUS_E):.1%} (manques={SUS_E})   "
-          f"Recall mentionnes = {TM/(TM+SUS_M):.1%} (manques={SUS_M})")
+    print(f"Recall BRUT   evalues = {TE/(TE+SUS_E):.1%} (candidats={SUS_E})   "
+          f"mentionnes = {TM/(TM+SUS_M):.1%} (candidats={SUS_M})")
+    print(f"Recall ADJUGE evalues = {TE/(TE+ADJ_E):.1%} (vrais FN={ADJ_E}, FP ecartes={SUS_E-ADJ_E})   "
+          f"mentionnes = {TM/(TM+ADJ_M):.1%} (vrais FN={ADJ_M}, FP ecartes={SUS_M-ADJ_M})")
 
 
 if __name__ == "__main__":

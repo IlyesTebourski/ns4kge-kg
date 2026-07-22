@@ -9,7 +9,7 @@
 | Precision evalues | 100% | 
 | Precision mentionnes | 83% |
 | Recall evalues | 100% |
-| Recall mentionnes | 83% |
+| Recall mentionnes | 100% |
 
 ## A. Methodes EVALUEES (valides vs `tables_only`)
 
@@ -38,4 +38,7 @@ _Aucun._
 
 | Methode | Ou | Via | Extrait |
 |---|---|:---:|---|
-| Adversarial Negative Sampling | prose | name | t Identifier 10.1109/ACCESS.2017.DOI # Adversarial Knowledge Representation Learning witho |
+| Adaptive Negative Sampling | prose | name | e but strong method, including the loss adaptive negative sampling approach and the push-up mechanism in S |
+| Adversarial Negative Sampling | prose | name | this paper, LAS is a simple but strong adversarial negative sampling approach without an external sampling m |
+| Random Negative Sampling | prose | name | n, as is illustrated in Figure 1. Thus, random negative sampling would cause very slow convergence and e |
+| Static Sampling | prose | name | get competitive results. In [26], the static negative sampling models, nearest-neighbour sampling and |

@@ -9,10 +9,12 @@
 | **Precision globale** | **94%** |
 | Precision (evalues, vs tableaux) | 92% |
 | Precision (mentionnes, vs prose) | 100% |
-| Candidats evaluations ratees (en tableau, non extrait) | 0 |
-| Candidats mentions ratees (en prose, non extrait) | 3 |
-| Recall relatif *evalues* | 100% |
-| Recall relatif *mentionnes* | 67% |
+| Candidats evaluations ratees (bruts) | 0 |
+| Candidats mentions ratees (bruts) | 4 |
+| Recall BRUT evalues / mentionnes | 100% / 60% |
+| Vrais oublis (adjuges) evalues / mentionnes | 0 / 1 |
+| Recall ADJUGE *evalues* | 100% |
+| Recall ADJUGE *mentionnes* | 86% |
 
 ## A. Modeles EVALUES — extraits des tableaux (valides vs `tables_only`)
 
@@ -50,6 +52,7 @@ _Aucun._
 
 | Modele | Ou | Extrait |
 |---|---|---|
+| Attention | prose | rely on a heavy-weight multi-head self-attention mechanism, it is significantly more com |
 | BERT | prose | former-based encoding models such as KG-BERT [35] are inspired by transformer-based |
-| GAN | prose | challenges are addressed: 1) Classical GAN architectures’ inability to easily gene |
 | GCN | prose | sists of a Convolutional Graph Network (GCN) [39] based encoder for learning repres |
+| Neural Tensor Network | prose | oach in NN-based encoding models is the neural tensor network (NTN), in which interaction between ent |

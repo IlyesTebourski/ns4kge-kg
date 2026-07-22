@@ -9,10 +9,12 @@
 | **Precision globale** | **86%** |
 | Precision (evalues, vs tableaux) | 0% |
 | Precision (mentionnes, vs prose) | 100% |
-| Candidats evaluations ratees (en tableau, non extrait) | 0 |
-| Candidats mentions ratees (en prose, non extrait) | 0 |
-| Recall relatif *evalues* | 100% |
-| Recall relatif *mentionnes* | 100% |
+| Candidats evaluations ratees (bruts) | 0 |
+| Candidats mentions ratees (bruts) | 1 |
+| Recall BRUT evalues / mentionnes | 100% / 86% |
+| Vrais oublis (adjuges) evalues / mentionnes | 0 / 0 |
+| Recall ADJUGE *evalues* | 100% |
+| Recall ADJUGE *mentionnes* | 100% |
 
 ## A. Modeles EVALUES — extraits des tableaux (valides vs `tables_only`)
 
@@ -37,4 +39,6 @@ _Aucun._
 
 ## C2. Recall MENTIONNES — modeles en prose seulement mais NON extraits
 
-_Aucun._
+| Modele | Ou | Extrait |
+|---|---|---|
+| Attention | prose | BERT-Base model with 12 layers, 12 self-attention heads and hidden state size H =768. KG- |

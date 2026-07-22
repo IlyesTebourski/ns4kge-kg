@@ -9,10 +9,12 @@
 | **Precision globale** | **100%** |
 | Precision (evalues, vs tableaux) | 100% |
 | Precision (mentionnes, vs prose) | 100% |
-| Candidats evaluations ratees (en tableau, non extrait) | 0 |
-| Candidats mentions ratees (en prose, non extrait) | 1 |
-| Recall relatif *evalues* | 100% |
-| Recall relatif *mentionnes* | 0% |
+| Candidats evaluations ratees (bruts) | 1 |
+| Candidats mentions ratees (bruts) | 1 |
+| Recall BRUT evalues / mentionnes | 80% / 0% |
+| Vrais oublis (adjuges) evalues / mentionnes | 0 / 0 |
+| Recall ADJUGE *evalues* | 100% |
+| Recall ADJUGE *mentionnes* | 100% |
 
 ## A. Modeles EVALUES — extraits des tableaux (valides vs `tables_only`)
 
@@ -29,10 +31,12 @@ _Aucun modele mentionne hors tableaux._
 
 ## C1. Recall EVALUES — modeles dans un tableau mais NON extraits
 
-_Aucun._
+| Modele | Ou | Extrait |
+|---|---|---|
+| Random Walk | prose+table | not include. We consider SANS with the random walk configuration. # 5 Conclusion The |
 
 ## C2. Recall MENTIONNES — modeles en prose seulement mais NON extraits
 
 | Modele | Ou | Extrait |
 |---|---|---|
-| GAN | prose | Hence, Generative adversarial networks (GAN) based negative sampling strategies IGA |
+| Attention | prose | ral network approaches have also gained attention in recent research work that utilizes t |

@@ -8,7 +8,7 @@
 | Methodes MENTIONNEES seulement (prose) | 0 |
 | Precision evalues | 100% | 
 | Precision mentionnes | 100% |
-| Recall evalues | 71% |
+| Recall evalues | 100% |
 | Recall mentionnes | 0% |
 
 ## A. Methodes EVALUEES (valides vs `tables_only`)
@@ -29,15 +29,13 @@ _Aucune._
 
 | Methode | Ou | Via | Extrait |
 |---|---|:---:|---|
-| Uniform Negative Sampling | prose+table | name | ults are shown in Table 4. In Table 4, Uniform, KBGAN, NSCaching, and EANS [40] repres |
 | Entity-Aware Negative Sampling | prose+table | acro | egative sampling, KBGAN, NSCaching, and EANS [40], were used to make comparisons wit |
 
 ## C2. Recall MENTIONNES — en prose seulement mais non extrait
 
 | Methode | Ou | Via | Extrait |
 |---|---|:---:|---|
-| Adversarial Negative Sampling | prose | name | and negative samples. GANs (Generative Adversarial Networks) have also been introduced for |
-| GAN-based Negative Sampling | prose | name | between positive and negative samples. GANs (Generative Adversarial Networks) have |
+| Entity Similarity-based Negative Sampling | prose | name | relationship context negative sampling, entity similarity-based negative sampling, etc. As the performance of models enco |
 | IGAN | prose | name | distributions in the training process. IGAN [19] designed a generator and performed |
-| Nearest Neighbor Sampling | prose | name | e original feature space, such as the K-Nearest Neighbor (KNN) algorithm [30], which calculates |
-| Random Negative Sampling | prose | name | number of negative samples n2 Require: Random initialization state values x1(0), x2(0 |
+| Random Negative Sampling | prose | name | ative sampling methods, namely, uniform random negative sampling, KBGAN, NSCaching, and EANS [40], were |
+| Static Sampling | prose | name | e samples. After a detailed analysis of static negative sampling methods, KBGAN [17] found that the majo |

@@ -8,8 +8,8 @@
 | Methodes MENTIONNEES seulement (prose) | 1 |
 | Precision evalues | 100% | 
 | Precision mentionnes | 100% |
-| Recall evalues | 83% |
-| Recall mentionnes | 50% |
+| Recall evalues | 100% |
+| Recall mentionnes | 100% |
 
 ## A. Methodes EVALUEES (valides vs `tables_only`)
 
@@ -29,12 +29,10 @@
 
 ## C1. Recall EVALUES — dans un tableau mais non extrait
 
-| Methode | Ou | Via | Extrait |
-|---|---|:---:|---|
-| Simple Negative Sampling | prose+table | name | d, we only generate $K$ negative tails. Simple InfoNCE[22] samples negative tails from |
+_Aucun._
 
 ## C2. Recall MENTIONNES — en prose seulement mais non extrait
 
 | Methode | Ou | Via | Extrait |
 |---|---|:---:|---|
-| Structure-Aware Negative Sampling | prose | name | rXiv:2305.10563v2 # HaSa: Hardness and Structure-Aware Contrastive Knowledge Graph Embedding |
+| Importance Sampling | prose | name | ond expectation can be approximated via importance sampling. $$ \mathbb{E}_{t^- \sim p^-(t\|e_{hr}, |

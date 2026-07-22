@@ -8,8 +8,8 @@
 | Methodes MENTIONNEES seulement (prose) | 2 |
 | Precision evalues | 100% | 
 | Precision mentionnes | 100% |
-| Recall evalues | 71% |
-| Recall mentionnes | 50% |
+| Recall evalues | 100% |
+| Recall mentionnes | 100% |
 
 ## A. Methodes EVALUEES (valides vs `tables_only`)
 
@@ -39,5 +39,7 @@
 
 | Methode | Ou | Via | Extrait |
 |---|---|:---:|---|
-| Filtered Negative Sampling | prose | name | ormance Measurement.** We consider the “Filtered” setting with performance evaluation so |
-| GAN-based Negative Sampling | prose | name | Hence, Generative adversarial networks (GAN) based negative sampling strategies IGA |
+| Dynamic Distribution Sampling | prose | name | ng space. The proposed MDNCaching is a dynamic distribution-based negative sampling strategy that integrates a matrix decom |
+| Dynamic Negative Sampling | prose | name | adients and false negatives. Later, the dynamic negative sampling techniques were introduced to overcome |
+| GAN-based Negative Sampling | prose | name | Hence, Generative adversarial networks (GAN) based negative sampling strategies IGAN [12] and KBGAN [3] were |
+| Importance Sampling | prose | name | ity scores and updating the cache using importance sampling. Despite this, NSCaching may produce fa |

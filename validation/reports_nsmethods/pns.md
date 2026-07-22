@@ -8,7 +8,7 @@
 | Methodes MENTIONNEES seulement (prose) | 0 |
 | Precision evalues | 100% | 
 | Precision mentionnes | 100% |
-| Recall evalues | 67% |
+| Recall evalues | 100% |
 | Recall mentionnes | 100% |
 
 ## A. Methodes EVALUEES (valides vs `tables_only`)
@@ -24,9 +24,7 @@ _Aucune._
 
 ## C1. Recall EVALUES — dans un tableau mais non extrait
 
-| Methode | Ou | Via | Extrait |
-|---|---|:---:|---|
-| Frequency-based Negative Sampling | table | name | elation Index</td> <td>Triplets Frequency</td> </tr> <tr> <td>0</ |
+_Aucun._
 
 ## C2. Recall MENTIONNES — en prose seulement mais non extrait
 

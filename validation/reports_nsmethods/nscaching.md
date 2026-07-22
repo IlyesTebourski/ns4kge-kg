@@ -8,8 +8,8 @@
 | Methodes MENTIONNEES seulement (prose) | 1 |
 | Precision evalues | 100% | 
 | Precision mentionnes | 100% |
-| Recall evalues | 83% |
-| Recall mentionnes | 14% |
+| Recall evalues | 100% |
+| Recall mentionnes | 100% |
 
 ## A. Methodes EVALUEES (valides vs `tables_only`)
 
@@ -29,17 +29,11 @@
 
 ## C1. Recall EVALUES — dans un tableau mais non extrait
 
-| Methode | Ou | Via | Extrait |
-|---|---|:---:|---|
-| GAN-based Negative Sampling | prose+table | name | cently, generative adversarial network (GAN), has been introduced in negative sampl |
+_Aucun._
 
 ## C2. Recall MENTIONNES — en prose seulement mais non extrait
 
 | Methode | Ou | Via | Extrait |
 |---|---|:---:|---|
-| Adversarial Negative Sampling | prose | name | Motivated by the success of Generative Adversarial Network (GAN) [16] and its ability to m |
-| Cache-based Negative Sampling | prose | name | used here. **Algorithm 2** NSCaching: Cache-based KG embedding. **Input:** trainin |
-| Filtered Negative Sampling | prose | name | models, we report the performance in a "Filtered" setting, i.e., all the corrupted tripl |
-| Importance Sampling | prose | name | ormance as shown in Section IV-C1. 2) *Importance sampling strategy to update the cache ( |
-| Self Negative Sampling | prose | name | ied in Section IV. ## C. Connection to Self-Pace Learning The main idea of self-pa |
-| Simple Negative Sampling | prose | name | 410v2 [cs.AI] 18 Jan 2019 # NSCaching: Simple and Efficient Negative Sampling for Kno |
+| Cache-based Negative Sampling | prose | name | the KG embedding framework based on our cache-based negative sampling scheme. Note that the proposed sampling |
+| Importance Sampling | prose | name | tive triplets in cache, and then design importance sampling (IS) strategy to update the cache. The |

@@ -33,50 +33,65 @@ OUT_DIR = os.path.join(VD.HERE, "reports_metrics")
 LB = r"(?<![A-Za-z0-9])"           # frontiere gauche
 RB = r"(?![A-Za-z0-9])"            # frontiere droite
 
-# metrics "epelables" : canonique -> alias (coeur de regex, sans frontieres)
+# metrics "epelables" : canonique -> alias (coeur de regex, sans frontieres).
+# Regle de casse homogene (VD.tok_regex) appliquee aux alias : les ACRONYMES
+# (MR, MRR, AUC, MAP, AP...) exigent leur casse exacte en RECALL (sinon "map"/
+# "ap"/"mr" en prose genereraient des candidats) ; les expansions en mots restent
+# insensibles via (?i:...). En PRECISION le pattern est compile avec re.I, ce qui
+# neutralise la distinction (leniente, comportement inchange).
 ALIASES = {
-    "MR":       r"MR|mean\s*rank",
-    "MRR":      r"MRR|mean\s*reciprocal\s*rank(?:ing)?",
-    "Accuracy": r"accuracy|acc",
+    "MR":       r"MR|(?i:mean\s*rank)",
+    "MRR":      r"MRR|(?i:mean\s*reciprocal\s*rank(?:ing)?)",
+    "Accuracy": r"(?i:accuracy|acc)",
     "AUC":      r"AUC",
     "AUROC":    r"AUROC|AUC[-\s]?ROC|ROC[-\s]?AUC",
     "AUPRC":    r"AUPRC|AUPR|AUC[-\s]?PR|PR[-\s]?AUC",
-    "F1":       r"F1(?:[-\s]?score)?|F[-\s]?measure|F[-\s]?score",
-    "MAP":      r"MAP|mean\s*average\s*precision",
-    "AP":       r"AP|average\s*precision",
-    "NDCG":     r"n?DCG",
-    "Spe":      r"Spe|specificity",
+    "F1":       r"F1(?:[-\s]?(?i:score))?|(?i:F[-\s]?measure|F[-\s]?score)",
+    "MAP":      r"MAP|(?i:mean\s*average\s*precision)",
+    "AP":       r"AP|(?i:average\s*precision)",
+    "NDCG":     r"[nN]?DCG",
+    "Spe":      r"(?i:Spe|specificity)",
 }
 
 # Placeholder generique d'en-tete groupe : "Hits@N" / "Hits@k" couvre les N reels.
 PLACEHOLDER = r"[nk]\b"
 
 
-def metric_pattern(canonical: str, allow_placeholder: bool = True):
-    """Renvoie une regex compilee (case-insensitive) pour une metric canonique.
+def metric_pattern(canonical: str, allow_placeholder: bool = True,
+                   mode: str = "precision"):
+    """Renvoie une regex compilee pour une metric canonique.
 
     allow_placeholder : si True (precision), un en-tete generique "Hits@N"/"Hits@k"
     couvre le N reel. Si False (recall), on exige le N litteral, sinon on
     sur-genererait des candidats des qu'un placeholder apparait.
+    mode : "precision" -> compile re.I (leniente, inchangee) ; "recall" -> regle
+    de casse homogene : les acronymes/tokens stylises exigent leur casse exacte
+    (les groupes (?i:...) des ALIASES gardent les mots insensibles).
     """
     c = canonical.strip()
+    flags = re.I if mode == "precision" else 0
     ph = (r"|" + PLACEHOLDER) if allow_placeholder else ""
     # Hits@N (N quelconque) : tolere Hit/Hits/H, @ optionnel, espaces
     m = re.match(r"(?i)hits?@(\d+)$", c)
     if m:
         n = m.group(1)
-        return re.compile(LB + r"(?:hits?|h)\s*@?\s*(?:" + n + r"(?![0-9])" + ph + r")", re.I)
+        return re.compile(LB + r"(?i:hits?|h)\s*@?\s*(?:" + n + r"(?![0-9])" + ph + r")", flags)
     # NDCG@N
     m = re.match(r"(?i)ndcg@(\d+)$", c)
     if m:
         n = m.group(1)
-        return re.compile(LB + r"n?dcg\s*@?\s*(?:" + n + r"(?![0-9])" + ph + r")", re.I)
+        return re.compile(LB + r"[nN]?DCG\s*@?\s*(?:" + n + r"(?![0-9])" + ph + r")", flags)
     # metrics epelables
     if c in ALIASES:
-        return re.compile(LB + r"(?:" + ALIASES[c] + r")" + RB, re.I)
-    # fallback : mot-entier verbatim
-    core = re.escape(c)
-    return re.compile(LB + core + RB, re.I)
+        return re.compile(LB + r"(?:" + ALIASES[c] + r")" + RB, flags)
+    # fallback : mot-entier verbatim (recall : casse homogene par token)
+    if mode == "recall":
+        toks = re.findall(r"[A-Za-z0-9]+", c)
+        if not toks:
+            return None
+        core = r"[\s\-_/.@]*".join(VD.tok_regex(t, True) for t in toks)
+        return re.compile(LB + core + RB)
+    return re.compile(LB + re.escape(c) + RB, re.I)
 
 
 # --------------------------------------------------------------------------
@@ -131,7 +146,20 @@ def build_global_vocab(arts):
 
 # Verdicts de verification MANUELLE (remplis apres coup ; vides = baseline honnete).
 PREC_VERDICTS = {}
-RECALL_VERDICTS = {}
+# Adjudication manuelle recall (2026-07-22, justifications completes :
+# recall_checks/metrics_recall_check.csv). "fp" = faux flag ecarte, "miss" = vrai oubli.
+RECALL_VERDICTS = {
+    ("batchns", "F1"): ("miss", "Micro-F1/Macro-F1 rapportees en resultats, non extraites."),
+    ("dans", "NDCG"): ("fp", "Matche 'NDCG@5' deja extraite (plus specifique)."),
+    ("etruncateduns", "F1"): ("miss", "'Prec./Rec./F1-score' table resultats EA, non extraite."),
+    ("mcns", "NDCG"): ("miss", "'MovieLens NDCG / Amazon NDCG' resultats, non extraite."),
+    ("reasonkge", "Hits@3"): ("miss", "Table 6 resultats LP avec Hits@3, non extraite."),
+    ("selfadv", "AUPRC"): ("fp", "'Countries (AUC-PR)' couverte par l'extraction generique AUC."),
+    ("selfadv", "AUROC"): ("miss", "'Countries (AUC-ROC)' = 2e metrique AUC distincte ; "
+                                   "le label generique AUC ne couvre que AUC-PR."),
+    ("tuckerdncaching", "Accuracy"): ("miss", "Accuracy de relation prediction rapportee "
+                                              "(cf. FN Task), non extraite."),
+}
 
 
 def precision_pass(article):
@@ -164,7 +192,7 @@ def recall_pass(article, vocab):
     for lab in sorted(vocab):
         if lab in article["metrics"]:
             continue
-        pat = metric_pattern(lab, allow_placeholder=False)  # recall : N litteral exige
+        pat = metric_pattern(lab, allow_placeholder=False, mode="recall")  # N litteral + casse homogene
         for caption, table, is_stats in article["tables"]:
             m = pat.search(table)
             if m:
@@ -186,7 +214,11 @@ def render_article(a, prec_rows, suspects, tp, fp):
     real = [s for s in suspects if not s[2]]
     stats = [s for s in suspects if s[2]]
     prec = tp / (tp + fp) if (tp + fp) else 1.0
-    rec = tp / (tp + len(real)) if (tp + len(real)) else 1.0
+    # BRUT (script seul) vs ADJUGE (verdicts manuels : "fp" ecarte, sinon oubli)
+    miss = [s for s in real
+            if RECALL_VERDICTS.get((a["slug"], s[0]), ("", ""))[0] != "fp"]
+    rec_brut = tp / (tp + len(real)) if (tp + len(real)) else 1.0
+    rec = tp / (tp + len(miss)) if (tp + len(miss)) else 1.0
     L = [f"# Metrics — {a['md_name']}", "", f"**Titre :** {a['title']}", "",
          "| Metrique | Valeur |", "|---|---|",
          f"| Metrics extraites trouvees dans les tables (TP) | {tp} |",
@@ -194,7 +226,8 @@ def render_article(a, prec_rows, suspects, tp, fp):
          f"| **Precision** | **{prec:.0%}** |",
          f"| Candidats faux negatifs (table resultats) | {len(real)} |",
          f"| Candidats en table de stats (priorite basse) | {len(stats)} |",
-         f"| **Recall relatif (indicatif)** | **{rec:.0%}** |", "",
+         f"| Recall BRUT (avant adjudication) | {rec_brut:.0%} |",
+         f"| **Recall relatif (adjuge)** | **{rec:.0%}** |", "",
          "## Precision — metrics extraites par le KG", "",
          "| Metric extraite | Dans les tables ? | Table | Extrait |", "|---|:---:|---|---|"]
     for lab, found, cap, snip in prec_rows:
@@ -209,7 +242,7 @@ def render_article(a, prec_rows, suspects, tp, fp):
     if stats:
         L += ["", "### Table de stats seulement", "", "| Metric | Table | Extrait |", "|---|---|---|"]
         L += [f"| {esc(l)} | {esc(c)} | {esc(s)} |" for l, c, _, s in stats]
-    return "\n".join(L), (tp, fp, len(real), len(stats), prec, rec)
+    return "\n".join(L), (tp, fp, len(real), len(stats), prec, rec, len(miss))
 
 
 def render_summary(rows, TP, FP, REAL, STATS):
@@ -249,19 +282,21 @@ def main():
 
     # Phase 2 : recall contre le vocab verifie
     rows = []
-    TP = FP = REAL = STATS = 0
+    TP = FP = REAL = STATS = MISS = 0
     for a in arts:
         prec_rows, tp, fp = prec[a["slug"]]
         suspects = recall_pass(a, vocab)
-        report, (tp, fp, real, stats, prec_, rec) = render_article(a, prec_rows, suspects, tp, fp)
+        report, (tp, fp, real, stats, prec_, rec, miss) = render_article(a, prec_rows, suspects, tp, fp)
         open(os.path.join(OUT_DIR, f"{a['slug']}.md"), "w", encoding="utf-8").write(report)
         rows.append((a["md_name"], tp, fp, real, stats, prec_, rec))
-        TP += tp; FP += fp; REAL += real; STATS += stats
+        TP += tp; FP += fp; REAL += real; STATS += stats; MISS += miss
     open(os.path.join(OUT_DIR, "_SUMMARY.md"), "w", encoding="utf-8").write(
         render_summary(rows, TP, FP, REAL, STATS))
     print(f"{len(arts)} rapports -> {OUT_DIR}/")
-    print(f"Precision micro = {TP/(TP+FP):.1%}   Recall relatif micro = {TP/(TP+REAL):.1%}   "
-          f"(cand resultats={REAL}, stats={STATS})")
+    print(f"Precision micro = {TP/(TP+FP):.1%}   (cand resultats={REAL}, stats={STATS})")
+    print(f"Recall BRUT   = {TP/(TP+REAL) if (TP+REAL) else 1.0:.1%} (candidats bruts={REAL})")
+    print(f"Recall ADJUGE = {TP/(TP+MISS) if (TP+MISS) else 1.0:.1%} "
+          f"(vrais FN={MISS}, FP ecartes={REAL-MISS})")
 
 
 if __name__ == "__main__":

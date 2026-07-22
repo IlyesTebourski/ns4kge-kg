@@ -11,9 +11,11 @@
 | Condamnes (trouves mais faux) | 0 |
 | Vraies erreurs / non verifies | 0 |
 | **Precision verifiee** | **100%** |
+| Recall — candidats bruts (script) | 1 |
+| Recall BRUT (avant adjudication) | 67% |
 | Recall — vrais oublis | 0 |
-| Recall — faux positifs ecartes | 0 |
-| **Recall relatif (indicatif)** | **100%** |
+| Recall — faux positifs ecartes | 1 |
+| **Recall relatif (adjuge)** | **100%** |
 
 ## Precision automatique — LossFunction extrait vs source
 
@@ -26,6 +28,4 @@
 
 | Item | Verdict | Extrait / justification |
 |---|:---:|---|
-| margin-based ranking loss | ⚠️ A VERIFIER | e $\tau = (h, r, t)$. They optimize the margin-based ranking loss to make the scores of positive triples |
-| marginal loss | ⚠️ A VERIFIER | e $\tau = (h, r, t)$. They optimize the margin-based ranking loss to make the scores of positive triples |
-| pairwise ranking loss | ⚠️ A VERIFIER | e $\tau = (h, r, t)$. They optimize the margin-based ranking loss to make the scores of positive triples |
+| margin-based ranking loss | ✅ faux positif (ignore) | Loss de TransE en related work ; l'objectif propre (limit-based loss) est extrait. |

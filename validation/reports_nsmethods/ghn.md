@@ -33,7 +33,9 @@
 
 ## C1. Recall EVALUES — dans un tableau mais non extrait
 
-_Aucun._
+| Methode | Ou | Via | Extrait |
+|---|---|:---:|---|
+| Nearest Neighbor Sampling | prose+table | name | negatives, we construct an approximate nearest neighbor negative sampling strategy (ANN) inspired by Xiong et al. |
 
 ## C2. Recall MENTIONNES — en prose seulement mais non extrait
 

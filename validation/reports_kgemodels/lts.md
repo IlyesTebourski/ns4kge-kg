@@ -9,10 +9,12 @@
 | **Precision globale** | **100%** |
 | Precision (evalues, vs tableaux) | 100% |
 | Precision (mentionnes, vs prose) | 100% |
-| Candidats evaluations ratees (en tableau, non extrait) | 2 |
-| Candidats mentions ratees (en prose, non extrait) | 0 |
-| Recall relatif *evalues* | 82% |
-| Recall relatif *mentionnes* | 100% |
+| Candidats evaluations ratees (bruts) | 2 |
+| Candidats mentions ratees (bruts) | 0 |
+| Recall BRUT evalues / mentionnes | 82% / 100% |
+| Vrais oublis (adjuges) evalues / mentionnes | 2 / 0 |
+| Recall ADJUGE *evalues* | 82% |
+| Recall ADJUGE *mentionnes* | 100% |
 
 ## A. Modeles EVALUES — extraits des tableaux (valides vs `tables_only`)
 

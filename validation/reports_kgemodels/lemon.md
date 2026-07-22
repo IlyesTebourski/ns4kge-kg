@@ -9,10 +9,12 @@
 | **Precision globale** | **100%** |
 | Precision (evalues, vs tableaux) | 100% |
 | Precision (mentionnes, vs prose) | 100% |
-| Candidats evaluations ratees (en tableau, non extrait) | 0 |
-| Candidats mentions ratees (en prose, non extrait) | 2 |
-| Recall relatif *evalues* | 100% |
-| Recall relatif *mentionnes* | 0% |
+| Candidats evaluations ratees (bruts) | 0 |
+| Candidats mentions ratees (bruts) | 2 |
+| Recall BRUT evalues / mentionnes | 100% / 0% |
+| Vrais oublis (adjuges) evalues / mentionnes | 0 / 0 |
+| Recall ADJUGE *evalues* | 100% |
+| Recall ADJUGE *mentionnes* | 100% |
 
 ## A. Modeles EVALUES — extraits des tableaux (valides vs `tables_only`)
 
@@ -34,4 +36,4 @@ _Aucun._
 | Modele | Ou | Extrait |
 |---|---|---|
 | BERT | prose | of the entities. We employed Sentence-BERT [13] to obtain the contextual represent |
-| GAN | prose | cently, Generative Adversarial Network (GAN) [9] has been explored for negative sam |
+| sentence-BERT | prose | ilarities of the entities. We employed Sentence-BERT [13] to obtain the contextual represent |

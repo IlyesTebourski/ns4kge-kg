@@ -11,9 +11,11 @@
 | Condamnes (trouves mais faux) | 0 |
 | Vraies erreurs / non verifies | 0 |
 | **Precision verifiee** | **100%** |
+| Recall — candidats bruts (script) | 2 |
+| Recall BRUT (avant adjudication) | 50% |
 | Recall — vrais oublis | 0 |
-| Recall — faux positifs ecartes | 0 |
-| **Recall relatif (indicatif)** | **100%** |
+| Recall — faux positifs ecartes | 2 |
+| **Recall relatif (adjuge)** | **100%** |
 
 ## Precision automatique — LossFunction extrait vs source
 
@@ -26,5 +28,5 @@
 
 | Item | Verdict | Extrait / justification |
 |---|:---:|---|
-| cross-entropy loss | ⚠️ A VERIFIER | istance models, as most of them utilize cross-entropy loss. In this paper, we also adopt such loss |
-| Triplet loss | ⚠️ A VERIFIER | r samples apart. Ref. [32] proposed the Triplet Loss function as an improvement, where each |
+| cross-entropy loss | ✅ faux positif (ignore) | Variante deja capturee par 'binary cross-entropy loss' extraite. |
+| Triplet loss | ✅ faux positif (ignore) | Historique face recognition (Ref. [32]). |

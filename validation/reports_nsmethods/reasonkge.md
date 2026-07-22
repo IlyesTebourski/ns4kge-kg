@@ -9,7 +9,7 @@
 | Precision evalues | 100% | 
 | Precision mentionnes | 100% |
 | Recall evalues | 100% |
-| Recall mentionnes | 50% |
+| Recall mentionnes | 100% |
 
 ## A. Methodes EVALUEES (valides vs `tables_only`)
 
@@ -38,9 +38,6 @@ _Aucun._
 
 | Methode | Ou | Via | Extrait |
 |---|---|:---:|---|
-| Adversarial Negative Sampling | prose | name | ction concerns making use of Generative Adversarial Networks (GANs) [39,35,10] for negative |
-| Domain-based Negative Sampling | prose | name | they utilized such ontology axioms as *Domain*, *Range*, *Functional*, and *Disjointn |
-| GAN-based Negative Sampling | prose | name | use of Generative Adversarial Networks (GANs) [39,35,10] for negative sampling. The |
-| Iterative Negative Sampling | prose | name | nutshell # 3 Ontological Reasoning for Iterative Negative Sampling While a variety of e |
+| Iterative Negative Sampling | prose | name | nutshell # 3 Ontological Reasoning for Iterative Negative Sampling While a variety of embedding models ex |
 | SANS | prose | name | ents structure-aware negative sampling (SANS), which utilizes the graph structure by |
 | Local-Closed World Assumption Negative Sampling | prose | acro | on the (local) closed world assumption (LCWA). Based on CWA all triples not present |

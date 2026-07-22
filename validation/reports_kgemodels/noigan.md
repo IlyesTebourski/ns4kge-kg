@@ -9,10 +9,12 @@
 | **Precision globale** | **100%** |
 | Precision (evalues, vs tableaux) | 100% |
 | Precision (mentionnes, vs prose) | 100% |
-| Candidats evaluations ratees (en tableau, non extrait) | 0 |
-| Candidats mentions ratees (en prose, non extrait) | 2 |
-| Recall relatif *evalues* | 100% |
-| Recall relatif *mentionnes* | 71% |
+| Candidats evaluations ratees (bruts) | 0 |
+| Candidats mentions ratees (bruts) | 2 |
+| Recall BRUT evalues / mentionnes | 100% / 71% |
+| Vrais oublis (adjuges) evalues / mentionnes | 0 / 0 |
+| Recall ADJUGE *evalues* | 100% |
+| Recall ADJUGE *mentionnes* | 100% |
 
 ## A. Modeles EVALUES — extraits des tableaux (valides vs `tables_only`)
 
@@ -41,5 +43,5 @@ _Aucun._
 
 | Modele | Ou | Extrait |
 |---|---|---|
-| GAN | prose | SE AWARE KNOWLEDGE GRAPH EMBEDDING WITH GAN **Anonymous authors** Paper under doub |
 | MLP | prose | thcal{N}(h, r, t)$. In particular, this MLP uses ReLU as the activation function fo |
+| Unstructured | prose | information as the form of triple from unstructured text using information extraction syste |

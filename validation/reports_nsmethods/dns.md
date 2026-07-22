@@ -9,7 +9,7 @@
 | Precision evalues | 100% | 
 | Precision mentionnes | 100% |
 | Recall evalues | 100% |
-| Recall mentionnes | 50% |
+| Recall mentionnes | 100% |
 
 ## A. Methodes EVALUEES (valides vs `tables_only`)
 
@@ -35,7 +35,4 @@ _Aucun._
 
 | Methode | Ou | Via | Extrait |
 |---|---|:---:|---|
-| Approximate Nearest Neighbor Negative Sampling | prose | name | an open source library that implements Approximate Nearest Neighbor functionality using Locality-Sensitive |
-| Filtered Negative Sampling | prose | name | ping criterion was considered to be the Filtered MRR on the validation set, and the thre |
-| GAN-based Negative Sampling | prose | name | rom the set of all entities. ? define a GAN, an adversarial learning framework that |
-| Local-Closed World Assumption Negative Sampling | prose | name | ve samples, which are created under the Local Closed World Assumption (LCWA). Leveraging this assumption, one |
+| Local-Closed World Assumption Negative Sampling | prose | acro | nder the Local Closed World Assumption (LCWA). Leveraging this assumption, one rando |

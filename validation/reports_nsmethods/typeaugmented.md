@@ -8,8 +8,8 @@
 | Methodes MENTIONNEES seulement (prose) | 6 |
 | Precision evalues | 100% | 
 | Precision mentionnes | 100% |
-| Recall evalues | 0% |
-| Recall mentionnes | 86% |
+| Recall evalues | 100% |
+| Recall mentionnes | 100% |
 
 ## A. Methodes EVALUEES (valides vs `tables_only`)
 
@@ -29,12 +29,10 @@
 
 ## C1. Recall EVALUES — dans un tableau mais non extrait
 
-| Methode | Ou | Via | Extrait |
-|---|---|:---:|---|
-| Frequency-based Negative Sampling | table | name | Bin Center</td> <td>TaKE-SimplE Frequency</td> <td>SimplE Frequency</td> |
+_Aucun._
 
 ## C2. Recall MENTIONNES — en prose seulement mais non extrait
 
 | Methode | Ou | Via | Extrait |
 |---|---|:---:|---|
-| Dynamic Negative Sampling | prose | name | didate set of non-homogeneous entities. Dynamic sampling is performed respectively from |
+| Adversarial Negative Sampling | prose | name | Sun et al.<sup>15</sup> propose a self-adversarial negative sampling strategy and design a self-adversarial |

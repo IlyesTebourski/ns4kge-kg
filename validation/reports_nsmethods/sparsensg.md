@@ -9,7 +9,7 @@
 | Precision evalues | 100% | 
 | Precision mentionnes | 0% |
 | Recall evalues | 100% |
-| Recall mentionnes | 0% |
+| Recall mentionnes | 100% |
 
 ## A. Methodes EVALUEES (valides vs `tables_only`)
 
@@ -29,7 +29,4 @@ _Aucun._
 
 ## C2. Recall MENTIONNES — en prose seulement mais non extrait
 
-| Methode | Ou | Via | Extrait |
-|---|---|:---:|---|
-| Frequency-based Negative Sampling | prose | name | # A Novel Negative Sampling Based on Frequency of Relational Association Entities for |
-| Relational Sampling | prose | name | Negative Sampling Based on Frequency of Relational Association Entities for Knowledge Grap |
+_Aucun._

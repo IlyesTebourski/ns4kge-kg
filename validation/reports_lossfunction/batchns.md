@@ -11,9 +11,11 @@
 | Condamnes (trouves mais faux) | 0 |
 | Vraies erreurs / non verifies | 1 |
 | **Precision verifiee** | **67%** |
+| Recall — candidats bruts (script) | 3 |
+| Recall BRUT (avant adjudication) | 40% |
 | Recall — vrais oublis | 0 |
-| Recall — faux positifs ecartes | 0 |
-| **Recall relatif (indicatif)** | **100%** |
+| Recall — faux positifs ecartes | 3 |
+| **Recall relatif (adjuge)** | **100%** |
 
 ## Precision automatique — LossFunction extrait vs source
 
@@ -35,6 +37,6 @@ Chaque ecart avec la source est verifie a la main. Un item non imputable au KG e
 
 | Item | Verdict | Extrait / justification |
 |---|:---:|---|
-| binary cross-entropy loss | ⚠️ A VERIFIER | oss for positives and negatives, e.g. a binary cross-entropy loss <sup>3</sup>The slower convergence may |
-| cross-entropy | ⚠️ A VERIFIER | positives and negatives, e.g. a binary cross-entropy loss <sup>3</sup>The slower convergence |
-| cross-entropy loss | ⚠️ A VERIFIER | positives and negatives, e.g. a binary cross-entropy loss <sup>3</sup>The slower convergence may |
+| binary cross-entropy loss | ✅ faux positif (ignore) | Footnote hypothetique ('if we were using...'). |
+| cross-entropy | ✅ faux positif (ignore) | Meme footnote hypothetique. |
+| cross-entropy loss | ✅ faux positif (ignore) | Meme footnote hypothetique. |

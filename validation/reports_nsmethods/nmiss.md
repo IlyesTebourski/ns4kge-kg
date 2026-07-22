@@ -8,8 +8,8 @@
 | Methodes MENTIONNEES seulement (prose) | 6 |
 | Precision evalues | 100% | 
 | Precision mentionnes | 100% |
-| Recall evalues | 67% |
-| Recall mentionnes | 86% |
+| Recall evalues | 100% |
+| Recall mentionnes | 100% |
 
 ## A. Methodes EVALUEES (valides vs `tables_only`)
 
@@ -31,12 +31,10 @@
 
 ## C1. Recall EVALUES — dans un tableau mais non extrait
 
-| Methode | Ou | Via | Extrait |
-|---|---|:---:|---|
-| Frequency-based Negative Sampling | table | name | <table> <thead> <tr> <th>Frequency</th> <th>train</th> <th |
+_Aucun._
 
 ## C2. Recall MENTIONNES — en prose seulement mais non extrait
 
 | Methode | Ou | Via | Extrait |
 |---|---|:---:|---|
-| Domain-based Negative Sampling | prose | name | tage to produce typed negative samples. Domain and range types for Freebase relations |
+| Nearest-neighbour Sampling | prose | name | lt perform well with both near miss and nearest neighbour sampling on FB15k. Rescal performs best with nea |

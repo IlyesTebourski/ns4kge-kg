@@ -9,10 +9,12 @@
 | **Precision globale** | **100%** |
 | Precision (evalues, vs tableaux) | 100% |
 | Precision (mentionnes, vs prose) | 100% |
-| Candidats evaluations ratees (en tableau, non extrait) | 0 |
-| Candidats mentions ratees (en prose, non extrait) | 2 |
-| Recall relatif *evalues* | 100% |
-| Recall relatif *mentionnes* | 87% |
+| Candidats evaluations ratees (bruts) | 0 |
+| Candidats mentions ratees (bruts) | 3 |
+| Recall BRUT evalues / mentionnes | 100% / 81% |
+| Vrais oublis (adjuges) evalues / mentionnes | 0 / 1 |
+| Recall ADJUGE *evalues* | 100% |
+| Recall ADJUGE *mentionnes* | 93% |
 
 ## A. Modeles EVALUES — extraits des tableaux (valides vs `tables_only`)
 
@@ -53,5 +55,6 @@ _Aucun._
 
 | Modele | Ou | Extrait |
 |---|---|---|
-| GAN | prose | by the generative adversarial network (GAN) [39], some works have attempted to gen |
+| Attention | prose | erent from previous models, we pay more attention to the different contributions of each |
+| Neural Tensor Network | prose | antic matching energy (SME) [16] model, neural tensor network (NTN) [17] model, and matrix factorizat |
 | word2vec | prose | ng vector translation invariance of the word2vec model, Borders et al. proposed the firs |

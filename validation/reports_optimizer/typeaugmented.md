@@ -11,9 +11,11 @@
 | Condamnes (trouves mais faux) | 0 |
 | Vraies erreurs / non verifies | 0 |
 | **Precision verifiee** | **100%** |
-| Recall — vrais oublis | 0 |
+| Recall — candidats bruts (script) | 1 |
+| Recall BRUT (avant adjudication) | 50% |
+| Recall — vrais oublis | 1 |
 | Recall — faux positifs ecartes | 0 |
-| **Recall relatif (indicatif)** | **100%** |
+| **Recall relatif (adjuge)** | **50%** |
 
 ## Precision automatique — Optimizer extrait vs source
 
@@ -25,4 +27,4 @@
 
 | Item | Verdict | Extrait / justification |
 |---|:---:|---|
-| SGD | ⚠️ A VERIFIER | .1, 0.3, 1.0\}$, learning rate used for SGD $lr \in \{0.1, 0.5, 1.0\}$. The best co |
+| SGD | ❌ vrai oubli | 'learning rate used for SGD lr in {0.1,0.5,1.0}', best config lr=0.5 : les modeles TaKE sont entraines par SGD, non extrait. |

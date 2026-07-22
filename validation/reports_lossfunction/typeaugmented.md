@@ -11,9 +11,11 @@
 | Condamnes (trouves mais faux) | 0 |
 | Vraies erreurs / non verifies | 0 |
 | **Precision verifiee** | **100%** |
+| Recall — candidats bruts (script) | 2 |
+| Recall BRUT (avant adjudication) | 33% |
 | Recall — vrais oublis | 0 |
-| Recall — faux positifs ecartes | 0 |
-| **Recall relatif (indicatif)** | **100%** |
+| Recall — faux positifs ecartes | 2 |
+| **Recall relatif (adjuge)** | **100%** |
 
 ## Precision automatique — LossFunction extrait vs source
 
@@ -25,5 +27,5 @@
 
 | Item | Verdict | Extrait / justification |
 |---|:---:|---|
-| Negative Sampling loss | ⚠️ A VERIFIER | strategy and design a self-adversarial negative sampling loss as the optimization object. Other work |
-| Self-adversarial negative sampling loss | ⚠️ A VERIFIER | negative sampling strategy and design a self-adversarial negative sampling loss as the optimization object. Other work |
+| Negative Sampling loss | ✅ faux positif (ignore) | Related work (Sun et al.). |
+| Self-adversarial negative sampling loss | ✅ faux positif (ignore) | Meme passage. |

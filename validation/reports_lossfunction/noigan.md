@@ -11,9 +11,11 @@
 | Condamnes (trouves mais faux) | 0 |
 | Vraies erreurs / non verifies | 0 |
 | **Precision verifiee** | **100%** |
-| Recall — vrais oublis | 0 |
-| Recall — faux positifs ecartes | 0 |
-| **Recall relatif (indicatif)** | **100%** |
+| Recall — candidats bruts (script) | 2 |
+| Recall BRUT (avant adjudication) | 50% |
+| Recall — vrais oublis | 1 |
+| Recall — faux positifs ecartes | 1 |
+| **Recall relatif (adjuge)** | **67%** |
 
 ## Precision automatique — LossFunction extrait vs source
 
@@ -26,7 +28,5 @@
 
 | Item | Verdict | Extrait / justification |
 |---|:---:|---|
-| margin-based ranking loss | ⚠️ A VERIFIER | ing is usually required to minimize the margin based ranking loss. A conventional method to construct neg |
-| marginal loss | ⚠️ A VERIFIER | ing is usually required to minimize the margin based ranking loss. A conventional method to construct neg |
-| pairwise ranking loss | ⚠️ A VERIFIER | ing is usually required to minimize the margin based ranking loss. A conventional method to construct neg |
-| policy gradient | ⚠️ A VERIFIER | lity issue. A common solution is to use policy gradient based reinforcement learning instead (W |
+| margin-based ranking loss | ✅ faux positif (ignore) | Background generique ('usually required to minimize...'). |
+| policy gradient | ❌ vrai oubli | Le papier definit SON entrainement du generateur par policy gradient (reward du discriminateur), non extrait. |

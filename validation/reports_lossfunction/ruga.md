@@ -11,9 +11,11 @@
 | Condamnes (trouves mais faux) | 0 |
 | Vraies erreurs / non verifies | 0 |
 | **Precision verifiee** | **100%** |
-| Recall — vrais oublis | 0 |
-| Recall — faux positifs ecartes | 0 |
-| **Recall relatif (indicatif)** | **100%** |
+| Recall — candidats bruts (script) | 2 |
+| Recall BRUT (avant adjudication) | 67% |
+| Recall — vrais oublis | 1 |
+| Recall — faux positifs ecartes | 1 |
+| **Recall relatif (adjuge)** | **80%** |
 
 ## Precision automatique — LossFunction extrait vs source
 
@@ -28,5 +30,5 @@
 
 | Item | Verdict | Extrait / justification |
 |---|:---:|---|
-| negative log-likelihood | ⚠️ A VERIFIER | (h', r, t')}$. The loss function is the negative log-likelihood of this probabilistic model: $$ L_l = |
-| policy gradient | ⚠️ A VERIFIER | iation. We use a simple special case of Policy Gradient Theorem1<sup>[21]</sup> to obtain the g |
+| negative log-likelihood | ✅ faux positif (ignore) | Definition de la log-softmax deja extraite. |
+| policy gradient | ❌ vrai oubli | 'We use a simple special case of Policy Gradient Theorem' : non extrait. |

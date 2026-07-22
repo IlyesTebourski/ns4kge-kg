@@ -9,7 +9,7 @@
 | Precision evalues | 100% | 
 | Precision mentionnes | 100% |
 | Recall evalues | 100% |
-| Recall mentionnes | 25% |
+| Recall mentionnes | 50% |
 
 ## A. Methodes EVALUEES (valides vs `tables_only`)
 
@@ -34,6 +34,5 @@ _Aucun._
 
 | Methode | Ou | Via | Extrait |
 |---|---|:---:|---|
-| Cache-based Negative Sampling | prose | name | ] Pos_triplet["(h, r, t)"] --> Cache["{(h', r, t')}"] Neg_triplet_h --> |
-| GAN-based Negative Sampling | prose | name | by the generative adversarial network (GAN) [39], some works have attempted to gen |
+| Dynamic Distribution Sampling | prose | name | gories: fixed distribution sampling and dynamic distribution sampling [38]. The previous sampling works, such |
 | IGAN | prose | name | sing an adversarial training framework. IGAN [40] and Kbgan [41] both introduce GAN |

@@ -11,9 +11,11 @@
 | Condamnes (trouves mais faux) | 0 |
 | Vraies erreurs / non verifies | 0 |
 | **Precision verifiee** | **100%** |
+| Recall — candidats bruts (script) | 2 |
+| Recall BRUT (avant adjudication) | 33% |
 | Recall — vrais oublis | 0 |
-| Recall — faux positifs ecartes | 0 |
-| **Recall relatif (indicatif)** | **100%** |
+| Recall — faux positifs ecartes | 2 |
+| **Recall relatif (adjuge)** | **100%** |
 
 ## Precision automatique — Optimizer extrait vs source
 
@@ -25,5 +27,5 @@
 
 | Item | Verdict | Extrait / justification |
 |---|:---:|---|
-| AdaGrad | ⚠️ A VERIFIER | problem of decreasing learning rate in AdaGrad. We ensure that entity embeddings for a |
-| SGD | ⚠️ A VERIFIER | e (100), and data. We use the Adam [13] SGD optimizer for training because it addre |
+| AdaGrad | ✅ faux positif (ignore) | AdaGrad cite comme repoussoir ('because it addresses the problem of decreasing learning rate in AdaGrad'). |
+| SGD | ✅ faux positif (ignore) | 'Adam [13] SGD optimizer' : Adam extrait, SGD = cadre. |

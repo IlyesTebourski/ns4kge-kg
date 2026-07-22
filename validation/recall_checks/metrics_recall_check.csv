@@ -1,0 +1,9 @@
+entite,article,candidat,localisation,verdict,justification
+Metrics,batchns,F1,table resultats,FN,"En-tetes 'Micro-F1 | Macro-F1' d'une table de resultats du papier (evaluation downstream des embeddings) : metric rapportee, non extraite (extraits: MR/MRR/Hits@10)."
+Metrics,dans,NDCG,en-tete de colonne,FP,"Matche la cellule 'NDCG@5' : deja couverte par l'extraction plus specifique NDCG@5."
+Metrics,etruncateduns,F1,table resultats,FN,"En-tetes 'Prec. | Rec. | F1-score' de la table de resultats d'entity alignment (la task du papier) : F1 rapportee, non extraite."
+Metrics,mcns,NDCG,table resultats,FN,"'MovieLens NDCG | Amazon NDCG' : resultats de recommandation du papier avec NDCG, non extraite (extraits: AUC/F1/Hits@30/MRR)."
+Metrics,reasonkge,Hits@3,Table 6 (resultats LP),FN,"'Table 6: Link predictions results... Hits@1 | Hits@3 | Hits@10' : Hits@3 rapportee dans les resultats, non extraite (extraits: Hits@1/Hits@10/MRR)."
+Metrics,selfadv,AUPRC,Table 7 (Countries),FP,"'Countries (AUC-PR)' : capturee par l'extraction generique 'AUC' du KG (imprecision de label, pas un oubli — c'est LA table dont vient l'AUC extraite, cf. RotatE/Countries)."
+Metrics,selfadv,AUROC,Table 9 (resultats),FN,"'Countries (AUC-ROC)' : SECONDE metrique AUC distincte rapportee ; le label generique 'AUC' extrait ne peut couvrir qu'une des deux (AUC-PR). AUC-ROC = metric distincte non extraite."
+Metrics,tuckerdncaching,Accuracy,table resultats accuracy,FN,"'(c) Many-to-Many Relations Accuracy' + courbes par epoch : accuracy de relation prediction/classification rapportee comme resultat (coherent avec le FN Relation Prediction cote Task), non extraite."

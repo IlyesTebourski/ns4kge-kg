@@ -9,10 +9,12 @@
 | **Precision globale** | **100%** |
 | Precision (evalues, vs tableaux) | 100% |
 | Precision (mentionnes, vs prose) | 100% |
-| Candidats evaluations ratees (en tableau, non extrait) | 1 |
-| Candidats mentions ratees (en prose, non extrait) | 1 |
-| Recall relatif *evalues* | 94% |
-| Recall relatif *mentionnes* | 86% |
+| Candidats evaluations ratees (bruts) | 1 |
+| Candidats mentions ratees (bruts) | 2 |
+| Recall BRUT evalues / mentionnes | 94% / 75% |
+| Vrais oublis (adjuges) evalues / mentionnes | 0 / 0 |
+| Recall ADJUGE *evalues* | 100% |
+| Recall ADJUGE *mentionnes* | 100% |
 
 ## A. Modeles EVALUES — extraits des tableaux (valides vs `tables_only`)
 
@@ -55,4 +57,5 @@
 
 | Modele | Ou | Extrait |
 |---|---|---|
+| Attention | prose | nism using knowledge-guided cross-modal attention to generate more challenging negatives |
 | MLP | prose | mathbf{x}_e, \mathbf{x}_r)) = LayerNorm(MLP(\mathbf{x}_t, PE(t), C(\mathbf{x}_e, \m |

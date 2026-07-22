@@ -9,10 +9,12 @@
 | **Precision globale** | **100%** |
 | Precision (evalues, vs tableaux) | 100% |
 | Precision (mentionnes, vs prose) | 100% |
-| Candidats evaluations ratees (en tableau, non extrait) | 1 |
-| Candidats mentions ratees (en prose, non extrait) | 1 |
-| Recall relatif *evalues* | 93% |
-| Recall relatif *mentionnes* | 90% |
+| Candidats evaluations ratees (bruts) | 1 |
+| Candidats mentions ratees (bruts) | 2 |
+| Recall BRUT evalues / mentionnes | 93% / 82% |
+| Vrais oublis (adjuges) evalues / mentionnes | 0 / 0 |
+| Recall ADJUGE *evalues* | 100% |
+| Recall ADJUGE *mentionnes* | 100% |
 
 ## A. Modeles EVALUES — extraits des tableaux (valides vs `tables_only`)
 
@@ -57,4 +59,5 @@
 
 | Modele | Ou | Extrait |
 |---|---|---|
+| Attention | prose | ng promising performance and increasing attention for the rapid development of large lang |
 | KGT5 | prose | r encoding text descriptions. Moreover, KGT5-context (Kochsiek et al. 2023) and KG-S |

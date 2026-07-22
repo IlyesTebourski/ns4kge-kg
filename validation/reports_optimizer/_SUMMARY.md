@@ -5,7 +5,7 @@ Articles avec extraction : **37**
 | Article | Extr | TP auto | Prec.auto | Valid | Condamn | Prec.verif | Oublis | FP recall |
 |---|---:|---:|:---:|---:|---:|:---:|---:|---:|
 | ADNS.md | 1 | 1 | 100% | 0 | 0 | 100% | 0 | 0 |
-| BatchNS.md | 1 | 1 | 100% | 0 | 0 | 100% | 0 | 0 |
+| BatchNS.md | 1 | 1 | 100% | 0 | 0 | 100% | 0 | 2 |
 | CAKE.md | 1 | 1 | 100% | 0 | 0 | 100% | 0 | 0 |
 | CANS.md | 1 | 1 | 100% | 0 | 0 | 100% | 0 | 0 |
 | CCS.md | 1 | 1 | 100% | 0 | 0 | 100% | 0 | 0 |
@@ -22,24 +22,24 @@ Articles avec extraction : **37**
 | GraphGAN.md | 1 | 1 | 100% | 0 | 0 | 100% | 0 | 0 |
 | HaSa.md | 1 | 1 | 100% | 0 | 0 | 100% | 0 | 0 |
 | HTENS.md | 1 | 1 | 100% | 0 | 0 | 100% | 0 | 0 |
-| IGAN.md | 1 | 1 | 100% | 0 | 0 | 100% | 0 | 0 |
+| IGAN.md | 1 | 1 | 100% | 0 | 0 | 100% | 0 | 1 |
 | KBGAN.md | 1 | 1 | 100% | 0 | 0 | 100% | 0 | 0 |
 | KSGAN.md | 1 | 1 | 100% | 0 | 0 | 100% | 0 | 0 |
 | LAS.md | 1 | 1 | 100% | 0 | 0 | 100% | 0 | 0 |
-| Localcognitive.md | 1 | 1 | 100% | 0 | 0 | 100% | 0 | 0 |
+| Localcognitive.md | 1 | 1 | 100% | 0 | 0 | 100% | 0 | 1 |
 | M2ixKG.md | 1 | 1 | 100% | 0 | 0 | 100% | 0 | 0 |
 | MDNCaching.md | 1 | 1 | 100% | 0 | 0 | 100% | 0 | 0 |
-| NMiss.md | 1 | 1 | 100% | 0 | 0 | 100% | 0 | 0 |
+| NMiss.md | 1 | 1 | 100% | 0 | 0 | 100% | 0 | 2 |
 | NoiGAN.md | 1 | 1 | 100% | 0 | 0 | 100% | 0 | 0 |
-| NSCaching.md | 1 | 1 | 100% | 0 | 0 | 100% | 0 | 0 |
+| NSCaching.md | 1 | 1 | 100% | 0 | 0 | 100% | 0 | 1 |
 | PNS.md | 1 | 1 | 100% | 0 | 0 | 100% | 0 | 0 |
 | SelfAdv.md | 1 | 1 | 100% | 0 | 0 | 100% | 0 | 0 |
 | SNS.md | 1 | 1 | 100% | 0 | 0 | 100% | 0 | 0 |
 | SparseNSG.md | 1 | 0 | 0% | 0 | 0 | 0% | 0 | 0 |
 | STC.md | 1 | 1 | 100% | 0 | 0 | 100% | 0 | 0 |
 | TuckerDNCaching.md | 1 | 1 | 100% | 0 | 0 | 100% | 0 | 0 |
-| TypeAugmented.md | 1 | 1 | 100% | 0 | 0 | 100% | 0 | 0 |
-| TypeConstraints.md | 2 | 2 | 100% | 0 | 0 | 100% | 0 | 0 |
+| TypeAugmented.md | 1 | 1 | 100% | 0 | 0 | 100% | 1 | 0 |
+| TypeConstraints.md | 2 | 2 | 100% | 0 | 0 | 100% | 1 | 0 |
 | Uniform.md | 1 | 1 | 100% | 0 | 0 | 100% | 0 | 0 |
 
 ## Totaux
@@ -53,9 +53,11 @@ Articles avec extraction : **37**
 | Condamnes (trouves mais faux) | 0 |
 | Precision — ratés encore a verifier | 1 |
 | **Precision verifiee (micro)** | **97.4%** |
-| Recall — vrais oublis | 0 |
-| Recall — faux positifs ecartes | 0 |
-| Recall — candidats encore a verifier | 10 |
-| **Recall relatif (indicatif, micro)** | **100.0%** |
+| Recall — candidats bruts (script) | 10 |
+| **Recall BRUT (avant adjudication, micro)** | **79.2%** |
+| Recall — vrais oublis | 2 |
+| Recall — faux positifs ecartes | 8 |
+| Recall — candidats encore a verifier | 0 |
+| **Recall relatif ADJUGE (micro)** | **95.0%** |
 
 > Vocab de recall = uniquement les items VERIFIES CORRECTS : une extraction fausse (hallucination / mauvais type) ne contamine pas le vocab et ne genere pas de faux candidats ailleurs. Precision auto = matcher deterministe non taille pour un article ; precision verifiee = apres adjudication manuelle tracable.

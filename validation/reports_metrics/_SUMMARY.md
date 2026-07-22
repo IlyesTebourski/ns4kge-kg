@@ -13,7 +13,7 @@ Articles : **55**
 | CCS.md | 5 | 0 | 100% | 0 | 0 | 100% |
 | ConceptDriven.md | 4 | 1 | 80% | 0 | 0 | 100% |
 | CondConstraints.md | 3 | 0 | 100% | 0 | 0 | 100% |
-| dans.md | 3 | 0 | 100% | 1 | 0 | 75% |
+| dans.md | 3 | 0 | 100% | 1 | 0 | 100% |
 | DeMix.md | 4 | 0 | 100% | 0 | 0 | 100% |
 | DHNS.md | 4 | 0 | 100% | 0 | 0 | 100% |
 | DMNS.md | 2 | 0 | 100% | 0 | 0 | 100% |
@@ -49,7 +49,7 @@ Articles : **55**
 | ReasonKGE.md | 3 | 0 | 100% | 1 | 0 | 75% |
 | RUGA.md | 5 | 2 | 71% | 0 | 0 | 100% |
 | SANS.md | 2 | 0 | 100% | 0 | 0 | 100% |
-| SelfAdv.md | 6 | 0 | 100% | 2 | 0 | 75% |
+| SelfAdv.md | 6 | 0 | 100% | 2 | 0 | 86% |
 | SNS.md | 4 | 0 | 100% | 0 | 0 | 100% |
 | SparseNSG.md | 4 | 1 | 80% | 0 | 0 | 100% |
 | STC.md | 4 | 0 | 100% | 0 | 0 | 100% |
@@ -71,4 +71,4 @@ Articles : **55**
 | **Precision micro** | **96.5%** |
 | **Precision macro** | **97.1%** |
 | **Recall relatif micro (indicatif)** | **96.0%** |
-| **Recall relatif macro (indicatif)** | **97.1%** |
+| **Recall relatif macro (indicatif)** | **97.7%** |

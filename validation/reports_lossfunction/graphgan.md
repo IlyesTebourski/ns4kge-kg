@@ -11,9 +11,11 @@
 | Condamnes (trouves mais faux) | 0 |
 | Vraies erreurs / non verifies | 0 |
 | **Precision verifiee** | **100%** |
-| Recall — vrais oublis | 0 |
+| Recall — candidats bruts (script) | 1 |
+| Recall BRUT (avant adjudication) | 0% |
+| Recall — vrais oublis | 1 |
 | Recall — faux positifs ecartes | 0 |
-| **Recall relatif (indicatif)** | **100%** |
+| **Recall relatif (adjuge)** | **0%** |
 
 ## Precision automatique — LossFunction extrait vs source
 
@@ -25,4 +27,4 @@
 
 | Item | Verdict | Extrait / justification |
 |---|:---:|---|
-| policy gradient | ⚠️ A VERIFIER | pes), and generator $G$ is updated with policy gradient under the guidance of $D$ (detailed lat |
+| policy gradient | ❌ vrai oubli | 'generator G is updated with policy gradient' : objectif d'entrainement du papier, extraits vides. |

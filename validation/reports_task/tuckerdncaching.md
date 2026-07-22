@@ -11,9 +11,11 @@
 | Condamnes (trouves mais faux) | 0 |
 | Vraies erreurs / non verifies | 0 |
 | **Precision verifiee** | **100%** |
-| Recall — vrais oublis | 0 |
-| Recall — faux positifs ecartes | 0 |
-| **Recall relatif (indicatif)** | **100%** |
+| Recall — candidats bruts (script) | 2 |
+| Recall BRUT (avant adjudication) | 33% |
+| Recall — vrais oublis | 1 |
+| Recall — faux positifs ecartes | 1 |
+| **Recall relatif (adjuge)** | **50%** |
 
 ## Precision automatique — Task extrait vs source
 
@@ -25,5 +27,5 @@
 
 | Item | Verdict | Extrait / justification |
 |---|:---:|---|
-| Relation Prediction | ⚠️ A VERIFIER | . The third column shows bar charts for Relation Prediction Accuracy (%) for TuckerDNCaching and MD |
-| Triple Classification | ⚠️ A VERIFIER | ition tasks such as link prediction and triplet classification. In conventional KGE approaches, observ |
+| Relation Prediction | ❌ vrai oubli | Bar charts 'Relation Prediction Accuracy (%)' pour LEUR modele. |
+| Triple Classification | ✅ faux positif (ignore) | Enumeration d'intro. |

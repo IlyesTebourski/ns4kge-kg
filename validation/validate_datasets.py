@@ -68,17 +68,64 @@ def norm_key(entity: str) -> str:
     return "".join(tokens_of(entity))
 
 
+# --------------------------------------------------------------------------
+# REGLE DE CASSE HOMOGENE (tous les validateurs)
+# --------------------------------------------------------------------------
+# En RECALL on cherche un label du vocab "a l'aveugle" dans 55 articles : un nom
+# STYLISE dont la casse fait partie du nom (RatE, SimplE, FB15k, GAN, MRR) doit
+# matcher avec sa casse exacte, sinon chaque "learning rate" devient un candidat
+# pour RatE (bruit massif, mesure : 64 -> 265 candidats KGE sans la regle).
+# Un token BANAL (Adam, link, prediction) reste insensible a la casse : sa
+# majuscule initiale n'est que de la typographie.
+# En PRECISION (leniente) tout reste insensible : on valide la presence du label
+# extrait dans SA source ; la typographie du papier peut varier (ComplEx/Complex).
+
+# Filet de securite VALIDATION : le loader du pipeline (load_md_no_tables) coupe
+# deja "# References", mais rate les headings NUMEROTES ("# 6. REFERENCES", PNS.md).
+# On coupe pareil ici — un match dans la bibliographie (titre de papier cite) n'est
+# ni une preuve de precision ni un candidat de recall. (RCWC.md : biblio sans
+# heading du tout, non detectable proprement -> adjudication manuelle.)
+_REF_HEADING = re.compile(r"\n#+\s*(?:[0-9ivxIVX]+[\.\)]?\s*)?references\b", re.I)
+
+
+def strip_references(text: str) -> str:
+    return _REF_HEADING.split(text)[0].strip()
+
+
+def stylized_cs(tok: str) -> bool:
+    """Token 'stylise' : majuscule HORS initiale (RatE, FB15k, NSCaching) ou
+    tout-majuscules (GAN, MRR, SGD). La casse fait alors partie du nom."""
+    return bool(re.search(r"[A-Z]", tok[1:])) or (len(tok) > 1 and tok.isupper())
+
+
+def tok_regex(tok: str, strict_case: bool) -> str:
+    """Regex d'UN token selon la regle : casse exacte si (recall ET stylise),
+    sinon groupe insensible (?i:...). Les patterns qui l'utilisent ne doivent
+    PAS etre compiles avec re.IGNORECASE (le flag ecraserait la distinction)."""
+    esc_ = re.escape(tok)
+    return esc_ if (strict_case and stylized_cs(tok)) else "(?i:" + esc_ + ")"
+
+
 # Frontiere : un nom de dataset ne doit pas etre un simple prefixe d'un code plus
 # grand. On exclut donc aussi - _ / des frontieres, sinon "FB15k" matcherait
 # l'interieur de "FB15k-237" (datasets DIFFERENTS).
 BOUND = r"[A-Za-z0-9\-_/]"
 
 
-def build_pattern(entity: str):
+def build_pattern(entity: str, mode: str = "precision"):
+    """mode="recall" : regle de casse homogene (tok_regex) — un token stylise
+    (FB15k, WN18RR) exige sa casse exacte. mode="precision" : insensible (leniente,
+    inchangee)."""
+    sep = r"[\s\-_/.@]*"
+    if mode == "recall":
+        toks = re.findall(r"[A-Za-z0-9]+", entity)      # casse preservee
+        if not toks:
+            return None
+        core = sep.join(tok_regex(t, True) for t in toks)
+        return re.compile(r"(?<!" + BOUND + r")" + core + r"(?!" + BOUND + r")")
     toks = tokens_of(entity)
     if not toks:
         return None
-    sep = r"[\s\-_/.@]*"
     core = sep.join(re.escape(t) for t in toks)
     return re.compile(r"(?<!" + BOUND + r")" + core + r"(?!" + BOUND + r")",
                       re.IGNORECASE)
@@ -173,7 +220,16 @@ def which_table(m_start, tables_text, tables):
 
 # Verdicts de verification MANUELLE (remplis apres coup ; vides = baseline honnete).
 PREC_VERDICTS = {}
-RECALL_VERDICTS = {}
+# Adjudication manuelle recall (2026-07-22, justifications completes :
+# recall_checks/datasets_recall_check.csv). "fp" = faux flag ecarte.
+RECALL_VERDICTS = {
+    ("cans", "WN18"): ("fp", "Table de stats (sans caption) du dataset source des "
+                             "variantes WN18-N1/N2/N3 evaluees et extraites."),
+    ("conceptdriven", "WN"): ("fp", "'WN.↑' = abreviation de colonne de WN18RR deja extrait."),
+    ("gns", "FB13"): ("fp", "Meme cellule que 'FB13 (FB13_reduced)' extrait ; table de stats."),
+    ("noigan", "Actor"): ("fp", "Contenu d'un triplet d'exemple, pas un dataset."),
+    ("uniform", "Actor"): ("fp", "Contenu d'un triplet d'exemple, pas un dataset."),
+}
 
 
 def precision_pass(article):
@@ -205,7 +261,7 @@ def recall_pass(article, vocab):
     for k, lab in sorted(vocab.items(), key=lambda kv: kv[1].lower()):
         if k in article["datasets"]:
             continue
-        pat = build_pattern(lab)
+        pat = build_pattern(lab, "recall")   # regle de casse homogene (stylise = exact)
         if pat is None:
             continue
         for caption, table, is_stats in article["tables"]:
@@ -229,7 +285,12 @@ def render_article(article, prec_rows, suspects, tp, fp):
     real_sus = [s for s in suspects if not s[2]]        # dans table de resultats
     stats_sus = [s for s in suspects if s[2]]           # seulement dans table de stats
     prec = tp / (tp + fp) if (tp + fp) else 1.0
-    rec = tp / (tp + len(real_sus)) if (tp + len(real_sus)) else 1.0
+    # BRUT (script seul) vs ADJUGE (verdicts manuels : "fp" ecarte, sinon oubli)
+    slug = article["slug"]
+    miss = [s for s in real_sus
+            if RECALL_VERDICTS.get((slug, s[0]), ("", ""))[0] != "fp"]
+    rec_brut = tp / (tp + len(real_sus)) if (tp + len(real_sus)) else 1.0
+    rec = tp / (tp + len(miss)) if (tp + len(miss)) else 1.0
 
     L = [f"# Datasets — {article['md_name']}", "",
          f"**Titre :** {article['title']}", "",
@@ -239,7 +300,8 @@ def render_article(article, prec_rows, suspects, tp, fp):
          f"| **Precision** | **{prec:.0%}** |",
          f"| Candidats faux negatifs (table de resultats) | {len(real_sus)} |",
          f"| Candidats en table de stats seulement (priorite basse) | {len(stats_sus)} |",
-         f"| **Recall relatif (indicatif)** | **{rec:.0%}** |", ""]
+         f"| Recall BRUT (avant adjudication) | {rec_brut:.0%} |",
+         f"| **Recall relatif (adjuge)** | **{rec:.0%}** |", ""]
 
     L += ["## Precision — datasets extraits par le KG", "",
           "| Dataset extrait | Dans les tables ? | Table | Extrait |",
@@ -264,7 +326,7 @@ def render_article(article, prec_rows, suspects, tp, fp):
         for lab, cap, _, snip in stats_sus:
             L.append(f"| {esc(lab)} | {esc(cap)} | {esc(snip)} |")
         L.append("")
-    return "\n".join(L), (tp, fp, len(real_sus), len(stats_sus), prec, rec)
+    return "\n".join(L), (tp, fp, len(real_sus), len(stats_sus), prec, rec, len(miss))
 
 
 def render_summary(rows, TP, FP, REAL, STATS):
@@ -310,21 +372,22 @@ def main():
 
     # Phase 2 : recall contre le vocab verifie
     rows = []
-    TP = FP = REAL = STATS = 0
+    TP = FP = REAL = STATS = MISS = 0
     for a in arts:
         prec_rows, tp, fp = prec[a["slug"]]
         suspects = recall_pass(a, vocab)
-        report, (tp, fp, real, stats, prec_, rec) = render_article(a, prec_rows, suspects, tp, fp)
+        report, (tp, fp, real, stats, prec_, rec, miss) = render_article(a, prec_rows, suspects, tp, fp)
         open(os.path.join(OUT_DIR, f"{a['slug']}.md"), "w", encoding="utf-8").write(report)
         rows.append((a["md_name"], tp, fp, real, stats, prec_, rec))
-        TP += tp; FP += fp; REAL += real; STATS += stats
+        TP += tp; FP += fp; REAL += real; STATS += stats; MISS += miss
 
     open(os.path.join(OUT_DIR, "_SUMMARY.md"), "w", encoding="utf-8").write(
         render_summary(rows, TP, FP, REAL, STATS))
     print(f"{len(arts)} rapports -> {OUT_DIR}/")
-    print(f"Precision micro = {TP/(TP+FP):.1%}   "
-          f"Recall relatif micro = {TP/(TP+REAL):.1%}   "
-          f"(candidats resultats={REAL}, stats={STATS})")
+    print(f"Precision micro = {TP/(TP+FP):.1%}   (candidats resultats={REAL}, stats={STATS})")
+    print(f"Recall BRUT   = {TP/(TP+REAL) if (TP+REAL) else 1.0:.1%} (candidats bruts={REAL})")
+    print(f"Recall ADJUGE = {TP/(TP+MISS) if (TP+MISS) else 1.0:.1%} "
+          f"(vrais FN={MISS}, FP ecartes={REAL-MISS})")
 
 
 if __name__ == "__main__":

@@ -9,10 +9,12 @@
 | **Precision globale** | **100%** |
 | Precision (evalues, vs tableaux) | 100% |
 | Precision (mentionnes, vs prose) | 100% |
-| Candidats evaluations ratees (en tableau, non extrait) | 1 |
-| Candidats mentions ratees (en prose, non extrait) | 0 |
-| Recall relatif *evalues* | 75% |
-| Recall relatif *mentionnes* | 100% |
+| Candidats evaluations ratees (bruts) | 0 |
+| Candidats mentions ratees (bruts) | 1 |
+| Recall BRUT evalues / mentionnes | 100% / 0% |
+| Vrais oublis (adjuges) evalues / mentionnes | 0 / 0 |
+| Recall ADJUGE *evalues* | 100% |
+| Recall ADJUGE *mentionnes* | 100% |
 
 ## A. Modeles EVALUES — extraits des tableaux (valides vs `tables_only`)
 
@@ -28,10 +30,10 @@ _Aucun modele mentionne hors tableaux._
 
 ## C1. Recall EVALUES — modeles dans un tableau mais NON extraits
 
-| Modele | Ou | Extrait |
-|---|---|---|
-| GAN | prose+table | rial Network (Goodfellow et al., 2014) (GAN) based approaches at a fraction of the |
+_Aucun._
 
 ## C2. Recall MENTIONNES — modeles en prose seulement mais NON extraits
 
-_Aucun._
+| Modele | Ou | Extrait |
+|---|---|---|
+| Random Walk | prose | ** $\mathbb{K}[e] \leftarrow \text{randomWalk}(k, \omega)$ **end for** **return** $ |

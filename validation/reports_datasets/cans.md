@@ -7,9 +7,10 @@
 | Datasets extraits trouves dans les tables (TP) | 6 |
 | Extraits NON trouves (FP -> erreur precision) | 0 |
 | **Precision** | **100%** |
-| Candidats faux negatifs (table de resultats) | 2 |
+| Candidats faux negatifs (table de resultats) | 1 |
 | Candidats en table de stats seulement (priorite basse) | 0 |
-| **Recall relatif (indicatif)** | **75%** |
+| Recall BRUT (avant adjudication) | 86% |
+| **Recall relatif (adjuge)** | **100%** |
 
 ## Precision — datasets extraits par le KG
 
@@ -28,5 +29,4 @@
 
 | Dataset | Table | Extrait |
 |---|---|---|
-| FB15k | (sans caption) | </thead> <tbody> <tr> <td>FB15K</td> <td>1,345</td> <td |
 | WN18 | (sans caption) | </thead> <tbody> <tr> <td>WN18</td> <td>18</td> <td>40 |

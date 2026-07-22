@@ -9,7 +9,7 @@
 | Precision evalues | 100% | 
 | Precision mentionnes | 100% |
 | Recall evalues | 100% |
-| Recall mentionnes | 50% |
+| Recall mentionnes | 100% |
 
 ## A. Methodes EVALUEES (valides vs `tables_only`)
 
@@ -31,7 +31,4 @@ _Aucun._
 
 ## C2. Recall MENTIONNES — en prose seulement mais non extrait
 
-| Methode | Ou | Via | Extrait |
-|---|---|:---:|---|
-| Good Negative Sampling | prose | name | cacy in addressing the long-tail issue. Good performance have been achieved by the t |
-| Importance Sampling | prose | name | ty to learn entity characteristics. ## Importance of Anchor-Enhanced Embedding In order |
+_Aucun._

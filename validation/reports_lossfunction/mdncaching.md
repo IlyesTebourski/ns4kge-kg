@@ -11,9 +11,11 @@
 | Condamnes (trouves mais faux) | 0 |
 | Vraies erreurs / non verifies | 0 |
 | **Precision verifiee** | **100%** |
+| Recall — candidats bruts (script) | 2 |
+| Recall BRUT (avant adjudication) | 0% |
 | Recall — vrais oublis | 0 |
-| Recall — faux positifs ecartes | 0 |
-| **Recall relatif (indicatif)** | **100%** |
+| Recall — faux positifs ecartes | 2 |
+| **Recall relatif (adjuge)** | **100%** |
 
 ## Precision automatique — LossFunction extrait vs source
 
@@ -25,7 +27,5 @@
 
 | Item | Verdict | Extrait / justification |
 |---|:---:|---|
-| margin-based ranking loss | ⚠️ A VERIFIER | eds to the discriminator that minimizes marginal loss between positives and negatives to impr |
-| marginal loss | ⚠️ A VERIFIER | eds to the discriminator that minimizes marginal loss between positives and negatives to impr |
-| Marginal loss function | ⚠️ A VERIFIER | eds to the discriminator that minimizes marginal loss between positives and negatives to impr |
-| pairwise ranking loss | ⚠️ A VERIFIER | eds to the discriminator that minimizes marginal loss between positives and negatives to impr |
+| margin-based ranking loss | ✅ faux positif (ignore) | Related work strategies GAN. |
+| Marginal loss function | ✅ faux positif (ignore) | Meme passage related work. |

@@ -9,10 +9,12 @@
 | **Precision globale** | **100%** |
 | Precision (evalues, vs tableaux) | 100% |
 | Precision (mentionnes, vs prose) | 100% |
-| Candidats evaluations ratees (en tableau, non extrait) | 1 |
-| Candidats mentions ratees (en prose, non extrait) | 3 |
-| Recall relatif *evalues* | 89% |
-| Recall relatif *mentionnes* | 0% |
+| Candidats evaluations ratees (bruts) | 1 |
+| Candidats mentions ratees (bruts) | 3 |
+| Recall BRUT evalues / mentionnes | 89% / 0% |
+| Vrais oublis (adjuges) evalues / mentionnes | 0 / 0 |
+| Recall ADJUGE *evalues* | 100% |
+| Recall ADJUGE *mentionnes* | 100% |
 
 ## A. Modeles EVALUES — extraits des tableaux (valides vs `tables_only`)
 
@@ -42,5 +44,5 @@ _Aucun modele mentionne hors tableaux._
 | Modele | Ou | Extrait |
 |---|---|---|
 | Attention | prose | iv:2102.07186v1 # Relation-aware Graph Attention Model With Adaptive Self-adversarial Tr |
-| GAN | prose | 2019b). Generative adversarial network (GAN) based solutions (Cai and Wang 2018; Wa |
 | MLP | prose | 1) consists of a multilayer perceptron (MLP) network to process categorical attribu |
+| Random Walk | prose | articular, we compare against a popular random walk-based method **metapath2vec** (Dong, Ch |

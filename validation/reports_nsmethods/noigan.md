@@ -9,7 +9,7 @@
 | Precision evalues | 100% | 
 | Precision mentionnes | 100% |
 | Recall evalues | 100% |
-| Recall mentionnes | 33% |
+| Recall mentionnes | 100% |
 
 ## A. Methodes EVALUEES (valides vs `tables_only`)
 
@@ -31,7 +31,4 @@ _Aucun._
 
 ## C2. Recall MENTIONNES — en prose seulement mais non extrait
 
-| Methode | Ou | Via | Extrait |
-|---|---|:---:|---|
-| Adversarial Negative Sampling | prose | name | ese two tasks with a unified Generative Adversarial Networks (GAN) framework to learn noise |
-| GAN-based Negative Sampling | prose | name | SE AWARE KNOWLEDGE GRAPH EMBEDDING WITH GAN **Anonymous authors** Paper under doub |
+_Aucun._

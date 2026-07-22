@@ -8,8 +8,8 @@
 | Methodes MENTIONNEES seulement (prose) | 2 |
 | Precision evalues | 100% | 
 | Precision mentionnes | 50% |
-| Recall evalues | 33% |
-| Recall mentionnes | 50% |
+| Recall evalues | 100% |
+| Recall mentionnes | 100% |
 
 ## A. Methodes EVALUEES (valides vs `tables_only`)
 
@@ -26,13 +26,8 @@
 
 ## C1. Recall EVALUES — dans un tableau mais non extrait
 
-| Methode | Ou | Via | Extrait |
-|---|---|:---:|---|
-| Frequency-based Negative Sampling | table | name | > <th>Relation</th> <th>Frequency</th> <th>Log(Frequency)</th> |
-| Random Negative Sampling | table | name | 7.0</td> </tr> <tr> <td>Random Walk (Wei et al., 2016)</td> <t |
+_Aucun._
 
 ## C2. Recall MENTIONNES — en prose seulement mais non extrait
 
-| Methode | Ou | Via | Extrait |
-|---|---|:---:|---|
-| Iterative Negative Sampling | prose | name | ction defined in Eq. (2). ## 3.2 Block Iterative Optimization Though sparseness is favo |
+_Aucun._

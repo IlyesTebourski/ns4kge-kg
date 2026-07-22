@@ -9,7 +9,7 @@
 | Precision evalues | 0% | 
 | Precision mentionnes | 100% |
 | Recall evalues | 100% |
-| Recall mentionnes | 50% |
+| Recall mentionnes | 100% |
 
 ## A. Methodes EVALUEES (valides vs `tables_only`)
 
@@ -29,6 +29,4 @@ _Aucun._
 
 ## C2. Recall MENTIONNES — en prose seulement mais non extrait
 
-| Methode | Ou | Via | Extrait |
-|---|---|:---:|---|
-| Truncated Negative Sampling | prose | name | argin-based ranking loss. **$\epsilon$-Truncated Uniform Negative Sampling** A widely-u |
+_Aucun._

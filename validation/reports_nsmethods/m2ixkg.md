@@ -8,8 +8,8 @@
 | Methodes MENTIONNEES seulement (prose) | 3 |
 | Precision evalues | 71% | 
 | Precision mentionnes | 100% |
-| Recall evalues | 62% |
-| Recall mentionnes | 43% |
+| Recall evalues | 100% |
+| Recall mentionnes | 75% |
 
 ## A. Methodes EVALUEES (valides vs `tables_only`)
 
@@ -35,7 +35,6 @@
 
 | Methode | Ou | Via | Extrait |
 |---|---|:---:|---|
-| Random Negative Sampling | prose+table | name | nduct experiments under the setting of *Random Mix*, which denotes the candidate entit |
 | Uniform RW-SANS | prose+table | name | s of ComplEx for Uniform, Uniform SANS, Uniform RW-SANS are our reproductions using codes in [A |
 | Uniform SANS | prose+table | name | and the results of ComplEx for Uniform, Uniform SANS, Uniform RW-SANS are our reproductions |
 
@@ -43,7 +42,7 @@
 
 | Methode | Ou | Via | Extrait |
 |---|---|:---:|---|
-| Dynamic Negative Sampling | prose | name | ing gradient [Cai and Wang, 2018]. ### Dynamic negative sampling To solve the problem |
-| Entity Similarity-based Negative Sampling | prose | name | nition of hard negative samples Correct Entity Similarity based Hard Negative Samples (HNS-CES). |
+| Dynamic Negative Sampling | prose | name | categories: fixed negative sampling and dynamic negative sampling. ### Fixed negative sampling As a cla |
 | MixGCF | prose | name | use mixing for harder negative mining. MixGCF [Huang et al., 2021] uses positive mixi |
+| Simple Negative Sampling | prose | name | , the present KGE models either rely on simple negative sampling methods, which makes it difficult to ob |
 | Self-adversarial Negative Sampling | prose | acro | -quality negative samples. Differently, SANS [Ahrabian et al., 2020] absorbs graph s |

@@ -9,9 +9,9 @@ Articles : **55**
 | ASA.md | 3 | 0 | 100% | 0 | 0 | 100% |
 | BatchNS.md | 2 | 0 | 100% | 0 | 0 | 100% |
 | CAKE.md | 4 | 0 | 100% | 0 | 0 | 100% |
-| CANS.md | 6 | 0 | 100% | 2 | 0 | 75% |
+| CANS.md | 6 | 0 | 100% | 1 | 0 | 100% |
 | CCS.md | 4 | 0 | 100% | 0 | 0 | 100% |
-| ConceptDriven.md | 2 | 0 | 100% | 1 | 0 | 67% |
+| ConceptDriven.md | 2 | 0 | 100% | 1 | 0 | 100% |
 | CondConstraints.md | 1 | 1 | 50% | 0 | 0 | 100% |
 | dans.md | 3 | 0 | 100% | 0 | 0 | 100% |
 | DeMix.md | 2 | 0 | 100% | 0 | 0 | 100% |
@@ -40,7 +40,7 @@ Articles : **55**
 | MCNS.md | 5 | 0 | 100% | 0 | 0 | 100% |
 | MDNCaching.md | 2 | 0 | 100% | 0 | 0 | 100% |
 | NMiss.md | 2 | 0 | 100% | 0 | 0 | 100% |
-| NoiGAN.md | 5 | 0 | 100% | 1 | 0 | 83% |
+| NoiGAN.md | 5 | 0 | 100% | 1 | 0 | 100% |
 | NSCaching.md | 4 | 0 | 100% | 0 | 0 | 100% |
 | PNS.md | 2 | 0 | 100% | 0 | 0 | 100% |
 | RAAKGC.md | 11 | 0 | 100% | 0 | 0 | 100% |
@@ -58,7 +58,7 @@ Articles : **55**
 | TuckerDNCaching.md | 4 | 0 | 100% | 0 | 0 | 100% |
 | TypeAugmented.md | 4 | 0 | 100% | 0 | 0 | 100% |
 | TypeConstraints.md | 3 | 0 | 100% | 0 | 0 | 100% |
-| Uniform.md | 2 | 0 | 100% | 1 | 0 | 67% |
+| Uniform.md | 2 | 0 | 100% | 1 | 0 | 100% |
 
 ## Totaux
 
@@ -66,11 +66,11 @@ Articles : **55**
 |---|---|
 | Total TP | 182 |
 | Total FP (extraits absents des tables) | 2 |
-| Total candidats faux negatifs (tables resultats) | 5 |
+| Total candidats faux negatifs (tables resultats) | 4 |
 | Total candidats en tables stats seulement | 1 |
 | **Precision micro** | **98.9%** |
 | **Precision macro** | **97.3%** |
-| **Recall relatif micro (indicatif)** | **97.3%** |
-| **Recall relatif macro (indicatif)** | **98.0%** |
+| **Recall relatif micro (indicatif)** | **97.8%** |
+| **Recall relatif macro (indicatif)** | **100.0%** |
 
 > Recall **indicatif** : les candidats 'table de resultats' sont des datasets presents dans un tableau de resultats mais non extraits — a verifier a la main. Les candidats 'table de stats' sont volontairement ignores par le prompt (tables de statistiques/ablation).

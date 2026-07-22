@@ -9,7 +9,7 @@
 | Precision evalues | 100% | 
 | Precision mentionnes | 50% |
 | Recall evalues | 100% |
-| Recall mentionnes | 20% |
+| Recall mentionnes | 50% |
 
 ## A. Methodes EVALUEES (valides vs `tables_only`)
 
@@ -33,7 +33,4 @@ _Aucun._
 
 | Methode | Ou | Via | Extrait |
 |---|---|:---:|---|
-| Adversarial Negative Sampling | prose | name | 1.04071v3 [cs.CL] 16 Apr 2018 # KBGAN: Adversarial Learning for Knowledge Graph Embeddings |
-| GAN-based Negative Sampling | prose | name | red by generative adversarial networks (GANs), we use one knowledge graph embedding |
-| Generative Adversarial Network-based Negative Sampling | prose | name | of all models mentioned above. ## 2.2 Generative Adversarial Networks and its Variants Generative Adversaria |
 | IRGAN | prose | name | using policy gradient and other tricks. IRGAN (Wang et al., 2017) is a recent work wh |

@@ -8,8 +8,8 @@
 | Methodes MENTIONNEES seulement (prose) | 2 |
 | Precision evalues | 100% | 
 | Precision mentionnes | 100% |
-| Recall evalues | 80% |
-| Recall mentionnes | 40% |
+| Recall evalues | 100% |
+| Recall mentionnes | 67% |
 
 ## A. Methodes EVALUEES (valides vs `tables_only`)
 
@@ -38,5 +38,5 @@
 | Methode | Ou | Via | Extrait |
 |---|---|:---:|---|
 | CAKE | prose | name | Commonsense-Aware Knowledge Embedding (CAKE) framework, which consists of automatic |
-| Domain-based Negative Sampling | prose | name | comparisons: (i) [4] proposes a Concept Domain Negative Sampling (CDNS) strategy, whic |
+| Domain-based Negative Sampling | prose | name | nstraints. E.g., [4] proposes a concept domain negative sampling (CDNS) strategy, which samples corrupte |
 | MVLP | prose | name | ule and the multi-view link prediction (MVLP) module, wherein CANS is comparable wit |

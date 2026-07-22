@@ -9,7 +9,7 @@
 | Precision evalues | 100% | 
 | Precision mentionnes | 100% |
 | Recall evalues | 100% |
-| Recall mentionnes | 83% |
+| Recall mentionnes | 100% |
 
 ## A. Methodes EVALUEES (valides vs `tables_only`)
 
@@ -37,4 +37,4 @@ _Aucun._
 
 | Methode | Ou | Via | Extrait |
 |---|---|:---:|---|
-| GAN-based Negative Sampling | prose | name | ntities as the training progresses. The GAN-based sampling methods, such as KBGAN[3 |
+| Dynamic Distribution Sampling | prose | name | h substantial progress has been made by dynamic distribution based sampling methods, selecting plausible and prior |

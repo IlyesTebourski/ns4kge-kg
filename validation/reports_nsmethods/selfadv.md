@@ -8,7 +8,7 @@
 | Methodes MENTIONNEES seulement (prose) | 0 |
 | Precision evalues | 100% | 
 | Precision mentionnes | 100% |
-| Recall evalues | 75% |
+| Recall evalues | 100% |
 | Recall mentionnes | 100% |
 
 ## A. Methodes EVALUEES (valides vs `tables_only`)
@@ -27,7 +27,7 @@ _Aucune._
 
 | Methode | Ou | Via | Extrait |
 |---|---|:---:|---|
-| Bernoulli Negative Sampling | prose+table | name | hat the probabilistic framework KG2E_KL(bern) (He et al., 2015) is quite powerful, w |
+| Adversarial Negative Sampling | prose+table | name | e. In addition, we propose a novel self-adversarial negative sampling technique for efficiently and effective |
 
 ## C2. Recall MENTIONNES — en prose seulement mais non extrait
 

@@ -9,10 +9,12 @@
 | **Precision globale** | **100%** |
 | Precision (evalues, vs tableaux) | 100% |
 | Precision (mentionnes, vs prose) | 100% |
-| Candidats evaluations ratees (en tableau, non extrait) | 4 |
-| Candidats mentions ratees (en prose, non extrait) | 1 |
-| Recall relatif *evalues* | 78% |
-| Recall relatif *mentionnes* | 0% |
+| Candidats evaluations ratees (bruts) | 5 |
+| Candidats mentions ratees (bruts) | 0 |
+| Recall BRUT evalues / mentionnes | 74% / 100% |
+| Vrais oublis (adjuges) evalues / mentionnes | 4 / 0 |
+| Recall ADJUGE *evalues* | 78% |
+| Recall ADJUGE *mentionnes* | 100% |
 
 ## A. Modeles EVALUES — extraits des tableaux (valides vs `tables_only`)
 
@@ -41,6 +43,7 @@ _Aucun modele mentionne hors tableaux._
 
 | Modele | Ou | Extrait |
 |---|---|---|
+| Attention | prose+table | base completion. Equipped with a sparse attention mechanism, ITransF discovers hidden con |
 | KG2E | table | 0.2</td> </tr> <tr> <td>KG2E (He et al., 2015)</td> <td>No</ |
 | NTN | table | 6.7</td> </tr> <tr> <td>NTN (Socher et al., 2013)</td> <td> |
 | SE | table | </thead> <tbody> <tr> <td>SE (Bordes et al., 2011)</td> <td> |
@@ -48,6 +51,4 @@ _Aucun modele mentionne hors tableaux._
 
 ## C2. Recall MENTIONNES — modeles en prose seulement mais NON extraits
 
-| Modele | Ou | Extrait |
-|---|---|---|
-| Attention | prose | oncept project matrices to 18. **Dense Attention w/o $\ell_1$ regularization** Although |
+_Aucun._
