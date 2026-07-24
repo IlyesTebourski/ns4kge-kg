@@ -76,7 +76,7 @@ def _pattern(label, mode):
 
 class LossFunction(C.Entity):
     name = "LossFunction"
-    out_dir = os.path.join(VD.HERE, "reports_lossfunction")
+    out_dir = os.path.join(VD.HERE, "detailed_reports", "reports_lossfunction")
 
     prec_verdicts = {}
     # Adjudication manuelle recall (2026-07-22, justifications completes :

@@ -53,7 +53,7 @@ def _pattern(label, mode="precision"):
 
 class Optimizer(C.Entity):
     name = "Optimizer"
-    out_dir = os.path.join(VD.HERE, "reports_optimizer")
+    out_dir = os.path.join(VD.HERE, "detailed_reports", "reports_optimizer")
 
     # Verdicts remplis apres lecture de la sortie automatique (voir _SUMMARY / rapports).
     prec_verdicts = {}

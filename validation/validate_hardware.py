@@ -43,7 +43,7 @@ import validate_datasets as VD  # norm_key, snippet_around, dirs, io
 
 MD_DIR = VD.MD_DIR
 KG_DIR = VD.KG_DIR
-OUT_DIR = os.path.join(VD.HERE, "reports_hardware")
+OUT_DIR = os.path.join(VD.HERE, "detailed_reports", "reports_hardware")
 
 # separateurs entre tokens : espaces, tirets, /, ., @, parentheses, crochets,
 # virgules (les descriptions hardware sont ponctuees : "(two sockets), 256 GB")

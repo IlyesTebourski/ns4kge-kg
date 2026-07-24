@@ -51,7 +51,7 @@ def _pattern(label, mode="precision"):
 
 class Task(C.Entity):
     name = "Task"
-    out_dir = os.path.join(VD.HERE, "reports_task")
+    out_dir = os.path.join(VD.HERE, "detailed_reports", "reports_task")
 
     prec_verdicts = {}
     # Adjudication manuelle des candidats recall (2026-07-22, voir

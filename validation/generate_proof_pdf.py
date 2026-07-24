@@ -33,7 +33,7 @@ elif KIND == "metrics":
 else:
     sys.exit("kind inconnu (datasets|metrics)")
 
-OUT = os.path.join(HERE, f"RAPPORT_PREUVE_{ENTS.upper()}.pdf")
+OUT = os.path.join(HERE, "detailed_reports", f"RAPPORT_PREUVE_{ENTS.upper()}.pdf")
 
 styles = getSampleStyleSheet()
 H1 = ParagraphStyle("H1", parent=styles["Heading1"], fontSize=15, spaceAfter=6)

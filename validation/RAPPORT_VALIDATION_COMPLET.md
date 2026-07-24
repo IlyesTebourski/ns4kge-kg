@@ -214,11 +214,11 @@ d'une correction ciblée (manuelle ou par ré-extraction des articles concernés
 ## 8. Reproductibilité
 
 ```bash
-# depuis /home/ilyes/POSTER
-python3 validation/validate_datasets.py      # datasets   -> reports_datasets/
-python3 validation/validate_metrics.py       # metrics    -> reports_metrics/
-python3 validation/validate_kgemodels.py     # KGE models -> reports_kgemodels/
-python3 validation/validate_nsmethods.py     # NS methods -> reports_nsmethods/
+# depuis ns4kge-kg/
+python3 validation/validate_datasets.py      # datasets   -> detailed_reports/reports_datasets/
+python3 validation/validate_metrics.py       # metrics    -> detailed_reports/reports_metrics/
+python3 validation/validate_kgemodels.py     # KGE models -> detailed_reports/reports_kgemodels/
+python3 validation/validate_nsmethods.py     # NS methods -> detailed_reports/reports_nsmethods/
 ```
 
 Chaque script lit `liste_mds/*.md` et `ns4kge-kg/per_article/*_merged.json`, régénère les `tables_only`/

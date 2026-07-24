@@ -44,7 +44,7 @@ ROOT = _find_root(HERE)
 MD_DIR = os.path.join(ROOT, "liste_mds")
 KG_DIR = os.path.join(ROOT, "ns4kge-kg", "per_article")
 PIPE_SRC = os.path.join(ROOT, "ns4kge-extraction-pipeline", "src")
-OUT_DIR = os.path.join(HERE, "reports_datasets")
+OUT_DIR = os.path.join(HERE, "detailed_reports", "reports_datasets")
 
 # On importe la fonction officielle du pipeline (fidelite garantie).
 sys.path.insert(0, PIPE_SRC)

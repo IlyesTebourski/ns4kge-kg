@@ -33,7 +33,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
 MD_DIR = os.path.join(ROOT, "liste_mds")
 KG_DIR = os.path.join(ROOT, "ns4kge-kg", "per_article")
-OUT_DIR = os.path.join(HERE, "reports")
+OUT_DIR = os.path.join(HERE, "detailed_reports", "reports")
 
 CATEGORIES = ["datasets", "metrics", "nsmethods", "kgemodels"]
 CAT_LABEL = {

@@ -13,7 +13,7 @@ elif KIND == "nsmethods":
     TITLE = "NS Methods"
 else:
     sys.exit("kind: kgemodels|nsmethods")
-OUT = os.path.join(HERE, f"RAPPORT_PREUVE_{KIND.upper()}.md")
+OUT = os.path.join(HERE, "detailed_reports", f"RAPPORT_PREUVE_{KIND.upper()}.md")
 
 
 def esc(s):

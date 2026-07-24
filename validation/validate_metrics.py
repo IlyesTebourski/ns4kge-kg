@@ -25,7 +25,7 @@ import validate_datasets as VD  # reutilise split_tables / which_table / snippet
 
 MD_DIR = VD.MD_DIR
 KG_DIR = VD.KG_DIR
-OUT_DIR = os.path.join(VD.HERE, "reports_metrics")
+OUT_DIR = os.path.join(VD.HERE, "detailed_reports", "reports_metrics")
 
 # --------------------------------------------------------------------------
 # Alias deterministes par metric canonique

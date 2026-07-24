@@ -32,7 +32,7 @@ elif KIND == "metrics":
 else:
     sys.exit("kind inconnu (datasets|metrics)")
 
-OUT = os.path.join(HERE, f"RAPPORT_PREUVE_{ENTS.upper()}.md")
+OUT = os.path.join(HERE, "detailed_reports", f"RAPPORT_PREUVE_{ENTS.upper()}.md")
 
 
 def esc(s):

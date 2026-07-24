@@ -27,7 +27,7 @@ import validate_datasets as VD
 
 MD_DIR = VD.MD_DIR
 KG_DIR = VD.KG_DIR
-OUT_DIR = os.path.join(VD.HERE, "reports_nsmethods")
+OUT_DIR = os.path.join(VD.HERE, "detailed_reports", "reports_nsmethods")
 
 SEP = r"[\s\-_/.@()\[\]]*"
 # mots de liaison optionnels (souvent omis dans le texte)

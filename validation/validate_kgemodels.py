@@ -31,7 +31,7 @@ import validate_datasets as VD   # snippet_around, norm_key, dirs
 
 MD_DIR = VD.MD_DIR
 KG_DIR = VD.KG_DIR
-OUT_DIR = os.path.join(VD.HERE, "reports_kgemodels")
+OUT_DIR = os.path.join(VD.HERE, "detailed_reports", "reports_kgemodels")
 
 # separateurs entre tokens : espaces, tirets, /, ., @, parentheses, crochets.
 # (mais PAS '+' : "TransE+STC+TCE" doit rester non-matche = compound non splitte.)

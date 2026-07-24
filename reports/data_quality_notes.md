@@ -37,6 +37,32 @@ Interpretation: Mean Rank is an unbounded lower-is-better metric, so high values
 - Dataset identifiers preserve distinct benchmark variants such as `dataset/fb15k`, `dataset/fb15k-237`, `dataset/wn18`, and `dataset/wn18rr`.
 - The pipeline normalizes common spelling variants such as `FB15K237` to `fb15k-237`, but it does not collapse distinct datasets.
 
+## Validation-Informed Corrections (precision)
+
+The deterministic precision validation (`validation/`) flags entities extracted by
+the KG but absent from their source article. A **conservative** subset of these
+false positives — only unambiguous artefacts, wrong-type assignments, and
+malformed compounds — is suppressed at the JSON→TTL step, via the `BLOCKLIST` in
+`ns4kge-extraction-pipeline` (`core/converters.py`). Real entities that merely
+failed verbatim matching, and inferred baselines (uniform/bernoulli/random), are
+deliberately **kept**.
+
+Current corrections (SHACL-safe — removed from the optional `hasKGEModel` slot and
+mention lists, so **no Configuration is dropped**; graph count unchanged):
+
+- Malformed compounds extracted as KGE models: `KGE-EML+GNS` (gibbsns),
+  `TransE + A-LSTM` (igan), and the STC compounds `TransE+STC+TCE`, `TransE+TCE`,
+  `TransR+STC+TCE`, `TransR+TCE`, `TKRL (RHE+STC)`, `TKRL (RHE+STC+TCE)`,
+  `TKRL (WHE+STC)`, `TKRL (WHE+STC+TCE)` (stc).
+- Wrong-type entries (NS methods extracted as KGE models): `Knowledge Completion
+  GAN` (gndn), `Truncated Negative Sampling` (truncatedns).
+
+Effect: 12 spurious KGE-model entries removed (~66 triples), 0 configurations
+dropped, `pyshacl` conformance preserved. Required-slot false positives (e.g. the
+hallucinated `Accuracy` metric, the `Table 1 Dataset` artefact) are **not** removed
+here, as doing so would drop dozens of configurations; they remain flagged in the
+validation reports for manual review.
+
 ## Provenance Limitation
 - The moved legacy per-article outputs did not record the exact model used for each individual generated file.
 - `provenance/manifest.json` documents this limitation.

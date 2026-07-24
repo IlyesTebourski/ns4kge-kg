@@ -48,7 +48,7 @@ KG_DIR = os.path.join(ROOT, "ns4kge-kg", "per_article")
 MD_DIR = os.path.join(ROOT, "liste_mds")
 PIPELINE_SRC = os.path.join(ROOT, "ns4kge-extraction-pipeline", "src")
 ENV_PATH = os.path.join(ROOT, "ns4kge-kg", ".env")
-OUT_DIR = os.path.join(HERE, "reports_configurations")
+OUT_DIR = os.path.join(HERE, "detailed_reports", "reports_configurations")
 
 # reutilise l'extracteur de tableaux DETERMINISTE de la pipeline (pas de reecriture)
 sys.path.insert(0, PIPELINE_SRC)

@@ -212,11 +212,11 @@ targeted correction (manual or by re-extracting the affected articles).
 ## 8. Reproducibility
 
 ```bash
-# from /home/ilyes/POSTER
-python3 validation/validate_datasets.py      # datasets   -> reports_datasets/
-python3 validation/validate_metrics.py       # metrics    -> reports_metrics/
-python3 validation/validate_kgemodels.py     # KGE models -> reports_kgemodels/
-python3 validation/validate_nsmethods.py     # NS methods -> reports_nsmethods/
+# from ns4kge-kg/
+python3 validation/validate_datasets.py      # datasets   -> detailed_reports/reports_datasets/
+python3 validation/validate_metrics.py       # metrics    -> detailed_reports/reports_metrics/
+python3 validation/validate_kgemodels.py     # KGE models -> detailed_reports/reports_kgemodels/
+python3 validation/validate_nsmethods.py     # NS methods -> detailed_reports/reports_nsmethods/
 ```
 
 Each script reads `liste_mds/*.md` and `ns4kge-kg/per_article/*_merged.json`, regenerates the `tables_only`/

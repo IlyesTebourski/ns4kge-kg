@@ -155,6 +155,66 @@ ns4kge:proposesKGEModel rdf:type owl:ObjectProperty ;
     rdfs:domain ns4kge:Article ;
     rdfs:range ns4kge:KGEModel .
 
+ns4kge:isExperimentationOf rdf:type owl:ObjectProperty ;
+    rdfs:label "is experimentation of"@en ;
+    rdfs:comment "Connects an experimentation node to the article it describes."@en ;
+    owl:inverseOf ns4kge:hasExperimentation .
+
+ns4kge:isConfigurationOf rdf:type owl:ObjectProperty ;
+    rdfs:label "is configuration of"@en ;
+    rdfs:comment "Connects a configuration to the experimentation node that contains it."@en ;
+    owl:inverseOf ns4kge:hasConfiguration .
+
+ns4kge:isTrainingProtocolOf rdf:type owl:ObjectProperty ;
+    rdfs:label "is training protocol of"@en ;
+    rdfs:comment "Connects a training protocol to the experimentation node that reports it."@en ;
+    owl:inverseOf ns4kge:hasTrainingProtocol .
+
+ns4kge:isDatasetOfConfiguration rdf:type owl:ObjectProperty ;
+    rdfs:label "is dataset of configuration"@en ;
+    rdfs:comment "Connects a dataset to a configuration that uses it."@en ;
+    owl:inverseOf ns4kge:hasDataset .
+
+ns4kge:isMetricOfConfiguration rdf:type owl:ObjectProperty ;
+    rdfs:label "is metric of configuration"@en ;
+    rdfs:comment "Connects a metric to a configuration that reports it."@en ;
+    owl:inverseOf ns4kge:hasMetric .
+
+ns4kge:isTaskOfConfiguration rdf:type owl:ObjectProperty ;
+    rdfs:label "is task of configuration"@en ;
+    rdfs:comment "Connects a task to a configuration that evaluates it."@en ;
+    owl:inverseOf ns4kge:hasTask .
+
+ns4kge:isKGEModelOfConfiguration rdf:type owl:ObjectProperty ;
+    rdfs:label "is KGE model of configuration"@en ;
+    rdfs:comment "Connects a KGE model to a configuration that evaluates it."@en ;
+    owl:inverseOf ns4kge:hasKGEModel .
+
+ns4kge:isNSMethodOfConfiguration rdf:type owl:ObjectProperty ;
+    rdfs:label "is negative sampling method of configuration"@en ;
+    rdfs:comment "Connects a negative sampling method to a configuration that evaluates it."@en ;
+    owl:inverseOf ns4kge:hasNSMethod .
+
+ns4kge:hasArticleConfiguration rdf:type owl:ObjectProperty ;
+    rdfs:label "has article configuration"@en ;
+    rdfs:comment "Connects an article directly to configurations reported in its experimentation."@en ;
+    rdfs:domain ns4kge:Article ;
+    rdfs:range ns4kge:Configuration ;
+    owl:propertyChainAxiom ( ns4kge:hasExperimentation ns4kge:hasConfiguration ) .
+
+ns4kge:usesDataset rdf:type owl:ObjectProperty ;
+    rdfs:label "uses dataset"@en ;
+    rdfs:comment "Connects an article directly to the datasets used in the configurations reported in its experimentation. Materialised by an OWL 2 property chain over hasExperimentation, hasConfiguration and hasDataset."@en ;
+    rdfs:domain ns4kge:Article ;
+    rdfs:range ns4kge:Dataset ;
+    owl:propertyChainAxiom ( ns4kge:hasExperimentation ns4kge:hasConfiguration ns4kge:hasDataset ) .
+
+ns4kge:isSubcategoryOf rdf:type owl:ObjectProperty ;
+    rdfs:label "is subcategory of"@en ;
+    rdfs:comment "Connects a taxonomy subcategory to its high-level category."@en ;
+    rdfs:domain ns4kge:Subcategory ;
+    rdfs:range ns4kge:Category .
+
 #################################################################
 #    Data Properties
 #################################################################
@@ -309,7 +369,7 @@ ns4kge:Stability rdf:type owl:Class ;
                 ns4kge:Quality
                 ns4kge:Adaptability
                 ns4kge:Stability
-              )
+               )
 ] .
 
 #################################################################
@@ -320,37 +380,57 @@ ns4kge:Stability rdf:type owl:Class ;
 ns4kge:Experimentation rdfs:subClassOf
     [ rdf:type owl:Restriction ;
       owl:onProperty ns4kge:hasConfiguration ;
-      owl:minCardinality 1 ] .
+      owl:minQualifiedCardinality 1 ;
+      owl:onClass ns4kge:Configuration ] .
+
+# Article has at most one Experimentation node.
+ns4kge:Article rdfs:subClassOf
+    [ rdf:type owl:Restriction ;
+      owl:onProperty ns4kge:hasExperimentation ;
+      owl:maxQualifiedCardinality 1 ;
+      owl:onClass ns4kge:Experimentation ] .
+
+# Experimentation has exactly one TrainingProtocol.
+ns4kge:Experimentation rdfs:subClassOf
+    [ rdf:type owl:Restriction ;
+      owl:onProperty ns4kge:hasTrainingProtocol ;
+      owl:qualifiedCardinality 1 ;
+      owl:onClass ns4kge:TrainingProtocol ] .
 
 # Configuration has exactly one Dataset.
 ns4kge:Configuration rdfs:subClassOf
     [ rdf:type owl:Restriction ;
       owl:onProperty ns4kge:hasDataset ;
-      owl:exactCardinality 1 ] .
+      owl:qualifiedCardinality 1 ;
+      owl:onClass ns4kge:Dataset ] .
 
 # Configuration has exactly one Task.
 ns4kge:Configuration rdfs:subClassOf
     [ rdf:type owl:Restriction ;
       owl:onProperty ns4kge:hasTask ;
-      owl:exactCardinality 1 ] .
+      owl:qualifiedCardinality 1 ;
+      owl:onClass ns4kge:Task ] .
 
 # Configuration has exactly one Metric.
 ns4kge:Configuration rdfs:subClassOf
     [ rdf:type owl:Restriction ;
       owl:onProperty ns4kge:hasMetric ;
-      owl:exactCardinality 1 ] .
+      owl:qualifiedCardinality 1 ;
+      owl:onClass ns4kge:Metric ] .
 
 # Configuration has at most one KGEModel.
 ns4kge:Configuration rdfs:subClassOf
     [ rdf:type owl:Restriction ;
       owl:onProperty ns4kge:hasKGEModel ;
-      owl:maxCardinality 1 ] .
+      owl:maxQualifiedCardinality 1 ;
+      owl:onClass ns4kge:KGEModel ] .
 
 # Configuration has at most one NSMethod.
 ns4kge:Configuration rdfs:subClassOf
     [ rdf:type owl:Restriction ;
       owl:onProperty ns4kge:hasNSMethod ;
-      owl:maxCardinality 1 ] .
+      owl:maxQualifiedCardinality 1 ;
+      owl:onClass ns4kge:NSMethod ] .
 
 # Configuration has exactly one result.
 ns4kge:Configuration rdfs:subClassOf
@@ -26521,7 +26601,6 @@ ns4kge:NSMethod rdfs:subClassOf
 <article/gibbsns> ns4kge:mentionsKGEModel <kge-model/complex> .
 <article/gibbsns> ns4kge:mentionsKGEModel <kge-model/interacte> .
 <article/gibbsns> ns4kge:mentionsKGEModel <kge-model/conve> .
-<article/gibbsns> ns4kge:mentionsKGEModel <kge-model/kge-eml-gns> .
 <article/gibbsns> ns4kge:mentionsKGEModel <kge-model/transd> .
 <article/gibbsns> ns4kge:mentionsKGEModel <kge-model/tucker> .
 <article/gibbsns> ns4kge:mentionsKGEModel <kge-model/distmult> .
@@ -26582,8 +26661,6 @@ ns4kge:NSMethod rdfs:subClassOf
 <kge-model/interacte> rdf:type ns4kge:KGEModel .
 
 <kge-model/conve> rdf:type ns4kge:KGEModel .
-
-<kge-model/kge-eml-gns> rdf:type ns4kge:KGEModel .
 
 <kge-model/transd> rdf:type ns4kge:KGEModel .
 
@@ -26783,7 +26860,6 @@ ns4kge:NSMethod rdfs:subClassOf
 <configuration/gibbsns/1> ns4kge:hasTask    <task/link-prediction> .
 <configuration/gibbsns/1> ns4kge:hasDataset <dataset/fb15k-237> .
 <configuration/gibbsns/1> ns4kge:hasMetric  <metric/mrr> .
-<configuration/gibbsns/1> ns4kge:hasKGEModel <kge-model/kge-eml-gns> .
 <configuration/gibbsns/1> ns4kge:hasNSMethod <ns-method/gibbs-negative-sampling> .
 <configuration/gibbsns/1> ns4kge:result "0.365"^^xsd:decimal .
 
@@ -26791,7 +26867,6 @@ ns4kge:NSMethod rdfs:subClassOf
 <configuration/gibbsns/2> ns4kge:hasTask    <task/link-prediction> .
 <configuration/gibbsns/2> ns4kge:hasDataset <dataset/fb15k-237> .
 <configuration/gibbsns/2> ns4kge:hasMetric  <metric/hits-1> .
-<configuration/gibbsns/2> ns4kge:hasKGEModel <kge-model/kge-eml-gns> .
 <configuration/gibbsns/2> ns4kge:hasNSMethod <ns-method/gibbs-negative-sampling> .
 <configuration/gibbsns/2> ns4kge:result "0.265"^^xsd:decimal .
 
@@ -26799,7 +26874,6 @@ ns4kge:NSMethod rdfs:subClassOf
 <configuration/gibbsns/3> ns4kge:hasTask    <task/link-prediction> .
 <configuration/gibbsns/3> ns4kge:hasDataset <dataset/fb15k-237> .
 <configuration/gibbsns/3> ns4kge:hasMetric  <metric/hits-3> .
-<configuration/gibbsns/3> ns4kge:hasKGEModel <kge-model/kge-eml-gns> .
 <configuration/gibbsns/3> ns4kge:hasNSMethod <ns-method/gibbs-negative-sampling> .
 <configuration/gibbsns/3> ns4kge:result "0.398"^^xsd:decimal .
 
@@ -26807,7 +26881,6 @@ ns4kge:NSMethod rdfs:subClassOf
 <configuration/gibbsns/4> ns4kge:hasTask    <task/link-prediction> .
 <configuration/gibbsns/4> ns4kge:hasDataset <dataset/fb15k-237> .
 <configuration/gibbsns/4> ns4kge:hasMetric  <metric/hits-10> .
-<configuration/gibbsns/4> ns4kge:hasKGEModel <kge-model/kge-eml-gns> .
 <configuration/gibbsns/4> ns4kge:hasNSMethod <ns-method/gibbs-negative-sampling> .
 <configuration/gibbsns/4> ns4kge:result "0.55"^^xsd:decimal .
 
@@ -26815,7 +26888,6 @@ ns4kge:NSMethod rdfs:subClassOf
 <configuration/gibbsns/5> ns4kge:hasTask    <task/link-prediction> .
 <configuration/gibbsns/5> ns4kge:hasDataset <dataset/wn18rr> .
 <configuration/gibbsns/5> ns4kge:hasMetric  <metric/mrr> .
-<configuration/gibbsns/5> ns4kge:hasKGEModel <kge-model/kge-eml-gns> .
 <configuration/gibbsns/5> ns4kge:hasNSMethod <ns-method/gibbs-negative-sampling> .
 <configuration/gibbsns/5> ns4kge:result "0.487"^^xsd:decimal .
 
@@ -26823,7 +26895,6 @@ ns4kge:NSMethod rdfs:subClassOf
 <configuration/gibbsns/6> ns4kge:hasTask    <task/link-prediction> .
 <configuration/gibbsns/6> ns4kge:hasDataset <dataset/wn18rr> .
 <configuration/gibbsns/6> ns4kge:hasMetric  <metric/hits-1> .
-<configuration/gibbsns/6> ns4kge:hasKGEModel <kge-model/kge-eml-gns> .
 <configuration/gibbsns/6> ns4kge:hasNSMethod <ns-method/gibbs-negative-sampling> .
 <configuration/gibbsns/6> ns4kge:result "0.447"^^xsd:decimal .
 
@@ -26831,7 +26902,6 @@ ns4kge:NSMethod rdfs:subClassOf
 <configuration/gibbsns/7> ns4kge:hasTask    <task/link-prediction> .
 <configuration/gibbsns/7> ns4kge:hasDataset <dataset/wn18rr> .
 <configuration/gibbsns/7> ns4kge:hasMetric  <metric/hits-3> .
-<configuration/gibbsns/7> ns4kge:hasKGEModel <kge-model/kge-eml-gns> .
 <configuration/gibbsns/7> ns4kge:hasNSMethod <ns-method/gibbs-negative-sampling> .
 <configuration/gibbsns/7> ns4kge:result "0.506"^^xsd:decimal .
 
@@ -26839,7 +26909,6 @@ ns4kge:NSMethod rdfs:subClassOf
 <configuration/gibbsns/8> ns4kge:hasTask    <task/link-prediction> .
 <configuration/gibbsns/8> ns4kge:hasDataset <dataset/wn18rr> .
 <configuration/gibbsns/8> ns4kge:hasMetric  <metric/hits-10> .
-<configuration/gibbsns/8> ns4kge:hasKGEModel <kge-model/kge-eml-gns> .
 <configuration/gibbsns/8> ns4kge:hasNSMethod <ns-method/gibbs-negative-sampling> .
 <configuration/gibbsns/8> ns4kge:result "0.569"^^xsd:decimal .
 
@@ -27211,7 +27280,6 @@ ns4kge:NSMethod rdfs:subClassOf
 <configuration/gibbsns/61> ns4kge:hasTask    <task/link-prediction> .
 <configuration/gibbsns/61> ns4kge:hasDataset <dataset/fb15k> .
 <configuration/gibbsns/61> ns4kge:hasMetric  <metric/hits-10> .
-<configuration/gibbsns/61> ns4kge:hasKGEModel <kge-model/kge-eml-gns> .
 <configuration/gibbsns/61> ns4kge:hasNSMethod <ns-method/gibbs-negative-sampling> .
 <configuration/gibbsns/61> ns4kge:result "0.913"^^xsd:decimal .
 
@@ -28032,7 +28100,6 @@ ns4kge:NSMethod rdfs:subClassOf
 <article/gndn> ns4kge:mentionsKGEModel <kge-model/ntn> .
 <article/gndn> ns4kge:mentionsKGEModel <kge-model/transg> .
 <article/gndn> ns4kge:mentionsKGEModel <kge-model/distmult> .
-<article/gndn> ns4kge:mentionsKGEModel <kge-model/knowledge-completion-gan> .
 <article/gndn> ns4kge:mentionsKGEModel <kge-model/path-kcgan-2-hop> .
 <article/gndn> ns4kge:mentionsKGEModel <kge-model/conve> .
 <article/gndn> ns4kge:mentionsKGEModel <kge-model/electra> .
@@ -28080,8 +28147,6 @@ ns4kge:NSMethod rdfs:subClassOf
 <kge-model/transg> rdf:type ns4kge:KGEModel .
 
 <kge-model/distmult> rdf:type ns4kge:KGEModel .
-
-<kge-model/knowledge-completion-gan> rdf:type ns4kge:KGEModel .
 
 <kge-model/path-kcgan-2-hop> rdf:type ns4kge:KGEModel .
 
@@ -28254,7 +28319,6 @@ ns4kge:NSMethod rdfs:subClassOf
 <configuration/gndn/13> ns4kge:hasTask    <task/link-prediction> .
 <configuration/gndn/13> ns4kge:hasDataset <dataset/wn18> .
 <configuration/gndn/13> ns4kge:hasMetric  <metric/mrr> .
-<configuration/gndn/13> ns4kge:hasKGEModel <kge-model/knowledge-completion-gan> .
 <configuration/gndn/13> ns4kge:hasNSMethod <ns-method/knowledge-completion-gan> .
 <configuration/gndn/13> ns4kge:result "0.327"^^xsd:decimal .
 
@@ -28262,7 +28326,6 @@ ns4kge:NSMethod rdfs:subClassOf
 <configuration/gndn/14> ns4kge:hasTask    <task/link-prediction> .
 <configuration/gndn/14> ns4kge:hasDataset <dataset/wn18> .
 <configuration/gndn/14> ns4kge:hasMetric  <metric/hits-10> .
-<configuration/gndn/14> ns4kge:hasKGEModel <kge-model/knowledge-completion-gan> .
 <configuration/gndn/14> ns4kge:hasNSMethod <ns-method/knowledge-completion-gan> .
 <configuration/gndn/14> ns4kge:result "0.554"^^xsd:decimal .
 
@@ -28270,7 +28333,6 @@ ns4kge:NSMethod rdfs:subClassOf
 <configuration/gndn/15> ns4kge:hasTask    <task/link-prediction> .
 <configuration/gndn/15> ns4kge:hasDataset <dataset/fb15k> .
 <configuration/gndn/15> ns4kge:hasMetric  <metric/mrr> .
-<configuration/gndn/15> ns4kge:hasKGEModel <kge-model/knowledge-completion-gan> .
 <configuration/gndn/15> ns4kge:hasNSMethod <ns-method/knowledge-completion-gan> .
 <configuration/gndn/15> ns4kge:result "0.472"^^xsd:decimal .
 
@@ -28278,7 +28340,6 @@ ns4kge:NSMethod rdfs:subClassOf
 <configuration/gndn/16> ns4kge:hasTask    <task/link-prediction> .
 <configuration/gndn/16> ns4kge:hasDataset <dataset/fb15k> .
 <configuration/gndn/16> ns4kge:hasMetric  <metric/hits-10> .
-<configuration/gndn/16> ns4kge:hasKGEModel <kge-model/knowledge-completion-gan> .
 <configuration/gndn/16> ns4kge:hasNSMethod <ns-method/knowledge-completion-gan> .
 <configuration/gndn/16> ns4kge:result "0.593"^^xsd:decimal .
 
@@ -28518,7 +28579,6 @@ ns4kge:NSMethod rdfs:subClassOf
 <configuration/gndn/49> ns4kge:hasTask    <task/triple-classification> .
 <configuration/gndn/49> ns4kge:hasDataset <dataset/wn18> .
 <configuration/gndn/49> ns4kge:hasMetric  <metric/accuracy> .
-<configuration/gndn/49> ns4kge:hasKGEModel <kge-model/knowledge-completion-gan> .
 <configuration/gndn/49> ns4kge:hasNSMethod <ns-method/knowledge-completion-gan> .
 <configuration/gndn/49> ns4kge:result "0.895"^^xsd:decimal .
 
@@ -28526,7 +28586,6 @@ ns4kge:NSMethod rdfs:subClassOf
 <configuration/gndn/50> ns4kge:hasTask    <task/triple-classification> .
 <configuration/gndn/50> ns4kge:hasDataset <dataset/fb15k> .
 <configuration/gndn/50> ns4kge:hasMetric  <metric/accuracy> .
-<configuration/gndn/50> ns4kge:hasKGEModel <kge-model/knowledge-completion-gan> .
 <configuration/gndn/50> ns4kge:hasNSMethod <ns-method/knowledge-completion-gan> .
 <configuration/gndn/50> ns4kge:result "0.945"^^xsd:decimal .
 
@@ -30694,7 +30753,6 @@ ns4kge:NSMethod rdfs:subClassOf
 <article/igan> ns4kge:mentionsKGEModel <kge-model/se> .
 <article/igan> ns4kge:mentionsKGEModel <kge-model/transh> .
 <article/igan> ns4kge:mentionsKGEModel <kge-model/transe> .
-<article/igan> ns4kge:mentionsKGEModel <kge-model/transe-a-lstm> .
 <article/igan> ns4kge:mentionsKGEModel <kge-model/single-layer-model> .
 <article/igan> ns4kge:mentionsKGEModel <kge-model/sme-bilinear> .
 <article/igan> ns4kge:mentionsKGEModel <kge-model/transd> .
@@ -30743,8 +30801,6 @@ ns4kge:NSMethod rdfs:subClassOf
 <kge-model/transh> rdf:type ns4kge:KGEModel .
 
 <kge-model/transe> rdf:type ns4kge:KGEModel .
-
-<kge-model/transe-a-lstm> rdf:type ns4kge:KGEModel .
 
 <kge-model/single-layer-model> rdf:type ns4kge:KGEModel .
 
@@ -30924,7 +30980,6 @@ ns4kge:NSMethod rdfs:subClassOf
 <configuration/igan/2> ns4kge:hasTask    <task/link-prediction> .
 <configuration/igan/2> ns4kge:hasDataset <dataset/fb15k> .
 <configuration/igan/2> ns4kge:hasMetric  <metric/mr> .
-<configuration/igan/2> ns4kge:hasKGEModel <kge-model/transe-a-lstm> .
 <configuration/igan/2> ns4kge:hasNSMethod <ns-method/gan-pretrain> .
 <configuration/igan/2> ns4kge:result "74"^^xsd:decimal .
 
@@ -31040,14 +31095,12 @@ ns4kge:NSMethod rdfs:subClassOf
 <configuration/igan/17> ns4kge:hasTask    <task/link-prediction> .
 <configuration/igan/17> ns4kge:hasDataset <dataset/fb15k> .
 <configuration/igan/17> ns4kge:hasMetric  <metric/mr> .
-<configuration/igan/17> ns4kge:hasKGEModel <kge-model/transe-a-lstm> .
 <configuration/igan/17> ns4kge:result "77"^^xsd:decimal .
 
 <configuration/igan/18> rdf:type ns4kge:Configuration .
 <configuration/igan/18> ns4kge:hasTask    <task/link-prediction> .
 <configuration/igan/18> ns4kge:hasDataset <dataset/fb15k> .
 <configuration/igan/18> ns4kge:hasMetric  <metric/mr> .
-<configuration/igan/18> ns4kge:hasKGEModel <kge-model/transe-a-lstm> .
 <configuration/igan/18> ns4kge:hasNSMethod <ns-method/gan-scratch> .
 <configuration/igan/18> ns4kge:result "79"^^xsd:decimal .
 
@@ -31117,7 +31170,6 @@ ns4kge:NSMethod rdfs:subClassOf
 <configuration/igan/27> ns4kge:hasTask    <task/link-prediction> .
 <configuration/igan/27> ns4kge:hasDataset <dataset/fb15k> .
 <configuration/igan/27> ns4kge:hasMetric  <metric/hits-10> .
-<configuration/igan/27> ns4kge:hasKGEModel <kge-model/transe-a-lstm> .
 <configuration/igan/27> ns4kge:hasNSMethod <ns-method/gan-pretrain> .
 <configuration/igan/27> ns4kge:result "0.763"^^xsd:decimal .
 
@@ -31270,14 +31322,12 @@ ns4kge:NSMethod rdfs:subClassOf
 <configuration/igan/47> ns4kge:hasTask    <task/link-prediction> .
 <configuration/igan/47> ns4kge:hasDataset <dataset/fb15k> .
 <configuration/igan/47> ns4kge:hasMetric  <metric/hits-10> .
-<configuration/igan/47> ns4kge:hasKGEModel <kge-model/transe-a-lstm> .
 <configuration/igan/47> ns4kge:result "0.755"^^xsd:decimal .
 
 <configuration/igan/48> rdf:type ns4kge:Configuration .
 <configuration/igan/48> ns4kge:hasTask    <task/link-prediction> .
 <configuration/igan/48> ns4kge:hasDataset <dataset/fb15k> .
 <configuration/igan/48> ns4kge:hasMetric  <metric/hits-10> .
-<configuration/igan/48> ns4kge:hasKGEModel <kge-model/transe-a-lstm> .
 <configuration/igan/48> ns4kge:hasNSMethod <ns-method/gan-scratch> .
 <configuration/igan/48> ns4kge:result "0.758"^^xsd:decimal .
 
@@ -31285,7 +31335,6 @@ ns4kge:NSMethod rdfs:subClassOf
 <configuration/igan/49> ns4kge:hasTask    <task/link-prediction> .
 <configuration/igan/49> ns4kge:hasDataset <dataset/wn18> .
 <configuration/igan/49> ns4kge:hasMetric  <metric/mr> .
-<configuration/igan/49> ns4kge:hasKGEModel <kge-model/transe-a-lstm> .
 <configuration/igan/49> ns4kge:hasNSMethod <ns-method/gan-scratch> .
 <configuration/igan/49> ns4kge:result "114"^^xsd:decimal .
 
@@ -31293,7 +31342,6 @@ ns4kge:NSMethod rdfs:subClassOf
 <configuration/igan/50> ns4kge:hasTask    <task/link-prediction> .
 <configuration/igan/50> ns4kge:hasDataset <dataset/wn18> .
 <configuration/igan/50> ns4kge:hasMetric  <metric/mr> .
-<configuration/igan/50> ns4kge:hasKGEModel <kge-model/transe-a-lstm> .
 <configuration/igan/50> ns4kge:hasNSMethod <ns-method/gan-pretrain> .
 <configuration/igan/50> ns4kge:result "120"^^xsd:decimal .
 
@@ -31301,7 +31349,6 @@ ns4kge:NSMethod rdfs:subClassOf
 <configuration/igan/51> ns4kge:hasTask    <task/link-prediction> .
 <configuration/igan/51> ns4kge:hasDataset <dataset/wn18> .
 <configuration/igan/51> ns4kge:hasMetric  <metric/mr> .
-<configuration/igan/51> ns4kge:hasKGEModel <kge-model/transe-a-lstm> .
 <configuration/igan/51> ns4kge:result "123"^^xsd:decimal .
 
 <configuration/igan/52> rdf:type ns4kge:Configuration .
@@ -31630,14 +31677,12 @@ ns4kge:NSMethod rdfs:subClassOf
 <configuration/igan/94> ns4kge:hasTask    <task/link-prediction> .
 <configuration/igan/94> ns4kge:hasDataset <dataset/wn18> .
 <configuration/igan/94> ns4kge:hasMetric  <metric/hits-10> .
-<configuration/igan/94> ns4kge:hasKGEModel <kge-model/transe-a-lstm> .
 <configuration/igan/94> ns4kge:result "0.909"^^xsd:decimal .
 
 <configuration/igan/95> rdf:type ns4kge:Configuration .
 <configuration/igan/95> ns4kge:hasTask    <task/link-prediction> .
 <configuration/igan/95> ns4kge:hasDataset <dataset/wn18> .
 <configuration/igan/95> ns4kge:hasMetric  <metric/hits-10> .
-<configuration/igan/95> ns4kge:hasKGEModel <kge-model/transe-a-lstm> .
 <configuration/igan/95> ns4kge:hasNSMethod <ns-method/gan-scratch> .
 <configuration/igan/95> ns4kge:result "0.923"^^xsd:decimal .
 
@@ -31645,7 +31690,6 @@ ns4kge:NSMethod rdfs:subClassOf
 <configuration/igan/96> ns4kge:hasTask    <task/link-prediction> .
 <configuration/igan/96> ns4kge:hasDataset <dataset/wn18> .
 <configuration/igan/96> ns4kge:hasMetric  <metric/hits-10> .
-<configuration/igan/96> ns4kge:hasKGEModel <kge-model/transe-a-lstm> .
 <configuration/igan/96> ns4kge:hasNSMethod <ns-method/gan-pretrain> .
 <configuration/igan/96> ns4kge:result "0.927"^^xsd:decimal .
 
@@ -55570,19 +55614,13 @@ ns4kge:NSMethod rdfs:subClassOf
 <article/stc> ns4kge:proposesNSMethod <ns-method/soft-type-constraint> .
 <article/stc> ns4kge:mentionsNSMethod <ns-method/uniform-negative-sampling> .
 <article/stc> ns4kge:mentionsNSMethod <ns-method/bernoulli-negative-sampling> .
-<article/stc> ns4kge:mentionsKGEModel <kge-model/transr-stc-tce> .
-<article/stc> ns4kge:mentionsKGEModel <kge-model/tkrl-whe-stc> .
 <article/stc> ns4kge:mentionsKGEModel <kge-model/tkrl-whe> .
 <article/stc> ns4kge:mentionsKGEModel <kge-model/tkrl-rhe> .
 <article/stc> ns4kge:mentionsKGEModel <kge-model/transe> .
 <article/stc> ns4kge:mentionsKGEModel <kge-model/dkrl> .
 <article/stc> ns4kge:mentionsKGEModel <kge-model/transr> .
-<article/stc> ns4kge:mentionsKGEModel <kge-model/transe-stc-tce> .
-<article/stc> ns4kge:mentionsKGEModel <kge-model/tkrl-rhe-stc-tce> .
-<article/stc> ns4kge:mentionsKGEModel <kge-model/transe-tce> .
 <article/stc> ns4kge:mentionsKGEModel <kge-model/ntn> .
 <article/stc> ns4kge:mentionsKGEModel <kge-model/rescal> .
-<article/stc> ns4kge:mentionsKGEModel <kge-model/tkrl-whe-stc-tce> .
 <article/stc> ns4kge:mentionsKGEModel <kge-model/se> .
 <article/stc> ns4kge:mentionsKGEModel <kge-model/transd> .
 <article/stc> ns4kge:mentionsKGEModel <kge-model/sme-linear> .
@@ -55590,8 +55628,6 @@ ns4kge:NSMethod rdfs:subClassOf
 <article/stc> ns4kge:mentionsKGEModel <kge-model/sme> .
 <article/stc> ns4kge:mentionsKGEModel <kge-model/sme-bilinear> .
 <article/stc> ns4kge:mentionsKGEModel <kge-model/transh> .
-<article/stc> ns4kge:mentionsKGEModel <kge-model/transr-tce> .
-<article/stc> ns4kge:mentionsKGEModel <kge-model/tkrl-rhe-stc> .
 <article/stc> ns4kge:hasExperimentation <experimentation/stc> .
 
 <category/static-ns> rdf:type ns4kge:Category .
@@ -55616,10 +55652,6 @@ ns4kge:NSMethod rdfs:subClassOf
 
 <kge-model/type-embodied-knowledge-representation-learning> rdf:type ns4kge:KGEModel .
 
-<kge-model/transr-stc-tce> rdf:type ns4kge:KGEModel .
-
-<kge-model/tkrl-whe-stc> rdf:type ns4kge:KGEModel .
-
 <kge-model/tkrl-whe> rdf:type ns4kge:KGEModel .
 
 <kge-model/tkrl-rhe> rdf:type ns4kge:KGEModel .
@@ -55630,17 +55662,9 @@ ns4kge:NSMethod rdfs:subClassOf
 
 <kge-model/transr> rdf:type ns4kge:KGEModel .
 
-<kge-model/transe-stc-tce> rdf:type ns4kge:KGEModel .
-
-<kge-model/tkrl-rhe-stc-tce> rdf:type ns4kge:KGEModel .
-
-<kge-model/transe-tce> rdf:type ns4kge:KGEModel .
-
 <kge-model/ntn> rdf:type ns4kge:KGEModel .
 
 <kge-model/rescal> rdf:type ns4kge:KGEModel .
-
-<kge-model/tkrl-whe-stc-tce> rdf:type ns4kge:KGEModel .
 
 <kge-model/se> rdf:type ns4kge:KGEModel .
 
@@ -55655,10 +55679,6 @@ ns4kge:NSMethod rdfs:subClassOf
 <kge-model/sme-bilinear> rdf:type ns4kge:KGEModel .
 
 <kge-model/transh> rdf:type ns4kge:KGEModel .
-
-<kge-model/transr-tce> rdf:type ns4kge:KGEModel .
-
-<kge-model/tkrl-rhe-stc> rdf:type ns4kge:KGEModel .
 
 <dataset/fb15k> rdf:type ns4kge:Dataset .
 <task/link-prediction> rdf:type ns4kge:Task .
@@ -55745,7 +55765,6 @@ ns4kge:NSMethod rdfs:subClassOf
 <configuration/stc/4> ns4kge:hasTask    <task/link-prediction> .
 <configuration/stc/4> ns4kge:hasDataset <dataset/fb15k> .
 <configuration/stc/4> ns4kge:hasMetric  <metric/mr> .
-<configuration/stc/4> ns4kge:hasKGEModel <kge-model/tkrl-whe-stc> .
 <configuration/stc/4> ns4kge:hasNSMethod <ns-method/soft-type-constraint> .
 <configuration/stc/4> ns4kge:result "87"^^xsd:decimal .
 
@@ -55760,7 +55779,6 @@ ns4kge:NSMethod rdfs:subClassOf
 <configuration/stc/6> ns4kge:hasTask    <task/link-prediction> .
 <configuration/stc/6> ns4kge:hasDataset <dataset/fb15k> .
 <configuration/stc/6> ns4kge:hasMetric  <metric/hits-10> .
-<configuration/stc/6> ns4kge:hasKGEModel <kge-model/tkrl-whe-stc> .
 <configuration/stc/6> ns4kge:hasNSMethod <ns-method/soft-type-constraint> .
 <configuration/stc/6> ns4kge:result "0.734"^^xsd:decimal .
 
@@ -55768,7 +55786,6 @@ ns4kge:NSMethod rdfs:subClassOf
 <configuration/stc/7> ns4kge:hasTask    <task/link-prediction> .
 <configuration/stc/7> ns4kge:hasDataset <dataset/fb15k> .
 <configuration/stc/7> ns4kge:hasMetric  <metric/hits-10> .
-<configuration/stc/7> ns4kge:hasKGEModel <kge-model/tkrl-rhe-stc> .
 <configuration/stc/7> ns4kge:hasNSMethod <ns-method/soft-type-constraint> .
 <configuration/stc/7> ns4kge:result "0.731"^^xsd:decimal .
 
@@ -55853,7 +55870,6 @@ ns4kge:NSMethod rdfs:subClassOf
 <configuration/stc/19> ns4kge:hasTask    <task/relation-prediction> .
 <configuration/stc/19> ns4kge:hasDataset <dataset/fb15k> .
 <configuration/stc/19> ns4kge:hasMetric  <metric/mr> .
-<configuration/stc/19> ns4kge:hasKGEModel <kge-model/tkrl-rhe-stc> .
 <configuration/stc/19> ns4kge:hasNSMethod <ns-method/soft-type-constraint> .
 <configuration/stc/19> ns4kge:result "1.97"^^xsd:decimal .
 
@@ -55896,7 +55912,6 @@ ns4kge:NSMethod rdfs:subClassOf
 <configuration/stc/25> ns4kge:hasTask    <task/relation-prediction> .
 <configuration/stc/25> ns4kge:hasDataset <dataset/fb15k> .
 <configuration/stc/25> ns4kge:hasMetric  <metric/hits-1> .
-<configuration/stc/25> ns4kge:hasKGEModel <kge-model/tkrl-rhe-stc> .
 <configuration/stc/25> ns4kge:hasNSMethod <ns-method/soft-type-constraint> .
 <configuration/stc/25> ns4kge:result "0.907"^^xsd:decimal .
 
@@ -55911,7 +55926,6 @@ ns4kge:NSMethod rdfs:subClassOf
 <configuration/stc/27> ns4kge:hasTask    <task/link-prediction> .
 <configuration/stc/27> ns4kge:hasDataset <dataset/fb15k> .
 <configuration/stc/27> ns4kge:hasMetric  <metric/hits-10> .
-<configuration/stc/27> ns4kge:hasKGEModel <kge-model/tkrl-whe-stc-tce> .
 <configuration/stc/27> ns4kge:hasNSMethod <ns-method/soft-type-constraint> .
 <configuration/stc/27> ns4kge:result "0.756"^^xsd:decimal .
 
@@ -55919,7 +55933,6 @@ ns4kge:NSMethod rdfs:subClassOf
 <configuration/stc/28> ns4kge:hasTask    <task/link-prediction> .
 <configuration/stc/28> ns4kge:hasDataset <dataset/fb15k> .
 <configuration/stc/28> ns4kge:hasMetric  <metric/hits-10> .
-<configuration/stc/28> ns4kge:hasKGEModel <kge-model/tkrl-rhe-stc-tce> .
 <configuration/stc/28> ns4kge:hasNSMethod <ns-method/soft-type-constraint> .
 <configuration/stc/28> ns4kge:result "0.754"^^xsd:decimal .
 
@@ -55927,7 +55940,6 @@ ns4kge:NSMethod rdfs:subClassOf
 <configuration/stc/29> ns4kge:hasTask    <task/link-prediction> .
 <configuration/stc/29> ns4kge:hasDataset <dataset/fb15k> .
 <configuration/stc/29> ns4kge:hasMetric  <metric/hits-10> .
-<configuration/stc/29> ns4kge:hasKGEModel <kge-model/transr-stc-tce> .
 <configuration/stc/29> ns4kge:hasNSMethod <ns-method/soft-type-constraint> .
 <configuration/stc/29> ns4kge:result "0.717"^^xsd:decimal .
 
@@ -55935,7 +55947,6 @@ ns4kge:NSMethod rdfs:subClassOf
 <configuration/stc/30> ns4kge:hasTask    <task/link-prediction> .
 <configuration/stc/30> ns4kge:hasDataset <dataset/fb15k> .
 <configuration/stc/30> ns4kge:hasMetric  <metric/hits-10> .
-<configuration/stc/30> ns4kge:hasKGEModel <kge-model/transe-stc-tce> .
 <configuration/stc/30> ns4kge:hasNSMethod <ns-method/soft-type-constraint> .
 <configuration/stc/30> ns4kge:result "0.699"^^xsd:decimal .
 
@@ -55943,21 +55954,18 @@ ns4kge:NSMethod rdfs:subClassOf
 <configuration/stc/31> ns4kge:hasTask    <task/link-prediction> .
 <configuration/stc/31> ns4kge:hasDataset <dataset/fb15k> .
 <configuration/stc/31> ns4kge:hasMetric  <metric/hits-10> .
-<configuration/stc/31> ns4kge:hasKGEModel <kge-model/transr-tce> .
 <configuration/stc/31> ns4kge:result "0.686"^^xsd:decimal .
 
 <configuration/stc/32> rdf:type ns4kge:Configuration .
 <configuration/stc/32> ns4kge:hasTask    <task/link-prediction> .
 <configuration/stc/32> ns4kge:hasDataset <dataset/fb15k> .
 <configuration/stc/32> ns4kge:hasMetric  <metric/hits-10> .
-<configuration/stc/32> ns4kge:hasKGEModel <kge-model/transe-tce> .
 <configuration/stc/32> ns4kge:result "0.634"^^xsd:decimal .
 
 <configuration/stc/33> rdf:type ns4kge:Configuration .
 <configuration/stc/33> ns4kge:hasTask    <task/link-prediction> .
 <configuration/stc/33> ns4kge:hasDataset <dataset/fb15k> .
 <configuration/stc/33> ns4kge:hasMetric  <metric/mr> .
-<configuration/stc/33> ns4kge:hasKGEModel <kge-model/tkrl-whe-stc-tce> .
 <configuration/stc/33> ns4kge:hasNSMethod <ns-method/soft-type-constraint> .
 <configuration/stc/33> ns4kge:result "55"^^xsd:decimal .
 
@@ -55965,7 +55973,6 @@ ns4kge:NSMethod rdfs:subClassOf
 <configuration/stc/34> ns4kge:hasTask    <task/link-prediction> .
 <configuration/stc/34> ns4kge:hasDataset <dataset/fb15k> .
 <configuration/stc/34> ns4kge:hasMetric  <metric/mr> .
-<configuration/stc/34> ns4kge:hasKGEModel <kge-model/tkrl-rhe-stc-tce> .
 <configuration/stc/34> ns4kge:hasNSMethod <ns-method/soft-type-constraint> .
 <configuration/stc/34> ns4kge:result "56"^^xsd:decimal .
 
@@ -55973,14 +55980,12 @@ ns4kge:NSMethod rdfs:subClassOf
 <configuration/stc/35> ns4kge:hasTask    <task/link-prediction> .
 <configuration/stc/35> ns4kge:hasDataset <dataset/fb15k> .
 <configuration/stc/35> ns4kge:hasMetric  <metric/mr> .
-<configuration/stc/35> ns4kge:hasKGEModel <kge-model/transr-tce> .
 <configuration/stc/35> ns4kge:result "60"^^xsd:decimal .
 
 <configuration/stc/36> rdf:type ns4kge:Configuration .
 <configuration/stc/36> ns4kge:hasTask    <task/triple-classification> .
 <configuration/stc/36> ns4kge:hasDataset <dataset/fb15k> .
 <configuration/stc/36> ns4kge:hasMetric  <metric/accuracy> .
-<configuration/stc/36> ns4kge:hasKGEModel <kge-model/tkrl-whe-stc> .
 <configuration/stc/36> ns4kge:hasNSMethod <ns-method/soft-type-constraint> .
 <configuration/stc/36> ns4kge:result "0.885"^^xsd:decimal .
 
@@ -55988,7 +55993,6 @@ ns4kge:NSMethod rdfs:subClassOf
 <configuration/stc/37> ns4kge:hasTask    <task/triple-classification> .
 <configuration/stc/37> ns4kge:hasDataset <dataset/fb15k> .
 <configuration/stc/37> ns4kge:hasMetric  <metric/accuracy> .
-<configuration/stc/37> ns4kge:hasKGEModel <kge-model/tkrl-rhe-stc> .
 <configuration/stc/37> ns4kge:hasNSMethod <ns-method/soft-type-constraint> .
 <configuration/stc/37> ns4kge:result "0.884"^^xsd:decimal .
 
@@ -57998,7 +58002,6 @@ ns4kge:NSMethod rdfs:subClassOf
 <article/truncatedns> ns4kge:proposesNSMethod <ns-method/truncated-negative-sampling> .
 <article/truncatedns> ns4kge:mentionsNSMethod <ns-method/random-negative-sampling> .
 <article/truncatedns> ns4kge:mentionsKGEModel <kge-model/bootea> .
-<article/truncatedns> ns4kge:mentionsKGEModel <kge-model/truncated-negative-sampling> .
 <article/truncatedns> ns4kge:mentionsKGEModel <kge-model/transe> .
 <article/truncatedns> ns4kge:mentionsKGEModel <kge-model/transr> .
 <article/truncatedns> ns4kge:mentionsKGEModel <kge-model/simple> .
@@ -58035,8 +58038,6 @@ ns4kge:NSMethod rdfs:subClassOf
 <ns-method/random-negative-sampling> ns4kge:hasSubcategory <subcategory/random> .
 
 <kge-model/bootea> rdf:type ns4kge:KGEModel .
-
-<kge-model/truncated-negative-sampling> rdf:type ns4kge:KGEModel .
 
 <kge-model/transe> rdf:type ns4kge:KGEModel .
 
@@ -58146,7 +58147,6 @@ ns4kge:NSMethod rdfs:subClassOf
 <configuration/truncatedns/2> ns4kge:hasTask    <task/entity-alignment> .
 <configuration/truncatedns/2> ns4kge:hasDataset <dataset/d-w15k> .
 <configuration/truncatedns/2> ns4kge:hasMetric  <metric/hits-1> .
-<configuration/truncatedns/2> ns4kge:hasKGEModel <kge-model/truncated-negative-sampling> .
 <configuration/truncatedns/2> ns4kge:hasNSMethod <ns-method/truncated-negative-sampling> .
 <configuration/truncatedns/2> ns4kge:result "0.3241"^^xsd:decimal .
 
@@ -58161,7 +58161,6 @@ ns4kge:NSMethod rdfs:subClassOf
 <configuration/truncatedns/4> ns4kge:hasTask    <task/entity-alignment> .
 <configuration/truncatedns/4> ns4kge:hasDataset <dataset/d-w15k> .
 <configuration/truncatedns/4> ns4kge:hasMetric  <metric/hits-5> .
-<configuration/truncatedns/4> ns4kge:hasKGEModel <kge-model/truncated-negative-sampling> .
 <configuration/truncatedns/4> ns4kge:hasNSMethod <ns-method/truncated-negative-sampling> .
 <configuration/truncatedns/4> ns4kge:result "0.4902"^^xsd:decimal .
 
@@ -58183,7 +58182,6 @@ ns4kge:NSMethod rdfs:subClassOf
 <configuration/truncatedns/7> ns4kge:hasTask    <task/entity-alignment> .
 <configuration/truncatedns/7> ns4kge:hasDataset <dataset/d-w15k> .
 <configuration/truncatedns/7> ns4kge:hasMetric  <metric/hits-10> .
-<configuration/truncatedns/7> ns4kge:hasKGEModel <kge-model/truncated-negative-sampling> .
 <configuration/truncatedns/7> ns4kge:hasNSMethod <ns-method/truncated-negative-sampling> .
 <configuration/truncatedns/7> ns4kge:result "0.5616"^^xsd:decimal .
 
@@ -58205,7 +58203,6 @@ ns4kge:NSMethod rdfs:subClassOf
 <configuration/truncatedns/10> ns4kge:hasTask    <task/entity-alignment> .
 <configuration/truncatedns/10> ns4kge:hasDataset <dataset/d-w15k> .
 <configuration/truncatedns/10> ns4kge:hasMetric  <metric/hits-50> .
-<configuration/truncatedns/10> ns4kge:hasKGEModel <kge-model/truncated-negative-sampling> .
 <configuration/truncatedns/10> ns4kge:hasNSMethod <ns-method/truncated-negative-sampling> .
 <configuration/truncatedns/10> ns4kge:result "0.7992"^^xsd:decimal .
 
@@ -58227,7 +58224,6 @@ ns4kge:NSMethod rdfs:subClassOf
 <configuration/truncatedns/13> ns4kge:hasTask    <task/entity-alignment> .
 <configuration/truncatedns/13> ns4kge:hasDataset <dataset/d-w15k> .
 <configuration/truncatedns/13> ns4kge:hasMetric  <metric/mrr> .
-<configuration/truncatedns/13> ns4kge:hasKGEModel <kge-model/truncated-negative-sampling> .
 <configuration/truncatedns/13> ns4kge:hasNSMethod <ns-method/truncated-negative-sampling> .
 <configuration/truncatedns/13> ns4kge:result "0.41"^^xsd:decimal .
 
@@ -58249,7 +58245,6 @@ ns4kge:NSMethod rdfs:subClassOf
 <configuration/truncatedns/16> ns4kge:hasTask    <task/entity-alignment> .
 <configuration/truncatedns/16> ns4kge:hasDataset <dataset/d-w15k> .
 <configuration/truncatedns/16> ns4kge:hasMetric  <metric/mr> .
-<configuration/truncatedns/16> ns4kge:hasKGEModel <kge-model/truncated-negative-sampling> .
 <configuration/truncatedns/16> ns4kge:hasNSMethod <ns-method/truncated-negative-sampling> .
 <configuration/truncatedns/16> ns4kge:result "235"^^xsd:decimal .
 
@@ -58285,7 +58280,6 @@ ns4kge:NSMethod rdfs:subClassOf
 <configuration/truncatedns/21> ns4kge:hasTask    <task/entity-alignment> .
 <configuration/truncatedns/21> ns4kge:hasDataset <dataset/en-de15k> .
 <configuration/truncatedns/21> ns4kge:hasMetric  <metric/hits-1> .
-<configuration/truncatedns/21> ns4kge:hasKGEModel <kge-model/truncated-negative-sampling> .
 <configuration/truncatedns/21> ns4kge:hasNSMethod <ns-method/truncated-negative-sampling> .
 <configuration/truncatedns/21> ns4kge:result "0.659"^^xsd:decimal .
 
@@ -58307,7 +58301,6 @@ ns4kge:NSMethod rdfs:subClassOf
 <configuration/truncatedns/24> ns4kge:hasTask    <task/entity-alignment> .
 <configuration/truncatedns/24> ns4kge:hasDataset <dataset/en-de15k> .
 <configuration/truncatedns/24> ns4kge:hasMetric  <metric/hits-5> .
-<configuration/truncatedns/24> ns4kge:hasKGEModel <kge-model/truncated-negative-sampling> .
 <configuration/truncatedns/24> ns4kge:hasNSMethod <ns-method/truncated-negative-sampling> .
 <configuration/truncatedns/24> ns4kge:result "0.7952"^^xsd:decimal .
 
@@ -58329,7 +58322,6 @@ ns4kge:NSMethod rdfs:subClassOf
 <configuration/truncatedns/27> ns4kge:hasTask    <task/entity-alignment> .
 <configuration/truncatedns/27> ns4kge:hasDataset <dataset/en-de15k> .
 <configuration/truncatedns/27> ns4kge:hasMetric  <metric/hits-10> .
-<configuration/truncatedns/27> ns4kge:hasKGEModel <kge-model/truncated-negative-sampling> .
 <configuration/truncatedns/27> ns4kge:hasNSMethod <ns-method/truncated-negative-sampling> .
 <configuration/truncatedns/27> ns4kge:result "0.8387"^^xsd:decimal .
 
@@ -58351,7 +58343,6 @@ ns4kge:NSMethod rdfs:subClassOf
 <configuration/truncatedns/30> ns4kge:hasTask    <task/entity-alignment> .
 <configuration/truncatedns/30> ns4kge:hasDataset <dataset/en-de15k> .
 <configuration/truncatedns/30> ns4kge:hasMetric  <metric/hits-50> .
-<configuration/truncatedns/30> ns4kge:hasKGEModel <kge-model/truncated-negative-sampling> .
 <configuration/truncatedns/30> ns4kge:hasNSMethod <ns-method/truncated-negative-sampling> .
 <configuration/truncatedns/30> ns4kge:result "0.9167"^^xsd:decimal .
 
@@ -58373,7 +58364,6 @@ ns4kge:NSMethod rdfs:subClassOf
 <configuration/truncatedns/33> ns4kge:hasTask    <task/entity-alignment> .
 <configuration/truncatedns/33> ns4kge:hasDataset <dataset/en-de15k> .
 <configuration/truncatedns/33> ns4kge:hasMetric  <metric/mrr> .
-<configuration/truncatedns/33> ns4kge:hasKGEModel <kge-model/truncated-negative-sampling> .
 <configuration/truncatedns/33> ns4kge:hasNSMethod <ns-method/truncated-negative-sampling> .
 <configuration/truncatedns/33> ns4kge:result "0.72"^^xsd:decimal .
 
@@ -58395,7 +58385,6 @@ ns4kge:NSMethod rdfs:subClassOf
 <configuration/truncatedns/36> ns4kge:hasTask    <task/entity-alignment> .
 <configuration/truncatedns/36> ns4kge:hasDataset <dataset/en-de15k> .
 <configuration/truncatedns/36> ns4kge:hasMetric  <metric/mr> .
-<configuration/truncatedns/36> ns4kge:hasKGEModel <kge-model/truncated-negative-sampling> .
 <configuration/truncatedns/36> ns4kge:hasNSMethod <ns-method/truncated-negative-sampling> .
 <configuration/truncatedns/36> ns4kge:result "48"^^xsd:decimal .
 

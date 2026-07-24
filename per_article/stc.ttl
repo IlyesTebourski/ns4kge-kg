@@ -4,19 +4,13 @@
 <article/stc> ns4kge:proposesNSMethod <ns-method/soft-type-constraint> .
 <article/stc> ns4kge:mentionsNSMethod <ns-method/uniform-negative-sampling> .
 <article/stc> ns4kge:mentionsNSMethod <ns-method/bernoulli-negative-sampling> .
-<article/stc> ns4kge:mentionsKGEModel <kge-model/transr-stc-tce> .
-<article/stc> ns4kge:mentionsKGEModel <kge-model/tkrl-whe-stc> .
 <article/stc> ns4kge:mentionsKGEModel <kge-model/tkrl-whe> .
 <article/stc> ns4kge:mentionsKGEModel <kge-model/tkrl-rhe> .
 <article/stc> ns4kge:mentionsKGEModel <kge-model/transe> .
 <article/stc> ns4kge:mentionsKGEModel <kge-model/dkrl> .
 <article/stc> ns4kge:mentionsKGEModel <kge-model/transr> .
-<article/stc> ns4kge:mentionsKGEModel <kge-model/transe-stc-tce> .
-<article/stc> ns4kge:mentionsKGEModel <kge-model/tkrl-rhe-stc-tce> .
-<article/stc> ns4kge:mentionsKGEModel <kge-model/transe-tce> .
 <article/stc> ns4kge:mentionsKGEModel <kge-model/ntn> .
 <article/stc> ns4kge:mentionsKGEModel <kge-model/rescal> .
-<article/stc> ns4kge:mentionsKGEModel <kge-model/tkrl-whe-stc-tce> .
 <article/stc> ns4kge:mentionsKGEModel <kge-model/se> .
 <article/stc> ns4kge:mentionsKGEModel <kge-model/transd> .
 <article/stc> ns4kge:mentionsKGEModel <kge-model/sme-linear> .
@@ -24,8 +18,6 @@
 <article/stc> ns4kge:mentionsKGEModel <kge-model/sme> .
 <article/stc> ns4kge:mentionsKGEModel <kge-model/sme-bilinear> .
 <article/stc> ns4kge:mentionsKGEModel <kge-model/transh> .
-<article/stc> ns4kge:mentionsKGEModel <kge-model/transr-tce> .
-<article/stc> ns4kge:mentionsKGEModel <kge-model/tkrl-rhe-stc> .
 <article/stc> ns4kge:hasExperimentation <experimentation/stc> .
 
 <category/static-ns> rdf:type ns4kge:Category .
@@ -50,10 +42,6 @@
 
 <kge-model/type-embodied-knowledge-representation-learning> rdf:type ns4kge:KGEModel .
 
-<kge-model/transr-stc-tce> rdf:type ns4kge:KGEModel .
-
-<kge-model/tkrl-whe-stc> rdf:type ns4kge:KGEModel .
-
 <kge-model/tkrl-whe> rdf:type ns4kge:KGEModel .
 
 <kge-model/tkrl-rhe> rdf:type ns4kge:KGEModel .
@@ -64,17 +52,9 @@
 
 <kge-model/transr> rdf:type ns4kge:KGEModel .
 
-<kge-model/transe-stc-tce> rdf:type ns4kge:KGEModel .
-
-<kge-model/tkrl-rhe-stc-tce> rdf:type ns4kge:KGEModel .
-
-<kge-model/transe-tce> rdf:type ns4kge:KGEModel .
-
 <kge-model/ntn> rdf:type ns4kge:KGEModel .
 
 <kge-model/rescal> rdf:type ns4kge:KGEModel .
-
-<kge-model/tkrl-whe-stc-tce> rdf:type ns4kge:KGEModel .
 
 <kge-model/se> rdf:type ns4kge:KGEModel .
 
@@ -89,10 +69,6 @@
 <kge-model/sme-bilinear> rdf:type ns4kge:KGEModel .
 
 <kge-model/transh> rdf:type ns4kge:KGEModel .
-
-<kge-model/transr-tce> rdf:type ns4kge:KGEModel .
-
-<kge-model/tkrl-rhe-stc> rdf:type ns4kge:KGEModel .
 
 <dataset/fb15k> rdf:type ns4kge:Dataset .
 <task/link-prediction> rdf:type ns4kge:Task .
@@ -179,7 +155,6 @@
 <configuration/stc/4> ns4kge:hasTask    <task/link-prediction> .
 <configuration/stc/4> ns4kge:hasDataset <dataset/fb15k> .
 <configuration/stc/4> ns4kge:hasMetric  <metric/mr> .
-<configuration/stc/4> ns4kge:hasKGEModel <kge-model/tkrl-whe-stc> .
 <configuration/stc/4> ns4kge:hasNSMethod <ns-method/soft-type-constraint> .
 <configuration/stc/4> ns4kge:result "87"^^xsd:decimal .
 
@@ -194,7 +169,6 @@
 <configuration/stc/6> ns4kge:hasTask    <task/link-prediction> .
 <configuration/stc/6> ns4kge:hasDataset <dataset/fb15k> .
 <configuration/stc/6> ns4kge:hasMetric  <metric/hits-10> .
-<configuration/stc/6> ns4kge:hasKGEModel <kge-model/tkrl-whe-stc> .
 <configuration/stc/6> ns4kge:hasNSMethod <ns-method/soft-type-constraint> .
 <configuration/stc/6> ns4kge:result "0.734"^^xsd:decimal .
 
@@ -202,7 +176,6 @@
 <configuration/stc/7> ns4kge:hasTask    <task/link-prediction> .
 <configuration/stc/7> ns4kge:hasDataset <dataset/fb15k> .
 <configuration/stc/7> ns4kge:hasMetric  <metric/hits-10> .
-<configuration/stc/7> ns4kge:hasKGEModel <kge-model/tkrl-rhe-stc> .
 <configuration/stc/7> ns4kge:hasNSMethod <ns-method/soft-type-constraint> .
 <configuration/stc/7> ns4kge:result "0.731"^^xsd:decimal .
 
@@ -287,7 +260,6 @@
 <configuration/stc/19> ns4kge:hasTask    <task/relation-prediction> .
 <configuration/stc/19> ns4kge:hasDataset <dataset/fb15k> .
 <configuration/stc/19> ns4kge:hasMetric  <metric/mr> .
-<configuration/stc/19> ns4kge:hasKGEModel <kge-model/tkrl-rhe-stc> .
 <configuration/stc/19> ns4kge:hasNSMethod <ns-method/soft-type-constraint> .
 <configuration/stc/19> ns4kge:result "1.97"^^xsd:decimal .
 
@@ -330,7 +302,6 @@
 <configuration/stc/25> ns4kge:hasTask    <task/relation-prediction> .
 <configuration/stc/25> ns4kge:hasDataset <dataset/fb15k> .
 <configuration/stc/25> ns4kge:hasMetric  <metric/hits-1> .
-<configuration/stc/25> ns4kge:hasKGEModel <kge-model/tkrl-rhe-stc> .
 <configuration/stc/25> ns4kge:hasNSMethod <ns-method/soft-type-constraint> .
 <configuration/stc/25> ns4kge:result "0.907"^^xsd:decimal .
 
@@ -345,7 +316,6 @@
 <configuration/stc/27> ns4kge:hasTask    <task/link-prediction> .
 <configuration/stc/27> ns4kge:hasDataset <dataset/fb15k> .
 <configuration/stc/27> ns4kge:hasMetric  <metric/hits-10> .
-<configuration/stc/27> ns4kge:hasKGEModel <kge-model/tkrl-whe-stc-tce> .
 <configuration/stc/27> ns4kge:hasNSMethod <ns-method/soft-type-constraint> .
 <configuration/stc/27> ns4kge:result "0.756"^^xsd:decimal .
 
@@ -353,7 +323,6 @@
 <configuration/stc/28> ns4kge:hasTask    <task/link-prediction> .
 <configuration/stc/28> ns4kge:hasDataset <dataset/fb15k> .
 <configuration/stc/28> ns4kge:hasMetric  <metric/hits-10> .
-<configuration/stc/28> ns4kge:hasKGEModel <kge-model/tkrl-rhe-stc-tce> .
 <configuration/stc/28> ns4kge:hasNSMethod <ns-method/soft-type-constraint> .
 <configuration/stc/28> ns4kge:result "0.754"^^xsd:decimal .
 
@@ -361,7 +330,6 @@
 <configuration/stc/29> ns4kge:hasTask    <task/link-prediction> .
 <configuration/stc/29> ns4kge:hasDataset <dataset/fb15k> .
 <configuration/stc/29> ns4kge:hasMetric  <metric/hits-10> .
-<configuration/stc/29> ns4kge:hasKGEModel <kge-model/transr-stc-tce> .
 <configuration/stc/29> ns4kge:hasNSMethod <ns-method/soft-type-constraint> .
 <configuration/stc/29> ns4kge:result "0.717"^^xsd:decimal .
 
@@ -369,7 +337,6 @@
 <configuration/stc/30> ns4kge:hasTask    <task/link-prediction> .
 <configuration/stc/30> ns4kge:hasDataset <dataset/fb15k> .
 <configuration/stc/30> ns4kge:hasMetric  <metric/hits-10> .
-<configuration/stc/30> ns4kge:hasKGEModel <kge-model/transe-stc-tce> .
 <configuration/stc/30> ns4kge:hasNSMethod <ns-method/soft-type-constraint> .
 <configuration/stc/30> ns4kge:result "0.699"^^xsd:decimal .
 
@@ -377,21 +344,18 @@
 <configuration/stc/31> ns4kge:hasTask    <task/link-prediction> .
 <configuration/stc/31> ns4kge:hasDataset <dataset/fb15k> .
 <configuration/stc/31> ns4kge:hasMetric  <metric/hits-10> .
-<configuration/stc/31> ns4kge:hasKGEModel <kge-model/transr-tce> .
 <configuration/stc/31> ns4kge:result "0.686"^^xsd:decimal .
 
 <configuration/stc/32> rdf:type ns4kge:Configuration .
 <configuration/stc/32> ns4kge:hasTask    <task/link-prediction> .
 <configuration/stc/32> ns4kge:hasDataset <dataset/fb15k> .
 <configuration/stc/32> ns4kge:hasMetric  <metric/hits-10> .
-<configuration/stc/32> ns4kge:hasKGEModel <kge-model/transe-tce> .
 <configuration/stc/32> ns4kge:result "0.634"^^xsd:decimal .
 
 <configuration/stc/33> rdf:type ns4kge:Configuration .
 <configuration/stc/33> ns4kge:hasTask    <task/link-prediction> .
 <configuration/stc/33> ns4kge:hasDataset <dataset/fb15k> .
 <configuration/stc/33> ns4kge:hasMetric  <metric/mr> .
-<configuration/stc/33> ns4kge:hasKGEModel <kge-model/tkrl-whe-stc-tce> .
 <configuration/stc/33> ns4kge:hasNSMethod <ns-method/soft-type-constraint> .
 <configuration/stc/33> ns4kge:result "55"^^xsd:decimal .
 
@@ -399,7 +363,6 @@
 <configuration/stc/34> ns4kge:hasTask    <task/link-prediction> .
 <configuration/stc/34> ns4kge:hasDataset <dataset/fb15k> .
 <configuration/stc/34> ns4kge:hasMetric  <metric/mr> .
-<configuration/stc/34> ns4kge:hasKGEModel <kge-model/tkrl-rhe-stc-tce> .
 <configuration/stc/34> ns4kge:hasNSMethod <ns-method/soft-type-constraint> .
 <configuration/stc/34> ns4kge:result "56"^^xsd:decimal .
 
@@ -407,14 +370,12 @@
 <configuration/stc/35> ns4kge:hasTask    <task/link-prediction> .
 <configuration/stc/35> ns4kge:hasDataset <dataset/fb15k> .
 <configuration/stc/35> ns4kge:hasMetric  <metric/mr> .
-<configuration/stc/35> ns4kge:hasKGEModel <kge-model/transr-tce> .
 <configuration/stc/35> ns4kge:result "60"^^xsd:decimal .
 
 <configuration/stc/36> rdf:type ns4kge:Configuration .
 <configuration/stc/36> ns4kge:hasTask    <task/triple-classification> .
 <configuration/stc/36> ns4kge:hasDataset <dataset/fb15k> .
 <configuration/stc/36> ns4kge:hasMetric  <metric/accuracy> .
-<configuration/stc/36> ns4kge:hasKGEModel <kge-model/tkrl-whe-stc> .
 <configuration/stc/36> ns4kge:hasNSMethod <ns-method/soft-type-constraint> .
 <configuration/stc/36> ns4kge:result "0.885"^^xsd:decimal .
 
@@ -422,7 +383,6 @@
 <configuration/stc/37> ns4kge:hasTask    <task/triple-classification> .
 <configuration/stc/37> ns4kge:hasDataset <dataset/fb15k> .
 <configuration/stc/37> ns4kge:hasMetric  <metric/accuracy> .
-<configuration/stc/37> ns4kge:hasKGEModel <kge-model/tkrl-rhe-stc> .
 <configuration/stc/37> ns4kge:hasNSMethod <ns-method/soft-type-constraint> .
 <configuration/stc/37> ns4kge:result "0.884"^^xsd:decimal .
 
