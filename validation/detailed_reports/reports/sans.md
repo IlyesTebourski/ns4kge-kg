@@ -9,8 +9,8 @@
 | Entites extraites trouvees dans le texte (TP) | 14 |
 | Extraites NON trouvees (FP -> erreur precision) | 5 |
 | **Precision** | **73.7%** |
-| Candidats faux negatifs (dans le texte, non extraits) | 27 |
-| **Recall relatif (indicatif, a valider)** | **34.1%** |
+| Candidats faux negatifs (dans le texte, non extraits) | 26 |
+| **Recall relatif (indicatif, a valider)** | **35.0%** |
 
 ## Datasets  —  precision 100% · recall~ 60%
 
@@ -80,7 +80,7 @@ _Aucun candidat faux negatif pour cette categorie._
 | Uniform Sampling | SANS consistently leads to improvements upon uniform sampling and sophisticated Generative Adversarial Net |
 | Uniform SANS | ereas the former approach is referred to as *Uniform SANS*. **Algorithm 1** Approximating the $k$-hop |
 
-## KGE Models  —  precision 100% · recall~ 27%
+## KGE Models  —  precision 100% · recall~ 30%
 
 ### Precision : entites extraites par le KG
 
@@ -98,7 +98,6 @@ _Aucun candidat faux negatif pour cette categorie._
 | ComplEx | selects a hard negative example through more complex negative sampling distribution, such as adve |
 | DeepWalk | ozzi, Rami Al-Rfou, and Steven Skiena. 2014. Deepwalk: Online learning of social representations. |
 | GAN | versarial Network (Goodfellow et al., 2014) (GAN) based approaches at a fraction of the compu |
-| KBGAN | orm negative sampling (Bordes et al., 2013), KBGAN (Cai and Wang, 2018), and NSCaching (Zhang e |
 | Random Walk | ment with a dynamic sampling scheme based on random walks to approximate a node's local neighborhood. |
 | SimplE | ata. While earlier methods either employ too simple corruption distributions, i.e. uniform, yiel |
 | TaKE | ory and allowing sparse tensor operations to take place, the appeal of incorporating graph st |

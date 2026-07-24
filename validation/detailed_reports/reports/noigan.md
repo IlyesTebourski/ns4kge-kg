@@ -6,11 +6,11 @@
 
 | Metrique | Valeur |
 |---|---|
-| Entites extraites trouvees dans le texte (TP) | 22 |
+| Entites extraites trouvees dans le texte (TP) | 21 |
 | Extraites NON trouvees (FP -> erreur precision) | 22 |
-| **Precision** | **50.0%** |
+| **Precision** | **48.8%** |
 | Candidats faux negatifs (dans le texte, non extraits) | 14 |
-| **Recall relatif (indicatif, a valider)** | **61.1%** |
+| **Recall relatif (indicatif, a valider)** | **60.0%** |
 
 ## Datasets  —  precision 100% · recall~ 71%
 
@@ -86,7 +86,7 @@ _Aucun candidat faux negatif pour cette categorie._
 | Negative Sampling | on et al., 2016). To optimize the KGE model, negative sampling is usually required to minimize the margin b |
 | Random Sampling | guidance, the generator generates "noise" by random sampling. However, such "noise" is too easy for discr |
 
-## KGE Models  —  precision 100% · recall~ 59%
+## KGE Models  —  precision 100% · recall~ 56%
 
 ### Precision : entites extraites par le KG
 
@@ -96,7 +96,6 @@ _Aucun candidat faux negatif pour cette categorie._
 | CKRL | ✅ oui | ., 2019)), (3) noise aware KGE models (e.g., CKRL (Xie et al., 2018)) and (4) KGE models with |
 | ComplEx | ✅ oui | al., 2011), DistMult (Yang et al., 2014) and ComplEx (Trouillon et al., 2016). To optimize the KG |
 | DistMult | ✅ oui | models include RESCAL (Nickel et al., 2011), DistMult (Yang et al., 2014) and ComplEx (Trouillon e |
-| KBGAN | ✅ oui | ., 2018)) and (4) KGE models with GAN (e.g., KBGAN (Cai & Wang, 2017)). In particular, there ar |
 | RESCAL | ✅ oui | representations. The typical models include RESCAL (Nickel et al., 2011), DistMult (Yang et al. |
 | RotatE | ✅ oui | lar observations on NoiGAN-TransE and NoiGAN-RotatE, we only report the experimental results w.r |
 | TransE | ✅ oui | r a translation carried out by the relation. TransE (Bordes et al., 2013), TransH (Wang et al., |

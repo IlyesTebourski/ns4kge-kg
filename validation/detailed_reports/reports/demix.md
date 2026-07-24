@@ -9,8 +9,8 @@
 | Entites extraites trouvees dans le texte (TP) | 23 |
 | Extraites NON trouvees (FP -> erreur precision) | 0 |
 | **Precision** | **100.0%** |
-| Candidats faux negatifs (dans le texte, non extraits) | 30 |
-| **Recall relatif (indicatif, a valider)** | **43.4%** |
+| Candidats faux negatifs (dans le texte, non extraits) | 28 |
+| **Recall relatif (indicatif, a valider)** | **45.1%** |
 
 ## Datasets  —  precision 100% · recall~ 33%
 
@@ -85,7 +85,7 @@
 | Structure-Aware Negative Sampling | A., Salehi, Y., Hamilton, W.L., Bose, A.J.: Structure aware negative sampling in knowledge graphs. In: Proceedings of the |
 | Uniform Negative Sampling | we show the training objectives based on the uniform negative sampling [4] and self-adversarial sampling [18]. The |
 
-## KGE Models  —  precision 100% · recall~ 38%
+## KGE Models  —  precision 100% · recall~ 43%
 
 ### Precision : entites extraites par le KG
 
@@ -103,10 +103,8 @@
 | Entite (vocab global) | Extrait de texte |
 |---|---|
 | Attention | ion answering over knowledge base with cross-attention combining global knowledge. In: Proceedings |
-| CAKE | . - *CANS* [16]. The CANS is a component of CAKE [16] responsible for solving the invalid neg |
 | GAN | introduce a generative adversarial network (GAN)[11] to generate negative triples with high |
 | HypER | nimum and mean value of $X$. $\delta_T$ is a hyper-parameter controlling the estimation range a |
-| KBGAN | stent triples with high scores. For example, KBGAN[6] and IGAN[23] introduce a generative adver |
 | RatE | 1\}$, $\mu$ from $\{1, 3, 5\}$. The learning rate is tuned from 0.00001 to 0.01. The margin is |
 | SimplE | of our work are as follows: - We propose a simple and efficient denoising framework, named **D |
 | Structured Embedding | ton, J., Collobert, R., Bengio, Y.: Learning structured embeddings of knowledge bases. In: Proceedings of the A |

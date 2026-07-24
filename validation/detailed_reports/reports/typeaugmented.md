@@ -9,8 +9,8 @@
 | Entites extraites trouvees dans le texte (TP) | 35 |
 | Extraites NON trouvees (FP -> erreur precision) | 2 |
 | **Precision** | **94.6%** |
-| Candidats faux negatifs (dans le texte, non extraits) | 15 |
-| **Recall relatif (indicatif, a valider)** | **70.0%** |
+| Candidats faux negatifs (dans le texte, non extraits) | 14 |
+| **Recall relatif (indicatif, a valider)** | **71.4%** |
 
 ## Datasets  —  precision 100% · recall~ 67%
 
@@ -48,13 +48,14 @@
 | MAP | ted representation<sup>11</sup>, KGE aims to map the elements (entities and relations) of KG |
 | MR | pared to another similar metric *Mean Rank* (MR), which is largely influenced by a single ba |
 
-## NS Methods  —  precision 67% · recall~ 36%
+## NS Methods  —  precision 71% · recall~ 45%
 
 ### Precision : entites extraites par le KG
 
 | Entite extraite | Trouvee dans le .md ? | Extrait de texte |
 |---|:---:|---|
 | Bernoulli negative sampling | ❌ NON | _(absent du texte)_ |
+| CAKE | ✅ oui | ty. Besides, Niu et al.<sup>33</sup> propose CAKE which automatically extract commonsense from |
 | Self-adversarial negative sampling | ✅ oui | Recently, Sun et al.<sup>15</sup> propose a self-adversarial negative sampling strategy and design a self-adversarial negat |
 | Soft Type Constraint | ✅ oui | an improved negative sampling strategy named Soft Type Constraint (STC). It selects entities in the same type |
 | Type-constrained negative sampling | ✅ oui | to distinct relations. We also design a new type-constrained negative sampling strategy to construct more effective negativ |
@@ -66,7 +67,6 @@
 | Entite (vocab global) | Extrait de texte |
 |---|---|
 | Adversarial Negative Sampling | ntly, Sun et al.<sup>15</sup> propose a self-adversarial negative sampling strategy and design a self-adversarial negat |
-| CAKE | ty. Besides, Niu et al.<sup>33</sup> propose CAKE which automatically extract commonsense from |
 | Dynamic Negative Sampling | a candidate set of non-homogeneous entities. Dynamic sampling is performed respectively from them, so as t |
 | Local Closed-World Assumption | pe-constrained method<sup>39</sup> applies a local closed-world assumption based on observed triples. For a given posit |
 | Negative Sampling | tions. We also design a new type-constrained negative sampling strategy to construct more effective negativ |
@@ -79,7 +79,6 @@
 
 | Entite extraite | Trouvee dans le .md ? | Extrait de texte |
 |---|:---:|---|
-| CAKE | ✅ oui | ty. Besides, Niu et al.<sup>33</sup> propose CAKE which automatically extract commonsense from |
 | ComplEx | ✅ oui | $d$, and $\mathbf{z} \in \mathbb{C}^d$ is a complex vector of length $d$. $\\|\cdot\\|_p$ denotes |
 | DistMult | ✅ oui | so competitive on many benchmarks, including DistMult<sup>18</sup>, ComplEx<sup>19</sup>, SimplE<s |
 | HAKE | ✅ oui | edding to tail embedding. Soon after RotatE, HAKE<sup>16</sup> and RatE<sup>17</sup> make slig |

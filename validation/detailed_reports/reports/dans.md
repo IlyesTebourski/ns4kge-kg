@@ -9,8 +9,8 @@
 | Entites extraites trouvees dans le texte (TP) | 22 |
 | Extraites NON trouvees (FP -> erreur precision) | 2 |
 | **Precision** | **91.7%** |
-| Candidats faux negatifs (dans le texte, non extraits) | 35 |
-| **Recall relatif (indicatif, a valider)** | **38.6%** |
+| Candidats faux negatifs (dans le texte, non extraits) | 33 |
+| **Recall relatif (indicatif, a valider)** | **40.0%** |
 
 ## Datasets  —  precision 100% · recall~ 43%
 
@@ -89,7 +89,7 @@
 | Uniform Random Sampling | ining ten negative triplets are obtained via uniform random sampling to further increase the diversity. In all ca |
 | Uniform Sampling | p** [17]: a variant of Rand that substitutes uniform sampling with popularity-weighted sampling; **Self-ad |
 
-## KGE Models  —  precision 100% · recall~ 28%
+## KGE Models  —  precision 100% · recall~ 31%
 
 ### Precision : entites extraites par le KG
 
@@ -106,10 +106,8 @@
 | Entite (vocab global) | Extrait de texte |
 |---|---|
 | Attention | C.C.: Replacing paths with connection-biased attention for knowledge graph completion. In: Proceedi |
-| CAKE | to generate informative negative triplets; **CAKE** [19]: a framework which leverages extra in |
 | GAN | , we adopt a generative adversarial network (GAN) [30] for the generation of negative samples |
 | HypER | t to the generator $\epsilon$, $\sigma$ is a hyper-parameter controlling the covariance of the |
-| KBGAN | previous state-of-the-art approaches such as KBGAN [3], we adopt a generative adversarial netwo |
 | MLP | is implemented as a multi-layer perceptron (MLP). Taking $G_E$ as an example, its MLP is par |
 | Random Walk | PinSage [14] generates localized graphs via random walks to extract informative negative samples. How |
 | RatE | the model for 5000 epochs, using a learning rate of 0.001 and a mini-batch size of 1000 for U |

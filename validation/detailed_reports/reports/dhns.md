@@ -9,8 +9,8 @@
 | Entites extraites trouvees dans le texte (TP) | 36 |
 | Extraites NON trouvees (FP -> erreur precision) | 4 |
 | **Precision** | **90.0%** |
-| Candidats faux negatifs (dans le texte, non extraits) | 21 |
-| **Recall relatif (indicatif, a valider)** | **63.2%** |
+| Candidats faux negatifs (dans le texte, non extraits) | 20 |
+| **Recall relatif (indicatif, a valider)** | **64.3%** |
 
 ## Datasets  —  precision 100% · recall~ 75%
 
@@ -74,7 +74,7 @@ _Aucun candidat faux negatif pour cette categorie._
 | Structure-Aware Negative Sampling | A., Salehi, Y., Hamilton, W.L., Bose, A.J.: Structure aware negative sampling in knowledge graphs. In: EMNLP. pp. 6093–610 |
 | Uniform Sampling | on both MMKGC and NS performances, including uniform sampling (Uniform) [3], Bernoulli sampling (Bern) [31 |
 
-## KGE Models  —  precision 100% · recall~ 66%
+## KGE Models  —  precision 100% · recall~ 68%
 
 ### Precision : entites extraites par le KG
 
@@ -110,7 +110,6 @@ _Aucun candidat faux negatif pour cette categorie._
 | BERT | Bao, H., Dong, L., Piao, S., Wei, F.: BEiT: BERT pre-training of image ers. In: ICLR (2022) |
 | GAN | 30. Wang, P., Li, S., Pan, R.: Incorporating gan for negative sampling in knowledge represent |
 | HypER | {KGC}$ and $\mathcal{L}_{HA}$, weighted by a hyper-parameter $\lambda$ for a trade-off between |
-| KBGAN | to generate higher-quality negative triples. KBGAN [4] and IGAN [30] use Generative Adversarial |
 | MLP | , C(\mathbf{x}_e, \mathbf{x}_r)) = LayerNorm(MLP(\mathbf{x}_t, PE(t), C(\mathbf{x}_e, \mathbf |
 | OTE | omplEx [27], RotatE [25], PairRE [7], and GC-OTE [26]. (2) **Multimodal KGC models:** we com |
 | RatE | ng the Adam optimizer with separate learning rates to ensure stability. 8 G. Niu et al. The e |

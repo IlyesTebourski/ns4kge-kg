@@ -9,8 +9,8 @@
 | Entites extraites trouvees dans le texte (TP) | 15 |
 | Extraites NON trouvees (FP -> erreur precision) | 1 |
 | **Precision** | **93.8%** |
-| Candidats faux negatifs (dans le texte, non extraits) | 17 |
-| **Recall relatif (indicatif, a valider)** | **46.9%** |
+| Candidats faux negatifs (dans le texte, non extraits) | 16 |
+| **Recall relatif (indicatif, a valider)** | **48.4%** |
 
 ## Datasets  —  precision 0% · recall~ 0%
 
@@ -37,7 +37,7 @@
 
 _Aucun candidat faux negatif pour cette categorie._
 
-## NS Methods  —  precision 100% · recall~ 43%
+## NS Methods  —  precision 100% · recall~ 50%
 
 ### Precision : entites extraites par le KG
 
@@ -47,6 +47,7 @@ _Aucun candidat faux negatif pour cette categorie._
 | Good Negative Sampling | ✅ oui | # Good negative sampling for triple classification Yoan A. López-Rod |
 | Iterative Negative Sampling | ✅ oui | l entity to corrupt. ReasonKGE [9] with its Iterative Negative Sampling (INS) identifies dynamically via symbolic re |
 | Pseudo Typed Negative Sampling | ✅ oui | 2) Bernoulli Negative Sampling (BNS) and 3) Pseudo Typed Negative Sampling (PTNS). UNS generates corrupted triples from |
+| ReasonKGE | ✅ oui | ity to pick head or tail entity to corrupt. ReasonKGE [9] with its Iterative Negative Sampling (IN |
 | Typed Negative Sampling | ✅ oui | ion of ontologies in the negative sampling. Typed Negative Sampling (TNS) [10] which is similar to GNS is focuse |
 | Uniform Negative Sampling | ✅ oui | ve sampling is composed of three methods: 1) Uniform Negative Sampling (UNS), 2) Bernoulli Negative Sampling (BNS) |
 
@@ -58,12 +59,11 @@ _Aucun candidat faux negatif pour cette categorie._
 | Corrupting Positive Instances | ed false. It generates negative instances by corrupting positive instances: for every relation r, they collect the sets |
 | Local Closed-World Assumption | m> are inconsistent triples. In addition, a Local-Closed World Assumption (LCWA) approach [10] assumes a KG to be only |
 | Negative Sampling | # Good negative sampling for triple classification Yoan A. López-Rod |
-| ReasonKGE | ity to pick head or tail entity to corrupt. ReasonKGE [9] with its Iterative Negative Sampling (IN |
 | Typed Sampling | ion of ontologies in the negative sampling. Typed Negative Sampling (TNS) [10] which is similar to GNS is focuse |
 | Uniform Sampling | ve sampling is composed of three methods: 1) Uniform Negative Sampling (UNS), 2) Bernoulli Negative Sampling (BNS) |
 | Unknown | re triples that belong to $G\complement$ are unknown, $G\complement$ is composed of three kinds o |
 
-## KGE Models  —  precision 100% · recall~ 53%
+## KGE Models  —  precision 100% · recall~ 50%
 
 ### Precision : entites extraites par le KG
 
@@ -73,7 +73,6 @@ _Aucun candidat faux negatif pour cette categorie._
 | ComplEx | ✅ oui | ngs in KGs such as: TransE [5], Rescal [12], ComplEx [16], DistMult [20] and KG-BERT [21], and al |
 | DistMult | ✅ oui | h as: TransE [5], Rescal [12], ComplEx [16], DistMult [20] and KG-BERT [21], and all these methods |
 | KG-BERT | ✅ oui | egy on a state-of-the-art embedding method - KG-BERT for triple classification task - on a benchm |
-| ReasonKGE | ✅ oui | ity to pick head or tail entity to corrupt. ReasonKGE [9] with its Iterative Negative Sampling (IN |
 | Rescal | ✅ oui | ation embeddings in KGs such as: TransE [5], Rescal [12], ComplEx [16], DistMult [20] and KG-BER |
 | TransE | ✅ oui | tity and relation embeddings in KGs such as: TransE [5], Rescal [12], ComplEx [16], DistMult [20 |
 | TransOWL | ✅ oui | gative sampling for triple classification 5 TransOWL [7] leverages ontology axioms in order to in |

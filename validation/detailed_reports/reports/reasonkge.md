@@ -9,8 +9,8 @@
 | Entites extraites trouvees dans le texte (TP) | 17 |
 | Extraites NON trouvees (FP -> erreur precision) | 1 |
 | **Precision** | **94.4%** |
-| Candidats faux negatifs (dans le texte, non extraits) | 24 |
-| **Recall relatif (indicatif, a valider)** | **41.5%** |
+| Candidats faux negatifs (dans le texte, non extraits) | 22 |
+| **Recall relatif (indicatif, a valider)** | **43.6%** |
 
 ## Datasets  —  precision 100% · recall~ 60%
 
@@ -78,7 +78,7 @@
 | SANS | presents structure-aware negative sampling (SANS), which utilizes the graph structure by sele |
 | Unknown | ohn, worksAt, bosch \rangle$ holds or not is unknown. Given a triple $\alpha$, we denote by $Ent( |
 
-## KGE Models  —  precision 100% · recall~ 25%
+## KGE Models  —  precision 100% · recall~ 30%
 
 ### Precision : entites extraites par le KG
 
@@ -93,11 +93,9 @@
 | Entite (vocab global) | Extrait de texte |
 |---|---|
 | GAN | 35. Wang, P., Li, S., Pan, R.: Incorporating GAN for negative sampling in knowledge represent |
-| KBGAN | p. 2787–2795 (2013) 10. Cai, L., Wang, W.Y.: KBGAN: adversarial learning for knowledge graph em |
 | LINE | ledge into KG Embeddings.** Another relevant line of work concerns the integration of ontologi |
 | Neural Tensor Network | D., Manning, C.D., Ng, A.Y.: Reasoning with neural tensor networks for knowledge base completion. In: NIPS. pp. |
 | Neural Tensor Networks | D., Manning, C.D., Ng, A.Y.: Reasoning with neural tensor networks for knowledge base completion. In: NIPS. pp. |
-| ReasonKGE | ally, we present a novel iterative approach *ReasonKGE* that identifies dynamically via symbolic re |
 | SimplE | er, É., Bouchard, G.: Complex embeddings for simple link prediction. In: ICML. pp. 2071–2080 (20 |
 | StAR | thcal{G}) \cup \mathcal{O}$ is consistent ($\star$). From the assumption that $\text{Relv}(\al |
 | TaKE | dicted triple is ignored). Therefore, we can take $\langle bosch, locatedIn, bob \rangle$ as a |

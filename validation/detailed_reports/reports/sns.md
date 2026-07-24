@@ -9,8 +9,8 @@
 | Entites extraites trouvees dans le texte (TP) | 19 |
 | Extraites NON trouvees (FP -> erreur precision) | 0 |
 | **Precision** | **100.0%** |
-| Candidats faux negatifs (dans le texte, non extraits) | 16 |
-| **Recall relatif (indicatif, a valider)** | **54.3%** |
+| Candidats faux negatifs (dans le texte, non extraits) | 15 |
+| **Recall relatif (indicatif, a valider)** | **55.9%** |
 
 ## Datasets  —  precision 100% · recall~ 100%
 
@@ -69,7 +69,7 @@ _Aucun candidat faux negatif pour cette categorie._
 | SANS | NSCaching, structure aware negative sampling(SANS) are four negative sampling methods in the l |
 | Uniform Random Sampling | avoiding the 'vanishing-gradient' problem of uniform-random sampling, the complex parameter optimization problem |
 
-## KGE Models  —  precision 100% · recall~ 25%
+## KGE Models  —  precision 100% · recall~ 29%
 
 ### Precision : entites extraites par le KG
 
@@ -84,7 +84,6 @@ _Aucun candidat faux negatif pour cette categorie._
 |---|---|
 | ComplEx | graphs. The 10th International Conference on Complex Networks and their Applications, Nov 2021, M |
 | GAN | iform-random, generative adversarial network(GAN)-based, and NSCaching, structure aware negat |
-| KBGAN | rt is trained to learn embeddings. IGAN [8], KBGAN [3], KSGAN [7] are three existing GAN-based |
 | RatE | to 200, embedding dimension to 100, learning rate to 0.0001, margin value to 4.0 for all the e |
 | SimplE | open science logo](page_1_image_1_v2.jpg) # Simple negative sampling for link prediction in kno |
 | TaKE | increase the number of model parameters and take extra costs on training for parameter optimi |

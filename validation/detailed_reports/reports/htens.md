@@ -9,8 +9,8 @@
 | Entites extraites trouvees dans le texte (TP) | 15 |
 | Extraites NON trouvees (FP -> erreur precision) | 3 |
 | **Precision** | **83.3%** |
-| Candidats faux negatifs (dans le texte, non extraits) | 17 |
-| **Recall relatif (indicatif, a valider)** | **46.9%** |
+| Candidats faux negatifs (dans le texte, non extraits) | 16 |
+| **Recall relatif (indicatif, a valider)** | **48.4%** |
 
 ## Datasets  —  precision 100% · recall~ 50%
 
@@ -70,7 +70,7 @@ _Aucun candidat faux negatif pour cette categorie._
 | NSCaching | nming Yao, Yingxia Shao, and Lei Chen. 2019. NSCaching: Simple and Efficient Negative Sampling for |
 | Uniform Negative Sampling | distribution based sampling methods, such as Uniform sampling[2] and Bernoulli sampling[14], assign fixed |
 
-## KGE Models  —  precision 100% · recall~ 40%
+## KGE Models  —  precision 100% · recall~ 44%
 
 ### Precision : entites extraites par le KG
 
@@ -87,7 +87,6 @@ _Aucun candidat faux negatif pour cette categorie._
 |---|---|
 | GAN | nal entities as the training progresses. The GAN-based sampling methods, such as KBGAN[3] and |
 | HAN | ://doi.org/10.1109/TKDE.2020.3028705 [6] Xu Han, Shulin Cao, Xin Lv, Yankai Lin, Zhiyuan Liu |
-| KBGAN | ses. The GAN-based sampling methods, such as KBGAN[3] and IGAN[13], set the KGE model to be tra |
 | RatE | h default settings, except that the learning rate is set to 0.0005 for FB15K and 0.0001 for FB |
 | SimplE | laume Bouchard. 2016. Complex Embeddings for Simple Link Prediction. In *Proceedings of The 33rd |
 | TKRL | oter> <sup>1</sup>https://github.com/thunlp/TKRL SIGIR ’23, July 23–27, 2023, Taipei, Taiwan |

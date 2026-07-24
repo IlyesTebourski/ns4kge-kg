@@ -9,8 +9,8 @@
 | Entites extraites trouvees dans le texte (TP) | 16 |
 | Extraites NON trouvees (FP -> erreur precision) | 0 |
 | **Precision** | **100.0%** |
-| Candidats faux negatifs (dans le texte, non extraits) | 19 |
-| **Recall relatif (indicatif, a valider)** | **45.7%** |
+| Candidats faux negatifs (dans le texte, non extraits) | 18 |
+| **Recall relatif (indicatif, a valider)** | **47.1%** |
 
 ## Datasets  —  precision 100% · recall~ 50%
 
@@ -69,7 +69,7 @@ _Aucun candidat faux negatif pour cette categorie._
 | SANS | Recently, Structure Aware Negative Sampling (SANS) [1] strategy was introduced with a differen |
 | Uniform Sampling | g the existing negative sampling strategies, Uniform negative sampling is a widely used strategy due to its simplic |
 
-## KGE Models  —  precision 100% · recall~ 36%
+## KGE Models  —  precision 100% · recall~ 40%
 
 ### Precision : entites extraites par le KG
 
@@ -87,7 +87,6 @@ _Aucun candidat faux negatif pour cette categorie._
 | Attention | , Neural network approaches have also gained attention in recent research work that utilizes the po |
 | GAN | 17]. Hence, Generative adversarial networks (GAN) based negative sampling strategies IGAN [12 |
 | HypER | ion with Adam optimizer, and first, we tuned hyper-parameters referring to Bernoulli sampling s |
-| KBGAN | d negative sampling strategies IGAN [12] and KBGAN [3] were introduced to generate negatives wi |
 | Random Walk | l did not include. We consider SANS with the random walk configuration. <table> <thead> <tr> |
 | RatE | ion $d \in \{50, 100, 250, 1000\}$, learning rate $\eta \in \{0.0005, 0.005, 0.05, 0.5\}$, mar |
 | SimplE | er, E., Bouchard, G.: Complex embeddings for simple link prediction. In: Proceedings of Internat |

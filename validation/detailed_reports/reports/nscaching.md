@@ -9,8 +9,8 @@
 | Entites extraites trouvees dans le texte (TP) | 26 |
 | Extraites NON trouvees (FP -> erreur precision) | 3 |
 | **Precision** | **89.7%** |
-| Candidats faux negatifs (dans le texte, non extraits) | 25 |
-| **Recall relatif (indicatif, a valider)** | **51.0%** |
+| Candidats faux negatifs (dans le texte, non extraits) | 24 |
+| **Recall relatif (indicatif, a valider)** | **52.0%** |
 
 ## Datasets  —  precision 100% · recall~ 57%
 
@@ -76,7 +76,7 @@ _Aucun candidat faux negatif pour cette categorie._
 | Random Sampling | cache). These motivate us to use uniformly random sampling scheme in step 6. It is simple, efficient, a |
 | Uniform Sampling | tter. Due to its simplicity and efficiency, uniform sampling is broadly used in KG embedding [40]. Howeve |
 
-## KGE Models  —  precision 100% · recall~ 52%
+## KGE Models  —  precision 100% · recall~ 55%
 
 ### Precision : entites extraites par le KG
 
@@ -102,7 +102,6 @@ _Aucun candidat faux negatif pour cette categorie._
 | Attention | Q. Song, H. Ge, J. Caverlee, and X. Hu. Self-attention generative adversarial networks. Technical r |
 | GAN | g. Recently, generative adversarial network (GAN), has been introduced in negative sampling. |
 | HypER | e comparison with state-of-the-arts methods. Hyper-parameters of *NSCaching* are studied in Sec |
-| KBGAN | are two pioneered works, i.e., IGAN [39] and KBGAN [9], attempting to address these challenges. |
 | LINE | lets that satisfy $D \geq x$. The red dashed line shows where the margin $\gamma$ lies. (a) is |
 | Node2vec | 2680, 2014. [17] A. Grover and J. Leskovec. node2vec: Scalable feature learning for networks. In |
 | Random Walk | [25] N. Lao, T. Mitchell, and W. W. Cohen. Random walk inference and learning in a large scale know |

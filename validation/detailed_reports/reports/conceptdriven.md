@@ -9,8 +9,8 @@
 | Entites extraites trouvees dans le texte (TP) | 14 |
 | Extraites NON trouvees (FP -> erreur precision) | 5 |
 | **Precision** | **73.7%** |
-| Candidats faux negatifs (dans le texte, non extraits) | 19 |
-| **Recall relatif (indicatif, a valider)** | **42.4%** |
+| Candidats faux negatifs (dans le texte, non extraits) | 18 |
+| **Recall relatif (indicatif, a valider)** | **43.8%** |
 
 ## Datasets  —  precision 100% · recall~ 40%
 
@@ -68,7 +68,7 @@ _Aucun candidat faux negatif pour cette categorie._
 | Negative Sampling | C59305.2023.00047 # A Novel Concept-Driven Negative Sampling Mechanism for Enhancing Semanticity and Inte |
 | Reinforced Negative Sampling | Xu, X. He, Y. Cao, M. Wang, and T.-S. Chua, “Reinforced negative sampling over knowledge graph for recommendation,” *P |
 
-## KGE Models  —  precision 100% · recall~ 40%
+## KGE Models  —  precision 100% · recall~ 43%
 
 ### Precision : entites extraites par le KG
 
@@ -86,7 +86,6 @@ _Aucun candidat faux negatif pour cette categorie._
 | Entite (vocab global) | Extrait de texte |
 |---|---|
 | BERT | lin, M.-W. Chang, K. Lee, and K. Toutanova, “Bert: Pre-training of deep bidirectional transfor |
-| CAKE | hable Commonsense-Aware Knowledge Embedding (CAKE) framework, which consists of automatic comm |
 | ComplEx | task has achieved higher improvement on more complex and more challenging dataset FB15k-237, comp |
 | HypER | etically analyzes NS’s loss to contribute to hyper-parameter tuning and understand the better u |
 | LINE | n [12], [13]. Among them, three most typical lines of KGC models are described as follows: (i) |

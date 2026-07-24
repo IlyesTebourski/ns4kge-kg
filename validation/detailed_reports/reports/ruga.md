@@ -9,8 +9,8 @@
 | Entites extraites trouvees dans le texte (TP) | 19 |
 | Extraites NON trouvees (FP -> erreur precision) | 4 |
 | **Precision** | **82.6%** |
-| Candidats faux negatifs (dans le texte, non extraits) | 10 |
-| **Recall relatif (indicatif, a valider)** | **65.5%** |
+| Candidats faux negatifs (dans le texte, non extraits) | 9 |
+| **Recall relatif (indicatif, a valider)** | **67.9%** |
 
 ## Datasets  —  precision 100% · recall~ 67%
 
@@ -61,7 +61,7 @@ _Aucun candidat faux negatif pour cette categorie._
 | Negative Sampling | role of logic rules and the effect of false negative samples on knowledge embedding. Based on the logic r |
 | Uniform Sampling | space of positive examples. The traditional uniform negative sampling method fixed the ratio of the number of posi |
 
-## KGE Models  —  precision 100% · recall~ 59%
+## KGE Models  —  precision 100% · recall~ 62%
 
 ### Precision : entites extraites par le KG
 
@@ -83,7 +83,6 @@ _Aucun candidat faux negatif pour cette categorie._
 | Entite (vocab global) | Extrait de texte |
 |---|---|
 | Attention | ge acquisition and reasoning. More and more attention has been paid to the combination of embedded |
-| KBGAN | ng. Therefore, Liwei Cai et al.[16] proposed KBGAN to solve the problem that negative samples g |
 | LINE | }$ in batch processing. The fifth to seventh lines of the algorithm are the two stages of soft |
 | RatE | \alpha$ in 1, 2, 5, 10, the initial learning rate $\gamma$ in 0.01, 0.05, 0.1, 0.5, 1.0, and t |
 | SimplE | eld of knowledge graph. The model can handle simple 1-1 relationship. However, there are also co |

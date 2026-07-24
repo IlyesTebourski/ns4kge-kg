@@ -383,13 +383,6 @@ ns4kge:Experimentation rdfs:subClassOf
       owl:minQualifiedCardinality 1 ;
       owl:onClass ns4kge:Configuration ] .
 
-# Article has at most one Experimentation node.
-ns4kge:Article rdfs:subClassOf
-    [ rdf:type owl:Restriction ;
-      owl:onProperty ns4kge:hasExperimentation ;
-      owl:maxQualifiedCardinality 1 ;
-      owl:onClass ns4kge:Experimentation ] .
-
 # Experimentation has exactly one TrainingProtocol.
 ns4kge:Experimentation rdfs:subClassOf
     [ rdf:type owl:Restriction ;
@@ -461,6 +454,140 @@ ns4kge:NSMethod rdfs:subClassOf
     [ rdf:type owl:Restriction ;
       owl:onProperty ns4kge:hasSubcategory ;
       owl:maxCardinality 1 ] .
+##############################################################
+#  EXTERNAL LINKS (VoID source-KG alignments, etc.)
+##############################################################
+
+################################################################
+#  EXTERNAL SOURCE-KG ALIGNMENTS (VoID)
+#
+#  Each NS4KGE benchmark dataset is a sampled subset of a real-world
+#  knowledge graph. We declare the source KG as a void:Dataset and relate
+#  it to our benchmark instances with void:subset (subject = superset).
+#  Scope: the most-used benchmarks only (by configuration count).
+################################################################
+
+<http://rdf.freebase.com/> rdf:type void:Dataset ;
+    rdfs:label "Freebase" ;
+    void:subset <dataset/fb15k> , <dataset/fb15k-237> .
+
+<http://wordnet-rdf.princeton.edu/> rdf:type void:Dataset ;
+    rdfs:label "WordNet" ;
+    void:subset <dataset/wn18> , <dataset/wn18rr> .
+
+<https://yago-knowledge.org/> rdf:type void:Dataset ;
+    rdfs:label "YAGO" ;
+    void:subset <dataset/yago3-10> , <dataset/mkg-y> .
+
+<http://dbpedia.org/> rdf:type void:Dataset ;
+    rdfs:label "DBpedia" ;
+    void:subset <dataset/db15k> , <dataset/dbpedia-242> .
+
+<http://www.wikidata.org/> rdf:type void:Dataset ;
+    rdfs:label "Wikidata" ;
+    void:subset <dataset/mkg-w> .
+
+<http://rtw.ml.cmu.edu/rtw/> rdf:type void:Dataset ;
+    rdfs:label "NELL" ;
+    void:subset <dataset/nell-995> .
+
+<https://www.nlm.nih.gov/research/umls/> rdf:type void:Dataset ;
+    rdfs:label "UMLS" ;
+    void:subset <dataset/umls> .
+
+################################################################
+#  ARTICLE EXTERNAL LINKS  (bibo:doi + rdfs:seeAlso -> doi.org / ORKG)
+#  Produced by the CrossRef + ORKG lookup script (title+year verified,
+#  similarity >= 0.90). Static snapshot; re-run the lookup to refresh.
+################################################################
+
+<article/adaptativens> bibo:doi "10.1109/dsc59305.2023.00016" ;
+    rdfs:seeAlso <https://doi.org/10.1109/dsc59305.2023.00016> .
+<article/asa> bibo:doi "10.1609/aaai.v35i11.17129" ;
+    rdfs:seeAlso <https://doi.org/10.1609/aaai.v35i11.17129> .
+<article/batchns> rdfs:seeAlso <https://orkg.org/paper/R391310> .
+<article/cake> bibo:doi "10.18653/v1/2022.acl-long.205" ;
+    rdfs:seeAlso <https://doi.org/10.18653/v1/2022.acl-long.205> .
+<article/cans> bibo:doi "10.1109/icbk.2018.00013" ;
+    rdfs:seeAlso <https://doi.org/10.1109/icbk.2018.00013> .
+<article/ccs> bibo:doi "10.3390/app13052817" ;
+    rdfs:seeAlso <https://doi.org/10.3390/app13052817> .
+<article/conceptdriven> bibo:doi "10.1109/dsc59305.2023.00047" ;
+    rdfs:seeAlso <https://doi.org/10.1109/dsc59305.2023.00047> .
+<article/dans> bibo:doi "10.2139/ssrn.4941987" ;
+    rdfs:seeAlso <https://doi.org/10.2139/ssrn.4941987> .
+<article/demix> bibo:doi "10.1007/978-3-031-47240-4_14" ;
+    rdfs:seeAlso <https://doi.org/10.1007/978-3-031-47240-4_14> .
+<article/dhns> bibo:doi "10.1007/978-981-95-3906-2_34" ;
+    rdfs:seeAlso <https://doi.org/10.1007/978-981-95-3906-2_34> .
+<article/dmns> bibo:doi "10.1145/3589334.3645650" ;
+    rdfs:seeAlso <https://doi.org/10.1145/3589334.3645650> .
+<article/domainns> bibo:doi "10.18653/v1/p17-1088" ;
+    rdfs:seeAlso <https://doi.org/10.18653/v1/p17-1088> .
+<article/erdns> bibo:doi "10.1007/978-3-031-47240-4_13" ;
+    rdfs:seeAlso <https://doi.org/10.1007/978-3-031-47240-4_13> .
+<article/etruncateduns> bibo:doi "10.24963/ijcai.2018/611" ;
+    rdfs:seeAlso <https://doi.org/10.24963/ijcai.2018/611> .
+<article/ghn> bibo:doi "10.18653/v1/2023.findings-acl.362" ;
+    rdfs:seeAlso <https://doi.org/10.18653/v1/2023.findings-acl.362> .
+<article/gibbsns> bibo:doi "10.3390/app14083412" ;
+    rdfs:seeAlso <https://doi.org/10.3390/app14083412> , <https://orkg.org/paper/R700903> .
+<article/gndn> bibo:doi "10.1016/j.neucom.2021.04.128" ;
+    rdfs:seeAlso <https://doi.org/10.1016/j.neucom.2021.04.128> .
+<article/gns> bibo:doi "10.1007/978-3-031-49552-6_28" ;
+    rdfs:seeAlso <https://doi.org/10.1007/978-3-031-49552-6_28> .
+<article/graphgan> bibo:doi "10.1609/aaai.v32i1.11872" ;
+    rdfs:seeAlso <https://doi.org/10.1609/aaai.v32i1.11872> , <https://orkg.org/paper/R545993> .
+<article/hasa> bibo:doi "10.1145/3589334.3645564" ;
+    rdfs:seeAlso <https://doi.org/10.1145/3589334.3645564> .
+<article/htens> bibo:doi "10.1145/3539618.3591996" ;
+    rdfs:seeAlso <https://doi.org/10.1145/3539618.3591996> .
+<article/igan> bibo:doi "10.1609/aaai.v32i1.11536" ;
+    rdfs:seeAlso <https://doi.org/10.1609/aaai.v32i1.11536> .
+<article/kbgan> bibo:doi "10.18653/v1/n18-1133" ;
+    rdfs:seeAlso <https://doi.org/10.18653/v1/n18-1133> , <https://orkg.org/paper/R390950> .
+<article/ksgan> bibo:doi "10.1007/978-3-030-32233-5_14" ;
+    rdfs:seeAlso <https://doi.org/10.1007/978-3-030-32233-5_14> .
+<article/las> bibo:doi "10.1109/access.2018.2889481" ;
+    rdfs:seeAlso <https://doi.org/10.1109/access.2018.2889481> .
+<article/localcognitive> bibo:doi "10.18653/v1/2020.coling-main.48" ;
+    rdfs:seeAlso <https://doi.org/10.18653/v1/2020.coling-main.48> .
+<article/lts> bibo:doi "10.1109/icicml57342.2022.10009724" ;
+    rdfs:seeAlso <https://doi.org/10.1109/icicml57342.2022.10009724> .
+<article/mcns> bibo:doi "10.1145/3394486.3403218" ;
+    rdfs:seeAlso <https://doi.org/10.1145/3394486.3403218> .
+<article/mdncaching> bibo:doi "10.1007/978-3-031-08530-7_74" ;
+    rdfs:seeAlso <https://doi.org/10.1007/978-3-031-08530-7_74> .
+<article/nscaching> bibo:doi "10.1109/icde.2019.00061" ;
+    rdfs:seeAlso <https://doi.org/10.1109/icde.2019.00061> , <https://orkg.org/paper/R390897> .
+<article/pns> bibo:doi "10.1145/3041021.3054238" ;
+    rdfs:seeAlso <https://doi.org/10.1145/3041021.3054238> .
+<article/raakgc> bibo:doi "10.1609/aaai.v39i14.33672" ;
+    rdfs:seeAlso <https://doi.org/10.1609/aaai.v39i14.33672> .
+<article/rcwc> bibo:doi "10.1016/j.patrec.2022.04.001" ;
+    rdfs:seeAlso <https://doi.org/10.1016/j.patrec.2022.04.001> .
+<article/reasonkge> bibo:doi "10.1007/978-3-030-88361-4_24" ;
+    rdfs:seeAlso <https://doi.org/10.1007/978-3-030-88361-4_24> .
+<article/ruga> bibo:doi "10.1049/cje.2021.05.004" ;
+    rdfs:seeAlso <https://doi.org/10.1049/cje.2021.05.004> .
+<article/sans> bibo:doi "10.18653/v1/2020.emnlp-main.492" ;
+    rdfs:seeAlso <https://doi.org/10.18653/v1/2020.emnlp-main.492> .
+<article/selfadv> rdfs:seeAlso <https://orkg.org/paper/R390422> .
+<article/sns> bibo:doi "10.1007/978-3-030-93413-2_46" ;
+    rdfs:seeAlso <https://doi.org/10.1007/978-3-030-93413-2_46> .
+<article/sparsensg> bibo:doi "10.13052/jwe1540-9589.2068" ;
+    rdfs:seeAlso <https://doi.org/10.13052/jwe1540-9589.2068> .
+<article/tans> bibo:doi "10.18653/v1/2024.repl4nlp-1.8" ;
+    rdfs:seeAlso <https://doi.org/10.18653/v1/2024.repl4nlp-1.8> .
+<article/truncatedns> bibo:doi "10.3390/electronics12081947" ;
+    rdfs:seeAlso <https://doi.org/10.3390/electronics12081947> .
+<article/tuckerdncaching> bibo:doi "10.1007/s10844-023-00796-y" ;
+    rdfs:seeAlso <https://doi.org/10.1007/s10844-023-00796-y> .
+<article/typeaugmented> bibo:doi "10.1038/s41598-023-38857-5" ;
+    rdfs:seeAlso <https://doi.org/10.1038/s41598-023-38857-5> .
+<article/typeconstraints> bibo:doi "10.1007/978-3-319-25007-6_37" ;
+    rdfs:seeAlso <https://doi.org/10.1007/978-3-319-25007-6_37> .
+<article/uniform> rdfs:seeAlso <https://orkg.org/paper/R388628> .
 
 
 ################################################################

@@ -9,8 +9,8 @@
 | Entites extraites trouvees dans le texte (TP) | 28 |
 | Extraites NON trouvees (FP -> erreur precision) | 3 |
 | **Precision** | **90.3%** |
-| Candidats faux negatifs (dans le texte, non extraits) | 11 |
-| **Recall relatif (indicatif, a valider)** | **71.8%** |
+| Candidats faux negatifs (dans le texte, non extraits) | 10 |
+| **Recall relatif (indicatif, a valider)** | **73.7%** |
 
 ## Datasets  —  precision 100% · recall~ 75%
 
@@ -69,7 +69,7 @@ _Aucun candidat faux negatif pour cette categorie._
 | Structure-Aware Negative Sampling | A., Salehi, Y., Hamilton, W.L., Bose, A.J.: Structure aware negative sampling in knowledge graphs. In: Proceedings of the |
 | Uniform Negative Sampling | ones. Simple negative sampling methods like uniform sampling [2] generate negative samples by randomly su |
 
-## KGE Models  —  precision 79% · recall~ 73%
+## KGE Models  —  precision 79% · recall~ 79%
 
 ### Precision : entites extraites par le KG
 
@@ -95,6 +95,5 @@ _Aucun candidat faux negatif pour cette categorie._
 | Entite (vocab global) | Extrait de texte |
 |---|---|
 | GAN | 26. Wang, P., Li, S., et al.: Incorporating gan for negative sampling in knowledge represent |
-| KBGAN | es in natural language processing (NLP) [7]. KBGAN [3], IGAN [26], and NSCaching [34] create a |
 | RatE | awback can negatively impact the convergence rate of the model, increase computational expense |
 | TaKE | meters. For KBGAN and NSCaching, we directly take the results from their works because the bes |

@@ -9,8 +9,8 @@
 | Entites extraites trouvees dans le texte (TP) | 25 |
 | Extraites NON trouvees (FP -> erreur precision) | 4 |
 | **Precision** | **86.2%** |
-| Candidats faux negatifs (dans le texte, non extraits) | 13 |
-| **Recall relatif (indicatif, a valider)** | **65.8%** |
+| Candidats faux negatifs (dans le texte, non extraits) | 12 |
+| **Recall relatif (indicatif, a valider)** | **67.6%** |
 
 ## Datasets  —  precision 100% · recall~ 80%
 
@@ -67,7 +67,7 @@ _Aucun candidat faux negatif pour cette categorie._
 | Self-adversarial Sampling | thcal{G}^{(tr)}\}. \eqno(6) $$ In contrast, self-adversarial negative sampling (Sun et al., 2019) applies triple scoring fu |
 | Uniform Sampling | al{G}^{(tr)}$. To achieve this, we conduct a uniform sampling individually in $\mathcal{E}^{(h,r,t)}$ and |
 
-## KGE Models  —  precision 79% · recall~ 65%
+## KGE Models  —  precision 79% · recall~ 69%
 
 ### Precision : entites extraites par le KG
 
@@ -94,7 +94,6 @@ _Aucun candidat faux negatif pour cette categorie._
 |---|---|
 | Attention | ion answering over knowledge base with cross-attention combining global knowledge. In Regina Barzil |
 | HypER | 37. **Training Setting.** The ranges of the hyper-parameters for grid search are elaborated in |
-| KBGAN | d to effectively learn structured knowledge. KBGAN (Cai and Wang, 2018) uses knowledge graph em |
 | LINE | e following two factors. On the one hand, in line with previous trans-based graph embedding ap |
 | SimplE | laume Bouchard. 2016. Complex embeddings for simple link prediction. In Maria-Florina Balcan and |
 | TaKE | y set during both training and test. We only take this idea in training phase to introduce pri |

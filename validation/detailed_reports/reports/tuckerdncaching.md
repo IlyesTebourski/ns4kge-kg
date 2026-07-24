@@ -9,8 +9,8 @@
 | Entites extraites trouvees dans le texte (TP) | 27 |
 | Extraites NON trouvees (FP -> erreur precision) | 2 |
 | **Precision** | **93.1%** |
-| Candidats faux negatifs (dans le texte, non extraits) | 23 |
-| **Recall relatif (indicatif, a valider)** | **54.0%** |
+| Candidats faux negatifs (dans le texte, non extraits) | 22 |
+| **Recall relatif (indicatif, a valider)** | **55.1%** |
 
 ## Datasets  —  precision 100% · recall~ 67%
 
@@ -83,7 +83,7 @@
 | Self-Adv | et al., 2019) introduced a self-adversarial *Self-Adv* sampling approach based on a self-scoring f |
 | Uniform Sampling | its simplicity and efficiency. For example, Uniform negative sampling (Bordes et al., 2013) which constructs negat |
 
-## KGE Models  —  precision 88% · recall~ 44%
+## KGE Models  —  precision 88% · recall~ 47%
 
 ### Precision : entites extraites par le KG
 
@@ -106,7 +106,6 @@
 | GAN | E training. Generative adversarial networks (GAN) and self-adversarial methods have recently |
 | HAN | 653/v1/N18-1133 Chenchen, G., Chunhong, Z., Han, X., et al. (2019). AWML: adaptive weighted |
 | HypER | with the Adam optimizer. First, we adjusted hyper-parameters referring to the Bernoulli sampli |
-| KBGAN | distributions, IGAN (Wang et al., 2018) and KBGAN (Cai et al., 2018) were introduced as negati |
 | LINE | d KGE model, ($\theta_E$) are initialized in line-1. Reflecting the steps in Section 3.4.2, th |
 | Random Walk | r KGE models. By selecting negatives using a random walk approach that ignores non-semantic similar n |
 | RatE | ion $d \in \{50, 100, 250, 1000\}$, learning rate $\eta \in \{0.0005, 0.005, 0.05, 0.5\}$, and |

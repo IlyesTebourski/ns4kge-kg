@@ -9,8 +9,8 @@
 | Entites extraites trouvees dans le texte (TP) | 26 |
 | Extraites NON trouvees (FP -> erreur precision) | 3 |
 | **Precision** | **89.7%** |
-| Candidats faux negatifs (dans le texte, non extraits) | 26 |
-| **Recall relatif (indicatif, a valider)** | **50.0%** |
+| Candidats faux negatifs (dans le texte, non extraits) | 25 |
+| **Recall relatif (indicatif, a valider)** | **51.0%** |
 
 ## Datasets  —  precision 100% · recall~ 60%
 
@@ -77,7 +77,7 @@
 | Uniform Random Sampling | ors. Four negative sampling methods, namely, uniform random negative sampling, KBGAN, NSCaching, and EANS [40], were used |
 | Uniform Sampling | ng problem is mitigated, this study used the uniform sampling method UNIFORM and the GNS method proposed i |
 
-## KGE Models  —  precision 93% · recall~ 56%
+## KGE Models  —  precision 93% · recall~ 58%
 
 ### Precision : entites extraites par le KG
 
@@ -108,7 +108,6 @@
 | GAN | 19. Wang, P.; Li, S.; Pan, R. Incorporating GAN for Negative Sampling in Knowledge Represent |
 | GCN | andewiele, G.; Ongenae, F.; Van Hoecke, S. R-GCN: The R could stand for random. *arXiv* **202 |
 | HAN | ng Lijuan Duan <sup>1,2,3,*</sup>, Shengwen Han <sup>1,2,3</sup>, Wei Jiang <sup>4,*</sup>, |
-| KBGAN | nalysis of static negative sampling methods, KBGAN [17] found that the majority of negative sam |
 | R-GCN | Vandewiele, G.; Ongenae, F.; Van Hoecke, S. R-GCN: The R could stand for random. *arXiv* **202 |
 | SimplE | lfill the constraint $h + r \approx t$. This simple constraint yields a straightforward and effe |
 | Structured Embedding | ston, J.; Collobert, R.; Bengio, Y. Learning structured embeddings of knowledge bases. In Proceedings of the AA |

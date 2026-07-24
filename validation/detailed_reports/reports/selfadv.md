@@ -9,8 +9,8 @@
 | Entites extraites trouvees dans le texte (TP) | 27 |
 | Extraites NON trouvees (FP -> erreur precision) | 3 |
 | **Precision** | **90.0%** |
-| Candidats faux negatifs (dans le texte, non extraits) | 16 |
-| **Recall relatif (indicatif, a valider)** | **62.8%** |
+| Candidats faux negatifs (dans le texte, non extraits) | 15 |
+| **Recall relatif (indicatif, a valider)** | **64.3%** |
 
 ## Datasets  —  precision 100% · recall~ 80%
 
@@ -73,7 +73,7 @@
 | Self-adversarial Sampling | ector space. In addition, we propose a novel self-adversarial negative sampling technique for efficiently and effectively tr |
 | Uniform Sampling | e negative triplets in a uniform way. Such a uniform negative sampling suffers the problem of inefficiency since ma |
 
-## KGE Models  —  precision 100% · recall~ 57%
+## KGE Models  —  precision 100% · recall~ 60%
 
 ### Precision : entites extraites par le KG
 
@@ -98,7 +98,6 @@
 |---|---|
 | Attention | ion answering over knowledge base with cross-attention combining global knowledge. In *Proceedings |
 | DAT | 62*, 2015. Dai Quoc Nguyen, Tu Dinh Nguyen, Dat Quoc Nguyen, and Dinh Phung. A novel embeddi |
-| KBGAN | <td>.915</td> </tr> <tr> <td>KBGAN (Cai & Wang, 2017)</td> <td>.278</td> |
 | Random Walk | Ni Lao, Tom Mitchell, and William W Cohen. Random walk inference and learning in a large scale know |
 | SE | /tr> </thead> <tbody> <tr> <td>SE (Bordes et al., 2011)</td> <td>$-\\|W_{ |
 | SimplE | i\| = 1. \tag{1} $$ It turns out that such a simple operation can effectively model all the thre |

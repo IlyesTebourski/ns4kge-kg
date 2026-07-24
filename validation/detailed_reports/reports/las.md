@@ -9,8 +9,8 @@
 | Entites extraites trouvees dans le texte (TP) | 42 |
 | Extraites NON trouvees (FP -> erreur precision) | 2 |
 | **Precision** | **95.5%** |
-| Candidats faux negatifs (dans le texte, non extraits) | 25 |
-| **Recall relatif (indicatif, a valider)** | **62.7%** |
+| Candidats faux negatifs (dans le texte, non extraits) | 24 |
+| **Recall relatif (indicatif, a valider)** | **63.6%** |
 
 ## Datasets  —  precision 100% · recall~ 50%
 
@@ -83,7 +83,7 @@
 | Uniform Random Sampling | ative sampling models by comparing them with uniform random sampling approach. In this paper, we exploit the los |
 | Uniform Sampling | lets by gradient descent of loss, but unlike uniform sampling, LAS sample corrupted triplets with differen |
 
-## KGE Models  —  precision 100% · recall~ 79%
+## KGE Models  —  precision 100% · recall~ 82%
 
 ### Precision : entites extraites par le KG
 
@@ -125,6 +125,5 @@
 | GAN | representation learning approach outperforms GAN-based sampling method KBGAN. **INDEX TERMS* |
 | GCN | models, e.g. ProjE [21], ANALOGY [22] and R-GCN [28], also achieve good results for link pre |
 | HypER | by projecting entities on relation-specific hyper-planes. TransR [8] directly models entities |
-| KBGAN | proach outperforms GAN-based sampling method KBGAN. **INDEX TERMS** Knowledge graph, knowledge |
 | SimplE | se approaches. In this paper, we introduce a simple but strong negative sampling approach for ad |
 | TaKE | nslation-based models, TransE and TransD, to take the role of discriminator $\mathbf{D}$. The |

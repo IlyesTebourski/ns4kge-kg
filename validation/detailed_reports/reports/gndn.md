@@ -9,8 +9,8 @@
 | Entites extraites trouvees dans le texte (TP) | 20 |
 | Extraites NON trouvees (FP -> erreur precision) | 7 |
 | **Precision** | **74.1%** |
-| Candidats faux negatifs (dans le texte, non extraits) | 17 |
-| **Recall relatif (indicatif, a valider)** | **54.1%** |
+| Candidats faux negatifs (dans le texte, non extraits) | 16 |
+| **Recall relatif (indicatif, a valider)** | **55.6%** |
 
 ## Datasets  —  precision 100% · recall~ 67%
 
@@ -43,12 +43,13 @@
 |---|---|
 | MAP | iously alluded to, we shall employ an RNN to map the input sequence of relations $(r_1, \ r_2 |
 
-## NS Methods  —  precision 67% · recall~ 40%
+## NS Methods  —  precision 75% · recall~ 60%
 
 ### Precision : entites extraites par le KG
 
 | Entite extraite | Trouvee dans le .md ? | Extrait de texte |
 |---|:---:|---|
+| KBGAN | ✅ oui | s hence a significant difference between the KBGAN model of [19] and KCGAN as proposed here; wh |
 | Knowledge Completion GAN | ✅ oui | mulated by the GAN concept, we thus propose *Knowledge Completion GAN* (KCGAN), a novel framework leveraging both |
 | Random Negative Sampling | ❌ NON | _(absent du texte)_ |
 | Unknown | ✅ oui | le communities for training because they are unknown beforehand [49]. To overcome the challenge, |
@@ -58,10 +59,9 @@
 | Entite (vocab global) | Extrait de texte |
 |---|---|
 | GAN | o key challenges are addressed: 1) Classical GAN architectures’ inability to easily generate |
-| KBGAN | s hence a significant difference between the KBGAN model of [19] and KCGAN as proposed here; wh |
 | Negative Sampling | native models that require both positive and negative samples to learn a decision boundary. KBs, by contra |
 
-## KGE Models  —  precision 68% · recall~ 52%
+## KGE Models  —  precision 67% · recall~ 50%
 
 ### Precision : entites extraites par le KG
 
@@ -72,7 +72,6 @@
 | DistMult | ✅ oui | entations over entities and relations, and a DistMult based decoder for factorization. The GCNs us |
 | ELECTRA | ✅ oui | f a recently developed language model called ELECTRA [37], which is a compute-efficient GAN-based |
 | HypER | ✅ oui | paradigm and reports better overall results. HypER [26] uses a 1D-relation-specific convolution |
-| KBGAN | ✅ oui | s hence a significant difference between the KBGAN model of [19] and KCGAN as proposed here; wh |
 | KCGAN | ✅ oui | novel framework, Knowledge Completion GANs (KCGANs), for competitively training generative link |
 | KG-BERT | ✅ oui | ry transformer-based encoding models such as KG-BERT [35] are inspired by transformer-based langu |
 | Knowledge Completion GAN | ✅ oui | mulated by the GAN concept, we thus propose *Knowledge Completion GAN* (KCGAN), a novel framework leveraging both |

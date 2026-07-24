@@ -6,11 +6,11 @@
 
 | Metrique | Valeur |
 |---|---|
-| Entites extraites trouvees dans le texte (TP) | 22 |
+| Entites extraites trouvees dans le texte (TP) | 21 |
 | Extraites NON trouvees (FP -> erreur precision) | 2 |
-| **Precision** | **91.7%** |
+| **Precision** | **91.3%** |
 | Candidats faux negatifs (dans le texte, non extraits) | 14 |
-| **Recall relatif (indicatif, a valider)** | **61.1%** |
+| **Recall relatif (indicatif, a valider)** | **60.0%** |
 
 ## Datasets  —  precision 100% · recall~ 50%
 
@@ -71,7 +71,7 @@
 | Simple Negative Sampling | $ produces far more false negatives than the simple negative sample distribution $p^-(t)$. ## 4.2 Shortest Path |
 | Structure-Aware Negative Sampling | iam L Hamilton, and Avishek Joey Bose. 2020. Structure aware negative sampling in knowledge graphs. arXiv preprint arXiv:20 |
 
-## KGE Models  —  precision 100% · recall~ 67%
+## KGE Models  —  precision 100% · recall~ 64%
 
 ### Precision : entites extraites par le KG
 
@@ -80,7 +80,6 @@
 | ComplEx | ✅ oui | ge graph embedding by relational rotation in complex space. *arXiv preprint arXiv:1902.10197* (20 |
 | DistMult | ✅ oui | /strong></td> </tr> <tr> <td>DistMult [36]</td> <td>7,000</td> <td |
 | HaSa+ | ✅ oui | 2023 Oct 15 [cs.AI] arXiv:2305.10563v2 # HaSa: Hardness and Structure-Aware Contrastive Kn |
-| KBGAN | ✅ oui | t]. \quad (4) $$ Similar to RotatE [26] and KBGAN [4], we use the following negative sample di |
 | KG-BERT | ✅ oui | ormation from the knowledge graph to propose KG-BERT. Shen et al. [25], Wang et al. [30] combined |
 | LASS | ✅ oui | ed language-based methods such as StAR [30], LASS [25]. # 2 RELATED WORK Knowledge graph emb |
 | RotatE | ✅ oui | KGE methods on both classic methods such as RotatE [26], ComplexE [29] and pre-trained language |

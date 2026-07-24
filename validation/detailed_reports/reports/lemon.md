@@ -9,8 +9,8 @@
 | Entites extraites trouvees dans le texte (TP) | 17 |
 | Extraites NON trouvees (FP -> erreur precision) | 3 |
 | **Precision** | **85.0%** |
-| Candidats faux negatifs (dans le texte, non extraits) | 21 |
-| **Recall relatif (indicatif, a valider)** | **44.7%** |
+| Candidats faux negatifs (dans le texte, non extraits) | 20 |
+| **Recall relatif (indicatif, a valider)** | **45.9%** |
 
 ## Datasets  —  precision 100% · recall~ 50%
 
@@ -77,7 +77,7 @@
 | Self-Adv | al{V}\|)$</td> </tr> <tr> <td>Self-Adv. [15]</td> <td>$\mathcal{O}(\|\mathca |
 | Uniform Sampling | ize $\mathcal{H} = 3$. Using non adversarial/uniform negative sampling the number of negative sample is $\mathcal{N |
 
-## KGE Models  —  precision 100% · recall~ 17%
+## KGE Models  —  precision 100% · recall~ 18%
 
 ### Precision : entites extraites par le KG
 
@@ -94,7 +94,6 @@
 | ComplEx | ge graph embedding by relational rotation in complex space. In *International Conference on Learn |
 | GAN | ** Recently, Generative Adversarial Network (GAN) [9] has been explored for negative sampling |
 | HypER | experimental set up including the datasets, hyper-parameters, and the chosen KGE models. In or |
-| KBGAN | l{O}(1)$</td> </tr> <tr> <td>KBGAN [6]</td> <td>$\mathcal{O}(t)$</td> |
 | LINE | ities labeled h=0, h=1, h=2, and h=3. Dotted lines represent distances d=1, d=2, and d=3 betwee |
 | Random Walk | \mathcal{H}$ is used for hops count, $r$ for randomwalks count, and $\mathcal{Z}$ for PCA dimensional |
 | RatE | al negative sampling) $\tau = 0.5$, learning rate $\alpha = 0.0001$, batch size $\mathcal{B} = |

@@ -9,8 +9,8 @@
 | Entites extraites trouvees dans le texte (TP) | 23 |
 | Extraites NON trouvees (FP -> erreur precision) | 5 |
 | **Precision** | **82.1%** |
-| Candidats faux negatifs (dans le texte, non extraits) | 12 |
-| **Recall relatif (indicatif, a valider)** | **65.7%** |
+| Candidats faux negatifs (dans le texte, non extraits) | 11 |
+| **Recall relatif (indicatif, a valider)** | **67.6%** |
 
 ## Datasets  —  precision 100% · recall~ 50%
 
@@ -68,7 +68,7 @@
 | KSGAN | edge selective adversarial network, named as KSGAN, using a knowledge selector for high-quality |
 | Negative Sampling | h topic. During KG embedding model training, negative sampling is a fundamental method for obtaining negati |
 
-## KGE Models  —  precision 100% · recall~ 75%
+## KGE Models  —  precision 100% · recall~ 79%
 
 ### Precision : entites extraites par le KG
 
@@ -95,7 +95,6 @@
 | Entite (vocab global) | Extrait de texte |
 |---|---|
 | GAN | DistMult [8], ComplEx [9]) as a generator in GAN and translational distance models (e.g., Tra |
-| KBGAN | nspired by an adversarial learning framework KBGAN, this paper proposes a new knowledge selecti |
 | Neural Tensor Network | n, D., Manning, C.D., Ng, A.: Reasoning with neural tensor networks for knowledge base completion. NIPS. pp. 926 |
 | Neural Tensor Networks | n, D., Manning, C.D., Ng, A.: Reasoning with neural tensor networks for knowledge base completion. NIPS. pp. 926 |
 | TaKE | es from hidden layer of neural network which takes the vectors of entities and relations as inp |

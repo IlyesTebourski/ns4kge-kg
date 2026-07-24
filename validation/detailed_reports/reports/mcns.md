@@ -9,8 +9,8 @@
 | Entites extraites trouvees dans le texte (TP) | 25 |
 | Extraites NON trouvees (FP -> erreur precision) | 0 |
 | **Precision** | **100.0%** |
-| Candidats faux negatifs (dans le texte, non extraits) | 28 |
-| **Recall relatif (indicatif, a valider)** | **47.2%** |
+| Candidats faux negatifs (dans le texte, non extraits) | 27 |
+| **Recall relatif (indicatif, a valider)** | **48.1%** |
 
 ## Datasets  —  precision 100% · recall~ 100%
 
@@ -80,7 +80,7 @@ _Aucun candidat faux negatif pour cette categorie._
 | Uniform Random Sampling | s three negative sampling schemes, including Uniform Random Sampling (RNS), Item-Oriented Sampling (ItemPop), Use |
 | Uniform Sampling | rgence rate. Our q(y\|x) is defined by mixing uniform sampling and sampling from the nearest k nodes with 1 |
 
-## KGE Models  —  precision 100% · recall~ 33%
+## KGE Models  —  precision 100% · recall~ 35%
 
 ### Precision : entites extraites par le KG
 
@@ -101,7 +101,6 @@ _Aucun candidat faux negatif pour cette categorie._
 | ComplEx | ge graph embedding by relational rotation in complex space. *arXiv preprint arXiv:1902.10197* (20 |
 | GAN | olution layers [17] to attention-based [34], GAN-based [8], sampled aggregator [13] and WL ke |
 | HAN | NIPS'14*. 2177–2185. [20] Qimai Li, Zhichao Han, and Xiao-Ming Wu. 2018. Deeper insights int |
-| KBGAN | o adaptively generate hard negative samples. KBGAN [3] employs a sampling-based adaptation of I |
 | MEI | ngzhe Wang, Ming Zhang, Jun Yan, and Qiaozhu Mei. 2015. Line: Large-scale information network |
 | Random Walk | ia to sample positive node pairs, such as by random walk [27], the second-order proximity [32], commu |
 | RatE | sal distribution also influences convergence rate. Our q(y\|x) is defined by mixing uniform sam |

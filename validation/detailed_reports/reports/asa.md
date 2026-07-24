@@ -9,8 +9,8 @@
 | Entites extraites trouvees dans le texte (TP) | 23 |
 | Extraites NON trouvees (FP -> erreur precision) | 2 |
 | **Precision** | **92.0%** |
-| Candidats faux negatifs (dans le texte, non extraits) | 18 |
-| **Recall relatif (indicatif, a valider)** | **56.1%** |
+| Candidats faux negatifs (dans le texte, non extraits) | 17 |
+| **Recall relatif (indicatif, a valider)** | **57.5%** |
 
 ## Datasets  —  precision 100% · recall~ 75%
 
@@ -70,7 +70,7 @@ _Aucun candidat faux negatif pour cette categorie._
 | Random Sampling | ially for link/relationship prediction task. Random negative sampling has been widely adopted for its simplicity a |
 | Self-adversarial Sampling | with relation-aware attention* and *adaptive self-adversarial negative sampling* for model training. ## 1 Introduction Mod |
 
-## KGE Models  —  precision 100% · recall~ 44%
+## KGE Models  —  precision 100% · recall~ 47%
 
 ### Precision : entites extraites par le KG
 
@@ -92,7 +92,6 @@ _Aucun candidat faux negatif pour cette categorie._
 | Attention | ] arXiv:2102.07186v1 # Relation-aware Graph Attention Model With Adaptive Self-adversarial Trainin |
 | GAN | al. 2019b). Generative adversarial network (GAN) based solutions (Cai and Wang 2018; Wang, L |
 | GCN | aggregating the neighbors' information. **R-GCN** (Schlichtkrull et al. 2018) considers the |
-| KBGAN | /1806.01261. Cai, L.; and Wang, W. Y. 2018. KBGAN: Adversarial Learning for Knowledge Graph Em |
 | LINE | e generally difficult to train. Recently, a line of research exploits the model itself (Sun e |
 | MLP | re 1(1) consists of a multilayer perceptron (MLP) network to process categorical attribute in |
 | Random Walk | In particular, we compare against a popular random walk-based method **metapath2vec** (Dong, Chawla, |

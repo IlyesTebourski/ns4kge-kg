@@ -9,8 +9,8 @@
 | Entites extraites trouvees dans le texte (TP) | 16 |
 | Extraites NON trouvees (FP -> erreur precision) | 2 |
 | **Precision** | **88.9%** |
-| Candidats faux negatifs (dans le texte, non extraits) | 24 |
-| **Recall relatif (indicatif, a valider)** | **40.0%** |
+| Candidats faux negatifs (dans le texte, non extraits) | 23 |
+| **Recall relatif (indicatif, a valider)** | **41.0%** |
 
 ## Datasets  —  precision 100% · recall~ 33%
 
@@ -78,7 +78,7 @@
 | Uniform Sampling | plets. Most current KG embedding models use uniform sampling to generate false triplets [Bordes et al., 2 |
 | Uniform SANS | 19], and the results of ComplEx for Uniform, Uniform SANS, Uniform RW-SANS are our reproductions using |
 
-## KGE Models  —  precision 100% · recall~ 33%
+## KGE Models  —  precision 100% · recall~ 36%
 
 ### Precision : entites extraites par le KG
 
@@ -96,7 +96,6 @@
 | Attention | utilizes cached-based mechanism to pay more attention to high-quality negative samples. Differentl |
 | DAT | nications of the ACM*, 1995. [Nguyen, 2017] Dat Quoc Nguyen. An overview of embedding models |
 | GAN | g, Shuangyin Li, and Rong Pan. Incorporating gan for negative sampling in knowledge represent |
-| KBGAN | l distribution. IGAN [Wang et al., 2018] and KBGAN [Cai and Wang, 2018] introduce generative ad |
 | LINE | ve samples. Overall, the monotone decreasing line tells that the criteria for selecting hard n |
 | Random Walk | *et al.*, 2020] is similar to SANS, and uses random walks of length $l$ to approximate the $l$-hop nei |
 | SimplE | wever, the present KGE models either rely on simple negative sampling methods, which makes it di |

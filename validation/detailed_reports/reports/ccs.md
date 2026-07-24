@@ -9,8 +9,8 @@
 | Entites extraites trouvees dans le texte (TP) | 35 |
 | Extraites NON trouvees (FP -> erreur precision) | 1 |
 | **Precision** | **97.2%** |
-| Candidats faux negatifs (dans le texte, non extraits) | 27 |
-| **Recall relatif (indicatif, a valider)** | **56.5%** |
+| Candidats faux negatifs (dans le texte, non extraits) | 26 |
+| **Recall relatif (indicatif, a valider)** | **57.4%** |
 
 ## Datasets  —  precision 100% · recall~ 80%
 
@@ -76,7 +76,7 @@
 | Random Sampling | ized. The existing KGE models widely use the random sampling method, which generates negative samples by |
 | Uniform Random Negative Sampling | pling works, such as the TransE model, use a uniform random sampling method to generate negative samples, Appl. |
 
-## KGE Models  —  precision 100% · recall~ 60%
+## KGE Models  —  precision 100% · recall~ 62%
 
 ### Precision : entites extraites par le KG
 
@@ -113,7 +113,6 @@
 | GAN | pired by the generative adversarial network (GAN) [39], some works have attempted to generate |
 | HAN | perties in Knowledge Graph Embedding Huixia Han ![ORCID logo](page_1_image_5_v2.jpg), Xinyue |
 | HypER | gamma]_+$$ (3) where $\gamma$ is the margin hyper-parameter separating the positive and negati |
-| KBGAN | dversarial training framework. IGAN [40] and Kbgan [41] both introduce GAN for negative samplin |
 | Neural Tensor Network | , semantic matching energy (SME) [16] model, neural tensor network (NTN) [17] model, and matrix factorization ( |
 | Neural Tensor Networks | en, D.; Manning, C.D.; Ng, A. Reasoning with Neural Tensor Networks for Knowledge Base Completion. In Proceeding |
 | RatE | ng dimension $d = \{50, 80, 150\}$, learning rate $\eta = \{0.00001, 0.0001, 0.001\}$, the mar |

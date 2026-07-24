@@ -9,8 +9,8 @@
 | Entites extraites trouvees dans le texte (TP) | 16 |
 | Extraites NON trouvees (FP -> erreur precision) | 6 |
 | **Precision** | **72.7%** |
-| Candidats faux negatifs (dans le texte, non extraits) | 19 |
-| **Recall relatif (indicatif, a valider)** | **45.7%** |
+| Candidats faux negatifs (dans le texte, non extraits) | 18 |
+| **Recall relatif (indicatif, a valider)** | **47.1%** |
 
 ## Datasets  —  precision 100% · recall~ 50%
 
@@ -68,7 +68,7 @@ _Aucun candidat faux negatif pour cette categorie._
 | Uniform Random Sampling | > <th>Positive fact</th> <th>Uniform random sample</th> <th>Trained generator</th> |
 | Uniform Sampling | function. However, most of these studies use uniform sampling to generate negative training examples (Bord |
 
-## KGE Models  —  precision 100% · recall~ 56%
+## KGE Models  —  precision 100% · recall~ 59%
 
 ### Precision : entites extraites par le KG
 
@@ -92,7 +92,6 @@ _Aucun candidat faux negatif pour cette categorie._
 | ANALOGY | t learning (RL), so we would like to draw an analogy between our model and an RL model. The gener |
 | GAN | ples in a continuous space such as images. A GAN consists of two parts, the *generator* and t |
 | HAN | earning. *Machine learning* 8(3-4):229–256. Han Xiao, Minlie Huang, and Xiaoyan Zhu. 2016. F |
-| KBGAN | arXiv:1711.04071v3 [cs.CL] 16 Apr 2018 # KBGAN: Adversarial Learning for Knowledge Graph Em |
 | LINE | g, there is still a common challenge in this line of research. For space efficiency, common kn |
 | SimplE | ng step, so we cannot find its gradient with simple differentiation. We use a simple special cas |
 | StAR | E</td> <td>$\mathbf{r}^T(\mathbf{h} \star \mathbf{t})$ ($\star$ is circular correlatio |

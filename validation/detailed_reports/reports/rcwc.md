@@ -9,8 +9,8 @@
 | Entites extraites trouvees dans le texte (TP) | 20 |
 | Extraites NON trouvees (FP -> erreur precision) | 8 |
 | **Precision** | **71.4%** |
-| Candidats faux negatifs (dans le texte, non extraits) | 13 |
-| **Recall relatif (indicatif, a valider)** | **60.6%** |
+| Candidats faux negatifs (dans le texte, non extraits) | 12 |
+| **Recall relatif (indicatif, a valider)** | **62.5%** |
 
 ## Datasets  —  precision 100% · recall~ 80%
 
@@ -68,7 +68,7 @@ _Aucun candidat faux negatif pour cette categorie._
 | Negative Sampling | -BASED KNOWLEDGE BASE COMPLETION METHOD WITH NEGATIVE SAMPLING **Yun-Cheng Wang** University of Southern C |
 | Self-adversarial Sampling | and $p(h'_i, r, t'_i)$ is the coefficient in self-adversarial negative sampling [Sun et al., 2019]. ## 3.3 Training Relatio |
 
-## KGE Models  —  precision 100% · recall~ 67%
+## KGE Models  —  precision 100% · recall~ 71%
 
 ### Precision : entites extraites par le KG
 
@@ -93,7 +93,6 @@ _Aucun candidat faux negatif pour cette categorie._
 |---|---|
 | GAN | _G(h', r, t')$, simultaneously. However, the GAN-based negative sample generator makes the or |
 | HypER | **Training Details.** We determine optimal hyper-parameters via grid search based on the MRR |
-| KBGAN | 259, 2014. Liwei Cai and William Yang Wang. Kbgan: Adversarial learning for knowledge graph em |
 | LINE | nd 2) effective negative samples. Along this line, we propose to incorporate inference pattern |
 | RatE | * max depth: <u>3</u>, 5, 7, 10. * learning rate: 0.01, 0.05, **0.1**. Hyper-parameters to b |
 | SimplE | RotatE [Sun et al., 2019] model relations as simple transformation from head entities to tail en |

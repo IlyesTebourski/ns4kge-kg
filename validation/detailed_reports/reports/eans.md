@@ -9,8 +9,8 @@
 | Entites extraites trouvees dans le texte (TP) | 19 |
 | Extraites NON trouvees (FP -> erreur precision) | 2 |
 | **Precision** | **90.5%** |
-| Candidats faux negatifs (dans le texte, non extraits) | 25 |
-| **Recall relatif (indicatif, a valider)** | **43.2%** |
+| Candidats faux negatifs (dans le texte, non extraits) | 24 |
+| **Recall relatif (indicatif, a valider)** | **44.2%** |
 
 ## Datasets  —  precision 100% · recall~ 40%
 
@@ -77,7 +77,7 @@
 | Uniform Random Sampling | idely used because of its efficiency. Such a uniform random sampling method can be effective at the beginning of |
 | Uniform Sampling | ive and negative samples of various steps on uniform sampling method and EANS with TransE on FB15K-237. # |
 
-## KGE Models  —  precision 100% · recall~ 47%
+## KGE Models  —  precision 100% · recall~ 50%
 
 ### Precision : entites extraites par le KG
 
@@ -100,7 +100,6 @@
 | DAT | 11):39–41. Dai Quoc Nguyen, Tu Dinh Nguyen, Dat Quoc Nguyen, and Dinh Phung. 2017. A novel e |
 | GAN | 017) proposed Generative Adversarial Network(GAN) (Goodfellow et al., 2014) based architectur |
 | InteractE | , Nilesh Agrawal, and Partha Talukdar. 2020. Interacte: Improving convolution-based knowledge graph |
-| KBGAN | td>0.501</td> </tr> <tr> <td>KBGAN(Cai and Wang, 2017)<sup>††</sup></td> |
 | LINE | </tbody> </table> Figure 3: Hit@10(solid line) and MRR(dashed line) of TransE and ComplEx |
 | RatE | gative sample size, $lr$ is initial learning rate, $\gamma$ is fixed margin, and $\alpha$ is s |
 | SimplE | laume Bouchard. 2016. Complex embeddings for simple link prediction. In *International conferenc |

@@ -9,8 +9,8 @@
 | Entites extraites trouvees dans le texte (TP) | 19 |
 | Extraites NON trouvees (FP -> erreur precision) | 4 |
 | **Precision** | **82.6%** |
-| Candidats faux negatifs (dans le texte, non extraits) | 23 |
-| **Recall relatif (indicatif, a valider)** | **45.2%** |
+| Candidats faux negatifs (dans le texte, non extraits) | 22 |
+| **Recall relatif (indicatif, a valider)** | **46.3%** |
 
 ## Datasets  —  precision 100% · recall~ 67%
 
@@ -41,7 +41,7 @@
 
 _Aucun candidat faux negatif pour cette categorie._
 
-## NS Methods  —  precision 50% · recall~ 33%
+## NS Methods  —  precision 56% · recall~ 42%
 
 ### Precision : entites extraites par le KG
 
@@ -49,6 +49,7 @@ _Aucun candidat faux negatif pour cette categorie._
 |---|:---:|---|
 | Conditional Diffusion-based Multi-level Negative Sampling | ✅ oui | ls from the latent space. Our method, called Conditional Diffusion-based Multi-level Negative Sampling (DMNS), leverages the Markov chain property |
 | Dynamic Negative Sampling | ❌ NON | _(absent du texte)_ |
+| KBGAN | ✅ oui | tive sampling. Among them, GraphGAN [46] and KBGAN [5] learns a distribution over negative cand |
 | Markov Chain Monte Carlo Negative Sampling | ❌ NON | _(absent du texte)_ |
 | MixGCF | ✅ oui | egative examples from $k$-hop neighborhoods. MixGCF [20] synthesizes hard negative examples by h |
 | Popularity-based Negative Sampling | ❌ NON | _(absent du texte)_ |
@@ -62,14 +63,13 @@ _Aucun candidat faux negatif pour cette categorie._
 |---|---|
 | DMNS | ffusion-based Multi-level Negative Sampling (DMNS), leverages the Markov chain property of dif |
 | GAN | ularly in visual applications [8, 17]. While GAN-based models are successful in generating hi |
-| KBGAN | tive sampling. Among them, GraphGAN [46] and KBGAN [5] learns a distribution over negative cand |
 | Negative Sampling | cs.LG] arXiv:2403.17259v1 # Diffusion-based Negative Sampling on Graphs for Link Prediction Trung-Kien Ng |
 | Noise contrastive estimation | ion learning methods [14, 44, 50] follow the noise contrastive estimation approach [13], which resorts to sampling a s |
 | SANS | ecting high-variance samples [9]. On graphs, SANS [2] select negative examples from $k$-hop ne |
 | Structure-Aware Negative Sampling | iam L Hamilton, and Avishek Joey Bose. 2020. Structure aware negative sampling in knowledge graphs. *arXiv preprint arXiv:2 |
 | Uniform Sampling | control the quality of negative nodes. While uniform negative sampling [14, 44] is simple, it ignores the quality o |
 
-## KGE Models  —  precision 100% · recall~ 41%
+## KGE Models  —  precision 100% · recall~ 38%
 
 ### Precision : entites extraites par le KG
 
@@ -80,7 +80,6 @@ _Aucun candidat faux negatif pour cette categorie._
 | GCN | ✅ oui | the complexity of DMNS for one node. Taking GCN as base encoder, the neighborhood aggregatio |
 | GraphGAN | ✅ oui | for automatic negative sampling. Among them, GraphGAN [46] and KBGAN [5] learns a distribution ove |
 | GVAE | ✅ oui | 4 ± .003</td> </tr> <tr> <td>GVAE</td> <td><u>.783 ± .003</u></td> |
-| KBGAN | ✅ oui | tive sampling. Among them, GraphGAN [46] and KBGAN [5] learns a distribution over negative cand |
 | SAGE | ✅ oui | /strong></td> </tr> <tr> <td>SAGE</td> <td>.598 ± .014</td> <t |
 | ScaLed | ✅ oui | gamma$-decaying heuristic theory. Meanwhile, ScaLED [27] utilizes random walks to efficiently sa |
 | SEAL | ✅ oui | ons of the enclosing subgraphs. For example, SEAL [53] proposes the usage of local subgraphs b |
